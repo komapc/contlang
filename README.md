@@ -9,3 +9,4 @@
 - [Словарь: корни и признаки](docs/lexicon.md)
 - [Фонология и структура слова](docs/phonology.md)
 - [Открытые вопросы и планы](docs/roadmap.md)
+- [План работ](docs/plan.md)
