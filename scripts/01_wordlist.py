@@ -21,6 +21,40 @@ one two three four five six seven eight nine ten first second third last next
 said say says like make get got let put take took
 """.split())
 
+# relaxations (docs/lexicon.md): colors, months, weekdays, numbers, countries are outside the 30 roots
+EXCL_HYPER = {"chromatic_color.n.01", "achromatic_color.n.01", "color.n.01", "calendar_month.n.01",
+              "day_of_the_week.n.01", "country.n.02", "state.n.04", "integer.n.01", "large_integer.n.01",
+              "digit.n.01", "cardinal.n.01", "ordinal.n.01"}
+EXCL_WORDS = set("""zero eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen twenty
+thirty forty fifty sixty seventy eighty ninety hundred thousand million billion dozen
+black white red blue green yellow orange purple pink brown gray grey""".split())
+
+
+EXCL_RELIGION = {"religion.n.01", "religious_person.n.01", "religionist.n.01", "christian.n.01", "adherent.n.01"}
+
+
+def _is_place(s):
+    return any(h.name() in ("country.n.02", "city.n.01", "state.n.01", "continent.n.01") or "country" in h.name()
+               for h in s.instance_hypernyms())
+
+
+def relaxed(wn, name):
+    if name in EXCL_WORDS:
+        return True
+    # nationality / place-derived words (american, mexican, european)
+    for s in wn.synsets(name):
+        for l in s.lemmas():
+            if l.name().lower() != name:
+                continue
+            for r in l.pertainyms() + l.derivationally_related_forms():
+                if _is_place(r.synset()):
+                    return True
+    for s in wn.synsets(name):
+        if s.name().startswith(name + ".") and (EXCL_HYPER | EXCL_RELIGION) & ({h.name() for h in s.closure(lambda x: x.hypernyms())}):
+            return True
+    return False
+
+
 wn = load_wordnet()
 # words must exist in both embedding spaces so the sources can be compared
 vocab = set(load_vectors("glove100").index_to_key[:100000])
@@ -30,7 +64,7 @@ best = {}  # word -> (count, pos); keep the dominant POS
 total = Counter()
 for pos in "nvar":
     for name in wn.all_lemma_names(pos):
-        if not name.isalpha() or len(name) < 3 or name in STOP or name not in vocab:
+        if not name.isalpha() or len(name) < 3 or name in STOP or name not in vocab or relaxed(wn, name):
             continue
         if any(wn.morphy(name, p) not in (None, name) for p in "nvar"):
             continue  # inflected form

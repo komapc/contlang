@@ -6,6 +6,7 @@ The suffix is reconstructed as the mean position of its POS class in the form su
 Compared with the earlier scheme (07): root + 3 continuous form axes + u universal axes,
 and with global axes, at equal bits per word.
 """
+import os
 import sys
 
 import numpy as np
@@ -22,6 +23,8 @@ CONFIGS = [(10, 3), (10, 6), (30, 3), (30, 6), (30, 9)]   # (roots, universal me
 SUFFIX = {"noun": "-o", "verb": "-i", "adj": "-a", "adv": "-e"}
 NFORM, NCAND, SEED = 3, 300, 0
 BITS = np.log2(11)
+FIXED_WORDS = [w for w in os.environ.get("ROOTS_WORDS", "").split(",") if w]   # fixed root list instead of greedy
+TAG = os.environ.get("ROOTS_TAG", "")
 
 if MODE == "sense":
     rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en_sense.tsv")][1:]
@@ -44,6 +47,14 @@ logfreq = (logfreq - logfreq.mean()) / logfreq.std()
 X0 = unit(np.load(RAW / "sense_numberbatch.npy")) if MODE == "sense" else unit(word_matrix(SRC, words))
 X = remove_freq(X0, logfreq, train)
 _, mean_wup = make_wup(words, pos)
+if FIXED_WORDS:
+    first = {}
+    for i, w in enumerate(words):
+        first.setdefault(w, i)
+    FIXED = [first[w] for w in FIXED_WORDS if w in first]
+    print("fixed roots found:", [words[i] for i in FIXED], "| missing:", [w for w in FIXED_WORDS if w not in first])
+    CONFIGS = [(len(FIXED), 6), (len(FIXED), 9)]
+NR = CONFIGS[-1][0]
 cand = np.argsort(-(gen if MODE == "sense" else generality(words, pos, RAW / "generality_x5.npy")))[:NCAND]
 
 sims_raw = X0[test] @ X0.T
@@ -74,7 +85,7 @@ LAST = {}   # (roots, axes) -> meaning scores of all entries, for printing axis 
 
 
 def recon_suffix(R_, u):
-    roots = greedy_roots(S_m, train, cand, R_)
+    roots = list(FIXED) if FIXED_WORDS else greedy_roots(S_m, train, cand, R_)
     if MODE == "sense":
         # entries linked as conversions (work-o / work-i) are assigned to one root by their mean vector
         G = np.zeros_like(Xm_n)
@@ -97,7 +108,7 @@ def recon_suffix(R_, u):
 def recon_continuous(R_, u):
     """Earlier scheme (07, local axes = 0): roots chosen on full vectors, 3 continuous form axes."""
     S = X @ X.T
-    roots = greedy_roots(S, train, cand, R_)
+    roots = list(FIXED) if FIXED_WORDS else greedy_roots(S, train, cand, R_)
     assign = np.argmax(S[:, roots], axis=1)
     mu = np.stack([X[np.intersect1d(np.flatnonzero(assign == r), train)].mean(axis=0)
                    for r in range(R_)])
@@ -135,16 +146,16 @@ for R_, u in CONFIGS:
     out.append(f"| глобальные split (3+{k - 3}) | {k * BITS:.1f} | {w_:.3f} | {p_:.0%} | {t_:.0%} |")
     keep[(R_, u)] = (roots, assign)
 
-roots, assign = keep[(30, 6)]
+roots, assign = keep[(NR, 6)]
 names = lambda r: words[roots[r]].upper()
 if MODE == "sense":
     out.append("\n## Омонимы и конверсии: корень и суффикс записи\n")
     for w in HOMOGRAPHS:
         ids = [i for i in range(n) if words[i] == w]
         out.append(f"- **{w}**: " + "; ".join(f"{pos[i]} → {names(assign[i])}{SUFFIX[pos[i]]}" for i in ids))
-out.append("\n## Корни (30), выбранные по смыслу, и их формы\n")
+out.append(f"\n## Корни ({NR}), выбранные по смыслу, и их формы\n")
 out.append("Для каждого корня — ближайшие слова каждого суффикса.\n")
-for r in np.argsort(-np.bincount(assign, minlength=30))[:30]:
+for r in np.argsort(-np.bincount(assign, minlength=NR))[:NR]:
     mem = np.flatnonzero(assign == r)
     parts = []
     for p, suf in SUFFIX.items():
@@ -156,11 +167,11 @@ for r in np.argsort(-np.bincount(assign, minlength=30))[:30]:
 out.append("\n## Универсальные смысловые оси (30 корней, 9 осей)\n")
 out.append("Оси найдены по отклонениям слов от центра своего корня; полюса — записи с крайними значениями. "
            "Знак и порядок осей нестабильны между запусками.\n")
-M9 = LAST[(30, 9)]
+M9 = LAST[(NR, 9)]
 for j in range(M9.shape[1]):
     idx = np.argsort(M9[:, j])
     out.append(f"- M{j + 1}: **−** " + ", ".join(words[i] for i in idx[:7]) +
                "  /  **+** " + ", ".join(words[i] for i in idx[::-1][:7]))
 text = "\n".join(out)
-(ROOT / "data" / f"roots_suffix_{SRC}_{MODE}.md").write_text(text, encoding="utf-8")
+(ROOT / "data" / f"roots_suffix_{SRC}_{MODE}{TAG}.md").write_text(text, encoding="utf-8")
 print(text)
