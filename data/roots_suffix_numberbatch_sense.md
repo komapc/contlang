@@ -72,3 +72,17 @@
 - **COMPANY** (86): `-o` company, corporation, firm; `-i` invest, sell, venture; `-a` firm, commercial, industrial; `-e` commercially, wholly, privately
 - **ROOM** (80): `-o` room, bedroom, hall; `-i` huddle, bathe, shed; `-a` upstairs, interior, comfortable; `-e` upstairs, downstairs, inside
 - **CHRISTIAN** (67): `-o` christian, catholic, protestant; `-i` baptize, preach, pray; `-a` christian, religious, protestant
+
+## Универсальные смысловые оси (30 корней, 9 осей)
+
+Оси найдены по отклонениям слов от центра своего корня; полюса — записи с крайними значениями. Знак и порядок осей нестабильны между запусками.
+
+- M1: **−** define, attribute, attribute, consequence, implication, designate, imply  /  **+** stare, nicely, tumble, glance, fall, gouge, suddenly
+- M2: **−** achieve, farther, attain, able, reach, accomplish, experience  /  **+** abolish, rule, rule, dismiss, reject, denounce, split
+- M3: **−** trim, verify, adjust, repair, arrange, check, filter  /  **+** seldom, universally, rarely, peculiarly, surprisingly, remarkably, characteristically
+- M4: **−** adopt, alternative, alternative, repay, owe, choose, spend  /  **+** feature, burst, intensity, intense, burst, surge, characteristic
+- M5: **−** forever, eternal, cease, persist, hereafter, inevitable, lag  /  **+** tremendously, wonderful, fantastic, excellent, incredibly, vastly, greatly
+- M6: **−** headlong, headlong, instant, chance, opportunity, race, venture  /  **+** stick, remain, stiffly, stay, maintain, keep, rigid
+- M7: **−** further, southward, westward, northward, broaden, elsewhere, extend  /  **+** perfectly, utterly, absolutely, completely, downright, thoroughly, perfect
+- M8: **−** cautiously, steady, calmly, steady, strongly, firmly, nervously  /  **+** unique, instance, individual, uniquely, create, individual, encounter
+- M9: **−** encourage, spring, inspire, force, flourish, capacity, urge  /  **+** comment, remark, trace, note, vague, trace, notice

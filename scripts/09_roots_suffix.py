@@ -70,6 +70,9 @@ f_class = {p: f[train][pos[train] == p].mean(axis=0) for p in SUFFIX}
 form_offset = np.stack([f_class[p] for p in pos]) @ F.T          # what the suffix contributes
 
 
+LAST = {}   # (roots, axes) -> meaning scores of all entries, for printing axis poles
+
+
 def recon_suffix(R_, u):
     roots = greedy_roots(S_m, train, cand, R_)
     if MODE == "sense":
@@ -86,6 +89,8 @@ def recon_suffix(R_, u):
     mean_r, W = fit_axes("varimax", Er[train], u, np.random.default_rng(SEED))
     M = (Er - mean_r) @ W
     sm = M[train].std(axis=0)
+    order = np.argsort(-sm)
+    LAST[(R_, u)] = M[:, order]
     return mu[assign] + dequantize(quantize(M, sm), sm) @ W.T + mean_r + form_offset + mean0, roots, assign
 
 
@@ -148,6 +153,14 @@ for r in np.argsort(-np.bincount(assign, minlength=30))[:30]:
         if len(mp):
             parts.append(f"`{suf}` " + ", ".join(words[i] for i in mp))
     out.append(f"- **{words[roots[r]].upper()}** ({len(mem)}): " + "; ".join(parts))
+out.append("\n## Универсальные смысловые оси (30 корней, 9 осей)\n")
+out.append("Оси найдены по отклонениям слов от центра своего корня; полюса — записи с крайними значениями. "
+           "Знак и порядок осей нестабильны между запусками.\n")
+M9 = LAST[(30, 9)]
+for j in range(M9.shape[1]):
+    idx = np.argsort(M9[:, j])
+    out.append(f"- M{j + 1}: **−** " + ", ".join(words[i] for i in idx[:7]) +
+               "  /  **+** " + ", ".join(words[i] for i in idx[::-1][:7]))
 text = "\n".join(out)
 (ROOT / "data" / f"roots_suffix_{SRC}_{MODE}.md").write_text(text, encoding="utf-8")
 print(text)

@@ -59,3 +59,17 @@
 - **WRITER** (72): `-o` writer, author, editor; `-i` write, publish, read; `-a` literary, artistic, fictional; `-e` brilliantly
 - **WEATHER** (72): `-o` weather, rain, winter; `-i` forecast, hail, predict; `-a` cold, warm, wet; `-e` coldly, bitterly, fortunately
 - **DISEASE** (70): `-o` disease, lung, tumor; `-i` plague, cure, spread; `-a` infectious, chronic, bacterial; `-e` sexually
+
+## Универсальные смысловые оси (30 корней, 9 осей)
+
+Оси найдены по отклонениям слов от центра своего корня; полюса — записи с крайними значениями. Знак и порядок осей нестабильны между запусками.
+
+- M1: **−** fundamental, principle, term, objective, requirement, adhere, basic  /  **+** grateful, shudder, dear, glad, joy, friendly, hungry
+- M2: **−** broad, profound, extensive, impulse, sudden, intensity, shudder  /  **+** oblige, fortunate, lucky, certify, owe, insist, reside
+- M3: **−** real, truly, genuine, uniquely, wholly, possess, true  /  **+** impatiently, anxiously, cautiously, nervously, hastily, angrily, wearily
+- M4: **−** hereafter, somewhere, forever, eternal, inevitable, await, constant  /  **+** tremendously, vastly, impressive, remarkably, big, large, particularly
+- M5: **−** ask, invoke, beckon, lend, invite, borrow, grant  /  **+** fairly, perfectly, reasonably, remarkably, extremely, vitally, sufficiently
+- M6: **−** flatly, unadjusted, tax, ratio, totally, wildly, rate  /  **+** linger, foresee, considerable, farther, significant, emerge, entail
+- M7: **−** strive, mentally, educate, engage, collaborate, vigorous, celebrate  /  **+** vague, shortly, sadly, nevertheless, mention, notice, though
+- M8: **−** stubbornly, exist, stare, falter, underlie, sullen, increasingly  /  **+** select, arrange, able, ideally, dispose, device, locate
+- M9: **−** incredible, brilliant, fantastic, magnificent, remarkable, impressive, headlong  /  **+** frequent, tend, sometimes, usually, external, frequently, mostly
