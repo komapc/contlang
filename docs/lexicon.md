@@ -30,7 +30,6 @@
 | REGARD | respect, consideration | regard, concern | particular, careful | particularly, especially |
 | OCCURRENCE | occurrence, incident | occur, happen | unusual, rare | rarely, seldom |
 | NOISE | noise, sound | clamor, roar | loud, shrill | loudly, quietly |
-| MONTH | month, week, year | march, rent | lunar, fourth | annually, twice |
 | COLOR | color, shade | paint, stain | purple, blue | vividly, beautifully |
 | EXAMINE | examination, study | examine, inspect | analytic, curious | carefully, thoroughly |
 | ROOM | room, bedroom | huddle, sit | comfortable, private | upstairs, inside |
@@ -40,9 +39,19 @@
 **Остальные корни одного из запусков:** DEFEAT, DESIRE, INCREASE, ROAD, STICK, MIXTURE, EVIDENCE, RESTRAIN, RELIGION, INFORM, COMPANY, CUT, OFFICER, WRITER, WEATHER, DISEASE. В другом запуске вместо них были EMOTION, HIT, REQUEST, AREA, IMPROVE, DESCEND, TERMINATE, FAITH, SOLDIER, ACHIEVEMENT, FASTEN, COMPETE, METAL, FOOD, AUTHOR, OFFICIAL.
 
 **Известные проблемы корней.**
-- Часть семей нерегулярна: у *AREA* глагол `-i` — *sprawl, locate*; у *MONTH* глагол `-i` — *march, rent* (омоним *march* и вообще слова с сильным «месячным» контекстом).
+- Часть семей нерегулярна: у *AREA* глагол `-i` — *sprawl, locate*; у *MONTH* глагол `-i` был *march, rent* (теперь снято: месяцы и дни недели идут числами, см. «Послабления»).
 - 30 корней — грубое покрытие: *love* попадает в THINK, а не в EMOTION.
 - Конверсии (*work, play, love, order*) размечены WordNet как производные формы и получают общий корень (`TOOL-o` / `TOOL-i`); настоящие омонимы (*close* «закрыть» и «близкий») получают разные корни.
+
+## Послабления (слова вне 30 корней)
+
+Часть лексики не имеет смысла кодировать через общие корни и оси. Она выносится за пределы бюджета в 30 корней и не расходует оси:
+
+- **Названия стран** (и вообще имена собственные-топонимы) — заимствуются как есть, без корня и признаков.
+- **Числа** — отдельная система счёта, не корни.
+- **Месяцы и дни недели** — по номеру: месяц 3, день недели 2 (а не слова *March*, *Tuesday*).
+
+Следствие: корень MONTH больше не нужен, а с ним уходит и ошибка с омонимами *march* (шагать) и *rent* (аренда): их отнесли в MONTH из-за «месячного» контекста. Остаётся открытым, как записывать сами числа, как отличить заимствованное имя от слова языка (метка или фонологический признак) и как склонять/присоединять суффиксы к ним ([фонология](phonology.md)).
 
 ## Суффиксы
 
