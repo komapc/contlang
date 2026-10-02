@@ -72,3 +72,15 @@ def make_wup(words, pos):
         return float(np.mean(v)) if v else float("nan")
 
     return wup, mean_wup
+
+
+def unit(X):
+    return X / np.linalg.norm(X, axis=1, keepdims=True)
+
+
+def remove_freq(X, logfreq, train, ridge=10.0):
+    """Project out the direction that predicts log word frequency (ridge fit on train)."""
+    Xc = X[train] - X[train].mean(axis=0)
+    w = np.linalg.solve(Xc.T @ Xc + ridge * np.eye(X.shape[1]), Xc.T @ logfreq[train])
+    u = w / np.linalg.norm(w)
+    return unit(X - np.outer(X @ u, u))

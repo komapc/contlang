@@ -14,13 +14,13 @@ import numpy as np
 from scipy.stats import spearmanr
 
 from common import ROOT, load_vectors, word_matrix
-from lib_axes import dequantize, fit_axes, make_wup, nearest_other, quantize
+from lib_axes import (dequantize, fit_axes, make_wup, nearest_other, quantize, remove_freq,
+                      unit)
 
 LIST = "wordlist_en_x5.tsv"
 SRC = sys.argv[1] if len(sys.argv) > 1 else "numberbatch"
 KS = [10, 30]
 D = 3          # components removed by abtt
-RIDGE = 10.0
 POLE = 10      # words per pole for coherence
 SEED = 0
 
@@ -41,18 +41,6 @@ X0 = X0 / np.linalg.norm(X0, axis=1, keepdims=True)
 _, mean_wup = make_wup(words, pos)
 
 
-def unit(X):
-    return X / np.linalg.norm(X, axis=1, keepdims=True)
-
-
-def remove_freq(X):
-    mu = X[train].mean(axis=0)
-    Xc = X[train] - mu
-    w = np.linalg.solve(Xc.T @ Xc + RIDGE * np.eye(X.shape[1]), Xc.T @ logfreq[train])
-    u = w / np.linalg.norm(w)
-    return unit(X - np.outer(X @ u, u))
-
-
 def abtt(X):
     mu = X[train].mean(axis=0)
     _, _, vt = np.linalg.svd(X[train] - mu, full_matrices=False)
@@ -61,8 +49,8 @@ def abtt(X):
     return unit(Xc - Xc @ P.T @ P)
 
 
-variants = {"raw": X0, "freq": remove_freq(X0), "abtt": abtt(X0)}
-variants["both"] = abtt(remove_freq(X0))
+variants = {"raw": X0, "freq": remove_freq(X0, logfreq, train), "abtt": abtt(X0)}
+variants["both"] = abtt(remove_freq(X0, logfreq, train))
 
 # reference quantities in the RAW space
 sims_raw = X0[test] @ X0.T
