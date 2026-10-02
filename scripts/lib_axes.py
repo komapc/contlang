@@ -108,3 +108,36 @@ def recon_split(X, train, pos, k, nform=3, seed=0):
     sf, sm = f[train].std(axis=0), M[train].std(axis=0)
     return (dequantize(quantize(f, sf), sf) @ F.T + dequantize(quantize(M, sm), sm) @ Wm.T
             + mean0 + mean_r)
+
+
+def generality(words, pos, cache_path):
+    """Hyponym-closure size of each noun/verb's dominant-POS first synset (cached; slow)."""
+    from pathlib import Path
+    cache = Path(cache_path)
+    if cache.exists():
+        g = np.load(cache)
+        if len(g) == len(words):
+            return g
+    wn = load_wordnet()
+    tag = {"noun": "n", "verb": "v"}
+    g = np.zeros(len(words))
+    for i, w in enumerate(words):
+        if pos[i] in tag:
+            syns = wn.synsets(w, tag[pos[i]])
+            if syns:
+                g[i] = len(set(syns[0].closure(lambda s: s.hyponyms())))
+    np.save(cache, g)
+    return g
+
+
+def greedy_roots(S, train, pool, R):
+    """Greedy facility location: pick R words from pool maximizing summed best cosine on train."""
+    best = np.full(len(train), -1.0)
+    chosen = []
+    St = S[train]
+    for _ in range(R):
+        gains = [np.maximum(best, St[:, c]).sum() - best.sum() for c in pool]
+        c = pool[int(np.argmax(gains))]
+        chosen.append(c)
+        best = np.maximum(best, St[:, c])
+    return chosen
