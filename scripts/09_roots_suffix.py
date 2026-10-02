@@ -16,34 +16,43 @@ from lib_axes import (dequantize, fit_axes, generality, greedy_roots, make_wup, 
                       quantize, recon_plain, recon_split, remove_freq, unit)
 
 SRC = sys.argv[1] if len(sys.argv) > 1 else "numberbatch"
+MODE = sys.argv[2] if len(sys.argv) > 2 else "word"   # "word": one vector per word; "sense": POS entries
+HOMOGRAPHS = ["march", "rent", "issue", "point", "order", "close", "work", "play", "love", "pretty"]
 CONFIGS = [(10, 3), (10, 6), (30, 3), (30, 6), (30, 9)]   # (roots, universal meaning axes)
 SUFFIX = {"noun": "-o", "verb": "-i", "adj": "-a", "adv": "-e"}
 NFORM, NCAND, SEED = 3, 300, 0
 BITS = np.log2(11)
 
-rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en_x5.tsv")][1:]
+if MODE == "sense":
+    rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en_sense.tsv")][1:]
+    gen = np.array([float(r[3]) for r in rows])
+    conv = np.unique([r[4] for r in rows], return_inverse=True)[1]   # WordNet-linked entries share an id
+else:
+    rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en_x5.tsv")][1:]
 words = [r[0] for r in rows]
 pos = np.array([r[1] for r in rows])
 n = len(words)
+group = np.unique(words, return_inverse=True)[1]          # entries of one word share a group
 rng = np.random.default_rng(SEED)
-perm = rng.permutation(n)
-train, test = perm[: n // 2], perm[n // 2:][:600]
+gperm = rng.permutation(group.max() + 1)
+train = np.flatnonzero(np.isin(group, gperm[: len(gperm) // 2]))
+test = rng.permutation(np.flatnonzero(np.isin(group, gperm[len(gperm) // 2:])))[:600]
 
 glove = load_vectors("glove100")
 logfreq = -np.log1p(np.array([glove.key_to_index[w] for w in words]))
 logfreq = (logfreq - logfreq.mean()) / logfreq.std()
-X0 = unit(word_matrix(SRC, words))
+X0 = unit(np.load(RAW / "sense_numberbatch.npy")) if MODE == "sense" else unit(word_matrix(SRC, words))
 X = remove_freq(X0, logfreq, train)
 _, mean_wup = make_wup(words, pos)
-cand = np.argsort(-generality(words, pos, RAW / "generality_x5.npy"))[:NCAND]
+cand = np.argsort(-(gen if MODE == "sense" else generality(words, pos, RAW / "generality_x5.npy")))[:NCAND]
 
 sims_raw = X0[test] @ X0.T
-sims_raw[np.arange(len(test)), test] = -np.inf
+sims_raw[group[None, :] == group[test][:, None]] = -np.inf
 true50 = [set(r[:50]) for r in np.argsort(-sims_raw, axis=1)]
 
 
 def evaluate(R):
-    nn = nearest_other(R[test], X, test, 1)[:, 0]
+    nn = nearest_other(R[test], X, test, 1, group)[:, 0]
     t50 = np.mean([d in s for d, s in zip(nn, true50)])
     return mean_wup(zip(test, nn)), float(np.mean(pos[nn] == pos[test])), float(t50)
 
@@ -63,7 +72,14 @@ form_offset = np.stack([f_class[p] for p in pos]) @ F.T          # what the suff
 
 def recon_suffix(R_, u):
     roots = greedy_roots(S_m, train, cand, R_)
-    assign = np.argmax(S_m[:, roots], axis=1)
+    if MODE == "sense":
+        # entries linked as conversions (work-o / work-i) are assigned to one root by their mean vector
+        G = np.zeros_like(Xm_n)
+        np.add.at(G, conv, Xm_n)
+        G = unit(G)[conv]
+        assign = np.argmax(G @ Xm_n[roots].T, axis=1)
+    else:
+        assign = np.argmax(S_m[:, roots], axis=1)
     mu = np.stack([Xm[np.intersect1d(np.flatnonzero(assign == r), train)].mean(axis=0)
                    for r in range(R_)])
     Er = Xm - mu[assign]
@@ -92,7 +108,7 @@ def recon_continuous(R_, u):
             dequantize(quantize(M, sm), sm) @ W.T + mean_r)
 
 
-out = [f"# Корни по смыслу + суффикс части речи ({SRC}, {len(words)} слов)\n",
+out = [f"# Корни по смыслу + суффикс части речи ({SRC}, режим {MODE}, {len(words)} записей)\n",
        "Форма (3 LDA-направления) вычтена перед выбором корней, поэтому корни не зависят от части речи. "
        "Слово = корень + суффикс эсперанто (`-o -i -a -e`, 2 бита) + u универсальных смысловых осей. "
        "Сравнение со схемой «корень + 3 непрерывные оси формы + u осей» и с глобальными осями при той же "
@@ -115,6 +131,12 @@ for R_, u in CONFIGS:
     keep[(R_, u)] = (roots, assign)
 
 roots, assign = keep[(30, 6)]
+names = lambda r: words[roots[r]].upper()
+if MODE == "sense":
+    out.append("\n## Омонимы и конверсии: корень и суффикс записи\n")
+    for w in HOMOGRAPHS:
+        ids = [i for i in range(n) if words[i] == w]
+        out.append(f"- **{w}**: " + "; ".join(f"{pos[i]} → {names(assign[i])}{SUFFIX[pos[i]]}" for i in ids))
 out.append("\n## Корни (30), выбранные по смыслу, и их формы\n")
 out.append("Для каждого корня — ближайшие слова каждого суффикса.\n")
 for r in np.argsort(-np.bincount(assign, minlength=30))[:30]:
@@ -127,5 +149,5 @@ for r in np.argsort(-np.bincount(assign, minlength=30))[:30]:
             parts.append(f"`{suf}` " + ", ".join(words[i] for i in mp))
     out.append(f"- **{words[roots[r]].upper()}** ({len(mem)}): " + "; ".join(parts))
 text = "\n".join(out)
-(ROOT / "data" / f"roots_suffix_{SRC}.md").write_text(text, encoding="utf-8")
+(ROOT / "data" / f"roots_suffix_{SRC}_{MODE}.md").write_text(text, encoding="utf-8")
 print(text)

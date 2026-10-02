@@ -43,11 +43,18 @@ def dequantize(q, std):
     return q / LEVELS * CLIP * std
 
 
-def nearest_other(R, Xn, ids, k):
-    """Indices of the k nearest words to each reconstruction, excluding the word itself."""
+def nearest_other(R, Xn, ids, k, group=None):
+    """Indices of the k nearest rows to each reconstruction, excluding the word itself.
+
+    With `group` (word id per row), every row of the same word is excluded, so a homograph's
+    other-POS entry cannot be returned as its own neighbour.
+    """
     Rn = R / np.linalg.norm(R, axis=1, keepdims=True)
     sims = Rn @ Xn.T
-    sims[np.arange(len(ids)), ids] = -np.inf
+    if group is None:
+        sims[np.arange(len(ids)), ids] = -np.inf
+    else:
+        sims[group[None, :] == group[ids][:, None]] = -np.inf
     return np.argsort(-sims, axis=1)[:, :k]
 
 
