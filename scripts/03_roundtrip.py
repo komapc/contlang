@@ -12,55 +12,13 @@ Axes are fitted on a train split.
 import sys
 
 import numpy as np
-from common import ROOT, SOURCES, load_wordnet, word_matrix
+from common import ROOT, SOURCES, word_matrix
+from lib_axes import (dequantize, fit_axes, make_wup, nearest_other,
+                      quantize)
 
 LIST = sys.argv[1] if len(sys.argv) > 1 else "wordlist_en_x5.tsv"
 KS = [10, 30, 100]
 SEED = 0
-LEVELS = 5  # quantized values are -5..+5 (11 levels)
-CLIP = 2.5  # z-scores are clipped to +-CLIP then mapped to +-LEVELS
-
-
-def varimax(phi, iters=100, tol=1e-6):
-    p, k = phi.shape
-    rot, d = np.eye(k), 0.0
-    for _ in range(iters):
-        lam = phi @ rot
-        u, s, vt = np.linalg.svd(
-            phi.T @ (lam ** 3 - lam @ np.diag((lam ** 2).sum(axis=0)) / p))
-        rot = u @ vt
-        if s.sum() < d * (1 + tol):
-            break
-        d = s.sum()
-    return phi @ rot
-
-
-def fit_axes(method, Xtr, k, rng):
-    """Orthonormal axes W (dim x k), ordered by variance carried (random: arbitrary)."""
-    mean = Xtr.mean(axis=0)
-    if method == "random":
-        W, _ = np.linalg.qr(rng.standard_normal((Xtr.shape[1], k)))
-        return mean, W
-    _, _, vt = np.linalg.svd(Xtr - mean, full_matrices=False)
-    W = vt[:k].T
-    if method == "varimax":
-        W = varimax(W)
-    return mean, W
-
-
-def quantize(scores, std):
-    z = np.clip(scores / std, -CLIP, CLIP)
-    return np.round(z / CLIP * LEVELS)
-
-
-def dequantize(q, std):
-    return q / LEVELS * CLIP * std
-
-
-def topk_cos(R, Xn, k):
-    Rn = R / np.linalg.norm(R, axis=1, keepdims=True)
-    sims = Rn @ Xn.T
-    return sims, np.argsort(-sims, axis=1)[:, :k]
 
 
 rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / LIST)][1:]
@@ -72,34 +30,7 @@ perm = rng.permutation(n)
 train, test = perm[: n // 2], perm[n // 2:]
 test = test[:600]  # wordnet lookups dominate the runtime
 
-wn = load_wordnet()
-tag = {"noun": "n", "verb": "v", "adj": "a", "adv": "r"}
-_syn = {}
-
-
-def wup(i, j):
-    """Wu-Palmer between words i and j if they share a POS tag; else None."""
-    if pos[i] != pos[j]:
-        return None
-    for w in (i, j):
-        if w not in _syn:
-            _syn[w] = wn.synsets(words[w], tag[pos[w]])
-    if not _syn[i] or not _syn[j]:
-        return None
-    return _syn[i][0].wup_similarity(_syn[j][0])
-
-
-def mean_wup(pairs):
-    v = [x for x in (wup(i, j) for i, j in pairs) if x is not None]
-    return float(np.mean(v)) if v else float("nan")
-
-
-def nearest_other(R, Xn, ids, k):
-    """Indices of the k nearest words to each reconstruction, excluding the word itself."""
-    Rn = R / np.linalg.norm(R, axis=1, keepdims=True)
-    sims = Rn @ Xn.T
-    sims[np.arange(len(ids)), ids] = -np.inf
-    return np.argsort(-sims, axis=1)[:, :k]
+_, mean_wup = make_wup(words, pos)
 
 
 majority = max((pos == c).mean() for c in set(pos))
