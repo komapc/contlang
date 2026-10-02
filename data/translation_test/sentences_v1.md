@@ -10,6 +10,3 @@
 10. The meeting is on March 5 at 3 o'clock.
 11. I love you.
 12. Maybe the book is very good.
-13. He will not come tomorrow.
-14. They were not happy.
-15. Maybe she knew the answer.
