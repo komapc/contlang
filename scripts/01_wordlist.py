@@ -2,11 +2,14 @@
 
 POS is only recorded for later analysis; it is not used to split the data.
 """
+import sys
 from collections import Counter
 
-from common import ROOT, load_glove, load_wordnet
+from common import ROOT, load_vectors, load_wordnet
 
-QUOTA = {"noun": 200, "verb": 200, "adj": 120, "adv": 80}
+# usage: python 01_wordlist.py [scale]   scale=1 -> 600 words, 5 -> 3000 words
+SCALE = int(sys.argv[1]) if len(sys.argv) > 1 else 1
+QUOTA = {"noun": 200 * SCALE, "verb": 200 * SCALE, "adj": 120 * SCALE, "adv": 80 * SCALE}
 POS_TAGS = {"n": "noun", "v": "verb", "a": "adj", "r": "adv"}
 # closed-class and auxiliary words that WordNet happens to list
 STOP = set("""
@@ -19,8 +22,9 @@ said say says like make get got let put take took
 """.split())
 
 wn = load_wordnet()
-kv = load_glove()
-vocab = set(kv.index_to_key[:60000])
+# words must exist in both embedding spaces so the sources can be compared
+vocab = set(load_vectors("glove100").index_to_key[:100000])
+vocab &= set(load_vectors("numberbatch").index_to_key)
 
 best = {}  # word -> (count, pos); keep the dominant POS
 total = Counter()
@@ -44,7 +48,7 @@ for name, (count, pos) in sorted(best.items(), key=lambda kv_: -kv_[1][0]):
         taken[pos] += 1
         rows.append((name, pos, count / max(total[name], 1)))
 
-out = ROOT / "data" / "wordlist_en.tsv"
+out = ROOT / "data" / ("wordlist_en.tsv" if SCALE == 1 else f"wordlist_en_x{SCALE}.tsv")
 with open(out, "w") as f:
     f.write("word\tpos\tpos_share\n")
     for w, p, share in rows:

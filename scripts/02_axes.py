@@ -1,15 +1,17 @@
 """PCA + varimax on GloVe vectors of the word list; name axes by their poles.
 
-Usage: python 02_axes.py [k]   (default k=10, the 'nano' set)
+Usage: python 02_axes.py [k] [source] [wordlist]   (defaults: 10 glove100 wordlist_en.tsv)
 """
 import sys
 from collections import defaultdict
 
 import numpy as np
 
-from common import ROOT, load_glove
+from common import ROOT, word_matrix
 
 K = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+SRC = sys.argv[2] if len(sys.argv) > 2 else "glove100"
+LIST = sys.argv[3] if len(sys.argv) > 3 else "wordlist_en.tsv"
 TOP = 8  # words shown at each pole
 ALIVE = 1.0  # an axis is 'alive' for a word if |z-score| exceeds this
 
@@ -30,12 +32,11 @@ def varimax(phi, iters=100, tol=1e-6):
     return phi @ rot
 
 
-rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en.tsv")][1:]
+rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / LIST)][1:]
 words = [r[0] for r in rows]
 pos = np.array([r[1] for r in rows])
 
-kv = load_glove()
-X = np.stack([kv[w] for w in words])
+X = word_matrix(SRC, words)
 X = X / np.linalg.norm(X, axis=1, keepdims=True)
 Xc = X - X.mean(axis=0)
 
@@ -51,7 +52,7 @@ order = np.argsort(-(scores ** 2).sum(axis=0))
 z = z[:, order]
 
 out = []
-out.append(f"# Оси nano-{K} (английский, {len(words)} слов, GloVe 100d)\n")
+out.append(f"# Оси nano-{K} (английский, {len(words)} слов, {SRC})\n")
 out.append(f"Объяснённая дисперсия первых {K} компонент: **{var[:K].sum():.1%}** "
            f"(первые 3: {', '.join(f'{v:.1%}' for v in var[:3])}).\n")
 out.append("Оси названы автоматически: слова на полюсах (отрицательный ← → положительный).\n")
@@ -84,5 +85,5 @@ acc = (pred == pos).mean()
 base = max((pos == c).mean() for c in classes)
 out.append(f"Классификация POS по профилю (ближайший центроид): {acc:.0%} при базовом уровне {base:.0%}.\n")
 
-(ROOT / "data" / f"axes_nano{K}_en.md").write_text("\n".join(out), encoding="utf-8")
+(ROOT / "data" / f"axes_nano{K}_{SRC}_{len(words)}.md").write_text("\n".join(out), encoding="utf-8")
 print("\n".join(out))
