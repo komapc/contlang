@@ -13,6 +13,3 @@
 13. He will not come tomorrow.
 14. They were not happy.
 15. Maybe she knew the answer.
-16. Did he come?
-17. What do you want?
-18. I think that he is good.
