@@ -12,6 +12,9 @@ from lib_axes import dequantize, fit_axes, quantize, remove_freq, unit
 ROOTS = "someone,thing,people,body,kind,part,word,happen,move,think,know,want,feel,see,hear,touch,place,inside,side,good,big,near,above,live,same,maybe,time".split(",")
 GRADIENT = [g.split(":") for g in "good:bad,big:small,near:far,above:below,live:die,same:different,maybe:true".split(",")]
 import os
+if os.environ.get("CAT"):
+    ROOTS += "material food tool room text event officer money emotion".split()
+    GRADIENT.append(["material", "stone", "air"])      # state of matter: solid (stone) ... gas (air)
 U, NFORM, SEED = int(os.environ.get("AXES", 9)), 3, 0
 TAG = os.environ.get("TAG", "")
 SUFFIX = {"noun": "-o", "verb": "-i", "adj": "-a", "adv": "-e"}
@@ -62,9 +65,11 @@ mu = np.stack([Xm[np.intersect1d(np.flatnonzero(assign == r), train)].mean(axis=
 Er = Xm - mu[assign]
 local = np.zeros_like(Er)
 lval = {}
-for w1, w2 in GRADIENT:
+for gr in GRADIENT:
+    w1, w2 = gr[0], gr[1]
+    pole1, pole2 = (gr[1], gr[2]) if len(gr) == 3 else (w1, w2)
     r = ROOTS.index(w1)
-    g = Xm[first[w1]] - Xm[first[w2]]
+    g = Xm[first[pole1]] - Xm[first[pole2]]
     g /= np.linalg.norm(g)
     mem = np.flatnonzero(assign == r)
     c = Er[mem] @ g
