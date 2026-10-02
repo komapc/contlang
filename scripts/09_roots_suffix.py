@@ -25,6 +25,8 @@ NFORM, NCAND, SEED = 3, 300, 0
 BITS = np.log2(11)
 FIXED_WORDS = [w for w in os.environ.get("ROOTS_WORDS", "").split(",") if w]   # fixed root list instead of greedy
 TAG = os.environ.get("ROOTS_TAG", "")
+# gradient roots: "good:bad,big:small" = root word, opposite pole; one local axis from pole to pole
+GRADIENT = [g.split(":") for g in os.environ.get("ROOTS_GRADIENT", "").split(",") if g]
 
 if MODE == "sense":
     rows = [l.rstrip("\n").split("\t") for l in open(ROOT / "data" / "wordlist_en_sense.tsv")][1:]
@@ -97,12 +99,26 @@ def recon_suffix(R_, u):
     mu = np.stack([Xm[np.intersect1d(np.flatnonzero(assign == r), train)].mean(axis=0)
                    for r in range(R_)])
     Er = Xm - mu[assign]
+    local = np.zeros_like(Er)       # reconstructed position on each root's own gradient axis
+    if GRADIENT and FIXED_WORDS:
+        for w1, w2 in GRADIENT:
+            if w1 not in first or w2 not in first or first[w1] not in roots:
+                continue
+            r = roots.index(first[w1])
+            g = Xm[first[w1]] - Xm[first[w2]]
+            g /= np.linalg.norm(g)
+            mem = np.flatnonzero(assign == r)
+            c = Er[mem] @ g
+            sd = c[np.isin(mem, train)].std()
+            cq = dequantize(quantize(c[:, None], np.array([sd])), np.array([sd]))[:, 0]
+            Er[mem] -= np.outer(c, g)
+            local[mem] += np.outer(cq, g)
     mean_r, W = fit_axes("varimax", Er[train], u, np.random.default_rng(SEED))
     M = (Er - mean_r) @ W
     sm = M[train].std(axis=0)
     order = np.argsort(-sm)
     LAST[(R_, u)] = M[:, order]
-    return mu[assign] + dequantize(quantize(M, sm), sm) @ W.T + mean_r + form_offset + mean0, roots, assign
+    return mu[assign] + local + dequantize(quantize(M, sm), sm) @ W.T + mean_r + form_offset + mean0, roots, assign
 
 
 def recon_continuous(R_, u):
