@@ -84,3 +84,27 @@ def remove_freq(X, logfreq, train, ridge=10.0):
     w = np.linalg.solve(Xc.T @ Xc + ridge * np.eye(X.shape[1]), Xc.T @ logfreq[train])
     u = w / np.linalg.norm(w)
     return unit(X - np.outer(X @ u, u))
+
+
+def recon_plain(X, train, k, seed=0):
+    """Reconstruction of all rows from k quantized varimax axes."""
+    mean, W = fit_axes("varimax", X[train], k, np.random.default_rng(seed))
+    S = (X - mean) @ W
+    std = S[train].std(axis=0)
+    return dequantize(quantize(S, std), std) @ W.T + mean
+
+
+def recon_split(X, train, pos, k, nform=3, seed=0):
+    """Reconstruction from nform LDA 'form' axes + (k - nform) meaning axes (see 05_form_meaning.py)."""
+    from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+    lda = LinearDiscriminantAnalysis(solver="eigen", shrinkage="auto").fit(X[train], pos[train])
+    F, _ = np.linalg.qr(lda.scalings_[:, :nform])
+    mean0 = X[train].mean(axis=0)
+    Xc = X - mean0
+    f = Xc @ F
+    Xr = Xc - f @ F.T
+    mean_r, Wm = fit_axes("varimax", Xr[train], k - nform, np.random.default_rng(seed))
+    M = (Xr - mean_r) @ Wm
+    sf, sm = f[train].std(axis=0), M[train].std(axis=0)
+    return (dequantize(quantize(f, sf), sf) @ F.T + dequantize(quantize(M, sm), sm) @ Wm.T
+            + mean0 + mean_r)
