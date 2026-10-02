@@ -30,7 +30,6 @@
 | REGARD | respect, consideration | regard, concern | particular, careful | particularly, especially |
 | OCCURRENCE | occurrence, incident | occur, happen | unusual, rare | rarely, seldom |
 | NOISE | noise, sound | clamor, roar | loud, shrill | loudly, quietly |
-| COLOR | color, shade | paint, stain | purple, blue | vividly, beautifully |
 | EXAMINE | examination, study | examine, inspect | analytic, curious | carefully, thoroughly |
 | ROOM | room, bedroom | huddle, sit | comfortable, private | upstairs, inside |
 | CREATE | form, environment | create, generate | creative, unique | thereby, deliberately |
@@ -50,6 +49,8 @@
 - **Названия стран** (и вообще имена собственные-топонимы) — заимствуются как есть, без корня и признаков.
 - **Числа** — отдельная система счёта, не корни.
 - **Месяцы и дни недели** — по номеру: месяц 3, день недели 2 (а не слова *March*, *Tuesday*).
+- **Цвета** — непрерывные координаты (RGB или HSL), а не слова и не корень COLOR (убран из списка корней).
+- **Имена собственные** (люди, места, организации, марки) — заимствуются как есть, как и названия стран.
 
 Следствие: корень MONTH больше не нужен, а с ним уходит и ошибка с омонимами *march* (шагать) и *rent* (аренда): их отнесли в MONTH из-за «месячного» контекста. Остаётся открытым, как записывать сами числа, как отличить заимствованное имя от слова языка (метка или фонологический признак) и как склонять/присоединять суффиксы к ним ([фонология](phonology.md)).
 
