@@ -1,0 +1,38 @@
+# Туда-обратно: 30 случайных слов (слепой декодер)
+
+Слова выбраны случайно из `data/wordlist_en_x5.tsv` (зерно 20261003). Кодировал ассистент по модели из `docs/model.md` (31 корень, оси в корнях, составные слова), одна попытка без правок. Декодировал субагент без оригиналов, только по спецификации. Оценку («точно» — слово среди трёх ответов; «синоним» — близкий по смыслу; «рядом» — родственное значение; «мимо») поставил я, независимого судьи не было.
+
+| # | слово | код | декодер (лучший / запасные) | оценка |
+| --: | :-- | :-- | :-- | :-- |
+| 1 | world | PLACE-o BIG(=+5) MANY(=5) | world / universe, everywhere | точно |
+| 2 | mighty | DO-a BIG(=+4) | active / powerful, busy | синоним |
+| 3 | ask | SAY-i WANT-a(=+3) KNOW-o | ask / question, inquire | точно |
+| 4 | elect | WANT-i PEOPLE-o MANY(=+4) E SOMEONE-o | admire / popular, court | мимо |
+| 5 | production | DO-o E THING-o MANY(=+4) | work / industry, business | рядом |
+| 6 | fulfill | DO-i E WANT-o PART(=+5) | fulfill / satisfy, achieve | точно |
+| 7 | lot | THING-o MANY(=+4) | stuff / goods, things | рядом |
+| 8 | assess | THINK-i E GOOD-o(=0) | consider / judge, evaluate | синоним |
+| 9 | letter | WORD-o THING-o MOVE-a | verb / action, gerund | мимо |
+| 10 | worst | GOOD-a(=-5) | terrible / awful, horrible | синоним |
+| 11 | christ | "Christ" | christ / jesus, messiah | точно (имя, послабление) |
+| 12 | delicate | TOUCH-a BIG(=-4) GOOD(=+2) | soft / gentle, smooth | синоним |
+| 13 | scream | SAY-i HEAR(=+5) GOOD(=-3) | scold / shout, curse | синоним |
+| 14 | city | PLACE-o PEOPLE-o MANY(=+4) | city / town, country | точно |
+| 15 | serve | DO-i E SOMEONE-o WANT-o | serve / please, help | точно |
+| 16 | rebuild | DO-i E PLACE-o SAME(=+5) TIME(=+2) | reserve / prepare, stay | мимо |
+| 17 | restore | DO-i E THING-o SAME(=+5) TIME(=-2) | restore / repair, maintain | точно |
+| 18 | protest | SAY-i WANT(=-5) E HAPPEN-o | forbid / prevent, prohibit | мимо |
+| 19 | film | SEE-o MOVE-a | movie / film, show | точно |
+| 20 | ponder | THINK-i BIG(=+4) TIME-o | ponder / remember, history | точно |
+| 21 | difficult | DO-a BIG(=+4) GOOD(=-2) | destructive / harmful, wicked | мимо |
+| 22 | variable | SAME-a(=-3) TIME-o MANY(=+3) | various / different, varied | синоним |
+| 23 | decline | HAPPEN-i BIG(=-3) | occur / happen, trifle | мимо |
+| 24 | whole | PART-a(=+5) | complete / whole, entire | точно |
+| 25 | consequently | HAPPEN-e TIME(=+1) | soon / shortly, suddenly | мимо |
+| 26 | culture | PEOPLE-o LIVE-o KIND-o | humanity / mankind, species | рядом |
+| 27 | accurate | SAME-a(=+5) GOOD(=+3) | equal / fair, alike | мимо |
+| 28 | nucleus | PART-o INSIDE(=+5) | core / interior, center | синоним |
+| 29 | supply | MOVE-i E THING-o SOMEONE-o NEAR(=+3) | bring / give, deliver | синоним |
+| 30 | glance | SEE-i TIME-o BIG(=-4) | glance / glimpse, blink | точно |
+
+Итого: точно 11 (10 без имени «Christ»), синоним 8, рядом 3, мимо 8.
