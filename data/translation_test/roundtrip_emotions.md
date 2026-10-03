@@ -12,3 +12,14 @@
 - `NEAR(-)` читается как социальная дистанция (*resentful, contemptuous, lonely*), `WANT(+)` как желание (*lustful, longing*).
 - Социальные эмоции (*ashamed, embarrassed, shy, contempt*) не читаются ни в одном варианте; *hate* тоже.
 - Стабильно верно: радость, грусть, облегчение, экстаз, разочарование, вина, гордость, благодарность, надежда, *anxious* (с `TIME(+3)`).
+
+## Вариант D: направление через смысл, а не через ось
+
+Коды (те же 40 слов, общие 18 без изменений):
+страх `FEEL-a(+4) GOOD(-4) TIME(+3)` (плохое впереди), злость и ненависть `… FIGHT-a`, социальные `… SOMEONE-o` (стыд и смущение `FEEL-a SOMEONE-o SEE-i`), нежность `… TOUCH(-4)`, отвращение `… CONSUME-a`.
+
+Слово или синоним первым ответом: **D 28 из 40** (A 21, B 24, C 25); с запасными вариантами 34. Среди 22 слов, зависящих от варианта: D 15, остальные 8–10. Прирост больше шума (общие слова колеблются 13–16).
+
+- Верно: *angry, afraid, furious, terrified, horrified, disgusted, love, anxious, nervous, lonely, tender, curious, envious, embarrassed*; *hate* запасным (*hatred*).
+- Злость и страх теперь различаются.
+- Мимо: *shy, contempt, pity* (три слова с одним и тем же кодом `FEEL GOOD SOMEONE-o`, читаются друг как друга), *jealous* → *furious*, *amused*, *ashamed* → *shy/embarrassed*.

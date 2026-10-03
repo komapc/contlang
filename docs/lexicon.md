@@ -46,6 +46,8 @@
 
 **Новые оси и корни** (слепой тест на 46 словах, `data/translation_test/roundtrip_axes_rules.md`: слово или синоним 31 из 46, 67%; слова подбирались под оси, поэтому оценка завышена по сравнению со случайными 26–34%). SOMEONE получил ось «лицо», THING — одушевлённости, MOVE — скорости, FEEL — возбуждения. Добавлены **RULE** (закон, правило, управлять) и **FIGHT** (бой, война, ссора) без осей; *peace* = `FIGHT-o MANY(=0)`. Слабые места: *tax, duty, defend, politics*; *though, instead, nevertheless* корней не получают намеренно.
 
+**Эмоции** (слепой тест на 40 словах, `data/translation_test/roundtrip_emotions.md`): `FEEL` (возбуждение) + `GOOD` (приятность) + третий корень по смыслу, а не ось «направления» (`NEAR`/`WANT` дали 24–25 из 40 против 21; по смыслу — 28). Страх `FEEL-a(+4) GOOD(-4) TIME(+3)` (плохое впереди), злость и ненависть `… FIGHT-a`, социальные эмоции `… SOMEONE-o` (+ `SEE-i`). Слабо: *shy, contempt, pity, jealous, amused*.
+
 **Без оси (9):** BODY, SEE, SAY, DO, PLACE, CONSUME, CONTAINER, RULE, FIGHT.
 
 **Правки по тесту на 200 слов** (`data/translation_test/roundtrip_200.md`): убраны HEAR, KIND, WORD (в тесте 0 удач из 7; звук читается через `SAY`, `FEEL`, тип — через `THING`, слово — `SAY-o`). Добавлены **CONSUME** (есть, пить, поглощать; *eat* = `CONSUME-i`, *food* = `THING-o CONSUME-i`, вместо трёх корней eat/food/drink) и **CONTAINER** (ёмкость, как *poki* в токипоне: *bag, pitcher, bottle, box*; `CONTAINER-o`). Обе без оси, пока не проверено. Правило употребления: `ABOVE`, `INSIDE`, `BIG` — только настоящее «верх / внутри / размер», не метафора и не усилитель.
