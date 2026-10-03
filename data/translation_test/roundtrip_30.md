@@ -36,3 +36,20 @@
 | 30 | glance | SEE-i TIME-o BIG(=-4) | glance / glimpse, blink | точно |
 
 Итого: точно 11 (10 без имени «Christ»), синоним 8, рядом 3, мимо 8.
+
+## Второй проход: 8 «мимо» закодированы иначе
+
+Тот же слепой протокол, другой декодер (оригиналов и первых результатов не видел). Новые коды писал я, зная, как декодер ошибся в первый раз.
+
+| слово | новый код | декодер | оценка |
+| :-- | :-- | :-- | :-- |
+| elect | PEOPLE-o MANY(=+4) WANT-i E SOMEONE-o ABOVE(=+4) | worship / admire, follow | мимо |
+| letter (письмо) | THING-o PI WORD-o MOVE-a | letter / message, mail | точно |
+| rebuild | DO-i E PLACE-o SAME(=+5) TIME(=-2) | restore / repair, **renovate** | рядом |
+| protest | SAY-i HEAR(=+4) WANT(=-5) | yell / shout, curse | мимо |
+| difficult | DO-a MAYBE(=-3) | possible / able, feasible | мимо (противоположное) |
+| decline | HAPPEN-i BIG(=-3) TIME(=+2) | begin / start, arrive | мимо |
+| consequently | HAPPEN-e NEAR(=+5) TIME(=+1) | soon / immediately, presently | мимо |
+| accurate | SAME-a(=+5) KNOW-o | fact / truth, consensus | рядом |
+
+Итого: точно 1, рядом 2, мимо 5. Провалы теперь не от двусмысленного кода, а от отсутствия понятий: нет «мочь» (*difficult / possible*), нет «потому что» (*consequently*), нет «выбирать» (*elect*), отрицание через `WANT(=-5)` декодер не читает. В NSM есть CAN, BECAUSE, IF, NOT, MORE, VERY, LIKE — в наш список они не попали, так как в тесте слов их исключал стоп-лист.
