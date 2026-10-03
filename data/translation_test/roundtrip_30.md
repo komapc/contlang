@@ -53,3 +53,7 @@
 | accurate | SAME-a(=+5) KNOW-o | fact / truth, consensus | рядом |
 
 Итого: точно 1, рядом 2, мимо 5. Провалы теперь не от двусмысленного кода, а от отсутствия понятий: нет «мочь» (*difficult / possible*), нет «потому что» (*consequently*), нет «выбирать» (*elect*), отрицание через `WANT(=-5)` декодер не читает. В NSM есть CAN, BECAUSE, IF, NOT, MORE, VERY, LIKE — в наш список они не попали, так как в тесте слов их исключал стоп-лист.
+
+## Третий проход: CAN и ось причины у HAPPEN
+
+Корень CAN (ось «не могу … могу») добавлен; `DO-a CAN(=-3)` → *difficult*, `DO-a CAN(=+4)` → *easy*, `CAN-a(=-5)` → *impossible* (слепой декодер, 3 из 3). Ось HAPPEN «причина … следствие» (−5 … +5): `HAPPEN-o(=+4)` → *result*, `HAPPEN-o(=-4)` → *cause*, `HAPPEN-e(=+4)` → *therefore / consequently*, `HAPPEN-e(=-4)` → *because*, `HAPPEN-i(=+4)` → *follow*, `HAPPEN-a(=+3)` → *resulting* (6 из 6). Оба теста с описанием оси в спецификации, слова подбирались под ось, не случайная выборка.
