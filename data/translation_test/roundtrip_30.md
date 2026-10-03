@@ -57,3 +57,19 @@
 ## Третий проход: CAN и ось причины у HAPPEN
 
 Корень CAN (ось «не могу … могу») добавлен; `DO-a CAN(=-3)` → *difficult*, `DO-a CAN(=+4)` → *easy*, `CAN-a(=-5)` → *impossible* (слепой декодер, 3 из 3). Ось HAPPEN «причина … следствие» (−5 … +5): `HAPPEN-o(=+4)` → *result*, `HAPPEN-o(=-4)` → *cause*, `HAPPEN-e(=+4)` → *therefore / consequently*, `HAPPEN-e(=-4)` → *because*, `HAPPEN-i(=+4)` → *follow*, `HAPPEN-a(=+3)` → *resulting* (6 из 6). Оба теста с описанием оси в спецификации, слова подбирались под ось, не случайная выборка.
+
+## Четвёртый проход: elect, protest, decline (с CAN и осью HAPPEN)
+
+Слепой декодер, по несколько вариантов кода на слово.
+
+| слово | код | декодер | оценка |
+| :-- | :-- | :-- | :-- |
+| elect | DO-i E SOMEONE-o ABOVE(=+4) | serve / obey, worship | мимо |
+| elect | THINK-i MANY(=+4) E SOMEONE-o ABOVE(=+4) | respect / admire, worship | мимо |
+| protest | SAY-i GOOD(=-4) HEAR(=+3) | curse / scold, shout | мимо |
+| protest | PEOPLE-o MANY(=+4) SAY-i WANT(=-5) | **protest** / boycott, complain | точно |
+| decline (уменьшаться) | MOVE-i ABOVE(=-3) BIG(=-2) | sink / drop, descend | рядом |
+| decline (ухудшаться) | HAPPEN-i GOOD(=-2) TIME(=+2) | danger / threat, disaster | мимо |
+| decline (отказать) | SAY-i WANT(=-5) | refuse / deny, **decline** | точно |
+
+Итог: protest и decline решены (в разных значениях), elect нет: понятия «выбирать голосованием» в корнях не выражается.
