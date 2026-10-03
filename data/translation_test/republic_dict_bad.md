@@ -1,0 +1,125 @@
+# Плохие предложения второго прогона (оценка 0–1)
+
+Формат: блок.номер [оценка] причина | начало оригинала
+
+- 0.2 [1] subnational republics point lost; garbled | Although a republic is most often a single sovereign state, subnational state entities that have governments that are republican in nature m
+- 0.3 [1] 159 of 206 garbled; official names claim muddled | As of 2017, 159 of the world's 206 sovereign states use the word "republic" as part of their official names.
+- 0.7 [1] Senate, assemblies, magistrates partly; wealthy aristocrats, details garbled | This constitution was characterized by a Senate composed of wealthy aristocrats wielding significant influence; several popular assemblies o
+- 0.11 [1] "even during Empire" became "just after beginning" | It was used by Roman writers to refer to the state and government, even during the period of the Roman Empire.
+- 0.12 [1] politeia general meaning garbled; contrast muddled | The term politeia can be translated as form of government, polity, or regime, and it does not necessarily imply any specific type of regime 
+- 0.14 [0] translation claim lost entirely | However, apart from the title, modern translations  are generally used.
+- 0.15 [1] Aristotle point garbled; specific type of politeia lost | Aristotle was apparently the first classical writer to state that the term politeia can be used to refer more specifically to one type of po
+- 0.16 [1] general vs specific meaning garbled | In later Latin works the term republic can also be used in a general way to refer to any regime, or to refer specifically to governments whi
+- 0.19 [1] 15th century classical revival roughly present; muddled | The terminology changed in the 15th century as the renewed interest in the writings of Ancient Rome caused writers to prefer classical termi
+- 0.21 [1] multiple meanings of res publica lost | While Bruni and Machiavelli used the term to describe the states of Northern Italy, which were not monarchies, the term res publica has a se
+- 0.23 [1] Cromwell commonwealth vs republic garbled; "near a monarchy" wrong | Notably, during The Protectorate of Oliver Cromwell the word commonwealth was the most common term to call the new monarchless state, but th
+- 0.24 [1] long history of city-state constitutions partly; Aristotle muddled | While the philosophical terminology developed in classical Greece and Rome, as already noted by Aristotle there was already a long history o
+- 0.25 [1] free cities like Venice vague; chronology garbled | After the classical period, during the Middle Ages, many free cities developed again, such as Venice.
+- 0.29 [1] debate about continuum lost; becomes same time | The structure and governance of these states was different from that of any modern republic, so there is debate about the extent to which cl
+- 0.30 [1] Pocock continuous tradition lost | Pocock has argued that a distinct republican tradition stretches from the classical world to the present.
+- 0.31 [1] scholars disagree turned into few know | Other scholars disagree.
+- 0.32 [1] Rahe's claim about few links garbled | Paul Rahe, for instance, argues that the classical republics had a form of government with few links to those in any modern country.
+- 1.1 [1] Garbled; influence on republican thought lost | The political philosophy of the classical republics has influenced republican thought throughout the subsequent centuries.
+- 1.4 [1] Mixture of oligarchy and democracy garbled | One form Aristotle named politeia, which consisted of a mixture of the other forms, oligarchy and democracy.
+- 1.5 [1] Aristotle's ideal-form claim lost, attributed to others | He argued that this was one of the ideal forms of government.
+- 1.12 [1] Pre-classical city-states claim garbled | The term republic is not commonly used to refer to pre-classical city-states, especially if outside Europe and the area which was under Grae
+- 1.25 [1] Degradation of democracy meaning inverted/lost | Modern scholars note the word democracy at the time of the 3rd century BC and later suffered from degradation and could mean any autonomous 
+- 1.27 [0] Wrong: regular meetings became simultaneity | The assembly met regularly.
+- 1.29 [1] Open to free men lost; unrelated claim | At least in some states, attendance was open to all free men.
+- 1.31 [1] Officers obeying assembly lost | Other officers, who rarely receive any mention, obeyed the decisions of the assembly.
+- 2.1 [1] Coordination with assembly garbled into "same as"; council detail partly kept | The chief coordinated his activities with the assembly; in some states, he did so with a council of other nobles.
+- 2.6 [1] Magadha absorbed republics; Rajakumara community garbled | The Empire of Magadha included republican communities such as the community of Rajakumara.
+- 2.7 [1] Village assemblies under local chiefs lost; gramakas kept | Villages had their own assemblies under their local chiefs called gramakas.
+- 2.8 [1] Executive/judicial/military reduced to executing laws and warriors | Their administrations were divided into executive, judicial, and military functions.
+- 2.9 [0] Scholarly disagreement over vague evidence turned into nonsense | Scholars differ over how best to describe these governments, and the vague, sporadic quality of the evidence allows for wide disagreements.
+- 2.11 [1] Uncertainty about popular composition garbled into "same kind" | Despite the assembly's obvious power, it has not yet been established whether the composition and participation were truly popular.
+- 2.12 [1] Arthashastra mentioned; "reflected" vague, handbook kept | This is reflected in the Arthashastra, an ancient handbook for monarchs on how to rule efficiently.
+- 2.13 [1] Key conclusion reversed/garbled; "even more a democracy" | It contains a chapter on how to deal with the saṅghas, which includes injunctions on manipulating the noble leaders, yet it does not mention
+- 2.19 [1] Haakon pressure and 1262 covenant kept; cause-effect garbled | This, combined with pressure from the Norwegian king Haakon IV for the Icelanders to rejoin the Norwegian "family", led the Icelandic chieft
+- 2.22 [1] New republics became "far from beginning", constitutional rule vague | In Europe new republics appeared in the late Middle Ages when a number of small states embraced republican systems of government.
+- 2.23 [1] Small wealthy trading states kept; merchant rise lost | These were generally small, but wealthy, trading states, like the Mediterranean maritime republics and the Hanseatic League, in which the me
+- 2.29 [1] Trading ports and naval control of Mediterranean garbled | Each were large trading ports, and further expanded by using naval power to control large parts of the Mediterranean.
+- 2.30 [1] Republican ideology first developed in Italy; poorly expressed | It was in Italy that an ideology advocating for republics first developed.
+- 2.32 [1] Merchant class development became vague "began trading places" | Across Europe a wealthy merchant class developed in the important trading cities.
+- 3.1 [1] wealth/little power garbled; privileges demand reversed to against rulers | Despite their wealth they had little power in the feudal system dominated by the rural land owners, and across Europe began to advocate for 
+- 3.2 [1] centralized became powerful rulers; city charters became vague laws to communities | The more centralized states, such as France and England, granted limited city charters.
+- 3.3 [1] free imperial cities roughly kept; 'looser governance' muddled | In the more loosely governed Holy Roman Empire, 51 of the largest towns became free imperial cities.
+- 3.4 [1] local power and republican governments garbled; emperor dominion distorted | While still under the dominion of the Holy Roman Emperor most power was held locally and many adopted republican forms of government.
+- 3.7 [0] farmers, no feudal barons contrast lost; wrong claims | Unlike Italy and Germany, much of the rural area was thus not controlled by feudal barons, but by independent farmers who also used communal
+- 3.8 [1] Habsburgs reassert and rebellion kept; farmers missing, garbled | When the Habsburgs tried to reassert control over the region both rural farmers and town merchants joined the rebellion.
+- 3.11 [0] prince remained central figure turned into uniform rule | In the other Russian principalities, the prince remained the central political figure.
+- 3.15 [1] property/guild qualifications lost; replaced with vague claim | In those areas that held elections, property qualifications or guild membership limited both who could vote and who could run.
+- 3.16 [1] hereditary or appointed council lost; garbled | In many states no direct elections were held and council members were hereditary or appointed by the existing council.
+- 3.20 [1] classical writers source lost; Reformation justification partly kept | While the classical writers had been the primary ideological source for the republics of Italy, in Northern Europe, the Protestant Reformati
+- 3.25 [1] trade prosperity and New World garbled | Like the city-states of Italy and the Hanseatic League, both were important trading centres, with a large merchant class prospering from the
+- 3.28 [1] vacant throne garbled; candidates listed but relation distorted | However, the country did not adopt the republican form of government immediately: in the formal declaration of independence (Act of Abjurati
+- 3.30 [1] 1641 war began; Civil War identity partly; extra claim | In 1641 the English Civil War began.
+- 4.2 [1] "began" wrong; de facto monarch softened; continued in name lost | The Dutch Republic continued in name until 1795, but by the mid-18th century the stadtholder had become a de facto monarch.
+- 4.4 [0] says challenge to monarchy, opposite of increase in monarchical power | Along with these initial republican revolts, early modern Europe also saw a great increase in monarchical power.
+- 4.6 [1] reaction against monarch garbled; writers/liberalism partly kept | It also saw a reaction against the total control of the monarch as a series of writers created the ideology known as liberalism.
+- 4.11 [1] both thinkers' view lost; "could not rule" vague, impossibility roughly kept | However, both also felt that a state like France, with 20 million people, would be impossible to govern as a republic.
+- 4.12 [1] Corsica admired; ideal of small communes became "democracy of similar size", garbled | Rousseau admired the republican experiment in Corsica (1755–1769) and described his ideal political structure of small, self-governing commu
+- 4.15 [1] garbled; British king's failure, traitors, troops muddled | The failure of the British monarch to protect the colonies from what they considered the infringement of their rights to representative gove
+- 4.18 [1] book on republics throughout history lost; vague claim | John Adams had notably written a book on republics throughout history.
+- 4.19 [1] Paine's pamphlet read widely; read-aloud and argument garbled | In addition, the widely distributed and popularly read-aloud tract Common Sense, by Thomas Paine, succinctly and eloquently laid out the cas
+- 4.21 [1] natural rights justifying Revolution garbled to "did well against revolution" | The first ten amendments to the Constitution called the United States Bill of Rights, guaranteed certain natural rights fundamental to repub
+- 4.24 [1] client republics by force lost; garbled "republics fighting" | The stunning success of France in the French Revolutionary Wars saw republics spread by force of arms across much of Europe as a series of c
+- 4.29 [1] limited impact reversed into vague positive | Liberal ideology had only a limited impact on these new republics.
+- 5.1 [1] Monarchy form kept but garbled; autocracy/empire relation wrong | In Mexico, this autocracy briefly took the form of a monarchy in the First Mexican Empire.
+- 5.8 [1] 'Only republics in Europe' garbled into 'a few entirely in Europe' | By the start of the 20th century, France, Switzerland and San Marino remained the only republics in Europe.
+- 5.16 [1] Confucian political philosophy garbled into 'elections'; mostly kept right of refusal | These combined with native Confucian inspired political philosophy that had long argued that the populace had the right to reject unjust gov
+- 5.20 [1] Defeat and republic replacing monarchy garbled | Following Greece's defeat in the Greco-Turkish War (1919–22), the monarchy was briefly replaced by the Second Hellenic Republic (1924–35).
+- 5.22 [0] Italy's postwar situation completely garbled | The aftermath of World War II left Italy with a destroyed economy, a divided society, and anger against the monarchy for its endorsement of 
+- 5.23 [1] Revival of republican movement vague; cause garbled | These frustrations contributed to a revival of the Italian republican movement.
+- 5.25 [1] Symbol vs Savoy arms partly kept; rest garbled | The supporters of the republic chose the effigy of the Italia turrita, the national personification of Italy, as their unitary symbol to be 
+- 5.28 [1] Colonies 'in part of Europe' wrongly; main claim distorted | In the years following World War II, most of the remaining European colonies gained their independence, and most became republics.
+- 6.10 [1] Intermingling with other ideologies garbled | Communism also intermingled with other ideologies.
+- 6.15 [1] Separation of powers lost; garbled definition | A republic does not necessarily have a constitution but is often constitutional in the sense of constitutionalism, meaning that it is consti
+- 6.18 [1] Presiding officer of committee lost; "member" wrong | Originally used to refer to the presiding officer of a committee or governing body in Great Britain the usage was also applied to political 
+- 6.29 [1] Opposing-party appointment garbled; cohabitation kept | The rules for appointing the president and the leader of the government, in some republics permit the appointment of a president and a prime
+- 7.2 [1] only "all U.S." fragment, vague | All U.S.
+- 7.4 [1] legitimacy/power claim garbled | In the opinion of some, direct election confers legitimacy upon the president and gives the office much of its political power.
+- 7.5 [1] nine states signing and legitimacy contrast garbled | However, this concept of legitimacy differs from that expressed in the United States Constitution which established the legitimacy of the Un
+- 7.6 [1] electoral college intent partly kept; de facto direct, weighted voting lost | The framers of the Constitution expected the electoral college would avoid people to vote on president directly but passing that function to
+- 7.8 [1] reversed: says president less ruled, great powers | This indirect election subordinates the president to the parliament, and also gives the president limited legitimacy and turns most presiden
+- 7.9 [1] ceremonial powers lost; only Ireland and lesser powers | There are exceptions where elected presidents have only ceremonial powers, such as in Ireland.
+- 7.10 [1] unclear distinction becomes "hardly known, never ending" | The distinction between a republic and a monarchy is not always clear.
+- 7.15 [1] liberal republic term kept; description of democracies garbled | Terms such as "liberal republic" are also used to describe all of the modern liberal democracies.
+- 7.16 [1] self-proclaimed republics acting as hereditary absolute monarchies lost | There are also self-proclaimed republics that act similarly to absolute monarchies with absolute power vested in the leader and passed down 
+- 7.18 [1] not officially monarchies garbled | Neither of these states are or were officially monarchies.
+- 7.19 [1] no constitutional requirement but practice garbled | There is no constitutional requirement that power be passed down within one family, but it has occurred in practice.
+- 7.26 [1] Golden Liberty purpose garbled | The system, known as the Golden Liberty, had developed as a method for powerful landowners to control the crown.
+- 7.28 [1] sovereignty and foreign control garbled | In general being a republic also implies sovereignty as for the state to be ruled by the people it cannot be controlled by a foreign power.
+- 7.29 [1] Soviet republics three criteria only partly | There are important exceptions to this, for example, republics in the Soviet Union were member states which had to meet three criteria to be
+- 7.30 [1] periphery and secession right garbled | be on the periphery of the Soviet Union so as to be able to take advantage of their theoretical right to secede;
+- 7.31 [1] economic self-sufficiency lost | be economically strong enough to be self-sufficient upon secession; and
+- 8.1 [1] "supra-national" became sovereign; argument reasoning garbled | It is sometimes argued that the former Soviet Union was also a supra-national republic, based on the claim that the member states were diffe
+- 8.3 [1] Delegated functions garbled into military given to federation | Each republic had its parliament, government, institute of citizenship, constitution, etc., but certain functions were delegated to the fede
+- 8.4 [1] Self-determination vaguely kept; AVNOJ relation garbled | Each republic also had a right of self-determination according to the conclusions of the second session of the AVNOJ and according to the fe
+- 8.5 [1] Cantons' republican form garbled; sovereign history partly kept | In Switzerland, all cantons can be considered to have a republican form of government, with constitutions, legislatures, executives and cour
+- 8.6 [1] Romance cantons called republics; reasoning garbled | As a consequence, several Romance-speaking cantons are still officially referred to as republics, reflecting their history and will of indep
+- 8.9 [1] Reason for requirement garbled | This was required because the states were intended to create and enforce most domestic laws, with the exception of areas delegated to the fe
+- 8.11 [1] Purposes garbled; 13 republics partly kept | Requiring the states to be a republic in form was seen as protecting the citizens' rights and preventing a state from becoming a dictatorshi
+- 8.12 [0] Meaning lost; only republics could join not conveyed | Additionally, this requirement ensured that only other republics could join the union.
+- 8.14 [1] Confederation then ratification garbled | These independent states initially formed a loose confederation called the United States and then later formed the current United States by 
+- 8.15 [1] Constitution creating a republic union roughly kept | Constitution, creating a union that was a republic.
+- 8.16 [1] New states must be republics garbled | Any state joining the union later was also required to be a republic.
+- 8.18 [1] Bodin definition and inclusion of monarchies garbled | French philosopher Jean Bodin's definition of the republic was "the rightly ordered government of a number of families, and of those things 
+- 8.19 [1] King as head of shared body garbled | In medieval texts, "republic" was used to refer to the body of shared interest with the king at its head.
+- 8.22 [1] Popular sovereignty kept; shared values garbled | Instead, republics were defined as any state based on popular sovereignty and whose institutions were based on shared values.
+- 8.23 [1] Power held by people or fraction garbled | In a republic, power is held by the people or a fraction of it, and not by a single person, with the head of state being elected directly or
+- 8.24 [1] Direct versus representative democracy only vaguely kept | In a democratic state, power is necessarily wielded by the people of the state either directly, as in direct democracy or indirectly as in r
+- 8.25 [1] Compatibility inverted or garbled | As such, they aren't incompatible concepts; see democratic republic.
+- 8.27 [1] Madison's view partly kept; details garbled | A variation of this argument was James Madison's version, who identified republic with the rule of the majority, directly or by representati
+- 8.28 [1] Adams classical definition partly kept; mixture garbled | Founders like John Adams opposed the new definitions of the Jeffersonians and similar circles, and kept the classical definition, meaning go
+- 8.29 [1] Balancing people and aristocracy garbled | To them, the state and national constitutions weren't "popular governments" but governments balancing the people and aristocracy giving a ho
+- 8.30 [1] Distinction claim garbled | The term democracy is sometimes used interchangeably with the term republic, while others have made sharp distinctions between the two.
+- 8.32 [1] Aristocracy and lots kept; Marat quote context garbled | When the supreme power is lodged in the hands of a part of the people, it is then an aristocracy.' and repeated the insight that Aristotle h
+- 9.2 [1] prescriptive works on how governments should function lost; vague | These writers also wrote important prescriptive works describing how such governments should function.
+- 9.11 [1] further history and modern republic function mostly lost | These subsequent writers have further explored the history of the idea, and also outlined how a modern republic should function.
+- 9.13 [1] Madison and Federalist 10 kept; narrower meaning lost | This narrower understanding of the term was originally developed by James Madison and notably employed in Federalist Paper No. 10.
+- 9.14 [1] early adoption, Webster 1828 vaguely; meaning lost | This meaning was widely adopted early in the history of the United States, including in Noah Webster's dictionary of 1828.
+- 9.15 [0] novel meaning claim garbled and wrong | It was a novel meaning to the term; representative democracy was not an idea mentioned by Machiavelli and did not exist in the classical rep
+- 9.20 [1] two later cases establishing definition lost; wrong | In two later cases, it did establish a basic definition.
+- 9.23 [1] republic not synonymous with republican form garbled | However, the term republic is not synonymous with the republican form.
+- 9.29 [1] Bailyn kept; "as or more important than liberalism" garbled | In the 1960s and 1970s, Bernard Bailyn began to argue that republicanism was just as, or even more important than liberalism in the creation
