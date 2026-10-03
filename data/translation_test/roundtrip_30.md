@@ -73,3 +73,16 @@
 | decline (отказать) | SAY-i WANT(=-5) | refuse / deny, **decline** | точно |
 
 Итог: protest и decline решены (в разных значениях), elect нет: понятия «выбирать голосованием» в корнях не выражается.
+
+## Пятый проход: ось THINK «сомневаться … решить» вместо корня «выбрать»
+
+| код | декодер | оценка |
+| :-- | :-- | :-- |
+| THINK-i(=+5) | **decide** / conclude, resolve | точно (выбрать ≈ решить) |
+| THINK-i(=+5) E SOMEONE-o ABOVE(=+4) | appoint / **elect**, promote | точно |
+| THINK-i(=-4) | hesitate / **doubt**, wonder | точно |
+| THINK-i(=+5) E THING-o MANY(=+1) («выбрать из многих») | consider / ponder, suppose | мимо |
+| THINK-o(=+5) | **decision** / conclusion | точно |
+| THINK-a(=+4) | **decisive** / determined | точно |
+
+Итог: 5 из 6; «выбрать из нескольких» как таковое не выражается, «решить» и «избрать» выражаются.
