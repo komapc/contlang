@@ -5,7 +5,7 @@ def check(code,maxdict=40):
     c=re.sub(r'"[^"]*"','Q',code)
     errs=[]
     for t in re.findall(r"[A-Za-z@][A-Za-z0-9@]*",c):
-        if t=="Q" or re.fullmatch(r"[oiae]?[TNMACD]?",t): continue
+        if t=="Q" or re.fullmatch(r"[oiae]?[TNMACDRV]?",t): continue
         if t.isupper() and t not in roots and t not in part: errs.append(t)
         elif t.startswith("@") and not (t[1:].isdigit() and 1<=int(t[1:])<=maxdict): errs.append(t)
     for w in c.split("|")[:-1]:
