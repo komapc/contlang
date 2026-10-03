@@ -206,3 +206,76 @@
 | 198 | waste | `DO-i E THING-o GOOD(=-4)` | ruin | синоним |
 | 199 | board | `THING-o SIDE-a BIG(=-3)` | edge | мимо |
 | 200 | swing | `MOVE-i SIDE(=+3) MANY(=+3)` | march | мимо |
+
+## Перекодирование 64 слов «мимо» (новые корни и правила)
+
+После правок словаря (убраны HEAR, KIND, WORD; добавлены CONSUME, CONTAINER; ABOVE/INSIDE/BIG только в прямом смысле) ассистент заново закодировал 64 слова с оценкой «мимо»; два слепых декодера (sonnet) раскодировали их по обновлённой спецификации.
+
+**Итог:** точно 3, синоним 2, рядом 15, мимо 44. Из 64 вернулось 5 (8%) слов или синонимов, ещё 15 «рядом». Общий результат на 200 словах: слово или синоним 91 (45,5%) против 86 (43%).
+
+| слово | новый код | обратный перевод | оценка |
+| :-- | :-- | :-- | :-- |
+| detergent | `THING-o DO-i E TOUCH-a GOOD(=+4)` | glove \| mitten \| sock | мимо |
+| plain | `SEE-a GOOD(=0)` | look \| glance \| appear | мимо |
+| conduct | `DO-i E PEOPLE-o MOVE-i` | dance \| march \| parade | мимо |
+| infectious | `MOVE-a FEEL-o GOOD(=-4) E PEOPLE-o` | fear \| terror \| dread | мимо |
+| young | `LIVE-a(=+4) BIG(=-3)` | young \| baby \| child | точно |
+| stock | `THING-o MANY(=+4) CONTAINER-o` | library \| shelf \| warehouse | мимо |
+| laboratory | `PLACE-o SEE-i KNOW-o` | museum \| window \| observatory | рядом |
+| unstructured | `PART-a SAME(=-5)` | different \| other \| piece | мимо |
+| submit | `DO-i WANT(=-3) E SOMEONE-o` | annoy \| bother \| refuse | мимо |
+| draw | `DO-i E SEE-o TOUCH-i` | massage \| caress \| examine | мимо |
+| appoint | `THINK-i(=+5) E SOMEONE-o DO-o` | judge \| resolve \| decide | мимо |
+| gas | `THING-o MOVE-a SEE-a MAYBE(=-4)` | ghost \| invisible \| mirage | мимо |
+| property | `THING-o PI SOMEONE-o` | possession \| ownership \| belonging | синоним |
+| effluent | `THING-o GOOD(=-3) MOVE-a` | clumsy \| awkward \| junk | мимо |
+| college | `PLACE-o KNOW-i SOMEONE-o` | teacher \| guide \| informant | мимо |
+| finite | `MANY-a(=+3) PART(=+5)` | most \| majority \| many | мимо |
+| economical | `CONSUME-a BIG(=-3) GOOD(=+3)` | snack \| bite \| nibble | мимо |
+| member | `SOMEONE-o PART-a PEOPLE-o` | neighbor \| citizen \| member | рядом |
+| buy | `MOVE-i E THING-o SAME(=-3)` | replace \| exchange \| swap | рядом |
+| regardless | `SAME-e(=+5) GOOD(=0)` | fine \| okay \| average | мимо |
+| tree | `LIVE-o TOUCH-a BIG(=+3)` | elephant \| whale \| beast | мимо |
+| glue | `DO-i E PART-o TOUCH-i` | repair \| fix \| handle | рядом |
+| appreciate | `KNOW-i E THING-o GOOD(=+4)` | recommend \| advise \| appreciate | рядом |
+| investigate | `SEE-i E HAPPEN-o(=-4)` | predict \| foresee \| witness | мимо |
+| enlist | `DO-i PART-a PEOPLE-o` | participate \| join \| serve | рядом |
+| spin | `MOVE-i E BODY-o SAME(=+5)` | imitate \| copy \| mirror | мимо |
+| integration | `DO-o PART(=+5) NEAR(=+5)` | here \| present \| embrace | мимо |
+| pitcher | `CONTAINER-o CONSUME-o` | plate \| bowl \| cup | рядом |
+| incredible | `GOOD-a(=+5) THINK(=-4)` | brilliant \| genius \| wise | мимо |
+| earth | `PLACE-o MANY(=+5) LIVE-o` | forest \| jungle \| zoo | мимо |
+| desk | `THING-o PLACE-o THINK-i` | library \| school \| study | рядом |
+| reply | `SAY-i HAPPEN-e(=+4)` | announce \| proclaim \| explain | рядом |
+| reappear | `SEE-i SAME-e(=+5) MANY(=+2)` | watch \| crowd \| audience | рядом |
+| already | `TIME-e(=-2)` | recently \| lately \| earlier | рядом |
+| arbitrarily | `DO-e MAYBE(=-3)` | try \| attempt \| perhaps | мимо |
+| erupt | `HAPPEN-i BIG(=+5) MOVE-e` | explode \| crash \| burst | синоним |
+| article | `SAY-o MANY(=+3) THING-o` | language \| speech \| vocabulary | мимо |
+| breathe | `CONSUME-i THING-o MOVE-a` | food \| meal \| feed | мимо |
+| baby | `SOMEONE-o LIVE-a(=+3) BIG(=-5)` | baby \| infant \| child | точно |
+| vocational | `KNOW-a DO-o` | skill \| expert \| professional | рядом |
+| scan | `SEE-i MOVE-e MANY(=+4)` | parade \| march \| run | мимо |
+| food | `THING-o CONSUME-i` | eat \| food \| meal | рядом |
+| condition | `HAPPEN-o TIME(=0)` | now \| moment \| today | мимо |
+| color | `SEE-o PART-o THING-o` | view \| scene \| landscape | мимо |
+| behave | `DO-i SOMEONE-a GOOD(=+2)` | help \| serve \| assist | мимо |
+| flow | `MOVE-o CONSUME-o` | diet \| feast \| hunger | мимо |
+| coffee | `CONSUME-o THINK-i LIVE(=+3)` | cook \| restaurant \| kitchen | мимо |
+| bag | `CONTAINER-o MOVE-a` | bag \| suitcase \| carry | точно |
+| though | `HAPPEN-e(=+4) SAME(=-3)` | suddenly \| quickly \| unexpectedly | мимо |
+| primary | `HAPPEN-a(=-4)` | unfortunate \| accidental \| unlikely | мимо |
+| found | `DO-i E HAPPEN-o(=-5)` | cause \| create \| start | рядом |
+| conjugate | `DO-i E SAY-o MANY(=+3)` | talk \| discuss \| converse | мимо |
+| sheet | `THING-o TOUCH-a BIG(=-4)` | pebble \| button \| crumb | мимо |
+| utilize | `DO-i E THING-o WANT(=+3)` | desire \| request \| ask | мимо |
+| duly | `DO-e GOOD(=+3) MAYBE(=+4)` | definitely \| surely \| certainly | рядом |
+| dominate | `DO-i E SOMEONE-o WANT(=-4)` | refuse \| reject \| dislike | мимо |
+| famous | `SOMEONE-a PEOPLE-o KNOW-i` | teacher \| scholar \| wise | мимо |
+| responsibility | `DO-o PI SOMEONE-o GOOD(=+3)` | hero \| benefactor \| helper | мимо |
+| hang | `DO-i E THING-o ABOVE(=+3) TOUCH-i` | climb \| lift \| hug | мимо |
+| concrete | `THING-o TOUCH-a PLACE-o` | location \| spot \| surface | мимо |
+| plant | `LIVE-o MOVE-a MAYBE(=-5)` | statue \| corpse \| stone | мимо |
+| sharp | `TOUCH-a GOOD(=-4)` | cruel \| harsh \| ugly | мимо |
+| board | `THING-o LIVE-a(=-3) TOUCH-a` | fossil \| corpse \| bone | мимо |
+| swing | `MOVE-i MANY(=+4) SAME(=+3)` | flock \| swarm \| gather | мимо |
