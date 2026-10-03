@@ -279,3 +279,24 @@
 | sharp | `TOUCH-a GOOD(=-4)` | cruel \| harsh \| ugly | мимо |
 | board | `THING-o LIVE-a(=-3) TOUCH-a` | fossil \| corpse \| bone | мимо |
 | swing | `MOVE-i MANY(=+4) SAME(=+3)` | flock \| swarm \| gather | мимо |
+
+## Проверка «MOVE + INSIDE» для давать / брать
+
+Идея: выразить *give / take* через `MOVE-i E THING-o INSIDE(=∓5)` без отдельного корня. Слепой декодер, 12 кодов.
+
+| задумано | код | прочитано | оценка |
+| :-- | :-- | :-- | :-- |
+| give | `MOVE-i E THING-o INSIDE(=-5)` | remove / extract | мимо |
+| take | `MOVE-i E THING-o INSIDE(=+5)` | insert / put in | мимо |
+| give | `MOVE-i E THING-o SOMEONE-o` | give / hand | точно |
+| take | `MOVE-i E THING-o NEAR(=+5)` | bring / fetch | рядом |
+| sell | `… INSIDE(=-5) SAME(=-3)` | export / eject | рядом |
+| buy | `… INSIDE(=+5) SAME(=-3)` | import / admit | рядом |
+| steal | `… INSIDE(=+5) GOOD(=-4)` | stuff / cram | мимо |
+| receive | `MOVE-i THING-o INSIDE(=+4)` | enter / sink | мимо |
+| donate | `… INSIDE(=-5) GOOD(=+4)` | release / free | мимо |
+| lend | `… INSIDE(=-4) TIME(=+3)` | extract / withdraw | мимо |
+| borrow | `… INSIDE(=+4) TIME(=+3)` | invest / deposit | мимо |
+| deliver | `MOVE-i E THING-o PLACE-o` | put / place | мимо |
+
+**Вывод:** INSIDE читается как физическое «внутрь / наружу» (вынуть, вставить), а не как передача. Работает только явный получатель (`SOMEONE-o`), и то лишь для *give*. *Take*, *steal*, *lend*, *borrow* через MOVE + INSIDE не выражаются.
