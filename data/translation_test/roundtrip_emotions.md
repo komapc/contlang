@@ -23,3 +23,12 @@
 - Верно: *angry, afraid, furious, terrified, horrified, disgusted, love, anxious, nervous, lonely, tender, curious, envious, embarrassed*; *hate* запасным (*hatred*).
 - Злость и страх теперь различаются.
 - Мимо: *shy, contempt, pity* (три слова с одним и тем же кодом `FEEL GOOD SOMEONE-o`, читаются друг как друга), *jealous* → *furious*, *amused*, *ashamed* → *shy/embarrassed*.
+
+## Вариант E: перекодировка слабых слов и 14 новых слов (20 кодов, один декодер)
+
+Шесть слов, проваленных в D, получили другие третьи корни: *shy* `FEEL-a(-1) SOMEONE-o NEAR(-4)`, *contempt* `… SOMEONE-o BIG(-4)`, *pity* `… SOMEONE-o GIVE(+3)`, *jealous* `FEEL-a(+3) SOMEONE-o WANT(+5)`, *ashamed* `FEEL-a(-2) GOOD(-4) SEE-i`, *amused* `FEEL-a(+2) GOOD(+3) KNOW(-3)`. Ещё 14 новых слов закодированы по тем же правилам без подгонки.
+
+Слово или синоним первым ответом: 9 из 20 (с запасными 11).
+
+- **Шесть перекодированных:** верно только *pity* (→ *compassion*). *Shy* → *loneliness*, *contempt* → *humility*, *jealous* → *love*, *ashamed* → *envy*, *amused* → *curiosity*. Социальные эмоции на трёх корнях не читаются.
+- **14 новых:** 8 верно, 2 запасным, 4 мимо (*bitter, suspicious, offended, sympathetic*). Работают правила: прошлое `TIME(-)` (*nostalgic, regretful*), невозможность `CAN(-5)` (*hopeless, frustrated*), неожиданность `KNOW(-4)` (*startled*), бег `MOVE(+5)` (*panicked*).
