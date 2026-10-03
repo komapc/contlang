@@ -54,7 +54,7 @@
 | этот / здесь / сейчас | `SOMEONE NEAR(=+3)` | `THING NEAR(=+3)` | `PLACE NEAR(=+3)` | `TIME(=0)` |
 | тот / там / тогда | `SOMEONE NEAR(=-3)` | `THING NEAR(=-3)` | `PLACE NEAR(=-3)` | `TIME(=-3)` или `+3` |
 | всё / везде / всегда | `SOMEONE MANY(=+5)` | `THING MANY(=+5)` | `PLACE MANY(=+5)` | `TIME MANY(=+5)` |
-| ничто / нигде / никогда | `SOMEONE MANY(=-5)` | `THING MANY(=-5)` | `PLACE MANY(=-5)` | `TIME MANY(=-5)` |
+| ничто / нигде / никогда | `SOMEONE MANY(=0)` | `THING MANY(=0)` | `PLACE MANY(=0)` | `TIME MANY(=0)` |
 
 Открыто: у «когда» ось NEAR не подходит (там своя ось TIME); «сейчас / тогда» пока записаны через TIME.
 
