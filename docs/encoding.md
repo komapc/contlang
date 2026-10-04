@@ -13,7 +13,7 @@
 
 ## Связки: и, также, поэтому
 
-- «И, также, ещё» — частица `AND` между сочиняемым: `X AND Y`, `[ … ] AND [ … ]`, в перечислении перед последним элементом; `JOIN`, `CHANGE`, `SAME` как связки не использовать (декодеры читали их буквально: *joined, changed*; [roundtrip_wiki4](../data/translation_test/roundtrip_wiki4.md)) **без теста**.
+- «И, также, ещё» — частица `AND` между сочиняемым: `X AND Y`, `[ … ] AND [ … ]`, в перечислении перед последним элементом; `JOIN`, `CHANGE`, `SAME` как связки не использовать (декодеры читали их буквально: *joined, changed*; [roundtrip_wiki4](../data/translation_test/roundtrip_wiki4.md)). Проверено ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)): `AND` в 39 кодах из 60, декодеры читают её как *and / also* (54 раза), буквальных «joined» 2 вместо 8.
 
 ## Против, причина, решение
 
