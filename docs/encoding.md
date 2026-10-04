@@ -95,3 +95,11 @@
 - Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) MATTER(=-5) | i`, *drink* = `CONSUME(=+5) MATTER(=0) | i`, *inhale* = `CONSUME(=+5) MATTER(=+5) | i`, *exhale* = `CONSUME(=-5) MATTER(=+5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
 - Речь и слух: *speak* = `CONSUME(=-5) SAY | i`, *listen* = `CONSUME(=+5) SAY CARE(=+3) | i`.
 - Не читается: *write* (`CONSUME(=-5) SEE` → *show*), *read* (`CONSUME(=+5) SEE` → *watch*, у одного декодера верно). Принято как потеря.
+
+## Побуждение
+
+([roundtrip_causative](../data/translation_test/roundtrip_causative.md), 25 из 32 верно, ещё 3 запасным)
+
+- Метка `K` на глаголе: подлежащее воздействует на дополнение `E`, чтобы оно совершило или претерпело действие. `K-5` запретить, `K-4` помешать, `K-2` отговорить, `K0` разрешить, `K+3` сделать / убедить, `K+4` заставить, `K+5` принудить.
+- Что именно вызывается, задаёт корень глагола: *make / prevent* = `DO | i K+3 / K-4`, *feed* = `CONSUME | i K+4`, *teach* = `KNOW | i K+4`, *frighten* = `FEEL(=+4) GOOD(=-4) | i K+4`, *force* = `DO WANT(=-5) | i K+5`, *persuade* = `SAY THINK(=+5) | i K+3`, *allow* = `RULE(=+3) | i K0`, *forbid* = `RULE(=+4) DO | i K-5`.
+- *Induce / encourage* (`K+2…3`) путаются с *have / get / entice*.
