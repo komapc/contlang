@@ -6,6 +6,7 @@
 
 - Действия без своего корня — через `DO-i E …` (делать, вызывать) или `SAY-i …` (говорить, просить) ([roundtrip_30](../data/translation_test/roundtrip_30.md)).
 - «Мочь, трудно, возможно» — `CAN` (`DO CAN(=-3) | a` — *difficult*); `MAYBE` вместо `CAN` не использовать.
+- **Термины в кавычках.** Названия институтов и должностей (*parliament, president, official, company*), химические вещества и минералы (*sulfur dioxide, silicate*), технические и научные термины без корня (*railway, bellows, furnace, tephra, gluten*) пишутся в кавычках как есть, а не собираются из корней. В тесте на 60 предложениях ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)) предложения с такими кавычками получили 2,35 из 3, остальные 1,85; собранные из корней термины читались как *price controls* (вместо *company*), *mechanical parts* (вместо *furnace*), *the authorities* (вместо *Parliament*). Обычные слова (*water, house, food*) в кавычки не ставить.
 - Количество — `MANY` (ноль — ни одного, +5 — все), точные числа цифрами в кавычках.
 - `ABOVE`, `INSIDE`, `BIG` — только настоящие «верх / внутри / размер»; метафора (*roof, coffee, desk*) и усилитель (`BIG(=+5)` как «очень») почти всегда читаются неверно ([roundtrip_200](../data/translation_test/roundtrip_200.md)).
 - Не злоупотреблять `ABOVE` для «важного»: *elect* через `ABOVE(=+4)` читается как *worship*.
