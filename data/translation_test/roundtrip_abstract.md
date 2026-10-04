@@ -4,7 +4,7 @@
 
 | # | слово | A | B | попаданий |
 | --: | :-- | :-- | :-- | --: |
-| 1 | idea | `THING ABSTRACT(=+5) \| o` → thought, idea | `THINK ABSTRACT(=+5) \| o` → idea | 2/2 |
+| 1 | idea | `THINK(=0) ABSTRACT(=+5) \| o` → thought, idea | `THINK ABSTRACT(=+5) \| o` → idea | 2/2 |
 | 2 | theory | `KNOW(=+1) THINK ABSTRACT(=+5)` → concept | `THINK ABSTRACT(=+5) PART(=+5)` → philosophy, theory | 1/2 |
 | 3 | principle | `RULE(=+1) THINK ABSTRACT(=+5)` → principle | `RULE(=0) ABSTRACT(=+5)` → principle | 2/2 |
 | 4 | belief | `KNOW(=+2) THINK` → knowledge | `THINK KNOW(=+3)` → belief | 1/2 |
