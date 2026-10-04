@@ -5,18 +5,18 @@
 ## Общее
 
 - Действия без своего корня — через `DO-i E …` (делать, вызывать) или `SAY-i …` (говорить, просить) ([roundtrip_30](../data/translation_test/roundtrip_30.md)).
-- «Мочь, трудно, возможно» — `CAN` (`DO CAN(=-3) | a` — *difficult*); `MAYBE` вместо `CAN` не использовать.
+- «Мочь, трудно, возможно» — `CAN` (`DO CAN(=-3) | a` — *difficult*); «возможно, может быть» — метка `M-3`; корня `MAYBE` нет.
 - **Животные, растения, элементы — латинскими и химическими названиями, всегда в кавычках** (решение автора): `"Serpentes"` змея, `"Canis"` собака, `"Quercus"` дуб, `"iodine"` йод; родовые категории (*animal, plant, tree, bird, fish*) — корнями (`THING(=+4)`, `THING(=0)`…). Причина: в тесте на 100 словах *snake* и *iodine* из корней читались как *animal*, *rock*.
 - **Термины в кавычках.** Названия институтов и должностей (*parliament, president, official, company*), химические вещества и минералы (*sulfur dioxide, silicate*), технические и научные термины без корня (*railway, bellows, furnace, tephra, gluten*) пишутся в кавычках как есть, а не собираются из корней. В тесте на 60 предложениях ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)) предложения с такими кавычками получили 2,35 из 3, остальные 1,85; собранные из корней термины читались как *price controls* (вместо *company*), *mechanical parts* (вместо *furnace*), *the authorities* (вместо *Parliament*). Обычные слова (*water, house, food*) в кавычки не ставить.
 - Количество — `MANY` (ноль — ни одного, +5 — все), точные числа цифрами в кавычках.
 - `ABOVE`, `INSIDE`, `BIG` — только настоящие «верх / внутри / размер»; метафора (*roof, coffee, desk*) и усилитель (`BIG(=+5)` как «очень») почти всегда читаются неверно ([roundtrip_200](../data/translation_test/roundtrip_200.md)).
 - Не злоупотреблять `ABOVE` для «важного»: *elect* через `ABOVE(=+4)` читается как *worship*.
-- Еда и питьё — `CONSUME`, ёмкость — `CONTAINER`; корней HEAR, KIND, WORD, PEOPLE больше нет (PEOPLE = `SOMEONE MANY(=+4) | o`).
+- Еда и питьё — `CONSUME`, ёмкость — `THING INSIDE | o` или `PLACE INSIDE | o` (корень `CONTAINER` убран); корней HEAR, KIND, WORD, PEOPLE больше нет (PEOPLE = `SOMEONE MANY(=+4) | o`).
 
 ## Связки: и, также, поэтому
 
 - «И, также, ещё» — частица `AND` между сочиняемым: `X AND Y`, `[ … ] AND [ … ]`, в перечислении перед последним элементом; `JOIN`, `CHANGE`, `SAME` как связки не использовать (декодеры читали их буквально: *joined, changed*; [roundtrip_wiki4](../data/translation_test/roundtrip_wiki4.md)). Проверено ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)): `AND` в 39 кодах из 60, декодеры читают её как *and / also* (54 раза), буквальных «joined» 2 вместо 8.
-- **`AND` с модификаторами** (слепой тест, 2 кодировщика × 2 декодера, 11 предложений; [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md)): оси берутся у самой частицы, порядок слов исходный. `AND SAME(=-5)` — *но, а, тогда как* (4/4 верно); `AND SAME(=-2)` — *хотя* (4/4); `AND HAPPEN(=+4)` — *поэтому, так что* (2/2); `AND HAPPEN(=-4)` — *потому что* (2/2); `AND BIG(=+4)` — *тем более, не говоря уже* (*let alone* 2/2, *what is more* читается как простое *and* + усиление); `AND MAYBE(=-3)` — *или* (2/2). `LA` остаётся для *если / когда*.
+- **`AND` с модификаторами** (слепой тест, 2 кодировщика × 2 декодера, 11 предложений; [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md)): оси берутся у самой частицы, порядок слов исходный. `AND SAME(=-5)` — *но, а, тогда как* (4/4 верно); `AND SAME(=-2)` — *хотя* (4/4); `AND HAPPEN(=+4)` — *поэтому, так что* (2/2); `AND HAPPEN(=-4)` — *потому что* (2/2); `AND BIG(=+4)` — *тем более, не говоря уже* (*let alone* 2/2, *what is more* читается как простое *and* + усиление); `AND MAYBE(=-3)` (теперь `AND | M-3`, не проверено) — *или* (2/2). `LA` остаётся для *если / когда*.
 
 ## Против, причина, решение
 
@@ -117,7 +117,7 @@
 
 - Ось `ABSTRACT`: −5 физическое, осязаемое … +5 умственное, отвлечённое. Она не про область (это `ART`), а про осязаемость.
 - Прилагательные: *concrete* = `ABSTRACT(=-5) | a`, *abstract* = `ABSTRACT(=+5) | a`, *tangible* = `TOUCH CAN ABSTRACT(=-5) | a`, *theoretical* = `KNOW ABSTRACT(=+5) | a` (путается с *speculative*).
-- Мысль: *idea* = `THINK ABSTRACT(=+5) | o`, *principle* = `RULE ABSTRACT(=+5) | o`, *imply* = `SAY ABSTRACT(=+5) | i`, *assume / suppose* = `THINK(=+3) MAYBE(=-1) | i` (между собой сливаются).
+- Мысль: *idea* = `THINK ABSTRACT(=+5) | o`, *principle* = `RULE ABSTRACT(=+5) | o`, *imply* = `SAY ABSTRACT(=+5) | i`, *assume / suppose* = `THINK(=+3) | i M-1` (между собой сливаются).
 - Физическое действие: *shake* = `MOVE(=+2) ABSTRACT(=-5) | i`, *tumble* = `MOVE ABOVE(=-4) CARE(=-4) | i`, *kick* = `TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i` (путается с *hit*).
 - Не различаются: *theory / concept / philosophy*, *belief / knowledge*, *rattle / rumble*.
 

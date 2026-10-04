@@ -22,7 +22,6 @@ AXES = {
     "ABOVE": ("above up high over upward", "below down low under downward"),
     "LIVE": ("alive living lively vital animate", "dead death lifeless dying deceased"),
     "SAME": ("same identical equal similar alike", "different opposite unlike distinct dissimilar"),
-    "MAYBE": ("certain sure definitely surely absolutely", "impossible never unlikely doubtful improbable"),
     "TIME": ("future later soon tomorrow upcoming", "past ago earlier yesterday former"),
     "INSIDE": ("inside within interior internal indoors", "outside external exterior outer outdoors"),
     "PART": ("whole entire complete total full", "part piece fragment bit fraction"),
