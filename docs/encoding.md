@@ -71,3 +71,11 @@
 - Человек дела — `SOMEONE ART(=±n) …`: *engineer* = `SOMEONE ART(=-4) DO | o`, *scientist* = `SOMEONE ART(=-4) KNOW | o`, *artist* = `SOMEONE ART(=+5) DO | o`.
 - Устройства — `THING(=-5)` и действие: *machine* = `THING(=-5) MOVE DO | o`, *computer* = `THING(=-5) THINK ART(=-5) | o`.
 - Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*; `ART(=+3) PLACE LIVE` → *theater*). Принято как потеря.
+
+## Цена, тщательность, присоединение
+
+([roundtrip_value_care_join](../data/translation_test/roundtrip_value_care_join.md))
+
+- Цена — корень `VALUE` (−5 дёшево … +5 дорого): *expensive* = `VALUE(=+4) | a`, *cheap* = `VALUE(=-4) | a`, *price* = `VALUE | o`; 10 из 10. Купить и продать — с `GIVE`: *buy* = `GIVE(=-3) VALUE | i`, *sell* = `GIVE(=+3) VALUE | i`, но декодер может перепутать направление.
+- Тщательность — корень `CARE` (−5 небрежно … +5 тщательно): *carefully* = `CARE(=+3) | e`, *carelessly* = `CARE(=-3) | e`, *thoroughly* = `CARE(=+5) PART(=+2) | e`, *hastily* = `CARE(=-5) MOVE(=+4) | e`, *meticulous* = `CARE(=+5) PART(=-4) | a I+4`; 6 из 6.
+- Присоединение — корень `JOIN` (−5 отделить … +5 присоединить): *join* = `JOIN(=+3) | i`, *separate* = `JOIN(=-3) PART | i`, *remove* = `JOIN(=-4) | i`; *add / attach / unite* сливаются, *add* не читается.

@@ -47,6 +47,8 @@ AXES = {
     "CHANGE": ("change transform alter vary shift", "remain stay constant stable unchanged"),
     "PARTICULAR": ("particular specific unique peculiar distinct", "general common universal generic typical"),
     "JOIN": ("join add attach connect combine unite", "separate remove detach disconnect divide subtract"),
+    "VALUE": ("expensive valuable precious costly priceless wealthy", "cheap worthless useless free poor"),
+    "CARE": ("carefully thoughtfully meticulously methodically cautiously accurately", "carelessly casually sloppily hastily recklessly roughly"),
     "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
 }
 PROBES = "member regime function union party committee institution specific influence protect group team society class".split()
