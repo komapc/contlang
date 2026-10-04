@@ -79,3 +79,11 @@
 - Цена — корень `VALUE` (−5 дёшево … +5 дорого): *expensive* = `VALUE(=+4) | a`, *cheap* = `VALUE(=-4) | a`, *price* = `VALUE | o`; 10 из 10. Купить и продать — с `GIVE`: *buy* = `GIVE(=-3) VALUE | i`, *sell* = `GIVE(=+3) VALUE | i`, но декодер может перепутать направление.
 - Тщательность — корень `CARE` (−5 небрежно … +5 тщательно): *carefully* = `CARE(=+3) | e`, *carelessly* = `CARE(=-3) | e`, *thoroughly* = `CARE(=+5) PART(=+2) | e`, *hastily* = `CARE(=-5) MOVE(=+4) | e`, *meticulous* = `CARE(=+5) PART(=-4) | a I+4`; 6 из 6.
 - Присоединение — корень `JOIN` (−5 отделить … +5 присоединить): *join* = `JOIN(=+3) | i`, *separate* = `JOIN(=-3) PART | i`, *remove* = `JOIN(=-4) | i`; *add / attach / unite* сливаются, *add* не читается.
+
+## Тон
+
+([roundtrip_tone](../data/translation_test/roundtrip_tone.md), 26 из 32 верно, 5 рядом)
+
+- Манера обращения с людьми — корень `TONE` (−5 грубо, холодно, враждебно … +5 вежливо, тепло, искренне): *polite* = `TONE(=+4) | a`, *rude* = `TONE(=-4) | a`, *politely* = `TONE(=+4) | e`, *rudely* = `TONE(=-4) | e`.
+- Сочетания: *harsh* = `TONE(=-4) TOUCH(=+4) | a`, *warm* = `TONE(=+4) HEAT(=+2) | a`, *cold* = `TONE(=-4) HEAT(=-3) | a`, *hostile* = `TONE(=-5) FIGHT | a`, *friendly* = `TONE(=+4) WANT(=+3) | a`, *tactful* = `TONE(=+3) CARE(=+5) | a`, *blunt* = `TONE(=-2) CARE(=-3) | a`.
+- *Kind, courteous, tactful, considerate* путаются между собой, *sincere* читается не всегда.
