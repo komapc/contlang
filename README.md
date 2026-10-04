@@ -21,4 +21,4 @@
 - Скилл `mincode` (`.claude/skills/mincode/SKILL.md`): закодировать слово или раскодировать код.
 - `scripts/mincode/`: `gen.py` (генерация документов из `roots.yaml`, `--check`), `validator.py` (проверка кодов: корни, оси, метки, лимит корней).
 - `scripts/eval/`: слепой тест кодирования (спецификации, лист судьи, подсчёт с интервалом), протокол — [scripts/eval/README.md](scripts/eval/README.md); данные и прогоны — `data/eval/`.
-- Проверка: `python -m pytest tests` (согласованность файлов, валидатор, сборка спецификаций).
+- Проверка: `.venv/bin/python -m pytest tests` (зависимости — `requirements.txt`) (согласованность файлов, валидатор, сборка спецификаций).

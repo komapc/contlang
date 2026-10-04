@@ -71,7 +71,7 @@ def test_quoted_content_is_opaque():
 
 
 def test_legacy_notation_is_warning_not_error():
-    iss = V.check("SOMEONE-o")
+    iss = V.check("SOMEONE-o LI SEE-i(TIME=-2)")
     assert iss and all(i.level == "warning" for i in iss), iss
 
 
@@ -83,7 +83,7 @@ def _doc_codes(rel):
                 yield rel, ln, s
 
 
-@pytest.mark.parametrize("rel", ["docs/encoding.md", "docs/tables.md", ".claude/skills/mincode/SKILL.md"])
+@pytest.mark.parametrize("rel", ["docs/encoding.md", "docs/tables.md", "docs/syntax.md", "docs/model.md", ".claude/skills/mincode/SKILL.md"])
 def test_codes_in_docs_are_valid(rel):
     bad = [(ln, s, sorted(errors(s))) for _, ln, s in _doc_codes(rel) if errors(s)]
     assert not bad, bad

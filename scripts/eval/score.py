@@ -43,7 +43,7 @@ def main():
     a = p.parse_args()
     G = load(a.map, a.scores)
     print(f"## {a.label}" if a.label else "##")
-    print("| группа | n | среднее | ≥2 | 3 |\n| :-- | :-- | :-- | :-- | :-- |")
+    print("| группа | n | среднее | ≥2 | 3 (у всех кодировщиков) |\n| :-- | :-- | :-- | :-- | :-- |")
     for g, d in G.items():
         x = list(d.values())
         print(f"| {g} | {len(x)} | {st.mean(x):.2f} | {sum(v >= 2 for v in x)} | {sum(v >= 2.99 for v in x)} |")

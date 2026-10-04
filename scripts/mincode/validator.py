@@ -25,7 +25,7 @@ TOKEN = re.compile(r'''
   | (?P<root>[A-Z]{2,}[A-Z0-9]*)(?P<arg>\([^)]*\))?
   | (?P<lab>[A-Z](?:[+-]?\d+)?)
   | (?P<bang>[!?])
-  | (?P<suf>-[oiae]\b)
+  | (?P<suf>-[oiae]\b(?:\([^)]*\))?)
   | (?P<num>\d+(?:-[a-z])?)
   | (?P<low>[a-z]+)
   | (?P<ws>\s+|,)

@@ -39,7 +39,7 @@ def main():
     run = Path(a.run)
     variants = a.variants.split(",")
     key = json.loads(Path(a.key).read_text(encoding="utf8"))
-    chunks = [c for c in key if c.startswith("w" if a.kind == "words" else "s")]
+    chunks = [c for c in key if key[c] and c.startswith("w" if a.kind == "words" else "s")]
     rnd = random.Random(a.seed)
     val = Validator()
     for v in variants:
