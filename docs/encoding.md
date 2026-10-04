@@ -60,4 +60,5 @@
 - Усилитель и ослабитель — метка `I` на главном слове: *very good* = `GOOD(=+3) | a I+4`, *extremely big* = `BIG(=+3) | a I+5`, *slightly warm* = `HEAT(=+2) | a I-2`, *hardly possible* = `CAN(=+1) | a I-5`, *completely different* = `SAME(=-5) | a I+5`.
 - `I0` («довольно, умеренно») может теряться; для слабой степени писать `I+1…+2`.
 - Не `BIG(=+5)` как «очень»; не `C` (сравнение).
-- *Almost* («почти») метка `I` не передаёт; *important* корнем не выражается (читается как *special*).
+- *Almost* («почти») метка `I` не передаёт: читается как *quite likely / fairly certain* — принято как допустимая потеря, ничего не вводим.
+- Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN(=+3) | a` *significant*, `BIG(=+4) HAPPEN(=+4) | a` *important / major*, `BIG(=+5) HAPPEN(=+5) | a` *crucial / momentous* ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `PARTICULAR` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
