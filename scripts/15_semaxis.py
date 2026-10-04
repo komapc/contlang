@@ -34,7 +34,7 @@ AXES = {
     "GIVE": ("give donate present offer grant", "take steal seize grab snatch"),
     "TOUCH": ("hard sharp rough solid rigid", "soft gentle smooth tender delicate"),
     "MATTER": ("gas vapor air steam smoke", "solid rock stone metal brick"),
-    "SEX": ("male man he masculine father", "female woman she feminine mother"),
+    "SEX": ("brother son father husband uncle", "sister daughter mother wife aunt"),
     "HAPPEN": ("result consequence effect outcome aftermath", "cause reason origin source root"),
     "THINK": ("decide conclude choose determine resolve", "doubt hesitate wonder uncertain ponder"),
     "CAN": ("able easy possible capable feasible", "unable difficult incapable impossible hard"),
