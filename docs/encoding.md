@@ -52,3 +52,12 @@
 
 - Метка `V` ([roundtrip_voice](../data/translation_test/roundtrip_voice.md), 10 из 11): −4 страдательный, 0 само собой, +4 намеренно.
 - Деятель при пассиве — частица `PE`: `… V-4 PE X` ([roundtrip_pe](../data/translation_test/roundtrip_pe.md), 6 из 6, предварительно).
+
+## Степень
+
+([roundtrip_degree](../data/translation_test/roundtrip_degree.md), 18 из 24 верно, 2 частично)
+
+- Усилитель и ослабитель — метка `I` на главном слове: *very good* = `GOOD(=+3) | a I+4`, *extremely big* = `BIG(=+3) | a I+5`, *slightly warm* = `HEAT(=+2) | a I-2`, *hardly possible* = `CAN(=+1) | a I-5`, *completely different* = `SAME(=-5) | a I+5`.
+- `I0` («довольно, умеренно») может теряться; для слабой степени писать `I+1…+2`.
+- Не `BIG(=+5)` как «очень»; не `C` (сравнение).
+- *Almost* («почти») метка `I` не передаёт; *important* корнем не выражается (читается как *special*).
