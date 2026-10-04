@@ -1,0 +1,7 @@
+numpy
+scipy
+scikit-learn
+gensim
+nltk
+pyyaml
+pytest

@@ -20,7 +20,7 @@
 
 ## Против, причина, решение
 
-- «Против» (*protest, refuse*) — через явного носителя: `SOMEONE MANY(=+4) SAY WANT(=-5) | o`; голое `WANT(=-5)` декодер часто игнорирует.
+- «Против» (*protest, refuse*) — через явного носителя: `SOMEONE SAY WANT(=-5) | o` (в тесте было четыре корня, `SOMEONE MANY(=+4) SAY WANT(=-5)`, сверх лимита; трёхкорневой вариант не проверен); голое `WANT(=-5)` декодер часто игнорирует.
 - Причина и следствие как предметы — ось `HAPPEN` (`HAPPEN(=-4) | o` причина, `HAPPEN(=+4) | o` следствие). «Потому что / поэтому / так как» между клаузами — `LA [ причина ] следствие` (причина стоит первой, порядок слов меняют) **без теста**.
 - Решение — ось `THINK` (`THINK(=+5) | i` решить, `THINK(=-4) | i` сомневаться).
 
@@ -28,7 +28,7 @@
 
 - Местоимения — ось `SOMEONE` (я +5, ты +3, он −3), множественное через `MANY`: `SOMEONE(=+5) MANY(=+3) | o` — *we*.
 - Одушевлённость — ось `THING` (камень −5, растение 0, животное +4); скорость — `MOVE`, возбуждение — `FEEL`; приятно или нет — `GOOD`.
-- *grandfather, old man* = `SOMEONE SEX(=+5) TIME(=-4) LIVE(=+3) | o` («живой предок»; `TIME(=-4)` один даёт *ancestor*). **Без теста.**
+- *grandfather, old man* = `SOMEONE SEX(=+5) TIME(=-4) | o` («предок-мужчина»; `TIME(=-4)` один даёт *ancestor*; прежний вариант с `LIVE(=+3)` был четырёхкорневым). **Без теста.**
 
 ## Эмоции, бой
 
@@ -108,7 +108,7 @@
 ([roundtrip_causative](../data/translation_test/roundtrip_causative.md), 25 из 32 верно, ещё 3 запасным)
 
 - Метка `K` на глаголе: подлежащее воздействует на дополнение `E`, чтобы оно совершило или претерпело действие. `K-5` запретить, `K-4` помешать, `K-2` отговорить, `K0` разрешить, `K+3` сделать / убедить, `K+4` заставить, `K+5` принудить.
-- Что именно вызывается, задаёт корень глагола: *make / prevent* = `DO | i K+3 / K-4`, *feed* = `CONSUME | i K+4`, *teach* = `KNOW | i K+4`, *frighten* = `FEEL(=+4) GOOD(=-4) | i K+4`, *force* = `DO WANT(=-5) | i K+5`, *persuade* = `SAY THINK(=+5) | i K+3`, *allow* = `RULE(=+3) | i K0`, *forbid* = `RULE(=+4) DO | i K-5`.
+- Что именно вызывается, задаёт корень глагола: *make* = `DO | i K+3`, *prevent* = `DO | i K-4`, *feed* = `CONSUME | i K+4`, *teach* = `KNOW | i K+4`, *frighten* = `FEEL(=+4) GOOD(=-4) | i K+4`, *force* = `DO WANT(=-5) | i K+5`, *persuade* = `SAY THINK(=+5) | i K+3`, *allow* = `RULE(=+3) | i K0`, *forbid* = `RULE(=+4) DO | i K-5`.
 - *Induce / encourage* (`K+2…3`) путаются с *have / get / entice*.
 
 ## Конкретное и абстрактное
@@ -123,6 +123,6 @@
 
 ## Рецепты понятий (два слепных теста: [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md), раунд 2)
 
-- Работают: *game* — `FIGHT(=-4) ART(=+2) | o` (sport/game, оба раунда); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
+- Работают: *game* — `FIGHT ART(=+2) | o` (sport/game; в тесте писали `FIGHT(=-4)`, но у `FIGHT` оси нет, так что значение читалось как «слабая борьба» вопреки правилам; без значения не проверено); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
 - **Меры и отношения — корень `MEASURE`** (ось: −5 величина сама по себе … +5 величина относительно другой; введён после двух провалов с `PART`/`BIG`/`SAME`; слепой тест v2 26 из 32, [roundtrip_measure](../data/translation_test/roundtrip_measure.md)): *ratio* `MEASURE(=+5) | o`, *percentage* `MEASURE(=+5) PART(=-2) | o`, *rate* `MEASURE(=+5) TIME | o`, *amount* `MEASURE(=-5) | o`, *size* `MEASURE(=-5) BIG | o`, *degree, level* `MEASURE(=0) | o`, *average* `MEASURE(=+5) MANY SAME | o`, *measurement* и *to measure* `MEASURE DO | o` / `MEASURE | i`, *unit* `MEASURE SAME | o`. Слабо: *meter, dimension, proportional* (читаются *distance/area/fractional*).
 - Не работают (по две серии рецептов, ни один не прочитан верно): *way/method*, *measurement* как *act of measuring* (теперь `MEASURE(=-5)`, но читается *meter / unit*), *a sort of X* (`I-2` на имени не читается как «вид»; *a sort of bird* → *bird*). `RULE(=-5)`/`SAME(=-5) RULE` для «независимый» читается как *illegal*.
