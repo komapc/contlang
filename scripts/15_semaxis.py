@@ -9,53 +9,18 @@ Writes data/semaxis_report.md.
 """
 import gzip
 import random
+import sys
 from pathlib import Path
 
 import numpy as np
 
 from common import RAW, ROOT
 
-AXES = {
-    "GOOD": ("good excellent great wonderful fine", "bad terrible awful horrible poor"),
-    "BIG": ("big large huge enormous vast", "small tiny little minor miniature"),
-    "NEAR": ("near close here nearby adjacent", "far distant remote away faraway"),
-    "ABOVE": ("above up high over upward", "below down low under downward"),
-    "LIVE": ("alive living lively vital animate", "dead death lifeless dying deceased"),
-    "SAME": ("same identical equal similar alike", "different opposite unlike distinct dissimilar"),
-    "TIME": ("future later soon tomorrow upcoming", "past ago earlier yesterday former"),
-    "INSIDE": ("inside within interior internal indoors", "outside external exterior outer outdoors"),
-    "PART": ("whole entire complete total full", "part piece fragment bit fraction"),
-    "SIDE": ("front forward ahead fore frontal", "back rear behind backward posterior"),
-    "KNOW": ("know knowing aware informed knowledgeable", "ignorant unaware unknown clueless uninformed"),
-    "WANT": ("love desire want crave adore", "hate loathe refuse reject detest"),
-    "HEAT": ("hot fire burning warm scorching", "cold ice freezing cool frosty"),
-    "BEGIN": ("end finish final last conclude", "begin start first initial commence"),
-    "GIVE": ("give donate present offer grant", "take steal seize grab snatch"),
-    "TOUCH": ("hard sharp rough solid rigid", "soft gentle smooth tender delicate"),
-    "MATTER": ("gas vapor air steam smoke", "solid rock stone metal brick"),
-    "SEX": ("brother son father husband uncle", "sister daughter mother wife aunt"),
-    "HAPPEN": ("result consequence effect outcome aftermath", "cause reason origin source root"),
-    "THINK": ("decide conclude choose determine resolve", "doubt hesitate wonder uncertain ponder"),
-    "CAN": ("able easy possible capable feasible", "unable difficult incapable impossible hard"),
-    "MANY": ("all every everyone everything always", "none nothing nobody zero never"),
-    "SOMEONE": ("i me my myself mine", "they them their others themselves"),
-    "THING": ("animal dog cat horse cow", "stone pebble boulder mineral gravel"),
-    "MOVE": ("run sprint fast rush hurry", "stand still stop rest motionless"),
-    "FEEL": ("excited intense passionate thrilled frantic", "calm sluggish bored quiet sleepy"),
-    "RULE": ("authority committee agency commission government", "individual private personal informal citizen"),
-    "CHANGE": ("change transform alter vary shift", "remain stay constant stable unchanged"),
-    "PARTICULAR": ("particular specific unique peculiar distinct", "general common universal generic typical"),
-    "JOIN": ("join add attach connect combine unite", "separate remove detach disconnect divide subtract"),
-    "VALUE": ("expensive valuable precious costly priceless wealthy", "cheap worthless useless free poor"),
-    "TONE": ("politely kindly gently sincerely warmly gratefully", "rudely harshly coldly angrily bitterly bluntly"),
-    "CONSUME": ("eat drink swallow absorb inhale devour read listen", "excrete spit vomit emit exhale write speak"),
-    "CARE": ("carefully thoughtfully meticulously methodically cautiously accurately", "carelessly casually sloppily hastily recklessly roughly"),
-    "MEASURE": ("ratio proportion rate percentage fraction relative average degree", "amount size quantity length weight number volume height"),
-    "SAY": ("shout yell scream roar bellow shrill loud noise", "whisper murmur mumble hush mutter faint silent quiet"),
-    "LONG": ("rod pole beam log pillar trunk stick post bar", "thread string rope wire hair needle strand ribbon"),
-    "ABSTRACT": ("idea theory concept principle belief notion thought reason meaning", "house stone hand door table tree kick shake wall"),
-    "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
-}
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from mincode import spec  # noqa: E402
+
+# оси и полюса берутся из roots.yaml (единый источник правды)
+AXES = {r["name"]: tuple(r["semaxis"]) for r in spec.axis_roots()}
 PROBES = "member regime function union party committee institution specific influence protect group team society class".split()
 OUT = ROOT / "data" / "semaxis_report.md"
 
