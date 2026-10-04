@@ -1,0 +1,46 @@
+1. summon (verb) — вызвать
+2. tall (adj) — высокий
+3. districts (noun, plural) — районы
+4. crews (noun, plural) — экипажи
+5. afraid (adj) — испуганный
+6. diameter (noun) — диаметр
+7. industry (noun) — отрасль
+8. burst (verb) — лопнуть
+9. stick — палка
+10. rod — прут
+11. pole — шест
+12. rope — верёвка
+13. thread — нитка
+14. wire — проволока
+15. hair — волос
+16. needle — игла
+17. pencil — карандаш
+18. branch — ветка
+19. tail — хвост
+20. pipe — труба
+21. beam — балка
+22. string — бечёвка
+23. spear — копьё
+24. tower — башня
+25. long (adjective) — длинный
+26. tall (adjective) — высокий
+27. pillar — столб
+28. tube — трубка
+29. freedom — свобода (noun)
+30. justice — справедливость (noun)
+31. violence — насилие (noun)
+32. need — нужда (noun)
+33. identity — тождество (noun)
+34. equality — равенство (noun)
+35. situation — ситуация (noun)
+36. struggle — борьба (noun)
+37. guarantee — гарантия (noun)
+38. knowledge — знание (noun)
+39. belief — вера, убеждение (noun)
+40. danger — опасность (noun)
+41. peace — мир (отсутствие войны) (noun)
+42. honor — честь (noun)
+43. fear — страх (noun)
+44. memory — память (noun)
+45. growth — рост (noun)
+46. power — власть (noun)

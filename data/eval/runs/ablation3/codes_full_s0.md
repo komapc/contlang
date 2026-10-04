@@ -1,0 +1,30 @@
+1. LA [ "republic" | o D-3 T0 PART(=+2) RULE(=+4) | o PI SAME(=+5) | a MANY(=+4) | e ] PLACE(=-2) RULE(=+4) | o PI RULE(=+4) PLACE | o N+3 E "republic" | o PI MAYBE(=-3) SAY | i T0 V-4 N+3
+2. LA [ ABSTRACT(=+5) SAY | o PI ART(=+5) TIME(=-5) | i T-2 ] KNOW(=+5) SOMEONE "Aristotle" SAY | i T-2 R-3 E [ TIME(=-5) BIG(=+4) PLACE RULE(=+4) | o N+3 MANY(=+3) RULE(=+5) | o N+3 SAME(=-3) | a ] MAYBE(=+4) PLACE "Greece" JOIN(=+5) PLACE "Middle East"
+3. TIME(=-4) RULE(=+4) PLACE | o N+3 SIDE(=-5) PLACE "Europe" MAYBE(=-3) TIME(=0) THINK | i SAME(=+2) E RULE(=+4) PLACE | o N+3 "republic" | o N+3
+4. SOMEONE(=-5) PART(=+5) BIG(=+5) KNOW(=+4) | a C+5 RULE(=+4) PART(=+5) "Vajji Mahajanapada" | o SAME "Licchavi" | o N+3
+5. SOMEONE "Knud Haakonssen" SAY | i T-2 R-3 LA [ TIME(=-1) "Renaissance" ] PLACE "Europe" PART(=-2) | i V-4 T-2 E PLACE RULE(=+4) | o N+3 RULE(=+4) SOMEONE(=-5) PART(=+5) PLACE VALUE(=+3) | o SAME RULE(=+4) | o N+3 RULE(=+4) SOMEONE(=-5) VALUE(=+3) PART(=+5) SAME "republic" | o N+3
+6. SOMEONE(=-5) "Swiss" N+3 FIGHT GOOD(=+5) | a T-2 JOIN(=+5) PART(=+5) "Swiss Confederacy" SAY | i V-4 T-2 PLACE "Switzerland" RULE(=+4) "republic" | o CHANGE(=-5) | i T-2 TIME(=+0) THING
+7. LA [ PLACE RULE(=+4) | o N+3 PI "Italy" JOIN(=+5) PART(=+5) "Hanseatic League" ] SOMEONE(=-5) N+5 VALUE(=+4) PLACE GIVE(=0) BIG(=+4) | a SOMEONE VALUE GIVE(=0) PART(=+5) MANY(=+3) GOOD(=+3) | i E GIVE(=0) PLACE "New World"
+8. LA [ "United States" SAY | o RULE(=+4) NEAR ] SOMEONE RULE(=+4) | o N+3 PI FIGHT | o CARE(=+5) WANT(=-5) | i T-2 E RULE(=+4) SOMEONE(=+0) SEX(=+5) JOIN(=+5) | i T-2 E "republicanism" | o
+9. PLACE "Latin America" MANY(=+3) PLACE RULE(=+4) | o N+3 MANY(=+3) SAME(=-3) PART | o PI RULE(=+5) SOMEONE(=+0) RULE(=-2) "republic" | o LIVE(=+5) | i T-2 LA [ MANY(=+4) CHANGE GOOD(=+3) | i V-4 T-2 R+3 ] TIME(=-1) BEGIN(=+5) PART(=+2) "20" TIME
+10. TIME "June 2, 1946" SOMEONE(=-5) MANY(=+4) FIGHT SIDE "republic" | o GOOD(=+5) | i T-2 E "54.3%" MEASURE(=+5) | o PI SAY GIVE(=0) JOIN "Italy" CHANGE RULE(=+4) | o RULE(=+5) | a T-2 JOIN(=+5) E "republic" | o TIME(=0) "Festa della Repubblica" CONSUME(=+3) FEEL(=+4) | i V-4 TIME(=-1) R+3
+11. "Arab" RULE(=+4) SOMEONE(=-5) JOIN PART(=+5) | o HAPPEN(=-5) | i T-2 E MANY(=+3) FIGHT | o N+3 CHANGE RULE(=+4) | o N+3 SEE | i T-2 E RULE(=+4) SOMEONE SEX(=+5) "Egypt" "Iraq" "Libya" "Yemen" MOVE PLACE(=-5) | i V-4 T-2
+12. SAY(=-5) CHOOSE GIVE(=0) MANY(=+3) RULE(=+4) PART(=+5) | o PI RULE(=+4) "parliament" | o SAME(=-5) PLACE "United States" BIG(=+3) PARTICULAR(=+5) | a LA [ SOMEONE RULE(=+4) "president" | o RULE(=+4) | e THINK(=+5) | i V-4 T0 E SOMEONE(=-5) MANY PART(=+5) "electoral college" | o THINK(=+5) | i V-4 T-2 PLACE RULE(=+4) | o N+3 ]
+13. LA [ BIG(=-3) TIME(=0) PARTICULAR(=-3) | a ] SEX(=+5) RULE(=+4) | o N+3 THINK(=+5) | i V-4 MANY(=+3) SAME | a TIME(=-3) T-2
+14. HAPPEN(=+5) WANT(=+5) | i V-4 T-2 LA [ PLACE RULE(=+4) | o N+3 WANT(=+4) | i V-4 T-2 R+3 CHANGE(=+4) RULE(=+5) PLACE(=-2) | o N+3 MANY(=+4) JOIN(=+5) RULE(=+4) | i ] SAME(=-5) PART(=-2) PLACE GIVE(=+5) | i V-4 T-2 E RULE(=+4) PART(=+5) JOIN(=+5) MAYBE(=-5) THING | o GIVE(=-5) | i V-4 E PLACE RULE(=+4) | o N+3
+15. HAPPEN(=+5) CHANGE BIG(=+3) | i T-2 SIDE(=-5) PART(=-2) DO | o PI SOMEONE "J."
+16. "Photosynthesis" | o ABSTRACT(=-2) PART(=+5) LIVE | o N+3 CHANGE(=+5) E BIG(=+3) HEAT SEE | o MATTER(=+5) HAPPEN(=-5) "sun" CHANGE(=+5) E MATTER(=-5) HEAT BODY MOVE LIVE | o N+3 MANY(=+4) THING(=0) JOIN(=+5) "algae" "cyanobacteria" CONSUME(=+5)
+17. MANY(=+4) THING(=0) JOIN(=+5) LIVE | o N+3 CONSUME(=+5) MATTER(=-5) E HEAT SEE CAN(=+5) DO | i E CONSUME(=+3) THING(=-5) MATTER(=0) "water" JOIN "CO2" MATTER(=+5) CHANGE(=+5) | i
+18. MANY(=+4) LIVE(=+5) THING(=0) | o N+3 CONSUME(=+5) MATTER(=+5) SEE | a SEE HEAT | o LA [ BIG(=-3) 3 | N MAYBE(=+4) SEE(=-5) HEAT BIG(=-5) PARTICULAR(=+5) "far-red" SEE | o ] DO | i T0 N+3
+19. THING(=0) N+3 CONSUME(=+5) E HEAT SEE | o MANY(=+4) CONSUME(=+5) "chlorophyll" THING | o LIVE
+20. "photosynthetic" SEE HEAT MEASURE(=-5) CHANGE PART(=+2) SAME(=-3) THING(=-5) PARTICULAR | o PI SEE LIVE | o N+3 HAPPEN(=+5) CHANGE | i T0
+21. "Photosystem II" BEGIN(=-5) PART(=-2) PI "Z-scheme" WANT(=+5) | i T0 E THING(=-5) INSIDE(=-5) PART(=-2) PI "electron" | o N+3 CHANGE BIG(=-3) E "chlorophyll a" PART(=+5) INSIDE(=+5) | o
+22. THING(=0) N+1 MANY(=+1) CHANGE LIVE | i T-2 R-3 E ART PART(=-2) CHANGE BIG(=+3) E MEASURE(=-5) "CO2" INSIDE "leaf" | o N+3 SAME(=+2) PART(=+2) HAPPEN(=+5) PART(=+4) | o N+3
+23. SOMEONE(=-5) CAN(=-5) | i MOVE(=0) SIDE(=-5) PART(=-2) "membrane" HAPPEN(=-5) FEEL(=+2) PART(=-3) | a JOIN(=+5) | a INSIDE "cytosol" MOVE CHANGE(=+3) E "CO2" BIG(=-4) SPEED(=-4) CARE(=-5) GIVE(=+0) "carbonic anhydrase" MAYBE(=-5) | e
+24. MATTER(=+5) HEAT SEE ART(=-5) THING(=-5) | o N+3 JOIN(=+5) THING(=-5) FEEL "moisture" | o N+3 FEEL(=+4) BIG(=+3) | a CAN(=+5) MEASURE | i E "photosynthetic" CONSUME(=+5) PART(=+5) "CO2" JOIN(=+5) "H2O" DO KNOW(=+4) GOOD(=+3) ART(=-5) | o
+25. SOMEONE(=-5) KNOW ART(=-5) THINK(=+2) | i T0 E [ HAPPEN(=-5) BODY PART(=-2) BIG(=-3) THING(=+4) N+3 BIG(=+3) SIDE PLACE(=+2) MEASURE(=+5) SAME(=-3) BODY MEASURE(=-5) ]
+26. TIME(=-4) "photosynthetic" ART(=-5) PART(=+5) | o N+3 PART(=+2) SAME "green and purple sulfur bacteria" THING(=0) | o N+3 THINK | i V-4 T0 E [ MAYBE(=+4) MATTER(=+5) MAYBE(=-5) | a ] GIVE(=0) MANY(=+3) SAME(=-3) PART(=-2) MATTER(=-5) CONSUME(=-5) "electron" | o N+3 SAME "water" MAYBE(=-5)
+27. SOMEONE SEX(=+5) THINK PART(=-2) | o N+0 GOOD(=+3) KNOW(=+4) | a T-2 MANY(=+4) PART(=+2) CHANGE BIG(=+3) MATTER(=-5) HAPPEN(=-5) "carbon dioxide" JOIN "water" | o
+28. SOMEONE SEX(=+5) SEE | i T-2 E [ THING(=-5) INSIDE PART(=-2) THING(=0) PART(=-2) SEPARATE MATTER(=+5) "oxygen" CONSUME(=-5) T0 | i SAME(=+5) MAYBE(=+4) LIVE(=-5) ART(=-5) PART(=-2) "iron oxalate" "ferricyanide" "benzoquinone" TIME(=-1) R-3 SEE HEAT ]
+29. DO | o PI SOMEONE ART(=+5) PLACE "Arizona" CHANGE KNOW PART SAY | i V-4 T-2 E GOOD(=+5) VALUE(=+4) KNOW "Citation Classic" TIME "1986"
+30. SAME(=-5) BIG(=-5) CAN(=-5) | a PART(=-2) HAPPEN BIG(=+3) | o PI SEE HEAT MEASURE(=-5) | o THING

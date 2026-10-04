@@ -1,0 +1,24 @@
+1. whisper — шептать
+2. murmur — бормотать
+3. shout — кричать
+4. scream — вопить, визжать
+5. groan — стонать
+6. whistle — свистеть
+7. hum — напевать, гудеть
+8. buzz — жужжать
+9. roar — рычать, рёв
+10. noise — шум
+11. sound — звук
+12. silence — тишина
+13. mutter — бубнить
+14. yell — орать
+15. sigh — вздыхать
+16. bark — лаять
+17. thunder — гром
+18. echo — эхо
+19. loud (adjective) — громкий
+20. quiet (adjective) — тихий
+21. applause — аплодисменты
+22. bell — колокол
+23. song — песня
+24. cry (verb) — плакать вслух

@@ -1,0 +1,26 @@
+1. inspiration | motive, idea
+2. empathy | sensitivity, emotion
+3. whisper | murmur, mumble
+4. murmur | sigh, mumble
+5. shout | yell, cry
+6. scream | shriek, roar
+7. complain | grumble, grouse
+8. whistle | squeak, squeal
+9. hum | sing, chant
+10. chirp | tweet, twitter
+11. roar | bellow, howl
+12. noise | sound, din
+13. sound | voice, noise
+14. silence | quiet, hush
+15. mutter | grumble, sneer
+16. exclaim | cry out, shout
+17. sigh | exhale, breathe
+18. bark | howl, woof
+19. thunder | boom, lightning
+20. echo | repetition, reverberation
+21. loud | noisy, vocal
+22. quiet | silent, soft
+23. applause | clapping, ovation
+24. bang | clang, crack
+25. poem | song, speech
+26. scold | rant, protest
