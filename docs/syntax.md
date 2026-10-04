@@ -57,12 +57,11 @@
 
 Смысловой корень `TIME` слева от `|` (`TIME(=-2) | e` — «вчера», `FEEL(=+4) GOOD(=-4) TIME(=+3) | i` — «бояться») и метка `T` справа не смешиваются. Локальная ось корня пишется `(=v)`: `LIVE(=-2) | i` — «наполовину жив» (спит), `LIVE | i T-2` — «жил».
 
-*She did not see the message* (HEAR убран: слух читается через SEE и SAY; запись фразы пока старая, с частицами):
+*She did not see the message* (слух читается через SEE и SAY):
 
 ```
-SOMEONE-o LI SEE-i(TIME=-2) M-5 E THING-o PI SAY-o
+SOMEONE | o SEE | i T-2 M-5 E THING | o PI SAY | o
 ```
-эквивалентно `SOMEONE | o`, затем `SEE | i T-2 M-5`, `E`, `THING | o PI SAY | o`.
 
 Число и местоимения — следующий шаг ([план](roadmap.md)).
 

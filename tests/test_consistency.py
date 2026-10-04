@@ -48,3 +48,11 @@ def test_docs_mention_current_count():
 def test_removed_roots_not_in_roots():
     names = set(spec.root_names())
     assert not names & {"MAYBE", "CONTAINER", "HEAR", "KIND", "WORD"}
+
+
+def test_no_stale_counts_in_current_docs():
+    stale = ["46 корней", "(40)", "40 с осью", "Около 46", "Около 30"]
+    for rel in ["README.md", "docs/model.md", "docs/tables.md", "docs/philosophy.md", "docs/syntax.md", "docs/encoding.md", ".claude/skills/mincode/SKILL.md"]:
+        text = (REPO / rel).read_text(encoding="utf8")
+        for s in stale:
+            assert s not in text, (rel, s)
