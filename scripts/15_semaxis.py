@@ -51,6 +51,7 @@ AXES = {
     "TONE": ("politely kindly gently sincerely warmly gratefully", "rudely harshly coldly angrily bitterly bluntly"),
     "CONSUME": ("eat drink swallow absorb inhale devour read listen", "excrete spit vomit emit exhale write speak"),
     "CARE": ("carefully thoughtfully meticulously methodically cautiously accurately", "carelessly casually sloppily hastily recklessly roughly"),
+    "LONG": ("rod pole beam log pillar trunk stick post bar", "thread string rope wire hair needle strand ribbon"),
     "ABSTRACT": ("idea theory concept principle belief notion thought reason meaning", "house stone hand door table tree kick shake wall"),
     "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
 }
