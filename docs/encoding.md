@@ -62,3 +62,12 @@
 - Не `BIG(=+5)` как «очень»; не `C` (сравнение).
 - *Almost* («почти») метка `I` не передаёт: читается как *quite likely / fairly certain* — принято как допустимая потеря, ничего не вводим.
 - Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN(=+3) | a` *significant*, `BIG(=+4) HAPPEN(=+4) | a` *important / major*, `BIG(=+5) HAPPEN(=+5) | a` *crucial / momentous* ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `PARTICULAR` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
+
+## Наука, техника, искусство
+
+([roundtrip_art](../data/translation_test/roundtrip_art.md), 29 из 32 верно, ещё 1 запасным)
+
+- Область знания или занятия — корень `ART` (−5 расчёт, техника … +5 творчество, культура): *poetry* = `ART(=+5) SAY | o`, *painting* = `ART(=+5) SEE MATTER(=0) | o`, *history* = `ART(=+4) KNOW TIME(=-3) | o`, *physics* = `ART(=-4) MATTER MOVE | o`, *mathematics* = `ART(=-5) MANY SEE | o`, *engineering* = `ART(=-4) DO THING | o`.
+- Человек дела — `SOMEONE ART(=±n) …`: *engineer* = `SOMEONE ART(=-4) DO | o`, *scientist* = `SOMEONE ART(=-4) KNOW | o`, *artist* = `SOMEONE ART(=+5) DO | o`.
+- Устройства — `THING(=-5)` и действие: *machine* = `THING(=-5) MOVE DO | o`, *computer* = `THING(=-5) THINK ART(=-5) | o`.
+- Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*).
