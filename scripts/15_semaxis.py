@@ -46,6 +46,7 @@ AXES = {
     "RULE": ("authority committee agency commission government", "individual private personal informal citizen"),
     "CHANGE": ("change transform alter vary shift", "remain stay constant stable unchanged"),
     "PARTICULAR": ("particular specific unique peculiar distinct", "general common universal generic typical"),
+    "JOIN": ("join add attach connect combine unite", "separate remove detach disconnect divide subtract"),
     "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
 }
 PROBES = "member regime function union party committee institution specific influence protect group team society class".split()
