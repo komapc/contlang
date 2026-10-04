@@ -52,6 +52,7 @@ AXES = {
     "CONSUME": ("eat drink swallow absorb inhale devour read listen", "excrete spit vomit emit exhale write speak"),
     "CARE": ("carefully thoughtfully meticulously methodically cautiously accurately", "carelessly casually sloppily hastily recklessly roughly"),
     "MEASURE": ("ratio proportion rate percentage fraction relative average degree", "amount size quantity length weight number volume height"),
+    "SAY": ("shout yell scream roar bellow shrill loud noise", "whisper murmur mumble hush mutter faint silent quiet"),
     "LONG": ("rod pole beam log pillar trunk stick post bar", "thread string rope wire hair needle strand ribbon"),
     "ABSTRACT": ("idea theory concept principle belief notion thought reason meaning", "house stone hand door table tree kick shake wall"),
     "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
