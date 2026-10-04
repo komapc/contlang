@@ -70,4 +70,4 @@
 - Область знания или занятия — корень `ART` (−5 расчёт, техника … +5 творчество, культура): *poetry* = `ART(=+5) SAY | o`, *painting* = `ART(=+5) SEE MATTER(=0) | o`, *history* = `ART(=+4) KNOW TIME(=-3) | o`, *physics* = `ART(=-4) MATTER MOVE | o`, *mathematics* = `ART(=-5) MANY SEE | o`, *engineering* = `ART(=-4) DO THING | o`.
 - Человек дела — `SOMEONE ART(=±n) …`: *engineer* = `SOMEONE ART(=-4) DO | o`, *scientist* = `SOMEONE ART(=-4) KNOW | o`, *artist* = `SOMEONE ART(=+5) DO | o`.
 - Устройства — `THING(=-5)` и действие: *machine* = `THING(=-5) MOVE DO | o`, *computer* = `THING(=-5) THINK ART(=-5) | o`.
-- Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*).
+- Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*; `ART(=+3) PLACE LIVE` → *theater*). Принято как потеря.
