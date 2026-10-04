@@ -87,3 +87,11 @@
 - Манера обращения с людьми — корень `TONE` (−5 грубо, холодно, враждебно … +5 вежливо, тепло, искренне): *polite* = `TONE(=+4) | a`, *rude* = `TONE(=-4) | a`, *politely* = `TONE(=+4) | e`, *rudely* = `TONE(=-4) | e`.
 - Сочетания: *harsh* = `TONE(=-4) TOUCH(=+4) | a`, *warm* = `TONE(=+4) HEAT(=+2) | a`, *cold* = `TONE(=-4) HEAT(=-3) | a`, *hostile* = `TONE(=-5) FIGHT | a`, *friendly* = `TONE(=+4) WANT(=+3) | a`, *tactful* = `TONE(=+3) CARE(=+5) | a`, *blunt* = `TONE(=-2) CARE(=-3) | a`.
 - *Kind, courteous, tactful, considerate* путаются между собой, *sincere* читается не всегда.
+
+## Приём и выдача
+
+([roundtrip_consume](../data/translation_test/roundtrip_consume.md), 26 из 32 верно)
+
+- Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) MATTER(=-5) | i`, *drink* = `CONSUME(=+5) MATTER(=0) | i`, *inhale* = `CONSUME(=+5) MATTER(=+5) | i`, *exhale* = `CONSUME(=-5) MATTER(=+5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
+- Речь и слух: *speak* = `CONSUME(=-5) SAY | i`, *listen* = `CONSUME(=+5) SAY CARE(=+3) | i`.
+- Не читается: *write* (`CONSUME(=-5) SEE` → *show*), *read* (`CONSUME(=+5) SEE` → *watch*, у одного декодера верно). Принято как потеря.
