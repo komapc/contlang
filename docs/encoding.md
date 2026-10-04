@@ -103,3 +103,13 @@
 - Метка `K` на глаголе: подлежащее воздействует на дополнение `E`, чтобы оно совершило или претерпело действие. `K-5` запретить, `K-4` помешать, `K-2` отговорить, `K0` разрешить, `K+3` сделать / убедить, `K+4` заставить, `K+5` принудить.
 - Что именно вызывается, задаёт корень глагола: *make / prevent* = `DO | i K+3 / K-4`, *feed* = `CONSUME | i K+4`, *teach* = `KNOW | i K+4`, *frighten* = `FEEL(=+4) GOOD(=-4) | i K+4`, *force* = `DO WANT(=-5) | i K+5`, *persuade* = `SAY THINK(=+5) | i K+3`, *allow* = `RULE(=+3) | i K0`, *forbid* = `RULE(=+4) DO | i K-5`.
 - *Induce / encourage* (`K+2…3`) путаются с *have / get / entice*.
+
+## Конкретное и абстрактное
+
+([roundtrip_abstract](../data/translation_test/roundtrip_abstract.md), 25 из 32 верно)
+
+- Ось `ABSTRACT`: −5 физическое, осязаемое … +5 умственное, отвлечённое. Она не про область (это `ART`), а про осязаемость.
+- Прилагательные: *concrete* = `ABSTRACT(=-5) | a`, *abstract* = `ABSTRACT(=+5) | a`, *tangible* = `TOUCH CAN ABSTRACT(=-5) | a`, *theoretical* = `KNOW ABSTRACT(=+5) | a` (путается с *speculative*).
+- Мысль: *idea* = `THINK ABSTRACT(=+5) | o`, *principle* = `RULE ABSTRACT(=+5) | o`, *imply* = `SAY ABSTRACT(=+5) | i`, *assume / suppose* = `THINK(=+3) MAYBE(=-1) | i` (между собой сливаются).
+- Физическое действие: *shake* = `MOVE(=+2) ABSTRACT(=-5) | i`, *tumble* = `MOVE ABOVE(=-4) CARE(=-4) | i`, *kick* = `TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i` (путается с *hit*).
+- Не различаются: *theory / concept / philosophy*, *belief / knowledge*, *rattle / rumble*.
