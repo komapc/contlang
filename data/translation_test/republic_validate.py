@@ -1,6 +1,6 @@
 import re,sys,glob
 roots=set("SOMEONE THING BODY PART HAPPEN MOVE THINK KNOW WANT FEEL SEE TOUCH PLACE INSIDE SIDE SAY DO GOOD BIG NEAR ABOVE LIVE SAME MAYBE TIME SEX MANY CAN CONSUME CONTAINER HEAT BEGIN GIVE MATTER RULE FIGHT CHANGE PARTICULAR".split())
-part={"E","PI","LA"}
+part={"E","PI","LA","PE"}
 def check(code,maxdict=40):
     c=re.sub(r'"[^"]*"','Q',code)
     errs=[]
