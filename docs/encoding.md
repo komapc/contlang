@@ -119,3 +119,8 @@
 - Мысль: *idea* = `THINK ABSTRACT(=+5) | o`, *principle* = `RULE ABSTRACT(=+5) | o`, *imply* = `SAY ABSTRACT(=+5) | i`, *assume / suppose* = `THINK(=+3) MAYBE(=-1) | i` (между собой сливаются).
 - Физическое действие: *shake* = `MOVE(=+2) ABSTRACT(=-5) | i`, *tumble* = `MOVE ABOVE(=-4) CARE(=-4) | i`, *kick* = `TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i` (путается с *hit*).
 - Не различаются: *theory / concept / philosophy*, *belief / knowledge*, *rattle / rumble*.
+
+## Рецепты понятий (два слепных теста: [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md), раунд 2)
+
+- Работают: *game* — `FIGHT(=-4) ART(=+2) | o` (sport/game, оба раунда); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
+- Не работают (по две серии рецептов, ни один не прочитан верно): *way/method*, *role*, *measurement*, *ratio/proportion* (`PART BIG(=0) SAME | o` даёт *half/share*, близко, но не то), *a sort of X* (`I-2` на имени не читается как «вид»; *a sort of bird* → *bird*). `RULE(=-5)`/`SAME(=-5) RULE` для «независимый» читается как *illegal*.
