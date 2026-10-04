@@ -1,6 +1,6 @@
 # SemAxis на наших осях (Numberbatch, 3000 слов)
 
-Оси: 27; слов: 3001; полюса заданы руками в `scripts/15_semaxis.py`. Не нашлось в словаре: нет.
+Оси: 31; слов: 3001; полюса заданы руками в `scripts/15_semaxis.py`. Не нашлось в словаре: нет.
 
 ## Качество полюсов (leave-one-out: слово-полюс на своей стороне оси, построенной без него)
 
@@ -20,6 +20,8 @@
 | HEAT | 0.90 |
 | TOUCH | 0.90 |
 | FEEL | 0.90 |
+| RULE | 0.90 |
+| PARTICULAR | 0.90 |
 | GOOD | 1.00 |
 | BIG | 1.00 |
 | PART | 1.00 |
@@ -33,6 +35,8 @@
 | SOMEONE | 1.00 |
 | THING | 1.00 |
 | MOVE | 1.00 |
+| CHANGE | 1.00 |
+| ART | 1.00 |
 
 ## Оси, похожие друг на друга (|cos| ≥ 0,35)
 
@@ -42,35 +46,35 @@
 
 ## Какую долю вектора слова объясняют оси (R², средняя по словам)
 
-- наши 27 осей: **0.136**
-- случайные 27 осей (20 прогонов): 0.157 ± 0.005
-- лучшие 27 направлений PCA (верхний предел для 27 измерений): 0.302
+- наши 31 осей: **0.158**
+- случайные 31 осей (20 прогонов): 0.178 ± 0.006
+- лучшие 31 направлений PCA (верхний предел для 31 измерений): 0.330
 
 ## Хуже всего объяснённые слова (R², 40 слов)
 
-leaf (0.02), university (0.03), doctrine (0.03), communist (0.03), drug (0.03), door (0.03), player (0.03), wagon (0.03), city (0.03), dinner (0.03), professor (0.03), synthetic (0.03), movie (0.03), nuclear (0.03), industrial (0.03), biblical (0.03), wheel (0.03), factory (0.03), film (0.03), convict (0.03), military (0.03), army (0.03), star (0.03), democratic (0.04), organic (0.04), tree (0.04), description (0.04), barrel (0.04), laboratory (0.04), text (0.04), naval (0.04), chapter (0.04), theological (0.04), strain (0.04), politics (0.04), crime (0.04), study (0.04), fish (0.04), survey (0.04), theology (0.04)
+leaf (0.03), university (0.03), wagon (0.04), professor (0.04), player (0.04), tree (0.04), dinner (0.04), barrel (0.04), door (0.04), theological (0.04), convict (0.04), organic (0.04), communist (0.05), synthetic (0.05), fish (0.05), survey (0.05), drug (0.05), star (0.05), political (0.05), jewish (0.05), cancer (0.05), conjugate (0.05), word (0.05), film (0.05), tumor (0.05), psychologist (0.05), hair (0.05), truck (0.05), bellow (0.05), club (0.05), biblical (0.05), forest (0.05), whisky (0.05), credit (0.05), kitchen (0.05), bar (0.05), loan (0.05), series (0.05), radio (0.05), doctrine (0.05)
 
 ## Слова из списка провалов (R²)
 
-member (0.11), regime (0.10), function (0.11), union (0.08), party (0.07), committee (0.07), institution (0.06), specific (0.14), influence (0.13), protect (0.14), group (0.09), team (0.12), society (0.10), class (0.07)
+member (0.12), regime (0.14), function (0.16), union (0.14), party (0.08), committee (0.35), institution (0.09), specific (0.30), influence (0.19), protect (0.14), group (0.10), team (0.14), society (0.13), class (0.09)
 
 ## Главные направления остатка (кандидаты на недостающие оси)
 
-**1** (доля остатка 2.6%): + fairly, remarkably, quite, reasonably, actually, plainly, practically, hardly, nicely, surprisingly, evidently, rather, similarly, sufficiently
-  − give, join, bring, boost, leave, add, send, reinforce, strengthen, impart, sway, leadership, share, enhance
+**1** (доля остатка 2.6%): + leave, join, give, send, bring, add, boost, check, register, safety, share, bury, contact, impart
+  − fairly, actually, quite, plainly, reasonably, remarkably, hardly, practically, rather, evidently, nicely, apparently, indeed, surprisingly
 
-**2** (доля остатка 2.2%): + area, field, region, ground, center, residential, unit, middle, commercial, high, side, road, community, intense
-  − deem, presume, suggest, assume, propose, imply, concede, necessitate, affirm, acknowledge, consider, suppose, insist, intend
+**2** (доля остатка 2.2%): + deem, presume, assume, suggest, insist, propose, concede, oblige, affirm, necessitate, acknowledge, intend, imply, accept
+  − area, region, field, color, whole, intensity, unit, style, commercial, center, height, development, process, middle
 
-**3** (доля остатка 1.8%): + significance, particular, subjective, attribute, fundamental, interpretation, context, implication, importance, specific, characterize, unique, relation, peculiar
-  − quietly, briskly, silently, softly, gently, happily, loudly, furiously, excitedly, heave, back, slowly, angrily, down
+**3** (доля остатка 1.8%): + softly, briskly, quietly, gently, down, silently, slowly, heave, off, lurch, loudly, back, roar, rearward
+  − significance, implication, fundamental, principle, interpretation, importance, attribute, subjective, essential, regard, assumption, context, relation, concept
 
-**4** (доля остатка 1.5%): + decrease, vary, diminish, lessen, smaller, increase, reduce, dwindle, swell, minimal, larger, fade, intense, exceed
-  − decision, committee, agency, recommendation, proposal, authority, officer, request, commission, unanimously, advice, mission, solemnly, statement
+**4** (доля остатка 1.5%): + decrease, increase, diminish, lessen, reduce, dwindle, vary, minimal, smaller, dilute, exceed, minimum, greater, swell
+  − politely, privately, solemnly, sincerely, angrily, thoughtfully, calmly, triumphantly, heartily, comrade, openly, request, interview, congratulate
 
-**5** (доля остатка 1.4%): + beautiful, lovely, delightful, wonderful, funny, nice, brilliant, awful, fantastic, vivid, loud, pleasant, strange, exclaim
-  − increase, decrease, reduce, further, growth, expand, augment, expenditure, steadily, significantly, reduction, restrict, limit, substantially
+**5** (доля остатка 1.4%): + probably, maybe, perhaps, happen, someday, anyway, anymore, unfortunately, sometime, thing, though, now, possibly, anyhow
+  − thoughtfully, carefully, vigorously, cautiously, intently, methodically, stiffly, meticulously, sharply, softly, gently, accurately, coldly, tightly
 
-**6** (доля остатка 1.4%): + carefully, thoughtfully, meticulously, intently, methodically, accurately, cautiously, vigorously, stiffly, softly, sharply, coldly, tightly, gently
-  − probably, maybe, perhaps, anyway, someday, anymore, unfortunately, sometime, though, possibly, happen, now, anyhow, day
+**6** (доля остатка 1.4%): + beautiful, loud, nice, lovely, pretty, funny, wonderful, delightful, awful, brilliant, pleasant, scream, vivid, fantastic
+  − further, increase, steadily, expenditure, subsequently, decrease, thereafter, expand, restrict, advance, while, farther, meanwhile, augment
 

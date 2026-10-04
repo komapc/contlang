@@ -43,6 +43,10 @@ AXES = {
     "THING": ("animal dog cat horse cow", "stone pebble boulder mineral gravel"),
     "MOVE": ("run sprint fast rush hurry", "stand still stop rest motionless"),
     "FEEL": ("excited intense passionate thrilled frantic", "calm sluggish bored quiet sleepy"),
+    "RULE": ("authority committee agency commission government", "individual private personal informal citizen"),
+    "CHANGE": ("change transform alter vary shift", "remain stay constant stable unchanged"),
+    "PARTICULAR": ("particular specific unique peculiar distinct", "general common universal generic typical"),
+    "ART": ("art painting music poetry sculpture beauty literature philosophy", "technology machine engineering device mechanical electronics mathematics physics"),
 }
 PROBES = "member regime function union party committee institution specific influence protect group team society class".split()
 OUT = ROOT / "data" / "semaxis_report.md"
