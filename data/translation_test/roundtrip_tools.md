@@ -18,66 +18,66 @@
 
 | слово | код | ответ декодера (лучшее / альтернативы) | |
 | :-- | :-- | :-- | :-: |
-| knife | `THING(=-5) JOIN(=-4) TOUCH(=+5) \\| o` | pebble / shard / flint |  |
-| thermometer | `THING(=-5) HEAT MEASURE(=0) \\| o` | coal / ember / lava |  |
-| saw | `THING(=-5) JOIN(=-4) MOVE \\| o` | landslide / avalanche / rockfall |  |
-| brush | `THING(=-5) TOUCH(=-3) DO \\| o` | chalk / clay / plaster |  |
-| hammer | `THING(=-5) TOUCH(=+5) MOVE(=+4) \\| o` | bullet / hailstone / projectile |  |
-| key | `THING(=-5) CAN(=+5) INSIDE(=+5) \\| o` | cave / tunnel / cavern |  |
-| needle | `THING(=-5) LONG(=0) JOIN(=+3) \\| o` | bridge / chain / pipe |  |
-| broom | `THING(=-5) GRAIN(=0) JOIN(=-4) \\| o` | sand / gravel / dust |  |
-| spoon | `THING(=-5) CONSUME(=+5) MATTER(=0) \\| o` | salt / mineral / sponge |  |
-| ladder | `THING(=-5) ABOVE(=+4) MOVE \\| o` | meteor / meteorite / rocket |  |
-| scissors | `THING(=-5) JOIN(=-4) MANY(=+2) \\| o` | rubble / gravel / pebbles |  |
-| pen | `THING(=-5) CONSUME(=-5) SEE \\| o` | glass / crystal / mirror |  |
+| knife | `THING(=-5) JOIN(=-4) TOUCH(=+5) \| o` | pebble / shard / flint |  |
+| thermometer | `THING(=-5) HEAT MEASURE(=0) \| o` | coal / ember / lava |  |
+| saw | `THING(=-5) JOIN(=-4) MOVE \| o` | landslide / avalanche / rockfall |  |
+| brush | `THING(=-5) TOUCH(=-3) DO \| o` | chalk / clay / plaster |  |
+| hammer | `THING(=-5) TOUCH(=+5) MOVE(=+4) \| o` | bullet / hailstone / projectile |  |
+| key | `THING(=-5) CAN(=+5) INSIDE(=+5) \| o` | cave / tunnel / cavern |  |
+| needle | `THING(=-5) LONG(=0) JOIN(=+3) \| o` | bridge / chain / pipe |  |
+| broom | `THING(=-5) GRAIN(=0) JOIN(=-4) \| o` | sand / gravel / dust |  |
+| spoon | `THING(=-5) CONSUME(=+5) MATTER(=0) \| o` | salt / mineral / sponge |  |
+| ladder | `THING(=-5) ABOVE(=+4) MOVE \| o` | meteor / meteorite / rocket |  |
+| scissors | `THING(=-5) JOIN(=-4) MANY(=+2) \| o` | rubble / gravel / pebbles |  |
+| pen | `THING(=-5) CONSUME(=-5) SEE \| o` | glass / crystal / mirror |  |
 
 ## Набор A2 (без U)
 
 | слово | код | ответ декодера (лучшее / альтернативы) | |
 | :-- | :-- | :-- | :-: |
-| thermometer | `THING(=-5) HEAT MEASURE \\| o` | thermometer / thermostat / heater | = |
-| broom | `THING(=-5) LONG(=0) JOIN(=-4) \\| o` | knife / scissors / saw |  |
-| spoon | `THING(=-5) CONSUME(=+5) MATTER(=0) \\| o` | sponge / cup / bowl |  |
-| brush | `THING(=-5) TOUCH(=-3) MOVE(=+1) \\| o` | sail / flag / curtain |  |
-| needle | `THING(=-5) LONG(=0) JOIN(=+3) \\| o` | nail / screw / pin |  |
-| saw | `THING(=-5) JOIN(=-4) MOVE \\| o` | plow / saw / razor | ~ |
-| ladder | `THING(=-5) MOVE ABOVE(=+5) \\| o` | rocket / elevator / balloon |  |
-| knife | `THING(=-5) JOIN(=-4) TOUCH(=+5) \\| o` | wall / fence / door |  |
-| scissors | `THING(=-5) JOIN(=-4) LONG(=-5) \\| o` | fence / net / curtain |  |
-| key | `THING(=-5) CAN(=+5) INSIDE(=+4) \\| o` | box / bag / bottle |  |
-| hammer | `THING(=-5) TOUCH(=+5) MOVE(=+4) \\| o` | bullet / bomb / hammer | ~ |
-| pen | `THING(=-5) CONSUME(=-5) SEE \\| o` | lamp / screen / mirror |  |
+| thermometer | `THING(=-5) HEAT MEASURE \| o` | thermometer / thermostat / heater | = |
+| broom | `THING(=-5) LONG(=0) JOIN(=-4) \| o` | knife / scissors / saw |  |
+| spoon | `THING(=-5) CONSUME(=+5) MATTER(=0) \| o` | sponge / cup / bowl |  |
+| brush | `THING(=-5) TOUCH(=-3) MOVE(=+1) \| o` | sail / flag / curtain |  |
+| needle | `THING(=-5) LONG(=0) JOIN(=+3) \| o` | nail / screw / pin |  |
+| saw | `THING(=-5) JOIN(=-4) MOVE \| o` | plow / saw / razor | ~ |
+| ladder | `THING(=-5) MOVE ABOVE(=+5) \| o` | rocket / elevator / balloon |  |
+| knife | `THING(=-5) JOIN(=-4) TOUCH(=+5) \| o` | wall / fence / door |  |
+| scissors | `THING(=-5) JOIN(=-4) LONG(=-5) \| o` | fence / net / curtain |  |
+| key | `THING(=-5) CAN(=+5) INSIDE(=+4) \| o` | box / bag / bottle |  |
+| hammer | `THING(=-5) TOUCH(=+5) MOVE(=+4) \| o` | bullet / bomb / hammer | ~ |
+| pen | `THING(=-5) CONSUME(=-5) SEE \| o` | lamp / screen / mirror |  |
 
 ## Набор B1 (с U)
 
 | слово | код | ответ декодера (лучшее / альтернативы) | |
 | :-- | :-- | :-- | :-: |
-| spoon | `CONSUME(=+5) MATTER(=0) \\| o U` | spoon / cup / straw | = |
-| brush | `TOUCH(=-3) MOVE CARE(=+3) \\| o U` | brush / sponge / feather | = |
-| broom | `JOIN(=-4) PART(=-5) MOVE \\| o U` | broom / brush / dustpan | = |
-| hammer | `TOUCH(=+4) MOVE(=+4) JOIN(=+3) \\| o U` | hammer / mallet / nail gun | = |
-| saw | `JOIN(=-4) TOUCH(=+4) MOVE \\| o U` | saw / axe / chisel | = |
-| scissors | `JOIN(=-4) LONG(=-5) MANY(=+2) \\| o U` | comb / rake / brush |  |
-| key | `PLACE INSIDE(=+5) CAN(=+5) \\| o U` | box / bag / basket |  |
-| knife | `JOIN(=-4) TOUCH(=+4) \\| o U` | knife / scissors / axe | = |
-| pen | `CONSUME(=-5) SEE \\| o U` | lamp / flashlight / torch |  |
-| thermometer | `MEASURE HEAT \\| o U` | thermometer / thermostat / gauge | = |
-| ladder | `MOVE ABOVE(=+4) CAN(=+4) \\| o U` | elevator / ladder / crane | ~ |
-| needle | `JOIN(=+3) LONG(=0) TOUCH(=+4) \\| o U` | nail / screw / bolt |  |
+| spoon | `CONSUME(=+5) MATTER(=0) \| o U` | spoon / cup / straw | = |
+| brush | `TOUCH(=-3) MOVE CARE(=+3) \| o U` | brush / sponge / feather | = |
+| broom | `JOIN(=-4) PART(=-5) MOVE \| o U` | broom / brush / dustpan | = |
+| hammer | `TOUCH(=+4) MOVE(=+4) JOIN(=+3) \| o U` | hammer / mallet / nail gun | = |
+| saw | `JOIN(=-4) TOUCH(=+4) MOVE \| o U` | saw / axe / chisel | = |
+| scissors | `JOIN(=-4) LONG(=-5) MANY(=+2) \| o U` | comb / rake / brush |  |
+| key | `PLACE INSIDE(=+5) CAN(=+5) \| o U` | box / bag / basket |  |
+| knife | `JOIN(=-4) TOUCH(=+4) \| o U` | knife / scissors / axe | = |
+| pen | `CONSUME(=-5) SEE \| o U` | lamp / flashlight / torch |  |
+| thermometer | `MEASURE HEAT \| o U` | thermometer / thermostat / gauge | = |
+| ladder | `MOVE ABOVE(=+4) CAN(=+4) \| o U` | elevator / ladder / crane | ~ |
+| needle | `JOIN(=+3) LONG(=0) TOUCH(=+4) \| o U` | nail / screw / bolt |  |
 
 ## Набор B2 (с U)
 
 | слово | код | ответ декодера (лучшее / альтернативы) | |
 | :-- | :-- | :-- | :-: |
-| spoon | `CONSUME(=+5) GRAIN(=-5) \\| o U` | straw / cup / spoon | ~ |
-| key | `CAN(=+5) PLACE INSIDE(=+5) \\| o U` | container / box / bag |  |
-| broom | `JOIN(=-4) GRAIN(=0) \\| o U` | sieve / strainer / sifter |  |
-| brush | `TOUCH(=-3) MOVE(=+2) JOIN(=-2) \\| o U` | eraser / sponge / brush | ~ |
-| saw | `JOIN(=-5) LONG(=+5) \\| o U` | axe / saw / cleaver | ~ |
-| needle | `JOIN(=+4) LONG(=-5) TOUCH(=+5) \\| o U` | needle / pin / awl | = |
-| pen | `CONSUME(=-5) SEE \\| o U` | lamp / flashlight / candle |  |
-| thermometer | `MEASURE HEAT \\| o U` | thermometer / thermostat / heater | = |
-| scissors | `JOIN(=-5) LONG(=-5) \\| o U` | scissors / shears / knife | = |
-| ladder | `MOVE ABOVE(=+4) LONG(=0) \\| o U` | ladder / lever / crutch | = |
-| hammer | `TOUCH(=+4) MOVE(=+4) JOIN(=+3) \\| o U` | hammer / mallet / nail gun | = |
-| knife | `JOIN(=-5) CONSUME(=+5) MATTER(=-5) \\| o U` | knife / fork / cleaver | = |
+| spoon | `CONSUME(=+5) GRAIN(=-5) \| o U` | straw / cup / spoon | ~ |
+| key | `CAN(=+5) PLACE INSIDE(=+5) \| o U` | container / box / bag |  |
+| broom | `JOIN(=-4) GRAIN(=0) \| o U` | sieve / strainer / sifter |  |
+| brush | `TOUCH(=-3) MOVE(=+2) JOIN(=-2) \| o U` | eraser / sponge / brush | ~ |
+| saw | `JOIN(=-5) LONG(=+5) \| o U` | axe / saw / cleaver | ~ |
+| needle | `JOIN(=+4) LONG(=-5) TOUCH(=+5) \| o U` | needle / pin / awl | = |
+| pen | `CONSUME(=-5) SEE \| o U` | lamp / flashlight / candle |  |
+| thermometer | `MEASURE HEAT \| o U` | thermometer / thermostat / heater | = |
+| scissors | `JOIN(=-5) LONG(=-5) \| o U` | scissors / shears / knife | = |
+| ladder | `MOVE ABOVE(=+4) LONG(=0) \| o U` | ladder / lever / crutch | = |
+| hammer | `TOUCH(=+4) MOVE(=+4) JOIN(=+3) \| o U` | hammer / mallet / nail gun | = |
+| knife | `JOIN(=-5) CONSUME(=+5) MATTER(=-5) \| o U` | knife / fork / cleaver | = |
