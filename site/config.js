@@ -1,2 +1,1 @@
-// Адрес прокси (см. worker/README.md). Пусто — страница показывает сохранённые примеры без живой модели.
-window.MINCO_API = "";
+window.MINCO_API = "https://minco-demo.komapc.workers.dev";
