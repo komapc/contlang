@@ -161,13 +161,13 @@ roots:
   - dead death lifeless dying deceased
 - name: SAME
   axis:
-    neg: другое
+    neg: другое, особое
     mid: ''
-    pos: то же
+    pos: то же, общее
   one_sided: false
-  ru_axis: другое … то же
-  status: принято
-  en_axis: -5 different/opposite ... +5 identical/exactly
+  ru_axis: 'другое … то же (−5 другое, противоположное, −4 особое, не как другие, +3 обычное, +5 то же, тождественное): `SAME(=-4) \| a` особый, уникальный, `SAME(=-4) \| e` особенно, `SAME(=+3) \| a` обычный, `SAME(=+4) MANY(=+5) \| a` общий, всеобщий, `SAME(=-4) JOIN(=-5) RULE \| o` исключение'
+  status: 'принято; **с 2026-10 вбирает корень PARTICULAR** (общее … особое): слепой тест 12 слов × 2 кодировщика — с PARTICULAR 13 точных из 24, через SAME 12 из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
+  en_axis: '-5 different/opposite ... -4 special, unlike others ... +3 ordinary ... +5 identical/exactly. `SAME(=-4) | a` special/unique, `SAME(=+4) MANY(=+5) | a` general/universal.'
   semaxis:
   - same identical equal similar alike
   - different opposite unlike distinct dissimilar
@@ -291,18 +291,6 @@ roots:
   semaxis:
   - hard rigid stiff firm rough sharp
   - soft squishy fluffy spongy mushy pliable supple
-- name: MATTER
-  axis:
-    neg: твёрдое
-    mid: жидкое
-    pos: газ
-  one_sided: false
-  ru_axis: 'твёрдое … жидкое … газ (−5 твёрдое, 0 жидкое, +5 газ): `MATTER(=0) \| o` жидкость, `MATTER(=+5) \| o` газ'
-  status: '**новое**, принято (анализ ниже: классы разделены в четыре σ)'
-  en_axis: -5 solid ... 0 liquid ... +5 gas
-  semaxis:
-  - gas vapor air steam smoke
-  - solid rock stone metal brick
 - name: SEX
   axis:
     neg: женское
@@ -437,19 +425,6 @@ roots:
   - change transform alter vary shift
   - remain stay constant stable unchanged
   en_gloss: change, become different
-- name: PARTICULAR
-  axis:
-    neg: общее, универсальное
-    mid: обычное
-    pos: особое, единственное, конкретное
-  one_sided: false
-  ru_axis: 'общее … особое (−5 общее, универсальное, 0 обычное, +5 особое, единственное, конкретное): `PARTICULAR(=+4) \| a` особый, конкретный, `PARTICULAR(=-4) \| a` общий'
-  status: '**новое**, предложено, проверить слепым тестом (SemAxis: unique, peculiar, particular, specific)'
-  en_axis: -5 general/universal ... 0 ordinary ... +5 particular/unique/specific
-  semaxis:
-  - particular specific unique peculiar distinct
-  - general common universal generic typical
-  en_gloss: particular, specific, special
 - name: ART
   axis:
     neg: расчёт, техника, точные науки
@@ -581,17 +556,17 @@ roots:
   - whisper murmur mumble hush mutter faint silent quiet
 - name: GRAIN
   axis:
-    neg: текучее, жидкое
+    neg: газ, пар
     mid: сыпучее, рассыпчатое
     pos: цельное, одним куском
   one_sided: false
-  ru_axis: 'как вещество держится вместе, размер неделимого куска (−5 течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, сплошное: слиток, монолит): `GRAIN(=-5) \| o` жидкость, `GRAIN(=-2) \| o` песок, мука, `GRAIN(=+5) \| a` цельный, сплошной, неразрывный. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные −5, целые около −1'
-  status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — [roundtrip_grain](../data/translation_test/roundtrip_grain.md)'
-  en_axis: '-5 fluid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (ingot, monolith). Also continuous / seamless / whole as `GRAIN(=+5) | a`.'
+  ru_axis: 'как вещество держится вместе (−5 газ, пар, дым, −3 жидкость, течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, твёрдое: камень, слиток, монолит): `GRAIN(=-5) \| o` газ, `GRAIN(=-3) \| o` жидкость, `GRAIN(=0) THING(=-5) \| o` песок, `GRAIN(=+5) \| a` цельный, сплошной, твёрдый; есть `CONSUME(=+5) GRAIN(=+3) \| i`, пить `CONSUME(=+5) GRAIN(=-3) \| i`, вдыхать `CONSUME(=+5) GRAIN(=-5) \| i`. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные — текучие (−3), целые — около −1'
+  status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — [roundtrip_grain](../data/translation_test/roundtrip_grain.md). **С 2026-10 вбирает корень MATTER** (твёрдое … жидкое … газ): одна шкала вместо двух встречных, слепой тест 12 слов — 11 → 17 точных из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
+  en_axis: '-5 gas, vapour, smoke ... -3 liquid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (stone, ingot, monolith). Also solid / continuous / seamless / whole as `GRAIN(=+5) | a`. eat = `CONSUME(=+5) GRAIN(=+3) | i`, drink = `CONSUME(=+5) GRAIN(=-3) | i`, inhale = `CONSUME(=+5) GRAIN(=-5) | i`.'
   semaxis:
   - solid monolith ingot lump slab block chunk seamless
-  - liquid fluid water watery runny molten flowing
-  en_gloss: cohesion, grain size
+  - gas vapor steam smoke air
+  en_gloss: state and cohesion of matter
 - name: FIGHT
   axis:
     neg: игра, спорт, соревнование
@@ -612,7 +587,17 @@ roots:
   axis: null
   ru_gloss: видеть
 - name: DO
-  axis: null
+  axis:
+    neg: тот, кто делает
+    mid: само действие
+    pos: то, чем делают
+  one_sided: false
+  ru_axis: 'роль в действии (−5 тот, кто делает, деятель … 0 само действие … +5 то, чем делают: орудие, инструмент, средство); без значения — делать. Корни описывают действие, `DO(=+5)` делает из него орудие: `JOIN(=-4) TOUCH(=+4) DO(=+5) \| o` нож, `TEXT DO(=+5) \| o` ручка, `MEASURE HEAT DO(=+5) \| o` градусник, `SEE DO(=+5) \| o` очки'
+  status: '**ось добавлена** вместо метки `U` (как эсперантские *-ist* и *-il*): орудия на существующих корнях 1 точное из 24 (`THING(=-5)` читается как камень), с меткой `U` 13 из 24 — [roundtrip_tools](../data/translation_test/roundtrip_tools.md), с осью у DO 17 из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
+  en_axis: '-5 the doer, agent ... 0 the action itself ... +5 the tool, instrument, means. Bare root: do, make. The roots describe the action and `DO(=+5)` turns it into a tool: `JOIN(=-4) TOUCH(=+4) DO(=+5) | o` knife, `TEXT DO(=+5) | o` pen, `SEE DO(=+5) | o` glasses.'
+  semaxis:
+  - tool instrument implement utensil device
+  - doer performer agent actor worker
   ru_gloss: делать
 - name: PLACE
   axis: null

@@ -54,7 +54,7 @@
 - Изменение — корень `CHANGE` (−5 остаться … +5 превратить); направление через `BIG` и `GOOD`: *grow* = `CHANGE BIG(=+3) | i`, *improve* = `CHANGE GOOD(=+3) | i`, *remain* = `CHANGE(=-4) | i`.
 - Власть и учреждение — ось `RULE` (−5 личное … +5 официальное): *authority* = `RULE(=+4) | o`, *official* = `RULE(=+5) | a`, *private* = `RULE(=-5) | a`. Слабые значения около 0 ничего не несут.
 - Организационные типы (*committee, commission, agency, union, party, institution*) корнями не различаются: код `SOMEONE PART(=+5) RULE(=+4) | o` читается как «официальная группа». Словарь `@NN` не вводим, потеря принята.
-- *specific / particular / special* = `PARTICULAR(=+3…+4)`, *general* = `PARTICULAR(=-4)`, *unique* = `PARTICULAR(=+5) SAME(=-5)`. Оттенки внутри кластера не различаются.
+- Особое и общее — ось `SAME` (корень `PARTICULAR` в неё влит, [roundtrip_merge](../data/translation_test/roundtrip_merge.md)): *special / unique* = `SAME(=-4) | a`, *especially* = `SAME(=-4) | e I+4`, *individual* = `SAME(=-4) PART(=-2) | a`, *ordinary* = `SAME(=+3) | a`, *general / universal* = `SAME(=+4) MANY(=+5) | a`. Не собираются: *specific* (`SAME(=-4) KNOW(=+5)` → *famous*), *rare* (`MANY(=+1)` → *few*).
 
 ## Залог
 
@@ -69,13 +69,18 @@
 - `I0` («довольно, умеренно») может теряться; для слабой степени писать `I+1…+2`.
 - Не `BIG(=+5)` как «очень»; не `C` (сравнение).
 - *Almost* («почти») метка `I` не передаёт: читается как *quite likely / fairly certain* — принято как допустимая потеря, ничего не вводим.
-- Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN(=+3) | a` *significant*, `BIG(=+4) HAPPEN(=+4) | a` *important / major*, `BIG(=+5) HAPPEN(=+5) | a` *crucial / momentous* ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `PARTICULAR` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
+- Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN(=+3) | a` *significant*, `BIG(=+4) HAPPEN(=+4) | a` *important / major*, `BIG(=+5) HAPPEN(=+5) | a` *crucial / momentous* ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `SAME(=-4)` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
+
+## Вещество и орудия
+
+- Ось `GRAIN` — как вещество держится вместе (корень `MATTER` в неё влит, [roundtrip_merge](../data/translation_test/roundtrip_merge.md), 17 из 24): −5 газ, пар, дым … −3 жидкость … 0 сыпучее … +5 цельный кусок. *gas* = `GRAIN(=-5) | o`, *steam* = `GRAIN(=-5) HEAT(=+3) | o`, *liquid* = `GRAIN(=-3) | o`, *water* = `GRAIN(=-3) CONSUME(=+5) LIVE | o`, *sand* = `GRAIN(=0) THING(=-5) | o`, *flour* = `GRAIN(=0) CONSUME(=+5) THING(=0) | o`, *stone* = `GRAIN(=+5) THING(=-5) | o`, *ice* = `GRAIN(=+5) HEAT(=-5) | o`, *melt* = `CHANGE(=+4) GRAIN(=-3) HEAT(=+3) | i`. Мёд (`GRAIN(=-3) CONSUME(=+5) GOOD(=+4)`) читается как вино, сок.
+- Орудие — ось `DO` (роль в действии: −5 деятель … 0 действие … +5 орудие), 17 из 24, [roundtrip_merge](../data/translation_test/roundtrip_merge.md): корни описывают действие, `DO(=+5)` делает из него орудие. *knife* = `JOIN(=-4) TOUCH(=+4) DO(=+5) | o`, *saw* = `JOIN(=-4) MOVE(=+2) DO(=+5) | o`, *scissors* = `JOIN(=-4) MANY(=+1) DO(=+5) | o`, *hammer* = `TOUCH(=+5) MOVE(=+4) DO(=+5) | o`, *brush* = `TOUCH(=-3) MOVE DO(=+5) | o`, *pen* = `TEXT DO(=+5) | o`, *thermometer* = `MEASURE HEAT DO(=+5) | o`, *ladder* = `MOVE ABOVE(=+4) DO(=+5) | o`, *key* = `INSIDE(=+4) CAN(=+4) DO(=+5) | o` (1 из 2). Не собираются: ложка (→ *cup*), метла, иголка. Не `THING(=-5)` для орудий: читается как камень.
 
 ## Наука, техника, искусство
 
 ([roundtrip_art](../data/translation_test/roundtrip_art.md), 29 из 32 верно, ещё 1 запасным)
 
-- Область знания или занятия — корень `ART` (−5 расчёт, техника … +5 творчество, культура): *poetry* = `ART(=+5) SAY | o`, *painting* = `ART(=+5) SEE MATTER(=0) | o`, *history* = `ART(=+4) KNOW TIME(=-3) | o`, *physics* = `ART(=-4) MATTER MOVE | o`, *mathematics* = `ART(=-5) MANY SEE | o`, *engineering* = `ART(=-4) DO THING | o`.
+- Область знания или занятия — корень `ART` (−5 расчёт, техника … +5 творчество, культура): *poetry* = `ART(=+5) SAY | o`, *painting* = `ART(=+5) SEE GRAIN(=-3) | o`, *history* = `ART(=+4) KNOW TIME(=-3) | o`, *physics* = `ART(=-4) GRAIN MOVE | o`, *mathematics* = `ART(=-5) MANY SEE | o`, *engineering* = `ART(=-4) DO THING | o`.
 - Человек дела — `SOMEONE ART(=±n) …`: *engineer* = `SOMEONE ART(=-4) DO | o`, *scientist* = `SOMEONE ART(=-4) KNOW | o`, *artist* = `SOMEONE ART(=+5) DO | o`.
 - Устройства — `THING(=-5)` и действие: *machine* = `THING(=-5) MOVE DO | o`, *computer* = `THING(=-5) THINK ART(=-5) | o`.
 - Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*; `ART(=+3) PLACE LIVE` → *theater*). Принято как потеря.
@@ -100,7 +105,7 @@
 
 ([roundtrip_consume](../data/translation_test/roundtrip_consume.md), 26 из 32 верно)
 
-- Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) MATTER(=-5) | i`, *drink* = `CONSUME(=+5) MATTER(=0) | i`, *inhale* = `CONSUME(=+5) MATTER(=+5) | i`, *exhale* = `CONSUME(=-5) MATTER(=+5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
+- Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) GRAIN(=+3) | i`, *drink* = `CONSUME(=+5) GRAIN(=-3) | i`, *inhale* = `CONSUME(=+5) GRAIN(=-5) | i`, *exhale* = `CONSUME(=-5) GRAIN(=-5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
 - Речь и слух: *speak* = `CONSUME(=-5) SAY | i`, *listen* = `CONSUME(=+5) SAY CARE(=+3) | i`.
 - Письменная речь — корень `TEXT` (без оси; `SAY` — устная), [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 3 → 15 точных из 24: *write* = `TEXT | i`, *read* = `CONSUME(=+5) TEXT | i`, *writer* = `SOMEONE TEXT | o`, *author* = `SOMEONE TEXT HAPPEN(=-4) | o`, *book* = `TEXT PART(=+2) | o`, *letter* = `TEXT GIVE(=+3) SOMEONE | o`, *newspaper* = `TEXT TIME(=0) PART(=+5) | o`, *library* = `PLACE TEXT PART(=+5) | o`. Прежние `CONSUME(=-5) SEE` (→ *show*) и `CONSUME(=+5) SEE` (→ *watch*) не читались.
 
@@ -124,6 +129,6 @@
 
 ## Рецепты понятий (два слепных теста: [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md), раунд 2)
 
-- Работают: *game* — теперь `FIGHT(=-5) | o` (ось у `FIGHT` появилась, см. «Эмоции, бой»; прежний `FIGHT ART(=+2) | o` тоже читался); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
+- Работают: *game* — теперь `FIGHT(=-5) | o` (ось у `FIGHT` появилась, см. «Эмоции, бой»; прежний `FIGHT ART(=+2) | o` тоже читался); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `SAME(=-4) JOIN(=-5) RULE | o` (2/2 в [roundtrip_merge](../data/translation_test/roundtrip_merge.md)); *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
 - **Меры и отношения — корень `MEASURE`** (ось: −5 величина сама по себе … +5 величина относительно другой; введён после двух провалов с `PART`/`BIG`/`SAME`; слепой тест v2 26 из 32, [roundtrip_measure](../data/translation_test/roundtrip_measure.md)): *ratio* `MEASURE(=+5) | o`, *percentage* `MEASURE(=+5) PART(=-2) | o`, *rate* `MEASURE(=+5) TIME | o`, *amount* `MEASURE(=-5) | o`, *size* `MEASURE(=-5) BIG | o`, *degree, level* `MEASURE(=0) | o`, *average* `MEASURE(=+5) MANY SAME | o`, *measurement* и *to measure* `MEASURE DO | o` / `MEASURE | i`, *unit* `MEASURE SAME | o`. Слабо: *meter, dimension, proportional* (читаются *distance/area/fractional*).
 - Не работают (по две серии рецептов, ни один не прочитан верно): *way/method*, *measurement* как *act of measuring* (теперь `MEASURE(=-5)`, но читается *meter / unit*), *a sort of X* (`I-2` на имени не читается как «вид»; *a sort of bird* → *bird*). `RULE(=-5)`/`SAME(=-5) RULE` для «независимый» читается как *illegal*.
