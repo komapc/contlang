@@ -21,6 +21,7 @@ TOKEN = re.compile(r'''
     (?P<q>"[^"]*")
   | (?P<badq>")
   | (?P<br>[\[\]])
+  | (?P<semi>;)
   | (?P<bar>\|)
   | (?P<root>[A-Z]{2,}[A-Z0-9]*)(?P<arg>\([^)]*\))?
   | (?P<lab>[A-Z](?:[+-]?\d+)?)
@@ -61,18 +62,20 @@ class Validator:
         state = "roots"  # roots | pos | labels
         seen_labels = set()
         has_bar = False
+        after_and = False  # предыдущая частица — AND: модификатор без формы допустим (`AND SAME(=-5)`)
+        word_after_and = False
 
         def end_word():
-            nonlocal word, state, seen_labels, has_bar
+            nonlocal word, state, seen_labels, has_bar, word_after_and
             if word:
                 body = [r for r in word if r != self.extra]
                 if len(body) > self.max_roots:
                     add("error", "too_many_roots", f"{len(body)} корней (лимит {self.max_roots}): {' '.join(word)}")
                 if word.count(self.extra) > 1:
                     add("error", "too_many_roots", f"{self.extra} дважды")
-                if not has_bar:
-                    add("warning", "no_form", f"слово без `| форма`: {' '.join(word)}")
-            word, state, seen_labels, has_bar = [], "roots", set(), False
+                if not has_bar and not word_after_and:
+                    add("error", "no_form", f"слово без `| форма`: {' '.join(word)}")
+            word, state, seen_labels, has_bar, word_after_and = [], "roots", set(), False, False
 
         for m in TOKEN.finditer(code):
             k = m.lastgroup
@@ -81,10 +84,17 @@ class Validator:
             if k == "ws":
                 continue
             t = m.group(0)
+            was_and, after_and = after_and, False
             if k == "q":
-                end_word()
+                # кавычки перед `|` входят в слово (`TIME MEASURE "10" | o`), иначе это отдельный элемент
+                if not (word and state == "roots" and re.match(r"\s*\|", code[m.end():])):
+                    end_word()
             elif k == "badq":
                 add("error", "bad_quote", "непарная кавычка")
+            elif k == "semi":
+                if not word and not has_bar and state == "roots" and not code[:m.start()].strip():
+                    add("warning", "empty_clause", "`;` в начале кода")
+                end_word()
             elif k == "br":
                 end_word()
                 depth += 1 if t == "[" else -1
@@ -101,9 +111,12 @@ class Validator:
                 arg = m.group("arg")
                 if name in self.particles:
                     end_word()
+                    after_and = name == "AND"
                     continue
                 if state != "roots":
                     end_word()
+                if not word:
+                    word_after_and = was_and
                 if name not in self.roots:
                     add("error", "unknown_root", name)
                     word.append(name)
@@ -164,6 +177,7 @@ class Validator:
                     add("error", "bare_word", f"неоформленное слово `{t}`")
             elif k == "suf":
                 add("warning", "old_notation", f"суффикс {t}")
+                has_bar = True
             elif k == "num":
                 add("warning", "unquoted_number", t)
             else:

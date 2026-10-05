@@ -61,7 +61,7 @@ def tables_md(doc):
     L.append("")
     L.append("## Счёт\n")
     lim = doc["limits"]
-    L.append(f"Корней {total} ({na} с осью, {nn} без); меток формы {len(doc['labels'])}; частиц {len([p for p in doc['particles'] if p['name'] != '\"…\"'])} (+ кавычки); частей речи {len(doc['pos'])}. "
+    L.append(f"Корней {total} ({na} с осью, {nn} без); меток формы {len(doc['labels'])}; частиц и знаков {len(doc['particles'])} (+ кавычки); частей речи {len(doc['pos'])}. "
              f"Лимит: до {lim['max_roots']} смысловых корней в слове; `{lim['extra_root']}` как индикатор абстрактности (абстрактные существительные) сверх лимита, четвёртым.")
     return "\n".join(L) + "\n"
 

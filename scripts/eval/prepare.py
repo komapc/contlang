@@ -24,7 +24,13 @@ import spec  # noqa: E402
 TEMPLATES = REPO / "data" / "eval" / "templates"
 
 
-def build_spec(kind, task, drop=(), axes=None):
+CLAUSE_RULE = {
+    "enc": "CLAUSES: independent clauses of a long sentence are separated by `;` (each clause has its own words and particles); `[ ... ]` is only for a clause that is an argument or is nested inside another. EVERY word, including a head noun before PI or E, carries its own `| FORM` (at least the part of speech), so a word is at most 3 roots plus ABSTRACT; never run two words together without `|`.",
+    "dec": "CLAUSES: `;` separates independent clauses of a long sentence; `[ ... ]` marks a nested or argument clause. Every word has its own `| FORM`.",
+}
+
+
+def build_spec(kind, task, drop=(), axes=None, clause_rule=True):
     doc = spec.load()
     roots = [r for r in doc["roots"] if r["name"] not in set(drop)]
     for name, text in (axes or {}).items():
@@ -38,6 +44,7 @@ def build_spec(kind, task, drop=(), axes=None):
     roots_par = f"{len(roots)} roots (NSM-like primitives): " + ", ".join(items) + "."
     axes_lines = "\n".join(f"- {r['name']}: {r['en_axis']}" for r in roots if r.get("axis") and r.get("en_axis"))
     text = (TEMPLATES / f"{kind}_{task}.md").read_text(encoding="utf8")
+    text = text.replace("{{CLAUSE_RULE}}\n", CLAUSE_RULE[kind] + "\n" if clause_rule else "")
     return text.replace("{{ROOTS}}", roots_par).replace("{{AXES}}", axes_lines).replace("{{N_ROOTS}}", str(len(roots)))
 
 
@@ -47,7 +54,7 @@ def cmd_spec(a):
     unknown = set(drop) - set(spec.root_names())
     if unknown:
         raise SystemExit(f"нет таких корней: {sorted(unknown)}")
-    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes), encoding="utf8")
+    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes, not a.no_clause_rule), encoding="utf8")
     print(f"записано {a.out}")
 
 
@@ -78,6 +85,7 @@ def main():
     s.add_argument("task", choices=["words", "sents"])
     s.add_argument("out")
     s.add_argument("--drop", default="")
+    s.add_argument("--no-clause-rule", action="store_true", help="спецификация предложений без правила про `;` и форму у каждого слова (для сравнения)")
     s.add_argument("--axis", action="append", default=[], help="ROOT=английское описание оси")
     s.set_defaults(f=cmd_spec)
     i = sp.add_parser("items")

@@ -87,3 +87,11 @@ def _doc_codes(rel):
 def test_codes_in_docs_are_valid(rel):
     bad = [(ln, s, sorted(errors(s))) for _, ln, s in _doc_codes(rel) if errors(s)]
     assert not bad, bad
+
+
+def test_clause_separator_and_form_rule():
+    assert not errors('SOMEONE | o SAY | i T-2 ; THING | o LIVE | i')
+    assert "no_form" in errors('SOMEONE PI "Aden"')  # главное слово без формы
+    assert not errors('SOMEONE | o PI "Aden"')
+    assert not errors('TIME MEASURE(=-5) "10" | o N+3')
+    assert not errors("LIVE | i AND SAME(=-5) SAY | i")  # модификатор после AND без формы допустим

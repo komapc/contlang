@@ -23,6 +23,7 @@ FORM (new notation): the word is written ROOTS | FORM. Before `|`: meaning roots
 
 More marks after `|`: A = aspect (-5 about to start / beginning ... 0 in progress ... +5 completed); C = degree (-3 less, +3 more = comparative, +5 most = superlative; applies to the root's axis); D = definiteness (-3 indefinite 'a', +3 definite 'the'); `!` = command (imperative); `?` = question.
 PHRASES: a sentence is a sequence of words and particles. A word is ROOTS | FORM (see FORM above): it ends where the next uppercase root, quoted item or particle begins. Particles: E = direct object of the preceding verb; PI = a noun that defines the preceding noun (compound / "of"); LA = context or condition clause before a main clause ("although/if/when"); [ ... ] = a clause used as a modifier, complement or content; "..." = a quoted name, number, Latin or technical term kept as is. There is no separate particle for the predicate: a word with part of speech `i` is the verb. Decode each numbered line into ONE fluent English sentence. This is an encyclopedia text.
+{{CLAUSE_RULE}}
 
 
 
