@@ -1,0 +1,14 @@
+[
+ {"en":"sand","code":"GRAIN(=0) THING(=-5) PART(=-5) | o","decoded":"sand"},
+ {"en":"dust","code":"GRAIN(=0) PART(=-5) MATTER(=+2) | o","decoded":"dust"},
+ {"en":"boulder","code":"GRAIN(=+5) THING(=-5) BIG(=+4) | o","decoded":"boulder"},
+ {"en":"continuous","code":"GRAIN(=+5) TIME | a A0","decoded":"continuous"},
+ {"en":"zero","code":"MANY(=0) MEASURE(=-5) | o","decoded":"zero"},
+ {"en":"sum","code":"MANY JOIN(=+4) MEASURE(=-5) | o","decoded":"sum"},
+ {"en":"calculate","code":"ART(=-5) THINK MEASURE | i","decoded":"calculate"},
+ {"en":"fraction","code":"PART(=-2) MEASURE(=+5) | o","decoded":"fraction"},
+ {"en":"honey","code":"GRAIN(=-3) CONSUME(=+5) GOOD(=+4) | o","decoded":"nectar (в альтернативах: juice, broth)"},
+ {"en":"half","code":"PART(=-2) SAME MEASURE(=+5) | o","decoded":"percentage (в альтернативах: proportion)"},
+ {"en":"mathematics","code":"ART(=-5) MANY SEE | o","decoded":"statistics (соседняя область)"},
+ {"en":"seamless","code":"GRAIN(=+5) JOIN(=-5) | a","decoded":"separate (противоположный смысл: JOIN(=-5) значит «отделить»)"}
+]

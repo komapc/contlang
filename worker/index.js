@@ -6,16 +6,17 @@ const DEFAULT_MODEL = "openai/gpt-4o-mini"; // можно сменить пер�
 const MAX_INPUT = 300;
 
 const ENCODE_TASK = `
-TASK: the user message is ONE English word (possibly with a sense hint in brackets) or one short sentence.
-Encode it into min-co using the spec above, as a single code (use ';' only for several clauses). Remember: ordinary English words are never quoted; express them with roots.
+TASK: the user message is ONE English word (possibly with a sense hint in brackets) or a short phrase.
+Encode it into min-co using the spec and the encoding tips above, as a single code in the form \`ROOTS | form\` (e.g. \`GRAIN(=0) THING(=-5) PART(=-5) | o\`). Ordinary English words are never quoted; express them with roots.
 
-How to work (follow in order, silently, then answer):
-1. Paraphrase the meaning in plain words and name what separates it from its nearest synonyms (the shade of meaning to keep).
-2. Build the concept from 1-3 roots whose meanings COMBINE into that paraphrase: the head root carries the core, modifiers and axis values narrow it down. Do not pick a root only because the English word sounds or feels related to it. Read each root by its axis table, not by its name: e.g. a root that names a domain (TIME, PLACE, THING) is right only if the word is about that thing itself, not merely about something that lasts, happens or exists somewhere.
-3. Check by decoding: read your code the way someone who has only the spec would. If it would most naturally come back as a different, more common word, change the code.
-4. Confidence: "высокая" only if the decoder would plainly recover this very word; "средняя" if it recovers a close synonym; "низкая" if the concept needs a guess or only part of the meaning is kept. A single bare root for an abstract word is rarely "высокая". List in "confusable" the words the code is most likely to be read as.
+How to work (silently, then answer):
+1. Paraphrase the meaning and name what separates it from its nearest synonyms.
+2. Build the concept from 1-3 roots whose meanings COMBINE into that paraphrase (head root first). Do not pick a root only because the English word feels related to it; read each root by its axis table. Follow the encoding tips for the word's kind (numbers, materials, abstract nouns, ...).
+3. Check by decoding: would someone who has only the spec most naturally read your code as a different, more common word? If so, rework it.
+4. Confidence: "высокая" only if the decoder would plainly recover this very word; "средняя" if a close synonym; "низкая" if only part of the meaning is kept.
+Write axis values as in the spec: \`(=+3)\`, \`(=-2)\`, \`(=0)\`, never \`+0\`.
 Reply with ONLY a JSON object, no other text, no markdown fences:
-{"idea": "<one-line paraphrase of the meaning, English>", "code": "<the code>", "tokens": [{"t": "<one token or phrase of the code>", "note": "<короткое пояснение по-русски: какой корень, какое значение оси, какая роль>"}], "confidence": "высокая|средняя|низкая", "confusable": ["<1-2 English words the code could be confused with>"]}`;
+{"idea": "<one-line paraphrase, English>", "code": "<the code>", "tokens": [{"t": "<one root with value, or the form part>", "note": "<короткое пояснение по-русски: какой корень, какое значение оси, какая роль>"}], "confidence": "высокая|средняя|низкая", "confusable": ["<1-2 English words the code could be confused with>"]}`;
 const DECODE_TASK = `
 TASK: the user message is a min-co code. You have NOT seen the original text.
 Decode it into the English word, phrase or sentence it most likely stands for.

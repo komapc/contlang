@@ -39,28 +39,19 @@ def roots_json():
 
 
 def examples_json():
-    """Несколько настоящих пар из отложенного прогона `toki`: исходное предложение, код, раскодировано."""
-    items = {}
-    for c in ("s0", "s1"):
-        for i, line in enumerate((RUN / f"items_h{c[1]}.txt" if (RUN / f"items_h{c[1]}.txt").exists() else RUN / f"items_{c}.txt").read_text(encoding="utf8").splitlines(), 1):
-            m = re.match(r"\s*\d+\.\s*(.*\S)", line)
-            if m:
-                items[(c, i)] = m.group(1)
-    v = Validator()
-    out = []
-    for c in ("s0", "s1"):
-        codes = list(iter_codes(RUN / f"codes_toki_A_{c}.md"))
-        decs = [re.sub(r"^\s*\d+\.\s*", "", l).strip() for l in (RUN / f"dec_toki_A_{c}.md").read_text(encoding="utf8").splitlines() if l.strip()]
-        for i, code in enumerate(codes, 1):
-            if i > len(decs) or any(x.level == "error" for x in v.check_toki(code)) or len(code) > 140 or len(items[(c, i)]) > 110 or "  " in items[(c, i)]:
-                continue
-            out.append({"en": items[(c, i)], "code": code, "decoded": decs[i - 1]})
-    return out[:8]
+    """Пары из слепых тестов GRAIN и чисел (data/site/examples_words.json): слово, код, что прочитал декодер; верные и ошибочные."""
+    return json.loads((REPO / "data" / "site" / "examples_words.json").read_text(encoding="utf8"))
+
+
+def tips():
+    t = (REPO / "docs" / "encoding.md").read_text(encoding="utf8")
+    t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", t)
+    return t
 
 
 def prompts_js():
-    enc = build_spec("enc", "toki")
-    dec = build_spec("dec", "toki")
+    enc = build_spec("enc", "words") + "\n\n# Encoding tips (verified by blind tests; in Russian)\n\n" + tips()
+    dec = build_spec("dec", "words")
     return "// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False) + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\n"
 
 
