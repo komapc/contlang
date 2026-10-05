@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>min-co: пробный стенд</title>
+<meta name="description" content="Искусственный язык min-co: введите слово, получите код с объяснением, затем слепое раскодирование.">
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--warn:#8a5a00;--warnbg:#fdf3dc;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c;--warn:#e8c070;--warnbg:#332a14}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c;--warn:#e8c070;--warnbg:#332a14}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:28px 0 8px}
+h1{font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--mut);margin:0}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin:18px 0 22px;border-bottom:1px solid var(--line)}
+nav button{background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);font:inherit;padding:8px 12px;cursor:pointer}
+nav button[aria-selected=true]{color:var(--fg);border-bottom-color:var(--acc)}
+section{display:none}section.on{display:block}
+h2{font-size:21px;margin:26px 0 8px}h3{font-size:17px;margin:20px 0 6px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px;margin:12px 0}
+textarea{width:100%;font:inherit;padding:10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg);resize:vertical}
+button.go{background:var(--acc);color:var(--bg);border:0;border-radius:8px;padding:9px 16px;font:inherit;cursor:pointer}
+button.go[disabled]{opacity:.5;cursor:default}
+button.ghost{background:none;border:1px solid var(--line);color:var(--fg);border-radius:8px;padding:6px 10px;font:inherit;cursor:pointer}
+code,.code{font-family:var(--mono);font-size:14px}
+.code{display:block;background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto;white-space:pre-wrap;word-break:break-word}
+.note{background:var(--warnbg);color:var(--warn);border-radius:8px;padding:10px 12px;margin:12px 0;font-size:15px}
+.mut{color:var(--mut);font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{color:var(--mut);font-weight:600}
+.ex{cursor:pointer}.ex:hover{background:var(--acc2)}
+.row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+input[type=search]{width:100%;font:inherit;padding:8px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+.pill{display:inline-block;background:var(--acc2);color:var(--acc);border-radius:99px;padding:1px 9px;font-size:13px}
+a{color:var(--acc)}
+.cmp{display:grid;grid-template-columns:1fr 1fr;gap:12px}@media(max-width:620px){.cmp{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <h1>min-co</h1>
+  <p class="sub">Язык из 44 смысловых корней с осями значений. Введите слово: оно закодируется, а затем другая модель, не видевшая оригинала, раскодирует его.</p>
+</header>
+<nav role="tablist">
+  <button role="tab" aria-selected="true" data-t="demo">Проба</button>
+  <button role="tab" aria-selected="false" data-t="how">Как читать код</button>
+  <button role="tab" aria-selected="false" data-t="roots">Корни</button>
+  <button role="tab" aria-selected="false" data-t="method">Методология</button>
+  <button role="tab" aria-selected="false" data-t="docs">Документация</button>
+</nav>
+
+<section id="demo" class="on">
+  <div id="modeNote" class="note" hidden></div>
+  <div class="card" id="live">
+    <label for="inp"><b>Слово или короткое предложение (по-английски)</b></label>
+    <textarea id="inp" rows="2" maxlength="300" placeholder="например: bedroom (a room for sleeping)"></textarea>
+    <div class="row"><button class="go" id="enc">Закодировать</button><span class="mut" id="status"></span></div>
+  </div>
+  <div id="out" hidden>
+    <div class="card"><b>Код</b><span class="code" id="code"></span>
+      <div class="mut" id="conf"></div>
+      <h3>Объяснение</h3><table><thead><tr><th>часть кода</th><th>что значит</th></tr></thead><tbody id="tokens"></tbody></table>
+    </div>
+    <div class="card"><b>Слепое раскодирование</b> <span class="mut">(модель видит только код)</span>
+      <div class="row"><button class="go" id="dec">Раскодировать</button></div>
+      <div id="decOut" hidden>
+        <div class="cmp" style="margin-top:12px">
+          <div><div class="mut">исходное</div><div id="orig"></div></div>
+          <div><div class="mut">раскодировано</div><div id="best"></div></div>
+        </div>
+        <div class="mut" id="alts" style="margin-top:8px"></div>
+        <div class="mut" id="why"></div>
+      </div>
+    </div>
+  </div>
+  <h2>Сохранённые примеры</h2>
+  <p class="mut">Настоящие результаты тестового прогона (кодировал и раскодировал отдельный экземпляр модели, без отбора лучших). Нажмите строку, чтобы посмотреть.</p>
+  <div class="card"><table><tbody id="examples"></tbody></table></div>
+</section>
+
+<section id="how">
+  <h2>Как читать код</h2>
+  <p>Слово записи — <b>один корень</b>, при необходимости со значением на его оси: <code>GOOD+3</code> (скорее хороший), <code>TIME-2</code> (недавно), <code>GOOD0</code> (явная середина). Ось не написана — значение не указано. Корни без оси (BODY, SEE, DO, PLACE, FIGHT) значения не берут.</p>
+  <p><b>Фраза</b> — главное слово и слова-уточнения через пробел, как в токи пона: каждое следующее уточняет всё, что стоит перед ним. <code>THING+4 BIG+5</code> — «большое животное», <code>PLACE LIVE</code> — «жильё». Одному английскому слову может соответствовать несколько слов min-co.</p>
+  <p>Части речи нет в записи, их задаёт позиция: первая группа — подлежащее, после <code>LI</code> сказуемое, после <code>E</code> дополнение; уточнение после имени — признак, после глагола — обстоятельство.</p>
+  <h3>Частицы</h3><table><tbody id="particles"></tbody></table>
+  <h3>Метки формы</h3>
+  <p class="mut">Метки — не корни. Клеятся к главному слову через точку: <code>SAY.T-2.M-5</code> — «не сказал».</p>
+  <table><thead><tr><th>метка</th><th>что</th><th>шкала</th></tr></thead><tbody id="labels"></tbody></table>
+  <p class="note">Запись в стиле токи пона проверена на предложениях энциклопедического текста; на отдельных словах она ещё не измерялась отдельно (ранее на словах тестировалась запись с суффиксами).</p>
+</section>
+
+<section id="roots">
+  <h2>Корни</h2>
+  <p class="mut" id="rootCount"></p>
+  <input type="search" id="q" placeholder="поиск по корню или значению">
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th>корень</th><th>−5</th><th>0</th><th>+5</th></tr></thead><tbody id="rootRows"></tbody></table></div>
+  <p class="mut">Источник — файл <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>; таблица на сайте собирается из него.</p>
+</section>
+
+<section id="method">
+  <h2>Методология</h2>
+  <p>Главный вопрос: сохраняется ли смысл при цепочке <i>текст → код → текст</i>. Проверка слепая:</p>
+  <ol>
+    <li><b>Кодировщик</b> видит только описание языка и текст и пишет код.</li>
+    <li><b>Декодер</b> — отдельный экземпляр — видит только описание и код и восстанавливает текст.</li>
+    <li><b>Судья</b> (другая, более сильная модель) видит оригинал и перемешанные варианты и ставит 0–3: 3 тот же смысл, 2 главное сохранено, 1 только тема, 0 мимо.</li>
+    <li>Разницу между вариантами считаем с 95%-ным бутстреп-интервалом по предложениям. Меняем язык, только если интервал не содержит нуля.</li>
+  </ol>
+  <h3>Что получилось</h3>
+  <table><thead><tr><th>проверка</th><th>результат</th></tr></thead><tbody>
+    <tr><td>Убрали корни CONTAINER и MAYBE (вместо них сочетания и метка)</td><td>в пределах шума; корней стало меньше</td></tr>
+    <tr><td>Ось у корня «видеть»</td><td>хуже, чем без оси (−0,43, интервал на границе); не введена</td></tr>
+    <tr><td>Фигурные скобки вокруг слов</td><td>кодов без ошибок формата стало намного больше (8–10% ошибок вместо 30–58%), смысл не изменился (+0,04 [−0,20, +0,26])</td></tr>
+    <tr><td><b>Запись в стиле токи пона</b> (слова-корни, роли по позиции)</td><td>смысл лучше: +0,33 [+0,05, +0,60] на отложенном наборе из 40 предложений</td></tr>
+  </tbody></table>
+  <h3>Честные оговорки</h3>
+  <ul>
+    <li>Абсолютная точность невысока: на энциклопедических предложениях средняя оценка около 1,2–1,4 из 3. Язык пока передаёт тему и главные связи, но не детали.</li>
+    <li>Кодировщик, декодер и судья — модели одной семьи; людей и других языков в проверке нет. Кодировщиков по два на вариант, предложений 40–60, шум порядка ±0,3.</li>
+    <li>Первый прогон записи «токи» оказался раздутым: кодировщики вставляли обычные английские слова в кавычках. Лазейку закрыли и повторили, результат выше — после исправления.</li>
+    <li>Корни и оси подбирались на настроечных наборах; поэтому итоговые цифры берём с отложенного набора свежих статей.</li>
+  </ul>
+  <p>Протокол и скрипты: <a href="https://github.com/komapc/contlang/tree/main/scripts/eval">scripts/eval</a>; результаты: <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>.</p>
+</section>
+
+<section id="docs">
+  <h2>Документация</h2>
+  <p class="note">Документы в репозитории пока описывают предыдущую запись (с <code>|</code> и суффиксами). Запись в стиле токи пона принята для проверки и ещё не перенесена в них.</p>
+  <ul>
+    <li><a href="https://github.com/komapc/contlang/blob/main/README.md">README</a> — обзор проекта и инструменты</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/model.md">model.md</a> — модель языка</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/syntax.md">syntax.md</a> — синтаксис, частицы, метки</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/tables.md">tables.md</a> — сводные таблицы корней и меток</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/encoding.md">encoding.md</a> — приёмы кодирования</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/philosophy.md">philosophy.md</a> — принципы</li>
+    <li><a href="https://github.com/komapc/contlang/blob/main/docs/phonology.md">phonology.md</a> — фонология</li>
+  </ul>
+</section>
+</div>
+<script src="config.js"></script>
+<script>
+const $ = (id) => document.getElementById(id);
+const API = (window.MINCO_API || "").replace(/\/$/, "");
+function el(tag, text, cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
+function row(tbody, cells, cls){const tr=document.createElement("tr");if(cls)tr.className=cls;cells.forEach(c=>{const td=document.createElement("td");if(c instanceof Node)td.appendChild(c);else td.textContent=c;tr.appendChild(td)});tbody.appendChild(tr);return tr}
+
+document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()=>{
+  document.querySelectorAll("nav button").forEach(x=>x.setAttribute("aria-selected",x===b));
+  document.querySelectorAll("section").forEach(s=>s.classList.toggle("on",s.id===b.dataset.t));
+}));
+
+let current = {en:"", code:""};
+function showEncoded(en, code, tokens, conf, confusable){
+  current = {en, code};
+  $("out").hidden = false; $("decOut").hidden = true;
+  $("code").textContent = code;
+  $("conf").textContent = conf ? "уверенность: " + conf + (confusable && confusable.length ? "; можно спутать с: " + confusable.join(", ") : "") : "";
+  const tb = $("tokens"); tb.innerHTML = "";
+  (tokens || []).forEach(t => row(tb, [el("code", t.t), t.note]));
+  if (!(tokens || []).length) row(tb, ["", "пояснения для сохранённых примеров не записывались"]);
+  $("code").scrollIntoView({behavior:"smooth", block:"nearest"});
+}
+function showDecoded(best, alts, why){
+  $("decOut").hidden = false;
+  $("orig").textContent = current.en; $("best").textContent = best;
+  $("alts").textContent = alts && alts.length ? "варианты: " + alts.join("; ") : "";
+  $("why").textContent = why || "";
+}
+async function call(mode, text){
+  const r = await fetch(API, {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({mode, text})});
+  const d = await r.json();
+  if (!r.ok || d.error) throw new Error(d.error || ("ошибка " + r.status));
+  return d;
+}
+function busy(btn, on){btn.disabled = on; $("status").textContent = on ? "думаю…" : ""}
+
+if (!API) {
+  $("modeNote").hidden = false;
+  $("modeNote").textContent = "Живая модель не подключена: ввод слов отключён, ниже сохранённые примеры. (Подключение — worker/README.md в репозитории.)";
+  $("inp").disabled = true; $("enc").disabled = true; $("live").style.opacity = .6;
+}
+$("enc").addEventListener("click", async () => {
+  const text = $("inp").value.trim(); if (!text) return;
+  busy($("enc"), true);
+  try { const d = await call("encode", text); showEncoded(text, d.code, d.tokens, d.confidence, d.confusable); }
+  catch (e) { $("status").textContent = e.message; $("enc").disabled = false; return; }
+  busy($("enc"), false);
+});
+$("dec").addEventListener("click", async () => {
+  if (!API) { const ex = EX.find(x => x.code === current.code); if (ex) showDecoded(ex.decoded, [], "сохранённый результат прогона"); return; }
+  busy($("dec"), true);
+  try { const d = await call("decode", current.code); showDecoded(d.best, d.alternatives, d.why); }
+  catch (e) { $("status").textContent = e.message; }
+  busy($("dec"), false);
+});
+
+let EX = [];
+fetch("data/examples.json").then(r=>r.json()).then(list=>{
+  EX = list; const tb = $("examples");
+  list.forEach(e => { const tr = row(tb, [e.en], "ex"); tr.addEventListener("click", () => { showEncoded(e.en, e.code, [], "", []); $("dec").click(); }); });
+});
+fetch("data/roots.json").then(r=>r.json()).then(d=>{
+  $("rootCount").textContent = d.counts.roots + " корней: " + d.counts.with_axis + " с осью, " + d.counts.without_axis + " без оси.";
+  const draw = (q) => {
+    const tb = $("rootRows"); tb.innerHTML = ""; q = (q||"").toLowerCase();
+    d.roots.filter(r => !q || (r.name + " " + r.ru + " " + r.neg + " " + r.mid + " " + r.pos).toLowerCase().includes(q)).forEach(r => {
+      if (r.axis) row(tb, [el("code", r.name), r.neg, r.mid, r.pos]);
+      else { const tr = row(tb, [el("code", r.name), r.ru + " (без оси)", "", ""]); }
+    });
+  };
+  draw(""); $("q").addEventListener("input", e => draw(e.target.value));
+  d.particles.forEach(p => row($("particles"), [el("code", p.name), p.role]));
+  d.labels.forEach(l => row($("labels"), [el("code", l.name), l.what, l.range ? l.range[0] + " … " + l.range[1] : "без значения"]));
+});
+</script>
+</body>
+</html>

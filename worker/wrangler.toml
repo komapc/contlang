@@ -1,0 +1,14 @@
+name = "minco-demo"
+main = "index.js"
+compatibility_date = "2025-01-01"
+
+[vars]
+# адрес страницы на GitHub Pages (через запятую, если несколько)
+ALLOWED_ORIGINS = "https://komapc.github.io"
+
+# не более 10 запросов в минуту с одного адреса
+[[unsafe.bindings]]
+name = "LIMITER"
+type = "ratelimit"
+namespace_id = "1001"
+simple = { limit = 10, period = 60 }

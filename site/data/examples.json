@@ -1,0 +1,42 @@
+[
+ {
+  "en": "For example, Alexandria Port in Egypt is a port with two harbors.",
+  "code": "LA PARTICULAR-0 SAME+5 \"Alexandria\" PLACE LI \"Egypt\" PLACE.D+3 ; PLACE PI MOVE MATTER0 PLACE MANY+2 LI PLACE.N+2 JOIN+5",
+  "decoded": "Although it is exactly the same as Alexandria, the place in Egypt is the particular one; the many places along the river join together closely."
+ },
+ {
+  "en": "Monasteries vary from the very large to the very small.",
+  "code": "PLACE PI SOMEONE LIVE ART ABSTRACT+5 LI CHANGE BIG-4 AND BIG+4 ; BIG+5 AND BIG-5",
+  "decoded": "The place where people live and the abstract culture changed, from very small to very large; hugely big and tiny."
+ },
+ {
+  "en": "The flow of water under the glacial surface can have a large effect on the motion of the glacier itself.",
+  "code": "MATTER0 MOVE INSIDE PLACE ABOVE-5 PI MATTER-5 HEAT-5 LI CAN E HAPPEN BIG+3 E CHANGE MOVE PI MATTER-5 HEAT-5 SAME+5",
+  "decoded": "Water moving inside a place below, with cold rock, can greatly change and move cold rock in the same way."
+ },
+ {
+  "en": "In the New Testament, Jesus refers to his followers as the \"salt of the earth\".",
+  "code": "\"New Testament\" LA \"Jesus\" LI SAY.T-2 E SOMEONE.N+3 PI MOVE SIDE-5 \"Jesus\" LI THING-5 MATTER-5 CONSUME+5 GOOD PI PLACE THING-5 BIG+5",
+  "decoded": "In the New Testament, Jesus told his followers that he is the bread of a great building."
+ },
+ {
+  "en": "This gave early modern states a means of conducting a \"psychological war\" alongside military operations.",
+  "code": "THING PI HAPPEN-5 LI GIVE.T-2 E SOMEONE.N+3 PI RULE+4 TIME-3 CHANGE PI CAN BIG E DO FIGHT ABSTRACT+4 JOIN FIGHT PI SOMEONE.N+3 PI TOUCH+5",
+  "decoded": "The original cause gave the authorities, long ago, the great ability to wage abstract, joint warfare of people with hard weapons."
+ },
+ {
+  "en": "However, the best currents may be unavailable because the turbines would obstruct ships.",
+  "code": "LA [ GOOD+5 THING PI MATTER0 MOVE ] LI CAN.M-3 CAN-5 ; THING-5 PI MOVE LI CAN.K-3 PI DO TOUCH PLACE MATTER0 MOVE",
+  "decoded": "Although a good liquid-moving thing might possibly be unable, an inanimate mover can cause hard placing of a liquid-moving thing."
+ },
+ {
+  "en": "A large body of glacial ice astride a mountain, mountain range, or volcano is termed an ice cap or ice field.",
+  "code": "THING-5 MATTER-5 HEAT-5 BIG+5 ABOVE-3 THING-5 BIG+5 ABOVE+5 LI PLACE ABOVE+5 LI SAY.V-4.T0 E PART PI THING-5 HEAT-5",
+  "decoded": "A huge cold mass lies somewhat below a huge object on high; the high place is said to be a part of the cold object."
+ },
+ {
+  "en": "Furthermore, most libraries collaborate with other libraries in exchange of books.",
+  "code": "MANY+4 PLACE PI THING.N+3 CONSUME+5 SEE LI JOIN E PLACE PI THING.N+3 CONSUME+5 SEE SAME-5 ; LI GIVE0 E THING.N+3 CONSUME+5 SEE",
+  "decoded": "Most galleries where people view things join with galleries where people view different things, and exchange the things viewed."
+ }
+]
