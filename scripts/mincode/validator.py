@@ -7,6 +7,7 @@
 лимита (ABSTRACT сверх лимита); значение оси только у корней с осью, в −5…+5
 (MANY: 0…+5); метки из списка, каждая не более одного раза, в своём диапазоне,
 `I0` запрещён; `!` и `?` без значения; скобки сбалансированы.
+Запись предложения с границами слов `{ ROOTS | FORM }` (check_braced): вне `{ }` только частицы, `[ ]`, `;` и имена в кавычках.
 """
 import re
 import sys
@@ -193,7 +194,7 @@ def check_braced(self, code):
     частицы, `[ ]`, `;`. Внутри — ровно одно слово; без `|` допустим только модификатор после AND."""
     issues = []
     out = re.sub(r"\{[^{}]*\}", " ", code)
-    out = re.sub(r'"[^"]*"', '"Q"', out)
+    out = re.sub(r'"[^"]*"', " ", out)  # имя в кавычках вне скобок допустимо как отдельный элемент
     for m in re.finditer(r"[A-Z]{2,}[A-Z0-9]*|[a-z]+|\d+|[^\s\[\];,]", out):
         t = m.group(0)
         if t not in self.particles:
@@ -213,7 +214,13 @@ def check_braced(self, code):
     return issues
 
 
+def check_any(self, code):
+    """Предложение с `{ }` проверяется как записанное по границам слов, иначе обычным разбором."""
+    return self.check_braced(code) if "{" in code or "}" in code else self.check(code)
+
+
 Validator.check_braced = check_braced
+Validator.check_any = check_any
 
 
 def iter_codes(path):
@@ -225,14 +232,14 @@ def iter_codes(path):
 
 def main():
     v = Validator()
-    braces = "--braces" in sys.argv
+    braces = "--braces" in sys.argv  # принудительно; без флага `{` в коде включает режим сам
     files = [a for a in sys.argv[1:] if a != "--braces"]
     for f in files:
         n = bad = 0
         kinds = Counter()
         for code in iter_codes(f):
             n += 1
-            iss = [i for i in (v.check_braced(code) if braces else v.check(code)) if i.level == "error"]
+            iss = [i for i in (v.check_braced(code) if braces else v.check_any(code)) if i.level == "error"]
             bad += bool(iss)
             kinds.update({i.kind + ": " + i.msg.split(" ")[0] for i in iss})
         print(f"{f}: {n} кодов, с ошибками {bad} ({100 * bad / max(n, 1):.0f}%)")

@@ -31,7 +31,7 @@ CLAUSE_RULE = {
 
 
 BRACE_RULE = {
-    "enc": "WORD BOUNDARIES: write every word inside its own braces `{ ROOTS | FORM }` (up to 3 roots, then `|`, then part of speech and labels). Nothing but particles (E PI LA LI PE AND), `[ ]` and `;` stands outside braces; a quoted name is also a word: `{ \"Europe\" | o }`. One pair of braces = exactly one word. Example: `{ SOMEONE | o } { SAY | i T-2 } E { THING | o }` ; the modifier after AND may omit the form: `AND { SAME(=-5) }`.",
+    "enc": "WORD BOUNDARIES: write every word inside its own braces `{ ROOTS | FORM }` (up to 3 roots, then `|`, then part of speech and labels). Nothing but particles (E PI LA LI PE AND), `[ ]` and `;` stands outside braces; a quoted name (kept as is) may stand outside braces on its own: `\"Europe\"`. One pair of braces = exactly one word. Example: `{ SOMEONE | o } { SAY | i T-2 } E { THING | o }` ; the modifier after AND may omit the form: `AND { SAME(=-5) }`.",
     "dec": "WORD BOUNDARIES: every word is written inside its own braces `{ ROOTS | FORM }`; particles, `[ ]` and `;` stand outside braces.",
 }
 

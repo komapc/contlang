@@ -13,7 +13,7 @@ V = Validator()
 
 
 def errors(code):
-    return {i.kind for i in V.check(code) if i.level == "error"}
+    return {i.kind for i in V.check_any(code) if i.level == "error"}
 
 
 GOOD = [
@@ -95,3 +95,22 @@ def test_clause_separator_and_form_rule():
     assert not errors('SOMEONE | o PI "Aden"')
     assert not errors('TIME MEASURE(=-5) "10" | o N+3')
     assert not errors("LIVE | i AND SAME(=-5) SAY | i")  # модификатор после AND без формы допустим
+
+
+def test_braced_sentences():
+    v = Validator()
+    ok = [
+        "{ SOMEONE | o } { SAY | i T-2 } E { THING | o }",
+        "{ SOMEONE | o } AND { SAME(=-5) } { SAY | i }",
+        '{ SOMEONE | o } "Europe" ; { LIVE | i }',
+    ]
+    bad = {
+        "SOMEONE | o { SAY | i }": "outside_word",
+        "{ SOMEONE SAY | o  SAY | i }": "bar",
+        "{ SOMEONE | o": "braces",
+        "{ GOOD BIG LIVE SAME | o }": "too_many_roots",
+    }
+    for c in ok:
+        assert not [i for i in v.check_any(c) if i.level == "error"], c
+    for c, kind in bad.items():
+        assert kind in {i.kind for i in v.check_any(c)}, c
