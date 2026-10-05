@@ -33,6 +33,7 @@
 ## Эмоции, бой
 
 - Закон и власть — `RULE`, бой и война — `FIGHT` (*peace* = `FIGHT MANY(=0) | o`).
+- Ось `FIGHT` — всерьёз ли: −5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть ([roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 11 → 17 точных из 24). *game* = `FIGHT(=-5) | o`, *sport* = `FIGHT(=-5) BODY | o`, *player* = `SOMEONE FIGHT(=-5) | o`, *tournament* = `FIGHT(=-5) PART(=+5) | o`, *toy* = `THING(=-5) FIGHT(=-5) | o`, *champion* = `SOMEONE FIGHT(=-5) GOOD | o C+5`; *war* = `FIGHT(=+5) | o`, *weapon* = `THING(=-5) FIGHT(=+5) | o`, *soldier* = `SOMEONE FIGHT(=+5) RULE(=+4) | o`, *army* = `SOMEONE FIGHT(=+5) PART(=+5) | o`.
 - Эмоции: `FEEL` (возбуждение) + `GOOD` (приятность) + корень по смыслу: страх `TIME(+3)` (плохое впереди), злость `FIGHT | a`, социальные `SOMEONE | o` (+ `SEE | i`); оси `NEAR` и `WANT` для направления не работают.
 
 ## Время
@@ -101,7 +102,7 @@
 
 - Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) MATTER(=-5) | i`, *drink* = `CONSUME(=+5) MATTER(=0) | i`, *inhale* = `CONSUME(=+5) MATTER(=+5) | i`, *exhale* = `CONSUME(=-5) MATTER(=+5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
 - Речь и слух: *speak* = `CONSUME(=-5) SAY | i`, *listen* = `CONSUME(=+5) SAY CARE(=+3) | i`.
-- Не читается: *write* (`CONSUME(=-5) SEE` → *show*), *read* (`CONSUME(=+5) SEE` → *watch*, у одного декодера верно). Принято как потеря.
+- Письменная речь — корень `TEXT` (без оси; `SAY` — устная), [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 3 → 15 точных из 24: *write* = `TEXT | i`, *read* = `CONSUME(=+5) TEXT | i`, *writer* = `SOMEONE TEXT | o`, *author* = `SOMEONE TEXT HAPPEN(=-4) | o`, *book* = `TEXT PART(=+2) | o`, *letter* = `TEXT GIVE(=+3) SOMEONE | o`, *newspaper* = `TEXT TIME(=0) PART(=+5) | o`, *library* = `PLACE TEXT PART(=+5) | o`. Прежние `CONSUME(=-5) SEE` (→ *show*) и `CONSUME(=+5) SEE` (→ *watch*) не читались.
 
 ## Побуждение
 
@@ -123,6 +124,6 @@
 
 ## Рецепты понятий (два слепных теста: [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md), раунд 2)
 
-- Работают: *game* — `FIGHT ART(=+2) | o` (sport/game; в тесте писали `FIGHT(=-4)`, но у `FIGHT` оси нет, так что значение читалось как «слабая борьба» вопреки правилам; без значения не проверено); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
+- Работают: *game* — теперь `FIGHT(=-5) | o` (ось у `FIGHT` появилась, см. «Эмоции, бой»; прежний `FIGHT ART(=+2) | o` тоже читался); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `PARTICULAR(=+4) JOIN(=-5) RULE | o`; *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
 - **Меры и отношения — корень `MEASURE`** (ось: −5 величина сама по себе … +5 величина относительно другой; введён после двух провалов с `PART`/`BIG`/`SAME`; слепой тест v2 26 из 32, [roundtrip_measure](../data/translation_test/roundtrip_measure.md)): *ratio* `MEASURE(=+5) | o`, *percentage* `MEASURE(=+5) PART(=-2) | o`, *rate* `MEASURE(=+5) TIME | o`, *amount* `MEASURE(=-5) | o`, *size* `MEASURE(=-5) BIG | o`, *degree, level* `MEASURE(=0) | o`, *average* `MEASURE(=+5) MANY SAME | o`, *measurement* и *to measure* `MEASURE DO | o` / `MEASURE | i`, *unit* `MEASURE SAME | o`. Слабо: *meter, dimension, proportional* (читаются *distance/area/fractional*).
 - Не работают (по две серии рецептов, ни один не прочитан верно): *way/method*, *measurement* как *act of measuring* (теперь `MEASURE(=-5)`, но читается *meter / unit*), *a sort of X* (`I-2` на имени не читается как «вид»; *a sort of bird* → *bird*). `RULE(=-5)`/`SAME(=-5) RULE` для «независимый» читается как *illegal*.

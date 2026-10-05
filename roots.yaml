@@ -592,6 +592,19 @@ roots:
   - solid monolith ingot lump slab block chunk seamless
   - liquid fluid water watery runny molten flowing
   en_gloss: cohesion, grain size
+- name: FIGHT
+  axis:
+    neg: игра, спорт, соревнование
+    mid: драка, спор
+    pos: война насмерть
+  one_sided: false
+  ru_axis: 'всерьёз ли борьба (−5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть); без значения — бой, ссора: `FIGHT(=-5) \| o` игра, спорт, `SOMEONE FIGHT(=-5) \| o` игрок, `FIGHT(=-5) PART(=+5) \| o` турнир, `FIGHT(=+5) \| o` война, `SOMEONE FIGHT(=+5) \| o` солдат'
+  status: '**ось добавлена** (лакуна из математического кодирования, [docs/math.md](../docs/math.md)): слепой тест 12 слов × 2 кодировщика — без оси 11 точных из 24 (игра и спорт читаются как *duel, boxing*), с осью 17 из 24 и 21 из 24 среди трёх ответов — [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md)'
+  en_axis: '-5 game, sport, competition by rules ... 0 brawl, quarrel ... +5 war to the death. Bare root: fight, conflict. `SOMEONE FIGHT(=-5) | o` player, `FIGHT(=+5) | o` war.'
+  semaxis:
+  - warfare bloodshed combat battlefield
+  - tournament contest playful sportsmanship match
+  en_gloss: fight, war, quarrel; game, sport
 - name: BODY
   axis: null
   ru_gloss: тело
@@ -604,7 +617,9 @@ roots:
 - name: PLACE
   axis: null
   ru_gloss: место
-- name: FIGHT
+- name: TEXT
   axis: null
-  ru_gloss: бой, война, ссора
-  en_gloss: fight, war, quarrel
+  ru_gloss: письменная речь, текст, запись
+  en_gloss: written language, text, document
+  status: '**новый корень** (лакуна из математического кодирования, [docs/math.md](../docs/math.md)); условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (письменное собирают через `SAY` или `SEE` и читают как речь, песню, прибор); с корнем 15 из 23 и 17 из 23 среди трёх ответов — [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md). `TEXT \| o` текст, `TEXT \| i` писать, `CONSUME(=+5) TEXT \| i` читать, `SOMEONE TEXT \| o` писатель, `PLACE TEXT PART(=+5) \| o` библиотека'
+  en_axis: 'written language (as opposed to SAY = spoken): `TEXT | o` text, document; `TEXT | i` write; `CONSUME(=+5) TEXT | i` read; `SOMEONE TEXT | o` writer; `TEXT GIVE(=+3) | o` letter'

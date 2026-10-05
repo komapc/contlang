@@ -9,3 +9,5 @@
 - Emotions: `FEEL` + `GOOD` + root: fear = `FEEL(=+4) GOOD(=-4) TIME(=+3) | i`; hope = `WANT(=+4) GOOD(=+4) TIME(=+3) | a`.
 - Other axes: `VALUE` (-5 cheap ... +5 expensive), `TONE` (-5 rude ... +5 polite), `CARE` (-5 careless ... +5 careful; carefully = `CARE(=+3) | e`), `ABSTRACT` (-5 physical ... +5 mental; idea = `THINK ABSTRACT(=+5) | o`), `RULE` (-5 private ... +5 official; authority = `RULE(=+4) | o`), `CHANGE` (remain = `CHANGE(=-4) | i`, grow = `CHANGE BIG(=+3) | i`).
 - Metaphors fail: use ABOVE/INSIDE/BIG only for real up/inside/size. Write values as `(=+3)`, `(=-2)`, `(=0)`, never `+0`.
+- Written language is the root `TEXT` (`SAY` is spoken): write `TEXT | i`, read `CONSUME(=+5) TEXT | i`, writer `SOMEONE TEXT | o`, book `TEXT PART(=+2) | o`, letter `TEXT GIVE(=+3) SOMEONE | o`, library `PLACE TEXT PART(=+5) | o`.
+- FIGHT axis: -5 game/sport ... 0 brawl/quarrel ... +5 war. game `FIGHT(=-5) | o`, player `SOMEONE FIGHT(=-5) | o`, sport `FIGHT(=-5) BODY | o`, war `FIGHT(=+5) | o`, weapon `THING(=-5) FIGHT(=+5) | o`, soldier `SOMEONE FIGHT(=+5) RULE(=+4) | o`.

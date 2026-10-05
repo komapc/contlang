@@ -1,0 +1,25 @@
+word	source	code_poles	code_learned
+knife	tools	LONG(=-1) PART(=-5) TOUCH(=+5) | o	BODY PART(=-4) TOUCH(=+5) | o
+hammer	tools	ABSTRACT(=-3) MATTER(=-5) GIVE(=-5) | o	MATTER(=-3) GIVE(=-4) LONG(=+2) | o
+saw	tools	SEE TIME(=-4) FEEL(=+2) | o	SEE TIME(=-3) FEEL(=+1) | o
+needle	tools	LONG(=-2) BIG(=-1) PLACE | o	LONG(=-2) BODY BIG(=-1) | o
+key	tools	PARTICULAR(=0) LIVE(=+3) ABSTRACT(=-2) | o	PARTICULAR(=+1) HAPPEN(=-3) GIVE(=-3) | o
+spoon	tools	GRAIN(=-1) PART(=-4) CONSUME(=+5) | o	GRAIN(=-1) PART(=-2) CONSUME(=+4) | o
+brush	tools	LONG(=-1) ART(=+3) TOUCH(=0) | i	PART(=-1) LONG(=-1) HEAT(=+4) | i
+scissors	tools	LONG(=-5) TOUCH(=+3) ABSTRACT(=-4) | o	LONG(=-4) TOUCH(=+3) ABSTRACT(=-4) | o
+pen	tools	THING(=+1) CONSUME(=-2) LONG(=+1) | o	LONG(=+1) THING(=+3) CONSUME(=-2) | o
+broom	tools	ABSTRACT(=-2) ABOVE(=+2) LONG(=-1) | o	ABSTRACT(=-2) LONG(=0) ABOVE(=+2) | o
+ladder	tools	ABSTRACT(=-2) ABOVE(=+1) LONG(=0) | o	ABOVE(=+1) ABSTRACT(=-2) LONG(=+1) | o
+thermometer	tools	HEAT(=-1) MEASURE(=+2) INSIDE(=0) | o	HEAT(=-1) MEASURE(=+1) BODY | o
+woman	test	SEX(=-3) THING(=+1) RULE(=+1) | o	SEX(=-3) SOMEONE(=+1) THING(=+2) | o
+connection	test	JOIN(=+2) LONG(=-2) HAPPEN(=-2) | o	HAPPEN(=-1) JOIN(=+3) NEAR(=0) | o
+machinery	test	ART(=-2) DO | o	ART(=-3) MATTER(=-1) DO | o
+garden	test	ABSTRACT(=-3) INSIDE(=-1) ART(=+2) | o	ABSTRACT(=-3) INSIDE(=-1) PLACE | o
+oath	test	WANT(=+1) SAY(=-4) RULE(=0) | o	WANT(=+1) RULE(=+2) SAY(=-2) | o
+practice	test	DO ABSTRACT(=+2) TOUCH(=+2) | o	DO ABSTRACT(=+2) PART(=+3) | o
+court	test	RULE(=+2) SIDE(=+2) FIGHT | o	RULE(=+2) SIDE(=+2) FIGHT | o
+religion	test	ART(=+2) ABSTRACT(=+3) RULE(=-2) | o	ART(=+3) ABSTRACT(=+4) RULE(=-2) | o
+flow	test	GRAIN(=-3) MEASURE(=0) CHANGE(=0) | o	GRAIN(=-2) MOVE(=+1) CHANGE(=+1) | o
+responsibility	test	RULE(=0) CAN(=-2) DO | o	RULE(=+1) KNOW(=+1) DO | o
+college	test	ART(=0) RULE(=+1) MEASURE(=+3) | o	ART(=0) RULE(=+1) ABOVE(=+3) | o
+earthquake	test	HAPPEN(=+2) ABSTRACT(=-5) HEAT(=+2) | o	HEAT(=+1) HAPPEN(=+4) SAY(=+1) | o
