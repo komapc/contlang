@@ -47,7 +47,7 @@ def main():
         for c in chunks:
             for code in iter_codes(run / f"codes_{v}_{c}.md"):
                 n += 1
-                bad += any(i.level == "error" for i in val.check(code))
+                bad += any(i.level == "error" for i in val.check_any(code))
         print(f"{v}: кодов {n}, с ошибками валидатора {bad} ({100 * bad / max(n, 1):.0f}%)")
     mapping, rows = {}, []
     for c in chunks:
