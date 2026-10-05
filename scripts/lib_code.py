@@ -28,7 +28,6 @@ _s15.loader.exec_module(s15)
 NOAXIS = {
     "BODY": "body arm leg head hand skin",
     "SEE": "see look watch eye view notice",
-    "DO": "do make act perform action work",
     "PLACE": "place location area site region spot",
     "TEXT": "text writing written document page script",
 }
