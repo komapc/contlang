@@ -1,8 +1,8 @@
-// Прокси для демо min-co: держит ключ Anthropic, вызывает дешёвую модель, ограничивает ввод.
+// Прокси для демо min-co: держит ключ OpenRouter, вызывает дешёвую модель, ограничивает ввод.
 // Развёртывание: см. worker/README.md
 import { ENC_SPEC, DEC_SPEC } from "./prompts.js";
 
-const MODEL = "claude-haiku-4-5-20251001";
+const DEFAULT_MODEL = "openai/gpt-4o-mini"; // можно сменить переменной MODEL в wrangler.toml
 const MAX_INPUT = 300;
 
 const ENCODE_TASK = `
@@ -54,14 +54,14 @@ export default {
     if (text.length > MAX_INPUT) return json({ error: `не длиннее ${MAX_INPUT} символов` }, 400, h);
 
     const system = (mode === "encode" ? ENC_SPEC + ENCODE_TASK : DEC_SPEC + DECODE_TASK);
-    const r = await fetch("https://api.anthropic.com/v1/messages", {
+    const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
       method: "POST",
-      headers: { "x-api-key": env.ANTHROPIC_API_KEY, "anthropic-version": "2023-06-01", "content-type": "application/json" },
-      body: JSON.stringify({ model: MODEL, max_tokens: 700, temperature: 0, system, messages: [{ role: "user", content: text }] }),
+      headers: { "authorization": "Bearer " + env.OPENROUTER_API_KEY, "content-type": "application/json", "X-Title": "min-co demo" },
+      body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 700, temperature: 0, messages: [{ role: "system", content: system }, { role: "user", content: text }] }),
     });
     if (!r.ok) return json({ error: "модель недоступна", status: r.status }, 502, h);
     const data = await r.json();
-    const raw = (data.content || []).map((c) => c.text || "").join("");
+    const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "";
     const m = raw.match(/\{[\s\S]*\}/);
     if (!m) return json({ error: "модель вернула не JSON", raw }, 502, h);
     try { return json(JSON.parse(m[0]), 200, h); } catch { return json({ error: "не удалось разобрать ответ", raw }, 502, h); }

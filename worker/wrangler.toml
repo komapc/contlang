@@ -3,6 +3,8 @@ main = "index.js"
 compatibility_date = "2025-01-01"
 
 [vars]
+# модель на OpenRouter (https://openrouter.ai/models)
+MODEL = "openai/gpt-4o-mini"
 # адрес страницы на GitHub Pages (через запятую, если несколько)
 ALLOWED_ORIGINS = "https://komapc.github.io"
 
