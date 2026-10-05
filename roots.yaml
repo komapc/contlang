@@ -590,7 +590,7 @@ roots:
   en_axis: '-5 fluid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (ingot, monolith). Also continuous / seamless / whole as `GRAIN(=+5) | a`.'
   semaxis:
   - ingot monolith solid seamless whole lump block slab
-  - sand flour powder dust grain gravel granular crumbly
+  - liquid fluid water juice syrup oil milk honey
   en_gloss: cohesion, grain size
 - name: BODY
   axis: null
