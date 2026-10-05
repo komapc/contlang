@@ -44,13 +44,12 @@ def examples_json():
 
 
 def tips():
-    t = (REPO / "docs" / "encoding.md").read_text(encoding="utf8")
-    t = re.sub(r"\[([^\]]+)\]\([^)]*\)", r"\1", t)
-    return t
+    """Сокращённые приёмы для сайта (дешевле полного encoding.md); правятся вручную в data/site/tips_short.md."""
+    return (REPO / "data" / "site" / "tips_short.md").read_text(encoding="utf8")
 
 
 def prompts_js():
-    enc = build_spec("enc", "words") + "\n\n# Encoding tips (verified by blind tests; in Russian)\n\n" + tips()
+    enc = build_spec("enc", "words") + "\n\n# Encoding tips (verified by blind tests)\n\n" + tips()
     dec = build_spec("dec", "words")
     return "// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False) + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\n"
 
