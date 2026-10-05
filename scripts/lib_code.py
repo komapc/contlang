@@ -30,7 +30,7 @@ NOAXIS = {
     "SEE": "see look watch eye view notice",
     "DO": "do make act perform action work",
     "PLACE": "place location area site region spot",
-    "FIGHT": "fight war battle quarrel combat conflict",
+    "TEXT": "text writing written document page script",
 }
 LEVELS = list(range(-5, 6))
 POS_FORM = {"noun": "o", "verb": "i", "adj": "a", "adv": "e"}
@@ -45,18 +45,22 @@ def wordlist():
     return [r[0] for r in rows], {r[0]: r[1] for r in rows}
 
 
-def root_specs(overrides=None, extra=None):
-    """[(name, plus_words, minus_words | None)] из roots.yaml с правками.
+def root_specs(overrides=None, extra=None, axes=None):
+    """[(name, plus_words, minus_words | None, center_words | None)].
 
-    overrides: {name: (plus, minus)} — заменить полюса; extra: такие же
-    тройки для кандидатов в новые корни (minus None — корень без оси).
+    overrides: {name: (plus, minus)} — заменить полюса; axes: {name: (plus,
+    minus)} — дать ось корню без оси (центр остаётся из его слов); extra:
+    кандидаты в новые корни, такие же четвёрки (minus None — без оси).
     """
     out = []
     for r in spec.axis_roots():
         p, n = (overrides or {}).get(r["name"], r["semaxis"])
-        out.append((r["name"], p, n))
+        out.append((r["name"], p, n, None))
     for name, ws in NOAXIS.items():
-        out.append((name, (overrides or {}).get(name, (ws,))[0], None))
+        if name in (axes or {}):
+            out.append((name, *axes[name], ws))
+        else:
+            out.append((name, ws, None, None))
     out += list(extra or [])
     return out
 
@@ -68,13 +72,13 @@ class Data:
         words, self.pos = wordlist()
         need = set(words)
         for specs in specs_list:
-            for _, p, n in specs:
-                need |= set(p.split()) | set((n or "").split())
+            for _, p, n, c in specs:
+                need |= set(p.split()) | set((n or "").split()) | set((c or "").split())
         self.vec = s15.load_subset(need)
         poles = set()
         for specs in specs_list:
-            for _, p, n in specs:
-                poles |= set(p.split()) | set((n or "").split())
+            for _, p, n, c in specs:
+                poles |= set(p.split()) | set((n or "").split()) | set((c or "").split())
         self.poles = poles
         self.vocab = [w for w in words if w in self.vec and w not in poles]
         raw = np.stack([self.vec[w] for w in self.vocab])
@@ -90,11 +94,12 @@ class Data:
 
     def dictionary(self, specs):
         names, C, A = [], [], []
-        for name, p, n in specs:
+        for name, p, n, c in specs:
             P = self.emb([w for w in p.split() if w in self.vec])
             if n:
                 N = self.emb([w for w in n.split() if w in self.vec])
-                C.append(unit(P.mean(0) + N.mean(0)))
+                center = self.emb([w for w in c.split() if w in self.vec]).mean(0) if c else P.mean(0) + N.mean(0)
+                C.append(unit(center))
                 A.append(unit(P.mean(0) - N.mean(0)))
             else:
                 C.append(unit(P.mean(0)))

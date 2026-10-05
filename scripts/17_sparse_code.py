@@ -6,7 +6,7 @@
 Словарь (матрица D) строится из roots.yaml без обучения:
   корень r = центр c_r (среднее всех слов-полюсов, «о чём ось»)
              + ось a_r (полюс+ минус полюс−, SemAxis).
-  Корни без оси (BODY SEE DO PLACE FIGHT) задаются списками слов ниже.
+  Корни без оси (BODY SEE DO PLACE TEXT) — списки слов lib_code.NOAXIS.
 Декодер: y = sum_r (c_r + s * v_r/5 * a_r), v_r — уровень, s — общий масштаб.
 Кодер: перебор опор из лучших по корреляции корней + покоординатный подбор
 уровней, цель — max cos(x, y).
@@ -32,13 +32,7 @@ _s15 = importlib.util.spec_from_file_location("s15", Path(__file__).with_name("1
 s15 = importlib.util.module_from_spec(_s15)
 _s15.loader.exec_module(s15)
 
-NOAXIS = {
-    "BODY": "body arm leg head hand skin",
-    "SEE": "see look watch eye view notice",
-    "DO": "do make act perform action work",
-    "PLACE": "place location area site region spot",
-    "FIGHT": "fight war battle quarrel combat conflict",
-}
+from lib_code import NOAXIS  # noqa: E402
 SHOW = ("dog honey sand hope bank mathematics teacher anger river money "
         "child city music winter knife friend sleep idea").split()
 OUT = ROOT / "data" / "sparse_code.md"
