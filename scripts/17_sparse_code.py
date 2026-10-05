@@ -13,7 +13,7 @@
 
 Сравнения: непрерывные коэффициенты (без уровней), 11 / 5 / 3 уровня,
 случайный словарь той же формы, словарь из главных компонент (нечитаемый).
-Слова-полюса из теста исключены (они узнаются тривиально).
+Слова-полюса исключены и из теста, и из кандидатов.
 Пишет data/sparse_code.md.
 """
 import importlib.util
@@ -139,9 +139,11 @@ def main():
     extra = {w for ws in NOAXIS.values() for w in ws.split()}
     vec = s15.load_subset(set(words) | set(poles_all) | extra | set(SHOW))
     names, C, A, poles = build_dictionary(vec)
-    vocab = [w for w in dict.fromkeys(words + SHOW) if w in vec]
+    # слова-полюса убраны и из теста, и из кандидатов: иначе код, попавший
+    # в середину полюса, «узнаёт» само слово-полюс (top1 падал с 21% до 3%)
+    vocab = [w for w in dict.fromkeys(words + SHOW) if w in vec and w not in poles]
     V = unit(np.stack([vec[w] for w in vocab]))
-    test = [i for i, w in enumerate(vocab) if w not in poles]
+    test = list(range(len(vocab)))
     X = V[test]
     rng = np.random.default_rng(0)
 
@@ -153,8 +155,8 @@ def main():
     Cp, Ap = Vt[:k].copy(), Vt[k:2 * k].copy()
 
     L = ["# Математическое кодирование туда-сюда (без языковой модели)", "",
-         f"Numberbatch, словарь узнавания: {len(vocab)} слов; тест: {len(test)} слов "
-         f"(без {len(vocab) - len(test)} слов-полюсов). Корней: {k} "
+         f"Numberbatch: {len(vocab)} слов, каждое кодируется и узнаётся среди всех "
+         f"(слова-полюса исключены и из теста, и из кандидатов). Корней: {k} "
          f"({k - len(NOAXIS)} с осью). Скрипт: `scripts/17_sparse_code.py`.", "",
          "Метрика: место настоящего слова среди всех слов по близости к декодированному вектору. "
          f"Случайное угадывание: top1 ≈ {1 / len(vocab):.2%}, top50 ≈ {50 / len(vocab):.1%}.", ""]

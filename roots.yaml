@@ -205,8 +205,8 @@ roots:
   status: принято, слепой тест 10 из 10 (`data/translation_test/roundtrip_part_ladder.md`)
   en_axis: -5 particle/crumb ... -2 a part/piece/member-of ... +2 the whole/complete (also 'entirely') ... +5 a group/collection made of many wholes (a set, union); after a head noun, PART(=+5) means a collection of those things
   semaxis:
-  - whole entire complete total full
-  - part piece fragment bit fraction
+  - group set collection bunch cluster assortment
+  - crumb fragment piece bit particle speck
 - name: SIDE
   axis:
     neg: зад
@@ -289,8 +289,8 @@ roots:
   status: '**новое**, принято (тест: sharp, concrete, board перепутаны без оси)'
   en_axis: -5 soft/gentle ... 0 ordinary ... +5 hard/sharp
   semaxis:
-  - hard sharp rough solid rigid
-  - soft gentle smooth tender delicate
+  - hard rigid stiff firm rough sharp
+  - soft squishy fluffy spongy mushy pliable supple
 - name: MATTER
   axis:
     neg: твёрдое
@@ -486,8 +486,8 @@ roots:
   status: '**новое**, предложено (SemAxis: полюса cheap/worthless/useless против expensive/valuable/precious, LOO 0.91); принято (слепой тест: 10 из 10 на прилагательных; *buy/sell* путаются по знаку `GIVE`)'
   en_axis: -5 cheap/worthless ... 0 ordinary price ... +5 expensive/valuable/precious.
   semaxis:
-  - expensive valuable precious costly priceless wealthy
-  - cheap worthless useless free poor
+  - expensive valuable precious costly priceless
+  - cheap inexpensive worthless bargain trivial
   en_gloss: price, worth
 - name: CARE
   axis:
@@ -589,8 +589,8 @@ roots:
   status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — [roundtrip_grain](../data/translation_test/roundtrip_grain.md)'
   en_axis: '-5 fluid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (ingot, monolith). Also continuous / seamless / whole as `GRAIN(=+5) | a`.'
   semaxis:
-  - ingot monolith solid seamless whole lump block slab
-  - liquid fluid water juice syrup oil milk honey
+  - solid monolith ingot lump slab block chunk seamless
+  - liquid fluid water watery runny molten flowing
   en_gloss: cohesion, grain size
 - name: BODY
   axis: null
