@@ -91,7 +91,7 @@ def main():
     sp = p.add_subparsers(dest="cmd", required=True)
     s = sp.add_parser("spec")
     s.add_argument("kind", choices=["enc", "dec"])
-    s.add_argument("task", choices=["words", "sents"])
+    s.add_argument("task", choices=["words", "sents", "toki"])
     s.add_argument("out")
     s.add_argument("--drop", default="")
     s.add_argument("--no-clause-rule", action="store_true", help="спецификация предложений без правила про `;` и форму у каждого слова (для сравнения)")

@@ -214,6 +214,76 @@ def check_braced(self, code):
     return issues
 
 
+TOKI_WORD = re.compile(r"([A-Z]{2,}[A-Z0-9]*?)([+-]\d+|0)?((?:\.(?:[A-Z][+-]?\d+|[!?]))*)")
+
+
+def check_toki(self, code):
+    """Запись в стиле токи пона: слово = КОРЕНЬ[±v] с метками через `.`, без `|` и суффиксов."""
+    issues = []
+
+    def add(kind, msg, level="error"):
+        issues.append(Issue(level, kind, msg))
+
+    depth = 0
+    for tok in re.findall(r'"[^"]*"|\[|\]|;|[^\s\[\];"]+|"', code):
+        if tok.startswith('"'):
+            if tok == '"':
+                add("bad_quote", "непарная кавычка")
+            continue
+        if tok in "[]":
+            depth += 1 if tok == "[" else -1
+            if depth < 0:
+                add("brackets", "лишняя `]`")
+                depth = 0
+            continue
+        if tok == ";" or tok in self.particles:
+            continue
+        m = TOKI_WORD.fullmatch(tok)
+        if not m:
+            add("stray", tok)
+            continue
+        name, axis, labs = m.groups()
+        r = self.roots.get(name)
+        if not r:
+            # корень мог приклеить цифру к имени, например GOOD0; попробуем без хвоста
+            add("unknown_root", name)
+            continue
+        if axis is not None:
+            if not r.get("axis"):
+                add("axis_on_axisless", f"{name}{axis}")
+            else:
+                v = int(axis)
+                lo = 0 if r.get("one_sided") else -5
+                if not lo <= v <= 5:
+                    add("axis_range", f"{name}{axis}")
+        seen = set()
+        for lab in filter(None, labs.split(".")):
+            letter = lab[0]
+            if letter not in self.labels:
+                add("unknown_label", lab)
+                continue
+            if letter in seen:
+                add("dup_label", lab)
+            seen.add(letter)
+            if self.labels[letter].get("bare"):
+                if len(lab) > 1:
+                    add("label_value", lab)
+                continue
+            val = lab[1:]
+            if not val:
+                add("label_value", f"{lab}: нет значения")
+                continue
+            lo, hi = self.labels[letter]["range"]
+            if not lo <= int(val) <= hi or (letter == "I" and int(val) == 0):
+                add("label_range", lab)
+    if depth > 0:
+        add("brackets", "незакрытая `[`")
+    return issues
+
+
+Validator.check_toki = check_toki
+
+
 def check_any(self, code):
     """Предложение с `{ }` проверяется как записанное по границам слов, иначе обычным разбором."""
     return self.check_braced(code) if "{" in code or "}" in code else self.check(code)
