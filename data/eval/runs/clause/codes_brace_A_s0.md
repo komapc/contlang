@@ -1,0 +1,30 @@
+1. LA [ { RULE(=+4) MANY(=+5) | o D-3 } { RULE(=+4) PLACE | o D-3 } { SAME(=+5) PARTICULAR | a I+2 } ] ; { RULE(=+4) PLACE | o N+3 } { PART(=-2) | a } PI { RULE(=+4) PLACE | o N+3 } E { RULE(=+4) | o N+3 } { RULE(=+4) MANY(=+5) | a } { SAY | i T0 V-4 M-3 } E { RULE(=+4) MANY(=+5) | o N+3 }
+2. LA [ { ART(=+5) SAY | o D+3 } { CHANGE BEGIN(=-5) | i T-2 } PLACE "Greece" AND "Rome" ] ; { SOMEONE "Aristotle" | o } { KNOW SAY | i T-2 R-3 } E [ { TIME(=-3) | a } { MANY(=+3) | o } PI { RULE(=+4) PLACE | o N+3 } { MANY BIG(=+3) | a } { RULE | o N+3 } { PLACE "Greece" | o } AND { PLACE "Middle East" | o } ]
+3. { PARTICULAR(=-5) | e } { TIME(=-3) BEGIN(=-4) | a } { RULE(=+4) PLACE | o N+3 } { INSIDE(=-5) PLACE "Europe" | e } { RULE(=+4) | o N+3 } { THINK SAME(=+3) | i T0 V-4 M-3 } E { RULE(=+4) MANY(=+5) | o N+3 }
+4. { SOMEONE | o N+5 } PI { JOIN(=+5) RULE(=+4) PART(=+5) | o N+3 } { SOMEONE | o N+3 } { "Vajji Mahajanapada" | o } ; { SOMEONE "Licchavis" | o N+3 } { KNOW(=+5) PARTICULAR | a C+5 } { SOMEONE | o N+3 }
+5. { SOMEONE "Knud Haakonssen" | o } { SAY | i T-2 R-3 A+5 } E [ LA [ { "Renaissance" | o } ] { PLACE "Europe" | o } { PART(=-2) | i T-2 V-4 } ; { RULE(=+4) PLACE | o N+3 } { RULE | i V-4 } PI { PLACE VALUE ART(=-5) SOMEONE | o } { RULE(=+4) SOMEONE(=+5) | o N+3 } AND { RULE(=+4) MANY(=+5) | o N+3 } ]
+6. { SOMEONE "Swiss" | o N+3 } { GOOD(=+5) FIGHT | a T-2 } ; { "Swiss Confederacy" | o } { SAY(=+4) | i T-2 V-4 } ; { PLACE "Switzerland" | o } { RULE(=+4) MANY(=+5) | o } PI { RULE | o } { LIVE(=+5) | i T-2 A+5 } LA [ { TIME(=0) | o } ]
+7. LA [ { RULE(=+4) PLACE | o N+3 } PI "Italy" AND "Hanseatic League" ] ; { SOMEONE | o N+5 } { BIG(=+3) VALUE | a } { VALUE GIVE(=0) PLACE | o N+3 } ; { MANY(=+3) SOMEONE VALUE | o } { GOOD(=+3) | i T-2 } LA [ { VALUE GIVE(=0) | o } PI "New World" ]
+8. LA [ "United States" { SAY | o } PI { SAME(=-5) RULE(=-5) | o } ] ; { RULE(=+4) SOMEONE | o N+3 } PI { FIGHT CHANGE | o } { KNOW(=+5) WANT(=-5) | i T-2 } E { RULE(=+4) SOMEONE(=+5) | o } AND { WANT(=+5) | i T-2 } E { RULE(=+4) MANY(=+5) | o }
+9. LA [ { MANY(=+3) | a } PI { PLACE "Latin America" | o N+3 } ] ; { MANY(=+3) | a } { RULE(=+4) MANY(=+5) PARTICULAR | o N+3 } { LIVE | i T-2 } LA [ { MANY(=+4) | o } { RULE(=-5) CHANGE | i T-2 V-4 } { BEGIN(=+5) TIME | o } PI "20th century" ]
+10. { TIME "June 2, 1946" | o } ; { SIDE PI { RULE(=+4) MANY(=+5) | a } } { SOMEONE | o } { GOOD(=+5) FIGHT | i T-2 } E { MANY MEASURE(=+5) "54.3%" | o } ; AND { PLACE "Italy" | o } { RULE(=+4) | a } { CHANGE | i T-2 } E { RULE(=+4) MANY(=+5) | o } ; { TIME | o D-3 } { GOOD FEEL | i V-4 } LA [ { BEGIN | e } ] PI "Festa della Repubblica"
+11. { RULE SOMEONE(=-5) JOIN | o } "Arab socialism" { GIVE | i T-2 } E { MANY FIGHT CHANGE | o N+3 } ; [ { SOMEONE(=-5) | o } { SEE | i T-2 } E { RULE(=+4) SOMEONE(=+5) | o N+3 } PI "Egypt" AND "Iraq" AND "Libya" AND "Yemen" { MOVE(=+5) SIDE(=-5) | i V-4 } ]
+12. { RULE(=+4) SOMEONE(=-5) THINK(=+5) | o N+3 } { SAME(=+5) PARTICULAR | a } PI { RULE(=+4) THINK | o N+3 } ; "United States" { SAME(=-5) | o } { GOOD PARTICULAR | a } ; { PLACE | o } { RULE(=+4) | a } { SOMEONE | o } { THINK(=+5) SOMEONE MANY | i V-4 } PI { RULE(=+4) PLACE | o N+3 } { THINK(=+5) | i V-4 }
+13. LA [ { TIME(=0) | o } { PARTICULAR(=+3) | a } ] ; { THINK(=+5) RULE(=+4) | a } { RULE(=+4) SOMEONE | o N+3 } { MANY(=+3) | a T-2 }
+14. { THING ABSTRACT | o D+3 } { WANT(=+5) RULE | i T-2 V-4 } LA [ { RULE(=+4) PLACE | o N+3 } { WANT | i T-2 } { DO BEGIN(=-5) | i } AND { RULE(=+4) | i } { MANY(=+4) PLACE RULE | o } ] ; { PARTICULAR(=+5) | o } { PLACE | o N+3 } { GIVE(=+5) RULE(=+4) | i V-4 } AND { GIVE(=-5) | i V-4 }
+15. { THING | o D+3 } { BEGIN(=-5) | i T-2 } { SOMEONE | o } PI { DO ART | o } PI "J."
+16. "Photosynthesis" { DO ART(=-5) LIVE | o } { PART(=+5) | o } PI { DO LIVE(=+5) | o N+3 } ; { LIVE | o N+3 } { CONSUME(=+5) SEE HEAT | i } E { CHANGE(=+5) | i } E { SEE HEAT | o } AND { MATTER HEAT | o } { LIVE | i V+4 }
+17. { MANY(=+4) LIVE | o N+3 } { CONSUME(=+5) SEE HEAT | i } ; { CAN MATTER CHANGE | i } E { CONSUME | o } E { MATTER(=+5) | o } AND { MATTER(=0) | o } LA [ { SEE HEAT | o } ]
+18. { MANY(=+4) LIVE | o N+3 } { CONSUME(=+5) SEE HEAT | i } LA [ { CONSUME(=+5) SEE | i } E { SEE | o } ] ; { MANY(=+1) | o } { CONSUME SEE LONG(=+5) | i } { PARTICULAR | e }
+19. { LIVE(=0) THING | o N+3 } { CONSUME(=+5) SEE HEAT | i } { BEGIN(=-4) | e } { CONSUME MATTER | i } E { MATTER | o } "chlorophyll"
+20. { SEE HEAT | o } { THING | o } { HAPPEN | o } { DO | i } E { PARTICULAR | o } PI { MATTER | o N+3 } { SAME(=-5) | a }
+21. { BEGIN(=-4) | a } { DO | o } PI "Photosystem II" { WANT(=+5) | i } E { SOMEONE(=-5) INSIDE(=-5) PLACE | o } PI { THING(=-5) | o N+3 } { SOMEONE(=-5) CHANGE | i }
+22. { LIVE(=0) THING | o N+3 } { CHANGE | i T-2 A+5 } E { CAN | o } LA [ { MEASURE MATTER | i } E { MATTER | o } ]
+23. { SOMEONE(=-5) | o N+3 } { CAN(=-5) MOVE | i M-5 } E { PART(=-2) | o } ; { MATTER | o } { CHANGE | i } LA [ { TIME(=-3) MEASURE | a } ] ; { GIVE(=-5) | i M-5 } { CAN | o }
+24. { MEASURE | o } { MATTER | o N+3 } AND { MATTER LIVE | o N+3 } { CAN | a } E { MEASURE | i } E { LIVE CHANGE | o } PI "CO2" AND "H2O" { GOOD CARE KNOW | a }
+25. { SOMEONE | o N+3 } { THINK | i T0 } E [ { THING | o D+3 } { HAPPEN(=+5) | i V-4 } ] ; { BODY | o N+3 } { PART(=+2) | a } PI { THING(=+4) | o N+3 } { BIG(=+3) | a } AND { MEASURE SIDE | o } { SAME(=+3) | a C+3 }
+26. { BEGIN(=-4) | a } { DO LIVE | o N+3 } { THINK(=+3) | i V-4 } E [ { MATTER | o N+3 } { SAME(=-5) | a } { GIVE(=+5) | i T-2 } ]
+27. { SOMEONE | o } PI { THING THINK | o } { GOOD | a T-2 I-2 } ; { MANY MEASURE | o } { MATTER | o } { CHANGE | i } AND { MATTER MATTER(=+5) | o }
+28. { SOMEONE | o } { SEE | i T-2 } E [ { PART(=-2) LIVE THING | o N+3 } { GIVE(=+5) | i } E { MATTER(=+5) | o } LA [ { SAME(=-5) MATTER CHANGE | o N+3 } ] ] ; { SEE HEAT | o } { TIME | o }
+29. { SOMEONE | o N+3 } { DO KNOW | i T-2 } LA [ { PLACE "Arizona" | o } ] ; { GOOD ART | o } { SAY | i T-2 V-4 } LA [ { TIME "1986" | o } ]
+30. { SAME(=-5) | a } { CAN(=-5) | a } { THING | o } { SEE HEAT | o } PI { MEASURE LONG | o }

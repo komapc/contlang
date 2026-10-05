@@ -188,6 +188,34 @@ class Validator:
         return issues
 
 
+def check_braced(self, code):
+    """Запись с явными границами слов: каждое слово в `{ … }`, вне фигурных скобок только
+    частицы, `[ ]`, `;`. Внутри — ровно одно слово; без `|` допустим только модификатор после AND."""
+    issues = []
+    out = re.sub(r"\{[^{}]*\}", " ", code)
+    out = re.sub(r'"[^"]*"', '"Q"', out)
+    for m in re.finditer(r"[A-Z]{2,}[A-Z0-9]*|[a-z]+|\d+|[^\s\[\];,]", out):
+        t = m.group(0)
+        if t not in self.particles:
+            issues.append(Issue("error", "outside_word", f"вне `{{ }}`: {t}"))
+    if code.count("{") != code.count("}") or re.search(r"\{[^}]*\{|\}[^{]*\}", code):
+        issues.append(Issue("error", "braces", "скобки `{ }` не парны или вложены"))
+    prev = ""
+    pos = 0
+    for m in re.finditer(r"\{([^{}]*)\}", code):
+        before = re.findall(r"[A-Z]+", re.sub(r"\{[^{}]*\}", " ", code[pos:m.start()]))
+        pos = m.end()
+        body = m.group(1)
+        if body.count("|") > 1:
+            issues.append(Issue("error", "bar", "два `|` в одних `{ }`"))
+        lead = "AND " if before and before[-1] == "AND" else ""
+        issues += self.check(lead + body)
+    return issues
+
+
+Validator.check_braced = check_braced
+
+
 def iter_codes(path):
     for line in open(path, encoding="utf8"):
         m = re.match(r"\s*\d+\.\s*(.*\S)", line)
@@ -197,12 +225,14 @@ def iter_codes(path):
 
 def main():
     v = Validator()
-    for f in sys.argv[1:]:
+    braces = "--braces" in sys.argv
+    files = [a for a in sys.argv[1:] if a != "--braces"]
+    for f in files:
         n = bad = 0
         kinds = Counter()
         for code in iter_codes(f):
             n += 1
-            iss = [i for i in v.check(code) if i.level == "error"]
+            iss = [i for i in (v.check_braced(code) if braces else v.check(code)) if i.level == "error"]
             bad += bool(iss)
             kinds.update({i.kind + ": " + i.msg.split(" ")[0] for i in iss})
         print(f"{f}: {n} кодов, с ошибками {bad} ({100 * bad / max(n, 1):.0f}%)")

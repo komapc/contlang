@@ -30,7 +30,13 @@ CLAUSE_RULE = {
 }
 
 
-def build_spec(kind, task, drop=(), axes=None, clause_rule=True):
+BRACE_RULE = {
+    "enc": "WORD BOUNDARIES: write every word inside its own braces `{ ROOTS | FORM }` (up to 3 roots, then `|`, then part of speech and labels). Nothing but particles (E PI LA LI PE AND), `[ ]` and `;` stands outside braces; a quoted name is also a word: `{ \"Europe\" | o }`. One pair of braces = exactly one word. Example: `{ SOMEONE | o } { SAY | i T-2 } E { THING | o }` ; the modifier after AND may omit the form: `AND { SAME(=-5) }`.",
+    "dec": "WORD BOUNDARIES: every word is written inside its own braces `{ ROOTS | FORM }`; particles, `[ ]` and `;` stand outside braces.",
+}
+
+
+def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False):
     doc = spec.load()
     roots = [r for r in doc["roots"] if r["name"] not in set(drop)]
     for name, text in (axes or {}).items():
@@ -45,6 +51,9 @@ def build_spec(kind, task, drop=(), axes=None, clause_rule=True):
     axes_lines = "\n".join(f"- {r['name']}: {r['en_axis']}" for r in roots if r.get("axis") and r.get("en_axis"))
     text = (TEMPLATES / f"{kind}_{task}.md").read_text(encoding="utf8")
     text = text.replace("{{CLAUSE_RULE}}\n", CLAUSE_RULE[kind] + "\n" if clause_rule else "")
+    if braces:
+        text = text.replace("it ends where the next uppercase root, quoted item or particle begins", "it is written inside its own braces { }")
+        text = text.rstrip("\n") + "\n\n" + BRACE_RULE[kind] + "\n"
     return text.replace("{{ROOTS}}", roots_par).replace("{{AXES}}", axes_lines).replace("{{N_ROOTS}}", str(len(roots)))
 
 
@@ -54,7 +63,7 @@ def cmd_spec(a):
     unknown = set(drop) - set(spec.root_names())
     if unknown:
         raise SystemExit(f"нет таких корней: {sorted(unknown)}")
-    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes, not a.no_clause_rule), encoding="utf8")
+    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes, not a.no_clause_rule, a.braces), encoding="utf8")
     print(f"записано {a.out}")
 
 
@@ -86,6 +95,7 @@ def main():
     s.add_argument("out")
     s.add_argument("--drop", default="")
     s.add_argument("--no-clause-rule", action="store_true", help="спецификация предложений без правила про `;` и форму у каждого слова (для сравнения)")
+    s.add_argument("--braces", action="store_true", help="явные границы слов `{ … }`")
     s.add_argument("--axis", action="append", default=[], help="ROOT=английское описание оси")
     s.set_defaults(f=cmd_spec)
     i = sp.add_parser("items")
