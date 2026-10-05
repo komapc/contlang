@@ -586,7 +586,7 @@ roots:
     pos: цельное, одним куском
   one_sided: false
   ru_axis: 'как вещество держится вместе, размер неделимого куска (−5 течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, сплошное: слиток, монолит): `GRAIN(=-5) \| o` жидкость, `GRAIN(=-2) \| o` песок, мука, `GRAIN(=+5) \| a` цельный, сплошной, неразрывный. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные −5, целые около −1'
-  status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем — следующий шаг'
+  status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — [roundtrip_grain](../data/translation_test/roundtrip_grain.md)'
   en_axis: '-5 fluid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (ingot, monolith). Also continuous / seamless / whole as `GRAIN(=+5) | a`.'
   semaxis:
   - ingot monolith solid seamless whole lump block slab
