@@ -25,7 +25,7 @@ def test_spec_has_all_roots_and_axes():
 def test_drop_and_add_axis():
     t = prepare.build_spec("enc", "words", drop=["SIDE"], axes={"SEE": "visibility: -5 hidden ... +5 bright"})
     assert "- SIDE:" not in t and "- SEE: visibility" in t
-    assert "43 roots (NSM-like" in t
+    assert "44 roots (NSM-like" in t
 
 
 def test_score_reproduces_saved_runs():
