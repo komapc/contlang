@@ -33,7 +33,7 @@
 ## Эмоции, бой
 
 - Закон и власть — `RULE`, бой и война — `FIGHT` (*peace* = `FIGHT MANY(=0) | o`).
-- Ось `FIGHT` — всерьёз ли: −5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть ([roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 11 → 17 точных из 24). *game* = `FIGHT(=-5) | o`, *sport* = `FIGHT(=-5) BODY | o`, *player* = `SOMEONE FIGHT(=-5) | o`, *tournament* = `FIGHT(=-5) PART(=+5) | o`, *toy* = `THING(=-5) FIGHT(=-5) | o`, *champion* = `SOMEONE FIGHT(=-5) GOOD | o C+5`; *war* = `FIGHT(=+5) | o`, *weapon* = `THING(=-5) FIGHT(=+5) | o`, *soldier* = `SOMEONE FIGHT(=+5) RULE(=+4) | o`, *army* = `SOMEONE FIGHT(=+5) PART(=+5) | o`.
+- Ось `FIGHT` — всерьёз ли: −5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть ([roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 11 → 17 точных из 24). *game* = `FIGHT(=-5) | o`, *sport* = `FIGHT(=-5) BODY | o`, *player* = `SOMEONE FIGHT(=-5) | o`, *tournament* = `FIGHT(=-5) PART(=+5) | o`, *toy* = `THING(=-5) FIGHT(=-5) | o`, *champion* = `SOMEONE FIGHT(=-5) GOOD | o C+5`; *war* = `FIGHT(=+5) | o`, *weapon* = `DO(=+5) FIGHT(=+5) | o` (орудие боя), *soldier* = `SOMEONE FIGHT(=+5) RULE(=+4) | o`, *army* = `SOMEONE FIGHT(=+5) PART(=+5) | o`.
 - Эмоции: `FEEL` (возбуждение) + `GOOD` (приятность) + корень по смыслу: страх `TIME(+3)` (плохое впереди), злость `FIGHT | a`, социальные `SOMEONE | o` (+ `SEE | i`); оси `NEAR` и `WANT` для направления не работают.
 
 ## Время
@@ -136,6 +136,15 @@
 - **Деньги** — `VALUE` с `GIVE`, главный корень решает, что отдают: деньги = `VALUE GIVE(=0) | o`, платить = `VALUE GIVE(=+4) | i` (продать — `GIVE(=+3) VALUE | i`), долг = `VALUE GIVE(=+4) TIME(=+3) | o`, богатый = `VALUE MANY(=+5) | a`, бедный = `VALUE MANY(=0) | a`, рынок = `PLACE GIVE(=0) VALUE | o`.
 - **Еда** — `CONSUME(=+5)` с родом вещи `THING`: мясо = `CONSUME(=+5) THING(=+4) | o`, овощ = `CONSUME(=+5) THING(=0) | o`, готовить = `HEAT(=+3) CONSUME(=+5) | i`, кухня = `PLACE HEAT(=+3) CONSUME(=+5) | o`, ферма = `PLACE THING(=0) DO | o`, собирать урожай = `GIVE(=-4) THING(=0) PART(=+5) | i`.
 - **Транспорт и постройки** — орудие `DO(=+5)` (не «камень» `THING(=-5)`) и `PLACE`: машина = `DO(=+5) MOVE(=+4) | o`, корабль = `DO(=+5) MOVE GRAIN(=-3) | o`, дорога = `PLACE MOVE LONG(=-3) | o`, мост = `PLACE MOVE ABOVE(=+4) | o`, дом = `PLACE INSIDE(=+5) LIVE | o`, комната = `PLACE INSIDE(=+5) PART(=-2) | o`. Учреждения с рецептом пишутся рецептом, не в кавычках.
+
+## Общество, власть, учёба, война
+
+([roundtrip_lacunae4](../data/translation_test/roundtrip_lacunae4.md): 24 из 24 с рецептами против 13 и 19 без них)
+
+- **Общество**: доверять = `THINK(=+5) GOOD(=+4) | i` («решить, что хороший»), друг = `SOMEONE WANT(=+3) JOIN(=+3) | o`, союзник = `SOMEONE FIGHT JOIN(=+4) | o`, лидер = `SOMEONE SIDE(=+5) RULE | o`, соглашение = `THINK(=+5) SAME(=+5) | o`, безопасный = `GOOD(=-4) CAN(=-5) | a` («вред невозможен»).
+- **Власть**: король = `SOMEONE RULE(=+5) SEX(=+5) | o` (королева — `SEX(=-5)`), правительство = `SOMEONE RULE(=+5) PART(=+5) | o`, голосовать = `THINK(=+5) MANY(=+5) | i` («решают все»), выборы = `THINK(=+5) MANY(=+5) RULE(=+4) | o`, гражданин = `SOMEONE PART(=-2) RULE(=+4) | o`, город = `PLACE SOMEONE MANY(=+5) | o`.
+- **Учёба и кино**: школа = `PLACE KNOW CONSUME(=+5) | o`, ученик = `SOMEONE KNOW CONSUME(=+5) | o`, учитель = `SOMEONE KNOW GIVE(=+4) | o`, университет = `PLACE KNOW ABOVE(=+4) | o`, фильм = `ART(=+5) SEE MOVE | o`, рекламировать = `SAY GIVE(=+3) VALUE | i` («говорить, чтобы продать»).
+- **Война**: враг = `SOMEONE WANT(=-4) FIGHT | o`, битва = `FIGHT(=+5) PART(=-2) | o` («часть войны»), ружьё = `DO(=+5) FIGHT(=+5) HEAT(=+5) | o` («огненное орудие боя»), защищать = `DO GOOD(=-4) | i K-4` («не дать навредить»), нападать = `FIGHT(=+4) BEGIN(=-5) | i`.
 
 ## Цена, тщательность, присоединение
 
