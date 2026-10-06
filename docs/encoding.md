@@ -92,6 +92,38 @@
 - Устройства — `THING(=-5)` и действие: *machine* = `THING(=-5) MOVE DO | o`, *computer* = `THING(=-5) THINK ART(=-5) | o`.
 - Не читается: *architecture* (`ART(=0) DO PLACE` → *workshop*; `ART(=+3) PLACE LIVE` → *theater*). Принято как потеря.
 
+## Возраст, музыка, вода, успех
+
+Слепой тест [roundtrip_lacunae2](../data/translation_test/roundtrip_lacunae2.md): 23 из 24 с рецептами, 11 и 13 из 24 без них.
+
+- **Возраст** — `LIVE` с `TIME`, где уровень TIME означает, с какого времени существо живёт:
+  - молодой — `LIVE TIME(=-1) | a`;
+  - взрослый — `LIVE TIME(=-3) | a`;
+  - старый, пожилой — `LIVE TIME(=-5) | a`;
+  - молодёжь — `SOMEONE LIVE TIME(=-1) | o N+3`, «молодые люди». В тесте был вариант с `PART(=+5)`, он прочитан верно (2 из 2), но это четыре корня, сверх лимита; трёхкорневой вариант не проверен;
+  - возраст — `LIVE TIME MEASURE | o`.
+
+  О вещах пишется без `LIVE`: древний — `TIME(=-5) | a`.
+- **Музыка** — звук как искусство. `FEEL(=+3)` отделяет пение от поэзии (`ART(=+5) SAY`). Если писать песню через `TEXT`, она читается как стихи.
+  - петь — `SAY ART(=+5) FEEL(=+3) | i`, песня — то же с `| o`;
+  - певец — `SOMEONE SAY FEEL(=+3) | o`;
+  - музыка — `ART(=+5) SAY THING | o`;
+  - мелодия — `ART(=+5) SAY LONG | o`;
+  - танцевать — `ART(=+5) MOVE BODY | i`.
+- **Вода и рельеф** — `PLACE GRAIN(=-3)`, «место жидкости». Без `PLACE` в начале и без рецепта такой код читается как воздух или небо.
+  - море — `PLACE GRAIN(=-3) BIG(=+5) | o`;
+  - озеро — `PLACE GRAIN(=-3) BIG(=0) | o`;
+  - река — `PLACE GRAIN(=-3) MOVE(=+3) | o`;
+  - остров — `PLACE GRAIN(=-3) INSIDE(=+5) | o`;
+  - берег — `PLACE GRAIN(=-3) NEAR(=+4) | o`;
+  - гора — `PLACE ABOVE(=+5) BIG(=+4) | o`.
+- **Успех и победа** — `GOOD` о результате, `HAPPEN(=+5)` означает результат.
+  - победить — `FIGHT GOOD(=+4) | i`, проиграть — `FIGHT GOOD(=-4) | i`;
+  - победа — `FIGHT GOOD(=+4) HAPPEN(=+5) | o`;
+  - успех — `DO GOOD(=+4) HAPPEN(=+5) | o`;
+  - потерпеть неудачу — `DO GOOD(=-4) HAPPEN(=+5) | i`;
+  - знаменитый — `KNOW MANY(=+5) | a`.
+
 ## Цена, тщательность, присоединение
 
 ([roundtrip_value_care_join](../data/translation_test/roundtrip_value_care_join.md))
