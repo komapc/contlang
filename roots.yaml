@@ -1,6 +1,7 @@
 limits:
   max_roots: 3
   extra_root: ABSTRACT
+  compass: [PLACE, BIG, ABOVE, SIDE]  # стороны света: все четыре корня разрешены (северо-восток)
 pos:
 - name: o
   what: имя

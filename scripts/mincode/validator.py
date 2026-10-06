@@ -4,7 +4,7 @@
 
 Уровни: error (неправильный код), warning (старая запись или спорное место).
 Правила: кавычки непрозрачны; слово = корни `|` часть речи метки; корней не больше
-лимита (ABSTRACT сверх лимита); значение оси только у корней с осью, в −5…+5
+лимита (ABSTRACT сверх лимита; стороны света — четыре корня `PLACE BIG ABOVE SIDE`); значение оси только у корней с осью, в −5…+5
 (MANY: 0…+5); метки из списка, каждая не более одного раза, в своём диапазоне,
 `I0` запрещён; `!` и `?` без значения; скобки сбалансированы.
 Запись предложения с границами слов `{ ROOTS | FORM }` (check_braced): вне `{ }` только частицы, `[ ]`, `;` и имена в кавычках.
@@ -50,6 +50,7 @@ class Validator:
         self.labels = {m["name"]: m for m in doc["labels"]}
         self.max_roots = doc["limits"]["max_roots"]
         self.extra = doc["limits"]["extra_root"]
+        self.compass = set(doc["limits"].get("compass", []))
         self.pos = {p["name"] for p in doc["pos"]}
 
     def check(self, code):
@@ -70,7 +71,7 @@ class Validator:
             nonlocal word, state, seen_labels, has_bar, word_after_and
             if word:
                 body = [r for r in word if r != self.extra]
-                if len(body) > self.max_roots:
+                if len(body) > self.max_roots and not (len(body) == len(self.compass) and set(body) == self.compass):
                     add("error", "too_many_roots", f"{len(body)} корней (лимит {self.max_roots}): {' '.join(word)}")
                 if word.count(self.extra) > 1:
                     add("error", "too_many_roots", f"{self.extra} дважды")

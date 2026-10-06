@@ -28,6 +28,7 @@ GOOD = [
     'SAY | i T-2 "Serpentes" ',
     "KNOW ABSTRACT(=+5) | o",
     "SOMEONE KNOW RULE ABSTRACT(=+4) | o",  # ABSTRACT сверх лимита
+    "PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o",  # стороны света: четыре корня
     "DO | i K+4 E SOMEONE | o",
     "MANY(=0) | e",
     "CONSUME | i !",
@@ -42,6 +43,7 @@ BAD = {
     "GOOD(=+7) | a": "axis_range",
     "MANY(=-3) | a": "axis_range",
     "SOMEONE MOVE THINK KNOW | o": "too_many_roots",
+    "PLACE BIG ABOVE GOOD | o": "too_many_roots",
     "GOOD | a I0": "label_value",
     "GOOD | a I+9": "label_range",
     "GOOD | a T-2 T-3": "dup_label",
