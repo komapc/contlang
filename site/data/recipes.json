@@ -1,0 +1,870 @@
+[
+{
+"en": "abstract",
+"code": "ABSTRACT(=+5) | a"
+},
+{
+"en": "advertise",
+"code": "SAY GIVE(=+3) VALUE | i"
+},
+{
+"en": "age",
+"code": "LIVE TIME MEASURE | o"
+},
+{
+"en": "agreement",
+"code": "THINK(=+5) SAME(=+5) | o"
+},
+{
+"en": "allow",
+"code": "RULE(=+3) | i K0"
+},
+{
+"en": "ally",
+"code": "SOMEONE FIGHT JOIN(=+4) | o"
+},
+{
+"en": "army",
+"code": "SOMEONE FIGHT(=+5) PART(=+5) | o"
+},
+{
+"en": "arrive",
+"code": "MOVE NEAR(=+5) | i"
+},
+{
+"en": "artist",
+"code": "SOMEONE ART(=+5) DO | o"
+},
+{
+"en": "attack",
+"code": "FIGHT(=+4) BEGIN(=-5) | i"
+},
+{
+"en": "author",
+"code": "SOMEONE TEXT HAPPEN(=-4) | o"
+},
+{
+"en": "authority",
+"code": "RULE(=+4) | o"
+},
+{
+"en": "battle",
+"code": "FIGHT(=+5) PART(=-2) | o"
+},
+{
+"en": "blunt",
+"code": "TONE(=-2) CARE(=-3) | a"
+},
+{
+"en": "book",
+"code": "TEXT PART(=+2) | o"
+},
+{
+"en": "bridge",
+"code": "PLACE MOVE ABOVE(=+4) | o"
+},
+{
+"en": "bring",
+"code": "MOVE NEAR(=+5) | i K+3"
+},
+{
+"en": "broadcasting",
+"code": "SAY GIVE(=+3) MANY(=+5) | o"
+},
+{
+"en": "brush",
+"code": "TOUCH(=-3) MOVE DO(=+5) | o"
+},
+{
+"en": "buy",
+"code": "GIVE(=-3) VALUE | i"
+},
+{
+"en": "calculate",
+"code": "ART(=-5) THINK MEASURE | i"
+},
+{
+"en": "car",
+"code": "DO(=+5) MOVE(=+4) | o"
+},
+{
+"en": "carefully",
+"code": "CARE(=+3) | e"
+},
+{
+"en": "carelessly",
+"code": "CARE(=-3) | e"
+},
+{
+"en": "champion",
+"code": "SOMEONE FIGHT(=-5) GOOD | o C+5"
+},
+{
+"en": "cheap",
+"code": "VALUE(=-4) | a"
+},
+{
+"en": "citizen",
+"code": "SOMEONE PART(=-2) RULE(=+4) | o"
+},
+{
+"en": "city",
+"code": "PLACE SOMEONE MANY(=+5) | o"
+},
+{
+"en": "cold",
+"code": "TONE(=-4) HEAT(=-3) | a"
+},
+{
+"en": "company",
+"code": "PART(=+5) DO VALUE | o"
+},
+{
+"en": "computer",
+"code": "THING(=-5) THINK ART(=-5) | o"
+},
+{
+"en": "concrete",
+"code": "ABSTRACT(=-5) | a"
+},
+{
+"en": "cook",
+"code": "HEAT(=+3) CONSUME(=+5) | i"
+},
+{
+"en": "court",
+"code": "PLACE RULE(=+4) THINK(=+5) | o"
+},
+{
+"en": "crime",
+"code": "DO GOOD(=-4) RULE(=+4) | o"
+},
+{
+"en": "criminal",
+"code": "SOMEONE GOOD(=-4) RULE(=+4) | o"
+},
+{
+"en": "dance",
+"code": "ART(=+5) MOVE BODY | i"
+},
+{
+"en": "debt",
+"code": "VALUE GIVE(=+4) TIME(=+3) | o"
+},
+{
+"en": "defend",
+"code": "DO GOOD(=-4) | i K-4"
+},
+{
+"en": "die",
+"code": "LIVE(=-5) | i"
+},
+{
+"en": "doctor",
+"code": "SOMEONE LIVE GOOD(=+4) | o"
+},
+{
+"en": "dream",
+"code": "LIVE(=0) SEE ABSTRACT(=+5) | o"
+},
+{
+"en": "drink",
+"code": "CONSUME(=+5) GRAIN(=-3) | i"
+},
+{
+"en": "eat",
+"code": "CONSUME(=+5) GRAIN(=+3) | i"
+},
+{
+"en": "election",
+"code": "THINK(=+5) MANY(=+5) RULE(=+4) | o"
+},
+{
+"en": "enemy",
+"code": "SOMEONE WANT(=-4) FIGHT | o"
+},
+{
+"en": "engineer",
+"code": "SOMEONE ART(=-4) DO | o"
+},
+{
+"en": "engineering",
+"code": "ART(=-4) DO THING | o"
+},
+{
+"en": "enter",
+"code": "MOVE INSIDE(=+5) | i"
+},
+{
+"en": "equal",
+"code": "SAME(=+5) MEASURE | a"
+},
+{
+"en": "especially",
+"code": "SAME(=-4) | e I+4"
+},
+{
+"en": "esterday",
+"code": "TIME(=-1) BIG(=0) | e"
+},
+{
+"en": "excrete",
+"code": "CONSUME(=-5) BODY | i"
+},
+{
+"en": "exhale",
+"code": "CONSUME(=-5) GRAIN(=-5) | i"
+},
+{
+"en": "exit",
+"code": "MOVE INSIDE(=-5) | i"
+},
+{
+"en": "expensive",
+"code": "VALUE(=+4) | a"
+},
+{
+"en": "fail",
+"code": "DO GOOD(=-4) HAPPEN(=+5) | i"
+},
+{
+"en": "famous",
+"code": "KNOW MANY(=+5) | a"
+},
+{
+"en": "farm",
+"code": "PLACE THING(=0) DO | o"
+},
+{
+"en": "feed",
+"code": "CONSUME | i K+4"
+},
+{
+"en": "film",
+"code": "ART(=+5) SEE MOVE | o"
+},
+{
+"en": "flour",
+"code": "GRAIN(=0) CONSUME(=+5) THING(=0) | o"
+},
+{
+"en": "forbid",
+"code": "RULE(=+4) DO | i K-5"
+},
+{
+"en": "force",
+"code": "DO WANT(=-5) | i K+5"
+},
+{
+"en": "fraction",
+"code": "PART(=-2) MEASURE(=+5) | o"
+},
+{
+"en": "friend",
+"code": "SOMEONE WANT(=+3) JOIN(=+3) | o"
+},
+{
+"en": "friendly",
+"code": "TONE(=+4) WANT(=+3) | a"
+},
+{
+"en": "frighten",
+"code": "FEEL(=+4) GOOD(=-4) | i K+4"
+},
+{
+"en": "game",
+"code": "FIGHT(=-5) | o"
+},
+{
+"en": "gas",
+"code": "GRAIN(=-5) | o"
+},
+{
+"en": "general",
+"code": "SAME(=+4) MANY(=+5) | a"
+},
+{
+"en": "government",
+"code": "SOMEONE RULE(=+5) PART(=+5) | o"
+},
+{
+"en": "grow",
+"code": "CHANGE BIG(=+3) | i"
+},
+{
+"en": "gun",
+"code": "DO(=+5) FIGHT(=+5) HEAT(=+5) | o"
+},
+{
+"en": "hammer",
+"code": "TOUCH(=+5) MOVE(=+4) DO(=+5) | o"
+},
+{
+"en": "harsh",
+"code": "TONE(=-4) TOUCH(=+4) | a"
+},
+{
+"en": "harvest",
+"code": "GIVE(=-4) THING(=0) PART(=+5) | i"
+},
+{
+"en": "hastily",
+"code": "CARE(=-5) MOVE(=+4) | e"
+},
+{
+"en": "heal",
+"code": "LIVE GOOD(=+4) | i K+3"
+},
+{
+"en": "healthy",
+"code": "LIVE(=+5) GOOD(=+4) | a"
+},
+{
+"en": "history",
+"code": "ART(=+4) KNOW TIME(=-3) | o"
+},
+{
+"en": "hospital",
+"code": "PLACE LIVE(=0) GOOD(=-4) | o"
+},
+{
+"en": "hostile",
+"code": "TONE(=-5) FIGHT | a"
+},
+{
+"en": "house",
+"code": "PLACE INSIDE(=+5) LIVE | o"
+},
+{
+"en": "ice",
+"code": "GRAIN(=+5) HEAT(=-5) | o"
+},
+{
+"en": "idea",
+"code": "THINK ABSTRACT(=+5) | o"
+},
+{
+"en": "imply",
+"code": "SAY ABSTRACT(=+5) | i"
+},
+{
+"en": "improve",
+"code": "CHANGE GOOD(=+3) | i"
+},
+{
+"en": "individual",
+"code": "SAME(=-4) PART(=-2) | a"
+},
+{
+"en": "inhale",
+"code": "CONSUME(=+5) GRAIN(=-5) | i"
+},
+{
+"en": "insert",
+"code": "MOVE INSIDE(=+5) | i K+3"
+},
+{
+"en": "island",
+"code": "PLACE GRAIN(=-3) INSIDE(=+5) | o"
+},
+{
+"en": "join",
+"code": "JOIN(=+3) | i"
+},
+{
+"en": "judge",
+"code": "SOMEONE RULE(=+4) THINK(=+5) | o"
+},
+{
+"en": "key",
+"code": "INSIDE(=+4) CAN(=+4) DO(=+5) | o"
+},
+{
+"en": "kick",
+"code": "TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i"
+},
+{
+"en": "king",
+"code": "SOMEONE RULE(=+5) SEX(=+5) | o"
+},
+{
+"en": "kitchen",
+"code": "PLACE HEAT(=+3) CONSUME(=+5) | o"
+},
+{
+"en": "knife",
+"code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o"
+},
+{
+"en": "ladder",
+"code": "MOVE ABOVE(=+4) DO(=+5) | o"
+},
+{
+"en": "leader",
+"code": "SOMEONE SIDE(=+5) RULE | o"
+},
+{
+"en": "leave",
+"code": "MOVE NEAR(=-5) | i"
+},
+{
+"en": "letter",
+"code": "TEXT GIVE(=+3) SOMEONE | o"
+},
+{
+"en": "library",
+"code": "PLACE TEXT PART(=+5) | o"
+},
+{
+"en": "liquid",
+"code": "GRAIN(=-3) | o"
+},
+{
+"en": "listen",
+"code": "CONSUME(=+5) SAY CARE(=+3) | i"
+},
+{
+"en": "lose",
+"code": "FIGHT GOOD(=-4) | i"
+},
+{
+"en": "machine",
+"code": "THING(=-5) MOVE DO | o"
+},
+{
+"en": "make",
+"code": "DO | i K+3"
+},
+{
+"en": "market",
+"code": "PLACE GIVE(=0) VALUE | o"
+},
+{
+"en": "mathematics",
+"code": "ART(=-5) MANY SEE | o"
+},
+{
+"en": "meat",
+"code": "CONSUME(=+5) THING(=+4) | o"
+},
+{
+"en": "medicine",
+"code": "DO(=+5) LIVE GOOD(=+4) | o"
+},
+{
+"en": "melt",
+"code": "CHANGE(=+4) GRAIN(=-3) HEAT(=+3) | i"
+},
+{
+"en": "meticulous",
+"code": "CARE(=+5) PART(=-4) | a I+4"
+},
+{
+"en": "money",
+"code": "VALUE GIVE(=0) | o"
+},
+{
+"en": "mountain",
+"code": "PLACE ABOVE(=+5) BIG(=+4) | o"
+},
+{
+"en": "music",
+"code": "ART(=+5) SAY THING | o"
+},
+{
+"en": "newspaper",
+"code": "TEXT TIME(=0) PART(=+5) | o"
+},
+{
+"en": "nnual",
+"code": "TIME(=0) BIG(=+3) MANY(=+5) | a"
+},
+{
+"en": "number",
+"code": "MEASURE(=-5) MANY | o"
+},
+{
+"en": "official",
+"code": "SOMEONE RULE(=+4) | o"
+},
+{
+"en": "old",
+"code": "LIVE TIME(=-5) | a"
+},
+{
+"en": "or",
+"code": "SAY | i"
+},
+{
+"en": "ordinary",
+"code": "SAME(=+3) | a"
+},
+{
+"en": "organ",
+"code": "BODY INSIDE(=+5) PART(=-2) | o"
+},
+{
+"en": "out",
+"code": "MOVE INSIDE(=-5) | i K+3"
+},
+{
+"en": "pain",
+"code": "BODY FEEL(=+4) GOOD(=-4) | o"
+},
+{
+"en": "painting",
+"code": "ART(=+5) SEE GRAIN(=-3) | o"
+},
+{
+"en": "patient",
+"code": "SOMEONE LIVE(=0) GOOD(=-4) | o"
+},
+{
+"en": "pay",
+"code": "VALUE GIVE(=+4) | i"
+},
+{
+"en": "peace",
+"code": "FIGHT MANY(=0) | o"
+},
+{
+"en": "pen",
+"code": "TEXT DO(=+5) | o"
+},
+{
+"en": "persuade",
+"code": "SAY THINK(=+5) | i K+3"
+},
+{
+"en": "physics",
+"code": "ART(=-4) GRAIN MOVE | o"
+},
+{
+"en": "planet",
+"code": "PLACE ABOVE(=+5) MOVE | o"
+},
+{
+"en": "player",
+"code": "SOMEONE FIGHT(=-5) | o"
+},
+{
+"en": "poetry",
+"code": "ART(=+5) SAY | o"
+},
+{
+"en": "polite",
+"code": "TONE(=+4) | a"
+},
+{
+"en": "politely",
+"code": "TONE(=+4) | e"
+},
+{
+"en": "poor",
+"code": "VALUE MANY(=0) | a"
+},
+{
+"en": "prevent",
+"code": "DO | i K-4"
+},
+{
+"en": "price",
+"code": "VALUE | o"
+},
+{
+"en": "principle",
+"code": "RULE ABSTRACT(=+5) | o"
+},
+{
+"en": "prison",
+"code": "PLACE MOVE(=-5) RULE(=+4) | o"
+},
+{
+"en": "private",
+"code": "RULE(=-5) | a"
+},
+{
+"en": "railway",
+"code": "PLACE MOVE LONG(=+5) | o"
+},
+{
+"en": "read",
+"code": "CONSUME(=+5) TEXT | i"
+},
+{
+"en": "remain",
+"code": "CHANGE(=-4) | i"
+},
+{
+"en": "remove",
+"code": "JOIN(=-4) | i"
+},
+{
+"en": "return",
+"code": "MOVE SAME(=+5) | i"
+},
+{
+"en": "rich",
+"code": "VALUE MANY(=+5) | a"
+},
+{
+"en": "rise",
+"code": "MOVE ABOVE(=+5) | i"
+},
+{
+"en": "river",
+"code": "PLACE GRAIN(=-3) MOVE(=+3) | o"
+},
+{
+"en": "road",
+"code": "PLACE MOVE LONG(=-3) | o"
+},
+{
+"en": "room",
+"code": "PLACE INSIDE(=+5) PART(=-2) | o"
+},
+{
+"en": "rude",
+"code": "TONE(=-4) | a"
+},
+{
+"en": "rudely",
+"code": "TONE(=-4) | e"
+},
+{
+"en": "safe",
+"code": "GOOD(=-4) CAN(=-5) | a"
+},
+{
+"en": "sand",
+"code": "GRAIN(=0) THING(=-5) | o"
+},
+{
+"en": "saw",
+"code": "JOIN(=-4) MOVE(=+2) DO(=+5) | o"
+},
+{
+"en": "school",
+"code": "PLACE KNOW CONSUME(=+5) | o"
+},
+{
+"en": "scientist",
+"code": "SOMEONE ART(=-4) KNOW | o"
+},
+{
+"en": "scissors",
+"code": "JOIN(=-4) MANY(=+1) DO(=+5) | o"
+},
+{
+"en": "sea",
+"code": "PLACE GRAIN(=-3) BIG(=+5) | o"
+},
+{
+"en": "sell",
+"code": "GIVE(=+3) VALUE | i"
+},
+{
+"en": "send",
+"code": "MOVE NEAR(=-5) | i K+3"
+},
+{
+"en": "separate",
+"code": "JOIN(=-3) PART | i"
+},
+{
+"en": "shake",
+"code": "MOVE(=+2) ABSTRACT(=-5) | i"
+},
+{
+"en": "ship",
+"code": "DO(=+5) MOVE GRAIN(=-3) | o"
+},
+{
+"en": "shore",
+"code": "PLACE GRAIN(=-3) NEAR(=+4) | o"
+},
+{
+"en": "sick",
+"code": "LIVE(=0) GOOD(=-4) | a"
+},
+{
+"en": "sing",
+"code": "SAY ART(=+5) FEEL(=+3) | i"
+},
+{
+"en": "singer",
+"code": "SOMEONE SAY FEEL(=+3) | o"
+},
+{
+"en": "sleep",
+"code": "LIVE(=0) GOOD(=+3) | i"
+},
+{
+"en": "soldier",
+"code": "SOMEONE FIGHT(=+5) RULE(=+4) | o"
+},
+{
+"en": "speak",
+"code": "CONSUME(=-5) SAY | i"
+},
+{
+"en": "sport",
+"code": "FIGHT(=-5) BODY | o"
+},
+{
+"en": "star",
+"code": "HEAT(=+5) ABOVE(=+5) PART(=-2) | o"
+},
+{
+"en": "steal",
+"code": "GIVE(=-4) GOOD(=-4) | i"
+},
+{
+"en": "steam",
+"code": "GRAIN(=-5) HEAT(=+3) | o"
+},
+{
+"en": "stone",
+"code": "GRAIN(=+5) THING(=-5) | o"
+},
+{
+"en": "student",
+"code": "SOMEONE KNOW CONSUME(=+5) | o"
+},
+{
+"en": "success",
+"code": "DO GOOD(=+4) HAPPEN(=+5) | o"
+},
+{
+"en": "sum",
+"code": "MANY JOIN(=+4) MEASURE(=-5) | o"
+},
+{
+"en": "tactful",
+"code": "TONE(=+3) CARE(=+5) | a"
+},
+{
+"en": "tangible",
+"code": "TOUCH CAN ABSTRACT(=-5) | a"
+},
+{
+"en": "teach",
+"code": "KNOW | i K+4"
+},
+{
+"en": "teacher",
+"code": "SOMEONE KNOW GIVE(=+4) | o"
+},
+{
+"en": "theoretical",
+"code": "KNOW ABSTRACT(=+5) | a"
+},
+{
+"en": "thermometer",
+"code": "MEASURE HEAT DO(=+5) | o"
+},
+{
+"en": "thoroughly",
+"code": "CARE(=+5) PART(=+2) | e"
+},
+{
+"en": "tired",
+"code": "LIVE(=0) CAN(=-3) | a"
+},
+{
+"en": "today",
+"code": "TIME(=0) BIG(=0) NEAR(=+5) | e"
+},
+{
+"en": "tomorrow",
+"code": "TIME(=+1) BIG(=0) | e"
+},
+{
+"en": "tournament",
+"code": "FIGHT(=-5) PART(=+5) | o"
+},
+{
+"en": "toy",
+"code": "THING(=-5) FIGHT(=-5) | o"
+},
+{
+"en": "trust",
+"code": "THINK(=+5) GOOD(=+4) | i"
+},
+{
+"en": "tumble",
+"code": "MOVE ABOVE(=-4) CARE(=-4) | i"
+},
+{
+"en": "unique",
+"code": "SAME(=-4) | a"
+},
+{
+"en": "university",
+"code": "PLACE KNOW ABOVE(=+4) | o"
+},
+{
+"en": "vegetable",
+"code": "CONSUME(=+5) THING(=0) | o"
+},
+{
+"en": "victory",
+"code": "FIGHT GOOD(=+4) HAPPEN(=+5) | o"
+},
+{
+"en": "vomit",
+"code": "CONSUME(=-5) BODY ABOVE(=+3) | i"
+},
+{
+"en": "vote",
+"code": "THINK(=+5) MANY(=+5) | i"
+},
+{
+"en": "wake",
+"code": "LIVE(=+5) BEGIN(=-4) | i"
+},
+{
+"en": "war",
+"code": "FIGHT(=+5) | o"
+},
+{
+"en": "warm",
+"code": "TONE(=+4) HEAT(=+2) | a"
+},
+{
+"en": "water",
+"code": "GRAIN(=-3) CONSUME(=+5) LIVE | o"
+},
+{
+"en": "weapon",
+"code": "DO(=+5) FIGHT(=+5) | o"
+},
+{
+"en": "win",
+"code": "FIGHT GOOD(=+4) | i"
+},
+{
+"en": "wound",
+"code": "BODY JOIN(=-3) | o"
+},
+{
+"en": "write",
+"code": "TEXT | i"
+},
+{
+"en": "writer",
+"code": "SOMEONE TEXT | o"
+},
+{
+"en": "young",
+"code": "LIVE TIME(=-1) | a"
+},
+{
+"en": "youth",
+"code": "SOMEONE LIVE TIME(=-1) | o N+3"
+},
+{
+"en": "zero",
+"code": "MANY(=0) MEASURE(=-5) | o"
+}
+]

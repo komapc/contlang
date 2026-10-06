@@ -44,6 +44,17 @@ def examples_json():
     return json.loads((REPO / "data" / "site" / "examples_words.json").read_text(encoding="utf8"))
 
 
+def recipes_json():
+    """Проверенные рецепты «слово → код» из подсказок сайта и encoding.md (для словаря на сайте)."""
+    pairs = {}
+    for w, c in re.findall(r"([a-z]+)(?:/[a-z]+)? `([A-Z][^`]*?\|[^`]*)`", tips()):
+        pairs.setdefault(w, c)
+    enc = (REPO / "docs" / "encoding.md").read_text(encoding="utf8")
+    for w, c in re.findall(r"\*([a-z]+)\* = `([A-Z][^`]*?\|[^`]*)`", enc):
+        pairs.setdefault(w, c)
+    return [{"en": w, "code": pairs[w]} for w in sorted(pairs)]
+
+
 def tips():
     """Сокращённые приёмы для сайта (дешевле полного encoding.md); правятся вручную в data/site/tips_short.md."""
     return (REPO / "data" / "site" / "tips_short.md").read_text(encoding="utf8")
@@ -51,14 +62,20 @@ def tips():
 
 def prompts_js():
     enc = build_spec("enc", "words") + "\n\n# Encoding tips (verified by blind tests)\n\n" + tips()
-    dec = build_spec("dec", "words")
-    return "// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False) + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\n"
+    # декодер знает словарь так же, как кодировщик: без рецептов gpt-4o-mini читает их буквально (1 из 20 на сайте)
+    dec = build_spec("dec", "words") + "\n\n# Known recipes (codes verified by blind tests; read them as these words)\n\n" + tips()
+    lim = spec.load()["limits"]
+    check = {"roots": [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "max_roots": lim["max_roots"],
+             "extra_root": lim.get("extra_root"), "compass": lim.get("compass", [])}
+    return ("// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False)
+            + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
 
 
 def outputs():
     return {
         REPO / "site" / "data" / "roots.json": json.dumps(roots_json(), ensure_ascii=False, indent=1) + "\n",
         REPO / "site" / "data" / "examples.json": json.dumps(examples_json(), ensure_ascii=False, indent=1) + "\n",
+        REPO / "site" / "data" / "recipes.json": json.dumps(recipes_json(), ensure_ascii=False, indent=0) + "\n",
         REPO / "worker" / "prompts.js": prompts_js(),
     }
 

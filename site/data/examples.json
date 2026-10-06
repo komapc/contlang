@@ -1,87 +1,254 @@
 [
  {
+  "en": "money",
+  "code": "VALUE GIVE(=0) | o",
+  "decoded": "money",
+  "set": "recipes"
+ },
+ {
+  "en": "debt",
+  "code": "VALUE GIVE(=+4) TIME(=+3) | o",
+  "decoded": "debt",
+  "set": "recipes"
+ },
+ {
+  "en": "harvest",
+  "code": "GIVE(=-4) THING(=0) PART(=+5) | i",
+  "decoded": "harvest",
+  "set": "recipes"
+ },
+ {
+  "en": "ship",
+  "code": "DO(=+5) MOVE GRAIN(=-3) | o",
+  "decoded": "ship",
+  "set": "recipes"
+ },
+ {
+  "en": "bridge",
+  "code": "PLACE MOVE ABOVE(=+4) | o",
+  "decoded": "bridge",
+  "set": "recipes"
+ },
+ {
+  "en": "court",
+  "code": "PLACE RULE(=+4) THINK(=+5) | o",
+  "decoded": "court",
+  "set": "recipes"
+ },
+ {
+  "en": "car",
+  "code": "DO(=+5) MOVE(=+4) | o",
+  "decoded": "car",
+  "set": "recipes"
+ },
+ {
+  "en": "safe",
+  "code": "GOOD(=-4) CAN(=-5) | a",
+  "decoded": "safe",
+  "set": "recipes"
+ },
+ {
+  "en": "trust",
+  "code": "THINK(=+5) GOOD(=+4) | i",
+  "decoded": "trust",
+  "set": "recipes"
+ },
+ {
+  "en": "vote",
+  "code": "THINK(=+5) MANY(=+5) | i",
+  "decoded": "vote",
+  "set": "recipes"
+ },
+ {
+  "en": "gun",
+  "code": "DO(=+5) FIGHT(=+5) HEAT(=+5) | o",
+  "decoded": "gun",
+  "set": "recipes"
+ },
+ {
+  "en": "school",
+  "code": "PLACE KNOW CONSUME(=+5) | o",
+  "decoded": "school",
+  "set": "recipes"
+ },
+ {
+  "en": "teacher",
+  "code": "SOMEONE KNOW GIVE(=+4) | o",
+  "decoded": "teacher",
+  "set": "recipes"
+ },
+ {
+  "en": "sleep",
+  "code": "LIVE(=0) GOOD(=+3) | i",
+  "decoded": "sleep",
+  "set": "recipes"
+ },
+ {
+  "en": "sick",
+  "code": "LIVE(=0) GOOD(=-4) | a",
+  "decoded": "sick",
+  "set": "recipes"
+ },
+ {
+  "en": "hospital",
+  "code": "PLACE LIVE(=0) GOOD(=-4) | o",
+  "decoded": "hospital",
+  "set": "recipes"
+ },
+ {
+  "en": "medicine",
+  "code": "DO(=+5) LIVE GOOD(=+4) | o",
+  "decoded": "medicine",
+  "set": "recipes"
+ },
+ {
+  "en": "tired",
+  "code": "LIVE(=0) CAN(=-3) | a",
+  "decoded": "tired",
+  "set": "recipes"
+ },
+ {
+  "en": "liver",
+  "code": "\"hepar\"",
+  "decoded": "liver",
+  "set": "recipes"
+ },
+ {
+  "en": "moon",
+  "code": "\"Luna\"",
+  "decoded": "moon",
+  "set": "recipes"
+ },
+ {
+  "en": "star",
+  "code": "HEAT(=+5) ABOVE(=+5) PART(=-2) | o",
+  "decoded": "star",
+  "set": "recipes"
+ },
+ {
+  "en": "enter",
+  "code": "MOVE INSIDE(=+5) | i",
+  "decoded": "enter",
+  "set": "recipes"
+ },
+ {
+  "en": "extract",
+  "code": "MOVE INSIDE(=-5) | i K+3",
+  "decoded": "remove (в альтернативах: extract)",
+  "set": "recipes"
+ },
+ {
+  "en": "return",
+  "code": "MOVE SAME(=+5) | i",
+  "decoded": "return",
+  "set": "recipes"
+ },
+ {
+  "en": "pull",
+  "code": "MOVE TOUCH NEAR(=+3) | i K+3",
+  "decoded": "put (в альтернативах: press, attach)",
+  "set": "recipes"
+ },
+ {
   "en": "sand",
   "code": "GRAIN(=0) THING(=-5) PART(=-5) | o",
-  "decoded": "sand"
+  "decoded": "sand",
+  "set": "grain"
  },
  {
   "en": "knife",
   "code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
-  "decoded": "knife"
+  "decoded": "knife",
+  "set": "grain"
  },
  {
   "en": "pen",
   "code": "TEXT DO(=+5) | o",
-  "decoded": "pen"
+  "decoded": "pen",
+  "set": "grain"
  },
  {
   "en": "steam",
   "code": "GRAIN(=-5) HEAT(=+3) | o",
-  "decoded": "steam"
+  "decoded": "steam",
+  "set": "grain"
  },
  {
   "en": "write",
   "code": "TEXT | i",
-  "decoded": "write"
+  "decoded": "write",
+  "set": "grain"
  },
  {
   "en": "game",
   "code": "FIGHT(=-5) | o",
-  "decoded": "game"
+  "decoded": "game",
+  "set": "grain"
  },
  {
   "en": "boulder",
   "code": "GRAIN(=+5) THING(=-5) BIG(=+4) | o",
-  "decoded": "boulder"
+  "decoded": "boulder",
+  "set": "grain"
  },
  {
   "en": "continuous",
   "code": "GRAIN(=+5) TIME | a A0",
-  "decoded": "continuous"
+  "decoded": "continuous",
+  "set": "grain"
  },
  {
   "en": "zero",
   "code": "MANY(=0) MEASURE(=-5) | o",
-  "decoded": "zero"
+  "decoded": "zero",
+  "set": "grain"
  },
  {
   "en": "sum",
   "code": "MANY JOIN(=+4) MEASURE(=-5) | o",
-  "decoded": "sum"
+  "decoded": "sum",
+  "set": "grain"
  },
  {
   "en": "calculate",
   "code": "ART(=-5) THINK MEASURE | i",
-  "decoded": "calculate"
+  "decoded": "calculate",
+  "set": "grain"
  },
  {
   "en": "fraction",
   "code": "PART(=-2) MEASURE(=+5) | o",
-  "decoded": "fraction"
+  "decoded": "fraction",
+  "set": "grain"
  },
  {
   "en": "honey",
   "code": "GRAIN(=-3) CONSUME(=+5) GOOD(=+4) | o",
-  "decoded": "nectar (в альтернативах: juice, broth)"
+  "decoded": "nectar (в альтернативах: juice, broth)",
+  "set": "grain"
  },
  {
   "en": "half",
   "code": "PART(=-2) SAME MEASURE(=+5) | o",
-  "decoded": "percentage (в альтернативах: proportion)"
+  "decoded": "percentage (в альтернативах: proportion)",
+  "set": "grain"
  },
  {
   "en": "mathematics",
   "code": "ART(=-5) MANY SEE | o",
-  "decoded": "statistics (соседняя область)"
+  "decoded": "statistics (соседняя область)",
+  "set": "grain"
  },
  {
   "en": "seamless",
   "code": "GRAIN(=+5) JOIN(=-5) | a",
-  "decoded": "separate (противоположный смысл: JOIN(=-5) значит «отделить»)"
+  "decoded": "separate (противоположный смысл: JOIN(=-5) значит «отделить»)",
+  "set": "grain"
  },
  {
   "en": "spoon",
   "code": "CONSUME(=+5) GRAIN(=-3) DO(=+5) | o",
-  "decoded": "cup (в альтернативах: glass, straw)"
+  "decoded": "cup (в альтернативах: glass, straw)",
+  "set": "grain"
  }
 ]

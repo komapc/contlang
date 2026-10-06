@@ -44,7 +44,8 @@ a{color:var(--acc)}
 .col{margin:0}.colhead{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}
 .step{margin-top:14px}.lab{font-size:13px;color:var(--mut);margin-bottom:4px}
 .big{font-size:20px;font-weight:600}.small{font-size:13px;margin-top:4px}
-.hit{color:var(--ok)}.miss{color:var(--bad)}
+.hit{color:var(--ok)}.miss{color:var(--bad)}.part{color:var(--warn)}
+.warnline{color:var(--warn);font-size:13px;margin-top:4px}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:4px}
 .seg button{background:none;border:0;padding:5px 10px;font:inherit;font-size:13px;color:var(--mut);cursor:pointer}
@@ -68,6 +69,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <button role="tab" aria-selected="true" data-t="demo">Проба</button>
   <button role="tab" aria-selected="false" data-t="how">Как читать код</button>
   <button role="tab" aria-selected="false" data-t="roots">Корни</button>
+  <button role="tab" aria-selected="false" data-t="dict">Словарь</button>
   <button role="tab" aria-selected="false" data-t="method">Методология</button>
   <button role="tab" aria-selected="false" data-t="docs">Документация</button>
 </nav>
@@ -86,7 +88,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <div class="cmp" id="out" hidden>
     <div class="card col" id="llm">
       <div class="colhead"><b>Языковая модель</b><span class="mut">gpt-4o-mini по описанию языка</span></div>
-      <div class="step"><div class="lab">код</div><span class="code" id="code">—</span><div class="mut small" id="conf"></div></div>
+      <div class="step"><div class="lab">код</div><span class="code" id="code">—</span><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
       <details id="expl" hidden><summary>из чего собран код</summary><table><tbody id="tokens"></tbody></table></details>
       <div class="step"><div class="lab">слепое раскодирование <span class="mut">(другой вызов, видит только код)</span></div>
         <div class="big" id="best">—</div><div class="mut small" id="alts"></div><div class="mut small" id="why"></div></div>
@@ -108,7 +110,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   </div>
 
   <h2>Сохранённые примеры</h2>
-  <p class="mut">Результаты слепых тестов: кодировала одна модель, раскодировала другая, не видя слова. Есть и попадания, и промахи. Нажмите строку — модель не вызывается, математика считает заново.</p>
+  <p class="mut">Результаты слепых тестов: кодировала одна модель, раскодировала другая, не видя слова. Зелёным — слово угадано первым, жёлтым — оно среди альтернатив, красным — промах. Нажмите строку — модель не вызывается, математика считает заново.</p>
+  <p class="mut">Две серии. <b>Рецепты</b> (право, деньги, еда, транспорт, общество, здоровье, направление движения): декодеры Sonnet видели список рецептов, так что это проверка того, что рецепт читается однозначно, а не того, что его можно угадать с нуля. <b>Вещества и числа</b>: декодер видел только таблицы корней.</p>
   <div class="card"><table><thead><tr><th>слово</th><th>код</th><th>прочитано</th></tr></thead><tbody id="examples"></tbody></table></div>
 </section>
 
@@ -116,7 +119,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <h2>Как читать код</h2>
   <p>Слово записывается как <code>КОРНИ | форма</code>. До черты — смысл: <b>главный корень</b> и до двух уточняющих, у каждого при необходимости значение его оси: <code>GOOD(=+3)</code> (скорее хороший), <code>TIME(=-2)</code> (недавно), <code>MANY(=0)</code> (явный ноль). Ось не написана — значение не указано. Каждый следующий корень уточняет всё, что стоит перед ним: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — «сыпучие крошки камня» (песок).</p>
   <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span id="noaxis"></span>) значений не берут.</p>
-  <p>Числа, имена и латинские названия пишутся как есть в кавычках: <code>"3"</code>.</p>
+  <p>В кавычках пишутся только числа, имена собственные и <b>конкретные члены семейства</b> в латинской или международной форме: вид <code>"Canis"</code>, вещество <code>"iodine"</code>, орган <code>"hepar"</code>, светило <code>"Luna"</code>, игра <code>"chess"</code>, узкий термин <code>"enzyme"</code>. Сама категория строится из корней: орган — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, звезда — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. Если для слова есть рецепт, кавычки не нужны.</p>
   <h3>Частицы</h3><table><tbody id="particles"></tbody></table>
   <h3>Метки формы</h3>
   <p class="mut">Метки — не корни. Ставятся после черты через пробел, один раз на главном слове.</p>
@@ -130,6 +133,14 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <input type="search" id="q" placeholder="поиск по корню или значению">
   <div class="card" style="overflow-x:auto"><table><thead><tr><th>корень</th><th>−5</th><th>0</th><th>+5</th></tr></thead><tbody id="rootRows"></tbody></table></div>
   <p class="mut">Источник — файл <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>; таблица на сайте собирается из него.</p>
+</section>
+
+<section id="dict">
+  <h2>Словарь рецептов</h2>
+  <p class="mut" id="dictCount"></p>
+  <input type="search" id="dq" placeholder="поиск по слову или корню (money, LIVE, PLACE…)">
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th>слово</th><th>код</th></tr></thead><tbody id="dictRows"></tbody></table></div>
+  <p class="mut">Рецепты собраны из <a href="https://github.com/komapc/contlang/blob/main/docs/encoding.md">encoding.md</a> и подсказок, которые получает модель на сайте; каждый проверен слепым тестом (отчёты — в <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Нажмите строку — код откроется на «Пробе»: модель раскодирует его вслепую, математика прочитает.</p>
 </section>
 
 <section id="method">
@@ -146,6 +157,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
     <tr><td>Убрали корни CONTAINER и MAYBE (вместо них сочетания и метка)</td><td>в пределах шума; корней стало меньше</td></tr>
     <tr><td>Ось у корня «видеть»</td><td>хуже, чем без оси (−0,43, интервал на границе); не введена</td></tr>
     <tr><td>Фигурные скобки вокруг слов</td><td>кодов без ошибок формата стало намного больше (8–10% ошибок вместо 30–58%), смысл не изменился (+0,04 [−0,20, +0,26])</td></tr>
+    <tr><td>Рецепты для лакун (право, деньги, еда, транспорт, общество, власть, война, здоровье)</td><td>в двух слепых тестах по 24 из 24 с рецептами против 17, 13 и 19 без них; новых корней не понадобилось</td></tr>
     <tr><td><b>Запись в стиле токи пона</b> (слова-корни, роли по позиции)</td><td>смысл лучше: +0,33 [+0,05, +0,60] на отложенном наборе из 40 предложений</td></tr>
   </tbody></table>
   <h3>Математика без модели</h3>
@@ -190,7 +202,8 @@ document.querySelectorAll("nav button").forEach(b=>b.addEventListener("click",()
 
 const isCode = (t) => /\|/.test(t) || /\b[A-Z]{2,}\b/.test(t);
 const same = (a, b) => (a || "").trim().toLowerCase().replace(/^(the|a|an|to) /, "") === (b || "").trim().toLowerCase();
-function mark(node, text, orig){node.textContent = text || "—"; node.className = "big" + (orig && text ? (same(text, orig) ? " hit" : " miss") : "");}
+function mark(node, text, orig, alts){node.textContent = text || "—"; node.className = "big" + (orig && text ? (same(text, orig) ? " hit" : (alts || []).some(a => same(a, orig)) ? " part" : " miss") : "");}
+const altsOf = (dec) => dec.includes("(") ? dec.slice(dec.indexOf("(") + 1).replace(/\)$/, "").replace(/^в альтернативах:\s*/, "").split(",").map(x => x.trim()) : [];
 function busy(on, msg){$("run").disabled = on; $("status").textContent = on ? (msg || "думаю…") : ""}
 async function call(mode, text){
   const r = await fetch(API, {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({mode, text})});
@@ -261,7 +274,7 @@ async function run(text, saved){
   $("out").hidden = false;
   const code = isCode(text) && !saved;
   lastWord = code ? "" : text;
-  ["code","conf","alts","why"].forEach(id => $(id).textContent = "");
+  ["code","conf","alts","why","warn","recipe"].forEach(id => $(id).textContent = "");
   $("tokens").innerHTML = ""; $("expl").hidden = true; mark($("best"), "…"); $("llmMath").textContent = "…";
   const mathJob = code ? (mark($("mbest"), ""), $("mcode").textContent = text, $("mcos").textContent = "код задан, математика только читает его",
                            $("mroots").innerHTML = "", mathCode(text, $("mnear"))) : mathWord(text);
@@ -269,7 +282,7 @@ async function run(text, saved){
     let c = text;
     if (saved) {
       c = saved.code; $("code").textContent = c; $("conf").textContent = "сохранённый результат слепого теста";
-      mark($("best"), saved.decoded.split(" (")[0], saved.en); $("why").textContent = saved.decoded.includes("(") ? saved.decoded.slice(saved.decoded.indexOf("(")) : "";
+      mark($("best"), saved.decoded.split(" (")[0], saved.en, altsOf(saved.decoded)); $("why").textContent = saved.decoded.includes("(") ? saved.decoded.slice(saved.decoded.indexOf("(")) : "";
     } else if (!API) {
       $("code").textContent = code ? text : "—"; mark($("best"), ""); $("why").textContent = "модель не подключена";
     } else {
@@ -277,16 +290,19 @@ async function run(text, saved){
         busy(true, "модель кодирует…");
         const d = await call("encode", text);
         c = d.code; $("code").textContent = c;
+        if ((d.warnings || []).length) $("warn").textContent = "код нарушает правила: " + d.warnings.join("; ");
         $("conf").textContent = d.confidence ? "уверенность модели: " + d.confidence + " (бывает завышена)" + (d.confusable && d.confusable.length ? "; можно спутать с: " + d.confusable.join(", ") : "") : "";
         if ((d.tokens || []).length) { $("expl").hidden = false; d.tokens.forEach(t => row($("tokens"), [el("code", t.t), t.note])); }
       } else $("code").textContent = c;
       busy(true, "другая модель раскодирует вслепую…");
       const r = await call("decode", c);
-      mark($("best"), r.best, code ? "" : text);
+      mark($("best"), r.best, code ? "" : text, r.alternatives);
       $("alts").textContent = r.alternatives && r.alternatives.length ? "варианты: " + r.alternatives.join(", ") : "";
       $("why").textContent = r.why || "";
     }
     mathCode(c, $("llmMath"));
+    const rc = !code && REC[text.trim().toLowerCase()];
+    if (rc) $("recipe").textContent = "проверенный рецепт: " + rc + (rc === c ? " (совпал)" : "");
   } catch (e) { $("status").textContent = e.message; mark($("best"), ""); }
   finally { $("run").disabled = false; if ($("status").textContent.endsWith("…")) $("status").textContent = ""; }
   await mathJob;
@@ -304,10 +320,23 @@ let EX = [];
 fetch("data/examples.json").then(r=>r.json()).then(list=>{
   EX = list; const tb = $("examples");
   list.forEach(e => {
-    const ok = same(e.decoded.split(" (")[0], e.en);
-    const tr = row(tb, [e.en, el("code", e.code), el("span", e.decoded, ok ? "hit" : "miss")], "ex");
+    const ok = same(e.decoded.split(" (")[0], e.en), part = altsOf(e.decoded).some(a => same(a, e.en));
+    const tr = row(tb, [e.en, el("code", e.code), el("span", e.decoded, ok ? "hit" : part ? "part" : "miss")], "ex");
     tr.addEventListener("click", () => { $("inp").value = e.en; run(e.en, e); window.scrollTo({top: 0, behavior: "smooth"}); });
   });
+});
+let REC = {};
+fetch("data/recipes.json").then(r=>r.json()).then(list=>{
+  list.forEach(e => REC[e.en] = e.code);
+  $("dictCount").textContent = list.length + " проверенных рецептов.";
+  const draw = (q) => {
+    const tb = $("dictRows"); tb.innerHTML = ""; q = (q||"").trim().toLowerCase();
+    list.filter(e => !q || (e.en + " " + e.code).toLowerCase().includes(q)).forEach(e => {
+      const tr = row(tb, [e.en, el("code", e.code)], "ex");
+      tr.addEventListener("click", () => { $("inp").value = e.code; document.querySelector('nav button[data-t=demo]').click(); run(e.code); window.scrollTo({top: 0, behavior: "smooth"}); });
+    });
+  };
+  draw(""); $("dq").addEventListener("input", e => draw(e.target.value));
 });
 fetch("data/roots.json").then(r=>r.json()).then(d=>{
   $("rootCount").textContent = d.counts.roots + " корней: " + d.counts.with_axis + " с осью, " + d.counts.without_axis + " без оси.";
