@@ -406,11 +406,11 @@ roots:
     pos: официальное, учреждение, закон
   one_sided: false
   ru_axis: 'личное … официальное (−5 личное, неформальное, частное; 0 обычное; +5 официальное, учреждение, закон): `RULE(=+4) \| o` власть, учреждение, `SOMEONE PART(=+5) RULE(=+4) \| o` комитет, ведомство'
-  status: '**новое**, предложено (SemAxis: комитет +0,53, комиссия, ведомство; оси почти не пересекается с другими,'
+  status: '**новое**, принято; полюса SemAxis сменены с ведомств (authority committee agency commission government) на закон и власть: прежние тянули любой код с RULE к *commissions, agencies*, институты (суд, банк, школа, выборы…) попадали в top10 в 6% случаев, теперь в 32% (data/lacunae.md)'
   en_axis: -5 personal/private/informal ... 0 ordinary ... +5 official/institutional/law (RULE(=+4) = authority, an institution)
   semaxis:
-  - authority committee agency commission government
-  - individual private personal informal citizen
+  - law official authority formal legal govern rule
+  - personal private informal individual unofficial
   en_gloss: law, rule, govern
 - name: CHANGE
   axis:

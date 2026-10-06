@@ -40,6 +40,9 @@
 
 - `TIME(=+1)` читается как *soon*; для «потом» его не использовать.
 - *later, subsequent, earlier, before, after, initially* — метка `R`, не `TIME(=±n)` ([roundtrip_reltime](../data/translation_test/roundtrip_reltime.md)).
+- Отрезок времени — `TIME(=0) BIG(=n) | o`, шкала BIG: −5 секунда, −4 минута, −2 час, 0 день (сутки), +1 неделя, +2 месяц, +3 год, +4 десятилетие, +5 век; миг — `TIME(=0) BIG(=-5) MANY(=+1) | o` ([roundtrip_time](../data/translation_test/roundtrip_time.md): 20 из 20, без шкалы 7 из 20).
+- Какой именно день: уровень TIME — сдвиг от «сейчас»: вчера `TIME(=-1) BIG(=0) | e`, завтра `TIME(=+1) BIG(=0) | e`, сегодня `TIME(=0) BIG(=0) NEAR(=+5) | e` («этот день»).
+- Часть суток — день с уровнем BEGIN: `TIME(=0) BIG(=0) BEGIN(=n) | o`: −4 утро, 0 полдень, +3 вечер, +5 ночь, полночь — `BEGIN(=+5) | o C+5`. Ежегодный — `TIME(=0) BIG(=+3) MANY(=+5) | a` («каждый год»).
 
 ## Размер, группы, части
 
