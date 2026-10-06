@@ -27,3 +27,20 @@
 | weapon | `FIGHT(=+5)` | ✓ | ✓ | ✓ | ✓ |
 | gun | `FIGHT(=+5) HEAT(=+5)` | ✓ | ✓ | ✓ | ✓ |
 | camera | `SEE TEXT` | ✗ glasses | ✗ glasses | ✗ book | ✗ glasses |
+
+## Дополнение: «жидкость» в таблице
+
+В строку `GRAIN` таблицы (roots.yaml → tables.md) добавлено «(−3 жидкость, вода)» — в описании оси это было, в таблице нет. Перепроверка теми же условиями (2 декодера, без рецептов):
+
+| код | слово | декодер 1 | декодер 2 | раньше без рецепта |
+| :-- | :-- | :-- | :-- | :-- |
+| `PLACE GRAIN(=-3) BIG(=+5) \| o` | sea | ✓ ocean | ✓ ocean | воздух, небо |
+| `PLACE GRAIN(=-3) MOVE(=+3) \| o` | river | ✓ | ✓ | воздух |
+| `PLACE GRAIN(=-3) BIG(=0) \| o` | lake | ~ pond | ✗ pond | воздух |
+| `PLACE GRAIN(=-3) NEAR(=+4) \| o` | shore | ✓ | ✓ | — |
+| `MOVE ABOVE(=-4) GRAIN(=-3) \| i K+3` | pour | ✓ | ✓ | ✓ |
+| `PLACE GRAIN(=-3) INSIDE(=+5) \| o` | island | ✗ well | ✗ well | — |
+| `DO(=+5) MOVE GRAIN(=-3) \| o` | ship | ✗ pump | ✗ pump | ✗ fan |
+| `SEE TEXT DO(=+5) \| o` | camera | ✗ glasses | ✗ glasses | ✗ |
+
+Вода теперь читается без рецепта. *island* («место внутри воды») читается как колодец, *ship* — как насос (орудие, двигающее жидкость, а не по жидкости); для них нужны другие коды. *camera* не собирается из `SEE TEXT`.

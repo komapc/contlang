@@ -557,7 +557,7 @@ roots:
   - whisper murmur mumble hush mutter faint silent quiet
 - name: GRAIN
   axis:
-    neg: газ, пар
+    neg: газ, пар (−3 жидкость, вода)
     mid: сыпучее, рассыпчатое
     pos: цельное, одним куском
   one_sided: false
