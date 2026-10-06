@@ -146,6 +146,13 @@
 - **Учёба и кино**: школа = `PLACE KNOW CONSUME(=+5) | o`, ученик = `SOMEONE KNOW CONSUME(=+5) | o`, учитель = `SOMEONE KNOW GIVE(=+4) | o`, университет = `PLACE KNOW ABOVE(=+4) | o`, фильм = `ART(=+5) SEE MOVE | o`, рекламировать = `SAY GIVE(=+3) VALUE | i` («говорить, чтобы продать»).
 - **Война**: враг = `SOMEONE WANT(=-4) FIGHT | o`, битва = `FIGHT(=+5) PART(=-2) | o` («часть войны»), ружьё = `DO(=+5) FIGHT(=+5) HEAT(=+5) | o` («огненное орудие боя»), защищать = `DO GOOD(=-4) | i K-4` («не дать навредить»), нападать = `FIGHT(=+4) BEGIN(=-5) | i`.
 
+## Кавычки: категории и члены семейства; здоровье и сон
+
+([roundtrip_quotes_health](../data/translation_test/roundtrip_quotes_health.md): 40 из 40 с правилом и рецептами против 37 и 28 без них; решения «кавычки или корни» у двух кодировщиков совпали в 24 из 24 против 18)
+
+- **Граница кавычек.** Из корней — категории и назначения: орган = `BODY INSIDE(=+5) PART(=-2) | o`, игра = `FIGHT(=-5) | o`, спорт = `FIGHT(=-5) BODY | o`, звезда = `HEAT(=+5) ABOVE(=+5) PART(=-2) | o`, планета = `PLACE ABOVE(=+5) MOVE | o`, спутник = `DO(=+5) ABOVE(=+5) MOVE | o`, компания = `PART(=+5) DO VALUE | o`, чиновник = `SOMEONE RULE(=+4) | o`, железная дорога = `PLACE MOVE LONG(=+5) | o`, вещание = `SAY GIVE(=+3) MANY(=+5) | o`. В кавычках — конкретные члены семейства в международной или латинской форме (`"hepar"` печень, `"ren"` почка, `"Sol"`, `"Luna"`, `"football"`, `"chess"`, `"protein"`) и узкие термины (`"enzyme"`, `"orbit"`, `"Parliament"`). Луна из корней не читается (*horizon*, *sunset*), `"Luna"` — 2 из 2.
+- **Здоровье и сон — середина `LIVE`** («жив наполовину»), `GOOD` — какая: спать = `LIVE(=0) GOOD(=+3) | i`, сновидение = `LIVE(=0) SEE ABSTRACT(=+5) | o`, проснуться = `LIVE(=+5) BEGIN(=-4) | i`, усталый = `LIVE(=0) CAN(=-3) | a`, отдыхать = `MOVE(=-5) GOOD(=+3) | i`; больной = `LIVE(=0) GOOD(=-4) | a`, болезнь = `… | o`, пациент = `SOMEONE LIVE(=0) GOOD(=-4) | o`, больница = `PLACE LIVE(=0) GOOD(=-4) | o`, здоровый = `LIVE(=+5) GOOD(=+4) | a`, лечить = `LIVE GOOD(=+4) | i K+3`, врач = `SOMEONE LIVE GOOD(=+4) | o`, лекарство = `DO(=+5) LIVE GOOD(=+4) | o`, умереть = `LIVE(=-5) | i`, рана = `BODY JOIN(=-3) | o`, боль = `BODY FEEL(=+4) GOOD(=-4) | o`. Корень `HEALTH` не нужен.
+
 ## Цена, тщательность, присоединение
 
 ([roundtrip_value_care_join](../data/translation_test/roundtrip_value_care_join.md))
