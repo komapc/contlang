@@ -6,7 +6,8 @@
 math.json: корни (порядок roots.yaml), признак оси, два словаря — «полюса» (из
 semaxis в roots.yaml) и «обученный» (data/sparse_dict_learned.npz, только
 анализ, см. docs/math.md) — как матрицы C (центры) и A (оси), параметры кодера
-(s, вес не главных, topr) и хеш полюсов, чтобы build.py --check заметил устаревание.
+(s, вес не главных, topr), 10 главных компонент исходного пространства (направления,
+разброс, по пять слов на полюсах) и хеш полюсов, чтобы build.py --check заметил устаревание.
 vocab.bin: N слов × 300 int8 (единичный вектор × 127), слова — в math.json,
 по частоте (порядок словаря GloVe wiki-gigaword), только те, что есть в Numberbatch.
 """
@@ -50,9 +51,17 @@ def main():
     words = [w for w in cand if w in vec][:N]
     X = unit(np.stack([vec[w] for w in words]))
     (OUT / "vocab.bin").write_bytes(np.round(X * 127).astype(np.int8).tobytes())
+    # 10 главных компонент исходного пространства (по этим же словам): направление, разброс, слова на полюсах
+    mean = X.mean(0)
+    U, sv, Vt = np.linalg.svd(X - mean, full_matrices=False)
+    pcs, sd = Vt[:10], sv[:10] / np.sqrt(len(X))
+    Z = (X - mean) @ pcs.T
+    poles = [{"neg": [words[i] for i in np.argsort(Z[:, k])[:5]], "pos": [words[i] for i in np.argsort(-Z[:, k])[:5]],
+              "var": float(sv[k] ** 2 / (sv ** 2).sum())} for k in range(10)]
     r4 = lambda M: np.round(M, 5).tolist()  # noqa: E731
     js = {"names": names, "has_axis": [bool(a.any()) for a in A0], "dim": X.shape[1], "s": 0.4, "head_w": 0.6, "topr": 8,
           "poles_hash": spec.poles_hash(), "words": words,
+          "pca": {"mean": np.round(mean, 5).tolist(), "pcs": np.round(pcs, 5).tolist(), "sd": np.round(sd, 5).tolist(), "poles": poles},
           "dicts": {"poles": {"C": r4(C0), "A": r4(A0)}, "learned": {"C": r4(D["C"]), "A": r4(D["A"])}}}
     (OUT / "math.json").write_text(json.dumps(js, separators=(",", ":")), encoding="utf8")
     print(f"слов {len(words)}, vocab.bin {(OUT / 'vocab.bin').stat().st_size // 1024} КБ, math.json {(OUT / 'math.json').stat().st_size // 1024} КБ")

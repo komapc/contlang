@@ -51,6 +51,11 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .seg button[aria-pressed=true]{background:var(--acc2);color:var(--fg)}
 .bars td{padding:3px 6px;border:0}.bars .bar{height:8px;border-radius:4px;background:var(--acc);opacity:.75}
 .bars td:last-child{width:45%}
+.pca td{padding:4px 6px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
+.pca .axis{position:relative;height:10px;width:90px;background:var(--line);border-radius:5px}
+.pca .axis span{position:absolute;top:0;height:10px;border-radius:5px;background:var(--acc)}
+.pca .axis:after{content:"";position:absolute;left:50%;top:-2px;height:14px;width:1px;background:var(--mut)}
+.pca .w{color:var(--mut)}
 </style>
 </head>
 <body>
@@ -95,7 +100,10 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
       </div>
       <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="mut small" id="mcos"></div></div>
       <div class="step"><div class="lab">ближайшие слова к коду</div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
-      <div class="step"><div class="lab">10 ближайших корней <span class="mut">(один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
+      <div class="step"><div class="lab">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
+      <details class="step" id="pcaBox"><summary>10 главных осей исходного пространства <span class="mut">(Numberbatch, PCA)</span></summary>
+        <p class="mut small">Значение слова на каждой из первых десяти главных компонент 300-мерного пространства (в стандартных отклонениях) и слова на её полюсах. Эти оси объясняют по 1–2% разброса и почти не называются — поэтому язык строится на корнях с понятными полюсами.</p>
+        <table class="pca"><tbody id="mpca"></tbody></table></details>
     </div>
   </div>
 
@@ -209,7 +217,7 @@ async function mathWord(word){
   const {co, V} = await coder();
   const w = (word || "").trim().toLowerCase();
   const x = /^[a-z]+$/.test(w) ? V.vec(w) : null;
-  $("mroots").innerHTML = "";
+  $("mroots").innerHTML = ""; $("mpca").innerHTML = "";
   if (!x) {
     $("mcode").textContent = "—"; $("mcos").textContent = "";
     mark($("mbest"), ""); $("mnear").textContent = /^[a-z]+$/.test(w) ? "слова нет среди 10 000 частых слов словаря" : "математика кодирует только отдельные слова";
@@ -222,10 +230,22 @@ async function mathWord(word){
   $("mcos").textContent = "сходство кода со словом cos " + r.cos.toFixed(2) + "; часть речи математика не знает, стоит o";
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = "далее: " + nb.slice(1).map(n => n.word).join(", ") + (rk ? " · исходное слово на " + rk + "-м месте из 10 000" : "");
+  pcaTable((await loadMath()).m, x);
   const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;
   top.forEach(t => {
     const bar = el("div", null, "bar"); bar.style.width = Math.max(4, 100 * t.cos / mx) + "%";
     row(tb, [el("code", t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);
+  });
+}
+function pcaTable(m, x){
+  const tb = $("mpca"); tb.innerHTML = "";
+  m.pca.pcs.forEach((pc, k) => {
+    let z = 0; for (let j = 0; j < pc.length; j++) z += (x[j] - m.pca.mean[j]) * pc[j];
+    z /= m.pca.sd[k];
+    const ax = el("div", null, "axis"), bar = el("span"), c = Math.max(-3, Math.min(3, z)) / 3 * 50;
+    bar.style.left = (c < 0 ? 50 + c : 50) + "%"; bar.style.width = Math.abs(c) + "%"; ax.appendChild(bar);
+    const p = m.pca.poles[k];
+    row(tb, ["ГК" + (k + 1), (z > 0 ? "+" : "") + z.toFixed(1), ax, el("span", "− " + p.neg.slice(0, 3).join(", ") + " · + " + p.pos.slice(0, 3).join(", "), "w")]);
   });
 }
 async function mathCode(code, target){
