@@ -8,7 +8,7 @@ semaxis в roots.yaml) и «обученный» (data/sparse_dict_learned.npz, 
 анализ, см. docs/math.md) — как матрицы C (центры) и A (оси), параметры кодера
 (s, вес не главных, topr), 10 главных компонент исходного пространства (направления,
 разброс, по пять слов на полюсах) и хеш полюсов, чтобы build.py --check заметил устаревание.
-vocab.bin: N слов × 300 int8 (единичный вектор × 127), слова — в math.json,
+vocab.bin: N частых слов и весь список data/wordlist_en_x5.tsv × 300 int8 (единичный вектор × 127), слова — в math.json,
 по частоте (порядок словаря GloVe wiki-gigaword), только те, что есть в Numberbatch.
 """
 import gzip
@@ -20,7 +20,7 @@ import numpy as np
 
 REPO = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(REPO / "scripts"))
-from lib_code import Data, root_specs, s15, unit  # noqa: E402
+from lib_code import Data, root_specs, s15, unit, wordlist  # noqa: E402
 from mincode import spec  # noqa: E402
 
 N = 10000
@@ -47,8 +47,10 @@ def main():
     assert list(D["names"]) == names, "обученный словарь устарел: перезапустите scripts/18_sparse_learn.py"
     assert names == [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "порядок корней в lib_code.NOAXIS не совпадает с roots.yaml"
     cand = frequent_words(int(N * 1.6))
-    vec = s15.load_subset(set(cand) | set(d.vec))
+    base = wordlist()[0]  # наш список 3000 частых слов — весь, даже если реже первых N по GloVe (extract)
+    vec = s15.load_subset(set(cand) | set(d.vec) | set(base))
     words = [w for w in cand if w in vec][:N]
+    words += [w for w in base if w in vec and w not in set(words)]
     X = unit(np.stack([vec[w] for w in words]))
     (OUT / "vocab.bin").write_bytes(np.round(X * 127).astype(np.int8).tobytes())
     # 10 главных компонент исходного пространства (по этим же словам): направление, разброс, слова на полюсах
