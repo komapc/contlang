@@ -128,6 +128,15 @@
   - потерпеть неудачу — `DO GOOD(=-4) HAPPEN(=+5) | i`;
   - знаменитый — `KNOW MANY(=+5) | a`.
 
+## Право, деньги, еда, транспорт
+
+([roundtrip_lacunae3](../data/translation_test/roundtrip_lacunae3.md): 24 из 24 с рецептами против 17 без них)
+
+- **Право** — `RULE(=+4)` (закон) с `GOOD(=-4)` (нарушение): преступление = `DO GOOD(=-4) RULE(=+4) | o`, преступник = `SOMEONE GOOD(=-4) RULE(=+4) | o`, суд = `PLACE RULE(=+4) THINK(=+5) | o`, судья = `SOMEONE RULE(=+4) THINK(=+5) | o`, тюрьма = `PLACE MOVE(=-5) RULE(=+4) | o`, украсть = `GIVE(=-4) GOOD(=-4) | i`.
+- **Деньги** — `VALUE` с `GIVE`, главный корень решает, что отдают: деньги = `VALUE GIVE(=0) | o`, платить = `VALUE GIVE(=+4) | i` (продать — `GIVE(=+3) VALUE | i`), долг = `VALUE GIVE(=+4) TIME(=+3) | o`, богатый = `VALUE MANY(=+5) | a`, бедный = `VALUE MANY(=0) | a`, рынок = `PLACE GIVE(=0) VALUE | o`.
+- **Еда** — `CONSUME(=+5)` с родом вещи `THING`: мясо = `CONSUME(=+5) THING(=+4) | o`, овощ = `CONSUME(=+5) THING(=0) | o`, готовить = `HEAT(=+3) CONSUME(=+5) | i`, кухня = `PLACE HEAT(=+3) CONSUME(=+5) | o`, ферма = `PLACE THING(=0) DO | o`, собирать урожай = `GIVE(=-4) THING(=0) PART(=+5) | i`.
+- **Транспорт и постройки** — орудие `DO(=+5)` (не «камень» `THING(=-5)`) и `PLACE`: машина = `DO(=+5) MOVE(=+4) | o`, корабль = `DO(=+5) MOVE GRAIN(=-3) | o`, дорога = `PLACE MOVE LONG(=-3) | o`, мост = `PLACE MOVE ABOVE(=+4) | o`, дом = `PLACE INSIDE(=+5) LIVE | o`, комната = `PLACE INSIDE(=+5) PART(=-2) | o`. Учреждения с рецептом пишутся рецептом, не в кавычках.
+
 ## Цена, тщательность, присоединение
 
 ([roundtrip_value_care_join](../data/translation_test/roundtrip_value_care_join.md))
