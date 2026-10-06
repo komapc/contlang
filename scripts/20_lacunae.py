@@ -29,7 +29,7 @@ _b = importlib.util.spec_from_file_location("bm", Path(__file__).with_name("site
 bm = importlib.util.module_from_spec(_b)
 _b.loader.exec_module(bm)
 
-S, HW, K, TOP = 0.4, 0.6, 25, 10
+S, HW, K, TOP = 0.4, 0.6, 40, 10
 
 
 def greedy(X, C, A):
@@ -68,6 +68,23 @@ def greedy(X, C, A):
     return Y, codes
 
 
+def common_words(words):
+    """Обычные слова: из списка 3000 частых или нарицательные в корпусе Brown
+    (не меньше 3 вхождений, тег имени собственного NP меньше чем в половине).
+    Имена, страны, города по правилам языка идут в кавычках, лакунами не считаются."""
+    import nltk
+    from collections import Counter
+    nltk.data.path.insert(0, str(ROOT / "data" / "raw" / "nltk"))
+    from nltk.corpus import brown
+    n, np_ = Counter(), Counter()
+    for w, t in brown.tagged_words():
+        lw = w.lower()
+        n[lw] += 1
+        np_[lw] += t.startswith("NP")
+    base = set(wordlist()[0])
+    return np.array([w in base or (n[w] >= 3 and np_[w] < 0.5 * n[w]) for w in words])
+
+
 def main():
     specs = root_specs()
     d = Data([specs])
@@ -93,9 +110,7 @@ def main():
     m = np.array([len(c) for c in codes])
     cos = (unit(Y) * X).sum(1)
 
-    # лакуны ищем среди обычных слов (список 3000 частых с частью речи): имена,
-    # страны и города по правилам языка идут в кавычках
-    common = np.isin(words, wordlist()[0])
+    common = common_words(words)
     miss = np.where(~hit & common)[0]
     Rz = unit(X[miss] - unit(Y[miss]) * cos[miss, None])
     km = KMeans(K, n_init=4, random_state=0).fit(Rz)
@@ -109,7 +124,7 @@ def main():
            "Потолок — хеш-эффект (docs/math.md, раздел 3): 84 свободных коэффициента различают почти любое слово, "
            "смысла это не добавляет; для лакун он не годится.", "",
            f"Промахи среди всех слов — большей частью имена, страны, города, названия (идут в кавычках). "
-           f"Ниже — только обычные слова: {len(miss)} промахов из {common.sum()}.", "",
+           f"Ниже — только обычные слова (список 3000 частых и нарицательные по корпусу Brown): {len(miss)} промахов из {common.sum()}.", "",
            "## Кластеры промахов", "",
            "Слова, ближайшие к среднему остатку (чего не хватает коду), и промахи кластера (первые по частоте).", ""]
     order = np.argsort(-np.bincount(km.labels_, minlength=K))
