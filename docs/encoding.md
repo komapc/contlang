@@ -48,6 +48,10 @@
 
 «Стороны земли»: `PLACE BIG(=+5)` и направление. Стоим лицом к восходу: восток — перёд (`SIDE(=+5)`), запад — зад (`SIDE(=-5)`); север — верх карты (`ABOVE(=+5)`), юг — низ (`ABOVE(=-5)`). Восток = `PLACE BIG(=+5) SIDE(=+5) | o`, север = `PLACE BIG(=+5) ABOVE(=+5) | o`, северный = `… | a`. Промежуточные — оба направления, единственное исключение из лимита трёх корней: северо-восток = `PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o`, юго-запад = `PLACE BIG(=+5) ABOVE(=-3) SIDE(=-3) | o` (без теста). Без «земли» `PLACE ABOVE(=+4)` читается как *top* (0 из 6), с ней — 10 из 10 ([roundtrip_time](../data/translation_test/roundtrip_time.md)).
 
+## Направление движения
+
+У глагола движения (`MOVE`, `GIVE`, `DO`) значение `INSIDE`, `NEAR` или `ABOVE` — где движение кончается. Войти = `MOVE INSIDE(=+5) | i`, выйти = `MOVE INSIDE(=-5) | i`, прибыть = `MOVE NEAR(=+5) | i`, уйти = `MOVE NEAR(=-5) | i`, подняться = `MOVE ABOVE(=+5) | i`, спуститься = `MOVE ABOVE(=-5) | i`; приближаться = `MOVE NEAR(=+5) | i A0` (ещё не пришёл); вернуться = `MOVE SAME(=+5) | i`. Двигать другое — метка `K+3`: вставить = `MOVE INSIDE(=+5) | i K+3`, вынуть, извлечь = `MOVE INSIDE(=-5) | i K+3`, принести = `MOVE NEAR(=+5) | i K+3`, отправить = `MOVE NEAR(=-5) | i K+3`, наполнить = `MOVE INSIDE(=+5) MANY(=+5) | i K+3`, опустошить = `MOVE INSIDE(=-5) MANY(=+5) | i K+3`, лить = `MOVE ABOVE(=-4) GRAIN(=-3) | i K+3`. Отдельная метка «откуда / куда» не нужна: с ней и без неё 18 из 24 ([roundtrip_direction](../data/translation_test/roundtrip_direction.md)).
+
 ## Размер, группы, части
 
 - *small* = только `BIG(=-3)`, без `PART` ([roundtrip_words_isolated](../data/translation_test/roundtrip_words_isolated.md)).
