@@ -5,9 +5,29 @@
   "decoded": "sand"
  },
  {
-  "en": "dust",
-  "code": "GRAIN(=0) PART(=-5) MATTER(=+2) | o",
-  "decoded": "dust"
+  "en": "knife",
+  "code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "decoded": "knife"
+ },
+ {
+  "en": "pen",
+  "code": "TEXT DO(=+5) | o",
+  "decoded": "pen"
+ },
+ {
+  "en": "steam",
+  "code": "GRAIN(=-5) HEAT(=+3) | o",
+  "decoded": "steam"
+ },
+ {
+  "en": "write",
+  "code": "TEXT | i",
+  "decoded": "write"
+ },
+ {
+  "en": "game",
+  "code": "FIGHT(=-5) | o",
+  "decoded": "game"
  },
  {
   "en": "boulder",
@@ -58,5 +78,10 @@
   "en": "seamless",
   "code": "GRAIN(=+5) JOIN(=-5) | a",
   "decoded": "separate (противоположный смысл: JOIN(=-5) значит «отделить»)"
+ },
+ {
+  "en": "spoon",
+  "code": "CONSUME(=+5) GRAIN(=-3) DO(=+5) | o",
+  "decoded": "cup (в альтернативах: glass, straw)"
  }
 ]

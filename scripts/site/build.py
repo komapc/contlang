@@ -1,4 +1,5 @@
 """Сборка данных сайта из roots.yaml и спецификаций: site/data/roots.json, site/data/examples.json, worker/prompts.js.
+(Данные математического кодера — отдельно, scripts/site/build_math.py; здесь --check лишь проверяет, что они не устарели.)
 
     python3 scripts/site/build.py          # записать
     python3 scripts/site/build.py --check  # проверить, что файлы не устарели
@@ -62,10 +63,21 @@ def outputs():
     }
 
 
+def math_stale():
+    """site/data/math.json собирается локально (scripts/site/build_math.py, нужны numpy и векторы); здесь только проверка, что корни и полюса не менялись."""
+    p = REPO / "site" / "data" / "math.json"
+    if not p.exists():
+        return [str(p)]
+    m = json.loads(p.read_text(encoding="utf8"))
+    order = [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()]
+    ok = m["names"] == order and m["poles_hash"] == spec.poles_hash()
+    return [] if ok else [str(p) + " (запустите .venv/bin/python scripts/site/build_math.py)"]
+
+
 def main():
     out = outputs()
     if "--check" in sys.argv:
-        bad = [str(p) for p, t in out.items() if not p.exists() or p.read_text(encoding="utf8") != t]
+        bad = [str(p) for p, t in out.items() if not p.exists() or p.read_text(encoding="utf8") != t] + math_stale()
         print("устарели: " + ", ".join(bad) if bad else "в порядке")
         sys.exit(1 if bad else 0)
     for p, t in out.items():

@@ -30,3 +30,12 @@ def counts(doc=None):
     doc = doc or load()
     a, n = len(axis_roots(doc)), len(noaxis_roots(doc))
     return a + n, a, n
+
+
+def poles_hash(doc=None):
+    """Хеш имён корней и полюсов SemAxis: по нему build.py --check видит, что site/data/math.json устарел."""
+    import hashlib
+    import json
+    doc = doc or load()
+    key = [[r["name"], r.get("semaxis")] for r in doc["roots"]]
+    return hashlib.sha1(json.dumps(key, ensure_ascii=False).encode()).hexdigest()[:12]

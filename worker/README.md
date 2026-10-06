@@ -20,11 +20,12 @@
 | :-- | :-- | :-- |
 | `docs/tables.md`, блоки `docs/lexicon.md` | `roots.yaml` → `python3 scripts/mincode/gen.py` | только документация |
 | `site/data/roots.json`, `site/data/examples.json` | `roots.yaml`, отчёты слепых тестов → `python3 scripts/site/build.py` | **сами** после push в `main` (GitHub Pages, `.github/workflows/pages.yml`) |
+| `site/data/math.json`, `site/data/vocab.bin` (математика на странице: словари корней, 10 000 частых слов) | `roots.yaml`, `data/sparse_dict_learned.npz`, векторы Numberbatch → `.venv/bin/python scripts/site/build_math.py` (локально: нужны numpy и `data/raw`) | сами после push; `build.py --check` и проверка на GitHub сообщат, если корни или полюса изменились, а файл не пересобран |
 | `worker/prompts.js` (подсказки модели) | `roots.yaml`, шаблоны спецификаций, `data/site/tips_short.md` → `python3 scripts/site/build.py` | **вручную**: `cd worker && npx wrangler deploy` |
 
 Порядок после изменения `roots.yaml` или рецептов:
 
-1. `python3 scripts/mincode/gen.py && python3 scripts/site/build.py`
+1. `python3 scripts/mincode/gen.py && python3 scripts/site/build.py`; если менялись корни или полюса — ещё `.venv/bin/python scripts/18_sparse_learn.py` (обученный словарь) и `.venv/bin/python scripts/site/build_math.py`
 2. `.venv/bin/python -m pytest -q tests`
 3. коммит и `git push` — сайт обновится сам, а на GitHub при каждом push запускается проверка (`.github/workflows/check.yml`: `gen.py --check`, `build.py --check`, тесты); красная проверка значит, что сгенерированные файлы устарели или в документации есть неверный код
 4. если менялся `worker/prompts.js` (почти всегда при правке корней или `tips_short.md`): `cd worker && npx wrangler deploy`
