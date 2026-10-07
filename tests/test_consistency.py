@@ -16,7 +16,7 @@ def test_generated_files_are_current():
 
 def test_counts():
     total, with_axis, no_axis = spec.counts()
-    assert (total, with_axis, no_axis) == (44, 40, 4)
+    assert (total, with_axis, no_axis) == (45, 41, 4)
 
 
 def test_roots_unique_and_complete():
@@ -51,7 +51,7 @@ def test_removed_roots_not_in_roots():
 
 
 def test_no_stale_counts_in_current_docs():
-    stale = ["45 корней", "46 корней", "41 с осью", "Около 45", "Около 46", "Около 30"]
+    stale = ["44 корня", "46 корней", "40 с осью", "Около 44", "Около 46", "Около 30"]
     for rel in ["README.md", "docs/model.md", "docs/tables.md", "docs/philosophy.md", "docs/syntax.md", "docs/encoding.md", ".claude/skills/mincode/SKILL.md"]:
         text = (REPO / rel).read_text(encoding="utf8")
         for s in stale:

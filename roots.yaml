@@ -491,6 +491,19 @@ roots:
   - politely kindly gently sincerely warmly gratefully
   - rudely harshly coldly angrily bitterly bluntly
   en_gloss: tone, manner toward others
+- name: MOOD
+  axis:
+    neg: горе, отчаяние, трагическое (−3 грусть)
+    mid: всерьёз, спокойно
+    pos: смешно, хохот (+3 весело, радостно)
+  one_sided: false
+  ru_axis: 'горе … смешно (−5 горе, отчаяние, трагическое, −3 грусть, 0 всерьёз, спокойно, без шуток, +3 весело, радостно, +5 смешно, хохот, комическое): `MOOD(=+5) \| a` смешной, `MOOD(=-3) \| a` грустный, `MOOD(=0) \| a` серьёзный, `ART MOOD(=+5) \| o` комедия'
+  status: '**новое** (предложение автора: ось «комедия … трагедия»; SemAxis: ближайшие оси LIVE +0.40, GOOD +0.31); принято (слепой тест без рецептов тестовых слов: 24 из 32 против 11 без корня; *happy / cheerful* сливаются)'
+  en_axis: -5 grief/despair/tragic, -3 sad ... 0 serious/calm ... +3 cheerful/glad, +5 funny/hilarious/comic. Mood, not evaluation (GOOD) or intensity (FEEL).
+  semaxis:
+  - funny hilarious cheerful joyful merry
+  - tragic grief sorrowful mournful despairing
+  en_gloss: mood, humor and sorrow
 - name: CONSUME
   axis:
     neg: выделить (писать, говорить, испражняться)

@@ -96,12 +96,20 @@
 "code": "CARE(=-3) | e"
 },
 {
+"en": "celebrate",
+"code": "DO MOOD(=+3) PART(=+5) | i"
+},
+{
 "en": "champion",
 "code": "SOMEONE FIGHT(=-5) GOOD | o C+5"
 },
 {
 "en": "cheap",
 "code": "VALUE(=-4) | a"
+},
+{
+"en": "cheerful",
+"code": "MOOD(=+3) | a"
 },
 {
 "en": "citizen",
@@ -114,6 +122,10 @@
 {
 "en": "cold",
 "code": "TONE(=-4) HEAT(=-3) | a"
+},
+{
+"en": "comedy",
+"code": "ART MOOD(=+5) | o"
 },
 {
 "en": "company",
@@ -144,6 +156,10 @@
 "code": "SOMEONE GOOD(=-4) RULE(=+4) | o"
 },
 {
+"en": "cry",
+"code": "MOOD(=-3) CONSUME(=-5) GRAIN(=-3) | i"
+},
+{
 "en": "dance",
 "code": "ART(=+5) MOVE BODY | i"
 },
@@ -154,6 +170,10 @@
 {
 "en": "defend",
 "code": "DO GOOD(=-4) | i K-4"
+},
+{
+"en": "despair",
+"code": "MOOD(=-5) CAN(=-5) | o"
 },
 {
 "en": "die",
@@ -272,6 +292,14 @@
 "code": "FEEL(=+4) GOOD(=-4) | i K+4"
 },
 {
+"en": "funeral",
+"code": "MOOD(=-5) LIVE(=-5) PART(=+5) | o"
+},
+{
+"en": "funny",
+"code": "MOOD(=+5) | a"
+},
+{
 "en": "game",
 "code": "FIGHT(=-5) | o"
 },
@@ -288,6 +316,10 @@
 "code": "SOMEONE RULE(=+5) PART(=+5) | o"
 },
 {
+"en": "grief",
+"code": "MOOD(=-5) | o"
+},
+{
 "en": "grow",
 "code": "CHANGE BIG(=+3) | i"
 },
@@ -298,6 +330,10 @@
 {
 "en": "hammer",
 "code": "TOUCH(=+5) MOVE(=+4) DO(=+5) | o"
+},
+{
+"en": "happy",
+"code": "FEEL(=+4) GOOD(=+4) | a"
 },
 {
 "en": "harsh",
@@ -336,6 +372,10 @@
 "code": "PLACE INSIDE(=+5) LIVE | o"
 },
 {
+"en": "humor",
+"code": "MOOD(=+5) ABSTRACT(=+5) | o"
+},
+{
 "en": "ice",
 "code": "GRAIN(=+5) HEAT(=-5) | o"
 },
@@ -372,6 +412,10 @@
 "code": "JOIN(=+3) | i"
 },
 {
+"en": "joke",
+"code": "SAY MOOD(=+5) | o"
+},
+{
 "en": "judge",
 "code": "SOMEONE RULE(=+4) THINK(=+5) | o"
 },
@@ -398,6 +442,10 @@
 {
 "en": "ladder",
 "code": "MOVE ABOVE(=+4) DO(=+5) | o"
+},
+{
+"en": "laugh",
+"code": "MOOD(=+5) | i"
 },
 {
 "en": "leader",
@@ -468,6 +516,10 @@
 "code": "PLACE ABOVE(=+5) BIG(=+4) | o"
 },
 {
+"en": "mourn",
+"code": "MOOD(=-5) LIVE(=-5) | i"
+},
+{
 "en": "music",
 "code": "ART(=+5) SAY THING | o"
 },
@@ -514,6 +566,10 @@
 {
 "en": "painting",
 "code": "ART(=+5) SEE GRAIN(=-3) | o"
+},
+{
+"en": "party",
+"code": "MOOD(=+3) PART(=+5) | o"
 },
 {
 "en": "patient",
@@ -632,6 +688,10 @@
 "code": "TONE(=-4) | e"
 },
 {
+"en": "sad",
+"code": "MOOD(=-3) | a"
+},
+{
 "en": "safe",
 "code": "GOOD(=-4) CAN(=-5) | a"
 },
@@ -672,6 +732,10 @@
 "code": "JOIN(=-3) PART | i"
 },
 {
+"en": "serious",
+"code": "MOOD(=0) | a"
+},
+{
 "en": "shake",
 "code": "MOVE(=+2) ABSTRACT(=-5) | i"
 },
@@ -698,6 +762,10 @@
 {
 "en": "sleep",
 "code": "LIVE(=0) GOOD(=+3) | i"
+},
+{
+"en": "smile",
+"code": "MOOD(=+3) BODY | i"
 },
 {
 "en": "soldier",
@@ -786,6 +854,10 @@
 {
 "en": "toy",
 "code": "THING(=-5) FIGHT(=-5) | o"
+},
+{
+"en": "tragedy",
+"code": "ART MOOD(=-5) | o"
 },
 {
 "en": "trust",
