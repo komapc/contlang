@@ -55,7 +55,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 <div class="wrap">
 <header>
   <h1>min-co</h1>
-  <p class="sub">Язык из 44 смысловых корней с осями значений. Слово кодируется двумя способами — языковой моделью и чистой математикой — и раскодируется вслепую.</p>
+  <p class="sub">Язык из 45 смысловых корней с осями значений. Слово кодируется двумя способами — <b>ИИ</b> (языковая модель) и <b>Векторы</b> (чистая математика, без модели) — и раскодируется вслепую.</p>
 </header>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-t="demo">Проба</button>
@@ -79,15 +79,15 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 
   <div class="cmp" id="out" hidden>
     <div class="card col" id="llm">
-      <div class="colhead"><b>Языковая модель</b><span class="mut">gpt-4o-mini по описанию языка</span></div>
+      <div class="colhead"><b>ИИ</b><span class="mut">языковая модель gpt-4o-mini по описанию языка</span></div>
       <div class="step"><div class="lab">код</div><span class="code" id="code">—</span><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
       <details id="expl" hidden><summary>из чего собран код</summary><table><tbody id="tokens"></tbody></table></details>
       <div class="step"><div class="lab">слепое раскодирование <span class="mut">(другой вызов, видит только код)</span></div>
         <div class="big" id="best">—</div><div class="mut small" id="alts"></div><div class="mut small" id="why"></div></div>
-      <div class="step"><div class="lab">тот же код, прочитанный математикой</div><div class="mut" id="llmMath">—</div></div>
+      <div class="step"><div class="lab">тот же код, прочитанный векторами</div><div class="mut" id="llmMath">—</div></div>
     </div>
     <div class="card col" id="math">
-      <div class="colhead"><b>Математика</b><span class="mut">без модели: вектор слова → корни</span></div>
+      <div class="colhead"><b>Векторы</b><span class="mut">без модели: вектор слова → корни и обратно</span></div>
       <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="mut small" id="mcos"></div></div>
       <div class="step"><div class="lab">ближайшие слова к коду</div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
       <div class="step"><div class="lab">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
