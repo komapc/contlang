@@ -47,16 +47,8 @@ a{color:var(--acc)}
 .hit{color:var(--ok)}.miss{color:var(--bad)}.part{color:var(--warn)}
 .warnline{color:var(--warn);font-size:13px;margin-top:4px}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
-.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-top:4px}
-.seg button{background:none;border:0;padding:5px 10px;font:inherit;font-size:13px;color:var(--mut);cursor:pointer}
-.seg button[aria-pressed=true]{background:var(--acc2);color:var(--fg)}
 .bars td{padding:3px 6px;border:0}.bars .bar{height:8px;border-radius:4px;background:var(--acc);opacity:.75}
 .bars td:last-child{width:45%}
-.pca td{padding:4px 6px;border-bottom:1px solid var(--line);font-size:13px;vertical-align:middle}
-.pca .axis{position:relative;height:10px;width:90px;background:var(--line);border-radius:5px}
-.pca .axis span{position:absolute;top:0;height:10px;border-radius:5px;background:var(--acc)}
-.pca .axis:after{content:"";position:absolute;left:50%;top:-2px;height:14px;width:1px;background:var(--mut)}
-.pca .w{color:var(--mut)}
 </style>
 </head>
 <body>
@@ -96,16 +88,9 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
     </div>
     <div class="card col" id="math">
       <div class="colhead"><b>Математика</b><span class="mut">без модели: вектор слова → корни</span></div>
-      <div class="seg" role="radiogroup" aria-label="словарь корней">
-        <button type="button" data-d="poles" aria-pressed="true">корни из полюсов</button>
-        <button type="button" data-d="learned" aria-pressed="false">обученный словарь</button>
-      </div>
       <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="mut small" id="mcos"></div></div>
       <div class="step"><div class="lab">ближайшие слова к коду</div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
       <div class="step"><div class="lab">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
-      <details class="step" id="pcaBox"><summary>10 главных осей исходного пространства <span class="mut">(Numberbatch, PCA)</span></summary>
-        <p class="mut small">Значение слова на каждой из первых десяти главных компонент 300-мерного пространства (в стандартных отклонениях) и слова на её полюсах. Эти оси объясняют по 1–2% разброса и почти не называются — поэтому язык строится на корнях с понятными полюсами.</p>
-        <table class="pca"><tbody id="mpca"></tbody></table></details>
     </div>
   </div>
 
@@ -161,7 +146,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
     <tr><td><b>Запись в стиле токи пона</b> (слова-корни, роли по позиции)</td><td>смысл лучше: +0,33 [+0,05, +0,60] на отложенном наборе из 40 предложений</td></tr>
   </tbody></table>
   <h3>Математика без модели</h3>
-  <p>Правая колонка на «Пробе» кодирует слово без языковой модели: вектор слова (ConceptNet Numberbatch) приближается суммой не больше трёх корней с целыми значениями осей, перебором всех вариантов. Корень — это «центр» (о чём ось) плюс направление оси, построенные из слов-полюсов в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. «Обученный словарь» — те же корни, подогнанные по 70% частых слов с условием, что каждый остаётся похож на исходный (cos ≥ 0,85). Раскодирование: слово должно быть близко к каждому корню кода по отдельности, а слова-хабы, близкие к любому коду, штрафуются.</p>
+  <p>Правая колонка на «Пробе» кодирует слово без языковой модели: вектор слова (ConceptNet Numberbatch) приближается суммой не больше трёх корней с целыми значениями осей, перебором всех вариантов. Корень — это «центр» (о чём ось) плюс направление оси, построенные из слов-полюсов в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. Направления корней затем подогнаны по 70% частых слов с условием, что каждый остаётся похож на исходный (cos ≥ 0,85). Раскодирование: слово должно быть близко к каждому корню кода по отдельности, а слова-хабы, близкие к любому коду, штрафуются.</p>
   <p>Что это даёт: на собственных кодах математики (2000 слов словаря сайта) слово восстанавливается первым в 46–51% случаев и в первой десятке в 91–93%. Но люди и модели коды математики почти не читают (1–3 из 24 в прежнем слепом тесте). Поэтому она служит инструментом анализа — искать недостающие корни, проверять полюса осей, находить корни-дубли (так слиты MATTER и GRAIN), — а не переводчиком. Подробно: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a>.</p>
   <h3>Честные оговорки</h3>
   <ul>
@@ -213,8 +198,7 @@ async function call(mode, text){
 }
 
 // ---- математика: данные грузятся при первом использовании (~3,5 МБ)
-let M = null, dictName = "poles";
-const coders = {};
+let M = null, CO = null;
 function loadMath(){
   if (!M) M = Promise.all([fetch("data/math.json").then(r => r.json()), fetch("data/vocab.bin").then(r => r.arrayBuffer())])
     .then(([m, buf]) => ({m, V: new MincoMath.Vocab(m.words, new Int8Array(buf), m.dim)}));
@@ -222,15 +206,15 @@ function loadMath(){
 }
 async function coder(){
   const {m, V} = await loadMath();
-  if (!coders[dictName]) coders[dictName] = new MincoMath.Coder(m.dicts[dictName], m.has_axis, m.names, m);
-  return {co: coders[dictName], V};
+  if (!CO) CO = new MincoMath.Coder(m.dict, m.has_axis, m.names, m);
+  return {co: CO, V};
 }
 const near = (list, k = 5) => list.slice(0, k).map(n => n.word).join(", ");
 async function mathWord(word){
   const {co, V} = await coder();
   const w = (word || "").trim().toLowerCase();
   const x = /^[a-z]+$/.test(w) ? V.vec(w) : null;
-  $("mroots").innerHTML = ""; $("mpca").innerHTML = "";
+  $("mroots").innerHTML = "";
   if (!x) {
     $("mcode").textContent = "—"; $("mcos").textContent = "";
     mark($("mbest"), ""); $("mnear").textContent = /^[a-z]+$/.test(w) ? "слова нет среди " + V.words.length.toLocaleString("ru") + " слов словаря" : "математика кодирует только отдельные слова";
@@ -243,22 +227,10 @@ async function mathWord(word){
   $("mcos").textContent = "сходство кода со словом cos " + r.cos.toFixed(2) + "; часть речи математика не знает, стоит o";
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = "далее: " + nb.slice(1).map(n => n.word).join(", ") + (rk ? " · исходное слово на " + rk + "-м месте из " + V.words.length.toLocaleString("ru") : "");
-  pcaTable((await loadMath()).m, x);
   const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;
   top.forEach(t => {
     const bar = el("div", null, "bar"); bar.style.width = Math.max(4, 100 * t.cos / mx) + "%";
     row(tb, [el("code", t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);
-  });
-}
-function pcaTable(m, x){
-  const tb = $("mpca"); tb.innerHTML = "";
-  m.pca.pcs.forEach((pc, k) => {
-    let z = 0; for (let j = 0; j < pc.length; j++) z += (x[j] - m.pca.mean[j]) * pc[j];
-    z /= m.pca.sd[k];
-    const ax = el("div", null, "axis"), bar = el("span"), c = Math.max(-3, Math.min(3, z)) / 3 * 50;
-    bar.style.left = (c < 0 ? 50 + c : 50) + "%"; bar.style.width = Math.abs(c) + "%"; ax.appendChild(bar);
-    const p = m.pca.poles[k];
-    row(tb, ["ГК" + (k + 1), (z > 0 ? "+" : "") + z.toFixed(1), ax, el("span", "− " + p.neg.slice(0, 3).join(", ") + " · + " + p.pos.slice(0, 3).join(", "), "w")]);
   });
 }
 async function mathCode(code, target){
@@ -270,7 +242,7 @@ async function mathCode(code, target){
 // оценки всех слов для кода (см. math.js Vocab.scores)
 async function decodeScores(co, S, v){
   const {m, V} = await loadMath();
-  return V.scores(co.parts(S, v), {...m.mix, hub: m.mix.hub[dictName]});
+  return V.scores(co.parts(S, v), m.mix);
 }
 
 // ---- один клик: модель кодирует, другая модель раскодирует вслепую; математика параллельно
@@ -315,11 +287,6 @@ async function run(text, saved){
 
 if (!API) { $("modeNote").hidden = false; $("modeNote").textContent = "Языковая модель не подключена: работают математика и сохранённые примеры."; }
 $("ask").addEventListener("submit", (e) => { e.preventDefault(); const t = $("inp").value.trim(); if (t) run(t); });
-document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
-  dictName = b.dataset.d;
-  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
-  if (!$("out").hidden) { const t = lastWord || $("mcode").textContent; lastWord ? mathWord(lastWord) : mathCode(t, $("mnear")); if ($("code").textContent !== "—") mathCode($("code").textContent, $("llmMath")); }
-}));
 
 let EX = [];
 fetch("data/examples.json").then(r=>r.json()).then(list=>{

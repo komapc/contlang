@@ -38,9 +38,11 @@ def scores(P, hub):
     return s, m["mix"]["w"] * zc(2 * s - hub) + (1 - m["mix"]["w"]) * soft
 
 
-def enc(args):
-    d, i = args
-    C, A = (np.array(m["dicts"][d][k]) for k in "CA")
+C, A = (np.array(m["dict"][k]) for k in "CA")
+HUB = np.array(m["mix"]["hub"])
+
+
+def enc(i):
     S, v, _ = Coder(C, A, head_w=m["head_w"]).__call__(V[i], 3)
     return [int(r) for r in S], [int(x) for x in v]
 
@@ -53,11 +55,10 @@ def main():
     pool = [i for i, w in enumerate(W) if w in ok and w not in poles]
     idx = np.random.default_rng(1).choice(pool, n, replace=False)
     print(f"слов {n} из {len(pool)} (без полюсов и имён)")
-    for d in ("poles", "learned"):
-        C, A = (np.array(m["dicts"][d][k]) for k in "CA")
-        hub = np.array(m["mix"]["hub"][d])
+    for d in ("learned",):
+        hub = HUB
         with mp.Pool(4) as p:
-            codes = p.map(enc, [(d, int(i)) for i in idx], chunksize=20)
+            codes = p.map(enc, [int(i) for i in idx], chunksize=20)
         res = {"sum": [], "mix": []}
         for i, (S, v) in zip(idx, codes):
             for name, sc in zip(("sum", "mix"), scores(parts(C, A, S, v), hub)):

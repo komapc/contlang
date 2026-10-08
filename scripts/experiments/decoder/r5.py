@@ -9,7 +9,7 @@ m = json.load(open('site/data/math.json')); W = m['words']
 V = np.frombuffer(open('site/data/vocab.bin', 'rb').read(), np.int8).reshape(len(W), m['dim']).astype(np.float32)
 V /= np.linalg.norm(V, axis=1, keepdims=True) + 1e-9
 names = m['names']; has = np.array(m['has_axis']); HW, S = m['head_w'], m['s']
-C, A = (np.array(m['dicts']['learned'][k]) for k in 'CA')
+C, A = (np.array(m['dict'][k]) for k in 'CA')
 unit = lambda x: x / (np.linalg.norm(x, axis=-1, keepdims=True) + 1e-9)
 zc = lambda s: (s - s.mean(0)) / s.std(0)
 comp = lambda R, v: [(1.0 if j == 0 else HW) * (C[r] + S * x * A[r]) for j, (r, x) in enumerate(zip(R, v))]

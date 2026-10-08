@@ -6,7 +6,7 @@ from lib_code import Coder
 m = json.load(open('site/data/math.json')); W = m['words']; wi = {w: i for i, w in enumerate(W)}
 V = np.frombuffer(open('site/data/vocab.bin', 'rb').read(), np.int8).reshape(len(W), m['dim']).astype(float)
 V /= np.linalg.norm(V, axis=1, keepdims=True) + 1e-9
-names0 = m['names']; C0, A0 = (np.array(m['dicts']['learned'][k]) for k in 'CA'); HW, s = m['head_w'], m['s']
+names0 = m['names']; C0, A0 = (np.array(m['dict'][k]) for k in 'CA'); HW, s = m['head_w'], m['s']
 unit = lambda x: x / (np.linalg.norm(x, axis=-1, keepdims=True) + 1e-9)
 _pz = np.load(__import__('os').path.dirname(__import__('os').path.abspath(__file__)) + '/' + 'spirit_poles.npz'); PV = dict(zip(_pz['words'], _pz['X']))
 emb = lambda ws: np.stack([PV[w] if w in PV else V[wi[w]] for w in ws.split() if w in PV or w in wi])

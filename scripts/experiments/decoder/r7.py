@@ -7,7 +7,7 @@ m = json.load(open('site/data/math.json')); W = m['words']
 V = np.frombuffer(open('site/data/vocab.bin', 'rb').read(), np.int8).reshape(len(W), m['dim']).astype(np.float32)
 V /= np.linalg.norm(V, axis=1, keepdims=True) + 1e-9
 names = m['names']; has = np.array(m['has_axis']); s = m['s']
-C, A = (np.array(m['dicts']['learned'][k], dtype=np.float32) for k in 'CA'); R_ = len(C)
+C, A = (np.array(m['dict'][k], dtype=np.float32) for k in 'CA'); R_ = len(C)
 M = np.concatenate([C, A]); G = M @ M.T
 LV = list(range(-5, 6))
 VARS = {  # имя: (веса центра по позициям, веса оси по позициям)

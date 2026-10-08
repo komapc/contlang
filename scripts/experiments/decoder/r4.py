@@ -9,7 +9,7 @@ W = m['words']
 V = np.frombuffer(open('site/data/vocab.bin', 'rb').read(), np.int8).reshape(len(W), m['dim']).astype(float)
 V /= np.linalg.norm(V, axis=1, keepdims=True) + 1e-9
 names = m['names']; has = np.array(m['has_axis']); HW, S = m['head_w'], m['s']
-C, A = (np.array(m['dicts']['learned'][k]) for k in 'CA')
+C, A = (np.array(m['dict'][k]) for k in 'CA')
 co = Coder(C, A, head_w=HW)
 co6 = Coder(C, A, head_w=HW, topr=6)  # 4 корня: опоры из 6 лучших (8 — ~2 ч на 10000)
 u = lambda y: y / np.linalg.norm(y)
