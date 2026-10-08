@@ -83,11 +83,6 @@
         return p;
       });
     }
-    decode(S, v) {
-      const y = new Float64Array(this.C[0].length);
-      for (const p of this.parts(S, v)) for (let j = 0; j < y.length; j++) y[j] += p[j];
-      return y;
-    }
     // лучший один корень с лучшим уровнем: «ближайшие оси» к слову
     singles(x) {
       const out = [];
@@ -140,41 +135,20 @@
       for (let j = 0; j < this.dim; j++) x[j] /= n;
       return x;
     }
-    nearest(y, k = 10, skip) {
-      let n = 0;
-      for (let j = 0; j < this.dim; j++) n += y[j] * y[j];
-      n = Math.sqrt(n) * 127;
-      const top = [];
-      for (let i = 0; i < this.words.length; i++) {
-        if (skip && this.words[i] === skip) continue;
-        let s = 0;
-        const o = i * this.dim;
-        for (let j = 0; j < this.dim; j++) s += this.X[o + j] * y[j];
-        s /= n;
-        if (top.length < k || s > top[top.length - 1].cos) {
-          top.push({ word: this.words[i], cos: s });
-          top.sort((a, b) => b.cos - a.cos);
-          if (top.length > k) top.pop();
-        }
-      }
-      return top;
-    }
-    // Оценки всех слов для кода (parts — слагаемые по корням, см. Coder.parts).
-    // "sum": cos(слово, Σ parts) — ближайшие к сумме, выигрывают слова-хабы.
-    // "mix" (по умолчанию): w·z(2cos − hub) + (1−w)·И, где hub — хабовость слова (CSLS), а
+    // Оценки всех слов для кода (parts — слагаемые по корням, см. Coder.parts):
+    // w·z(2cos(слово, Σ parts) − hub) + (1−w)·И, где hub — хабовость слова (CSLS), а
     // И = −log Σ_j exp(−k·z_j)/k — мягкий минимум z-оценок близости к каждому корню: слово должно подходить ко всем.
-    scores(parts, mode, mix) {
+    scores(parts, mix) {
       const N = this.words.length, D = this.dim, K = parts.length;
       const y = new Float64Array(D);
       for (const p of parts) for (let j = 0; j < D; j++) y[j] += p[j];
       const unitv = (u) => { let n = 0; for (let j = 0; j < D; j++) n += u[j] * u[j]; n = Math.sqrt(n); return u.map((t) => t / n); };
-      const vs = [unitv(y)].concat(mode === "sum" ? [] : parts.map(unitv));
+      const vs = [unitv(y)].concat(parts.map(unitv));
       const out = vs.map(() => new Float64Array(N));
       for (let i = 0; i < N; i++) {
         const o = i * D;
         for (let q = 0; q < vs.length; q++) { const u = vs[q]; let s = 0; for (let j = 0; j < D; j++) s += this.X[o + j] * u[j]; out[q][i] = s / this.norm[i]; }
       }
-      if (mode === "sum") return out[0];
       const z = (a) => { let m = 0, s = 0; for (const t of a) m += t; m /= a.length; for (const t of a) s += (t - m) ** 2; s = Math.sqrt(s / a.length) || 1; return a.map((t) => (t - m) / s); };
       const cs = z(out[0].map((c, i) => 2 * c - mix.hub[i])), Z = out.slice(1).map(z), k = mix.soft;
       const res = new Float64Array(N);
@@ -197,21 +171,6 @@
       if (t == null) return null;
       let r = 1;
       for (let i = 0; i < sc.length; i++) if (i !== t && sc[i] > sc[t]) r++;
-      return r;
-    }
-    rank(y, w) {
-      const t = this.vec(w);
-      if (!t) return null;
-      let n = 0, ty = 0;
-      for (let j = 0; j < this.dim; j++) { n += y[j] * y[j]; ty += t[j] * y[j]; }
-      const target = ty / Math.sqrt(n);
-      let r = 1;
-      for (let i = 0; i < this.words.length; i++) {
-        let s = 0;
-        const o = i * this.dim;
-        for (let j = 0; j < this.dim; j++) s += this.X[o + j] * y[j];
-        if (s / (Math.sqrt(n) * 127) > target + 1e-12 && this.words[i] !== w) r++;
-      }
       return r;
     }
   }
