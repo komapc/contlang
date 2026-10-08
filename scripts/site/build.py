@@ -47,8 +47,9 @@ def examples_json():
 def recipes_json():
     """Проверенные рецепты «слово → код» из подсказок сайта и encoding.md (для словаря на сайте)."""
     pairs = {}
-    for w, c in re.findall(r"([a-z]+)(?:/[a-z]+)? `([A-Z][^`]*?\|[^`]*)`", tips()):
-        pairs.setdefault(w, c)
+    for w, c in re.findall(r"([a-z]+)(?:/[a-z]+(?: [a-z]+)?)? `([A-Z][^`]*?\|[^`]*)`", tips()):  # extract/take out `…` → extract
+        if w not in ("or", "and"):  # «`DO | i` (do, cause) or `SAY | i`» — не рецепт
+            pairs.setdefault(w, c)
     enc = (REPO / "docs" / "encoding.md").read_text(encoding="utf8")
     for w, c in re.findall(r"\*([a-z]+)\* = `([A-Z][^`]*?\|[^`]*)`", enc):
         pairs.setdefault(w, c)

@@ -244,6 +244,10 @@
 "code": "VALUE(=+4) | a"
 },
 {
+"en": "extract",
+"code": "MOVE INSIDE(=-5) | i K+3"
+},
+{
 "en": "fail",
 "code": "DO GOOD(=-4) HAPPEN(=+5) | i"
 },
@@ -544,20 +548,12 @@
 "code": "LIVE TIME(=-5) | a"
 },
 {
-"en": "or",
-"code": "SAY | i"
-},
-{
 "en": "ordinary",
 "code": "SAME(=+3) | a"
 },
 {
 "en": "organ",
 "code": "BODY INSIDE(=+5) PART(=-2) | o"
-},
-{
-"en": "out",
-"code": "MOVE INSIDE(=-5) | i K+3"
 },
 {
 "en": "pain",

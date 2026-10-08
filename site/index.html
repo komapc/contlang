@@ -100,6 +100,10 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
         <button type="button" data-d="poles" aria-pressed="true">корни из полюсов</button>
         <button type="button" data-d="learned" aria-pressed="false">обученный словарь</button>
       </div>
+      <div class="seg" role="radiogroup" aria-label="декодер">
+        <button type="button" data-dec="mix" aria-pressed="true" title="слово, близкое к каждому корню, с поправкой на слова-хабы">декодер «смесь»</button>
+        <button type="button" data-dec="sum" aria-pressed="false" title="ближайшие слова к сумме корней">декодер «сумма»</button>
+      </div>
       <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="mut small" id="mcos"></div></div>
       <div class="step"><div class="lab">ближайшие слова к коду</div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
       <div class="step"><div class="lab">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
@@ -161,8 +165,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
     <tr><td><b>Запись в стиле токи пона</b> (слова-корни, роли по позиции)</td><td>смысл лучше: +0,33 [+0,05, +0,60] на отложенном наборе из 40 предложений</td></tr>
   </tbody></table>
   <h3>Математика без модели</h3>
-  <p>Правая колонка на «Пробе» кодирует слово без языковой модели: вектор слова (ConceptNet Numberbatch) приближается суммой не больше трёх корней с целыми значениями осей, перебором всех вариантов. Корень — это «центр» (о чём ось) плюс направление оси, построенные из слов-полюсов в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. «Обученный словарь» — те же корни, подогнанные по 70% частых слов с условием, что каждый остаётся похож на исходный (cos ≥ 0,85). Раскодирование — ближайшие слова к сумме корней.</p>
-  <p>Что это даёт: математика хорошо находит <i>область</i> смысла (настоящее слово в первой полусотне из 2700 в 96–99% случаев), но точное слово — в 23–29%, а люди и модели её коды почти не читают (1–3 из 24 в слепом тесте). Поэтому она служит инструментом анализа — искать недостающие корни, проверять полюса осей, находить корни-дубли (так слиты MATTER и GRAIN), — а не переводчиком. Подробно: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a>.</p>
+  <p>Правая колонка на «Пробе» кодирует слово без языковой модели: вектор слова (ConceptNet Numberbatch) приближается суммой не больше трёх корней с целыми значениями осей, перебором всех вариантов. Корень — это «центр» (о чём ось) плюс направление оси, построенные из слов-полюсов в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. «Обученный словарь» — те же корни, подогнанные по 70% частых слов с условием, что каждый остаётся похож на исходный (cos ≥ 0,85). Раскодирование по умолчанию — декодер «смесь»: слово должно быть близко к каждому корню по отдельности, а слова-хабы, близкие к любому коду, штрафуются. Декодер «сумма» — просто ближайшие слова к сумме корней.</p>
+  <p>Что это даёт: на собственных кодах математики (2000 слов словаря сайта) «смесь» ставит слово первым в 46–51% случаев и в первую десятку в 91–93%, «сумма» — в 1–7% и 24–44%. Но люди и модели коды математики почти не читают (1–3 из 24 в слепом тесте, до «смеси»). Поэтому она служит инструментом анализа — искать недостающие корни, проверять полюса осей, находить корни-дубли (так слиты MATTER и GRAIN), — а не переводчиком. Подробно: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a>.</p>
   <h3>Честные оговорки</h3>
   <ul>
     <li>Абсолютная точность невысока: на энциклопедических предложениях средняя оценка около 1,2–1,4 из 3. Язык пока передаёт тему и главные связи, но не детали.</li>
@@ -213,7 +217,7 @@ async function call(mode, text){
 }
 
 // ---- математика: данные грузятся при первом использовании (~3,5 МБ)
-let M = null, dictName = "poles";
+let M = null, dictName = "poles", decName = "mix";
 const coders = {};
 function loadMath(){
   if (!M) M = Promise.all([fetch("data/math.json").then(r => r.json()), fetch("data/vocab.bin").then(r => r.arrayBuffer())])
@@ -237,9 +241,9 @@ async function mathWord(word){
     return;
   }
   await new Promise(r => setTimeout(r, 0));
-  const r = co.encode(x), y = co.decode(r.S, r.v);
+  const r = co.encode(x), sc = await decodeScores(co, r.S, r.v);
   $("mcode").textContent = co.format(r.S, r.v, "o");
-  const nb = V.nearest(y, 8), rk = V.rank(y, w);
+  const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
   $("mcos").textContent = "сходство кода со словом cos " + r.cos.toFixed(2) + "; часть речи математика не знает, стоит o";
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = "далее: " + nb.slice(1).map(n => n.word).join(", ") + (rk ? " · исходное слово на " + rk + "-м месте из " + V.words.length.toLocaleString("ru") : "");
@@ -265,7 +269,12 @@ async function mathCode(code, target){
   const {co, V} = await coder();
   const p = co.parse(code);
   if (!p.S.length) { target.textContent = "в коде нет корней"; return; }
-  target.textContent = near(V.nearest(co.decode(p.S, p.v), 6), 6) + (p.unknown.length ? " (неизвестно: " + p.unknown.join(", ") + ")" : "");
+  target.textContent = near(V.top(await decodeScores(co, p.S, p.v), 6), 6) + (p.unknown.length ? " (неизвестно: " + p.unknown.join(", ") + ")" : "");
+}
+// оценки всех слов для кода выбранным декодером (см. math.js Vocab.scores)
+async function decodeScores(co, S, v){
+  const {m, V} = await loadMath();
+  return V.scores(co.parts(S, v), decName, {...m.mix, hub: m.mix.hub[dictName]});
 }
 
 // ---- один клик: модель кодирует, другая модель раскодирует вслепую; математика параллельно
@@ -311,8 +320,9 @@ async function run(text, saved){
 if (!API) { $("modeNote").hidden = false; $("modeNote").textContent = "Языковая модель не подключена: работают математика и сохранённые примеры."; }
 $("ask").addEventListener("submit", (e) => { e.preventDefault(); const t = $("inp").value.trim(); if (t) run(t); });
 document.querySelectorAll(".seg button").forEach(b => b.addEventListener("click", () => {
-  dictName = b.dataset.d;
-  document.querySelectorAll(".seg button").forEach(x => x.setAttribute("aria-pressed", x === b));
+  const key = b.dataset.d ? "d" : "dec";
+  if (key === "d") dictName = b.dataset.d; else decName = b.dataset.dec;
+  document.querySelectorAll(".seg button[data-" + key + "]").forEach(x => x.setAttribute("aria-pressed", x === b));
   if (!$("out").hidden) { const t = lastWord || $("mcode").textContent; lastWord ? mathWord(lastWord) : mathCode(t, $("mnear")); if ($("code").textContent !== "—") mathCode($("code").textContent, $("llmMath")); }
 }));
 

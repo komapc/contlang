@@ -7,7 +7,7 @@ math.json: корни (порядок roots.yaml), признак оси, два
 semaxis в roots.yaml) и «обученный» (data/sparse_dict_learned.npz, только
 анализ, см. docs/math.md) — как матрицы C (центры) и A (оси), параметры кодера
 (s, вес не главных, topr), 10 главных компонент исходного пространства (направления,
-разброс, по пять слов на полюсах) и хеш полюсов, чтобы build.py --check заметил устаревание.
+разброс, по пять слов на полюсах), хабовость слов для декодера «смесь» (по словарю) и хеш полюсов, чтобы build.py --check заметил устаревание.
 vocab.bin: N частых слов и весь список data/wordlist_en_x5.tsv × 300 int8 (единичный вектор × 127), слова — в math.json,
 по частоте (порядок словаря GloVe wiki-gigaword), только те, что есть в Numberbatch.
 """
@@ -25,6 +25,20 @@ from mincode import spec  # noqa: E402
 
 N = 10000
 OUT = REPO / "site" / "data"
+S, HW = 0.4, 0.6  # масштаб оси и вес не главных корней
+SOFT = 2.0        # крутизна soft-min в «И»-части декодера
+
+
+def hubness(X, C, A, has, n=3000, k=10, seed=0):
+    """Хабовость слова для CSLS: средний cos с его 10 ближайшими среди n случайных кодов (1–4 корня, уровни −5…+5).
+    Слова-хабы близки к любому коду; декодер «смесь» вычитает это, иначе они побеждают всегда."""
+    rng = np.random.default_rng(seed)
+    Y = []
+    for _ in range(n):
+        R = list(rng.choice(len(C), rng.integers(1, 5), replace=False))
+        y = sum((1.0 if j == 0 else HW) * (C[r] + S * (int(rng.integers(-5, 6)) if has[r] else 0) * A[r]) for j, r in enumerate(R))
+        Y.append(y / np.linalg.norm(y))
+    return np.sort(X @ np.stack(Y).T, 1)[:, -k:].mean(1)
 
 
 def frequent_words(n):
@@ -61,8 +75,12 @@ def main():
     poles = [{"neg": [words[i] for i in np.argsort(Z[:, k])[:5]], "pos": [words[i] for i in np.argsort(-Z[:, k])[:5]],
               "var": float(sv[k] ** 2 / (sv ** 2).sum())} for k in range(10)]
     r4 = lambda M: np.round(M, 5).tolist()  # noqa: E731
-    js = {"names": names, "has_axis": [bool(a.any()) for a in A0], "dim": X.shape[1], "s": 0.4, "head_w": 0.6, "topr": 8,
+    has = np.array([bool(a.any()) for a in A0])
+    Xq = unit(np.round(X * 127))  # те же векторы, что читает браузер
+    hub = {k: np.round(hubness(Xq, C, A, has), 4).tolist() for k, (C, A) in {"poles": (C0, A0), "learned": (D["C"], D["A"])}.items()}
+    js = {"names": names, "has_axis": has.tolist(), "dim": X.shape[1], "s": S, "head_w": HW, "topr": 8,
           "poles_hash": spec.poles_hash(), "words": words,
+          "mix": {"soft": SOFT, "w": 0.5, "hub": hub},
           "pca": {"mean": np.round(mean, 5).tolist(), "pcs": np.round(pcs, 5).tolist(), "sd": np.round(sd, 5).tolist(), "poles": poles},
           "dicts": {"poles": {"C": r4(C0), "A": r4(A0)}, "learned": {"C": r4(D["C"]), "A": r4(D["A"])}}}
     (OUT / "math.json").write_text(json.dumps(js, separators=(",", ":")), encoding="utf8")
