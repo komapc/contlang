@@ -11,13 +11,21 @@ def up(s, d): return frozenset(s.closure(lambda x: x.hypernyms() + x.instance_hy
 @functools.lru_cache(None)
 def syns(w): return tuple(wn.synsets(w)[:3])
 
+# Правило имён: часть пары не годится, если среди 20 её ближайших соседей ≥ 30% имён собственных
+# (имя — слова нет ни в /usr/share/dict/words строчными, ни в списке частых): marched → april, june…; tang → wu, zhou…
+_low = {l.strip() for l in open('/usr/share/dict/words') if l.strip().islower()}
+_freq = {l.split('\t')[0] for l in list(open('data/wordlist_en_x5.tsv'))[1:]}
+PROPER = np.array([not (w in _low or w in _freq) for w in W])
+NAMEY = {int(g): PROPER[np.argsort(-(V @ V[g]))[1:21]].mean() >= 0.3 for g in good}
+
 def heads(t):
     ss = wn.synsets(W[t])[:3]; out = {}
     for s in ss[:3 if VAR == 'near3' else 1]:
+        if s.instance_hypernyms(): continue   # значение-имя (more → Томас Мор → person)
         for h in up(s, 3):
             for l in h.lemma_names():
                 i = wi.get(l.lower())
-                if i is not None and i in gset and i != t: out.setdefault(i, h)
+                if i is not None and i in gset and i != t and not NAMEY[i]: out.setdefault(i, h)
     return out, ss
 
 def pos(w):
@@ -35,7 +43,7 @@ def pair(t):
         ms = []
         for m_ in near:
             w = W[m_]
-            if m_ == h or w in syn or same(w, W[t]) or same(w, W[h]): continue
+            if m_ == h or NAMEY[m_] or w in syn or same(w, W[t]) or same(w, W[h]): continue
             if any(hsyn in up(s, 8) or s == hsyn for s in syns(w)): continue   # из ветки главного
             ms.append(m_)
         if not ms: continue
