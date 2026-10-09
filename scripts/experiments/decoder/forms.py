@@ -46,13 +46,17 @@ def realize(b, mk, known=True):
         return pick(fs) if known and fs else None
     if pos == 'i' and 'T-2' in tags:                      # прошедшее: из исключений берём не причастие (went, а не gone)
         # причастия (gone, proven, seen) и -ing, -s отбрасываются; нет прошедшего в исключениях — правило (prove → proved)
-        if b == 'be': return 'was'
+        if b == 'be': return 'were' if tags & {'N+2', 'N+3'} else 'was'
         r = _suf(b, 'ed')
         if known and wn.morphy(r, wn.VERB) == b and r in SITE: return r     # правильное, если оно настоящая форма (worked, а не wrought; но не seed ← see)
         return irr('v', lambda fs: min((f for f in fs if not f.endswith(PART + ('ing',)) and f != _suf(b, 's')), key=len, default=None)) \
             or irr('v', lambda fs: next((f for f in fs if not f.endswith('ing') and f != _suf(b, 's')), None)) or r
     if pos == 'i' and 'A+5' in tags:                      # причастие: known, gone, begun
         return irr('v', lambda fs: next((f for f in fs if f.endswith(PART)), None)) or realize(b, 'i T-2', known)
+    if pos == 'i' and not tags & {'T-2', 'A0', 'A+5'} and tags & {'N+1', 'N+2', 'N+3'}:   # настоящее с числом подлежащего
+        if b == 'be': return 'is' if 'N+1' in tags else 'are'
+        if 'N+1' not in tags: return b
+        return {'have': 'has', 'do': 'does', 'go': 'goes'}.get(b) if known and b in ('have', 'do', 'go') else _suf(b, 's')
     if pos == 'i' and 'A0' in tags: return irr('v', lambda fs: next((f for f in fs if f.endswith('ing')), None)) or _suf(b, 'ing')
     if pos == 'o' and 'N+3' in tags:                      # правильное, если оно есть в словаре (brothers, а не brethren)
         r = _suf(b, 's') if not b.endswith('man') else b[:-3] + 'men'
@@ -67,7 +71,7 @@ def realize(b, mk, known=True):
                 if l.name().lower() == b and ss.pos() in 'asr': c['r' if ss.pos() == 'r' else 'a'] += l.count() + 0.01
         if c['r'] >= c['a']: return b
         return ADV.get(b) if known and b in ADV else _suf(b, 'ly')
-    if pos == 'a' and wn.synsets(b, 'n') and not (wn.synsets(b, 'a') or wn.synsets(b, 's')):   # прил. от сущ.: president → presidential
+    if pos == 'a' and wn.synsets(b, 'n') and not (wn.synsets(b, 'a') or wn.synsets(b, 's')):   # прил. от сущ.: president → presidential (наивно +al)
         return (ADJ.get(b) if known else None) or b + 'al'
     return b
 

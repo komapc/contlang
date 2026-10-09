@@ -30,7 +30,9 @@ def vform(w, b):
     global _EXC_V
     if _EXC_V is None: wn.synsets('dog'); _EXC_V = wn._exception_map['v']
     if w.endswith('ing'): return 'i A0'
-    if w in ('is', 'are', 'am', 'has', 'does') or w in (b + 's', b + 'es', b[:-1] + 'ies'): return 'i'   # 3-е лицо: метки нет, согласование
+    BE = {'was': 'i T-2 N+1', 'were': 'i T-2 N+3', 'is': 'i N+1', 'are': 'i N+3', 'am': 'i N+1'}   # число подлежащего (лицо не отмечается)
+    if w in BE: return BE[w]
+    if w in ('has', 'does') or w in (b + 's', b + 'es', b[:-1] + 'ies'): return 'i N+1'
     if w in _EXC_V and w.endswith(('en', 'ne', 'wn', 'un', 'rn')) and w not in ('was', 'were'): return 'i A+5'
     return 'i T-2'
 
