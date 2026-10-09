@@ -52,7 +52,7 @@ def encode(w):
     t = wi[w]; steps = []
     r, c = code1(t); steps.append((r, 1, f"`{c}`"))
     if r == 1: return steps[0], steps
-    b13 = run(t) or {}; b14 = run14(t) if (wn.synsets(w) and wn.synsets(w)[0].pos() in 'asr') else {}
+    b13 = run(t) or {}; b14 = run14(t) if any(x.pos() in 'asr' for x in wn.synsets(w)[:3]) else {}   # whole, necessary: 1-е значение — сущ.
     for k, v in b13.items():
         if k == 'head': steps.append((v[0], 2, v[1]))
         elif k == 'depth': steps.append((v[0], 3, f"{v[1][0]} pi({v[1][1]})"))
