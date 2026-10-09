@@ -24,6 +24,16 @@ def pos_of(w):
             if l.name().lower() == w: c[s.pos().replace('s', 'a')] += l.count() + 0.01
     return c.most_common(1)[0][0] if c else None
 
+_EXC_V = None
+def vform(w, b):
+    """метки глагольной формы: -ing → A0; 3-е лицо (base+s) — без меток; неправильное причастие (known, gone) → A+5; иначе T-2."""
+    global _EXC_V
+    if _EXC_V is None: wn.synsets('dog'); _EXC_V = wn._exception_map['v']
+    if w.endswith('ing'): return 'i A0'
+    if w in ('is', 'are', 'am', 'has', 'does') or w in (b + 's', b + 'es', b[:-1] + 'ies'): return 'i'   # 3-е лицо: метки нет, согласование
+    if w in _EXC_V and w.endswith(('en', 'ne', 'wn', 'un', 'rn')) and w not in ('was', 'were'): return 'i A+5'
+    return 'i T-2'
+
 def grammar(w):
     """основная форма и метки (без контекста предложения): словоизменение — метки, производное — часть речи."""
     nv = any(l.name().lower() == w for s in wn.synsets(w) if s.pos() in 'nv' for l in s.lemmas())
@@ -37,14 +47,14 @@ def grammar(w):
         for q, wl, mk in ((wn.VERB, 'verb', None), (wn.NOUN, 'noun', 'o N+3')):
             b = wn.morphy(w, q)
             if b and b != w and _WL.get(b) == wl:
-                return b, mk or ('i A0' if w.endswith('ing') else 'i' if w.endswith('s') else 'i T-2')
+                return b, mk or vform(w, b)
     p = pos_of(w)
     if p is None:                                            # не лемма: словоизменение (went, facts, wished)
         for q, mk in ((wn.VERB, None), (wn.NOUN, 'o N+3')):
             b = wn.morphy(w, q)
             if b and b != w:
                 if mk: return b, mk
-                return b, 'i A0' if w.endswith('ing') else 'i' if w.endswith('s') else 'i T-2'
+                return b, vform(w, b)
         return w, 'o'
     if p in 'ar':                                            # производное: deliberately → deliberate | e, presidential → president | a
         for s in wn.synsets(w)[:3]:
@@ -53,7 +63,7 @@ def grammar(w):
                 if l.name().lower() != w: continue
                 for pp in l.pertainyms():
                     b = pp.name().lower()
-                    if b in wi and len(b) >= 4: return b, POS[p]
+                    if b in wi and len(b) >= 4 and b[:4] == w[:4]: return b, POS[p]   # однокоренное (domestic ≠ home)
     return w, POS[p]
 
 if __name__ == '__main__':
