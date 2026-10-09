@@ -70,18 +70,26 @@ def grammar(w):
 
 if __name__ == '__main__':
     TEXT = open(ARGS[0]).read() if ARGS else re.search(r'TEXT = open\(ARGS\[0\]\)\.read\(\) if ARGS else """(.*?)"""', open(SP + 'r16.py').read(), re.S).group(1)
-    STOP = set('i to the because only of and see if could not what it had when that did was is so nor unless quite as put all into a its be why then or were by my in out get next able give'.split())
+    # служебные слова — в min-co частицы и метки, не коды; имена собственные не кодируются
+    STOP = set('''a an the and or but nor if so as than then that this these those it its i me my we our you your he him his she her
+    they them their who whom whose which what when where why how to of in on at by for from with without into onto about across
+    over under between among through during before after since until up down out off not no only also very quite all any each
+    every some such both either neither one there here can could will would shall should may might must be am is are was were
+    been being have has had do does did because unless while although though whether able next get put give see'''.split())
     ws = []
     for w in re.findall(r"[a-z]+", TEXT.lower()):
-        if w not in STOP and w not in ws and wn.synsets(w): ws.append(w)
+        if w not in STOP and w not in ws and wn.synsets(w) and (w in _low or w in _freq or wn.morphy(w) in _low): ws.append(w)
     NAME = {1: 'код', 2: 'одно слово', 3: 'слово + уровень', 4: 'основа + суффикс', 5: 'два слова'}
     cnt = collections.Counter(); first = 0; n = 0; cache = {}
-    print("| слово | основная форма | формой основы | что передаётся | место основы |\n|---|---|---|---|--:|")
+    import forms
+    full = 0
+    print("| слово | основная форма | формой основы | что передаётся | место основы | восстановлено |\n|---|---|---|---|--:|---|")
     for w in ws:
         b, mk = grammar(w)
         if b not in cache: cache[b] = encode(b)
         e = cache[b]
         if e is None: print(f"| {w} | {b} | — | нет в словаре | |"); cnt['нет в словаре'] += 1; continue
         (r, k, s), _ = e; cnt[NAME[k]] += 1; first += r == 1; n += 1
-        print(f"| {w} | {b} \\| {mk} | {NAME[k]} | {s} \\| {mk} | {r} |", flush=True)
-    print(f"\nслов {len(ws)}, основа в словаре {n}, первыми {first} ({first/n:.0%}); формы: {dict(cnt)}")
+        back = forms.realize(b, mk) if r == 1 else '—'; full += back == w
+        print(f"| {w} | {b} \\| {mk} | {NAME[k]} | {s} \\| {mk} | {r} | {back}{'' if back == w else ' ✗'} |", flush=True)
+    print(f"\nслов {len(ws)}, основа в словаре {n}, основа первой {first} ({first/n:.0%}), слово восстановлено целиком {full} ({full/n:.0%}); формы: {dict(cnt)}")
