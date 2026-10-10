@@ -68,6 +68,33 @@ def grammar(w):
                     if b in wi and len(b) >= 4 and b[:4] == w[:4]: return b, POS[p]   # однокоренное (domestic ≠ home)
     return w, POS[p]
 
+# числа — цифрами в кавычках (docs/encoding.md): six = "6", twenty-five = "25"; порядковые — признак: first = "1" | a
+_U = 'zero one two three four five six seven eight nine ten eleven twelve thirteen fourteen fifteen sixteen seventeen eighteen nineteen'.split()
+_T = 'twenty thirty forty fifty sixty seventy eighty ninety'.split()
+CARD = {w: i for i, w in enumerate(_U)} | {w: 20 + 10 * i for i, w in enumerate(_T)}
+_ORD = {'first': 'one', 'second': 'two', 'third': 'three', 'fifth': 'five', 'eighth': 'eight', 'ninth': 'nine', 'twelfth': 'twelve'}
+def _ord_base(w):
+    if w in _ORD: return _ORD[w]
+    if w.endswith('ieth') and w[:-4] + 'y' in CARD: return w[:-4] + 'y'
+    if w.endswith('th') and w[:-2] in CARD: return w[:-2]
+def number(w):
+    """слово-число → (n, порядковое?) или None; части через дефис складываются (twenty-five)."""
+    ps = w.split('-'); n = 0; o = False
+    for k, x in enumerate(ps):
+        if x in CARD: n += CARD[x]
+        elif k == len(ps) - 1 and _ord_base(x): n += CARD[_ord_base(x)]; o = True
+        elif x.isdigit() and len(ps) == 1: n = int(x)
+        else: return None
+    return n, o
+def number_word(n, o):
+    """обратно: "6" → six, "25" | a → twenty-fifth (до 99)."""
+    w = _U[n] if n < 20 else _T[n // 10 - 2] + ('-' + _U[n % 10] if n % 10 else '')
+    if not o: return w
+    last = w.split('-')[-1]; inv = {v: k for k, v in _ORD.items()}
+    last = inv.get(last) or (last[:-1] + 'ieth' if last.endswith('y') else last + 'th')
+    return '-'.join(w.split('-')[:-1] + [last])
+
+
 if __name__ == '__main__':
     TEXT = open(ARGS[0]).read() if ARGS else re.search(r'TEXT = open\(ARGS\[0\]\)\.read\(\) if ARGS else """(.*?)"""', open(SP + 'r16.py').read(), re.S).group(1)
     # служебные слова — в min-co частицы и метки, не коды; имена собственные не кодируются
@@ -78,8 +105,8 @@ if __name__ == '__main__':
     been being have has had do does did because unless while although though whether able next get put give see'''.split())
     ws = []
     def known(w): return w not in STOP and wn.synsets(w) and (w in _low or w in _freq or wn.morphy(w) in _low)
-    for w in re.findall(r"[a-z]+(?:-[a-z]+)*", TEXT.lower()):             # grown-ups — одно слово из частей
-        if w not in ws and (known(w) if '-' not in w else any(known(x) for x in w.split('-'))): ws.append(w)
+    for w in re.findall(r"[a-z]+(?:-[a-z]+)*|\d+", TEXT.lower()):             # grown-ups — одно слово из частей
+        if w not in ws and (number(w) or (known(w) if '-' not in w else any(known(x) for x in w.split('-')))): ws.append(w)
     NAME = {1: 'код', 2: 'одно слово', 3: 'слово + уровень', 4: 'основа + суффикс', 5: 'два слова'}
     cnt = collections.Counter(); first = 0; n = 0; cache = {}
     import forms
@@ -95,6 +122,10 @@ if __name__ == '__main__':
             out[-1] = (last, 'o N+3')
         return out
     for w in ws:
+        if number(w):                                           # число: цифрами, не кодом
+            v, o = number(w); c = f'"{v}"' + (' | a' if o else ''); back = w if w.isdigit() else number_word(v, o)
+            n += 1; first += 1; full += back == w; cnt['число'] += 1
+            print(f"| {w} | {c} | число | {c.replace('|', '\\|')} | 1 | {back}{'' if back == w else ' ✗'} |", flush=True); continue
         if '-' in w:
             parts = compound(w); res = []
             for b, mk in parts:
