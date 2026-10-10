@@ -48,7 +48,7 @@ def grammar(w):
     if w not in _WL:                                         # форма частого глагола или существительного (proved, terms) — словоизменение
         for q, wl, mk in ((wn.VERB, 'verb', None), (wn.NOUN, 'noun', 'o N+3')):
             b = wn.morphy(w, q)
-            if b and b != w and _WL.get(b) == wl:
+            if b and b != w and (_WL.get(b) == wl or b not in _WL and pos_of(b) == wl[0]):   # make нет в списке — части речи по WordNet
                 return b, mk or vform(w, b)
     p = pos_of(w)
     if p is None:                                            # не лемма: словоизменение (went, facts, wished)
@@ -77,14 +77,35 @@ if __name__ == '__main__':
     every some such both either neither one there here can could will would shall should may might must be am is are was were
     been being have has had do does did because unless while although though whether able next get put give see'''.split())
     ws = []
-    for w in re.findall(r"[a-z]+", TEXT.lower()):
-        if w not in STOP and w not in ws and wn.synsets(w) and (w in _low or w in _freq or wn.morphy(w) in _low): ws.append(w)
+    def known(w): return w not in STOP and wn.synsets(w) and (w in _low or w in _freq or wn.morphy(w) in _low)
+    for w in re.findall(r"[a-z]+(?:-[a-z]+)*", TEXT.lower()):             # grown-ups — одно слово из частей
+        if w not in ws and (known(w) if '-' not in w else any(known(x) for x in w.split('-'))): ws.append(w)
     NAME = {1: 'код', 2: 'одно слово', 3: 'слово + уровень', 4: 'основа + суффикс', 5: 'два слова'}
     cnt = collections.Counter(); first = 0; n = 0; cache = {}
     import forms
     full = 0
     print("| слово | основная форма | формой основы | что передаётся | место основы | восстановлено |\n|---|---|---|---|--:|---|")
+    def compound(w):
+        """слово через дефис: части — основные формы, метки целого — на последней части (grown-ups = grow | i A+5 - up | o N+3).
+        Целое по WordNet (grownups → grownup): метки числа; иначе каждая часть сама по себе."""
+        ps = w.split('-'); j = ''.join(ps); m = wn.morphy(j, wn.NOUN)
+        out = [grammar(x) for x in ps]
+        if m and m != j and j.startswith(m):                   # множественное целого: снять окончание с последней части
+            last = ps[-1][:len(ps[-1]) - (len(j) - len(m))]
+            out[-1] = (last, 'o N+3')
+        return out
     for w in ws:
+        if '-' in w:
+            parts = compound(w); res = []
+            for b, mk in parts:
+                if b not in cache: cache[b] = encode(b)
+                res.append((b, mk, cache[b]))
+            if any(e is None for _, _, e in res):
+                print(f"| {w} | {' - '.join(b for b, _, _ in res)} | — | часть нет в словаре | |"); cnt['нет в словаре'] += 1; continue
+            r = max(e[0][0] for _, _, e in res); n += 1; first += r == 1; cnt['составное'] += 1
+            back = '-'.join(forms.realize(b, mk) for b, mk, _ in res) if r == 1 else '—'; full += back == w
+            print(f"| {w} | {' - '.join(f'{b} \\| {mk}' for b, mk, _ in res)} | составное | {' - '.join(f'{e[0][2]} \\| {mk}' for _, mk, e in res)} | {r} | {back}{'' if back == w else ' ✗'} |", flush=True)
+            continue
         b, mk = grammar(w)
         if b not in cache: cache[b] = encode(b)
         e = cache[b]
