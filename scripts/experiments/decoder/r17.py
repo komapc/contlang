@@ -24,6 +24,7 @@ def pos_of(w):
             if l.name().lower() == w: c[s.pos().replace('s', 'a')] += l.count() + 0.01
     return c.most_common(1)[0][0] if c else None
 
+def _cnt(w): return sum(l.count() for s in wn.synsets(w) for l in s.lemmas() if l.name().lower() == w)
 _EXC_V = None
 def vform(w, b):
     """метки глагольной формы: -ing → A0; 3-е лицо (base+s) — без меток; неправильное причастие (known, gone) → A+5; иначе T-2."""
@@ -45,6 +46,12 @@ def grammar(w):
                 st = w[:-len(suf)]
                 for b in (st, st + 'e', st[:-1] if len(st) > 2 and st[-1] == st[-2] else None, st[:-1] + 'y' if st.endswith('i') else None):
                     if b and len(b) >= 3 and b in wi and any(x.pos() in 'as' for x in wn.synsets(b)): return b, 'a ' + mk
+    # омонимы-формы: saw — «пила» или see | T-2? Берём то, что чаще по WordNet: основу, если её значения встречаются
+    # в 2 с лишним раза чаще, чем само слово (saw 1 против see 1211, found 15 против find 705; ground 112 против grind 10 — ground)
+    bs = [(b, q) for q in (wn.VERB, wn.NOUN) for b in wn._morphy(w, q) if b != w]
+    if bs:
+        b, q = max(bs, key=lambda x: _cnt(x[0]))
+        if _cnt(b) > 2 * _cnt(w) and b in wi: return b, vform(w, b) if q == wn.VERB else 'o N+3'
     if w not in _WL:                                         # форма частого глагола или существительного (proved, terms) — словоизменение
         for q, wl, mk in ((wn.VERB, 'verb', None), (wn.NOUN, 'noun', 'o N+3')):
             b = wn.morphy(w, q)
