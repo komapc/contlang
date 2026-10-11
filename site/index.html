@@ -108,6 +108,10 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
       <div class="step"><div class="lab"><span data-l="en">blind decoding <span class="mut">(a separate call that sees only the code)</span></span><span data-l="ru">слепое раскодирование <span class="mut">(другой вызов, видит только код)</span></span></div>
         <div class="big" id="best">—</div><div class="mut small" id="alts"></div><div class="mut small" id="why"></div></div>
       <div class="step"><div class="lab"><span data-l="en">the same code read by vectors</span><span data-l="ru">тот же код, прочитанный векторами</span></div><div class="mut" id="llmMath">—</div></div>
+      <div class="step" id="second" hidden><div class="lab"><span data-l="en">second word</span><span data-l="ru">второе слово</span></div><div class="mut small" id="secWhy"></div>
+        <span class="code" id="code2">—</span><div class="axes" id="code2Ax"></div><div class="mut small" id="conf2"></div>
+        <div class="lab" style="margin-top:8px"><span data-l="en">blind decoding of the pair</span><span data-l="ru">слепое раскодирование пары</span></div>
+        <div class="big" id="best2">—</div><div class="mut small" id="alts2"></div><div class="mut small" id="why2"></div><div class="mut small" id="llmMath2"></div></div>
     </div>
     <div class="card col" id="math">
       <div class="colhead"><b><span data-l="en">Vectors</span><span data-l="ru">Векторы</span></b><span class="mut"><span data-l="en">no model: word vector → roots and back</span><span data-l="ru">без модели: вектор слова → корни и обратно</span></span></div>
@@ -273,6 +277,9 @@ const I18N = {
     toward: (d, e) => d + " toward “" + e + "”", deg: ["", "a little", "slightly", "fairly", "strongly", "fully"],
     pos: { o: "thing, concept (noun)", i: "action, state (verb)", a: "property (adjective)", e: "circumstance (adverb)" },
     how: [["elephants", "THING(=+4) BIG(=+5) | o N+3"], ["didn't come", "MOVE NEAR(=+4) | i T-2 M-5"], ["sand", "GRAIN(=0) THING(=-5) PART(=-5) | o"], ["will be afraid", "FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4"], ["six", '"6"']],
+    secMiss: (w) => "the blind decoder did not find the word (it read: " + w + "), so the model adds a second word through PI",
+    secFar: (k) => "the decoder found the word, but the vectors put it only at place " + k + ", so the model adds a second word through PI",
+    encoding2: "the model adds a second word…", decoding2: "decoding the pair blind…", place: (k) => " · the word is at place " + k,
     qPh: "search by root or meaning", dqPh: "search by word or root (money, LIVE, PLACE…)", inpPh: "example, knife, river… or GRAIN(=-3) CONSUME(=+5) | o",
   },
   ru: {
@@ -293,6 +300,9 @@ const I18N = {
     toward: (d, e) => d + " к «" + e + "»", deg: ["", "чуть", "слегка", "довольно", "сильно", "предельно"],
     pos: { o: "предмет, понятие (имя)", i: "действие, состояние (глагол)", a: "признак (прилагательное)", e: "обстоятельство (наречие)" },
     how: [["слоны", "THING(=+4) BIG(=+5) | o N+3"], ["не пришёл", "MOVE NEAR(=+4) | i T-2 M-5"], ["песок", "GRAIN(=0) THING(=-5) PART(=-5) | o"], ["испугаются", "FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4"], ["шесть", '"6"']],
+    secMiss: (w) => "слепой декодер не нашёл слово (прочитал: " + w + "), поэтому модель добавляет второе слово через PI",
+    secFar: (k) => "декодер нашёл слово, но векторы ставят его только на " + k + "-е место, поэтому модель добавляет второе слово через PI",
+    encoding2: "модель добавляет второе слово…", decoding2: "пара раскодируется вслепую…", place: (k) => " · слово на " + k + "-м месте",
     qPh: "поиск по корню или значению", dqPh: "поиск по слову или корню (money, LIVE, PLACE…)", inpPh: "example, knife, river… или GRAIN(=-3) CONSUME(=+5) | o",
   },
 };
@@ -314,8 +324,8 @@ function mark(node, text, orig, alts){node.textContent = text || "—"; node.cla
 const altsOf = (dec) => dec.includes("(") ? dec.slice(dec.indexOf("(") + 1).replace(/\)$/, "").replace(/^в альтернативах:\s*/, "").split(",").map(x => x.trim()) : [];
 const decText = (dec) => LANG() === "en" ? dec.replace("в альтернативах:", I18N.en.alts) : dec;   // в examples.json пометка по-русски
 function busy(on, msg){$("run").disabled = on; $("status").textContent = on ? (msg || T("think")) : ""}
-async function call(mode, text){
-  const r = await fetch(API, {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({mode, text, lang: LANG()})});
+async function call(mode, text, extra){
+  const r = await fetch(API, {method:"POST", headers:{"content-type":"application/json"}, body: JSON.stringify({mode, text, lang: LANG(), ...extra})});
   const d = await r.json().catch(() => ({}));
   if (!r.ok || d.error) throw new Error(d.error || (T("err") + r.status));
   return d;
@@ -480,11 +490,21 @@ async function mathWord(word){
     row(tb, [codeEl(t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);
   });
 }
-async function mathCode(code, target){
+// корни всех слов кода: пара через PI читается как один набор корней
+function parseAll(co, code){
+  const S = [], v = [], unknown = [];
+  String(code).split(/\bPI\b/).forEach(w => { const p = co.parse(w); S.push(...p.S); v.push(...p.v); unknown.push(...p.unknown); });
+  return { S, v, unknown };
+}
+// прочтение кода векторами; word — исходное слово: возвращает его место среди прочтений
+async function mathCode(code, target, word){
   const {co, V} = await coder();
-  const p = co.parse(code);
-  if (!p.S.length) { target.textContent = T("noRoots"); return; }
-  target.textContent = near(V.top(await decodeScores(co, p.S, p.v), 6), 6) + (p.unknown.length ? " (" + T("unknown") + p.unknown.join(", ") + ")" : "");
+  const p = parseAll(co, code);
+  if (!p.S.length) { target.textContent = T("noRoots"); return null; }
+  const sc = await decodeScores(co, p.S, p.v), w = (word || "").trim().toLowerCase(), rk = w ? V.rankIn(sc, w) : null;
+  const top = V.top(sc, 6);
+  target.textContent = near(top, 6) + (p.unknown.length ? " (" + T("unknown") + p.unknown.join(", ") + ")" : "") + (rk ? T("place")(rk) : "");
+  return { rank: rk, top: top.map(n => n.word).filter(x => x !== w) };
 }
 // оценки всех слов для кода (см. math.js Vocab.scores)
 async function decodeScores(co, S, v){
@@ -499,6 +519,7 @@ async function run(text, saved){
   const code = isCode(text) && !saved;
   lastWord = code ? "" : text;
   ["code","codeAx","conf","alts","why","warn","recipe"].forEach(id => $(id).textContent = "");
+  $("second").hidden = true;
   $("tokens").innerHTML = ""; $("expl").hidden = true; mark($("best"), "…"); $("llmMath").textContent = "…";
   const mathJob = code ? (mark($("mbest"), ""), setCode($("mcode"), $("mcodeAx"), text), $("mcos").textContent = T("codeGiven"),
                            $("mroots").innerHTML = "", mathCode(text, $("mnear"))) : mathWord(text);
@@ -524,13 +545,39 @@ async function run(text, saved){
       mark($("best"), r.best, code ? "" : text, r.alternatives);
       $("alts").textContent = r.alternatives && r.alternatives.length ? T("variants") + r.alternatives.join(", ") : "";
       $("why").textContent = r.why || "";
+      if (!code) await secondWord(text, c, r).catch(e => { $("why2").textContent = e.message; mark($("best2"), ""); });
     }
-    mathCode(c, $("llmMath"));
+    if (saved || !API || code) mathCode(c, $("llmMath"), saved ? saved.en : "");
     const rc = !code && REC[text.trim().toLowerCase()];
     if (rc) $("recipe").textContent = T("recipe") + rc + (rc === c ? T("matched") : "");
   } catch (e) { $("status").textContent = e.message; mark($("best"), ""); }
   finally { $("run").disabled = false; if ($("status").textContent.endsWith("…")) $("status").textContent = ""; }
   await mathJob;
+}
+
+// детектор: слепой декодер не нашёл слово или векторы ставят его дальше FAR-го места → модель добавляет второе слово
+// (по векторам порог грубый: у 14 % проверенных рецептов место > 1000, поэтому главный признак — слепое прочтение)
+const FAR = 1000;
+async function secondWord(text, c, r){
+  const m = await mathCode(c, $("llmMath"), text);
+  if (/\bPI\b/.test(c)) return;
+  const hit = same(r.best, text) || (r.alternatives || []).some(a => same(a, text));
+  const far = m && m.rank && m.rank > FAR;
+  if (hit && !far) return;
+  const confused = hit ? m.top.slice(0, 3) : [r.best].concat(r.alternatives || []).filter(x => x && !same(x, text)).slice(0, 3);
+  if (!confused.length) return;
+  ["code2","code2Ax","conf2","alts2","why2","llmMath2"].forEach(id => $(id).textContent = "");
+  $("second").hidden = false; $("secWhy").textContent = hit ? T("secFar")(m.rank) : T("secMiss")(confused.join(", ")); mark($("best2"), "…");
+  busy(true, T("encoding2"));
+  const d = await call("encode", text, { prev: c, confused });
+  setCode($("code2"), $("code2Ax"), d.code);
+  $("conf2").textContent = ((d.warnings || []).length ? T("breaks") + d.warnings.join("; ") + " · " : "") + (d.confusable && d.confusable.length ? T("confusable").replace(/^; /, "") + d.confusable.join(", ") : "");
+  busy(true, T("decoding2"));
+  const r2 = await call("decode", d.code);
+  mark($("best2"), r2.best, text, r2.alternatives);
+  $("alts2").textContent = r2.alternatives && r2.alternatives.length ? T("variants") + r2.alternatives.join(", ") : "";
+  $("why2").textContent = r2.why || "";
+  mathCode(d.code, $("llmMath2"), text);
 }
 
 $("ask").addEventListener("submit", (e) => { e.preventDefault(); const t = $("inp").value.trim(); if (t) run(t); });
@@ -585,7 +632,7 @@ function applyLang(l){
   if (EX.length) drawExamples();
   if (RECL.length) drawDict();
   drawRoots();
-  ["codeAx", "mcodeAx", "howExAx"].forEach(id => { const n = $(id); if (n._code) showAxes(n, n._code); });
+  ["codeAx", "code2Ax", "mcodeAx", "howExAx"].forEach(id => { const n = $(id); if (n._code) showAxes(n, n._code); });
 }
 document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.lang)));
 applyLang(LANG());

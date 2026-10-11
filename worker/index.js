@@ -26,14 +26,24 @@ Reply with ONLY a JSON object, no other text:
 const ENCODE_TASK_EN = ENCODE_TASK_RU.replace('"высокая" only', '"high" only').replace('"средняя" if', '"medium" if').replace('"низкая" if', '"low" if')
   .replace("<короткое пояснение по-русски: какой корень, какое значение оси, какая роль>", "<a short note in English: which root, which axis value, what role>").replace('"высокая|средняя|низкая"', '"high|medium|low"');
 const DECODE_TASK_EN = DECODE_TASK_RU.replace("<одна короткая фраза по-русски, как прочитан код>", "<one short sentence in English: how the code was read>");
+// второе слово: код уже есть, но слепое прочтение (или векторы) нашли его ближе к другим словам
+const SECOND_TASK = (prev, confused) => `
+SECOND WORD: your first code for this word was \`${prev}\`, but a reader who has only the spec takes it for: ${confused}.
+Rewrite it as a two-word compound \`HEAD | o PI MODIFIER | o\`: the head is the general kind (keep the first code or fix it), the modifier is ONE more min-co word of 1-3 roots for ANOTHER thing, place or action that this word is tied to (what it is used with or on, where it is, what it serves), chosen so that the pair cannot be read as ${confused}. Do not just repeat or shift the head's roots in the modifier. Each of the two words has its own root limit.
+Verified compounds: key = small tool · doorway \`DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o\`; furniture = collection of inanimate things · house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
+In "tokens" explain both words; in "confusable" name what the new code could still be confused with.`;
 const MSG = {
   en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
   ru: { busy: "слишком много запросов, подождите минуту", need: "mode и text обязательны", long: (n) => `не длиннее ${n} символов`, down: "модель недоступна", notJson: "модель вернула не JSON" },
 };
 
 // Проверка кода по правилам языка (как scripts/mincode/validator.py, только главное): корни, лимит, знак значения.
+// В паре через PI каждое слово проверяется отдельно.
 function codeProblems(code) {
-  const body = String(code || "").split("|")[0].replace(/"[^"]*"/g, " ").trim();
+  return String(code || "").split(/\bPI\b/).flatMap(wordProblems);
+}
+function wordProblems(word) {
+  const body = word.split("|")[0].replace(/"[^"]*"/g, " ").trim();
   if (!body) return [];
   const roots = [], bad = [];
   for (const t of body.split(/\s+/)) {
@@ -100,7 +110,11 @@ export default {
     if (!["encode", "decode"].includes(mode) || !text) return json({ error: t.need }, 400, h);
     if (text.length > MAX_INPUT) return json({ error: t.long(MAX_INPUT) }, 400, h);
 
-    const system = (mode === "encode" ? ENC_SPEC + (lang === "ru" ? ENCODE_TASK_RU : ENCODE_TASK_EN) : DEC_SPEC + (lang === "ru" ? DECODE_TASK_RU : DECODE_TASK_EN));
+    // encode с prev и confused — повторное кодирование со вторым словом
+    const prev = mode === "encode" && typeof body.prev === "string" ? body.prev.trim().slice(0, MAX_INPUT) : "";
+    const confused = Array.isArray(body.confused) ? body.confused.filter((x) => typeof x === "string").map((x) => x.trim().slice(0, 40)).filter(Boolean).slice(0, 5) : [];
+    const system = (mode === "encode" ? ENC_SPEC + (lang === "ru" ? ENCODE_TASK_RU : ENCODE_TASK_EN) + (prev && confused.length ? SECOND_TASK(prev, confused.join(", ")) : "")
+      : DEC_SPEC + (lang === "ru" ? DECODE_TASK_RU : DECODE_TASK_EN));
     const messages = [{ role: "system", content: system }, { role: "user", content: text }];
     let a = await ask(env, messages);
     if (a.error) return json({ error: t.down, status: a.error }, 502, h);
