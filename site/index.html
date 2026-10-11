@@ -49,6 +49,19 @@ a{color:var(--acc)}
 details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .bars td{padding:3px 6px;border:0}.bars .bar{height:8px;border-radius:4px;background:var(--acc);opacity:.75}
 .bars td:last-child{width:45%}
+.tok{border-radius:4px;padding:0 1px;cursor:help}
+.tok:hover,.tok:focus,.tok.on{background:var(--card);outline:1px solid var(--acc);outline-offset:0}
+.tok.root{color:var(--acc);font-weight:600}.tok.mark{color:var(--warn)}.tok.pos{color:var(--mut)}.tok.ptl{font-style:italic}.tok.bad{text-decoration:wavy underline var(--bad)}
+#tip{position:absolute;z-index:20;max-width:min(340px,calc(100vw - 32px));background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:14px;line-height:1.45}
+#tip .th{font-family:var(--mono);font-weight:600}#tip .role{color:var(--mut);font-size:12px}
+.axis{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--line),var(--acc2) 50%,var(--line));border:1px solid var(--line);margin:10px 4px 3px}
+.axis i{position:absolute;top:-1px;width:1px;height:8px;background:var(--line)}
+.axis b{position:absolute;top:-5px;width:16px;height:16px;border-radius:50%;background:var(--acc);border:2px solid var(--card);transform:translateX(-50%)}
+.axlab{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;font-size:12px;color:var(--mut)}.axlab span:nth-child(2){text-align:center}.axlab span:last-child{text-align:right}
+.cmp>*{min-width:0}td code{overflow-wrap:anywhere}
+.axes{margin-top:8px}.axes table{table-layout:fixed}.axes table td{border:0;padding:4px 6px;vertical-align:middle;overflow-wrap:anywhere}.axes td:first-child{width:30%}.axes td:nth-child(2){width:40%}
+@media(max-width:560px){.axes table,.axes tbody{display:block}.axes tr{display:grid;grid-template-columns:auto 1fr;gap:0 8px;padding:4px 0;border-bottom:1px solid var(--line)}.axes td{width:auto!important;padding:2px 0}.axes td:nth-child(2){grid-column:1/-1;order:3}}
+.axes .rd{font-size:13px}.axes .form{font-size:13px;color:var(--mut);margin-top:4px}
 </style>
 </head>
 <body>
@@ -75,12 +88,13 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
       <button class="go" id="run" type="submit">Перевести туда и обратно</button>
     </div>
     <div class="mut" id="status"></div>
+    <div class="mut small">Наведите курсор на любую часть кода (на телефоне — нажмите): корень, метку, частицу. Под кодом — оси его корней.</div>
   </form>
 
   <div class="cmp" id="out" hidden>
     <div class="card col" id="llm">
       <div class="colhead"><b>ИИ</b><span class="mut">языковая модель gpt-4o-mini по описанию языка</span></div>
-      <div class="step"><div class="lab">код</div><span class="code" id="code">—</span><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
+      <div class="step"><div class="lab">код</div><span class="code" id="code">—</span><div class="axes" id="codeAx"></div><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
       <details id="expl" hidden><summary>из чего собран код</summary><table><tbody id="tokens"></tbody></table></details>
       <div class="step"><div class="lab">слепое раскодирование <span class="mut">(другой вызов, видит только код)</span></div>
         <div class="big" id="best">—</div><div class="mut small" id="alts"></div><div class="mut small" id="why"></div></div>
@@ -88,7 +102,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
     </div>
     <div class="card col" id="math">
       <div class="colhead"><b>Векторы</b><span class="mut">без модели: вектор слова → корни и обратно</span></div>
-      <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="mut small" id="mcos"></div></div>
+      <div class="step"><div class="lab">код</div><span class="code" id="mcode">—</span><div class="axes" id="mcodeAx"></div><div class="mut small" id="mcos"></div></div>
       <div class="step"><div class="lab">ближайшие слова к коду</div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
       <div class="step"><div class="lab">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
     </div>
@@ -97,7 +111,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <h2>Сохранённые примеры</h2>
   <p class="mut">Результаты слепых тестов: кодировала одна модель, раскодировала другая, не видя слова. Зелёным — слово угадано первым, жёлтым — оно среди альтернатив, красным — промах. Нажмите строку — модель не вызывается, математика считает заново.</p>
   <p class="mut">Две серии. <b>Рецепты</b> (право, деньги, еда, транспорт, общество, здоровье, направление движения): декодеры Sonnet видели список рецептов, так что это проверка того, что рецепт читается однозначно, а не того, что его можно угадать с нуля. <b>Вещества и числа</b>: декодер видел только таблицы корней.</p>
-  <div class="card"><table><thead><tr><th>слово</th><th>код</th><th>прочитано</th></tr></thead><tbody id="examples"></tbody></table></div>
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th>слово</th><th>код</th><th>прочитано</th></tr></thead><tbody id="examples"></tbody></table></div>
 </section>
 
 <section id="how">
@@ -105,6 +119,9 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <p>Слово записывается как <code>КОРНИ | форма</code>. До черты — смысл: <b>главный корень</b> и до двух уточняющих, у каждого при необходимости значение его оси: <code>GOOD(=+3)</code> (скорее хороший), <code>TIME(=-2)</code> (недавно), <code>MANY(=0)</code> (явный ноль). Ось не написана — значение не указано. Каждый следующий корень уточняет всё, что стоит перед ним: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — «сыпучие крошки камня» (песок).</p>
   <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span id="noaxis"></span>) значений не берут.</p>
   <p>В кавычках пишутся только числа, имена собственные и <b>конкретные члены семейства</b> в латинской или международной форме: вид <code>"Canis"</code>, вещество <code>"iodine"</code>, орган <code>"hepar"</code>, светило <code>"Luna"</code>, игра <code>"chess"</code>, узкий термин <code>"enzyme"</code>. Сама категория строится из корней: орган — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, звезда — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. Если для слова есть рецепт, кавычки не нужны.</p>
+  <div class="card"><div class="lab">пример — наведите на части кода</div>
+    <div class="row" id="howPick"></div>
+    <span class="code" id="howEx" style="margin-top:8px"></span><div class="axes" id="howExAx"></div></div>
   <h3>Частицы</h3><table><tbody id="particles"></tbody></table>
   <h3>Метки формы</h3>
   <p class="mut">Метки — не корни. Ставятся после черты через пробел, один раз на главном слове.</p>
@@ -174,6 +191,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 </div>
 <script src="config.js"></script>
 <script src="math.js"></script>
+<div id="tip" role="tooltip" hidden></div>
 <script>
 const $ = (id) => document.getElementById(id);
 const API = (window.MINCO_API || "").replace(/\/$/, "");
@@ -197,6 +215,129 @@ async function call(mode, text){
   return d;
 }
 
+// ---- разметка кода: подсказки к корням, меткам, частицам; оси корней
+const RDP = fetch("data/roots.json").then(r => r.json());
+let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])) }; });
+const POSN = { o: "предмет, понятие (имя)", i: "действие, состояние (глагол)", a: "признак (прилагательное)", e: "обстоятельство (наречие)" };
+const DEG = ["", "чуть", "слегка", "довольно", "сильно", "предельно"];
+const clean = (t) => String(t || "").replace(/`/g, "").replace(/\\\|/g, "|").replace(/\*/g, "").trim();
+const sgn = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
+const PARTRE = /^(E|PI|LA|LI|PE|AND)$/;
+// токены: "кавычки", метка формы (T-2, N+3, A0), корень с осью, скобки и черта, часть речи
+const TOKRE = /"[^"]*"|\b[TRNMACIDVK][+-]?\d\b|\b[A-Z][A-Z]*\b(?:\(=\s*[+-]?\d+\s*\))?\??|[{}\[\];|!?]|\b[oiae]\b/g;
+function tokens(code){
+  const out = []; let last = 0, form = false, idx = 0, fresh = true;
+  for (const m of String(code).matchAll(TOKRE)) {
+    if (m.index > last) out.push({ text: code.slice(last, m.index) });
+    const t = m[0]; last = m.index + t.length;
+    let k = { text: t };
+    if (t[0] === '"') k.kind = "lit";
+    else if (t === "|") { k.kind = "bar"; form = true; }
+    else if ("{}[];".includes(t)) { k.kind = "br"; form = false; fresh = true; }
+    else if (/^[oiae]$/.test(t)) k.kind = form ? "pos" : null;
+    else if (/^[TRNMACIDVK][+-]?\d$/.test(t) || ((t === "!" || t === "?") && form)) { k.kind = "mark"; k.v = t.length > 1 ? Number(t.slice(1)) : null; }
+    else if (PARTRE.test(t)) { k.kind = "ptl"; form = false; fresh = true; }
+    else if (/^[A-Z]/.test(t)) {
+      const mm = t.match(/^([A-Z]+)(?:\(=\s*([+-]?\d+)\s*\))?(\?)?$/);
+      if (form || fresh) { idx = 0; form = false; fresh = false; } else idx++;
+      k = { text: t, kind: "root", name: mm[1], v: mm[2] != null ? Number(mm[2]) : null, head: idx === 0, q: !!mm[3] };
+    }
+    out.push(k);
+  }
+  if (last < String(code).length) out.push({ text: code.slice(last) });
+  return out;
+}
+function reading(r, v){
+  if (!r.axis) return clean(r.ru);
+  if (v == null) return "значение оси не указано — просто «" + clean(r.ru).split(/[(:]/)[0].trim() + "»";
+  if (r.one_sided) return v <= 0 ? "ноль: " + clean(r.mid).replace(/^0\s*/, "") : v + " из 5, к «" + clean(r.pos).replace(/^\+5\s*/, "") + "»";
+  if (v === 0) return r.mid ? "середина: " + clean(r.mid) : "середина шкалы";
+  return DEG[Math.min(5, Math.abs(v))] + " к «" + clean(v < 0 ? r.neg : r.pos).replace(/\s*\([+−-]?\d\)$/, "") + "»";
+}
+const short = (t) => clean(t).split(/[,(;]/)[0].trim();
+function axisBar(r, v, sh){
+  const cl = sh ? short : clean;
+  const w = el("div"), bar = el("div", null, "axis");
+  const lo = r.one_sided ? 0 : -5;
+  for (let t = lo; t <= 5; t++) { const i = el("i"); i.style.left = (100 * (t - lo) / (5 - lo)) + "%"; bar.appendChild(i); }
+  if (v != null) { const b = el("b"); b.style.left = (100 * (Math.max(lo, Math.min(5, v)) - lo) / (5 - lo)) + "%"; bar.appendChild(b); }
+  const lab = el("div", null, "axlab");
+  (r.one_sided ? [cl(r.mid) || "0", "", cl(r.pos)] : [(lo) + " " + cl(r.neg), cl(r.mid) ? "0 " + cl(r.mid) : "0", "+5 " + cl(r.pos)]).forEach(x => lab.appendChild(el("span", x)));
+  w.append(bar, lab); return w;
+}
+function tipFor(k){
+  const box = el("div");
+  const head = (t, role) => { box.appendChild(el("div", t, "th")); if (role) box.appendChild(el("div", role, "role")); };
+  if (!RD) { box.textContent = "загрузка таблиц…"; return box; }
+  if (k.kind === "root") {
+    const r = RD.root.get(k.name);
+    if (!r) { head(k.text, "не корень min-co"); return box; }
+    head(k.text, (k.head ? "главный корень слова" : "уточняет то, что стоит перед ним") + (k.q ? " · вопрос: какой?" : ""));
+    box.appendChild(el("div", clean(r.ru).slice(0, 260)));
+    if (r.axis) { box.appendChild(axisBar(r, k.v)); box.appendChild(el("div", "→ " + reading(r, k.v), "small")); }
+    else box.appendChild(el("div", "у корня нет оси: значение не берётся", "mut small"));
+  } else if (k.kind === "mark") {
+    const l = RD.lab.get(k.text[0]) || RD.lab.get(k.text);
+    head(k.text, "метка формы (не корень)");
+    if (l) { box.appendChild(el("div", clean(l.what))); if (l.scale) box.appendChild(el("div", clean(l.scale), "mut small")); }
+    if (k.v != null) box.appendChild(el("div", "здесь: " + sgn(k.v), "small"));
+  } else if (k.kind === "pos") { head(k.text, "часть речи"); box.appendChild(el("div", POSN[k.text])); }
+  else if (k.kind === "bar") { head("|", "черта"); box.appendChild(el("div", "слева смысл (корни), справа форма: часть речи и метки")); }
+  else if (k.kind === "ptl") { const p = RD.ptl.get(k.text); head(k.text, "частица"); box.appendChild(el("div", p ? clean(p.role) : "")); }
+  else if (k.kind === "lit") { head(k.text, /^"\d+"$/.test(k.text) ? "число" : "в кавычках"); box.appendChild(el("div", /^"\d+"$/.test(k.text) ? "точное число пишется цифрами" : "имя, число или конкретный член семейства — передаётся как есть")); }
+  else if (k.kind === "br") { head(k.text, "скобка"); box.appendChild(el("div", "{ } — граница слова, [ ] — вложенная клауза, ; — граница клауз")); }
+  return box;
+}
+// код → DOM с подсказками (в node, вместо textContent)
+function showCode(node, code){
+  node.textContent = "";
+  if (!code || code === "—") { node.textContent = code || "—"; return; }
+  for (const k of tokens(code)) {
+    if (!k.kind) { node.appendChild(document.createTextNode(k.text)); continue; }
+    const sp = el("span", k.text, "tok " + k.kind); sp.tabIndex = 0; sp._k = k;
+    if (k.kind === "root" && RD && !RD.root.has(k.name)) sp.classList.add("bad");
+    node.appendChild(sp);
+  }
+}
+const codeEl = (code) => { const c = el("code"); showCode(c, code); return c; };
+// оси корней кода и прочтение формы — когда в коде есть корни
+async function showAxes(node, code){
+  node.textContent = ""; if (!code || code === "—") return;
+  await RDP; while (!RD) await new Promise(r => setTimeout(r, 20));
+  const ks = tokens(code), roots = ks.filter(k => k.kind === "root" && RD.root.has(k.name));
+  if (!roots.length) return;
+  const tb = el("tbody"), t = el("table"); t.appendChild(tb);
+  roots.forEach(k => {
+    const r = RD.root.get(k.name);
+    row(tb, [codeEl(k.text), r.axis ? axisBar(r, k.v, true) : el("span", "без оси", "mut small"), el("span", (k.head ? "" : "+ ") + reading(r, k.v), "rd")]);
+  });
+  node.appendChild(t);
+  const fm = [];
+  ks.forEach(k => {
+    if (k.kind === "pos") fm.push(POSN[k.text].split(" (")[0]);
+    if (k.kind === "mark") { const l = RD.lab.get(k.text[0]); if (l) fm.push(clean(l.what).split(/[:(]/)[0] + (k.v != null ? " " + sgn(k.v) : "")); }
+  });
+  if (fm.length) node.appendChild(el("div", "форма: " + fm.join(", "), "form"));
+}
+function setCode(node, axNode, code){ showCode(node, code); if (axNode) showAxes(axNode, code); }
+// подсказка: мышь, фокус с клавиатуры, нажатие на телефоне
+const tip = $("tip"); let tipFor_ = null;
+function openTip(sp){
+  tip.textContent = ""; tip.appendChild(tipFor(sp._k)); tip.hidden = false;
+  document.querySelectorAll(".tok.on").forEach(x => x.classList.remove("on")); sp.classList.add("on"); tipFor_ = sp;
+  const r = sp.getBoundingClientRect(), tw = tip.offsetWidth, th = tip.offsetHeight;
+  let x = r.left + window.scrollX + r.width / 2 - tw / 2; x = Math.max(window.scrollX + 16, Math.min(x, window.scrollX + document.documentElement.clientWidth - tw - 16));
+  let y = r.bottom + window.scrollY + 8; if (r.bottom + th + 16 > window.innerHeight && r.top > th + 16) y = r.top + window.scrollY - th - 8;
+  tip.style.left = x + "px"; tip.style.top = y + "px";
+}
+function closeTip(){ tip.hidden = true; if (tipFor_) tipFor_.classList.remove("on"); tipFor_ = null; }
+document.addEventListener("mouseover", e => { const sp = e.target.closest && e.target.closest(".tok"); if (sp) openTip(sp); });
+document.addEventListener("mouseout", e => { const sp = e.target.closest && e.target.closest(".tok"); if (sp && !sp.contains(e.relatedTarget)) closeTip(); });
+document.addEventListener("focusin", e => { if (e.target.classList && e.target.classList.contains("tok")) openTip(e.target); });
+document.addEventListener("focusout", e => { if (e.target.classList && e.target.classList.contains("tok")) closeTip(); });
+document.addEventListener("click", e => { const sp = e.target.closest && e.target.closest(".tok"); if (sp && !sp.closest(".ex")) tipFor_ === sp ? closeTip() : openTip(sp); else if (!sp) closeTip(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape") closeTip(); });
+
 // ---- математика: данные грузятся при первом использовании (~3,5 МБ)
 let M = null, CO = null;
 function loadMath(){
@@ -216,13 +357,13 @@ async function mathWord(word){
   const x = /^[a-z]+$/.test(w) ? V.vec(w) : null;
   $("mroots").innerHTML = "";
   if (!x) {
-    $("mcode").textContent = "—"; $("mcos").textContent = "";
+    setCode($("mcode"), $("mcodeAx"), "—"); $("mcos").textContent = "";
     mark($("mbest"), ""); $("mnear").textContent = /^[a-z]+$/.test(w) ? "слова нет среди " + V.words.length.toLocaleString("ru") + " слов словаря" : "математика кодирует только отдельные слова";
     return;
   }
   await new Promise(r => setTimeout(r, 0));
   const r = co.encode(x), sc = await decodeScores(co, r.S, r.v);
-  $("mcode").textContent = co.format(r.S, r.v, "o");
+  setCode($("mcode"), $("mcodeAx"), co.format(r.S, r.v, "o"));
   const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
   $("mcos").textContent = "сходство кода со словом cos " + r.cos.toFixed(2) + "; часть речи математика не знает, стоит o";
   mark($("mbest"), nb[0].word, w);
@@ -230,7 +371,7 @@ async function mathWord(word){
   const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;
   top.forEach(t => {
     const bar = el("div", null, "bar"); bar.style.width = Math.max(4, 100 * t.cos / mx) + "%";
-    row(tb, [el("code", t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);
+    row(tb, [codeEl(t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);
   });
 }
 async function mathCode(code, target){
@@ -251,26 +392,26 @@ async function run(text, saved){
   $("out").hidden = false;
   const code = isCode(text) && !saved;
   lastWord = code ? "" : text;
-  ["code","conf","alts","why","warn","recipe"].forEach(id => $(id).textContent = "");
+  ["code","codeAx","conf","alts","why","warn","recipe"].forEach(id => $(id).textContent = "");
   $("tokens").innerHTML = ""; $("expl").hidden = true; mark($("best"), "…"); $("llmMath").textContent = "…";
-  const mathJob = code ? (mark($("mbest"), ""), $("mcode").textContent = text, $("mcos").textContent = "код задан, математика только читает его",
+  const mathJob = code ? (mark($("mbest"), ""), setCode($("mcode"), $("mcodeAx"), text), $("mcos").textContent = "код задан, математика только читает его",
                            $("mroots").innerHTML = "", mathCode(text, $("mnear"))) : mathWord(text);
   try {
     let c = text;
     if (saved) {
-      c = saved.code; $("code").textContent = c; $("conf").textContent = "сохранённый результат слепого теста";
+      c = saved.code; setCode($("code"), $("codeAx"), c); $("conf").textContent = "сохранённый результат слепого теста";
       mark($("best"), saved.decoded.split(" (")[0], saved.en, altsOf(saved.decoded)); $("why").textContent = saved.decoded.includes("(") ? saved.decoded.slice(saved.decoded.indexOf("(")) : "";
     } else if (!API) {
-      $("code").textContent = code ? text : "—"; mark($("best"), ""); $("why").textContent = "модель не подключена";
+      setCode($("code"), $("codeAx"), code ? text : "—"); mark($("best"), ""); $("why").textContent = "модель не подключена";
     } else {
       if (!code) {
         busy(true, "модель кодирует…");
         const d = await call("encode", text);
-        c = d.code; $("code").textContent = c;
+        c = d.code; setCode($("code"), $("codeAx"), c);
         if ((d.warnings || []).length) $("warn").textContent = "код нарушает правила: " + d.warnings.join("; ");
         $("conf").textContent = d.confidence ? "уверенность модели: " + d.confidence + " (бывает завышена)" + (d.confusable && d.confusable.length ? "; можно спутать с: " + d.confusable.join(", ") : "") : "";
-        if ((d.tokens || []).length) { $("expl").hidden = false; d.tokens.forEach(t => row($("tokens"), [el("code", t.t), t.note])); }
-      } else $("code").textContent = c;
+        if ((d.tokens || []).length) { $("expl").hidden = false; d.tokens.forEach(t => row($("tokens"), [codeEl(t.t), t.note])); }
+      } else setCode($("code"), $("codeAx"), c);
       busy(true, "другая модель раскодирует вслепую…");
       const r = await call("decode", c);
       mark($("best"), r.best, code ? "" : text, r.alternatives);
@@ -293,7 +434,7 @@ fetch("data/examples.json").then(r=>r.json()).then(list=>{
   EX = list; const tb = $("examples");
   list.forEach(e => {
     const ok = same(e.decoded.split(" (")[0], e.en), part = altsOf(e.decoded).some(a => same(a, e.en));
-    const tr = row(tb, [e.en, el("code", e.code), el("span", e.decoded, ok ? "hit" : part ? "part" : "miss")], "ex");
+    const tr = row(tb, [e.en, codeEl(e.code), el("span", e.decoded, ok ? "hit" : part ? "part" : "miss")], "ex");
     tr.addEventListener("click", () => { $("inp").value = e.en; run(e.en, e); window.scrollTo({top: 0, behavior: "smooth"}); });
   });
 });
@@ -304,24 +445,28 @@ fetch("data/recipes.json").then(r=>r.json()).then(list=>{
   const draw = (q) => {
     const tb = $("dictRows"); tb.innerHTML = ""; q = (q||"").trim().toLowerCase();
     list.filter(e => !q || (e.en + " " + e.code).toLowerCase().includes(q)).forEach(e => {
-      const tr = row(tb, [e.en, el("code", e.code)], "ex");
+      const tr = row(tb, [e.en, codeEl(e.code)], "ex");
       tr.addEventListener("click", () => { $("inp").value = e.code; document.querySelector('nav button[data-t=demo]').click(); run(e.code); window.scrollTo({top: 0, behavior: "smooth"}); });
     });
   };
   draw(""); $("dq").addEventListener("input", e => draw(e.target.value));
 });
-fetch("data/roots.json").then(r=>r.json()).then(d=>{
+RDP.then(d=>{
   $("rootCount").textContent = d.counts.roots + " корней: " + d.counts.with_axis + " с осью, " + d.counts.without_axis + " без оси.";
   const draw = (q) => {
     const tb = $("rootRows"); tb.innerHTML = ""; q = (q||"").toLowerCase();
     d.roots.filter(r => !q || (r.name + " " + r.ru + " " + r.neg + " " + r.mid + " " + r.pos).toLowerCase().includes(q)).forEach(r => {
-      if (r.axis) row(tb, [el("code", r.name), r.neg, r.mid, r.pos]);
-      else { const tr = row(tb, [el("code", r.name), r.ru + " (без оси)", "", ""]); }
+      if (r.axis) row(tb, [codeEl(r.name), r.neg, r.mid, r.pos]);
+      else { const tr = row(tb, [codeEl(r.name), r.ru + " (без оси)", "", ""]); }
     });
   };
   draw(""); $("q").addEventListener("input", e => draw(e.target.value));
   $("noaxis").textContent = d.roots.filter(r => !r.axis).map(r => r.name).join(", ");
-  d.particles.forEach(p => row($("particles"), [el("code", p.name), p.role]));
+  d.particles.forEach(p => row($("particles"), [codeEl(p.name), p.role]));
+  const HOW = [["слоны", "THING(=+4) BIG(=+5) | o N+3"], ["не пришёл", "MOVE NEAR(=+4) | i T-2 M-5"], ["песок", "GRAIN(=0) THING(=-5) PART(=-5) | o"], ["испугаются", "FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4"], ["шесть", '"6"']];
+  const pick = (c) => { setCode($("howEx"), $("howExAx"), c); };
+  HOW.forEach(([ru, c], i) => { const b = el("button", ru, "ghost"); b.type = "button"; b.addEventListener("click", () => pick(c)); $("howPick").appendChild(b); });
+  setTimeout(() => pick(HOW[0][1]), 0);
   d.labels.forEach(l => row($("labels"), [el("code", l.name), l.what, l.range ? l.range[0] + " … " + l.range[1] : "без значения"]));
 });
 </script>
