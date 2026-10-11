@@ -197,23 +197,41 @@
       if (this.group) for (let i = 0; i < N; i++) if (this.group[i] !== i) out[i] = Math.max(out[i], out[this.group[i]]);
       return out;
     }
-    // пара через связку: оценки слитых корней обоих слов (scAll) + lam·связь с прочтениями второго слова,
-    // связь слова — его наибольший cos с одним из modWords (векторы Numberbatch несут связи ConceptNet: key ~ door, furniture ~ house)
+    // пара через связку: z(scAll) + lam·z(rel), rel слова — его наибольший cos с одним из modWords
+    // (векторы Numberbatch несут связи ConceptNet: key ~ door, furniture ~ house)
     pair(scAll, modWords, lam) {
       const N = this.words.length, D = this.dim, vs = modWords.map((w) => this.vec(w)).filter(Boolean), rel = new Float64Array(N);
       for (let i = 0; i < N; i++) {
         let b = -1;
         for (const v of vs) { let s = 0; for (let j = 0; j < D; j++) s += this.X[i * D + j] * v[j]; if (s > b) b = s; }
-        rel[i] = b / this.norm[i];
+        rel[i] = scAll[i] === -Infinity ? -Infinity : b / this.norm[i];
       }
-      const z = (a) => {
+      return Vocab.zsum(scAll, rel, lam);
+    }
+    static zsum(a, b, lam) {
+      const z = (x) => {
         let n = 0, m = 0, q = 0;
-        for (const t of a) if (t > -Infinity) { n++; m += t; }
-        m /= n; for (const t of a) if (t > -Infinity) q += (t - m) ** 2;
-        const s = Math.sqrt(q / n) || 1; return a.map((t) => (t > -Infinity ? (t - m) / s : -Infinity));
+        for (const t of x) if (t > -Infinity) { n++; m += t; }
+        m /= n; for (const t of x) if (t > -Infinity) q += (t - m) ** 2;
+        const s = Math.sqrt(q / n) || 1; return x.map((t) => (t > -Infinity ? (t - m) / s : -Infinity));
       };
-      const za = z(scAll), zr = z(rel);
-      return za.map((t, i) => t + lam * zr[i]);
+      const za = z(a), zb = z(b);
+      return za.map((t, i) => t + lam * zb[i]);
+    }
+    // cos каждого слова с центром слов words (среднее их векторов)
+    cosCenter(words) {
+      const N = this.words.length, D = this.dim, y = new Float64Array(D);
+      for (const w of words) { const v = this.vec(w); if (v) for (let j = 0; j < D; j++) y[j] += v[j]; }
+      let n = 0; for (const t of y) n += t * t; n = Math.sqrt(n) || 1;
+      const out = new Float64Array(N);
+      for (let i = 0; i < N; i++) { let s = 0; for (let j = 0; j < D; j++) s += this.X[i * D + j] * y[j]; out[i] = s / n / this.norm[i]; }
+      return out;
+    }
+    // z(sc) + lam·z(cos с центром words); убранные слова (−Infinity) остаются убранными (PRF, Reader.prf)
+    toward(sc, words, lam) {
+      const c = this.cosCenter(words);
+      for (let i = 0; i < c.length; i++) if (sc[i] === -Infinity) c[i] = -Infinity;
+      return Vocab.zsum(sc, c, lam);
     }
     // словоформы одной леммы (tool, tools) идут как одно слово: показывается лемма с оценкой лучшей формы, место считается по леммам
     top(sc, k = 10, skip) {
@@ -249,9 +267,11 @@
 
   // Чтение кода векторами: слова, часть речи, пары. Общее для сайта и проверочных скриптов (scripts/site/eval_math.js).
   // opt: posPen — штраф за чужую часть речи; pairK, pairLam — сколько прочтений уточняющего слова брать и с каким весом связи;
-  // modW — вес корней уточняющего слова в общем векторе (0: они уводят чтение от главного, по 107 парам слепых тестов место 203 → 112).
+  // modW — вес корней уточняющего слова в общем векторе (0: они уводят чтение от главного, по 107 парам слепых тестов место 203 → 112);
+  // pairN — сколько соседей слова кодер пробует вторым словом (Reader.encode);
+  // prfMu, prfK — PRF: сдвиг оценок к центру prfK лучших прочтений. Выключен: парам моделей помогает, а круг математики портит (docs/math.md, раздел 9).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.25, modW: 0, pairN: 15, graphW: 0, relW: {
+  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -275,6 +295,8 @@
     }
     // оценки слов для набора корней; form — часть речи (o/i/a/e) или "" (без штрафа)
     roots(S, v, form) { return this.V.adjust(this.V.scores(this.co.parts(S, v), this.mix), form || "", this.opt.posPen); }
+    // PRF: оценки сдвигаются к центру prfK лучших прочтений
+    prf(sc) { return this.opt.prfMu ? this.V.toward(sc, this.V.top(sc, this.opt.prfK).map((n) => n.word), this.opt.prfMu) : sc; }
     // прочтения одного уточняющего слова: слово в кавычках, если оно есть в словаре, иначе pairK лучших
     readings(text) {
       const q = (text.match(/"([^"]+)"/) || [])[1];
@@ -282,13 +304,13 @@
       const p = this.co.parse(text);
       return p.S.length ? this.V.top(this.roots(p.S, p.v, Reader.form(text)), this.opt.pairK).map((n) => n.word) : [];
     }
-    // оценки всех слов для кода: корни главного слова (+ modW·корни уточняющих) + pairLam·связь с прочтениями уточняющих слов (Vocab.pair)
+    // оценки всех слов для кода: корни главного слова (+ modW·корни уточняющих), PRF (если prfMu), + pairLam·связь с прочтениями уточняющих слов (Vocab.pair)
     // + graphW·связь по графу с учётом частицы (Vocab.graphScore)
     scores(code) {
       const ws = Reader.words(code), h = this.co.parse(ws[0].text);
       let parts = this.co.parts(h.S, h.v);
       if (this.opt.modW) for (const w of ws.slice(1)) { const p = this.co.parse(w.text); parts = parts.concat(this.co.parts(p.S, p.v).map((a) => a.map((t) => t * this.opt.modW))); }
-      const sc = this.V.adjust(this.V.scores(parts, this.mix), Reader.form(ws[0].text), this.opt.posPen);
+      const sc = this.prf(this.V.adjust(this.V.scores(parts, this.mix), Reader.form(ws[0].text), this.opt.posPen));
       const rd = ws.slice(1).map((w) => ({ link: w.link, words: this.readings(w.text) })), mods = rd.flatMap((r) => r.words);
       if (!mods.length) return sc;
       const out = this.V.pair(sc, mods, this.opt.pairLam), gw = this.opt.graphW;
@@ -301,7 +323,7 @@
     encode(word) {
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
-      const b = co.encode(x), base = co.format(b.S, b.v, "o"), sc = this.roots(b.S, b.v, ""), rank0 = V.rankIn(sc, word);
+      const b = co.encode(x), base = co.format(b.S, b.v, "o"), sc = this.prf(this.roots(b.S, b.v, "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "" };
       if (rank0 === 1) return out;
       for (const n of V.near(x, this.opt.pairN, word)) {

@@ -488,7 +488,7 @@ async function mathWord(word){
   await new Promise(r => setTimeout(r, 0));
   // часть речи слова неизвестна: без штрафа; слово не первое — кодер пробует пару «код PI второе слово» (Reader.encode)
   const rd = await reader(), r = co.encode(x), e = rd.encode(w);
-  const sc = e.mod ? rd.scores(e.code) : rd.roots(r.S, r.v, "");
+  const sc = e.mod ? rd.scores(e.code) : rd.prf(rd.roots(r.S, r.v, ""));
   setCode($("mcode"), $("mcodeAx"), e.code);
   const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
   $("mcos").textContent = T("cos")(r.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");
