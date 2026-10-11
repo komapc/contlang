@@ -14,3 +14,9 @@
 - **key не решается ни одним из 14 вариантов** (0/28, в тройке тоже 0): «орудие разъединения» читается как scissors / saw / hacksaw,
   «маленький твёрдый» — как pill / nail / chip, «внутрь + орудие» — как needle / container, `RULE` — как seal / gavel. Рецепт `INSIDE(=+4) CAN(=+4) DO(=+5)` — container / engine.
 - Наполнители (контроль): 143 из 224 первым.
+
+## По смысловой близости (sem.py → sem.md)
+
+Не «угадано ли слово», а cos ответа декодера со словом в полном Numberbatch. Ориентиры: key — lock 0,48, door 0,35, tool 0,25, pliers 0,21, scissors 0,14, needle 0,05; furniture — chair 0,47, timber 0,38, equipment 0,33, contents 0,12.
+key: лучший вариант 0,18 (pliers / staple remover), остальные 0,03–0,14 — ответы из семейства «орудие», но не рядом с ключом (ни lock, ни door не назван ни разу).
+furniture: 4 варианта 1,00 (слово названо), одним словом с `DO(=+5)` — equipment 0,33, с `LONG(=+5)` — timber / lumber 0,39.
