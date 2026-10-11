@@ -1,0 +1,10 @@
+1. knife | scissors, blade
+2. saw | file, chisel
+3. vehicle | cart, wheel
+4. sky | heaven, mountain
+5. restaurant | kitchen, cafeteria
+6. car | bicycle, vehicle
+7. rocks | stones, boulders
+8. elevator | lift, ladder
+9. library | archive, bookstore
+10. document | book, text

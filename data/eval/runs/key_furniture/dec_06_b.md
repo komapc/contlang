@@ -1,0 +1,10 @@
+1. sky | heaven, atmosphere
+2. storeroom | warehouse, storage
+3. knife | blade, cutter
+4. lift | elevator, hoist
+5. restaurant | cafe, canteen
+6. engine | motor, machine
+7. library | archive, bookshop
+8. document | text, book
+9. vehicle | transport, car
+10. hammer | mallet, bat

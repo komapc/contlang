@@ -1,0 +1,10 @@
+1. vehicle | car, engine
+2. sky | heaven, ceiling
+3. kitchen | restaurant, cafe
+4. library | archive, bookstore
+5. hammer | club, bat
+6. machine | engine, robot
+7. border | barrier, checkpoint
+8. furniture | equipment, belongings
+9. broom | brush, mop
+10. elevator | lift, crane

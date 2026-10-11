@@ -1,0 +1,10 @@
+1. skyscraper | tower, high-rise
+2. furniture | furnishings, fixtures
+3. knife | blade, cutter
+4. elevator | lift, hoist
+5. restaurant | diner, cafe
+6. container | vessel, receptacle
+7. library | archive, bookstore
+8. book | document, text
+9. vehicle | car, machine
+10. hammer | mallet, drill

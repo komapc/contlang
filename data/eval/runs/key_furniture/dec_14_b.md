@@ -1,0 +1,10 @@
+1. machine | engine, vehicle
+2. skeleton | bones, framework
+3. library | archive, repository
+4. kitchen | restaurant, canteen
+5. hammer | drill, punch
+6. mountain | summit, plateau
+7. vehicle | engine, motor
+8. needle | pin, plug
+9. lift | crane, elevator
+10. brush | broom, sponge

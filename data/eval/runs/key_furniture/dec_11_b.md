@@ -1,0 +1,10 @@
+1. vehicle | car, motorcycle
+2. coin | stamp, token
+3. rocks | stones, masonry
+4. brush | broom, sponge
+5. knife | blade, cutter
+6. book | document, text
+7. engine | machine, motor
+8. mountain | peak, summit
+9. restaurant | cafe, diner
+10. bullet | missile, arrow

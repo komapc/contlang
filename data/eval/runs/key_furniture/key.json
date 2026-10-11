@@ -1,0 +1,764 @@
+{
+ "K": [
+  "GRAIN(=+5) BIG(=-5) DO(=+5) | o",
+  "DO(=+5) JOIN(=-5) GRAIN(=+5) | o",
+  "DO(=+5) JOIN(=-5) TOUCH(=+4) | o",
+  "DO(=+5) RULE(=+4) JOIN(=-5) | o",
+  "DO(=+5) JOIN(=-5) BIG(=-5) | o",
+  "INSIDE(=+4) CAN(=+4) DO(=+5) | o",
+  "INSIDE(=+4) LONG(=+1) DO(=+5) | o",
+  "INSIDE(=+4) BIG(=-4) DO(=+5) | o",
+  "GRAIN(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=-5) | o",
+  "DO(=+5) JOIN(=-5) | o PI GRAIN(=+5) BIG(=-5) | o",
+  "GRAIN(=+5) BIG(=-4) | o PI DO(=+5) RULE(=+4) | o",
+  "DO(=+5) JOIN(=-5) | o PI DO(=+5) JOIN(=+5) | o",
+  "DO(=+5) JOIN(=-5) | o PI \"iron\" | o",
+  "DO(=+5) BIG(=-4) | o PI INSIDE(=+5) JOIN(=+5) | o"
+ ],
+ "F": [
+  "PART(=+5) THING(=-5) INSIDE(=+5) | o",
+  "PART(=+5) THING(=-5) MOVE(=-5) | o",
+  "PART(=+5) THING(=-5) BIG(=+3) | o",
+  "PART(=+5) THING(=-5) DO(=+5) | o",
+  "PART(=+5) THING(=-5) PLACE | o",
+  "PART(=+5) THING(=-5) BODY | o",
+  "DO(=+5) PART(=+5) INSIDE(=+5) | o",
+  "PART(=+5) THING(=-5) | o PI INSIDE(=+5) PLACE | o",
+  "PART(=+5) THING(=-5) | o PI BODY | o",
+  "PART(=+5) THING(=-5) | o PI MOVE(=-5) | o",
+  "PART(=+5) THING(=-5) | o PI GRAIN(=+5) | o",
+  "PART(=+5) THING(=-5) | o PI LONG(=+5) | o",
+  "PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o",
+  "DO(=+5) PART(=+5) | o PI PLACE INSIDE(=+5) LIVE | o"
+ ],
+ "sheets": {
+  "1": [
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "GRAIN(=+5) BIG(=-5) DO(=+5) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) DO(=+5) | o",
+    4
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "2": [
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) GRAIN(=+5) | o",
+    2
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI LONG(=+5) | o",
+    12
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ]
+  ],
+  "3": [
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) TOUCH(=+4) | o",
+    3
+   ],
+   [
+    "furniture",
+    "DO(=+5) PART(=+5) | o PI PLACE INSIDE(=+5) LIVE | o",
+    14
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ]
+  ],
+  "4": [
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) RULE(=+4) JOIN(=-5) | o",
+    4
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI INSIDE(=+5) PLACE | o",
+    8
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "5": [
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI MOVE(=-5) | o",
+    10
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) BIG(=-5) | o",
+    5
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "6": [
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) PLACE | o",
+    5
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "INSIDE(=+4) CAN(=+4) DO(=+5) | o",
+    6
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "7": [
+   [
+    "key",
+    "INSIDE(=+4) LONG(=+1) DO(=+5) | o",
+    7
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o",
+    13
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ]
+  ],
+  "8": [
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI BODY | o",
+    9
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "key",
+    "INSIDE(=+4) BIG(=-4) DO(=+5) | o",
+    8
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "9": [
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) MOVE(=-5) | o",
+    2
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "key",
+    "GRAIN(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=-5) | o",
+    9
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ]
+  ],
+  "10": [
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) | o PI GRAIN(=+5) BIG(=-5) | o",
+    10
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ]
+  ],
+  "11": [
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "key",
+    "GRAIN(=+5) BIG(=-4) | o PI DO(=+5) RULE(=+4) | o",
+    11
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) | o PI GRAIN(=+5) | o",
+    11
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "12": [
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) | o PI DO(=+5) JOIN(=+5) | o",
+    12
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "furniture",
+    "DO(=+5) PART(=+5) INSIDE(=+5) | o",
+    7
+   ]
+  ],
+  "13": [
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) JOIN(=-5) | o PI \"iron\" | o",
+    13
+   ],
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) BIG(=+3) | o",
+    3
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ]
+  ],
+  "14": [
+   [
+    "machine",
+    "THING(=-5) MOVE DO | o",
+    0
+   ],
+   [
+    "furniture",
+    "PART(=+5) THING(=-5) BODY | o",
+    6
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI INSIDE(=+5) JOIN(=+5) | o",
+    14
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ]
+  ]
+ }
+}

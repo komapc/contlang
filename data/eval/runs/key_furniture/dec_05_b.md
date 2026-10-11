@@ -1,0 +1,10 @@
+1. furniture | fixtures, equipment
+2. brush | broom, sweeper
+3. book | document, text
+4. elevator | lift, hoist
+5. library | archive, bookstore
+6. mountain | skyscraper, peak
+7. scissors | shears, clippers
+8. vehicle | machine, engine
+9. restaurant | cafe, canteen
+10. knife | blade, scalpel

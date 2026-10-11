@@ -1,0 +1,10 @@
+1. knife | scissors, blade
+2. hacksaw | saw, shears
+3. machine | engine, device
+4. mountain | hill, peak
+5. restaurant | cafe, diner
+6. car | vehicle, transport
+7. buildings | rocks, city
+8. elevator | lift, crane
+9. library | archive, bookshop
+10. book | text, document

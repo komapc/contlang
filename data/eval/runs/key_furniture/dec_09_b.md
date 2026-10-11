@@ -1,0 +1,10 @@
+1. library | archive, bookshelf
+2. vehicle | machine, engine
+3. furniture | equipment, stones
+4. elevator | lift, crane
+5. knife | blade, scissors
+6. kitchen | canteen, restaurant
+7. machine | engine, device
+8. mountain | plateau, summit
+9. chip | shard, splinter
+10. brush | broom, mop

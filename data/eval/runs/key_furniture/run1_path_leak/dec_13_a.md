@@ -1,0 +1,10 @@
+1. knife | saw, blade
+2. hacksaw | saw, shears
+3. machine | engine, motor
+4. sky | heaven, ceiling
+5. kitchen | restaurant, canteen
+6. vehicle | car, engine
+7. furniture | equipment, things
+8. elevator | lift, hoist
+9. library | archive, bookshop
+10. book | document, text

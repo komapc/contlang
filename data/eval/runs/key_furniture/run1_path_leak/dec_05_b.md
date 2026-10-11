@@ -1,0 +1,10 @@
+1. furniture | fixtures, equipment
+2. slipper | shoe, sandal
+3. document | book, text
+4. lift | elevator, hoist
+5. library | archive, bookshop
+6. mountain | sky, heaven
+7. scissors | clippers, nippers
+8. vehicle | car, engine
+9. restaurant | kitchen, canteen
+10. knife | blade, cutter

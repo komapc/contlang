@@ -1,0 +1,10 @@
+1. robot | machine, engine
+2. skeleton | bones, remains
+3. library | archive, bookshelf
+4. restaurant | cafe, canteen
+5. drill | hammer, saw
+6. sky | heaven, heights
+7. vehicle | car, transport
+8. screwdriver | pliers, awl
+9. elevator | lift, crane
+10. brush | sponge, broom

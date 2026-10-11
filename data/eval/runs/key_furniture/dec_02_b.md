@@ -1,0 +1,10 @@
+1. brush | broom, sponge
+2. hammer | drill, mallet
+3. document | manuscript, book
+4. saw | chisel, axe
+5. library | archive, bookshop
+6. kitchen | restaurant, cafe
+7. vehicle | car, engine
+8. sky | heaven, ceiling
+9. lumber | timber, logs
+10. machine | engine, robot

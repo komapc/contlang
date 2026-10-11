@@ -1,0 +1,10 @@
+1. vehicle | machine, engine
+2. skeleton | bones, framework
+3. library | archive, collection
+4. restaurant | cafe, canteen
+5. hammer | mallet, drill
+6. mountain | peak, summit
+7. engine | motor, machine
+8. chip | microchip, circuit
+9. elevator | lift, crane
+10. brush | broom, sponge

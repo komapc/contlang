@@ -1,0 +1,10 @@
+1. vehicle | machine, engine
+2. mountain | summit, height
+3. kitchen | restaurant, canteen
+4. library | archive, bookshop
+5. gun | weapon, hammer
+6. machine | engine, device
+7. sanction | penalty, embargo
+8. furniture | contents, belongings
+9. brush | broom, fan
+10. lift | elevator, crane

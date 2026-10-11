@@ -1,0 +1,10 @@
+1. mountain | peak, sky
+2. kitchen | stove, oven
+3. broom | brush, mop
+4. knife | scissors, blade
+5. skeleton | bones, frame
+6. hammer | whip, bat
+7. book | document, manuscript
+8. machine | engine, vehicle
+9. needle | pin, tweezers
+10. elevator | lift, crane

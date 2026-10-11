@@ -1,0 +1,10 @@
+1. vehicle | machine, engine
+2. skeleton | framework, bones
+3. library | archive, collection
+4. restaurant | canteen, cafe
+5. hammer | bat, whip
+6. sky | heaven, loft
+7. engine | motor, vehicle
+8. fastener | pin, clip
+9. elevator | lift, crane
+10. brush | sponge, mop

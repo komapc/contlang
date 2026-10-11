@@ -1,0 +1,10 @@
+1. contents | furniture, belongings
+2. knife | scissors, blade
+3. restaurant | kitchen, cafeteria
+4. hammer | whip, bat
+5. library | archive, bookstore
+6. machine | engine, vehicle
+7. chisel | cutter, pliers
+8. lift | elevator, hoist
+9. document | text, essay
+10. brush | broom, sponge

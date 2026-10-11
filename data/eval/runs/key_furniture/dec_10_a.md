@@ -1,0 +1,10 @@
+1. contents | insides, innards
+2. knife | blade, cutter
+3. restaurant | cafe, diner
+4. hammer | mallet, striker
+5. library | archive, bookshop
+6. vehicle | machine, engine
+7. shredder | grater, crusher
+8. hoist | crane, lift
+9. book | document, manuscript
+10. brush | sweep, mop
