@@ -8,6 +8,7 @@ math.json: корни (порядок roots.yaml), признак оси, обу
 (s, вес не главных, topr), хабовость слов для декодера «смесь» и хеш полюсов, чтобы build.py --check заметил устаревание.
 vocab.bin: N частых слов и весь список data/wordlist_en_x5.tsv × 300 int8 (единичный вектор × 127), слова — в math.json,
 по частоте (порядок словаря GloVe wiki-gigaword), только те, что есть в Numberbatch.
+После пересборки — scripts/site/build_words.py (части речи и леммы тех же слов, site/data/words.json).
 """
 import gzip
 import json

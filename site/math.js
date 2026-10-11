@@ -158,19 +158,60 @@
       }
       return res;
     }
-    top(sc, k = 10, skip) {
-      const idx = [];
-      for (let i = 0; i < sc.length; i++) {
-        if (skip && this.words[i] === skip) continue;
-        if (idx.length < k || sc[i] > sc[idx[idx.length - 1]]) { idx.push(i); idx.sort((a, b) => sc[b] - sc[a]); if (idx.length > k) idx.pop(); }
+    // сведения о словах (site/data/words.json): часть речи по WordNet, лемма, служебные слова
+    setMeta(meta) {
+      const N = this.words.length;
+      this.pos = new Float32Array(N * 4).fill(-1);
+      meta.pos.forEach((p, i) => { if (p) for (let j = 0; j < 4; j++) this.pos[i * 4 + j] = Number(p[j]) / 9; });
+      this.group = Int32Array.from(meta.lemma, (l, i) => (l >= 0 ? l : i));
+      this.stop = new Uint8Array(N); meta.stop.forEach((i) => { this.stop[i] = 1; });
+    }
+    // поправка оценок под форму кода: служебные слова убираются, слово не той части речи теряет pen·(1 − доля смыслов этой части речи)
+    adjust(sc, form, pen) {
+      if (!this.pos) return sc;
+      const j = "oiae".indexOf(form), out = Float64Array.from(sc);
+      for (let i = 0; i < out.length; i++) {
+        if (this.stop[i]) { out[i] = -Infinity; continue; }
+        if (j >= 0 && pen && this.pos[i * 4] >= 0) out[i] -= pen * (1 - this.pos[i * 4 + j]);
       }
-      return idx.map((i) => ({ word: this.words[i], score: sc[i] }));
+      return out;
+    }
+    // пара через PI: оценки слитых корней обоих слов (scAll) + lam·связь с прочтениями второго слова,
+    // связь слова — его наибольший cos с одним из modWords (векторы Numberbatch несут связи ConceptNet: key ~ door, furniture ~ house)
+    pair(scAll, modWords, lam) {
+      const N = this.words.length, D = this.dim, vs = modWords.map((w) => this.vec(w)).filter(Boolean), rel = new Float64Array(N);
+      for (let i = 0; i < N; i++) {
+        let b = -1;
+        for (const v of vs) { let s = 0; for (let j = 0; j < D; j++) s += this.X[i * D + j] * v[j]; if (s > b) b = s; }
+        rel[i] = b / this.norm[i];
+      }
+      const z = (a) => {
+        let n = 0, m = 0, q = 0;
+        for (const t of a) if (t > -Infinity) { n++; m += t; }
+        m /= n; for (const t of a) if (t > -Infinity) q += (t - m) ** 2;
+        const s = Math.sqrt(q / n) || 1; return a.map((t) => (t > -Infinity ? (t - m) / s : -Infinity));
+      };
+      const za = z(scAll), zr = z(rel);
+      return za.map((t, i) => t + lam * zr[i]);
+    }
+    // словоформы одной леммы (tool, tools) идут как одно слово: показывается лемма с оценкой лучшей формы, место считается по леммам
+    top(sc, k = 10, skip) {
+      const best = new Map();
+      for (let i = 0; i < sc.length; i++) {
+        if ((skip && this.words[i] === skip) || sc[i] === -Infinity) continue;
+        const g = this.group ? this.group[i] : i, b = best.get(g);
+        if (b == null || sc[i] > sc[b]) best.set(g, i);
+      }
+      return [...best.entries()].sort((a, b) => sc[b[1]] - sc[a[1]]).slice(0, k).map(([g, i]) => ({ word: this.words[g], score: sc[i] }));
     }
     rankIn(sc, w) {
       const t = this.index.get(w);
       if (t == null) return null;
+      const G = (i) => (this.group ? this.group[i] : i), gt = G(t), best = new Map();
+      for (let i = 0; i < sc.length; i++) { const g = G(i); if (!best.has(g) || sc[i] > best.get(g)) best.set(g, sc[i]); }
+      const st = Math.max(sc[t], best.get(gt));
       let r = 1;
-      for (let i = 0; i < sc.length; i++) if (i !== t && sc[i] > sc[t]) r++;
+      for (const [g, s] of best) if (g !== gt && s > st) r++;
       return r;
     }
   }

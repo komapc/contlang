@@ -457,8 +457,8 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeTip(); 
 // ---- математика: данные грузятся при первом использовании (~3,5 МБ)
 let M = null, CO = null;
 function loadMath(){
-  if (!M) M = Promise.all([fetch("data/math.json").then(r => r.json()), fetch("data/vocab.bin").then(r => r.arrayBuffer())])
-    .then(([m, buf]) => ({m, V: new MincoMath.Vocab(m.words, new Int8Array(buf), m.dim)}));
+  if (!M) M = Promise.all([fetch("data/math.json").then(r => r.json()), fetch("data/vocab.bin").then(r => r.arrayBuffer()), fetch("data/words.json").then(r => r.json())])
+    .then(([m, buf, meta]) => { const V = new MincoMath.Vocab(m.words, new Int8Array(buf), m.dim); V.setMeta(meta); return {m, V}; });
   return M;
 }
 async function coder(){
@@ -496,20 +496,38 @@ function parseAll(co, code){
   String(code).split(/\bPI\b/).forEach(w => { const p = co.parse(w); S.push(...p.S); v.push(...p.v); unknown.push(...p.unknown); });
   return { S, v, unknown };
 }
+const formOf = (word) => ((String(word).split("|")[1] || "").trim().match(/^[oiae]\b/) || [""])[0];
+// оценки слов для кода: слова через PI — слитые корни + PAIR_LAM·связь с PAIR_K прочтениями уточняющих слов
+// (слово в кавычках, если оно есть в словаре, и есть его прочтение)
+const PAIR_K = 10, PAIR_LAM = 0.5;
+async function codeScores(co, V, code){
+  const ws = String(code).split(/\bPI\b/), p = parseAll(co, code);
+  const sc = await decodeScores(co, p.S, p.v, formOf(ws[0]));
+  if (ws.length < 2) return sc;
+  const mods = [];
+  for (const w of ws.slice(1)) {
+    const q = (w.match(/"([^"]+)"/) || [])[1], pw = co.parse(w);
+    if (q && V.index.has(q.toLowerCase())) mods.push(q.toLowerCase());
+    else if (pw.S.length) mods.push(...V.top(await decodeScores(co, pw.S, pw.v, formOf(w)), PAIR_K).map(n => n.word));
+  }
+  return mods.length ? V.pair(sc, mods, PAIR_LAM) : sc;
+}
 // прочтение кода векторами; word — исходное слово: возвращает его место среди прочтений
 async function mathCode(code, target, word){
   const {co, V} = await coder();
   const p = parseAll(co, code);
   if (!p.S.length) { target.textContent = T("noRoots"); return null; }
-  const sc = await decodeScores(co, p.S, p.v), w = (word || "").trim().toLowerCase(), rk = w ? V.rankIn(sc, w) : null;
+  const sc = await codeScores(co, V, code), w = (word || "").trim().toLowerCase(), rk = w ? V.rankIn(sc, w) : null;
   const top = V.top(sc, 6);
   target.textContent = near(top, 6) + (p.unknown.length ? " (" + T("unknown") + p.unknown.join(", ") + ")" : "") + (rk ? T("place")(rk) : "");
   return { rank: rk, top: top.map(n => n.word).filter(x => x !== w) };
 }
-// оценки всех слов для кода (см. math.js Vocab.scores)
-async function decodeScores(co, S, v){
+// оценки всех слов для кода (см. math.js Vocab.scores): служебные слова убраны, словоформы одной леммы — одно слово;
+// form — часть речи кода (o/i/a/e): слово другой части речи по WordNet теряет POS_PEN·(1 − доля таких смыслов)
+const POS_PEN = 1.5;
+async function decodeScores(co, S, v, form){
   const {m, V} = await loadMath();
-  return V.scores(co.parts(S, v), m.mix);
+  return V.adjust(V.scores(co.parts(S, v), m.mix), form || "", POS_PEN);
 }
 
 // ---- один клик: модель кодирует, другая модель раскодирует вслепую; математика параллельно
@@ -556,7 +574,7 @@ async function run(text, saved){
 }
 
 // детектор: слепой декодер не нашёл слово или векторы ставят его дальше FAR-го места → модель добавляет второе слово
-// (по векторам порог грубый: у 14 % проверенных рецептов место > 1000, поэтому главный признак — слепое прочтение)
+// (по векторам порог грубый: у 4 % проверенных рецептов место > 1000, поэтому главный признак — слепое прочтение)
 const FAR = 1000;
 async function secondWord(text, c, r){
   const m = await mathCode(c, $("llmMath"), text);

@@ -106,7 +106,12 @@ def math_stale():
     m = json.loads(p.read_text(encoding="utf8"))
     order = [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()]
     ok = m["names"] == order and m["poles_hash"] == spec.poles_hash()
-    return [] if ok else [str(p) + " (запустите .venv/bin/python scripts/site/build_math.py)"]
+    if not ok:
+        return [str(p) + " (запустите .venv/bin/python scripts/site/build_math.py, затем build_words.py)"]
+    w = REPO / "site" / "data" / "words.json"  # части речи и леммы по порядку слов math.json
+    if not w.exists() or len(json.loads(w.read_text(encoding="utf8"))["pos"]) != len(m["words"]):
+        return [str(w) + " (запустите .venv/bin/python scripts/site/build_words.py)"]
+    return []
 
 
 def main():
