@@ -1,0 +1,170 @@
+{
+"GOOD": [
+"good"
+],
+"BIG": [
+"big"
+],
+"NEAR": [
+"near"
+],
+"ABOVE": [
+"above"
+],
+"LIVE": [
+"live"
+],
+"SAME": [
+"same"
+],
+"TIME": [
+"time",
+"now"
+],
+"INSIDE": [
+"inside"
+],
+"PART": [
+"part"
+],
+"SIDE": [
+"side"
+],
+"KNOW": [
+"know"
+],
+"WANT": [
+"want"
+],
+"HEAT": [
+"heat",
+"lukewarm"
+],
+"BEGIN": [
+"begin",
+"ongoing",
+"middle"
+],
+"GIVE": [
+"give",
+"exchange"
+],
+"TOUCH": [
+"touch"
+],
+"SEX": [
+"sex"
+],
+"HAPPEN": [
+"happen",
+"event"
+],
+"THINK": [
+"think"
+],
+"CAN": [
+"can"
+],
+"MANY": [
+"many"
+],
+"SOMEONE": [
+"someone"
+],
+"THING": [
+"thing",
+"plant"
+],
+"MOVE": [
+"move",
+"walk"
+],
+"FEEL": [
+"feel"
+],
+"RULE": [
+"rule"
+],
+"CHANGE": [
+"change"
+],
+"ART": [
+"art",
+"skill",
+"craft",
+"discipline"
+],
+"JOIN": [
+"join",
+"composition",
+"unchanged"
+],
+"VALUE": [
+"value",
+"price"
+],
+"CARE": [
+"care"
+],
+"TONE": [
+"tone"
+],
+"MOOD": [
+"mood",
+"serious",
+"calm"
+],
+"CONSUME": [
+"consume",
+"exchange"
+],
+"ABSTRACT": [
+"abstract"
+],
+"MEASURE": [
+"measure",
+"level",
+"degree",
+"extent"
+],
+"LONG": [
+"long",
+"stick",
+"rod",
+"twig"
+],
+"SAY": [
+"say",
+"speech"
+],
+"GRAIN": [
+"grain",
+"loose",
+"granular",
+"sand",
+"flour"
+],
+"FIGHT": [
+"fight",
+"brawl",
+"quarrel",
+"conflict"
+],
+"DO": [
+"do",
+"action",
+"make"
+],
+"BODY": [
+"body"
+],
+"SEE": [
+"see"
+],
+"PLACE": [
+"place"
+],
+"TEXT": [
+"text"
+]
+}

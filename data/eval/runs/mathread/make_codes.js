@@ -2,10 +2,13 @@
 //   node data/eval/runs/mathread/make_codes.js dev [вариант] [папка декодеров]
 // codes_<набор>_<вариант>.json: [{w, form, code, pair, rank, top, cos1, roots: [{name, single}], ...}]; sheet_NN.md — 20 кодов в случайном порядке, key.json — слова листов.
 const fs = require("fs"), path = require("path");
-const D = __dirname, { V, co, m, MM } = require(path.join(D, "../../../../scripts/site/eval_math.js"));
+const D = __dirname, E = require(path.join(D, "../../../../scripts/site/eval_math.js")), { V, m, MM } = E;
+// DICT=путь.json ({C, A, hub}) — другой словарь корней (data/eval/runs/anchor)
+const dict = process.env.DICT && JSON.parse(fs.readFileSync(process.env.DICT));
+const co = dict ? new MM.Coder({ C: dict.C, A: dict.A }, m.has_axis, m.names, m) : E.co;
 const [set = "dev", variant = "base", out] = process.argv.slice(2);
 const words = JSON.parse(fs.readFileSync(path.join(D, "words.json")))[set];
-const rd = new MM.Reader(co, V, m.mix, {});
+const rd = new MM.Reader(co, V, dict ? { ...m.mix, hub: dict.hub } : m.mix, {});
 const cos = (a, b) => { const x = V.vec(a), y = V.vec(b); if (!x || !y) return 0; let s = 0; for (let j = 0; j < x.length; j++) s += x[j] * y[j]; return s; };
 const res = words.map(([w, form]) => {
   const e = rd.encode(w, form), sc = rd.scores(e.code), top = V.top(sc, 5).map((t) => t.word), x = V.vec(w), sg = co.singles(x);

@@ -1,0 +1,20 @@
+1. RULE(=+5) ABSTRACT(=+1) BEGIN(=+2) | o
+2. MOOD(=-1) VALUE(=+3) CAN(=-2) | a
+3. MEASURE(=+1) CARE(=-2) NEAR(=+1) | e
+4. SEX(=0) LIVE(=-1) TIME(=-1) | o
+5. SIDE(=+2) TIME(=+3) RULE(=0) | o
+6. CHANGE(=0) TIME(=-1) ABOVE(=-1) | o
+7. THINK(=+1) WANT(=-2) CAN(=+2) | i PI SEE CONSUME(=-2) | o
+8. RULE(=0) PART(=+3) DO(=-2) | a
+9. SAME(=+2) MEASURE(=+3) FEEL(=-2) | a
+10. BEGIN(=0) RULE(=+1) ABSTRACT(=0) | a
+11. NEAR(=+2) CONSUME(=+3) ABSTRACT(=-2) | o
+12. MOOD(=+2) CAN(=+5) ART(=-4) | a
+13. CHANGE(=+1) ART(=-2) ABOVE(=+4) | i
+14. ABSTRACT(=-2) PLACE INSIDE(=+2) | o
+15. MOVE(=0) CARE(=+3) SAME(=+2) | i
+16. CAN(=+1) GIVE(=+2) RULE(=+2) | a
+17. NEAR(=+2) VALUE(=-4) CONSUME(=+5) | o
+18. SAME(=0) LONG(=-4) THINK(=+4) | o
+19. GRAIN(=-2) MOVE(=+1) BODY | i
+20. BODY LIVE(=+4) WANT(=-4) | a

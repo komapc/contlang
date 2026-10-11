@@ -1,0 +1,20 @@
+1. food | meal, bread
+2. scale | extent, size
+3. normally | ordinarily, neutrally
+4. tank | military vehicle, armored car
+5. rudely | harshly, curtly
+6. money | currency, coin
+7. breakfast | snack, meal
+8. careless | heedless, unaware
+9. unfortunate | sad, regrettable
+10. price | fee, rate
+11. still | unchanged, yet
+12. contain | include, hold
+13. forecast | predict, estimate
+14. friend | companion, ally
+15. hopeful | optimistic, cheerful
+16. keep | retain, maintain
+17. adjacent | nearby, neighboring
+18. quarrel | brawl, dispute
+19. official | clerk, administrator
+20. large | big, major

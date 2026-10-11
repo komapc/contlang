@@ -1,0 +1,20 @@
+1. meat | food, prey
+2. effect | result, impact
+3. individually | separately, singly
+4. bat | club, hammer
+5. cautiously | warily, gingerly
+6. depreciation | devaluation, decline
+7. meal | food, snack
+8. careless | negligent, unaware
+9. artistic | creative, cultural
+10. donation | gift, contribution
+11. steadily | firmly, constantly
+12. assemble | install, gather
+13. cool | chill, warm up
+14. manners | etiquette, courtesy
+15. hopeful | optimistic, eager
+16. trade | barter, negotiate
+17. adjacent | adjoining, neighbouring
+18. grievance | complaint, nuisance
+19. official | administrator, clerk
+20. dangerous | risky, hazardous

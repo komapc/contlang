@@ -1,0 +1,20 @@
+1. statute | charter, decree
+2. sick | ill, unwell
+3. once | formerly, previously
+4. person | human, being
+5. plan | schedule, agenda
+6. news | update, report
+7. grant | scholarship, subsidy
+8. technical | mechanical, engineering
+9. moderate | mild, average
+10. regular | routine, consistent
+11. street food | snack, fast food
+12. playful | cheerful, lighthearted
+13. refund | reimbursement, return
+14. room | interior, chamber
+15. maintain | keep, preserve
+16. generous | giving, open-handed
+17. snack | bite, treat
+18. thread | argument, idea
+19. leak | drip, spill
+20. stubborn | reluctant, obstinate

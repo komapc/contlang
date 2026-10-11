@@ -1,0 +1,20 @@
+1. food | meat, meal
+2. scale | extent, magnitude
+3. alone | solo, separately
+4. tank | chariot, war vehicle
+5. coldly | curtly, bluntly
+6. money | currency, coins
+7. appetizer | breakfast, starter
+8. ignorant | unaware, careless
+9. serious | important, grave
+10. fee | payment, rate
+11. firmly | steadily, still
+12. map | locate, survey
+13. age | ripen, cool
+14. friend | companion, peer
+15. optimistic | hopeful, cheerful
+16. ponder | consider, reflect
+17. adjacent | nearby, neighboring
+18. violence | brawl, feud
+19. official | clerk, administrator
+20. volume | magnitude, quantity

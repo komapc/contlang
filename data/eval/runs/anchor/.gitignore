@@ -1,0 +1,3 @@
+cv_*.json
+dict_*.json
+!dict_g_learned_3_0.2.json

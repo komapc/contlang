@@ -1,0 +1,20 @@
+1. decree | verdict, statute
+2. unaffordable | costly, expensive
+3. roughly | approximately, about
+4. embryo | corpse, fetus
+5. future | successor, prospect
+6. fall | drop, decline
+7. display | exhibition, screen
+8. collective | joint, cooperative
+9. steady | even, equal
+10. ongoing | current, continuing
+11. food | meal, snack
+12. convenient | handy, easy
+13. upgrade | raise, elevate
+14. room | interior, house
+15. tread | step, walk
+16. generous | charitable, available
+17. fast food | snack, cafeteria
+18. thread | string, line
+19. sweat | bleed, drip
+20. healthy | vigorous, fit
