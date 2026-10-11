@@ -1,0 +1,322 @@
+[
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=+4) | o PI INSIDE(=+5) THING(=-5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE ABOVE(=+5) | o PI \"Equus\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "leash",
+  "code": "LONG(=-5) JOIN(=+5) DO(=+5) | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "pillow",
+  "code": "TOUCH(=-5) THING(=-5) | o PI BODY ABOVE(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) BIG(=-4) THING(=-5) | o PI VALUE | o",
+  "variant": "P"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "kennel",
+  "code": "PLACE INSIDE(=+5) LIVE | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "cork",
+  "code": "JOIN(=+5) INSIDE(=+5) | o PI CONSUME(=+5) GRAIN(=-3) | o",
+  "variant": "P"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "collar",
+  "code": "LONG(=-5) JOIN(=+5) ABOVE(=+3) | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "hive",
+  "code": "PLACE INSIDE(=+5) LIVE | o PI PART(=+5) \"Apis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "stable",
+  "code": "PLACE INSIDE(=+5) THING(=+4) | o PI \"Equus\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "shoelace",
+  "code": "LONG(=-5) JOIN(=+5) | o PI INSIDE(=+5) BODY ABOVE(=-5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "frame",
+  "code": "SIDE(=+5) JOIN(=+5) | o PI SEE ART(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "cradle",
+  "code": "BIG(=-4) PLACE LIVE(=-2) | o PI SOMEONE BIG(=-4) TIME(=-5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) GRAIN(=+5) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "lid",
+  "code": "PART(=-2) ABOVE(=+5) JOIN(=-5) | o PI HEAT(=+5) INSIDE(=+5) THING(=-5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE ABOVE(=+5) JOIN(=+5) | o PI \"Equus\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "leash",
+  "code": "LONG(=-5) DO(=+5) | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "pillow",
+  "code": "TOUCH(=-5) THING(=-5) | o PI ABOVE(=+5) BODY | o",
+  "variant": "P"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) BIG(=-4) | o PI GIVE(=+5) VALUE(=+3) | o",
+  "variant": "P"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) TOUCH(=-5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "kennel",
+  "code": "PLACE INSIDE(=+5) BIG(=-4) | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "cork",
+  "code": "THING(=0) JOIN(=+5) | o PI INSIDE(=+5) THING(=-5) GRAIN(=-3) | o",
+  "variant": "P"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "collar",
+  "code": "LONG(=-5) JOIN(=+5) | o PI \"Canis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "hive",
+  "code": "PLACE INSIDE(=+5) MANY(=+5) | o PI \"Apis\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "stable",
+  "code": "PLACE INSIDE(=+5) THING(=+4) | o PI \"Equus\" | o",
+  "variant": "P"
+ },
+ {
+  "word": "shoelace",
+  "code": "LONG(=-5) DO(=+5) | o PI JOIN(=+5) BODY | o",
+  "variant": "P"
+ },
+ {
+  "word": "frame",
+  "code": "PART(=-2) JOIN(=+5) | o PI SEE THING(=-5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "cradle",
+  "code": "PLACE LIVE(=-2) BIG(=-4) | o PI BIG(=-5) LIVE(=+5) | o",
+  "variant": "P"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) TOUCH(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "F"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) PART(=+2) JOIN(=-5) | o FOR INSIDE(=+5) HEAT(=+5) DO(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\"",
+  "variant": "F"
+ },
+ {
+  "word": "leash",
+  "code": "LONG(=-5) JOIN(=+5) MOVE | o FOR \"Canis\"",
+  "variant": "F"
+ },
+ {
+  "word": "pillow",
+  "code": "TOUCH(=-5) DO(=+5) | o FOR PLACE LIVE(=-2) | o",
+  "variant": "F"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) BIG(=-4) | o FOR VALUE(=+5) GIVE | o",
+  "variant": "F"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) DO(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "kennel",
+  "code": "PLACE INSIDE(=+5) BIG(=-4) | o FOR \"Canis\"",
+  "variant": "F"
+ },
+ {
+  "word": "cork",
+  "code": "TOUCH(=-5) JOIN(=+5) INSIDE(=+5) | o FOR INSIDE(=+5) LONG(=+3) DO(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) PART(=+2) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "collar",
+  "code": "LONG(=-5) JOIN(=+5) INSIDE(=+5) | o FOR \"Canis\"",
+  "variant": "F"
+ },
+ {
+  "word": "hive",
+  "code": "PLACE INSIDE(=+5) LIVE | o FOR \"Apis\" PART(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "stable",
+  "code": "PLACE INSIDE(=+5) MOVE(=-5) | o FOR \"Equus\"",
+  "variant": "F"
+ },
+ {
+  "word": "shoelace",
+  "code": "LONG(=-5) JOIN(=+5) | o FOR DO(=+5) BODY ABOVE(=-5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "frame",
+  "code": "SIDE(=+5) PART(=-2) JOIN(=+5) | o FOR SEE ART(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "cradle",
+  "code": "PLACE LIVE(=-2) BIG(=-4) | o FOR SOMEONE BIG(=-5) LIVE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) GRAIN(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "lid",
+  "code": "PART(=-2) ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\" | o",
+  "variant": "F"
+ },
+ {
+  "word": "leash",
+  "code": "LONG(=-5) DO(=+5) | o FOR \"Canis\" | o",
+  "variant": "F"
+ },
+ {
+  "word": "pillow",
+  "code": "TOUCH(=-5) DO(=+5) | o FOR BODY ABOVE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "wallet",
+  "code": "DO(=+5) INSIDE(=+5) BIG(=-4) | o FOR VALUE | o",
+  "variant": "F"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) DO(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "kennel",
+  "code": "PLACE LIVE(=+5) BIG(=-4) | o FOR \"Canis\" | o",
+  "variant": "F"
+ },
+ {
+  "word": "cork",
+  "code": "PART(=-2) JOIN(=+5) INSIDE(=+5) | o FOR DO(=+5) INSIDE(=+5) GRAIN(=-3) | o",
+  "variant": "F"
+ },
+ {
+  "word": "sheath",
+  "code": "DO(=+5) INSIDE(=+5) TOUCH(=-5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "collar",
+  "code": "LONG(=-5) JOIN(=+5) | o FOR BODY LONG(=-5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "hive",
+  "code": "PLACE LIVE(=+5) PART(=+5) | o FOR \"Apis\" | o",
+  "variant": "F"
+ },
+ {
+  "word": "stable",
+  "code": "PLACE LIVE(=+5) BIG(=+3) | o FOR \"Equus\" | o",
+  "variant": "F"
+ },
+ {
+  "word": "shoelace",
+  "code": "LONG(=-5) TOUCH(=-5) DO(=+5) | o FOR DO(=+5) ABOVE(=-5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "frame",
+  "code": "DO(=+5) PART(=-2) LONG(=+3) | o FOR SEE ART(=+5) | o",
+  "variant": "F"
+ },
+ {
+  "word": "cradle",
+  "code": "PLACE LIVE(=-2) BIG(=-4) | o FOR BEGIN(=-4) THING(=+4) BIG(=-5) | o",
+  "variant": "F"
+ }
+]

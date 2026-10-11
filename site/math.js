@@ -176,6 +176,27 @@
       }
       return out;
     }
+    // связи ConceptNet (graph.json из scripts/site/build_graph.py; на сайте не грузится): для каждого слова — [сосед, отношение, вес, направление: 1 — слово →, −1 — ← слово]
+    setGraph(g) {
+      this.rel = g.rel; this.adj = Array.from(this.words, () => []);
+      for (const [a, b, r, w] of g.edges) { this.adj[a].push([b, r, w, 1]); this.adj[b].push([a, r, w, -1]); }
+    }
+    // связь каждого слова с modWords по графу: max по m из modWords и рёбрам (w, m) веса relW[отношение+направление]·вес·decay(место m)
+    // relW: {"UsedFor>": 1, "PartOf>": 1, "HasA<": 1, "RelatedTo": 0.5, ...}; «>» — слово → m, «<» — m → слово; без стрелки — любое направление
+    graphScore(modWords, relW) {
+      const N = this.words.length, out = new Float64Array(N);
+      if (!this.adj) return out;
+      modWords.forEach((mw, k) => {
+        const t = this.index.get(mw); if (t == null) return;
+        const g = this.group ? this.group[t] : t, decay = 1 / (1 + k / 3);
+        for (const [b, r, w, dir] of this.adj[g]) {
+          const name = this.rel[r], rw = relW[name] ?? relW[name + (dir === 1 ? "<" : ">")] ?? 0;   // ребро g → b: для b это «m → слово»
+          if (rw) out[b] = Math.max(out[b], rw * Math.min(w, 4) / 4 * decay);
+        }
+      });
+      if (this.group) for (let i = 0; i < N; i++) if (this.group[i] !== i) out[i] = Math.max(out[i], out[this.group[i]]);
+      return out;
+    }
     // пара через PI: оценки слитых корней обоих слов (scAll) + lam·связь с прочтениями второго слова,
     // связь слова — его наибольший cos с одним из modWords (векторы Numberbatch несут связи ConceptNet: key ~ door, furniture ~ house)
     pair(scAll, modWords, lam) {
@@ -216,7 +237,52 @@
     }
   }
 
-  const api = { Coder, Vocab, LEVELS };
+  // Чтение кода векторами: слова, часть речи, пары. Общее для сайта и проверочных скриптов (scripts/site/eval_math.js).
+  // opt: posPen — штраф за чужую часть речи; pairK, pairLam — сколько прочтений уточняющего слова брать и с каким весом связи.
+  // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
+  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.5, graphW: 0, relW: {
+    PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
+    FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
+  } };
+  const LINK = /\b(PI|FOR)\b/;  // частицы, вводящие уточняющее существительное
+  class Reader {
+    constructor(co, V, mix, opt) { this.co = co; this.V = V; this.mix = mix; this.opt = Object.assign({}, READ, opt); }
+    static form(word) { return ((String(word).split("|")[1] || "").trim().match(/^[oiae]\b/) || [""])[0]; }
+    // слова кода: [{text, link}] — link: частица перед словом (у главного "")
+    static words(code) {
+      const parts = String(code).split(LINK), out = [{ text: parts[0], link: "" }];
+      for (let i = 1; i < parts.length; i += 2) out.push({ text: parts[i + 1] || "", link: parts[i] });
+      return out;
+    }
+    // корни всех слов кода одним набором
+    parse(code) {
+      const S = [], v = [], unknown = [];
+      for (const w of Reader.words(code)) { const p = this.co.parse(w.text); S.push(...p.S); v.push(...p.v); unknown.push(...p.unknown); }
+      return { S, v, unknown };
+    }
+    // оценки слов для набора корней; form — часть речи (o/i/a/e) или "" (без штрафа)
+    roots(S, v, form) { return this.V.adjust(this.V.scores(this.co.parts(S, v), this.mix), form || "", this.opt.posPen); }
+    // прочтения одного уточняющего слова: слово в кавычках, если оно есть в словаре, иначе pairK лучших
+    readings(text) {
+      const q = (text.match(/"([^"]+)"/) || [])[1];
+      if (q && this.V.index.has(q.toLowerCase())) return [q.toLowerCase()];
+      const p = this.co.parse(text);
+      return p.S.length ? this.V.top(this.roots(p.S, p.v, Reader.form(text)), this.opt.pairK).map((n) => n.word) : [];
+    }
+    // оценки всех слов для кода: слитые корни + pairLam·связь с прочтениями уточняющих слов (Vocab.pair)
+    // + graphW·связь по графу с учётом частицы (Vocab.graphScore)
+    scores(code) {
+      const ws = Reader.words(code), p = this.parse(code);
+      const sc = this.roots(p.S, p.v, Reader.form(ws[0].text));
+      const rd = ws.slice(1).map((w) => ({ link: w.link, words: this.readings(w.text) })), mods = rd.flatMap((r) => r.words);
+      if (!mods.length) return sc;
+      const out = this.V.pair(sc, mods, this.opt.pairLam), gw = this.opt.graphW;
+      if (gw) for (const r of rd) { const g = this.V.graphScore(r.words, this.opt.relW[r.link] || {}); for (let i = 0; i < out.length; i++) out[i] += gw * g[i]; }
+      return out;
+    }
+  }
+
+  const api = { Coder, Vocab, Reader, LEVELS };
   if (typeof module !== "undefined" && module.exports) module.exports = api;
   else root.MincoMath = api;
 })(typeof self !== "undefined" ? self : this);

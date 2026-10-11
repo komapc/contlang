@@ -1,0 +1,12 @@
+1. cage | birdcage, aviary
+2. document | book, manuscript
+3. stable | ranch, paddock
+4. elevator | lift, crane
+5. pillow | cushion, headrest
+6. valve | gasket, fitting
+7. vehicle | car, bike
+8. knife | blade, scissors
+9. brush | paintbrush, pencil
+10. hive | apiary, colony
+11. lid | cover, cap
+12. sheath | scabbard, case

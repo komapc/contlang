@@ -1,0 +1,12 @@
+1. knife | blade, cutter
+2. sand | grit, dust
+3. brush | broom, sponge
+4. belt | strap, harness
+5. pane | lens, fixture
+6. hood | lid, cover
+7. joint | mortise, dovetail
+8. algae | moss, reed
+9. engine | motor, drive
+10. loft | hayloft, stable
+11. leash | lead, collar
+12. kennel | doghouse, crate

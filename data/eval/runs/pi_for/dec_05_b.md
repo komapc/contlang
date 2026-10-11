@@ -1,0 +1,12 @@
+1. leash | lead, rein
+2. stable | barn, stall
+3. beehive | hive, apiary
+4. sky | heaven, firmament
+5. birdcage | cage, aviary
+6. collar | strap, harness
+7. brush | feather, duster
+8. sand | grit, dust
+9. flesh | core, pulp
+10. knife | blade, cutter
+11. screwdriver | hammer, awl
+12. saddle | bridle, tack

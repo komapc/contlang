@@ -1,0 +1,520 @@
+{
+ "sheets": {
+  "1": [
+   [
+    "sheath",
+    "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=+4) | o PI INSIDE(=+5) THING(=-5) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "pillow",
+    "TOUCH(=-5) THING(=-5) | o PI BODY ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "kennel",
+    "PLACE INSIDE(=+5) LIVE | o PI \"Canis\" | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "saddle",
+    "PLACE ABOVE(=+5) | o PI \"Equus\" | o",
+    1
+   ],
+   [
+    "shoelace",
+    "LONG(=-5) JOIN(=+5) | o PI INSIDE(=+5) BODY ABOVE(=-5) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "leash",
+    "LONG(=-5) JOIN(=+5) DO(=+5) | o PI \"Canis\" | o",
+    1
+   ]
+  ],
+  "2": [
+   [
+    "wallet",
+    "INSIDE(=+5) BIG(=-4) THING(=-5) | o PI VALUE | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "stable",
+    "PLACE INSIDE(=+5) THING(=+4) | o PI \"Equus\" | o",
+    1
+   ],
+   [
+    "cork",
+    "JOIN(=+5) INSIDE(=+5) | o PI CONSUME(=+5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "cradle",
+    "BIG(=-4) PLACE LIVE(=-2) | o PI SOMEONE BIG(=-4) TIME(=-5) | o",
+    1
+   ],
+   [
+    "hive",
+    "PLACE INSIDE(=+5) LIVE | o PI PART(=+5) \"Apis\" | o",
+    1
+   ],
+   [
+    "collar",
+    "LONG(=-5) JOIN(=+5) ABOVE(=+3) | o PI \"Canis\" | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "frame",
+    "SIDE(=+5) JOIN(=+5) | o PI SEE ART(=+5) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) | o",
+    1
+   ]
+  ],
+  "3": [
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "shoelace",
+    "LONG(=-5) DO(=+5) | o PI JOIN(=+5) BODY | o",
+    1
+   ],
+   [
+    "frame",
+    "PART(=-2) JOIN(=+5) | o PI SEE THING(=-5) | o",
+    1
+   ],
+   [
+    "lid",
+    "PART(=-2) ABOVE(=+5) JOIN(=-5) | o PI HEAT(=+5) INSIDE(=+5) THING(=-5) | o",
+    1
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "cork",
+    "THING(=0) JOIN(=+5) | o PI INSIDE(=+5) THING(=-5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "saddle",
+    "PLACE ABOVE(=+5) JOIN(=+5) | o PI \"Equus\" | o",
+    1
+   ],
+   [
+    "collar",
+    "LONG(=-5) JOIN(=+5) | o PI \"Canis\" | o",
+    1
+   ],
+   [
+    "kennel",
+    "PLACE INSIDE(=+5) BIG(=-4) | o PI \"Canis\" | o",
+    1
+   ]
+  ],
+  "4": [
+   [
+    "pillow",
+    "TOUCH(=-5) THING(=-5) | o PI ABOVE(=+5) BODY | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) GRAIN(=+5) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) TOUCH(=-5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "cradle",
+    "PLACE LIVE(=-2) BIG(=-4) | o PI BIG(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) BIG(=-4) | o PI GIVE(=+5) VALUE(=+3) | o",
+    1
+   ],
+   [
+    "stable",
+    "PLACE INSIDE(=+5) THING(=+4) | o PI \"Equus\" | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "leash",
+    "LONG(=-5) DO(=+5) | o PI \"Canis\" | o",
+    1
+   ],
+   [
+    "hive",
+    "PLACE INSIDE(=+5) MANY(=+5) | o PI \"Apis\" | o",
+    1
+   ]
+  ],
+  "5": [
+   [
+    "leash",
+    "LONG(=-5) JOIN(=+5) MOVE | o FOR \"Canis\"",
+    1
+   ],
+   [
+    "stable",
+    "PLACE INSIDE(=+5) MOVE(=-5) | o FOR \"Equus\"",
+    1
+   ],
+   [
+    "hive",
+    "PLACE INSIDE(=+5) LIVE | o FOR \"Apis\" PART(=+5) | o",
+    1
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) DO(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "collar",
+    "LONG(=-5) JOIN(=+5) INSIDE(=+5) | o FOR \"Canis\"",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) PART(=+2) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) TOUCH(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "saddle",
+    "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\"",
+    1
+   ]
+  ],
+  "6": [
+   [
+    "frame",
+    "SIDE(=+5) PART(=-2) JOIN(=+5) | o FOR SEE ART(=+5) | o",
+    1
+   ],
+   [
+    "shoelace",
+    "LONG(=-5) JOIN(=+5) | o FOR DO(=+5) BODY ABOVE(=-5) | o",
+    1
+   ],
+   [
+    "cork",
+    "TOUCH(=-5) JOIN(=+5) INSIDE(=+5) | o FOR INSIDE(=+5) LONG(=+3) DO(=+5) | o",
+    1
+   ],
+   [
+    "pillow",
+    "TOUCH(=-5) DO(=+5) | o FOR PLACE LIVE(=-2) | o",
+    1
+   ],
+   [
+    "cradle",
+    "PLACE LIVE(=-2) BIG(=-4) | o FOR SOMEONE BIG(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) BIG(=-4) | o FOR VALUE(=+5) GIVE | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "kennel",
+    "PLACE INSIDE(=+5) BIG(=-4) | o FOR \"Canis\"",
+    1
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) PART(=+2) JOIN(=-5) | o FOR INSIDE(=+5) HEAT(=+5) DO(=+5) | o",
+    1
+   ]
+  ],
+  "7": [
+   [
+    "nest",
+    "PLACE INSIDE(=+5) DO(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "stable",
+    "PLACE LIVE(=+5) BIG(=+3) | o FOR \"Equus\" | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "pillow",
+    "TOUCH(=-5) DO(=+5) | o FOR BODY ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "cork",
+    "PART(=-2) JOIN(=+5) INSIDE(=+5) | o FOR DO(=+5) INSIDE(=+5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "frame",
+    "DO(=+5) PART(=-2) LONG(=+3) | o FOR SEE ART(=+5) | o",
+    1
+   ],
+   [
+    "hive",
+    "PLACE LIVE(=+5) PART(=+5) | o FOR \"Apis\" | o",
+    1
+   ],
+   [
+    "lid",
+    "PART(=-2) ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "sheath",
+    "DO(=+5) INSIDE(=+5) TOUCH(=-5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ]
+  ],
+  "8": [
+   [
+    "cradle",
+    "PLACE LIVE(=-2) BIG(=-4) | o FOR BEGIN(=-4) THING(=+4) BIG(=-5) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) GRAIN(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o",
+    1
+   ],
+   [
+    "collar",
+    "LONG(=-5) JOIN(=+5) | o FOR BODY LONG(=-5) | o",
+    1
+   ],
+   [
+    "leash",
+    "LONG(=-5) DO(=+5) | o FOR \"Canis\" | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "shoelace",
+    "LONG(=-5) TOUCH(=-5) DO(=+5) | o FOR DO(=+5) ABOVE(=-5) | o",
+    1
+   ],
+   [
+    "kennel",
+    "PLACE LIVE(=+5) BIG(=-4) | o FOR \"Canis\" | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "saddle",
+    "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\" | o",
+    1
+   ],
+   [
+    "wallet",
+    "DO(=+5) INSIDE(=+5) BIG(=-4) | o FOR VALUE | o",
+    1
+   ]
+  ]
+ },
+ "variant": {
+  "1": "P",
+  "2": "P",
+  "3": "P",
+  "4": "P",
+  "5": "F",
+  "6": "F",
+  "7": "F",
+  "8": "F"
+ },
+ "encoder": {
+  "1": "enc_P_a",
+  "2": "enc_P_a",
+  "3": "enc_P_b",
+  "4": "enc_P_b",
+  "5": "enc_F_a",
+  "6": "enc_F_a",
+  "7": "enc_F_b",
+  "8": "enc_F_b"
+ }
+}
