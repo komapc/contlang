@@ -5,7 +5,7 @@ A word is a **head root** with a part-of-speech suffix, followed by **modifiers*
 Order: the head first, each next item refines everything before it (left to right). Up to 3 roots.
 
 Suffixes: `-o` thing/noun, `-i` verb/action, `-a` quality/adjective, `-e` manner/adverb.
-`E` marks the object ("E X" = acting on X). `PI` marks a noun used as a modifier. `?` = asked value.
+`E` marks the object ("E X" = acting on X). `FROM`, `FOR`, `LIKE`, `PI` join a noun to the preceding noun (see LINKS). `?` = asked value.
 
 {{ROOTS}}
 
@@ -22,7 +22,15 @@ stand for ONE common English word. Do not look for any other files.
 FORM (new notation): the word is written ROOTS | FORM. Before `|`: meaning roots (head first, up to three, each optionally with its axis value (=v)). After `|`: part of speech (o noun, i verb, a adjective, e adverb) and grammatical marks: T = tense (-2 past, 0 now, +2 future), N = number (0 none, +1 few, +3 several/plural, +5 all), M = probability/negation (-5 not, -3 maybe, +4 certainly). The marks are not roots; a missing mark means unspecified. Output an English word or short phrase that includes tense, number and negation.
 
 More marks after `|`: A = aspect (-5 about to start / beginning ... 0 in progress ... +5 completed); C = degree (-3 less, +3 more = comparative, +5 most = superlative; applies to the root's axis); D = definiteness (-3 indefinite 'a', +3 definite 'the'); `!` = command (imperative); `?` = question.
-PHRASES: a sentence is a sequence of words and particles. A word is ROOTS | FORM (see FORM above): it ends where the next uppercase root, quoted item or particle begins. Particles: E = direct object of the preceding verb; PI = a noun that defines the preceding noun (compound / "of"); LA = context or condition clause before a main clause ("although/if/when"); [ ... ] = a clause used as a modifier, complement or content; "..." = a quoted name, number, Latin or technical term kept as is. There is no separate particle for the predicate: a word with part of speech `i` is the verb. Decode each numbered line into ONE fluent English sentence. This is an encyclopedia text.
+
+LINKS: two nouns can be joined as `X | o LINK Y | o`. The first word X is always the general kind of the thing; the second word Y only narrows it. LINK is one of:
+- `FROM` — X is made of Y (material, source) ("drink FROM apple" = cider, "house FROM ice" = igloo)
+- `FOR` — X is made for Y: to be used with, on or by Y ("tool FOR hair" = comb, "container FOR flowers" = vase)
+- `LIKE` — X looks like Y but is not Y ("fish LIKE sword" = swordfish, "insect LIKE stick" = stick insect)
+- `PI` — anything else: X is a part of Y, or X is found or lives in Y ("seed PI fruit" = pip, "edge PI river" = riverbank)
+The writer asks in this order — FROM, FOR, LIKE, PI — and takes the first that fits. The reader reads each link one way only: FROM = made of; FOR = made for; LIKE = looks like; PI = part of / found in.
+
+PHRASES: a sentence is a sequence of words and particles. A word is ROOTS | FORM (see FORM above): it ends where the next uppercase root, quoted item or particle begins. Particles: E = direct object of the preceding verb; FROM / FOR / LIKE / PI = links between nouns, see LINKS; LA = context or condition clause before a main clause ("although/if/when"); [ ... ] = a clause used as a modifier, complement or content; "..." = a quoted name, number, Latin or technical term kept as is. There is no separate particle for the predicate: a word with part of speech `i` is the verb. Decode each numbered line into ONE fluent English sentence. This is an encyclopedia text.
 {{CLAUSE_RULE}}
 
 

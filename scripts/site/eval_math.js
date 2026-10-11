@@ -20,7 +20,7 @@ function pairs(only) {
     const p = path.join(REPO, "data/eval/runs", f, "pairs.json");
     if (fs.existsSync(p)) JSON.parse(fs.readFileSync(p)).forEach((e) => out.push([e.word, e.code]));
   }
-  return out.filter(([w, c]) => /\b(PI|FOR)\b/.test(c) && V.index.has(w) && (!only || only.test(c)));
+  return out.filter(([w, c]) => /\b(PI|FROM|FOR|LIKE)\b/.test(c) && V.index.has(w) && (!only || only.test(c)));
 }
 const cos = (a, b) => { const x = V.vec(a), y = V.vec(b); let s = 0; for (let j = 0; j < x.length; j++) s += x[j] * y[j]; return s; };
 const gm = (a) => Math.round(Math.exp(a.reduce((s, x) => s + Math.log(x), 0) / a.length));
@@ -34,7 +34,7 @@ function evaluate(opt) {
   }
   rk.sort((a, b) => a - b); c1.sort((a, b) => a - b);
   const P = pairs(opt.only), byw = {};
-  for (const [w, c] of P) (byw[w] = byw[w] || []).push(V.rankIn(rd.scores(opt.link ? c.replace(/\b(PI|FOR)\b/g, opt.link) : c), w));
+  for (const [w, c] of P) (byw[w] = byw[w] || []).push(V.rankIn(rd.scores(opt.link ? c.replace(/\b(PI|FROM|FOR|LIKE)\b/g, opt.link) : c), w));
   return { n: rk.length, top1: pct(rk, 1), top10: pct(rk, 10), top50: pct(rk, 50), med: rk[rk.length >> 1], over1000: rk.filter((r) => r > 1000).length,
     cos1: c1[c1.length >> 1].toFixed(2), pairs: P.length, pairsGM: gm(Object.values(byw).flat()), pairsTop10: Object.values(byw).flat().filter((r) => r <= 10).length,
     byWord: Object.fromEntries(Object.entries(byw).map(([w, a]) => [w, gm(a)])) };

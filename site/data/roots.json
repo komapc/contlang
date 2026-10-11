@@ -721,9 +721,24 @@
    "en_role": "direct object"
   },
   {
+   "name": "FROM",
+   "role": "связка существительных: X FROM Y — X сделан из Y (материал, источник); первым проверяется он",
+   "en_role": "noun link: X FROM Y = X is made of Y (material, source); checked first"
+  },
+  {
+   "name": "FOR",
+   "role": "связка: X FOR Y — X сделан для Y (им пользуются с Y, на Y или Y); вторым",
+   "en_role": "noun link: X FOR Y = X is made for Y (used with, on or by Y); checked second"
+  },
+  {
+   "name": "LIKE",
+   "role": "связка: X LIKE Y — X похож на Y, но не Y; третьим",
+   "en_role": "noun link: X LIKE Y = X looks like Y but is not Y; checked third"
+  },
+  {
    "name": "PI",
-   "role": "существительное-определение",
-   "en_role": "noun modifier (“of”)"
+   "role": "связка: X PI Y — всё прочее: X часть Y или находится, живёт в Y; последним",
+   "en_role": "noun link: X PI Y = anything else: X is a part of Y, or is found or lives in Y; checked last"
   },
   {
    "name": "LA",

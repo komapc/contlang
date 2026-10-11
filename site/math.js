@@ -108,7 +108,7 @@
       const S = [], v = [], unknown = [];
       for (const m of head.matchAll(/\b([A-Z][A-Z]+)\b(?:\(=\s*([+-]?\d+)\s*\))?/g)) {
         const r = this.names.indexOf(m[1]);
-        if (r < 0) { if (!["E", "PI", "LA", "AND", "PE"].includes(m[1])) unknown.push(m[1]); continue; }
+        if (r < 0) { if (!["E", "PI", "FROM", "FOR", "LIKE", "LA", "AND", "PE"].includes(m[1])) unknown.push(m[1]); continue; }
         S.push(r); v.push(m[2] != null && this.has[r] ? Number(m[2]) : 0);
       }
       return { S, v, unknown };
@@ -197,7 +197,7 @@
       if (this.group) for (let i = 0; i < N; i++) if (this.group[i] !== i) out[i] = Math.max(out[i], out[this.group[i]]);
       return out;
     }
-    // пара через PI: оценки слитых корней обоих слов (scAll) + lam·связь с прочтениями второго слова,
+    // пара через связку: оценки слитых корней обоих слов (scAll) + lam·связь с прочтениями второго слова,
     // связь слова — его наибольший cos с одним из modWords (векторы Numberbatch несут связи ConceptNet: key ~ door, furniture ~ house)
     pair(scAll, modWords, lam) {
       const N = this.words.length, D = this.dim, vs = modWords.map((w) => this.vec(w)).filter(Boolean), rel = new Float64Array(N);
@@ -243,8 +243,10 @@
   const READ = { posPen: 1.5, pairK: 10, pairLam: 0.5, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
+    FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
+    LIKE: { RelatedTo: 0.5 },
   } };
-  const LINK = /\b(PI|FOR)\b/;  // частицы, вводящие уточняющее существительное
+  const LINK = /\b(PI|FROM|FOR|LIKE)\b/;  // связки, вводящие уточняющее существительное (roots.yaml, particles)
   class Reader {
     constructor(co, V, mix, opt) { this.co = co; this.V = V; this.mix = mix; this.opt = Object.assign({}, READ, opt); }
     static form(word) { return ((String(word).split("|")[1] || "").trim().match(/^[oiae]\b/) || [""])[0]; }

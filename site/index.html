@@ -277,8 +277,8 @@ const I18N = {
     toward: (d, e) => d + " toward “" + e + "”", deg: ["", "a little", "slightly", "fairly", "strongly", "fully"],
     pos: { o: "thing, concept (noun)", i: "action, state (verb)", a: "property (adjective)", e: "circumstance (adverb)" },
     how: [["elephants", "THING(=+4) BIG(=+5) | o N+3"], ["didn't come", "MOVE NEAR(=+4) | i T-2 M-5"], ["sand", "GRAIN(=0) THING(=-5) PART(=-5) | o"], ["will be afraid", "FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4"], ["six", '"6"']],
-    secMiss: (w) => "the blind decoder did not find the word (it read: " + w + "), so the model adds a second word through PI",
-    secFar: (k) => "the decoder found the word, but the vectors put it only at place " + k + ", so the model adds a second word through PI",
+    secMiss: (w) => "the blind decoder did not find the word (it read: " + w + "), so the model adds a second word through a link (FROM, FOR, LIKE or PI)",
+    secFar: (k) => "the decoder found the word, but the vectors put it only at place " + k + ", so the model adds a second word through a link (FROM, FOR, LIKE or PI)",
     encoding2: "the model adds a second word…", decoding2: "decoding the pair blind…", place: (k) => " · the word is at place " + k,
     qPh: "search by root or meaning", dqPh: "search by word or root (money, LIVE, PLACE…)", inpPh: "example, knife, river… or GRAIN(=-3) CONSUME(=+5) | o",
   },
@@ -300,8 +300,8 @@ const I18N = {
     toward: (d, e) => d + " к «" + e + "»", deg: ["", "чуть", "слегка", "довольно", "сильно", "предельно"],
     pos: { o: "предмет, понятие (имя)", i: "действие, состояние (глагол)", a: "признак (прилагательное)", e: "обстоятельство (наречие)" },
     how: [["слоны", "THING(=+4) BIG(=+5) | o N+3"], ["не пришёл", "MOVE NEAR(=+4) | i T-2 M-5"], ["песок", "GRAIN(=0) THING(=-5) PART(=-5) | o"], ["испугаются", "FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4"], ["шесть", '"6"']],
-    secMiss: (w) => "слепой декодер не нашёл слово (прочитал: " + w + "), поэтому модель добавляет второе слово через PI",
-    secFar: (k) => "декодер нашёл слово, но векторы ставят его только на " + k + "-е место, поэтому модель добавляет второе слово через PI",
+    secMiss: (w) => "слепой декодер не нашёл слово (прочитал: " + w + "), поэтому модель добавляет второе слово через связку (FROM, FOR, LIKE или PI)",
+    secFar: (k) => "декодер нашёл слово, но векторы ставят его только на " + k + "-е место, поэтому модель добавляет второе слово через связку (FROM, FOR, LIKE или PI)",
     encoding2: "модель добавляет второе слово…", decoding2: "пара раскодируется вслепую…", place: (k) => " · слово на " + k + "-м месте",
     qPh: "поиск по корню или значению", dqPh: "поиск по слову или корню (money, LIVE, PLACE…)", inpPh: "example, knife, river… или GRAIN(=-3) CONSUME(=+5) | o",
   },
@@ -336,7 +336,7 @@ const RDP = fetch("data/roots.json").then(r => r.json());
 let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])) }; });
 const clean = (t) => String(t || "").replace(/`/g, "").replace(/\\\|/g, "|").replace(/\*/g, "").trim();
 const sgn = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
-const PARTRE = /^(E|PI|LA|LI|PE|AND)$/;
+const PARTRE = /^(E|PI|FROM|FOR|LIKE|LA|LI|PE|AND)$/;
 // токены: "кавычки", метка формы (T-2, N+3, A0), корень с осью, скобки и черта, часть речи
 const TOKRE = /"[^"]*"|\b[TRNMACIDVK][+-]?\d\b|\b[A-Z][A-Z]*\b(?:\(=\s*[+-]?\d+\s*\))?\??|[{}\[\];|!?]|\b[oiae]\b/g;
 function tokens(code){
@@ -554,7 +554,7 @@ async function run(text, saved){
 const FAR = 1000;
 async function secondWord(text, c, r){
   const m = await mathCode(c, $("llmMath"), text);
-  if (/\bPI\b/.test(c)) return;
+  if (/\b(PI|FROM|FOR|LIKE)\b/.test(c)) return;   // уже пара
   const hit = same(r.best, text) || (r.alternatives || []).some(a => same(a, text));
   const far = m && m.rank && m.rank > FAR;
   if (hit && !far) return;

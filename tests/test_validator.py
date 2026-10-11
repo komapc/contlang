@@ -116,3 +116,10 @@ def test_braced_sentences():
         assert not [i for i in v.check_any(c) if i.level == "error"], c
     for c, kind in bad.items():
         assert kind in {i.kind for i in v.check_any(c)}, c
+
+
+def test_links():
+    # связки существительных FROM / FOR / LIKE / PI: у каждого слова своя форма
+    assert not errors("LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o")
+    assert not errors("DO(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o")
+    assert not errors("THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o")

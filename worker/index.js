@@ -29,8 +29,8 @@ const DECODE_TASK_EN = DECODE_TASK_RU.replace("<одна короткая фра
 // второе слово: код уже есть, но слепое прочтение (или векторы) нашли его ближе к другим словам
 const SECOND_TASK = (prev, confused) => `
 SECOND WORD: your first code for this word was \`${prev}\`, but a reader who has only the spec takes it for: ${confused}.
-Rewrite it as a two-word compound \`HEAD | o PI MODIFIER | o\`: the head is the general kind (keep the first code or fix it), the modifier is ONE more min-co word of 1-3 roots for ANOTHER thing, place or action that this word is tied to (what it is used with or on, where it is, what it serves), chosen so that the pair cannot be read as ${confused}. Do not just repeat or shift the head's roots in the modifier. Each of the two words has its own root limit.
-Verified compounds: key = small tool · doorway \`DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o\`; furniture = collection of inanimate things · house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
+Rewrite it as a two-word compound \`HEAD | o LINK MODIFIER | o\`: the head is the general kind (keep the first code or fix it), the modifier is ONE more min-co word of 1-3 roots for ANOTHER thing that narrows it, chosen so that the pair cannot be read as ${confused}. LINK is chosen by the LINKS rule of the spec: FROM (made of it), else FOR (made for it), else LIKE (looks like it), else PI (part of it, found or living in it). Do not just repeat or shift the head's roots in the modifier. Each of the two words has its own root limit.
+Verified compounds: key = small tool FOR doorway \`DO(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o\`; sheath = covering FOR blade \`INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o\`; candle = light FROM wax \`LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o\`; sunflower = plant LIKE sun \`THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o\`; furniture = collection of inanimate things PI house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
 In "tokens" explain both words; in "confusable" name what the new code could still be confused with.`;
 const MSG = {
   en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
@@ -38,9 +38,10 @@ const MSG = {
 };
 
 // Проверка кода по правилам языка (как scripts/mincode/validator.py, только главное): корни, лимит, знак значения.
-// В паре через PI каждое слово проверяется отдельно.
+// В паре через связку (FROM, FOR, LIKE, PI) каждое слово проверяется отдельно.
+const LINKS = /\b(?:FROM|FOR|LIKE|PI)\b/;
 function codeProblems(code) {
-  return String(code || "").split(/\bPI\b/).flatMap(wordProblems);
+  return String(code || "").split(LINKS).flatMap(wordProblems);
 }
 function wordProblems(word) {
   const body = word.split("|")[0].replace(/"[^"]*"/g, " ").trim();
@@ -49,7 +50,7 @@ function wordProblems(word) {
   for (const t of body.split(/\s+/)) {
     const m = t.match(/^([A-Z]+)(?:\(=([+-]?)(\d)\))?$/);
     if (!m) { bad.push(`malformed token ${t}`); continue; }
-    if (["PI", "E", "AND", "LA", "PE", "LI"].includes(m[1])) continue;
+    if (["PI", "FROM", "FOR", "LIKE", "E", "AND", "LA", "PE", "LI"].includes(m[1])) continue;
     if (!CHECK.roots.includes(m[1])) bad.push(`unknown root ${m[1]}`);
     else roots.push(m[1]);
     if (m[3] && m[3] !== "0" && !m[2]) bad.push(`value without sign in ${t} (write (=+${m[3]}))`);
