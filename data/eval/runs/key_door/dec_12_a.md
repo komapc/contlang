@@ -1,0 +1,10 @@
+1. document | text, manuscript
+2. brush | feather, broom
+3. kernel | pit, seed
+4. elevator | lift, crane
+5. cut | divide, sever
+6. home | house, dwelling
+7. nail | rivet, tack
+8. car | vehicle, motorcycle
+9. sky | heaven, space
+10. lock | clamp, vise

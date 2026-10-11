@@ -1,0 +1,10 @@
+1. mountain | peak, summit
+2. document | text, manuscript
+3. engine | vehicle, motor
+4. drill | hammer, saw
+5. fastener | clip, pin
+6. island | isle, enclave
+7. library | archive, bookstore
+8. scissors | cutter, clippers
+9. extract | remove, withdraw
+10. lift | elevator, crane

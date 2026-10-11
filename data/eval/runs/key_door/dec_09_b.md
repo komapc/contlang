@@ -1,0 +1,10 @@
+1. home | house, dwelling
+2. knife | blade, cutter
+3. cut | divide, separate
+4. pin | nail, tack
+5. front | facade, face
+6. lift | elevator, crane
+7. bridge | link, connection
+8. restaurant | canteen, cafe
+9. hammer | mallet, drill
+10. library | archive, bookshop

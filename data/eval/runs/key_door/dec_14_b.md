@@ -1,0 +1,10 @@
+1. extract | remove, excise
+2. elevator | lift, escalator
+3. library | archive, bookstore
+4. insert | inset, component
+5. brush | sponge, mop
+6. clamp | clip, fastener
+7. entrance | gate, porch
+8. sky | heavens, firmament
+9. knife | blade, cutter
+10. document | text, script

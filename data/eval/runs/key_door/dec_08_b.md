@@ -1,0 +1,10 @@
+1. library | archive, bookshop
+2. vehicle | car, engine
+3. entrance | facade, front
+4. microchip | chip, component
+5. hammer | mallet, striker
+6. knife | blade, cutter
+7. home | house, dwelling
+8. brush | broom, sponge
+9. clamp | fastener, glue
+10. separate | cut, detach

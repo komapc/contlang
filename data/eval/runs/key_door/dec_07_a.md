@@ -1,0 +1,10 @@
+1. elevator | lift, escalator
+2. book | document, manuscript
+3. library | archive, bookshop
+4. kernel | seed, pit
+5. home | dwelling, residence
+6. knife | blade, cutter
+7. nail | bolt, rivet
+8. brush | broom, mop
+9. clip | pin, staple
+10. detach | separate, unfasten

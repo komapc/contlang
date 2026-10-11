@@ -1,0 +1,10 @@
+1. nail | screw, rivet
+2. extract | remove, eject
+3. room | chamber, cell
+4. document | manuscript, text
+5. library | archive, collection
+6. vehicle | car, engine
+7. microchip | chip, transistor
+8. elevator | lift, crane
+9. restaurant | cafeteria, canteen
+10. home | dwelling, house

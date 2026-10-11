@@ -1,0 +1,10 @@
+1. skyscraper | tower, mountain
+2. document | manuscript, essay
+3. vehicle | car, engine
+4. hammer | club, bat
+5. clip | pin, fastener
+6. gap | border, boundary
+7. library | archive, bookshop
+8. knife | blade, scalpel
+9. extract | remove, withdraw
+10. elevator | lift, crane

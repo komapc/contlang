@@ -1,0 +1,10 @@
+1. document | text, manuscript
+2. brush | mop, feather
+3. kernel | core, pit
+4. elevator | lift, hoist
+5. cut | divide, separate
+6. home | dwelling, residence
+7. staple | pin, clip
+8. vehicle | engine, car
+9. mountain | peak, summit
+10. lock | clamp, vise

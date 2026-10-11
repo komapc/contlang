@@ -1,0 +1,10 @@
+1. TEXT PART(=+2) | o
+2. TOUCH(=-3) MOVE DO(=+5) | o
+3. PART(=-2) GRAIN(=+5) INSIDE(=+4) | o
+4. MOVE ABOVE(=+4) DO(=+5) | o
+5. DO(=+3) JOIN(=-5) | i
+6. PLACE INSIDE(=+5) LIVE | o
+7. DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) CHANGE(=-5) | o
+8. DO(=+5) MOVE(=+4) | o
+9. PLACE ABOVE(=+5) BIG(=+4) | o
+10. DO(=+5) JOIN(=+5) CAN(=-3) | o

@@ -1,0 +1,10 @@
+1. knife | scissors, cutter
+2. nail | bolt, rivet
+3. book | volume, document
+4. mountain | peak, summit
+5. cut | divide, sever
+6. library | archive, bookshop
+7. core | kernel, heart
+8. probe | needle, tweezers
+9. brush | duster, sponge
+10. engine | motor, machine

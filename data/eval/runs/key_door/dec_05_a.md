@@ -1,0 +1,10 @@
+1. bridge | road, junction
+2. restaurant | kitchen, canteen
+3. brush | broom, sponge
+4. knife | scissors, blade
+5. island | enclave, islet
+6. cut | divide, split
+7. vehicle | car, bicycle
+8. library | archive, bookstore
+9. book | text, document
+10. staple | pin, clip

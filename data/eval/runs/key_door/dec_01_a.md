@@ -1,0 +1,10 @@
+1. library | archive, bookshelf
+2. vehicle | car, machine
+3. missile | projectile, bullet
+4. staple | clip, nail
+5. knife | blade, cutter
+6. home | house, dwelling
+7. extract | remove, withdraw
+8. core | kernel, pit
+9. clamp | vise, fastener
+10. mountain | peak, summit

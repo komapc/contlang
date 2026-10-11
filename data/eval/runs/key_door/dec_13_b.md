@@ -1,0 +1,10 @@
+1. staple | pin, clip
+2. glue | adhesive, cement
+3. room | chamber, interior
+4. sky | heaven, heavens
+5. kitchen | restaurant, canteen
+6. library | archive, bookshop
+7. extract | gut, remove
+8. document | text, article
+9. brush | broom, mop
+10. knife | blade, scissors
