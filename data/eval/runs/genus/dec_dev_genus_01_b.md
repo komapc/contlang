@@ -1,0 +1,20 @@
+1. city hall | office, courthouse
+2. imagine | conceive, reflect
+3. pain | suffering, wound
+4. worm | snake, leech
+5. neighborhood | area, vicinity
+6. embassy | consulate, colony
+7. room | hall, chamber
+8. currency | money, coin
+9. perceptible | tangible, sensible
+10. startup | launch, initiation
+11. size | amount, extent
+12. doubt | hesitate, suspect
+13. machine | device, equipment
+14. office | bureau, agency
+15. reform | amend, revise
+16. drag | pull, tug
+17. edit | revise, rewrite
+18. forecast | predict, estimate
+19. anxiety | distress, agitation
+20. friendly | cordial, hospitable

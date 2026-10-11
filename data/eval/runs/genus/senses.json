@@ -1,0 +1,4803 @@
+{
+ "suit": {
+  "form": "o",
+  "set": "dev",
+  "synset": "suit.n.01",
+  "def": "a set of garments (usually including a jacket and trousers or skirt) for outerwear all of the same fabric and color",
+  "cos": 0.428,
+  "lemmas": [
+   "of",
+   "clothes"
+  ],
+  "gloss": [
+   "set",
+   "garments",
+   "including",
+   "jacket",
+   "trousers",
+   "skirt",
+   "outerwear",
+   "all",
+   "same",
+   "fabric",
+   "color"
+  ],
+  "genus_synset": "garment.n.01",
+  "genus": [
+   "garment"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "roughly": {
+  "form": "e",
+  "set": "dev",
+  "synset": "approximately.r.01",
+  "def": "(of quantities) imprecise but fairly close to correct",
+  "cos": 0.527,
+  "lemmas": [
+   "approximately",
+   "about",
+   "close",
+   "to",
+   "just",
+   "about",
+   "some",
+   "more",
+   "or",
+   "less",
+   "around",
+   "or",
+   "so"
+  ],
+  "gloss": [
+   "quantities",
+   "imprecise",
+   "but",
+   "fairly",
+   "close",
+   "correct"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "assistant": {
+  "form": "o",
+  "set": "dev",
+  "synset": "assistant.n.01",
+  "def": "a person who contributes to the fulfillment of a need or furtherance of an effort or purpose",
+  "cos": 0.231,
+  "lemmas": [
+   "helper",
+   "help",
+   "supporter"
+  ],
+  "gloss": [
+   "person",
+   "contributes",
+   "fulfillment",
+   "need",
+   "furtherance",
+   "effort",
+   "purpose"
+  ],
+  "genus_synset": "worker.n.01",
+  "genus": [
+   "worker"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "associate": {
+  "form": "i",
+  "set": "dev",
+  "synset": "associate.v.01",
+  "def": "make a logical or causal connection",
+  "cos": 0.298,
+  "lemmas": [
+   "tie",
+   "in",
+   "relate",
+   "link",
+   "colligate",
+   "link",
+   "up",
+   "connect"
+  ],
+  "gloss": [
+   "logical",
+   "causal",
+   "connection"
+  ],
+  "genus_synset": "think.v.03",
+  "genus": [
+   "think",
+   "cogitate",
+   "cerebrate"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "municipality": {
+  "form": "o",
+  "set": "dev",
+  "synset": "municipality.n.01",
+  "def": "an urban district having corporate status and powers of self-government",
+  "cos": 0.447,
+  "lemmas": [],
+  "gloss": [
+   "urban",
+   "district",
+   "corporate",
+   "status",
+   "powers",
+   "self",
+   "government"
+  ],
+  "genus_synset": "urban_area.n.01",
+  "genus": [
+   "urban",
+   "area",
+   "populated",
+   "area"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "removal": {
+  "form": "o",
+  "set": "dev",
+  "synset": "removal.n.01",
+  "def": "the act of removing",
+  "cos": 0.51,
+  "lemmas": [
+   "remotion"
+  ],
+  "gloss": [
+   "act",
+   "removing"
+  ],
+  "genus_synset": "separation.n.09",
+  "genus": [
+   "separation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "beef": {
+  "form": "o",
+  "set": "dev",
+  "synset": "beef.n.01",
+  "def": "cattle that are reared for their meat",
+  "cos": 0.739,
+  "lemmas": [
+   "cattle"
+  ],
+  "gloss": [
+   "cattle",
+   "reared",
+   "meat"
+  ],
+  "genus_synset": "cattle.n.01",
+  "genus": [
+   "cattle",
+   "cows",
+   "kine"
+  ],
+  "link": "FOR",
+  "after": [
+   "meat"
+  ]
+ },
+ "sometime": {
+  "form": "e",
+  "set": "dev",
+  "synset": "sometime.r.01",
+  "def": "at some indefinite or unstated time",
+  "cos": 0.376,
+  "lemmas": [],
+  "gloss": [
+   "indefinite",
+   "unstated",
+   "time"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "vehicle": {
+  "form": "o",
+  "set": "dev",
+  "synset": "vehicle.n.01",
+  "def": "a conveyance that transports people or objects",
+  "cos": 0.14,
+  "lemmas": [],
+  "gloss": [
+   "conveyance",
+   "transports",
+   "people",
+   "objects"
+  ],
+  "genus_synset": "conveyance.n.03",
+  "genus": [
+   "conveyance",
+   "transport"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "city": {
+  "form": "o",
+  "set": "dev",
+  "synset": "city.n.01",
+  "def": "a large and densely populated urban area; may include several independent administrative districts",
+  "cos": 0.483,
+  "lemmas": [
+   "metropolis",
+   "urban",
+   "center"
+  ],
+  "gloss": [
+   "large",
+   "densely",
+   "populated",
+   "urban",
+   "area",
+   "may",
+   "include",
+   "several",
+   "independent",
+   "administrative",
+   "districts"
+  ],
+  "genus_synset": "municipality.n.01",
+  "genus": [
+   "municipality"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "fee": {
+  "form": "o",
+  "set": "dev",
+  "synset": "fee.n.01",
+  "def": "a fixed charge for a privilege or for professional services",
+  "cos": 0.495,
+  "lemmas": [],
+  "gloss": [
+   "fixed",
+   "charge",
+   "privilege",
+   "professional",
+   "services"
+  ],
+  "genus_synset": "fixed_charge.n.01",
+  "genus": [
+   "fixed",
+   "charge",
+   "fixed",
+   "cost",
+   "fixed",
+   "costs"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "follow": {
+  "form": "i",
+  "set": "dev",
+  "synset": "follow.v.01",
+  "def": "to travel behind, go after, come after",
+  "cos": 0.375,
+  "lemmas": [],
+  "gloss": [
+   "travel",
+   "behind",
+   "go",
+   "after",
+   "come",
+   "after"
+  ],
+  "genus_synset": "travel.v.01",
+  "genus": [
+   "travel",
+   "go",
+   "move"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "zero": {
+  "form": "o",
+  "set": "dev",
+  "synset": "nothing.n.01",
+  "def": "a quantity of no importance",
+  "cos": 0.417,
+  "lemmas": [
+   "nothing",
+   "nil",
+   "nix",
+   "nada",
+   "null",
+   "aught",
+   "cipher",
+   "cypher",
+   "goose",
+   "egg",
+   "naught",
+   "zilch",
+   "zip",
+   "zippo"
+  ],
+  "gloss": [
+   "quantity",
+   "no",
+   "importance"
+  ],
+  "genus_synset": "relative_quantity.n.01",
+  "genus": [
+   "relative",
+   "quantity"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "change": {
+  "form": "i",
+  "set": "dev",
+  "synset": "change.v.01",
+  "def": "cause to change; make different; cause a transformation",
+  "cos": 0.7,
+  "lemmas": [
+   "alter",
+   "modify"
+  ],
+  "gloss": [
+   "cause",
+   "different",
+   "cause",
+   "transformation"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "negotiate": {
+  "form": "i",
+  "set": "dev",
+  "synset": "negociate.v.06",
+  "def": "discuss the terms of an arrangement",
+  "cos": 0.595,
+  "lemmas": [
+   "negociate",
+   "talk",
+   "terms"
+  ],
+  "gloss": [
+   "discuss",
+   "terms",
+   "arrangement"
+  ],
+  "genus_synset": "hash_out.v.01",
+  "genus": [
+   "hash",
+   "out",
+   "discuss",
+   "talk",
+   "over"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sentence": {
+  "form": "o",
+  "set": "dev",
+  "synset": "sentence.n.01",
+  "def": "a string of words satisfying the grammatical rules of a language",
+  "cos": 0.35,
+  "lemmas": [],
+  "gloss": [
+   "string",
+   "words",
+   "satisfying",
+   "grammatical",
+   "rules",
+   "language"
+  ],
+  "genus_synset": "string_of_words.n.01",
+  "genus": [
+   "string",
+   "of",
+   "words",
+   "word",
+   "string",
+   "linguistic",
+   "string"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "source": {
+  "form": "o",
+  "set": "dev",
+  "synset": "beginning.n.04",
+  "def": "the place where something begins, where it springs into being",
+  "cos": 0.29,
+  "lemmas": [
+   "beginning",
+   "origin",
+   "root",
+   "rootage"
+  ],
+  "gloss": [
+   "place",
+   "where",
+   "begins",
+   "where",
+   "springs",
+   "into"
+  ],
+  "genus_synset": "point.n.02",
+  "genus": [
+   "point"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "specify": {
+  "form": "i",
+  "set": "dev",
+  "synset": "stipulate.v.01",
+  "def": "specify as a condition or requirement in a contract or agreement; make an express demand or provision in an agreement",
+  "cos": 0.343,
+  "lemmas": [
+   "stipulate",
+   "qualify",
+   "condition"
+  ],
+  "gloss": [
+   "condition",
+   "requirement",
+   "contract",
+   "agreement",
+   "express",
+   "demand",
+   "provision",
+   "agreement"
+  ],
+  "genus_synset": "contract.v.01",
+  "genus": [
+   "contract",
+   "undertake"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "namely": {
+  "form": "e",
+  "set": "dev",
+  "synset": "namely.r.01",
+  "def": "as follows",
+  "cos": 0.301,
+  "lemmas": [
+   "viz",
+   "that",
+   "is",
+   "to",
+   "say",
+   "to",
+   "wit",
+   "videlicet"
+  ],
+  "gloss": [
+   "follows"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "compound": {
+  "form": "i",
+  "set": "dev",
+  "synset": "intensify.v.02",
+  "def": "make more intense, stronger, or more marked; ,",
+  "cos": 0.091,
+  "lemmas": [
+   "intensify",
+   "heighten",
+   "deepen"
+  ],
+  "gloss": [
+   "more",
+   "intense",
+   "stronger",
+   "more",
+   "marked"
+  ],
+  "genus_synset": "increase.v.01",
+  "genus": [
+   "increase"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "eligible": {
+  "form": "a",
+  "set": "dev",
+  "synset": "eligible.a.01",
+  "def": "qualified for or allowed or worthy of being chosen",
+  "cos": 0.692,
+  "lemmas": [],
+  "gloss": [
+   "qualified",
+   "allowed",
+   "worthy",
+   "chosen"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "telegraph": {
+  "form": "o",
+  "set": "dev",
+  "synset": "telegraph.n.01",
+  "def": "apparatus used to communicate at a distance over a wire (usually in Morse code)",
+  "cos": 0.374,
+  "lemmas": [
+   "telegraphy"
+  ],
+  "gloss": [
+   "apparatus",
+   "communicate",
+   "distance",
+   "over",
+   "wire",
+   "morse",
+   "code"
+  ],
+  "genus_synset": "apparatus.n.01",
+  "genus": [
+   "apparatus",
+   "setup"
+  ],
+  "link": "FOR",
+  "after": [
+   "communicate",
+   "distance",
+   "over"
+  ]
+ },
+ "internationally": {
+  "form": "e",
+  "set": "dev",
+  "synset": "internationally.r.01",
+  "def": "throughout the world",
+  "cos": 0.414,
+  "lemmas": [],
+  "gloss": [
+   "throughout",
+   "world"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "dramatic": {
+  "form": "a",
+  "set": "dev",
+  "synset": "dramatic.a.01",
+  "def": "suitable to or characteristic of drama",
+  "cos": 0.353,
+  "lemmas": [],
+  "gloss": [
+   "suitable",
+   "characteristic",
+   "drama"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "vice": {
+  "form": "o",
+  "set": "dev",
+  "synset": "frailty.n.02",
+  "def": "moral weakness",
+  "cos": 0.175,
+  "lemmas": [
+   "frailty"
+  ],
+  "gloss": [
+   "moral",
+   "weakness"
+  ],
+  "genus_synset": "evil.n.03",
+  "genus": [
+   "evil",
+   "evilness"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "enrollment": {
+  "form": "o",
+  "set": "dev",
+  "synset": "registration.n.01",
+  "def": "the act of enrolling",
+  "cos": 0.504,
+  "lemmas": [
+   "registration",
+   "enrolment"
+  ],
+  "gloss": [
+   "act",
+   "enrolling"
+  ],
+  "genus_synset": "entrance.n.03",
+  "genus": [
+   "entrance",
+   "entering",
+   "entry"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "corporate": {
+  "form": "a",
+  "set": "dev",
+  "synset": "corporate.a.01",
+  "def": "of or belonging to a corporation",
+  "cos": 0.495,
+  "lemmas": [],
+  "gloss": [
+   "belonging",
+   "corporation"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "intelligent": {
+  "form": "a",
+  "set": "dev",
+  "synset": "intelligent.a.01",
+  "def": "having the capacity for thought and reason especially to a high degree",
+  "cos": 0.197,
+  "lemmas": [],
+  "gloss": [
+   "capacity",
+   "thought",
+   "reason",
+   "high",
+   "degree"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "tank": {
+  "form": "o",
+  "set": "dev",
+  "synset": "tank.n.01",
+  "def": "an enclosed armored military vehicle; has a cannon and moves on caterpillar treads",
+  "cos": 0.393,
+  "lemmas": [
+   "army",
+   "armored",
+   "combat",
+   "vehicle",
+   "armoured",
+   "combat",
+   "vehicle"
+  ],
+  "gloss": [
+   "enclosed",
+   "armored",
+   "military",
+   "vehicle",
+   "has",
+   "cannon",
+   "moves",
+   "caterpillar",
+   "treads"
+  ],
+  "genus_synset": "military_vehicle.n.01",
+  "genus": [
+   "military",
+   "vehicle"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "harassment": {
+  "form": "o",
+  "set": "dev",
+  "synset": "harassment.n.01",
+  "def": "a feeling of intense annoyance caused by being tormented",
+  "cos": 0.127,
+  "lemmas": [
+   "torment"
+  ],
+  "gloss": [
+   "feeling",
+   "intense",
+   "annoyance",
+   "caused",
+   "tormented"
+  ],
+  "genus_synset": "annoyance.n.02",
+  "genus": [
+   "annoyance",
+   "chafe",
+   "vexation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "note": {
+  "form": "i",
+  "set": "dev",
+  "synset": "note.v.01",
+  "def": "make mention of",
+  "cos": 0.515,
+  "lemmas": [
+   "observe",
+   "mention",
+   "remark"
+  ],
+  "gloss": [
+   "mention"
+  ],
+  "genus_synset": "state.v.01",
+  "genus": [
+   "state",
+   "say",
+   "tell"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "current": {
+  "form": "o",
+  "set": "dev",
+  "synset": "current.n.01",
+  "def": "a flow of electricity through a conductor",
+  "cos": 0.35,
+  "lemmas": [
+   "electric"
+  ],
+  "gloss": [
+   "flow",
+   "electricity",
+   "through",
+   "conductor"
+  ],
+  "genus_synset": "electrical_phenomenon.n.01",
+  "genus": [
+   "electrical",
+   "phenomenon"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "bet": {
+  "form": "i",
+  "set": "dev",
+  "synset": "bet.v.01",
+  "def": "maintain with or as if with a bet",
+  "cos": 0.212,
+  "lemmas": [
+   "wager"
+  ],
+  "gloss": [
+   "maintain",
+   "if"
+  ],
+  "genus_synset": "predict.v.01",
+  "genus": [
+   "predict",
+   "foretell",
+   "prognosticate"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "random": {
+  "form": "a",
+  "set": "dev",
+  "synset": "random.a.01",
+  "def": "lacking any definite plan or order or purpose; governed by or depending on chance",
+  "cos": 0.239,
+  "lemmas": [],
+  "gloss": [
+   "lacking",
+   "definite",
+   "plan",
+   "order",
+   "purpose",
+   "governed",
+   "depending",
+   "chance"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "house": {
+  "form": "o",
+  "set": "dev",
+  "synset": "house.n.01",
+  "def": "a dwelling that serves as living quarters for one or more families",
+  "cos": 0.359,
+  "lemmas": [],
+  "gloss": [
+   "dwelling",
+   "serves",
+   "living",
+   "quarters",
+   "more",
+   "families"
+  ],
+  "genus_synset": "building.n.01",
+  "genus": [
+   "building",
+   "edifice"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sanctuary": {
+  "form": "o",
+  "set": "dev",
+  "synset": "sanctuary.n.01",
+  "def": "a consecrated place where sacred objects are kept",
+  "cos": 0.4,
+  "lemmas": [],
+  "gloss": [
+   "consecrated",
+   "place",
+   "where",
+   "sacred",
+   "objects",
+   "kept"
+  ],
+  "genus_synset": "place.n.02",
+  "genus": [
+   "place",
+   "property"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "supermarket": {
+  "form": "o",
+  "set": "dev",
+  "synset": "supermarket.n.01",
+  "def": "a large self-service grocery store selling groceries and dairy products and household goods",
+  "cos": 0.614,
+  "lemmas": [],
+  "gloss": [
+   "large",
+   "self",
+   "service",
+   "grocery",
+   "store",
+   "selling",
+   "groceries",
+   "dairy",
+   "products",
+   "household",
+   "goods"
+  ],
+  "genus_synset": "grocery_store.n.01",
+  "genus": [
+   "grocery",
+   "store",
+   "grocery",
+   "food",
+   "market"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "account": {
+  "form": "o",
+  "set": "dev",
+  "synset": "history.n.02",
+  "def": "a record or narrative description of past events",
+  "cos": 0.318,
+  "lemmas": [
+   "history",
+   "chronicle",
+   "story"
+  ],
+  "gloss": [
+   "record",
+   "narrative",
+   "description",
+   "past",
+   "events"
+  ],
+  "genus_synset": "record.n.01",
+  "genus": [
+   "record"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "outbreak": {
+  "form": "o",
+  "set": "dev",
+  "synset": "outbreak.n.01",
+  "def": "a sudden violent spontaneous occurrence (usually of some undesirable condition)",
+  "cos": 0.384,
+  "lemmas": [
+   "eruption",
+   "irruption"
+  ],
+  "gloss": [
+   "sudden",
+   "violent",
+   "spontaneous",
+   "occurrence",
+   "undesirable",
+   "condition"
+  ],
+  "genus_synset": "happening.n.01",
+  "genus": [
+   "happening",
+   "occurrence",
+   "occurrent"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "repair": {
+  "form": "i",
+  "set": "dev",
+  "synset": "repair.v.01",
+  "def": "restore by replacing a part or putting together what is torn or broken",
+  "cos": 0.546,
+  "lemmas": [
+   "mend",
+   "fix",
+   "bushel",
+   "doctor",
+   "furbish",
+   "up",
+   "restore",
+   "touch",
+   "on"
+  ],
+  "gloss": [
+   "restore",
+   "replacing",
+   "part",
+   "putting",
+   "together",
+   "what",
+   "torn",
+   "broken"
+  ],
+  "genus_synset": "better.v.02",
+  "genus": [
+   "better",
+   "improve",
+   "amend"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "respect": {
+  "form": "o",
+  "set": "dev",
+  "synset": "respect.n.01",
+  "def": "(usually preceded by `in') a detail or point",
+  "cos": 0.396,
+  "lemmas": [
+   "regard"
+  ],
+  "gloss": [
+   "preceded",
+   "detail",
+   "point"
+  ],
+  "genus_synset": "detail.n.01",
+  "genus": [
+   "detail",
+   "item",
+   "point"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "forecast": {
+  "form": "i",
+  "set": "dev",
+  "synset": "forecast.v.01",
+  "def": "predict in advance",
+  "cos": 0.618,
+  "lemmas": [
+   "calculate"
+  ],
+  "gloss": [
+   "predict",
+   "advance"
+  ],
+  "genus_synset": "predict.v.01",
+  "genus": [
+   "predict",
+   "foretell",
+   "prognosticate"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "adjust": {
+  "form": "i",
+  "set": "dev",
+  "synset": "adjust.v.01",
+  "def": "alter or regulate so as to achieve accuracy or conform to a standard",
+  "cos": 0.551,
+  "lemmas": [
+   "set",
+   "correct"
+  ],
+  "gloss": [
+   "alter",
+   "regulate",
+   "so",
+   "achieve",
+   "accuracy",
+   "conform",
+   "standard"
+  ],
+  "genus_synset": "change.v.01",
+  "genus": [
+   "change",
+   "alter",
+   "modify"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "breakfast": {
+  "form": "o",
+  "set": "dev",
+  "synset": "breakfast.n.01",
+  "def": "the first meal of the day (usually in the morning)",
+  "cos": 0.499,
+  "lemmas": [],
+  "gloss": [
+   "first",
+   "meal",
+   "day",
+   "morning"
+  ],
+  "genus_synset": "meal.n.01",
+  "genus": [
+   "meal",
+   "repast"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "critically": {
+  "form": "e",
+  "set": "dev",
+  "synset": "critically.r.01",
+  "def": "in a critical manner",
+  "cos": 0.6,
+  "lemmas": [],
+  "gloss": [
+   "critical",
+   "manner"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "trade": {
+  "form": "o",
+  "set": "dev",
+  "synset": "trade.n.01",
+  "def": "the commercial exchange (buying and selling on domestic or international markets) of goods and services",
+  "cos": 0.589,
+  "lemmas": [],
+  "gloss": [
+   "commercial",
+   "exchange",
+   "buying",
+   "selling",
+   "domestic",
+   "international",
+   "markets",
+   "goods",
+   "services"
+  ],
+  "genus_synset": "commerce.n.01",
+  "genus": [
+   "commerce",
+   "commercialism",
+   "mercantilism"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "agenda": {
+  "form": "o",
+  "set": "dev",
+  "synset": "agenda.n.01",
+  "def": "a temporally organized plan for matters to be attended to",
+  "cos": 0.564,
+  "lemmas": [
+   "docket",
+   "schedule"
+  ],
+  "gloss": [
+   "temporally",
+   "organized",
+   "plan",
+   "matters",
+   "attended"
+  ],
+  "genus_synset": "plan.n.01",
+  "genus": [
+   "plan",
+   "program",
+   "programme"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "social": {
+  "form": "a",
+  "set": "dev",
+  "synset": "social.a.01",
+  "def": "relating to human society and its members",
+  "cos": 0.42,
+  "lemmas": [
+   "societal"
+  ],
+  "gloss": [
+   "relating",
+   "human",
+   "society",
+   "members"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "pump": {
+  "form": "i",
+  "set": "dev",
+  "synset": "pump.v.01",
+  "def": "operate like a pump; move up and down, like a handle or a pedal",
+  "cos": 0.19,
+  "lemmas": [],
+  "gloss": [
+   "operate",
+   "like",
+   "move",
+   "up",
+   "down",
+   "like",
+   "handle",
+   "pedal"
+  ],
+  "genus_synset": "wield.v.02",
+  "genus": [
+   "wield",
+   "handle",
+   "manage"
+  ],
+  "link": "LIKE",
+  "after": [
+   "move",
+   "up",
+   "down"
+  ]
+ },
+ "magnitude": {
+  "form": "o",
+  "set": "dev",
+  "synset": "magnitude.n.01",
+  "def": "the property of relative size or extent (whether large or small)",
+  "cos": 0.511,
+  "lemmas": [],
+  "gloss": [
+   "property",
+   "relative",
+   "size",
+   "extent",
+   "whether",
+   "large",
+   "small"
+  ],
+  "genus_synset": "property.n.02",
+  "genus": [
+   "property"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "wide": {
+  "form": "a",
+  "set": "dev",
+  "synset": "wide.a.01",
+  "def": "having great (or a certain) extent from one side to the other",
+  "cos": 0.492,
+  "lemmas": [
+   "broad"
+  ],
+  "gloss": [
+   "great",
+   "certain",
+   "extent",
+   "side",
+   "other"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "ahead": {
+  "form": "e",
+  "set": "dev",
+  "synset": "ahead.r.01",
+  "def": "at or in the front",
+  "cos": 0.487,
+  "lemmas": [
+   "in",
+   "front",
+   "before"
+  ],
+  "gloss": [
+   "front"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "firmly": {
+  "form": "e",
+  "set": "dev",
+  "synset": "firm.r.01",
+  "def": "with resolute determination",
+  "cos": 0.339,
+  "lemmas": [
+   "firm",
+   "steadfastly",
+   "unwaveringly"
+  ],
+  "gloss": [
+   "resolute",
+   "determination"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "altogether": {
+  "form": "e",
+  "set": "dev",
+  "synset": "wholly.r.01",
+  "def": "to a complete degree or to the full or entire extent (`whole' is often used informally for `wholly')",
+  "cos": 0.673,
+  "lemmas": [
+   "wholly",
+   "entirely",
+   "completely",
+   "totally",
+   "all",
+   "whole"
+  ],
+  "gloss": [
+   "complete",
+   "degree",
+   "full",
+   "entire",
+   "extent",
+   "whole",
+   "informally",
+   "wholly"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "FOR",
+  "after": [
+   "formally",
+   "wholly"
+  ]
+ },
+ "mix": {
+  "form": "i",
+  "set": "dev",
+  "synset": "blend.v.03",
+  "def": "mix together different elements",
+  "cos": 0.617,
+  "lemmas": [
+   "blend",
+   "flux",
+   "conflate",
+   "commingle",
+   "immix",
+   "fuse",
+   "coalesce",
+   "meld",
+   "combine",
+   "merge"
+  ],
+  "gloss": [
+   "together",
+   "different",
+   "elements"
+  ],
+  "genus_synset": "change_integrity.v.01",
+  "genus": [
+   "change",
+   "integrity"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "nomination": {
+  "form": "o",
+  "set": "dev",
+  "synset": "nomination.n.01",
+  "def": "the act of officially naming a candidate",
+  "cos": 0.533,
+  "lemmas": [],
+  "gloss": [
+   "act",
+   "officially",
+   "naming",
+   "candidate"
+  ],
+  "genus_synset": "appointment.n.01",
+  "genus": [
+   "appointment",
+   "assignment",
+   "designation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "installation": {
+  "form": "o",
+  "set": "dev",
+  "synset": "installation.n.01",
+  "def": "the act of installing something (as equipment)",
+  "cos": 0.262,
+  "lemmas": [
+   "installing",
+   "installment",
+   "instalment"
+  ],
+  "gloss": [
+   "act",
+   "installing",
+   "equipment"
+  ],
+  "genus_synset": "beginning.n.05",
+  "genus": [
+   "beginning",
+   "start",
+   "commencement"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "cafe": {
+  "form": "o",
+  "set": "dev",
+  "synset": "cafe.n.01",
+  "def": "a small restaurant where drinks and snacks are sold",
+  "cos": 0.759,
+  "lemmas": [
+   "coffeehouse",
+   "coffee",
+   "shop",
+   "coffee",
+   "bar"
+  ],
+  "gloss": [
+   "small",
+   "restaurant",
+   "where",
+   "drinks",
+   "snacks",
+   "sold"
+  ],
+  "genus_synset": "restaurant.n.01",
+  "genus": [
+   "restaurant",
+   "eating",
+   "house",
+   "eating",
+   "place"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "preliminary": {
+  "form": "a",
+  "set": "dev",
+  "synset": "preliminary.s.01",
+  "def": "denoting an action or event preceding or in preparation for something more important; designed to orient or acquaint with a situation before proceeding",
+  "cos": 0.248,
+  "lemmas": [],
+  "gloss": [
+   "denoting",
+   "action",
+   "event",
+   "preceding",
+   "preparation",
+   "more",
+   "important",
+   "designed",
+   "orient",
+   "acquaint",
+   "situation",
+   "before",
+   "proceeding"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "FOR",
+  "after": [
+   "more",
+   "important",
+   "designed"
+  ]
+ },
+ "curious": {
+  "form": "a",
+  "set": "dev",
+  "synset": "curious.s.01",
+  "def": "beyond or deviating from the usual or expected",
+  "cos": 0.499,
+  "lemmas": [
+   "funny",
+   "odd",
+   "peculiar",
+   "queer",
+   "rum",
+   "rummy",
+   "singular"
+  ],
+  "gloss": [
+   "beyond",
+   "deviating",
+   "usual",
+   "expected"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "FROM",
+  "after": [
+   "usual",
+   "expected"
+  ]
+ },
+ "maintain": {
+  "form": "i",
+  "set": "dev",
+  "synset": "keep.v.01",
+  "def": "keep in a certain state, position, or activity; e.g.,",
+  "cos": 0.636,
+  "lemmas": [
+   "keep",
+   "hold"
+  ],
+  "gloss": [
+   "keep",
+   "certain",
+   "state",
+   "position",
+   "activity",
+   "e",
+   "g"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "mosque": {
+  "form": "o",
+  "set": "dev",
+  "synset": "mosque.n.01",
+  "def": "(Islam) a Muslim place of worship that usually has a minaret",
+  "cos": 0.621,
+  "lemmas": [],
+  "gloss": [
+   "islam",
+   "muslim",
+   "place",
+   "worship",
+   "has",
+   "minaret"
+  ],
+  "genus_synset": "place_of_worship.n.01",
+  "genus": [
+   "place",
+   "of",
+   "worship",
+   "house",
+   "of",
+   "prayer",
+   "house",
+   "of",
+   "god"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "elaborate": {
+  "form": "a",
+  "set": "dev",
+  "synset": "elaborate.s.01",
+  "def": "marked by complexity and richness of detail",
+  "cos": 0.425,
+  "lemmas": [
+   "luxuriant"
+  ],
+  "gloss": [
+   "marked",
+   "complexity",
+   "richness",
+   "detail"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "adjacent": {
+  "form": "a",
+  "set": "dev",
+  "synset": "adjacent.s.01",
+  "def": "nearest in space or position; immediately adjoining without intervening space",
+  "cos": 0.451,
+  "lemmas": [
+   "next",
+   "side",
+   "by",
+   "side"
+  ],
+  "gloss": [
+   "nearest",
+   "space",
+   "position",
+   "immediately",
+   "adjoining",
+   "without",
+   "intervening",
+   "space"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "create": {
+  "form": "i",
+  "set": "dev",
+  "synset": "make.v.03",
+  "def": "make or cause to be or to become",
+  "cos": 0.527,
+  "lemmas": [
+   "make"
+  ],
+  "gloss": [
+   "cause",
+   "become"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "electrical": {
+  "form": "a",
+  "set": "dev",
+  "synset": "electrical.a.01",
+  "def": "relating to or concerned with electricity",
+  "cos": 0.407,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "concerned",
+   "electricity"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "announcement": {
+  "form": "o",
+  "set": "dev",
+  "synset": "announcement.n.01",
+  "def": "a formal public statement",
+  "cos": 0.581,
+  "lemmas": [
+   "proclamation",
+   "annunciation",
+   "declaration"
+  ],
+  "gloss": [
+   "formal",
+   "public",
+   "statement"
+  ],
+  "genus_synset": "statement.n.01",
+  "genus": [
+   "statement"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "satellite": {
+  "form": "o",
+  "set": "dev",
+  "synset": "satellite.n.01",
+  "def": "man-made equipment that orbits around the earth or the moon",
+  "cos": 0.391,
+  "lemmas": [
+   "artificial",
+   "orbiter"
+  ],
+  "gloss": [
+   "man",
+   "equipment",
+   "orbits",
+   "around",
+   "earth",
+   "moon"
+  ],
+  "genus_synset": "equipment.n.01",
+  "genus": [
+   "equipment"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "invite": {
+  "form": "i",
+  "set": "dev",
+  "synset": "invite.v.01",
+  "def": "increase the likelihood of",
+  "cos": 0.277,
+  "lemmas": [
+   "ask",
+   "for"
+  ],
+  "gloss": [
+   "increase",
+   "likelihood"
+  ],
+  "genus_synset": "arouse.v.01",
+  "genus": [
+   "arouse",
+   "elicit",
+   "enkindle"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "dinner": {
+  "form": "o",
+  "set": "dev",
+  "synset": "dinner.n.01",
+  "def": "the main meal of the day served in the evening or at midday",
+  "cos": 0.642,
+  "lemmas": [],
+  "gloss": [
+   "main",
+   "meal",
+   "day",
+   "served",
+   "evening",
+   "midday"
+  ],
+  "genus_synset": "meal.n.01",
+  "genus": [
+   "meal",
+   "repast"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "institute": {
+  "form": "i",
+  "set": "dev",
+  "synset": "establish.v.02",
+  "def": "set up or lay the groundwork for",
+  "cos": 0.227,
+  "lemmas": [
+   "establish",
+   "found",
+   "plant",
+   "constitute"
+  ],
+  "gloss": [
+   "set",
+   "up",
+   "lay",
+   "groundwork"
+  ],
+  "genus_synset": "initiate.v.02",
+  "genus": [
+   "initiate",
+   "pioneer"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "elder": {
+  "form": "o",
+  "set": "dev",
+  "synset": "elder.n.01",
+  "def": "a person who is older than you are",
+  "cos": 0.432,
+  "lemmas": [
+   "senior"
+  ],
+  "gloss": [
+   "person",
+   "older",
+   "than",
+   "you"
+  ],
+  "genus_synset": "adult.n.01",
+  "genus": [
+   "adult",
+   "grownup"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "read": {
+  "form": "i",
+  "set": "dev",
+  "synset": "read.v.01",
+  "def": "interpret something that is written or printed",
+  "cos": 0.587,
+  "lemmas": [],
+  "gloss": [
+   "interpret",
+   "written",
+   "printed"
+  ],
+  "genus_synset": "interpret.v.01",
+  "genus": [
+   "interpret",
+   "construe",
+   "see"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "implement": {
+  "form": "i",
+  "set": "dev",
+  "synset": "implement.v.01",
+  "def": "apply in a manner consistent with its purpose or design",
+  "cos": 0.429,
+  "lemmas": [],
+  "gloss": [
+   "apply",
+   "manner",
+   "consistent",
+   "purpose",
+   "design"
+  ],
+  "genus_synset": "use.v.01",
+  "genus": [
+   "use",
+   "utilize",
+   "utilise"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "virtually": {
+  "form": "e",
+  "set": "dev",
+  "synset": "virtually.r.01",
+  "def": "in essence or effect but not in fact",
+  "cos": 0.322,
+  "lemmas": [],
+  "gloss": [
+   "essence",
+   "effect",
+   "but",
+   "not",
+   "fact"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "ten": {
+  "form": "a",
+  "set": "dev",
+  "synset": "ten.s.01",
+  "def": "being one more than nine",
+  "cos": 0.561,
+  "lemmas": [
+   "x"
+  ],
+  "gloss": [
+   "more",
+   "than",
+   "nine"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "drive": {
+  "form": "i",
+  "set": "dev",
+  "synset": "drive.v.01",
+  "def": "operate or control a vehicle",
+  "cos": 0.418,
+  "lemmas": [],
+  "gloss": [
+   "operate",
+   "control",
+   "vehicle"
+  ],
+  "genus_synset": "operate.v.03",
+  "genus": [
+   "operate",
+   "control"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "southeastern": {
+  "form": "a",
+  "set": "dev",
+  "synset": "southeast.s.02",
+  "def": "situated in or oriented toward the southeast",
+  "cos": 0.699,
+  "lemmas": [
+   "southeast",
+   "southeasterly"
+  ],
+  "gloss": [
+   "situated",
+   "oriented",
+   "toward",
+   "southeast"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "normal": {
+  "form": "a",
+  "set": "dev",
+  "synset": "normal.a.01",
+  "def": "conforming with or constituting a norm or standard or level or type or social norm; not abnormal",
+  "cos": 0.568,
+  "lemmas": [],
+  "gloss": [
+   "conforming",
+   "constituting",
+   "norm",
+   "standard",
+   "level",
+   "type",
+   "social",
+   "norm",
+   "not",
+   "abnormal"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "economy": {
+  "form": "o",
+  "set": "dev",
+  "synset": "economy.n.01",
+  "def": "the system of production and distribution and consumption",
+  "cos": 0.464,
+  "lemmas": [
+   "economic",
+   "system"
+  ],
+  "gloss": [
+   "system",
+   "production",
+   "distribution",
+   "consumption"
+  ],
+  "genus_synset": "system.n.02",
+  "genus": [
+   "system",
+   "scheme"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "discount": {
+  "form": "i",
+  "set": "dev",
+  "synset": "dismiss.v.01",
+  "def": "bar from attention or consideration",
+  "cos": 0.159,
+  "lemmas": [
+   "dismiss",
+   "disregard",
+   "brush",
+   "aside",
+   "brush",
+   "off",
+   "push",
+   "aside",
+   "ignore"
+  ],
+  "gloss": [
+   "bar",
+   "attention",
+   "consideration"
+  ],
+  "genus_synset": "reject.v.01",
+  "genus": [
+   "reject"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "please": {
+  "form": "i",
+  "set": "dev",
+  "synset": "please.v.01",
+  "def": "give pleasure to or be pleasing to",
+  "cos": 0.296,
+  "lemmas": [
+   "delight"
+  ],
+  "gloss": [
+   "give",
+   "pleasure",
+   "pleasing"
+  ],
+  "genus_synset": "satisfy.v.02",
+  "genus": [
+   "satisfy",
+   "gratify"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "handful": {
+  "form": "o",
+  "set": "dev",
+  "synset": "handful.n.01",
+  "def": "a small number or amount",
+  "cos": 0.43,
+  "lemmas": [
+   "smattering"
+  ],
+  "gloss": [
+   "small",
+   "number",
+   "amount"
+  ],
+  "genus_synset": "small_indefinite_quantity.n.01",
+  "genus": [
+   "small",
+   "indefinite",
+   "quantity",
+   "small",
+   "indefinite",
+   "amount"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "format": {
+  "form": "i",
+  "set": "dev",
+  "synset": "format.v.01",
+  "def": "set (printed matter) into a specific format",
+  "cos": 0.322,
+  "lemmas": [
+   "arrange"
+  ],
+  "gloss": [
+   "set",
+   "printed",
+   "matter",
+   "into",
+   "specific"
+  ],
+  "genus_synset": "change.v.02",
+  "genus": [
+   "change"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "bomber": {
+  "form": "o",
+  "set": "dev",
+  "synset": "bomber.n.01",
+  "def": "a military aircraft that drops bombs during flight",
+  "cos": 0.598,
+  "lemmas": [],
+  "gloss": [
+   "military",
+   "aircraft",
+   "drops",
+   "bombs",
+   "during",
+   "flight"
+  ],
+  "genus_synset": "warplane.n.01",
+  "genus": [
+   "warplane",
+   "military",
+   "plane"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "painful": {
+  "form": "a",
+  "set": "dev",
+  "synset": "painful.a.01",
+  "def": "causing physical or psychological pain",
+  "cos": 0.414,
+  "lemmas": [],
+  "gloss": [
+   "causing",
+   "physical",
+   "psychological",
+   "pain"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "withdrawal": {
+  "form": "o",
+  "set": "dev",
+  "synset": "withdrawal.n.01",
+  "def": "a retraction of a previously held position",
+  "cos": 0.039,
+  "lemmas": [
+   "backdown",
+   "climb",
+   "down"
+  ],
+  "gloss": [
+   "retraction",
+   "previously",
+   "held",
+   "position"
+  ],
+  "genus_synset": "retraction.n.01",
+  "genus": [
+   "retraction",
+   "abjuration",
+   "recantation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "adult": {
+  "form": "o",
+  "set": "dev",
+  "synset": "adult.n.01",
+  "def": "a fully developed person from maturity onward",
+  "cos": 0.389,
+  "lemmas": [
+   "grownup"
+  ],
+  "gloss": [
+   "fully",
+   "developed",
+   "person",
+   "maturity",
+   "onward"
+  ],
+  "genus_synset": "person.n.01",
+  "genus": [
+   "person",
+   "individual",
+   "someone"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "immune": {
+  "form": "a",
+  "set": "dev",
+  "synset": "immune.a.01",
+  "def": "relating to the condition of immunity",
+  "cos": 0.435,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "condition",
+   "immunity"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "recommend": {
+  "form": "i",
+  "set": "dev",
+  "synset": "recommend.v.01",
+  "def": "push for something",
+  "cos": 0.374,
+  "lemmas": [
+   "urge",
+   "advocate"
+  ],
+  "gloss": [
+   "push"
+  ],
+  "genus_synset": "propose.v.01",
+  "genus": [
+   "propose",
+   "suggest",
+   "advise"
+  ],
+  "link": "FOR",
+  "after": []
+ },
+ "hat": {
+  "form": "o",
+  "set": "dev",
+  "synset": "hat.n.01",
+  "def": "headdress that protects the head from bad weather; has shaped crown and usually a brim",
+  "cos": 0.299,
+  "lemmas": [
+   "chapeau",
+   "lid"
+  ],
+  "gloss": [
+   "headdress",
+   "protects",
+   "head",
+   "bad",
+   "weather",
+   "has",
+   "shaped",
+   "crown",
+   "brim"
+  ],
+  "genus_synset": "headdress.n.01",
+  "genus": [
+   "headdress",
+   "headgear"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "massive": {
+  "form": "a",
+  "set": "dev",
+  "synset": "massive.s.01",
+  "def": "imposing in size or bulk or solidity",
+  "cos": 0.532,
+  "lemmas": [
+   "monolithic",
+   "monumental"
+  ],
+  "gloss": [
+   "imposing",
+   "size",
+   "bulk",
+   "solidity"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "submarine": {
+  "form": "o",
+  "set": "dev",
+  "synset": "submarine.n.01",
+  "def": "a submersible warship usually armed with torpedoes",
+  "cos": 0.587,
+  "lemmas": [
+   "pigboat",
+   "sub",
+   "u",
+   "boat"
+  ],
+  "gloss": [
+   "submersible",
+   "warship",
+   "armed",
+   "torpedoes"
+  ],
+  "genus_synset": "submersible.n.02",
+  "genus": [
+   "submersible",
+   "submersible",
+   "warship"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "realistic": {
+  "form": "a",
+  "set": "dev",
+  "synset": "realistic.a.01",
+  "def": "aware or expressing awareness of things as they really are",
+  "cos": 0.149,
+  "lemmas": [],
+  "gloss": [
+   "aware",
+   "expressing",
+   "awareness",
+   "things",
+   "they",
+   "really"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "suburb": {
+  "form": "o",
+  "set": "dev",
+  "synset": "suburb.n.01",
+  "def": "a residential district located on the outskirts of a city",
+  "cos": 0.754,
+  "lemmas": [
+   "suburbia",
+   "suburban",
+   "area"
+  ],
+  "gloss": [
+   "residential",
+   "district",
+   "located",
+   "outskirts",
+   "city"
+  ],
+  "genus_synset": "residential_district.n.01",
+  "genus": [
+   "residential",
+   "district",
+   "residential",
+   "area",
+   "community"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "danger": {
+  "form": "o",
+  "set": "dev",
+  "synset": "danger.n.01",
+  "def": "the condition of being susceptible to harm or injury",
+  "cos": 0.368,
+  "lemmas": [],
+  "gloss": [
+   "condition",
+   "susceptible",
+   "harm",
+   "injury"
+  ],
+  "genus_synset": "condition.n.01",
+  "genus": [
+   "condition",
+   "status"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "nevertheless": {
+  "form": "e",
+  "set": "dev",
+  "synset": "however.r.01",
+  "def": "despite anything to the contrary (usually following a concession)",
+  "cos": 0.761,
+  "lemmas": [
+   "however",
+   "withal",
+   "still",
+   "yet",
+   "all",
+   "the",
+   "same",
+   "even",
+   "so",
+   "nonetheless",
+   "notwithstanding"
+  ],
+  "gloss": [
+   "despite",
+   "anything",
+   "contrary",
+   "following",
+   "concession"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "charitable": {
+  "form": "a",
+  "set": "dev",
+  "synset": "charitable.a.01",
+  "def": "relating to or characterized by charity",
+  "cos": 0.465,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "characterized",
+   "charity"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "palace": {
+  "form": "o",
+  "set": "dev",
+  "synset": "palace.n.01",
+  "def": "a large and stately mansion",
+  "cos": 0.572,
+  "lemmas": [
+   "castle"
+  ],
+  "gloss": [
+   "large",
+   "stately",
+   "mansion"
+  ],
+  "genus_synset": "mansion.n.02",
+  "genus": [
+   "mansion",
+   "mansion",
+   "house",
+   "manse"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "hang": {
+  "form": "i",
+  "set": "dev",
+  "synset": "hang.v.01",
+  "def": "be suspended or hanging",
+  "cos": 0.713,
+  "lemmas": [],
+  "gloss": [
+   "suspended",
+   "hanging"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "discrimination": {
+  "form": "o",
+  "set": "test",
+  "synset": "discrimination.n.01",
+  "def": "unfair treatment of a person or group on the basis of prejudice",
+  "cos": 0.329,
+  "lemmas": [
+   "favoritism",
+   "favouritism"
+  ],
+  "gloss": [
+   "unfair",
+   "treatment",
+   "person",
+   "group",
+   "basis",
+   "prejudice"
+  ],
+  "genus_synset": "social_control.n.01",
+  "genus": [
+   "social",
+   "control"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "temporary": {
+  "form": "a",
+  "set": "test",
+  "synset": "impermanent.a.01",
+  "def": "not permanent; not lasting; - James Thurber",
+  "cos": 0.418,
+  "lemmas": [
+   "impermanent"
+  ],
+  "gloss": [
+   "not",
+   "permanent",
+   "not",
+   "lasting",
+   "james",
+   "thurber"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "spin": {
+  "form": "i",
+  "set": "test",
+  "synset": "spin.v.01",
+  "def": "revolve quickly and repeatedly around one's own axis",
+  "cos": 0.451,
+  "lemmas": [
+   "around",
+   "whirl",
+   "reel",
+   "gyrate"
+  ],
+  "gloss": [
+   "revolve",
+   "quickly",
+   "repeatedly",
+   "around",
+   "s",
+   "own",
+   "axis"
+  ],
+  "genus_synset": "revolve.v.01",
+  "genus": [
+   "revolve",
+   "go",
+   "around",
+   "rotate"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "conduct": {
+  "form": "i",
+  "set": "test",
+  "synset": "conduct.v.01",
+  "def": "direct the course of; manage or control",
+  "cos": 0.348,
+  "lemmas": [
+   "carry",
+   "on",
+   "deal"
+  ],
+  "gloss": [
+   "direct",
+   "course",
+   "manage",
+   "control"
+  ],
+  "genus_synset": "manage.v.02",
+  "genus": [
+   "manage",
+   "deal",
+   "care"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "nationalist": {
+  "form": "o",
+  "set": "test",
+  "synset": "patriot.n.01",
+  "def": "one who loves and defends his or her country",
+  "cos": 0.28,
+  "lemmas": [
+   "patriot"
+  ],
+  "gloss": [
+   "loves",
+   "defends",
+   "country"
+  ],
+  "genus_synset": "national.n.01",
+  "genus": [
+   "national",
+   "subject"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "committee": {
+  "form": "o",
+  "set": "test",
+  "synset": "committee.n.01",
+  "def": "a special group delegated to consider some matter;  - Milton Berle",
+  "cos": 0.503,
+  "lemmas": [
+   "commission"
+  ],
+  "gloss": [
+   "special",
+   "group",
+   "delegated",
+   "consider",
+   "matter",
+   "milton",
+   "berle"
+  ],
+  "genus_synset": "administrative_unit.n.01",
+  "genus": [
+   "administrative",
+   "unit",
+   "administrative",
+   "body"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "passenger": {
+  "form": "o",
+  "set": "test",
+  "synset": "passenger.n.01",
+  "def": "a traveler riding in a vehicle (a boat or bus or car or plane or train etc) who is not operating it",
+  "cos": 0.613,
+  "lemmas": [
+   "rider"
+  ],
+  "gloss": [
+   "traveler",
+   "riding",
+   "vehicle",
+   "boat",
+   "bus",
+   "car",
+   "plane",
+   "train",
+   "not",
+   "operating"
+  ],
+  "genus_synset": "traveler.n.01",
+  "genus": [
+   "traveler",
+   "traveller"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "shake": {
+  "form": "i",
+  "set": "test",
+  "synset": "shake.v.01",
+  "def": "move or cause to move back and forth",
+  "cos": 0.28,
+  "lemmas": [
+   "agitate"
+  ],
+  "gloss": [
+   "move",
+   "cause",
+   "move",
+   "back",
+   "forth"
+  ],
+  "genus_synset": "move.v.03",
+  "genus": [
+   "move"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "celebrity": {
+  "form": "o",
+  "set": "test",
+  "synset": "celebrity.n.01",
+  "def": "a widely known person",
+  "cos": 0.349,
+  "lemmas": [
+   "famous",
+   "person"
+  ],
+  "gloss": [
+   "widely",
+   "known",
+   "person"
+  ],
+  "genus_synset": "important_person.n.01",
+  "genus": [
+   "important",
+   "person",
+   "influential",
+   "person",
+   "personage"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "movement": {
+  "form": "o",
+  "set": "test",
+  "synset": "motion.n.03",
+  "def": "a change of position that does not entail a change of location",
+  "cos": 0.404,
+  "lemmas": [
+   "motion",
+   "move",
+   "motility"
+  ],
+  "gloss": [
+   "change",
+   "position",
+   "does",
+   "not",
+   "entail",
+   "change",
+   "location"
+  ],
+  "genus_synset": "change.n.03",
+  "genus": [
+   "change"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "environmental": {
+  "form": "a",
+  "set": "test",
+  "synset": "environmental.a.01",
+  "def": "of or relating to the external conditions or surroundings",
+  "cos": 0.25,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "external",
+   "conditions",
+   "surroundings"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "grand": {
+  "form": "a",
+  "set": "test",
+  "synset": "expansive.s.01",
+  "def": "of behavior that is impressive and ambitious in scale or scope",
+  "cos": 0.34,
+  "lemmas": [
+   "expansive",
+   "heroic"
+  ],
+  "gloss": [
+   "behavior",
+   "impressive",
+   "ambitious",
+   "scale",
+   "scope"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "band": {
+  "form": "o",
+  "set": "test",
+  "synset": "set.n.05",
+  "def": "an unofficial association of people or groups",
+  "cos": 0.336,
+  "lemmas": [
+   "set",
+   "circle",
+   "lot"
+  ],
+  "gloss": [
+   "unofficial",
+   "association",
+   "people",
+   "groups"
+  ],
+  "genus_synset": "social_group.n.01",
+  "genus": [
+   "social",
+   "group"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "extensively": {
+  "form": "e",
+  "set": "test",
+  "synset": "extensively.r.01",
+  "def": "in a widespread way",
+  "cos": 0.342,
+  "lemmas": [],
+  "gloss": [
+   "widespread",
+   "way"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "basically": {
+  "form": "e",
+  "set": "test",
+  "synset": "basically.r.01",
+  "def": "in essence; at bottom or by one's (or its) very nature",
+  "cos": 0.704,
+  "lemmas": [
+   "fundamentally",
+   "essentially"
+  ],
+  "gloss": [
+   "essence",
+   "bottom",
+   "s",
+   "very",
+   "nature"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "shore": {
+  "form": "o",
+  "set": "test",
+  "synset": "shore.n.01",
+  "def": "the land along the edge of a body of water",
+  "cos": 0.391,
+  "lemmas": [],
+  "gloss": [
+   "land",
+   "along",
+   "edge",
+   "body",
+   "water"
+  ],
+  "genus_synset": "geological_formation.n.01",
+  "genus": [
+   "geological",
+   "formation",
+   "formation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "indeed": {
+  "form": "e",
+  "set": "test",
+  "synset": "indeed.r.01",
+  "def": "in truth (often tends to intensify)",
+  "cos": 0.56,
+  "lemmas": [
+   "so"
+  ],
+  "gloss": [
+   "truth",
+   "tends",
+   "intensify"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "alcohol": {
+  "form": "o",
+  "set": "test",
+  "synset": "alcohol.n.01",
+  "def": "a liquor or brew containing alcohol as the active agent",
+  "cos": 0.562,
+  "lemmas": [
+   "alcoholic",
+   "drink",
+   "alcoholic",
+   "beverage",
+   "intoxicant",
+   "inebriant"
+  ],
+  "gloss": [
+   "liquor",
+   "brew",
+   "containing",
+   "active",
+   "agent"
+  ],
+  "genus_synset": "drug_of_abuse.n.01",
+  "genus": [
+   "drug",
+   "of",
+   "abuse",
+   "street",
+   "drug"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sharply": {
+  "form": "e",
+  "set": "test",
+  "synset": "aggressively.r.01",
+  "def": "in an aggressive manner",
+  "cos": 0.359,
+  "lemmas": [
+   "aggressively"
+  ],
+  "gloss": [
+   "aggressive",
+   "manner"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "receive": {
+  "form": "i",
+  "set": "test",
+  "synset": "receive.v.01",
+  "def": "get something; come into possession of",
+  "cos": 0.463,
+  "lemmas": [
+   "have"
+  ],
+  "gloss": [
+   "get",
+   "come",
+   "into",
+   "possession"
+  ],
+  "genus_synset": "get.v.01",
+  "genus": [
+   "get",
+   "acquire"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "deputy": {
+  "form": "o",
+  "set": "test",
+  "synset": "deputy.n.01",
+  "def": "someone authorized to exercise the powers of sheriff in emergencies",
+  "cos": 0.489,
+  "lemmas": [
+   "sheriff"
+  ],
+  "gloss": [
+   "authorized",
+   "exercise",
+   "powers",
+   "sheriff",
+   "emergencies"
+  ],
+  "genus_synset": "lawman.n.01",
+  "genus": [
+   "lawman",
+   "law",
+   "officer",
+   "peace",
+   "officer"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "piracy": {
+  "form": "o",
+  "set": "test",
+  "synset": "piracy.n.01",
+  "def": "hijacking on the high seas or in similar contexts; taking a ship or plane away from the control of those who are legally entitled to it",
+  "cos": 0.234,
+  "lemmas": [
+   "buccaneering"
+  ],
+  "gloss": [
+   "hijacking",
+   "high",
+   "seas",
+   "similar",
+   "contexts",
+   "taking",
+   "ship",
+   "plane",
+   "away",
+   "control",
+   "those",
+   "legally",
+   "entitled"
+  ],
+  "genus_synset": "highjacking.n.01",
+  "genus": [
+   "highjacking",
+   "hijacking"
+  ],
+  "link": "FROM",
+  "after": [
+   "control",
+   "those",
+   "legally"
+  ]
+ },
+ "place": {
+  "form": "o",
+  "set": "test",
+  "synset": "topographic_point.n.01",
+  "def": "a point located with respect to surface features of some region",
+  "cos": 0.431,
+  "lemmas": [
+   "topographic",
+   "point",
+   "spot"
+  ],
+  "gloss": [
+   "point",
+   "located",
+   "respect",
+   "surface",
+   "features",
+   "region"
+  ],
+  "genus_synset": "point.n.02",
+  "genus": [
+   "point"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "involve": {
+  "form": "i",
+  "set": "test",
+  "synset": "involve.v.01",
+  "def": "connect closely and often incriminatingly",
+  "cos": 0.45,
+  "lemmas": [
+   "affect",
+   "regard"
+  ],
+  "gloss": [
+   "connect",
+   "closely",
+   "incriminatingly"
+  ],
+  "genus_synset": "refer.v.02",
+  "genus": [
+   "refer",
+   "pertain",
+   "relate"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "attraction": {
+  "form": "o",
+  "set": "test",
+  "synset": "attraction.n.01",
+  "def": "the force by which one object attracts another",
+  "cos": 0.331,
+  "lemmas": [
+   "attractive",
+   "force"
+  ],
+  "gloss": [
+   "force",
+   "object",
+   "attracts",
+   "another"
+  ],
+  "genus_synset": "force.n.02",
+  "genus": [
+   "force"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sheriff": {
+  "form": "o",
+  "set": "test",
+  "synset": "sheriff.n.01",
+  "def": "the principal law-enforcement officer in a county",
+  "cos": 0.594,
+  "lemmas": [],
+  "gloss": [
+   "principal",
+   "law",
+   "enforcement",
+   "officer",
+   "county"
+  ],
+  "genus_synset": "lawman.n.01",
+  "genus": [
+   "lawman",
+   "law",
+   "officer",
+   "peace",
+   "officer"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "nationally": {
+  "form": "e",
+  "set": "test",
+  "synset": "nationally.r.01",
+  "def": "with regard to a nation taken as a whole",
+  "cos": 0.231,
+  "lemmas": [],
+  "gloss": [
+   "regard",
+   "nation",
+   "taken",
+   "whole"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "rhetoric": {
+  "form": "o",
+  "set": "test",
+  "synset": "rhetoric.n.01",
+  "def": "using language effectively to please or persuade",
+  "cos": 0.201,
+  "lemmas": [],
+  "gloss": [
+   "using",
+   "language",
+   "effectively",
+   "please",
+   "persuade"
+  ],
+  "genus_synset": "expressive_style.n.01",
+  "genus": [
+   "expressive",
+   "style",
+   "style"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "breakthrough": {
+  "form": "o",
+  "set": "test",
+  "synset": "discovery.n.03",
+  "def": "a productive insight",
+  "cos": 0.418,
+  "lemmas": [
+   "discovery",
+   "find"
+  ],
+  "gloss": [
+   "productive",
+   "insight"
+  ],
+  "genus_synset": "insight.n.03",
+  "genus": [
+   "insight",
+   "brainstorm",
+   "brainwave"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "indoor": {
+  "form": "a",
+  "set": "test",
+  "synset": "indoor.a.01",
+  "def": "located, suited for, or taking place within a building",
+  "cos": 0.253,
+  "lemmas": [],
+  "gloss": [
+   "located",
+   "suited",
+   "taking",
+   "place",
+   "within",
+   "building"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "benchmark": {
+  "form": "o",
+  "set": "test",
+  "synset": "benchmark.n.01",
+  "def": "a standard by which something can be measured or judged",
+  "cos": 0.386,
+  "lemmas": [],
+  "gloss": [
+   "standard",
+   "can",
+   "measured",
+   "judged"
+  ],
+  "genus_synset": "standard.n.01",
+  "genus": [
+   "standard",
+   "criterion",
+   "measure"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "fatal": {
+  "form": "a",
+  "set": "test",
+  "synset": "fatal.a.01",
+  "def": "bringing death",
+  "cos": 0.32,
+  "lemmas": [],
+  "gloss": [
+   "bringing",
+   "death"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "tall": {
+  "form": "a",
+  "set": "test",
+  "synset": "tall.a.01",
+  "def": "great in vertical dimension; high in stature",
+  "cos": 0.432,
+  "lemmas": [],
+  "gloss": [
+   "great",
+   "vertical",
+   "dimension",
+   "high",
+   "stature"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "police": {
+  "form": "o",
+  "set": "test",
+  "synset": "police.n.01",
+  "def": "the force of policemen and officers",
+  "cos": 0.643,
+  "lemmas": [
+   "force",
+   "constabulary",
+   "law"
+  ],
+  "gloss": [
+   "force",
+   "policemen",
+   "officers"
+  ],
+  "genus_synset": "force.n.04",
+  "genus": [
+   "force",
+   "personnel"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "senator": {
+  "form": "o",
+  "set": "test",
+  "synset": "senator.n.01",
+  "def": "a member of a senate",
+  "cos": 0.586,
+  "lemmas": [],
+  "gloss": [
+   "member",
+   "senate"
+  ],
+  "genus_synset": "legislator.n.01",
+  "genus": [
+   "legislator"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "footage": {
+  "form": "o",
+  "set": "test",
+  "synset": "footage.n.01",
+  "def": "film that has been shot",
+  "cos": 0.381,
+  "lemmas": [],
+  "gloss": [
+   "film",
+   "has",
+   "been",
+   "shot"
+  ],
+  "genus_synset": "film.n.03",
+  "genus": [
+   "film",
+   "photographic",
+   "film"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "racism": {
+  "form": "o",
+  "set": "test",
+  "synset": "racism.n.01",
+  "def": "the prejudice that members of one race are intrinsically superior to members of other races",
+  "cos": 0.129,
+  "lemmas": [],
+  "gloss": [
+   "prejudice",
+   "members",
+   "race",
+   "intrinsically",
+   "superior",
+   "members",
+   "other",
+   "races"
+  ],
+  "genus_synset": "bias.n.01",
+  "genus": [
+   "bias",
+   "prejudice",
+   "preconception"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "move": {
+  "form": "i",
+  "set": "test",
+  "synset": "travel.v.01",
+  "def": "change location; move, travel, or proceed, also metaphorically",
+  "cos": 0.506,
+  "lemmas": [
+   "travel",
+   "go",
+   "locomote"
+  ],
+  "gloss": [
+   "change",
+   "location",
+   "travel",
+   "proceed",
+   "also",
+   "metaphorically"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "carpet": {
+  "form": "o",
+  "set": "test",
+  "synset": "rug.n.01",
+  "def": "floor covering consisting of a piece of thick heavy fabric (usually with nap or pile)",
+  "cos": 0.402,
+  "lemmas": [
+   "rug",
+   "carpeting"
+  ],
+  "gloss": [
+   "floor",
+   "covering",
+   "consisting",
+   "piece",
+   "thick",
+   "heavy",
+   "fabric",
+   "nap",
+   "pile"
+  ],
+  "genus_synset": "floor_cover.n.01",
+  "genus": [
+   "floor",
+   "cover",
+   "floor",
+   "covering"
+  ],
+  "link": "FROM",
+  "after": [
+   "piece",
+   "thick",
+   "heavy"
+  ]
+ },
+ "kill": {
+  "form": "i",
+  "set": "test",
+  "synset": "kill.v.01",
+  "def": "cause to die; put to death, usually intentionally or knowingly",
+  "cos": 0.434,
+  "lemmas": [],
+  "gloss": [
+   "cause",
+   "die",
+   "put",
+   "death",
+   "intentionally",
+   "knowingly"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "rally": {
+  "form": "i",
+  "set": "test",
+  "synset": "beat_up.v.02",
+  "def": "gather",
+  "cos": 0.286,
+  "lemmas": [
+   "beat",
+   "up",
+   "drum",
+   "up"
+  ],
+  "gloss": [
+   "gather"
+  ],
+  "genus_synset": "collect.v.04",
+  "genus": [
+   "collect",
+   "pull",
+   "in"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "pistol": {
+  "form": "o",
+  "set": "test",
+  "synset": "pistol.n.01",
+  "def": "a firearm that is held and fired with one hand",
+  "cos": 0.427,
+  "lemmas": [
+   "handgun",
+   "side",
+   "arm",
+   "shooting",
+   "iron"
+  ],
+  "gloss": [
+   "firearm",
+   "held",
+   "fired",
+   "hand"
+  ],
+  "genus_synset": "firearm.n.01",
+  "genus": [
+   "firearm",
+   "piece",
+   "small",
+   "arm"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "legendary": {
+  "form": "a",
+  "set": "test",
+  "synset": "legendary.s.01",
+  "def": "so celebrated as to having taken on the nature of a legend",
+  "cos": 0.464,
+  "lemmas": [],
+  "gloss": [
+   "so",
+   "celebrated",
+   "taken",
+   "nature",
+   "legend"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "recruit": {
+  "form": "i",
+  "set": "test",
+  "synset": "enroll.v.01",
+  "def": "register formally as a participant or member",
+  "cos": 0.235,
+  "lemmas": [
+   "enroll",
+   "inscribe",
+   "enter",
+   "enrol"
+  ],
+  "gloss": [
+   "register",
+   "formally",
+   "participant",
+   "member"
+  ],
+  "genus_synset": "register.v.01",
+  "genus": [
+   "register"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "laugh": {
+  "form": "i",
+  "set": "test",
+  "synset": "laugh.v.01",
+  "def": "produce laughter",
+  "cos": 0.175,
+  "lemmas": [
+   "express",
+   "joy",
+   "express",
+   "mirth"
+  ],
+  "gloss": [
+   "produce",
+   "laughter"
+  ],
+  "genus_synset": "express_emotion.v.01",
+  "genus": [
+   "express",
+   "emotion",
+   "express",
+   "feelings"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "governmental": {
+  "form": "a",
+  "set": "test",
+  "synset": "governmental.s.01",
+  "def": "relating to or dealing with the affairs or structure of government or politics or the state",
+  "cos": 0.544,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "dealing",
+   "affairs",
+   "structure",
+   "government",
+   "politics",
+   "state"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "soundtrack": {
+  "form": "o",
+  "set": "test",
+  "synset": "soundtrack.n.01",
+  "def": "sound recording on a narrow strip of a motion picture film",
+  "cos": 0.494,
+  "lemmas": [],
+  "gloss": [
+   "sound",
+   "recording",
+   "narrow",
+   "strip",
+   "motion",
+   "picture",
+   "film"
+  ],
+  "genus_synset": "sound_recording.n.01",
+  "genus": [
+   "sound",
+   "recording",
+   "audio",
+   "recording",
+   "audio"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "district": {
+  "form": "o",
+  "set": "test",
+  "synset": "district.n.01",
+  "def": "a region marked off for administrative or other purposes",
+  "cos": 0.38,
+  "lemmas": [
+   "territory",
+   "territorial",
+   "dominion",
+   "dominion"
+  ],
+  "gloss": [
+   "region",
+   "marked",
+   "off",
+   "administrative",
+   "other",
+   "purposes"
+  ],
+  "genus_synset": "region.n.03",
+  "genus": [
+   "region"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "honorary": {
+  "form": "a",
+  "set": "test",
+  "synset": "honorary.s.01",
+  "def": "given as an honor without the normal duties",
+  "cos": 0.495,
+  "lemmas": [],
+  "gloss": [
+   "given",
+   "honor",
+   "without",
+   "normal",
+   "duties"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "blend": {
+  "form": "i",
+  "set": "test",
+  "synset": "blend.v.01",
+  "def": "combine into one",
+  "cos": 0.563,
+  "lemmas": [
+   "intermix",
+   "immingle",
+   "intermingle"
+  ],
+  "gloss": [
+   "combine",
+   "into"
+  ],
+  "genus_synset": "mix.v.05",
+  "genus": [
+   "mix",
+   "mingle",
+   "commix"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "ghost": {
+  "form": "o",
+  "set": "test",
+  "synset": "ghost.n.01",
+  "def": "a mental representation of some haunting experience",
+  "cos": 0.424,
+  "lemmas": [
+   "shade",
+   "spook",
+   "wraith",
+   "specter",
+   "spectre"
+  ],
+  "gloss": [
+   "mental",
+   "representation",
+   "haunting",
+   "experience"
+  ],
+  "genus_synset": "apparition.n.03",
+  "genus": [
+   "apparition",
+   "phantom",
+   "phantasm"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "diverse": {
+  "form": "a",
+  "set": "test",
+  "synset": "divers.s.01",
+  "def": "many and different",
+  "cos": 0.656,
+  "lemmas": [
+   "divers"
+  ],
+  "gloss": [
+   "many",
+   "different"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "already": {
+  "form": "e",
+  "set": "test",
+  "synset": "already.r.01",
+  "def": "prior to a specified or implied time",
+  "cos": 0.193,
+  "lemmas": [],
+  "gloss": [
+   "prior",
+   "specified",
+   "implied",
+   "time"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "shift": {
+  "form": "i",
+  "set": "test",
+  "synset": "switch.v.04",
+  "def": "make a shift in or exchange of",
+  "cos": 0.573,
+  "lemmas": [
+   "switch",
+   "change",
+   "over"
+  ],
+  "gloss": [
+   "exchange"
+  ],
+  "genus_synset": "change.v.01",
+  "genus": [
+   "change",
+   "alter",
+   "modify"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "principle": {
+  "form": "o",
+  "set": "test",
+  "synset": "principle.n.01",
+  "def": "a basic generalization that is accepted as true and that can be used as a basis for reasoning or conduct",
+  "cos": 0.491,
+  "lemmas": [
+   "rule"
+  ],
+  "gloss": [
+   "basic",
+   "generalization",
+   "accepted",
+   "true",
+   "can",
+   "basis",
+   "reasoning",
+   "conduct"
+  ],
+  "genus_synset": "generalization.n.02",
+  "genus": [
+   "generalization",
+   "generalisation",
+   "generality"
+  ],
+  "link": "FOR",
+  "after": [
+   "basis",
+   "reasoning",
+   "conduct"
+  ]
+ },
+ "explanation": {
+  "form": "o",
+  "set": "test",
+  "synset": "explanation.n.01",
+  "def": "a statement that makes something comprehensible by describing the relevant structure or operation or circumstances etc.",
+  "cos": 0.419,
+  "lemmas": [
+   "account"
+  ],
+  "gloss": [
+   "statement",
+   "makes",
+   "comprehensible",
+   "describing",
+   "relevant",
+   "structure",
+   "operation",
+   "circumstances"
+  ],
+  "genus_synset": "statement.n.01",
+  "genus": [
+   "statement"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "exclusively": {
+  "form": "e",
+  "set": "test",
+  "synset": "entirely.r.02",
+  "def": "without any others being included or involved",
+  "cos": 0.595,
+  "lemmas": [
+   "entirely",
+   "solely",
+   "alone",
+   "only"
+  ],
+  "gloss": [
+   "without",
+   "others",
+   "included",
+   "involved"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "brush": {
+  "form": "i",
+  "set": "test",
+  "synset": "brush.v.01",
+  "def": "rub with a brush, or as if with a brush",
+  "cos": 0.31,
+  "lemmas": [],
+  "gloss": [
+   "rub",
+   "if"
+  ],
+  "genus_synset": "rub.v.01",
+  "genus": [
+   "rub"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "composition": {
+  "form": "o",
+  "set": "test",
+  "synset": "composition.n.01",
+  "def": "the spatial property resulting from the arrangement of parts in relation to each other and to the whole",
+  "cos": 0.286,
+  "lemmas": [
+   "composing"
+  ],
+  "gloss": [
+   "spatial",
+   "property",
+   "resulting",
+   "arrangement",
+   "parts",
+   "relation",
+   "each",
+   "other",
+   "whole"
+  ],
+  "genus_synset": "placement.n.01",
+  "genus": [
+   "placement",
+   "arrangement"
+  ],
+  "link": "FROM",
+  "after": [
+   "arrangement",
+   "parts",
+   "relation"
+  ]
+ },
+ "independently": {
+  "form": "e",
+  "set": "test",
+  "synset": "independently.r.01",
+  "def": "on your own; without outside help",
+  "cos": 0.291,
+  "lemmas": [],
+  "gloss": [
+   "your",
+   "own",
+   "without",
+   "outside",
+   "help"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "requirement": {
+  "form": "o",
+  "set": "test",
+  "synset": "requirement.n.01",
+  "def": "required activity",
+  "cos": 0.639,
+  "lemmas": [
+   "demand"
+  ],
+  "gloss": [
+   "required",
+   "activity"
+  ],
+  "genus_synset": "duty.n.01",
+  "genus": [
+   "duty",
+   "responsibility",
+   "obligation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "bigger": {
+  "form": "a",
+  "set": "test",
+  "synset": "bigger.s.01",
+  "def": "large or big relative to something else",
+  "cos": 0.751,
+  "lemmas": [
+   "larger"
+  ],
+  "gloss": [
+   "large",
+   "big",
+   "relative",
+   "else"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "instructor": {
+  "form": "o",
+  "set": "test",
+  "synset": "teacher.n.01",
+  "def": "a person whose occupation is teaching",
+  "cos": 0.66,
+  "lemmas": [
+   "teacher"
+  ],
+  "gloss": [
+   "person",
+   "occupation",
+   "teaching"
+  ],
+  "genus_synset": "educator.n.01",
+  "genus": [
+   "educator",
+   "pedagogue",
+   "pedagog"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "descent": {
+  "form": "o",
+  "set": "test",
+  "synset": "descent.n.01",
+  "def": "a movement downward",
+  "cos": 0.33,
+  "lemmas": [],
+  "gloss": [
+   "movement",
+   "downward"
+  ],
+  "genus_synset": "change_of_location.n.01",
+  "genus": [
+   "change",
+   "of",
+   "location",
+   "travel"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "obtain": {
+  "form": "i",
+  "set": "test",
+  "synset": "obtain.v.01",
+  "def": "come into possession of",
+  "cos": 0.299,
+  "lemmas": [],
+  "gloss": [
+   "come",
+   "into",
+   "possession"
+  ],
+  "genus_synset": "get.v.01",
+  "genus": [
+   "get",
+   "acquire"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "bore": {
+  "form": "i",
+  "set": "test",
+  "synset": "bore.v.01",
+  "def": "cause to be bored",
+  "cos": 0.27,
+  "lemmas": [
+   "tire"
+  ],
+  "gloss": [
+   "cause",
+   "bored"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "civilian": {
+  "form": "a",
+  "set": "test",
+  "synset": "civilian.a.01",
+  "def": "associated with civil life or performed by persons who are not active members of the military",
+  "cos": 0.417,
+  "lemmas": [],
+  "gloss": [
+   "associated",
+   "civil",
+   "life",
+   "performed",
+   "persons",
+   "not",
+   "active",
+   "members",
+   "military"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "ambitious": {
+  "form": "a",
+  "set": "test",
+  "synset": "ambitious.a.01",
+  "def": "having a strong desire for success or achievement",
+  "cos": 0.441,
+  "lemmas": [],
+  "gloss": [
+   "strong",
+   "desire",
+   "success",
+   "achievement"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "parliamentary": {
+  "form": "a",
+  "set": "test",
+  "synset": "parliamentary.a.01",
+  "def": "relating to or having the nature of a parliament",
+  "cos": 0.511,
+  "lemmas": [],
+  "gloss": [
+   "relating",
+   "nature",
+   "parliament"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "hopefully": {
+  "form": "e",
+  "set": "test",
+  "synset": "hopefully.r.01",
+  "def": "with hope; in a hopeful manner",
+  "cos": 0.645,
+  "lemmas": [],
+  "gloss": [
+   "hope",
+   "hopeful",
+   "manner"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "designation": {
+  "form": "o",
+  "set": "test",
+  "synset": "appellation.n.01",
+  "def": "identifying word or words by which someone or something is called and classified or distinguished from others",
+  "cos": 0.455,
+  "lemmas": [
+   "appellation",
+   "denomination",
+   "appellative"
+  ],
+  "gloss": [
+   "identifying",
+   "word",
+   "words",
+   "called",
+   "classified",
+   "distinguished",
+   "others"
+  ],
+  "genus_synset": "name.n.01",
+  "genus": [
+   "name"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "stimulus": {
+  "form": "o",
+  "set": "test",
+  "synset": "stimulation.n.02",
+  "def": "any stimulating information or event; acts to arouse action",
+  "cos": 0.274,
+  "lemmas": [
+   "stimulation",
+   "stimulant",
+   "input"
+  ],
+  "gloss": [
+   "stimulating",
+   "information",
+   "event",
+   "acts",
+   "arouse",
+   "action"
+  ],
+  "genus_synset": "information.n.02",
+  "genus": [
+   "information"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "imminent": {
+  "form": "a",
+  "set": "test",
+  "synset": "at_hand.s.02",
+  "def": "close in time; about to occur",
+  "cos": 0.256,
+  "lemmas": [
+   "at",
+   "hand",
+   "close",
+   "at",
+   "hand",
+   "impendent",
+   "impending"
+  ],
+  "gloss": [
+   "close",
+   "time",
+   "about",
+   "occur"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "concentration": {
+  "form": "o",
+  "set": "test",
+  "synset": "concentration.n.01",
+  "def": "the strength of a solution; number of molecules of a substance in a given volume",
+  "cos": 0.407,
+  "lemmas": [],
+  "gloss": [
+   "strength",
+   "solution",
+   "number",
+   "molecules",
+   "substance",
+   "given",
+   "volume"
+  ],
+  "genus_synset": "property.n.02",
+  "genus": [
+   "property"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "journey": {
+  "form": "o",
+  "set": "test",
+  "synset": "journey.n.01",
+  "def": "the act of traveling from one place to another",
+  "cos": 0.356,
+  "lemmas": [
+   "journeying"
+  ],
+  "gloss": [
+   "act",
+   "traveling",
+   "place",
+   "another"
+  ],
+  "genus_synset": "travel.n.01",
+  "genus": [
+   "travel",
+   "traveling",
+   "travelling"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "version": {
+  "form": "o",
+  "set": "test",
+  "synset": "version.n.01",
+  "def": "an interpretation of a matter from a particular viewpoint",
+  "cos": 0.213,
+  "lemmas": [],
+  "gloss": [
+   "interpretation",
+   "matter",
+   "particular",
+   "viewpoint"
+  ],
+  "genus_synset": "interpretation.n.03",
+  "genus": [
+   "interpretation"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "glass": {
+  "form": "o",
+  "set": "test",
+  "synset": "glass.n.01",
+  "def": "a brittle transparent solid with irregular atomic structure",
+  "cos": 0.243,
+  "lemmas": [],
+  "gloss": [
+   "brittle",
+   "transparent",
+   "solid",
+   "irregular",
+   "atomic",
+   "structure"
+  ],
+  "genus_synset": "solid.n.01",
+  "genus": [
+   "solid"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "domain": {
+  "form": "o",
+  "set": "test",
+  "synset": "sphere.n.01",
+  "def": "a particular environment or walk of life",
+  "cos": 0.286,
+  "lemmas": [
+   "sphere",
+   "area",
+   "orbit",
+   "field",
+   "arena"
+  ],
+  "gloss": [
+   "particular",
+   "environment",
+   "walk",
+   "life"
+  ],
+  "genus_synset": "environment.n.01",
+  "genus": [
+   "environment"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "provide": {
+  "form": "i",
+  "set": "test",
+  "synset": "supply.v.01",
+  "def": "give something useful or necessary to",
+  "cos": 0.747,
+  "lemmas": [
+   "supply",
+   "render",
+   "furnish"
+  ],
+  "gloss": [
+   "give",
+   "useful",
+   "necessary"
+  ],
+  "genus_synset": "give.v.03",
+  "genus": [
+   "give"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sheer": {
+  "form": "a",
+  "set": "test",
+  "synset": "absolute.s.01",
+  "def": "complete and without restriction or qualification; sometimes used informally as intensifiers",
+  "cos": 0.334,
+  "lemmas": [
+   "absolute",
+   "downright",
+   "out",
+   "and",
+   "out",
+   "rank",
+   "right",
+   "down"
+  ],
+  "gloss": [
+   "complete",
+   "without",
+   "restriction",
+   "qualification",
+   "sometimes",
+   "informally",
+   "intensifiers"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "FOR",
+  "after": [
+   "formally",
+   "intensifiers"
+  ]
+ },
+ "stay": {
+  "form": "i",
+  "set": "test",
+  "synset": "stay.v.01",
+  "def": "stay the same; remain in a certain state",
+  "cos": 0.606,
+  "lemmas": [
+   "remain",
+   "rest"
+  ],
+  "gloss": [
+   "same",
+   "remain",
+   "certain",
+   "state"
+  ],
+  "genus_synset": "be.v.01",
+  "genus": [
+   "be"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "huge": {
+  "form": "a",
+  "set": "test",
+  "synset": "huge.s.01",
+  "def": "unusually great in size or amount or degree or especially extent or scope; ; ; ; ; ; ; ; ; - W.R.Inge",
+  "cos": 0.556,
+  "lemmas": [
+   "immense",
+   "vast",
+   "brobdingnagian"
+  ],
+  "gloss": [
+   "unusually",
+   "great",
+   "size",
+   "amount",
+   "degree",
+   "extent",
+   "scope",
+   "w",
+   "r",
+   "inge"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "founder": {
+  "form": "o",
+  "set": "test",
+  "synset": "laminitis.n.01",
+  "def": "inflammation of the laminated tissue that attaches the hoof to the foot of a horse",
+  "cos": -0.028,
+  "lemmas": [
+   "laminitis"
+  ],
+  "gloss": [
+   "inflammation",
+   "laminated",
+   "tissue",
+   "attaches",
+   "hoof",
+   "foot",
+   "horse"
+  ],
+  "genus_synset": "inflammation.n.01",
+  "genus": [
+   "inflammation",
+   "redness",
+   "rubor"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "preservation": {
+  "form": "o",
+  "set": "test",
+  "synset": "preservation.n.01",
+  "def": "the activity of protecting something from loss or danger",
+  "cos": 0.401,
+  "lemmas": [
+   "saving"
+  ],
+  "gloss": [
+   "activity",
+   "protecting",
+   "loss",
+   "danger"
+  ],
+  "genus_synset": "protection.n.01",
+  "genus": [
+   "protection"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "sprint": {
+  "form": "i",
+  "set": "test",
+  "synset": "sprint.v.01",
+  "def": "run very fast, usually for a short distance",
+  "cos": 0.414,
+  "lemmas": [],
+  "gloss": [
+   "run",
+   "very",
+   "fast",
+   "short",
+   "distance"
+  ],
+  "genus_synset": "run.v.01",
+  "genus": [
+   "run"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "live": {
+  "form": "i",
+  "set": "test",
+  "synset": "populate.v.01",
+  "def": "inhabit or live in; be an inhabitant of",
+  "cos": 0.515,
+  "lemmas": [
+   "populate",
+   "dwell",
+   "inhabit"
+  ],
+  "gloss": [
+   "inhabit",
+   "inhabitant"
+  ],
+  "genus_synset": "be.v.03",
+  "genus": [
+   "be"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "kiss": {
+  "form": "i",
+  "set": "test",
+  "synset": "snog.v.01",
+  "def": "touch with the lips or press the lips (against someone's mouth or other body part) as an expression of love, greeting, etc.",
+  "cos": 0.263,
+  "lemmas": [
+   "snog",
+   "buss",
+   "osculate"
+  ],
+  "gloss": [
+   "touch",
+   "lips",
+   "press",
+   "lips",
+   "against",
+   "s",
+   "mouth",
+   "other",
+   "body",
+   "part",
+   "expression",
+   "love",
+   "greeting"
+  ],
+  "genus_synset": "touch.v.01",
+  "genus": [
+   "touch"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "subsequent": {
+  "form": "a",
+  "set": "test",
+  "synset": "subsequent.a.01",
+  "def": "following in time or order",
+  "cos": 0.566,
+  "lemmas": [],
+  "gloss": [
+   "following",
+   "time",
+   "order"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "secondary": {
+  "form": "a",
+  "set": "test",
+  "synset": "secondary.a.01",
+  "def": "being of second rank or importance or value; not direct or immediate",
+  "cos": 0.22,
+  "lemmas": [],
+  "gloss": [
+   "second",
+   "rank",
+   "importance",
+   "value",
+   "not",
+   "direct",
+   "immediate"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "start": {
+  "form": "i",
+  "set": "test",
+  "synset": "get_down.v.07",
+  "def": "take the first step or steps in carrying out an action",
+  "cos": 0.528,
+  "lemmas": [
+   "get",
+   "down",
+   "begin",
+   "get",
+   "out",
+   "set",
+   "about",
+   "set",
+   "out",
+   "commence"
+  ],
+  "gloss": [
+   "take",
+   "first",
+   "step",
+   "steps",
+   "carrying",
+   "out",
+   "action"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "participate": {
+  "form": "i",
+  "set": "test",
+  "synset": "participate.v.01",
+  "def": "share in something",
+  "cos": 0.421,
+  "lemmas": [
+   "take",
+   "part"
+  ],
+  "gloss": [
+   "share"
+  ],
+  "genus_synset": "act.v.01",
+  "genus": [
+   "act",
+   "move"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "kitchen": {
+  "form": "o",
+  "set": "test",
+  "synset": "kitchen.n.01",
+  "def": "a room equipped for preparing meals",
+  "cos": 0.53,
+  "lemmas": [],
+  "gloss": [
+   "room",
+   "equipped",
+   "preparing",
+   "meals"
+  ],
+  "genus_synset": "room.n.01",
+  "genus": [
+   "room"
+  ],
+  "link": "FOR",
+  "after": [
+   "preparing",
+   "meals"
+  ]
+ },
+ "overhaul": {
+  "form": "i",
+  "set": "test",
+  "synset": "pass.v.07",
+  "def": "travel past",
+  "cos": 0.088,
+  "lemmas": [
+   "pass",
+   "overtake"
+  ],
+  "gloss": [
+   "travel",
+   "past"
+  ],
+  "genus_synset": "advance.v.01",
+  "genus": [
+   "advance",
+   "progress",
+   "pass",
+   "on"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "overnight": {
+  "form": "e",
+  "set": "test",
+  "synset": "overnight.r.01",
+  "def": "during or for the length of one night",
+  "cos": 0.422,
+  "lemmas": [],
+  "gloss": [
+   "during",
+   "length",
+   "night"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "elementary": {
+  "form": "a",
+  "set": "test",
+  "synset": "elementary.s.01",
+  "def": "easy and not involved or complicated",
+  "cos": 0.195,
+  "lemmas": [
+   "simple",
+   "uncomplicated",
+   "unproblematic"
+  ],
+  "gloss": [
+   "easy",
+   "not",
+   "involved",
+   "complicated"
+  ],
+  "genus_synset": null,
+  "genus": [],
+  "link": "PI",
+  "after": []
+ },
+ "silicon": {
+  "form": "o",
+  "set": "test",
+  "synset": "silicon.n.01",
+  "def": "a tetravalent nonmetallic element; next to oxygen it is the most abundant element in the earth's crust; occurs in clay and feldspar and granite and quartz and sand; used as a semiconductor in transistors",
+  "cos": 0.465,
+  "lemmas": [
+   "si",
+   "atomic",
+   "number"
+  ],
+  "gloss": [
+   "tetravalent",
+   "nonmetallic",
+   "element",
+   "next",
+   "oxygen",
+   "most",
+   "abundant",
+   "element",
+   "earth",
+   "s",
+   "crust",
+   "occurs",
+   "clay",
+   "feldspar",
+   "granite",
+   "quartz",
+   "sand",
+   "semiconductor",
+   "transistors"
+  ],
+  "genus_synset": "semiconductor.n.01",
+  "genus": [
+   "semiconductor",
+   "semiconducting",
+   "material"
+  ],
+  "link": "FOR",
+  "after": [
+   "semiconductor",
+   "transistors"
+  ]
+ },
+ "surge": {
+  "form": "i",
+  "set": "test",
+  "synset": "billow.v.03",
+  "def": "rise and move, as in waves or billows",
+  "cos": 0.496,
+  "lemmas": [
+   "billow",
+   "heave"
+  ],
+  "gloss": [
+   "rise",
+   "move",
+   "waves",
+   "billows"
+  ],
+  "genus_synset": "inflate.v.02",
+  "genus": [
+   "inflate",
+   "blow",
+   "up"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "reduce": {
+  "form": "i",
+  "set": "test",
+  "synset": "reduce.v.01",
+  "def": "cut down on; make a reduction in",
+  "cos": 0.492,
+  "lemmas": [
+   "cut",
+   "down",
+   "cut",
+   "back",
+   "trim",
+   "trim",
+   "down",
+   "trim",
+   "back",
+   "cut",
+   "bring",
+   "down"
+  ],
+  "gloss": [
+   "cut",
+   "down",
+   "reduction"
+  ],
+  "genus_synset": "decrease.v.02",
+  "genus": [
+   "decrease",
+   "lessen",
+   "minify"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "fellow": {
+  "form": "o",
+  "set": "test",
+  "synset": "chap.n.01",
+  "def": "a boy or man",
+  "cos": 0.208,
+  "lemmas": [
+   "chap",
+   "feller",
+   "fella",
+   "lad",
+   "gent",
+   "blighter",
+   "cuss",
+   "bloke"
+  ],
+  "gloss": [
+   "boy",
+   "man"
+  ],
+  "genus_synset": "male.n.02",
+  "genus": [
+   "male",
+   "male",
+   "person"
+  ],
+  "link": "PI",
+  "after": []
+ },
+ "poet": {
+  "form": "o",
+  "set": "test",
+  "synset": "poet.n.01",
+  "def": "a writer of poems (the term is usually reserved for writers of good poetry)",
+  "cos": 0.713,
+  "lemmas": [],
+  "gloss": [
+   "writer",
+   "poems",
+   "term",
+   "reserved",
+   "writers",
+   "good",
+   "poetry"
+  ],
+  "genus_synset": "writer.n.01",
+  "genus": [
+   "writer",
+   "author"
+  ],
+  "link": "PI",
+  "after": []
+ }
+}
