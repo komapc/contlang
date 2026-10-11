@@ -1,0 +1,2270 @@
+[
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) CONSUME(=+5) BIG(=-3) | o",
+"c1": 0.28570346707991545,
+"n": 2
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) | o",
+"c1": 0.36014128868460143,
+"n": 4
+},
+{
+"src": "links",
+"w": "knife",
+"code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.9999999999999997,
+"n": 12
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "paper",
+"code": "TEXT | o PI THING(=0) LONG(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+5) | o PI THING(=+4) BODY SIDE(=+5) | o",
+"c1": 0.14067685552107045,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) THING(=0) TOUCH(=-5) | o PI THING(=0) GOOD(=+5) | o",
+"c1": 0.40073074347321264,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) JOIN(=+5) | o PI LIVE(=+5) INSIDE(=+5) PLACE | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) SEE(=+3) | o PI GRAIN(=+3) TOUCH(=-3) | o",
+"c1": 0.5567722043772851,
+"n": 2
+},
+{
+"src": "links",
+"w": "library",
+"code": "PLACE TEXT PART(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 22
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+"c1": 1.0,
+"n": 6
+},
+{
+"src": "links",
+"w": "sand",
+"code": "GRAIN(=0) THING(=-5) PART(=-5) | o",
+"c1": 0.6564535681173097,
+"n": 20
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "INSIDE(=+5) DO(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.4184355987664883,
+"n": 2
+},
+{
+"src": "links",
+"w": "ladder",
+"code": "MOVE ABOVE(=+4) DO(=+5) | o",
+"c1": 0.48300057130706114,
+"n": 10
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) LONG(=+3) ABOVE(=+5) | o PI ABOVE(=+5) BIG(=+5) | o",
+"c1": 0.12807133977559743,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) DO(=0) | o PI THING(=+4) ABOVE(=+5) | o",
+"c1": 0.5443117072790233,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE(=0) DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+4) | o",
+"c1": 0.03630572145767455,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "INSIDE(=+5) DO(=+5) BIG(=-4) | o PI VALUE(=+5) GIVE(=0) | o",
+"c1": 0.6240803122735007,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-3) | o PI INSIDE(=+5) DO(=+5) | o",
+"c1": 0.7687264456900074,
+"n": 4
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+5) | o",
+"c1": 0.3256188949589458,
+"n": 4
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "INSIDE(=+5) PART(=-2) GRAIN(=-3) | o PI THING(=+4) HAPPEN(=-5) | o",
+"c1": 0.2587978493721046,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) GRAIN(=-3) CONSUME(=+5) | o",
+"c1": 0.26792110262706054,
+"n": 2
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI DO(=+5) ABOVE(=+5) | o",
+"c1": 0.5258817319204001,
+"n": 4
+},
+{
+"src": "links",
+"w": "kitchen",
+"code": "PLACE HEAT(=+3) CONSUME(=+5) | o",
+"c1": 0.6129274786553618,
+"n": 10
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) DO(=+5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+"c1": 0.34562162374841254,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) SEE | o PI GRAIN(=+5) TOUCH(=-3) | o",
+"c1": 0.844327908352912,
+"n": 2
+},
+{
+"src": "links",
+"w": "mountain",
+"code": "PLACE ABOVE(=+5) BIG(=+4) | o",
+"c1": 0.6926891050278561,
+"n": 8
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+5) TOUCH(=-5) | o PI THING(=+4) BODY INSIDE(=-5) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) BIG(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "PART(=-2) INSIDE(=+5) | o PI THING(=+4) BEGIN(=-4) | o",
+"c1": 0.5651724023255148,
+"n": 2
+},
+{
+"src": "links",
+"w": "hammer",
+"code": "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+"c1": 0.8818840674566608,
+"n": 18
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+3) | o",
+"c1": 0.3055365343875608,
+"n": 2
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.2354725993219395,
+"n": 2
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+3) | o",
+"c1": 0.18880193481724886,
+"n": 4
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+3) | o PI CONSUME(=+5) GRAIN(=-3) THING(=+4) | o",
+"c1": 0.6619877599108122,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-5) | o PI DO(=+5) INSIDE(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) THING(=0) | o PI THING(=0) GOOD(=+4) TOUCH(=-5) | o",
+"c1": 0.7003653717366064,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "DO(=+5) INSIDE(=+5) BIG(=-4) | o PI VALUE(=+5) | o",
+"c1": 0.5723887707500319,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.5002146514048306,
+"n": 4
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) LONG(=-5) | o",
+"c1": 0.25222967584957406,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) BIG(=-3) CONSUME(=+5) | o",
+"c1": 0.31688515804594725,
+"n": 4
+},
+{
+"src": "links",
+"w": "brush",
+"code": "TOUCH(=-3) MOVE DO(=+5) | o",
+"c1": 0.9468649832519608,
+"n": 10
+},
+{
+"src": "links",
+"w": "paper",
+"code": "BIG(=-3) TEXT | o PI THING(=0) GRAIN(=-3) | o",
+"c1": 0.23273676426595874,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+3) | o",
+"c1": 0.19741337613294307,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE INSIDE(=+5) LIVE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "book",
+"code": "TEXT PART(=+2) | o",
+"c1": 0.7046097233095879,
+"n": 10
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) SIDE(=-5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) TOUCH(=-5) | o PI THING(=0) SEE(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+"c1": 0.047847200006535744,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+3) | o FROM THING(=+4) CONSUME(=+5) GRAIN(=-3) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "paper",
+"code": "TEXT LONG(=-5) | o FROM THING(=0) GRAIN(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "PART(=-2) INSIDE(=+5) | o PI THING(=+4) INSIDE(=+5) TOUCH(=-5) | o",
+"c1": 0.11767364600009875,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE TOUCH(=-3) JOIN(=+5) | o FOR THING(=+4) MOVE(=+5) BIG(=+3) | o",
+"c1": 0.2915891860233161,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "INSIDE(=+5) BIG(=-3) | o FOR VALUE(=+5) | o",
+"c1": 0.8447106419324283,
+"n": 2
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) BIG(=-3) GRAIN(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.16783754730466915,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+"c1": 0.26542469480365316,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) INSIDE(=-5) | o PI PLACE LIVE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "PART(=-2) MOVE(=+5) TOUCH(=+5) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "THING(=+4) TOUCH(=-5) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+"c1": 0.7047032694542925,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) ABOVE(=+5) | o PI HEAT(=+5) BIG(=+5) ABOVE(=+5) | o",
+"c1": 0.5617209338548088,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) HEAT(=+3) | o FROM THING(=0) CONSUME(=+5) BIG(=-3) | o",
+"c1": 0.2891321543054563,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "INSIDE(=+5) TOUCH(=-3) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.11206325015129147,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+3) TOUCH(=-3) | o",
+"c1": 0.766733209462291,
+"n": 2
+},
+{
+"src": "links",
+"w": "car",
+"code": "DO(=+5) MOVE(=+4) | o",
+"c1": 0.7294065218293506,
+"n": 8
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=+3) | o FOR INSIDE(=+5) | o",
+"c1": 0.1590294188737643,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) JOIN(=+5) | o FOR THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+"c1": 0.34562162374841254,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+3) | o FROM THING(=+4) BODY INSIDE(=-5) | o",
+"c1": 0.56783986443902,
+"n": 2
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) MOVE(=+5) | o",
+"c1": 0.3652514908190946,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) MANY(=+4) | o PI GRAIN(=-3) BIG(=+5) | o",
+"c1": 0.2982002197539204,
+"n": 2
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.6177362996609698,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "INSIDE(=+5) DO(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.7447063410959041,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) BIG(=-4) | o PI THING(=0) GOOD(=+4) | o",
+"c1": 0.22886780650327035,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "DO(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+4) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "PART(=-2) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) | o",
+"c1": 0.29554846325291856,
+"n": 2
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+4) | o",
+"c1": -0.0048885583682140065,
+"n": 2
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "PART(=-2) INSIDE(=+5) | o PI BEGIN(=-4) THING(=+4) | o",
+"c1": 0.38951154755029677,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+5) TOUCH(=-3) | o FROM INSIDE(=-5) THING(=+4) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-4) | o FOR INSIDE(=+5) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+2) TOUCH(=-2) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+"c1": 0.14794907860763,
+"n": 4
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) ABOVE(=+5) BIG(=+4) | o PI HEAT(=+5) ABOVE(=+5) | o",
+"c1": 0.13270081184157717,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o FROM GRAIN(=-3) THING(=+4) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "INSIDE(=+5) BIG(=-3) DO(=+5) | o FOR VALUE(=+5) GIVE(=+3) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "THING(=+4) TOUCH(=-5) | o PI GRAIN(=-3) BIG(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) PART(=-2) | o PI PLACE INSIDE(=+5) | o",
+"c1": 0.6275690892628559,
+"n": 2
+},
+{
+"src": "links",
+"w": "paper",
+"code": "GRAIN(=+5) BIG(=-3) | o FROM GRAIN(=+5) THING(=0) | o",
+"c1": 0.08408213219288838,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) | o FOR BEGIN(=-4) THING(=+4) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) | o",
+"c1": 0.28570346707991545,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+"c1": 0.2442742967694274,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "BIG(=-4) DO(=+5) INSIDE(=+5) | o FOR GIVE(=0) VALUE(=+3) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE DO(=+5) | o FOR THING(=+4) BIG(=+3) MOVE(=+5) | o",
+"c1": 0.2915891860233161,
+"n": 2
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+"c1": 0.2626158318195099,
+"n": 2
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "INSIDE(=+5) PART(=-2) | o PI BEGIN(=-4) LIVE(=+2) | o",
+"c1": 0.3549130233870771,
+"n": 4
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o FROM THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "THING(=-5) GRAIN(=+5) | o FROM THING(=+4) PART(=-2) SIDE(=-5) | o",
+"c1": 0.2079704120904762,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) CONSUME(=+5) | o",
+"c1": 0.6428517335399577,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) | o PI THING(=0) SEE | o",
+"c1": 0.7599007173189274,
+"n": 4
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "BIG(=-3) THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=+3) MOVE(=+5) | o",
+"c1": 0.7581598874549353,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 4
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "BODY TOUCH(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+"c1": 0.8313282384184435,
+"n": 4
+},
+{
+"src": "links",
+"w": "paper",
+"code": "LONG(=-5) TEXT | o FROM THING(=0) PART(=-5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "TOUCH(=-5) THING(=+4) | o LIKE ABOVE(=+5) DO(=+5) | o",
+"c1": 0.5721819900445083,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "DO(=+5) INSIDE(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE LIVE(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) TOUCH(=+5) BIG(=-3) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.1836468653179279,
+"n": 2
+},
+{
+"src": "links",
+"w": "catfish",
+"code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o LIKE THING(=+4) BIG(=-3) | o",
+"c1": 0.5004616129245744,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "INSIDE(=+5) DO(=+5) BIG(=-3) | o FOR VALUE(=+5) GIVE(=+3) | o",
+"c1": 0.9223553209662141,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-3) | o FOR INSIDE(=+5) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o LIKE ABOVE(=+5) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "petal",
+"code": "PART(=-2) TOUCH(=-5) | o PI THING(=+0) SEE(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 4
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+5) TOUCH(=-5) | o FROM INSIDE(=-5) THING(=+4) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o LIKE THING(=+4) BIG(=+3) | o",
+"c1": 0.640451979021871,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE(=+5) DO(=+5) | o FOR HAPPEN(=-5) LIVE(=+5) | o",
+"c1": 0.15927041831919198,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) GRAIN(=-3) | o LIKE ABOVE(=+5) BIG(=+5) | o",
+"c1": 0.3275167791006055,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+3) | o",
+"c1": 0.2915891860233161,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=+3) GRAIN(=+5) | o FOR SEE(=+5) HEAT(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "yolk",
+"code": "PART(=-2) INSIDE(=+5) SEE(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+"c1": 0.17093655229196303,
+"n": 4
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) JOIN(=+5) | o FOR PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o FROM SEX(=-5) THING(=+4) | o",
+"c1": 0.4586631547505755,
+"n": 2
+},
+{
+"src": "links",
+"w": "hoof",
+"code": "PART(=-2) TOUCH(=+5) ABOVE(=-5) | o PI THING(=+4) BIG(=+3) | o",
+"c1": 0.9999999999999998,
+"n": 4
+},
+{
+"src": "links",
+"w": "paper",
+"code": "TEXT(=+5) PART(=-5) | o FROM THING(=+0) | o",
+"c1": 0.646155453327755,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=+0) | o",
+"c1": 0.3738154227396428,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=+0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "TOUCH(=-5) THING(=+4) | o PI ABOVE(=+5) DO(=+5) | o",
+"c1": 0.07328744366021588,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "links",
+"w": "seahorse",
+"code": "BIG(=-3) THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+"c1": 0.5895491790379097,
+"n": 2
+},
+{
+"src": "links",
+"w": "paper",
+"code": "LONG(=-5) TEXT | o PI THING(=0) PART(=-5) | o",
+"c1": 0.2611184827634229,
+"n": 2
+},
+{
+"src": "links",
+"w": "sheath",
+"code": "DO(=+5) INSIDE(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.37438242046198156,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=0) HEAT(=+5) | o PI GRAIN(=+5) TOUCH(=-5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "THING(=-5) GRAIN(=+5) | o PI THING(=+4) PART(=-2) SIDE(=-5) | o",
+"c1": 0.2079704120904762,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE LIVE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+"c1": 0.6037371458870497,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=0) | o PI ABOVE(=+5) HEAT(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "BIG(=-4) DO(=+5) INSIDE(=+5) | o PI GIVE(=0) VALUE(=+3) | o",
+"c1": 0.6015694115461652,
+"n": 2
+},
+{
+"src": "links",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=-4) | o PI DO(=+5) INSIDE(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "starfish",
+"code": "THING(=+4) | o PI ABOVE(=+5) HEAT(=+5) | o",
+"c1": 0.21342058565647645,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE DO(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+"c1": 0.2915891860233161,
+"n": 2
+},
+{
+"src": "links",
+"w": "nest",
+"code": "PLACE(=+5) DO(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+"c1": 0.3121350490146675,
+"n": 2
+},
+{
+"src": "links",
+"w": "sunflower",
+"code": "THING(=+0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "links",
+"w": "wine",
+"code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=+0) | o",
+"c1": 0.28570346707991545,
+"n": 2
+},
+{
+"src": "links",
+"w": "cheese",
+"code": "CONSUME(=+5) GRAIN(=+5) | o PI SEX(=-5) THING(=+4) | o",
+"c1": 0.23214755467622508,
+"n": 2
+},
+{
+"src": "links",
+"w": "leather",
+"code": "GRAIN(=+5) TOUCH(=-5) | o PI INSIDE(=-5) THING(=+4) | o",
+"c1": 0.6883318654071884,
+"n": 2
+},
+{
+"src": "links",
+"w": "key",
+"code": "DO(=+5) TOUCH(=+5) BIG(=-3) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.11851699208174041,
+"n": 2
+},
+{
+"src": "links",
+"w": "paper",
+"code": "TEXT(=+5) PART(=-5) | o PI THING(=+0) | o",
+"c1": 0.3275210116311485,
+"n": 2
+},
+{
+"src": "links",
+"w": "jellyfish",
+"code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI ABOVE(=+5) DO(=+5) | o",
+"c1": 0.5244445975485476,
+"n": 2
+},
+{
+"src": "links",
+"w": "roof",
+"code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "links",
+"w": "wallet",
+"code": "INSIDE(=+5) DO(=+5) BIG(=-3) | o PI VALUE(=+5) GIVE(=+3) | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "links",
+"w": "saddle",
+"code": "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) | o",
+"c1": 0.29783935225089986,
+"n": 2
+},
+{
+"src": "links",
+"w": "candle",
+"code": "LONG(=+3) GRAIN(=+5) | o PI SEE(=+5) HEAT(=+5) | o",
+"c1": 0.766733209462291,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "sheath",
+"code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.4087486640375612,
+"n": 4
+},
+{
+"src": "pi_for",
+"w": "lid",
+"code": "ABOVE(=+5) JOIN(=+4) | o PI INSIDE(=+5) THING(=-5) | o",
+"c1": 0.1590294188737643,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "library",
+"code": "PLACE TEXT PART(=+5) | o",
+"c1": 1.0000000000000002,
+"n": 8
+},
+{
+"src": "pi_for",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+"c1": 0.484886268670997,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "kitchen",
+"code": "PLACE HEAT(=+3) CONSUME(=+5) | o",
+"c1": 0.6543995345137159,
+"n": 8
+},
+{
+"src": "pi_for",
+"w": "pillow",
+"code": "TOUCH(=-5) THING(=-5) | o PI BODY ABOVE(=+5) | o",
+"c1": 0.5334266504182787,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "kennel",
+"code": "PLACE INSIDE(=+5) LIVE | o PI \"Canis\" | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "ladder",
+"code": "MOVE ABOVE(=+4) DO(=+5) | o",
+"c1": 0.36634590982158793,
+"n": 8
+},
+{
+"src": "pi_for",
+"w": "saddle",
+"code": "PLACE ABOVE(=+5) | o PI \"Equus\" | o",
+"c1": 0.6457945930116582,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "shoelace",
+"code": "LONG(=-5) JOIN(=+5) | o PI INSIDE(=+5) BODY ABOVE(=-5) | o",
+"c1": 0.30968000246945393,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "hammer",
+"code": "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "leash",
+"code": "LONG(=-5) JOIN(=+5) DO(=+5) | o PI \"Canis\" | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "wallet",
+"code": "INSIDE(=+5) BIG(=-4) THING(=-5) | o PI VALUE | o",
+"c1": 0.06277848705250101,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "car",
+"code": "DO(=+5) MOVE(=+4) | o",
+"c1": 0.7632399470415139,
+"n": 8
+},
+{
+"src": "pi_for",
+"w": "sand",
+"code": "GRAIN(=0) THING(=-5) PART(=-5) | o",
+"c1": 0.6317938388215003,
+"n": 6
+},
+{
+"src": "pi_for",
+"w": "stable",
+"code": "PLACE INSIDE(=+5) THING(=+4) | o PI \"Equus\" | o",
+"c1": 0.9999999999999998,
+"n": 4
+},
+{
+"src": "pi_for",
+"w": "cork",
+"code": "JOIN(=+5) INSIDE(=+5) | o PI CONSUME(=+5) GRAIN(=-3) | o",
+"c1": 0.1635928136711223,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cradle",
+"code": "BIG(=-4) PLACE LIVE(=-2) | o PI SOMEONE BIG(=-4) TIME(=-5) | o",
+"c1": 0.44981153073186064,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "hive",
+"code": "PLACE INSIDE(=+5) LIVE | o PI PART(=+5) \"Apis\" | o",
+"c1": 0.8155394812597354,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "collar",
+"code": "LONG(=-5) JOIN(=+5) ABOVE(=+3) | o PI \"Canis\" | o",
+"c1": 0.5523724008237939,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "frame",
+"code": "SIDE(=+5) JOIN(=+5) | o PI SEE ART(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "brush",
+"code": "TOUCH(=-3) MOVE DO(=+5) | o",
+"c1": 1.0,
+"n": 8
+},
+{
+"src": "pi_for",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) | o",
+"c1": 0.05467798772389383,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "knife",
+"code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.9999999999999997,
+"n": 10
+},
+{
+"src": "pi_for",
+"w": "shoelace",
+"code": "LONG(=-5) DO(=+5) | o PI JOIN(=+5) BODY | o",
+"c1": 0.29222187967379487,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "frame",
+"code": "PART(=-2) JOIN(=+5) | o PI SEE THING(=-5) | o",
+"c1": 0.25068290018644934,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "lid",
+"code": "PART(=-2) ABOVE(=+5) JOIN(=-5) | o PI HEAT(=+5) INSIDE(=+5) THING(=-5) | o",
+"c1": 0.38793754630949084,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cork",
+"code": "THING(=0) JOIN(=+5) | o PI INSIDE(=+5) THING(=-5) GRAIN(=-3) | o",
+"c1": 0.0944979685141786,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "saddle",
+"code": "PLACE ABOVE(=+5) JOIN(=+5) | o PI \"Equus\" | o",
+"c1": 0.16066266002140592,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "collar",
+"code": "LONG(=-5) JOIN(=+5) | o PI \"Canis\" | o",
+"c1": 0.5523724008237939,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "kennel",
+"code": "PLACE INSIDE(=+5) BIG(=-4) | o PI \"Canis\" | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "pillow",
+"code": "TOUCH(=-5) THING(=-5) | o PI ABOVE(=+5) BODY | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) GRAIN(=+5) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+"c1": 0.5243818929943275,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) TOUCH(=-5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+"c1": 0.8844681429071893,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cradle",
+"code": "PLACE LIVE(=-2) BIG(=-4) | o PI BIG(=-5) LIVE(=+5) | o",
+"c1": 0.05124585600336352,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "book",
+"code": "TEXT PART(=+2) | o",
+"c1": 0.630762154136985,
+"n": 4
+},
+{
+"src": "pi_for",
+"w": "wallet",
+"code": "INSIDE(=+5) BIG(=-4) | o PI GIVE(=+5) VALUE(=+3) | o",
+"c1": 0.13882950884303963,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "leash",
+"code": "LONG(=-5) DO(=+5) | o PI \"Canis\" | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "hive",
+"code": "PLACE INSIDE(=+5) MANY(=+5) | o PI \"Apis\" | o",
+"c1": 0.8155394812597354,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "leash",
+"code": "LONG(=-5) JOIN(=+5) MOVE | o FOR \"Canis\"",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "stable",
+"code": "PLACE INSIDE(=+5) MOVE(=-5) | o FOR \"Equus\"",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "hive",
+"code": "PLACE INSIDE(=+5) LIVE | o FOR \"Apis\" PART(=+5) | o",
+"c1": 0.7773851415832717,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "mountain",
+"code": "PLACE ABOVE(=+5) BIG(=+4) | o",
+"c1": 0.28801075526658826,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "nest",
+"code": "PLACE INSIDE(=+5) DO(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+"c1": 0.34562162374841254,
+"n": 4
+},
+{
+"src": "pi_for",
+"w": "collar",
+"code": "LONG(=-5) JOIN(=+5) INSIDE(=+5) | o FOR \"Canis\"",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "sheath",
+"code": "INSIDE(=+5) PART(=+2) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 0.5650894163973517,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "key",
+"code": "DO(=+5) BIG(=-4) TOUCH(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+"c1": 0.16663215723979907,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "saddle",
+"code": "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\"",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "frame",
+"code": "SIDE(=+5) PART(=-2) JOIN(=+5) | o FOR SEE ART(=+5) | o",
+"c1": 0.6401862960753304,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "shoelace",
+"code": "LONG(=-5) JOIN(=+5) | o FOR DO(=+5) BODY ABOVE(=-5) | o",
+"c1": 0.6721534972278593,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cork",
+"code": "TOUCH(=-5) JOIN(=+5) INSIDE(=+5) | o FOR INSIDE(=+5) LONG(=+3) DO(=+5) | o",
+"c1": 0.13221337112238923,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "pillow",
+"code": "TOUCH(=-5) DO(=+5) | o FOR PLACE LIVE(=-2) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cradle",
+"code": "PLACE LIVE(=-2) BIG(=-4) | o FOR SOMEONE BIG(=-5) LIVE(=+5) | o",
+"c1": 0.7997751876729463,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "wallet",
+"code": "INSIDE(=+5) BIG(=-4) | o FOR VALUE(=+5) GIVE | o",
+"c1": 0.6476030530646582,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "kennel",
+"code": "PLACE INSIDE(=+5) BIG(=-4) | o FOR \"Canis\"",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "lid",
+"code": "ABOVE(=+5) PART(=+2) JOIN(=-5) | o FOR INSIDE(=+5) HEAT(=+5) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "stable",
+"code": "PLACE LIVE(=+5) BIG(=+3) | o FOR \"Equus\" | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "pillow",
+"code": "TOUCH(=-5) DO(=+5) | o FOR BODY ABOVE(=+5) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cork",
+"code": "PART(=-2) JOIN(=+5) INSIDE(=+5) | o FOR DO(=+5) INSIDE(=+5) GRAIN(=-3) | o",
+"c1": 0.12915673098347905,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "frame",
+"code": "DO(=+5) PART(=-2) LONG(=+3) | o FOR SEE ART(=+5) | o",
+"c1": 0.22828412599259343,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "hive",
+"code": "PLACE LIVE(=+5) PART(=+5) | o FOR \"Apis\" | o",
+"c1": 0.869615400953404,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "lid",
+"code": "PART(=-2) ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "sheath",
+"code": "DO(=+5) INSIDE(=+5) TOUCH(=-5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "cradle",
+"code": "PLACE LIVE(=-2) BIG(=-4) | o FOR BEGIN(=-4) THING(=+4) BIG(=-5) | o",
+"c1": 0.6500363430589146,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "key",
+"code": "DO(=+5) GRAIN(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o",
+"c1": 0.661898276948264,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "collar",
+"code": "LONG(=-5) JOIN(=+5) | o FOR BODY LONG(=-5) | o",
+"c1": 0.2769194498597975,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "leash",
+"code": "LONG(=-5) DO(=+5) | o FOR \"Canis\" | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "shoelace",
+"code": "LONG(=-5) TOUCH(=-5) DO(=+5) | o FOR DO(=+5) ABOVE(=-5) | o",
+"c1": 0.09508236980492468,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "kennel",
+"code": "PLACE LIVE(=+5) BIG(=-4) | o FOR \"Canis\" | o",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "saddle",
+"code": "PLACE ABOVE(=+5) JOIN(=+5) | o FOR \"Equus\" | o",
+"c1": 0.6457945930116582,
+"n": 2
+},
+{
+"src": "pi_for",
+"w": "wallet",
+"code": "DO(=+5) INSIDE(=+5) BIG(=-4) | o FOR VALUE | o",
+"c1": 0.9999999999999999,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "city",
+"code": "PLACE NEAR(=+1) RULE(=+3) | o PI HEAT(=0) DO(=-4) | o",
+"c1": 0.036896003308618676,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "create",
+"code": "JOIN(=+1) THINK(=+3) LIVE(=+4) | i",
+"c1": 0.22309313670512032,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "vice",
+"code": "TIME(=-1) RULE(=+5) DO(=-4) | o",
+"c1": 0.1972709101994324,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "hat",
+"code": "LONG(=-2) HEAT(=-3) THING(=+3) | o PI BODY SIDE(=+1) | o",
+"c1": 0.07599307794430231,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "sanctuary",
+"code": "PLACE INSIDE(=-1) THING(=+2) | o PI NEAR(=+3) VALUE(=+3) | o",
+"c1": 0.1736655851611477,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "municipality",
+"code": "RULE(=+2) PLACE NEAR(=+2) | o PI THING(=-1) GRAIN(=-4) | o",
+"c1": 0.22510856006421612,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "palace",
+"code": "ABSTRACT(=-3) NEAR(=+3) INSIDE(=+2) | o PI SEX(=+1) MOVE(=-5) | o",
+"c1": 0.03314657985795348,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "zero",
+"code": "MANY(=-3) MEASURE(=+1) ABOVE(=-1) | o",
+"c1": 0.05099959445390964,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "realistic",
+"code": "CAN(=+2) ABSTRACT(=+1) TOUCH(=+1) | a",
+"c1": 0.37720037119315686,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "installation",
+"code": "ART(=-2) BEGIN(=-1) ABSTRACT(=-4) | o",
+"c1": 0.14557403004548428,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "handful",
+"code": "BIG(=-1) PART(=+2) GIVE(=-2) | o",
+"c1": 0.028730982666699552,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "associate",
+"code": "DO(=-3) JOIN(=+5) TIME(=-3) | i",
+"c1": 0.19000829219874862,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "satellite",
+"code": "PLACE ART(=-4) NEAR(=-3) | o",
+"c1": 0.3659072134208736,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "nomination",
+"code": "RULE(=+3) FIGHT(=-3) GIVE(=+2) | o",
+"c1": 0.4657639028991666,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "adjust",
+"code": "CHANGE(=+2) THINK(=+3) MEASURE(=0) | i",
+"c1": 0.9999999999999997,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "hang",
+"code": "LONG(=-1) MOVE(=-3) GIVE(=-2) | i",
+"c1": 0.2620740887789752,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "format",
+"code": "TEXT MEASURE(=-2) FIGHT(=-2) | i",
+"c1": 0.048956654166238275,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "bet",
+"code": "FIGHT(=-1) THINK(=0) MEASURE(=+2) | i",
+"c1": 0.1372751923520487,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "outbreak",
+"code": "HAPPEN(=+1) FIGHT(=+2) HEAT(=+1) | o",
+"c1": 0.2306306962573555,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "charitable",
+"code": "GIVE(=+4) RULE(=-3) TONE(=+4) | a",
+"c1": 0.515504741089448,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "beef",
+"code": "THING(=+4) CONSUME(=+3) GRAIN(=+3) | o",
+"c1": 0.7067444748396383,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "magnitude",
+"code": "MEASURE(=0) BIG(=+2) HAPPEN(=+1) | o",
+"c1": 0.5107021664192167,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "altogether",
+"code": "MANY(=0) TONE(=0) JOIN(=-2) | e",
+"c1": 0.3062435383639074,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "vehicle",
+"code": "LONG(=+4) ART(=-2) THING(=+1) | o",
+"c1": 0.03231322753705145,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "critically",
+"code": "TONE(=-1) CARE(=+3) LIVE(=0) | e",
+"c1": 0.31157743167051216,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "economy",
+"code": "ART(=-1) MEASURE(=+4) FEEL(=-4) | o",
+"c1": 0.13313314344730087,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "breakfast",
+"code": "ABSTRACT(=-3) CONSUME(=+5) FEEL(=-3) | o",
+"c1": 0.3214067685880239,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "random",
+"code": "RULE(=-2) KNOW(=-5) CARE(=-4) | a",
+"c1": 0.23148897378570843,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "dramatic",
+"code": "BIG(=+1) HAPPEN(=+3) MOOD(=-1) | a",
+"c1": 0.2594654841993305,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "fee",
+"code": "MEASURE(=+2) GIVE(=+5) VALUE(=-1) | o",
+"c1": 0.39329521970220727,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "firmly",
+"code": "TONE(=0) CARE(=+2) CHANGE(=-4) | e",
+"c1": 0.4441973177456514,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "institute",
+"code": "ART(=-1) PART(=+5) GIVE(=+3) | i",
+"c1": -0.00828177456475053,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "forecast",
+"code": "MEASURE(=+2) TIME(=+4) HEAT(=-2) | i",
+"c1": 0.05029074792689562,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "respect",
+"code": "WANT(=+1) TONE(=+3) RULE(=+2) | o",
+"c1": 0.2875091260744457,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "curious",
+"code": "THINK(=-2) FEEL(=+1) MOOD(=+3) | a",
+"c1": 0.22558955788292728,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "maintain",
+"code": "CHANGE(=-3) THINK(=+4) GIVE(=0) | i",
+"c1": 0.27707508285709354,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "adjacent",
+"code": "NEAR(=+3) PLACE SIDE(=0) | a",
+"c1": 0.18671199486302315,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "harassment",
+"code": "RULE(=0) FIGHT(=+2) SAY(=+3) | o",
+"c1": 0.10750836417811424,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "assistant",
+"code": "DO(=-2) SEX(=+1) RULE(=+1) | o",
+"c1": 0.20010048513057188,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "massive",
+"code": "BIG(=+2) GRAIN(=+1) | a",
+"c1": 0.19804425670809664,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "note",
+"code": "TEXT SEE BIG(=-2) | i",
+"c1": 0.053593740139979695,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "discount",
+"code": "VALUE(=-2) GIVE(=+2) MEASURE(=+1) | i PI ABOVE(=-1) RULE(=+3) | o",
+"c1": 0.29537746670354337,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "trade",
+"code": "VALUE(=-2) CHANGE(=+2) DO(=-3) | o",
+"c1": 0.5551613408883425,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "drive",
+"code": "MOVE(=+3) LONG(=+3) INSIDE(=-1) | i",
+"c1": 0.20756549047161935,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "change",
+"code": "CHANGE(=+2) | i",
+"c1": 0.8804695879724336,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "tank",
+"code": "GRAIN(=-2) FIGHT(=+3) LONG(=+3) | o PI ABSTRACT(=-2) CONSUME(=+3) | o",
+"c1": 0.02036225832466926,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "adult",
+"code": "SEX(=-1) RULE(=-2) BIG(=-1) | o",
+"c1": 0.24475307004057936,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "withdrawal",
+"code": "JOIN(=-5) MOOD(=-3) GIVE(=+3) | o",
+"c1": 0.16339042981606125,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "danger",
+"code": "KNOW(=0) VALUE(=+4) HAPPEN(=+3) | o",
+"c1": 0.05437256010697133,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "electrical",
+"code": "ART(=-3) HEAT(=+3) LONG(=-1) | a",
+"c1": 0.5678709786075252,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "sometime",
+"code": "TIME(=+1) SOMEONE(=+2) CARE(=-2) | e",
+"c1": 0.14995134327214804,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "elaborate",
+"code": "BIG(=+1) CARE(=+4) GIVE(=+2) | a PI CAN(=-1) SAME(=-3) | o",
+"c1": 0.10626576519467684,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "social",
+"code": "RULE(=-2) ART(=0) JOIN(=+2) | a",
+"c1": 0.6358315695712177,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "mosque",
+"code": "ABSTRACT(=-1) NEAR(=+5) PLACE | o PI SEX(=+2) BIG(=+5) | o",
+"c1": 0.13413269265926728,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "ten",
+"code": "TIME(=-2) BEGIN(=+2) MEASURE(=+1) | a",
+"c1": 0.08012152915053847,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "submarine",
+"code": "FIGHT(=+3) ABOVE(=-5) ART(=-4) | o",
+"c1": 0.18706481451594464,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "nevertheless",
+"code": "MANY(=-1) TONE(=+1) TIME(=+1) | e",
+"c1": 0.2915224410066293,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "specify",
+"code": "THINK(=+2) MEASURE(=-2) SAME(=-1) | i",
+"c1": 0.22727474995419256,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "internationally",
+"code": "TONE(=-1) MANY(=+5) FIGHT(=-5) | e",
+"c1": 0.08550103448386402,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "southeastern",
+"code": "PLACE SIDE(=+1) BIG(=0) | a PI HEAT(=-2) FIGHT(=+5) | o",
+"c1": 0.17254412064730668,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "wide",
+"code": "BIG(=+3) ABOVE(=0) CAN(=+4) | a",
+"c1": 0.14717711996648616,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "bomber",
+"code": "FIGHT(=+3) GRAIN(=-3) LONG(=+3) | o",
+"c1": 0.06122141049057005,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "ahead",
+"code": "SIDE(=+2) TIME(=+1) MOVE(=0) | e",
+"c1": 1.0000000000000002,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "announcement",
+"code": "TIME(=+1) RULE(=+2) TEXT | o",
+"c1": 0.2918932014912485,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "invite",
+"code": "GIVE(=+2) JOIN(=+4) TONE(=+4) | i",
+"c1": 0.7375617174268978,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "suburb",
+"code": "PLACE NEAR(=+2) | o PI HEAT(=0) DO(=-4) | o",
+"c1": 0.04459022235431956,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "mix",
+"code": "JOIN(=+2) PART(=+1) SAME(=-2) | i PI FEEL(=0) THINK(=-3) | o",
+"c1": 0.5782043728571509,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "namely",
+"code": "SAME(=-1) MANY(=0) HAPPEN(=-2) | e",
+"c1": 0.17496698106507647,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "negotiate",
+"code": "THINK(=+2) VALUE(=-5) GIVE(=+1) | i",
+"c1": 0.10005198359571947,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "enrollment",
+"code": "MEASURE(=+2) BEGIN(=-2) GIVE(=+4) | o PI ART(=0) PART(=+5) | o",
+"c1": 0.3469837309021172,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "account",
+"code": "TEXT RULE(=-1) MEASURE(=+3) | o",
+"c1": 0.23122418993662808,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "removal",
+"code": "JOIN(=-5) DO(=+1) HAPPEN(=0) | o",
+"c1": 0.34992275079320595,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "read",
+"code": "TEXT CONSUME(=+2) KNOW(=+1) | i",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "compound",
+"code": "PART(=+1) NEAR(=+4) MEASURE(=+3) | i",
+"c1": 0.07342484345307945,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "telegraph",
+"code": "TEXT LONG(=-1) ART(=-4) | o PI RULE(=+2) SEX(=-1) | o",
+"c1": 0.07906293387278536,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "source",
+"code": "HAPPEN(=-3) TEXT | o PI NEAR(=+1) GRAIN(=-1) | o",
+"c1": 0.9999999999999998,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "implement",
+"code": "DO(=+3) THINK(=+4) CHANGE(=+1) | i",
+"c1": 0.2694768556717172,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "dinner",
+"code": "CONSUME(=+5) ABSTRACT(=-5) CARE(=-5) | o",
+"c1": 0.23059772607372683,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "please",
+"code": "SOMEONE(=+1) TONE(=+5) GIVE(=+1) | i",
+"c1": 0.41469119009618033,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "virtually",
+"code": "MANY(=0) CARE(=-1) NEAR(=+1) | e",
+"c1": 0.3982325638012554,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "sentence",
+"code": "TEXT RULE(=+5) BEGIN(=+1) | o",
+"c1": 0.214165185350829,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "painful",
+"code": "MOOD(=-1) VALUE(=+1) TOUCH(=+3) | a",
+"c1": 0.4299650164044208,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "roughly",
+"code": "MEASURE(=+1) CARE(=-1) NEAR(=+1) | e",
+"c1": 1.0,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "elder",
+"code": "SEX(=0) RULE(=+1) | o",
+"c1": 0.07534618550036679,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "agenda",
+"code": "RULE(=+1) TIME(=+3) PART(=+2) | o PI ABSTRACT(=+3) ART(=+2) | o",
+"c1": 0.40669815223549455,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "current",
+"code": "CHANGE(=0) TIME(=-1) ABOVE(=-1) | o",
+"c1": 0.11734698187511976,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "recommend",
+"code": "THINK(=+1) WANT(=-2) TONE(=+3) | i PI RULE(=+2) PART(=+3) | o",
+"c1": 0.4135259217781848,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "corporate",
+"code": "RULE(=0) PART(=+3) ART(=-2) | a",
+"c1": 0.12437946217770343,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "normal",
+"code": "SAME(=0) MEASURE(=+2) FEEL(=-2) | a",
+"c1": 0.4712099844576925,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "preliminary",
+"code": "BEGIN(=0) RULE(=+1) | a",
+"c1": 0.16275065249191284,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "cafe",
+"code": "ABSTRACT(=-2) CONSUME(=+5) NEAR(=+4) | o PI VALUE(=-2) PLACE | o",
+"c1": 0.4961222366242068,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "intelligent",
+"code": "KNOW(=0) CAN(=+5) MOOD(=+3) | a",
+"c1": 0.2605904949255878,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "repair",
+"code": "ART(=-2) THINK(=+5) JOIN(=-3) | i PI CHANGE(=+2) NEAR(=+5) | o",
+"c1": 0.14194481762280386,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "house",
+"code": "ABSTRACT(=-3) INSIDE(=+2) PLACE | o",
+"c1": 0.4642442405339719,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "follow",
+"code": "JOIN(=+2) SAME(=+3) TIME(=+5) | i PI BEGIN(=-1) MOVE(=0) | o",
+"c1": 0.6066586331765516,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "eligible",
+"code": "CAN(=+2) GIVE(=+4) FIGHT(=-3) | a",
+"c1": 0.13638197410755654,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "supermarket",
+"code": "NEAR(=+3) VALUE(=-5) CONSUME(=+4) | o",
+"c1": 0.3148027391279745,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "suit",
+"code": "SAME(=0) THINK(=+3) RULE(=+3) | o PI LONG(=-5) CONSUME(=+2) | o",
+"c1": 0.07129273294809349,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "pump",
+"code": "GRAIN(=-2) ART(=-2) ABOVE(=0) | i",
+"c1": 0.09755174833460863,
+"n": 2
+},
+{
+"src": "math_dev_base",
+"w": "immune",
+"code": "HAPPEN(=+1) THING(=+5) HEAT(=-3) | a",
+"c1": 0.0427001092713932,
+"n": 2
+}
+]

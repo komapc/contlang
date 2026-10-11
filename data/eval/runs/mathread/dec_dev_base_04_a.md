@@ -1,0 +1,20 @@
+1. capable | possible, able
+2. gun | cannon, rifle
+3. ahead | forward, onward
+4. contract | agreement, treaty
+5. welcome | greet, invite
+6. hearth | kitchen, stove
+7. combine | mix, blend
+8. rarely | seldom, unusually
+9. undervalue | underestimate, discount
+10. grant | fee, subsidy
+11. note | memo, letter
+12. separation | division, breakup
+13. read | study, learn
+14. estimate | approximate, guess
+15. code | program, script
+16. source | origin, root
+17. determine | decide, resolve
+18. junk food | snack, fast food
+19. thank | greet, compliment
+20. roughly | approximately, nearly

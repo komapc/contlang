@@ -1,0 +1,20 @@
+1. THING(=+4) CONSUME(=+3) GRAIN(=+3) | o
+2. MEASURE(=0) BIG(=+2) HAPPEN(=+1) | o
+3. MANY(=0) TONE(=0) JOIN(=-2) | e
+4. LONG(=+4) ART(=-2) THING(=+1) | o
+5. TONE(=-1) CARE(=+3) LIVE(=0) | e
+6. ART(=-1) MEASURE(=+4) FEEL(=-4) | o
+7. ABSTRACT(=-3) CONSUME(=+5) FEEL(=-3) | o
+8. RULE(=-2) KNOW(=-5) CARE(=-4) | a
+9. BIG(=+1) HAPPEN(=+3) MOOD(=-1) | a
+10. MEASURE(=+2) GIVE(=+5) VALUE(=-1) | o
+11. TONE(=0) CARE(=+2) CHANGE(=-4) | e
+12. ART(=-1) PART(=+5) GIVE(=+3) | i
+13. MEASURE(=+2) TIME(=+4) HEAT(=-2) | i
+14. WANT(=+1) TONE(=+3) RULE(=+2) | o
+15. THINK(=-2) FEEL(=+1) MOOD(=+3) | a
+16. CHANGE(=-3) THINK(=+4) GIVE(=0) | i
+17. NEAR(=+3) PLACE SIDE(=0) | a
+18. RULE(=0) FIGHT(=+2) SAY(=+3) | o
+19. DO(=-2) SEX(=+1) RULE(=+1) | o
+20. BIG(=+2) GRAIN(=+1) | a

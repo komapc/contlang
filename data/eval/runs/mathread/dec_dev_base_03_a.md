@@ -1,0 +1,20 @@
+1. skim | glance, scan
+2. underpay | tip, pay less
+3. trader | dealer, broker
+4. thrust | push, ram
+5. change | alter, modify
+6. fang | tusk, tooth
+7. girl | woman, lass
+8. farewell | parting, departure
+9. lesson | experience, insight
+10. electric | electrical, electronic
+11. hastily | hurriedly, quickly
+12. generous | lavish, bountiful
+13. informal | casual, unofficial
+14. lap | chest, thigh
+15. early | former, previous
+16. bomb | mine, grenade
+17. soon | shortly, presently
+18. estimate | guess, calculate
+19. playfully | teasingly, jokingly
+20. frontline | front, forward

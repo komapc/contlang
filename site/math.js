@@ -320,10 +320,11 @@
     // код слова кодером; если векторы не ставят слово первым — пара «код PI второе слово»: второе слово — один из pairN
     // ближайших соседей слова, закодированный не более чем двумя корнями, без корней главного (иначе пара лишь удваивает его вес).
     // Векторы связку не различают (graphW = 0), поэтому PI. → {code, rank, base, rank0, mod}
-    encode(word) {
+    // form — часть речи слова, если известна (иначе код с o, оценки без штрафа за часть речи)
+    encode(word, form) {
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
-      const b = co.encode(x), base = co.format(b.S, b.v, "o"), sc = this.prf(this.roots(b.S, b.v, "")), rank0 = V.rankIn(sc, word);
+      const b = co.encode(x), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "" };
       if (rank0 === 1) return out;
       for (const n of V.near(x, this.opt.pairN, word)) {

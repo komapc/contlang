@@ -1,0 +1,20 @@
+1. meat | food, prey
+2. scale | magnitude, extent
+3. separately | individually, apart
+4. beam | pole, post
+5. cautiously | warily, carefully
+6. pace | rate, tempo
+7. food | meal, nourishment
+8. thoughtless | careless, heedless
+9. important | significant, consequential
+10. discount | rebate, reduction
+11. steadily | consistently, evenly
+12. distribute | share, allocate
+13. cool | chill, cool down
+14. etiquette | protocol, courtesy
+15. hopeful | optimistic, cheerful
+16. insist | maintain, persist
+17. local | nearby, neighboring
+18. argument | quarrel, row
+19. agent | officer, official
+20. coarse | rough, grainy

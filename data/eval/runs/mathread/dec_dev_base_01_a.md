@@ -1,0 +1,20 @@
+1. kitchen | canteen, cafeteria
+2. settle | resolve, commit
+3. ruler | president, governor
+4. fin | gill, flipper
+5. pet shop | pen, market
+6. port | harbour, dock
+7. core | kernel, heart
+8. shortage | scarcity, deficit
+9. practical | feasible, manageable
+10. engine | machine, device
+11. tax | toll, levy
+12. combine | unite, merge
+13. observatory | laboratory, station
+14. prize | award, trophy
+15. adjust | revise, recalculate
+16. pull | draw, drag
+17. argue | dispute, debate
+18. compete | race, contest
+19. quarrel | argument, row
+20. generous | kind, hospitable

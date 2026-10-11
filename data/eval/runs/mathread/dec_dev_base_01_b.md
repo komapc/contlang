@@ -1,0 +1,20 @@
+1. embassy | consulate, courthouse
+2. connect | relate, unite
+3. official | officer, minister
+4. fin | gill, flipper
+5. garden | greenhouse, zoo
+6. airport | capital, embassy
+7. organ | gland, tissue
+8. minority | fraction, portion
+9. conceivable | imaginable, understandable
+10. starter | ignition, beginner
+11. portion | share, ration
+12. unite | marry, combine
+13. observatory | laboratory, research station
+14. award | prize, grant
+15. adjust | calibrate, regulate
+16. draw | pull, drag
+17. spell | count, write
+18. compare | weigh, evaluate
+19. battle | clash, skirmish
+20. generous | hospitable, friendly

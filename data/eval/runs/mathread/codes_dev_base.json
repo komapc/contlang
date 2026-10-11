@@ -1,0 +1,3812 @@
+[
+ {
+  "w": "suit",
+  "form": "o",
+  "code": "SAME(=0) THINK(=+3) RULE(=+3) | o PI LONG(=-5) CONSUME(=+2) | o",
+  "pair": "dress",
+  "rank": 1,
+  "rank0": 9,
+  "top": [
+   "suit",
+   "accordance",
+   "straw",
+   "jacket",
+   "cloth"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "SAME",
+    "v": 0,
+    "single": 0.22491004985000038,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 3,
+    "single": 0.17691020130556556,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 3,
+    "single": 0.16818798244218192,
+    "place": 3
+   },
+   {
+    "name": "LONG",
+    "v": -5,
+    "single": 0.13474307152210907,
+    "place": 6
+   },
+   {
+    "name": "CONSUME",
+    "v": 2,
+    "single": 0.05871358244563068,
+    "place": 25
+   }
+  ]
+ },
+ {
+  "w": "roughly",
+  "form": "e",
+  "code": "MEASURE(=+1) CARE(=-1) NEAR(=+1) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "roughly",
+   "approximately",
+   "nearly",
+   "almost",
+   "relatively"
+  ],
+  "cos1": 0.9999999999999984,
+  "roots": [
+   {
+    "name": "MEASURE",
+    "v": 1,
+    "single": 0.4198850402383784,
+    "place": 1
+   },
+   {
+    "name": "CARE",
+    "v": -1,
+    "single": 0.39823636852945976,
+    "place": 2
+   },
+   {
+    "name": "NEAR",
+    "v": 1,
+    "single": 0.20176742915918724,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "assistant",
+  "form": "o",
+  "code": "DO(=-2) SEX(=+1) RULE(=+1) | o",
+  "pair": "",
+  "rank": 20,
+  "rank0": 20,
+  "top": [
+   "deputy",
+   "officer",
+   "supervisor",
+   "aide",
+   "superintendent"
+  ],
+  "cos1": 0.6363572710613649,
+  "roots": [
+   {
+    "name": "DO",
+    "v": -2,
+    "single": 0.5137630552163315,
+    "place": 1
+   },
+   {
+    "name": "SEX",
+    "v": 1,
+    "single": 0.20158696015763472,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 1,
+    "single": 0.17713200257638792,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "associate",
+  "form": "i",
+  "code": "DO(=-3) JOIN(=+5) TIME(=-3) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "associate",
+   "join",
+   "recruit",
+   "work",
+   "interview"
+  ],
+  "cos1": 0.9999999999999997,
+  "roots": [
+   {
+    "name": "DO",
+    "v": -3,
+    "single": 0.31987810265071337,
+    "place": 2
+   },
+   {
+    "name": "JOIN",
+    "v": 5,
+    "single": 0.36910716948272576,
+    "place": 1
+   },
+   {
+    "name": "TIME",
+    "v": -3,
+    "single": 0.168366929653753,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "municipality",
+  "form": "o",
+  "code": "RULE(=+2) PLACE NEAR(=+2) | o PI THING(=-1) GRAIN(=-4) | o",
+  "pair": "sewage",
+  "rank": 3,
+  "rank0": 4,
+  "top": [
+   "reservoir",
+   "sewage",
+   "municipality",
+   "water",
+   "district"
+  ],
+  "cos1": 0.14003690000830055,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": 2,
+    "single": 0.27890304022364515,
+    "place": 1
+   },
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.27677210444740874,
+    "place": 2
+   },
+   {
+    "name": "NEAR",
+    "v": 2,
+    "single": 0.1712616571507443,
+    "place": 3
+   },
+   {
+    "name": "THING",
+    "v": -1,
+    "single": 0.11118050137340543,
+    "place": 5
+   },
+   {
+    "name": "GRAIN",
+    "v": -4,
+    "single": 0.0201502459878435,
+    "place": 24
+   }
+  ]
+ },
+ {
+  "w": "removal",
+  "form": "o",
+  "code": "JOIN(=-5) DO(=+1) HAPPEN(=0) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "removal",
+   "elimination",
+   "shutdown",
+   "procedure",
+   "reduction"
+  ],
+  "cos1": 1.0000000000000002,
+  "roots": [
+   {
+    "name": "JOIN",
+    "v": -5,
+    "single": 0.39810897292195757,
+    "place": 1
+   },
+   {
+    "name": "DO",
+    "v": 1,
+    "single": 0.16430403511280434,
+    "place": 2
+   },
+   {
+    "name": "HAPPEN",
+    "v": 0,
+    "single": 0.13428753963665033,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "beef",
+  "form": "o",
+  "code": "THING(=+4) CONSUME(=+3) GRAIN(=+3) | o",
+  "pair": "",
+  "rank": 2,
+  "rank0": 2,
+  "top": [
+   "meat",
+   "beef",
+   "pork",
+   "cheese",
+   "chocolate"
+  ],
+  "cos1": 0.8003701417296155,
+  "roots": [
+   {
+    "name": "THING",
+    "v": 4,
+    "single": 0.3580452098932555,
+    "place": 1
+   },
+   {
+    "name": "CONSUME",
+    "v": 3,
+    "single": 0.17972275868617743,
+    "place": 2
+   },
+   {
+    "name": "GRAIN",
+    "v": 3,
+    "single": 0.15598570822670746,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "sometime",
+  "form": "e",
+  "code": "TIME(=+1) SOMEONE(=+2) CARE(=-2) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "sometime",
+   "later",
+   "sooner",
+   "soon",
+   "recently"
+  ],
+  "cos1": 1.0000000000000022,
+  "roots": [
+   {
+    "name": "TIME",
+    "v": 1,
+    "single": 0.7057237919096828,
+    "place": 1
+   },
+   {
+    "name": "SOMEONE",
+    "v": 2,
+    "single": 0.35019604739553123,
+    "place": 2
+   },
+   {
+    "name": "CARE",
+    "v": -2,
+    "single": 0.29187620585377255,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "vehicle",
+  "form": "o",
+  "code": "LONG(=+4) ART(=-2) THING(=+1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "vehicle",
+   "truck",
+   "car",
+   "automobile",
+   "wagon"
+  ],
+  "cos1": 0.9999999999999984,
+  "roots": [
+   {
+    "name": "LONG",
+    "v": 4,
+    "single": 0.3510445415503898,
+    "place": 1
+   },
+   {
+    "name": "ART",
+    "v": -2,
+    "single": 0.23520604985861965,
+    "place": 2
+   },
+   {
+    "name": "THING",
+    "v": 1,
+    "single": 0.1771325309578721,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "city",
+  "form": "o",
+  "code": "PLACE NEAR(=+1) RULE(=+3) | o PI HEAT(=0) DO(=-4) | o",
+  "pair": "chicago",
+  "rank": 2,
+  "rank0": 4,
+  "top": [
+   "chicago",
+   "city",
+   "district",
+   "refugee",
+   "asylum"
+  ],
+  "cos1": 0.4026004373842683,
+  "roots": [
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.3883672569680078,
+    "place": 1
+   },
+   {
+    "name": "NEAR",
+    "v": 1,
+    "single": 0.24846319129774125,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 3,
+    "single": 0.16463211479202286,
+    "place": 3
+   },
+   {
+    "name": "HEAT",
+    "v": 0,
+    "single": 0.0903760485671091,
+    "place": 10
+   },
+   {
+    "name": "DO",
+    "v": -4,
+    "single": 0.07132780826646067,
+    "place": 14
+   }
+  ]
+ },
+ {
+  "w": "fee",
+  "form": "o",
+  "code": "MEASURE(=+2) GIVE(=+5) VALUE(=-1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "fee",
+   "dollar",
+   "premium",
+   "expense",
+   "salary"
+  ],
+  "cos1": 0.9999999999999971,
+  "roots": [
+   {
+    "name": "MEASURE",
+    "v": 2,
+    "single": 0.31983817073963045,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": 5,
+    "single": 0.3578965575264264,
+    "place": 1
+   },
+   {
+    "name": "VALUE",
+    "v": -1,
+    "single": 0.26546653927107156,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "follow",
+  "form": "i",
+  "code": "JOIN(=+2) SAME(=+3) TIME(=+5) | i PI BEGIN(=-1) MOVE(=0) | o",
+  "pair": "proceed",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "follow",
+   "proceed",
+   "coincide",
+   "meet",
+   "precede"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "JOIN",
+    "v": 2,
+    "single": 0.27910506880756486,
+    "place": 1
+   },
+   {
+    "name": "SAME",
+    "v": 3,
+    "single": 0.2745137590035085,
+    "place": 2
+   },
+   {
+    "name": "TIME",
+    "v": 5,
+    "single": 0.27415281355753424,
+    "place": 3
+   },
+   {
+    "name": "BEGIN",
+    "v": -1,
+    "single": 0.1781235320775761,
+    "place": 12
+   },
+   {
+    "name": "MOVE",
+    "v": 0,
+    "single": 0.1839376424060313,
+    "place": 11
+   }
+  ]
+ },
+ {
+  "w": "zero",
+  "form": "o",
+  "code": "MANY(=-3) MEASURE(=+1) ABOVE(=-1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "zero",
+   "indicator",
+   "minus",
+   "reduction",
+   "deficit"
+  ],
+  "cos1": 1.0000000000000024,
+  "roots": [
+   {
+    "name": "MANY",
+    "v": -3,
+    "single": 0.45397874334025046,
+    "place": 1
+   },
+   {
+    "name": "MEASURE",
+    "v": 1,
+    "single": 0.36327911142254965,
+    "place": 2
+   },
+   {
+    "name": "ABOVE",
+    "v": -1,
+    "single": 0.19833352786877995,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "change",
+  "form": "i",
+  "code": "CHANGE(=+2) | i",
+  "pair": "",
+  "rank": 2,
+  "rank0": 2,
+  "top": [
+   "alter",
+   "change",
+   "transform",
+   "modify",
+   "vary"
+  ],
+  "cos1": 0.7598710013847652,
+  "roots": [
+   {
+    "name": "CHANGE",
+    "v": 2,
+    "single": 0.8241372574893565,
+    "place": 1
+   }
+  ]
+ },
+ {
+  "w": "negotiate",
+  "form": "i",
+  "code": "THINK(=+2) VALUE(=-5) GIVE(=+1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "negotiate",
+   "buy",
+   "settle",
+   "justify",
+   "acquire"
+  ],
+  "cos1": 0.999999999999997,
+  "roots": [
+   {
+    "name": "THINK",
+    "v": 2,
+    "single": 0.4054260246410212,
+    "place": 1
+   },
+   {
+    "name": "VALUE",
+    "v": -5,
+    "single": 0.3519668933697341,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": 1,
+    "single": 0.2662135295377881,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "sentence",
+  "form": "o",
+  "code": "TEXT RULE(=+5) BEGIN(=+1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "sentence",
+   "declaration",
+   "statement",
+   "proceedings",
+   "amendment"
+  ],
+  "cos1": 1.0000000000000024,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.2858014409957086,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 5,
+    "single": 0.3526410447026054,
+    "place": 1
+   },
+   {
+    "name": "BEGIN",
+    "v": 1,
+    "single": 0.22186950175779374,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "source",
+  "form": "o",
+  "code": "HAPPEN(=-3) TEXT | o PI NEAR(=+1) GRAIN(=-1) | o",
+  "pair": "outlet",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "source",
+   "reference",
+   "outlet",
+   "explanation",
+   "terminal"
+  ],
+  "cos1": 0.999999999999996,
+  "roots": [
+   {
+    "name": "HAPPEN",
+    "v": -3,
+    "single": 0.5744371005536788,
+    "place": 1
+   },
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.17895782550826814,
+    "place": 2
+   },
+   {
+    "name": "NEAR",
+    "v": 1,
+    "single": 0.08770725821166714,
+    "place": 17
+   },
+   {
+    "name": "GRAIN",
+    "v": -1,
+    "single": 0.10713616575452393,
+    "place": 7
+   }
+  ]
+ },
+ {
+  "w": "specify",
+  "form": "i",
+  "code": "THINK(=+2) MEASURE(=-2) SAME(=-1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "specify",
+   "define",
+   "determine",
+   "depend",
+   "emphasize"
+  ],
+  "cos1": 0.9999999999999989,
+  "roots": [
+   {
+    "name": "THINK",
+    "v": 2,
+    "single": 0.5396066052808259,
+    "place": 1
+   },
+   {
+    "name": "MEASURE",
+    "v": -2,
+    "single": 0.29003174414944577,
+    "place": 3
+   },
+   {
+    "name": "SAME",
+    "v": -1,
+    "single": 0.33576753880082233,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "namely",
+  "form": "e",
+  "code": "SAME(=-1) MANY(=0) HAPPEN(=-2) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "namely",
+   "chiefly",
+   "mainly",
+   "commonly",
+   "predominantly"
+  ],
+  "cos1": 0.9999999999999998,
+  "roots": [
+   {
+    "name": "SAME",
+    "v": -1,
+    "single": 0.4367021974072051,
+    "place": 1
+   },
+   {
+    "name": "MANY",
+    "v": 0,
+    "single": 0.3807715784538473,
+    "place": 2
+   },
+   {
+    "name": "HAPPEN",
+    "v": -2,
+    "single": 0.3323231644346222,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "compound",
+  "form": "i",
+  "code": "PART(=+1) NEAR(=+4) MEASURE(=+3) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "compound",
+   "comprise",
+   "associate",
+   "rally",
+   "employ"
+  ],
+  "cos1": 1.0000000000000002,
+  "roots": [
+   {
+    "name": "PART",
+    "v": 1,
+    "single": 0.2269711394926209,
+    "place": 2
+   },
+   {
+    "name": "NEAR",
+    "v": 4,
+    "single": 0.24042462148786786,
+    "place": 1
+   },
+   {
+    "name": "MEASURE",
+    "v": 3,
+    "single": 0.14891736719860524,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "eligible",
+  "form": "a",
+  "code": "CAN(=+2) GIVE(=+4) FIGHT(=-3) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "eligible",
+   "worthy",
+   "optional",
+   "suitable",
+   "valid"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "CAN",
+    "v": 2,
+    "single": 0.39509288162012607,
+    "place": 1
+   },
+   {
+    "name": "GIVE",
+    "v": 4,
+    "single": 0.3069731658581676,
+    "place": 2
+   },
+   {
+    "name": "FIGHT",
+    "v": -3,
+    "single": 0.2091184330418176,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "telegraph",
+  "form": "o",
+  "code": "TEXT LONG(=-1) ART(=-4) | o PI RULE(=+2) SEX(=-1) | o",
+  "pair": "guardian",
+  "rank": 1,
+  "rank0": 3,
+  "top": [
+   "telegraph",
+   "ruler",
+   "web",
+   "paper",
+   "material"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.27947023976810054,
+    "place": 1
+   },
+   {
+    "name": "LONG",
+    "v": -1,
+    "single": 0.1884386125057834,
+    "place": 3
+   },
+   {
+    "name": "ART",
+    "v": -4,
+    "single": 0.19246718873207697,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 2,
+    "single": 0.07721951044208396,
+    "place": 10
+   },
+   {
+    "name": "SEX",
+    "v": -1,
+    "single": 0.06701552242853842,
+    "place": 12
+   }
+  ]
+ },
+ {
+  "w": "internationally",
+  "form": "e",
+  "code": "TONE(=-1) MANY(=+5) FIGHT(=-5) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "internationally",
+   "consistently",
+   "equally",
+   "nationally",
+   "rightly"
+  ],
+  "cos1": 1.000000000000002,
+  "roots": [
+   {
+    "name": "TONE",
+    "v": -1,
+    "single": 0.20328860137776555,
+    "place": 2
+   },
+   {
+    "name": "MANY",
+    "v": 5,
+    "single": 0.2612874683129619,
+    "place": 1
+   },
+   {
+    "name": "FIGHT",
+    "v": -5,
+    "single": 0.18332006633251116,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "dramatic",
+  "form": "a",
+  "code": "BIG(=+1) HAPPEN(=+3) MOOD(=-1) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "dramatic",
+   "profound",
+   "significant",
+   "unexpected",
+   "meaningful"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "BIG",
+    "v": 1,
+    "single": 0.3164240952673418,
+    "place": 2
+   },
+   {
+    "name": "HAPPEN",
+    "v": 3,
+    "single": 0.32237390715527553,
+    "place": 1
+   },
+   {
+    "name": "MOOD",
+    "v": -1,
+    "single": 0.3087409221031853,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "vice",
+  "form": "o",
+  "code": "TIME(=-1) RULE(=+5) DO(=-4) | o",
+  "pair": "",
+  "rank": 7,
+  "rank0": 7,
+  "top": [
+   "deputy",
+   "secretary",
+   "chairman",
+   "spokeswoman",
+   "president"
+  ],
+  "cos1": 0.5841923619484599,
+  "roots": [
+   {
+    "name": "TIME",
+    "v": -1,
+    "single": 0.1936628585096565,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 5,
+    "single": 0.24595286951684928,
+    "place": 1
+   },
+   {
+    "name": "DO",
+    "v": -4,
+    "single": 0.17340094636180392,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "enrollment",
+  "form": "o",
+  "code": "MEASURE(=+2) BEGIN(=-2) GIVE(=+4) | o PI ART(=0) PART(=+5) | o",
+  "pair": "faculty",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "enrollment",
+   "undergraduate",
+   "fund",
+   "institution",
+   "college"
+  ],
+  "cos1": 0.9999999999999989,
+  "roots": [
+   {
+    "name": "MEASURE",
+    "v": 2,
+    "single": 0.20460728553937108,
+    "place": 1
+   },
+   {
+    "name": "BEGIN",
+    "v": -2,
+    "single": 0.19824429947381458,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": 4,
+    "single": 0.19093716178077344,
+    "place": 4
+   },
+   {
+    "name": "ART",
+    "v": 0,
+    "single": 0.04002347534556669,
+    "place": 19
+   },
+   {
+    "name": "PART",
+    "v": 5,
+    "single": 0.152361161395958,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "corporate",
+  "form": "a",
+  "code": "RULE(=0) PART(=+3) ART(=-2) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "corporate",
+   "institutional",
+   "administrative",
+   "social",
+   "educational"
+  ],
+  "cos1": 1.0000000000000016,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": 0,
+    "single": 0.36772772496819867,
+    "place": 1
+   },
+   {
+    "name": "PART",
+    "v": 3,
+    "single": 0.26732923853938617,
+    "place": 2
+   },
+   {
+    "name": "ART",
+    "v": -2,
+    "single": 0.18683675689324228,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "intelligent",
+  "form": "a",
+  "code": "KNOW(=0) CAN(=+5) MOOD(=+3) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "intelligent",
+   "smart",
+   "wise",
+   "helpful",
+   "honest"
+  ],
+  "cos1": 0.999999999999998,
+  "roots": [
+   {
+    "name": "KNOW",
+    "v": 0,
+    "single": 0.2951157751711483,
+    "place": 2
+   },
+   {
+    "name": "CAN",
+    "v": 5,
+    "single": 0.3986174188554303,
+    "place": 1
+   },
+   {
+    "name": "MOOD",
+    "v": 3,
+    "single": 0.29167425723628326,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "tank",
+  "form": "o",
+  "code": "GRAIN(=-2) FIGHT(=+3) LONG(=+3) | o PI ABSTRACT(=-2) CONSUME(=+3) | o",
+  "pair": "bottle",
+  "rank": 2,
+  "rank0": 3,
+  "top": [
+   "bottle",
+   "tank",
+   "tanker",
+   "kitchen",
+   "dish"
+  ],
+  "cos1": 0.29497174044860114,
+  "roots": [
+   {
+    "name": "GRAIN",
+    "v": -2,
+    "single": 0.3316063346669358,
+    "place": 1
+   },
+   {
+    "name": "FIGHT",
+    "v": 3,
+    "single": 0.23549699562301304,
+    "place": 2
+   },
+   {
+    "name": "LONG",
+    "v": 3,
+    "single": 0.1593947908881747,
+    "place": 4
+   },
+   {
+    "name": "ABSTRACT",
+    "v": -2,
+    "single": 0.056726330422421305,
+    "place": 18
+   },
+   {
+    "name": "CONSUME",
+    "v": 3,
+    "single": 0.06260160178687173,
+    "place": 15
+   }
+  ]
+ },
+ {
+  "w": "harassment",
+  "form": "o",
+  "code": "RULE(=0) FIGHT(=+2) SAY(=+3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "harassment",
+   "violence",
+   "intimidation",
+   "advocacy",
+   "partisan"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": 0,
+    "single": 0.21770715261700954,
+    "place": 1
+   },
+   {
+    "name": "FIGHT",
+    "v": 2,
+    "single": 0.18532050360579194,
+    "place": 2
+   },
+   {
+    "name": "SAY",
+    "v": 3,
+    "single": 0.13441118854587222,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "note",
+  "form": "i",
+  "code": "TEXT SEE BIG(=-2) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "note",
+   "notice",
+   "outline",
+   "detail",
+   "describe"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.49401886064914335,
+    "place": 1
+   },
+   {
+    "name": "SEE",
+    "v": 0,
+    "single": 0.3100224917464055,
+    "place": 2
+   },
+   {
+    "name": "BIG",
+    "v": -2,
+    "single": 0.21598670410981494,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "current",
+  "form": "o",
+  "code": "CHANGE(=0) TIME(=-1) ABOVE(=-1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "current",
+   "trend",
+   "revision",
+   "over",
+   "age"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "CHANGE",
+    "v": 0,
+    "single": 0.32107520028453257,
+    "place": 1
+   },
+   {
+    "name": "TIME",
+    "v": -1,
+    "single": 0.26229401810307795,
+    "place": 2
+   },
+   {
+    "name": "ABOVE",
+    "v": -1,
+    "single": 0.23879731471676502,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "bet",
+  "form": "i",
+  "code": "FIGHT(=-1) THINK(=0) MEASURE(=+2) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "bet",
+   "gamble",
+   "earn",
+   "win",
+   "qualify"
+  ],
+  "cos1": 1.0000000000000022,
+  "roots": [
+   {
+    "name": "FIGHT",
+    "v": -1,
+    "single": 0.3052766069513218,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 0,
+    "single": 0.26900939649596295,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 2,
+    "single": 0.21641114212586054,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "random",
+  "form": "a",
+  "code": "RULE(=-2) KNOW(=-5) CARE(=-4) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "random",
+   "arbitrary",
+   "casual",
+   "spontaneous",
+   "occasional"
+  ],
+  "cos1": 1.0000000000000013,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": -2,
+    "single": 0.27049957780345124,
+    "place": 3
+   },
+   {
+    "name": "KNOW",
+    "v": -5,
+    "single": 0.34468826281317627,
+    "place": 1
+   },
+   {
+    "name": "CARE",
+    "v": -4,
+    "single": 0.2873710842081908,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "house",
+  "form": "o",
+  "code": "ABSTRACT(=-3) INSIDE(=+2) PLACE | o",
+  "pair": "",
+  "rank": 3,
+  "rank0": 3,
+  "top": [
+   "room",
+   "apartment",
+   "house",
+   "rooms",
+   "office"
+  ],
+  "cos1": 0.46130026009426317,
+  "roots": [
+   {
+    "name": "ABSTRACT",
+    "v": -3,
+    "single": 0.5646748914284413,
+    "place": 1
+   },
+   {
+    "name": "INSIDE",
+    "v": 2,
+    "single": 0.26270966169726556,
+    "place": 3
+   },
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.2716843889176489,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "sanctuary",
+  "form": "o",
+  "code": "PLACE INSIDE(=-1) THING(=+2) | o PI NEAR(=+3) VALUE(=+3) | o",
+  "pair": "shrine",
+  "rank": 1,
+  "rank0": 3,
+  "top": [
+   "sanctuary",
+   "property",
+   "shelter",
+   "refuge",
+   "temple"
+  ],
+  "cos1": 0.9999999999999981,
+  "roots": [
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.3014805295951662,
+    "place": 1
+   },
+   {
+    "name": "INSIDE",
+    "v": -1,
+    "single": 0.21945905820658965,
+    "place": 2
+   },
+   {
+    "name": "THING",
+    "v": 2,
+    "single": 0.1844755955881074,
+    "place": 4
+   },
+   {
+    "name": "NEAR",
+    "v": 3,
+    "single": 0.21862513964472866,
+    "place": 3
+   },
+   {
+    "name": "VALUE",
+    "v": 3,
+    "single": 0.14733867257353697,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "supermarket",
+  "form": "o",
+  "code": "NEAR(=+3) VALUE(=-5) CONSUME(=+4) | o",
+  "pair": "",
+  "rank": 2,
+  "rank0": 2,
+  "top": [
+   "grocery",
+   "supermarket",
+   "restaurant",
+   "pub",
+   "cafe"
+  ],
+  "cos1": 0.8679258303216851,
+  "roots": [
+   {
+    "name": "NEAR",
+    "v": 3,
+    "single": 0.2786670543948909,
+    "place": 1
+   },
+   {
+    "name": "VALUE",
+    "v": -5,
+    "single": 0.21095066945321853,
+    "place": 2
+   },
+   {
+    "name": "CONSUME",
+    "v": 4,
+    "single": 0.16131605492882664,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "account",
+  "form": "o",
+  "code": "TEXT RULE(=-1) MEASURE(=+3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "account",
+   "transactions",
+   "data",
+   "attribution",
+   "payroll"
+  ],
+  "cos1": 1.0000000000000018,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.23572281691934052,
+    "place": 3
+   },
+   {
+    "name": "RULE",
+    "v": -1,
+    "single": 0.24957997039455881,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 3,
+    "single": 0.28087067516265984,
+    "place": 1
+   }
+  ]
+ },
+ {
+  "w": "outbreak",
+  "form": "o",
+  "code": "HAPPEN(=+1) FIGHT(=+2) HEAT(=+1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "outbreak",
+   "explosion",
+   "fallout",
+   "riot",
+   "aftermath"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "HAPPEN",
+    "v": 1,
+    "single": 0.28521941016566765,
+    "place": 1
+   },
+   {
+    "name": "FIGHT",
+    "v": 2,
+    "single": 0.22605523066390168,
+    "place": 2
+   },
+   {
+    "name": "HEAT",
+    "v": 1,
+    "single": 0.2222566718104262,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "repair",
+  "form": "i",
+  "code": "ART(=-2) THINK(=+5) JOIN(=-3) | i PI CHANGE(=+2) NEAR(=+5) | o",
+  "pair": "renovation",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "repair",
+   "construct",
+   "rebuild",
+   "install",
+   "overhaul"
+  ],
+  "cos1": 0.9999999999999956,
+  "roots": [
+   {
+    "name": "ART",
+    "v": -2,
+    "single": 0.22657438361351737,
+    "place": 2
+   },
+   {
+    "name": "THINK",
+    "v": 5,
+    "single": 0.28545819434482234,
+    "place": 1
+   },
+   {
+    "name": "JOIN",
+    "v": -3,
+    "single": 0.20192628743971505,
+    "place": 3
+   },
+   {
+    "name": "CHANGE",
+    "v": 2,
+    "single": 0.1854047104439059,
+    "place": 4
+   },
+   {
+    "name": "NEAR",
+    "v": 5,
+    "single": 0.07663414002418674,
+    "place": 13
+   }
+  ]
+ },
+ {
+  "w": "respect",
+  "form": "o",
+  "code": "WANT(=+1) TONE(=+3) RULE(=+2) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "respect",
+   "acceptance",
+   "recommendation",
+   "plea",
+   "obligation"
+  ],
+  "cos1": 0.999999999999999,
+  "roots": [
+   {
+    "name": "WANT",
+    "v": 1,
+    "single": 0.28803632600008816,
+    "place": 1
+   },
+   {
+    "name": "TONE",
+    "v": 3,
+    "single": 0.28050600236253176,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": 2,
+    "single": 0.2505727659114711,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "forecast",
+  "form": "i",
+  "code": "MEASURE(=+2) TIME(=+4) HEAT(=-2) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "forecast",
+   "predict",
+   "expect",
+   "dwindle",
+   "rise"
+  ],
+  "cos1": 1.0000000000000027,
+  "roots": [
+   {
+    "name": "MEASURE",
+    "v": 2,
+    "single": 0.33821016513558433,
+    "place": 1
+   },
+   {
+    "name": "TIME",
+    "v": 4,
+    "single": 0.31031648846615867,
+    "place": 2
+   },
+   {
+    "name": "HEAT",
+    "v": -2,
+    "single": 0.20876517159444263,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "adjust",
+  "form": "i",
+  "code": "CHANGE(=+2) THINK(=+3) MEASURE(=0) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "adjust",
+   "reduce",
+   "vary",
+   "determine",
+   "compensate"
+  ],
+  "cos1": 0.9999999999999988,
+  "roots": [
+   {
+    "name": "CHANGE",
+    "v": 2,
+    "single": 0.584871633057027,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 3,
+    "single": 0.3985315211705878,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 0,
+    "single": 0.2522566285802167,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "breakfast",
+  "form": "o",
+  "code": "ABSTRACT(=-3) CONSUME(=+5) FEEL(=-3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "breakfast",
+   "meal",
+   "dinner",
+   "lunch",
+   "night"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "ABSTRACT",
+    "v": -3,
+    "single": 0.21976546563186714,
+    "place": 2
+   },
+   {
+    "name": "CONSUME",
+    "v": 5,
+    "single": 0.39415501155025484,
+    "place": 1
+   },
+   {
+    "name": "FEEL",
+    "v": -3,
+    "single": 0.2046729702420687,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "critically",
+  "form": "e",
+  "code": "TONE(=-1) CARE(=+3) LIVE(=0) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "critically",
+   "vividly",
+   "gravely",
+   "solemnly",
+   "vitally"
+  ],
+  "cos1": 0.9999999999999971,
+  "roots": [
+   {
+    "name": "TONE",
+    "v": -1,
+    "single": 0.4302716503013796,
+    "place": 1
+   },
+   {
+    "name": "CARE",
+    "v": 3,
+    "single": 0.3836717984025347,
+    "place": 2
+   },
+   {
+    "name": "LIVE",
+    "v": 0,
+    "single": 0.2233214112670821,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "trade",
+  "form": "o",
+  "code": "VALUE(=-2) CHANGE(=+2) DO(=-3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "trade",
+   "replacement",
+   "trader",
+   "salesman",
+   "sales"
+  ],
+  "cos1": 0.9999999999999986,
+  "roots": [
+   {
+    "name": "VALUE",
+    "v": -2,
+    "single": 0.30509874683477417,
+    "place": 1
+   },
+   {
+    "name": "CHANGE",
+    "v": 2,
+    "single": 0.16930678226293863,
+    "place": 2
+   },
+   {
+    "name": "DO",
+    "v": -3,
+    "single": 0.14707833792361302,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "agenda",
+  "form": "o",
+  "code": "RULE(=+1) TIME(=+3) PART(=+2) | o PI ABSTRACT(=+3) ART(=+2) | o",
+  "pair": "ideology",
+  "rank": 1,
+  "rank0": 3,
+  "top": [
+   "agenda",
+   "interpretation",
+   "religion",
+   "decision",
+   "meeting"
+  ],
+  "cos1": 0.9999999999999984,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": 1,
+    "single": 0.21374352015146716,
+    "place": 1
+   },
+   {
+    "name": "TIME",
+    "v": 3,
+    "single": 0.21147865536593052,
+    "place": 2
+   },
+   {
+    "name": "PART",
+    "v": 2,
+    "single": 0.20822936083935395,
+    "place": 3
+   },
+   {
+    "name": "ABSTRACT",
+    "v": 3,
+    "single": 0.1681054647649075,
+    "place": 6
+   },
+   {
+    "name": "ART",
+    "v": 2,
+    "single": 0.030582408430723813,
+    "place": 31
+   }
+  ]
+ },
+ {
+  "w": "social",
+  "form": "a",
+  "code": "RULE(=-2) ART(=0) JOIN(=+2) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "social",
+   "interactive",
+   "personal",
+   "corporate",
+   "physical"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": -2,
+    "single": 0.4580704055764416,
+    "place": 1
+   },
+   {
+    "name": "ART",
+    "v": 0,
+    "single": 0.20261304653975787,
+    "place": 2
+   },
+   {
+    "name": "JOIN",
+    "v": 2,
+    "single": 0.1682561733347658,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "pump",
+  "form": "i",
+  "code": "GRAIN(=-2) ART(=-2) ABOVE(=0) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "pump",
+   "propelled",
+   "steam",
+   "power",
+   "exhaust"
+  ],
+  "cos1": 1.0000000000000004,
+  "roots": [
+   {
+    "name": "GRAIN",
+    "v": -2,
+    "single": 0.3840522640465102,
+    "place": 1
+   },
+   {
+    "name": "ART",
+    "v": -2,
+    "single": 0.21951969054585577,
+    "place": 2
+   },
+   {
+    "name": "ABOVE",
+    "v": 0,
+    "single": 0.19061011875599898,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "magnitude",
+  "form": "o",
+  "code": "MEASURE(=0) BIG(=+2) HAPPEN(=+1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "magnitude",
+   "extent",
+   "amount",
+   "proportion",
+   "quantity"
+  ],
+  "cos1": 1.0000000000000024,
+  "roots": [
+   {
+    "name": "MEASURE",
+    "v": 0,
+    "single": 0.5646507557784097,
+    "place": 1
+   },
+   {
+    "name": "BIG",
+    "v": 2,
+    "single": 0.3833974805183786,
+    "place": 2
+   },
+   {
+    "name": "HAPPEN",
+    "v": 1,
+    "single": 0.31930659870234473,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "wide",
+  "form": "a",
+  "code": "BIG(=+3) ABOVE(=0) CAN(=+4) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "wide",
+   "greater",
+   "broad",
+   "extensive",
+   "widespread"
+  ],
+  "cos1": 1.0000000000000004,
+  "roots": [
+   {
+    "name": "BIG",
+    "v": 3,
+    "single": 0.5411236761505654,
+    "place": 1
+   },
+   {
+    "name": "ABOVE",
+    "v": 0,
+    "single": 0.2509740706015713,
+    "place": 3
+   },
+   {
+    "name": "CAN",
+    "v": 4,
+    "single": 0.22372652770739995,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "ahead",
+  "form": "e",
+  "code": "SIDE(=+2) TIME(=+1) MOVE(=0) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "ahead",
+   "forward",
+   "alongside",
+   "impatiently",
+   "forth"
+  ],
+  "cos1": 0.9999999999999977,
+  "roots": [
+   {
+    "name": "SIDE",
+    "v": 2,
+    "single": 0.6891490241782837,
+    "place": 1
+   },
+   {
+    "name": "TIME",
+    "v": 1,
+    "single": 0.45298909910130075,
+    "place": 2
+   },
+   {
+    "name": "MOVE",
+    "v": 0,
+    "single": 0.3920387039436646,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "firmly",
+  "form": "e",
+  "code": "TONE(=0) CARE(=+2) CHANGE(=-4) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "firmly",
+   "doggedly",
+   "consistently",
+   "steadily",
+   "tightly"
+  ],
+  "cos1": 0.999999999999999,
+  "roots": [
+   {
+    "name": "TONE",
+    "v": 0,
+    "single": 0.4844769289611809,
+    "place": 1
+   },
+   {
+    "name": "CARE",
+    "v": 2,
+    "single": 0.45910880215054495,
+    "place": 2
+   },
+   {
+    "name": "CHANGE",
+    "v": -4,
+    "single": 0.41059035234924346,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "altogether",
+  "form": "e",
+  "code": "MANY(=0) TONE(=0) JOIN(=-2) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "altogether",
+   "completely",
+   "permanently",
+   "entirely",
+   "simply"
+  ],
+  "cos1": 0.9999999999999986,
+  "roots": [
+   {
+    "name": "MANY",
+    "v": 0,
+    "single": 0.5351944363690739,
+    "place": 1
+   },
+   {
+    "name": "TONE",
+    "v": 0,
+    "single": 0.3237394434541615,
+    "place": 2
+   },
+   {
+    "name": "JOIN",
+    "v": -2,
+    "single": 0.2399704478549121,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "mix",
+  "form": "i",
+  "code": "JOIN(=+2) PART(=+1) SAME(=-2) | i PI FEEL(=0) THINK(=-3) | o",
+  "pair": "confusion",
+  "rank": 1,
+  "rank0": 4,
+  "top": [
+   "mix",
+   "combine",
+   "blend",
+   "comprise",
+   "mingle"
+  ],
+  "cos1": 0.9999999999999993,
+  "roots": [
+   {
+    "name": "JOIN",
+    "v": 2,
+    "single": 0.3811313470337181,
+    "place": 1
+   },
+   {
+    "name": "PART",
+    "v": 1,
+    "single": 0.2943960369625289,
+    "place": 2
+   },
+   {
+    "name": "SAME",
+    "v": -2,
+    "single": 0.16481726990886364,
+    "place": 3
+   },
+   {
+    "name": "FEEL",
+    "v": 0,
+    "single": 0.01934806924897335,
+    "place": 30
+   },
+   {
+    "name": "THINK",
+    "v": -3,
+    "single": 0.026430245405910394,
+    "place": 28
+   }
+  ]
+ },
+ {
+  "w": "nomination",
+  "form": "o",
+  "code": "RULE(=+3) FIGHT(=-3) GIVE(=+2) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "nomination",
+   "award",
+   "concession",
+   "nominee",
+   "endorsement"
+  ],
+  "cos1": 0.9999999999999991,
+  "roots": [
+   {
+    "name": "RULE",
+    "v": 3,
+    "single": 0.3043510971921101,
+    "place": 1
+   },
+   {
+    "name": "FIGHT",
+    "v": -3,
+    "single": 0.20615592678079228,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": 2,
+    "single": 0.205139053047108,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "installation",
+  "form": "o",
+  "code": "ART(=-2) BEGIN(=-1) ABSTRACT(=-4) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "installation",
+   "construction",
+   "renovation",
+   "machine",
+   "plant"
+  ],
+  "cos1": 1.0000000000000007,
+  "roots": [
+   {
+    "name": "ART",
+    "v": -2,
+    "single": 0.34385633778406843,
+    "place": 1
+   },
+   {
+    "name": "BEGIN",
+    "v": -1,
+    "single": 0.1934854015626502,
+    "place": 3
+   },
+   {
+    "name": "ABSTRACT",
+    "v": -4,
+    "single": 0.1782703750585204,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "cafe",
+  "form": "o",
+  "code": "ABSTRACT(=-2) CONSUME(=+5) NEAR(=+4) | o PI VALUE(=-2) PLACE | o",
+  "pair": "mart",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "cafe",
+   "restaurant",
+   "shop",
+   "accommodation",
+   "mall"
+  ],
+  "cos1": 0.9999999999999982,
+  "roots": [
+   {
+    "name": "ABSTRACT",
+    "v": -2,
+    "single": 0.21637653923333683,
+    "place": 3
+   },
+   {
+    "name": "CONSUME",
+    "v": 5,
+    "single": 0.33620672109442606,
+    "place": 1
+   },
+   {
+    "name": "NEAR",
+    "v": 4,
+    "single": 0.31816456969764834,
+    "place": 2
+   },
+   {
+    "name": "VALUE",
+    "v": -2,
+    "single": 0.03798668944421995,
+    "place": 19
+   },
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.19970189311130776,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "preliminary",
+  "form": "a",
+  "code": "BEGIN(=0) RULE(=+1) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "preliminary",
+   "tentative",
+   "formal",
+   "initial",
+   "definitive"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "BEGIN",
+    "v": 0,
+    "single": 0.4627778268882476,
+    "place": 1
+   },
+   {
+    "name": "RULE",
+    "v": 1,
+    "single": 0.30847140465381584,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "curious",
+  "form": "a",
+  "code": "THINK(=-2) FEEL(=+1) MOOD(=+3) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "curious",
+   "optimistic",
+   "hopeful",
+   "surprise",
+   "uneasy"
+  ],
+  "cos1": 1.0000000000000016,
+  "roots": [
+   {
+    "name": "THINK",
+    "v": -2,
+    "single": 0.45607610467121107,
+    "place": 1
+   },
+   {
+    "name": "FEEL",
+    "v": 1,
+    "single": 0.3996085339169561,
+    "place": 2
+   },
+   {
+    "name": "MOOD",
+    "v": 3,
+    "single": 0.3236596749430231,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "maintain",
+  "form": "i",
+  "code": "CHANGE(=-3) THINK(=+4) GIVE(=0) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "maintain",
+   "retain",
+   "uphold",
+   "sustain",
+   "ensure"
+  ],
+  "cos1": 1.0000000000000018,
+  "roots": [
+   {
+    "name": "CHANGE",
+    "v": -3,
+    "single": 0.6355058590480219,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 4,
+    "single": 0.40410773773381414,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": 0,
+    "single": 0.31936550541787617,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "mosque",
+  "form": "o",
+  "code": "ABSTRACT(=-1) NEAR(=+5) PLACE | o PI SEX(=+2) BIG(=+5) | o",
+  "pair": "hussein",
+  "rank": 1,
+  "rank0": 49,
+  "top": [
+   "mosque",
+   "house",
+   "pavilion",
+   "premises",
+   "mansion"
+  ],
+  "cos1": 0.999999999999999,
+  "roots": [
+   {
+    "name": "ABSTRACT",
+    "v": -1,
+    "single": 0.15156953419758662,
+    "place": 3
+   },
+   {
+    "name": "NEAR",
+    "v": 5,
+    "single": 0.22773764926382262,
+    "place": 1
+   },
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.1680360521741731,
+    "place": 2
+   },
+   {
+    "name": "SEX",
+    "v": 2,
+    "single": 0.06287979971727616,
+    "place": 11
+   },
+   {
+    "name": "BIG",
+    "v": 5,
+    "single": 0.042651702578748035,
+    "place": 17
+   }
+  ]
+ },
+ {
+  "w": "elaborate",
+  "form": "a",
+  "code": "BIG(=+1) CARE(=+4) GIVE(=+2) | a PI CAN(=-1) SAME(=-3) | o",
+  "pair": "complicated",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "elaborate",
+   "comprehensive",
+   "extensive",
+   "detailed",
+   "specific"
+  ],
+  "cos1": 1.0000000000000007,
+  "roots": [
+   {
+    "name": "BIG",
+    "v": 1,
+    "single": 0.26966898537155787,
+    "place": 2
+   },
+   {
+    "name": "CARE",
+    "v": 4,
+    "single": 0.3211642491476568,
+    "place": 1
+   },
+   {
+    "name": "GIVE",
+    "v": 2,
+    "single": 0.2099780968798032,
+    "place": 4
+   },
+   {
+    "name": "CAN",
+    "v": -1,
+    "single": 0.12214912010199694,
+    "place": 13
+   },
+   {
+    "name": "SAME",
+    "v": -3,
+    "single": 0.18449694058688548,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "adjacent",
+  "form": "a",
+  "code": "NEAR(=+3) PLACE SIDE(=0) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "adjacent",
+   "near",
+   "central",
+   "situated",
+   "corner"
+  ],
+  "cos1": 0.9999999999999998,
+  "roots": [
+   {
+    "name": "NEAR",
+    "v": 3,
+    "single": 0.70037624575953,
+    "place": 1
+   },
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.40939579887085614,
+    "place": 2
+   },
+   {
+    "name": "SIDE",
+    "v": 0,
+    "single": 0.2177277185779792,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "create",
+  "form": "i",
+  "code": "JOIN(=+1) THINK(=+3) LIVE(=+4) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "create",
+   "promote",
+   "engage",
+   "reinforce",
+   "enhance"
+  ],
+  "cos1": 0.9999999999999979,
+  "roots": [
+   {
+    "name": "JOIN",
+    "v": 1,
+    "single": 0.45738239535187236,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 3,
+    "single": 0.3764723820756643,
+    "place": 2
+   },
+   {
+    "name": "LIVE",
+    "v": 4,
+    "single": 0.29028702862992334,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "electrical",
+  "form": "a",
+  "code": "ART(=-3) HEAT(=+3) LONG(=-1) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "electrical",
+   "electric",
+   "thermal",
+   "magnetic",
+   "electronic"
+  ],
+  "cos1": 0.9999999999999994,
+  "roots": [
+   {
+    "name": "ART",
+    "v": -3,
+    "single": 0.5172317360482795,
+    "place": 1
+   },
+   {
+    "name": "HEAT",
+    "v": 3,
+    "single": 0.26315710662531755,
+    "place": 2
+   },
+   {
+    "name": "LONG",
+    "v": -1,
+    "single": 0.23770916694828909,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "announcement",
+  "form": "o",
+  "code": "TIME(=+1) RULE(=+2) TEXT | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "announcement",
+   "revision",
+   "appointment",
+   "communique",
+   "proceedings"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "TIME",
+    "v": 1,
+    "single": 0.3361389405696925,
+    "place": 1
+   },
+   {
+    "name": "RULE",
+    "v": 2,
+    "single": 0.28538790540892395,
+    "place": 2
+   },
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.2714961385057148,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "satellite",
+  "form": "o",
+  "code": "PLACE ART(=-4) NEAR(=-3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "satellite",
+   "field",
+   "world",
+   "earth",
+   "radar"
+  ],
+  "cos1": 1.0000000000000007,
+  "roots": [
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.18771056902546213,
+    "place": 3
+   },
+   {
+    "name": "ART",
+    "v": -4,
+    "single": 0.23537331742357082,
+    "place": 1
+   },
+   {
+    "name": "NEAR",
+    "v": -3,
+    "single": 0.21020942744903812,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "invite",
+  "form": "i",
+  "code": "GIVE(=+2) JOIN(=+4) TONE(=+4) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "invite",
+   "contribute",
+   "oblige",
+   "encourage",
+   "assist"
+  ],
+  "cos1": 1.0000000000000042,
+  "roots": [
+   {
+    "name": "GIVE",
+    "v": 2,
+    "single": 0.450771599012034,
+    "place": 1
+   },
+   {
+    "name": "JOIN",
+    "v": 4,
+    "single": 0.425871542965647,
+    "place": 2
+   },
+   {
+    "name": "TONE",
+    "v": 4,
+    "single": 0.32669647696667664,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "dinner",
+  "form": "o",
+  "code": "CONSUME(=+5) ABSTRACT(=-5) CARE(=-5) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "dinner",
+   "meal",
+   "lunch",
+   "restaurant",
+   "drink"
+  ],
+  "cos1": 1,
+  "roots": [
+   {
+    "name": "CONSUME",
+    "v": 5,
+    "single": 0.46375650035656474,
+    "place": 1
+   },
+   {
+    "name": "ABSTRACT",
+    "v": -5,
+    "single": 0.27654879558143014,
+    "place": 2
+   },
+   {
+    "name": "CARE",
+    "v": -5,
+    "single": 0.1899848854364523,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "institute",
+  "form": "i",
+  "code": "ART(=-1) PART(=+5) GIVE(=+3) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "institute",
+   "supply",
+   "incorporated",
+   "employ",
+   "found"
+  ],
+  "cos1": 1.0000000000000002,
+  "roots": [
+   {
+    "name": "ART",
+    "v": -1,
+    "single": 0.2831974689194174,
+    "place": 2
+   },
+   {
+    "name": "PART",
+    "v": 5,
+    "single": 0.31807376871143855,
+    "place": 1
+   },
+   {
+    "name": "GIVE",
+    "v": 3,
+    "single": 0.18106442374707774,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "elder",
+  "form": "o",
+  "code": "SEX(=0) RULE(=+1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "elder",
+   "family",
+   "parent",
+   "custody",
+   "ruler"
+  ],
+  "cos1": 1.0000000000000029,
+  "roots": [
+   {
+    "name": "SEX",
+    "v": 0,
+    "single": 0.4603035462763647,
+    "place": 1
+   },
+   {
+    "name": "RULE",
+    "v": 1,
+    "single": 0.17131111289914533,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "read",
+  "form": "i",
+  "code": "TEXT CONSUME(=+2) KNOW(=+1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "read",
+   "interpret",
+   "tell",
+   "write",
+   "communicate"
+  ],
+  "cos1": 0.9999999999999999,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.5454684994447114,
+    "place": 1
+   },
+   {
+    "name": "CONSUME",
+    "v": 2,
+    "single": 0.42804715783782293,
+    "place": 2
+   },
+   {
+    "name": "KNOW",
+    "v": 1,
+    "single": 0.29831527020013193,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "implement",
+  "form": "i",
+  "code": "DO(=+3) THINK(=+4) CHANGE(=+1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "implement",
+   "manipulate",
+   "utilize",
+   "devise",
+   "enable"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "DO",
+    "v": 3,
+    "single": 0.6030763554097682,
+    "place": 1
+   },
+   {
+    "name": "THINK",
+    "v": 4,
+    "single": 0.4110047136347589,
+    "place": 2
+   },
+   {
+    "name": "CHANGE",
+    "v": 1,
+    "single": 0.24000645483291283,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "virtually",
+  "form": "e",
+  "code": "MANY(=0) CARE(=-1) NEAR(=+1) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "virtually",
+   "nearly",
+   "almost",
+   "practically",
+   "presently"
+  ],
+  "cos1": 0.9999999999999978,
+  "roots": [
+   {
+    "name": "MANY",
+    "v": 0,
+    "single": 0.6233538960413518,
+    "place": 1
+   },
+   {
+    "name": "CARE",
+    "v": -1,
+    "single": 0.28189102929035637,
+    "place": 2
+   },
+   {
+    "name": "NEAR",
+    "v": 1,
+    "single": 0.23274692696419727,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "ten",
+  "form": "a",
+  "code": "TIME(=-2) BEGIN(=+2) MEASURE(=+1) | a",
+  "pair": "",
+  "rank": 6,
+  "rank0": 6,
+  "top": [
+   "last",
+   "previous",
+   "mid",
+   "prior",
+   "latter"
+  ],
+  "cos1": 0.2501409529503741,
+  "roots": [
+   {
+    "name": "TIME",
+    "v": -2,
+    "single": 0.2765770696919533,
+    "place": 1
+   },
+   {
+    "name": "BEGIN",
+    "v": 2,
+    "single": 0.186964902081968,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 1,
+    "single": 0.18381197644009833,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "drive",
+  "form": "i",
+  "code": "MOVE(=+3) LONG(=+3) INSIDE(=-1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "drive",
+   "dash",
+   "ride",
+   "dodge",
+   "jump"
+  ],
+  "cos1": 0.9999999999999997,
+  "roots": [
+   {
+    "name": "MOVE",
+    "v": 3,
+    "single": 0.38117023828477997,
+    "place": 1
+   },
+   {
+    "name": "LONG",
+    "v": 3,
+    "single": 0.19300828675738183,
+    "place": 5
+   },
+   {
+    "name": "INSIDE",
+    "v": -1,
+    "single": 0.1486388566575024,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "southeastern",
+  "form": "a",
+  "code": "PLACE SIDE(=+1) BIG(=0) | a PI HEAT(=-2) FIGHT(=+5) | o",
+  "pair": "caucasus",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "southeastern",
+   "eastern",
+   "northern",
+   "southern",
+   "northeastern"
+  ],
+  "cos1": 0.9999999999999994,
+  "roots": [
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.4035627211198612,
+    "place": 1
+   },
+   {
+    "name": "SIDE",
+    "v": 1,
+    "single": 0.18963358967162103,
+    "place": 3
+   },
+   {
+    "name": "BIG",
+    "v": 0,
+    "single": 0.13797326714916572,
+    "place": 5
+   },
+   {
+    "name": "HEAT",
+    "v": -2,
+    "single": 0.1032767837094732,
+    "place": 8
+   },
+   {
+    "name": "FIGHT",
+    "v": 5,
+    "single": 0.053094853210292156,
+    "place": 15
+   }
+  ]
+ },
+ {
+  "w": "normal",
+  "form": "a",
+  "code": "SAME(=0) MEASURE(=+2) FEEL(=-2) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "normal",
+   "usual",
+   "typical",
+   "regular",
+   "ordinary"
+  ],
+  "cos1": 1.0000000000000002,
+  "roots": [
+   {
+    "name": "SAME",
+    "v": 0,
+    "single": 0.37725958786551445,
+    "place": 1
+   },
+   {
+    "name": "MEASURE",
+    "v": 2,
+    "single": 0.2833573992470552,
+    "place": 2
+   },
+   {
+    "name": "FEEL",
+    "v": -2,
+    "single": 0.2658548562988052,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "economy",
+  "form": "o",
+  "code": "ART(=-1) MEASURE(=+4) FEEL(=-4) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "economy",
+   "productivity",
+   "economics",
+   "math",
+   "mathematics"
+  ],
+  "cos1": 0.9999999999999993,
+  "roots": [
+   {
+    "name": "ART",
+    "v": -1,
+    "single": 0.22570205595957893,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 4,
+    "single": 0.22782630749342522,
+    "place": 1
+   },
+   {
+    "name": "FEEL",
+    "v": -4,
+    "single": 0.16854971053123685,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "discount",
+  "form": "i",
+  "code": "VALUE(=-2) GIVE(=+2) MEASURE(=+1) | i PI ABOVE(=-1) RULE(=+3) | o",
+  "pair": "clearance",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "discount",
+   "pay",
+   "cost",
+   "purchase",
+   "clearance"
+  ],
+  "cos1": 0.9999999999999993,
+  "roots": [
+   {
+    "name": "VALUE",
+    "v": -2,
+    "single": 0.4336189216069798,
+    "place": 1
+   },
+   {
+    "name": "GIVE",
+    "v": 2,
+    "single": 0.2926147733666048,
+    "place": 2
+   },
+   {
+    "name": "MEASURE",
+    "v": 1,
+    "single": 0.27007887712600886,
+    "place": 3
+   },
+   {
+    "name": "ABOVE",
+    "v": -1,
+    "single": 0.15632051794426527,
+    "place": 4
+   },
+   {
+    "name": "RULE",
+    "v": 3,
+    "single": 0.039474291310321256,
+    "place": 21
+   }
+  ]
+ },
+ {
+  "w": "please",
+  "form": "i",
+  "code": "SOMEONE(=+1) TONE(=+5) GIVE(=+1) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "please",
+   "let",
+   "beg",
+   "thank",
+   "ask"
+  ],
+  "cos1": 0.9999999999999994,
+  "roots": [
+   {
+    "name": "SOMEONE",
+    "v": 1,
+    "single": 0.3650922802147377,
+    "place": 2
+   },
+   {
+    "name": "TONE",
+    "v": 5,
+    "single": 0.47077834543465913,
+    "place": 1
+   },
+   {
+    "name": "GIVE",
+    "v": 1,
+    "single": 0.30354726972888196,
+    "place": 4
+   }
+  ]
+ },
+ {
+  "w": "handful",
+  "form": "o",
+  "code": "BIG(=-1) PART(=+2) GIVE(=-2) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "handful",
+   "bunch",
+   "piece",
+   "breakaway",
+   "minority"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "BIG",
+    "v": -1,
+    "single": 0.44632699107449375,
+    "place": 1
+   },
+   {
+    "name": "PART",
+    "v": 2,
+    "single": 0.39085293976571245,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": -2,
+    "single": 0.2055180006606884,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "format",
+  "form": "i",
+  "code": "TEXT MEASURE(=-2) FIGHT(=-2) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "format",
+   "name",
+   "display",
+   "number",
+   "title"
+  ],
+  "cos1": 1.0000000000000002,
+  "roots": [
+   {
+    "name": "TEXT",
+    "v": 0,
+    "single": 0.3660259944283158,
+    "place": 1
+   },
+   {
+    "name": "MEASURE",
+    "v": -2,
+    "single": 0.22404978096725103,
+    "place": 2
+   },
+   {
+    "name": "FIGHT",
+    "v": -2,
+    "single": 0.1694371998109409,
+    "place": 5
+   }
+  ]
+ },
+ {
+  "w": "bomber",
+  "form": "o",
+  "code": "FIGHT(=+3) GRAIN(=-3) LONG(=+3) | o",
+  "pair": "",
+  "rank": 4,
+  "rank0": 4,
+  "top": [
+   "aircraft",
+   "tank",
+   "tanker",
+   "bomber",
+   "missile"
+  ],
+  "cos1": 0.5338607263785491,
+  "roots": [
+   {
+    "name": "FIGHT",
+    "v": 3,
+    "single": 0.28976799076486337,
+    "place": 1
+   },
+   {
+    "name": "GRAIN",
+    "v": -3,
+    "single": 0.21065302383211623,
+    "place": 2
+   },
+   {
+    "name": "LONG",
+    "v": 3,
+    "single": 0.14271122967704505,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "painful",
+  "form": "a",
+  "code": "MOOD(=-1) VALUE(=+1) TOUCH(=+3) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "painful",
+   "grim",
+   "serious",
+   "bitter",
+   "difficult"
+  ],
+  "cos1": 0.9999999999999998,
+  "roots": [
+   {
+    "name": "MOOD",
+    "v": -1,
+    "single": 0.4722688936210561,
+    "place": 1
+   },
+   {
+    "name": "VALUE",
+    "v": 1,
+    "single": 0.35748019112629603,
+    "place": 5
+   },
+   {
+    "name": "TOUCH",
+    "v": 3,
+    "single": 0.37037125694562045,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "withdrawal",
+  "form": "o",
+  "code": "JOIN(=-5) MOOD(=-3) GIVE(=+3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "withdrawal",
+   "cancellation",
+   "retirement",
+   "relief",
+   "debt"
+  ],
+  "cos1": 0.9999999999999991,
+  "roots": [
+   {
+    "name": "JOIN",
+    "v": -5,
+    "single": 0.35580715620152015,
+    "place": 1
+   },
+   {
+    "name": "MOOD",
+    "v": -3,
+    "single": 0.15713460842558918,
+    "place": 3
+   },
+   {
+    "name": "GIVE",
+    "v": 3,
+    "single": 0.1396319698383419,
+    "place": 6
+   }
+  ]
+ },
+ {
+  "w": "adult",
+  "form": "o",
+  "code": "SEX(=-1) RULE(=-2) BIG(=-1) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "adult",
+   "childhood",
+   "child",
+   "family",
+   "siblings"
+  ],
+  "cos1": 0.9999999999999993,
+  "roots": [
+   {
+    "name": "SEX",
+    "v": -1,
+    "single": 0.2191710462959475,
+    "place": 2
+   },
+   {
+    "name": "RULE",
+    "v": -2,
+    "single": 0.23893232572981246,
+    "place": 1
+   },
+   {
+    "name": "BIG",
+    "v": -1,
+    "single": 0.20251869751201831,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "immune",
+  "form": "a",
+  "code": "HAPPEN(=+1) THING(=+5) HEAT(=-3) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "immune",
+   "bacterial",
+   "therapeutic",
+   "pandemic",
+   "seasonal"
+  ],
+  "cos1": 0.9999999999999986,
+  "roots": [
+   {
+    "name": "HAPPEN",
+    "v": 1,
+    "single": 0.18072172798792427,
+    "place": 2
+   },
+   {
+    "name": "THING",
+    "v": 5,
+    "single": 0.18685572811964268,
+    "place": 1
+   },
+   {
+    "name": "HEAT",
+    "v": -3,
+    "single": 0.11047282326992314,
+    "place": 11
+   }
+  ]
+ },
+ {
+  "w": "recommend",
+  "form": "i",
+  "code": "THINK(=+1) WANT(=-2) TONE(=+3) | i PI RULE(=+2) PART(=+3) | o",
+  "pair": "advisory",
+  "rank": 1,
+  "rank0": 2,
+  "top": [
+   "recommend",
+   "acknowledge",
+   "commend",
+   "accept",
+   "approve"
+  ],
+  "cos1": 1.0000000000000009,
+  "roots": [
+   {
+    "name": "THINK",
+    "v": 1,
+    "single": 0.42436797178805336,
+    "place": 1
+   },
+   {
+    "name": "WANT",
+    "v": -2,
+    "single": 0.4141200802317934,
+    "place": 2
+   },
+   {
+    "name": "TONE",
+    "v": 3,
+    "single": 0.27202540917221163,
+    "place": 4
+   },
+   {
+    "name": "RULE",
+    "v": 2,
+    "single": 0.13055452881285348,
+    "place": 8
+   },
+   {
+    "name": "PART",
+    "v": 3,
+    "single": 0.04581331238253305,
+    "place": 26
+   }
+  ]
+ },
+ {
+  "w": "hat",
+  "form": "o",
+  "code": "LONG(=-2) HEAT(=-3) THING(=+3) | o PI BODY SIDE(=+1) | o",
+  "pair": "head",
+  "rank": 2,
+  "rank0": 3,
+  "top": [
+   "foot",
+   "hat",
+   "coat",
+   "head",
+   "knee"
+  ],
+  "cos1": 0.027812267410803542,
+  "roots": [
+   {
+    "name": "LONG",
+    "v": -2,
+    "single": 0.3018343443043132,
+    "place": 1
+   },
+   {
+    "name": "HEAT",
+    "v": -3,
+    "single": 0.12274310067760817,
+    "place": 3
+   },
+   {
+    "name": "THING",
+    "v": 3,
+    "single": 0.1213193704651735,
+    "place": 4
+   },
+   {
+    "name": "BODY",
+    "v": 0,
+    "single": 0.15186409163660536,
+    "place": 2
+   },
+   {
+    "name": "SIDE",
+    "v": 1,
+    "single": 0.033928077810274314,
+    "place": 28
+   }
+  ]
+ },
+ {
+  "w": "massive",
+  "form": "a",
+  "code": "BIG(=+2) GRAIN(=+1) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "massive",
+   "large",
+   "gigantic",
+   "huge",
+   "substantial"
+  ],
+  "cos1": 0.9999999999999989,
+  "roots": [
+   {
+    "name": "BIG",
+    "v": 2,
+    "single": 0.8276477039234883,
+    "place": 1
+   },
+   {
+    "name": "GRAIN",
+    "v": 1,
+    "single": 0.3639073653306775,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "submarine",
+  "form": "o",
+  "code": "FIGHT(=+3) ABOVE(=-5) ART(=-4) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "submarine",
+   "weapon",
+   "missile",
+   "radar",
+   "tank"
+  ],
+  "cos1": 0.9999999999999989,
+  "roots": [
+   {
+    "name": "FIGHT",
+    "v": 3,
+    "single": 0.24144649479907526,
+    "place": 1
+   },
+   {
+    "name": "ABOVE",
+    "v": -5,
+    "single": 0.20457085518816803,
+    "place": 2
+   },
+   {
+    "name": "ART",
+    "v": -4,
+    "single": 0.18104791944017964,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "realistic",
+  "form": "a",
+  "code": "CAN(=+2) ABSTRACT(=+1) TOUCH(=+1) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "realistic",
+   "practical",
+   "reasonable",
+   "credible",
+   "simple"
+  ],
+  "cos1": 1.000000000000001,
+  "roots": [
+   {
+    "name": "CAN",
+    "v": 2,
+    "single": 0.41109585800212306,
+    "place": 1
+   },
+   {
+    "name": "ABSTRACT",
+    "v": 1,
+    "single": 0.27437283886434566,
+    "place": 2
+   },
+   {
+    "name": "TOUCH",
+    "v": 1,
+    "single": 0.2572872447546727,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "suburb",
+  "form": "o",
+  "code": "PLACE NEAR(=+2) | o PI HEAT(=0) DO(=-4) | o",
+  "pair": "chicago",
+  "rank": 4,
+  "rank0": 7,
+  "top": [
+   "neighborhood",
+   "outskirts",
+   "area",
+   "suburb",
+   "location"
+  ],
+  "cos1": 0.5699740755020095,
+  "roots": [
+   {
+    "name": "PLACE",
+    "v": 0,
+    "single": 0.42926566370911845,
+    "place": 1
+   },
+   {
+    "name": "NEAR",
+    "v": 2,
+    "single": 0.36704421639855783,
+    "place": 2
+   },
+   {
+    "name": "HEAT",
+    "v": 0,
+    "single": 0.06098851625998306,
+    "place": 13
+   },
+   {
+    "name": "DO",
+    "v": -4,
+    "single": 0.02670352600644326,
+    "place": 26
+   }
+  ]
+ },
+ {
+  "w": "danger",
+  "form": "o",
+  "code": "KNOW(=0) VALUE(=+4) HAPPEN(=+3) | o",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "danger",
+   "significance",
+   "importance",
+   "consequence",
+   "mistake"
+  ],
+  "cos1": 0.9999999999999976,
+  "roots": [
+   {
+    "name": "KNOW",
+    "v": 0,
+    "single": 0.22774653449893817,
+    "place": 1
+   },
+   {
+    "name": "VALUE",
+    "v": 4,
+    "single": 0.21745102552353296,
+    "place": 2
+   },
+   {
+    "name": "HAPPEN",
+    "v": 3,
+    "single": 0.18791178994054003,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "nevertheless",
+  "form": "e",
+  "code": "MANY(=-1) TONE(=+1) TIME(=+1) | e",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "nevertheless",
+   "nonetheless",
+   "fortunately",
+   "likewise",
+   "heretofore"
+  ],
+  "cos1": 0.9999999999999999,
+  "roots": [
+   {
+    "name": "MANY",
+    "v": -1,
+    "single": 0.5369035855969191,
+    "place": 1
+   },
+   {
+    "name": "TONE",
+    "v": 1,
+    "single": 0.37934957489509014,
+    "place": 2
+   },
+   {
+    "name": "TIME",
+    "v": 1,
+    "single": 0.3042884236531363,
+    "place": 3
+   }
+  ]
+ },
+ {
+  "w": "charitable",
+  "form": "a",
+  "code": "GIVE(=+4) RULE(=-3) TONE(=+4) | a",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "charitable",
+   "honorary",
+   "generous",
+   "supportive",
+   "voluntary"
+  ],
+  "cos1": 0.9999999999999996,
+  "roots": [
+   {
+    "name": "GIVE",
+    "v": 4,
+    "single": 0.35639374439489,
+    "place": 1
+   },
+   {
+    "name": "RULE",
+    "v": -3,
+    "single": 0.22589830387042473,
+    "place": 3
+   },
+   {
+    "name": "TONE",
+    "v": 4,
+    "single": 0.2614236962580903,
+    "place": 2
+   }
+  ]
+ },
+ {
+  "w": "palace",
+  "form": "o",
+  "code": "ABSTRACT(=-3) NEAR(=+3) INSIDE(=+2) | o PI SEX(=+1) MOVE(=-5) | o",
+  "pair": "throne",
+  "rank": 1,
+  "rank0": 10,
+  "top": [
+   "palace",
+   "door",
+   "residence",
+   "house",
+   "caretaker"
+  ],
+  "cos1": 1.0000000000000013,
+  "roots": [
+   {
+    "name": "ABSTRACT",
+    "v": -3,
+    "single": 0.28033425340571955,
+    "place": 1
+   },
+   {
+    "name": "NEAR",
+    "v": 3,
+    "single": 0.25283616063193126,
+    "place": 2
+   },
+   {
+    "name": "INSIDE",
+    "v": 2,
+    "single": 0.21184960479155565,
+    "place": 3
+   },
+   {
+    "name": "SEX",
+    "v": 1,
+    "single": 0.059798956145522074,
+    "place": 14
+   },
+   {
+    "name": "MOVE",
+    "v": -5,
+    "single": 0.06586339821609728,
+    "place": 13
+   }
+  ]
+ },
+ {
+  "w": "hang",
+  "form": "i",
+  "code": "LONG(=-1) MOVE(=-3) GIVE(=-2) | i",
+  "pair": "",
+  "rank": 1,
+  "rank0": 1,
+  "top": [
+   "hang",
+   "hold",
+   "cling",
+   "clamp",
+   "fasten"
+  ],
+  "cos1": 0.9999999999999986,
+  "roots": [
+   {
+    "name": "LONG",
+    "v": -1,
+    "single": 0.3534488284050835,
+    "place": 1
+   },
+   {
+    "name": "MOVE",
+    "v": -3,
+    "single": 0.31306777334636654,
+    "place": 2
+   },
+   {
+    "name": "GIVE",
+    "v": -2,
+    "single": 0.26092317749225535,
+    "place": 4
+   }
+  ]
+ }
+]
