@@ -1,0 +1,20 @@
+1. LIVE(=+4) GRAIN(=-2) ART(=-4) | o
+2. TEXT ABSTRACT(=+1) SAY(=-1) | o
+3. GRAIN(=+1) ART(=-1) TEXT | o
+4. SEE TIME(=-4) FEEL(=+2) | o
+5. CARE(=+2) SAME(=+1) NEAR(=+1) | o
+6. CAN(=+1) FEEL(=-2) VALUE(=-1) | o
+7. FIGHT(=-3) ABSTRACT(=-3) GRAIN(=+1) | o
+8. GOOD(=+1) BEGIN(=+3) CAN(=+3) | o
+9. FEEL(=0) MEASURE(=+3) LIVE(=+4) | o
+10. KNOW(=+2) ART(=0) RULE(=0) | o
+11. RULE(=+2) FIGHT(=+2) GOOD(=-2) | o
+12. GRAIN(=+2) INSIDE(=-2) LONG(=0) | o
+13. GOOD(=+1) CARE(=+1) SOMEONE(=+1) | o
+14. TONE(=-2) MANY(=+3) CHANGE(=0) | o
+15. PART(=+3) SAY(=+2) FEEL(=0) | o
+16. TIME(=-2) CARE(=+1) MANY(=-2) | o
+17. GOOD(=+2) BIG(=+3) | o
+18. SEE KNOW(=+2) FEEL(=+1) | o
+19. RULE(=+3) GIVE(=+2) FEEL(=+1) | o
+20. TIME(=0) BEGIN(=-1) FEEL(=-1) | o

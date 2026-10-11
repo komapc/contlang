@@ -37,7 +37,9 @@ for (const name of process.argv.slice(2)) {
   // «словарь@thing,sex» — ограничения уровней кодера (README ../levels)
   const [dn, cons = ""] = name.split("@"), R5 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
   const LV = { thing: { THING: R5.filter((v) => v <= 4) }, sex: { SEX: [-5, -4, -3, 3, 4, 5] }, sex0: { SEX: [-5, -4, -3, 0, 3, 4, 5] } };
-  const levels = Object.assign({}, ...cons.split(",").filter(Boolean).map((c) => LV[c]));
+  // «КОРЕНЬ:0» — без слабых уровней (±1, ±2), 0 остаётся; «КОРЕНЬ:s» — только сильные ±3 … ±5 (эхо-уровни, echo.js)
+  const lvOf = (c) => LV[c] || (([n, k]) => ({ [n]: R5.filter((v) => Math.abs(v) >= 3 || (k === "0" && v === 0)) }))(c.split(":"));
+  const levels = Object.assign({}, ...cons.split(",").filter(Boolean).map(lvOf));
   const t0 = Date.now(), dd = JSON.parse(fs.readFileSync(path.join(D, `dict_${dn}.json`)));
   const co = new MM.Coder({ C: dd.C, A: dd.A }, m.has_axis, m.names, { ...m, levels }), rd = new MM.Reader(co, V, { ...m.mix, hub: dd.hub }, {});
   const read = (S, v, f) => rd.roots(S, v, f);
@@ -58,7 +60,7 @@ for (const name of process.argv.slice(2)) {
     t1b: mean(a1), t1bn: a1.filter((c) => c >= 0.5).length, t1r: mean(a2), t1rn: a2.filter((c) => c >= 0.5).length, t2, t4, t4in, sec: (Date.now() - t0) / 1000 };
   rows.push(r);
   console.log(JSON.stringify(r));
-  fs.writeFileSync(path.join(D, `codes_dev_${name.replace(/[@,]/g, "_")}.json`), JSON.stringify(dv.map((c) => ({ w: c.w, form: c.f, code: co.format(c.S, c.v, c.f), rank: c.r, c1: c.c1 })), null, 0));
+  fs.writeFileSync(path.join(D, `codes_dev_${name.replace(/[@,:]/g, "_")}.json`), JSON.stringify(dv.map((c) => ({ w: c.w, form: c.f, code: co.format(c.S, c.v, c.f), rank: c.r, c1: c.c1 })), null, 0));
 }
 console.log("\n| словарь | ① dev первыми | ① dev cos | ① 1000 первыми | ① 1000 cos | ① другие 1000 первыми | cos | тест 1: коды моделей cos (близко из " + calib.length + ") | тест 1: рецепты cos (близко из " + rec.length + ") | тест 2 | тест 4 |\n|---|--:|--:|--:|--:|--:|--:|--:|--:|--:|--:|");
 for (const r of rows) console.log(`| ${r.name} | ${r.dev1} | ${r.devc.toFixed(2)} | ${r.rnd1} | ${r.rndc.toFixed(2)} | ${r.rnd2} | ${r.rnd2c.toFixed(2)} | ${r.t1b.toFixed(2)} (${r.t1bn}) | ${r.t1r.toFixed(2)} (${r.t1rn}) | ${r.t2.toFixed(2)} | ${r.t4.toFixed(2)} |`);

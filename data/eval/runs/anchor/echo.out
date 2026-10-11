@@ -1,0 +1,43 @@
+| корень | слабых (|v| ≤ 2) | чувств. слабого | важность слабого | эхо (важен, уровень нет) | сильных | чувств. сильного | примеры эха |
+|---|--:|--:|--:|--:|--:|--:|---|
+| SAY | 22 | 0.58 | 2.91 | 8 (36 %) | 14 | 9.34 | words -1, protest +1, audience +1, background -1, hear +1, speaker +1 |
+| CARE | 22 | 1.70 | 1.81 | 6 (27 %) | 10 | 8.92 | previously +1, shortly -1, newly +1, subsequently -1, regularly -1, successfully +1 |
+| FEEL | 21 | 0.88 | 1.00 | 5 (24 %) | 13 | 7.53 | active +1, relief -1, approval +1, reaction +2, encourage +1 |
+| SEX | 67 | 0.63 | 1.45 | 15 (22 %) | 7 | 4.09 | minister +1, john +1, king +1, child -1, lee +1, thomas +1 |
+| GRAIN | 28 | 1.34 | 1.38 | 6 (21 %) | 31 | 6.90 | black +1, material +1, mass +1, ship -1, completely +1, gap +1 |
+| THING | 53 | 1.00 | 1.58 | 11 (21 %) | 32 | 6.77 | hill -1, egypt -1, mountain -1, highway -1, fish +1, baby +2 |
+| GOOD | 20 | 2.00 | 1.81 | 4 (20 %) | 27 | 8.82 | best +1, strong +1, really +1, quality +2 |
+| TONE | 20 | 1.00 | 1.58 | 4 (20 %) | 13 | 9.38 | meanwhile +1, completely -1, putin -1, warner +1 |
+| KNOW | 25 | 1.74 | 1.58 | 5 (20 %) | 21 | 6.91 | information +1, responsible +1, message +1, identify +1, advisory +1 |
+| MOVE | 52 | 1.74 | 1.58 | 10 (19 %) | 33 | 8.43 | rate +1, track +1, travel +1, traffic +1, transportation +1, walk +1 |
+| CONSUME | 21 | 1.81 | 2.00 | 4 (19 %) | 11 | 5.52 | spend +1, learn +1, write -1, sit +1 |
+| GIVE | 82 | 1.58 | 1.81 | 15 (18 %) | 51 | 8.01 | make +1, get -1, share +1, hold -1, leave +1, allow +1 |
+| LONG | 44 | 1.32 | 1.69 | 8 (18 %) | 45 | 7.31 | red -1, sign +1, message +1, baseball +1, medal -1, silver -1 |
+| SIDE | 61 | 0.74 | 1.29 | 11 (18 %) | 26 | 6.07 | third -1, support -1, india +2, growth +1, republican -1, centre +1 |
+| MOOD | 17 | 1.58 | 1.97 | 3 (18 %) | 19 | 5.11 | emergency -1, anniversary +1, angry -1 |
+| MANY | 46 | 1.00 | 1.32 | 8 (17 %) | 41 | 7.02 | japan +2, france +2, almost +1, kind +1, actually -1, guy +1 |
+| NEAR | 52 | 1.00 | 1.32 | 9 (17 %) | 109 | 7.56 | almost +1, border +1, airport +1, tokyo +1, distance -1, closely +1 |
+| SAME | 44 | 1.13 | 2.00 | 7 (16 %) | 18 | 5.90 | type -1, famous -1, specific -1, contemporary -1, contrast -1, circumstances -2 |
+| CHANGE | 40 | 2.17 | 1.00 | 6 (15 %) | 20 | 8.22 | become +1, status -1, improve +1, currency +1, develop +1, shape +1 |
+| TOUCH | 27 | 0.85 | 1.91 | 4 (15 %) | 15 | 7.46 | clear +1, strongly +1, belgium -1, aggressive +2 |
+| SOMEONE | 34 | 1.00 | 1.00 | 5 (15 %) | 23 | 6.26 | well +1, even -1, want -1, better -1, maria +1 |
+| MEASURE | 86 | 1.32 | 1.32 | 12 (14 %) | 44 | 7.08 | number -1, budget +1, range -1, date -1, figure +1, score +1 |
+| ABOVE | 46 | 1.08 | 1.81 | 6 (13 %) | 31 | 7.47 | average +1, floor -1, unemployment -1, ben +1, wave +1, extend +1 |
+| BIG | 46 | 1.32 | 1.87 | 6 (13 %) | 36 | 8.60 | important +1, additional +1, relatively -1, rare -1, administrative +1, notable +1 |
+| ART | 86 | 1.00 | 1.00 | 11 (13 %) | 63 | 6.53 | china -1, iran -1, century +1, production -2, japanese +1, politics +1 |
+| ABSTRACT | 56 | 0.74 | 0.58 | 7 (13 %) | 51 | 7.06 | church -1, term +1, foundation +1, basis +1, reality +2, faith +1 |
+| TIME | 81 | 1.07 | 1.45 | 10 (12 %) | 38 | 6.86 | week -1, monday +1, days -1, secretary -1, february -1, video -1 |
+| DO | 69 | 1.22 | 0.78 | 8 (12 %) | 105 | 6.22 | man -2, management -1, software +1, scott -2, master -1, programme +1 |
+| WANT | 35 | 1.46 | 1.74 | 4 (11 %) | 32 | 7.04 | feel +1, expect +1, sex +1, favor -1 |
+| FIGHT | 94 | 2.32 | 1.58 | 10 (11 %) | 94 | 6.99 | election -1, politics +1, debate -1, academy -1, strategy +1, poll -2 |
+| HEAT | 39 | 1.77 | 2.17 | 4 (10 %) | 24 | 6.91 | boston -1, storm -1, maker -1, cool -1 |
+| CAN | 50 | 1.87 | 1.68 | 5 (10 %) | 22 | 8.20 | help -1, force -1, enough +1, easy +1, successfully -1 |
+| THINK | 41 | 1.58 | 1.00 | 4 (10 %) | 18 | 9.99 | question -1, choice +1, understand +1, count +1 |
+| RULE | 135 | 1.35 | 1.00 | 13 (10 %) | 115 | 6.78 | wednesday +1, military +1, monday +1, thursday +1, university +1, official +1 |
+| INSIDE | 46 | 1.32 | 1.21 | 4 (9 %) | 21 | 6.11 | affairs +1, damage -1, elements -1, hole +1 |
+| BEGIN | 86 | 1.29 | 1.00 | 7 (8 %) | 36 | 9.18 | round +1, term +1, production -1, middle +1, trial -1, session +1 |
+| HAPPEN | 59 | 1.77 | 1.00 | 4 (7 %) | 46 | 8.81 | event +2, produce +1, greece -1, reaction +1 |
+| LIVE | 32 | 1.49 | 1.42 | 2 (6 %) | 18 | 9.29 | wounded -1, scene -1 |
+| VALUE | 33 | 1.77 | 1.00 | 2 (6 %) | 35 | 8.33 | price -1, assets +2 |
+| JOIN | 36 | 1.87 | 1.58 | 1 (3 %) | 34 | 7.92 | include +1 |
+| PART | 56 | 1.03 | 0.58 | 1 (2 %) | 68 | 7.29 | portion -1 |

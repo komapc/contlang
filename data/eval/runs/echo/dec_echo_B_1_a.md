@@ -1,0 +1,20 @@
+1. pity | sympathy, compassion
+2. speaker | spokesman, orator
+3. deadline | term, due date
+4. mistake | error, slip
+5. science | knowledge, method
+6. criticism | insult, complaint
+7. beginning | start, outset
+8. insight | revelation, vision
+9. conversation | dialogue, discussion
+10. occasion | rarity, once
+11. note | memo, diary
+12. evil | harm, vice
+13. interest | curiosity, desire
+14. sparring | wrestling, boxing
+15. nurse | caregiver, helper
+16. change | coins, currency
+17. poetry | literature, lyrics
+18. lecture | lesson, teaching
+19. conclusion | judgment, verdict
+20. population | residents, inhabitants

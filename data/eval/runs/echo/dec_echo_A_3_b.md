@@ -1,0 +1,20 @@
+1. fool | idiot, ignoramus
+2. dusk | sunset, twilight
+3. handbook | manual, guidebook
+4. currency | money, price
+5. grip | hold, handle
+6. rhetoric | oratory, eloquence
+7. policy | law, agenda
+8. opinion | belief, view
+9. reader | student, scholar
+10. friend | companion, ally
+11. martial art | boxing, wrestling
+12. rebellion | revolt, uprising
+13. fighter | boxer, wrestler
+14. crowd | mob, throng
+15. book | volume, tome
+16. durability | stability, permanence
+17. literature | poetry, fiction
+18. essence | core, substance
+19. remedy | medicine, cure
+20. picture | painting, drawing

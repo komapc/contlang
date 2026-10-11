@@ -1,0 +1,20 @@
+1. appointment | schedule, moment
+2. stability | stillness, constancy
+3. history | memory, record
+4. essay | article, paper
+5. nurse | caretaker, neighbour
+6. language | speech, rhetoric
+7. bark | skin, shell
+8. performance | drama, play
+9. crime | violence, war
+10. discourse | treatise, argument
+11. fool | idiot, ignoramus
+12. knowledge | wisdom, learning
+13. picture | image, painting
+14. riot | brawl, feud
+15. chorus | chatter, debate
+16. rock | stone, boulder
+17. fish | sea creature, plankton
+18. book | document, volume
+19. distance | proximity, range
+20. grant | donation, subsidy

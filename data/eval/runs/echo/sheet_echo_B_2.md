@@ -1,0 +1,20 @@
+1. TIME(=+1) BEGIN(=+1) RULE(=+1) | o
+2. SEE TIME(=-4) FEEL(=+3) | o
+3. GOOD(=+3) BIG(=+3) | o
+4. PLACE THING(=0) SAY(=-3) | o
+5. DO(=-2) FIGHT(=-4) KNOW(=+3) | o
+6. ART(=-3) RULE(=0) KNOW(=+3) | o
+7. HAPPEN(=-1) THING(=-1) GOOD(=+3) | o
+8. TEXT GRAIN(=+3) JOIN(=+2) | o
+9. TIME(=0) FEEL(=-3) PART(=+1) | o
+10. INSIDE(=0) GRAIN(=+3) ABSTRACT(=+1) | o
+11. CAN(=+2) FEEL(=-3) VALUE(=-1) | o
+12. MANY(=0) BIG(=+1) CARE(=0) | o
+13. MOVE(=+2) FEEL(=-3) MEASURE(=+1) | o
+14. CAN(=+2) GOOD(=+3) BEGIN(=+4) | o
+15. FIGHT(=-3) ABSTRACT(=-3) GRAIN(=0) | o
+16. BIG(=0) TOUCH(=+3) KNOW(=+3) | o
+17. MANY(=0) GOOD(=+3) SOMEONE(=+1) | o
+18. MEASURE(=-2) VALUE(=+1) GOOD(=+3) | o
+19. TIME(=0) BEGIN(=+1) FEEL(=-3) | o
+20. MANY(=+2) SAME(=-3) TONE(=0) | o

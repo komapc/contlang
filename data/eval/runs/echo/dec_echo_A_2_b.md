@@ -1,0 +1,20 @@
+1. blood | sap, lymph
+2. word | phrase, quote
+3. book | paper, magazine
+4. memory | recollection, flashback
+5. neighbor | companion, kin
+6. affordability | patience, endurance
+7. ball | racket, bat
+8. success | completion, achievement
+9. pulse | heartbeat, heart rate
+10. knowledge | expertise, science
+11. conflict | dispute, feud
+12. bark | shell, crust
+13. carer | nurse, guardian
+14. criticism | complaint, abuse
+15. slogan | exclamation, chant
+16. history | tradition, antiquity
+17. benefit | advantage, greatness
+18. recognition | perception, insight
+19. grant | subsidy, donation
+20. present | now, beginning
