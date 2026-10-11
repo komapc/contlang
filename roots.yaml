@@ -15,90 +15,123 @@ labels:
 - name: T
   what: 'время: опорная точка относительно «сейчас»'
   scale: −5 давно … 0 сейчас … +5 когда-нибудь (`T-2` прошлое, `T+2` будущее)
+  en_what: 'tense: reference time relative to now'
+  en_scale: '−5 long ago … 0 now … +5 someday (`T-2` past, `T+2` future)'
   range:
   - -5
   - 5
 - name: R
   what: время события относительно опорной точки
   scale: −3 раньше … 0 одновременно … +3 позже
+  en_what: 'time of the event relative to the reference point'
+  en_scale: '−3 before … 0 at the same time … +3 after'
   range:
   - -3
   - 3
 - name: N
   what: число
   scale: 0 нет … +5 все (`N+3` несколько)
+  en_what: 'number (on a verb: number of the subject)'
+  en_scale: '0 none … +5 all (`N+3` several)'
   range:
   - 0
   - 5
 - name: M
   what: отрицание, вероятность
   scale: −5 не … −3 может быть … +4 наверняка
+  en_what: 'negation, probability'
+  en_scale: '−5 not … −3 maybe … +4 surely'
   range:
   - -5
   - 4
 - name: A
   what: вид
   scale: −5 вот-вот начнётся … 0 идёт … +5 закончено
+  en_what: 'aspect'
+  en_scale: '−5 about to start … 0 ongoing … +5 finished'
   range:
   - -5
   - 5
 - name: C
   what: сравнение
   scale: −3 меньше, +3 больше, +5 самый
+  en_what: 'comparison'
+  en_scale: '−3 less, +3 more, +5 most'
   range:
   - -3
   - 5
 - name: I
   what: интенсивность
   scale: −5 едва … −2 слегка … +2 довольно … +5 чрезвычайно (`I+4` очень; `I0` не писать)
+  en_what: 'intensity'
+  en_scale: '−5 barely … −2 slightly … +2 fairly … +5 extremely (`I+4` very; do not write `I0`)'
   range:
   - -5
   - 5
 - name: D
   what: определённость
   scale: −3 *a*, +3 *the*
+  en_what: 'definiteness'
+  en_scale: '−3 *a*, +3 *the*'
   range:
   - -3
   - 3
 - name: V
   what: залог
   scale: −4 претерпевает, 0 само собой, +4 намеренно
+  en_what: 'voice'
+  en_scale: '−4 undergoes (passive), 0 happens by itself, +4 on purpose'
   range:
   - -4
   - 4
 - name: K
   what: побуждение (каузатив)
   scale: −5 помешать, отговорить … 0 допустить … +5 заставить, вызвать
+  en_what: 'causation'
+  en_scale: '−5 prevent, dissuade … 0 allow … +5 make, cause'
   range:
   - -5
   - 5
 - name: '!'
   what: приказ
   scale: без значения
+  en_what: 'command'
+  en_scale: 'no value'
   bare: true
 - name: '?'
   what: вопрос
   scale: без значения
+  en_what: 'question'
+  en_scale: 'no value'
   bare: true
 particles:
 - name: E
   role: дополнение
+  en_role: 'direct object'
 - name: PI
   role: существительное-определение
+  en_role: 'noun modifier (“of”)'
 - name: LA
   role: условие, контекст, опорная точка для `R`
+  en_role: 'condition, context, reference point for `R`'
 - name: PE
   role: деятель при `V-4` («кем»)
+  en_role: 'agent of a passive `V-4` (“by whom”)'
 - name: AND
   role: 'сочинение: и, также'
+  en_role: 'coordination: and, also'
 - name: LI
   role: 'сказуемое (решено: остаётся отдельным словом)'
+  en_role: 'predicate marker'
 - name: '[ ]'
   role: клауза
+  en_role: 'clause'
 - name: ;
   role: граница независимых клауз длинного предложения (у каждого слова своя форма `| …`)
+  en_role: 'boundary of independent clauses in a long sentence (every word keeps its own form `| …`)'
 - name: '"…"'
   role: имена, числа, даты, латынь
+  en_role: 'names, numbers, dates, Latin'
 roots:
 - name: GOOD
   axis:

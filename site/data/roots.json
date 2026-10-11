@@ -7,7 +7,11 @@
    "mid": "",
    "pos": "хорошо",
    "one_sided": false,
-   "ru": "плохо … хорошо"
+   "ru": "плохо … хорошо",
+   "en": "-5 terrible ... +5 excellent",
+   "en_neg": "terrible",
+   "en_mid": "",
+   "en_pos": "excellent"
   },
   {
    "name": "BIG",
@@ -16,7 +20,11 @@
    "mid": "",
    "pos": "много",
    "one_sided": false,
-   "ru": "мало … много"
+   "ru": "мало … много",
+   "en": "-5 tiny ... +5 huge (size, degree, intensity)",
+   "en_neg": "tiny",
+   "en_mid": "",
+   "en_pos": "huge"
   },
   {
    "name": "NEAR",
@@ -25,7 +33,11 @@
    "mid": "",
    "pos": "близко (этот / тот)",
    "one_sided": false,
-   "ru": "далеко … близко (в том числе «этот / тот»)"
+   "ru": "далеко … близко (в том числе «этот / тот»)",
+   "en": "-5 far ... +5 near/here",
+   "en_neg": "far",
+   "en_mid": "",
+   "en_pos": "near/here"
   },
   {
    "name": "ABOVE",
@@ -34,7 +46,11 @@
    "mid": "",
    "pos": "выше",
    "one_sided": false,
-   "ru": "ниже … выше"
+   "ru": "ниже … выше",
+   "en": "-5 below/down ... +5 above/up",
+   "en_neg": "below/down",
+   "en_mid": "",
+   "en_pos": "above/up"
   },
   {
    "name": "LIVE",
@@ -43,7 +59,11 @@
    "mid": "",
    "pos": "живое",
    "one_sided": false,
-   "ru": "мёртвое … живое"
+   "ru": "мёртвое … живое",
+   "en": "-5 dead ... +5 alive (-2 = asleep/barely alive)",
+   "en_neg": "dead",
+   "en_mid": "",
+   "en_pos": "alive"
   },
   {
    "name": "SAME",
@@ -52,7 +72,11 @@
    "mid": "",
    "pos": "то же, общее",
    "one_sided": false,
-   "ru": "другое … то же (−5 другое, противоположное, −4 особое, не как другие, +3 обычное, +5 то же, тождественное): `SAME(=-4) \\| a` особый, уникальный, `SAME(=-4) \\| e` особенно, `SAME(=+3) \\| a` обычный, `SAME(=+4) MANY(=+5) \\| a` общий, всеобщий, `SAME(=-4) JOIN(=-5) RULE \\| o` исключение"
+   "ru": "другое … то же (−5 другое, противоположное, −4 особое, не как другие, +3 обычное, +5 то же, тождественное): `SAME(=-4) \\| a` особый, уникальный, `SAME(=-4) \\| e` особенно, `SAME(=+3) \\| a` обычный, `SAME(=+4) MANY(=+5) \\| a` общий, всеобщий, `SAME(=-4) JOIN(=-5) RULE \\| o` исключение",
+   "en": "-5 different/opposite ... -4 special, unlike others ... +3 ordinary ... +5 identical/exactly. `SAME(=-4) | a` special/unique, `SAME(=+4) MANY(=+5) | a` general/universal.",
+   "en_neg": "different/opposite",
+   "en_mid": "",
+   "en_pos": "identical/exactly"
   },
   {
    "name": "TIME",
@@ -61,7 +85,11 @@
    "mid": "сейчас",
    "pos": "когда-нибудь",
    "one_sided": false,
-   "ru": "раньше … позже"
+   "ru": "раньше … позже",
+   "en": "-5 long ago ... 0 now ... +5 someday (-1 just now, +1 soon)",
+   "en_neg": "long ago",
+   "en_mid": "now",
+   "en_pos": "someday"
   },
   {
    "name": "INSIDE",
@@ -70,7 +98,11 @@
    "mid": "",
    "pos": "внутри",
    "one_sided": false,
-   "ru": "снаружи … внутри"
+   "ru": "снаружи … внутри",
+   "en": "-5 outside ... +5 inside/innermost",
+   "en_neg": "outside",
+   "en_mid": "",
+   "en_pos": "inside/innermost"
   },
   {
    "name": "PART",
@@ -79,7 +111,11 @@
    "mid": "+2 целое, «полностью»",
    "pos": "+5 группа, набор (после слова: собрание таких вещей, *-aro*)",
    "one_sided": false,
-   "ru": "лестница: частица … часть … целое … группа (−5 крошка, −2 часть / член, +2 целое / «полностью», +5 группа, набор, союз); после главного слова `PART(=+5)` — собрание таких вещей, как *-aro* в эсперанто: `SOMEONE PART(=+5) \\| o` общество, `THING(=0) PART(=+5) \\| o` стадо / роща; `SOMEONE PART(=-2) \\| o` член"
+   "ru": "лестница: частица … часть … целое … группа (−5 крошка, −2 часть / член, +2 целое / «полностью», +5 группа, набор, союз); после главного слова `PART(=+5)` — собрание таких вещей, как *-aro* в эсперанто: `SOMEONE PART(=+5) \\| o` общество, `THING(=0) PART(=+5) \\| o` стадо / роща; `SOMEONE PART(=-2) \\| o` член",
+   "en": "-5 particle/crumb ... -2 a part/piece/member-of ... +2 the whole/complete (also 'entirely') ... +5 a group/collection made of many wholes (a set, union); after a head noun, PART(=+5) means a collection of those things",
+   "en_neg": "particle/crumb",
+   "en_mid": "",
+   "en_pos": "a group/collection made of many wholes"
   },
   {
    "name": "SIDE",
@@ -88,7 +124,11 @@
    "mid": "",
    "pos": "перёд",
    "one_sided": false,
-   "ru": "зад … перёд"
+   "ru": "зад … перёд",
+   "en": "-5 back ... +5 front",
+   "en_neg": "back",
+   "en_mid": "",
+   "en_pos": "front"
   },
   {
    "name": "KNOW",
@@ -97,7 +137,11 @@
    "mid": "",
    "pos": "знаю",
    "one_sided": false,
-   "ru": "не знаю … знаю"
+   "ru": "не знаю … знаю",
+   "en": "-5 ignorant ... +5 sure/knowing",
+   "en_neg": "ignorant",
+   "en_mid": "",
+   "en_pos": "sure/knowing"
   },
   {
    "name": "WANT",
@@ -106,7 +150,11 @@
    "mid": "",
    "pos": "любовь",
    "one_sided": false,
-   "ru": "не хочу … хочу (ненависть … любовь)"
+   "ru": "не хочу … хочу (ненависть … любовь)",
+   "en": "-5 hate/refuse ... +5 love/crave",
+   "en_neg": "hate/refuse",
+   "en_mid": "",
+   "en_pos": "love/crave"
   },
   {
    "name": "HEAT",
@@ -115,7 +163,11 @@
    "mid": "тепло",
    "pos": "огонь",
    "one_sided": false,
-   "ru": "холодно … жарко (−5 лёд, 0 тепло/комнатная, +5 огонь)"
+   "ru": "холодно … жарко (−5 лёд, 0 тепло/комнатная, +5 огонь)",
+   "en": "-5 ice cold ... 0 lukewarm ... +5 fire hot",
+   "en_neg": "ice cold",
+   "en_mid": "lukewarm",
+   "en_pos": "fire hot"
   },
   {
    "name": "BEGIN",
@@ -124,7 +176,11 @@
    "mid": "идёт",
    "pos": "закончить",
    "one_sided": false,
-   "ru": "начало … конец (−5 начать, 0 идёт / середина, +5 закончить): `BEGIN(=-5) \\| i` начинать, `BEGIN(=+5) \\| i` заканчивать, `BEGIN(=-4) \\| a` первый, `BEGIN(=+4) \\| a` последний"
+   "ru": "начало … конец (−5 начать, 0 идёт / середина, +5 закончить): `BEGIN(=-5) \\| i` начинать, `BEGIN(=+5) \\| i` заканчивать, `BEGIN(=-4) \\| a` первый, `BEGIN(=+4) \\| a` последний",
+   "en": "-5 start/begin ... 0 ongoing/middle ... +5 finish/end (-4 first, +4 last)",
+   "en_neg": "start/begin",
+   "en_mid": "ongoing/middle",
+   "en_pos": "finish/end"
   },
   {
    "name": "GIVE",
@@ -133,7 +189,11 @@
    "mid": "обмен",
    "pos": "отдать",
    "one_sided": false,
-   "ru": "взять … отдать (−5 взять / украсть, 0 обмен, +5 отдать / подарить): `GIVE(=-5) \\| i` брать, `GIVE(=+5) \\| i` давать, `GIVE(=-5) GOOD(=-4) \\| i` красть, `GIVE(=-3) TIME(=+3) \\| i` брать взаймы"
+   "ru": "взять … отдать (−5 взять / украсть, 0 обмен, +5 отдать / подарить): `GIVE(=-5) \\| i` брать, `GIVE(=+5) \\| i` давать, `GIVE(=-5) GOOD(=-4) \\| i` красть, `GIVE(=-3) TIME(=+3) \\| i` брать взаймы",
+   "en": "-5 take/steal ... 0 exchange ... +5 give/donate",
+   "en_neg": "take/steal",
+   "en_mid": "exchange",
+   "en_pos": "give/donate"
   },
   {
    "name": "TOUCH",
@@ -142,7 +202,11 @@
    "mid": "обычное",
    "pos": "твёрдое",
    "one_sided": false,
-   "ru": "мягкое … твёрдое (−5 мягкое / нежное, 0 обычное, +5 твёрдое / острое): `TOUCH(=-4) \\| a` мягкий, `TOUCH(=+5) \\| a` твёрдый"
+   "ru": "мягкое … твёрдое (−5 мягкое / нежное, 0 обычное, +5 твёрдое / острое): `TOUCH(=-4) \\| a` мягкий, `TOUCH(=+5) \\| a` твёрдый",
+   "en": "-5 soft/gentle ... 0 ordinary ... +5 hard/sharp",
+   "en_neg": "soft/gentle",
+   "en_mid": "ordinary",
+   "en_pos": "hard/sharp"
   },
   {
    "name": "SEX",
@@ -151,7 +215,11 @@
    "mid": "",
    "pos": "мужское",
    "one_sided": false,
-   "ru": "женское … мужское"
+   "ru": "женское … мужское",
+   "en": "-5 female ... +5 male",
+   "en_neg": "female",
+   "en_mid": "",
+   "en_pos": "male"
   },
   {
    "name": "HAPPEN",
@@ -160,7 +228,11 @@
    "mid": "событие",
    "pos": "результат",
    "one_sided": false,
-   "ru": "причина … следствие (−5 первопричина, 0 просто событие, +5 результат): `HAPPEN(=+4) \\| o` следствие, `HAPPEN(=-4) \\| o` причина, `HAPPEN(=+4) \\| e` следовательно, `HAPPEN(=-4) \\| e` потому что"
+   "ru": "причина … следствие (−5 первопричина, 0 просто событие, +5 результат): `HAPPEN(=+4) \\| o` следствие, `HAPPEN(=-4) \\| o` причина, `HAPPEN(=+4) \\| e` следовательно, `HAPPEN(=-4) \\| e` потому что",
+   "en": "-5 cause/origin ... 0 plain event ... +5 consequence/result (position in a chain of events)",
+   "en_neg": "cause/origin",
+   "en_mid": "plain event",
+   "en_pos": "consequence/result"
   },
   {
    "name": "THINK",
@@ -169,7 +241,11 @@
    "mid": "думать",
    "pos": "решить",
    "one_sided": false,
-   "ru": "idea, thing"
+   "ru": "idea, thing",
+   "en": "-5 doubt/hesitate ... 0 think ... +5 decide/conclude",
+   "en_neg": "doubt/hesitate",
+   "en_mid": "think",
+   "en_pos": "decide/conclude"
   },
   {
    "name": "CAN",
@@ -178,7 +254,11 @@
    "mid": "",
    "pos": "легко",
    "one_sided": false,
-   "ru": "не могу … могу (−5 невозможно, −3 трудно, +4 легко); из NSM, нужен для «трудно / возможно»"
+   "ru": "не могу … могу (−5 невозможно, −3 трудно, +4 легко); из NSM, нужен для «трудно / возможно»",
+   "en": "-5 impossible ... +5 can/easily (-3 hard)",
+   "en_neg": "impossible",
+   "en_mid": "",
+   "en_pos": "can/easily"
   },
   {
    "name": "MANY",
@@ -187,7 +267,11 @@
    "mid": "0 ни одного",
    "pos": "+5 все (+3 многие)",
    "one_sided": true,
-   "ru": "**односторонняя** 0 … +5: ни одного … единицы … многие … все"
+   "ru": "**односторонняя** 0 … +5: ни одного … единицы … многие … все",
+   "en": "one-sided 0 none ... +5 all (+4 most, +3 many, +1 few)",
+   "en_neg": "",
+   "en_mid": "none",
+   "en_pos": "all"
   },
   {
    "name": "SOMEONE",
@@ -196,7 +280,11 @@
    "mid": "кто-то",
    "pos": "я (+3 ты)",
    "one_sided": false,
-   "ru": "лицо (−5 они / другой, 0 кто-то, +3 ты, +5 я): `SOMEONE(=+5) \\| o` я, `SOMEONE(=+3) \\| o` ты, `SOMEONE(=-3) \\| o` он; множественное — `MANY` вторым корнем: `SOMEONE(=+5) MANY(=+3) \\| o` мы"
+   "ru": "лицо (−5 они / другой, 0 кто-то, +3 ты, +5 я): `SOMEONE(=+5) \\| o` я, `SOMEONE(=+3) \\| o` ты, `SOMEONE(=-3) \\| o` он; множественное — `MANY` вторым корнем: `SOMEONE(=+5) MANY(=+3) \\| o` мы",
+   "en": "-5 they/other ... 0 someone ... +3 you ... +5 I/me",
+   "en_neg": "they/other",
+   "en_mid": "someone",
+   "en_pos": "I/me"
   },
   {
    "name": "THING",
@@ -205,7 +293,11 @@
    "mid": "растение",
    "pos": "животное (+4)",
    "one_sided": false,
-   "ru": "одушевлённость (−5 камень … 0 растение … +4 животное; человек — SOMEONE): `THING(=-5) \\| o` камень, `THING(=+4) BIG(=+5) \\| o` слон"
+   "ru": "одушевлённость (−5 камень … 0 растение … +4 животное; человек — SOMEONE): `THING(=-5) \\| o` камень, `THING(=+4) BIG(=+5) \\| o` слон",
+   "en": "-5 inanimate/stone ... 0 plant ... +4 animal",
+   "en_neg": "inanimate/stone",
+   "en_mid": "plant",
+   "en_pos": "animal"
   },
   {
    "name": "MOVE",
@@ -214,7 +306,11 @@
    "mid": "идти",
    "pos": "мчаться",
    "one_sided": false,
-   "ru": "movement, motion"
+   "ru": "movement, motion",
+   "en": "-5 stand still ... 0 walk ... +5 sprint/very fast",
+   "en_neg": "stand still",
+   "en_mid": "walk",
+   "en_pos": "sprint/very fast"
   },
   {
    "name": "FEEL",
@@ -223,7 +319,11 @@
    "mid": "",
    "pos": "сильное чувство",
    "one_sided": false,
-   "ru": "спокойно … возбуждённо (−5 вялость, +5 сильное чувство; приятно или нет — GOOD): `FEEL(=+4) GOOD(=-4) \\| a` злой"
+   "ru": "спокойно … возбуждённо (−5 вялость, +5 сильное чувство; приятно или нет — GOOD): `FEEL(=+4) GOOD(=-4) \\| a` злой",
+   "en": "-5 calm/low-energy ... +5 excited/intense (pleasant or not is GOOD)",
+   "en_neg": "calm/low-energy",
+   "en_mid": "",
+   "en_pos": "excited/intense"
   },
   {
    "name": "RULE",
@@ -232,7 +332,11 @@
    "mid": "обычное",
    "pos": "официальное, учреждение, закон",
    "one_sided": false,
-   "ru": "личное … официальное (−5 личное, неформальное, частное; 0 обычное; +5 официальное, учреждение, закон): `RULE(=+4) \\| o` власть, учреждение, `SOMEONE PART(=+5) RULE(=+4) \\| o` комитет, ведомство"
+   "ru": "личное … официальное (−5 личное, неформальное, частное; 0 обычное; +5 официальное, учреждение, закон): `RULE(=+4) \\| o` власть, учреждение, `SOMEONE PART(=+5) RULE(=+4) \\| o` комитет, ведомство",
+   "en": "-5 personal/private/informal ... 0 ordinary ... +5 official/institutional/law (RULE(=+4) = authority, an institution)",
+   "en_neg": "personal/private/informal",
+   "en_mid": "ordinary",
+   "en_pos": "official/institutional/law"
   },
   {
    "name": "CHANGE",
@@ -241,7 +345,11 @@
    "mid": "меняться",
    "pos": "превратить, измениться полностью",
    "one_sided": false,
-   "ru": "остаться … измениться (−5 остаться, не меняться, 0 меняться, +5 превратить, измениться полностью): `CHANGE \\| i` менять, `CHANGE(=-4) \\| i` оставаться, `CHANGE BIG(=+3) \\| i` расти, `CHANGE GOOD(=+3) \\| i` улучшать"
+   "ru": "остаться … измениться (−5 остаться, не меняться, 0 меняться, +5 превратить, измениться полностью): `CHANGE \\| i` менять, `CHANGE(=-4) \\| i` оставаться, `CHANGE BIG(=+3) \\| i` расти, `CHANGE GOOD(=+3) \\| i` улучшать",
+   "en": "-5 stay/remain/not change ... 0 change ... +5 transform completely (direction of change comes from other roots: CHANGE BIG(=+3) = grow, CHANGE GOOD(=+3) = improve)",
+   "en_neg": "stay/remain/not change",
+   "en_mid": "change",
+   "en_pos": "transform completely"
   },
   {
    "name": "ART",
@@ -250,7 +358,11 @@
    "mid": "смешанное",
    "pos": "творчество, культура, гуманитарное",
    "one_sided": false,
-   "ru": "техника … творчество (−5 расчёт, техника, устройства, точные науки, 0 смешанное, +5 творчество, культура, гуманитарное): `ART(=-4) KNOW \\| o` физика, `ART(=+5) SAY \\| o` поэзия, `ART(=-5) SOMEONE \\| o` инженер; корень без значения — умение, ремесло, дисциплина"
+   "ru": "техника … творчество (−5 расчёт, техника, устройства, точные науки, 0 смешанное, +5 творчество, культура, гуманитарное): `ART(=-4) KNOW \\| o` физика, `ART(=+5) SAY \\| o` поэзия, `ART(=-5) SOMEONE \\| o` инженер; корень без значения — умение, ремесло, дисциплина",
+   "en": "-5 calculation/technology/devices/exact science ... 0 mixed ... +5 creativity/culture/humanities/arts. The bare root means skill, craft, discipline.",
+   "en_neg": "calculation/technology/devices/exact science",
+   "en_mid": "mixed",
+   "en_pos": "creativity/culture/humanities/arts"
   },
   {
    "name": "JOIN",
@@ -259,7 +371,11 @@
    "mid": "состав не меняется",
    "pos": "присоединить, добавить, объединить",
    "one_sided": false,
-   "ru": "отделить … присоединить (−5 отделить, убрать, уйти, вычесть, 0 состав не меняется, +5 присоединить, добавить, привнести, объединить): `JOIN(=+4) \\| i` присоединять, `JOIN(=-4) \\| i` убирать"
+   "ru": "отделить … присоединить (−5 отделить, убрать, уйти, вычесть, 0 состав не меняется, +5 присоединить, добавить, привнести, объединить): `JOIN(=+4) \\| i` присоединять, `JOIN(=-4) \\| i` убирать",
+   "en": "-5 separate/remove/subtract ... 0 composition unchanged ... +5 join/add/attach/unite.",
+   "en_neg": "separate/remove/subtract",
+   "en_mid": "composition unchanged",
+   "en_pos": "join/add/attach/unite"
   },
   {
    "name": "VALUE",
@@ -268,7 +384,11 @@
    "mid": "обычная цена",
    "pos": "дорого, ценно",
    "one_sided": false,
-   "ru": "дёшево … дорого (−5 дёшево, бесполезно, ничего не стоит, 0 обычная цена, +5 дорого, ценно, драгоценно): `VALUE(=+4) \\| a` дорогой, ценный, `VALUE(=-4) \\| a` дешёвый; покупка и продажа — вместе с `GIVE`"
+   "ru": "дёшево … дорого (−5 дёшево, бесполезно, ничего не стоит, 0 обычная цена, +5 дорого, ценно, драгоценно): `VALUE(=+4) \\| a` дорогой, ценный, `VALUE(=-4) \\| a` дешёвый; покупка и продажа — вместе с `GIVE`",
+   "en": "-5 cheap/worthless ... 0 ordinary price ... +5 expensive/valuable/precious.",
+   "en_neg": "cheap/worthless",
+   "en_mid": "ordinary price",
+   "en_pos": "expensive/valuable/precious"
   },
   {
    "name": "CARE",
@@ -277,7 +397,11 @@
    "mid": "обычно",
    "pos": "тщательно, осторожно",
    "one_sided": false,
-   "ru": "небрежно … тщательно (−5 небрежно, наспех, 0 обычно, +5 тщательно, осторожно, методично): `CARE(=+4) \\| e` тщательно, `CARE(=-4) \\| e` небрежно, наспех"
+   "ru": "небрежно … тщательно (−5 небрежно, наспех, 0 обычно, +5 тщательно, осторожно, методично): `CARE(=+4) \\| e` тщательно, `CARE(=-4) \\| e` небрежно, наспех",
+   "en": "-5 careless/hasty ... 0 ordinary ... +5 careful/thorough/meticulous.",
+   "en_neg": "careless/hasty",
+   "en_mid": "ordinary",
+   "en_pos": "careful/thorough/meticulous"
   },
   {
    "name": "TONE",
@@ -286,7 +410,11 @@
    "mid": "нейтрально",
    "pos": "вежливо, тепло, дружелюбно",
    "one_sided": false,
-   "ru": "грубо … вежливо (−5 грубо, холодно, враждебно, резко, 0 нейтрально, +5 вежливо, тепло, дружелюбно, искренне): `TONE(=+4) \\| a` вежливый, `TONE(=-4) \\| a` грубый, `TONE(=+4) \\| e` вежливо"
+   "ru": "грубо … вежливо (−5 грубо, холодно, враждебно, резко, 0 нейтрально, +5 вежливо, тепло, дружелюбно, искренне): `TONE(=+4) \\| a` вежливый, `TONE(=-4) \\| a` грубый, `TONE(=+4) \\| e` вежливо",
+   "en": "-5 rude/cold/hostile/harsh ... 0 neutral ... +5 polite/warm/friendly/sincere.",
+   "en_neg": "rude/cold/hostile/harsh",
+   "en_mid": "neutral",
+   "en_pos": "polite/warm/friendly/sincere"
   },
   {
    "name": "MOOD",
@@ -295,7 +423,11 @@
    "mid": "всерьёз, спокойно",
    "pos": "смешно, хохот (+3 весело, радостно)",
    "one_sided": false,
-   "ru": "горе … смешно (−5 горе, отчаяние, трагическое, −3 грусть, 0 всерьёз, спокойно, без шуток, +3 весело, радостно, +5 смешно, хохот, комическое): `MOOD(=+5) \\| a` смешной, `MOOD(=-3) \\| a` грустный, `MOOD(=0) \\| a` серьёзный, `ART MOOD(=+5) \\| o` комедия"
+   "ru": "горе … смешно (−5 горе, отчаяние, трагическое, −3 грусть, 0 всерьёз, спокойно, без шуток, +3 весело, радостно, +5 смешно, хохот, комическое): `MOOD(=+5) \\| a` смешной, `MOOD(=-3) \\| a` грустный, `MOOD(=0) \\| a` серьёзный, `ART MOOD(=+5) \\| o` комедия",
+   "en": "-5 grief/despair/tragic, -3 sad ... 0 serious/calm ... +3 cheerful/glad, +5 funny/hilarious/comic. Mood, not evaluation (GOOD) or intensity (FEEL).",
+   "en_neg": "grief/despair/tragic",
+   "en_mid": "serious/calm",
+   "en_pos": "funny/hilarious/comic"
   },
   {
    "name": "CONSUME",
@@ -304,7 +436,11 @@
    "mid": "обмен",
    "pos": "поглотить (есть, читать, слушать)",
    "one_sided": false,
-   "ru": "выделить … поглотить (−5 выделить, выбросить, излить, 0 обмен, +5 поглотить, принять внутрь: есть, пить, читать, слушать; −5 выделять: испражняться, писать, говорить, излучать): `CONSUME(=+4) \\| i` поглощать, есть, `CONSUME(=-4) \\| i` выделять; канал задаёт второй корень: `CONSUME(=+4) SEE \\| i` читать, `CONSUME(=-4) SAY \\| i` говорить"
+   "ru": "выделить … поглотить (−5 выделить, выбросить, излить, 0 обмен, +5 поглотить, принять внутрь: есть, пить, читать, слушать; −5 выделять: испражняться, писать, говорить, излучать): `CONSUME(=+4) \\| i` поглощать, есть, `CONSUME(=-4) \\| i` выделять; канал задаёт второй корень: `CONSUME(=+4) SEE \\| i` читать, `CONSUME(=-4) SAY \\| i` говорить",
+   "en": "-5 emit/output (excrete, write, speak, spit, exhale) ... 0 exchange ... +5 take in/intake (eat, drink, read, listen, inhale). The channel or object is given by a second root, e.g. SEE, SAY, BODY.",
+   "en_neg": "emit/output",
+   "en_mid": "exchange",
+   "en_pos": "take in/intake"
   },
   {
    "name": "ABSTRACT",
@@ -313,7 +449,11 @@
    "mid": "смешанное",
    "pos": "абстрактное, умственное (теория, предполагать)",
    "one_sided": false,
-   "ru": "конкретное … абстрактное (−5 вещественное, физическое, осязаемое: дом, пинать, трясти, 0 смешанное, +5 отвлечённое, умственное: теория, принцип, предполагать, подразумевать): `ABSTRACT(=-4) \\| o` вещь, предмет, `ABSTRACT(=+4) \\| o` понятие, `ABSTRACT(=+4) THINK \\| i` предполагать; конкретный / абстрактный как признак — `\\| a`"
+   "ru": "конкретное … абстрактное (−5 вещественное, физическое, осязаемое: дом, пинать, трясти, 0 смешанное, +5 отвлечённое, умственное: теория, принцип, предполагать, подразумевать): `ABSTRACT(=-4) \\| o` вещь, предмет, `ABSTRACT(=+4) \\| o` понятие, `ABSTRACT(=+4) THINK \\| i` предполагать; конкретный / абстрактный как признак — `\\| a`",
+   "en": "-5 concrete/physical/tangible (house, kick, shake) ... 0 mixed ... +5 abstract/mental/intangible (theory, principle, assume, imply). A noun or verb is on the physical or the mental side; as an adjective: concrete / abstract.",
+   "en_neg": "concrete/physical/tangible",
+   "en_mid": "mixed",
+   "en_pos": "abstract/mental/intangible"
   },
   {
    "name": "MEASURE",
@@ -322,7 +462,11 @@
    "mid": "уровень, степень",
    "pos": "величина относительно другой (отношение, доля)",
    "one_sided": false,
-   "ru": "величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, скорость-как-отношение, среднее): `MEASURE(=-5) \\| o` количество, размер, `MEASURE(=+5) \\| o` отношение, `MEASURE \\| i` измерять, единица — `MEASURE SAME \\| o`"
+   "ru": "величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, скорость-как-отношение, среднее): `MEASURE(=-5) \\| o` количество, размер, `MEASURE(=+5) \\| o` отношение, `MEASURE \\| i` измерять, единица — `MEASURE SAME \\| o`",
+   "en": "-5 a magnitude in itself (size, amount, length, weight, number) ... 0 level, degree, extent ... +5 a magnitude relative to another (ratio, rate, proportion, percentage, average). Measuring as an action: `MEASURE | i` (to measure); a unit is a magnitude used as a standard (`MEASURE SAME`). As an adjective: measurable / proportional.",
+   "en_neg": "a magnitude in itself",
+   "en_mid": "level, degree, extent",
+   "en_pos": "a magnitude relative to another"
   },
   {
    "name": "LONG",
@@ -331,7 +475,11 @@
    "mid": "палочка, прут",
    "pos": "столб, бревно (толстое, жёсткое)",
    "one_sided": false,
-   "ru": "тонкое гибкое … толстое жёсткое длинное (−5 нить, верёвка, волос, проволока, 0 палочка, прут, ветка, +5 столб, бревно, балка, шест): `LONG(=-5) \\| o` нить, `LONG(=+4) \\| o` шест, `LONG \\| a` длинный, высокий, `LONG(=+3) PLACE \\| o` башня"
+   "ru": "тонкое гибкое … толстое жёсткое длинное (−5 нить, верёвка, волос, проволока, 0 палочка, прут, ветка, +5 столб, бревно, балка, шест): `LONG(=-5) \\| o` нить, `LONG(=+4) \\| o` шест, `LONG \\| a` длинный, высокий, `LONG(=+3) PLACE \\| o` башня",
+   "en": "-5 thin flexible (thread, rope, hair, wire) ... 0 stick, rod, twig ... +5 thick rigid (pole, log, beam, pillar). The root for long objects; as an adjective: long, tall (`LONG | a`).",
+   "en_neg": "thin flexible",
+   "en_mid": "stick, rod, twig",
+   "en_pos": "thick rigid"
   },
   {
    "name": "SAY",
@@ -340,7 +488,11 @@
    "mid": "обычная речь",
    "pos": "крик, рёв",
    "one_sided": false,
-   "ru": "тихо … громко (−5 шёпот, бормотание, 0 обычная речь, +5 крик, рёв, визг): `SAY(=-4) \\| i` шептать, `SAY(=+5) \\| i` кричать, `SAY(=+4) \\| o` крик, `SAY(=-3) \\| o` шёпот, шум — `SAY(=+3) THING \\| o`"
+   "ru": "тихо … громко (−5 шёпот, бормотание, 0 обычная речь, +5 крик, рёв, визг): `SAY(=-4) \\| i` шептать, `SAY(=+5) \\| i` кричать, `SAY(=+4) \\| o` крик, `SAY(=-3) \\| o` шёпот, шум — `SAY(=+3) THING \\| o`",
+   "en": "-5 whisper, murmur, mumble (quiet) ... 0 ordinary speech ... +5 shout, scream, roar (loud). Also for noises: SAY(=+3) THING | o = noise, SAY(=-3) | o = whisper.",
+   "en_neg": "whisper, murmur, mumble",
+   "en_mid": "ordinary speech",
+   "en_pos": "shout, scream, roar"
   },
   {
    "name": "GRAIN",
@@ -349,7 +501,11 @@
    "mid": "сыпучее, рассыпчатое",
    "pos": "цельное, одним куском",
    "one_sided": false,
-   "ru": "как вещество держится вместе (−5 газ, пар, дым, −3 жидкость, течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, твёрдое: камень, слиток, монолит): `GRAIN(=-5) \\| o` газ, `GRAIN(=-3) \\| o` жидкость, `GRAIN(=0) THING(=-5) \\| o` песок, `GRAIN(=+5) \\| a` цельный, сплошной, твёрдый; есть `CONSUME(=+5) GRAIN(=+3) \\| i`, пить `CONSUME(=+5) GRAIN(=-3) \\| i`, вдыхать `CONSUME(=+5) GRAIN(=-5) \\| i`. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные — текучие (−3), целые — около −1"
+   "ru": "как вещество держится вместе (−5 газ, пар, дым, −3 жидкость, течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, твёрдое: камень, слиток, монолит): `GRAIN(=-5) \\| o` газ, `GRAIN(=-3) \\| o` жидкость, `GRAIN(=0) THING(=-5) \\| o` песок, `GRAIN(=+5) \\| a` цельный, сплошной, твёрдый; есть `CONSUME(=+5) GRAIN(=+3) \\| i`, пить `CONSUME(=+5) GRAIN(=-3) \\| i`, вдыхать `CONSUME(=+5) GRAIN(=-5) \\| i`. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные — текучие (−3), целые — около −1",
+   "en": "-5 gas, vapour, smoke ... -3 liquid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (stone, ingot, monolith). Also solid / continuous / seamless / whole as `GRAIN(=+5) | a`. eat = `CONSUME(=+5) GRAIN(=+3) | i`, drink = `CONSUME(=+5) GRAIN(=-3) | i`, inhale = `CONSUME(=+5) GRAIN(=-5) | i`.",
+   "en_neg": "gas, vapour, smoke",
+   "en_mid": "loose, granular",
+   "en_pos": "one solid piece"
   },
   {
    "name": "FIGHT",
@@ -358,7 +514,11 @@
    "mid": "драка, спор",
    "pos": "война насмерть",
    "one_sided": false,
-   "ru": "всерьёз ли борьба (−5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть); без значения — бой, ссора: `FIGHT(=-5) \\| o` игра, спорт, `SOMEONE FIGHT(=-5) \\| o` игрок, `FIGHT(=-5) PART(=+5) \\| o` турнир, `FIGHT(=+5) \\| o` война, `SOMEONE FIGHT(=+5) \\| o` солдат"
+   "ru": "всерьёз ли борьба (−5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть); без значения — бой, ссора: `FIGHT(=-5) \\| o` игра, спорт, `SOMEONE FIGHT(=-5) \\| o` игрок, `FIGHT(=-5) PART(=+5) \\| o` турнир, `FIGHT(=+5) \\| o` война, `SOMEONE FIGHT(=+5) \\| o` солдат",
+   "en": "-5 game, sport, competition by rules ... 0 brawl, quarrel ... +5 war to the death. Bare root: fight, conflict. `SOMEONE FIGHT(=-5) | o` player, `FIGHT(=+5) | o` war.",
+   "en_neg": "game, sport, competition by rules",
+   "en_mid": "brawl, quarrel",
+   "en_pos": "war to the death"
   },
   {
    "name": "BODY",
@@ -367,7 +527,11 @@
    "mid": "",
    "pos": "",
    "one_sided": false,
-   "ru": "тело"
+   "ru": "тело",
+   "en": "body",
+   "en_neg": "",
+   "en_mid": "",
+   "en_pos": ""
   },
   {
    "name": "SEE",
@@ -376,7 +540,11 @@
    "mid": "",
    "pos": "",
    "one_sided": false,
-   "ru": "видеть"
+   "ru": "видеть",
+   "en": "see",
+   "en_neg": "",
+   "en_mid": "",
+   "en_pos": ""
   },
   {
    "name": "DO",
@@ -385,7 +553,11 @@
    "mid": "само действие",
    "pos": "то, чем делают",
    "one_sided": false,
-   "ru": "роль в действии (−5 тот, кто делает, деятель … 0 само действие … +5 то, чем делают: орудие, инструмент, средство); без значения — делать. Корни описывают действие, `DO(=+5)` делает из него орудие: `JOIN(=-4) TOUCH(=+4) DO(=+5) \\| o` нож, `TEXT DO(=+5) \\| o` ручка, `MEASURE HEAT DO(=+5) \\| o` градусник, `SEE DO(=+5) \\| o` очки"
+   "ru": "роль в действии (−5 тот, кто делает, деятель … 0 само действие … +5 то, чем делают: орудие, инструмент, средство); без значения — делать. Корни описывают действие, `DO(=+5)` делает из него орудие: `JOIN(=-4) TOUCH(=+4) DO(=+5) \\| o` нож, `TEXT DO(=+5) \\| o` ручка, `MEASURE HEAT DO(=+5) \\| o` градусник, `SEE DO(=+5) \\| o` очки",
+   "en": "-5 the doer, agent ... 0 the action itself ... +5 the tool, instrument, means. Bare root: do, make. The roots describe the action and `DO(=+5)` turns it into a tool: `JOIN(=-4) TOUCH(=+4) DO(=+5) | o` knife, `TEXT DO(=+5) | o` pen, `SEE DO(=+5) | o` glasses.",
+   "en_neg": "the doer, agent",
+   "en_mid": "the action itself",
+   "en_pos": "the tool, instrument, means"
   },
   {
    "name": "PLACE",
@@ -394,7 +566,11 @@
    "mid": "",
    "pos": "",
    "one_sided": false,
-   "ru": "место"
+   "ru": "место",
+   "en": "place",
+   "en_neg": "",
+   "en_mid": "",
+   "en_pos": ""
   },
   {
    "name": "TEXT",
@@ -403,7 +579,11 @@
    "mid": "",
    "pos": "",
    "one_sided": false,
-   "ru": "письменная речь, текст, запись"
+   "ru": "письменная речь, текст, запись",
+   "en": "written language (as opposed to SAY = spoken): `TEXT | o` text, document; `TEXT | i` write; `CONSUME(=+5) TEXT | i` read; `SOMEONE TEXT | o` writer; `TEXT GIVE(=+3) | o` letter",
+   "en_neg": "",
+   "en_mid": "",
+   "en_pos": ""
   }
  ],
  "labels": [
@@ -414,7 +594,9 @@
     -5,
     5
    ],
-   "scale": "−5 давно … 0 сейчас … +5 когда-нибудь (`T-2` прошлое, `T+2` будущее)"
+   "scale": "−5 давно … 0 сейчас … +5 когда-нибудь (`T-2` прошлое, `T+2` будущее)",
+   "en_what": "tense: reference time relative to now",
+   "en_scale": "−5 long ago … 0 now … +5 someday (`T-2` past, `T+2` future)"
   },
   {
    "name": "R",
@@ -423,7 +605,9 @@
     -3,
     3
    ],
-   "scale": "−3 раньше … 0 одновременно … +3 позже"
+   "scale": "−3 раньше … 0 одновременно … +3 позже",
+   "en_what": "time of the event relative to the reference point",
+   "en_scale": "−3 before … 0 at the same time … +3 after"
   },
   {
    "name": "N",
@@ -432,7 +616,9 @@
     0,
     5
    ],
-   "scale": "0 нет … +5 все (`N+3` несколько)"
+   "scale": "0 нет … +5 все (`N+3` несколько)",
+   "en_what": "number (on a verb: number of the subject)",
+   "en_scale": "0 none … +5 all (`N+3` several)"
   },
   {
    "name": "M",
@@ -441,7 +627,9 @@
     -5,
     4
    ],
-   "scale": "−5 не … −3 может быть … +4 наверняка"
+   "scale": "−5 не … −3 может быть … +4 наверняка",
+   "en_what": "negation, probability",
+   "en_scale": "−5 not … −3 maybe … +4 surely"
   },
   {
    "name": "A",
@@ -450,7 +638,9 @@
     -5,
     5
    ],
-   "scale": "−5 вот-вот начнётся … 0 идёт … +5 закончено"
+   "scale": "−5 вот-вот начнётся … 0 идёт … +5 закончено",
+   "en_what": "aspect",
+   "en_scale": "−5 about to start … 0 ongoing … +5 finished"
   },
   {
    "name": "C",
@@ -459,7 +649,9 @@
     -3,
     5
    ],
-   "scale": "−3 меньше, +3 больше, +5 самый"
+   "scale": "−3 меньше, +3 больше, +5 самый",
+   "en_what": "comparison",
+   "en_scale": "−3 less, +3 more, +5 most"
   },
   {
    "name": "I",
@@ -468,7 +660,9 @@
     -5,
     5
    ],
-   "scale": "−5 едва … −2 слегка … +2 довольно … +5 чрезвычайно (`I+4` очень; `I0` не писать)"
+   "scale": "−5 едва … −2 слегка … +2 довольно … +5 чрезвычайно (`I+4` очень; `I0` не писать)",
+   "en_what": "intensity",
+   "en_scale": "−5 barely … −2 slightly … +2 fairly … +5 extremely (`I+4` very; do not write `I0`)"
   },
   {
    "name": "D",
@@ -477,7 +671,9 @@
     -3,
     3
    ],
-   "scale": "−3 *a*, +3 *the*"
+   "scale": "−3 *a*, +3 *the*",
+   "en_what": "definiteness",
+   "en_scale": "−3 *a*, +3 *the*"
   },
   {
    "name": "V",
@@ -486,7 +682,9 @@
     -4,
     4
    ],
-   "scale": "−4 претерпевает, 0 само собой, +4 намеренно"
+   "scale": "−4 претерпевает, 0 само собой, +4 намеренно",
+   "en_what": "voice",
+   "en_scale": "−4 undergoes (passive), 0 happens by itself, +4 on purpose"
   },
   {
    "name": "K",
@@ -495,57 +693,72 @@
     -5,
     5
    ],
-   "scale": "−5 помешать, отговорить … 0 допустить … +5 заставить, вызвать"
+   "scale": "−5 помешать, отговорить … 0 допустить … +5 заставить, вызвать",
+   "en_what": "causation",
+   "en_scale": "−5 prevent, dissuade … 0 allow … +5 make, cause"
   },
   {
    "name": "!",
    "what": "приказ",
    "range": null,
-   "scale": "без значения"
+   "scale": "без значения",
+   "en_what": "command",
+   "en_scale": "no value"
   },
   {
    "name": "?",
    "what": "вопрос",
    "range": null,
-   "scale": "без значения"
+   "scale": "без значения",
+   "en_what": "question",
+   "en_scale": "no value"
   }
  ],
  "particles": [
   {
    "name": "E",
-   "role": "дополнение"
+   "role": "дополнение",
+   "en_role": "direct object"
   },
   {
    "name": "PI",
-   "role": "существительное-определение"
+   "role": "существительное-определение",
+   "en_role": "noun modifier (“of”)"
   },
   {
    "name": "LA",
-   "role": "условие, контекст, опорная точка для `R`"
+   "role": "условие, контекст, опорная точка для `R`",
+   "en_role": "condition, context, reference point for `R`"
   },
   {
    "name": "PE",
-   "role": "деятель при `V-4` («кем»)"
+   "role": "деятель при `V-4` («кем»)",
+   "en_role": "agent of a passive `V-4` (“by whom”)"
   },
   {
    "name": "AND",
-   "role": "сочинение: и, также"
+   "role": "сочинение: и, также",
+   "en_role": "coordination: and, also"
   },
   {
    "name": "LI",
-   "role": "сказуемое (решено: остаётся отдельным словом)"
+   "role": "сказуемое (решено: остаётся отдельным словом)",
+   "en_role": "predicate marker"
   },
   {
    "name": "[ ]",
-   "role": "клауза"
+   "role": "клауза",
+   "en_role": "clause"
   },
   {
    "name": ";",
-   "role": "граница независимых клауз длинного предложения (у каждого слова своя форма `| …`)"
+   "role": "граница независимых клауз длинного предложения (у каждого слова своя форма `| …`)",
+   "en_role": "boundary of independent clauses in a long sentence (every word keeps its own form `| …`)"
   },
   {
    "name": "\"…\"",
-   "role": "имена, числа, даты, латынь"
+   "role": "имена, числа, даты, латынь",
+   "en_role": "names, numbers, dates, Latin"
   }
  ],
  "counts": {

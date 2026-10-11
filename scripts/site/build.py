@@ -20,6 +20,20 @@ from validator import Validator, iter_codes  # noqa: E402
 RUN = REPO / "data" / "eval" / "runs" / "holdout"
 
 
+def en_ends(text):
+    """«-5 take/steal ... 0 exchange ... +5 give/donate» → концы и середина оси по-английски (для сайта)."""
+    pts = {}
+    for seg in re.split(r"\s*\.\.\.\s*|,\s*(?=[+-]\d\s)", text or ""):
+        m = re.search(r"(?:^|\s)([+-]?\d)\s+(.+)$", seg.strip())
+        if m:
+            t = re.split(r"\.\s|\s\(|;", m.group(2))[0].strip().rstrip(".")
+            pts.setdefault(int(m.group(1)), t)
+    if not pts:
+        return "", "", ""
+    lo, hi = min(pts), max(pts)
+    return (pts[lo] if lo < 0 else ""), pts.get(0, ""), (pts[hi] if hi > 0 else "")
+
+
 def roots_json():
     doc = spec.load()
     roots = []
@@ -33,9 +47,12 @@ def roots_json():
             "pos": (ax or {}).get("pos", ""),
             "one_sided": bool(r.get("one_sided")),
             "ru": r.get("ru_axis") or r.get("ru_gloss") or "",
+            "en": r.get("en_axis") or r.get("en_gloss") or r["name"].lower(),
         })
-    labels = [{"name": l["name"], "what": l["what"], "range": l.get("range"), "scale": l.get("scale", "")} for l in doc["labels"]]
-    particles = [{"name": p["name"], "role": p["role"]} for p in doc["particles"]]
+        roots[-1].update(zip(("en_neg", "en_mid", "en_pos"), en_ends(r.get("en_axis")) if ax else ("", "", "")))
+    labels = [{"name": l["name"], "what": l["what"], "range": l.get("range"), "scale": l.get("scale", ""),
+               "en_what": l.get("en_what", ""), "en_scale": l.get("en_scale", "")} for l in doc["labels"]]
+    particles = [{"name": p["name"], "role": p["role"], "en_role": p.get("en_role", "")} for p in doc["particles"]]
     return {"roots": roots, "labels": labels, "particles": particles, "counts": dict(zip(("roots", "with_axis", "without_axis"), (len(roots), sum(x["axis"] for x in roots), sum(not x["axis"] for x in roots))))}
 
 
