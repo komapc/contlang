@@ -263,15 +263,15 @@
   {
    "name": "MANY",
    "axis": true,
-   "neg": "*односторонняя 0 … +5*",
-   "mid": "0 ни одного",
+   "neg": "−5 ни одного, нет вовсе (−3 почти нет, нехватка)",
+   "mid": "0 сколько-то",
    "pos": "+5 все (+3 многие)",
-   "one_sided": true,
-   "ru": "**односторонняя** 0 … +5: ни одного … единицы … многие … все",
-   "en": "one-sided 0 none ... +5 all (+4 most, +3 many, +1 few)",
-   "en_neg": "",
-   "en_mid": "none",
-   "en_pos": "all"
+   "one_sided": false,
+   "ru": "сколько (−5 ни одного, нет вовсе, −4 нет нужного: нехватка, отсутствие, −3 почти нет, едва, −1 мало, немногие, 0 сколько-то, +3 многие, +4 большинство, +5 все, всегда): `THING MANY(=-5) \\| o` ничто, `MANY(=-4) \\| o` нехватка, отсутствие, `MANY(=-3) \\| e` едва, почти не, `SOMEONE MANY(=+5) \\| o` все",
+   "en": "-5 none/zero/never/absent ... -4 lacking, shortage, absence (of what is needed) ... -3 hardly any, barely ... -1 few ... 0 some, an amount ... +3 many ... +4 most ... +5 all/always",
+   "en_neg": "none/zero/never/absent",
+   "en_mid": "some, an amount",
+   "en_pos": "all/always"
   },
   {
    "name": "SOMEONE",

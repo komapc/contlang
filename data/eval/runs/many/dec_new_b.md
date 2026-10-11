@@ -1,0 +1,20 @@
+1. ceaseless | perpetual, constant
+2. casually | hastily, sloppily
+3. rudely | impolitely, bluntly
+4. poverty | famine, scarcity
+5. gruffly | curtly, bluntly
+6. council | authority, committee
+7. worldwide | global, universal
+8. scarcity | shortage, lack
+9. lose | deprive, shed
+10. rarely | seldom, scarcely
+11. lightly | slightly, a little
+12. minority | fraction, portion
+13. former | earlier, recent
+14. need | lack, deficit
+15. stasis | stagnation, immobility
+16. widespread | numerous, extensive
+17. reluctantly | sparingly, grudgingly
+18. unable | incapable, powerless
+19. tersely | curtly, coldly
+20. stationary | motionless, fixed

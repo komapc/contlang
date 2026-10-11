@@ -1,0 +1,20 @@
+1. transitional | temporary, provisional
+2. hastily | carelessly, sloppily
+3. bluntly | carelessly, roughly
+4. disaster | catastrophe, calamity
+5. hardly | barely, scarcely
+6. council | committee, board
+7. global | worldwide, universal
+8. scarcity | minority, shortage
+9. divide | separate, split
+10. seldom | rarely, infrequently
+11. slightly | a little, marginally
+12. fraction | minority, percentage
+13. former | previous, late
+14. need | hunger, lack
+15. stasis | stability, stagnation
+16. advanced | mature, late
+17. willingly | gladly, readily
+18. helpless | unable, incapable
+19. mildly | gently, quietly
+20. isolated | remote, stationary

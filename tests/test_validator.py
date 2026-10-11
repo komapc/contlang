@@ -31,6 +31,7 @@ GOOD = [
     "PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o",  # стороны света: четыре корня
     "DO | i K+4 E SOMEONE | o",
     "MANY(=0) | e",
+    "MANY(=-3) | e",
     "CONSUME | i !",
 ]
 
@@ -41,7 +42,7 @@ BAD = {
     "SEE(=+3) | i": "axis_on_axisless",
     "PLACE(=-5) | o": "axis_on_axisless",
     "GOOD(=+7) | a": "axis_range",
-    "MANY(=-3) | a": "axis_range",
+    "MANY(=-6) | a": "axis_range",
     "SOMEONE MOVE THINK KNOW | o": "too_many_roots",
     "PLACE BIG ABOVE GOOD | o": "too_many_roots",
     "GOOD | a I0": "label_value",

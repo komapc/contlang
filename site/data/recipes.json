@@ -577,7 +577,7 @@
 },
 {
 "en": "peace",
-"code": "FIGHT MANY(=0) | o"
+"code": "FIGHT MANY(=-5) | o"
 },
 {
 "en": "pen",
@@ -613,7 +613,7 @@
 },
 {
 "en": "poor",
-"code": "VALUE MANY(=0) | a"
+"code": "VALUE MANY(=-4) | a"
 },
 {
 "en": "prevent",
@@ -709,7 +709,7 @@
 },
 {
 "en": "scissors",
-"code": "JOIN(=-4) MANY(=+1) DO(=+5) | o"
+"code": "JOIN(=-4) MANY(=-1) DO(=+5) | o"
 },
 {
 "en": "sea",
@@ -933,6 +933,6 @@
 },
 {
 "en": "zero",
-"code": "MANY(=0) MEASURE(=-5) | o"
+"code": "MANY(=-5) MEASURE(=-5) | o"
 }
 ]
