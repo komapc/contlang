@@ -44,7 +44,7 @@ const fmt = (name, r) => `${name.padEnd(28)} рецептов ${r.n}: top1 ${r.t
 console.log(fmt("сайт", evaluate({})));
 if (process.argv.includes("--grid")) {
   for (const posPen of [0, 1, 1.5, 2]) console.log(fmt("posPen " + posPen, evaluate({ posPen })));
-  for (const pairK of [3, 10]) for (const pairLam of [0, 0.5, 1]) console.log(fmt(`pairK ${pairK} pairLam ${pairLam}`, evaluate({ pairK, pairLam })));
+  for (const modW of [0, 0.5, 1]) for (const pairLam of [0.1, 0.25, 0.5]) console.log(fmt(`modW ${modW} pairLam ${pairLam}`, evaluate({ modW, pairLam })));
 }
 if (process.argv.includes("--graph")) {
   // пары с FOR и с PI отдельно; link — каждую пару читать через одну частицу (те же коды, другие отношения графа)

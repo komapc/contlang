@@ -262,6 +262,7 @@ const I18N = {
   en: {
     think: "thinking…", err: "error ", notInVocab: (n) => "the word is not among the " + n + " words of the dictionary", onlyWords: "the math encodes single words only",
     cos: (c) => "similarity of the code to the word cos " + c + "; the math does not know the part of speech, so it puts o",
+    pairMod: (m, a, b) => "; one code put the word at place " + a + ", so a second word was added (" + m + "): place " + b,
     next: "then: ", rank: (k, n) => " · the original word is at place " + k + " of " + n, noRoots: "no roots in the code", unknown: "unknown: ",
     codeGiven: "the code is given; the math only reads it", saved: "a saved result of a blind test", noModel: "the model is not connected",
     encoding: "the model is encoding…", decoding: "another model is decoding blind…", breaks: "the code breaks the rules: ",
@@ -285,6 +286,7 @@ const I18N = {
   ru: {
     think: "думаю…", err: "ошибка ", notInVocab: (n) => "слова нет среди " + n + " слов словаря", onlyWords: "математика кодирует только отдельные слова",
     cos: (c) => "сходство кода со словом cos " + c + "; часть речи математика не знает, стоит o",
+    pairMod: (m, a, b) => "; одним кодом слово на месте " + a + ", поэтому добавлено второе слово (" + m + "): место " + b,
     next: "далее: ", rank: (k, n) => " · исходное слово на " + k + "-м месте из " + n, noRoots: "в коде нет корней", unknown: "неизвестно: ",
     codeGiven: "код задан, математика только читает его", saved: "сохранённый результат слепого теста", noModel: "модель не подключена",
     encoding: "модель кодирует…", decoding: "другая модель раскодирует вслепую…", breaks: "код нарушает правила: ",
@@ -484,10 +486,12 @@ async function mathWord(word){
     return;
   }
   await new Promise(r => setTimeout(r, 0));
-  const r = co.encode(x), sc = (await reader()).roots(r.S, r.v, "");   // часть речи слова неизвестна: без штрафа
-  setCode($("mcode"), $("mcodeAx"), co.format(r.S, r.v, "o"));
+  // часть речи слова неизвестна: без штрафа; слово не первое — кодер пробует пару «код PI второе слово» (Reader.encode)
+  const rd = await reader(), r = co.encode(x), e = rd.encode(w);
+  const sc = e.mod ? rd.scores(e.code) : rd.roots(r.S, r.v, "");
+  setCode($("mcode"), $("mcodeAx"), e.code);
   const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
-  $("mcos").textContent = T("cos")(r.cos.toFixed(2));
+  $("mcos").textContent = T("cos")(r.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = T("next") + nb.slice(1).map(n => n.word).join(", ") + (rk ? T("rank")(rk, nloc(V.words.length)) : "");
   const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;

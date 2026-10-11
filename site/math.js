@@ -225,6 +225,16 @@
       }
       return [...best.entries()].sort((a, b) => sc[b[1]] - sc[a[1]]).slice(0, k).map(([g, i]) => ({ word: this.words[g], score: sc[i] }));
     }
+    // k ближайших к x слов-лемм, кроме служебных и словоформ skip
+    near(x, k, skip) {
+      const N = this.words.length, D = this.dim, t = this.index.get(skip), gs = t == null ? -1 : (this.group ? this.group[t] : t), out = [];
+      for (let i = 0; i < N; i++) {
+        if ((this.stop && this.stop[i]) || (this.group && this.group[i] !== i) || i === gs || (this.group && this.group[i] === gs)) continue;
+        let s = 0; for (let j = 0; j < D; j++) s += this.X[i * D + j] * x[j];
+        out.push([s / this.norm[i], i]);
+      }
+      return out.sort((a, b) => b[0] - a[0]).slice(0, k).map(([, i]) => this.words[i]);
+    }
     rankIn(sc, w) {
       const t = this.index.get(w);
       if (t == null) return null;
@@ -238,9 +248,10 @@
   }
 
   // Чтение кода векторами: слова, часть речи, пары. Общее для сайта и проверочных скриптов (scripts/site/eval_math.js).
-  // opt: posPen — штраф за чужую часть речи; pairK, pairLam — сколько прочтений уточняющего слова брать и с каким весом связи.
+  // opt: posPen — штраф за чужую часть речи; pairK, pairLam — сколько прочтений уточняющего слова брать и с каким весом связи;
+  // modW — вес корней уточняющего слова в общем векторе (0: они уводят чтение от главного, по 107 парам слепых тестов место 203 → 112).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.5, graphW: 0, relW: {
+  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.25, modW: 0, pairN: 15, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -271,15 +282,34 @@
       const p = this.co.parse(text);
       return p.S.length ? this.V.top(this.roots(p.S, p.v, Reader.form(text)), this.opt.pairK).map((n) => n.word) : [];
     }
-    // оценки всех слов для кода: слитые корни + pairLam·связь с прочтениями уточняющих слов (Vocab.pair)
+    // оценки всех слов для кода: корни главного слова (+ modW·корни уточняющих) + pairLam·связь с прочтениями уточняющих слов (Vocab.pair)
     // + graphW·связь по графу с учётом частицы (Vocab.graphScore)
     scores(code) {
-      const ws = Reader.words(code), p = this.parse(code);
-      const sc = this.roots(p.S, p.v, Reader.form(ws[0].text));
+      const ws = Reader.words(code), h = this.co.parse(ws[0].text);
+      let parts = this.co.parts(h.S, h.v);
+      if (this.opt.modW) for (const w of ws.slice(1)) { const p = this.co.parse(w.text); parts = parts.concat(this.co.parts(p.S, p.v).map((a) => a.map((t) => t * this.opt.modW))); }
+      const sc = this.V.adjust(this.V.scores(parts, this.mix), Reader.form(ws[0].text), this.opt.posPen);
       const rd = ws.slice(1).map((w) => ({ link: w.link, words: this.readings(w.text) })), mods = rd.flatMap((r) => r.words);
       if (!mods.length) return sc;
       const out = this.V.pair(sc, mods, this.opt.pairLam), gw = this.opt.graphW;
       if (gw) for (const r of rd) { const g = this.V.graphScore(r.words, this.opt.relW[r.link] || {}); for (let i = 0; i < out.length; i++) out[i] += gw * g[i]; }
+      return out;
+    }
+    // код слова кодером; если векторы не ставят слово первым — пара «код PI второе слово»: второе слово — один из pairN
+    // ближайших соседей слова, закодированный не более чем двумя корнями, без корней главного (иначе пара лишь удваивает его вес).
+    // Векторы связку не различают (graphW = 0), поэтому PI. → {code, rank, base, rank0, mod}
+    encode(word) {
+      const V = this.V, co = this.co, x = V.vec(word);
+      if (!x) return null;
+      const b = co.encode(x), base = co.format(b.S, b.v, "o"), sc = this.roots(b.S, b.v, ""), rank0 = V.rankIn(sc, word);
+      const out = { code: base, rank: rank0, base, rank0, mod: "" };
+      if (rank0 === 1) return out;
+      for (const n of V.near(x, this.opt.pairN, word)) {
+        const e = co.encode(V.vec(n), 2);
+        if (e.S.some((r) => b.S.includes(r))) continue;
+        const mc = co.format(e.S, e.v, "o"), r = V.rankIn(V.pair(sc, this.readings(mc), this.opt.pairLam), word);
+        if (r < out.rank) Object.assign(out, { code: `${base} PI ${mc}`, rank: r, mod: n });
+      }
       return out;
     }
   }
