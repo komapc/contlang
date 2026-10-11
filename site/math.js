@@ -15,11 +15,12 @@
     return out;
   }
 
-  function grid(flags) {
+  // lists — допустимые уровни каждого корня кода
+  function grid(lists) {
     let rows = [[]];
-    for (const f of flags) {
+    for (const l of lists) {
       const next = [];
-      for (const r of rows) for (const v of (f ? LEVELS : [0])) next.push(r.concat(v));
+      for (const r of rows) for (const v of l) next.push(r.concat(v));
       rows = next;
     }
     return rows;
@@ -31,13 +32,17 @@
       this.C = dict.C; this.A = dict.A; this.has = has; this.names = names;
       this.s = opt.s; this.hw = opt.head_w; this.topr = opt.topr;
       this.R = this.C.length;
+      // допустимые уровни: opt.levels {корень: [уровни]} сужает −5…+5 (спецификация: THING до +4, SEX только явный пол)
+      const lv = (opt && opt.levels) || {}, sig = [];
+      this.lv = names.map((n, r) => (!has[r] ? [0] : lv[n] || LEVELS));
+      this.lid = this.lv.map((l) => { const k = l.join(","); let i = sig.indexOf(k); if (i < 0) { sig.push(k); i = sig.length - 1; } return i; });
       const M = this.C.concat(this.A);
       this.G = M.map((a) => M.map((b) => dot(a, b)));
       this.grids = {};
     }
-    grid(flags) {
-      const key = flags.join("");
-      return this.grids[key] || (this.grids[key] = grid(flags));
+    grid(S) {
+      const key = S.map((r) => this.lid[r]).join(",");
+      return this.grids[key] || (this.grids[key] = grid(S.map((r) => this.lv[r])));
     }
     encode(x, m = 3) {
       const cx = this.C.map((c) => dot(c, x)), ax = this.A.map((a) => dot(a, x));
@@ -57,7 +62,7 @@
             for (let i = 0; i < L; i++) for (let j = 0; j < L; j++) Gs[i * L + j] = this.G[idx[i]][idx[j]];
             const U = new Float64Array(L);
             for (let i = 0; i < k; i++) U[i] = w[i];
-            for (const g of this.grid(S2.map((r) => this.has[r]))) {
+            for (const g of this.grid(S2)) {
               for (let i = 0; i < k; i++) U[k + i] = w[i] * this.s * g[i];
               let d = 0, n = 0;
               for (let i = 0; i < L; i++) {
@@ -90,7 +95,7 @@
         const cx = dot(this.C[r], x), ax = dot(this.A[r], x);
         const gcc = this.G[r][r], gca = this.G[r][this.R + r], gaa = this.G[this.R + r][this.R + r];
         let best = { cos: -2, v: 0 };
-        for (const v of (this.has[r] ? LEVELS : [0])) {
+        for (const v of this.lv[r]) {
           const t = this.s * v;
           const cos = (cx + t * ax) / Math.sqrt(Math.max(gcc + 2 * t * gca + t * t * gaa, 1e-9));
           if (cos > best.cos) best = { cos, v };

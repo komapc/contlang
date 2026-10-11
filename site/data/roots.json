@@ -215,8 +215,8 @@
    "mid": "",
    "pos": "мужское",
    "one_sided": false,
-   "ru": "женское … мужское",
-   "en": "-5 female ... +5 male",
+   "ru": "женское … мужское (только у слов с явным полом: −5 женщина, +5 мужчина; слабые ±1, ±2 не ставятся)",
+   "en": "-5 female ... +5 male (only for words of explicit sex; omitted otherwise)",
    "en_neg": "female",
    "en_mid": "",
    "en_pos": "male"

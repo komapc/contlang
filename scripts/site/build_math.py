@@ -70,8 +70,11 @@ def main():
     has = np.array([bool(a.any()) for a in A0])
     Xq = unit(np.round(X * 127))  # те же векторы, что читает браузер
     hub = np.round(hubness(Xq, D["C"], D["A"], has), 4).tolist()
+    # допустимые уровни корня у кодера (остальные корни — все −5 … +5): THING до +4 (+5 нет на оси, человек — SOMEONE),
+    # SEX только явный пол (|v| ≥ 3; с 0 кодер ставил king → SEX(=0)) — слабые ±1, ±2 кодер ставил эхом (assistant → SEX(=+1)); ① не меняется (data/eval/runs/anchor/eval_levels.out)
+    LEVELS = {"THING": list(range(-5, 5)), "SEX": [-5, -4, -3, 3, 4, 5]}
     js = {"names": names, "has_axis": has.tolist(), "dim": X.shape[1], "s": S, "head_w": HW, "topr": 8,
-          "poles_hash": spec.poles_hash(), "words": words,
+          "poles_hash": spec.poles_hash(), "words": words, "levels": LEVELS,
           "mix": {"soft": SOFT, "w": 0.5, "hub": hub},
           "dict": {"C": r4(D["C"]), "A": r4(D["A"])}}
     (OUT / "math.json").write_text(json.dumps(js, separators=(",", ":")), encoding="utf8")
