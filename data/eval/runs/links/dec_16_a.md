@@ -1,0 +1,14 @@
+1. needle | pin, staple
+2. hammer | mallet, striker
+3. page | leaf, sheet
+4. lift | elevator, crane
+5. petal | pollen, bud
+6. cream | milk, butter
+7. roof | ceiling, cover
+8. wallet | purse, pocket
+9. sand | dust, grit
+10. venom | blood, poison
+11. document | text, manuscript
+12. barn | stable, shed
+13. hoof | bone, claw
+14. candle | torch, match

@@ -1,0 +1,14 @@
+1. shoal | school, pod
+2. pin | clip, staple
+3. blade | cutter, edge
+4. library | archive, bookstore
+5. seed | grain, kernel
+6. saddle | harness, bridle
+7. hammer | mallet, striker
+8. bone | tusk, horn
+9. blood | milk, fluid
+10. embryo | fetus, germ
+11. engine | motor, vehicle
+12. leather | hide, skin
+13. brush | broom, mop
+14. lid | cover, cap

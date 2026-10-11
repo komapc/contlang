@@ -1,0 +1,14 @@
+1. lid | cover, cap
+2. petal | leaf, bud
+3. hammer | drill, mallet
+4. wallet | purse, pouch
+5. sheath | scabbard, case
+6. eel | fish, leech
+7. juice | drink, beverage
+8. brush | sponge, mop
+9. note | memo, message
+10. whale | shark, dolphin
+11. roof | ceiling, top
+12. library | archive, bookshelf
+13. book | text, document
+14. saddle | harness, seat

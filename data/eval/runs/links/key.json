@@ -1,0 +1,1210 @@
+{
+ "sheets": {
+  "1": [
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) CONSUME(=+5) BIG(=-3) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "paper",
+    "TEXT | o PI THING(=0) LONG(=+5) | o",
+    1
+   ],
+   [
+    "leather",
+    "GRAIN(=+5) | o PI THING(=+4) BODY SIDE(=+5) | o",
+    1
+   ],
+   [
+    "petal",
+    "PART(=-2) THING(=0) TOUCH(=-5) | o PI THING(=0) GOOD(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o PI LIVE(=+5) INSIDE(=+5) PLACE | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) SEE(=+3) | o PI GRAIN(=+3) TOUCH(=-3) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) DO(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ]
+  ],
+  "2": [
+   [
+    "sunflower",
+    "THING(=0) LONG(=+3) ABOVE(=+5) | o PI ABOVE(=+5) BIG(=+5) | o",
+    1
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) DO(=0) | o PI THING(=+4) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "saddle",
+    "PLACE(=0) DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+4) | o",
+    1
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) DO(=+5) BIG(=-4) | o PI VALUE(=+5) GIVE(=0) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-3) | o PI INSIDE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "starfish",
+    "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+5) | o",
+    1
+   ],
+   [
+    "yolk",
+    "INSIDE(=+5) PART(=-2) GRAIN(=-3) | o PI THING(=+4) HAPPEN(=-5) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) GRAIN(=-3) CONSUME(=+5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "hoof",
+    "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI DO(=+5) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ]
+  ],
+  "3": [
+   [
+    "nest",
+    "PLACE INSIDE(=+5) DO(=+5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) SEE | o PI GRAIN(=+5) TOUCH(=-3) | o",
+    1
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "leather",
+    "GRAIN(=+5) TOUCH(=-5) | o PI THING(=+4) BODY INSIDE(=-5) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) BIG(=+5) | o",
+    1
+   ],
+   [
+    "yolk",
+    "PART(=-2) INSIDE(=+5) | o PI THING(=+4) BEGIN(=-4) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "hoof",
+    "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI DO(=+5) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+3) | o PI CONSUME(=+5) GRAIN(=-3) THING(=+4) | o",
+    1
+   ]
+  ],
+  "4": [
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-5) | o PI DO(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "petal",
+    "PART(=-2) THING(=0) | o PI THING(=0) GOOD(=+4) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "wallet",
+    "DO(=+5) INSIDE(=+5) BIG(=-4) | o PI VALUE(=+5) | o",
+    1
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) LONG(=-5) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) BIG(=-3) CONSUME(=+5) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "paper",
+    "BIG(=-3) TEXT | o PI THING(=0) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "starfish",
+    "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+3) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o PI PLACE INSIDE(=+5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "saddle",
+    "DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) SIDE(=-5) | o",
+    1
+   ]
+  ],
+  "5": [
+   [
+    "petal",
+    "PART(=-2) TOUCH(=-5) | o PI THING(=0) SEE(=+5) | o",
+    1
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+3) | o FROM THING(=+4) CONSUME(=+5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "paper",
+    "TEXT LONG(=-5) | o FROM THING(=0) GRAIN(=+5) | o",
+    1
+   ],
+   [
+    "yolk",
+    "PART(=-2) INSIDE(=+5) | o PI THING(=+4) INSIDE(=+5) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "saddle",
+    "PLACE TOUCH(=-3) JOIN(=+5) | o FOR THING(=+4) MOVE(=+5) BIG(=+3) | o",
+    1
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) BIG(=-3) | o FOR VALUE(=+5) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-3) GRAIN(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "starfish",
+    "THING(=+4) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) INSIDE(=-5) | o PI PLACE LIVE(=+5) | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ]
+  ],
+  "6": [
+   [
+    "hoof",
+    "PART(=-2) MOVE(=+5) TOUCH(=+5) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+    1
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) TOUCH(=-5) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=0) ABOVE(=+5) | o PI HEAT(=+5) BIG(=+5) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) HEAT(=+3) | o FROM THING(=0) CONSUME(=+5) BIG(=-3) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) TOUCH(=-3) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+3) TOUCH(=-3) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=+3) | o FOR INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) JOIN(=+5) | o FOR THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "leather",
+    "GRAIN(=+3) | o FROM THING(=+4) BODY INSIDE(=-5) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) MOVE(=+5) | o",
+    1
+   ]
+  ],
+  "7": [
+   [
+    "starfish",
+    "THING(=+4) MANY(=+4) | o PI GRAIN(=-3) BIG(=+5) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) DO(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "petal",
+    "PART(=-2) BIG(=-4) | o PI THING(=0) GOOD(=+4) | o",
+    1
+   ],
+   [
+    "saddle",
+    "DO(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+4) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "hoof",
+    "PART(=-2) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) | o",
+    1
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+4) | o",
+    1
+   ],
+   [
+    "yolk",
+    "PART(=-2) INSIDE(=+5) | o PI BEGIN(=-4) THING(=+4) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "leather",
+    "GRAIN(=+5) TOUCH(=-3) | o FROM INSIDE(=-5) THING(=+4) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-4) | o FOR INSIDE(=+5) DO(=+5) | o",
+    1
+   ]
+  ],
+  "8": [
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+2) TOUCH(=-2) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=0) ABOVE(=+5) BIG(=+4) | o PI HEAT(=+5) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o FROM GRAIN(=-3) THING(=+4) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) BIG(=-3) DO(=+5) | o FOR VALUE(=+5) GIVE(=+3) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) TOUCH(=-5) | o PI GRAIN(=-3) BIG(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) PART(=-2) | o PI PLACE INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "paper",
+    "GRAIN(=+5) BIG(=-3) | o FROM GRAIN(=+5) THING(=0) | o",
+    1
+   ],
+   [
+    "nest",
+    "PLACE INSIDE(=+5) | o FOR BEGIN(=-4) THING(=+4) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) | o",
+    1
+   ]
+  ],
+  "9": [
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "starfish",
+    "THING(=+4) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "wallet",
+    "BIG(=-4) DO(=+5) INSIDE(=+5) | o FOR GIVE(=0) VALUE(=+3) | o",
+    1
+   ],
+   [
+    "saddle",
+    "PLACE DO(=+5) | o FOR THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "yolk",
+    "INSIDE(=+5) PART(=-2) | o PI BEGIN(=-4) LIVE(=+2) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o FROM THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=0) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "leather",
+    "THING(=-5) GRAIN(=+5) | o FROM THING(=+4) PART(=-2) SIDE(=-5) | o",
+    1
+   ]
+  ],
+  "10": [
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) CONSUME(=+5) | o",
+    1
+   ],
+   [
+    "petal",
+    "PART(=-2) | o PI THING(=0) SEE | o",
+    1
+   ],
+   [
+    "seahorse",
+    "BIG(=-3) THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "hoof",
+    "BODY TOUCH(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "paper",
+    "LONG(=-5) TEXT | o FROM THING(=0) PART(=-5) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "jellyfish",
+    "TOUCH(=-5) THING(=+4) | o LIKE ABOVE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "sheath",
+    "DO(=+5) INSIDE(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "nest",
+    "PLACE LIVE(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+    1
+   ]
+  ],
+  "11": [
+   [
+    "key",
+    "DO(=+5) TOUCH(=+5) BIG(=-3) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) LONG(=-5) | o LIKE THING(=+4) BIG(=-3) | o",
+    1
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) DO(=+5) BIG(=-3) | o FOR VALUE(=+5) GIVE(=+3) | o",
+    1
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-3) | o FOR INSIDE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o LIKE ABOVE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "petal",
+    "PART(=-2) TOUCH(=-5) | o PI THING(=+0) SEE(=+5) | o",
+    1
+   ],
+   [
+    "leather",
+    "GRAIN(=+5) TOUCH(=-5) | o FROM INSIDE(=-5) THING(=+4) | o",
+    1
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) BIG(=-3) | o LIKE THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ],
+   [
+    "nest",
+    "PLACE(=+5) DO(=+5) | o FOR HAPPEN(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "starfish",
+    "THING(=+4) GRAIN(=-3) | o LIKE ABOVE(=+5) BIG(=+5) | o",
+    1
+   ]
+  ],
+  "12": [
+   [
+    "saddle",
+    "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "candle",
+    "LONG(=+3) GRAIN(=+5) | o FOR SEE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "yolk",
+    "PART(=-2) INSIDE(=+5) SEE(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o FOR PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o FROM SEX(=-5) THING(=+4) | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "hoof",
+    "PART(=-2) TOUCH(=+5) ABOVE(=-5) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "paper",
+    "TEXT(=+5) PART(=-5) | o FROM THING(=+0) | o",
+    1
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=+0) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=+0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ]
+  ],
+  "13": [
+   [
+    "jellyfish",
+    "TOUCH(=-5) THING(=+4) | o PI ABOVE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+    1
+   ],
+   [
+    "yolk",
+    "INSIDE(=+5) PART(=-2) | o PI BEGIN(=-4) LIVE(=+2) | o",
+    1
+   ],
+   [
+    "seahorse",
+    "BIG(=-3) THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "paper",
+    "LONG(=-5) TEXT | o PI THING(=0) PART(=-5) | o",
+    1
+   ],
+   [
+    "sheath",
+    "DO(=+5) INSIDE(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) BIG(=-3) CONSUME(=+5) | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=0) HEAT(=+5) | o PI GRAIN(=+5) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "leather",
+    "THING(=-5) GRAIN(=+5) | o PI THING(=+4) PART(=-2) SIDE(=-5) | o",
+    1
+   ],
+   [
+    "key",
+    "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+    1
+   ],
+   [
+    "kitchen",
+    "PLACE HEAT(=+3) CONSUME(=+5) | o",
+    0
+   ]
+  ],
+  "14": [
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "nest",
+    "PLACE LIVE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+    1
+   ],
+   [
+    "petal",
+    "PART(=-2) | o PI THING(=0) SEE | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=0) | o PI ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "hoof",
+    "BODY TOUCH(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "wallet",
+    "BIG(=-4) DO(=+5) INSIDE(=+5) | o PI GIVE(=0) VALUE(=+3) | o",
+    1
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-4) | o PI DO(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "knife",
+    "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "starfish",
+    "THING(=+4) | o PI ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "saddle",
+    "PLACE DO(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o",
+    1
+   ]
+  ],
+  "15": [
+   [
+    "nest",
+    "PLACE(=+5) DO(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "library",
+    "PLACE TEXT PART(=+5) | o",
+    0
+   ],
+   [
+    "lid",
+    "ABOVE(=+5) JOIN(=-3) | o PI INSIDE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "mountain",
+    "PLACE ABOVE(=+5) BIG(=+4) | o",
+    0
+   ],
+   [
+    "sheath",
+    "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+    1
+   ],
+   [
+    "sunflower",
+    "THING(=+0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) | o",
+    1
+   ],
+   [
+    "wine",
+    "CONSUME(=+5) GRAIN(=-3) | o PI THING(=+0) | o",
+    1
+   ],
+   [
+    "catfish",
+    "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) | o",
+    1
+   ],
+   [
+    "brush",
+    "TOUCH(=-3) MOVE DO(=+5) | o",
+    0
+   ],
+   [
+    "starfish",
+    "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+5) | o",
+    1
+   ],
+   [
+    "cheese",
+    "CONSUME(=+5) GRAIN(=+5) | o PI SEX(=-5) THING(=+4) | o",
+    1
+   ],
+   [
+    "yolk",
+    "PART(=-2) INSIDE(=+5) SEE(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+    1
+   ],
+   [
+    "leather",
+    "GRAIN(=+5) TOUCH(=-5) | o PI INSIDE(=-5) THING(=+4) | o",
+    1
+   ],
+   [
+    "car",
+    "DO(=+5) MOVE(=+4) | o",
+    0
+   ]
+  ],
+  "16": [
+   [
+    "key",
+    "DO(=+5) TOUCH(=+5) BIG(=-3) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+    1
+   ],
+   [
+    "hammer",
+    "TOUCH(=+5) MOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "paper",
+    "TEXT(=+5) PART(=-5) | o PI THING(=+0) | o",
+    1
+   ],
+   [
+    "ladder",
+    "MOVE ABOVE(=+4) DO(=+5) | o",
+    0
+   ],
+   [
+    "petal",
+    "PART(=-2) TOUCH(=-5) | o PI THING(=+0) SEE(=+5) | o",
+    1
+   ],
+   [
+    "jellyfish",
+    "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI ABOVE(=+5) DO(=+5) | o",
+    1
+   ],
+   [
+    "roof",
+    "ABOVE(=+5) JOIN(=+5) | o PI PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+    1
+   ],
+   [
+    "wallet",
+    "INSIDE(=+5) DO(=+5) BIG(=-3) | o PI VALUE(=+5) GIVE(=+3) | o",
+    1
+   ],
+   [
+    "sand",
+    "GRAIN(=0) THING(=-5) PART(=-5) | o",
+    0
+   ],
+   [
+    "seahorse",
+    "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "book",
+    "TEXT PART(=+2) | o",
+    0
+   ],
+   [
+    "saddle",
+    "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "hoof",
+    "PART(=-2) TOUCH(=+5) ABOVE(=-5) | o PI THING(=+4) BIG(=+3) | o",
+    1
+   ],
+   [
+    "candle",
+    "LONG(=+3) GRAIN(=+5) | o PI SEE(=+5) HEAT(=+5) | o",
+    1
+   ]
+  ]
+ },
+ "variant": {
+  "1": "A",
+  "2": "A",
+  "3": "A",
+  "4": "A",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "C",
+  "10": "C",
+  "11": "C",
+  "12": "C",
+  "13": "D",
+  "14": "D",
+  "15": "D",
+  "16": "D"
+ },
+ "encoder": {
+  "1": "enc_A_a",
+  "2": "enc_A_a",
+  "3": "enc_A_b",
+  "4": "enc_A_b",
+  "5": "enc_B_a",
+  "6": "enc_B_a",
+  "7": "enc_B_b",
+  "8": "enc_B_b",
+  "9": "enc_C_a",
+  "10": "enc_C_a",
+  "11": "enc_C_b",
+  "12": "enc_C_b",
+  "13": "enc_C_a",
+  "14": "enc_C_a",
+  "15": "enc_C_b",
+  "16": "enc_C_b"
+ },
+ "spec": {
+  "1": "A",
+  "2": "A",
+  "3": "A",
+  "4": "A",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "C",
+  "10": "C",
+  "11": "C",
+  "12": "C",
+  "13": "A",
+  "14": "A",
+  "15": "A",
+  "16": "A"
+ }
+}

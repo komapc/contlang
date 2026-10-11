@@ -1,0 +1,14 @@
+1. stable | barn, pen
+2. grain | speck, crumb
+3. candle | torch, lamp
+4. broom | brush, sweeper
+5. pupil | retina, eye
+6. roof | ceiling, cover
+7. meat | beef, egg
+8. lift | elevator, crane
+9. hoof | claw, tusk
+10. drill | saw, blade
+11. paper | page, sheet
+12. sheath | scabbard, case
+13. juice | tea, sap
+14. sunflower | flower, tree

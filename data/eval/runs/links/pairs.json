@@ -1,0 +1,802 @@
+[
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) CONSUME(=+5) BIG(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "paper",
+  "code": "TEXT | o PI THING(=0) LONG(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) GRAIN(=-3) CONSUME(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+5) | o PI THING(=+4) BODY SIDE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) SEE(=+3) | o PI GRAIN(=+3) TOUCH(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-3) | o PI INSIDE(=+5) DO(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE(=0) DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+4) | o",
+  "variant": "A"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) DO(=+5) BIG(=-4) | o PI VALUE(=+5) GIVE(=0) | o",
+  "variant": "A"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) DO(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI DO(=+5) ABOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) LONG(=+3) ABOVE(=+5) | o PI ABOVE(=+5) BIG(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o PI LIVE(=+5) INSIDE(=+5) PLACE | o",
+  "variant": "A"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) THING(=0) TOUCH(=-5) | o PI THING(=0) GOOD(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "hoof",
+  "code": "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) MOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) DO(=0) | o PI THING(=+4) ABOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "yolk",
+  "code": "INSIDE(=+5) PART(=-2) GRAIN(=-3) | o PI THING(=+4) HAPPEN(=-5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) BIG(=-3) CONSUME(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "paper",
+  "code": "BIG(=-3) TEXT | o PI THING(=0) GRAIN(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+3) | o PI CONSUME(=+5) GRAIN(=-3) THING(=+4) | o",
+  "variant": "A"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+5) TOUCH(=-5) | o PI THING(=+4) BODY INSIDE(=-5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) SEE | o PI GRAIN(=+5) TOUCH(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-5) | o PI DO(=+5) INSIDE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "saddle",
+  "code": "DO(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) SIDE(=-5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "wallet",
+  "code": "DO(=+5) INSIDE(=+5) BIG(=-4) | o PI VALUE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI DO(=+5) ABOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) LONG(=-5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) BIG(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE INSIDE(=+5) LIVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) THING(=0) | o PI THING(=0) GOOD(=+4) TOUCH(=-5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "hoof",
+  "code": "BODY MOVE(=+3) TOUCH(=+5) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "A"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) DO(=+5) | o PI THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+  "variant": "A"
+ },
+ {
+  "word": "yolk",
+  "code": "PART(=-2) INSIDE(=+5) | o PI THING(=+4) BEGIN(=-4) | o",
+  "variant": "A"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) HEAT(=+3) | o FROM THING(=0) CONSUME(=+5) BIG(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "paper",
+  "code": "TEXT LONG(=-5) | o FROM THING(=0) GRAIN(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+3) | o FROM THING(=+4) CONSUME(=+5) GRAIN(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+3) | o FROM THING(=+4) BODY INSIDE(=-5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+3) TOUCH(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-3) GRAIN(=+5) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=+3) | o FOR INSIDE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE TOUCH(=-3) JOIN(=+5) | o FOR THING(=+4) MOVE(=+5) BIG(=+3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) BIG(=-3) | o FOR VALUE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) TOUCH(=-3) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) TOUCH(=-5) GRAIN(=-3) | o PI GRAIN(=-3) BIG(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) MOVE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) ABOVE(=+5) | o PI HEAT(=+5) BIG(=+5) ABOVE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) INSIDE(=-5) | o PI PLACE LIVE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) TOUCH(=-5) | o PI THING(=0) SEE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "hoof",
+  "code": "PART(=-2) MOVE(=+5) TOUCH(=+5) | o PI THING(=+4) MOVE(=+5) BIG(=+3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) JOIN(=+5) | o FOR THING(=+4) ABOVE(=+5) MOVE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "yolk",
+  "code": "PART(=-2) INSIDE(=+5) | o PI THING(=+4) INSIDE(=+5) TOUCH(=-5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "paper",
+  "code": "GRAIN(=+5) BIG(=-3) | o FROM GRAIN(=+5) THING(=0) | o",
+  "variant": "B"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o FROM GRAIN(=-3) THING(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+5) TOUCH(=-3) | o FROM INSIDE(=-5) THING(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+2) TOUCH(=-2) | o",
+  "variant": "B"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-4) | o FOR INSIDE(=+5) DO(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "saddle",
+  "code": "DO(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) BIG(=-3) DO(=+5) | o FOR VALUE(=+5) GIVE(=+3) | o",
+  "variant": "B"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) DO(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) MANY(=+4) | o PI GRAIN(=-3) BIG(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) TOUCH(=-5) | o PI GRAIN(=-3) BIG(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) ABOVE(=+5) BIG(=+4) | o PI HEAT(=+5) ABOVE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) PART(=-2) | o PI PLACE INSIDE(=+5) | o",
+  "variant": "B"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) BIG(=-4) | o PI THING(=0) GOOD(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "hoof",
+  "code": "PART(=-2) TOUCH(=+5) | o PI THING(=+4) BIG(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE INSIDE(=+5) | o FOR BEGIN(=-4) THING(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "yolk",
+  "code": "PART(=-2) INSIDE(=+5) | o PI BEGIN(=-4) THING(=+4) | o",
+  "variant": "B"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=0) BIG(=-3) CONSUME(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "paper",
+  "code": "LONG(=-5) TEXT | o FROM THING(=0) PART(=-5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o FROM THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "leather",
+  "code": "THING(=-5) GRAIN(=+5) | o FROM THING(=+4) PART(=-2) SIDE(=-5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-4) | o FOR DO(=+5) INSIDE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE DO(=+5) | o FOR THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "wallet",
+  "code": "BIG(=-4) DO(=+5) INSIDE(=+5) | o FOR GIVE(=0) VALUE(=+3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "sheath",
+  "code": "DO(=+5) INSIDE(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "seahorse",
+  "code": "BIG(=-3) THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "jellyfish",
+  "code": "TOUCH(=-5) THING(=+4) | o LIKE ABOVE(=+5) DO(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) | o PI THING(=0) SEE | o",
+  "variant": "C"
+ },
+ {
+  "word": "hoof",
+  "code": "BODY TOUCH(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE LIVE(=+5) | o FOR THING(=+4) ABOVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "yolk",
+  "code": "INSIDE(=+5) PART(=-2) | o PI BEGIN(=-4) LIVE(=+2) | o",
+  "variant": "C"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o FROM THING(=+0) | o",
+  "variant": "C"
+ },
+ {
+  "word": "paper",
+  "code": "TEXT(=+5) PART(=-5) | o FROM THING(=+0) | o",
+  "variant": "C"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o FROM SEX(=-5) THING(=+4) | o",
+  "variant": "C"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+5) TOUCH(=-5) | o FROM INSIDE(=-5) THING(=+4) | o",
+  "variant": "C"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=+3) GRAIN(=+5) | o FOR SEE(=+5) HEAT(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) TOUCH(=+5) BIG(=-3) | o FOR DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-3) | o FOR INSIDE(=+5) DO(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o FOR THING(=+4) BIG(=+3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) DO(=+5) BIG(=-3) | o FOR VALUE(=+5) GIVE(=+3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) GRAIN(=-3) | o LIKE ABOVE(=+5) BIG(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o LIKE THING(=+4) BIG(=+3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o LIKE ABOVE(=+5) DO(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o LIKE THING(=+4) BIG(=-3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=+0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o FOR PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) TOUCH(=-5) | o PI THING(=+0) SEE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "hoof",
+  "code": "PART(=-2) TOUCH(=+5) ABOVE(=-5) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "C"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE(=+5) DO(=+5) | o FOR HAPPEN(=-5) LIVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "yolk",
+  "code": "PART(=-2) INSIDE(=+5) SEE(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+  "variant": "C"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=0) BIG(=-3) CONSUME(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "paper",
+  "code": "LONG(=-5) TEXT | o PI THING(=0) PART(=-5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o PI THING(=+4) SEX(=-5) GRAIN(=-3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "leather",
+  "code": "THING(=-5) GRAIN(=+5) | o PI THING(=+4) PART(=-2) SIDE(=-5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=0) HEAT(=+5) | o PI GRAIN(=+5) TOUCH(=-5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) BIG(=-4) | o PI PART(=-2) PLACE SIDE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-4) | o PI DO(=+5) INSIDE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE DO(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "wallet",
+  "code": "BIG(=-4) DO(=+5) INSIDE(=+5) | o PI GIVE(=0) VALUE(=+3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "sheath",
+  "code": "DO(=+5) INSIDE(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) | o PI ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "seahorse",
+  "code": "BIG(=-3) THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "jellyfish",
+  "code": "TOUCH(=-5) THING(=+4) | o PI ABOVE(=+5) DO(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI THING(=+4) BIG(=-3) TOUCH(=-5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=0) | o PI ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) | o PI THING(=0) SEE | o",
+  "variant": "D"
+ },
+ {
+  "word": "hoof",
+  "code": "BODY TOUCH(=+5) | o PI THING(=+4) BIG(=+3) MOVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE LIVE(=+5) | o PI THING(=+4) ABOVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "yolk",
+  "code": "INSIDE(=+5) PART(=-2) | o PI BEGIN(=-4) LIVE(=+2) | o",
+  "variant": "D"
+ },
+ {
+  "word": "wine",
+  "code": "CONSUME(=+5) GRAIN(=-3) | o PI THING(=+0) | o",
+  "variant": "D"
+ },
+ {
+  "word": "paper",
+  "code": "TEXT(=+5) PART(=-5) | o PI THING(=+0) | o",
+  "variant": "D"
+ },
+ {
+  "word": "cheese",
+  "code": "CONSUME(=+5) GRAIN(=+5) | o PI SEX(=-5) THING(=+4) | o",
+  "variant": "D"
+ },
+ {
+  "word": "leather",
+  "code": "GRAIN(=+5) TOUCH(=-5) | o PI INSIDE(=-5) THING(=+4) | o",
+  "variant": "D"
+ },
+ {
+  "word": "candle",
+  "code": "LONG(=+3) GRAIN(=+5) | o PI SEE(=+5) HEAT(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "key",
+  "code": "DO(=+5) TOUCH(=+5) BIG(=-3) | o PI DO(=+5) JOIN(=+5) CAN(=-3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "lid",
+  "code": "ABOVE(=+5) JOIN(=-3) | o PI INSIDE(=+5) DO(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "saddle",
+  "code": "PLACE(=+3) JOIN(=+5) ABOVE(=+5) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "wallet",
+  "code": "INSIDE(=+5) DO(=+5) BIG(=-3) | o PI VALUE(=+5) GIVE(=+3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "sheath",
+  "code": "INSIDE(=+5) JOIN(=+5) | o PI JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "starfish",
+  "code": "THING(=+4) GRAIN(=-3) | o PI ABOVE(=+5) BIG(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "seahorse",
+  "code": "THING(=+4) GRAIN(=-3) BIG(=-3) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "jellyfish",
+  "code": "THING(=+4) GRAIN(=-3) TOUCH(=-5) | o PI ABOVE(=+5) DO(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "catfish",
+  "code": "THING(=+4) GRAIN(=-3) LONG(=-5) | o PI THING(=+4) BIG(=-3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "sunflower",
+  "code": "THING(=+0) ABOVE(=+5) | o PI ABOVE(=+5) HEAT(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "roof",
+  "code": "ABOVE(=+5) JOIN(=+5) | o PI PLACE(=+5) LIVE(=+5) INSIDE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "petal",
+  "code": "PART(=-2) TOUCH(=-5) | o PI THING(=+0) SEE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "hoof",
+  "code": "PART(=-2) TOUCH(=+5) ABOVE(=-5) | o PI THING(=+4) BIG(=+3) | o",
+  "variant": "D"
+ },
+ {
+  "word": "nest",
+  "code": "PLACE(=+5) DO(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+  "variant": "D"
+ },
+ {
+  "word": "yolk",
+  "code": "PART(=-2) INSIDE(=+5) SEE(=+5) | o PI HAPPEN(=-5) LIVE(=+5) | o",
+  "variant": "D"
+ }
+]

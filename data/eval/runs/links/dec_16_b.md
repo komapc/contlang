@@ -1,0 +1,14 @@
+1. nail | screw, rivet
+2. hammer | mallet, bat
+3. leaf | page, sheet
+4. elevator | lift, crane
+5. petal | flower, blossom
+6. jellyfish | jelly, slug
+7. roof | rooftop, ceiling
+8. wallet | purse, pocket
+9. dust | sand, grit
+10. minnow | fish, tadpole
+11. document | text, book
+12. stable | barn, shelter
+13. hoof | claw, bone
+14. torch | candle, flare

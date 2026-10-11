@@ -1,0 +1,14 @@
+1. stable | barn, loft
+2. sand | grain, dust
+3. candle | torch, lamp
+4. brush | broom, sweeper
+5. pupil | retina, lens
+6. roof | cover, ceiling
+7. egg | cheese, yolk
+8. elevator | lift, hoist
+9. hoof | bone, horn
+10. hammer | drill, pickaxe
+11. note | letter, slip
+12. sheath | case, scabbard
+13. juice | tea, sap
+14. sunflower | daisy, marigold

@@ -1,0 +1,14 @@
+1. library | archive, bookshop
+2. birdhouse | nest, aviary
+3. bud | shoot, sprout
+4. sunflower | plant, sunlight
+5. hoof | bone, claw
+6. tag | label, ticket
+7. lid | cover, top
+8. knife | blade, cutter
+9. lizard | sunfish, snake
+10. stable | barn, stall
+11. jellyfish | fish, squid
+12. dust | sand, grit
+13. brush | broom, sponge
+14. roof | attic, ceiling

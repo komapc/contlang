@@ -1,0 +1,14 @@
+1. hoof | claw, horn, paw
+2. fish | whale, shark, eel
+3. treetop | crown, canopy, sunflower
+4. tea | coffee, cocoa, soup
+5. knife | saw, scissors, blade
+6. kitchen | restaurant, canteen, stove
+7. flesh | crumb, pulp, filling
+8. torch | match, ember, brand
+9. engine | motor, vehicle, machine
+10. library | archive, bookshelf, bookcase
+11. ceiling | roof, lid, cover
+12. cage | birdcage, aviary, coop
+13. bone | cartilage, tooth, marrow
+14. eel | snake, worm, leech
