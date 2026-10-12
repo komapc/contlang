@@ -1,0 +1,20 @@
+1. blind | ignore, avoid
+2. cafe | bar, diner
+3. business | company, market
+4. literacy | writing, alphabet
+5. remote | controller, steering
+6. industry | manufacturing, production
+7. crime | vice, sin
+8. invention | product, innovation
+9. envy | jealousy, glare
+10. retreat | recede, regress
+11. risk | danger, hazard
+12. particle | atom, detail
+13. dinner | supper, evening
+14. household | family, resident
+15. zero | nothing, none
+16. found | establish, launch
+17. such | similar, like this
+18. hat | cap, hood
+19. name | nominate, christen
+20. pay | donate, salary

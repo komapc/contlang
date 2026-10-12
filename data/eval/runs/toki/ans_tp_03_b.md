@@ -1,0 +1,20 @@
+1. blind | ignore, avoid
+2. cafe | tearoom, bar
+3. cooperative | trade union, guild
+4. literacy | reading, alphabet
+5. vehicle | car, transport
+6. intensify | strengthen, amplify
+7. crime | vice, sin
+8. alter | change, modify
+9. envy | jealousy, glare
+10. backward | retreat, past
+11. danger | risk, hazard
+12. particle | detail, atom
+13. siesta | nap, doze
+14. resident | occupant, tenant
+15. nothing | no, zero
+16. found | establish, launch
+17. thus | so, likewise
+18. hat | cap, helmet
+19. name | christen, nominate
+20. pay | donate, fund
