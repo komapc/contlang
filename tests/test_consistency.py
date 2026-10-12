@@ -60,8 +60,8 @@ def test_no_stale_counts_in_current_docs():
 
 def test_no_one_sided_wording():
     # MANY двусторонняя (−5 ни одного … +5 все); одностороннего описания не должно остаться в живых файлах
-    stale = ["MANY 0..+5", "MANY: 0…+5", "односторонней оси", "one_sided"]
-    for rel in ["roots.yaml", "scripts/mincode/validator.py", "scripts/site/build.py", "site/index.html",
+    stale = ["MANY 0..+5", "MANY: 0…+5", "односторонн", "one_sided"]
+    for rel in ["roots.yaml", "README.md", "docs/model.md", "docs/syntax.md", "scripts/mincode/validator.py", "scripts/site/build.py", "site/index.html",
                 "data/eval/templates/enc_toki.md", "data/eval/templates/dec_toki.md", ".claude/skills/mincode/SKILL.md"]:
         text = (REPO / rel).read_text(encoding="utf8")
         for s in stale:
