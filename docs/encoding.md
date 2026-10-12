@@ -2,12 +2,13 @@
 
 Приёмы подобраны слепыми тестами (кодировщик видит только спецификацию). Для каждого дана ссылка на тест; **без теста** — подсказка не проверена. Корни и оси — в [lexicon.md](lexicon.md), метки и частицы — в [syntax.md](syntax.md), модель — в [model.md](model.md). Используется скиллом `mincode` (`.claude/skills/mincode/SKILL.md`).
 
+**v2 (2026-10).** Лимит — три корня без исключений; `DO` и `HAPPEN` без оси, их прежние значения заменены ролями формы (`| o agent`, `tool`, `result`, `quality`); корня `ABSTRACT` нет; `TONE` заменён на `FRIEND` (враг … друг). Тесты по ссылкам проверяли прежнюю запись; рецепты, переписанные в роли, в новой записи не проверялись, кроме общего теста v2 ([data/eval/runs/toki](../data/eval/runs/toki/README.md)).
+
 ## Общее
 
-- Действия без своего корня — через `DO-i E …` (делать, вызывать) или `SAY-i …` (говорить, просить) ([roundtrip_30](../data/translation_test/roundtrip_30.md)).
+- Действия без своего корня — через `DO | i E …` (делать, вызывать) или `SAY | i …` (говорить, просить) ([roundtrip_30](../data/translation_test/roundtrip_30.md)).
 - «Мочь, трудно, возможно» — `CAN` (`DO CAN(=-3) | a` — *difficult*); «возможно, может быть» — метка `M-3`; корня `MAYBE` нет.
-- **Животные, растения, элементы — латинскими и химическими названиями, всегда в кавычках** (решение автора): `"Serpentes"` змея, `"Canis"` собака, `"Quercus"` дуб, `"iodine"` йод; родовые категории (*animal, plant, tree, bird, fish*) — корнями (`THING(=+4)`, `THING(=0)`…). Причина: в тесте на 100 словах *snake* и *iodine* из корней читались как *animal*, *rock*.
-- **Термины в кавычках.** Названия институтов и должностей (*parliament, president, official, company*), химические вещества и минералы (*sulfur dioxide, silicate*), технические и научные термины без корня (*railway, bellows, furnace, tephra, gluten*) пишутся в кавычках как есть, а не собираются из корней. В тесте на 60 предложениях ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)) предложения с такими кавычками получили 2,35 из 3, остальные 1,85; собранные из корней термины читались как *price controls* (вместо *company*), *mechanical parts* (вместо *furnace*), *the authorities* (вместо *Parliament*). Обычные слова (*water, house, food*) в кавычки не ставить.
+- **Кавычки — одно правило:** имена собственные, цифры и научные названия видов и веществ: `"Rome"`, `"17"`, `"Canis"` собака, `"Quercus"` дуб, `"iodine"` йод. Всё остальное, в том числе категории (*animal, plant, bird* — `THING(=+4)`, `THING(=0)`…), должности и учреждения, собирается из корней. Прежде в кавычки ставились и термины (*parliament, railway, furnace*): в тесте на 60 предложениях ([roundtrip_wiki_new4](../data/translation_test/roundtrip_wiki_new4.md)) это давало 2,35 из 3 против 1,85; v2 от этого отказалась ради одного правила, на словах разницы не было.
 - Количество — `MANY` (−5 ни одного, −4 нехватка, −3 почти нет, −1 мало, 0 сколько-то, +3 многие, +5 все; с 2026-10 шкала двусторонняя, [data/eval/runs/many](../data/eval/runs/many/README.md)), точные числа цифрами в кавычках.
 - `ABOVE`, `INSIDE`, `BIG` — только настоящие «верх / внутри / размер»; метафора (*roof, coffee, desk*) и усилитель (`BIG(=+5)` как «очень») почти всегда читаются неверно ([roundtrip_200](../data/translation_test/roundtrip_200.md)).
 - Не злоупотреблять `ABOVE` для «важного»: *elect* через `ABOVE(=+4)` читается как *worship*.
@@ -21,7 +22,7 @@
 ## Против, причина, решение
 
 - «Против» (*protest, refuse*) — через явного носителя: `SOMEONE SAY WANT(=-5) | o` (в тесте было четыре корня, `SOMEONE MANY(=+4) SAY WANT(=-5)`, сверх лимита; трёхкорневой вариант не проверен); голое `WANT(=-5)` декодер часто игнорирует.
-- Причина и следствие как предметы — ось `HAPPEN` (`HAPPEN(=-4) | o` причина, `HAPPEN(=+4) | o` следствие). «Потому что / поэтому / так как» между клаузами — `LA [ причина ] следствие` (причина стоит первой, порядок слов меняют) **без теста**.
+- Причина и следствие как предметы — роли: `HAPPEN | o agent` причина, `HAPPEN | o result` следствие. «Потому что / поэтому / так как» между клаузами — `LA [ причина ] следствие` (причина стоит первой, порядок слов меняют) **без теста**.
 - Решение — ось `THINK` (`THINK(=+5) | i` решить, `THINK(=-4) | i` сомневаться).
 
 ## Люди и предметы
@@ -33,9 +34,9 @@
 ## Эмоции, бой
 
 - Закон и власть — `RULE`, бой и война — `FIGHT` (*peace* = `FIGHT MANY(=-5) | o`).
-- Ось `FIGHT` — всерьёз ли: −5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть ([roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 11 → 17 точных из 24). *game* = `FIGHT(=-5) | o`, *sport* = `FIGHT(=-5) BODY | o`, *player* = `SOMEONE FIGHT(=-5) | o`, *tournament* = `FIGHT(=-5) PART(=+5) | o`, *toy* = `THING(=-5) FIGHT(=-5) | o`, *champion* = `SOMEONE FIGHT(=-5) GOOD | o C+5`; *war* = `FIGHT(=+5) | o`, *weapon* = `DO(=+5) FIGHT(=+5) | o` (орудие боя), *soldier* = `SOMEONE FIGHT(=+5) RULE(=+4) | o`, *army* = `SOMEONE FIGHT(=+5) PART(=+5) | o`.
+- Ось `FIGHT` — всерьёз ли: −5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть ([roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 11 → 17 точных из 24). *game* = `FIGHT(=-5) | o`, *sport* = `FIGHT(=-5) BODY | o`, *player* = `SOMEONE FIGHT(=-5) | o`, *tournament* = `FIGHT(=-5) PART(=+5) | o`, *toy* = `THING(=-5) FIGHT(=-5) | o`, *champion* = `SOMEONE FIGHT(=-5) GOOD | o C+5`; *war* = `FIGHT(=+5) | o`, *weapon* = `FIGHT(=+5) | o tool` (орудие боя), *soldier* = `SOMEONE FIGHT(=+5) RULE(=+4) | o`, *army* = `SOMEONE FIGHT(=+5) PART(=+5) | o`.
 - Эмоции: `FEEL` (возбуждение) + `GOOD` (приятность) + корень по смыслу: страх `TIME(+3)` (плохое впереди), злость `FIGHT | a`, социальные `SOMEONE | o` (+ `SEE | i`); оси `NEAR` и `WANT` для направления не работают.
-- **Настроение — `MOOD`**: −5 горе, отчаяние … −3 грусть … 0 всерьёз … +3 весело … +5 смешно ([roundtrip_mood](../data/translation_test/roundtrip_mood.md): 24 из 32 против 11 через `FEEL GOOD`, где смешное сливалось с приятным — *pleasant*, *compliment*, *praise*). *funny* = `MOOD(=+5) | a`, *joke* = `SAY MOOD(=+5) | o`, *humor* = `MOOD(=+5) ABSTRACT(=+5) | o`, *comedy* = `ART MOOD(=+5) | o`, *laugh* = `MOOD(=+5) | i`, *cheerful* = `MOOD(=+3) | a`, *smile* = `MOOD(=+3) BODY | i`, *party* = `MOOD(=+3) PART(=+5) | o`, *celebrate* = `DO MOOD(=+3) PART(=+5) | i`, *serious* = `MOOD(=0) | a`, *sad* = `MOOD(=-3) | a`, *cry* = `MOOD(=-3) CONSUME(=-5) GRAIN(=-3) | i` (выделять жидкость), *grief* = `MOOD(=-5) | o`, *despair* = `MOOD(=-5) CAN(=-5) | o`, *mourn* = `MOOD(=-5) LIVE(=-5) | i`, *funeral* = `MOOD(=-5) LIVE(=-5) PART(=+5) | o`, *tragedy* = `ART MOOD(=-5) | o`. Счастье — не настроение, а оценка: *happy* = `FEEL(=+4) GOOD(=+4) | a` (`MOOD(=+3)` читается как *cheerful*). Катастрофа — событие: `HAPPEN GOOD(=-5) | o`. `DO` перед `MOOD` в событии делает деятеля (*funeral* с `DO` → *mourner*).
+- **Настроение — `MOOD`**: −5 горе, отчаяние … −3 грусть … 0 всерьёз … +3 весело … +5 смешно ([roundtrip_mood](../data/translation_test/roundtrip_mood.md): 24 из 32 против 11 через `FEEL GOOD`, где смешное сливалось с приятным — *pleasant*, *compliment*, *praise*). *funny* = `MOOD(=+5) | a`, *joke* = `SAY MOOD(=+5) | o`, *humor* = `MOOD(=+5) | o quality`, *comedy* = `ART MOOD(=+5) | o`, *laugh* = `MOOD(=+5) | i`, *cheerful* = `MOOD(=+3) | a`, *smile* = `MOOD(=+3) BODY | i`, *party* = `MOOD(=+3) PART(=+5) | o`, *celebrate* = `DO MOOD(=+3) PART(=+5) | i`, *serious* = `MOOD(=0) | a`, *sad* = `MOOD(=-3) | a`, *cry* = `MOOD(=-3) CONSUME(=-5) GRAIN(=-3) | i` (выделять жидкость), *grief* = `MOOD(=-5) | o`, *despair* = `MOOD(=-5) CAN(=-5) | o`, *mourn* = `MOOD(=-5) LIVE(=-5) | i`, *funeral* = `MOOD(=-5) LIVE(=-5) PART(=+5) | o`, *tragedy* = `ART MOOD(=-5) | o`. Счастье — не настроение, а оценка: *happy* = `FEEL(=+4) GOOD(=+4) | a` (`MOOD(=+3)` читается как *cheerful*). Катастрофа — событие: `HAPPEN GOOD(=-5) | o`. `DO` перед `MOOD` в событии делает деятеля (*funeral* с `DO` → *mourner*).
 
 ## Время
 
@@ -47,7 +48,7 @@
 
 ## Стороны света
 
-«Стороны земли»: `PLACE BIG(=+5)` и направление. Стоим лицом к восходу: восток — перёд (`SIDE(=+5)`), запад — зад (`SIDE(=-5)`); север — верх карты (`ABOVE(=+5)`), юг — низ (`ABOVE(=-5)`). Восток = `PLACE BIG(=+5) SIDE(=+5) | o`, север = `PLACE BIG(=+5) ABOVE(=+5) | o`, северный = `… | a`. Промежуточные — оба направления, единственное исключение из лимита трёх корней: северо-восток = `PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o`, юго-запад = `PLACE BIG(=+5) ABOVE(=-3) SIDE(=-3) | o` (без теста). Без «земли» `PLACE ABOVE(=+4)` читается как *top* (0 из 6), с ней — 10 из 10 ([roundtrip_time](../data/translation_test/roundtrip_time.md)).
+«Стороны земли»: `PLACE BIG(=+5)` и направление. Стоим лицом к восходу: восток — перёд (`SIDE(=+5)`), запад — зад (`SIDE(=-5)`); север — верх карты (`ABOVE(=+5)`), юг — низ (`ABOVE(=-5)`). Восток = `PLACE BIG(=+5) SIDE(=+5) | o`, север = `PLACE BIG(=+5) ABOVE(=+5) | o`, северный = `PLACE BIG(=+5) ABOVE(=+5) | a`. Без «земли» `PLACE ABOVE(=+4)` читается как *top* (0 из 6), с ней — 10 из 10 ([roundtrip_time](../data/translation_test/roundtrip_time.md)). Промежуточные — лимит три корня, исключения нет: северо-восток = `PLACE ABOVE(=+3) SIDE(=+3) | o` (без теста; может читаться как «верх-перёд»).
 
 ## Направление движения
 
@@ -81,12 +82,12 @@
 - `I0` («довольно, умеренно») может теряться; для слабой степени писать `I+1…+2`.
 - Не `BIG(=+5)` как «очень»; не `C` (сравнение).
 - *Almost* («почти») метка `I` не передаёт: читается как *quite likely / fairly certain* — принято как допустимая потеря, ничего не вводим.
-- Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN(=+3) | a` *significant*, `BIG(=+4) HAPPEN(=+4) | a` *important / major*, `BIG(=+5) HAPPEN(=+5) | a` *crucial / momentous* ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `SAME(=-4)` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
+- Важность — `BIG` + `HAPPEN` («большие последствия»): `BIG(=+3) HAPPEN | a` *significant*, `BIG(=+4) HAPPEN | a` *important / major*, `BIG(=+5) HAPPEN | a` *crucial / momentous* (в тесте значение было и у `HAPPEN`; в v2 его нет) ([roundtrip_importance](../data/translation_test/roundtrip_importance.md), 8–9 из 10). Не `SAME(=-4)` (читается как *special*) и не `GOOD + BIG` (читается как *great / wonderful*, 0 из 10); *vital* через `LIVE` не читается.
 
 ## Вещество и орудия
 
 - Ось `GRAIN` — как вещество держится вместе (корень `MATTER` в неё влит, [roundtrip_merge](../data/translation_test/roundtrip_merge.md), 17 из 24): −5 газ, пар, дым … −3 жидкость … 0 сыпучее … +5 цельный кусок. *gas* = `GRAIN(=-5) | o`, *steam* = `GRAIN(=-5) HEAT(=+3) | o`, *liquid* = `GRAIN(=-3) | o`, *water* = `GRAIN(=-3) CONSUME(=+5) LIVE | o`, *sand* = `GRAIN(=0) THING(=-5) | o`, *flour* = `GRAIN(=0) CONSUME(=+5) THING(=0) | o`, *stone* = `GRAIN(=+5) THING(=-5) | o`, *ice* = `GRAIN(=+5) HEAT(=-5) | o`, *melt* = `CHANGE(=+4) GRAIN(=-3) HEAT(=+3) | i`. Мёд (`GRAIN(=-3) CONSUME(=+5) GOOD(=+4)`) читается как вино, сок.
-- Орудие — ось `DO` (роль в действии: −5 деятель … 0 действие … +5 орудие), 17 из 24, [roundtrip_merge](../data/translation_test/roundtrip_merge.md): корни описывают действие, `DO(=+5)` делает из него орудие. *knife* = `JOIN(=-4) TOUCH(=+4) DO(=+5) | o`, *saw* = `JOIN(=-4) MOVE(=+2) DO(=+5) | o`, *scissors* = `JOIN(=-4) MANY(=-1) DO(=+5) | o`, *hammer* = `TOUCH(=+5) MOVE(=+4) DO(=+5) | o`, *brush* = `TOUCH(=-3) MOVE DO(=+5) | o`, *pen* = `TEXT DO(=+5) | o`, *thermometer* = `MEASURE HEAT DO(=+5) | o`, *ladder* = `MOVE ABOVE(=+4) DO(=+5) | o`, *key* = `INSIDE(=+4) CAN(=+4) DO(=+5) | o` (1 из 2). Не собираются: ложка (→ *cup*), метла, иголка. Не `THING(=-5)` для орудий: читается как камень. Порядок свободный: `DO(=+5)` первым или последним читается одинаково (20 из 28 в обоих вариантах, [roundtrip_tool_order](../data/translation_test/roundtrip_tool_order.md)).
+- Орудие — роль `tool` (прежде ось `DO`, `DO(=+5)`: 17 из 24, [roundtrip_merge](../data/translation_test/roundtrip_merge.md)): корни описывают действие, `| o tool` делает из него орудие. *knife* = `JOIN(=-4) TOUCH(=+4) | o tool`, *saw* = `JOIN(=-4) MOVE(=+2) | o tool`, *scissors* = `JOIN(=-4) MANY(=-1) | o tool`, *hammer* = `TOUCH(=+5) MOVE(=+4) | o tool`, *brush* = `TOUCH(=-3) MOVE | o tool`, *pen* = `TEXT | o tool`, *thermometer* = `MEASURE HEAT | o tool`, *ladder* = `MOVE ABOVE(=+4) | o tool`, *key* = `INSIDE(=+4) CAN(=+4) | o tool`. Не собирались: ложка (→ *cup*), метла, иголка. Не `THING(=-5)` для орудий: читается как камень.
 
 ## Наука, техника, искусство
 
@@ -122,11 +123,11 @@
   - остров — `PLACE GRAIN(=-3) INSIDE(=+5) | o`;
   - берег — `PLACE GRAIN(=-3) NEAR(=+4) | o`;
   - гора — `PLACE ABOVE(=+5) BIG(=+4) | o`.
-- **Успех и победа** — `GOOD` о результате, `HAPPEN(=+5)` означает результат.
+- **Успех и победа** — `GOOD` о результате, роль `result`.
   - победить — `FIGHT GOOD(=+4) | i`, проиграть — `FIGHT GOOD(=-4) | i`;
-  - победа — `FIGHT GOOD(=+4) HAPPEN(=+5) | o`;
-  - успех — `DO GOOD(=+4) HAPPEN(=+5) | o`;
-  - потерпеть неудачу — `DO GOOD(=-4) HAPPEN(=+5) | i`;
+  - победа — `FIGHT GOOD(=+4) | o result`;
+  - успех — `DO GOOD(=+4) | o result`;
+  - потерпеть неудачу — `DO GOOD(=-4) | i`;
   - знаменитый — `KNOW MANY(=+5) | a`.
 
 ## Право, деньги, еда, транспорт
@@ -136,23 +137,23 @@
 - **Право** — `RULE(=+4)` (закон) с `GOOD(=-4)` (нарушение): преступление = `DO GOOD(=-4) RULE(=+4) | o`, преступник = `SOMEONE GOOD(=-4) RULE(=+4) | o`, суд = `PLACE RULE(=+4) THINK(=+5) | o`, судья = `SOMEONE RULE(=+4) THINK(=+5) | o`, тюрьма = `PLACE MOVE(=-5) RULE(=+4) | o`, украсть = `GIVE(=-4) GOOD(=-4) | i`.
 - **Деньги** — `VALUE` с `GIVE`, главный корень решает, что отдают: деньги = `VALUE GIVE(=0) | o`, платить = `VALUE GIVE(=+4) | i` (продать — `GIVE(=+3) VALUE | i`), долг = `VALUE GIVE(=+4) TIME(=+3) | o`, богатый = `VALUE MANY(=+5) | a`, бедный = `VALUE MANY(=-4) | a` (нехватка денег), рынок = `PLACE GIVE(=0) VALUE | o`.
 - **Еда** — `CONSUME(=+5)` с родом вещи `THING`: мясо = `CONSUME(=+5) THING(=+4) | o`, овощ = `CONSUME(=+5) THING(=0) | o`, готовить = `HEAT(=+3) CONSUME(=+5) | i`, кухня = `PLACE HEAT(=+3) CONSUME(=+5) | o`, ферма = `PLACE THING(=0) DO | o`, собирать урожай = `GIVE(=-4) THING(=0) PART(=+5) | i`.
-- **Транспорт и постройки** — орудие `DO(=+5)` (не «камень» `THING(=-5)`) и `PLACE`: машина = `DO(=+5) MOVE(=+4) | o`, корабль = `DO(=+5) MOVE GRAIN(=-3) | o`, дорога = `PLACE MOVE LONG(=-3) | o`, мост = `PLACE MOVE ABOVE(=+4) | o`, дом = `PLACE INSIDE(=+5) LIVE | o`, комната = `PLACE INSIDE(=+5) PART(=-2) | o`. Учреждения с рецептом пишутся рецептом, не в кавычках.
+- **Транспорт и постройки** — роль `tool` (не «камень» `THING(=-5)`) и `PLACE`: машина = `MOVE(=+4) | o tool`, корабль = `MOVE GRAIN(=-3) | o tool`, дорога = `PLACE MOVE LONG(=-3) | o`, мост = `PLACE MOVE ABOVE(=+4) | o`, дом = `PLACE INSIDE(=+5) LIVE | o`, комната = `PLACE INSIDE(=+5) PART(=-2) | o`. Учреждения с рецептом пишутся рецептом, не в кавычках.
 
 ## Общество, власть, учёба, война
 
 ([roundtrip_lacunae4](../data/translation_test/roundtrip_lacunae4.md): 24 из 24 с рецептами против 13 и 19 без них)
 
-- **Общество**: доверять = `THINK(=+5) GOOD(=+4) | i` («решить, что хороший»), друг = `SOMEONE WANT(=+3) JOIN(=+3) | o`, союзник = `SOMEONE FIGHT JOIN(=+4) | o`, лидер = `SOMEONE SIDE(=+5) RULE | o`, соглашение = `THINK(=+5) SAME(=+5) | o`, безопасный = `GOOD(=-4) CAN(=-5) | a` («вред невозможен»).
+- **Общество**: доверять = `THINK(=+5) GOOD(=+4) | i` («решить, что хороший»), друг = `FRIEND | o` (в тесте был `SOMEONE WANT(=+3) JOIN(=+3) | o`), союзник = `SOMEONE FIGHT JOIN(=+4) | o`, лидер = `SOMEONE SIDE(=+5) RULE | o`, соглашение = `THINK(=+5) SAME(=+5) | o`, безопасный = `GOOD(=-4) CAN(=-5) | a` («вред невозможен»).
 - **Власть**: король = `SOMEONE RULE(=+5) SEX(=+5) | o` (королева — `SEX(=-5)`), правительство = `SOMEONE RULE(=+5) PART(=+5) | o`, голосовать = `THINK(=+5) MANY(=+5) | i` («решают все»), выборы = `THINK(=+5) MANY(=+5) RULE(=+4) | o`, гражданин = `SOMEONE PART(=-2) RULE(=+4) | o`, город = `PLACE SOMEONE MANY(=+5) | o`.
 - **Учёба и кино**: школа = `PLACE KNOW CONSUME(=+5) | o`, ученик = `SOMEONE KNOW CONSUME(=+5) | o`, учитель = `SOMEONE KNOW GIVE(=+4) | o`, университет = `PLACE KNOW ABOVE(=+4) | o`, фильм = `ART(=+5) SEE MOVE | o`, рекламировать = `SAY GIVE(=+3) VALUE | i` («говорить, чтобы продать»).
-- **Война**: враг = `SOMEONE WANT(=-4) FIGHT | o`, битва = `FIGHT(=+5) PART(=-2) | o` («часть войны»), ружьё = `DO(=+5) FIGHT(=+5) HEAT(=+5) | o` («огненное орудие боя»), защищать = `DO GOOD(=-4) | i K-4` («не дать навредить»), нападать = `FIGHT(=+4) BEGIN(=-5) | i`.
+- **Война**: враг = `FRIEND(=-5) | o` (в тесте `SOMEONE WANT(=-4) FIGHT | o`), битва = `FIGHT(=+5) PART(=-2) | o` («часть войны»), ружьё = `FIGHT(=+5) HEAT(=+5) | o tool` («огненное орудие боя»), защищать = `DO GOOD(=-4) | i K-4` («не дать навредить»), нападать = `FIGHT(=+4) BEGIN(=-5) | i`.
 
 ## Кавычки: категории и члены семейства; здоровье и сон
 
 ([roundtrip_quotes_health](../data/translation_test/roundtrip_quotes_health.md): 40 из 40 с правилом и рецептами против 37 и 28 без них; решения «кавычки или корни» у двух кодировщиков совпали в 24 из 24 против 18)
 
-- **Граница кавычек.** Из корней — категории и назначения: орган = `BODY INSIDE(=+5) PART(=-2) | o`, игра = `FIGHT(=-5) | o`, спорт = `FIGHT(=-5) BODY | o`, звезда = `HEAT(=+5) ABOVE(=+5) PART(=-2) | o`, планета = `PLACE ABOVE(=+5) MOVE | o`, спутник = `DO(=+5) ABOVE(=+5) MOVE | o`, компания = `PART(=+5) DO VALUE | o`, чиновник = `SOMEONE RULE(=+4) | o`, железная дорога = `PLACE MOVE LONG(=+5) | o`, вещание = `SAY GIVE(=+3) MANY(=+5) | o`. В кавычках — конкретные члены семейства в международной или латинской форме (`"hepar"` печень, `"ren"` почка, `"Sol"`, `"Luna"`, `"football"`, `"chess"`, `"protein"`) и узкие термины (`"enzyme"`, `"orbit"`, `"Parliament"`). Луна из корней не читается (*horizon*, *sunset*), `"Luna"` — 2 из 2.
-- **Здоровье и сон — середина `LIVE`** («жив наполовину»), `GOOD` — какая: спать = `LIVE(=0) GOOD(=+3) | i`, сновидение = `LIVE(=0) SEE ABSTRACT(=+5) | o`, проснуться = `LIVE(=+5) BEGIN(=-4) | i`, усталый = `LIVE(=0) CAN(=-3) | a`, отдыхать = `MOVE(=-5) GOOD(=+3) | i`; больной = `LIVE(=0) GOOD(=-4) | a`, болезнь = `… | o`, пациент = `SOMEONE LIVE(=0) GOOD(=-4) | o`, больница = `PLACE LIVE(=0) GOOD(=-4) | o`, здоровый = `LIVE(=+5) GOOD(=+4) | a`, лечить = `LIVE GOOD(=+4) | i K+3`, врач = `SOMEONE LIVE GOOD(=+4) | o`, лекарство = `DO(=+5) LIVE GOOD(=+4) | o`, умереть = `LIVE(=-5) | i`, рана = `BODY JOIN(=-3) | o`, боль = `BODY FEEL(=+4) GOOD(=-4) | o`. Корень `HEALTH` не нужен.
+- **Граница кавычек.** Из корней — категории и назначения: орган = `BODY INSIDE(=+5) PART(=-2) | o`, игра = `FIGHT(=-5) | o`, спорт = `FIGHT(=-5) BODY | o`, звезда = `HEAT(=+5) ABOVE(=+5) PART(=-2) | o`, планета = `PLACE ABOVE(=+5) MOVE | o`, спутник = `ABOVE(=+5) MOVE | o tool`, компания = `PART(=+5) DO VALUE | o`, чиновник = `SOMEONE RULE(=+4) | o`, железная дорога = `PLACE MOVE LONG(=+5) | o`, вещание = `SAY GIVE(=+3) MANY(=+5) | o`. В кавычках — конкретные члены семейства в международной или латинской форме (`"hepar"` печень, `"ren"` почка, `"Sol"`, `"Luna"`, `"football"`, `"chess"`, `"protein"`) и узкие термины (`"enzyme"`, `"orbit"`, `"Parliament"`). Луна из корней не читается (*horizon*, *sunset*), `"Luna"` — 2 из 2.
+- **Здоровье и сон — середина `LIVE`** («жив наполовину»), `GOOD` — какая: спать = `LIVE(=0) GOOD(=+3) | i`, сновидение = `LIVE(=0) SEE | o`, проснуться = `LIVE(=+5) BEGIN(=-4) | i`, усталый = `LIVE(=0) CAN(=-3) | a`, отдыхать = `MOVE(=-5) GOOD(=+3) | i`; больной = `LIVE(=0) GOOD(=-4) | a`, болезнь = `LIVE(=0) GOOD(=-4) | o`, пациент = `SOMEONE LIVE(=0) GOOD(=-4) | o`, больница = `PLACE LIVE(=0) GOOD(=-4) | o`, здоровый = `LIVE(=+5) GOOD(=+4) | a`, лечить = `LIVE GOOD(=+4) | i K+3`, врач = `SOMEONE LIVE GOOD(=+4) | o`, лекарство = `LIVE GOOD(=+4) | o tool`, умереть = `LIVE(=-5) | i`, рана = `BODY JOIN(=-3) | o`, боль = `BODY FEEL(=+4) GOOD(=-4) | o`. Корень `HEALTH` не нужен.
 
 ## Цена, тщательность, присоединение
 
@@ -162,13 +163,11 @@
 - Тщательность — корень `CARE` (−5 небрежно … +5 тщательно): *carefully* = `CARE(=+3) | e`, *carelessly* = `CARE(=-3) | e`, *thoroughly* = `CARE(=+5) PART(=+2) | e`, *hastily* = `CARE(=-5) MOVE(=+4) | e`, *meticulous* = `CARE(=+5) PART(=-4) | a I+4`; 6 из 6.
 - Присоединение — корень `JOIN` (−5 отделить … +5 присоединить): *join* = `JOIN(=+3) | i`, *separate* = `JOIN(=-3) PART | i`, *remove* = `JOIN(=-4) | i`; *add / attach / unite* сливаются, *add* не читается.
 
-## Тон
+## Отношение к людям
 
-([roundtrip_tone](../data/translation_test/roundtrip_tone.md), 26 из 32 верно, 5 рядом)
-
-- Манера обращения с людьми — корень `TONE` (−5 грубо, холодно, враждебно … +5 вежливо, тепло, искренне): *polite* = `TONE(=+4) | a`, *rude* = `TONE(=-4) | a`, *politely* = `TONE(=+4) | e`, *rudely* = `TONE(=-4) | e`.
-- Сочетания: *harsh* = `TONE(=-4) TOUCH(=+4) | a`, *warm* = `TONE(=+4) HEAT(=+2) | a`, *cold* = `TONE(=-4) HEAT(=-3) | a`, *hostile* = `TONE(=-5) FIGHT | a`, *friendly* = `TONE(=+4) WANT(=+3) | a`, *tactful* = `TONE(=+3) CARE(=+5) | a`, *blunt* = `TONE(=-2) CARE(=-3) | a`.
-- *Kind, courteous, tactful, considerate* путаются между собой, *sincere* читается не всегда.
+- Корень `FRIEND` (−5 враг, враждебно, жестоко … 0 нейтрально … +5 друг, дружелюбно, добро; 2026-10, заменил `TONE` «грубо … вежливо»: центры TONE и CARE были близки, cos 0,65, у FRIEND и CARE — 0,12): *friend* = `FRIEND | o`, *enemy* = `FRIEND(=-5) | o`, *kind, friendly* = `FRIEND(=+4) | a`, *hostile* = `FRIEND(=-5) | a`, *cruel* = `FRIEND(=-5) TOUCH(=+4) | a`, *warm* = `FRIEND(=+4) HEAT(=+2) | a`, *cold* = `FRIEND(=-3) HEAT(=-3) | a`.
+- Вежливость — манера речи: *polite* = `FRIEND(=+3) SAY CARE(=+3) | a`, *rude* = `FRIEND(=-3) SAY | a`, *tactful* = `FRIEND(=+3) CARE(=+5) | a`, *blunt* = `SAY CARE(=-3) | a`.
+- Не проверено: тест [roundtrip_tone](../data/translation_test/roundtrip_tone.md) (26 из 32) был на прежнем `TONE`.
 
 ## Приём и выдача
 
@@ -176,7 +175,7 @@
 
 - Ось `CONSUME`: −5 выделить, выбросить … +5 поглотить, принять. Канал задаёт второй корень: *eat* = `CONSUME(=+5) GRAIN(=+3) | i`, *drink* = `CONSUME(=+5) GRAIN(=-3) | i`, *inhale* = `CONSUME(=+5) GRAIN(=-5) | i`, *exhale* = `CONSUME(=-5) GRAIN(=-5) | i`, *excrete* = `CONSUME(=-5) BODY | i`, *vomit* = `CONSUME(=-5) BODY ABOVE(=+3) | i`.
 - Речь и слух: *speak* = `CONSUME(=-5) SAY | i`, *listen* = `CONSUME(=+5) SAY CARE(=+3) | i`.
-- Письменная речь — корень `TEXT` (без оси; `SAY` — устная), [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 3 → 15 точных из 24: *write* = `TEXT | i`, *read* = `CONSUME(=+5) TEXT | i`, *writer* = `SOMEONE TEXT | o`, *author* = `SOMEONE TEXT HAPPEN(=-4) | o`, *book* = `TEXT PART(=+2) | o`, *letter* = `TEXT GIVE(=+3) SOMEONE | o`, *newspaper* = `TEXT TIME(=0) PART(=+5) | o`, *library* = `PLACE TEXT PART(=+5) | o`. Прежние `CONSUME(=-5) SEE` (→ *show*) и `CONSUME(=+5) SEE` (→ *watch*) не читались.
+- Письменная речь — корень `TEXT` (без оси; `SAY` — устная), [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md), 3 → 15 точных из 24: *write* = `TEXT | i`, *read* = `CONSUME(=+5) TEXT | i`, *writer* = `SOMEONE TEXT | o`, *author* = `TEXT | o agent`, *book* = `TEXT PART(=+2) | o`, *letter* = `TEXT GIVE(=+3) SOMEONE | o`, *newspaper* = `TEXT TIME(=0) PART(=+5) | o`, *library* = `PLACE TEXT PART(=+5) | o`. Прежние `CONSUME(=-5) SEE` (→ *show*) и `CONSUME(=+5) SEE` (→ *watch*) не читались.
 
 ## Побуждение
 
@@ -188,16 +187,10 @@
 
 ## Конкретное и абстрактное
 
-([roundtrip_abstract](../data/translation_test/roundtrip_abstract.md), 25 из 32 верно)
-
-- Ось `ABSTRACT`: −5 физическое, осязаемое … +5 умственное, отвлечённое. Она не про область (это `ART`), а про осязаемость.
-- Прилагательные: *concrete* = `ABSTRACT(=-5) | a`, *abstract* = `ABSTRACT(=+5) | a`, *tangible* = `TOUCH CAN ABSTRACT(=-5) | a`, *theoretical* = `KNOW ABSTRACT(=+5) | a` (путается с *speculative*).
-- Мысль: *idea* = `THINK ABSTRACT(=+5) | o`, *principle* = `RULE ABSTRACT(=+5) | o`, *imply* = `SAY ABSTRACT(=+5) | i`, *assume / suppose* = `THINK(=+3) | i M-1` (между собой сливаются).
-- Физическое действие: *shake* = `MOVE(=+2) ABSTRACT(=-5) | i`, *tumble* = `MOVE ABOVE(=-4) CARE(=-4) | i`, *kick* = `TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i` (путается с *hit*).
-- Не различаются: *theory / concept / philosophy*, *belief / knowledge*, *rattle / rumble*.
+Корня `ABSTRACT` нет (v2; прежде ось −5 осязаемое … +5 отвлечённое, [roundtrip_abstract](../data/translation_test/roundtrip_abstract.md), 25 из 32). Без теста: *idea* = `THINK | o result`, *principle* = `RULE THINK | o`, *imply* = `SAY THINK | i`, *tangible* = `TOUCH CAN(=+4) | a`, *abstract* = `TOUCH CAN(=-5) | a`, *theoretical* = `KNOW THINK | a`, *shake* = `MOVE(=+2) BODY | i`, *kick* = `TOUCH(=+4) MOVE(=+4) BODY | i`; *assume / suppose* = `THINK(=+3) | i M-1`.
 
 ## Рецепты понятий (два слепных теста: [roundtrip_and_mod](../data/translation_test/roundtrip_and_mod.md), раунд 2)
 
-- Работают: *game* — теперь `FIGHT(=-5) | o` (ось у `FIGHT` появилась, см. «Эмоции, бой»; прежний `FIGHT ART(=+2) | o` тоже читался); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `SAME(=-4) JOIN(=-5) RULE | o` (2/2 в [roundtrip_merge](../data/translation_test/roundtrip_merge.md)); *equality* — `SAME(=+5) ABSTRACT(=+3) | o`; *economic* — `VALUE GIVE(=0) | a` (1/2).
+- Работают: *game* — теперь `FIGHT(=-5) | o` (ось у `FIGHT` появилась, см. «Эмоции, бой»; прежний `FIGHT ART(=+2) | o` тоже читался); *independent* — `SOMEONE(=+5) CAN(=+5) JOIN(=-5) | a` (2/2); *help* — `DO GOOD(=+3) | i`; *exception* — `SAME(=-4) JOIN(=-5) RULE | o` (2/2 в [roundtrip_merge](../data/translation_test/roundtrip_merge.md)); *equality* — `SAME(=+5) | o quality`; *economic* — `VALUE GIVE(=0) | a` (1/2).
 - **Меры и отношения — корень `MEASURE`** (ось: −5 величина сама по себе … +5 величина относительно другой; введён после двух провалов с `PART`/`BIG`/`SAME`; слепой тест v2 26 из 32, [roundtrip_measure](../data/translation_test/roundtrip_measure.md)): *ratio* `MEASURE(=+5) | o`, *percentage* `MEASURE(=+5) PART(=-2) | o`, *rate* `MEASURE(=+5) TIME | o`, *amount* `MEASURE(=-5) | o`, *size* `MEASURE(=-5) BIG | o`, *degree, level* `MEASURE(=0) | o`, *average* `MEASURE(=+5) MANY SAME | o`, *measurement* и *to measure* `MEASURE DO | o` / `MEASURE | i`, *unit* `MEASURE SAME | o`. Слабо: *meter, dimension, proportional* (читаются *distance/area/fractional*).
 - Не работают (по две серии рецептов, ни один не прочитан верно): *way/method*, *measurement* как *act of measuring* (теперь `MEASURE(=-5)`, но читается *meter / unit*), *a sort of X* (`I-2` на имени не читается как «вид»; *a sort of bird* → *bird*). `RULE(=-5)`/`SAME(=-5) RULE` для «независимый» читается как *illegal*.

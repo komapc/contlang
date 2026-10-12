@@ -25,7 +25,7 @@ TEMPLATES = REPO / "data" / "eval" / "templates"
 
 
 CLAUSE_RULE = {
-    "enc": "CLAUSES: independent clauses of a long sentence are separated by `;` (each clause has its own words and particles); `[ ... ]` is only for a clause that is an argument or is nested inside another. EVERY word, including a head noun before PI or E, carries its own `| FORM` (at least the part of speech), so a word is at most 3 roots plus ABSTRACT; never run two words together without `|`.",
+    "enc": "CLAUSES: independent clauses of a long sentence are separated by `;` (each clause has its own words and particles); `[ ... ]` is only for a clause that is an argument or is nested inside another. EVERY word, including a head noun before PI or E, carries its own `| FORM` (at least the part of speech), so a word is at most 3 roots; never run two words together without `|`.",
     "dec": "CLAUSES: `;` separates independent clauses of a long sentence; `[ ... ]` marks a nested or argument clause. Every word has its own `| FORM`.",
 }
 
@@ -44,17 +44,13 @@ def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False):
             if r["name"] == name:
                 r["en_axis"] = text
                 r["axis"] = r.get("axis") or {"neg": "", "mid": "", "pos": ""}
-    items = []
-    for r in roots:
-        items.append(f"{r['name']} ({r['en_gloss']})" if r.get("en_gloss") else r["name"])
-    roots_par = f"{len(roots)} roots (NSM-like primitives): " + ", ".join(items) + "."
-    axes_lines = "\n".join(f"- {r['name']}: {r['en_axis']}" for r in roots if r.get("axis") and r.get("en_axis"))
-    text = (TEMPLATES / f"{kind}_{task}.md").read_text(encoding="utf8")
+    lines = [f"- {r['name']}: {r['en_axis']}" if r.get("axis") and r.get("en_axis") else f"- {r['name']}: {r.get('en_gloss', r['name'].lower())} (no axis)" for r in roots]
+    text = (TEMPLATES / f"{kind}_{task}.md").read_text(encoding="utf8").replace("{{CORE}}", (TEMPLATES / "core.md").read_text(encoding="utf8"))
     text = text.replace("{{CLAUSE_RULE}}\n", CLAUSE_RULE[kind] + "\n" if clause_rule else "")
     if braces:
-        text = text.replace("it ends where the next uppercase root, quoted item or particle begins", "it is written inside its own braces { }")
+        text = text.replace("a word ends at its form", "a word is written inside its own braces { }")
         text = text.rstrip("\n") + "\n\n" + BRACE_RULE[kind] + "\n"
-    return text.replace("{{ROOTS}}", roots_par).replace("{{AXES}}", axes_lines).replace("{{N_ROOTS}}", str(len(roots)))
+    return text.replace("{{ROOTS}}", "\n".join(lines)).replace("{{N_ROOTS}}", str(len(roots)))
 
 
 def cmd_spec(a):

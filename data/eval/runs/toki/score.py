@@ -75,3 +75,27 @@ L2 += ["", "Во сколько раз неопределённость мень
 txt = open(f"{D}/score.md").read().split("\n\n| слово")
 open(f"{D}/score.md", "w").write(txt[0] + "\n" + "\n".join(L2) + "\n\n| слово" + txt[1]); print("\n".join(L2))
 json.dump(PL, open(f"{D}/places.json", "w"), ensure_ascii=False)   # место первого ответа по словам — для разбора ошибок
+
+# Варианты меры «в N раз точнее» (те же ответы): биты неопределённости = log2 места; место с синонимами (любое слово
+# из синсетов WordNet загаданного слова в его части речи считается попаданием); ошибка 1 − cos; доля попаданий в первые k.
+from nltk.corpus import wordnet as wn
+POS = {}
+for f in glob.glob(f"{D}/items_*.md"):
+    for l in open(f):
+        m = re.match(r"\s*\d+\.\s*(\S+) \((\w+)\)", l)
+        if m: POS[m[1]] = {"noun": "n", "verb": "v", "adjective": "as", "adverb": "r"}[m[2]]
+WI = {w: i for i, w in enumerate(W)}
+def syns(w):
+    s = {l.name().lower() for ss in wn.synsets(w) if ss.pos() in POS.get(w, "nvasr") for l in ss.lemmas()}
+    return [WI[x] for x in s | {w} if x in WI]
+def place_syn(p, w):
+    v = pv(p); ix = syns(w)
+    if v is None or not ix: return len(W)
+    s = M @ v; return int((s > float(s[ix].max())).sum()) + 1
+L3 = ["", "Варианты меры (первый ответ):", "", "| язык | место | бит (log2 места) | место с синонимами | бит | 1 − cos | в первых 10 | в первых 10 с синонимами |", "|---|--:|--:|--:|--:|--:|--:|--:|"]
+for n, a in A.items():
+    p1 = np.array([place(ps[0], w) if ps else len(W) for w, ps in a]); s1 = np.array([place_syn(ps[0], w) if ps else len(W) for w, ps in a])
+    e = np.mean([1 - cos(ps[0], w) if ps else 1 for w, ps in a])
+    L3.append(f"| {n} | {np.exp(np.log(p1).mean()):.0f} | {np.log2(p1).mean():.1f} | {np.exp(np.log(s1).mean()):.0f} | {np.log2(s1).mean():.1f} | {e:.2f} | {(p1 <= 10).sum()} | {(s1 <= 10).sum()} |")
+txt = open(f"{D}/score.md").read().split("\n\n| слово")
+open(f"{D}/score.md", "w").write(txt[0] + "\n" + "\n".join(L3) + "\n\n| слово" + txt[1]); print("\n".join(L3))

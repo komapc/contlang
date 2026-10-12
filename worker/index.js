@@ -7,7 +7,7 @@ const MAX_INPUT = 300;
 
 const ENCODE_TASK_RU = `
 TASK: the user message is ONE English word (possibly with a sense hint in brackets) or a short phrase.
-Encode it into min-co using the spec and the encoding tips above, as a single code in the form \`ROOTS | form\` (e.g. \`GRAIN(=0) THING(=-5) PART(=-5) | o\`). Use quotes only as the quote rule in the tips says (names, numbers, Latin/international names of specific species, substances, organs, celestial bodies, games, narrow terms); everything else is built from roots. At most 3 roots (compass words: 4). Every axis value has a sign: \`(=+5)\`, \`(=-2)\`, \`(=0)\`.
+Encode it into min-co using the spec and the encoding tips above, as a single code in the form \`ROOTS | form\` (e.g. \`GRAIN(=0) THING(=-5) PART(=-5) | o\`). Quotes only for proper names, digits and scientific names of particular species or substances; everything else is built from roots. At most 3 roots. For a doer, tool, result or quality write the role after \`| o\` (\`TEXT | o tool\` = pen). Every axis value has a sign: \`(=+5)\`, \`(=-2)\`, \`(=0)\`.
 
 How to work (silently, then answer):
 1. Paraphrase the meaning and name what separates it from its nearest synonyms.
@@ -30,7 +30,7 @@ const DECODE_TASK_EN = DECODE_TASK_RU.replace("<одна короткая фра
 const SECOND_TASK = (prev, confused) => `
 SECOND WORD: your first code for this word was \`${prev}\`, but a reader who has only the spec takes it for: ${confused}.
 Rewrite it as a two-word compound \`HEAD | o LINK MODIFIER | o\`: the head is the general kind (keep the first code or fix it), the modifier is ONE more min-co word of 1-3 roots for ANOTHER thing that narrows it, chosen so that the pair cannot be read as ${confused}. LINK is chosen by the LINKS rule of the spec: FROM (made of it), else FOR (made for it), else LIKE (looks like it), else PI (part of it, found or living in it). Do not just repeat or shift the head's roots in the modifier. Each of the two words has its own root limit.
-Verified compounds: key = small tool FOR doorway \`DO(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o\`; sheath = covering FOR blade \`INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) DO(=+5) | o\`; candle = light FROM wax \`LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o\`; sunflower = plant LIKE sun \`THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o\`; furniture = collection of inanimate things PI house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
+Verified compounds: key = small tool FOR doorway \`BIG(=-4) | o tool FOR PART(=-2) PLACE SIDE(=+5) | o\`; sheath = covering FOR blade \`INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) | o tool\`; candle = light FROM wax \`LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o\`; sunflower = plant LIKE sun \`THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o\`; furniture = collection of inanimate things PI house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
 In "tokens" explain both words; in "confusable" name what the new code could still be confused with.`;
 const MSG = {
   en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
@@ -60,9 +60,7 @@ function wordProblems(word) {
     else if (v < -5 || v > 5) bad.push(`value out of range in ${t} (-5…+5)`);
     else if (lv && !lv.includes(v)) bad.push(`${m[1]} takes only ${lv.map((x) => (x > 0 ? "+" : "") + x).join(" ")}`);
   }
-  const counted = roots.filter((r) => r !== CHECK.extra_root);
-  const compass = counted.length === CHECK.compass.length && CHECK.compass.every((r) => counted.includes(r));
-  if (counted.length > CHECK.max_roots && !compass) bad.push(`${counted.length} roots, the limit is ${CHECK.max_roots}`);
+  if (roots.length > CHECK.max_roots) bad.push(`${roots.length} roots, the limit is ${CHECK.max_roots}`);
   return bad;
 }
 

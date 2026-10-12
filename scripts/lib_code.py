@@ -25,9 +25,11 @@ _s15 = importlib.util.spec_from_file_location("s15", Path(__file__).with_name("1
 s15 = importlib.util.module_from_spec(_s15)
 _s15.loader.exec_module(s15)
 
-NOAXIS = {
+NOAXIS = {  # порядок — как в roots.yaml
+    "HAPPEN": "happen event occur occurrence incident",
     "BODY": "body arm leg head hand skin",
     "SEE": "see look watch eye view notice",
+    "DO": "do make act perform action",
     "PLACE": "place location area site region spot",
     "TEXT": "text writing written document page script",
 }

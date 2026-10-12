@@ -53,6 +53,13 @@ def tables_md(doc):
     for m in doc["labels"]:
         L.append(f"| `{m['name']}` | {m['what']} | {m['scale']} |")
     L.append("")
+    L.append("## Роли имени\n")
+    L.append("После `| o`, не больше одной, без значения; в лимит корней не входят.\n")
+    L.append("| роль | что значит |")
+    L.append("| :-- | :-- |")
+    for r in doc.get("roles", []):
+        L.append(f"| `{r['name']}` | {r['what']} |")
+    L.append("")
     L.append("## Частицы фразы\n")
     L.append("| частица | роль |")
     L.append("| :-- | :-- |")
@@ -61,9 +68,8 @@ def tables_md(doc):
     L.append("")
     L.append("## Счёт\n")
     lim = doc["limits"]
-    L.append(f"Корней {total} ({na} с осью, {nn} без); меток формы {len(doc['labels'])}; частиц и знаков {len(doc['particles'])} (+ кавычки); частей речи {len(doc['pos'])}. "
-             f"Лимит: до {lim['max_roots']} смысловых корней в слове; `{lim['extra_root']}` как индикатор абстрактности (абстрактные существительные) сверх лимита, четвёртым"
-             + (f"; стороны света — все четыре корня `{' '.join(lim['compass'])}` (северо-восток)." if lim.get("compass") else "."))
+    L.append(f"Корней {total} ({na} с осью, {nn} без); меток формы {len(doc['labels'])}; ролей имени {len(doc.get('roles', []))}; частиц и знаков {len(doc['particles'])} (+ кавычки); частей речи {len(doc['pos'])}. "
+             f"Лимит: до {lim['max_roots']} корней в слове, без исключений.")
     return "\n".join(L) + "\n"
 
 

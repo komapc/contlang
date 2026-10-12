@@ -18,12 +18,6 @@
   "set": "recipes"
  },
  {
-  "en": "ship",
-  "code": "DO(=+5) MOVE GRAIN(=-3) | o",
-  "decoded": "ship",
-  "set": "recipes"
- },
- {
   "en": "bridge",
   "code": "PLACE MOVE ABOVE(=+4) | o",
   "decoded": "bridge",
@@ -33,12 +27,6 @@
   "en": "court",
   "code": "PLACE RULE(=+4) THINK(=+5) | o",
   "decoded": "court",
-  "set": "recipes"
- },
- {
-  "en": "car",
-  "code": "DO(=+5) MOVE(=+4) | o",
-  "decoded": "car",
   "set": "recipes"
  },
  {
@@ -57,12 +45,6 @@
   "en": "vote",
   "code": "THINK(=+5) MANY(=+5) | i",
   "decoded": "vote",
-  "set": "recipes"
- },
- {
-  "en": "gun",
-  "code": "DO(=+5) FIGHT(=+5) HEAT(=+5) | o",
-  "decoded": "gun",
   "set": "recipes"
  },
  {
@@ -93,12 +75,6 @@
   "en": "hospital",
   "code": "PLACE LIVE(=0) GOOD(=-4) | o",
   "decoded": "hospital",
-  "set": "recipes"
- },
- {
-  "en": "medicine",
-  "code": "DO(=+5) LIVE GOOD(=+4) | o",
-  "decoded": "medicine",
   "set": "recipes"
  },
  {
@@ -153,18 +129,6 @@
   "en": "sand",
   "code": "GRAIN(=0) THING(=-5) PART(=-5) | o",
   "decoded": "sand",
-  "set": "grain"
- },
- {
-  "en": "knife",
-  "code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o",
-  "decoded": "knife",
-  "set": "grain"
- },
- {
-  "en": "pen",
-  "code": "TEXT DO(=+5) | o",
-  "decoded": "pen",
   "set": "grain"
  },
  {
@@ -243,12 +207,6 @@
   "en": "seamless",
   "code": "GRAIN(=+5) JOIN(=-5) | a",
   "decoded": "separate (противоположный смысл: JOIN(=-5) значит «отделить»)",
-  "set": "grain"
- },
- {
-  "en": "spoon",
-  "code": "CONSUME(=+5) GRAIN(=-3) DO(=+5) | o",
-  "decoded": "cup (в альтернативах: glass, straw)",
   "set": "grain"
  }
 ]

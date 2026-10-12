@@ -19,13 +19,14 @@ def test_spec_has_all_roots_and_axes():
             for r in spec.axis_roots():
                 assert f"- {r['name']}: " in t, (kind, task, r["name"])
             assert "MAYBE" not in t and "CONTAINER" not in t
-            assert f"{len(spec.root_names())} roots (NSM-like" in t
+            assert f"## Roots ({len(spec.root_names())})" in t
+            assert not any(s in t for s in ("ABSTRACT", "compass", "-o ") + (("encyclopedia",) if task == "words" else ())), (kind, task)
 
 
 def test_drop_and_add_axis():
     t = prepare.build_spec("enc", "words", drop=["SIDE"], axes={"SEE": "visibility: -5 hidden ... +5 bright"})
     assert "- SIDE:" not in t and "- SEE: visibility" in t
-    assert f"{len(spec.root_names()) - 1} roots (NSM-like" in t
+    assert f"## Roots ({len(spec.root_names()) - 1})" in t
 
 
 def test_score_reproduces_saved_runs():

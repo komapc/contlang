@@ -26,9 +26,9 @@ GOOD = [
     "LIVE | i AND SAME(=-5) SAY | i",
     "AND | M-3",
     'SAY | i T-2 "Serpentes" ',
-    "KNOW ABSTRACT(=+5) | o",
-    "SOMEONE KNOW RULE ABSTRACT(=+4) | o",  # ABSTRACT сверх лимита
-    "PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o",  # стороны света: четыре корня
+    "TEXT | o tool",  # роль имени
+    "HAPPEN | o result",
+    "PLACE ABOVE(=+3) SIDE(=+3) | o",  # стороны света в лимите трёх
     "DO | i K+4 E SOMEONE | o",
     "MANY(=0) | e",
     "MANY(=-3) | e",
@@ -56,6 +56,12 @@ BAD = {
     "GOOD | a ]": "brackets",
     'GOOD | a "oops': "bad_quote",
     "GOOD(=+1) goodness | o": "bare_word",
+    "DO(=+5) TEXT | o": "axis_on_axisless",
+    "HAPPEN(=-4) | o": "axis_on_axisless",
+    "ABSTRACT(=+5) | a": "unknown_root",
+    "PLACE BIG(=+5) ABOVE(=+3) SIDE(=+3) | o": "too_many_roots",
+    "TEXT | i tool": "role_not_noun",
+    "TEXT | o tool agent": "dup_role",
 }
 
 
@@ -123,5 +129,5 @@ def test_braced_sentences():
 def test_links():
     # связки существительных FROM / FOR / LIKE / PI: у каждого слова своя форма
     assert not errors("LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o")
-    assert not errors("DO(=+5) BIG(=-4) | o FOR PART(=-2) PLACE SIDE(=+5) | o")
+    assert not errors("BIG(=-4) | o tool FOR PART(=-2) PLACE SIDE(=+5) | o")
     assert not errors("THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o")

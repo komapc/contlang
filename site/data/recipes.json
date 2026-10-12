@@ -1,7 +1,11 @@
 [
 {
+"en": "ability",
+"code": "CAN | o quality"
+},
+{
 "en": "abstract",
-"code": "ABSTRACT(=+5) | a"
+"code": "TOUCH CAN(=-5) | a"
 },
 {
 "en": "advertise",
@@ -21,7 +25,7 @@
 },
 {
 "en": "ally",
-"code": "SOMEONE FIGHT JOIN(=+4) | o"
+"code": "FRIEND FIGHT | o"
 },
 {
 "en": "army",
@@ -41,7 +45,7 @@
 },
 {
 "en": "author",
-"code": "SOMEONE TEXT HAPPEN(=-4) | o"
+"code": "TEXT | o agent"
 },
 {
 "en": "authority",
@@ -53,7 +57,7 @@
 },
 {
 "en": "blunt",
-"code": "TONE(=-2) CARE(=-3) | a"
+"code": "SAY CARE(=-3) | a"
 },
 {
 "en": "book",
@@ -73,7 +77,7 @@
 },
 {
 "en": "brush",
-"code": "TOUCH(=-3) MOVE DO(=+5) | o"
+"code": "TOUCH(=-3) MOVE | o tool"
 },
 {
 "en": "buy",
@@ -85,7 +89,7 @@
 },
 {
 "en": "car",
-"code": "DO(=+5) MOVE(=+4) | o"
+"code": "MOVE(=+4) | o tool"
 },
 {
 "en": "carefully",
@@ -94,6 +98,10 @@
 {
 "en": "carelessly",
 "code": "CARE(=-3) | e"
+},
+{
+"en": "cause",
+"code": "HAPPEN | o agent"
 },
 {
 "en": "celebrate",
@@ -121,7 +129,7 @@
 },
 {
 "en": "cold",
-"code": "TONE(=-4) HEAT(=-3) | a"
+"code": "FRIEND(=-3) HEAT(=-3) | a"
 },
 {
 "en": "comedy",
@@ -136,8 +144,8 @@
 "code": "THING(=-5) THINK ART(=-5) | o"
 },
 {
-"en": "concrete",
-"code": "ABSTRACT(=-5) | a"
+"en": "consequence",
+"code": "HAPPEN | o result"
 },
 {
 "en": "cook",
@@ -154,6 +162,10 @@
 {
 "en": "criminal",
 "code": "SOMEONE GOOD(=-4) RULE(=+4) | o"
+},
+{
+"en": "cruel",
+"code": "FRIEND(=-5) TOUCH(=+4) | a"
 },
 {
 "en": "cry",
@@ -185,11 +197,15 @@
 },
 {
 "en": "dream",
-"code": "LIVE(=0) SEE ABSTRACT(=+5) | o"
+"code": "LIVE(=0) SEE THINK | o"
 },
 {
 "en": "drink",
 "code": "CONSUME(=+5) GRAIN(=-3) | i"
+},
+{
+"en": "east",
+"code": "PLACE SIDE(=+5) | o"
 },
 {
 "en": "eat",
@@ -201,7 +217,7 @@
 },
 {
 "en": "enemy",
-"code": "SOMEONE WANT(=-4) FIGHT | o"
+"code": "FRIEND(=-5) | o"
 },
 {
 "en": "engineer",
@@ -249,7 +265,7 @@
 },
 {
 "en": "fail",
-"code": "DO GOOD(=-4) HAPPEN(=+5) | i"
+"code": "DO GOOD(=-4) | i"
 },
 {
 "en": "famous",
@@ -285,11 +301,7 @@
 },
 {
 "en": "friend",
-"code": "SOMEONE WANT(=+3) JOIN(=+3) | o"
-},
-{
-"en": "friendly",
-"code": "TONE(=+4) WANT(=+3) | a"
+"code": "FRIEND | o"
 },
 {
 "en": "frighten",
@@ -329,19 +341,15 @@
 },
 {
 "en": "gun",
-"code": "DO(=+5) FIGHT(=+5) HEAT(=+5) | o"
+"code": "FIGHT(=+5) HEAT(=+5) | o tool"
 },
 {
 "en": "hammer",
-"code": "TOUCH(=+5) MOVE(=+4) DO(=+5) | o"
+"code": "TOUCH(=+5) MOVE(=+4) | o tool"
 },
 {
 "en": "happy",
 "code": "FEEL(=+4) GOOD(=+4) | a"
-},
-{
-"en": "harsh",
-"code": "TONE(=-4) TOUCH(=+4) | a"
 },
 {
 "en": "harvest",
@@ -369,7 +377,7 @@
 },
 {
 "en": "hostile",
-"code": "TONE(=-5) FIGHT | a"
+"code": "FRIEND(=-5) | a"
 },
 {
 "en": "house",
@@ -377,7 +385,7 @@
 },
 {
 "en": "humor",
-"code": "MOOD(=+5) ABSTRACT(=+5) | o"
+"code": "MOOD(=+5) | o quality"
 },
 {
 "en": "ice",
@@ -385,11 +393,11 @@
 },
 {
 "en": "idea",
-"code": "THINK ABSTRACT(=+5) | o"
+"code": "THINK | o result"
 },
 {
 "en": "imply",
-"code": "SAY ABSTRACT(=+5) | i"
+"code": "SAY THINK | i"
 },
 {
 "en": "improve",
@@ -425,11 +433,15 @@
 },
 {
 "en": "key",
-"code": "INSIDE(=+4) CAN(=+4) DO(=+5) | o"
+"code": "INSIDE(=+4) CAN(=+4) | o tool"
 },
 {
 "en": "kick",
-"code": "TOUCH(=+4) MOVE(=+4) ABSTRACT(=-5) | i"
+"code": "TOUCH(=+4) MOVE(=+4) BODY | i"
+},
+{
+"en": "kind",
+"code": "FRIEND(=+4) | a"
 },
 {
 "en": "king",
@@ -441,11 +453,11 @@
 },
 {
 "en": "knife",
-"code": "JOIN(=-4) TOUCH(=+4) DO(=+5) | o"
+"code": "JOIN(=-4) TOUCH(=+4) | o tool"
 },
 {
 "en": "ladder",
-"code": "MOVE ABOVE(=+4) DO(=+5) | o"
+"code": "MOVE ABOVE(=+4) | o tool"
 },
 {
 "en": "laugh",
@@ -501,7 +513,7 @@
 },
 {
 "en": "medicine",
-"code": "DO(=+5) LIVE GOOD(=+4) | o"
+"code": "LIVE GOOD(=+4) | o tool"
 },
 {
 "en": "melt",
@@ -534,6 +546,14 @@
 {
 "en": "nnual",
 "code": "TIME(=0) BIG(=+3) MANY(=+5) | a"
+},
+{
+"en": "north",
+"code": "PLACE ABOVE(=+5) | o"
+},
+{
+"en": "northeast",
+"code": "PLACE ABOVE(=+3) SIDE(=+3) | o"
 },
 {
 "en": "number",
@@ -581,7 +601,7 @@
 },
 {
 "en": "pen",
-"code": "TEXT DO(=+5) | o"
+"code": "TEXT | o tool"
 },
 {
 "en": "persuade",
@@ -605,11 +625,7 @@
 },
 {
 "en": "polite",
-"code": "TONE(=+4) | a"
-},
-{
-"en": "politely",
-"code": "TONE(=+4) | e"
+"code": "FRIEND(=+3) SAY CARE(=+3) | a"
 },
 {
 "en": "poor",
@@ -625,7 +641,7 @@
 },
 {
 "en": "principle",
-"code": "RULE ABSTRACT(=+5) | o"
+"code": "RULE THINK | o"
 },
 {
 "en": "prison",
@@ -677,11 +693,7 @@
 },
 {
 "en": "rude",
-"code": "TONE(=-4) | a"
-},
-{
-"en": "rudely",
-"code": "TONE(=-4) | e"
+"code": "FRIEND(=-3) SAY | a"
 },
 {
 "en": "sad",
@@ -697,7 +709,7 @@
 },
 {
 "en": "saw",
-"code": "JOIN(=-4) MOVE(=+2) DO(=+5) | o"
+"code": "JOIN(=-4) MOVE(=+2) | o tool"
 },
 {
 "en": "school",
@@ -709,7 +721,7 @@
 },
 {
 "en": "scissors",
-"code": "JOIN(=-4) MANY(=-1) DO(=+5) | o"
+"code": "JOIN(=-4) MANY(=-1) | o tool"
 },
 {
 "en": "sea",
@@ -733,11 +745,11 @@
 },
 {
 "en": "shake",
-"code": "MOVE(=+2) ABSTRACT(=-5) | i"
+"code": "MOVE(=+2) BODY | i"
 },
 {
 "en": "ship",
-"code": "DO(=+5) MOVE GRAIN(=-3) | o"
+"code": "MOVE GRAIN(=-3) | o tool"
 },
 {
 "en": "shore",
@@ -797,7 +809,7 @@
 },
 {
 "en": "success",
-"code": "DO GOOD(=+4) HAPPEN(=+5) | o"
+"code": "DO GOOD(=+4) | o result"
 },
 {
 "en": "sum",
@@ -805,11 +817,11 @@
 },
 {
 "en": "tactful",
-"code": "TONE(=+3) CARE(=+5) | a"
+"code": "FRIEND(=+3) CARE(=+5) | a"
 },
 {
 "en": "tangible",
-"code": "TOUCH CAN ABSTRACT(=-5) | a"
+"code": "TOUCH CAN(=+4) | a"
 },
 {
 "en": "teach",
@@ -821,11 +833,11 @@
 },
 {
 "en": "theoretical",
-"code": "KNOW ABSTRACT(=+5) | a"
+"code": "KNOW THINK | a"
 },
 {
 "en": "thermometer",
-"code": "MEASURE HEAT DO(=+5) | o"
+"code": "MEASURE HEAT | o tool"
 },
 {
 "en": "thoroughly",
@@ -860,10 +872,6 @@
 "code": "THINK(=+5) GOOD(=+4) | i"
 },
 {
-"en": "tumble",
-"code": "MOVE ABOVE(=-4) CARE(=-4) | i"
-},
-{
 "en": "unique",
 "code": "SAME(=-4) | a"
 },
@@ -877,7 +885,7 @@
 },
 {
 "en": "victory",
-"code": "FIGHT GOOD(=+4) HAPPEN(=+5) | o"
+"code": "FIGHT GOOD(=+4) | o result"
 },
 {
 "en": "vomit",
@@ -897,7 +905,7 @@
 },
 {
 "en": "warm",
-"code": "TONE(=+4) HEAT(=+2) | a"
+"code": "FRIEND(=+4) HEAT(=+2) | a"
 },
 {
 "en": "water",
@@ -905,7 +913,7 @@
 },
 {
 "en": "weapon",
-"code": "DO(=+5) FIGHT(=+5) | o"
+"code": "FIGHT(=+5) | o tool"
 },
 {
 "en": "win",
@@ -921,7 +929,7 @@
 },
 {
 "en": "writer",
-"code": "SOMEONE TEXT | o"
+"code": "TEXT | o agent"
 },
 {
 "en": "young",

@@ -56,8 +56,13 @@ def roots_json():
 
 
 def examples_json():
-    """Пары из слепых тестов GRAIN и чисел (data/site/examples_words.json): слово, код, что прочитал декодер; верные и ошибочные."""
-    return json.loads((REPO / "data" / "site" / "examples_words.json").read_text(encoding="utf8"))
+    """Пары из слепых тестов GRAIN и чисел (data/site/examples_words.json): слово, код, что прочитал декодер; верные и ошибочные.
+    Коды, которые не проходят нынешние правила (прежняя запись: `DO(=+5)` и т. п.), на сайт не идут; в данных теста остаются."""
+    sys.path.insert(0, str(REPO / "scripts" / "mincode"))
+    from validator import Validator
+    v = Validator()
+    ex = json.loads((REPO / "data" / "site" / "examples_words.json").read_text(encoding="utf8"))
+    return [e for e in ex if not any(i.level == "error" for i in v.check(e["code"]))]
 
 
 def recipes_json():
@@ -84,7 +89,7 @@ def prompts_js():
     lim = spec.load()["limits"]
     levels = json.loads((REPO / "site" / "data" / "math.json").read_text(encoding="utf8")).get("levels", {})
     check = {"roots": [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "noaxis": [r["name"] for r in spec.noaxis_roots()],
-             "levels": levels, "max_roots": lim["max_roots"], "extra_root": lim.get("extra_root"), "compass": lim.get("compass", [])}
+             "levels": levels, "max_roots": lim["max_roots"]}
     return ("// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False)
             + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
 

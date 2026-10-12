@@ -3,7 +3,7 @@
     python3 scripts/mincode/validator.py FILE...   # строки вида "12. КОД" или просто код
 
 Уровни: error (неправильный код), warning (старая запись или спорное место).
-Правила: кавычки непрозрачны; слово = корни `|` часть речи метки; корней не больше
+лимита (3, без исключений); у имени `o` может быть одна роль (agent, tool, result, quality); значение оси только у корней с осью, в −5…+5
 лимита (ABSTRACT сверх лимита; стороны света — четыре корня `PLACE BIG ABOVE SIDE`); значение оси только у корней с осью, в −5…+5
 метки из списка, каждая не более одного раза, в своём диапазоне,
 `I0` запрещён; `!` и `?` без значения; скобки сбалансированы.
@@ -49,8 +49,7 @@ class Validator:
         self.particles = {p["name"] for p in doc["particles"] if p["name"].isalpha()}
         self.labels = {m["name"]: m for m in doc["labels"]}
         self.max_roots = doc["limits"]["max_roots"]
-        self.extra = doc["limits"]["extra_root"]
-        self.compass = set(doc["limits"].get("compass", []))
+        self.roles = {r["name"] for r in doc.get("roles", [])}
         self.pos = {p["name"] for p in doc["pos"]}
 
     def check(self, code):
@@ -63,21 +62,19 @@ class Validator:
         word = []  # корни текущего слова (без форм)
         state = "roots"  # roots | pos | labels
         seen_labels = set()
+        pos, role = None, None  # часть речи и роль текущего слова (роль только у `o`)
         has_bar = False
         after_and = False  # предыдущая частица — AND: модификатор без формы допустим (`AND SAME(=-5)`)
         word_after_and = False
 
         def end_word():
-            nonlocal word, state, seen_labels, has_bar, word_after_and
+            nonlocal word, state, seen_labels, has_bar, word_after_and, pos, role
             if word:
-                body = [r for r in word if r != self.extra]
-                if len(body) > self.max_roots and not (len(body) == len(self.compass) and set(body) == self.compass):
-                    add("error", "too_many_roots", f"{len(body)} корней (лимит {self.max_roots}): {' '.join(word)}")
-                if word.count(self.extra) > 1:
-                    add("error", "too_many_roots", f"{self.extra} дважды")
+                if len(word) > self.max_roots:
+                    add("error", "too_many_roots", f"{len(word)} корней (лимит {self.max_roots}): {' '.join(word)}")
                 if not has_bar and not word_after_and:
                     add("error", "no_form", f"слово без `| форма`: {' '.join(word)}")
-            word, state, seen_labels, has_bar, word_after_and = [], "roots", set(), False, False
+            word, state, seen_labels, has_bar, word_after_and, pos, role = [], "roots", set(), False, False, None, None
 
         for m in TOKEN.finditer(code):
             k = m.lastgroup
@@ -171,7 +168,13 @@ class Validator:
                 state = "labels" if state != "roots" else state
             elif k == "low":
                 if state == "pos" and t in self.pos:
-                    state = "labels"
+                    state, pos = "labels", t
+                elif state == "labels" and t in self.roles:
+                    if pos != "o":
+                        add("error", "role_not_noun", f"роль `{t}` только после `| o`")
+                    elif role:
+                        add("error", "dup_role", f"две роли: {role}, {t}")
+                    role = t
                 elif state == "pos":
                     add("error", "bad_pos", t)
                 else:

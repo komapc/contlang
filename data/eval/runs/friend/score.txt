@@ -1,0 +1,23 @@
+friend место с синонимами 3.9 первым 23 из 40
+tone место с синонимами 2.7 первым 19 из 40
+friend ['friend', 'friend'] 1 1 | ['fan', 'lover'] 3 7
+enemy ['enemy', 'enemy'] 1 1 | ['enemy', 'enemy'] 1 1
+kind ['friendly', 'friendly'] 23 23 | ['generous', 'generous'] 40 40
+cruel ['hostile', 'hostile'] 24 24 | ['harsh', 'harsh'] 2 2
+hostile ['unfriendly', 'unfriendly'] 1 1 | ['hostile', 'intolerant'] 1 6
+friendly ['amiable', 'amiable'] 1 1 | ['polite', 'polite'] 4 4
+polite ['nice', 'nice'] 41 41 | ['friendly', 'friendly'] 2 2
+rude ['nasty', 'mean'] 8 352 | ['nasty', 'nasty'] 8 8
+careful ['careful', 'careful'] 1 1 | ['careful', 'careful'] 1 1
+careless ['careless', 'careless'] 1 1 | ['careless', 'negligent'] 1 2
+diligent ['industrious', 'diligent'] 1 1 | ['diligent', 'diligent'] 1 1
+lazy ['lazy', 'lazy'] 1 1 | ['lazy', 'reluctant'] 1 960
+thorough ['granular', 'granular'] 519 519 | ['thorough', 'meticulous'] 1 2
+hastily ['recklessly', 'recklessly'] 12 12 | ['hastily', 'hastily'] 1 1
+carefully ['carefully', 'carefully'] 1 1 | ['carefully', 'carefully'] 1 1
+friendship ['friendship', 'friendliness'] 1 3 | ['fondness', 'love'] 23 14
+kindness ['goodwill', 'kindness'] 2 1 | ['generosity', 'generosity'] 1 1
+negligent ['lax', 'lax'] 7 7 | ['negligent', 'careless'] 1 2
+warmly ['warmly', 'warmly'] 1 1 | ['kindly', 'graciously'] 4 4
+tactful ['considerate', 'caring'] 1 24 | ['considerate', 'considerate'] 1 1
+FRIEND / TONE 1.45 95 % [0.71 3.01]
