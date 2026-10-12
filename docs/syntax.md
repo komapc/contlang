@@ -66,7 +66,7 @@
 SOMEONE | o SEE | i T-2 M-5 E THING | o PI SAY | o
 ```
 
-Число и местоимения — следующий шаг ([план](roadmap.md)).
+Число и местоимения — следующий шаг ([открытые вопросы](rethink.md)).
 
 ## Группа существительного, клаузы и вопросы (принято)
 
@@ -101,24 +101,22 @@ SOMEONE-o(?) LI SAY-i(TIME=-2) E [SOMEONE-o BIG-a PI SOMEONE-o MANY(=+4) LI LIVE
 
 ## Примеры
 
-**Исторический материал.** Примеры ниже записаны старой схемой (корни `HUM`, `BE-BORN`, признаки `QUANTITY`, `AGENCY`, …) и в текущем списке корней не читаются. Они оставлены как иллюстрация структуры предложения (`LI`, `LA`, скобки); актуальные коды слов — в [словаре](lexicon.md) и скилле `mincode`.
+Проверены валидатором (`scripts/mincode/validator.py`); слепым тестом не проверялись.
 
-**All humans are born free and equal.**
-
-```
-HUM-o(QUANTITY=5) LI BE-BORN-i(TENSE=-2) LA HUM-o PI AGENCY=5 PI IMPORTANCE=0
-```
-
-**Some people fear authority.**
+*All humans are born free and equal.*
 
 ```
-HUM-o(QUANTITY=-3) LI FEAR-i(INTENSITY=4) E RULE-o(AGENCY=5)
+SOMEONE MANY(=+5) | o LIVE BEGIN(=-5) | i T-2 V-4 CAN(=+5) | a SAME(=+5) | a
 ```
 
-**If someone acts freely, society benefits.**
+*Some people fear authority.*
 
 ```
-HUM-o(QUANTITY=-3) LI DO-i(AGENCY=5, CERTAINTY=4) LA SOCIAL-LIFE-o LI GROW-i(GOODNESS=4)
+SOMEONE MANY(=0) | o N+3 FEEL(=+4) GOOD(=-4) TIME(=+3) | i E RULE(=+4) | o
 ```
 
-> Конкретные числа (`QUANTITY=-3`, `IMPORTANCE=0` для «equal») — моя интерпретация, шкалы пока не откалиброваны.
+*If someone acts freely, society benefits.*
+
+```
+LA [ SOMEONE | o DO | i CAN(=+5) | e ] SOMEONE PART(=+5) | o CHANGE GOOD(=+3) | i
+```

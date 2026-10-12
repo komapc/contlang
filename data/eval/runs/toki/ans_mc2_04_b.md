@@ -1,0 +1,20 @@
+1. comprehensive | exhaustive, extensive
+2. predecessor | ancestor, forebear
+3. hang | suspend, mount
+4. start | begin, initiate
+5. crowd | group, gathering
+6. decree | proclamation, edict
+7. origin | source, birthplace
+8. addition | supplement, insertion
+9. announce | declare, state
+10. expanse | region, territory
+11. decision | choice, resolution
+12. quantity | amount, size
+13. artistic | creative, expressive
+14. sanctuary | shrine, sacred site
+15. firmly | resolutely, decisively
+16. understandable | comprehensible, intelligible
+17. roughly | approximately, about
+18. handful | few, trace
+19. govern | administer, regulate
+20. alter | change, modify

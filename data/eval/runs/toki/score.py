@@ -16,6 +16,7 @@ def load(pattern, key, name_of):
 key = json.load(open(f"{D}/key.json")); kb = json.load(open(f"{MR}/key_dev_base.json"))
 A = {"Токипона (Haiku)": load(f"{D}/ans_tp_*_[ab].md", key, lambda f: os.path.basename(f)[7:9]),
      "min-co (Haiku)": load(f"{D}/ans_mc_*_[ab].md", key, lambda f: os.path.basename(f)[7:9]),
+     **({"min-co v2 (Haiku)": load(f"{D}/ans_mc2_*_[ab].md", key, lambda f: os.path.basename(f)[8:10])} if glob.glob(f"{D}/ans_mc2_*") else {}),
      "min-co (математика)": load(f"{MR}/dec_dev_base_*_[ab].md", kb, lambda f: os.path.basename(f)[4:-5])}
 need = {w for a in A.values() for w, ps in a for p in ps for w in toks(p) + ["_".join(toks(p))]} | {w for a in A.values() for w, _ in a}
 vec = {}
@@ -64,12 +65,13 @@ def place(p, w):
     s = M @ v; return int((s > float(vec[w] @ v)).sum()) + 1
 L2 = ["", f"Место загаданного слова среди {len(W)} слов словаря по близости к ответу (1 — ответ ближе всего к нему):", "",
       "| язык | среднее геометрическое (первый ответ) | медиана | среднее геометрическое (лучший из трёх) | медиана |", "|---|--:|--:|--:|--:|"]
-gm = {}
+gm, PL = {}, {}
 for n, a in A.items():
     p1 = [place(ps[0], w) if ps else len(W) for w, ps in a]; pb = [min([place(p, w) for p in ps] or [len(W)]) for w, ps in a]
-    g1, gb = float(np.exp(np.mean(np.log(p1)))), float(np.exp(np.mean(np.log(pb)))); gm[n] = (g1, gb)
+    g1, gb = float(np.exp(np.mean(np.log(p1)))), float(np.exp(np.mean(np.log(pb)))); gm[n] = (g1, gb); PL[n] = [(w, x) for (w, _), x in zip(a, p1)]
     L2.append(f"| {n} | {g1:.0f} | {int(np.median(p1))} | {gb:.0f} | {int(np.median(pb))} |")
 t = gm["Токипона (Haiku)"]
 L2 += ["", "Во сколько раз неопределённость меньше, чем у Токипоны: " + "; ".join(f"{n} — {t[0] / g[0]:.1f} (первый), {t[1] / g[1]:.1f} (лучший из трёх)" for n, g in gm.items() if not n.startswith("Токи"))]
 txt = open(f"{D}/score.md").read().split("\n\n| слово")
 open(f"{D}/score.md", "w").write(txt[0] + "\n" + "\n".join(L2) + "\n\n| слово" + txt[1]); print("\n".join(L2))
+json.dump(PL, open(f"{D}/places.json", "w"), ensure_ascii=False)   # место первого ответа по словам — для разбора ошибок

@@ -1,0 +1,20 @@
+1. please | delight, reward
+2. assembly | gathering, union
+3. ten | tenth, decimal
+4. calendar | schedule, diary
+5. tank | missile, vehicle
+6. separation | division, split
+7. anticipate | predict, foresee
+8. front | frontal, forward
+9. passage | paragraph, section
+10. forward | ahead, onward
+11. duplicate | copy, replicate
+12. everywhere | throughout, all over
+13. restaurant | cafeteria, library
+14. accident | mishap, incident
+15. history | chronicle, record
+16. adjacent | attached, connected
+17. differently | otherwise, oppositely
+18. telegraph | fax, telex
+19. capital | headquarters, seat
+20. thermal | heated, hot
