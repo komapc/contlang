@@ -40,6 +40,8 @@ Grammar marks, each with a value from -5 to +5; not written means unspecified:
 - `!`: command.
 - `?`: question.
 
+Write the letter and the value together, without `(=`: `MOVE | i T-2` = moved, `SOMEONE | o N+3 D+3` = the people.
+
 ## Two words
 
 A noun can be narrowed by a second noun: `X | o LINK Y | o`.

@@ -1,0 +1,40 @@
+1. resize | alter, modify
+2. shrink | reduce, diminish
+3. die | perish, expire
+4. revive | awaken, animate
+5. heat | warm, heat up
+6. cool | chill, cool down
+7. melt | dissolve, liquefy
+8. freeze | solidify, harden
+9. improve | better, enhance
+10. worsen | deteriorate, spoil
+11. hinder | hamper, impede
+12. facilitate | ease, enable
+13. slow | decelerate, brake
+14. accelerate | hasten, speed up
+15. hide | conceal, obscure
+16. reveal | show, expose
+17. remain | keep, stay
+18. assemble | complete, combine
+19. abandon | leave, neglect
+20. remove | extract, expel
+21. insert | enter, admit
+22. pulverize | crush, grind
+23. heal | cure, treat
+24. calm | soothe, pacify
+25. harden | sharpen, toughen
+26. soften | smooth, tenderize
+27. enlarge | expand, magnify
+28. extend | lengthen, stretch
+29. multiply | increase, proliferate
+30. reduce | decrease, diminish
+31. kill | slay, murder
+32. confirm | verify, establish
+33. confuse | doubt, puzzle
+34. cheer | please, gladden
+35. rest | pause, lie
+36. eat | consume, devour
+37. say | speak, tell
+38. think | consider, believe
+39. give | donate, offer
+40. walk | go, move

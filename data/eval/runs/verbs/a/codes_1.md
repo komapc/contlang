@@ -1,0 +1,40 @@
+1. CHANGE BIG | i
+2. CHANGE BIG(=-3) | i
+3. CHANGE LIVE(=-5) | i
+4. CHANGE LIVE(=+2) | i
+5. CHANGE HEAT(=+2) | i
+6. CHANGE HEAT(=-2) | i
+7. CHANGE GRAIN(=-3) | i
+8. CHANGE GRAIN(=+5) HEAT(=-5) | i
+9. CHANGE GOOD(=+3) | i
+10. CHANGE GOOD(=-3) | i
+11. CHANGE CAN(=-2) | i
+12. CHANGE CAN(=+3) | i
+13. CHANGE MOVE(=-2) | i
+14. CHANGE MOVE(=+4) | i
+15. CHANGE SEE CAN(=-3) | i
+16. CHANGE SEE CAN(=+3) | i
+17. CHANGE GRAIN(=-3) | i M(=-5)
+18. CHANGE PART(=+2) | i
+19. CHANGE PART(=+2) | i M(=-5)
+20. CHANGE INSIDE(=-3) | i
+21. CHANGE INSIDE(=+3) | i
+22. JOIN(=-5) PART(=-5) | i
+23. CHANGE GOOD(=+3) BODY | i
+24. CHANGE FEEL(=-5) | i
+25. CHANGE TOUCH(=+5) | i
+26. CHANGE TOUCH(=-5) | i
+27. CHANGE BIG(=+3) | i
+28. CHANGE LONG(=+3) | i
+29. CHANGE MANY(=+3) | i
+30. CHANGE MANY(=-1) | i
+31. DO CHANGE LIVE(=-5) | i
+32. CHANGE KNOW(=+3) | i
+33. CHANGE KNOW(=-3) | i
+34. CHANGE MOOD(=+3) | i
+35. MOVE(=-4) BODY | i
+36. CONSUME(=+5) THING | i
+37. SAY | i
+38. THINK | i
+39. GIVE(=+5) | i
+40. MOVE(=0) | i

@@ -1,0 +1,44 @@
+все 40: A 5.6 (первым 86/160), B 5.0 (первым 88/160), B/A 0.89 95 % [0.67 1.19]
+смена состояния (34): A 6.1 (первым 72/136), B 5.8 (первым 71/136), B/A 0.96 95 % [0.7  1.31]
+контроль (6): A 3.7 (первым 14/24), B 2.1 (первым 17/24), B/A 0.58 95 % [0.31 1.03]
+
+grow: A ['resize', 'grow', 'grow', 'grow'] 4.7 | B ['grow', 'grow', 'grow', 'grow'] 1.0
+shrink: A ['shrink', 'shrink', 'shrink', 'shrink'] 1.0 | B ['shrink', 'shrink', 'shrink', 'shrink'] 1.0
+die: A ['die', 'kill', 'die', 'die'] 2.1 | B ['die', 'die', 'die', 'die'] 1.0
+wake: A ['revive', 'revive', 'wake', 'wake'] 3.9 | B ['revive', 'revive', 'wake up', 'wake'] 3.9
+warm: A ['heat', 'warm', 'warm', 'heat'] 2.0 | B ['warm', 'warm up', 'warm up', 'warm'] 1.0
+cool: A ['cool', 'cool', 'cool', 'cool'] 1.0 | B ['cool', 'cool', 'cool', 'cool'] 1.0
+melt: A ['melt', 'melt', 'melt', 'melt'] 1.0 | B ['melt', 'melt', 'melt', 'melt'] 1.0
+freeze: A ['freeze', 'freeze', 'freeze', 'freeze'] 1.0 | B ['freeze', 'freeze', 'freeze', 'freeze'] 1.0
+improve: A ['improve', 'improve', 'improve', 'improve'] 1.0 | B ['improve', 'improve', 'improve', 'improve'] 1.0
+worsen: A ['worsen', 'worsen', 'worsen', 'worsen'] 1.0 | B ['deteriorate', 'worsen', 'worsen', 'worsen'] 1.2
+weaken: A ['hinder', 'hinder', 'hinder', 'complicate'] 9.7 | B ['complicate', 'hinder', 'struggle', 'struggle'] 144.7
+strengthen: A ['facilitate', 'ease', 'ease', 'ease'] 164.7 | B ['ease', 'enable', 'enable', 'facilitate'] 95.5
+slow: A ['slow', 'slow', 'slow', 'slow'] 1.0 | B ['slow down', 'slow down', 'slow down', 'slow'] 2.8
+accelerate: A ['accelerate', 'hurry', 'accelerate', 'accelerate'] 1.9 | B ['hurry', 'hurry', 'hurry', 'hurry'] 13.0
+darken: A ['hide', 'hide', 'inspect', 'reveal'] 262.2 | B ['overlook', 'miss', 'disappear', 'miss'] 1833.0
+brighten: A ['reveal', 'show', 'survey', 'conceal'] 682.7 | B ['look', 'notice', 'appear', 'watch'] 989.6
+dry: A ['remain', 'remain', 'dissolve', 'dissolve'] 342.4 | B ['powder', 'crumble', 'powder', 'crumble'] 201.2
+fill: A ['assemble', 'unite', 'multiply', 'spread'] 176.7 | B ['insert', 'insert', 'insert', 'insert'] 24.0
+empty: A ['abandon', 'divide', 'eliminate', 'eliminate'] 49.8 | B ['remove', 'expel', 'expel', 'remove'] 16.7
+open: A ['remove', 'extract', 'separate', 'detach'] 483.0 | B ['detach', 'separate', 'separate', 'detach'] 426.0
+close: A ['insert', 'insert', 'connect', 'attach'] 106.5 | B ['attach', 'connect', 'attach', 'attach'] 250.3
+break: A ['pulverize', 'crumble', 'crumble', 'crumble'] 1.5 | B ['split', 'divide', 'detach', 'split'] 1.6
+heal: A ['heal', 'heal', 'heal', 'heal'] 1.0 | B ['thrive', 'heal', 'heal', 'heal'] 4.6
+calm: A ['calm', 'calm', 'calm', 'calm'] 1.0 | B ['relax', 'calm down', 'calm down', 'calm'] 1.3
+harden: A ['harden', 'harden', 'harden', 'harden'] 1.0 | B ['harden', 'harden', 'harden', 'harden'] 1.0
+soften: A ['soften', 'soften', 'soften', 'soften'] 1.0 | B ['soften', 'soften', 'soften', 'soften'] 1.0
+widen: A ['enlarge', 'enlarge', 'elongate', 'extend'] 2.1 | B ['advance', 'swell', 'stretch', 'stretch'] 15.7
+lengthen: A ['extend', 'lengthen', 'lengthen', 'lengthen'] 1.5 | B ['extend', 'extend', 'lengthen', 'extend'] 3.3
+increase: A ['multiply', 'increase', 'increase', 'multiply'] 1.7 | B ['multiply', 'multiply', 'multiply', 'multiply'] 3.0
+decrease: A ['reduce', 'decrease', 'decrease', 'reduce'] 1.7 | B ['dwindle', 'dwindle', 'decrease', 'decrease'] 1.4
+kill: A ['kill', 'murder', 'kill', 'kill'] 1.9 | B ['kill', 'kill', 'kill', 'kill'] 1.0
+learn: A ['confirm', 'confirm', 'confirm', 'clarify'] 18.0 | B ['learn', 'learn', 'learn', 'learn'] 1.0
+forget: A ['confuse', 'confuse', 'confuse', 'confuse'] 66.0 | B ['forget', 'forget', 'forget', 'forget'] 1.0
+cheer up: A ['cheer', 'cheer', 'cheer', 'cheer'] 2.0 | B ['cheer', 'cheer up', 'cheer up', 'cheer'] 1.4
+sit: A ['rest', 'rest', 'bow', 'crouch'] 20.5 | B ['crouch', 'sink', 'lie down', 'lie'] 13.2
+eat: A ['eat', 'eat', 'eat', 'eat'] 1.0 | B ['eat', 'eat', 'eat', 'eat'] 1.0
+speak: A ['say', 'say', 'say', 'say'] 14.0 | B ['say', 'speak', 'say', 'say'] 7.2
+think: A ['think', 'think', 'think', 'think'] 1.0 | B ['think', 'think', 'think', 'think'] 1.0
+give: A ['give', 'give', 'give', 'give'] 1.0 | B ['give', 'give', 'give', 'give'] 1.0
+walk: A ['walk', 'walk', 'move', 'move'] 8.3 | B ['walk', 'walk', 'walk', 'walk'] 1.0
