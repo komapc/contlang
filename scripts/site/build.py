@@ -45,7 +45,6 @@ def roots_json():
             "neg": (ax or {}).get("neg", ""),
             "mid": (ax or {}).get("mid", ""),
             "pos": (ax or {}).get("pos", ""),
-            "one_sided": bool(r.get("one_sided")),
             "ru": r.get("ru_axis") or r.get("ru_gloss") or "",
             "en": r.get("en_axis") or r.get("en_gloss") or r["name"].lower(),
         })
@@ -83,8 +82,9 @@ def prompts_js():
     # декодер знает словарь так же, как кодировщик: без рецептов gpt-4o-mini читает их буквально (1 из 20 на сайте)
     dec = build_spec("dec", "words") + "\n\n# Known recipes (codes verified by blind tests; read them as these words)\n\n" + tips()
     lim = spec.load()["limits"]
-    check = {"roots": [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "max_roots": lim["max_roots"],
-             "extra_root": lim.get("extra_root"), "compass": lim.get("compass", [])}
+    levels = json.loads((REPO / "site" / "data" / "math.json").read_text(encoding="utf8")).get("levels", {})
+    check = {"roots": [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "noaxis": [r["name"] for r in spec.noaxis_roots()],
+             "levels": levels, "max_roots": lim["max_roots"], "extra_root": lim.get("extra_root"), "compass": lim.get("compass", [])}
     return ("// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False)
             + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
 

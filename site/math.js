@@ -34,6 +34,7 @@
       this.R = this.C.length;
       // допустимые уровни: opt.levels {корень: [уровни]} сужает −5…+5 (спецификация: THING до +4, SEX только явный пол)
       const lv = (opt && opt.levels) || {}, sig = [];
+      for (const n in lv) if (!lv[n].length) throw new Error("empty levels for " + n);
       this.lv = names.map((n, r) => (!has[r] ? [0] : lv[n] || LEVELS));
       this.lid = this.lv.map((l) => { const k = l.join(","); let i = sig.indexOf(k); if (i < 0) { sig.push(k); i = sig.length - 1; } return i; });
       const M = this.C.concat(this.A);
@@ -313,6 +314,7 @@
     // + graphW·связь по графу с учётом частицы (Vocab.graphScore)
     scores(code) {
       const ws = Reader.words(code), h = this.co.parse(ws[0].text);
+      if (!h.S.length) return new Float64Array(this.V.words.length).fill(-Infinity);  // у главного слова нет корней — читать нечего
       let parts = this.co.parts(h.S, h.v);
       if (this.opt.modW) for (const w of ws.slice(1)) { const p = this.co.parse(w.text); parts = parts.concat(this.co.parts(p.S, p.v).map((a) => a.map((t) => t * this.opt.modW))); }
       const sc = this.prf(this.V.adjust(this.V.scores(parts, this.mix), Reader.form(ws[0].text), this.opt.posPen));

@@ -8,7 +8,7 @@ Axes: a root takes a value on its own axis (-5..+5), not written = unspecified.
 {{AXES}}
 
 NOTATION (Toki-Pona style, no part-of-speech suffixes):
-- A word is one root, optionally with its axis value glued on: `GOOD+3`, `TIME-2`, `MANY+5`, `GOOD0` (explicit middle). Axis value -5..+5 (MANY 0..+5). Roots without an axis (BODY SEE DO PLACE FIGHT) never take one.
+- A word is one root, optionally with its axis value glued on: `GOOD+3`, `TIME-2`, `MANY+5`, `GOOD0` (explicit middle). Axis value -5..+5. Roots without an axis (BODY SEE DO PLACE FIGHT) never take one.
 - A phrase is a head word followed by modifier words separated by spaces; each modifier refines everything before it, exactly like an English compound: `THING+4 BIG+5` = a big animal, `PLACE LIVE` = dwelling. One English word may need several min-co words; there is no limit of three roots, but stay short.
 - Parts of speech come from position, as in Toki Pona: the first phrase of a clause is the subject (a noun phrase); `LI` introduces the predicate (a verb phrase: head = action, later words = how); `E` introduces the direct object (noun phrase); a modifier after a noun head is an adjective, after a verb head an adverb. A root can be any part of speech by position.
 - Particles: `LI` predicate; `E` object; `PI` a noun phrase that defines the preceding noun (compound / 'of'); `LA` context or condition clause before a main clause (although / if / when); `AND` and / also; `PE` agent after a passive (V-4); `[ ... ]` a clause used as a modifier or content; `;` separates independent clauses of a long sentence; `"..."` quoted names, numbers, Latin or technical terms kept as is, written as a word of its own.

@@ -5,7 +5,7 @@
 Уровни: error (неправильный код), warning (старая запись или спорное место).
 Правила: кавычки непрозрачны; слово = корни `|` часть речи метки; корней не больше
 лимита (ABSTRACT сверх лимита; стороны света — четыре корня `PLACE BIG ABOVE SIDE`); значение оси только у корней с осью, в −5…+5
-(MANY: 0…+5); метки из списка, каждая не более одного раза, в своём диапазоне,
+метки из списка, каждая не более одного раза, в своём диапазоне,
 `I0` запрещён; `!` и `?` без значения; скобки сбалансированы.
 Запись предложения с границами слов `{ ROOTS | FORM }` (check_braced): вне `{ }` только частицы, `[ ]`, `;` и имена в кавычках.
 """
@@ -134,9 +134,8 @@ class Validator:
                         add("error", "axis_on_axisless", f"{name}{arg}")
                         continue
                     v = int(mv.group(1))
-                    lo = 0 if r.get("one_sided") else -5
-                    if not lo <= v <= 5:
-                        add("error", "axis_range", f"{name}{arg} (допустимо {lo}…5)")
+                    if not -5 <= v <= 5:
+                        add("error", "axis_range", f"{name}{arg} (допустимо −5…5)")
                     if re.search(r"\+0\b|-0\b", mv.group(1)):
                         add("warning", "old_notation", f"{name}{arg}: пиши (=0)")
             elif k == "lab":
@@ -254,8 +253,7 @@ def check_toki(self, code):
                 add("axis_on_axisless", f"{name}{axis}")
             else:
                 v = int(axis)
-                lo = 0 if r.get("one_sided") else -5
-                if not lo <= v <= 5:
+                if not -5 <= v <= 5:
                     add("axis_range", f"{name}{axis}")
         seen = set()
         for lab in filter(None, labs.split(".")):

@@ -147,7 +147,6 @@ roots:
     neg: плохо
     mid: ''
     pos: хорошо
-  one_sided: false
   ru_axis: плохо … хорошо
   status: принято
   en_axis: -5 terrible ... +5 excellent
@@ -159,7 +158,6 @@ roots:
     neg: мало
     mid: ''
     pos: много
-  one_sided: false
   ru_axis: мало … много
   status: принято
   en_axis: -5 tiny ... +5 huge (size, degree, intensity)
@@ -171,7 +169,6 @@ roots:
     neg: далеко
     mid: ''
     pos: близко (этот / тот)
-  one_sided: false
   ru_axis: далеко … близко (в том числе «этот / тот»)
   status: принято
   en_axis: -5 far ... +5 near/here
@@ -183,7 +180,6 @@ roots:
     neg: ниже
     mid: ''
     pos: выше
-  one_sided: false
   ru_axis: ниже … выше
   status: принято
   en_axis: -5 below/down ... +5 above/up
@@ -195,7 +191,6 @@ roots:
     neg: мёртвое
     mid: ''
     pos: живое
-  one_sided: false
   ru_axis: мёртвое … живое
   status: принято
   en_axis: -5 dead ... +5 alive (-2 = asleep/barely alive)
@@ -207,7 +202,6 @@ roots:
     neg: другое, особое
     mid: ''
     pos: то же, общее
-  one_sided: false
   ru_axis: 'другое … то же (−5 другое, противоположное, −4 особое, не как другие, +3 обычное, +5 то же, тождественное): `SAME(=-4) \| a` особый, уникальный, `SAME(=-4) \| e` особенно, `SAME(=+3) \| a` обычный, `SAME(=+4) MANY(=+5) \| a` общий, всеобщий, `SAME(=-4) JOIN(=-5) RULE \| o` исключение'
   status: 'принято; **с 2026-10 вбирает корень PARTICULAR** (общее … особое): слепой тест 12 слов × 2 кодировщика — с PARTICULAR 13 точных из 24, через SAME 12 из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
   en_axis: '-5 different/opposite ... -4 special, unlike others ... +3 ordinary ... +5 identical/exactly. `SAME(=-4) | a` special/unique, `SAME(=+4) MANY(=+5) | a` general/universal.'
@@ -219,7 +213,6 @@ roots:
     neg: давно
     mid: сейчас
     pos: когда-нибудь
-  one_sided: false
   ru_axis: раньше … позже
   status: принято
   en_axis: -5 long ago ... 0 now ... +5 someday (-1 just now, +1 soon)
@@ -231,7 +224,6 @@ roots:
     neg: снаружи
     mid: ''
     pos: внутри
-  one_sided: false
   ru_axis: снаружи … внутри
   status: 'принято (данные: полюса в одной семье)'
   en_axis: -5 outside ... +5 inside/innermost
@@ -243,7 +235,6 @@ roots:
     neg: крошка (−2 часть, член)
     mid: +2 целое, «полностью»
     pos: '+5 группа, набор (после слова: собрание таких вещей, *-aro*)'
-  one_sided: false
   ru_axis: 'лестница: частица … часть … целое … группа (−5 крошка, −2 часть / член, +2 целое / «полностью», +5 группа, набор, союз); после главного слова `PART(=+5)` — собрание таких вещей, как *-aro* в эсперанто: `SOMEONE PART(=+5) \| o` общество, `THING(=0) PART(=+5) \| o` стадо / роща; `SOMEONE PART(=-2) \| o` член'
   status: принято, слепой тест 10 из 10 (`data/translation_test/roundtrip_part_ladder.md`)
   en_axis: -5 particle/crumb ... -2 a part/piece/member-of ... +2 the whole/complete (also 'entirely') ... +5 a group/collection made of many wholes (a set, union); after a head noun, PART(=+5) means a collection of those things
@@ -255,7 +246,6 @@ roots:
     neg: зад
     mid: ''
     pos: перёд
-  one_sided: false
   ru_axis: зад … перёд
   status: принято
   en_axis: -5 back ... +5 front
@@ -267,7 +257,6 @@ roots:
     neg: не знаю
     mid: ''
     pos: знаю
-  one_sided: false
   ru_axis: не знаю … знаю
   status: принято
   en_axis: -5 ignorant ... +5 sure/knowing
@@ -279,7 +268,6 @@ roots:
     neg: ненависть
     mid: ''
     pos: любовь
-  one_sided: false
   ru_axis: не хочу … хочу (ненависть … любовь)
   status: принято
   en_axis: -5 hate/refuse ... +5 love/crave
@@ -291,7 +279,6 @@ roots:
     neg: лёд
     mid: тепло
     pos: огонь
-  one_sided: false
   ru_axis: холодно … жарко (−5 лёд, 0 тепло/комнатная, +5 огонь)
   status: '**новое**, принято'
   en_axis: -5 ice cold ... 0 lukewarm ... +5 fire hot
@@ -303,7 +290,6 @@ roots:
     neg: начать
     mid: идёт
     pos: закончить
-  one_sided: false
   ru_axis: 'начало … конец (−5 начать, 0 идёт / середина, +5 закончить): `BEGIN(=-5) \| i` начинать, `BEGIN(=+5) \| i` заканчивать, `BEGIN(=-4) \| a` первый, `BEGIN(=+4) \| a` последний'
   status: '**новое**, принято'
   en_axis: -5 start/begin ... 0 ongoing/middle ... +5 finish/end (-4 first, +4 last)
@@ -315,7 +301,6 @@ roots:
     neg: взять
     mid: обмен
     pos: отдать
-  one_sided: false
   ru_axis: 'взять … отдать (−5 взять / украсть, 0 обмен, +5 отдать / подарить): `GIVE(=-5) \| i` брать, `GIVE(=+5) \| i` давать, `GIVE(=-5) GOOD(=-4) \| i` красть, `GIVE(=-3) TIME(=+3) \| i` брать взаймы'
   status: '**новое**, принято (MOVE + INSIDE не работает, `data/translation_test/roundtrip_200.md`)'
   en_axis: -5 take/steal ... 0 exchange ... +5 give/donate
@@ -327,7 +312,6 @@ roots:
     neg: мягкое
     mid: обычное
     pos: твёрдое
-  one_sided: false
   ru_axis: 'мягкое … твёрдое (−5 мягкое / нежное, 0 обычное, +5 твёрдое / острое): `TOUCH(=-4) \| a` мягкий, `TOUCH(=+5) \| a` твёрдый'
   status: '**новое**, принято (тест: sharp, concrete, board перепутаны без оси)'
   en_axis: -5 soft/gentle ... 0 ordinary ... +5 hard/sharp
@@ -339,7 +323,6 @@ roots:
     neg: женское
     mid: ''
     pos: мужское
-  one_sided: false
   ru_axis: 'женское … мужское (только у слов с явным полом: −5 женщина, +5 мужчина; слабые ±1, ±2 не ставятся)'
   status: '**новое**, предложено'
   en_axis: -5 female ... +5 male (only for words of explicit sex; omitted otherwise)
@@ -351,7 +334,6 @@ roots:
     neg: причина
     mid: событие
     pos: результат
-  one_sided: false
   ru_axis: 'причина … следствие (−5 первопричина, 0 просто событие, +5 результат): `HAPPEN(=+4) \| o` следствие, `HAPPEN(=-4) \| o` причина, `HAPPEN(=+4) \| e` следовательно, `HAPPEN(=-4) \| e` потому что'
   status: '**новое**, принято (слепой тест: 6 из 6)'
   en_axis: -5 cause/origin ... 0 plain event ... +5 consequence/result (position in a chain of events)
@@ -363,7 +345,6 @@ roots:
     neg: сомневаться
     mid: думать
     pos: решить
-  one_sided: false
   ru_axis: idea, thing
   status: think, suppose
   en_axis: -5 doubt/hesitate ... 0 think ... +5 decide/conclude
@@ -375,7 +356,6 @@ roots:
     neg: невозможно (−3 трудно)
     mid: ''
     pos: легко
-  one_sided: false
   ru_axis: не могу … могу (−5 невозможно, −3 трудно, +4 легко); из NSM, нужен для «трудно / возможно»
   status: '**новое**, принято (BECAUSE отвергнут)'
   en_axis: -5 impossible ... +5 can/easily (-3 hard)
@@ -387,7 +367,6 @@ roots:
     neg: −5 ни одного, нет вовсе (−3 почти нет, нехватка)
     mid: 0 сколько-то
     pos: +5 все (+3 многие)
-  one_sided: false
   ru_axis: 'сколько (−5 ни одного, нет вовсе, −4 нет нужного: нехватка, отсутствие, −3 почти нет, едва, −1 мало, немногие, 0 сколько-то, +3 многие, +4 большинство, +5 все, всегда): `THING MANY(=-5) \| o` ничто, `MANY(=-4) \| o` нехватка, отсутствие, `MANY(=-3) \| e` едва, почти не, `SOMEONE MANY(=+5) \| o` все'
   status: 'принято; **с 2026-10 двусторонняя** (была односторонней 0 … +5, «ни одного» было 0): у математики полюс none / zero / absence стоит на −5, а 0 читается как *certainly, absolutely*; кодер ставил отрицательные уровни в 46 % кодов с MANY (*lack, absence, insufficient, hardly, barely*) — [data/eval/runs/many](../data/eval/runs/many/README.md); «один» и точные числа — числа из послаблений'
   en_axis: '-5 none/zero/never/absent ... -4 lacking, shortage, absence (of what is needed) ... -3 hardly any, barely ... -1 few ... 0 some, an amount ... +3 many ... +4 most ... +5 all/always'
@@ -399,7 +378,6 @@ roots:
     neg: они / другой
     mid: кто-то
     pos: я (+3 ты)
-  one_sided: false
   ru_axis: 'лицо (−5 они / другой, 0 кто-то, +3 ты, +5 я): `SOMEONE(=+5) \| o` я, `SOMEONE(=+3) \| o` ты, `SOMEONE(=-3) \| o` он; множественное — `MANY` вторым корнем: `SOMEONE(=+5) MANY(=+3) \| o` мы'
   status: '**новое**, принято (слепой тест: 8 из 8 местоимений)'
   en_axis: -5 they/other ... 0 someone ... +3 you ... +5 I/me
@@ -411,7 +389,6 @@ roots:
     neg: камень
     mid: растение
     pos: животное (+4)
-  one_sided: false
   ru_axis: 'одушевлённость (−5 камень … 0 растение … +4 животное; человек — SOMEONE): `THING(=-5) \| o` камень, `THING(=+4) BIG(=+5) \| o` слон'
   status: '**новое**, принято (тест: камень, насекомое, животное, слон верно; растения слабо)'
   en_axis: -5 inanimate/stone ... 0 plant ... +4 animal
@@ -423,7 +400,6 @@ roots:
     neg: стоять
     mid: идти
     pos: мчаться
-  one_sided: false
   ru_axis: movement, motion
   status: move, shift
   en_axis: -5 stand still ... 0 walk ... +5 sprint/very fast
@@ -435,7 +411,6 @@ roots:
     neg: вялость
     mid: ''
     pos: сильное чувство
-  one_sided: false
   ru_axis: 'спокойно … возбуждённо (−5 вялость, +5 сильное чувство; приятно или нет — GOOD): `FEEL(=+4) GOOD(=-4) \| a` злой'
   status: '**новое**, принято (тест: 6 из 8; «злой» и «испуганный» путаются)'
   en_axis: -5 calm/low-energy ... +5 excited/intense (pleasant or not is GOOD)
@@ -447,7 +422,6 @@ roots:
     neg: личное, неформальное
     mid: обычное
     pos: официальное, учреждение, закон
-  one_sided: false
   ru_axis: 'личное … официальное (−5 личное, неформальное, частное; 0 обычное; +5 официальное, учреждение, закон): `RULE(=+4) \| o` власть, учреждение, `SOMEONE PART(=+5) RULE(=+4) \| o` комитет, ведомство'
   status: '**новое**, принято; полюса SemAxis сменены с ведомств (authority committee agency commission government) на закон и власть: прежние тянули любой код с RULE к *commissions, agencies*, институты (суд, банк, школа, выборы…) попадали в top10 в 6% случаев, теперь в 32% (data/lacunae.md)'
   en_axis: -5 personal/private/informal ... 0 ordinary ... +5 official/institutional/law (RULE(=+4) = authority, an institution)
@@ -460,7 +434,6 @@ roots:
     neg: остаться
     mid: меняться
     pos: превратить, измениться полностью
-  one_sided: false
   ru_axis: 'остаться … измениться (−5 остаться, не меняться, 0 меняться, +5 превратить, измениться полностью): `CHANGE \| i` менять, `CHANGE(=-4) \| i` оставаться, `CHANGE BIG(=+3) \| i` расти, `CHANGE GOOD(=+3) \| i` улучшать'
   status: '**новое**, предложено (SemAxis: alter, transform, modify, shift; направление увеличить/уменьшить даётся осями `BIG` и `GOOD`)'
   en_axis: '-5 stay/remain/not change ... 0 change ... +5 transform completely (direction of change comes from other roots: CHANGE BIG(=+3) = grow, CHANGE GOOD(=+3) = improve)'
@@ -473,7 +446,6 @@ roots:
     neg: расчёт, техника, точные науки
     mid: смешанное
     pos: творчество, культура, гуманитарное
-  one_sided: false
   ru_axis: 'техника … творчество (−5 расчёт, техника, устройства, точные науки, 0 смешанное, +5 творчество, культура, гуманитарное): `ART(=-4) KNOW \| o` физика, `ART(=+5) SAY \| o` поэзия, `ART(=-5) SOMEONE \| o` инженер; корень без значения — умение, ремесло, дисциплина'
   status: '**новое**, предложено (SemAxis: полюса «гуманитарное + искусство» против «точные науки + техника», LOO 1.00, оси покрывают 10 %); принято (слепой тест: 29 из 32, мимо только *architecture*)'
   en_axis: -5 calculation/technology/devices/exact science ... 0 mixed ... +5 creativity/culture/humanities/arts. The bare root means skill, craft, discipline.
@@ -486,7 +458,6 @@ roots:
     neg: отделить, убрать
     mid: состав не меняется
     pos: присоединить, добавить, объединить
-  one_sided: false
   ru_axis: 'отделить … присоединить (−5 отделить, убрать, уйти, вычесть, 0 состав не меняется, +5 присоединить, добавить, привнести, объединить): `JOIN(=+4) \| i` присоединять, `JOIN(=-4) \| i` убирать'
   status: '**новое**, предложено (SemAxis: полюса join/add/attach против separate/remove/detach, LOO 1.00; ближайшие оси GIVE +0.3, NEAR +0.2); принято с оговоркой (слепой тест: ~8 из 10; *add* не читается, внутри кластера слова сливаются)'
   en_axis: -5 separate/remove/subtract ... 0 composition unchanged ... +5 join/add/attach/unite.
@@ -499,7 +470,6 @@ roots:
     neg: дёшево, бесполезно
     mid: обычная цена
     pos: дорого, ценно
-  one_sided: false
   ru_axis: 'дёшево … дорого (−5 дёшево, бесполезно, ничего не стоит, 0 обычная цена, +5 дорого, ценно, драгоценно): `VALUE(=+4) \| a` дорогой, ценный, `VALUE(=-4) \| a` дешёвый; покупка и продажа — вместе с `GIVE`'
   status: '**новое**, предложено (SemAxis: полюса cheap/worthless/useless против expensive/valuable/precious, LOO 0.91); принято (слепой тест: 10 из 10 на прилагательных; *buy/sell* путаются по знаку `GIVE`)'
   en_axis: -5 cheap/worthless ... 0 ordinary price ... +5 expensive/valuable/precious.
@@ -512,7 +482,6 @@ roots:
     neg: небрежно, наспех
     mid: обычно
     pos: тщательно, осторожно
-  one_sided: false
   ru_axis: 'небрежно … тщательно (−5 небрежно, наспех, 0 обычно, +5 тщательно, осторожно, методично): `CARE(=+4) \| e` тщательно, `CARE(=-4) \| e` небрежно, наспех'
   status: '**новое**, предложено (SemAxis: carefully/meticulously против carelessly/hastily, LOO 0.92); принято (слепой тест: 6 из 6, 12 из 12 с осью на `DO`)'
   en_axis: -5 careless/hasty ... 0 ordinary ... +5 careful/thorough/meticulous.
@@ -525,7 +494,6 @@ roots:
     neg: грубо, холодно, враждебно
     mid: нейтрально
     pos: вежливо, тепло, дружелюбно
-  one_sided: false
   ru_axis: 'грубо … вежливо (−5 грубо, холодно, враждебно, резко, 0 нейтрально, +5 вежливо, тепло, дружелюбно, искренне): `TONE(=+4) \| a` вежливый, `TONE(=-4) \| a` грубый, `TONE(=+4) \| e` вежливо'
   status: '**новое**, предложено (SemAxis: polite/kind/warm против rude/harsh/cold, LOO 1.00; ближайшие оси TOUCH −0.4, GOOD +0.3); принято (слепой тест: 26 из 32, ещё 5 рядом; *kind / courteous / tactful* сливаются)'
   en_axis: -5 rude/cold/hostile/harsh ... 0 neutral ... +5 polite/warm/friendly/sincere.
@@ -538,7 +506,6 @@ roots:
     neg: горе, отчаяние, трагическое (−3 грусть)
     mid: всерьёз, спокойно
     pos: смешно, хохот (+3 весело, радостно)
-  one_sided: false
   ru_axis: 'горе … смешно (−5 горе, отчаяние, трагическое, −3 грусть, 0 всерьёз, спокойно, без шуток, +3 весело, радостно, +5 смешно, хохот, комическое): `MOOD(=+5) \| a` смешной, `MOOD(=-3) \| a` грустный, `MOOD(=0) \| a` серьёзный, `ART MOOD(=+5) \| o` комедия'
   status: '**новое** (предложение автора: ось «комедия … трагедия»; SemAxis: ближайшие оси LIVE +0.40, GOOD +0.31); принято (слепой тест без рецептов тестовых слов: 24 из 32 против 11 без корня; *happy / cheerful* сливаются)'
   en_axis: -5 grief/despair/tragic, -3 sad ... 0 serious/calm ... +3 cheerful/glad, +5 funny/hilarious/comic. Mood, not evaluation (GOOD) or intensity (FEEL).
@@ -551,7 +518,6 @@ roots:
     neg: выделить (писать, говорить, испражняться)
     mid: обмен
     pos: поглотить (есть, читать, слушать)
-  one_sided: false
   ru_axis: 'выделить … поглотить (−5 выделить, выбросить, излить, 0 обмен, +5 поглотить, принять внутрь: есть, пить, читать, слушать; −5 выделять: испражняться, писать, говорить, излучать): `CONSUME(=+4) \| i` поглощать, есть, `CONSUME(=-4) \| i` выделять; канал задаёт второй корень: `CONSUME(=+4) SEE \| i` читать, `CONSUME(=-4) SAY \| i` говорить'
   status: '**новое**, предложено пользователем (приём ↔ выдача: есть / испражняться, читать / писать, слушать / говорить); принято (слепой тест: 26 из 32; еда, дыхание, речь читаются, *read / write* нет)'
   en_axis: -5 emit/output (excrete, write, speak, spit, exhale) ... 0 exchange ... +5 take in/intake (eat, drink, read, listen, inhale). The channel or object is given by a second root, e.g. SEE, SAY, BODY.
@@ -564,7 +530,6 @@ roots:
     neg: конкретное, физическое (дом, пинать)
     mid: смешанное
     pos: абстрактное, умственное (теория, предполагать)
-  one_sided: false
   ru_axis: 'конкретное … абстрактное (−5 вещественное, физическое, осязаемое: дом, пинать, трясти, 0 смешанное, +5 отвлечённое, умственное: теория, принцип, предполагать, подразумевать): `ABSTRACT(=-4) \| o` вещь, предмет, `ABSTRACT(=+4) \| o` понятие, `ABSTRACT(=+4) THINK \| i` предполагать; конкретный / абстрактный как признак — `\| a`'
   status: '**новое**, предложено остаточным PCA по частям речи (у глаголов, существительных, прилагательных, наречий; SemAxis: idea/theory/concept/principle против house/stone/hand/door/kick, косинус с ART +0,05, максимум с остальными осями 0,16); принято (слепой тест: 25 из 32, знак не перепутан ни разу, промахи — соседи: *theory / concept, kick / hit*)'
   en_axis: '-5 concrete/physical/tangible (house, kick, shake) ... 0 mixed ... +5 abstract/mental/intangible (theory, principle, assume, imply). A noun or verb is on the physical or the mental side; as an adjective: concrete / abstract.'
@@ -577,7 +542,6 @@ roots:
     neg: величина сама по себе (размер, количество)
     mid: уровень, степень
     pos: величина относительно другой (отношение, доля)
-  one_sided: false
   ru_axis: 'величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, скорость-как-отношение, среднее): `MEASURE(=-5) \| o` количество, размер, `MEASURE(=+5) \| o` отношение, `MEASURE \| i` измерять, единица — `MEASURE SAME \| o`'
   status: '**новое**, введено по правилу (*ratio / proportion / measurement* дважды не читались через `PART`, `BIG`, `SAME`, `SEE`); первая версия оси (единица … количество … отношение) была смесью трёх понятий, переписана; ось независима (SemAxis, максимум косинуса с BIG −0,18); слепой тест v2 26 из 32 — см. [roundtrip_measure](../data/translation_test/roundtrip_measure.md)'
   en_axis: '-5 a magnitude in itself (size, amount, length, weight, number) ... 0 level, degree, extent ... +5 a magnitude relative to another (ratio, rate, proportion, percentage, average). Measuring as an action: `MEASURE | i` (to measure); a unit is a magnitude used as a standard (`MEASURE SAME`). As an adjective: measurable / proportional.'
@@ -590,7 +554,6 @@ roots:
     neg: нить, верёвка (тонкое, гибкое)
     mid: палочка, прут
     pos: столб, бревно (толстое, жёсткое)
-  one_sided: false
   ru_axis: 'тонкое гибкое … толстое жёсткое длинное (−5 нить, верёвка, волос, проволока, 0 палочка, прут, ветка, +5 столб, бревно, балка, шест): `LONG(=-5) \| o` нить, `LONG(=+4) \| o` шест, `LONG \| a` длинный, высокий, `LONG(=+3) PLACE \| o` башня'
   status: '**новое**, по просьбе автора (аналог *palisa* / *linja* в Toki Pona: длинный предмет); ось независима (SemAxis, косинус с ABSTRACT −0,17, TOUCH 0,13, BIG ≈ 0); слепой тест — [roundtrip_long](../data/translation_test/roundtrip_long.md)'
   en_axis: '-5 thin flexible (thread, rope, hair, wire) ... 0 stick, rod, twig ... +5 thick rigid (pole, log, beam, pillar). The root for long objects; as an adjective: long, tall (`LONG | a`).'
@@ -603,7 +566,6 @@ roots:
     neg: шёпот, бормотание
     mid: обычная речь
     pos: крик, рёв
-  one_sided: false
   ru_axis: 'тихо … громко (−5 шёпот, бормотание, 0 обычная речь, +5 крик, рёв, визг): `SAY(=-4) \| i` шептать, `SAY(=+5) \| i` кричать, `SAY(=+4) \| o` крик, `SAY(=-3) \| o` шёпот, шум — `SAY(=+3) THING \| o`'
   status: '**новая ось на существующем корне** (принято автором; остаточный PCA слабых слов: *whistle, groan, wail, roar, murmur, buzz*; SemAxis косинус с FEEL 0,41, MOVE 0,26, остальные ≤ 0,15); слепой тест — [roundtrip_say](../data/translation_test/roundtrip_say.md)'
   en_axis: '-5 whisper, murmur, mumble (quiet) ... 0 ordinary speech ... +5 shout, scream, roar (loud). Also for noises: SAY(=+3) THING | o = noise, SAY(=-3) | o = whisper.'
@@ -615,7 +577,6 @@ roots:
     neg: газ, пар (−3 жидкость, вода)
     mid: сыпучее, рассыпчатое
     pos: цельное, одним куском
-  one_sided: false
   ru_axis: 'как вещество держится вместе (−5 газ, пар, дым, −3 жидкость, течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, твёрдое: камень, слиток, монолит): `GRAIN(=-5) \| o` газ, `GRAIN(=-3) \| o` жидкость, `GRAIN(=0) THING(=-5) \| o` песок, `GRAIN(=+5) \| a` цельный, сплошной, твёрдый; есть `CONSUME(=+5) GRAIN(=+3) \| i`, пить `CONSUME(=+5) GRAIN(=-3) \| i`, вдыхать `CONSUME(=+5) GRAIN(=-5) \| i`. Аналог *ko* в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные — текучие (−3), целые — около −1'
   status: '**новый корень, предложено автором**; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — [roundtrip_grain](../data/translation_test/roundtrip_grain.md). **С 2026-10 вбирает корень MATTER** (твёрдое … жидкое … газ): одна шкала вместо двух встречных, слепой тест 12 слов — 11 → 17 точных из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
   en_axis: '-5 gas, vapour, smoke ... -3 liquid, flowing (water, honey) ... 0 loose, granular (sand, flour, grain) ... +5 one solid piece (stone, ingot, monolith). Also solid / continuous / seamless / whole as `GRAIN(=+5) | a`. eat = `CONSUME(=+5) GRAIN(=+3) | i`, drink = `CONSUME(=+5) GRAIN(=-3) | i`, inhale = `CONSUME(=+5) GRAIN(=-5) | i`.'
@@ -628,7 +589,6 @@ roots:
     neg: игра, спорт, соревнование
     mid: драка, спор
     pos: война насмерть
-  one_sided: false
   ru_axis: 'всерьёз ли борьба (−5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть); без значения — бой, ссора: `FIGHT(=-5) \| o` игра, спорт, `SOMEONE FIGHT(=-5) \| o` игрок, `FIGHT(=-5) PART(=+5) \| o` турнир, `FIGHT(=+5) \| o` война, `SOMEONE FIGHT(=+5) \| o` солдат'
   status: '**ось добавлена** (лакуна из математического кодирования, [docs/math.md](../docs/math.md)): слепой тест 12 слов × 2 кодировщика — без оси 11 точных из 24 (игра и спорт читаются как *duel, boxing*), с осью 17 из 24 и 21 из 24 среди трёх ответов — [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md)'
   en_axis: '-5 game, sport, competition by rules ... 0 brawl, quarrel ... +5 war to the death. Bare root: fight, conflict. `SOMEONE FIGHT(=-5) | o` player, `FIGHT(=+5) | o` war.'
@@ -647,7 +607,6 @@ roots:
     neg: тот, кто делает
     mid: само действие
     pos: то, чем делают
-  one_sided: false
   ru_axis: 'роль в действии (−5 тот, кто делает, деятель … 0 само действие … +5 то, чем делают: орудие, инструмент, средство); без значения — делать. Корни описывают действие, `DO(=+5)` делает из него орудие: `JOIN(=-4) TOUCH(=+4) DO(=+5) \| o` нож, `TEXT DO(=+5) \| o` ручка, `MEASURE HEAT DO(=+5) \| o` градусник, `SEE DO(=+5) \| o` очки'
   status: '**ось добавлена** вместо метки `U` (как эсперантские *-ist* и *-il*): орудия на существующих корнях 1 точное из 24 (`THING(=-5)` читается как камень), с меткой `U` 13 из 24 — [roundtrip_tools](../data/translation_test/roundtrip_tools.md), с осью у DO 17 из 24 — [roundtrip_merge](../data/translation_test/roundtrip_merge.md)'
   en_axis: '-5 the doer, agent ... 0 the action itself ... +5 the tool, instrument, means. Bare root: do, make. The roots describe the action and `DO(=+5)` turns it into a tool: `JOIN(=-4) TOUCH(=+4) DO(=+5) | o` knife, `TEXT DO(=+5) | o` pen, `SEE DO(=+5) | o` glasses.'

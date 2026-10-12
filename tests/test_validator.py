@@ -32,6 +32,7 @@ GOOD = [
     "DO | i K+4 E SOMEONE | o",
     "MANY(=0) | e",
     "MANY(=-3) | e",
+    "MANY(=-5) | o",
     "CONSUME | i !",
 ]
 

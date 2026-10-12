@@ -48,12 +48,17 @@ function wordProblems(word) {
   if (!body) return [];
   const roots = [], bad = [];
   for (const t of body.split(/\s+/)) {
-    const m = t.match(/^([A-Z]+)(?:\(=([+-]?)(\d)\))?$/);
+    const m = t.match(/^([A-Z]+)(?:\(=([+-]?)(\d+)\))?$/);
     if (!m) { bad.push(`malformed token ${t}`); continue; }
     if (["PI", "FROM", "FOR", "LIKE", "E", "AND", "LA", "PE", "LI"].includes(m[1])) continue;
     if (!CHECK.roots.includes(m[1])) bad.push(`unknown root ${m[1]}`);
     else roots.push(m[1]);
-    if (m[3] && m[3] !== "0" && !m[2]) bad.push(`value without sign in ${t} (write (=+${m[3]}))`);
+    if (!m[3]) continue;
+    const v = Number((m[2] || "+") + m[3]), lv = CHECK.levels[m[1]];
+    if (m[3] !== "0" && !m[2]) bad.push(`value without sign in ${t} (write (=+${m[3]}))`);
+    if (CHECK.noaxis.includes(m[1])) bad.push(`${m[1]} has no axis, write it without a value`);
+    else if (v < -5 || v > 5) bad.push(`value out of range in ${t} (-5…+5)`);
+    else if (lv && !lv.includes(v)) bad.push(`${m[1]} takes only ${lv.map((x) => (x > 0 ? "+" : "") + x).join(" ")}`);
   }
   const counted = roots.filter((r) => r !== CHECK.extra_root);
   const compass = counted.length === CHECK.compass.length && CHECK.compass.every((r) => counted.includes(r));
@@ -68,7 +73,7 @@ async function ask(env, messages) {
     body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 700, temperature: 0, messages }),
   });
   if (!r.ok) return { error: r.status };
-  const data = await r.json();
+  const data = await r.json().catch(() => ({}));
   const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "";
   const m = raw.match(/\{[\s\S]*\}/);
   try { return { raw, obj: JSON.parse(m[0]) }; } catch { return { raw }; }
@@ -103,8 +108,10 @@ export default {
       if (!success) return json({ error: "too many requests, wait a minute / слишком много запросов" }, 429, h);
     }
 
+    if (Number(req.headers.get("content-length") || 0) > 4096) return json({ error: "body too large" }, 413, h);
     let body;
     try { body = await req.json(); } catch { return json({ error: "bad json" }, 400, h); }
+    if (!body || typeof body !== "object" || Array.isArray(body)) return json({ error: "bad json" }, 400, h);
     const lang = body.lang === "ru" ? "ru" : "en", t = MSG[lang];
     const mode = body.mode;
     const text = String(body.text || "").trim();
@@ -112,18 +119,22 @@ export default {
     if (text.length > MAX_INPUT) return json({ error: t.long(MAX_INPUT) }, 400, h);
 
     // encode с prev и confused — повторное кодирование со вторым словом
-    const prev = mode === "encode" && typeof body.prev === "string" ? body.prev.trim().slice(0, MAX_INPUT) : "";
-    const confused = Array.isArray(body.confused) ? body.confused.filter((x) => typeof x === "string").map((x) => x.trim().slice(0, 40)).filter(Boolean).slice(0, 5) : [];
+    // prev и confused идут в системный промпт: только код по правилам и английские слова
+    let prev = mode === "encode" && typeof body.prev === "string" ? body.prev.trim().slice(0, MAX_INPUT) : "";
+    if (!/^[A-Za-z0-9 ()=+|"'-]*$/.test(prev) || codeProblems(prev).length) prev = "";
+    const confused = Array.isArray(body.confused) ? body.confused.filter((x) => typeof x === "string").map((x) => x.trim().slice(0, 40)).filter((x) => /^[A-Za-z' -]+$/.test(x)).slice(0, 5) : [];
     const system = (mode === "encode" ? ENC_SPEC + (lang === "ru" ? ENCODE_TASK_RU : ENCODE_TASK_EN) + (prev && confused.length ? SECOND_TASK(prev, confused.join(", ")) : "")
       : DEC_SPEC + (lang === "ru" ? DECODE_TASK_RU : DECODE_TASK_EN));
     const messages = [{ role: "system", content: system }, { role: "user", content: text }];
-    let a = await ask(env, messages);
+    // сбой сети или ответ не JSON — 502 с заголовками CORS, а не 500 без них
+    const tryAsk = (ms) => ask(env, ms).catch(() => ({ error: "network" }));
+    let a = await tryAsk(messages);
     if (a.error) return json({ error: t.down, status: a.error }, 502, h);
     if (mode === "encode" && a.obj) {
       const bad = codeProblems(a.obj.code);
       if (bad.length) {  // одна попытка исправить
         messages.push({ role: "assistant", content: a.raw }, { role: "user", content: `Your code breaks the rules: ${bad.join("; ")}. Fix it and reply with the JSON object only.` });
-        const b = await ask(env, messages);
+        const b = await tryAsk(messages);
         if (b.obj) a = b;
         const left = codeProblems(a.obj.code);
         if (left.length) a.obj.warnings = left;
