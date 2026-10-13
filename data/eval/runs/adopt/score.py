@@ -33,3 +33,9 @@ cmp("new", "old", NR, "новые корни, все")
 for r in ("LAND", "SACRED", "CONTAINER"): cmp("new", "old", [w for w in NR if its[w]["root"] == r], r)
 cmp("drop", "new", AB, "без SIDE/CARE/MOOD, все")
 for r in ("SIDE", "CARE", "MOOD"): cmp("drop", "new", [w for w in AB if its[w]["root"] == r], "без " + r)
+# после ответов (не заявлено заранее): новый корень — род (первым) или уточнение
+hd = lambda w: its[w]["sz2"].split()[0].split("(")[0] in ("LAND", "SACRED", "CONTAINER")
+cmp("new", "old", [w for w in NR if hd(w)], "новый корень — род")
+cmp("new", "old", [w for w in NR if not hd(w)], "новый корень — уточнение")
+for r in ("LAND", "SACRED", "CONTAINER"):
+    for h in (True, False): cmp("new", "old", [w for w in NR if its[w]["root"] == r and hd(w) == h], f"{r} {'род' if h else 'уточн.'}")
