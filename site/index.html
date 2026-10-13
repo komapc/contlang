@@ -486,10 +486,11 @@ async function mathWord(word){
     return;
   }
   await new Promise(r => setTimeout(r, 0));
-  // часть речи слова неизвестна: без штрафа; слово не первое — кодер пробует пару «код PI второе слово» (Reader.encode)
-  // самопроверка (Reader.encode): код из кандидатов, при котором слово читается выше всего
+  // Reader.encode: имя — в кавычках, множественное — лемма с N+3, часть речи — из WordNet;
+  // если имя не первое — кодер пробует пару «код PI второе слово»
   const rd = await reader(), e = rd.encode(w);
-  const sc = e.mod ? rd.scores(e.code) : rd.prf(rd.roots(e.S, e.v, ""));
+  if (e.name) { setCode($("mcode"), $("mcodeAx"), e.code); $("mcos").textContent = ""; mark($("mbest"), w, w); $("mnear").textContent = ""; return; }
+  const sc = (e.mod || e.name) ? rd.scores(e.code) : rd.prf(rd.roots(e.S, e.v, e.form));
   setCode($("mcode"), $("mcodeAx"), e.code);
   const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
   $("mcos").textContent = T("cos")(e.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");

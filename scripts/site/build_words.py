@@ -8,6 +8,8 @@ stop  — номера служебных слов (местоимения, пр
 sexed — номера слов, у которых пол — часть смысла: male, female… или первый нарицательный синсет WordNet начинается
         с «a woman / a male / a young man…» либо лежит под man, woman, male, female. Только им кодер даёт корень SEX:
         teacher, president, chief — без пола (data/eval/runs/sex).
+proper — номера имён собственных: все значения слова в WordNet — с заглавной (jakarta, monroe); кодер пишет их в кавычках.
+plural — номера форм множественного числа имени (dolphins → dolphin, лемма есть в словаре): кодер кодирует лемму с меткой N+3.
 
 Запуск локально (нужен WordNet в data/raw/nltk):
     .venv/bin/python scripts/site/build_words.py
@@ -57,6 +59,11 @@ def sexed(w):
     return any((HEAD.search(s.definition()) and not BOTH.search(s.definition())) or s.name() in SEXROOT or SEXROOT & {h.name() for h in s.closure(lambda x: x.hypernyms())} for s in ss)
 
 
+def proper(w):
+    ls = {l.name() for p in P for b in {wn.morphy(w, p), w} - {None} for l in wn.lemmas(b, pos=p)}
+    return bool(ls) and all(n[0].isupper() for n in ls)
+
+
 def shares(w):
     c = dict.fromkeys(P, 0.0)
     for p in P:
@@ -72,7 +79,7 @@ def shares(w):
 def main():
     words = json.loads((OUT / "math.json").read_text(encoding="utf8"))["words"]
     index = {w: i for i, w in enumerate(words)}
-    pos, lemma, stop, sx = [], [], [], []
+    pos, lemma, stop, sx, pr, pl = [], [], [], [], [], []
     for i, w in enumerate(words):
         sh = shares(w)
         pos.append("".join(str(min(9, round(sh[p] * 9))) for p in P) if sh else "")
@@ -82,9 +89,13 @@ def main():
             sx.append(i)
         base = wn.morphy(w, max(P, key=sh.get)) if sh else None
         lemma.append(index[base] if base and base != w and base in index else -1)
-    (OUT / "words.json").write_text(json.dumps({"pos": pos, "lemma": lemma, "stop": stop, "sexed": sx}, separators=(",", ":")), encoding="utf8")
+        if sh and i not in stop[-1:] and proper(w):
+            pr.append(i)
+        elif sh and max(P, key=sh.get) == "n" and lemma[-1] >= 0:
+            pl.append(i)
+    (OUT / "words.json").write_text(json.dumps({"pos": pos, "lemma": lemma, "stop": stop, "sexed": sx, "proper": pr, "plural": pl}, separators=(",", ":")), encoding="utf8")
     print(f"слов {len(words)}, служебных {len(stop)}, со своей леммой в словаре {sum(x >= 0 for x in lemma)}, "
-          f"с полом {len(sx)}, words.json {(OUT / 'words.json').stat().st_size // 1024} КБ")
+          f"с полом {len(sx)}, имён {len(pr)}, множественных {len(pl)}, words.json {(OUT / 'words.json').stat().st_size // 1024} КБ")
 
 
 if __name__ == "__main__":
