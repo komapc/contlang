@@ -1,0 +1,50 @@
+1. speech | statement | lecture
+2. death | corpse | stillness
+3. army | battle | troop
+4. vicinity | neighborhood | spot
+5. official | judge | lawyer
+6. brute | bully | tough
+7. purpose | intention | plan
+8. pet | darling | companion
+9. negotiation | diplomacy | peace talks
+10. sand | gravel | dust
+11. attack | assault | hostility
+12. race | sprint | running
+13. fiber | thread | hair
+14. antenna | cable | wire
+15. computation | calculation | data
+16. scream | shout | cry
+17. shop | store | market
+18. roof | top | ceiling
+19. smoke | steam | vapor
+20. right | entitlement | claim
+21. outbreak | wave | epidemic
+22. equality | ratio | proportion
+23. rest | pause | break
+24. spine | backbone | spinal column
+25. critique | criticism | question
+26. surface | front | facade
+27. device | gadget | machine
+28. ghost | spirit | phantom
+29. connection | link | network
+30. analyst | scientist | statistician
+31. deadline | final | finish
+32. flame | fuel | fumes
+33. stomach | throat | mouth
+34. winter | dawn | beginning
+35. library | bookshelf | archive
+36. livestock | cattle | asset
+37. finish | final | ending
+38. tax | tariff | fee
+39. quarry | heap | pile
+40. boxing | wrestling | martial art
+41. philosophy | theory | humanities
+42. ice cream | sorbet | gelato
+43. tube | pipe | core
+44. stray | loner | outcast
+45. soldier | warrior | fighter
+46. grain | particle | speck
+47. entrance | foyer | lobby
+48. play | game | sport
+49. aesthetics | philosophy | theory
+50. fluff | feather | down

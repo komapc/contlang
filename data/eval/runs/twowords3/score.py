@@ -5,17 +5,18 @@
 # DEF=1 — A, H, S и GTS (кодер-«определение», ответы ../definition/{s,gts}/ans_K_R.md).
 # BOLD=1 — A, H, B3 и B5 (кодер «коротко и резко», ответы ../bold/{b3,b5}/ans_K_R.md).
 # TAX=1 — A, H, T (род по таксономии) и M (корни модели, значения математики), ответы ../taxonomy/{t,mr}/ans_K_R.md.
+# MEAS=1 — A, H, T, M и значения по измерению ../measure: X = MZ (корни модели), Y = TZ (корни T), Z = SZ (без подгонки), ответы ../measure/{mz,tz,sz}/ans_K_R.md.
 # Проверка другим читателем: SONNET=1 — ответы Sonnet sonnet/v/ans_K_1.md (A, H, I, по одному на половину).
 import gzip, json, os, re, sys, numpy as np
 from nltk.corpus import wordnet as wn
 D = os.path.dirname(os.path.abspath(__file__)); NB = sys.argv[1]
-T = f"{D}/../twowords2"; items = json.load(open(f"{T}/items.json")); SON = os.environ.get("SONNET") == "1"; DIS = os.environ.get("DISTILL") == "1"; DEF = os.environ.get("DEF") == "1"; BOLD = os.environ.get("BOLD") == "1"; TAX = os.environ.get("TAX") == "1"; VS = "ahi" if SON else "abhn" if DIS else "ahpq" if DEF else "ahjk" if BOLD else "ahtm" if TAX else "abcdefghi"; RS = "1" if SON else "12"; it3 = json.load(open(f"{D}/items.json")); N = len(items)
+T = f"{D}/../twowords2"; items = json.load(open(f"{T}/items.json")); SON = os.environ.get("SONNET") == "1"; DIS = os.environ.get("DISTILL") == "1"; DEF = os.environ.get("DEF") == "1"; BOLD = os.environ.get("BOLD") == "1"; TAX = os.environ.get("TAX") == "1"; MEAS = os.environ.get("MEAS") == "1"; VS = "ahi" if SON else "abhn" if DIS else "ahpq" if DEF else "ahjk" if BOLD else "ahtm" if TAX else "ahtmxyz" if MEAS else "abcdefghi"; RS = "1" if SON else "12"; it3 = json.load(open(f"{D}/items.json")); N = len(items)
 toks = lambda p: [w for w in re.sub(r"[^a-z -]", "", p.lower()).replace("-", " ").split() if w not in {"the", "a", "an", "of", "to"}]
 ans = {}
 for v in VS:
     for k in "12":
         for r in RS:
-            for l in open(f"{D}/sonnet/{v}/ans_{k}_{r}.md" if SON else f"{D}/../distill/n/ans_{k}_{r}.md" if v == "n" else f"{D}/../definition/{ {'p': 's', 'q': 'gts'}[v] }/ans_{k}_{r}.md" if v in "pq" else f"{D}/../bold/{ {'j': 'b3', 'k': 'b5'}[v] }/ans_{k}_{r}.md" if v in "jk" else f"{D}/../taxonomy/{ {'t': 't', 'm': 'mr'}[v] }/ans_{k}_{r}.md" if TAX and v in "tm" else f"{D if v in 'fghi' else T}/{v}/ans_{k}_{r}.md"):
+            for l in open(f"{D}/sonnet/{v}/ans_{k}_{r}.md" if SON else f"{D}/../distill/n/ans_{k}_{r}.md" if v == "n" else f"{D}/../definition/{ {'p': 's', 'q': 'gts'}[v] }/ans_{k}_{r}.md" if v in "pq" else f"{D}/../bold/{ {'j': 'b3', 'k': 'b5'}[v] }/ans_{k}_{r}.md" if v in "jk" else f"{D}/../taxonomy/{ {'t': 't', 'm': 'mr'}[v] }/ans_{k}_{r}.md" if (TAX or MEAS) and v in "tm" else f"{D}/../measure/{ {'x': 'mz', 'y': 'tz', 'z': 'sz'}[v] }/ans_{k}_{r}.md" if v in "xyz" else f"{D if v in 'fghi' else T}/{v}/ans_{k}_{r}.md"):
                 m = re.match(r"\s*(\d+)\.\s*(.*)", l)
                 if m and 1 <= int(m[1]) <= 50: ans[(v, r, (int(k) - 1) * 50 + int(m[1]) - 1)] = [x.strip() for x in re.split(r"[|,]", m[2]) if x.strip()]
 def syn(w):
@@ -46,14 +47,14 @@ def place(p, i):
 gm = lambda xs: round(float(np.exp(np.mean(np.log(xs)))), 1)
 P = {v: np.array([[place(ans[(v, r, i)][0], i) if (v, r, i) in ans else len(W) for r in RS] for i in range(N)]) for v in VS}
 top3 = {v: sum(any(place(p, i) == 1 for p in ans.get((v, r, i), [])[:3]) for i in range(N) for r in RS) for v in VS}
-NAME = {"a": "A один код", "b": "B код, выбранный моделью", "c": "C пара кодами математики", "d": "D пара кодами, выбранными моделью", "e": "E пара словами", "f": "F X словом, Y кодом", "g": "G X кодом, Y словом", "h": "H один код модели", "i": "I пара кодами модели", "n": "N кодер с перенесённым словарём (../distill)", "p": "S толкование (../definition)", "q": "GTS род + правда + толкование (../definition)", "j": "B3 коротко: 0, ±3, ±5, δ 0,03 (../bold)", "k": "B5 резко: 0, ±5, δ 0,06 (../bold)", "t": "T род по таксономии (../taxonomy)", "m": "M корни модели, значения математики (../taxonomy)"}
+NAME = {"a": "A один код", "b": "B код, выбранный моделью", "c": "C пара кодами математики", "d": "D пара кодами, выбранными моделью", "e": "E пара словами", "f": "F X словом, Y кодом", "g": "G X кодом, Y словом", "h": "H один код модели", "i": "I пара кодами модели", "n": "N кодер с перенесённым словарём (../distill)", "p": "S толкование (../definition)", "q": "GTS род + правда + толкование (../definition)", "j": "B3 коротко: 0, ±3, ±5, δ 0,03 (../bold)", "k": "B5 резко: 0, ±5, δ 0,06 (../bold)", "t": "T род по таксономии (../taxonomy)", "m": "M корни модели, значения математики (../taxonomy)", "x": "MZ корни модели, значения по измерению (../measure)", "y": "TZ корни T, значения по измерению (../measure)", "z": "SZ род + самые выраженные оси, без подгонки (../measure)"}
 for v in VS:
     print(f"{NAME[v]}: место (геом. среднее) {gm(P[v].ravel())}, первым {int((P[v] == 1).sum())}/{len(RS) * N}, в тройке {top3[v]}/{len(RS) * N}")
-json.dump({v: P[v].tolist() for v in P}, open(f"{D}/places{'_sonnet' if SON else '_distill' if DIS else '_def' if DEF else '_bold' if BOLD else '_tax' if TAX else ''}.json", "w"))
+json.dump({v: P[v].tolist() for v in P}, open(f"{D}/places{'_sonnet' if SON else '_distill' if DIS else '_def' if DEF else '_bold' if BOLD else '_tax' if TAX else '_meas' if MEAS else ''}.json", "w"))
 rng = np.random.default_rng(0)
-for x, y in (("h", "a"), ("i", "a"), ("i", "h")) if SON else (("n", "a"), ("n", "b"), ("h", "n")) if DIS else (("p", "a"), ("q", "a"), ("q", "p"), ("h", "q")) if DEF else (("j", "a"), ("k", "a"), ("k", "j"), ("h", "j"), ("h", "k")) if BOLD else (("t", "a"), ("m", "a"), ("h", "m"), ("h", "t"), ("m", "t")) if TAX else (("f", "d"), ("g", "d"), ("f", "g"), ("h", "a"), ("h", "b"), ("i", "d"), ("i", "h"), ("i", "a")):
+for x, y in (("h", "a"), ("i", "a"), ("i", "h")) if SON else (("n", "a"), ("n", "b"), ("h", "n")) if DIS else (("p", "a"), ("q", "a"), ("q", "p"), ("h", "q")) if DEF else (("j", "a"), ("k", "a"), ("k", "j"), ("h", "j"), ("h", "k")) if BOLD else (("t", "a"), ("m", "a"), ("h", "m"), ("h", "t"), ("m", "t")) if TAX else (("x", "h"), ("x", "m"), ("y", "t"), ("z", "a"), ("z", "t"), ("y", "a")) if MEAS else (("f", "d"), ("g", "d"), ("f", "g"), ("h", "a"), ("h", "b"), ("i", "d"), ("i", "h"), ("i", "a")):
     rat = (np.log(P[x]) - np.log(P[y])).mean(1); bs = [np.exp(rat[rng.integers(0, N, N)].mean()) for _ in range(5000)]
     print(f"{x.upper()} / {y.upper()} {np.exp(rat.mean()):.2f} 95 % {np.round(np.percentile(bs, [2.5, 97.5]), 2)}  (< 1 — {x.upper()} лучше)")
 print()
 for i, it in enumerate(items):
-    print(f"{it['w']} [{it['pair']}]: " + " | ".join(f"{v.upper()} {[ans.get((v, r, i), ['—'])[0] for r in '12']}" for v in (VS if SON or DIS or DEF or BOLD or TAX else "abdfghi")) + f"\n    H `{it3[i]['H']}`  I `{it3[i]['I']}`")
+    print(f"{it['w']} [{it['pair']}]: " + " | ".join(f"{v.upper()} {[ans.get((v, r, i), ['—'])[0] for r in '12']}" for v in (VS if SON or DIS or DEF or BOLD or TAX or MEAS else "abdfghi")) + f"\n    H `{it3[i]['H']}`  I `{it3[i]['I']}`")
