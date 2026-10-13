@@ -301,13 +301,14 @@
       return { S, v, unknown };
     }
     // «не упомянут — значит, мал»: из суммы вычитается negW·|y|·(единичный вектор суммы центров НЕупомянутых корней); при negW = 0 — как раньше
+    // negVec — свой вес у каждого корня: вычитается |y|·Σ negVec[r]·C[r] по неупомянутым r (без нормировки суммы)
     mixFor(S, parts) {
-      const w = this.opt.negW; if (!w) return this.mix;
+      const w = this.opt.negW, wv = this.opt.negVec; if (!w && !wv) return this.mix;
       const C = this.co.C, D = C[0].length, n = new Float64Array(D), y = new Float64Array(D);
-      for (let r = 0; r < C.length; r++) if (!S.includes(r)) for (let j = 0; j < D; j++) n[j] += C[r][j];
+      for (let r = 0; r < C.length; r++) if (!S.includes(r)) { const k = wv ? wv[r] : 1; for (let j = 0; j < D; j++) n[j] += k * C[r][j]; }
       for (const p of parts) for (let j = 0; j < D; j++) y[j] += p[j];
-      const ny = Math.sqrt(dot(y, y)), nn = Math.sqrt(dot(n, n)) || 1;
-      return Object.assign({}, this.mix, { neg: n.map((t) => (w * ny * t) / nn) });
+      const ny = Math.sqrt(dot(y, y)), nn = wv ? 1 : Math.sqrt(dot(n, n)) || 1;
+      return Object.assign({}, this.mix, { neg: n.map((t) => ((wv ? 1 : w) * ny * t) / nn) });
     }
     // оценки слов для набора корней; form — часть речи (o/i/a/e) или "" (без штрафа)
     roots(S, v, form) { const parts = this.co.parts(S, v); return this.V.adjust(this.V.scores(parts, this.mixFor(S, parts)), form || "", this.opt.posPen); }

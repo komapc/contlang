@@ -2,7 +2,7 @@
 // Кодер не меняется (коды те же), меняется только чтение. Словарь и смесь — как на сайте (site/data/math.json).
 // ① dev (100 слов, с частью речи), ① 1000 (rand1000), ① другие 1000 (seed 11, как в ../anchor/eval.js) — место слова, первыми, cos первого прочтения;
 // тест 1 — математика читает коды моделей (../mathread/calib.json) и рецепты: cos первого прочтения со словом.
-//   node data/eval/runs/negw/eval.js 0 0.1 0.2 0.3 0.4 0.6
+//   node data/eval/runs/negw/eval.js 0 0.2 0.4 0.6 learned_10:2 mean:2   (имя:κ — веса по корням из weights.json, fit.py, умноженные на κ)
 const fs = require("fs"), path = require("path"), D = __dirname, MR = path.join(D, "../mathread");
 const { V, m, MM } = require(path.join(D, "../../../../scripts/site/eval_math.js"));
 const dot = (a, b) => { let s = 0; for (let j = 0; j < a.length; j++) s += a[j] * b[j]; return s; };
@@ -18,8 +18,11 @@ const co = new MM.Coder(m.dict, m.has_axis, m.names, m);
 const enc = (ws) => ws.map(([w, f]) => ({ w, f, ...co.encode(V.vec(w)) }));
 const E = { dev: enc(dev), r1: enc(rand.map((w) => [w, ""])), r2: enc(rand2.map((w) => [w, ""])) };
 const out = {};
-for (const negW of process.argv.slice(2).map(Number)) {
-  const rd = new MM.Reader(co, V, m.mix, { negW }), row = {};
+const WT = fs.existsSync(path.join(D, "weights.json")) ? JSON.parse(fs.readFileSync(path.join(D, "weights.json"))) : {};
+const OUT = process.env.OUT || "results.json";
+for (const negW of process.argv.slice(2)) {
+  const [wn, k] = negW.split(":"), opt = k ? { negVec: WT[wn].map((t) => t * Number(k)) } : { negW: Number(negW) };
+  const rd = new MM.Reader(co, V, m.mix, opt), row = {};
   for (const [k, es] of Object.entries(E)) {
     const res = es.map((e) => { const sc = rd.roots(e.S, e.v, e.f); return { r: V.rankIn(sc, e.w), c: cosw(V.top(sc, 1)[0].word, e.w) }; });
     row[k] = { ranks: res.map((x) => x.r), c1: res.map((x) => x.c) };
@@ -30,4 +33,4 @@ for (const negW of process.argv.slice(2).map(Number)) {
   const g = (k) => `${(row[k].c1.reduce((s, x) => s + x, 0) / row[k].c1.length).toFixed(3)} (близко ${row[k].c1.filter((x) => x >= 0.5).length})`;
   console.log(`negW ${negW}: dev ${f("dev")} | 1000 ${f("r1")} | другие 1000 ${f("r2")} | коды моделей ${g("calib")} | рецепты ${g("rec")}`);
 }
-fs.writeFileSync(path.join(D, "results.json"), JSON.stringify(out));
+fs.writeFileSync(path.join(D, OUT), JSON.stringify(out));
