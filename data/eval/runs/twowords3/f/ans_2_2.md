@@ -1,0 +1,50 @@
+1. junk mail | flyer | leaflet
+2. alien | creature | settler
+3. layer | altitude | level
+4. district | zone | region
+5. employee | staff member | worker
+6. dissident | critic | protester
+7. rank | order | command
+8. soldier | fighter | combatant
+9. peace talks | negotiations | dialogue
+10. ingot | bullion | coin
+11. service | donation | job
+12. event | discipline | athletics
+13. letter | character | word
+14. console | keyboard | screen
+15. degree | level | grade
+16. bat | club | racket
+17. reserve | colony | territory
+18. workshop | studio | loft
+19. heater | stove | furnace
+20. benefit | perk | bonus
+21. rhythm | cadence | design
+22. census | quota | count
+23. member | component | element
+24. joint | knee | elbow
+25. meeting | discussion | conference
+26. highway | road | expressway
+27. driver | pilot | rider
+28. gentleman | man | friend
+29. equality | uniformity | consistency
+30. guest | partygoer | celebrant
+31. process | operation | procedure
+32. hallway | corridor | passage
+33. digestion | intake | absorption
+34. harvest | feast | festival
+35. battlefield | front | trench
+36. lion | cheetah | leopard
+37. competition | sport | match
+38. company | business | agency
+39. apartment | flat | dwelling
+40. sportsmanship | fair play | team spirit
+41. religion | theology | doctrine
+42. soap | tallow | wax
+43. pipe | rod | tube
+44. shellfish | seafood | prawn
+45. judge | prisoner | magistrate
+46. atom | molecule | fragment
+47. fence | wall | barricade
+48. raffle | lottery | giveaway
+49. legend | myth | fable
+50. compound | blend | portmanteau

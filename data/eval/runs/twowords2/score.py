@@ -44,6 +44,7 @@ top3 = {v: sum(any(place(p, i) == 1 for p in ans.get((v, r, i), [])[:3]) for i i
 NAME = {"a": "A один код", "b": "B код, выбранный моделью", "c": "C пара кодами математики", "d": "D пара кодами, выбранными моделью", "e": "E пара словами"}
 for v in "abcde":
     print(f"{NAME[v]}: место (геом. среднее) {gm(P[v].ravel())}, первым {int((P[v] == 1).sum())}/{2 * N}, в тройке {top3[v]}/{2 * N}")
+json.dump({v: P[v].tolist() for v in P}, open(f"{D}/places.json", "w"))
 rng = np.random.default_rng(0)
 for x, y in (("b", "a"), ("c", "a"), ("d", "a"), ("d", "c"), ("d", "b"), ("e", "d")):
     rat = (np.log(P[x]) - np.log(P[y])).mean(1); bs = [np.exp(rat[rng.integers(0, N, N)].mean()) for _ in range(5000)]
