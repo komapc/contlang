@@ -30,7 +30,10 @@ def build(new, items, V, sexok, opts=None):
     opts = opts or {}
     names = list(m["names"]); C = list(np.array(m["dict"]["C"])); A = list(np.array(m["dict"]["A"])); ax = list(m["has_axis"])
     spec = lib.spec_from(f"{D}/spec.md") if new else lib.SPEC
-    if new:
+    LD = opts.get("dict")  # обученный словарь {names, C, A} вместо math.json; выраженность у всех корней одна
+    if LD is not None:
+        names = list(LD["names"]); C = list(LD["C"]); A = list(LD["A"]); ax = [bool(a.any()) for a in A]
+    if new and LD is None:
         for r in ("LAND", "SACRED", "CONTAINER"):
             sp = spec[r]; vec = lambda ws: np.mean([V[w] for w in ws if w in V], 0)
             c = vec(sp["plain"] + [w for _, ws in sp["pts"] for w in ws]); a = vec([w for v, ws in sp["pts"] if v > 0 for w in ws]) - vec([w for v, ws in sp["pts"] if v < 0 for w in ws])
@@ -42,7 +45,7 @@ def build(new, items, V, sexok, opts=None):
     out = {}
     for w in items:
         bw = opts.get("base", {}).get(w); x = V[bw] if bw and bw in V else V[w]; zC = (x @ C.T - mC) / sC; zA = (x @ A.T - mA) / sA
-        sal = np.where(np.array(ax) & (np.arange(len(names)) < 44), np.maximum(np.abs(zA), zC), zC)  # у новых корней — только центр
+        sal = np.where(np.array(ax) & ((np.arange(len(names)) < 44) | (LD is not None)), np.maximum(np.abs(zA), zC), zC)  # у новых корней — только центр
         def val(i):
             if not ax[i] or abs(zA[i]) < Z0: return 0
             t = int(np.sign(zA[i]) * 5); L = lv(names[i]); return t if t in L else (max(L) if t > 0 else min(L))
