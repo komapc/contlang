@@ -148,6 +148,7 @@
       const N = this.words.length, D = this.dim, K = parts.length;
       const y = new Float64Array(D);
       for (const p of parts) for (let j = 0; j < D; j++) y[j] += p[j];
+      if (mix.neg) for (let j = 0; j < D; j++) y[j] -= mix.neg[j];
       const unitv = (u) => { let n = 0; for (let j = 0; j < D; j++) n += u[j] * u[j]; n = Math.sqrt(n); return u.map((t) => t / n); };
       const vs = [unitv(y)].concat(parts.map(unitv));
       const out = vs.map(() => new Float64Array(N));
@@ -277,7 +278,7 @@
   // pairN — сколько соседей слова кодер пробует вторым словом (Reader.encode);
   // prfMu, prfK — PRF: сдвиг оценок к центру prfK лучших прочтений. Выключен: парам моделей помогает, а круг математики портит (docs/math.md, раздел 9).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
+  const READ = { negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -299,8 +300,17 @@
       for (const w of Reader.words(code)) { const p = this.co.parse(w.text); S.push(...p.S); v.push(...p.v); unknown.push(...p.unknown); }
       return { S, v, unknown };
     }
+    // «не упомянут — значит, мал»: из суммы вычитается negW·|y|·(единичный вектор суммы центров НЕупомянутых корней); при negW = 0 — как раньше
+    mixFor(S, parts) {
+      const w = this.opt.negW; if (!w) return this.mix;
+      const C = this.co.C, D = C[0].length, n = new Float64Array(D), y = new Float64Array(D);
+      for (let r = 0; r < C.length; r++) if (!S.includes(r)) for (let j = 0; j < D; j++) n[j] += C[r][j];
+      for (const p of parts) for (let j = 0; j < D; j++) y[j] += p[j];
+      const ny = Math.sqrt(dot(y, y)), nn = Math.sqrt(dot(n, n)) || 1;
+      return Object.assign({}, this.mix, { neg: n.map((t) => (w * ny * t) / nn) });
+    }
     // оценки слов для набора корней; form — часть речи (o/i/a/e) или "" (без штрафа)
-    roots(S, v, form) { return this.V.adjust(this.V.scores(this.co.parts(S, v), this.mix), form || "", this.opt.posPen); }
+    roots(S, v, form) { const parts = this.co.parts(S, v); return this.V.adjust(this.V.scores(parts, this.mixFor(S, parts)), form || "", this.opt.posPen); }
     // PRF: оценки сдвигаются к центру prfK лучших прочтений
     prf(sc) { return this.opt.prfMu ? this.V.toward(sc, this.V.top(sc, this.opt.prfK).map((n) => n.word), this.opt.prfMu) : sc; }
     // прочтения одного уточняющего слова: слово в кавычках, если оно есть в словаре, иначе pairK лучших
@@ -317,7 +327,7 @@
       if (!h.S.length) return new Float64Array(this.V.words.length).fill(-Infinity);  // у главного слова нет корней — читать нечего
       let parts = this.co.parts(h.S, h.v);
       if (this.opt.modW) for (const w of ws.slice(1)) { const p = this.co.parse(w.text); parts = parts.concat(this.co.parts(p.S, p.v).map((a) => a.map((t) => t * this.opt.modW))); }
-      const sc = this.prf(this.V.adjust(this.V.scores(parts, this.mix), Reader.form(ws[0].text), this.opt.posPen));
+      const sc = this.prf(this.V.adjust(this.V.scores(parts, this.mixFor(h.S, parts)), Reader.form(ws[0].text), this.opt.posPen));
       const rd = ws.slice(1).map((w) => ({ link: w.link, words: this.readings(w.text) })), mods = rd.flatMap((r) => r.words);
       if (!mods.length) return sc;
       const out = this.V.pair(sc, mods, this.opt.pairLam), gw = this.opt.graphW;
