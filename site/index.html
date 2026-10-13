@@ -495,7 +495,7 @@ async function mathWord(word){
   $("mcos").textContent = T("cos")(e.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = T("next") + nb.slice(1).map(n => n.word).join(", ") + (rk ? T("rank")(rk, nloc(V.words.length)) : "");
-  const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;
+  const tb = $("mroots"), ban = rd.ban(w), top = co.singles(x).filter(t => !ban.includes(co.names.indexOf(t.name))).slice(0, 10), mx = top[0].cos;
   top.forEach(t => {
     const bar = el("div", null, "bar"); bar.style.width = Math.max(4, 100 * t.cos / mx) + "%";
     row(tb, [codeEl(t.has ? t.name + "(=" + (t.v > 0 ? "+" : "") + t.v + ")" : t.name), t.cos.toFixed(2), bar]);

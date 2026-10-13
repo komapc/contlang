@@ -47,9 +47,10 @@
       const key = S.map((r) => this.lid[r]).join(",");
       return this.grids[key] || (this.grids[key] = grid(S.map((r) => this.lv[r])));
     }
-    encode(x, m = 3) {
+    // ban — корни, которых у этого слова быть не может (SEX у слова без пола, Reader.ban)
+    encode(x, m = 3, ban) {
       const cx = this.C.map((c) => dot(c, x)), ax = this.A.map((a) => dot(a, x));
-      const order = [...Array(this.R).keys()].sort((i, j) => (Math.abs(cx[j]) + Math.abs(ax[j])) - (Math.abs(cx[i]) + Math.abs(ax[i])));
+      const order = [...Array(this.R).keys()].filter((r) => !(ban && ban.includes(r))).sort((i, j) => (Math.abs(cx[j]) + Math.abs(ax[j])) - (Math.abs(cx[i]) + Math.abs(ax[i])));
       const cand = order.slice(0, this.topr);
       let best = { cos: -2 };
       for (let k = 1; k <= m; k++) {
@@ -192,6 +193,8 @@
       meta.pos.forEach((p, i) => { if (p) for (let j = 0; j < 4; j++) this.pos[i * 4 + j] = Number(p[j]) / 9; });
       this.group = Int32Array.from(meta.lemma, (l, i) => (l >= 0 ? l : i));
       this.stop = new Uint8Array(N); meta.stop.forEach((i) => { this.stop[i] = 1; });
+      // пол — часть смысла (scripts/site/build_words.py): у слова или его леммы
+      this.sexed = new Uint8Array(N); (meta.sexed || []).forEach((i) => { this.sexed[i] = 1; });
     }
     // поправка оценок под форму кода: служебные слова убираются, слово не той части речи теряет pen·(1 − доля смыслов этой части речи)
     adjust(sc, form, pen) {
@@ -336,7 +339,13 @@
     absent(sc, S) {
       const lam = this.opt.absLam; if (!lam) return sc;
       const Z = this.V.rootZ(this.co.C), R = this.co.R, tau = this.opt.absTau, inS = new Uint8Array(R); S.forEach((r) => (inS[r] = 1));
-      for (let i = 0; i < sc.length; i++) { let mx = -9; const o = i * R; for (let r = 0; r < R; r++) if (!inS[r] && Z[o + r] > mx) mx = Z[o + r]; if (mx > tau) sc[i] -= lam * (mx - tau); }
+      // SEX без пола в коде штрафует только слова с полом (сродство teacher с SEX — уклон корпуса, не смысл)
+      const sx = this.co.names.indexOf("SEX"), V = this.V;
+      for (let i = 0; i < sc.length; i++) {
+        let mx = -9; const o = i * R, skip = sx >= 0 && V.sexed && !V.sexed[i] && !V.sexed[V.group[i]] ? sx : -1;
+        for (let r = 0; r < R; r++) if (!inS[r] && r !== skip && Z[o + r] > mx) mx = Z[o + r];
+        if (mx > tau) sc[i] -= lam * (mx - tau);
+      }
       return sc;
     }
     // PRF: оценки сдвигаются к центру prfK лучших прочтений
@@ -369,10 +378,16 @@
     // самопроверка: кандидаты — лучшие коды в 1, 2, 3 корня и их соседи (значение ±1, без одного корня); берётся код,
     // при котором слово читается выше всего, при равенстве — короче. keepHead: головной корень кода в 3 корня не меняется.
     // data/eval/runs/ideas, data/eval/runs/selfcheck
+    // корни, запрещённые слову: SEX, если пол не часть смысла (teacher, president — без пола; data/eval/runs/sex)
+    ban(word) {
+      const V = this.V, i = V.index.get(word), r = this.co.names.indexOf("SEX");
+      if (r < 0 || !V.sexed || i === undefined || V.sexed[i] || V.sexed[V.group[i]]) return [];
+      return [r];
+    }
     best(word, form, keepHead = this.opt.keepHead) {
-      const co = this.co, x = this.V.vec(word), base = co.encode(x), lv = (r) => co.lv[r], cand = [];
+      const co = this.co, x = this.V.vec(word), ban = this.ban(word), base = co.encode(x, 3, ban), lv = (r) => co.lv[r], cand = [];
       for (const k of [1, 2, 3]) {
-        const e = k === 3 ? base : co.encode(x, k);
+        const e = k === 3 ? base : co.encode(x, k, ban);
         cand.push([e.S, e.v]);
         e.S.forEach((r, i) => {
           if (co.has[r]) for (const d of [-1, 1]) { const nv = e.v[i] + d; if (lv(r).includes(nv)) cand.push([e.S, e.v.map((t, j) => (j === i ? nv : t))]); }
@@ -390,11 +405,11 @@
     encode(word, form) {
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
-      const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
+      const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x, 3, this.ban(word)), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "", S: b.S, v: b.v, cos: co.cosOf(x, b.S, b.v) };
       if (rank0 === 1) return out;
       for (const n of V.near(x, this.opt.pairN, word)) {
-        const e = co.encode(V.vec(n), 2);
+        const e = co.encode(V.vec(n), 2, this.ban(n));
         if (e.S.some((r) => b.S.includes(r))) continue;
         const mc = co.format(e.S, e.v, "o"), r = V.rankIn(V.pair(sc, this.readings(mc), this.opt.pairLam), word);
         if (r < out.rank) Object.assign(out, { code: `${base} PI ${mc}`, rank: r, mod: n });
