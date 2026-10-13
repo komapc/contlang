@@ -1,0 +1,210 @@
+A один код: место (геом. среднее) 142.2, первым 12/200, в тройке 30/200
+H один код модели: место (геом. среднее) 59.7, первым 38/200, в тройке 58/200
+B3 коротко: 0, ±3, ±5, δ 0,03 (../bold): место (геом. среднее) 186.4, первым 8/200, в тройке 21/200
+B5 резко: 0, ±5, δ 0,06 (../bold): место (геом. среднее) 175.2, первым 17/200, в тройке 28/200
+J / A 1.31 95 % [0.94 1.89]  (< 1 — J лучше)
+K / A 1.23 95 % [0.8  1.88]  (< 1 — K лучше)
+K / J 0.94 95 % [0.59 1.48]  (< 1 — K лучше)
+H / J 0.32 95 % [0.17 0.6 ]  (< 1 — H лучше)
+H / K 0.34 95 % [0.19 0.62]  (< 1 — H лучше)
+
+helm [device FOR ship]: A ['podium', 'column'] | H ['wheel', 'paddle'] | J ['bow', 'prow'] | K ['bow', 'bow']
+    H `MOVE SIDE | o tool`  I `DO | o tool FOR THING(=-5) BIG(=+5) MOVE(=+3) | o`
+malaria [disease PI mosquito]: A ['casualty', 'army'] | H ['fever', 'fever'] | J ['fistfight', 'brawl'] | K ['army', 'army']
+    H `BODY GOOD(=-5) HEAT(=+5) | o`  I `BODY GOOD(=-5) HEAT(=+5) | o`
+pianist [musician PI keyboard]: A ['critic', 'critic'] | H ['poet', 'poet'] | J ['art', 'literature'] | K ['humanities', 'arts']
+    H `SAY ART | o agent`  I `ART(=+5) SAY(=+5) | o agent PI TOUCH(=-5) TEXT | o tool`
+employee [person PI company]: A ['hobbyist', 'hacker'] | H ['administrator', 'official'] | J ['diplomacy', 'etiquette'] | K ['formula', 'gadget']
+    H `DO RULE(=+4) | o agent`  I `SOMEONE | o PI PART(=+5) SOMEONE | o`
+resignation [feeling LIKE despair]: A ['charity', 'charity'] | H ['tragedy', 'tragedy'] | J ['mourning', 'mourning'] | K ['tragedy', 'tragedy']
+    H `CONSUME(=+5) MOOD(=-5) | o`  I `FEEL | o LIKE MOOD(=-5) WANT(=-5) | o`
+revision [change PI essay]: A ['revision', 'revision'] | H ['idea', 'idea'] | J ['revision', 'translation'] | K ['translation', 'translation']
+    H `THINK CHANGE | o`  I `CHANGE | o PI TEXT THINK | o`
+consideration [thought FOR decision]: A ['worry', 'warning'] | H ['attention', 'prudence'] | J ['worry', 'warning'] | K ['concern', 'worry']
+    H `THINK CARE(=+5) | o`  I `THINK | o result FOR THINK(=+5) | o result`
+profit [money PI business]: A ['discount', 'price'] | H ['surcharge', 'profit'] | J ['price', 'price'] | K ['price', 'price']
+    H `JOIN(=+5) VALUE | o result`  I `GIVE(=0) VALUE | o tool PI DO VALUE | o`
+relegation [act PI management]: A ['rift', 'rift'] | H ['donation', 'tax'] | J ['wrestling', 'wrestling'] | K ['bottom', 'bottom']
+    H `GIVE(=+5) RULE(=+4) | o`  I `DO | o result PI RULE(=+4) DO | o`
+religion [belief PI church]: A ['patron', 'patron'] | H ['sovereignty', 'sovereign'] | J ['museum', 'academy'] | K ['arts', 'arts']
+    H `KNOW(=+5) RULE(=+4) ABOVE(=+5) | o`  I `THINK KNOW(=+3) | o PI PLACE RULE(=+4) | o`
+bubble [ball FROM air]: A ['flour', 'padding'] | H ['air', 'air'] | J ['snow', 'snow'] | K ['powder', 'flour']
+    H `GRAIN(=-5) INSIDE(=+5) | o`  I `THING(=-5) FIGHT(=-5) | o FROM GRAIN(=-5) CONSUME(=+5) | o`
+chapel [building FOR prayer]: A ['studio', 'studio'] | H ['summit', 'heaven'] | J ['gallery', 'studio'] | K ['culture', 'culture']
+    H `PLACE KNOW(=+5) ABOVE(=+5) | o`  I `PLACE INSIDE(=+5) BIG(=+3) | o FOR SAY GOOD(=+5) ABOVE(=+5) | o`
+people [group PI nation]: A ['supporters', 'neighbors'] | H ['people', 'people'] | J ['companion', 'company'] | K ['people', 'people']
+    H `SOMEONE | o N+3`  I `PART(=+5) | o PI PART(=+5) SOMEONE RULE(=+5) | o`
+lake [water PI valley]: A ['freezer', 'cellar'] | H ['lake', 'lake'] | J ['cellar', 'freezer'] | K ['storage', 'garden']
+    H `PLACE GRAIN(=-3) | o`  I `GRAIN(=-3) | o PI PLACE ABOVE(=-5) | o`
+topic [subject FOR talk]: A ['footnote', 'footnote'] | H ['statement', 'word'] | J ['essay', 'essay'] | K ['text', 'document']
+    H `SAY | o result`  I `KNOW PART(=-2) | o FOR SAY | o`
+era [period PI history]: A ['history', 'tradition'] | H ['age', 'age'] | J ['origin', 'origin'] | K ['origin', 'origin']
+    H `TIME BIG(=+5) | o`  I `TIME PART(=-2) | o PI KNOW TIME(=-5) | o`
+donation [gift FOR charity]: A ['gift', 'gift'] | H ['gift', 'gift'] | J ['gift', 'gift'] | K ['gift', 'gift']
+    H `GIVE(=+5) | o result`  I `GIVE(=+5) | o result FOR GIVE(=+5) FRIEND(=+5) | o`
+gate [door PI fence]: A ['rafter', 'fence'] | H ['brake', 'brake'] | J ['rafter', 'fence'] | K ['interior', 'interior']
+    H `JOIN(=-5) MOVE | o tool`  I `JOIN(=-5) INSIDE(=+5) | o tool PI LONG MANY(=+3) JOIN(=-5) | o`
+homer [hit PI baseball]: A ['tirade', 'tirade'] | H ['highlight', 'victory'] | J ['horn', 'cheer'] | K ['trumpet', 'megaphone']
+    H `HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o`  I `TOUCH MOVE(=+5) | o PI FIGHT(=-5) LONG(=0) | o`
+coca [plant FOR drug]: A ['beverage', 'drink'] | H ['spice', 'coffee'] | J ['drink', 'drink'] | K ['breath', 'breath']
+    H `THING(=0) CONSUME(=+5) FEEL(=+5) | o`  I `THING(=0) | o FOR CONSUME(=+5) CHANGE FEEL(=+5) | o`
+dose [amount FOR medicine]: A ['ration', 'portion'] | H ['dose', 'dose'] | J ['unit', 'fraction'] | K ['portion', 'portion']
+    H `MEASURE(=-5) CONSUME(=+5) | o`  I `MEASURE(=-5) | o FOR CONSUME(=+5) CHANGE LIVE(=+5) | o`
+reservoir [tank FOR water]: A ['air', 'gas station'] | H ['crowd', 'crowd'] | J ['pond', 'pool'] | K ['matter', 'gas']
+    H `MANY(=+3) INSIDE(=+5) | o`  I `PLACE INSIDE(=+5) GRAIN(=-3) | o FOR GRAIN(=-3) | o`
+crater [hole PI volcano]: A ['sand', 'dust'] | H ['attic', 'loft'] | J ['stone', 'rock'] | K ['surroundings', 'furniture']
+    H `PLACE INSIDE(=+5) ABOVE(=+5) | o`  I `PLACE INSIDE(=+5) MANY(=-5) | o PI PLACE ABOVE(=+5) HEAT(=+5) | o`
+businessman [person PI trade]: A ['scrap', 'scrap'] | H ['trader', 'merchant'] | J ['sculpture', 'kitsch'] | K ['junk', 'junk']
+    H `GIVE(=0) VALUE | o agent`  I `SOMEONE | o PI GIVE(=0) | o`
+phase [stage PI process]: A ['component', 'introduction'] | H ['period', 'interval'] | J ['beginning', 'start'] | K ['beginning', 'beginning']
+    H `TIME PART(=-2) | o`  I `PLACE ABOVE(=+5) ART(=+5) | o PI DO CHANGE | o`
+labour [class PI workers]: A ['limit', 'limit'] | H ['crew', 'team'] | J ['engineering', 'calculation'] | K ['impossibility', 'impossibility']
+    H `SOMEONE PART(=+5) DO | o`  I `PART(=+5) SAME(=+5) | o PI SOMEONE(=0) DO | o agent N+3`
+airline [tube FOR air]: A ['smog', 'smog'] | H ['smoke', 'smoke'] | J ['fumes', 'air'] | K ['gas', 'gas']
+    H `LONG(=-5) GRAIN(=-5) | o`  I `LONG(=0) INSIDE(=+5) | o FOR GRAIN(=-5) CONSUME(=+5) | o`
+satisfaction [feeling LIKE pleasure]: A ['craving', 'goal'] | H ['satisfaction', 'satisfaction'] | J ['appetite', 'ambition'] | K ['goal', 'desire']
+    H `WANT BEGIN(=+5) MOOD(=+3) | o quality`  I `FEEL | o LIKE FEEL(=+5) GOOD(=+5) | o`
+yesterday [day PI past]: A ['predecessor', 'visitor'] | H ['moment', 'moment'] | J ['time', 'time'] | K ['time', 'time']
+    H `TIME(=-1) PART(=-2) | o`  I `TIME SEE | o PI TIME(=-3) | o`
+model [description FOR theory]: A ['gadget', 'component'] | H ['guess', 'guess'] | J ['craft', 'craft'] | K ['routine', 'technique']
+    H `THINK KNOW(=-3) | o result`  I `SAY SEE | o result FOR THINK(=0) KNOW(=-3) | o`
+outlet [place FOR sales]: A ['sewage', 'sewage'] | H ['market', 'market'] | J ['sewage', 'sewage'] | K ['air', 'air']
+    H `PLACE GIVE(=0) VALUE | o`  I `PLACE | o FOR GIVE(=+5) VALUE | o N+3`
+planet [body PI system]: A ['outskirts', 'outskirts'] | H ['mountain', 'mountain'] | J ['wilderness', 'wilderness'] | K ['abroad', 'wilderness']
+    H `BIG(=+5) THING(=-5) ABOVE(=+5) | o`  I `BODY | o PI PART(=+5) JOIN(=+5) | o`
+representation [image FOR idea]: A ['sculpture', 'monument'] | H ['view', 'view'] | J ['monument', 'film'] | K ['performance', 'creation']
+    H `SEE | o result`  I `SEE | o result FOR THINK(=0) | o result`
+news [information PI newspaper]: A ['farewell', 'notice'] | H ['news', 'news'] | J ['schedule', 'timetable'] | K ['schedule', 'history']
+    H `SAY HAPPEN TIME(=-1) | o`  I `KNOW | o result PI TEXT HAPPEN | o`
+copyright [document FOR publishing]: A ['copy', 'copy'] | H ['permit', 'permit'] | J ['regulation', 'form'] | K ['text', 'document']
+    H `TEXT RULE(=+5) CAN(=+5) | o`  I `TEXT | o FOR TEXT GIVE(=+5) | o`
+obstacle [barrier FOR progress]: A ['barrier', 'lid'] | H ['invalid', 'invalid'] | J ['weapon', 'handle'] | K ['can', 'means']
+    H `CAN(=-3) MOVE | o agent`  I `JOIN(=-5) MOVE(=-5) | o FOR CHANGE GOOD(=+3) | o result`
+grief [feeling PI death]: A ['sadness', 'sadness'] | H ['anguish', 'anguish'] | J ['sadness', 'sadness'] | K ['sorrow', 'gloom']
+    H `MOOD(=-5) FEEL(=+5) | o`  I `FEEL | o PI LIVE(=-5) | o`
+lawmaker [person PI parliament]: A ['bylaw', 'clause'] | H ['legislator', 'legislator'] | J ['government', 'rule'] | K ['law', 'law']
+    H `TEXT RULE(=+5) | o agent`  I `SOMEONE | o PI RULE(=+4) PART(=+5) | o`
+harm [damage PI body]: A ['neglect', 'insult'] | H ['injury', 'injury'] | J ['neglect', 'neglect'] | K ['loner', 'loner']
+    H `CHANGE GOOD(=-4) BODY | o result`  I `GOOD(=-5) HAPPEN | o result PI BODY | o`
+spell [state PI magic]: A ['recipe', 'recipe'] | H ['translation', 'resolution'] | J ['polemic', 'printing'] | K ['cooking', 'cooking']
+    H `SAY DO CHANGE | o result`  I `RULE(=+4) PLACE | o PI ART(=-5) KNOW(=-5) | o`
+lawsuit [case PI court]: A ['lawsuit', 'dispute'] | H ['lawsuit', 'lawsuit'] | J ['politics', 'litigation'] | K ['lawsuit', 'lawsuit']
+    H `FIGHT RULE(=+5) | o`  I `RULE(=+5) HAPPEN | o PI RULE(=+5) PLACE | o`
+lens [device FOR camera]: A ['telescope', 'telescope'] | H ['lens', 'lens'] | J ['painting', 'painting'] | K ['sight', 'sight']
+    H `SEE | o tool`  I `DO | o tool FOR SEE | o tool`
+testimony [statement FOR court]: A ['notice', 'sign'] | H ['decree', 'decree'] | J ['notice', 'license'] | K ['inspection', 'inspection']
+    H `SAY RULE(=+5) | o result`  I `SAY | o result FOR RULE(=+5) PLACE | o`
+bowl [dish FOR soup]: A ['club', 'club'] | H ['contents', 'core'] | J ['blade', 'sparring'] | K ['fencing', 'fencing']
+    H `INSIDE THING | o`  I `CONSUME(=+5) | o result FOR CONSUME(=+5) GRAIN(=-3) | o`
+pitcher [person PI baseball]: A ['spear', 'staff'] | H ['dealer', 'dealer'] | J ['quarterstaff', 'fencing'] | K ['bat', 'joust']
+    H `GIVE FIGHT(=-5) | o agent`  I `SOMEONE | o PI FIGHT(=-5) LONG(=0) | o`
+ally [country LIKE friend]: A ['alliance', 'companion'] | H ['friendship', 'friendship'] | J ['friendship', 'friendship'] | K ['friend', 'friend']
+    H `FRIEND JOIN | o`  I `PLACE PART(=+5) | o LIKE FRIEND(=+5) SOMEONE | o`
+contribution [part FOR success]: A ['generosity', 'generosity'] | H ['incident', 'episode'] | J ['payment', 'allowance'] | K ['payment', 'allowance']
+    H `PART(=-2) HAPPEN | o result`  I `PART(=-2) | o FOR GOOD(=+5) HAPPEN | o result`
+guest [person PI hotel]: A ['baton', 'loan'] | H ['neighbor', 'neighbor'] | J ['favor', 'tip'] | K ['favor', 'tip']
+    H `SOMEONE(=-5) NEAR(=+5) | o`  I `SOMEONE | o PI PLACE LIVE(=-2) PART(=+5) | o`
+expo [show FOR art]: A ['arena', 'arena'] | H ['viewpoint', 'viewpoint'] | J ['martial art', 'martial art'] | K ['game', 'martial art']
+    H `PLACE SEE | o`  I `SEE HAPPEN | o FOR ART(=+5) | o`
+regulation [rule PI law]: A ['procedure', 'regulation'] | H ['authority', 'authority'] | J ['institution', 'authority'] | K ['law', 'regulation']
+    H `RULE(=+4) | o`  I `RULE | o PI RULE(=+5) | o`
+list [note FOR shopping]: A ['library', 'catalogue'] | H ['library', 'library'] | J ['anthology', 'library'] | K ['library', 'library']
+    H `TEXT PART(=+5) | o`  I `TEXT BIG(=-5) | o FOR GIVE(=0) VALUE | o`
+existence [being PI universe]: A ['cell', 'survivor'] | H ['life', 'life'] | J ['organism', 'cell'] | K ['death', 'death']
+    H `LIVE | o quality`  I `LIVE THING | o PI MANY(=+5) PLACE | o`
+fleet [plane PI airline]: A ['pikes', 'column'] | H ['flock', 'flock'] | J ['army', 'conflict'] | K ['army', 'army']
+    H `PART(=+5) ABOVE MOVE | o`  I `ABOVE MOVE | o tool PI LONG(=-5) GRAIN(=-5) | o`
+township [area PI county]: A ['park', 'nursery'] | H ['office', 'office'] | J ['office', 'office'] | K ['place', 'place']
+    H `PLACE PART(=-2) RULE(=+4) | o`  I `PLACE MEASURE(=-5) | o PI PLACE PART(=-2) | o`
+bishop [person PI church]: A ['theater', 'dance'] | H ['inspector', 'inspector'] | J ['authority', 'authority'] | K ['law', 'law']
+    H `RULE(=+4) SEE | o agent`  I `SOMEONE | o PI PLACE RULE(=+4) | o`
+activist [person FOR protest]: A ['ancestor', 'ancestor'] | H ['revolutionary', 'revolutionary'] | J ['ancestor', 'ancestors'] | K ['ancestor', 'ancestor']
+    H `CHANGE FIGHT(=+5) | o agent`  I `SOMEONE | o FOR FIGHT(=0) SAY(=+5) | o`
+order [command PI army]: A ['ambition', 'movement'] | H ['command', 'proclamation'] | J ['policy', 'policy'] | K ['covenant', 'resolution']
+    H `SAY(=+5) RULE(=+4) | o result`  I `SAY RULE(=+5) | o PI FIGHT(=+5) PART(=+5) | o`
+knight [warrior PI castle]: A ['claw', 'predator'] | H ['general', 'soldier'] | J ['predator', 'beast'] | K ['spoils', 'campaign']
+    H `FIGHT(=+5) RULE(=+4) | o agent`  I `FIGHT(=+5) | o agent PI PLACE LIVE RULE(=+4) | o`
+diplomacy [talks FOR peace]: A ['debate', 'debate'] | H ['parliament', 'parliament'] | J ['martial art', 'martial art'] | K ['strategy', 'martial art']
+    H `SAY RULE(=+4) PART(=+5) | o`  I `SAY(=0) GIVE(=0) | o FOR FIGHT(=+5) SAME(=-5) | o`
+bronze [metal FROM copper]: A ['jewel', 'coin'] | H ['joint', 'joint'] | J ['metal', 'gem'] | K ['stone', 'chunk']
+    H `TOUCH(=+5) JOIN | o`  I `THING(=-5) TOUCH(=+5) | o FROM "copper" | o`
+occupation [work FOR money]: A ['battlefield', 'battlefield'] | H ['job', 'work'] | J ['battlefield', 'battlefield'] | K ['lawsuit', 'military']
+    H `DO VALUE | o`  I `DO | o FOR GIVE(=0) VALUE | o tool`
+athletics [sport PI olympics]: A ['sport', 'sport'] | H ['game', 'game'] | J ['game', 'sport'] | K ['game', 'game']
+    H `FIGHT(=-5) MOVE | o`  I `FIGHT(=-5) MOVE | o`
+piece [part PI puzzle]: A ['page', 'letter'] | H ['part', 'part'] | J ['passage', 'word'] | K ['part', 'part']
+    H `PART(=-2) | o`  I `PART(=-2) | o`
+anode [terminal PI battery]: A ['antenna', 'antenna'] | H ['device', 'device'] | J ['antenna', 'cable'] | K ['machinery', 'equipment']
+    H `ART(=-5) GIVE(=+5) | o`  I `PLACE BEGIN(=+5) | o PI ART(=-5) GIVE(=+5) | o tool`
+quantum [amount PI physics]: A ['component', 'component'] | H ['pinch', 'bit'] | J ['gauge', 'unit'] | K ['particle', 'particle']
+    H `MEASURE PART(=-5) | o`  I `MEASURE(=-5) | o PI KNOW ART(=-5) THING(=-5) | o`
+fist [hand FOR hitting]: A ['mouth', 'scream'] | H ['bone', 'bone'] | J ['voice', 'cry'] | K ['body', 'body']
+    H `BODY TOUCH(=+5) | o`  I `BODY PART(=-2) TOUCH | o FOR TOUCH(=+5) MOVE(=+5) | o`
+reservation [land FOR tribes]: A ['store', 'shop'] | H ['capital', 'capital'] | J ['market', 'station'] | K ['shop', 'shop']
+    H `PLACE RULE(=+4) | o`  I `PLACE GRAIN(=+5) | o FOR SOMEONE PART(=+5) | o N+3`
+campus [place PI university]: A ['rooftop', 'rooftop'] | H ['address', 'landmark'] | J ['roof', 'roof'] | K ['neighborhood', 'neighborhood']
+    H `PLACE KNOW(=+5) | o`  I `PLACE | o PI PLACE KNOW ABOVE(=+5) | o`
+flame [fire PI candle]: A ['torch', 'torch'] | H ['lava', 'soup'] | J ['heat', 'warmth'] | K ['fire', 'fire']
+    H `HEAT(=+5) GRAIN(=-3) | o`  I `HEAT(=+5) GRAIN(=-3) | o`
+privilege [advantage FOR elite]: A ['welfare', 'charity'] | H ['privilege', 'privilege'] | J ['right', 'priority'] | K ['right', 'need']
+    H `SAME(=-4) RULE(=+4) | o`  I `GOOD ABOVE(=+5) | o FOR SOMEONE PART(=+5) GOOD(=+5) | o`
+sequence [pattern PI numbers]: A ['onset', 'start'] | H ['appointment', 'extension'] | J ['process', 'origin'] | K ['beginning', 'beginning']
+    H `JOIN(=+5) TIME | o`  I `SAME MANY(=+3) | o PI MEASURE(=-5) ART(=-5) | o N+3`
+ratio [number FOR division]: A ['rate', 'rate'] | H ['rate', 'ratio'] | J ['measure', 'measure'] | K ['measure', 'measure']
+    H `MEASURE(=+5) | o`  I `MEASURE(=-5) ART(=-5) | o FOR JOIN(=-5) PART(=-2) | o`
+rest [part PI group]: A ['pause', 'pause'] | H ['share', 'share'] | J ['rest', 'rest'] | K ['rest', 'stillness']
+    H `PART(=-2) GIVE(=-5) | o`  I `PART(=-2) | o PI PART(=+5) | o`
+ankle [joint PI foot]: A ['body', 'body'] | H ['leg', 'foot'] | J ['body', 'body'] | K ['body', 'body']
+    H `BODY JOIN ABOVE(=-5) | o`  I `PLACE JOIN(=+5) | o PI BODY PART(=-2) ABOVE(=-5) | o`
+discussion [talk PI meeting]: A ['note', 'note'] | H ['conversation', 'conversation'] | J ['guideline', 'guideline'] | K ['essay', 'essay']
+    H `SAY GIVE(=0) | o`  I `SAY | o PI HAPPEN JOIN(=+5) SAY | o`
+road [way FOR cars]: A ['surface', 'front'] | H ['route', 'road'] | J ['object', 'face'] | K ['pet', 'neighbor']
+    H `PLACE MOVE | o`  I `PLACE MOVE | o FOR MOVE ART(=-5) | o tool N+3`
+driver [person PI car]: A ['machine', 'machine'] | H ['robot', 'driver'] | J ['aspect', 'panel'] | K ['back', 'back']
+    H `MOVE ART(=-5) | o agent`  I `SOMEONE | o PI MOVE ART(=-5) | o tool`
+friend [person LIKE brother]: A ['companion', 'friend'] | H ['friend', 'friend'] | J ['friend', 'friend'] | K ['self', 'friend']
+    H `FRIEND(=+5) SOMEONE | o`  I `SOMEONE | o LIKE SOMEONE SEX(=+5) | o PI PLACE LIVE | o`
+integration [policy FOR equality]: A ['connector', 'chip'] | H ['whole', 'union'] | J ['engineering', 'connector'] | K ['collage', 'craft']
+    H `JOIN(=+5) PART(=+2) | o`  I `RULE(=+4) THINK(=+5) | o FOR SAME(=+5) | o quality`
+bachelor [man PI party]: A ['boy', 'successor'] | H ['bachelor', 'bachelor'] | J ['sex ratio', 'mortality'] | K ['limit', 'limit']
+    H `SOMEONE SEX(=+5) JOIN(=-5) | o`  I `SOMEONE SEX(=+5) | o PI HAPPEN JOIN(=+5) MOOD(=+3) | o`
+overtime [work PI shift]: A ['truce', 'defeat'] | H ['era', 'heyday'] | J ['truce', 'surrender'] | K ['peace', 'truce']
+    H `TIME ABOVE(=+3) | o`  I `DO | o PI CHANGE | o`
+atmosphere [mood PI room]: A ['spa', 'bar'] | H ['air', 'air'] | J ['bar', 'bar'] | K ['atmosphere', 'atmosphere']
+    H `GRAIN(=-5) NEAR(=+5) | o`  I `MOOD | o PI PLACE INSIDE(=+5) | o`
+stomach [organ FOR digestion]: A ['stomach', 'appetite'] | H ['mouth', 'mouth'] | J ['nutrition', 'mouth'] | K ['body', 'body']
+    H `BODY CONSUME(=+5) | o`  I `BODY CONSUME(=+5) | o`
+autumn [season FOR harvest]: A ['chill', 'heat'] | H ['moment', 'period'] | J ['summer', 'summer'] | K ['spark', 'spark']
+    H `TIME PART(=-2) | o`  I `TIME PART(=-2) HEAT | o FOR GIVE(=-5) THING(=0) | o`
+post [place FOR guard]: A ['chronicle', 'chronicle'] | H ['station', 'station'] | J ['chronicle', 'history'] | K ['chronicle', 'history']
+    H `PLACE MOVE(=-5) | o`  I `PLACE | o FOR SEE CARE(=+5) | o agent`
+lion [cat PI africa]: A ['predator', 'beast'] | H ['beast', 'beast'] | J ['animal', 'animal'] | K ['thing', 'thing']
+    H `THING(=+4) BIG(=+3) | o`  I `THING(=+4) BIG(=+3) | o`
+playoff [game FOR champion]: A ['final', 'finale'] | H ['match', 'final'] | J ['game', 'sport'] | K ['game', 'game']
+    H `FIGHT(=-5) BEGIN(=+5) | o`  I `FIGHT(=-5) | o FOR FIGHT(=-5) GOOD(=+5) | o agent`
+brokerage [firm FOR stocks]: A ['discount', 'price'] | H ['trade', 'trade'] | J ['tariff', 'tax'] | K ['penalty', 'penalty']
+    H `GIVE(=0) JOIN(=+5) | o`  I `SOMEONE PART(=+5) GIVE(=0) | o FOR VALUE PART(=-2) | o N+3`
+acre [unit FOR land]: A ['ground', 'quarry'] | H ['area', 'area'] | J ['storage', 'site'] | K ['site', 'location']
+    H `MEASURE(=-5) PLACE | o`  I `MEASURE(=-5) SAME(=+5) | o FOR PLACE GRAIN(=+5) | o`
+competitiveness [spirit FOR winning]: A ['race', 'race'] | H ['aggression', 'ambition'] | J ['boxing', 'boxing'] | K ['game', 'game']
+    H `FIGHT(=+3) WANT(=+5) | o quality`  I `INSIDE(=+5) FEEL | o FOR FIGHT GOOD(=+5) | o result`
+ideology [belief PI politics]: A ['satire', 'critic'] | H ['idea', 'school'] | J ['academy', 'academy'] | K ['art', 'skill']
+    H `THINK PART(=+5) | o`  I `THINK KNOW(=+3) | o PI RULE(=+4) FIGHT | o`
+cake [bar FROM soap]: A ['bread', 'sponge'] | H ['pill', 'bite'] | J ['bread', 'bread'] | K ['bite', 'bite']
+    H `GRAIN(=+5) CONSUME(=+5) | o`  I `PLACE CONSUME(=+5) | o FROM CARE(=+5) GRAIN(=-3) | o`
+pickup [vehicle FOR hauling]: A ['pole', 'pole'] | H ['projectile', 'missile'] | J ['rod', 'pole'] | K ['beam', 'rod']
+    H `THING(=-5) MOVE(=+5) | o`  I `THING(=-5) MOVE(=+5) | o`
+argentine [fish LIKE salmon]: A ['relic', 'heirloom'] | H ['rodent', 'pet'] | J ['possession', 'belonging'] | K ['thing', 'thing']
+    H `THING(=+4) BIG(=-3) | o`  I `THING(=+4) GRAIN(=-3) | o LIKE THING(=+4) GRAIN(=-3) MOVE(=+5) | o`
+prisoner [person PI jail]: A ['army', 'army'] | H ['insider', 'insider'] | J ['military', 'army'] | K ['soldier', 'soldier']
+    H `SOMEONE INSIDE(=+5) | o`  I `SOMEONE | o PI PLACE INSIDE(=+5) RULE(=+5) | o`
+atom [particle PI matter]: A ['chip', 'particle'] | H ['particle', 'speck'] | J ['component', 'component'] | K ['crumb', 'particle']
+    H `PART(=-5) BIG(=-5) | o`  I `PART(=-5) | o PI THING(=-5) | o`
+door [barrier FOR entrance]: A ['corridor', 'corridor'] | H ['scalpel', 'scoop'] | J ['corridor', 'tube'] | K ['inside', 'interior']
+    H `JOIN(=-5) INSIDE(=+5) | o tool`  I `JOIN(=-5) MOVE(=-5) | o FOR PLACE BEGIN(=-5) INSIDE(=+5) | o`
+gambling [game FOR money]: A ['gamble', 'argument'] | H ['bet', 'prize'] | J ['game', 'sport'] | K ['game', 'game']
+    H `FIGHT(=-5) VALUE(=+3) | o`  I `FIGHT(=-5) | o FOR GIVE(=0) VALUE | o tool`
+folklore [tale PI culture]: A ['audience', 'reading'] | H ['poetry', 'literature'] | J ['arts', 'art'] | K ['arts', 'arts']
+    H `SAY(=0) ART(=+5) | o`  I `TEXT HAPPEN | o PI ART(=+5) MANY(=+3) | o`
+hybrid [word FROM mix]: A ['robot', 'device'] | H ['mixture', 'mixture'] | J ['copy', 'device'] | K ['difference', 'difference']
+    H `JOIN(=+5) SAME(=-5) | o`  I `TEXT PART(=-2) | o FROM JOIN(=+5) MANY(=+3) | o result`
