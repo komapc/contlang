@@ -26,21 +26,21 @@ def zax(V, x, r):
     return (x @ AX[NI[r]] - _st[r][0]) / _st[r][1]
 def cn(w, P, N):
     nb = E.get(w, []); f = lambda S: sum((-wt if "Antonym" in rel else wt) for rel, b, wt in nb if b in S); return f(P) - f(N)
-def value(V, w, r, Z=2.0, use=("cn", "z", "cn+")):
+def value(V, w, r, Z=2.0, use=("cn", "z", "cn+"), CN=0.0):
     """→ (v, источник) или (None, None)"""
     if not lib.SPEC[r]["axis"]: return None, None
     P, N, GP, GN = POL[r]
-    if "cn" in use and (d := cn(w, P, N)): return int(np.sign(d) * 5), "cn"
+    if "cn" in use and abs(d := cn(w, P, N)) > CN: return int(np.sign(d) * 5), "cn"
     if "z" in use and abs(z := zax(V, V[w], r)) >= Z: return int(np.sign(z) * 5), "z"
-    if "cn+" in use and (d := cn(w, GP, GN)): return int(np.sign(d) * 5), "cn+"
+    if "cn+" in use and abs(d := cn(w, GP, GN)) > CN: return int(np.sign(d) * 5), "cn+"
     return None, None
 if __name__ == "__main__":
     items = json.load(open(f"{lib.D}/../taxonomy/items.json")); V = lib.vecs({it["w"] for it in items})
-    for Z in (1.5, 2.0, 2.5):
+    for Z, CN in ((1.5, 0), (1.5, .3), (1.5, .5), (1.5, 1), (2.0, .5)):
         n = c = ok = 0; src = {}
         for it in items:
             for r, v in lib.parse(it["H"] or "")[0]:
                 if v is None or abs(v) < 3 or not lib.SPEC[r]["axis"]: continue
-                b, s = value(V, it["w"], r, Z); n += 1
+                b, s = value(V, it["w"], r, Z, CN=CN); n += 1
                 if b is not None: c += 1; ok += np.sign(b) == np.sign(v); src.setdefault(s, [0, 0]); src[s][0] += np.sign(b) == np.sign(v); src[s][1] += 1
-        print(f"Z {Z}: покрытие {c}/{n} = {c / n:.0%}, совпадение {ok / c:.0%}; " + ", ".join(f"{k} {a}/{b}" for k, (a, b) in src.items()))
+        print(f"Z {Z} CN > {CN}: покрытие {c}/{n} = {c / n:.0%}, совпадение {ok / c:.0%}; " + ", ".join(f"{k} {a}/{b}" for k, (a, b) in src.items()))

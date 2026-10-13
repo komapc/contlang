@@ -1,0 +1,50 @@
+1. vocabulary | lexicon | language
+2. hermit | monk | saint
+3. navy | fleet | armada
+4. country | region | territory
+5. priest | clergyman | bishop
+6. tough | brute | hardliner
+7. decision | choice | resolve
+8. pet | darling | treasure
+9. banter | chat | small talk
+10. cereal | grain | seed
+11. prank | trick | teasing
+12. race | sprint | run
+13. splinter | sliver | shard
+14. ruler | yardstick | measuring stick
+15. physics | science | theory
+16. scream | shout | yell
+17. region | district | territory
+18. highland | plateau | mountain
+19. smoke | flame | steam
+20. right | entitlement | justice
+21. history | sequence | series
+22. equality | ratio | proportion
+23. pause | rest | lull
+24. spine | backbone | vertebra
+25. objection | critique | doubt
+26. facade | wall | front
+27. engineer | technician | operator
+28. ancestor | ghost | late friend
+29. process | mechanism | system
+30. surveyor | scientist | measurer
+31. truce | armistice | ceasefire
+32. steam | vapor | hot air
+33. stomach | gut | mouth
+34. summer | heatwave | season
+35. library | archive | bookshelf
+36. livestock | cattle | pet
+37. finale | final | ending
+38. tax | fee | penalty
+39. area | acreage | territory
+40. sparring | wrestling | boxing
+41. philosophy | humanities | theory
+42. dish | pudding | porridge
+43. tube | pipe | cylinder
+44. mate | pair | herd
+45. soldier | warrior | combatant
+46. dust | grit | speck
+47. room | chamber | cabinet
+48. play | game | sport
+49. sorcery | occultism | superstition
+50. fluff | fiber | down

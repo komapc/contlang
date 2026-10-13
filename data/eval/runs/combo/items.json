@@ -27,7 +27,7 @@
   "w": "employee",
   "SZ": "SOMEONE RULE(=-5) ART(=-5) | o",
   "H": "DO RULE(=+4) | o agent",
-  "CO": "DO GIVE ART(=-5) | o agent",
+  "CO": "SOMEONE RULE(=-5) ART(=-5) | o",
   "base": "employ",
   "role": "agent"
  },
@@ -43,7 +43,7 @@
   "w": "revision",
   "SZ": "DO TEXT CHANGE(=+5) | o",
   "H": "THINK CHANGE | o",
-  "CO": "CHANGE(=+5) TEXT THINK(=+5) | o",
+  "CO": "DO TEXT CHANGE(=+5) | o",
   "base": "revise",
   "role": null
  },
@@ -51,7 +51,7 @@
   "w": "consideration",
   "SZ": "THINK CARE(=+5) CAN(=+5) | o",
   "H": "THINK CARE(=+5) | o",
-  "CO": "THINK(=-5) WANT(=-5) SEE | o result",
+  "CO": "THINK CARE(=+5) CAN(=+5) | o",
   "base": "consider",
   "role": "result"
  },
@@ -67,7 +67,7 @@
   "w": "relegation",
   "SZ": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
   "H": "GIVE(=+5) RULE(=+4) | o",
-  "CO": "JOIN(=-5) GIVE WANT(=-5) | o",
+  "CO": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
   "base": "relegate",
   "role": null
  },
@@ -131,7 +131,7 @@
   "w": "donation",
   "SZ": "GIVE(=+5) FRIEND(=+5) | o",
   "H": "GIVE(=+5) | o result",
-  "CO": "GIVE(=+5) FRIEND(=+5) JOIN | o result",
+  "CO": "GIVE(=+5) FRIEND(=+5) | o",
   "base": "donate",
   "role": "result"
  },
@@ -139,7 +139,7 @@
   "w": "gate",
   "SZ": "PLACE INSIDE(=-5) SIDE | o",
   "H": "JOIN(=-5) MOVE | o tool",
-  "CO": "PLACE INSIDE(=-5) SIDE(=+5) | o",
+  "CO": "PLACE INSIDE(=-5) SIDE | o",
   "base": null,
   "role": null
  },
@@ -235,7 +235,7 @@
   "w": "model",
   "SZ": "THINK ART(=-5) SAME(=+5) | o",
   "H": "THINK KNOW(=-3) | o result",
-  "CO": "THINK ART(=+5) SAME | o",
+  "CO": "THINK ART SAME | o",
   "base": null,
   "role": null
  },
@@ -259,7 +259,7 @@
   "w": "representation",
   "SZ": "THINK GRAIN(=+5) | o",
   "H": "SEE | o result",
-  "CO": "DO THINK(=+5) SAME | o result",
+  "CO": "THINK GRAIN(=+5) | o",
   "base": "represent",
   "role": "result"
  },
@@ -267,7 +267,7 @@
   "w": "news",
   "SZ": "SAY TEXT TIME(=+5) | o",
   "H": "SAY HAPPEN TIME(=-1) | o",
-  "CO": "SAY TEXT TIME(=-5) | o",
+  "CO": "SAY TEXT TIME | o",
   "base": null,
   "role": null
  },
@@ -339,7 +339,7 @@
   "w": "testimony",
   "SZ": "SAY SEE TEXT | o",
   "H": "SAY RULE(=+5) | o result",
-  "CO": "MANY(=-5) JOIN(=+5) SEE | o result",
+  "CO": "SAY SEE TEXT | o",
   "base": "testify",
   "role": "result"
  },
@@ -355,7 +355,7 @@
   "w": "pitcher",
   "SZ": "SOMEONE LONG(=+5) FIGHT(=-5) | o",
   "H": "GIVE FIGHT(=-5) | o agent",
-  "CO": "LONG(=+5) SAY(=+5) FIGHT(=-5) | o agent",
+  "CO": "SOMEONE CONTAINER LONG(=+5) | o",
   "base": "pitch",
   "role": "agent"
  },
@@ -371,7 +371,7 @@
   "w": "contribution",
   "SZ": "DO GIVE(=+5) GOOD(=+5) | o",
   "H": "PART(=-2) HAPPEN | o result",
-  "CO": "JOIN(=+5) GIVE(=+5) DO | o",
+  "CO": "DO GIVE(=+5) GOOD(=+5) | o",
   "base": "contribute",
   "role": null
  },
@@ -435,7 +435,7 @@
   "w": "bishop",
   "SZ": "SOMEONE RULE(=+5) | o",
   "H": "RULE(=+4) SEE | o agent",
-  "CO": "SACRED RULE(=+5) | o",
+  "CO": "SACRED RULE(=+5) | o agent",
   "base": null,
   "role": null
  },
@@ -483,7 +483,7 @@
   "w": "occupation",
   "SZ": "DO FIGHT(=+5) FRIEND(=-5) | o",
   "H": "DO VALUE | o",
-  "CO": "GIVE(=-5) PLACE MOVE(=-5) | o",
+  "CO": "DO FIGHT(=-5) FRIEND(=-5) | o",
   "base": "occupy",
   "role": null
  },
@@ -563,7 +563,7 @@
   "w": "sequence",
   "SZ": "PART(=+5) BEGIN(=-5) HAPPEN | o",
   "H": "JOIN(=+5) TIME | o",
-  "CO": "PART(=+5) BEGIN(=+5) HAPPEN | o",
+  "CO": "PART(=+5) BEGIN HAPPEN | o",
   "base": null,
   "role": null
  },
@@ -595,7 +595,7 @@
   "w": "discussion",
   "SZ": "DO THINK(=-5) TEXT | o",
   "H": "SAY GIVE(=0) | o",
-  "CO": "THINK(=+5) KNOW(=+5) TIME(=+5) | o result",
+  "CO": "DO THINK(=-5) TEXT | o",
   "base": "discuss",
   "role": "result"
  },
@@ -611,7 +611,7 @@
   "w": "driver",
   "SZ": "ART(=-5) SIDE | o",
   "H": "MOVE ART(=-5) | o agent",
-  "CO": "MOVE(=+5) SIDE NEAR | o agent",
+  "CO": "ART(=-5) SIDE | o agent",
   "base": "drive",
   "role": "agent"
  },
@@ -627,7 +627,7 @@
   "w": "integration",
   "SZ": "HAPPEN JOIN(=+5) ART(=-5) | o",
   "H": "JOIN(=+5) PART(=+2) | o",
-  "CO": "JOIN(=+5) THINK(=+5) CONSUME(=+5) | o",
+  "CO": "HAPPEN JOIN(=+5) ART(=-5) | o",
   "base": "integrate",
   "role": null
  },
@@ -651,7 +651,7 @@
   "w": "atmosphere",
   "SZ": "GRAIN(=-5) INSIDE(=+5) HEAT(=+5) | o",
   "H": "GRAIN(=-5) NEAR(=+5) | o",
-  "CO": "GRAIN(=-5) INSIDE(=-5) HEAT | o",
+  "CO": "GRAIN(=-5) INSIDE HEAT | o",
   "base": null,
   "role": null
  },
@@ -659,7 +659,7 @@
   "w": "stomach",
   "SZ": "BODY CONSUME(=+5) INSIDE(=+5) | o",
   "H": "BODY CONSUME(=+5) | o",
-  "CO": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+  "CO": "BODY CONSUME INSIDE(=+5) | o",
   "base": null,
   "role": null
  },
@@ -667,7 +667,7 @@
   "w": "autumn",
   "SZ": "TIME HEAT(=-5) BEGIN | o",
   "H": "TIME PART(=-2) | o",
-  "CO": "TIME HEAT(=+5) BEGIN | o",
+  "CO": "TIME HEAT BEGIN | o",
   "base": null,
   "role": null
  },
@@ -779,7 +779,7 @@
   "w": "gambling",
   "SZ": "DO FIGHT(=-5) | o",
   "H": "FIGHT(=-5) VALUE(=+3) | o",
-  "CO": "FIGHT(=-5) THINK | o",
+  "CO": "DO FIGHT(=-5) | o",
   "base": "gamble",
   "role": null
  },
