@@ -1,0 +1,802 @@
+[
+ {
+  "w": "helm",
+  "SZ": "ART(=-5) SIDE(=+5) LONG(=+5) | o",
+  "H": "MOVE SIDE | o tool",
+  "CO": "ART(=-5) SIDE LONG(=+5) | o tool",
+  "base": null,
+  "role": "tool"
+ },
+ {
+  "w": "malaria",
+  "SZ": "BODY GOOD(=-5) | o",
+  "H": "BODY GOOD(=-5) HEAT(=+5) | o",
+  "CO": "BODY GOOD(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "pianist",
+  "SZ": "SOMEONE ART(=+5) | o",
+  "H": "SAY ART | o agent",
+  "CO": "SOMEONE ART(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "employee",
+  "SZ": "SOMEONE RULE(=-5) ART(=-5) | o",
+  "H": "DO RULE(=+4) | o agent",
+  "CO": "DO GIVE ART(=-5) | o agent",
+  "base": "employ",
+  "role": "agent"
+ },
+ {
+  "w": "resignation",
+  "SZ": "FEEL MOOD(=-5) | o",
+  "H": "CONSUME(=+5) MOOD(=-5) | o",
+  "CO": "FEEL MOOD(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "revision",
+  "SZ": "DO TEXT CHANGE(=+5) | o",
+  "H": "THINK CHANGE | o",
+  "CO": "CHANGE(=+5) TEXT THINK(=+5) | o",
+  "base": "revise",
+  "role": null
+ },
+ {
+  "w": "consideration",
+  "SZ": "THINK CARE(=+5) CAN(=+5) | o",
+  "H": "THINK CARE(=+5) | o",
+  "CO": "THINK(=-5) WANT(=-5) SEE | o result",
+  "base": "consider",
+  "role": "result"
+ },
+ {
+  "w": "profit",
+  "SZ": "VALUE MEASURE(=+5) | o",
+  "H": "JOIN(=+5) VALUE | o result",
+  "CO": "VALUE MEASURE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "relegation",
+  "SZ": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
+  "H": "GIVE(=+5) RULE(=+4) | o",
+  "CO": "JOIN(=-5) GIVE WANT(=-5) | o",
+  "base": "relegate",
+  "role": null
+ },
+ {
+  "w": "religion",
+  "SZ": "THINK ART(=+5) | o",
+  "H": "KNOW(=+5) RULE(=+4) ABOVE(=+5) | o",
+  "CO": "SACRED ART(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "bubble",
+  "SZ": "GRAIN(=-5) TOUCH(=-5) HEAT(=+5) | o",
+  "H": "GRAIN(=-5) INSIDE(=+5) | o",
+  "CO": "GRAIN(=-5) TOUCH(=-5) CONTAINER | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "chapel",
+  "SZ": "PLACE NEAR(=+5) INSIDE | o",
+  "H": "PLACE KNOW(=+5) ABOVE(=+5) | o",
+  "CO": "SACRED NEAR(=+5) INSIDE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "people",
+  "SZ": "SOMEONE MANY(=+5) PART(=+5) | o",
+  "H": "SOMEONE | o N+3",
+  "CO": "SOMEONE MANY(=+5) PART(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "lake",
+  "SZ": "GRAIN(=-3) THING(=-5) PLACE | o",
+  "H": "PLACE GRAIN(=-3) | o",
+  "CO": "LAND(=-5) THING(=-5) PLACE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "topic",
+  "SZ": "SAY TEXT | o",
+  "H": "SAY | o result",
+  "CO": "SAY TEXT | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "era",
+  "SZ": "TIME BEGIN | o",
+  "H": "TIME BIG(=+5) | o",
+  "CO": "TIME BEGIN | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "donation",
+  "SZ": "GIVE(=+5) FRIEND(=+5) | o",
+  "H": "GIVE(=+5) | o result",
+  "CO": "GIVE(=+5) FRIEND(=+5) JOIN | o result",
+  "base": "donate",
+  "role": "result"
+ },
+ {
+  "w": "gate",
+  "SZ": "PLACE INSIDE(=-5) SIDE | o",
+  "H": "JOIN(=-5) MOVE | o tool",
+  "CO": "PLACE INSIDE(=-5) SIDE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "homer",
+  "SZ": "DO SAY(=+5) LONG(=+5) | o",
+  "H": "HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o",
+  "CO": "DO SAY(=+5) LONG(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "coca",
+  "SZ": "THING(=0) CONSUME(=+5) | o",
+  "H": "THING(=0) CONSUME(=+5) FEEL(=+5) | o",
+  "CO": "THING(=0) CONSUME(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "dose",
+  "SZ": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+  "H": "MEASURE(=-5) CONSUME(=+5) | o",
+  "CO": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "reservoir",
+  "SZ": "MEASURE THING(=-5) GRAIN(=-5) | o",
+  "H": "MANY(=+3) INSIDE(=+5) | o",
+  "CO": "MEASURE THING(=-5) LAND(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "crater",
+  "SZ": "PLACE THING(=-5) LONG(=+5) | o",
+  "H": "PLACE INSIDE(=+5) ABOVE(=+5) | o",
+  "CO": "LAND THING(=-5) LONG(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "businessman",
+  "SZ": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+  "H": "GIVE(=0) VALUE | o agent",
+  "CO": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "phase",
+  "SZ": "TIME BEGIN(=-5) | o",
+  "H": "TIME PART(=-2) | o",
+  "CO": "TIME BEGIN(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "labour",
+  "SZ": "SOMEONE CAN(=-5) | o",
+  "H": "SOMEONE PART(=+5) DO | o",
+  "CO": "SOMEONE CAN(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "airline",
+  "SZ": "GRAIN(=-5) NEAR(=-5) | o",
+  "H": "LONG(=-5) GRAIN(=-5) | o",
+  "CO": "GRAIN(=-5) NEAR(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "satisfaction",
+  "SZ": "FEEL WANT(=+5) BEGIN(=+5) | o",
+  "H": "WANT BEGIN(=+5) MOOD(=+3) | o quality",
+  "CO": "FEEL WANT(=+5) BEGIN(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "yesterday",
+  "SZ": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+  "H": "TIME(=-1) PART(=-2) | o",
+  "CO": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "model",
+  "SZ": "THINK ART(=-5) SAME(=+5) | o",
+  "H": "THINK KNOW(=-3) | o result",
+  "CO": "THINK ART(=+5) SAME | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "outlet",
+  "SZ": "PLACE VALUE(=-5) NEAR(=+5) | o",
+  "H": "PLACE GIVE(=0) VALUE | o",
+  "CO": "PLACE VALUE(=-5) NEAR(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "planet",
+  "SZ": "NEAR(=-5) PLACE PART(=-5) | o",
+  "H": "BIG(=+5) THING(=-5) ABOVE(=+5) | o",
+  "CO": "LAND NEAR(=-5) PLACE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "representation",
+  "SZ": "THINK GRAIN(=+5) | o",
+  "H": "SEE | o result",
+  "CO": "DO THINK(=+5) SAME | o result",
+  "base": "represent",
+  "role": "result"
+ },
+ {
+  "w": "news",
+  "SZ": "SAY TEXT TIME(=+5) | o",
+  "H": "SAY HAPPEN TIME(=-1) | o",
+  "CO": "SAY TEXT TIME(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "copyright",
+  "SZ": "TEXT SAME(=+5) | o",
+  "H": "TEXT RULE(=+5) CAN(=+5) | o",
+  "CO": "TEXT SAME(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "obstacle",
+  "SZ": "THINK CAN(=-5) THING(=-5) | o",
+  "H": "CAN(=-3) MOVE | o agent",
+  "CO": "THINK CAN(=-5) THING(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "grief",
+  "SZ": "FEEL MOOD(=-5) LIVE(=-5) | o",
+  "H": "MOOD(=-5) FEEL(=+5) | o",
+  "CO": "FEEL MOOD(=-5) LIVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "lawmaker",
+  "SZ": "SOMEONE RULE(=+5) | o",
+  "H": "TEXT RULE(=+5) | o agent",
+  "CO": "SOMEONE RULE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "harm",
+  "SZ": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+  "H": "CHANGE GOOD(=-4) BODY | o result",
+  "CO": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "spell",
+  "SZ": "HEAT(=-5) ABOVE(=-5) | o",
+  "H": "SAY DO CHANGE | o result",
+  "CO": "SACRED(=-5) HEAT ABOVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "lawsuit",
+  "SZ": "HAPPEN RULE(=+5) | o",
+  "H": "FIGHT RULE(=+5) | o",
+  "CO": "HAPPEN RULE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "lens",
+  "SZ": "ART(=-5) SEE NEAR(=-5) | o",
+  "H": "SEE | o tool",
+  "CO": "ART(=-5) SEE NEAR(=-5) | o tool",
+  "base": null,
+  "role": "tool"
+ },
+ {
+  "w": "testimony",
+  "SZ": "SAY SEE TEXT | o",
+  "H": "SAY RULE(=+5) | o result",
+  "CO": "MANY(=-5) JOIN(=+5) SEE | o result",
+  "base": "testify",
+  "role": "result"
+ },
+ {
+  "w": "bowl",
+  "SZ": "INSIDE(=+5) TOUCH(=-5) PART(=-5) | o",
+  "H": "INSIDE THING | o",
+  "CO": "CONTAINER TOUCH(=-5) PART | o tool",
+  "base": null,
+  "role": "tool"
+ },
+ {
+  "w": "pitcher",
+  "SZ": "SOMEONE LONG(=+5) FIGHT(=-5) | o",
+  "H": "GIVE FIGHT(=-5) | o agent",
+  "CO": "LONG(=+5) SAY(=+5) FIGHT(=-5) | o agent",
+  "base": "pitch",
+  "role": "agent"
+ },
+ {
+  "w": "ally",
+  "SZ": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+  "H": "FRIEND JOIN | o",
+  "CO": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "contribution",
+  "SZ": "DO GIVE(=+5) GOOD(=+5) | o",
+  "H": "PART(=-2) HAPPEN | o result",
+  "CO": "JOIN(=+5) GIVE(=+5) DO | o",
+  "base": "contribute",
+  "role": null
+ },
+ {
+  "w": "guest",
+  "SZ": "SOMEONE RULE(=-5) MOOD(=+5) | o",
+  "H": "SOMEONE(=-5) NEAR(=+5) | o",
+  "CO": "SOMEONE RULE(=+5) MOOD(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "expo",
+  "SZ": "PART(=+5) FIGHT(=-5) | o",
+  "H": "PLACE SEE | o",
+  "CO": "PART(=+5) FIGHT(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "regulation",
+  "SZ": "SAY RULE(=+5) ABOVE(=-5) | o",
+  "H": "RULE(=+4) | o",
+  "CO": "SAY RULE(=+5) ABOVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "list",
+  "SZ": "SAY TEXT PART(=+5) | o",
+  "H": "TEXT PART(=+5) | o",
+  "CO": "SAY TEXT PART(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "existence",
+  "SZ": "LIVE MOVE(=-5) MANY(=-5) | o",
+  "H": "LIVE | o quality",
+  "CO": "LIVE SACRED(=+5) MOVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "fleet",
+  "SZ": "PART(=+5) FIGHT(=+5) | o",
+  "H": "PART(=+5) ABOVE MOVE | o",
+  "CO": "PART(=+5) FIGHT(=+5) LAND(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "township",
+  "SZ": "PLACE NEAR(=+5) | o",
+  "H": "PLACE PART(=-2) RULE(=+4) | o",
+  "CO": "LAND PLACE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "bishop",
+  "SZ": "SOMEONE RULE(=+5) | o",
+  "H": "RULE(=+4) SEE | o agent",
+  "CO": "SACRED RULE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "activist",
+  "SZ": "SOMEONE TOUCH(=+5) | o",
+  "H": "CHANGE FIGHT(=+5) | o agent",
+  "CO": "SOMEONE TOUCH(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "order",
+  "SZ": "DO WANT(=+5) THINK(=+5) | o",
+  "H": "SAY(=+5) RULE(=+4) | o result",
+  "CO": "DO WANT(=+5) THINK(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "knight",
+  "SZ": "SOMEONE THING(=+4) VALUE(=+5) | o",
+  "H": "FIGHT(=+5) RULE(=+4) | o agent",
+  "CO": "SOMEONE THING(=+5) VALUE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "diplomacy",
+  "SZ": "SAY(=0) FRIEND FIGHT(=+5) | o",
+  "H": "SAY RULE(=+4) PART(=+5) | o",
+  "CO": "SAY(=0) FRIEND(=+5) FIGHT(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "bronze",
+  "SZ": "GRAIN THING(=-5) | o",
+  "H": "TOUCH(=+5) JOIN | o",
+  "CO": "GRAIN THING | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "occupation",
+  "SZ": "DO FIGHT(=+5) FRIEND(=-5) | o",
+  "H": "DO VALUE | o",
+  "CO": "GIVE(=-5) PLACE MOVE(=-5) | o",
+  "base": "occupy",
+  "role": null
+ },
+ {
+  "w": "athletics",
+  "SZ": "FIGHT(=-5) MOVE(=+5) | o",
+  "H": "FIGHT(=-5) MOVE | o",
+  "CO": "FIGHT(=-5) MOVE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "piece",
+  "SZ": "PART(=-5) GRAIN(=+5) LONG(=-5) | o",
+  "H": "PART(=-2) | o",
+  "CO": "PART(=-5) GRAIN(=+5) LONG(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "anode",
+  "SZ": "ART(=-5) INSIDE(=-5) LONG | o",
+  "H": "ART(=-5) GIVE(=+5) | o",
+  "CO": "ART(=-5) INSIDE(=-5) LONG | o tool",
+  "base": null,
+  "role": "tool"
+ },
+ {
+  "w": "quantum",
+  "SZ": "THINK ART(=-5) PART(=-5) | o",
+  "H": "MEASURE PART(=-5) | o",
+  "CO": "THINK ART(=-5) PART(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "fist",
+  "SZ": "BODY SAY(=+5) GIVE(=-5) | o",
+  "H": "BODY TOUCH(=+5) | o",
+  "CO": "BODY SAY(=+5) TOUCH | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "reservation",
+  "SZ": "PLACE GIVE(=+5) | o",
+  "H": "PLACE RULE(=+4) | o",
+  "CO": "LAND PLACE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "campus",
+  "SZ": "PLACE ABOVE(=+5) NEAR(=+5) | o",
+  "H": "PLACE KNOW(=+5) | o",
+  "CO": "LAND PLACE ABOVE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "flame",
+  "SZ": "HEAT(=+5) GRAIN(=-5) | o",
+  "H": "HEAT(=+5) GRAIN(=-3) | o",
+  "CO": "HEAT(=+5) GRAIN(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "privilege",
+  "SZ": "VALUE(=+5) RULE(=+5) WANT | o",
+  "H": "SAME(=-4) RULE(=+4) | o",
+  "CO": "VALUE(=+5) RULE(=+5) WANT | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "sequence",
+  "SZ": "PART(=+5) BEGIN(=-5) HAPPEN | o",
+  "H": "JOIN(=+5) TIME | o",
+  "CO": "PART(=+5) BEGIN(=+5) HAPPEN | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "ratio",
+  "SZ": "MEASURE(=+5) SAME(=+5) | o",
+  "H": "MEASURE(=+5) | o",
+  "CO": "MEASURE(=+5) SAME(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "rest",
+  "SZ": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+  "H": "PART(=-2) GIVE(=-5) | o",
+  "CO": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "ankle",
+  "SZ": "BODY SIDE(=-5) LONG(=-5) | o",
+  "H": "BODY JOIN ABOVE(=-5) | o",
+  "CO": "BODY SIDE(=-5) LONG(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "discussion",
+  "SZ": "DO THINK(=-5) TEXT | o",
+  "H": "SAY GIVE(=0) | o",
+  "CO": "THINK(=+5) KNOW(=+5) TIME(=+5) | o result",
+  "base": "discuss",
+  "role": "result"
+ },
+ {
+  "w": "road",
+  "SZ": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+  "H": "PLACE MOVE | o",
+  "CO": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "driver",
+  "SZ": "ART(=-5) SIDE | o",
+  "H": "MOVE ART(=-5) | o agent",
+  "CO": "MOVE(=+5) SIDE NEAR | o agent",
+  "base": "drive",
+  "role": "agent"
+ },
+ {
+  "w": "friend",
+  "SZ": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+  "H": "FRIEND(=+5) SOMEONE | o",
+  "CO": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "integration",
+  "SZ": "HAPPEN JOIN(=+5) ART(=-5) | o",
+  "H": "JOIN(=+5) PART(=+2) | o",
+  "CO": "JOIN(=+5) THINK(=+5) CONSUME(=+5) | o",
+  "base": "integrate",
+  "role": null
+ },
+ {
+  "w": "bachelor",
+  "SZ": "SOMEONE MEASURE(=+5) | o",
+  "H": "SOMEONE SEX(=+5) JOIN(=-5) | o",
+  "CO": "SOMEONE MEASURE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "overtime",
+  "SZ": "TIME BEGIN(=+5) FIGHT(=-5) | o",
+  "H": "TIME ABOVE(=+3) | o",
+  "CO": "TIME BEGIN(=+5) FIGHT | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "atmosphere",
+  "SZ": "GRAIN(=-5) INSIDE(=+5) HEAT(=+5) | o",
+  "H": "GRAIN(=-5) NEAR(=+5) | o",
+  "CO": "GRAIN(=-5) INSIDE(=-5) HEAT | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "stomach",
+  "SZ": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+  "H": "BODY CONSUME(=+5) | o",
+  "CO": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "autumn",
+  "SZ": "TIME HEAT(=-5) BEGIN | o",
+  "H": "TIME PART(=-2) | o",
+  "CO": "TIME HEAT(=+5) BEGIN | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "post",
+  "SZ": "PLACE LONG(=+5) TEXT | o",
+  "H": "PLACE MOVE(=-5) | o",
+  "CO": "PLACE LONG(=+5) TEXT | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "lion",
+  "SZ": "THING(=+4) VALUE(=+5) | o",
+  "H": "THING(=+4) BIG(=+3) | o",
+  "CO": "THING(=+4) VALUE(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "playoff",
+  "SZ": "FIGHT(=-5) BEGIN(=+5) | o",
+  "H": "FIGHT(=-5) BEGIN(=+5) | o",
+  "CO": "FIGHT(=-5) BEGIN(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "brokerage",
+  "SZ": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+  "H": "GIVE(=0) JOIN(=+5) | o",
+  "CO": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "acre",
+  "SZ": "MEASURE(=-5) PLACE THING(=-5) | o",
+  "H": "MEASURE(=-5) PLACE | o",
+  "CO": "MEASURE(=-5) LAND(=+5) PLACE | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "competitiveness",
+  "SZ": "FIGHT(=-5) TOUCH(=+5) FRIEND(=-5) | o",
+  "H": "FIGHT(=+3) WANT(=+5) | o quality",
+  "CO": "FIGHT(=-5) TOUCH(=+5) FRIEND | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "ideology",
+  "SZ": "THINK ART(=+5) | o",
+  "H": "THINK PART(=+5) | o",
+  "CO": "THINK ART(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "cake",
+  "SZ": "TOUCH(=-5) CONSUME(=+5) HEAT(=-5) | o",
+  "H": "GRAIN(=+5) CONSUME(=+5) | o",
+  "CO": "TOUCH(=-5) CONSUME(=+5) CONTAINER(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "pickup",
+  "SZ": "INSIDE(=+5) LONG(=+5) | o",
+  "H": "THING(=-5) MOVE(=+5) | o",
+  "CO": "CONTAINER LONG(=+5) | o tool",
+  "base": null,
+  "role": "tool"
+ },
+ {
+  "w": "argentine",
+  "SZ": "THING(=+4) JOIN(=-5) | o",
+  "H": "THING(=+4) BIG(=-3) | o",
+  "CO": "THING(=+4) JOIN | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "prisoner",
+  "SZ": "SOMEONE FIGHT(=+5) | o",
+  "H": "SOMEONE INSIDE(=+5) | o",
+  "CO": "SOMEONE FIGHT(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "atom",
+  "SZ": "GRAIN PART(=-5) | o",
+  "H": "PART(=-5) BIG(=-5) | o",
+  "CO": "GRAIN PART(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "door",
+  "SZ": "PLACE INSIDE SIDE(=+5) | o",
+  "H": "JOIN(=-5) INSIDE(=+5) | o tool",
+  "CO": "PLACE INSIDE(=+5) CONTAINER(=+5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "gambling",
+  "SZ": "DO FIGHT(=-5) | o",
+  "H": "FIGHT(=-5) VALUE(=+3) | o",
+  "CO": "FIGHT(=-5) THINK | o",
+  "base": "gamble",
+  "role": null
+ },
+ {
+  "w": "folklore",
+  "SZ": "THINK ART(=+5) | o",
+  "H": "SAY(=0) ART(=+5) | o",
+  "CO": "THINK ART(=+5) SACRED(=-5) | o",
+  "base": null,
+  "role": null
+ },
+ {
+  "w": "hybrid",
+  "SZ": "PART(=-2) TOUCH(=-5) | o",
+  "H": "JOIN(=+5) SAME(=-5) | o",
+  "CO": "PART(=-2) TOUCH(=-5) | o",
+  "base": null,
+  "role": null
+ }
+]

@@ -35998,5 +35998,9605 @@
 "mixture",
 "diversity"
 ]
+},
+{
+"v": "Hc",
+"w": "helm",
+"i": 0,
+"r": 1,
+"code": "MOVE SIDE | o tool",
+"ans": [
+"wheel",
+"ski",
+"skate"
+]
+},
+{
+"v": "Hc",
+"w": "malaria",
+"i": 1,
+"r": 1,
+"code": "BODY GOOD(=-5) HEAT(=+5) | o",
+"ans": [
+"fever",
+"illness",
+"sickness"
+]
+},
+{
+"v": "Hc",
+"w": "pianist",
+"i": 2,
+"r": 1,
+"code": "SAY ART(=+5) | o agent",
+"ans": [
+"poet",
+"author",
+"singer"
+]
+},
+{
+"v": "Hc",
+"w": "employee",
+"i": 3,
+"r": 1,
+"code": "DO RULE(=-5) | o agent",
+"ans": [
+"outlaw",
+"rebel",
+"vandal"
+]
+},
+{
+"v": "Hc",
+"w": "resignation",
+"i": 4,
+"r": 1,
+"code": "CONSUME MOOD(=-5) | o",
+"ans": [
+"tragedy",
+"sorrow",
+"grief"
+]
+},
+{
+"v": "Hc",
+"w": "revision",
+"i": 5,
+"r": 1,
+"code": "THINK CHANGE(=+5) | o",
+"ans": [
+"epiphany",
+"insight",
+"idea"
+]
+},
+{
+"v": "Hc",
+"w": "consideration",
+"i": 6,
+"r": 1,
+"code": "THINK(=-5) CARE(=+5) | o",
+"ans": [
+"caution",
+"wariness",
+"suspicion"
+]
+},
+{
+"v": "Hc",
+"w": "profit",
+"i": 7,
+"r": 1,
+"code": "JOIN(=+5) VALUE(=+5) | o result",
+"ans": [
+"profit",
+"gain",
+"benefit"
+]
+},
+{
+"v": "Hc",
+"w": "relegation",
+"i": 8,
+"r": 1,
+"code": "GIVE RULE | o",
+"ans": [
+"tax",
+"levy",
+"tribute"
+]
+},
+{
+"v": "Hc",
+"w": "religion",
+"i": 9,
+"r": 1,
+"code": "KNOW RULE(=+5) ABOVE | o",
+"ans": [
+"constitution",
+"statute",
+"law"
+]
+},
+{
+"v": "Hc",
+"w": "bubble",
+"i": 10,
+"r": 1,
+"code": "GRAIN(=-5) INSIDE(=+5) | o",
+"ans": [
+"air",
+"gas",
+"atmosphere"
+]
+},
+{
+"v": "Hc",
+"w": "chapel",
+"i": 11,
+"r": 1,
+"code": "PLACE KNOW ABOVE | o",
+"ans": [
+"heaven",
+"sky",
+"attic"
+]
+},
+{
+"v": "Hc",
+"w": "people",
+"i": 12,
+"r": 1,
+"code": "SOMEONE(=+5) | o N+3",
+"ans": [
+"we",
+"us",
+"ourselves"
+]
+},
+{
+"v": "Hc",
+"w": "lake",
+"i": 13,
+"r": 1,
+"code": "PLACE GRAIN(=-5) | o",
+"ans": [
+"atmosphere",
+"air",
+"space"
+]
+},
+{
+"v": "Hc",
+"w": "topic",
+"i": 14,
+"r": 1,
+"code": "SAY | o result",
+"ans": [
+"word",
+"statement",
+"speech"
+]
+},
+{
+"v": "Hc",
+"w": "era",
+"i": 15,
+"r": 1,
+"code": "TIME(=-5) BIG | o",
+"ans": [
+"antiquity",
+"history",
+"ancient times"
+]
+},
+{
+"v": "Hc",
+"w": "donation",
+"i": 16,
+"r": 1,
+"code": "GIVE(=+5) | o result",
+"ans": [
+"gift",
+"present",
+"donation"
+]
+},
+{
+"v": "Hc",
+"w": "gate",
+"i": 17,
+"r": 1,
+"code": "JOIN(=+5) MOVE | o tool",
+"ans": [
+"hitch",
+"coupling",
+"clutch"
+]
+},
+{
+"v": "Hc",
+"w": "homer",
+"i": 18,
+"r": 1,
+"code": "HAPPEN GOOD | o PI FIGHT(=-5) | o",
+"ans": [
+"goal",
+"score",
+"win"
+]
+},
+{
+"v": "Hc",
+"w": "coca",
+"i": 19,
+"r": 1,
+"code": "THING CONSUME(=+5) FEEL | o",
+"ans": [
+"stimulant",
+"drug",
+"spice"
+]
+},
+{
+"v": "Hc",
+"w": "dose",
+"i": 20,
+"r": 1,
+"code": "MEASURE CONSUME(=+5) | o",
+"ans": [
+"dose",
+"portion",
+"ration"
+]
+},
+{
+"v": "Hc",
+"w": "reservoir",
+"i": 21,
+"r": 1,
+"code": "MANY INSIDE | o",
+"ans": [
+"crowd",
+"contents",
+"population"
+]
+},
+{
+"v": "Hc",
+"w": "crater",
+"i": 22,
+"r": 1,
+"code": "PLACE INSIDE ABOVE | o",
+"ans": [
+"attic",
+"loft",
+"ceiling"
+]
+},
+{
+"v": "Hc",
+"w": "businessman",
+"i": 23,
+"r": 1,
+"code": "GIVE VALUE(=-5) | o agent",
+"ans": [
+"swindler",
+"fraud",
+"cheat"
+]
+},
+{
+"v": "Hc",
+"w": "phase",
+"i": 24,
+"r": 1,
+"code": "TIME PART(=-5) | o",
+"ans": [
+"moment",
+"second",
+"instant"
+]
+},
+{
+"v": "Hc",
+"w": "labour",
+"i": 25,
+"r": 1,
+"code": "SOMEONE PART DO | o",
+"ans": [
+"actor",
+"participant",
+"assistant"
+]
+},
+{
+"v": "Hc",
+"w": "airline",
+"i": 26,
+"r": 1,
+"code": "LONG GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"fume",
+"vapor"
+]
+},
+{
+"v": "Hc",
+"w": "satisfaction",
+"i": 27,
+"r": 1,
+"code": "WANT(=+5) BEGIN(=+5) MOOD | o quality",
+"ans": [
+"satisfaction",
+"contentment",
+"fulfillment"
+]
+},
+{
+"v": "Hc",
+"w": "yesterday",
+"i": 28,
+"r": 1,
+"code": "TIME(=-5) PART | o",
+"ans": [
+"past",
+"former",
+"history"
+]
+},
+{
+"v": "Hc",
+"w": "model",
+"i": 29,
+"r": 1,
+"code": "THINK KNOW | o result",
+"ans": [
+"conclusion",
+"belief",
+"understanding"
+]
+},
+{
+"v": "Hc",
+"w": "outlet",
+"i": 30,
+"r": 1,
+"code": "PLACE GIVE VALUE(=-5) | o",
+"ans": [
+"dump",
+"junkyard",
+"thrift shop"
+]
+},
+{
+"v": "Hc",
+"w": "planet",
+"i": 31,
+"r": 1,
+"code": "BIG(=+5) THING ABOVE(=+5) | o",
+"ans": [
+"mountain",
+"sky",
+"cloud"
+]
+},
+{
+"v": "Hc",
+"w": "representation",
+"i": 32,
+"r": 1,
+"code": "SEE | o result",
+"ans": [
+"sight",
+"view",
+"image"
+]
+},
+{
+"v": "Hc",
+"w": "news",
+"i": 33,
+"r": 1,
+"code": "SAY HAPPEN TIME(=-5) | o",
+"ans": [
+"legend",
+"proverb",
+"tradition"
+]
+},
+{
+"v": "Hc",
+"w": "copyright",
+"i": 34,
+"r": 1,
+"code": "TEXT RULE CAN | o",
+"ans": [
+"permit",
+"license",
+"warrant"
+]
+},
+{
+"v": "Hc",
+"w": "obstacle",
+"i": 35,
+"r": 1,
+"code": "CAN(=-5) MOVE(=-5) | o agent",
+"ans": [
+"anchor",
+"paralytic",
+"invalid"
+]
+},
+{
+"v": "Hc",
+"w": "grief",
+"i": 36,
+"r": 1,
+"code": "MOOD(=-5) FEEL(=+5) | o",
+"ans": [
+"agony",
+"anguish",
+"despair"
+]
+},
+{
+"v": "Hc",
+"w": "lawmaker",
+"i": 37,
+"r": 1,
+"code": "TEXT RULE(=+5) | o agent",
+"ans": [
+"legislator",
+"lawmaker",
+"clerk"
+]
+},
+{
+"v": "Hc",
+"w": "harm",
+"i": 38,
+"r": 1,
+"code": "CHANGE GOOD(=-5) BODY | o result",
+"ans": [
+"injury",
+"wound",
+"disease"
+]
+},
+{
+"v": "Hc",
+"w": "spell",
+"i": 39,
+"r": 1,
+"code": "SAY DO CHANGE | o result",
+"ans": [
+"decree",
+"command",
+"promise"
+]
+},
+{
+"v": "Hc",
+"w": "lawsuit",
+"i": 40,
+"r": 1,
+"code": "FIGHT RULE(=+5) | o",
+"ans": [
+"lawsuit",
+"trial",
+"litigation"
+]
+},
+{
+"v": "Hc",
+"w": "lens",
+"i": 41,
+"r": 1,
+"code": "SEE | o tool",
+"ans": [
+"glasses",
+"lens",
+"telescope"
+]
+},
+{
+"v": "Hc",
+"w": "testimony",
+"i": 42,
+"r": 1,
+"code": "SAY RULE(=+5) | o result",
+"ans": [
+"proclamation",
+"declaration",
+"announcement"
+]
+},
+{
+"v": "Hc",
+"w": "bowl",
+"i": 43,
+"r": 1,
+"code": "INSIDE THING | o",
+"ans": [
+"organ",
+"content",
+"interior"
+]
+},
+{
+"v": "Hc",
+"w": "pitcher",
+"i": 44,
+"r": 1,
+"code": "GIVE FIGHT(=-5) | o agent",
+"ans": [
+"sponsor",
+"coach",
+"referee"
+]
+},
+{
+"v": "Hc",
+"w": "ally",
+"i": 45,
+"r": 1,
+"code": "FRIEND(=+5) JOIN(=+5) | o",
+"ans": [
+"friendship",
+"alliance",
+"partnership"
+]
+},
+{
+"v": "Hc",
+"w": "contribution",
+"i": 46,
+"r": 1,
+"code": "PART(=-5) HAPPEN | o result",
+"ans": [
+"breakage",
+"fragmentation",
+"accident"
+]
+},
+{
+"v": "Hc",
+"w": "guest",
+"i": 47,
+"r": 1,
+"code": "SOMEONE NEAR | o",
+"ans": [
+"neighbor",
+"companion",
+"local"
+]
+},
+{
+"v": "Hc",
+"w": "expo",
+"i": 48,
+"r": 1,
+"code": "PLACE SEE | o",
+"ans": [
+"lookout",
+"viewpoint",
+"observatory"
+]
+},
+{
+"v": "Hc",
+"w": "regulation",
+"i": 49,
+"r": 1,
+"code": "RULE(=+5) | o",
+"ans": [
+"law",
+"statute",
+"regulation"
+]
+},
+{
+"v": "Hc",
+"w": "helm",
+"i": 0,
+"r": 2,
+"code": "MOVE SIDE | o tool",
+"ans": [
+"paddle",
+"oar",
+"rudder"
+]
+},
+{
+"v": "Hc",
+"w": "malaria",
+"i": 1,
+"r": 2,
+"code": "BODY GOOD(=-5) HEAT(=+5) | o",
+"ans": [
+"fever",
+"illness",
+"sickness"
+]
+},
+{
+"v": "Hc",
+"w": "pianist",
+"i": 2,
+"r": 2,
+"code": "SAY ART(=+5) | o agent",
+"ans": [
+"singer",
+"poet",
+"orator"
+]
+},
+{
+"v": "Hc",
+"w": "employee",
+"i": 3,
+"r": 2,
+"code": "DO RULE(=-5) | o agent",
+"ans": [
+"amateur",
+"hobbyist",
+"freelancer"
+]
+},
+{
+"v": "Hc",
+"w": "resignation",
+"i": 4,
+"r": 2,
+"code": "CONSUME MOOD(=-5) | o",
+"ans": [
+"tragedy",
+"drama",
+"sorrow"
+]
+},
+{
+"v": "Hc",
+"w": "revision",
+"i": 5,
+"r": 2,
+"code": "THINK CHANGE(=+5) | o",
+"ans": [
+"idea",
+"invention",
+"concept"
+]
+},
+{
+"v": "Hc",
+"w": "consideration",
+"i": 6,
+"r": 2,
+"code": "THINK(=-5) CARE(=+5) | o",
+"ans": [
+"skepticism",
+"caution",
+"suspicion"
+]
+},
+{
+"v": "Hc",
+"w": "profit",
+"i": 7,
+"r": 2,
+"code": "JOIN(=+5) VALUE(=+5) | o result",
+"ans": [
+"profit",
+"gain",
+"interest"
+]
+},
+{
+"v": "Hc",
+"w": "relegation",
+"i": 8,
+"r": 2,
+"code": "GIVE RULE | o",
+"ans": [
+"grant",
+"donation",
+"charity"
+]
+},
+{
+"v": "Hc",
+"w": "religion",
+"i": 9,
+"r": 2,
+"code": "KNOW RULE(=+5) ABOVE | o",
+"ans": [
+"theology",
+"doctrine",
+"scripture"
+]
+},
+{
+"v": "Hc",
+"w": "bubble",
+"i": 10,
+"r": 2,
+"code": "GRAIN(=-5) INSIDE(=+5) | o",
+"ans": [
+"air",
+"gas",
+"vapor"
+]
+},
+{
+"v": "Hc",
+"w": "chapel",
+"i": 11,
+"r": 2,
+"code": "PLACE KNOW ABOVE | o",
+"ans": [
+"observatory",
+"tower",
+"heaven"
+]
+},
+{
+"v": "Hc",
+"w": "people",
+"i": 12,
+"r": 2,
+"code": "SOMEONE(=+5) | o N+3",
+"ans": [
+"we",
+"us",
+"i"
+]
+},
+{
+"v": "Hc",
+"w": "lake",
+"i": 13,
+"r": 2,
+"code": "PLACE GRAIN(=-5) | o",
+"ans": [
+"atmosphere",
+"space",
+"sky"
+]
+},
+{
+"v": "Hc",
+"w": "topic",
+"i": 14,
+"r": 2,
+"code": "SAY | o result",
+"ans": [
+"word",
+"statement",
+"speech"
+]
+},
+{
+"v": "Hc",
+"w": "era",
+"i": 15,
+"r": 2,
+"code": "TIME(=-5) BIG | o",
+"ans": [
+"era",
+"history",
+"antiquity"
+]
+},
+{
+"v": "Hc",
+"w": "donation",
+"i": 16,
+"r": 2,
+"code": "GIVE(=+5) | o result",
+"ans": [
+"gift",
+"present",
+"offering"
+]
+},
+{
+"v": "Hc",
+"w": "gate",
+"i": 17,
+"r": 2,
+"code": "JOIN(=+5) MOVE | o tool",
+"ans": [
+"vehicle",
+"engine",
+"motor"
+]
+},
+{
+"v": "Hc",
+"w": "homer",
+"i": 18,
+"r": 2,
+"code": "HAPPEN GOOD | o PI FIGHT(=-5) | o",
+"ans": [
+"goal",
+"score",
+"win"
+]
+},
+{
+"v": "Hc",
+"w": "coca",
+"i": 19,
+"r": 2,
+"code": "THING CONSUME(=+5) FEEL | o",
+"ans": [
+"hunger",
+"appetite",
+"craving"
+]
+},
+{
+"v": "Hc",
+"w": "dose",
+"i": 20,
+"r": 2,
+"code": "MEASURE CONSUME(=+5) | o",
+"ans": [
+"dose",
+"intake",
+"ration"
+]
+},
+{
+"v": "Hc",
+"w": "reservoir",
+"i": 21,
+"r": 2,
+"code": "MANY INSIDE | o",
+"ans": [
+"contents",
+"crowd",
+"audience"
+]
+},
+{
+"v": "Hc",
+"w": "crater",
+"i": 22,
+"r": 2,
+"code": "PLACE INSIDE ABOVE | o",
+"ans": [
+"attic",
+"loft",
+"ceiling"
+]
+},
+{
+"v": "Hc",
+"w": "businessman",
+"i": 23,
+"r": 2,
+"code": "GIVE VALUE(=-5) | o agent",
+"ans": [
+"vendor",
+"seller",
+"dealer"
+]
+},
+{
+"v": "Hc",
+"w": "phase",
+"i": 24,
+"r": 2,
+"code": "TIME PART(=-5) | o",
+"ans": [
+"moment",
+"instant",
+"second"
+]
+},
+{
+"v": "Hc",
+"w": "labour",
+"i": 25,
+"r": 2,
+"code": "SOMEONE PART DO | o",
+"ans": [
+"actor",
+"performer",
+"participant"
+]
+},
+{
+"v": "Hc",
+"w": "airline",
+"i": 26,
+"r": 2,
+"code": "LONG GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"vapor",
+"fume"
+]
+},
+{
+"v": "Hc",
+"w": "satisfaction",
+"i": 27,
+"r": 2,
+"code": "WANT(=+5) BEGIN(=+5) MOOD | o quality",
+"ans": [
+"enthusiasm",
+"eagerness",
+"excitement"
+]
+},
+{
+"v": "Hc",
+"w": "yesterday",
+"i": 28,
+"r": 2,
+"code": "TIME(=-5) PART | o",
+"ans": [
+"past",
+"ancestor",
+"memory"
+]
+},
+{
+"v": "Hc",
+"w": "model",
+"i": 29,
+"r": 2,
+"code": "THINK KNOW | o result",
+"ans": [
+"conclusion",
+"belief",
+"insight"
+]
+},
+{
+"v": "Hc",
+"w": "outlet",
+"i": 30,
+"r": 2,
+"code": "PLACE GIVE VALUE(=-5) | o",
+"ans": [
+"flea market",
+"thrift shop",
+"junkyard"
+]
+},
+{
+"v": "Hc",
+"w": "planet",
+"i": 31,
+"r": 2,
+"code": "BIG(=+5) THING ABOVE(=+5) | o",
+"ans": [
+"mountain",
+"sky",
+"giant"
+]
+},
+{
+"v": "Hc",
+"w": "representation",
+"i": 32,
+"r": 2,
+"code": "SEE | o result",
+"ans": [
+"sight",
+"view",
+"image"
+]
+},
+{
+"v": "Hc",
+"w": "news",
+"i": 33,
+"r": 2,
+"code": "SAY HAPPEN TIME(=-5) | o",
+"ans": [
+"story",
+"tale",
+"legend"
+]
+},
+{
+"v": "Hc",
+"w": "copyright",
+"i": 34,
+"r": 2,
+"code": "TEXT RULE CAN | o",
+"ans": [
+"grammar",
+"rule",
+"spelling"
+]
+},
+{
+"v": "Hc",
+"w": "obstacle",
+"i": 35,
+"r": 2,
+"code": "CAN(=-5) MOVE(=-5) | o agent",
+"ans": [
+"anchor",
+"brake",
+"paralytic"
+]
+},
+{
+"v": "Hc",
+"w": "grief",
+"i": 36,
+"r": 2,
+"code": "MOOD(=-5) FEEL(=+5) | o",
+"ans": [
+"anguish",
+"agony",
+"despair"
+]
+},
+{
+"v": "Hc",
+"w": "lawmaker",
+"i": 37,
+"r": 2,
+"code": "TEXT RULE(=+5) | o agent",
+"ans": [
+"legislator",
+"clerk",
+"author"
+]
+},
+{
+"v": "Hc",
+"w": "harm",
+"i": 38,
+"r": 2,
+"code": "CHANGE GOOD(=-5) BODY | o result",
+"ans": [
+"injury",
+"wound",
+"disease"
+]
+},
+{
+"v": "Hc",
+"w": "spell",
+"i": 39,
+"r": 2,
+"code": "SAY DO CHANGE | o result",
+"ans": [
+"instruction",
+"command",
+"order"
+]
+},
+{
+"v": "Hc",
+"w": "lawsuit",
+"i": 40,
+"r": 2,
+"code": "FIGHT RULE(=+5) | o",
+"ans": [
+"war",
+"battle",
+"conflict"
+]
+},
+{
+"v": "Hc",
+"w": "lens",
+"i": 41,
+"r": 2,
+"code": "SEE | o tool",
+"ans": [
+"glasses",
+"lens",
+"telescope"
+]
+},
+{
+"v": "Hc",
+"w": "testimony",
+"i": 42,
+"r": 2,
+"code": "SAY RULE(=+5) | o result",
+"ans": [
+"decree",
+"proclamation",
+"declaration"
+]
+},
+{
+"v": "Hc",
+"w": "bowl",
+"i": 43,
+"r": 2,
+"code": "INSIDE THING | o",
+"ans": [
+"organ",
+"interior",
+"content"
+]
+},
+{
+"v": "Hc",
+"w": "pitcher",
+"i": 44,
+"r": 2,
+"code": "GIVE FIGHT(=-5) | o agent",
+"ans": [
+"coach",
+"sponsor",
+"host"
+]
+},
+{
+"v": "Hc",
+"w": "ally",
+"i": 45,
+"r": 2,
+"code": "FRIEND(=+5) JOIN(=+5) | o",
+"ans": [
+"friendship",
+"alliance",
+"companionship"
+]
+},
+{
+"v": "Hc",
+"w": "contribution",
+"i": 46,
+"r": 2,
+"code": "PART(=-5) HAPPEN | o result",
+"ans": [
+"incident",
+"accident",
+"glitch"
+]
+},
+{
+"v": "Hc",
+"w": "guest",
+"i": 47,
+"r": 2,
+"code": "SOMEONE NEAR | o",
+"ans": [
+"neighbor",
+"companion",
+"resident"
+]
+},
+{
+"v": "Hc",
+"w": "expo",
+"i": 48,
+"r": 2,
+"code": "PLACE SEE | o",
+"ans": [
+"lookout",
+"viewpoint",
+"window"
+]
+},
+{
+"v": "Hc",
+"w": "regulation",
+"i": 49,
+"r": 2,
+"code": "RULE(=+5) | o",
+"ans": [
+"law",
+"regulation",
+"statute"
+]
+},
+{
+"v": "Hc",
+"w": "list",
+"i": 50,
+"r": 1,
+"code": "TEXT PART(=+5) | o",
+"ans": [
+"library",
+"anthology",
+"archive"
+]
+},
+{
+"v": "Hc",
+"w": "existence",
+"i": 51,
+"r": 1,
+"code": "LIVE(=+5) | o quality",
+"ans": [
+"life",
+"vitality",
+"existence"
+]
+},
+{
+"v": "Hc",
+"w": "fleet",
+"i": 52,
+"r": 1,
+"code": "PART(=+5) ABOVE MOVE | o",
+"ans": [
+"flock",
+"flight",
+"swarm"
+]
+},
+{
+"v": "Hc",
+"w": "township",
+"i": 53,
+"r": 1,
+"code": "PLACE PART RULE | o",
+"ans": [
+"office",
+"department",
+"district"
+]
+},
+{
+"v": "Hc",
+"w": "bishop",
+"i": 54,
+"r": 1,
+"code": "RULE(=+5) SEE | o agent",
+"ans": [
+"inspector",
+"auditor",
+"supervisor"
+]
+},
+{
+"v": "Hc",
+"w": "activist",
+"i": 55,
+"r": 1,
+"code": "CHANGE FIGHT | o agent",
+"ans": [
+"revolutionary",
+"rebel",
+"reformer"
+]
+},
+{
+"v": "Hc",
+"w": "order",
+"i": 56,
+"r": 1,
+"code": "SAY(=+5) RULE(=+5) | o result",
+"ans": [
+"decree",
+"proclamation",
+"command"
+]
+},
+{
+"v": "Hc",
+"w": "knight",
+"i": 57,
+"r": 1,
+"code": "FIGHT RULE | o agent",
+"ans": [
+"soldier",
+"warrior",
+"combatant"
+]
+},
+{
+"v": "Hc",
+"w": "diplomacy",
+"i": 58,
+"r": 1,
+"code": "SAY RULE PART | o",
+"ans": [
+"clause",
+"phrase",
+"sentence"
+]
+},
+{
+"v": "Hc",
+"w": "bronze",
+"i": 59,
+"r": 1,
+"code": "TOUCH JOIN | o",
+"ans": [
+"contact",
+"connection",
+"joint"
+]
+},
+{
+"v": "Hc",
+"w": "occupation",
+"i": 60,
+"r": 1,
+"code": "DO VALUE | o",
+"ans": [
+"work",
+"job",
+"business"
+]
+},
+{
+"v": "Hc",
+"w": "athletics",
+"i": 61,
+"r": 1,
+"code": "FIGHT(=-5) MOVE(=+5) | o",
+"ans": [
+"race",
+"sprint",
+"dash"
+]
+},
+{
+"v": "Hc",
+"w": "piece",
+"i": 62,
+"r": 1,
+"code": "PART(=-5) | o",
+"ans": [
+"particle",
+"crumb",
+"speck"
+]
+},
+{
+"v": "Hc",
+"w": "anode",
+"i": 63,
+"r": 1,
+"code": "ART(=-5) GIVE | o",
+"ans": [
+"utility",
+"supply",
+"generator"
+]
+},
+{
+"v": "Hc",
+"w": "quantum",
+"i": 64,
+"r": 1,
+"code": "MEASURE(=-5) PART(=-5) | o",
+"ans": [
+"dust",
+"grain",
+"powder"
+]
+},
+{
+"v": "Hc",
+"w": "fist",
+"i": 65,
+"r": 1,
+"code": "BODY TOUCH | o",
+"ans": [
+"skin",
+"flesh",
+"surface"
+]
+},
+{
+"v": "Hc",
+"w": "reservation",
+"i": 66,
+"r": 1,
+"code": "PLACE RULE | o",
+"ans": [
+"court",
+"office",
+"capital"
+]
+},
+{
+"v": "Hc",
+"w": "campus",
+"i": 67,
+"r": 1,
+"code": "PLACE KNOW | o",
+"ans": [
+"school",
+"library",
+"academy"
+]
+},
+{
+"v": "Hc",
+"w": "flame",
+"i": 68,
+"r": 1,
+"code": "HEAT(=+5) GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"flame",
+"steam"
+]
+},
+{
+"v": "Hc",
+"w": "privilege",
+"i": 69,
+"r": 1,
+"code": "SAME RULE(=+5) | o",
+"ans": [
+"standard",
+"norm",
+"equality"
+]
+},
+{
+"v": "Hc",
+"w": "sequence",
+"i": 70,
+"r": 1,
+"code": "JOIN TIME | o",
+"ans": [
+"appointment",
+"schedule",
+"calendar"
+]
+},
+{
+"v": "Hc",
+"w": "ratio",
+"i": 71,
+"r": 1,
+"code": "MEASURE(=+5) | o",
+"ans": [
+"rate",
+"ratio",
+"proportion"
+]
+},
+{
+"v": "Hc",
+"w": "rest",
+"i": 72,
+"r": 1,
+"code": "PART GIVE(=-5) | o",
+"ans": [
+"share",
+"portion",
+"sample"
+]
+},
+{
+"v": "Hc",
+"w": "ankle",
+"i": 73,
+"r": 1,
+"code": "BODY JOIN(=+5) ABOVE(=+5) | o",
+"ans": [
+"head",
+"neck",
+"shoulder"
+]
+},
+{
+"v": "Hc",
+"w": "discussion",
+"i": 74,
+"r": 1,
+"code": "SAY(=+5) GIVE(=+5) | o",
+"ans": [
+"announcement",
+"declaration",
+"advertisement"
+]
+},
+{
+"v": "Hc",
+"w": "road",
+"i": 75,
+"r": 1,
+"code": "PLACE MOVE | o",
+"ans": [
+"station",
+"terminal",
+"track"
+]
+},
+{
+"v": "Hc",
+"w": "driver",
+"i": 76,
+"r": 1,
+"code": "MOVE ART(=-5) | o agent",
+"ans": [
+"driver",
+"pilot",
+"motor"
+]
+},
+{
+"v": "Hc",
+"w": "friend",
+"i": 77,
+"r": 1,
+"code": "FRIEND(=+5) SOMEONE(=+5) | o",
+"ans": [
+"friend",
+"companion",
+"ally"
+]
+},
+{
+"v": "Hc",
+"w": "integration",
+"i": 78,
+"r": 1,
+"code": "JOIN(=+5) PART(=+5) | o",
+"ans": [
+"collection",
+"union",
+"crowd"
+]
+},
+{
+"v": "Hc",
+"w": "bachelor",
+"i": 79,
+"r": 1,
+"code": "SOMEONE SEX JOIN | o",
+"ans": [
+"couple",
+"spouse",
+"marriage"
+]
+},
+{
+"v": "Hc",
+"w": "overtime",
+"i": 80,
+"r": 1,
+"code": "TIME ABOVE | o",
+"ans": [
+"age",
+"era",
+"eternity"
+]
+},
+{
+"v": "Hc",
+"w": "atmosphere",
+"i": 81,
+"r": 1,
+"code": "GRAIN(=-5) NEAR | o",
+"ans": [
+"air",
+"atmosphere",
+"vapour"
+]
+},
+{
+"v": "Hc",
+"w": "stomach",
+"i": 82,
+"r": 1,
+"code": "BODY CONSUME(=+5) | o",
+"ans": [
+"mouth",
+"stomach",
+"appetite"
+]
+},
+{
+"v": "Hc",
+"w": "autumn",
+"i": 83,
+"r": 1,
+"code": "TIME PART | o",
+"ans": [
+"moment",
+"period",
+"interval"
+]
+},
+{
+"v": "Hc",
+"w": "post",
+"i": 84,
+"r": 1,
+"code": "PLACE MOVE(=+5) | o",
+"ans": [
+"track",
+"race",
+"arena"
+]
+},
+{
+"v": "Hc",
+"w": "lion",
+"i": 85,
+"r": 1,
+"code": "THING(=+5) BIG(=+5) | o",
+"ans": [
+"elephant",
+"whale",
+"beast"
+]
+},
+{
+"v": "Hc",
+"w": "playoff",
+"i": 86,
+"r": 1,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"final",
+"finish",
+"ending"
+]
+},
+{
+"v": "Hc",
+"w": "brokerage",
+"i": 87,
+"r": 1,
+"code": "GIVE JOIN | o",
+"ans": [
+"gift",
+"donation",
+"contribution"
+]
+},
+{
+"v": "Hc",
+"w": "acre",
+"i": 88,
+"r": 1,
+"code": "MEASURE(=-5) PLACE | o",
+"ans": [
+"area",
+"space",
+"room"
+]
+},
+{
+"v": "Hc",
+"w": "competitiveness",
+"i": 89,
+"r": 1,
+"code": "FIGHT(=-5) WANT(=+5) | o quality",
+"ans": [
+"passion",
+"enthusiasm",
+"fondness"
+]
+},
+{
+"v": "Hc",
+"w": "ideology",
+"i": 90,
+"r": 1,
+"code": "THINK PART | o",
+"ans": [
+"idea",
+"thought",
+"opinion"
+]
+},
+{
+"v": "Hc",
+"w": "cake",
+"i": 91,
+"r": 1,
+"code": "GRAIN(=+5) CONSUME(=+5) | o",
+"ans": [
+"bite",
+"morsel",
+"snack"
+]
+},
+{
+"v": "Hc",
+"w": "pickup",
+"i": 92,
+"r": 1,
+"code": "THING MOVE | o",
+"ans": [
+"animal",
+"creature",
+"vehicle"
+]
+},
+{
+"v": "Hc",
+"w": "argentine",
+"i": 93,
+"r": 1,
+"code": "THING BIG | o",
+"ans": [
+"giant",
+"mass",
+"monster"
+]
+},
+{
+"v": "Hc",
+"w": "prisoner",
+"i": 94,
+"r": 1,
+"code": "SOMEONE INSIDE(=+5) | o",
+"ans": [
+"resident",
+"insider",
+"inmate"
+]
+},
+{
+"v": "Hc",
+"w": "atom",
+"i": 95,
+"r": 1,
+"code": "PART(=-5) BIG(=-5) | o",
+"ans": [
+"atom",
+"molecule",
+"speck"
+]
+},
+{
+"v": "Hc",
+"w": "door",
+"i": 96,
+"r": 1,
+"code": "JOIN INSIDE(=+5) | o tool",
+"ans": [
+"connector",
+"plug",
+"adapter"
+]
+},
+{
+"v": "Hc",
+"w": "gambling",
+"i": 97,
+"r": 1,
+"code": "FIGHT(=-5) VALUE | o",
+"ans": [
+"gambling",
+"bet",
+"wager"
+]
+},
+{
+"v": "Hc",
+"w": "folklore",
+"i": 98,
+"r": 1,
+"code": "SAY ART(=+5) | o",
+"ans": [
+"poetry",
+"speech",
+"oratory"
+]
+},
+{
+"v": "Hc",
+"w": "hybrid",
+"i": 99,
+"r": 1,
+"code": "JOIN SAME(=-5) | o",
+"ans": [
+"division",
+"separation",
+"difference"
+]
+},
+{
+"v": "Hc",
+"w": "list",
+"i": 50,
+"r": 2,
+"code": "TEXT PART(=+5) | o",
+"ans": [
+"library",
+"book",
+"collection"
+]
+},
+{
+"v": "Hc",
+"w": "existence",
+"i": 51,
+"r": 2,
+"code": "LIVE(=+5) | o quality",
+"ans": [
+"life",
+"vitality",
+"alive"
+]
+},
+{
+"v": "Hc",
+"w": "fleet",
+"i": 52,
+"r": 2,
+"code": "PART(=+5) ABOVE MOVE | o",
+"ans": [
+"flock",
+"swarm",
+"flight"
+]
+},
+{
+"v": "Hc",
+"w": "township",
+"i": 53,
+"r": 2,
+"code": "PLACE PART RULE | o",
+"ans": [
+"office",
+"department",
+"branch"
+]
+},
+{
+"v": "Hc",
+"w": "bishop",
+"i": 54,
+"r": 2,
+"code": "RULE(=+5) SEE | o agent",
+"ans": [
+"inspector",
+"supervisor",
+"observer"
+]
+},
+{
+"v": "Hc",
+"w": "activist",
+"i": 55,
+"r": 2,
+"code": "CHANGE FIGHT | o agent",
+"ans": [
+"revolutionary",
+"rebel",
+"reformer"
+]
+},
+{
+"v": "Hc",
+"w": "order",
+"i": 56,
+"r": 2,
+"code": "SAY(=+5) RULE(=+5) | o result",
+"ans": [
+"decree",
+"proclamation",
+"announcement"
+]
+},
+{
+"v": "Hc",
+"w": "knight",
+"i": 57,
+"r": 2,
+"code": "FIGHT RULE | o agent",
+"ans": [
+"dissident",
+"rebel",
+"protester"
+]
+},
+{
+"v": "Hc",
+"w": "diplomacy",
+"i": 58,
+"r": 2,
+"code": "SAY RULE PART | o",
+"ans": [
+"proverb",
+"clause",
+"slogan"
+]
+},
+{
+"v": "Hc",
+"w": "bronze",
+"i": 59,
+"r": 2,
+"code": "TOUCH JOIN | o",
+"ans": [
+"contact",
+"joint",
+"connection"
+]
+},
+{
+"v": "Hc",
+"w": "occupation",
+"i": 60,
+"r": 2,
+"code": "DO VALUE | o",
+"ans": [
+"use",
+"function",
+"job"
+]
+},
+{
+"v": "Hc",
+"w": "athletics",
+"i": 61,
+"r": 2,
+"code": "FIGHT(=-5) MOVE(=+5) | o",
+"ans": [
+"race",
+"sprint",
+"chase"
+]
+},
+{
+"v": "Hc",
+"w": "piece",
+"i": 62,
+"r": 2,
+"code": "PART(=-5) | o",
+"ans": [
+"particle",
+"crumb",
+"dust"
+]
+},
+{
+"v": "Hc",
+"w": "anode",
+"i": 63,
+"r": 2,
+"code": "ART(=-5) GIVE | o",
+"ans": [
+"supply",
+"provision",
+"technology"
+]
+},
+{
+"v": "Hc",
+"w": "quantum",
+"i": 64,
+"r": 2,
+"code": "MEASURE(=-5) PART(=-5) | o",
+"ans": [
+"trace",
+"pinch",
+"dose"
+]
+},
+{
+"v": "Hc",
+"w": "fist",
+"i": 65,
+"r": 2,
+"code": "BODY TOUCH | o",
+"ans": [
+"skin",
+"flesh",
+"touch"
+]
+},
+{
+"v": "Hc",
+"w": "reservation",
+"i": 66,
+"r": 2,
+"code": "PLACE RULE | o",
+"ans": [
+"capital",
+"court",
+"seat"
+]
+},
+{
+"v": "Hc",
+"w": "campus",
+"i": 67,
+"r": 2,
+"code": "PLACE KNOW | o",
+"ans": [
+"school",
+"museum",
+"library"
+]
+},
+{
+"v": "Hc",
+"w": "flame",
+"i": 68,
+"r": 2,
+"code": "HEAT(=+5) GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"steam",
+"flame"
+]
+},
+{
+"v": "Hc",
+"w": "privilege",
+"i": 69,
+"r": 2,
+"code": "SAME RULE(=+5) | o",
+"ans": [
+"equality",
+"uniformity",
+"standard"
+]
+},
+{
+"v": "Hc",
+"w": "sequence",
+"i": 70,
+"r": 2,
+"code": "JOIN TIME | o",
+"ans": [
+"appointment",
+"date",
+"schedule"
+]
+},
+{
+"v": "Hc",
+"w": "ratio",
+"i": 71,
+"r": 2,
+"code": "MEASURE(=+5) | o",
+"ans": [
+"rate",
+"speed",
+"ratio"
+]
+},
+{
+"v": "Hc",
+"w": "rest",
+"i": 72,
+"r": 2,
+"code": "PART GIVE(=-5) | o",
+"ans": [
+"deduction",
+"subtraction",
+"removal"
+]
+},
+{
+"v": "Hc",
+"w": "ankle",
+"i": 73,
+"r": 2,
+"code": "BODY JOIN(=+5) ABOVE(=+5) | o",
+"ans": [
+"head",
+"neck",
+"shoulder"
+]
+},
+{
+"v": "Hc",
+"w": "discussion",
+"i": 74,
+"r": 2,
+"code": "SAY(=+5) GIVE(=+5) | o",
+"ans": [
+"shout",
+"cry",
+"call"
+]
+},
+{
+"v": "Hc",
+"w": "road",
+"i": 75,
+"r": 2,
+"code": "PLACE MOVE | o",
+"ans": [
+"road",
+"route",
+"path"
+]
+},
+{
+"v": "Hc",
+"w": "driver",
+"i": 76,
+"r": 2,
+"code": "MOVE ART(=-5) | o agent",
+"ans": [
+"vehicle",
+"driver",
+"engine"
+]
+},
+{
+"v": "Hc",
+"w": "friend",
+"i": 77,
+"r": 2,
+"code": "FRIEND(=+5) SOMEONE(=+5) | o",
+"ans": [
+"friend",
+"companion",
+"ally"
+]
+},
+{
+"v": "Hc",
+"w": "integration",
+"i": 78,
+"r": 2,
+"code": "JOIN(=+5) PART(=+5) | o",
+"ans": [
+"union",
+"alliance",
+"group"
+]
+},
+{
+"v": "Hc",
+"w": "bachelor",
+"i": 79,
+"r": 2,
+"code": "SOMEONE SEX JOIN | o",
+"ans": [
+"couple",
+"partner",
+"spouse"
+]
+},
+{
+"v": "Hc",
+"w": "overtime",
+"i": 80,
+"r": 2,
+"code": "TIME ABOVE | o",
+"ans": [
+"future",
+"afterlife",
+"heaven"
+]
+},
+{
+"v": "Hc",
+"w": "atmosphere",
+"i": 81,
+"r": 2,
+"code": "GRAIN(=-5) NEAR | o",
+"ans": [
+"air",
+"atmosphere",
+"vapor"
+]
+},
+{
+"v": "Hc",
+"w": "stomach",
+"i": 82,
+"r": 2,
+"code": "BODY CONSUME(=+5) | o",
+"ans": [
+"stomach",
+"mouth",
+"throat"
+]
+},
+{
+"v": "Hc",
+"w": "autumn",
+"i": 83,
+"r": 2,
+"code": "TIME PART | o",
+"ans": [
+"period",
+"phase",
+"moment"
+]
+},
+{
+"v": "Hc",
+"w": "post",
+"i": 84,
+"r": 2,
+"code": "PLACE MOVE(=+5) | o",
+"ans": [
+"station",
+"terminal",
+"airport"
+]
+},
+{
+"v": "Hc",
+"w": "lion",
+"i": 85,
+"r": 2,
+"code": "THING(=+5) BIG(=+5) | o",
+"ans": [
+"beast",
+"whale",
+"elephant"
+]
+},
+{
+"v": "Hc",
+"w": "playoff",
+"i": 86,
+"r": 2,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"final",
+"finish",
+"end"
+]
+},
+{
+"v": "Hc",
+"w": "brokerage",
+"i": 87,
+"r": 2,
+"code": "GIVE JOIN | o",
+"ans": [
+"gift",
+"donation",
+"contribution"
+]
+},
+{
+"v": "Hc",
+"w": "acre",
+"i": 88,
+"r": 2,
+"code": "MEASURE(=-5) PLACE | o",
+"ans": [
+"area",
+"space",
+"room"
+]
+},
+{
+"v": "Hc",
+"w": "competitiveness",
+"i": 89,
+"r": 2,
+"code": "FIGHT(=-5) WANT(=+5) | o quality",
+"ans": [
+"passion",
+"enthusiasm",
+"fondness"
+]
+},
+{
+"v": "Hc",
+"w": "ideology",
+"i": 90,
+"r": 2,
+"code": "THINK PART | o",
+"ans": [
+"idea",
+"thought",
+"opinion"
+]
+},
+{
+"v": "Hc",
+"w": "cake",
+"i": 91,
+"r": 2,
+"code": "GRAIN(=+5) CONSUME(=+5) | o",
+"ans": [
+"bite",
+"mouthful",
+"snack"
+]
+},
+{
+"v": "Hc",
+"w": "pickup",
+"i": 92,
+"r": 2,
+"code": "THING MOVE | o",
+"ans": [
+"animal",
+"vehicle",
+"creature"
+]
+},
+{
+"v": "Hc",
+"w": "argentine",
+"i": 93,
+"r": 2,
+"code": "THING BIG | o",
+"ans": [
+"giant",
+"monster",
+"mass"
+]
+},
+{
+"v": "Hc",
+"w": "prisoner",
+"i": 94,
+"r": 2,
+"code": "SOMEONE INSIDE(=+5) | o",
+"ans": [
+"insider",
+"member",
+"resident"
+]
+},
+{
+"v": "Hc",
+"w": "atom",
+"i": 95,
+"r": 2,
+"code": "PART(=-5) BIG(=-5) | o",
+"ans": [
+"speck",
+"dust",
+"atom"
+]
+},
+{
+"v": "Hc",
+"w": "door",
+"i": 96,
+"r": 2,
+"code": "JOIN INSIDE(=+5) | o tool",
+"ans": [
+"plug",
+"connector",
+"socket"
+]
+},
+{
+"v": "Hc",
+"w": "gambling",
+"i": 97,
+"r": 2,
+"code": "FIGHT(=-5) VALUE | o",
+"ans": [
+"prize",
+"reward",
+"trophy"
+]
+},
+{
+"v": "Hc",
+"w": "folklore",
+"i": 98,
+"r": 2,
+"code": "SAY ART(=+5) | o",
+"ans": [
+"poetry",
+"literature",
+"song"
+]
+},
+{
+"v": "Hc",
+"w": "hybrid",
+"i": 99,
+"r": 2,
+"code": "JOIN SAME(=-5) | o",
+"ans": [
+"mixture",
+"hybrid",
+"combination"
+]
+},
+{
+"v": "SZp",
+"w": "helm",
+"i": 0,
+"r": 1,
+"code": "ART SIDE LONG | o",
+"ans": [
+"brush",
+"pencil",
+"pen"
+]
+},
+{
+"v": "SZp",
+"w": "malaria",
+"i": 1,
+"r": 1,
+"code": "BODY GOOD | o",
+"ans": [
+"health",
+"fitness",
+"beauty"
+]
+},
+{
+"v": "SZp",
+"w": "pianist",
+"i": 2,
+"r": 1,
+"code": "SOMEONE ART | o",
+"ans": [
+"artist",
+"painter",
+"performer"
+]
+},
+{
+"v": "SZp",
+"w": "employee",
+"i": 3,
+"r": 1,
+"code": "SOMEONE RULE ART | o",
+"ans": [
+"curator",
+"director",
+"professor"
+]
+},
+{
+"v": "SZp",
+"w": "resignation",
+"i": 4,
+"r": 1,
+"code": "FEEL MOOD | o",
+"ans": [
+"emotion",
+"feeling",
+"mood"
+]
+},
+{
+"v": "SZp",
+"w": "revision",
+"i": 5,
+"r": 1,
+"code": "DO TEXT CHANGE | o",
+"ans": [
+"edit",
+"revision",
+"translation"
+]
+},
+{
+"v": "SZp",
+"w": "consideration",
+"i": 6,
+"r": 1,
+"code": "THINK CARE CAN | o",
+"ans": [
+"caution",
+"prudence",
+"attention"
+]
+},
+{
+"v": "SZp",
+"w": "profit",
+"i": 7,
+"r": 1,
+"code": "VALUE MEASURE | o",
+"ans": [
+"price",
+"cost",
+"value"
+]
+},
+{
+"v": "SZp",
+"w": "relegation",
+"i": 8,
+"r": 1,
+"code": "HAPPEN ABOVE JOIN | o",
+"ans": [
+"increase",
+"addition",
+"growth"
+]
+},
+{
+"v": "SZp",
+"w": "religion",
+"i": 9,
+"r": 1,
+"code": "THINK ART | o",
+"ans": [
+"idea",
+"concept",
+"theory"
+]
+},
+{
+"v": "SZp",
+"w": "bubble",
+"i": 10,
+"r": 1,
+"code": "GRAIN TOUCH HEAT | o",
+"ans": [
+"coal",
+"charcoal",
+"gravel"
+]
+},
+{
+"v": "SZp",
+"w": "chapel",
+"i": 11,
+"r": 1,
+"code": "PLACE NEAR INSIDE | o",
+"ans": [
+"home",
+"room",
+"house"
+]
+},
+{
+"v": "SZp",
+"w": "people",
+"i": 12,
+"r": 1,
+"code": "SOMEONE MANY PART | o",
+"ans": [
+"crowd",
+"group",
+"team"
+]
+},
+{
+"v": "SZp",
+"w": "lake",
+"i": 13,
+"r": 1,
+"code": "GRAIN THING PLACE | o",
+"ans": [
+"field",
+"farm",
+"granary"
+]
+},
+{
+"v": "SZp",
+"w": "topic",
+"i": 14,
+"r": 1,
+"code": "SAY TEXT | o",
+"ans": [
+"sentence",
+"word",
+"phrase"
+]
+},
+{
+"v": "SZp",
+"w": "era",
+"i": 15,
+"r": 1,
+"code": "TIME BEGIN | o",
+"ans": [
+"start",
+"beginning",
+"dawn"
+]
+},
+{
+"v": "SZp",
+"w": "donation",
+"i": 16,
+"r": 1,
+"code": "GIVE FRIEND | o",
+"ans": [
+"gift",
+"present",
+"donation"
+]
+},
+{
+"v": "SZp",
+"w": "gate",
+"i": 17,
+"r": 1,
+"code": "PLACE INSIDE SIDE | o",
+"ans": [
+"interior",
+"inside",
+"back"
+]
+},
+{
+"v": "SZp",
+"w": "homer",
+"i": 18,
+"r": 1,
+"code": "DO SAY LONG | o",
+"ans": [
+"speech",
+"lecture",
+"sermon"
+]
+},
+{
+"v": "SZp",
+"w": "coca",
+"i": 19,
+"r": 1,
+"code": "THING(=0) CONSUME | o",
+"ans": [
+"food",
+"meal",
+"vegetable"
+]
+},
+{
+"v": "SZp",
+"w": "dose",
+"i": 20,
+"r": 1,
+"code": "MEASURE PART CONSUME | o",
+"ans": [
+"dose",
+"portion",
+"serving"
+]
+},
+{
+"v": "SZp",
+"w": "reservoir",
+"i": 21,
+"r": 1,
+"code": "MEASURE THING GRAIN | o",
+"ans": [
+"dust",
+"powder",
+"grain"
+]
+},
+{
+"v": "SZp",
+"w": "crater",
+"i": 22,
+"r": 1,
+"code": "PLACE THING LONG | o",
+"ans": [
+"stable",
+"barn",
+"pen"
+]
+},
+{
+"v": "SZp",
+"w": "businessman",
+"i": 23,
+"r": 1,
+"code": "SOMEONE TOUCH VALUE | o",
+"ans": [
+"favorite",
+"darling",
+"hero"
+]
+},
+{
+"v": "SZp",
+"w": "phase",
+"i": 24,
+"r": 1,
+"code": "TIME BEGIN | o",
+"ans": [
+"era",
+"age",
+"origin"
+]
+},
+{
+"v": "SZp",
+"w": "labour",
+"i": 25,
+"r": 1,
+"code": "SOMEONE CAN | o",
+"ans": [
+"expert",
+"master",
+"pro"
+]
+},
+{
+"v": "SZp",
+"w": "airline",
+"i": 26,
+"r": 1,
+"code": "GRAIN NEAR | o",
+"ans": [
+"proximity",
+"nearness",
+"contact"
+]
+},
+{
+"v": "SZp",
+"w": "satisfaction",
+"i": 27,
+"r": 1,
+"code": "FEEL WANT BEGIN | o",
+"ans": [
+"desire",
+"passion",
+"craving"
+]
+},
+{
+"v": "SZp",
+"w": "yesterday",
+"i": 28,
+"r": 1,
+"code": "MEASURE TIME SOMEONE | o",
+"ans": [
+"age",
+"lifetime",
+"duration"
+]
+},
+{
+"v": "SZp",
+"w": "model",
+"i": 29,
+"r": 1,
+"code": "THINK ART SAME | o",
+"ans": [
+"style",
+"convention",
+"tradition"
+]
+},
+{
+"v": "SZp",
+"w": "outlet",
+"i": 30,
+"r": 1,
+"code": "PLACE VALUE NEAR | o",
+"ans": [
+"shop",
+"vault",
+"market"
+]
+},
+{
+"v": "SZp",
+"w": "planet",
+"i": 31,
+"r": 1,
+"code": "NEAR PLACE PART | o",
+"ans": [
+"neighborhood",
+"suburb",
+"district"
+]
+},
+{
+"v": "SZp",
+"w": "representation",
+"i": 32,
+"r": 1,
+"code": "THINK GRAIN | o",
+"ans": [
+"thought",
+"idea",
+"opinion"
+]
+},
+{
+"v": "SZp",
+"w": "news",
+"i": 33,
+"r": 1,
+"code": "SAY TEXT TIME | o",
+"ans": [
+"announcement",
+"note",
+"report"
+]
+},
+{
+"v": "SZp",
+"w": "copyright",
+"i": 34,
+"r": 1,
+"code": "TEXT SAME | o",
+"ans": [
+"copy",
+"duplicate",
+"replica"
+]
+},
+{
+"v": "SZp",
+"w": "obstacle",
+"i": 35,
+"r": 1,
+"code": "THINK CAN THING | o",
+"ans": [
+"possibility",
+"option",
+"plan"
+]
+},
+{
+"v": "SZp",
+"w": "grief",
+"i": 36,
+"r": 1,
+"code": "FEEL MOOD LIVE | o",
+"ans": [
+"enthusiasm",
+"passion",
+"energy"
+]
+},
+{
+"v": "SZp",
+"w": "lawmaker",
+"i": 37,
+"r": 1,
+"code": "SOMEONE RULE | o",
+"ans": [
+"ruler",
+"leader",
+"official"
+]
+},
+{
+"v": "SZp",
+"w": "harm",
+"i": 38,
+"r": 1,
+"code": "FRIEND MANY FEEL | o",
+"ans": [
+"affection",
+"warmth",
+"kindness"
+]
+},
+{
+"v": "SZp",
+"w": "spell",
+"i": 39,
+"r": 1,
+"code": "HEAT ABOVE | o",
+"ans": [
+"sun",
+"fever",
+"heat"
+]
+},
+{
+"v": "SZp",
+"w": "lawsuit",
+"i": 40,
+"r": 1,
+"code": "HAPPEN RULE | o",
+"ans": [
+"event",
+"occurrence",
+"incident"
+]
+},
+{
+"v": "SZp",
+"w": "lens",
+"i": 41,
+"r": 1,
+"code": "ART SEE NEAR | o",
+"ans": [
+"view",
+"painting",
+"sight"
+]
+},
+{
+"v": "SZp",
+"w": "testimony",
+"i": 42,
+"r": 1,
+"code": "SAY SEE TEXT | o",
+"ans": [
+"caption",
+"title",
+"headline"
+]
+},
+{
+"v": "SZp",
+"w": "bowl",
+"i": 43,
+"r": 1,
+"code": "INSIDE TOUCH PART | o",
+"ans": [
+"bone",
+"core",
+"skeleton"
+]
+},
+{
+"v": "SZp",
+"w": "pitcher",
+"i": 44,
+"r": 1,
+"code": "SOMEONE LONG FIGHT | o",
+"ans": [
+"warrior",
+"soldier",
+"fighter"
+]
+},
+{
+"v": "SZp",
+"w": "ally",
+"i": 45,
+"r": 1,
+"code": "RULE FRIEND JOIN | o",
+"ans": [
+"alliance",
+"treaty",
+"union"
+]
+},
+{
+"v": "SZp",
+"w": "contribution",
+"i": 46,
+"r": 1,
+"code": "DO GIVE GOOD | o",
+"ans": [
+"help",
+"charity",
+"kindness"
+]
+},
+{
+"v": "SZp",
+"w": "guest",
+"i": 47,
+"r": 1,
+"code": "SOMEONE RULE MOOD | o",
+"ans": [
+"comedian",
+"jester",
+"host"
+]
+},
+{
+"v": "SZp",
+"w": "expo",
+"i": 48,
+"r": 1,
+"code": "PART FIGHT | o",
+"ans": [
+"battle",
+"skirmish",
+"conflict"
+]
+},
+{
+"v": "SZp",
+"w": "regulation",
+"i": 49,
+"r": 1,
+"code": "SAY RULE ABOVE | o",
+"ans": [
+"decree",
+"proclamation",
+"order"
+]
+},
+{
+"v": "SZp",
+"w": "helm",
+"i": 0,
+"r": 2,
+"code": "ART SIDE LONG | o",
+"ans": [
+"ruler",
+"rod",
+"baton"
+]
+},
+{
+"v": "SZp",
+"w": "malaria",
+"i": 1,
+"r": 2,
+"code": "BODY GOOD | o",
+"ans": [
+"health",
+"fitness",
+"beauty"
+]
+},
+{
+"v": "SZp",
+"w": "pianist",
+"i": 2,
+"r": 2,
+"code": "SOMEONE ART | o",
+"ans": [
+"artist",
+"painter",
+"performer"
+]
+},
+{
+"v": "SZp",
+"w": "employee",
+"i": 3,
+"r": 2,
+"code": "SOMEONE RULE ART | o",
+"ans": [
+"lawyer",
+"judge",
+"officer"
+]
+},
+{
+"v": "SZp",
+"w": "resignation",
+"i": 4,
+"r": 2,
+"code": "FEEL MOOD | o",
+"ans": [
+"emotion",
+"passion",
+"feeling"
+]
+},
+{
+"v": "SZp",
+"w": "revision",
+"i": 5,
+"r": 2,
+"code": "DO TEXT CHANGE | o",
+"ans": [
+"edit",
+"revision",
+"translation"
+]
+},
+{
+"v": "SZp",
+"w": "consideration",
+"i": 6,
+"r": 2,
+"code": "THINK CARE CAN | o",
+"ans": [
+"caution",
+"prudence",
+"wisdom"
+]
+},
+{
+"v": "SZp",
+"w": "profit",
+"i": 7,
+"r": 2,
+"code": "VALUE MEASURE | o",
+"ans": [
+"price",
+"rate",
+"cost"
+]
+},
+{
+"v": "SZp",
+"w": "relegation",
+"i": 8,
+"r": 2,
+"code": "HAPPEN ABOVE JOIN | o",
+"ans": [
+"increase",
+"growth",
+"rise"
+]
+},
+{
+"v": "SZp",
+"w": "religion",
+"i": 9,
+"r": 2,
+"code": "THINK ART | o",
+"ans": [
+"philosophy",
+"theory",
+"science"
+]
+},
+{
+"v": "SZp",
+"w": "bubble",
+"i": 10,
+"r": 2,
+"code": "GRAIN TOUCH HEAT | o",
+"ans": [
+"coal",
+"ember",
+"fire"
+]
+},
+{
+"v": "SZp",
+"w": "chapel",
+"i": 11,
+"r": 2,
+"code": "PLACE NEAR INSIDE | o",
+"ans": [
+"room",
+"hall",
+"home"
+]
+},
+{
+"v": "SZp",
+"w": "people",
+"i": 12,
+"r": 2,
+"code": "SOMEONE MANY PART | o",
+"ans": [
+"people",
+"crowd",
+"group"
+]
+},
+{
+"v": "SZp",
+"w": "lake",
+"i": 13,
+"r": 2,
+"code": "GRAIN THING PLACE | o",
+"ans": [
+"beach",
+"desert",
+"sandbox"
+]
+},
+{
+"v": "SZp",
+"w": "topic",
+"i": 14,
+"r": 2,
+"code": "SAY TEXT | o",
+"ans": [
+"message",
+"statement",
+"quote"
+]
+},
+{
+"v": "SZp",
+"w": "era",
+"i": 15,
+"r": 2,
+"code": "TIME BEGIN | o",
+"ans": [
+"beginning",
+"start",
+"origin"
+]
+},
+{
+"v": "SZp",
+"w": "donation",
+"i": 16,
+"r": 2,
+"code": "GIVE FRIEND | o",
+"ans": [
+"gift",
+"kindness",
+"donation"
+]
+},
+{
+"v": "SZp",
+"w": "gate",
+"i": 17,
+"r": 2,
+"code": "PLACE INSIDE SIDE | o",
+"ans": [
+"hallway",
+"corridor",
+"corner"
+]
+},
+{
+"v": "SZp",
+"w": "homer",
+"i": 18,
+"r": 2,
+"code": "DO SAY LONG | o",
+"ans": [
+"speech",
+"song",
+"lecture"
+]
+},
+{
+"v": "SZp",
+"w": "coca",
+"i": 19,
+"r": 2,
+"code": "THING(=0) CONSUME | o",
+"ans": [
+"food",
+"vegetable",
+"herb"
+]
+},
+{
+"v": "SZp",
+"w": "dose",
+"i": 20,
+"r": 2,
+"code": "MEASURE PART CONSUME | o",
+"ans": [
+"dose",
+"portion",
+"ration"
+]
+},
+{
+"v": "SZp",
+"w": "reservoir",
+"i": 21,
+"r": 2,
+"code": "MEASURE THING GRAIN | o",
+"ans": [
+"weight",
+"mass",
+"size"
+]
+},
+{
+"v": "SZp",
+"w": "crater",
+"i": 22,
+"r": 2,
+"code": "PLACE THING LONG | o",
+"ans": [
+"forest",
+"garden",
+"wood"
+]
+},
+{
+"v": "SZp",
+"w": "businessman",
+"i": 23,
+"r": 2,
+"code": "SOMEONE TOUCH VALUE | o",
+"ans": [
+"hero",
+"champion",
+"treasure"
+]
+},
+{
+"v": "SZp",
+"w": "phase",
+"i": 24,
+"r": 2,
+"code": "TIME BEGIN | o",
+"ans": [
+"start",
+"onset",
+"opening"
+]
+},
+{
+"v": "SZp",
+"w": "labour",
+"i": 25,
+"r": 2,
+"code": "SOMEONE CAN | o",
+"ans": [
+"expert",
+"master",
+"talent"
+]
+},
+{
+"v": "SZp",
+"w": "airline",
+"i": 26,
+"r": 2,
+"code": "GRAIN NEAR | o",
+"ans": [
+"dust",
+"sand",
+"powder"
+]
+},
+{
+"v": "SZp",
+"w": "satisfaction",
+"i": 27,
+"r": 2,
+"code": "FEEL WANT BEGIN | o",
+"ans": [
+"desire",
+"longing",
+"hope"
+]
+},
+{
+"v": "SZp",
+"w": "yesterday",
+"i": 28,
+"r": 2,
+"code": "MEASURE TIME SOMEONE | o",
+"ans": [
+"age",
+"lifetime",
+"lifespan"
+]
+},
+{
+"v": "SZp",
+"w": "model",
+"i": 29,
+"r": 2,
+"code": "THINK ART SAME | o",
+"ans": [
+"logic",
+"method",
+"theory"
+]
+},
+{
+"v": "SZp",
+"w": "outlet",
+"i": 30,
+"r": 2,
+"code": "PLACE VALUE NEAR | o",
+"ans": [
+"shop",
+"market",
+"bank"
+]
+},
+{
+"v": "SZp",
+"w": "planet",
+"i": 31,
+"r": 2,
+"code": "NEAR PLACE PART | o",
+"ans": [
+"neighborhood",
+"district",
+"suburb"
+]
+},
+{
+"v": "SZp",
+"w": "representation",
+"i": 32,
+"r": 2,
+"code": "THINK GRAIN | o",
+"ans": [
+"idea",
+"thought",
+"opinion"
+]
+},
+{
+"v": "SZp",
+"w": "news",
+"i": 33,
+"r": 2,
+"code": "SAY TEXT TIME | o",
+"ans": [
+"timetable",
+"schedule",
+"calendar"
+]
+},
+{
+"v": "SZp",
+"w": "copyright",
+"i": 34,
+"r": 2,
+"code": "TEXT SAME | o",
+"ans": [
+"copy",
+"duplicate",
+"replica"
+]
+},
+{
+"v": "SZp",
+"w": "obstacle",
+"i": 35,
+"r": 2,
+"code": "THINK CAN THING | o",
+"ans": [
+"possibility",
+"idea",
+"plan"
+]
+},
+{
+"v": "SZp",
+"w": "grief",
+"i": 36,
+"r": 2,
+"code": "FEEL MOOD LIVE | o",
+"ans": [
+"passion",
+"excitement",
+"enthusiasm"
+]
+},
+{
+"v": "SZp",
+"w": "lawmaker",
+"i": 37,
+"r": 2,
+"code": "SOMEONE RULE | o",
+"ans": [
+"ruler",
+"leader",
+"official"
+]
+},
+{
+"v": "SZp",
+"w": "harm",
+"i": 38,
+"r": 2,
+"code": "FRIEND MANY FEEL | o",
+"ans": [
+"affection",
+"goodwill",
+"warmth"
+]
+},
+{
+"v": "SZp",
+"w": "spell",
+"i": 39,
+"r": 2,
+"code": "HEAT ABOVE | o",
+"ans": [
+"sun",
+"summer",
+"heat"
+]
+},
+{
+"v": "SZp",
+"w": "lawsuit",
+"i": 40,
+"r": 2,
+"code": "HAPPEN RULE | o",
+"ans": [
+"case",
+"trial",
+"incident"
+]
+},
+{
+"v": "SZp",
+"w": "lens",
+"i": 41,
+"r": 2,
+"code": "ART SEE NEAR | o",
+"ans": [
+"picture",
+"painting",
+"drawing"
+]
+},
+{
+"v": "SZp",
+"w": "testimony",
+"i": 42,
+"r": 2,
+"code": "SAY SEE TEXT | o",
+"ans": [
+"sign",
+"poster",
+"notice"
+]
+},
+{
+"v": "SZp",
+"w": "bowl",
+"i": 43,
+"r": 2,
+"code": "INSIDE TOUCH PART | o",
+"ans": [
+"core",
+"bone",
+"heart"
+]
+},
+{
+"v": "SZp",
+"w": "pitcher",
+"i": 44,
+"r": 2,
+"code": "SOMEONE LONG FIGHT | o",
+"ans": [
+"soldier",
+"warrior",
+"fighter"
+]
+},
+{
+"v": "SZp",
+"w": "ally",
+"i": 45,
+"r": 2,
+"code": "RULE FRIEND JOIN | o",
+"ans": [
+"alliance",
+"treaty",
+"union"
+]
+},
+{
+"v": "SZp",
+"w": "contribution",
+"i": 46,
+"r": 2,
+"code": "DO GIVE GOOD | o",
+"ans": [
+"help",
+"service",
+"aid"
+]
+},
+{
+"v": "SZp",
+"w": "guest",
+"i": 47,
+"r": 2,
+"code": "SOMEONE RULE MOOD | o",
+"ans": [
+"host",
+"comedian",
+"entertainer"
+]
+},
+{
+"v": "SZp",
+"w": "expo",
+"i": 48,
+"r": 2,
+"code": "PART FIGHT | o",
+"ans": [
+"battle",
+"campaign",
+"front"
+]
+},
+{
+"v": "SZp",
+"w": "regulation",
+"i": 49,
+"r": 2,
+"code": "SAY RULE ABOVE | o",
+"ans": [
+"command",
+"order",
+"decree"
+]
+},
+{
+"v": "SZp",
+"w": "list",
+"i": 50,
+"r": 1,
+"code": "SAY TEXT PART | o",
+"ans": [
+"sentence",
+"phrase",
+"word"
+]
+},
+{
+"v": "SZp",
+"w": "existence",
+"i": 51,
+"r": 1,
+"code": "LIVE MOVE MANY | o",
+"ans": [
+"crowd",
+"swarm",
+"herd"
+]
+},
+{
+"v": "SZp",
+"w": "fleet",
+"i": 52,
+"r": 1,
+"code": "PART FIGHT | o",
+"ans": [
+"battle",
+"skirmish",
+"round"
+]
+},
+{
+"v": "SZp",
+"w": "township",
+"i": 53,
+"r": 1,
+"code": "PLACE NEAR | o",
+"ans": [
+"neighborhood",
+"vicinity",
+"area"
+]
+},
+{
+"v": "SZp",
+"w": "bishop",
+"i": 54,
+"r": 1,
+"code": "SOMEONE RULE | o",
+"ans": [
+"ruler",
+"leader",
+"governor"
+]
+},
+{
+"v": "SZp",
+"w": "activist",
+"i": 55,
+"r": 1,
+"code": "SOMEONE TOUCH | o",
+"ans": [
+"masseur",
+"healer",
+"toucher"
+]
+},
+{
+"v": "SZp",
+"w": "order",
+"i": 56,
+"r": 1,
+"code": "DO WANT THINK | o",
+"ans": [
+"plan",
+"intention",
+"goal"
+]
+},
+{
+"v": "SZp",
+"w": "knight",
+"i": 57,
+"r": 1,
+"code": "SOMEONE THING VALUE | o",
+"ans": [
+"merchant",
+"trader",
+"buyer"
+]
+},
+{
+"v": "SZp",
+"w": "diplomacy",
+"i": 58,
+"r": 1,
+"code": "SAY(=0) FRIEND FIGHT | o",
+"ans": [
+"argument",
+"debate",
+"dispute"
+]
+},
+{
+"v": "SZp",
+"w": "bronze",
+"i": 59,
+"r": 1,
+"code": "GRAIN THING | o",
+"ans": [
+"sand",
+"dust",
+"seed"
+]
+},
+{
+"v": "SZp",
+"w": "occupation",
+"i": 60,
+"r": 1,
+"code": "DO FIGHT FRIEND | o",
+"ans": [
+"defense",
+"protection",
+"guard"
+]
+},
+{
+"v": "SZp",
+"w": "athletics",
+"i": 61,
+"r": 1,
+"code": "FIGHT MOVE | o",
+"ans": [
+"charge",
+"attack",
+"march"
+]
+},
+{
+"v": "SZp",
+"w": "piece",
+"i": 62,
+"r": 1,
+"code": "PART GRAIN LONG | o",
+"ans": [
+"straw",
+"stalk",
+"stem"
+]
+},
+{
+"v": "SZp",
+"w": "anode",
+"i": 63,
+"r": 1,
+"code": "ART INSIDE LONG | o",
+"ans": [
+"cable",
+"wire",
+"pipe"
+]
+},
+{
+"v": "SZp",
+"w": "quantum",
+"i": 64,
+"r": 1,
+"code": "THINK ART PART | o",
+"ans": [
+"theory",
+"concept",
+"idea"
+]
+},
+{
+"v": "SZp",
+"w": "fist",
+"i": 65,
+"r": 1,
+"code": "BODY SAY GIVE | o",
+"ans": [
+"voice",
+"speech",
+"cry"
+]
+},
+{
+"v": "SZp",
+"w": "reservation",
+"i": 66,
+"r": 1,
+"code": "PLACE GIVE | o",
+"ans": [
+"shop",
+"store",
+"market"
+]
+},
+{
+"v": "SZp",
+"w": "campus",
+"i": 67,
+"r": 1,
+"code": "PLACE ABOVE NEAR | o",
+"ans": [
+"ceiling",
+"roof",
+"attic"
+]
+},
+{
+"v": "SZp",
+"w": "flame",
+"i": 68,
+"r": 1,
+"code": "HEAT GRAIN | o",
+"ans": [
+"coal",
+"ember",
+"ash"
+]
+},
+{
+"v": "SZp",
+"w": "privilege",
+"i": 69,
+"r": 1,
+"code": "VALUE RULE WANT | o",
+"ans": [
+"right",
+"claim",
+"entitlement"
+]
+},
+{
+"v": "SZp",
+"w": "sequence",
+"i": 70,
+"r": 1,
+"code": "PART BEGIN HAPPEN | o",
+"ans": [
+"episode",
+"start",
+"beginning"
+]
+},
+{
+"v": "SZp",
+"w": "ratio",
+"i": 71,
+"r": 1,
+"code": "MEASURE SAME | o",
+"ans": [
+"standard",
+"equality",
+"average"
+]
+},
+{
+"v": "SZp",
+"w": "rest",
+"i": 72,
+"r": 1,
+"code": "PART FEEL MOVE | o",
+"ans": [
+"emotion",
+"impulse",
+"feeling"
+]
+},
+{
+"v": "SZp",
+"w": "ankle",
+"i": 73,
+"r": 1,
+"code": "BODY SIDE LONG | o",
+"ans": [
+"arm",
+"leg",
+"limb"
+]
+},
+{
+"v": "SZp",
+"w": "discussion",
+"i": 74,
+"r": 1,
+"code": "DO THINK TEXT | o",
+"ans": [
+"essay",
+"composition",
+"paper"
+]
+},
+{
+"v": "SZp",
+"w": "road",
+"i": 75,
+"r": 1,
+"code": "THING NEAR SIDE | o",
+"ans": [
+"border",
+"edge",
+"margin"
+]
+},
+{
+"v": "SZp",
+"w": "driver",
+"i": 76,
+"r": 1,
+"code": "ART SIDE | o",
+"ans": [
+"aspect",
+"side",
+"style"
+]
+},
+{
+"v": "SZp",
+"w": "friend",
+"i": 77,
+"r": 1,
+"code": "SOMEONE FRIEND LIVE | o",
+"ans": [
+"companion",
+"friend",
+"partner"
+]
+},
+{
+"v": "SZp",
+"w": "integration",
+"i": 78,
+"r": 1,
+"code": "HAPPEN JOIN ART | o",
+"ans": [
+"festival",
+"exhibition",
+"concert"
+]
+},
+{
+"v": "SZp",
+"w": "bachelor",
+"i": 79,
+"r": 1,
+"code": "SOMEONE MEASURE | o",
+"ans": [
+"surveyor",
+"assessor",
+"measurer"
+]
+},
+{
+"v": "SZp",
+"w": "overtime",
+"i": 80,
+"r": 1,
+"code": "TIME BEGIN FIGHT | o",
+"ans": [
+"war",
+"conflict",
+"battle"
+]
+},
+{
+"v": "SZp",
+"w": "atmosphere",
+"i": 81,
+"r": 1,
+"code": "GRAIN INSIDE HEAT | o",
+"ans": [
+"toast",
+"bread",
+"roast"
+]
+},
+{
+"v": "SZp",
+"w": "stomach",
+"i": 82,
+"r": 1,
+"code": "BODY CONSUME INSIDE | o",
+"ans": [
+"stomach",
+"belly",
+"gut"
+]
+},
+{
+"v": "SZp",
+"w": "autumn",
+"i": 83,
+"r": 1,
+"code": "TIME HEAT BEGIN | o",
+"ans": [
+"summer",
+"spring",
+"season"
+]
+},
+{
+"v": "SZp",
+"w": "post",
+"i": 84,
+"r": 1,
+"code": "PLACE LONG TEXT | o",
+"ans": [
+"library",
+"archive",
+"bookstore"
+]
+},
+{
+"v": "SZp",
+"w": "lion",
+"i": 85,
+"r": 1,
+"code": "THING VALUE | o",
+"ans": [
+"treasure",
+"asset",
+"property"
+]
+},
+{
+"v": "SZp",
+"w": "playoff",
+"i": 86,
+"r": 1,
+"code": "FIGHT BEGIN | o",
+"ans": [
+"challenge",
+"dispute",
+"outbreak"
+]
+},
+{
+"v": "SZp",
+"w": "brokerage",
+"i": 87,
+"r": 1,
+"code": "RULE MEASURE VALUE | o",
+"ans": [
+"tax",
+"fee",
+"price"
+]
+},
+{
+"v": "SZp",
+"w": "acre",
+"i": 88,
+"r": 1,
+"code": "MEASURE PLACE THING | o",
+"ans": [
+"map",
+"compass",
+"globe"
+]
+},
+{
+"v": "SZp",
+"w": "competitiveness",
+"i": 89,
+"r": 1,
+"code": "FIGHT TOUCH FRIEND | o",
+"ans": [
+"wrestling",
+"sparring",
+"boxing"
+]
+},
+{
+"v": "SZp",
+"w": "ideology",
+"i": 90,
+"r": 1,
+"code": "THINK ART | o",
+"ans": [
+"philosophy",
+"aesthetics",
+"thought"
+]
+},
+{
+"v": "SZp",
+"w": "cake",
+"i": 91,
+"r": 1,
+"code": "TOUCH CONSUME HEAT | o",
+"ans": [
+"burn",
+"warmth",
+"fever"
+]
+},
+{
+"v": "SZp",
+"w": "pickup",
+"i": 92,
+"r": 1,
+"code": "INSIDE LONG | o",
+"ans": [
+"corridor",
+"tube",
+"hallway"
+]
+},
+{
+"v": "SZp",
+"w": "argentine",
+"i": 93,
+"r": 1,
+"code": "THING JOIN | o",
+"ans": [
+"link",
+"joint",
+"connector"
+]
+},
+{
+"v": "SZp",
+"w": "prisoner",
+"i": 94,
+"r": 1,
+"code": "SOMEONE FIGHT | o",
+"ans": [
+"fighter",
+"soldier",
+"warrior"
+]
+},
+{
+"v": "SZp",
+"w": "atom",
+"i": 95,
+"r": 1,
+"code": "GRAIN PART | o",
+"ans": [
+"granule",
+"particle",
+"crumb"
+]
+},
+{
+"v": "SZp",
+"w": "door",
+"i": 96,
+"r": 1,
+"code": "PLACE INSIDE SIDE | o",
+"ans": [
+"room",
+"interior",
+"backroom"
+]
+},
+{
+"v": "SZp",
+"w": "gambling",
+"i": 97,
+"r": 1,
+"code": "DO FIGHT | o",
+"ans": [
+"combat",
+"fighting",
+"struggle"
+]
+},
+{
+"v": "SZp",
+"w": "folklore",
+"i": 98,
+"r": 1,
+"code": "THINK ART | o",
+"ans": [
+"logic",
+"wisdom",
+"theory"
+]
+},
+{
+"v": "SZp",
+"w": "hybrid",
+"i": 99,
+"r": 1,
+"code": "PART TOUCH | o",
+"ans": [
+"edge",
+"contact",
+"blade"
+]
+},
+{
+"v": "SZp",
+"w": "list",
+"i": 50,
+"r": 2,
+"code": "SAY TEXT PART | o",
+"ans": [
+"word",
+"sentence",
+"phrase"
+]
+},
+{
+"v": "SZp",
+"w": "existence",
+"i": 51,
+"r": 2,
+"code": "LIVE MOVE MANY | o",
+"ans": [
+"swarm",
+"crowd",
+"herd"
+]
+},
+{
+"v": "SZp",
+"w": "fleet",
+"i": 52,
+"r": 2,
+"code": "PART FIGHT | o",
+"ans": [
+"battle",
+"skirmish",
+"round"
+]
+},
+{
+"v": "SZp",
+"w": "township",
+"i": 53,
+"r": 2,
+"code": "PLACE NEAR | o",
+"ans": [
+"neighborhood",
+"vicinity",
+"area"
+]
+},
+{
+"v": "SZp",
+"w": "bishop",
+"i": 54,
+"r": 2,
+"code": "SOMEONE RULE | o",
+"ans": [
+"ruler",
+"leader",
+"sovereign"
+]
+},
+{
+"v": "SZp",
+"w": "activist",
+"i": 55,
+"r": 2,
+"code": "SOMEONE TOUCH | o",
+"ans": [
+"masseur",
+"doctor",
+"surgeon"
+]
+},
+{
+"v": "SZp",
+"w": "order",
+"i": 56,
+"r": 2,
+"code": "DO WANT THINK | o",
+"ans": [
+"intention",
+"purpose",
+"plan"
+]
+},
+{
+"v": "SZp",
+"w": "knight",
+"i": 57,
+"r": 2,
+"code": "SOMEONE THING VALUE | o",
+"ans": [
+"owner",
+"collector",
+"buyer"
+]
+},
+{
+"v": "SZp",
+"w": "diplomacy",
+"i": 58,
+"r": 2,
+"code": "SAY(=0) FRIEND FIGHT | o",
+"ans": [
+"debate",
+"discussion",
+"argument"
+]
+},
+{
+"v": "SZp",
+"w": "bronze",
+"i": 59,
+"r": 2,
+"code": "GRAIN THING | o",
+"ans": [
+"grain",
+"cereal",
+"seed"
+]
+},
+{
+"v": "SZp",
+"w": "occupation",
+"i": 60,
+"r": 2,
+"code": "DO FIGHT FRIEND | o",
+"ans": [
+"peacemaker",
+"mediator",
+"referee"
+]
+},
+{
+"v": "SZp",
+"w": "athletics",
+"i": 61,
+"r": 2,
+"code": "FIGHT MOVE | o",
+"ans": [
+"attack",
+"charge",
+"assault"
+]
+},
+{
+"v": "SZp",
+"w": "piece",
+"i": 62,
+"r": 2,
+"code": "PART GRAIN LONG | o",
+"ans": [
+"fiber",
+"strand",
+"hair"
+]
+},
+{
+"v": "SZp",
+"w": "anode",
+"i": 63,
+"r": 2,
+"code": "ART INSIDE LONG | o",
+"ans": [
+"pipe",
+"tube",
+"flute"
+]
+},
+{
+"v": "SZp",
+"w": "quantum",
+"i": 64,
+"r": 2,
+"code": "THINK ART PART | o",
+"ans": [
+"theory",
+"concept",
+"idea"
+]
+},
+{
+"v": "SZp",
+"w": "fist",
+"i": 65,
+"r": 2,
+"code": "BODY SAY GIVE | o",
+"ans": [
+"speech",
+"address",
+"lecture"
+]
+},
+{
+"v": "SZp",
+"w": "reservation",
+"i": 66,
+"r": 2,
+"code": "PLACE GIVE | o",
+"ans": [
+"market",
+"shop",
+"store"
+]
+},
+{
+"v": "SZp",
+"w": "campus",
+"i": 67,
+"r": 2,
+"code": "PLACE ABOVE NEAR | o",
+"ans": [
+"roof",
+"attic",
+"balcony"
+]
+},
+{
+"v": "SZp",
+"w": "flame",
+"i": 68,
+"r": 2,
+"code": "HEAT GRAIN | o",
+"ans": [
+"pepper",
+"spice",
+"ember"
+]
+},
+{
+"v": "SZp",
+"w": "privilege",
+"i": 69,
+"r": 2,
+"code": "VALUE RULE WANT | o",
+"ans": [
+"principle",
+"norm",
+"ideal"
+]
+},
+{
+"v": "SZp",
+"w": "sequence",
+"i": 70,
+"r": 2,
+"code": "PART BEGIN HAPPEN | o",
+"ans": [
+"beginning",
+"start",
+"origin"
+]
+},
+{
+"v": "SZp",
+"w": "ratio",
+"i": 71,
+"r": 2,
+"code": "MEASURE SAME | o",
+"ans": [
+"standard",
+"unit",
+"benchmark"
+]
+},
+{
+"v": "SZp",
+"w": "rest",
+"i": 72,
+"r": 2,
+"code": "PART FEEL MOVE | o",
+"ans": [
+"vibration",
+"tremor",
+"shiver"
+]
+},
+{
+"v": "SZp",
+"w": "ankle",
+"i": 73,
+"r": 2,
+"code": "BODY SIDE LONG | o",
+"ans": [
+"arm",
+"leg",
+"limb"
+]
+},
+{
+"v": "SZp",
+"w": "discussion",
+"i": 74,
+"r": 2,
+"code": "DO THINK TEXT | o",
+"ans": [
+"essay",
+"thesis",
+"paper"
+]
+},
+{
+"v": "SZp",
+"w": "road",
+"i": 75,
+"r": 2,
+"code": "THING NEAR SIDE | o",
+"ans": [
+"accessory",
+"attachment",
+"companion"
+]
+},
+{
+"v": "SZp",
+"w": "driver",
+"i": 76,
+"r": 2,
+"code": "ART SIDE | o",
+"ans": [
+"aspect",
+"style",
+"facet"
+]
+},
+{
+"v": "SZp",
+"w": "friend",
+"i": 77,
+"r": 2,
+"code": "SOMEONE FRIEND LIVE | o",
+"ans": [
+"companion",
+"partner",
+"friend"
+]
+},
+{
+"v": "SZp",
+"w": "integration",
+"i": 78,
+"r": 2,
+"code": "HAPPEN JOIN ART | o",
+"ans": [
+"festival",
+"exhibition",
+"collaboration"
+]
+},
+{
+"v": "SZp",
+"w": "bachelor",
+"i": 79,
+"r": 2,
+"code": "SOMEONE MEASURE | o",
+"ans": [
+"surveyor",
+"assessor",
+"measurer"
+]
+},
+{
+"v": "SZp",
+"w": "overtime",
+"i": 80,
+"r": 2,
+"code": "TIME BEGIN FIGHT | o",
+"ans": [
+"outbreak",
+"war",
+"conflict"
+]
+},
+{
+"v": "SZp",
+"w": "atmosphere",
+"i": 81,
+"r": 2,
+"code": "GRAIN INSIDE HEAT | o",
+"ans": [
+"soot",
+"ash",
+"cinder"
+]
+},
+{
+"v": "SZp",
+"w": "stomach",
+"i": 82,
+"r": 2,
+"code": "BODY CONSUME INSIDE | o",
+"ans": [
+"stomach",
+"throat",
+"gut"
+]
+},
+{
+"v": "SZp",
+"w": "autumn",
+"i": 83,
+"r": 2,
+"code": "TIME HEAT BEGIN | o",
+"ans": [
+"summer",
+"spring",
+"season"
+]
+},
+{
+"v": "SZp",
+"w": "post",
+"i": 84,
+"r": 2,
+"code": "PLACE LONG TEXT | o",
+"ans": [
+"library",
+"archive",
+"bookshop"
+]
+},
+{
+"v": "SZp",
+"w": "lion",
+"i": 85,
+"r": 2,
+"code": "THING VALUE | o",
+"ans": [
+"treasure",
+"asset",
+"property"
+]
+},
+{
+"v": "SZp",
+"w": "playoff",
+"i": 86,
+"r": 2,
+"code": "FIGHT BEGIN | o",
+"ans": [
+"clash",
+"skirmish",
+"conflict"
+]
+},
+{
+"v": "SZp",
+"w": "brokerage",
+"i": 87,
+"r": 2,
+"code": "RULE MEASURE VALUE | o",
+"ans": [
+"tariff",
+"tax",
+"fee"
+]
+},
+{
+"v": "SZp",
+"w": "acre",
+"i": 88,
+"r": 2,
+"code": "MEASURE PLACE THING | o",
+"ans": [
+"map",
+"gauge",
+"compass"
+]
+},
+{
+"v": "SZp",
+"w": "competitiveness",
+"i": 89,
+"r": 2,
+"code": "FIGHT TOUCH FRIEND | o",
+"ans": [
+"wrestling",
+"sparring",
+"boxing"
+]
+},
+{
+"v": "SZp",
+"w": "ideology",
+"i": 90,
+"r": 2,
+"code": "THINK ART | o",
+"ans": [
+"philosophy",
+"theory",
+"logic"
+]
+},
+{
+"v": "SZp",
+"w": "cake",
+"i": 91,
+"r": 2,
+"code": "TOUCH CONSUME HEAT | o",
+"ans": [
+"soup",
+"stew",
+"meal"
+]
+},
+{
+"v": "SZp",
+"w": "pickup",
+"i": 92,
+"r": 2,
+"code": "INSIDE LONG | o",
+"ans": [
+"corridor",
+"hallway",
+"tunnel"
+]
+},
+{
+"v": "SZp",
+"w": "argentine",
+"i": 93,
+"r": 2,
+"code": "THING JOIN | o",
+"ans": [
+"joint",
+"link",
+"connector"
+]
+},
+{
+"v": "SZp",
+"w": "prisoner",
+"i": 94,
+"r": 2,
+"code": "SOMEONE FIGHT | o",
+"ans": [
+"fighter",
+"soldier",
+"warrior"
+]
+},
+{
+"v": "SZp",
+"w": "atom",
+"i": 95,
+"r": 2,
+"code": "GRAIN PART | o",
+"ans": [
+"particle",
+"grain",
+"crumb"
+]
+},
+{
+"v": "SZp",
+"w": "door",
+"i": 96,
+"r": 2,
+"code": "PLACE INSIDE SIDE | o",
+"ans": [
+"room",
+"wing",
+"corner"
+]
+},
+{
+"v": "SZp",
+"w": "gambling",
+"i": 97,
+"r": 2,
+"code": "DO FIGHT | o",
+"ans": [
+"struggle",
+"fight",
+"combat"
+]
+},
+{
+"v": "SZp",
+"w": "folklore",
+"i": 98,
+"r": 2,
+"code": "THINK ART | o",
+"ans": [
+"design",
+"concept",
+"idea"
+]
+},
+{
+"v": "SZp",
+"w": "hybrid",
+"i": 99,
+"r": 2,
+"code": "PART TOUCH | o",
+"ans": [
+"edge",
+"contact",
+"border"
+]
+},
+{
+"v": "H2",
+"w": "helm",
+"i": 0,
+"r": 1,
+"code": "MOVE SIDE | o tool",
+"ans": [
+"wheel",
+"cart",
+"skate"
+]
+},
+{
+"v": "H2",
+"w": "malaria",
+"i": 1,
+"r": 1,
+"code": "BODY GOOD(=-5) HEAT(=+5) | o",
+"ans": [
+"fever",
+"illness",
+"infection"
+]
+},
+{
+"v": "H2",
+"w": "pianist",
+"i": 2,
+"r": 1,
+"code": "SAY ART | o agent",
+"ans": [
+"poet",
+"singer",
+"orator"
+]
+},
+{
+"v": "H2",
+"w": "employee",
+"i": 3,
+"r": 1,
+"code": "DO RULE(=+4) | o agent",
+"ans": [
+"official",
+"administrator",
+"ruler"
+]
+},
+{
+"v": "H2",
+"w": "resignation",
+"i": 4,
+"r": 1,
+"code": "CONSUME(=+5) MOOD(=-5) | o",
+"ans": [
+"tragedy",
+"sorrow",
+"grief"
+]
+},
+{
+"v": "H2",
+"w": "revision",
+"i": 5,
+"r": 1,
+"code": "THINK CHANGE | o",
+"ans": [
+"idea",
+"opinion",
+"concept"
+]
+},
+{
+"v": "H2",
+"w": "consideration",
+"i": 6,
+"r": 1,
+"code": "THINK CARE(=+5) | o",
+"ans": [
+"consideration",
+"attention",
+"care"
+]
+},
+{
+"v": "H2",
+"w": "profit",
+"i": 7,
+"r": 1,
+"code": "JOIN(=+5) VALUE | o result",
+"ans": [
+"gain",
+"profit",
+"income"
+]
+},
+{
+"v": "H2",
+"w": "relegation",
+"i": 8,
+"r": 1,
+"code": "GIVE(=+5) RULE(=+4) | o",
+"ans": [
+"permission",
+"license",
+"authorization"
+]
+},
+{
+"v": "H2",
+"w": "religion",
+"i": 9,
+"r": 1,
+"code": "SACRED | o",
+"ans": [
+"religion",
+"faith",
+"worship"
+]
+},
+{
+"v": "H2",
+"w": "bubble",
+"i": 10,
+"r": 1,
+"code": "GRAIN(=-5) INSIDE(=+5) | o",
+"ans": [
+"air",
+"gas",
+"vapor"
+]
+},
+{
+"v": "H2",
+"w": "chapel",
+"i": 11,
+"r": 1,
+"code": "PLACE SACRED | o",
+"ans": [
+"temple",
+"shrine",
+"sanctuary"
+]
+},
+{
+"v": "H2",
+"w": "people",
+"i": 12,
+"r": 1,
+"code": "SOMEONE | o N+3",
+"ans": [
+"people",
+"persons",
+"folk"
+]
+},
+{
+"v": "H2",
+"w": "lake",
+"i": 13,
+"r": 1,
+"code": "PLACE GRAIN(=-3) | o",
+"ans": [
+"lake",
+"pond",
+"sea"
+]
+},
+{
+"v": "H2",
+"w": "topic",
+"i": 14,
+"r": 1,
+"code": "SAY | o result",
+"ans": [
+"word",
+"speech",
+"statement"
+]
+},
+{
+"v": "H2",
+"w": "era",
+"i": 15,
+"r": 1,
+"code": "TIME BIG(=+5) | o",
+"ans": [
+"age",
+"era",
+"epoch"
+]
+},
+{
+"v": "H2",
+"w": "donation",
+"i": 16,
+"r": 1,
+"code": "GIVE(=+5) | o result",
+"ans": [
+"gift",
+"present",
+"donation"
+]
+},
+{
+"v": "H2",
+"w": "gate",
+"i": 17,
+"r": 1,
+"code": "JOIN(=-5) MOVE | o tool",
+"ans": [
+"saw",
+"shears",
+"scissors"
+]
+},
+{
+"v": "H2",
+"w": "homer",
+"i": 18,
+"r": 1,
+"code": "HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o",
+"ans": [
+"score",
+"goal",
+"win"
+]
+},
+{
+"v": "H2",
+"w": "coca",
+"i": 19,
+"r": 1,
+"code": "THING(=0) CONSUME(=+5) FEEL(=+5) | o",
+"ans": [
+"spice",
+"drug",
+"pepper"
+]
+},
+{
+"v": "H2",
+"w": "dose",
+"i": 20,
+"r": 1,
+"code": "MEASURE(=-5) CONSUME(=+5) | o",
+"ans": [
+"dose",
+"portion",
+"serving"
+]
+},
+{
+"v": "H2",
+"w": "reservoir",
+"i": 21,
+"r": 1,
+"code": "MANY(=+3) INSIDE(=+5) | o",
+"ans": [
+"crowd",
+"audience",
+"gathering"
+]
+},
+{
+"v": "H2",
+"w": "crater",
+"i": 22,
+"r": 1,
+"code": "PLACE CONTAINER(=-5) ABOVE(=+5) | o",
+"ans": [
+"rooftop",
+"terrace",
+"balcony"
+]
+},
+{
+"v": "H2",
+"w": "businessman",
+"i": 23,
+"r": 1,
+"code": "GIVE(=0) VALUE | o agent",
+"ans": [
+"trader",
+"merchant",
+"dealer"
+]
+},
+{
+"v": "H2",
+"w": "phase",
+"i": 24,
+"r": 1,
+"code": "TIME PART(=-2) | o",
+"ans": [
+"period",
+"interval",
+"span"
+]
+},
+{
+"v": "H2",
+"w": "labour",
+"i": 25,
+"r": 1,
+"code": "SOMEONE PART(=+5) DO | o",
+"ans": [
+"crew",
+"team",
+"gang"
+]
+},
+{
+"v": "H2",
+"w": "airline",
+"i": 26,
+"r": 1,
+"code": "LONG(=-5) GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"fume",
+"vapor"
+]
+},
+{
+"v": "H2",
+"w": "satisfaction",
+"i": 27,
+"r": 1,
+"code": "WANT BEGIN(=+5) MOOD(=+3) | o quality",
+"ans": [
+"satisfaction",
+"pleasure",
+"contentment"
+]
+},
+{
+"v": "H2",
+"w": "yesterday",
+"i": 28,
+"r": 1,
+"code": "TIME(=-1) PART(=-2) | o",
+"ans": [
+"moment",
+"instant",
+"second"
+]
+},
+{
+"v": "H2",
+"w": "model",
+"i": 29,
+"r": 1,
+"code": "THINK KNOW(=-3) | o result",
+"ans": [
+"guess",
+"assumption",
+"hypothesis"
+]
+},
+{
+"v": "H2",
+"w": "outlet",
+"i": 30,
+"r": 1,
+"code": "PLACE GIVE(=0) VALUE | o",
+"ans": [
+"market",
+"exchange",
+"bazaar"
+]
+},
+{
+"v": "H2",
+"w": "planet",
+"i": 31,
+"r": 1,
+"code": "BIG(=+5) THING(=-5) ABOVE(=+5) | o",
+"ans": [
+"mountain",
+"cliff",
+"peak"
+]
+},
+{
+"v": "H2",
+"w": "representation",
+"i": 32,
+"r": 1,
+"code": "SEE | o result",
+"ans": [
+"sight",
+"view",
+"scene"
+]
+},
+{
+"v": "H2",
+"w": "news",
+"i": 33,
+"r": 1,
+"code": "SAY HAPPEN TIME(=-1) | o",
+"ans": [
+"news",
+"announcement",
+"report"
+]
+},
+{
+"v": "H2",
+"w": "copyright",
+"i": 34,
+"r": 1,
+"code": "TEXT RULE(=+5) CAN(=+5) | o",
+"ans": [
+"license",
+"permit",
+"authorization"
+]
+},
+{
+"v": "H2",
+"w": "obstacle",
+"i": 35,
+"r": 1,
+"code": "CAN(=-3) MOVE | o agent",
+"ans": [
+"invalid",
+"patient",
+"cripple"
+]
+},
+{
+"v": "H2",
+"w": "grief",
+"i": 36,
+"r": 1,
+"code": "MOOD(=-5) FEEL(=+5) | o",
+"ans": [
+"agony",
+"anguish",
+"despair"
+]
+},
+{
+"v": "H2",
+"w": "lawmaker",
+"i": 37,
+"r": 1,
+"code": "TEXT RULE(=+5) | o agent",
+"ans": [
+"legislator",
+"lawmaker",
+"lawyer"
+]
+},
+{
+"v": "H2",
+"w": "harm",
+"i": 38,
+"r": 1,
+"code": "CHANGE GOOD(=-4) BODY | o result",
+"ans": [
+"injury",
+"wound",
+"harm"
+]
+},
+{
+"v": "H2",
+"w": "spell",
+"i": 39,
+"r": 1,
+"code": "SACRED(=0) SAY | o",
+"ans": [
+"prayer",
+"spell",
+"incantation"
+]
+},
+{
+"v": "H2",
+"w": "lawsuit",
+"i": 40,
+"r": 1,
+"code": "FIGHT RULE(=+5) | o",
+"ans": [
+"lawsuit",
+"trial",
+"litigation"
+]
+},
+{
+"v": "H2",
+"w": "lens",
+"i": 41,
+"r": 1,
+"code": "SEE | o tool",
+"ans": [
+"glasses",
+"lens",
+"telescope"
+]
+},
+{
+"v": "H2",
+"w": "testimony",
+"i": 42,
+"r": 1,
+"code": "SAY RULE(=+5) | o result",
+"ans": [
+"decree",
+"order",
+"statute"
+]
+},
+{
+"v": "H2",
+"w": "bowl",
+"i": 43,
+"r": 1,
+"code": "CONTAINER(=-5) | o",
+"ans": [
+"tray",
+"saucer",
+"platter"
+]
+},
+{
+"v": "H2",
+"w": "pitcher",
+"i": 44,
+"r": 1,
+"code": "GIVE FIGHT(=-5) | o agent",
+"ans": [
+"coach",
+"trainer",
+"referee"
+]
+},
+{
+"v": "H2",
+"w": "ally",
+"i": 45,
+"r": 1,
+"code": "FRIEND JOIN | o",
+"ans": [
+"alliance",
+"friendship",
+"partnership"
+]
+},
+{
+"v": "H2",
+"w": "contribution",
+"i": 46,
+"r": 1,
+"code": "PART(=-2) HAPPEN | o result",
+"ans": [
+"incident",
+"accident",
+"event"
+]
+},
+{
+"v": "H2",
+"w": "guest",
+"i": 47,
+"r": 1,
+"code": "SOMEONE(=-5) NEAR(=+5) | o",
+"ans": [
+"neighbor",
+"neighbour",
+"resident"
+]
+},
+{
+"v": "H2",
+"w": "expo",
+"i": 48,
+"r": 1,
+"code": "PLACE SEE | o",
+"ans": [
+"viewpoint",
+"lookout",
+"observatory"
+]
+},
+{
+"v": "H2",
+"w": "regulation",
+"i": 49,
+"r": 1,
+"code": "RULE(=+4) | o",
+"ans": [
+"government",
+"authority",
+"institution"
+]
+},
+{
+"v": "H2",
+"w": "helm",
+"i": 0,
+"r": 2,
+"code": "MOVE SIDE | o tool",
+"ans": [
+"wheel",
+"vehicle",
+"skate"
+]
+},
+{
+"v": "H2",
+"w": "malaria",
+"i": 1,
+"r": 2,
+"code": "BODY GOOD(=-5) HEAT(=+5) | o",
+"ans": [
+"fever",
+"illness",
+"sickness"
+]
+},
+{
+"v": "H2",
+"w": "pianist",
+"i": 2,
+"r": 2,
+"code": "SAY ART | o agent",
+"ans": [
+"poet",
+"bard",
+"orator"
+]
+},
+{
+"v": "H2",
+"w": "employee",
+"i": 3,
+"r": 2,
+"code": "DO RULE(=+4) | o agent",
+"ans": [
+"administrator",
+"official",
+"leader"
+]
+},
+{
+"v": "H2",
+"w": "resignation",
+"i": 4,
+"r": 2,
+"code": "CONSUME(=+5) MOOD(=-5) | o",
+"ans": [
+"tragedy",
+"grief",
+"sorrow"
+]
+},
+{
+"v": "H2",
+"w": "revision",
+"i": 5,
+"r": 2,
+"code": "THINK CHANGE | o",
+"ans": [
+"idea",
+"plan",
+"theory"
+]
+},
+{
+"v": "H2",
+"w": "consideration",
+"i": 6,
+"r": 2,
+"code": "THINK CARE(=+5) | o",
+"ans": [
+"caution",
+"prudence",
+"attention"
+]
+},
+{
+"v": "H2",
+"w": "profit",
+"i": 7,
+"r": 2,
+"code": "JOIN(=+5) VALUE | o result",
+"ans": [
+"profit",
+"gain",
+"benefit"
+]
+},
+{
+"v": "H2",
+"w": "relegation",
+"i": 8,
+"r": 2,
+"code": "GIVE(=+5) RULE(=+4) | o",
+"ans": [
+"permission",
+"license",
+"authorization"
+]
+},
+{
+"v": "H2",
+"w": "religion",
+"i": 9,
+"r": 2,
+"code": "SACRED | o",
+"ans": [
+"religion",
+"faith",
+"worship"
+]
+},
+{
+"v": "H2",
+"w": "bubble",
+"i": 10,
+"r": 2,
+"code": "GRAIN(=-5) INSIDE(=+5) | o",
+"ans": [
+"air",
+"gas",
+"atmosphere"
+]
+},
+{
+"v": "H2",
+"w": "chapel",
+"i": 11,
+"r": 2,
+"code": "PLACE SACRED | o",
+"ans": [
+"temple",
+"shrine",
+"church"
+]
+},
+{
+"v": "H2",
+"w": "people",
+"i": 12,
+"r": 2,
+"code": "SOMEONE | o N+3",
+"ans": [
+"people",
+"humans",
+"persons"
+]
+},
+{
+"v": "H2",
+"w": "lake",
+"i": 13,
+"r": 2,
+"code": "PLACE GRAIN(=-3) | o",
+"ans": [
+"lake",
+"pond",
+"pool"
+]
+},
+{
+"v": "H2",
+"w": "topic",
+"i": 14,
+"r": 2,
+"code": "SAY | o result",
+"ans": [
+"word",
+"statement",
+"utterance"
+]
+},
+{
+"v": "H2",
+"w": "era",
+"i": 15,
+"r": 2,
+"code": "TIME BIG(=+5) | o",
+"ans": [
+"era",
+"age",
+"eon"
+]
+},
+{
+"v": "H2",
+"w": "donation",
+"i": 16,
+"r": 2,
+"code": "GIVE(=+5) | o result",
+"ans": [
+"gift",
+"donation",
+"present"
+]
+},
+{
+"v": "H2",
+"w": "gate",
+"i": 17,
+"r": 2,
+"code": "JOIN(=-5) MOVE | o tool",
+"ans": [
+"brake",
+"lock",
+"clutch"
+]
+},
+{
+"v": "H2",
+"w": "homer",
+"i": 18,
+"r": 2,
+"code": "HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o",
+"ans": [
+"victory",
+"win",
+"triumph"
+]
+},
+{
+"v": "H2",
+"w": "coca",
+"i": 19,
+"r": 2,
+"code": "THING(=0) CONSUME(=+5) FEEL(=+5) | o",
+"ans": [
+"drug",
+"stimulant",
+"tea"
+]
+},
+{
+"v": "H2",
+"w": "dose",
+"i": 20,
+"r": 2,
+"code": "MEASURE(=-5) CONSUME(=+5) | o",
+"ans": [
+"dose",
+"portion",
+"meal"
+]
+},
+{
+"v": "H2",
+"w": "reservoir",
+"i": 21,
+"r": 2,
+"code": "MANY(=+3) INSIDE(=+5) | o",
+"ans": [
+"crowd",
+"audience",
+"multitude"
+]
+},
+{
+"v": "H2",
+"w": "crater",
+"i": 22,
+"r": 2,
+"code": "PLACE CONTAINER(=-5) ABOVE(=+5) | o",
+"ans": [
+"shelf",
+"rack",
+"tray"
+]
+},
+{
+"v": "H2",
+"w": "businessman",
+"i": 23,
+"r": 2,
+"code": "GIVE(=0) VALUE | o agent",
+"ans": [
+"trader",
+"merchant",
+"seller"
+]
+},
+{
+"v": "H2",
+"w": "phase",
+"i": 24,
+"r": 2,
+"code": "TIME PART(=-2) | o",
+"ans": [
+"period",
+"interval",
+"era"
+]
+},
+{
+"v": "H2",
+"w": "labour",
+"i": 25,
+"r": 2,
+"code": "SOMEONE PART(=+5) DO | o",
+"ans": [
+"team",
+"crew",
+"group"
+]
+},
+{
+"v": "H2",
+"w": "airline",
+"i": 26,
+"r": 2,
+"code": "LONG(=-5) GRAIN(=-5) | o",
+"ans": [
+"smoke",
+"vapor",
+"fume"
+]
+},
+{
+"v": "H2",
+"w": "satisfaction",
+"i": 27,
+"r": 2,
+"code": "WANT BEGIN(=+5) MOOD(=+3) | o quality",
+"ans": [
+"satisfaction",
+"contentment",
+"fulfillment"
+]
+},
+{
+"v": "H2",
+"w": "yesterday",
+"i": 28,
+"r": 2,
+"code": "TIME(=-1) PART(=-2) | o",
+"ans": [
+"instant",
+"moment",
+"second"
+]
+},
+{
+"v": "H2",
+"w": "model",
+"i": 29,
+"r": 2,
+"code": "THINK KNOW(=-3) | o result",
+"ans": [
+"guess",
+"assumption",
+"opinion"
+]
+},
+{
+"v": "H2",
+"w": "outlet",
+"i": 30,
+"r": 2,
+"code": "PLACE GIVE(=0) VALUE | o",
+"ans": [
+"market",
+"shop",
+"bazaar"
+]
+},
+{
+"v": "H2",
+"w": "planet",
+"i": 31,
+"r": 2,
+"code": "BIG(=+5) THING(=-5) ABOVE(=+5) | o",
+"ans": [
+"mountain",
+"cliff",
+"peak"
+]
+},
+{
+"v": "H2",
+"w": "representation",
+"i": 32,
+"r": 2,
+"code": "SEE | o result",
+"ans": [
+"view",
+"sight",
+"picture"
+]
+},
+{
+"v": "H2",
+"w": "news",
+"i": 33,
+"r": 2,
+"code": "SAY HAPPEN TIME(=-1) | o",
+"ans": [
+"news",
+"report",
+"announcement"
+]
+},
+{
+"v": "H2",
+"w": "copyright",
+"i": 34,
+"r": 2,
+"code": "TEXT RULE(=+5) CAN(=+5) | o",
+"ans": [
+"permit",
+"law",
+"statute"
+]
+},
+{
+"v": "H2",
+"w": "obstacle",
+"i": 35,
+"r": 2,
+"code": "CAN(=-3) MOVE | o agent",
+"ans": [
+"invalid",
+"cripple",
+"patient"
+]
+},
+{
+"v": "H2",
+"w": "grief",
+"i": 36,
+"r": 2,
+"code": "MOOD(=-5) FEEL(=+5) | o",
+"ans": [
+"agony",
+"anguish",
+"despair"
+]
+},
+{
+"v": "H2",
+"w": "lawmaker",
+"i": 37,
+"r": 2,
+"code": "TEXT RULE(=+5) | o agent",
+"ans": [
+"legislator",
+"lawmaker",
+"author"
+]
+},
+{
+"v": "H2",
+"w": "harm",
+"i": 38,
+"r": 2,
+"code": "CHANGE GOOD(=-4) BODY | o result",
+"ans": [
+"injury",
+"wound",
+"damage"
+]
+},
+{
+"v": "H2",
+"w": "spell",
+"i": 39,
+"r": 2,
+"code": "SACRED(=0) SAY | o",
+"ans": [
+"spell",
+"incantation",
+"prayer"
+]
+},
+{
+"v": "H2",
+"w": "lawsuit",
+"i": 40,
+"r": 2,
+"code": "FIGHT RULE(=+5) | o",
+"ans": [
+"war",
+"battle",
+"combat"
+]
+},
+{
+"v": "H2",
+"w": "lens",
+"i": 41,
+"r": 2,
+"code": "SEE | o tool",
+"ans": [
+"glasses",
+"spectacles",
+"lens"
+]
+},
+{
+"v": "H2",
+"w": "testimony",
+"i": 42,
+"r": 2,
+"code": "SAY RULE(=+5) | o result",
+"ans": [
+"decree",
+"proclamation",
+"statement"
+]
+},
+{
+"v": "H2",
+"w": "bowl",
+"i": 43,
+"r": 2,
+"code": "CONTAINER(=-5) | o",
+"ans": [
+"tray",
+"platter",
+"saucer"
+]
+},
+{
+"v": "H2",
+"w": "pitcher",
+"i": 44,
+"r": 2,
+"code": "GIVE FIGHT(=-5) | o agent",
+"ans": [
+"referee",
+"umpire",
+"sponsor"
+]
+},
+{
+"v": "H2",
+"w": "ally",
+"i": 45,
+"r": 2,
+"code": "FRIEND JOIN | o",
+"ans": [
+"friendship",
+"alliance",
+"companionship"
+]
+},
+{
+"v": "H2",
+"w": "contribution",
+"i": 46,
+"r": 2,
+"code": "PART(=-2) HAPPEN | o result",
+"ans": [
+"episode",
+"incident",
+"occurrence"
+]
+},
+{
+"v": "H2",
+"w": "guest",
+"i": 47,
+"r": 2,
+"code": "SOMEONE(=-5) NEAR(=+5) | o",
+"ans": [
+"neighbor",
+"neighbour",
+"next-door"
+]
+},
+{
+"v": "H2",
+"w": "expo",
+"i": 48,
+"r": 2,
+"code": "PLACE SEE | o",
+"ans": [
+"viewpoint",
+"lookout",
+"observatory"
+]
+},
+{
+"v": "H2",
+"w": "regulation",
+"i": 49,
+"r": 2,
+"code": "RULE(=+4) | o",
+"ans": [
+"authority",
+"institution",
+"government"
+]
+},
+{
+"v": "H2",
+"w": "list",
+"i": 50,
+"r": 1,
+"code": "TEXT PART(=+5) | o",
+"ans": [
+"library",
+"anthology",
+"archive"
+]
+},
+{
+"v": "H2",
+"w": "existence",
+"i": 51,
+"r": 1,
+"code": "LIVE | o quality",
+"ans": [
+"life",
+"vitality",
+"existence"
+]
+},
+{
+"v": "H2",
+"w": "fleet",
+"i": 52,
+"r": 1,
+"code": "PART(=+5) ABOVE MOVE | o",
+"ans": [
+"flight",
+"flock",
+"migration"
+]
+},
+{
+"v": "H2",
+"w": "township",
+"i": 53,
+"r": 1,
+"code": "PLACE PART(=-2) RULE(=+4) | o",
+"ans": [
+"office",
+"department",
+"branch"
+]
+},
+{
+"v": "H2",
+"w": "bishop",
+"i": 54,
+"r": 1,
+"code": "SACRED(=+5) RULE(=+4) | o agent",
+"ans": [
+"priest",
+"bishop",
+"pope"
+]
+},
+{
+"v": "H2",
+"w": "activist",
+"i": 55,
+"r": 1,
+"code": "CHANGE FIGHT(=+5) | o agent",
+"ans": [
+"revolutionary",
+"rebel",
+"insurgent"
+]
+},
+{
+"v": "H2",
+"w": "order",
+"i": 56,
+"r": 1,
+"code": "SAY(=+5) RULE(=+4) | o result",
+"ans": [
+"proclamation",
+"decree",
+"announcement"
+]
+},
+{
+"v": "H2",
+"w": "knight",
+"i": 57,
+"r": 1,
+"code": "FIGHT(=+5) RULE(=+4) | o agent",
+"ans": [
+"general",
+"commander",
+"soldier"
+]
+},
+{
+"v": "H2",
+"w": "diplomacy",
+"i": 58,
+"r": 1,
+"code": "SAY RULE(=+4) PART(=+5) | o",
+"ans": [
+"parliament",
+"assembly",
+"council"
+]
+},
+{
+"v": "H2",
+"w": "bronze",
+"i": 59,
+"r": 1,
+"code": "TOUCH(=+5) JOIN | o",
+"ans": [
+"bolt",
+"rivet",
+"nail"
+]
+},
+{
+"v": "H2",
+"w": "occupation",
+"i": 60,
+"r": 1,
+"code": "DO VALUE | o",
+"ans": [
+"work",
+"business",
+"labor"
+]
+},
+{
+"v": "H2",
+"w": "athletics",
+"i": 61,
+"r": 1,
+"code": "FIGHT(=-5) MOVE | o",
+"ans": [
+"sport",
+"game",
+"dance"
+]
+},
+{
+"v": "H2",
+"w": "piece",
+"i": 62,
+"r": 1,
+"code": "PART(=-2) | o",
+"ans": [
+"part",
+"component",
+"member"
+]
+},
+{
+"v": "H2",
+"w": "anode",
+"i": 63,
+"r": 1,
+"code": "ART(=-5) GIVE(=+5) | o",
+"ans": [
+"device",
+"gadget",
+"tool"
+]
+},
+{
+"v": "H2",
+"w": "quantum",
+"i": 64,
+"r": 1,
+"code": "MEASURE PART(=-5) | o",
+"ans": [
+"pinch",
+"dose",
+"trace"
+]
+},
+{
+"v": "H2",
+"w": "fist",
+"i": 65,
+"r": 1,
+"code": "BODY TOUCH(=+5) | o",
+"ans": [
+"bone",
+"skeleton",
+"tooth"
+]
+},
+{
+"v": "H2",
+"w": "reservation",
+"i": 66,
+"r": 1,
+"code": "PLACE RULE(=+4) | o",
+"ans": [
+"capital",
+"government",
+"court"
+]
+},
+{
+"v": "H2",
+"w": "campus",
+"i": 67,
+"r": 1,
+"code": "PLACE KNOW(=+5) | o",
+"ans": [
+"school",
+"museum",
+"library"
+]
+},
+{
+"v": "H2",
+"w": "flame",
+"i": 68,
+"r": 1,
+"code": "HEAT(=+5) GRAIN(=-3) | o",
+"ans": [
+"lava",
+"magma",
+"broth"
+]
+},
+{
+"v": "H2",
+"w": "privilege",
+"i": 69,
+"r": 1,
+"code": "SAME(=-4) RULE(=+4) | o",
+"ans": [
+"privilege",
+"exception",
+"prerogative"
+]
+},
+{
+"v": "H2",
+"w": "sequence",
+"i": 70,
+"r": 1,
+"code": "JOIN(=+5) TIME | o",
+"ans": [
+"appointment",
+"date",
+"meeting"
+]
+},
+{
+"v": "H2",
+"w": "ratio",
+"i": 71,
+"r": 1,
+"code": "MEASURE(=+5) | o",
+"ans": [
+"rate",
+"ratio",
+"speed"
+]
+},
+{
+"v": "H2",
+"w": "rest",
+"i": 72,
+"r": 1,
+"code": "PART(=-2) GIVE(=-5) | o",
+"ans": [
+"cut",
+"portion",
+"toll"
+]
+},
+{
+"v": "H2",
+"w": "ankle",
+"i": 73,
+"r": 1,
+"code": "BODY JOIN ABOVE(=-5) | o",
+"ans": [
+"leg",
+"foot",
+"ankle"
+]
+},
+{
+"v": "H2",
+"w": "discussion",
+"i": 74,
+"r": 1,
+"code": "SAY GIVE(=0) | o",
+"ans": [
+"conversation",
+"dialogue",
+"talk"
+]
+},
+{
+"v": "H2",
+"w": "road",
+"i": 75,
+"r": 1,
+"code": "PLACE MOVE | o",
+"ans": [
+"path",
+"road",
+"street"
+]
+},
+{
+"v": "H2",
+"w": "driver",
+"i": 76,
+"r": 1,
+"code": "MOVE ART(=-5) | o agent",
+"ans": [
+"robot",
+"machine",
+"vehicle"
+]
+},
+{
+"v": "H2",
+"w": "friend",
+"i": 77,
+"r": 1,
+"code": "FRIEND(=+5) SOMEONE | o",
+"ans": [
+"friend",
+"ally",
+"companion"
+]
+},
+{
+"v": "H2",
+"w": "integration",
+"i": 78,
+"r": 1,
+"code": "JOIN(=+5) PART(=+2) | o",
+"ans": [
+"union",
+"unit",
+"integration"
+]
+},
+{
+"v": "H2",
+"w": "bachelor",
+"i": 79,
+"r": 1,
+"code": "SOMEONE SEX(=+5) JOIN(=-5) | o",
+"ans": [
+"bachelor",
+"widower",
+"single"
+]
+},
+{
+"v": "H2",
+"w": "overtime",
+"i": 80,
+"r": 1,
+"code": "TIME ABOVE(=+3) | o",
+"ans": [
+"era",
+"period",
+"age"
+]
+},
+{
+"v": "H2",
+"w": "atmosphere",
+"i": 81,
+"r": 1,
+"code": "GRAIN(=-5) NEAR(=+5) | o",
+"ans": [
+"air",
+"steam",
+"breath"
+]
+},
+{
+"v": "H2",
+"w": "stomach",
+"i": 82,
+"r": 1,
+"code": "BODY CONTAINER CONSUME(=+5) | o",
+"ans": [
+"stomach",
+"belly",
+"mouth"
+]
+},
+{
+"v": "H2",
+"w": "autumn",
+"i": 83,
+"r": 1,
+"code": "TIME PART(=-2) | o",
+"ans": [
+"moment",
+"period",
+"interval"
+]
+},
+{
+"v": "H2",
+"w": "post",
+"i": 84,
+"r": 1,
+"code": "PLACE MOVE(=-5) | o",
+"ans": [
+"station",
+"stop",
+"stage"
+]
+},
+{
+"v": "H2",
+"w": "lion",
+"i": 85,
+"r": 1,
+"code": "THING(=+4) BIG(=+3) | o",
+"ans": [
+"beast",
+"animal",
+"giant"
+]
+},
+{
+"v": "H2",
+"w": "playoff",
+"i": 86,
+"r": 1,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"final",
+"match",
+"ending"
+]
+},
+{
+"v": "H2",
+"w": "brokerage",
+"i": 87,
+"r": 1,
+"code": "GIVE(=0) JOIN(=+5) | o",
+"ans": [
+"trade",
+"exchange",
+"barter"
+]
+},
+{
+"v": "H2",
+"w": "acre",
+"i": 88,
+"r": 1,
+"code": "MEASURE(=-5) LAND(=+5) | o",
+"ans": [
+"area",
+"acreage",
+"size"
+]
+},
+{
+"v": "H2",
+"w": "competitiveness",
+"i": 89,
+"r": 1,
+"code": "FIGHT(=+3) WANT(=+5) | o quality",
+"ans": [
+"aggression",
+"ambition",
+"greed"
+]
+},
+{
+"v": "H2",
+"w": "ideology",
+"i": 90,
+"r": 1,
+"code": "THINK PART(=+5) | o",
+"ans": [
+"thought",
+"philosophy",
+"opinion"
+]
+},
+{
+"v": "H2",
+"w": "cake",
+"i": 91,
+"r": 1,
+"code": "GRAIN(=+5) CONSUME(=+5) | o",
+"ans": [
+"bite",
+"morsel",
+"pill"
+]
+},
+{
+"v": "H2",
+"w": "pickup",
+"i": 92,
+"r": 1,
+"code": "THING(=-5) MOVE(=+5) CONTAINER(=-5) | o",
+"ans": [
+"stream",
+"river",
+"current"
+]
+},
+{
+"v": "H2",
+"w": "argentine",
+"i": 93,
+"r": 1,
+"code": "THING(=+4) LAND(=-5) BIG(=-3) | o",
+"ans": [
+"fish",
+"seal",
+"crab"
+]
+},
+{
+"v": "H2",
+"w": "prisoner",
+"i": 94,
+"r": 1,
+"code": "SOMEONE INSIDE(=+5) | o",
+"ans": [
+"resident",
+"inhabitant",
+"insider"
+]
+},
+{
+"v": "H2",
+"w": "atom",
+"i": 95,
+"r": 1,
+"code": "PART(=-5) BIG(=-5) | o",
+"ans": [
+"particle",
+"speck",
+"atom"
+]
+},
+{
+"v": "H2",
+"w": "door",
+"i": 96,
+"r": 1,
+"code": "JOIN(=-5) INSIDE(=+5) | o tool",
+"ans": [
+"scoop",
+"spoon",
+"ladle"
+]
+},
+{
+"v": "H2",
+"w": "gambling",
+"i": 97,
+"r": 1,
+"code": "FIGHT(=-5) VALUE(=+3) | o",
+"ans": [
+"bet",
+"prize",
+"gamble"
+]
+},
+{
+"v": "H2",
+"w": "folklore",
+"i": 98,
+"r": 1,
+"code": "SAY(=0) ART(=+5) | o",
+"ans": [
+"literature",
+"poetry",
+"eloquence"
+]
+},
+{
+"v": "H2",
+"w": "hybrid",
+"i": 99,
+"r": 1,
+"code": "JOIN(=+5) SAME(=-5) | o",
+"ans": [
+"mixture",
+"variety",
+"combination"
+]
+},
+{
+"v": "H2",
+"w": "list",
+"i": 50,
+"r": 2,
+"code": "TEXT PART(=+5) | o",
+"ans": [
+"library",
+"archive",
+"anthology"
+]
+},
+{
+"v": "H2",
+"w": "existence",
+"i": 51,
+"r": 2,
+"code": "LIVE | o quality",
+"ans": [
+"life",
+"vitality",
+"existence"
+]
+},
+{
+"v": "H2",
+"w": "fleet",
+"i": 52,
+"r": 2,
+"code": "PART(=+5) ABOVE MOVE | o",
+"ans": [
+"flock",
+"flight",
+"swarm"
+]
+},
+{
+"v": "H2",
+"w": "township",
+"i": 53,
+"r": 2,
+"code": "PLACE PART(=-2) RULE(=+4) | o",
+"ans": [
+"office",
+"bureau",
+"agency"
+]
+},
+{
+"v": "H2",
+"w": "bishop",
+"i": 54,
+"r": 2,
+"code": "SACRED(=+5) RULE(=+4) | o agent",
+"ans": [
+"priest",
+"bishop",
+"pastor"
+]
+},
+{
+"v": "H2",
+"w": "activist",
+"i": 55,
+"r": 2,
+"code": "CHANGE FIGHT(=+5) | o agent",
+"ans": [
+"revolutionary",
+"rebel",
+"insurgent"
+]
+},
+{
+"v": "H2",
+"w": "order",
+"i": 56,
+"r": 2,
+"code": "SAY(=+5) RULE(=+4) | o result",
+"ans": [
+"proclamation",
+"decree",
+"edict"
+]
+},
+{
+"v": "H2",
+"w": "knight",
+"i": 57,
+"r": 2,
+"code": "FIGHT(=+5) RULE(=+4) | o agent",
+"ans": [
+"commander",
+"general",
+"warlord"
+]
+},
+{
+"v": "H2",
+"w": "diplomacy",
+"i": 58,
+"r": 2,
+"code": "SAY RULE(=+4) PART(=+5) | o",
+"ans": [
+"parliament",
+"congress",
+"assembly"
+]
+},
+{
+"v": "H2",
+"w": "bronze",
+"i": 59,
+"r": 2,
+"code": "TOUCH(=+5) JOIN | o",
+"ans": [
+"nail",
+"rivet",
+"screw"
+]
+},
+{
+"v": "H2",
+"w": "occupation",
+"i": 60,
+"r": 2,
+"code": "DO VALUE | o",
+"ans": [
+"trade",
+"business",
+"commerce"
+]
+},
+{
+"v": "H2",
+"w": "athletics",
+"i": 61,
+"r": 2,
+"code": "FIGHT(=-5) MOVE | o",
+"ans": [
+"dance",
+"sport",
+"exercise"
+]
+},
+{
+"v": "H2",
+"w": "piece",
+"i": 62,
+"r": 2,
+"code": "PART(=-2) | o",
+"ans": [
+"part",
+"piece",
+"member"
+]
+},
+{
+"v": "H2",
+"w": "anode",
+"i": 63,
+"r": 2,
+"code": "ART(=-5) GIVE(=+5) | o",
+"ans": [
+"device",
+"machine",
+"gadget"
+]
+},
+{
+"v": "H2",
+"w": "quantum",
+"i": 64,
+"r": 2,
+"code": "MEASURE PART(=-5) | o",
+"ans": [
+"bit",
+"drop",
+"trace"
+]
+},
+{
+"v": "H2",
+"w": "fist",
+"i": 65,
+"r": 2,
+"code": "BODY TOUCH(=+5) | o",
+"ans": [
+"bone",
+"skeleton",
+"tooth"
+]
+},
+{
+"v": "H2",
+"w": "reservation",
+"i": 66,
+"r": 2,
+"code": "PLACE RULE(=+4) | o",
+"ans": [
+"court",
+"government",
+"capital"
+]
+},
+{
+"v": "H2",
+"w": "campus",
+"i": 67,
+"r": 2,
+"code": "PLACE KNOW(=+5) | o",
+"ans": [
+"school",
+"library",
+"museum"
+]
+},
+{
+"v": "H2",
+"w": "flame",
+"i": 68,
+"r": 2,
+"code": "HEAT(=+5) GRAIN(=-3) | o",
+"ans": [
+"lava",
+"magma",
+"broth"
+]
+},
+{
+"v": "H2",
+"w": "privilege",
+"i": 69,
+"r": 2,
+"code": "SAME(=-4) RULE(=+4) | o",
+"ans": [
+"privilege",
+"exception",
+"charter"
+]
+},
+{
+"v": "H2",
+"w": "sequence",
+"i": 70,
+"r": 2,
+"code": "JOIN(=+5) TIME | o",
+"ans": [
+"appointment",
+"meeting",
+"date"
+]
+},
+{
+"v": "H2",
+"w": "ratio",
+"i": 71,
+"r": 2,
+"code": "MEASURE(=+5) | o",
+"ans": [
+"rate",
+"ratio",
+"proportion"
+]
+},
+{
+"v": "H2",
+"w": "rest",
+"i": 72,
+"r": 2,
+"code": "PART(=-2) GIVE(=-5) | o",
+"ans": [
+"tax",
+"cut",
+"levy"
+]
+},
+{
+"v": "H2",
+"w": "ankle",
+"i": 73,
+"r": 2,
+"code": "BODY JOIN ABOVE(=-5) | o",
+"ans": [
+"leg",
+"foot",
+"limb"
+]
+},
+{
+"v": "H2",
+"w": "discussion",
+"i": 74,
+"r": 2,
+"code": "SAY GIVE(=0) | o",
+"ans": [
+"talk",
+"conversation",
+"dialogue"
+]
+},
+{
+"v": "H2",
+"w": "road",
+"i": 75,
+"r": 2,
+"code": "PLACE MOVE | o",
+"ans": [
+"route",
+"road",
+"path"
+]
+},
+{
+"v": "H2",
+"w": "driver",
+"i": 76,
+"r": 2,
+"code": "MOVE ART(=-5) | o agent",
+"ans": [
+"engine",
+"motor",
+"vehicle"
+]
+},
+{
+"v": "H2",
+"w": "friend",
+"i": 77,
+"r": 2,
+"code": "FRIEND(=+5) SOMEONE | o",
+"ans": [
+"friend",
+"ally",
+"companion"
+]
+},
+{
+"v": "H2",
+"w": "integration",
+"i": 78,
+"r": 2,
+"code": "JOIN(=+5) PART(=+2) | o",
+"ans": [
+"total",
+"sum",
+"whole"
+]
+},
+{
+"v": "H2",
+"w": "bachelor",
+"i": 79,
+"r": 2,
+"code": "SOMEONE SEX(=+5) JOIN(=-5) | o",
+"ans": [
+"bachelor",
+"widower",
+"single"
+]
+},
+{
+"v": "H2",
+"w": "overtime",
+"i": 80,
+"r": 2,
+"code": "TIME ABOVE(=+3) | o",
+"ans": [
+"age",
+"era",
+"period"
+]
+},
+{
+"v": "H2",
+"w": "atmosphere",
+"i": 81,
+"r": 2,
+"code": "GRAIN(=-5) NEAR(=+5) | o",
+"ans": [
+"air",
+"steam",
+"vapor"
+]
+},
+{
+"v": "H2",
+"w": "stomach",
+"i": 82,
+"r": 2,
+"code": "BODY CONTAINER CONSUME(=+5) | o",
+"ans": [
+"stomach",
+"belly",
+"gut"
+]
+},
+{
+"v": "H2",
+"w": "autumn",
+"i": 83,
+"r": 2,
+"code": "TIME PART(=-2) | o",
+"ans": [
+"moment",
+"period",
+"while"
+]
+},
+{
+"v": "H2",
+"w": "post",
+"i": 84,
+"r": 2,
+"code": "PLACE MOVE(=-5) | o",
+"ans": [
+"stop",
+"station",
+"stand"
+]
+},
+{
+"v": "H2",
+"w": "lion",
+"i": 85,
+"r": 2,
+"code": "THING(=+4) BIG(=+3) | o",
+"ans": [
+"beast",
+"monster",
+"giant"
+]
+},
+{
+"v": "H2",
+"w": "playoff",
+"i": 86,
+"r": 2,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"final",
+"finale",
+"ending"
+]
+},
+{
+"v": "H2",
+"w": "brokerage",
+"i": 87,
+"r": 2,
+"code": "GIVE(=0) JOIN(=+5) | o",
+"ans": [
+"exchange",
+"swap",
+"deal"
+]
+},
+{
+"v": "H2",
+"w": "acre",
+"i": 88,
+"r": 2,
+"code": "MEASURE(=-5) LAND(=+5) | o",
+"ans": [
+"plot",
+"patch",
+"lot"
+]
+},
+{
+"v": "H2",
+"w": "competitiveness",
+"i": 89,
+"r": 2,
+"code": "FIGHT(=+3) WANT(=+5) | o quality",
+"ans": [
+"passion",
+"ardor",
+"zeal"
+]
+},
+{
+"v": "H2",
+"w": "ideology",
+"i": 90,
+"r": 2,
+"code": "THINK PART(=+5) | o",
+"ans": [
+"consensus",
+"vote",
+"opinion"
+]
+},
+{
+"v": "H2",
+"w": "cake",
+"i": 91,
+"r": 2,
+"code": "GRAIN(=+5) CONSUME(=+5) | o",
+"ans": [
+"bite",
+"morsel",
+"pill"
+]
+},
+{
+"v": "H2",
+"w": "pickup",
+"i": 92,
+"r": 2,
+"code": "THING(=-5) MOVE(=+5) CONTAINER(=-5) | o",
+"ans": [
+"cart",
+"wagon",
+"boat"
+]
+},
+{
+"v": "H2",
+"w": "argentine",
+"i": 93,
+"r": 2,
+"code": "THING(=+4) LAND(=-5) BIG(=-3) | o",
+"ans": [
+"fish",
+"seal",
+"turtle"
+]
+},
+{
+"v": "H2",
+"w": "prisoner",
+"i": 94,
+"r": 2,
+"code": "SOMEONE INSIDE(=+5) | o",
+"ans": [
+"insider",
+"inmate",
+"prisoner"
+]
+},
+{
+"v": "H2",
+"w": "atom",
+"i": 95,
+"r": 2,
+"code": "PART(=-5) BIG(=-5) | o",
+"ans": [
+"atom",
+"molecule",
+"speck"
+]
+},
+{
+"v": "H2",
+"w": "door",
+"i": 96,
+"r": 2,
+"code": "JOIN(=-5) INSIDE(=+5) | o tool",
+"ans": [
+"scalpel",
+"knife",
+"scissors"
+]
+},
+{
+"v": "H2",
+"w": "gambling",
+"i": 97,
+"r": 2,
+"code": "FIGHT(=-5) VALUE(=+3) | o",
+"ans": [
+"prize",
+"bet",
+"reward"
+]
+},
+{
+"v": "H2",
+"w": "folklore",
+"i": 98,
+"r": 2,
+"code": "SAY(=0) ART(=+5) | o",
+"ans": [
+"poetry",
+"literature",
+"rhetoric"
+]
+},
+{
+"v": "H2",
+"w": "hybrid",
+"i": 99,
+"r": 2,
+"code": "JOIN(=+5) SAME(=-5) | o",
+"ans": [
+"mix",
+"variety",
+"difference"
+]
+},
+{
+"v": "SZ2",
+"w": "helm",
+"i": 0,
+"r": 1,
+"code": "ART(=-5) SIDE(=+5) LONG(=+5) | o",
+"ans": [
+"antenna",
+"mast",
+"missile"
+]
+},
+{
+"v": "SZ2",
+"w": "malaria",
+"i": 1,
+"r": 1,
+"code": "BODY GOOD(=-5) | o",
+"ans": [
+"illness",
+"injury",
+"wound"
+]
+},
+{
+"v": "SZ2",
+"w": "pianist",
+"i": 2,
+"r": 1,
+"code": "SOMEONE ART(=+5) | o",
+"ans": [
+"artist",
+"painter",
+"poet"
+]
+},
+{
+"v": "SZ2",
+"w": "employee",
+"i": 3,
+"r": 1,
+"code": "SOMEONE RULE(=-5) ART(=-5) | o",
+"ans": [
+"tinkerer",
+"hobbyist",
+"amateur"
+]
+},
+{
+"v": "SZ2",
+"w": "resignation",
+"i": 4,
+"r": 1,
+"code": "FEEL MOOD(=-5) | o",
+"ans": [
+"sorrow",
+"grief",
+"sadness"
+]
+},
+{
+"v": "SZ2",
+"w": "revision",
+"i": 5,
+"r": 1,
+"code": "DO TEXT CHANGE(=+5) | o",
+"ans": [
+"translation",
+"edit",
+"rewriting"
+]
+},
+{
+"v": "SZ2",
+"w": "consideration",
+"i": 6,
+"r": 1,
+"code": "THINK CARE(=+5) CAN(=+5) | o",
+"ans": [
+"competence",
+"clarity",
+"skill"
+]
+},
+{
+"v": "SZ2",
+"w": "profit",
+"i": 7,
+"r": 1,
+"code": "VALUE MEASURE(=+5) | o",
+"ans": [
+"price",
+"cost",
+"rate"
+]
+},
+{
+"v": "SZ2",
+"w": "relegation",
+"i": 8,
+"r": 1,
+"code": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
+"ans": [
+"fall",
+"collapse",
+"descent"
+]
+},
+{
+"v": "SZ2",
+"w": "religion",
+"i": 9,
+"r": 1,
+"code": "SACRED ART(=+5) | o",
+"ans": [
+"theology",
+"religious art",
+"hymn"
+]
+},
+{
+"v": "SZ2",
+"w": "bubble",
+"i": 10,
+"r": 1,
+"code": "GRAIN(=-5) TOUCH(=-5) CONTAINER(=+5) | o",
+"ans": [
+"balloon",
+"bag",
+"bladder"
+]
+},
+{
+"v": "SZ2",
+"w": "chapel",
+"i": 11,
+"r": 1,
+"code": "SACRED NEAR(=+5) INSIDE | o",
+"ans": [
+"temple",
+"shrine",
+"sanctuary"
+]
+},
+{
+"v": "SZ2",
+"w": "people",
+"i": 12,
+"r": 1,
+"code": "SOMEONE MANY(=+5) PART(=+5) | o",
+"ans": [
+"people",
+"everyone",
+"humanity"
+]
+},
+{
+"v": "SZ2",
+"w": "lake",
+"i": 13,
+"r": 1,
+"code": "LAND(=-5) THING(=-5) PLACE | o",
+"ans": [
+"sea",
+"ocean",
+"lake"
+]
+},
+{
+"v": "SZ2",
+"w": "topic",
+"i": 14,
+"r": 1,
+"code": "SAY TEXT | o",
+"ans": [
+"message",
+"statement",
+"speech"
+]
+},
+{
+"v": "SZ2",
+"w": "era",
+"i": 15,
+"r": 1,
+"code": "TIME BEGIN | o",
+"ans": [
+"beginning",
+"start",
+"origin"
+]
+},
+{
+"v": "SZ2",
+"w": "donation",
+"i": 16,
+"r": 1,
+"code": "GIVE(=+5) FRIEND(=+5) | o",
+"ans": [
+"donor",
+"benefactor",
+"philanthropist"
+]
+},
+{
+"v": "SZ2",
+"w": "gate",
+"i": 17,
+"r": 1,
+"code": "PLACE INSIDE(=-5) SIDE | o",
+"ans": [
+"backyard",
+"yard",
+"courtyard"
+]
+},
+{
+"v": "SZ2",
+"w": "homer",
+"i": 18,
+"r": 1,
+"code": "DO SAY(=+5) LONG(=+5) | o",
+"ans": [
+"scream",
+"yell",
+"shout"
+]
+},
+{
+"v": "SZ2",
+"w": "coca",
+"i": 19,
+"r": 1,
+"code": "THING(=0) CONSUME(=+5) | o",
+"ans": [
+"food",
+"vegetable",
+"crop"
+]
+},
+{
+"v": "SZ2",
+"w": "dose",
+"i": 20,
+"r": 1,
+"code": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+"ans": [
+"dose",
+"sip",
+"bite"
+]
+},
+{
+"v": "SZ2",
+"w": "reservoir",
+"i": 21,
+"r": 1,
+"code": "MEASURE THING(=-5) LAND(=-5) | o",
+"ans": [
+"volume",
+"amount",
+"quantity"
+]
+},
+{
+"v": "SZ2",
+"w": "crater",
+"i": 22,
+"r": 1,
+"code": "LAND THING(=-5) LONG(=+5) | o",
+"ans": [
+"pier",
+"jetty",
+"dock"
+]
+},
+{
+"v": "SZ2",
+"w": "businessman",
+"i": 23,
+"r": 1,
+"code": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+"ans": [
+"brute",
+"thug",
+"vandal"
+]
+},
+{
+"v": "SZ2",
+"w": "phase",
+"i": 24,
+"r": 1,
+"code": "TIME BEGIN(=-5) | o",
+"ans": [
+"origin",
+"history",
+"past"
+]
+},
+{
+"v": "SZ2",
+"w": "labour",
+"i": 25,
+"r": 1,
+"code": "SOMEONE CAN(=-5) | o",
+"ans": [
+"invalid",
+"incapable",
+"cripple"
+]
+},
+{
+"v": "SZ2",
+"w": "airline",
+"i": 26,
+"r": 1,
+"code": "GRAIN(=-5) NEAR(=-5) | o",
+"ans": [
+"air",
+"vapor",
+"atmosphere"
+]
+},
+{
+"v": "SZ2",
+"w": "satisfaction",
+"i": 27,
+"r": 1,
+"code": "FEEL WANT(=+5) BEGIN(=+5) | o",
+"ans": [
+"longing",
+"desire",
+"yearning"
+]
+},
+{
+"v": "SZ2",
+"w": "yesterday",
+"i": 28,
+"r": 1,
+"code": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+"ans": [
+"age",
+"lifetime",
+"years"
+]
+},
+{
+"v": "SZ2",
+"w": "model",
+"i": 29,
+"r": 1,
+"code": "THINK ART(=-5) SAME(=+5) | o",
+"ans": [
+"mathematics",
+"logic",
+"theorem"
+]
+},
+{
+"v": "SZ2",
+"w": "outlet",
+"i": 30,
+"r": 1,
+"code": "PLACE VALUE(=-5) NEAR(=+5) | o",
+"ans": [
+"slum",
+"dump",
+"backwater"
+]
+},
+{
+"v": "SZ2",
+"w": "planet",
+"i": 31,
+"r": 1,
+"code": "LAND NEAR(=-5) PLACE | o",
+"ans": [
+"foreign land",
+"abroad",
+"overseas"
+]
+},
+{
+"v": "SZ2",
+"w": "representation",
+"i": 32,
+"r": 1,
+"code": "THINK GRAIN(=+5) | o",
+"ans": [
+"idea",
+"concept",
+"conclusion"
+]
+},
+{
+"v": "SZ2",
+"w": "news",
+"i": 33,
+"r": 1,
+"code": "SAY TEXT TIME(=+5) | o",
+"ans": [
+"prophecy",
+"forecast",
+"prediction"
+]
+},
+{
+"v": "SZ2",
+"w": "copyright",
+"i": 34,
+"r": 1,
+"code": "TEXT SAME(=+5) | o",
+"ans": [
+"copy",
+"duplicate",
+"transcript"
+]
+},
+{
+"v": "SZ2",
+"w": "obstacle",
+"i": 35,
+"r": 1,
+"code": "THINK CAN(=-5) THING(=-5) | o",
+"ans": [
+"illusion",
+"fantasy",
+"delusion"
+]
+},
+{
+"v": "SZ2",
+"w": "grief",
+"i": 36,
+"r": 1,
+"code": "FEEL MOOD(=-5) LIVE(=-5) | o",
+"ans": [
+"mourning",
+"grief",
+"lament"
+]
+},
+{
+"v": "SZ2",
+"w": "lawmaker",
+"i": 37,
+"r": 1,
+"code": "SOMEONE RULE(=+5) | o",
+"ans": [
+"judge",
+"magistrate",
+"lawyer"
+]
+},
+{
+"v": "SZ2",
+"w": "harm",
+"i": 38,
+"r": 1,
+"code": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+"ans": [
+"peace",
+"calm",
+"serenity"
+]
+},
+{
+"v": "SZ2",
+"w": "spell",
+"i": 39,
+"r": 1,
+"code": "SACRED(=-5) HEAT(=-5) ABOVE(=-5) | o",
+"ans": [
+"hell",
+"underworld",
+"abyss"
+]
+},
+{
+"v": "SZ2",
+"w": "lawsuit",
+"i": 40,
+"r": 1,
+"code": "HAPPEN RULE(=+5) | o",
+"ans": [
+"ceremony",
+"occasion",
+"event"
+]
+},
+{
+"v": "SZ2",
+"w": "lens",
+"i": 41,
+"r": 1,
+"code": "ART(=-5) SEE NEAR(=-5) | o",
+"ans": [
+"telescope",
+"periscope",
+"microscope"
+]
+},
+{
+"v": "SZ2",
+"w": "testimony",
+"i": 42,
+"r": 1,
+"code": "SAY SEE TEXT | o",
+"ans": [
+"caption",
+"label",
+"title"
+]
+},
+{
+"v": "SZ2",
+"w": "bowl",
+"i": 43,
+"r": 1,
+"code": "CONTAINER TOUCH(=-5) PART(=-5) | o",
+"ans": [
+"bag",
+"sack",
+"pouch"
+]
+},
+{
+"v": "SZ2",
+"w": "pitcher",
+"i": 44,
+"r": 1,
+"code": "SOMEONE CONTAINER LONG(=+5) | o",
+"ans": [
+"carrier",
+"bearer",
+"courier"
+]
+},
+{
+"v": "SZ2",
+"w": "ally",
+"i": 45,
+"r": 1,
+"code": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+"ans": [
+"alliance",
+"union",
+"federation"
+]
+},
+{
+"v": "SZ2",
+"w": "contribution",
+"i": 46,
+"r": 1,
+"code": "DO GIVE(=+5) GOOD(=+5) | o",
+"ans": [
+"charity",
+"philanthropy",
+"generosity"
+]
+},
+{
+"v": "SZ2",
+"w": "guest",
+"i": 47,
+"r": 1,
+"code": "SOMEONE RULE(=-5) MOOD(=+5) | o",
+"ans": [
+"joker",
+"jester",
+"clown"
+]
+},
+{
+"v": "SZ2",
+"w": "expo",
+"i": 48,
+"r": 1,
+"code": "PART(=+5) FIGHT(=-5) | o",
+"ans": [
+"team",
+"league",
+"tournament"
+]
+},
+{
+"v": "SZ2",
+"w": "regulation",
+"i": 49,
+"r": 1,
+"code": "SAY RULE(=+5) ABOVE(=-5) | o",
+"ans": [
+"command",
+"decree",
+"order"
+]
+},
+{
+"v": "SZ2",
+"w": "helm",
+"i": 0,
+"r": 2,
+"code": "ART(=-5) SIDE(=+5) LONG(=+5) | o",
+"ans": [
+"antenna",
+"pole",
+"mast"
+]
+},
+{
+"v": "SZ2",
+"w": "malaria",
+"i": 1,
+"r": 2,
+"code": "BODY GOOD(=-5) | o",
+"ans": [
+"injury",
+"wound",
+"disease"
+]
+},
+{
+"v": "SZ2",
+"w": "pianist",
+"i": 2,
+"r": 2,
+"code": "SOMEONE ART(=+5) | o",
+"ans": [
+"artist",
+"painter",
+"poet"
+]
+},
+{
+"v": "SZ2",
+"w": "employee",
+"i": 3,
+"r": 2,
+"code": "SOMEONE RULE(=-5) ART(=-5) | o",
+"ans": [
+"hacker",
+"mechanic",
+"inventor"
+]
+},
+{
+"v": "SZ2",
+"w": "resignation",
+"i": 4,
+"r": 2,
+"code": "FEEL MOOD(=-5) | o",
+"ans": [
+"sorrow",
+"grief",
+"anguish"
+]
+},
+{
+"v": "SZ2",
+"w": "revision",
+"i": 5,
+"r": 2,
+"code": "DO TEXT CHANGE(=+5) | o",
+"ans": [
+"translation",
+"edit",
+"revision"
+]
+},
+{
+"v": "SZ2",
+"w": "consideration",
+"i": 6,
+"r": 2,
+"code": "THINK CARE(=+5) CAN(=+5) | o",
+"ans": [
+"clarity",
+"insight",
+"wisdom"
+]
+},
+{
+"v": "SZ2",
+"w": "profit",
+"i": 7,
+"r": 2,
+"code": "VALUE MEASURE(=+5) | o",
+"ans": [
+"price",
+"rate",
+"cost"
+]
+},
+{
+"v": "SZ2",
+"w": "relegation",
+"i": 8,
+"r": 2,
+"code": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
+"ans": [
+"fall",
+"collapse",
+"drop"
+]
+},
+{
+"v": "SZ2",
+"w": "religion",
+"i": 9,
+"r": 2,
+"code": "SACRED ART(=+5) | o",
+"ans": [
+"icon",
+"sacred art",
+"sacrament"
+]
+},
+{
+"v": "SZ2",
+"w": "bubble",
+"i": 10,
+"r": 2,
+"code": "GRAIN(=-5) TOUCH(=-5) CONTAINER(=+5) | o",
+"ans": [
+"balloon",
+"bladder",
+"bag"
+]
+},
+{
+"v": "SZ2",
+"w": "chapel",
+"i": 11,
+"r": 2,
+"code": "SACRED NEAR(=+5) INSIDE | o",
+"ans": [
+"sanctuary",
+"shrine",
+"temple"
+]
+},
+{
+"v": "SZ2",
+"w": "people",
+"i": 12,
+"r": 2,
+"code": "SOMEONE MANY(=+5) PART(=+5) | o",
+"ans": [
+"people",
+"humanity",
+"crowd"
+]
+},
+{
+"v": "SZ2",
+"w": "lake",
+"i": 13,
+"r": 2,
+"code": "LAND(=-5) THING(=-5) PLACE | o",
+"ans": [
+"lake",
+"sea",
+"ocean"
+]
+},
+{
+"v": "SZ2",
+"w": "topic",
+"i": 14,
+"r": 2,
+"code": "SAY TEXT | o",
+"ans": [
+"word",
+"phrase",
+"speech"
+]
+},
+{
+"v": "SZ2",
+"w": "era",
+"i": 15,
+"r": 2,
+"code": "TIME BEGIN | o",
+"ans": [
+"beginning",
+"start",
+"origin"
+]
+},
+{
+"v": "SZ2",
+"w": "donation",
+"i": 16,
+"r": 2,
+"code": "GIVE(=+5) FRIEND(=+5) | o",
+"ans": [
+"generosity",
+"kindness",
+"benefactor"
+]
+},
+{
+"v": "SZ2",
+"w": "gate",
+"i": 17,
+"r": 2,
+"code": "PLACE INSIDE(=-5) SIDE | o",
+"ans": [
+"backyard",
+"outskirts",
+"rear"
+]
+},
+{
+"v": "SZ2",
+"w": "homer",
+"i": 18,
+"r": 2,
+"code": "DO SAY(=+5) LONG(=+5) | o",
+"ans": [
+"trumpet",
+"horn",
+"bugle"
+]
+},
+{
+"v": "SZ2",
+"w": "coca",
+"i": 19,
+"r": 2,
+"code": "THING(=0) CONSUME(=+5) | o",
+"ans": [
+"food",
+"vegetable",
+"herb"
+]
+},
+{
+"v": "SZ2",
+"w": "dose",
+"i": 20,
+"r": 2,
+"code": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+"ans": [
+"dose",
+"sip",
+"bite"
+]
+},
+{
+"v": "SZ2",
+"w": "reservoir",
+"i": 21,
+"r": 2,
+"code": "MEASURE THING(=-5) LAND(=-5) | o",
+"ans": [
+"depth",
+"volume",
+"level"
+]
+},
+{
+"v": "SZ2",
+"w": "crater",
+"i": 22,
+"r": 2,
+"code": "LAND THING(=-5) LONG(=+5) | o",
+"ans": [
+"pier",
+"dock",
+"jetty"
+]
+},
+{
+"v": "SZ2",
+"w": "businessman",
+"i": 23,
+"r": 2,
+"code": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+"ans": [
+"criminal",
+"rogue",
+"thug"
+]
+},
+{
+"v": "SZ2",
+"w": "phase",
+"i": 24,
+"r": 2,
+"code": "TIME BEGIN(=-5) | o",
+"ans": [
+"dawn",
+"origin",
+"prehistory"
+]
+},
+{
+"v": "SZ2",
+"w": "labour",
+"i": 25,
+"r": 2,
+"code": "SOMEONE CAN(=-5) | o",
+"ans": [
+"incompetent",
+"invalid",
+"cripple"
+]
+},
+{
+"v": "SZ2",
+"w": "airline",
+"i": 26,
+"r": 2,
+"code": "GRAIN(=-5) NEAR(=-5) | o",
+"ans": [
+"space",
+"atmosphere",
+"vacuum"
+]
+},
+{
+"v": "SZ2",
+"w": "satisfaction",
+"i": 27,
+"r": 2,
+"code": "FEEL WANT(=+5) BEGIN(=+5) | o",
+"ans": [
+"longing",
+"yearning",
+"desire"
+]
+},
+{
+"v": "SZ2",
+"w": "yesterday",
+"i": 28,
+"r": 2,
+"code": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+"ans": [
+"age",
+"history",
+"biography"
+]
+},
+{
+"v": "SZ2",
+"w": "model",
+"i": 29,
+"r": 2,
+"code": "THINK ART(=-5) SAME(=+5) | o",
+"ans": [
+"logic",
+"mathematics",
+"calculation"
+]
+},
+{
+"v": "SZ2",
+"w": "outlet",
+"i": 30,
+"r": 2,
+"code": "PLACE VALUE(=-5) NEAR(=+5) | o",
+"ans": [
+"slum",
+"hovel",
+"dump"
+]
+},
+{
+"v": "SZ2",
+"w": "planet",
+"i": 31,
+"r": 2,
+"code": "LAND NEAR(=-5) PLACE | o",
+"ans": [
+"ocean",
+"sea",
+"abroad"
+]
+},
+{
+"v": "SZ2",
+"w": "representation",
+"i": 32,
+"r": 2,
+"code": "THINK GRAIN(=+5) | o",
+"ans": [
+"idea",
+"thought",
+"conclusion"
+]
+},
+{
+"v": "SZ2",
+"w": "news",
+"i": 33,
+"r": 2,
+"code": "SAY TEXT TIME(=+5) | o",
+"ans": [
+"prophecy",
+"forecast",
+"promise"
+]
+},
+{
+"v": "SZ2",
+"w": "copyright",
+"i": 34,
+"r": 2,
+"code": "TEXT SAME(=+5) | o",
+"ans": [
+"copy",
+"duplicate",
+"replica"
+]
+},
+{
+"v": "SZ2",
+"w": "obstacle",
+"i": 35,
+"r": 2,
+"code": "THINK CAN(=-5) THING(=-5) | o",
+"ans": [
+"illusion",
+"fantasy",
+"paradox"
+]
+},
+{
+"v": "SZ2",
+"w": "grief",
+"i": 36,
+"r": 2,
+"code": "FEEL MOOD(=-5) LIVE(=-5) | o",
+"ans": [
+"mourning",
+"grief",
+"bereavement"
+]
+},
+{
+"v": "SZ2",
+"w": "lawmaker",
+"i": 37,
+"r": 2,
+"code": "SOMEONE RULE(=+5) | o",
+"ans": [
+"official",
+"judge",
+"lawyer"
+]
+},
+{
+"v": "SZ2",
+"w": "harm",
+"i": 38,
+"r": 2,
+"code": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+"ans": [
+"indifference",
+"apathy",
+"solitude"
+]
+},
+{
+"v": "SZ2",
+"w": "spell",
+"i": 39,
+"r": 2,
+"code": "SACRED(=-5) HEAT(=-5) ABOVE(=-5) | o",
+"ans": [
+"hell",
+"underworld",
+"purgatory"
+]
+},
+{
+"v": "SZ2",
+"w": "lawsuit",
+"i": 40,
+"r": 2,
+"code": "HAPPEN RULE(=+5) | o",
+"ans": [
+"trial",
+"verdict",
+"election"
+]
+},
+{
+"v": "SZ2",
+"w": "lens",
+"i": 41,
+"r": 2,
+"code": "ART(=-5) SEE NEAR(=-5) | o",
+"ans": [
+"telescope",
+"binoculars",
+"microscope"
+]
+},
+{
+"v": "SZ2",
+"w": "testimony",
+"i": 42,
+"r": 2,
+"code": "SAY SEE TEXT | o",
+"ans": [
+"caption",
+"headline",
+"title"
+]
+},
+{
+"v": "SZ2",
+"w": "bowl",
+"i": 43,
+"r": 2,
+"code": "CONTAINER TOUCH(=-5) PART(=-5) | o",
+"ans": [
+"bag",
+"pouch",
+"sack"
+]
+},
+{
+"v": "SZ2",
+"w": "pitcher",
+"i": 44,
+"r": 2,
+"code": "SOMEONE CONTAINER LONG(=+5) | o",
+"ans": [
+"coffin",
+"casket",
+"sarcophagus"
+]
+},
+{
+"v": "SZ2",
+"w": "ally",
+"i": 45,
+"r": 2,
+"code": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+"ans": [
+"alliance",
+"union",
+"league"
+]
+},
+{
+"v": "SZ2",
+"w": "contribution",
+"i": 46,
+"r": 2,
+"code": "DO GIVE(=+5) GOOD(=+5) | o",
+"ans": [
+"charity",
+"donation",
+"kindness"
+]
+},
+{
+"v": "SZ2",
+"w": "guest",
+"i": 47,
+"r": 2,
+"code": "SOMEONE RULE(=-5) MOOD(=+5) | o",
+"ans": [
+"joker",
+"clown",
+"comedian"
+]
+},
+{
+"v": "SZ2",
+"w": "expo",
+"i": 48,
+"r": 2,
+"code": "PART(=+5) FIGHT(=-5) | o",
+"ans": [
+"team",
+"league",
+"tournament"
+]
+},
+{
+"v": "SZ2",
+"w": "regulation",
+"i": 49,
+"r": 2,
+"code": "SAY RULE(=+5) ABOVE(=-5) | o",
+"ans": [
+"decree",
+"order",
+"proclamation"
+]
+},
+{
+"v": "SZ2",
+"w": "list",
+"i": 50,
+"r": 1,
+"code": "SAY TEXT PART(=+5) | o",
+"ans": [
+"anthology",
+"corpus",
+"library"
+]
+},
+{
+"v": "SZ2",
+"w": "existence",
+"i": 51,
+"r": 1,
+"code": "LIVE SACRED(=+5) MOVE(=-5) | o",
+"ans": [
+"monk",
+"hermit",
+"ascetic"
+]
+},
+{
+"v": "SZ2",
+"w": "fleet",
+"i": 52,
+"r": 1,
+"code": "PART(=+5) FIGHT(=+5) LAND(=-5) | o",
+"ans": [
+"navy",
+"fleet",
+"armada"
+]
+},
+{
+"v": "SZ2",
+"w": "township",
+"i": 53,
+"r": 1,
+"code": "LAND PLACE | o",
+"ans": [
+"country",
+"region",
+"territory"
+]
+},
+{
+"v": "SZ2",
+"w": "bishop",
+"i": 54,
+"r": 1,
+"code": "SACRED RULE(=+5) | o",
+"ans": [
+"commandment",
+"scripture",
+"canon"
+]
+},
+{
+"v": "SZ2",
+"w": "activist",
+"i": 55,
+"r": 1,
+"code": "SOMEONE TOUCH(=+5) | o",
+"ans": [
+"sculptor",
+"boxer",
+"craftsman"
+]
+},
+{
+"v": "SZ2",
+"w": "order",
+"i": 56,
+"r": 1,
+"code": "DO WANT(=+5) THINK(=+5) | o",
+"ans": [
+"intention",
+"purpose",
+"ambition"
+]
+},
+{
+"v": "SZ2",
+"w": "knight",
+"i": 57,
+"r": 1,
+"code": "SOMEONE THING(=+4) VALUE(=+5) | o",
+"ans": [
+"pet",
+"companion",
+"darling"
+]
+},
+{
+"v": "SZ2",
+"w": "diplomacy",
+"i": 58,
+"r": 1,
+"code": "SAY(=0) FRIEND FIGHT(=+5) | o",
+"ans": [
+"diplomacy",
+"treaty",
+"peace"
+]
+},
+{
+"v": "SZ2",
+"w": "bronze",
+"i": 59,
+"r": 1,
+"code": "GRAIN THING(=-5) | o",
+"ans": [
+"sand",
+"gravel",
+"dust"
+]
+},
+{
+"v": "SZ2",
+"w": "occupation",
+"i": 60,
+"r": 1,
+"code": "DO FIGHT(=+5) FRIEND(=-5) | o",
+"ans": [
+"attack",
+"assault",
+"hostility"
+]
+},
+{
+"v": "SZ2",
+"w": "athletics",
+"i": 61,
+"r": 1,
+"code": "FIGHT(=-5) MOVE(=+5) | o",
+"ans": [
+"race",
+"sprint",
+"run"
+]
+},
+{
+"v": "SZ2",
+"w": "piece",
+"i": 62,
+"r": 1,
+"code": "PART(=-5) GRAIN(=+5) LONG(=-5) | o",
+"ans": [
+"fiber",
+"thread",
+"hair"
+]
+},
+{
+"v": "SZ2",
+"w": "anode",
+"i": 63,
+"r": 1,
+"code": "ART(=-5) INSIDE(=-5) LONG | o",
+"ans": [
+"antenna",
+"rod",
+"pole"
+]
+},
+{
+"v": "SZ2",
+"w": "quantum",
+"i": 64,
+"r": 1,
+"code": "THINK ART(=-5) PART(=-5) | o",
+"ans": [
+"calculation",
+"computation",
+"estimate"
+]
+},
+{
+"v": "SZ2",
+"w": "fist",
+"i": 65,
+"r": 1,
+"code": "BODY SAY(=+5) TOUCH(=+5) | o",
+"ans": [
+"scream",
+"shout",
+"yell"
+]
+},
+{
+"v": "SZ2",
+"w": "reservation",
+"i": 66,
+"r": 1,
+"code": "LAND PLACE | o",
+"ans": [
+"country",
+"region",
+"territory"
+]
+},
+{
+"v": "SZ2",
+"w": "campus",
+"i": 67,
+"r": 1,
+"code": "LAND PLACE ABOVE(=+5) | o",
+"ans": [
+"mountain",
+"highland",
+"plateau"
+]
+},
+{
+"v": "SZ2",
+"w": "flame",
+"i": 68,
+"r": 1,
+"code": "HEAT(=+5) GRAIN(=-5) | o",
+"ans": [
+"steam",
+"smoke",
+"flame"
+]
+},
+{
+"v": "SZ2",
+"w": "privilege",
+"i": 69,
+"r": 1,
+"code": "VALUE(=+5) RULE(=+5) WANT | o",
+"ans": [
+"right",
+"entitlement",
+"claim"
+]
+},
+{
+"v": "SZ2",
+"w": "sequence",
+"i": 70,
+"r": 1,
+"code": "PART(=+5) BEGIN(=-5) HAPPEN | o",
+"ans": [
+"outbreak",
+"series",
+"wave"
+]
+},
+{
+"v": "SZ2",
+"w": "ratio",
+"i": 71,
+"r": 1,
+"code": "MEASURE(=+5) SAME(=+5) | o",
+"ans": [
+"proportion",
+"ratio",
+"equation"
+]
+},
+{
+"v": "SZ2",
+"w": "rest",
+"i": 72,
+"r": 1,
+"code": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+"ans": [
+"pause",
+"rest",
+"lull"
+]
+},
+{
+"v": "SZ2",
+"w": "ankle",
+"i": 73,
+"r": 1,
+"code": "BODY SIDE(=-5) LONG(=-5) | o",
+"ans": [
+"spine",
+"backbone",
+"tendon"
+]
+},
+{
+"v": "SZ2",
+"w": "discussion",
+"i": 74,
+"r": 1,
+"code": "DO THINK(=-5) TEXT | o",
+"ans": [
+"critique",
+"criticism",
+"objection"
+]
+},
+{
+"v": "SZ2",
+"w": "road",
+"i": 75,
+"r": 1,
+"code": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+"ans": [
+"counter",
+"table",
+"lectern"
+]
+},
+{
+"v": "SZ2",
+"w": "driver",
+"i": 76,
+"r": 1,
+"code": "ART(=-5) SIDE | o",
+"ans": [
+"science",
+"technology",
+"engineering"
+]
+},
+{
+"v": "SZ2",
+"w": "friend",
+"i": 77,
+"r": 1,
+"code": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+"ans": [
+"ghost",
+"ancestor",
+"spirit"
+]
+},
+{
+"v": "SZ2",
+"w": "integration",
+"i": 78,
+"r": 1,
+"code": "HAPPEN JOIN(=+5) ART(=-5) | o",
+"ans": [
+"invention",
+"innovation",
+"development"
+]
+},
+{
+"v": "SZ2",
+"w": "bachelor",
+"i": 79,
+"r": 1,
+"code": "SOMEONE MEASURE(=+5) | o",
+"ans": [
+"scientist",
+"analyst",
+"surveyor"
+]
+},
+{
+"v": "SZ2",
+"w": "overtime",
+"i": 80,
+"r": 1,
+"code": "TIME BEGIN(=+5) FIGHT(=-5) | o",
+"ans": [
+"final",
+"playoff",
+"end"
+]
+},
+{
+"v": "SZ2",
+"w": "atmosphere",
+"i": 81,
+"r": 1,
+"code": "GRAIN(=-5) INSIDE(=+5) HEAT(=+5) | o",
+"ans": [
+"furnace",
+"oven",
+"boiler"
+]
+},
+{
+"v": "SZ2",
+"w": "stomach",
+"i": 82,
+"r": 1,
+"code": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+"ans": [
+"stomach",
+"digestion",
+"mouth"
+]
+},
+{
+"v": "SZ2",
+"w": "autumn",
+"i": 83,
+"r": 1,
+"code": "TIME HEAT(=-5) BEGIN | o",
+"ans": [
+"winter",
+"autumn",
+"frost"
+]
+},
+{
+"v": "SZ2",
+"w": "post",
+"i": 84,
+"r": 1,
+"code": "PLACE LONG(=+5) TEXT | o",
+"ans": [
+"library",
+"archive",
+"book"
+]
+},
+{
+"v": "SZ2",
+"w": "lion",
+"i": 85,
+"r": 1,
+"code": "THING(=+4) VALUE(=+5) | o",
+"ans": [
+"livestock",
+"pet",
+"animal"
+]
+},
+{
+"v": "SZ2",
+"w": "playoff",
+"i": 86,
+"r": 1,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"finish",
+"end",
+"ending"
+]
+},
+{
+"v": "SZ2",
+"w": "brokerage",
+"i": 87,
+"r": 1,
+"code": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+"ans": [
+"inflation",
+"devaluation",
+"tax"
+]
+},
+{
+"v": "SZ2",
+"w": "acre",
+"i": 88,
+"r": 1,
+"code": "MEASURE(=-5) LAND(=+5) PLACE | o",
+"ans": [
+"area",
+"field",
+"plot"
+]
+},
+{
+"v": "SZ2",
+"w": "competitiveness",
+"i": 89,
+"r": 1,
+"code": "FIGHT(=-5) TOUCH(=+5) FRIEND(=-5) | o",
+"ans": [
+"boxing",
+"wrestling",
+"martial arts"
+]
+},
+{
+"v": "SZ2",
+"w": "ideology",
+"i": 90,
+"r": 1,
+"code": "THINK ART(=+5) | o",
+"ans": [
+"philosophy",
+"theory",
+"humanities"
+]
+},
+{
+"v": "SZ2",
+"w": "cake",
+"i": 91,
+"r": 1,
+"code": "TOUCH(=-5) CONSUME(=+5) CONTAINER(=-5) | o",
+"ans": [
+"plate",
+"dish",
+"bowl"
+]
+},
+{
+"v": "SZ2",
+"w": "pickup",
+"i": 92,
+"r": 1,
+"code": "CONTAINER LONG(=+5) | o",
+"ans": [
+"tube",
+"pipe",
+"cylinder"
+]
+},
+{
+"v": "SZ2",
+"w": "argentine",
+"i": 93,
+"r": 1,
+"code": "THING(=+4) JOIN(=-5) | o",
+"ans": [
+"beast",
+"animal",
+"wild animal"
+]
+},
+{
+"v": "SZ2",
+"w": "prisoner",
+"i": 94,
+"r": 1,
+"code": "SOMEONE FIGHT(=+5) | o",
+"ans": [
+"soldier",
+"warrior",
+"fighter"
+]
+},
+{
+"v": "SZ2",
+"w": "atom",
+"i": 95,
+"r": 1,
+"code": "GRAIN PART(=-5) | o",
+"ans": [
+"dust",
+"powder",
+"crumb"
+]
+},
+{
+"v": "SZ2",
+"w": "door",
+"i": 96,
+"r": 1,
+"code": "PLACE INSIDE CONTAINER(=+5) | o",
+"ans": [
+"room",
+"cabinet",
+"box"
+]
+},
+{
+"v": "SZ2",
+"w": "gambling",
+"i": 97,
+"r": 1,
+"code": "DO FIGHT(=-5) | o",
+"ans": [
+"play",
+"game",
+"exercise"
+]
+},
+{
+"v": "SZ2",
+"w": "folklore",
+"i": 98,
+"r": 1,
+"code": "THINK ART(=+5) SACRED(=-5) | o",
+"ans": [
+"sorcery",
+"witchcraft",
+"occultism"
+]
+},
+{
+"v": "SZ2",
+"w": "hybrid",
+"i": 99,
+"r": 1,
+"code": "PART(=-2) TOUCH(=-5) | o",
+"ans": [
+"tissue",
+"fluff",
+"fur"
+]
+},
+{
+"v": "SZ2",
+"w": "list",
+"i": 50,
+"r": 2,
+"code": "SAY TEXT PART(=+5) | o",
+"ans": [
+"library",
+"anthology",
+"publication"
+]
+},
+{
+"v": "SZ2",
+"w": "existence",
+"i": 51,
+"r": 2,
+"code": "LIVE SACRED(=+5) MOVE(=-5) | o",
+"ans": [
+"monk",
+"hermit",
+"saint"
+]
+},
+{
+"v": "SZ2",
+"w": "fleet",
+"i": 52,
+"r": 2,
+"code": "PART(=+5) FIGHT(=+5) LAND(=-5) | o",
+"ans": [
+"navy",
+"fleet",
+"armada"
+]
+},
+{
+"v": "SZ2",
+"w": "township",
+"i": 53,
+"r": 2,
+"code": "LAND PLACE | o",
+"ans": [
+"country",
+"region",
+"territory"
+]
+},
+{
+"v": "SZ2",
+"w": "bishop",
+"i": 54,
+"r": 2,
+"code": "SACRED RULE(=+5) | o",
+"ans": [
+"canon",
+"commandment",
+"scripture"
+]
+},
+{
+"v": "SZ2",
+"w": "activist",
+"i": 55,
+"r": 2,
+"code": "SOMEONE TOUCH(=+5) | o",
+"ans": [
+"brute",
+"hardliner",
+"tough"
+]
+},
+{
+"v": "SZ2",
+"w": "order",
+"i": 56,
+"r": 2,
+"code": "DO WANT(=+5) THINK(=+5) | o",
+"ans": [
+"intention",
+"purpose",
+"will"
+]
+},
+{
+"v": "SZ2",
+"w": "knight",
+"i": 57,
+"r": 2,
+"code": "SOMEONE THING(=+4) VALUE(=+5) | o",
+"ans": [
+"pet",
+"companion",
+"darling"
+]
+},
+{
+"v": "SZ2",
+"w": "diplomacy",
+"i": 58,
+"r": 2,
+"code": "SAY(=0) FRIEND FIGHT(=+5) | o",
+"ans": [
+"diplomacy",
+"negotiation",
+"treaty"
+]
+},
+{
+"v": "SZ2",
+"w": "bronze",
+"i": 59,
+"r": 2,
+"code": "GRAIN THING(=-5) | o",
+"ans": [
+"sand",
+"gravel",
+"dust"
+]
+},
+{
+"v": "SZ2",
+"w": "occupation",
+"i": 60,
+"r": 2,
+"code": "DO FIGHT(=+5) FRIEND(=-5) | o",
+"ans": [
+"attack",
+"invasion",
+"assault"
+]
+},
+{
+"v": "SZ2",
+"w": "athletics",
+"i": 61,
+"r": 2,
+"code": "FIGHT(=-5) MOVE(=+5) | o",
+"ans": [
+"race",
+"sprint",
+"run"
+]
+},
+{
+"v": "SZ2",
+"w": "piece",
+"i": 62,
+"r": 2,
+"code": "PART(=-5) GRAIN(=+5) LONG(=-5) | o",
+"ans": [
+"fiber",
+"thread",
+"filament"
+]
+},
+{
+"v": "SZ2",
+"w": "anode",
+"i": 63,
+"r": 2,
+"code": "ART(=-5) INSIDE(=-5) LONG | o",
+"ans": [
+"antenna",
+"aerial",
+"pipe"
+]
+},
+{
+"v": "SZ2",
+"w": "quantum",
+"i": 64,
+"r": 2,
+"code": "THINK ART(=-5) PART(=-5) | o",
+"ans": [
+"calculation",
+"logic",
+"computation"
+]
+},
+{
+"v": "SZ2",
+"w": "fist",
+"i": 65,
+"r": 2,
+"code": "BODY SAY(=+5) TOUCH(=+5) | o",
+"ans": [
+"drum",
+"bell",
+"gong"
+]
+},
+{
+"v": "SZ2",
+"w": "reservation",
+"i": 66,
+"r": 2,
+"code": "LAND PLACE | o",
+"ans": [
+"country",
+"region",
+"territory"
+]
+},
+{
+"v": "SZ2",
+"w": "campus",
+"i": 67,
+"r": 2,
+"code": "LAND PLACE ABOVE(=+5) | o",
+"ans": [
+"highland",
+"mountain",
+"plateau"
+]
+},
+{
+"v": "SZ2",
+"w": "flame",
+"i": 68,
+"r": 2,
+"code": "HEAT(=+5) GRAIN(=-5) | o",
+"ans": [
+"steam",
+"vapor",
+"smoke"
+]
+},
+{
+"v": "SZ2",
+"w": "privilege",
+"i": 69,
+"r": 2,
+"code": "VALUE(=+5) RULE(=+5) WANT | o",
+"ans": [
+"right",
+"entitlement",
+"claim"
+]
+},
+{
+"v": "SZ2",
+"w": "sequence",
+"i": 70,
+"r": 2,
+"code": "PART(=+5) BEGIN(=-5) HAPPEN | o",
+"ans": [
+"history",
+"series",
+"chain of events"
+]
+},
+{
+"v": "SZ2",
+"w": "ratio",
+"i": 71,
+"r": 2,
+"code": "MEASURE(=+5) SAME(=+5) | o",
+"ans": [
+"proportion",
+"equality",
+"ratio"
+]
+},
+{
+"v": "SZ2",
+"w": "rest",
+"i": 72,
+"r": 2,
+"code": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+"ans": [
+"rest",
+"pause",
+"break"
+]
+},
+{
+"v": "SZ2",
+"w": "ankle",
+"i": 73,
+"r": 2,
+"code": "BODY SIDE(=-5) LONG(=-5) | o",
+"ans": [
+"spine",
+"backbone",
+"spinal column"
+]
+},
+{
+"v": "SZ2",
+"w": "discussion",
+"i": 74,
+"r": 2,
+"code": "DO THINK(=-5) TEXT | o",
+"ans": [
+"critique",
+"criticism",
+"review"
+]
+},
+{
+"v": "SZ2",
+"w": "road",
+"i": 75,
+"r": 2,
+"code": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+"ans": [
+"front",
+"facade",
+"face"
+]
+},
+{
+"v": "SZ2",
+"w": "driver",
+"i": 76,
+"r": 2,
+"code": "ART(=-5) SIDE | o",
+"ans": [
+"interface",
+"side",
+"panel"
+]
+},
+{
+"v": "SZ2",
+"w": "friend",
+"i": 77,
+"r": 2,
+"code": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+"ans": [
+"ghost",
+"ancestor",
+"spirit"
+]
+},
+{
+"v": "SZ2",
+"w": "integration",
+"i": 78,
+"r": 2,
+"code": "HAPPEN JOIN(=+5) ART(=-5) | o",
+"ans": [
+"integration",
+"connection",
+"combination"
+]
+},
+{
+"v": "SZ2",
+"w": "bachelor",
+"i": 79,
+"r": 2,
+"code": "SOMEONE MEASURE(=+5) | o",
+"ans": [
+"scientist",
+"measurer",
+"analyst"
+]
+},
+{
+"v": "SZ2",
+"w": "overtime",
+"i": 80,
+"r": 2,
+"code": "TIME BEGIN(=+5) FIGHT(=-5) | o",
+"ans": [
+"final",
+"season",
+"finale"
+]
+},
+{
+"v": "SZ2",
+"w": "atmosphere",
+"i": 81,
+"r": 2,
+"code": "GRAIN(=-5) INSIDE(=+5) HEAT(=+5) | o",
+"ans": [
+"furnace",
+"kiln",
+"engine"
+]
+},
+{
+"v": "SZ2",
+"w": "stomach",
+"i": 82,
+"r": 2,
+"code": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+"ans": [
+"stomach",
+"belly",
+"mouth"
+]
+},
+{
+"v": "SZ2",
+"w": "autumn",
+"i": 83,
+"r": 2,
+"code": "TIME HEAT(=-5) BEGIN | o",
+"ans": [
+"autumn",
+"fall",
+"winter"
+]
+},
+{
+"v": "SZ2",
+"w": "post",
+"i": 84,
+"r": 2,
+"code": "PLACE LONG(=+5) TEXT | o",
+"ans": [
+"signpost",
+"billboard",
+"sign"
+]
+},
+{
+"v": "SZ2",
+"w": "lion",
+"i": 85,
+"r": 2,
+"code": "THING(=+4) VALUE(=+5) | o",
+"ans": [
+"livestock",
+"cattle",
+"treasure"
+]
+},
+{
+"v": "SZ2",
+"w": "playoff",
+"i": 86,
+"r": 2,
+"code": "FIGHT(=-5) BEGIN(=+5) | o",
+"ans": [
+"finish",
+"endgame",
+"conclusion"
+]
+},
+{
+"v": "SZ2",
+"w": "brokerage",
+"i": 87,
+"r": 2,
+"code": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+"ans": [
+"tax",
+"tariff",
+"fine"
+]
+},
+{
+"v": "SZ2",
+"w": "acre",
+"i": 88,
+"r": 2,
+"code": "MEASURE(=-5) LAND(=+5) PLACE | o",
+"ans": [
+"area",
+"plot",
+"lot"
+]
+},
+{
+"v": "SZ2",
+"w": "competitiveness",
+"i": 89,
+"r": 2,
+"code": "FIGHT(=-5) TOUCH(=+5) FRIEND(=-5) | o",
+"ans": [
+"boxing",
+"wrestling",
+"martial art"
+]
+},
+{
+"v": "SZ2",
+"w": "ideology",
+"i": 90,
+"r": 2,
+"code": "THINK ART(=+5) | o",
+"ans": [
+"philosophy",
+"humanities",
+"theory"
+]
+},
+{
+"v": "SZ2",
+"w": "cake",
+"i": 91,
+"r": 2,
+"code": "TOUCH(=-5) CONSUME(=+5) CONTAINER(=-5) | o",
+"ans": [
+"bowl",
+"dish",
+"sponge"
+]
+},
+{
+"v": "SZ2",
+"w": "pickup",
+"i": 92,
+"r": 2,
+"code": "CONTAINER LONG(=+5) | o",
+"ans": [
+"tube",
+"pipe",
+"cylinder"
+]
+},
+{
+"v": "SZ2",
+"w": "argentine",
+"i": 93,
+"r": 2,
+"code": "THING(=+4) JOIN(=-5) | o",
+"ans": [
+"beast",
+"wild animal",
+"stray"
+]
+},
+{
+"v": "SZ2",
+"w": "prisoner",
+"i": 94,
+"r": 2,
+"code": "SOMEONE FIGHT(=+5) | o",
+"ans": [
+"soldier",
+"warrior",
+"fighter"
+]
+},
+{
+"v": "SZ2",
+"w": "atom",
+"i": 95,
+"r": 2,
+"code": "GRAIN PART(=-5) | o",
+"ans": [
+"dust",
+"speck",
+"grain"
+]
+},
+{
+"v": "SZ2",
+"w": "door",
+"i": 96,
+"r": 2,
+"code": "PLACE INSIDE CONTAINER(=+5) | o",
+"ans": [
+"room",
+"chamber",
+"vault"
+]
+},
+{
+"v": "SZ2",
+"w": "gambling",
+"i": 97,
+"r": 2,
+"code": "DO FIGHT(=-5) | o",
+"ans": [
+"play",
+"game",
+"sport"
+]
+},
+{
+"v": "SZ2",
+"w": "folklore",
+"i": 98,
+"r": 2,
+"code": "THINK ART(=+5) SACRED(=-5) | o",
+"ans": [
+"humanism",
+"secularism",
+"rationalism"
+]
+},
+{
+"v": "SZ2",
+"w": "hybrid",
+"i": 99,
+"r": 2,
+"code": "PART(=-2) TOUCH(=-5) | o",
+"ans": [
+"fluff",
+"down",
+"bit"
+]
 }
 ]

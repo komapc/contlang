@@ -3,9 +3,9 @@ import gzip, json, os, re, numpy as np
 from nltk.corpus import wordnet as wn
 D = os.path.dirname(os.path.abspath(__file__)); REPO = f"{D}/../../../.."; NB = f"{REPO}/data/raw/numberbatch-en-19.08.txt.gz"
 toks = lambda p: [w for w in re.sub(r"[^a-z -]", "", p.lower()).replace("-", " ").split() if w not in {"the", "a", "an", "of", "to", "or", "and", "one"}]
-def spec():
+def spec_from(path):
     """{ROOT: {"axis": bool, "pts": [(v, [words])], "plain": [words]}}"""
-    out = {}; t = open(f"{D}/spec.md").read(); t = t[t.index("## Roots"):t.index("## Form")]
+    out = {}; t = open(path).read(); t = t[t.index("## Roots"):t.index("## Form")]
     for l in t.splitlines():
         m = re.match(r"- ([A-Z]+): (.*)", l)
         if not m: continue
@@ -18,7 +18,8 @@ def spec():
         pts = [(int(x[0]), toks(x[1])) for x in re.findall(r"([+-]?\d)\s+([^…]+)", t)]
         out[r] = {"axis": True, "pts": sorted(pts), "plain": plain}
     return out
-SPEC = spec(); NAMES = list(SPEC)
+spec = lambda: spec_from(f"{D}/spec.md")
+SPEC = spec_from(f"{D}/spec.md"); NAMES = list(SPEC)
 def parse(code):
     """'A(=+3) B | o tool' → [(root, v|None)], pos, role"""
     s, _, f = code.partition("|"); rs = [(m[1], int(m[2]) if m[2] else None) for m in re.finditer(r"([A-Z]+)(?:\(=([+-]?\d)\))?", s) if m[1] in SPEC]

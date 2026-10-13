@@ -1,0 +1,50 @@
+1. SAY TEXT PART(=+5) | o
+2. LIVE SACRED(=+5) MOVE(=-5) | o
+3. PART(=+5) FIGHT(=+5) LAND(=-5) | o
+4. LAND PLACE | o
+5. SACRED RULE(=+5) | o
+6. SOMEONE TOUCH(=+5) | o
+7. DO WANT(=+5) THINK(=+5) | o
+8. SOMEONE THING(=+5) VALUE(=+5) | o
+9. SAY(=0) FRIEND(=+5) FIGHT(=-5) | o
+10. GRAIN THING | o
+11. GIVE(=-5) PLACE MOVE(=-5) | o
+12. FIGHT(=-5) MOVE(=+5) | o
+13. PART(=-5) GRAIN(=+5) LONG(=+5) | o
+14. ART(=-5) INSIDE(=-5) LONG | o tool
+15. THINK ART(=-5) PART(=-5) | o
+16. BODY SAY(=+5) TOUCH | o
+17. LAND PLACE | o
+18. LAND PLACE ABOVE(=+5) | o
+19. HEAT(=+5) GRAIN(=-5) | o
+20. VALUE(=+5) RULE(=+5) WANT | o
+21. PART(=+5) BEGIN(=+5) HAPPEN | o
+22. MEASURE(=+5) SAME(=+5) | o
+23. PART(=-2) FEEL(=-5) MOVE(=-5) | o
+24. BODY SIDE(=-5) LONG(=-5) | o
+25. THINK(=+5) KNOW(=+5) TIME(=+5) | o result
+26. THING(=-5) NEAR(=+5) SIDE(=+5) | o
+27. MOVE(=+5) SIDE NEAR | o agent
+28. SOMEONE FRIEND(=+5) LIVE(=-5) | o
+29. JOIN(=+5) THINK(=+5) CONSUME(=+5) | o
+30. SOMEONE MEASURE(=+5) | o
+31. TIME BEGIN(=+5) FIGHT | o
+32. GRAIN(=-5) INSIDE(=-5) HEAT | o
+33. BODY CONSUME(=+5) INSIDE(=+5) | o
+34. TIME HEAT(=+5) BEGIN | o
+35. PLACE LONG(=+5) TEXT | o
+36. THING(=+4) VALUE(=+5) | o
+37. FIGHT(=-5) BEGIN(=+5) | o
+38. RULE(=+4) MEASURE(=+5) VALUE(=-5) | o
+39. MEASURE(=-5) LAND(=+5) PLACE | o
+40. FIGHT(=-5) TOUCH(=+5) FRIEND | o
+41. THINK ART(=+5) | o
+42. TOUCH(=-5) CONSUME(=+5) CONTAINER(=-5) | o
+43. CONTAINER LONG(=+5) | o tool
+44. THING(=+4) JOIN | o
+45. SOMEONE FIGHT(=+5) | o
+46. GRAIN PART(=-5) | o
+47. PLACE INSIDE(=+5) CONTAINER(=+5) | o
+48. FIGHT(=-5) THINK | o
+49. THINK ART(=+5) SACRED(=-5) | o
+50. PART(=-2) TOUCH(=-5) | o

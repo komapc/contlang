@@ -1,0 +1,50 @@
+1. library | anthology | publication
+2. monk | hermit | saint
+3. navy | fleet | armada
+4. country | region | territory
+5. canon | commandment | scripture
+6. brute | hardliner | tough
+7. intention | purpose | will
+8. pet | companion | darling
+9. diplomacy | negotiation | treaty
+10. sand | gravel | dust
+11. attack | invasion | assault
+12. race | sprint | run
+13. fiber | thread | filament
+14. antenna | aerial | pipe
+15. calculation | logic | computation
+16. drum | bell | gong
+17. country | region | territory
+18. highland | mountain | plateau
+19. steam | vapor | smoke
+20. right | entitlement | claim
+21. history | series | chain of events
+22. proportion | equality | ratio
+23. rest | pause | break
+24. spine | backbone | spinal column
+25. critique | criticism | review
+26. front | facade | face
+27. interface | side | panel
+28. ghost | ancestor | spirit
+29. integration | connection | combination
+30. scientist | measurer | analyst
+31. final | season | finale
+32. furnace | kiln | engine
+33. stomach | belly | mouth
+34. autumn | fall | winter
+35. signpost | billboard | sign
+36. livestock | cattle | treasure
+37. finish | endgame | conclusion
+38. tax | tariff | fine
+39. area | plot | lot
+40. boxing | wrestling | martial art
+41. philosophy | humanities | theory
+42. bowl | dish | sponge
+43. tube | pipe | cylinder
+44. beast | wild animal | stray
+45. soldier | warrior | fighter
+46. dust | speck | grain
+47. room | chamber | vault
+48. play | game | sport
+49. humanism | secularism | rationalism
+50. fluff | down | bit
