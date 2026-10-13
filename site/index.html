@@ -487,11 +487,12 @@ async function mathWord(word){
   }
   await new Promise(r => setTimeout(r, 0));
   // часть речи слова неизвестна: без штрафа; слово не первое — кодер пробует пару «код PI второе слово» (Reader.encode)
-  const rd = await reader(), r = co.encode(x), e = rd.encode(w);
-  const sc = e.mod ? rd.scores(e.code) : rd.prf(rd.roots(r.S, r.v, ""));
+  // самопроверка (Reader.encode): код из кандидатов, при котором слово читается выше всего
+  const rd = await reader(), e = rd.encode(w);
+  const sc = e.mod ? rd.scores(e.code) : rd.prf(rd.roots(e.S, e.v, ""));
   setCode($("mcode"), $("mcodeAx"), e.code);
   const nb = V.top(sc, 8), rk = V.rankIn(sc, w);
-  $("mcos").textContent = T("cos")(r.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");
+  $("mcos").textContent = T("cos")(e.cos.toFixed(2)) + (e.mod ? T("pairMod")(e.mod, e.rank0, e.rank) : "");
   mark($("mbest"), nb[0].word, w);
   $("mnear").textContent = T("next") + nb.slice(1).map(n => n.word).join(", ") + (rk ? T("rank")(rk, nloc(V.words.length)) : "");
   const tb = $("mroots"), top = co.singles(x).slice(0, 10), mx = top[0].cos;

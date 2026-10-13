@@ -91,6 +91,12 @@
         return p;
       });
     }
+    // cos вектора кода (S, v) со словом x
+    cosOf(x, S, v) {
+      const y = new Float64Array(x.length);
+      for (const p of this.parts(S, v)) for (let j = 0; j < y.length; j++) y[j] += p[j];
+      return dot(y, x) / Math.sqrt(Math.max(dot(y, y) * dot(x, x), 1e-12));
+    }
     // лучший один корень с лучшим уровнем: «ближайшие оси» к слову
     singles(x) {
       const out = [];
@@ -292,7 +298,7 @@
   // pairN — сколько соседей слова кодер пробует вторым словом (Reader.encode);
   // prfMu, prfK — PRF: сдвиг оценок к центру prfK лучших прочтений. Выключен: парам моделей помогает, а круг математики портит (docs/math.md, раздел 9).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { selfCheck: false, keepHead: true, absLam: 0, absTau: 1, negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
+  const READ = { selfCheck: true, keepHead: true, absLam: 0.5, absTau: 1, negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -385,7 +391,7 @@
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
       const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
-      const out = { code: base, rank: rank0, base, rank0, mod: "" };
+      const out = { code: base, rank: rank0, base, rank0, mod: "", S: b.S, v: b.v, cos: co.cosOf(x, b.S, b.v) };
       if (rank0 === 1) return out;
       for (const n of V.near(x, this.opt.pairN, word)) {
         const e = co.encode(V.vec(n), 2);
