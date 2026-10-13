@@ -31,6 +31,8 @@
     constructor(dict, has, names, opt) {
       this.C = dict.C; this.A = dict.A; this.has = has; this.names = names;
       this.s = opt.s; this.hw = opt.head_w; this.topr = opt.topr;
+      // веса позиций: главный 1, второй и третий — head_w (или opt.wts = [1, w2, w3])
+      this.wts = opt.wts || [1, this.hw, this.hw];
       this.R = this.C.length;
       // допустимые уровни: opt.levels {корень: [уровни]} сужает −5…+5 (спецификация: THING до +4, SEX только явный пол)
       const lv = (opt && opt.levels) || {}, sig = [];
@@ -52,10 +54,10 @@
       let best = { cos: -2 };
       for (let k = 1; k <= m; k++) {
         for (const S of combos(cand, k)) {
-          const heads = (k > 1 && this.hw !== 1) ? [...Array(k).keys()] : [0];
+          const heads = (k > 1 && this.wts.slice(0, k).some((t) => t !== 1)) ? [...Array(k).keys()] : [0];
           for (const h of heads) {
             const S2 = [S[h]].concat(S.filter((_, i) => i !== h));
-            const w = S2.map((_, i) => (i === 0 ? 1 : this.hw));
+            const w = S2.map((_, i) => this.wts[i]);
             const idx = S2.concat(S2.map((r) => this.R + r));
             const L = idx.length;
             const b = new Float64Array(S2.map((r) => cx[r]).concat(S2.map((r) => ax[r])));
@@ -84,7 +86,7 @@
     // слагаемые кода по корням: w_j (c_r + s·v·a_r); их сумма — вектор кода y
     parts(S, v) {
       return S.map((r, i) => {
-        const w = i === 0 ? 1 : this.hw, c = this.C[r], a = this.A[r], p = new Float64Array(c.length);
+        const w = this.wts[i] ?? this.hw, c = this.C[r], a = this.A[r], p = new Float64Array(c.length);
         for (let j = 0; j < p.length; j++) p[j] = w * (c[j] + this.s * v[i] * a[j]);
         return p;
       });
@@ -164,6 +166,18 @@
         res[i] = mix.w * cs[i] + (1 - mix.w) * (-Math.log(e) / k);
       }
       return res;
+    }
+    // Z[i·R + r]: z-оценка cos(слово i, центр корня r) по словарю (для штрафа за сродство с неупомянутым корнем); считается один раз
+    rootZ(C) {
+      if (this._Z && this._Zc === C) return this._Z;
+      const N = this.words.length, D = this.dim, R = C.length, Z = new Float32Array(N * R), a = new Float64Array(N);
+      for (let r = 0; r < R; r++) {
+        const n = Math.sqrt(dot(C[r], C[r])); let mu = 0, sd = 0;
+        for (let i = 0; i < N; i++) { let t = 0; const o = i * D; for (let j = 0; j < D; j++) t += this.X[o + j] * C[r][j]; a[i] = t / (n * this.norm[i]); mu += a[i]; }
+        mu /= N; for (let i = 0; i < N; i++) sd += (a[i] - mu) ** 2; sd = Math.sqrt(sd / N) || 1;
+        for (let i = 0; i < N; i++) Z[i * R + r] = (a[i] - mu) / sd;
+      }
+      this._Z = Z; this._Zc = C; return Z;
     }
     // сведения о словах (site/data/words.json): часть речи по WordNet, лемма, служебные слова
     setMeta(meta) {
@@ -278,7 +292,7 @@
   // pairN — сколько соседей слова кодер пробует вторым словом (Reader.encode);
   // prfMu, prfK — PRF: сдвиг оценок к центру prfK лучших прочтений. Выключен: парам моделей помогает, а круг математики портит (docs/math.md, раздел 9).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
+  const READ = { selfCheck: false, keepHead: true, absLam: 0, absTau: 1, negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -311,7 +325,14 @@
       return Object.assign({}, this.mix, { neg: n.map((t) => ((wv ? 1 : w) * ny * t) / nn) });
     }
     // оценки слов для набора корней; form — часть речи (o/i/a/e) или "" (без штрафа)
-    roots(S, v, form) { const parts = this.co.parts(S, v); return this.V.adjust(this.V.scores(parts, this.mixFor(S, parts)), form || "", this.opt.posPen); }
+    roots(S, v, form) { const parts = this.co.parts(S, v); return this.absent(this.V.adjust(this.V.scores(parts, this.mixFor(S, parts)), form || "", this.opt.posPen), S); }
+    // штраф за сродство: слово теряет absLam·max(0, max_{r ∉ S} Z − absTau) — если бы слово было сильно похоже на корень, кодер его назвал бы (data/eval/runs/absence)
+    absent(sc, S) {
+      const lam = this.opt.absLam; if (!lam) return sc;
+      const Z = this.V.rootZ(this.co.C), R = this.co.R, tau = this.opt.absTau, inS = new Uint8Array(R); S.forEach((r) => (inS[r] = 1));
+      for (let i = 0; i < sc.length; i++) { let mx = -9; const o = i * R; for (let r = 0; r < R; r++) if (!inS[r] && Z[o + r] > mx) mx = Z[o + r]; if (mx > tau) sc[i] -= lam * (mx - tau); }
+      return sc;
+    }
     // PRF: оценки сдвигаются к центру prfK лучших прочтений
     prf(sc) { return this.opt.prfMu ? this.V.toward(sc, this.V.top(sc, this.opt.prfK).map((n) => n.word), this.opt.prfMu) : sc; }
     // прочтения одного уточняющего слова: слово в кавычках, если оно есть в словаре, иначе pairK лучших
@@ -339,10 +360,31 @@
     // ближайших соседей слова, закодированный не более чем двумя корнями, без корней главного (иначе пара лишь удваивает его вес).
     // Векторы связку не различают (graphW = 0), поэтому PI. → {code, rank, base, rank0, mod}
     // form — часть речи слова, если известна (иначе код с o, оценки без штрафа за часть речи)
+    // самопроверка: кандидаты — лучшие коды в 1, 2, 3 корня и их соседи (значение ±1, без одного корня); берётся код,
+    // при котором слово читается выше всего, при равенстве — короче. keepHead: головной корень кода в 3 корня не меняется.
+    // data/eval/runs/ideas, data/eval/runs/selfcheck
+    best(word, form, keepHead = this.opt.keepHead) {
+      const co = this.co, x = this.V.vec(word), base = co.encode(x), lv = (r) => co.lv[r], cand = [];
+      for (const k of [1, 2, 3]) {
+        const e = k === 3 ? base : co.encode(x, k);
+        cand.push([e.S, e.v]);
+        e.S.forEach((r, i) => {
+          if (co.has[r]) for (const d of [-1, 1]) { const nv = e.v[i] + d; if (lv(r).includes(nv)) cand.push([e.S, e.v.map((t, j) => (j === i ? nv : t))]); }
+          if (e.S.length > 1) cand.push([e.S.filter((_, j) => j !== i), e.v.filter((_, j) => j !== i)]);
+        });
+      }
+      let out = null;
+      for (const [S, v] of cand) {
+        if (keepHead && S[0] !== base.S[0]) continue;
+        const r = this.V.rankIn(this.roots(S, v, form || ""), word);
+        if (!out || r < out.r || (r === out.r && S.length < out.S.length)) out = { S, v, r };
+      }
+      return out;
+    }
     encode(word, form) {
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
-      const b = co.encode(x), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
+      const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "" };
       if (rank0 === 1) return out;
       for (const n of V.near(x, this.opt.pairN, word)) {
