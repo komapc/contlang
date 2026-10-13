@@ -1,0 +1,50 @@
+1. SEE NEAR(=-3) ART(=-1) | o PI LONG(=+2) HEAT(=-3) | o
+2. RULE(=+2) TEXT SEE | o
+3. FIGHT(=-2) LONG(=+3) PART(=-1) | o
+4. FIGHT(=-2) LONG(=+4) CONSUME(=0) | o
+5. FRIEND(=+1) JOIN(=+3) TIME(=-2) | o
+6. GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o
+7. GIVE(=+3) RULE(=-5) LONG(=+4) | o
+8. ART(=0) FIGHT(=-4) PLACE | o
+9. RULE(=+3) DO MEASURE(=0) | o
+10. TEXT PART(=+5) SEE | o
+11. LIVE(=+1) MANY(=-2) PART(=0) | o
+12. FIGHT(=+4) PART(=+5) LONG(=+3) | o PI ART(=-2) THING(=+1) | o
+13. PLACE THING(=0) RULE(=+2) | o
+14. RULE(=+3) ART(=+2) MOVE(=+1) | o PI SEX(=+3) SAY(=-5) | o
+15. LIVE(=+2) TIME(=-3) PART(=+3) | o PI SAY(=+1) WANT(=-4) | o
+16. RULE(=+2) MOVE(=+1) WANT(=+4) | o
+17. FIGHT(=+2) THING(=+4) TOUCH(=+4) | o PI INSIDE(=0) NEAR(=+1) | o
+18. FIGHT(=+1) ART(=+1) FRIEND(=+2) | o
+19. PLACE ABOVE(=+1) GRAIN(=+1) | o
+20. GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o PI FIGHT(=-2) | o
+21. PLACE FIGHT(=+4) RULE(=-2) | o
+22. FIGHT(=-3) MOVE(=+1) RULE(=0) | o
+23. PART(=-2) GRAIN(=+3) TEXT | o
+24. LONG(=0) ART(=-5) INSIDE(=-4) | o PI CHANGE(=0) MEASURE(=+3) | o
+25. ART(=-2) PART(=-2) MEASURE(=0) | o
+26. BODY SAY(=+2) FRIEND(=-1) | o
+27. TEXT THINK(=+1) SEE | o
+28. PLACE GIVE(=+4) MOVE(=0) | o
+29. PLACE NEAR(=+3) ABOVE(=+5) | o
+30. HEAT(=+4) GRAIN(=-1) LONG(=+1) | o
+31. RULE(=+2) GOOD(=+2) WANT(=+1) | o
+32. BEGIN(=-1) LONG(=-1) HAPPEN | o
+33. MEASURE(=+1) | o
+34. MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o
+35. BODY | o PI THING(=-1) LONG(=-4) | o
+36. THINK(=-1) RULE(=-1) TEXT | o
+37. THING(=-1) NEAR(=+1) SIDE(=+2) | o
+38. ART(=-3) THING(=+2) SIDE(=0) | o
+39. FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o PI SEX(=+3) | o
+40. JOIN(=+2) ART(=-2) GRAIN(=+2) | o
+41. BEGIN(=+2) SEX(=+3) ART(=-1) | o
+42. ART(=-2) FIGHT(=0) CARE(=0) | o
+43. FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o
+44. GRAIN(=-2) PLACE FRIEND(=+1) | o
+45. BODY CONSUME(=0) FEEL(=-1) | o
+46. HEAT(=-1) TIME(=+1) BEGIN(=0) | o
+47. LONG(=+2) TIME(=-1) TEXT | o
+48. THING(=+4) CONSUME(=+2) BIG(=+3) | o
+49. FIGHT(=-2) BEGIN(=+2) | o
+50. RULE(=0) MEASURE(=+4) VALUE(=-4) | o

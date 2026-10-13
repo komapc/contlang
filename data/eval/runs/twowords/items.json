@@ -1,0 +1,1002 @@
+[
+ {
+  "w": "helm",
+  "pair": "part PI ship",
+  "A": "LONG(=+2) SIDE(=+2) RULE(=+3) | o",
+  "B": "PART(=-1) BEGIN(=+2) DO | o PI LONG(=+3) NEAR(=-3) FIGHT(=+2) | o",
+  "C": "LONG(=+2) SIDE(=+2) RULE(=+3) | o",
+  "rA": 2,
+  "rB": 2984,
+  "rC": 2
+ },
+ {
+  "w": "malaria",
+  "pair": "disease PI mosquito",
+  "A": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "B": null,
+  "C": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "rA": 3,
+  "rB": null,
+  "rC": 3
+ },
+ {
+  "w": "pianist",
+  "pair": "musician FOR keyboard",
+  "A": "ART(=+2) GOOD(=+2) THINK(=-2) | o",
+  "B": "ART(=+2) | o FOR TEXT ART(=-3) BIG(=-1) | o",
+  "C": "ART(=+2) GOOD(=+2) THINK(=-2) | o PI FIGHT(=-2) | o",
+  "rA": 12,
+  "rB": 35,
+  "rC": 2
+ },
+ {
+  "w": "employee",
+  "pair": "person PI company",
+  "A": "RULE(=-1) FRIEND(=+2) ART(=-4) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI PART(=+5) ART(=-5) TOUCH(=+4) | o",
+  "C": "RULE(=-1) FRIEND(=+2) ART(=-4) | o",
+  "rA": 2,
+  "rB": 5,
+  "rC": 2
+ },
+ {
+  "w": "resignation",
+  "pair": "letter FOR job",
+  "A": "RULE(=+2) MOOD(=-2) GIVE(=+2) | o",
+  "B": "TEXT | o FOR PLACE CAN(=-3) DO | o",
+  "C": "RULE(=+2) MOOD(=-2) GIVE(=+2) | o",
+  "rA": 2,
+  "rB": 364,
+  "rC": 2
+ },
+ {
+  "w": "revision",
+  "pair": "change PI essay",
+  "A": "CHANGE(=+2) TEXT CARE(=+1) | o",
+  "B": "CHANGE(=+2) | o PI TEXT ART(=+1) THINK(=+1) | o",
+  "C": "CHANGE(=+2) TEXT CARE(=+1) | o",
+  "rA": 1,
+  "rB": 8,
+  "rC": 1
+ },
+ {
+  "w": "consideration",
+  "pair": "factor FOR decision",
+  "A": "CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+  "B": "MEASURE(=0) THINK(=-1) HAPPEN | o FOR THINK(=0) RULE(=+4) BEGIN(=+2) | o",
+  "C": "CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+  "rA": 1,
+  "rB": 53,
+  "rC": 1
+ },
+ {
+  "w": "profit",
+  "pair": "money FROM sales",
+  "A": "MEASURE(=+2) VALUE(=-1) GIVE(=+1) | o",
+  "B": "VALUE(=0) GIVE(=+3) MEASURE(=+1) | o FROM VALUE(=-3) MEASURE(=+1) PART(=+4) | o",
+  "C": "MEASURE(=+2) VALUE(=-1) GIVE(=+1) | o PI RULE(=0) ART(=-2) | o",
+  "rA": 9,
+  "rB": 34,
+  "rC": 6
+ },
+ {
+  "w": "relegation",
+  "pair": "demotion PI league",
+  "A": "FIGHT(=-2) ABOVE(=-4) JOIN(=-3) | o",
+  "B": null,
+  "C": "FIGHT(=-2) ABOVE(=-4) JOIN(=-3) | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "religion",
+  "pair": "belief FOR god",
+  "A": "ART(=+3) RULE(=+2) FRIEND(=+2) | o",
+  "B": "RULE(=+2) THINK(=-3) ART(=+2) | o FOR SOMEONE(=+2) ART(=+5) RULE(=+4) | o",
+  "C": "ART(=+3) RULE(=+2) FRIEND(=+2) | o",
+  "rA": 4,
+  "rB": 2,
+  "rC": 4
+ },
+ {
+  "w": "bubble",
+  "pair": "film FROM soap",
+  "A": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o",
+  "B": "TEXT ART(=+1) DO | o FROM LONG(=0) GRAIN(=-5) THING(=-2) | o",
+  "C": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o PI SAY(=+2) ABOVE(=-1) | o",
+  "rA": 1,
+  "rB": 2108,
+  "rC": 1
+ },
+ {
+  "w": "chapel",
+  "pair": "building FOR prayer",
+  "A": "INSIDE(=0) NEAR(=+5) ART(=+4) | o",
+  "B": "INSIDE(=0) NEAR(=+4) GRAIN(=+3) | o FOR SAY(=-1) FRIEND(=+5) MOOD(=-3) | o",
+  "C": "INSIDE(=0) NEAR(=+5) ART(=+4) | o PI LIVE(=-4) RULE(=-1) | o",
+  "rA": 3,
+  "rB": 1,
+  "rC": 1
+ },
+ {
+  "w": "people",
+  "pair": "population PI nation",
+  "A": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "B": "MEASURE(=+1) PLACE PART(=+2) | o PI PLACE MANY(=+3) RULE(=+2) | o",
+  "C": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "rA": 1,
+  "rB": 118,
+  "rC": 1
+ },
+ {
+  "w": "lake",
+  "pair": "water PI land",
+  "A": "PLACE THING(=-1) HEAT(=-2) | o",
+  "B": "THING(=-1) GRAIN(=-5) HEAT(=-3) | o PI PLACE THING(=-1) GIVE(=0) | o",
+  "C": "PLACE THING(=-1) HEAT(=-2) | o",
+  "rA": 1,
+  "rB": 8,
+  "rC": 1
+ },
+ {
+  "w": "topic",
+  "pair": "subject FOR talk",
+  "A": "TEXT THINK(=-1) PART(=0) | o",
+  "B": "TEXT RULE(=0) MEASURE(=-2) | o FOR SAY(=0) KNOW(=+2) RULE(=-2) | o",
+  "C": "TEXT THINK(=-1) PART(=0) | o",
+  "rA": 1,
+  "rB": 7,
+  "rC": 1
+ },
+ {
+  "w": "dealings",
+  "pair": "activity PI business",
+  "A": "FRIEND(=+1) KNOW(=+4) VALUE(=-5) | o",
+  "B": "LIVE(=+3) MEASURE(=+2) HAPPEN | o PI RULE(=-1) ART(=-2) VALUE(=-3) | o",
+  "C": "FRIEND(=+1) KNOW(=+4) VALUE(=-5) | o",
+  "rA": 1,
+  "rB": 17,
+  "rC": 1
+ },
+ {
+  "w": "era",
+  "pair": "period PI history",
+  "A": "TIME(=-2) BEGIN(=0) ART(=+1) | o",
+  "B": "BEGIN(=+1) TIME(=-3) MEASURE(=0) | o PI ART(=+2) TIME(=-4) HAPPEN | o",
+  "C": "TIME(=-2) BEGIN(=0) ART(=+1) | o PI FIGHT(=+4) RULE(=0) | o",
+  "rA": 4,
+  "rB": 11,
+  "rC": 1
+ },
+ {
+  "w": "donation",
+  "pair": "gift FOR charity",
+  "A": "GIVE(=+4) FRIEND(=+2) PART(=+1) | o",
+  "B": "GIVE(=+3) VALUE(=0) FRIEND(=+1) | o FOR GIVE(=+3) FRIEND(=+2) FIGHT(=-3) | o",
+  "C": "GIVE(=+4) FRIEND(=+2) PART(=+1) | o",
+  "rA": 1,
+  "rB": 1,
+  "rC": 1
+ },
+ {
+  "w": "gate",
+  "pair": "door PI fence",
+  "A": "INSIDE(=-1) NEAR(=+3) LONG(=+2) | o",
+  "B": "INSIDE(=0) LONG(=+2) SIDE(=+1) | o PI LONG(=+1) INSIDE(=-2) THING(=0) | o",
+  "C": "INSIDE(=-1) NEAR(=+3) LONG(=+2) | o PI GIVE(=+2) RULE(=+1) | o",
+  "rA": 2,
+  "rB": 8,
+  "rC": 2
+ },
+ {
+  "w": "homer",
+  "pair": "hit PI baseball",
+  "A": "FIGHT(=-2) SAY(=+5) LONG(=+5) | o",
+  "B": "ABOVE(=-2) GIVE(=-3) SAY(=+5) | o PI FIGHT(=-2) LONG(=+2) BIG(=-1) | o",
+  "C": "FIGHT(=-2) SAY(=+5) LONG(=+5) | o",
+  "rA": 2,
+  "rB": 24,
+  "rC": 2
+ },
+ {
+  "w": "coca",
+  "pair": "plant FOR drug",
+  "A": "GRAIN(=-2) CONSUME(=+5) HEAT(=-4) | o",
+  "B": "THING(=0) ART(=-4) PLACE | o FOR THING(=+1) LONG(=-5) VALUE(=-5) | o",
+  "C": "GRAIN(=-2) CONSUME(=+5) HEAT(=-4) | o PI THING(=-2) NEAR(=-5) | o",
+  "rA": 14,
+  "rB": 378,
+  "rC": 5
+ },
+ {
+  "w": "dose",
+  "pair": "amount FOR medicine",
+  "A": "MEASURE(=0) PART(=-2) GIVE(=+1) | o",
+  "B": "MEASURE(=0) PART(=0) GIVE(=+2) | o FOR ART(=0) BODY CONSUME(=+1) | o",
+  "C": "MEASURE(=0) PART(=-2) GIVE(=+1) | o PI GRAIN(=-1) BODY | o",
+  "rA": 7,
+  "rB": 2,
+  "rC": 2
+ },
+ {
+  "w": "reservoir",
+  "pair": "container FOR water",
+  "A": "THING(=-1) GRAIN(=-4) PLACE | o",
+  "B": "LONG(=+2) GRAIN(=-1) INSIDE(=+1) | o FOR THING(=-1) GRAIN(=-5) HEAT(=-3) | o",
+  "C": "THING(=-1) GRAIN(=-4) PLACE | o",
+  "rA": 1,
+  "rB": 1,
+  "rC": 1
+ },
+ {
+  "w": "crater",
+  "pair": "hole PI moon",
+  "A": "NEAR(=-1) THING(=-5) GRAIN(=-1) | o",
+  "B": "INSIDE(=+1) ABOVE(=-4) LONG(=0) | o PI NEAR(=-4) THING(=-2) BEGIN(=-1) | o",
+  "C": "NEAR(=-1) THING(=-5) GRAIN(=-1) | o",
+  "rA": 1,
+  "rB": 201,
+  "rC": 1
+ },
+ {
+  "w": "gen",
+  "pair": "group PI people",
+  "A": "FIGHT(=+3) ART(=-4) PART(=+1) | o",
+  "B": "PART(=+3) | o PI SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "C": "FIGHT(=+3) ART(=-4) PART(=+1) | o PI TIME(=-2) SAME(=0) | o",
+  "rA": 14,
+  "rB": 814,
+  "rC": 3
+ },
+ {
+  "w": "businessman",
+  "pair": "person PI commerce",
+  "A": "ART(=-1) TOUCH(=+5) VALUE(=-5) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI VALUE(=-3) ART(=-1) RULE(=+2) | o",
+  "C": "ART(=-1) TOUCH(=+5) VALUE(=-5) | o",
+  "rA": 2,
+  "rB": 261,
+  "rC": 2
+ },
+ {
+  "w": "phase",
+  "pair": "stage PI cycle",
+  "A": "BEGIN(=-1) ART(=-1) PART(=0) | o",
+  "B": "BEGIN(=0) SIDE(=+1) DO | o PI BEGIN(=0) MOVE(=+1) ART(=-1) | o",
+  "C": "BEGIN(=-1) ART(=-1) PART(=0) | o",
+  "rA": 3,
+  "rB": 3,
+  "rC": 3
+ },
+ {
+  "w": "viewers",
+  "pair": "people FOR television",
+  "A": "SEE FIGHT(=-2) SOMEONE(=-2) | o",
+  "B": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o FOR ART(=-1) INSIDE(=-3) SEE | o",
+  "C": "SEE FIGHT(=-2) SOMEONE(=-2) | o",
+  "rA": 2,
+  "rB": 72,
+  "rC": 2
+ },
+ {
+  "w": "labour",
+  "pair": "effort FOR production",
+  "A": "MEASURE(=+1) CAN(=-5) ART(=-3) | o",
+  "B": "CAN(=-2) CARE(=+2) DO | o FOR ART(=-1) MEASURE(=-1) DO | o",
+  "C": "MEASURE(=+1) CAN(=-5) ART(=-3) | o",
+  "rA": 10,
+  "rB": 40,
+  "rC": 10
+ },
+ {
+  "w": "airline",
+  "pair": "company FOR flights",
+  "A": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o",
+  "B": "PART(=+5) ART(=-5) TOUCH(=+4) | o FOR FIGHT(=0) GRAIN(=-4) NEAR(=-5) | o",
+  "C": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o PI PLACE SIDE(=+1) | o",
+  "rA": 4,
+  "rB": 1,
+  "rC": 3
+ },
+ {
+  "w": "satisfaction",
+  "pair": "feeling LIKE pleasure",
+  "A": "WANT(=+3) BEGIN(=+4) MEASURE(=+2) | o",
+  "B": "FEEL(=-1) MOOD(=-2) WANT(=+3) | o LIKE WANT(=+2) MOOD(=+2) GOOD(=+3) | o",
+  "C": "WANT(=+3) BEGIN(=+4) MEASURE(=+2) | o",
+  "rA": 1,
+  "rB": 4,
+  "rC": 1
+ },
+ {
+  "w": "yesterday",
+  "pair": "day PI week",
+  "A": "TIME(=-1) SOMEONE(=+1) | o",
+  "B": "TIME(=-1) BEGIN(=+2) MANY(=+2) | o PI TIME(=-1) BEGIN(=+2) | o",
+  "C": "TIME(=-1) SOMEONE(=+1) | o",
+  "rA": 1,
+  "rB": 55,
+  "rC": 1
+ },
+ {
+  "w": "model",
+  "pair": "replica FOR display",
+  "A": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+  "B": null,
+  "C": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "outlet",
+  "pair": "place FOR sales",
+  "A": "NEAR(=+2) GRAIN(=-3) VALUE(=-4) | o",
+  "B": "PLACE MOVE(=-1) | o FOR VALUE(=-3) MEASURE(=+1) PART(=+4) | o",
+  "C": "NEAR(=+2) GRAIN(=-3) VALUE(=-4) | o",
+  "rA": 1,
+  "rB": 62,
+  "rC": 1
+ },
+ {
+  "w": "ways",
+  "pair": "method FOR work",
+  "A": "SOMEONE(=-2) CAN(=+1) CHANGE(=+3) | o",
+  "B": "CAN(=+1) BEGIN(=-1) ART(=0) | o FOR DO GOOD(=+2) ART(=-1) | o",
+  "C": "SOMEONE(=-2) CAN(=+1) CHANGE(=+3) | o",
+  "rA": 1,
+  "rB": 167,
+  "rC": 1
+ },
+ {
+  "w": "planet",
+  "pair": "body PI space",
+  "A": "PLACE NEAR(=-5) PART(=0) | o",
+  "B": "BODY LIVE(=-1) INSIDE(=0) | o PI PLACE INSIDE(=0) GRAIN(=0) | o",
+  "C": "PLACE NEAR(=-5) PART(=0) | o",
+  "rA": 1,
+  "rB": 129,
+  "rC": 1
+ },
+ {
+  "w": "innings",
+  "pair": "period PI cricket",
+  "A": "FIGHT(=-2) BEGIN(=+1) LONG(=+2) | o",
+  "B": "BEGIN(=+1) TIME(=-3) MEASURE(=0) | o PI FIGHT(=-3) INSIDE(=-3) MOVE(=+1) | o",
+  "C": "FIGHT(=-2) BEGIN(=+1) LONG(=+2) | o",
+  "rA": 2,
+  "rB": 6,
+  "rC": 2
+ },
+ {
+  "w": "easter",
+  "pair": "holiday PI spring",
+  "A": "MOOD(=+3) BEGIN(=+2) HEAT(=-3) | o",
+  "B": "MOOD(=+3) BEGIN(=+3) FEEL(=-4) | o PI TIME(=+1) BEGIN(=-1) HEAT(=-1) | o",
+  "C": "MOOD(=+3) BEGIN(=+2) HEAT(=-3) | o",
+  "rA": 1,
+  "rB": 20,
+  "rC": 1
+ },
+ {
+  "w": "representation",
+  "pair": "picture FOR art",
+  "A": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "B": "SEE ART(=+2) TEXT | o FOR ART(=+2) | o",
+  "C": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "rA": 1,
+  "rB": 23,
+  "rC": 1
+ },
+ {
+  "w": "news",
+  "pair": "report PI newspaper",
+  "A": "TEXT TIME(=+1) MOOD(=-1) | o",
+  "B": "TEXT CARE(=+2) SEE | o PI TEXT TIME(=0) | o",
+  "C": "TEXT TIME(=+1) MOOD(=-1) | o",
+  "rA": 1,
+  "rB": 20,
+  "rC": 1
+ },
+ {
+  "w": "copyright",
+  "pair": "right PI law",
+  "A": "TEXT SAME(=+4) ART(=+1) | o",
+  "B": "SIDE(=0) NEAR(=+2) MANY(=+1) | o PI RULE(=+3) | o",
+  "C": "TEXT SAME(=+4) ART(=+1) | o PI RULE(=+1) CARE(=-2) | o",
+  "rA": 20,
+  "rB": 4219,
+  "rC": 4
+ },
+ {
+  "w": "jersey",
+  "pair": "shirt FOR sport",
+  "A": "LONG(=-2) FIGHT(=-3) HEAT(=-2) | o",
+  "B": "BODY LONG(=-5) FIGHT(=-1) | o FOR FIGHT(=-3) INSIDE(=-2) MOVE(=+1) | o",
+  "C": "LONG(=-2) FIGHT(=-3) HEAT(=-2) | o",
+  "rA": 2,
+  "rB": 18,
+  "rC": 2
+ },
+ {
+  "w": "perry",
+  "pair": "drink FROM fruit",
+  "A": "HEAT(=-1) THING(=-1) MOVE(=+2) | o",
+  "B": "CONSUME(=+4) HEAT(=-3) GRAIN(=-3) | o FROM PART(=0) CONSUME(=+3) HEAT(=-4) | o",
+  "C": "HEAT(=-1) THING(=-1) MOVE(=+2) | o PI NEAR(=+3) THINK(=-5) | o",
+  "rA": 11,
+  "rB": 343,
+  "rC": 2
+ },
+ {
+  "w": "west",
+  "pair": "direction PI compass",
+  "A": "PLACE SIDE(=+2) NEAR(=-1) | o",
+  "B": null,
+  "C": "PLACE SIDE(=+2) NEAR(=-1) | o",
+  "rA": 5,
+  "rB": null,
+  "rC": 5
+ },
+ {
+  "w": "obstacle",
+  "pair": "barrier PI race",
+  "A": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+  "B": "GRAIN(=+2) INSIDE(=-4) ABOVE(=+2) | o PI FIGHT(=-2) MOVE(=+3) THING(=+1) | o",
+  "C": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+  "rA": 1,
+  "rB": 58,
+  "rC": 1
+ },
+ {
+  "w": "grief",
+  "pair": "feeling LIKE sorrow",
+  "A": "MOOD(=-2) | o",
+  "B": null,
+  "C": "MOOD(=-2) | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "lawmaker",
+  "pair": "person PI parliament",
+  "A": "RULE(=+5) BIG(=-1) JOIN(=-1) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI RULE(=+5) INSIDE(=+1) PART(=+3) | o",
+  "C": "RULE(=+5) BIG(=-1) JOIN(=-1) | o",
+  "rA": 5,
+  "rB": 709,
+  "rC": 5
+ },
+ {
+  "w": "harm",
+  "pair": "damage LIKE injury",
+  "A": "FRIEND(=-1) MANY(=-4) DO | o",
+  "B": "HAPPEN INSIDE(=-1) CARE(=0) | o LIKE BODY FIGHT(=-1) HAPPEN | o",
+  "C": "FRIEND(=-1) MANY(=-4) DO | o",
+  "rA": 1,
+  "rB": 10,
+  "rC": 1
+ },
+ {
+  "w": "spell",
+  "pair": "magic FOR witch",
+  "A": "DO HEAT(=-1) TEXT | o",
+  "B": null,
+  "C": "DO HEAT(=-1) TEXT | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "lawsuit",
+  "pair": "case PI court",
+  "A": "RULE(=+3) FIGHT(=-1) HAPPEN | o",
+  "B": "HAPPEN LONG(=+2) TEXT | o PI RULE(=+3) SIDE(=+1) FIGHT(=-1) | o",
+  "C": "RULE(=+3) FIGHT(=-1) HAPPEN | o PI SAME(=+1) LONG(=-5) | o",
+  "rA": 7,
+  "rB": 8,
+  "rC": 2
+ },
+ {
+  "w": "lens",
+  "pair": "part PI camera",
+  "A": "SEE NEAR(=-3) ART(=-1) | o",
+  "B": "PART(=-1) BEGIN(=+2) DO | o PI SEE ART(=-3) NEAR(=-2) | o",
+  "C": "SEE NEAR(=-3) ART(=-1) | o PI LONG(=+2) HEAT(=-3) | o",
+  "rA": 3,
+  "rB": 4,
+  "rC": 2
+ },
+ {
+  "w": "testimony",
+  "pair": "statement PI court",
+  "A": "RULE(=+2) TEXT SEE | o",
+  "B": "TEXT RULE(=+2) THINK(=-1) | o PI RULE(=+3) SIDE(=+1) FIGHT(=-1) | o",
+  "C": "RULE(=+2) TEXT SEE | o",
+  "rA": 1,
+  "rB": 19,
+  "rC": 1
+ },
+ {
+  "w": "bowl",
+  "pair": "dish FOR soup",
+  "A": "FIGHT(=-2) LONG(=+3) PART(=-1) | o",
+  "B": "LONG(=+3) CONSUME(=+3) PART(=-2) | o FOR HEAT(=-1) CONSUME(=+2) THING(=+3) | o",
+  "C": "FIGHT(=-2) LONG(=+3) PART(=-1) | o",
+  "rA": 1,
+  "rB": 18,
+  "rC": 1
+ },
+ {
+  "w": "pitcher",
+  "pair": "container FOR water",
+  "A": "FIGHT(=-2) LONG(=+4) CONSUME(=0) | o",
+  "B": "LONG(=+2) GRAIN(=-1) INSIDE(=+1) | o FOR THING(=-1) GRAIN(=-5) HEAT(=-3) | o",
+  "C": "FIGHT(=-2) LONG(=+4) CONSUME(=0) | o",
+  "rA": 1,
+  "rB": 407,
+  "rC": 1
+ },
+ {
+  "w": "ally",
+  "pair": "partner LIKE friend",
+  "A": "FRIEND(=+1) JOIN(=+3) TIME(=-2) | o",
+  "B": "FRIEND(=+1) JOIN(=+4) TIME(=-1) | o LIKE FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o",
+  "C": "FRIEND(=+1) JOIN(=+3) TIME(=-2) | o",
+  "rA": 5,
+  "rB": 4,
+  "rC": 5
+ },
+ {
+  "w": "contribution",
+  "pair": "gift FOR charity",
+  "A": "GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o",
+  "B": "GIVE(=+3) VALUE(=0) FRIEND(=+1) | o FOR GIVE(=+3) FRIEND(=+2) FIGHT(=-3) | o",
+  "C": "GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o",
+  "rA": 1,
+  "rB": 2,
+  "rC": 1
+ },
+ {
+  "w": "guest",
+  "pair": "person PI party",
+  "A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI PART(=+3) FIGHT(=-2) RULE(=+1) | o",
+  "C": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "rA": 1,
+  "rB": 22,
+  "rC": 1
+ },
+ {
+  "w": "expo",
+  "pair": "event FOR trade",
+  "A": "ART(=0) FIGHT(=-4) PLACE | o",
+  "B": "HAPPEN FIGHT(=-2) PART(=+1) | o FOR VALUE(=-3) GIVE(=0) ART(=0) | o",
+  "C": "ART(=0) FIGHT(=-4) PLACE | o",
+  "rA": 1,
+  "rB": 29,
+  "rC": 1
+ },
+ {
+  "w": "regulation",
+  "pair": "rule FOR traffic",
+  "A": "RULE(=+3) DO MEASURE(=0) | o",
+  "B": "RULE(=+4) DO FIGHT(=-2) | o FOR MEASURE(=0) NEAR(=+3) MOVE(=+1) | o",
+  "C": "RULE(=+3) DO MEASURE(=0) | o",
+  "rA": 2,
+  "rB": 6,
+  "rC": 2
+ },
+ {
+  "w": "list",
+  "pair": "document FOR shopping",
+  "A": "TEXT PART(=+5) SEE | o",
+  "B": "TEXT RULE(=+1) | o FOR VALUE(=-2) NEAR(=+2) | o",
+  "C": "TEXT PART(=+5) SEE | o",
+  "rA": 1,
+  "rB": 371,
+  "rC": 1
+ },
+ {
+  "w": "existence",
+  "pair": "state PI life",
+  "A": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "B": "RULE(=+2) PLACE FIGHT(=-2) | o PI LIVE(=+1) INSIDE(=-1) SOMEONE(=+1) | o",
+  "C": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "rA": 1,
+  "rB": 4,
+  "rC": 1
+ },
+ {
+  "w": "fleet",
+  "pair": "ship PI navy",
+  "A": "FIGHT(=+4) PART(=+5) LONG(=+3) | o",
+  "B": "LONG(=+3) NEAR(=-3) FIGHT(=+2) | o PI FIGHT(=+4) LONG(=-1) RULE(=+2) | o",
+  "C": "FIGHT(=+4) PART(=+5) LONG(=+3) | o PI ART(=-2) THING(=+1) | o",
+  "rA": 30,
+  "rB": 31,
+  "rC": 13
+ },
+ {
+  "w": "township",
+  "pair": "place PI county",
+  "A": "PLACE THING(=0) RULE(=+2) | o",
+  "B": "PLACE MOVE(=-1) | o PI PLACE RULE(=+2) THING(=+1) | o",
+  "C": "PLACE THING(=0) RULE(=+2) | o",
+  "rA": 6,
+  "rB": 5,
+  "rC": 6
+ },
+ {
+  "w": "bishop",
+  "pair": "person PI church",
+  "A": "RULE(=+3) ART(=+2) MOVE(=+1) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI INSIDE(=0) ART(=+4) PART(=+3) | o",
+  "C": "RULE(=+3) ART(=+2) MOVE(=+1) | o PI SEX(=+3) SAY(=-5) | o",
+  "rA": 35,
+  "rB": 130,
+  "rC": 7
+ },
+ {
+  "w": "activist",
+  "pair": "person FOR protest",
+  "A": "LIVE(=+2) TIME(=-3) PART(=+3) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o FOR SAY(=+1) WANT(=-3) RULE(=+2) | o",
+  "C": "LIVE(=+2) TIME(=-3) PART(=+3) | o PI SAY(=+1) WANT(=-4) | o",
+  "rA": 3,
+  "rB": 113,
+  "rC": 1
+ },
+ {
+  "w": "order",
+  "pair": "request FOR food",
+  "A": "RULE(=+2) MOVE(=+1) WANT(=+4) | o",
+  "B": "GIVE(=+3) WANT(=+2) TEXT | o FOR THING(=+2) CONSUME(=+5) GRAIN(=-1) | o",
+  "C": "RULE(=+2) MOVE(=+1) WANT(=+4) | o",
+  "rA": 1,
+  "rB": 113,
+  "rC": 1
+ },
+ {
+  "w": "knight",
+  "pair": "piece PI chess",
+  "A": "FIGHT(=+2) THING(=+4) TOUCH(=+4) | o",
+  "B": "PART(=-2) GRAIN(=+3) TEXT | o PI FIGHT(=-2) ART(=0) MOVE(=-1) | o",
+  "C": "FIGHT(=+2) THING(=+4) TOUCH(=+4) | o PI INSIDE(=0) NEAR(=+1) | o",
+  "rA": 10,
+  "rB": 369,
+  "rC": 3
+ },
+ {
+  "w": "diplomacy",
+  "pair": "talks FOR peace",
+  "A": "FIGHT(=+1) ART(=+1) FRIEND(=+2) | o",
+  "B": "RULE(=0) SAY(=-3) VALUE(=-4) | o FOR FEEL(=-4) FRIEND(=+3) LIVE(=+1) | o",
+  "C": "FIGHT(=+1) ART(=+1) FRIEND(=+2) | o",
+  "rA": 1,
+  "rB": 70,
+  "rC": 1
+ },
+ {
+  "w": "manhattan",
+  "pair": "island PI city",
+  "A": "PLACE ABOVE(=+1) GRAIN(=+1) | o",
+  "B": "PLACE NEAR(=-3) THING(=0) | o PI PLACE RULE(=+2) GRAIN(=+1) | o",
+  "C": "PLACE ABOVE(=+1) GRAIN(=+1) | o",
+  "rA": 25,
+  "rB": 279,
+  "rC": 25
+ },
+ {
+  "w": "bronze",
+  "pair": "alloy FROM copper",
+  "A": "GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o",
+  "B": null,
+  "C": "GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o PI FIGHT(=-2) | o",
+  "rA": 12,
+  "rB": null,
+  "rC": 8
+ },
+ {
+  "w": "occupation",
+  "pair": "work FOR living",
+  "A": "PLACE FIGHT(=+4) RULE(=-2) | o",
+  "B": "DO GOOD(=+2) ART(=-1) | o FOR LIVE(=+1) INSIDE(=0) | o",
+  "C": "PLACE FIGHT(=+4) RULE(=-2) | o",
+  "rA": 3,
+  "rB": 209,
+  "rC": 3
+ },
+ {
+  "w": "athletics",
+  "pair": "sport PI track",
+  "A": "FIGHT(=-3) MOVE(=+1) RULE(=0) | o",
+  "B": "FIGHT(=-3) INSIDE(=-2) MOVE(=+1) | o PI MOVE(=+1) THING(=0) LONG(=0) | o",
+  "C": "FIGHT(=-3) MOVE(=+1) RULE(=0) | o",
+  "rA": 1,
+  "rB": 6,
+  "rC": 1
+ },
+ {
+  "w": "piece",
+  "pair": "part PI puzzle",
+  "A": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "B": null,
+  "C": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "anode",
+  "pair": "part PI battery",
+  "A": "LONG(=0) ART(=-5) INSIDE(=-4) | o",
+  "B": "PART(=-1) BEGIN(=+2) DO | o PI ART(=-5) INSIDE(=-5) MEASURE(=-4) | o",
+  "C": "LONG(=0) ART(=-5) INSIDE(=-4) | o PI CHANGE(=0) MEASURE(=+3) | o",
+  "rA": 2,
+  "rB": 103,
+  "rC": 1
+ },
+ {
+  "w": "quantum",
+  "pair": "theory PI physics",
+  "A": "ART(=-2) PART(=-2) MEASURE(=0) | o",
+  "B": "ART(=0) THINK(=-2) RULE(=+1) | o PI ART(=-2) PART(=-3) FIGHT(=-1) | o",
+  "C": "ART(=-2) PART(=-2) MEASURE(=0) | o",
+  "rA": 1,
+  "rB": 13,
+  "rC": 1
+ },
+ {
+  "w": "fist",
+  "pair": "hand FOR fighting",
+  "A": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "B": "BODY GIVE(=0) | o FOR FIGHT(=+1) FRIEND(=-1) MOVE(=-2) | o",
+  "C": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "rA": 1,
+  "rB": 4,
+  "rC": 1
+ },
+ {
+  "w": "findings",
+  "pair": "result PI study",
+  "A": "TEXT THINK(=+1) SEE | o",
+  "B": "HAPPEN BEGIN(=+3) DO | o PI ART(=0) CARE(=+5) CONSUME(=+2) | o",
+  "C": "TEXT THINK(=+1) SEE | o",
+  "rA": 2,
+  "rB": 25,
+  "rC": 2
+ },
+ {
+  "w": "reservation",
+  "pair": "booking FOR hotel",
+  "A": "PLACE GIVE(=+4) MOVE(=0) | o",
+  "B": null,
+  "C": "PLACE GIVE(=+4) MOVE(=0) | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "campus",
+  "pair": "place PI university",
+  "A": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "B": "PLACE MOVE(=-1) | o PI ART(=0) NEAR(=+2) RULE(=+1) | o",
+  "C": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "rA": 1,
+  "rB": 6,
+  "rC": 1
+ },
+ {
+  "w": "flame",
+  "pair": "light PI candle",
+  "A": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "B": null,
+  "C": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "rA": 1,
+  "rB": null,
+  "rC": 1
+ },
+ {
+  "w": "privilege",
+  "pair": "benefit FOR members",
+  "A": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "B": "GIVE(=+3) MEASURE(=+3) CAN(=+3) | o FOR PART(=+3) FRIEND(=+2) RULE(=+2) | o",
+  "C": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "rA": 1,
+  "rB": 475,
+  "rC": 1
+ },
+ {
+  "w": "sequence",
+  "pair": "series PI numbers",
+  "A": "BEGIN(=-1) LONG(=-1) HAPPEN | o",
+  "B": "BEGIN(=+1) PART(=+3) HAPPEN | o PI MEASURE(=0) SOMEONE(=-2) TEXT | o",
+  "C": "BEGIN(=-1) LONG(=-1) HAPPEN | o",
+  "rA": 1,
+  "rB": 8,
+  "rC": 1
+ },
+ {
+  "w": "ratio",
+  "pair": "number PI math",
+  "A": "MEASURE(=+1) | o",
+  "B": "MEASURE(=-1) TIME(=-1) SAME(=-2) | o PI ART(=-1) MEASURE(=+3) FIGHT(=-2) | o",
+  "C": "MEASURE(=+1) | o",
+  "rA": 1,
+  "rB": 170,
+  "rC": 1
+ },
+ {
+  "w": "rest",
+  "pair": "break FOR sleep",
+  "A": "MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o",
+  "B": "JOIN(=-2) GIVE(=-3) GRAIN(=+2) | o FOR FEEL(=-4) CONSUME(=0) | o",
+  "C": "MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o",
+  "rA": 1,
+  "rB": 107,
+  "rC": 1
+ },
+ {
+  "w": "ankle",
+  "pair": "part PI foot",
+  "A": "BODY | o",
+  "B": "PART(=-1) BEGIN(=+2) DO | o PI BODY SIDE(=-1) MEASURE(=-2) | o",
+  "C": "BODY | o PI THING(=-1) LONG(=-4) | o",
+  "rA": 17,
+  "rB": 83,
+  "rC": 8
+ },
+ {
+  "w": "discussion",
+  "pair": "talk LIKE debate",
+  "A": "THINK(=-1) RULE(=-1) TEXT | o",
+  "B": "SAY(=0) KNOW(=+2) RULE(=-2) | o LIKE THINK(=0) FIGHT(=-1) LIVE(=+2) | o",
+  "C": "THINK(=-1) RULE(=-1) TEXT | o",
+  "rA": 2,
+  "rB": 2,
+  "rC": 2
+ },
+ {
+  "w": "road",
+  "pair": "path FOR cars",
+  "A": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "B": "NEAR(=-1) SIDE(=+3) THING(=-1) | o FOR ART(=-2) MOVE(=+2) THING(=+1) | o",
+  "C": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "rA": 1,
+  "rB": 1,
+  "rC": 1
+ },
+ {
+  "w": "driver",
+  "pair": "person PI car",
+  "A": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o PI ART(=-2) MOVE(=+2) THING(=+1) | o",
+  "C": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "rA": 1,
+  "rB": 4,
+  "rC": 1
+ },
+ {
+  "w": "friend",
+  "pair": "person LIKE buddy",
+  "A": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o",
+  "B": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o LIKE FRIEND(=+2) SOMEONE(=+2) JOIN(=+1) | o",
+  "C": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o PI SEX(=+3) | o",
+  "rA": 1,
+  "rB": 6,
+  "rC": 1
+ },
+ {
+  "w": "integration",
+  "pair": "process FOR schools",
+  "A": "JOIN(=+2) ART(=-2) GRAIN(=+2) | o",
+  "B": "BEGIN(=-1) ART(=-1) CARE(=+1) | o FOR ART(=+1) ABOVE(=+4) RULE(=0) | o",
+  "C": "JOIN(=+2) ART(=-2) GRAIN(=+2) | o",
+  "rA": 1,
+  "rB": 101,
+  "rC": 1
+ },
+ {
+  "w": "bachelor",
+  "pair": "degree PI university",
+  "A": "BEGIN(=+2) SEX(=+3) ART(=-1) | o",
+  "B": "MEASURE(=+1) ABOVE(=+2) ART(=0) | o PI ART(=0) NEAR(=+2) RULE(=+1) | o",
+  "C": "BEGIN(=+2) SEX(=+3) ART(=-1) | o",
+  "rA": 3,
+  "rB": 110,
+  "rC": 3
+ },
+ {
+  "w": "mechanics",
+  "pair": "science PI physics",
+  "A": "ART(=-2) FIGHT(=0) CARE(=0) | o",
+  "B": "ART(=0) | o PI ART(=-2) PART(=-3) FIGHT(=-1) | o",
+  "C": "ART(=-2) FIGHT(=0) CARE(=0) | o",
+  "rA": 1,
+  "rB": 34,
+  "rC": 1
+ },
+ {
+  "w": "overtime",
+  "pair": "time PI work",
+  "A": "FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+  "B": "TIME(=-1) MEASURE(=-1) MOVE(=0) | o PI DO GOOD(=+2) ART(=-1) | o",
+  "C": "FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+  "rA": 1,
+  "rB": 260,
+  "rC": 1
+ },
+ {
+  "w": "atmosphere",
+  "pair": "air PI earth",
+  "A": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "B": "GRAIN(=-3) FIGHT(=0) | o PI PLACE NEAR(=-5) THING(=-2) | o",
+  "C": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "rA": 1,
+  "rB": 11,
+  "rC": 1
+ },
+ {
+  "w": "stomach",
+  "pair": "organ PI body",
+  "A": "BODY CONSUME(=0) FEEL(=-1) | o",
+  "B": "LIVE(=+1) BODY ART(=-1) | o PI BODY LIVE(=-1) INSIDE(=0) | o",
+  "C": "BODY CONSUME(=0) FEEL(=-1) | o",
+  "rA": 1,
+  "rB": 130,
+  "rC": 1
+ },
+ {
+  "w": "autumn",
+  "pair": "season PI year",
+  "A": "HEAT(=-1) TIME(=+1) BEGIN(=0) | o",
+  "B": "BEGIN(=+1) FIGHT(=-2) HEAT(=-1) | o PI TIME(=-2) BEGIN(=+2) MEASURE(=0) | o",
+  "C": "HEAT(=-1) TIME(=+1) BEGIN(=0) | o",
+  "rA": 1,
+  "rB": 18,
+  "rC": 1
+ },
+ {
+  "w": "post",
+  "pair": "service FOR letters",
+  "A": "LONG(=+2) TIME(=-1) TEXT | o",
+  "B": "RULE(=0) FIGHT(=+5) FRIEND(=+5) | o FOR TEXT | o",
+  "C": "LONG(=+2) TIME(=-1) TEXT | o",
+  "rA": 1,
+  "rB": 1379,
+  "rC": 1
+ },
+ {
+  "w": "lion",
+  "pair": "cat LIKE tiger",
+  "A": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "B": "THING(=+3) | o LIKE THING(=+3) VALUE(=+3) FIGHT(=0) | o",
+  "C": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "rA": 1,
+  "rB": 14,
+  "rC": 1
+ },
+ {
+  "w": "playoff",
+  "pair": "game PI tournament",
+  "A": "FIGHT(=-2) BEGIN(=+2) | o",
+  "B": "FIGHT(=-1) | o PI FIGHT(=-2) | o",
+  "C": "FIGHT(=-2) BEGIN(=+2) | o",
+  "rA": 6,
+  "rB": 4,
+  "rC": 6
+ },
+ {
+  "w": "brokerage",
+  "pair": "firm FOR stocks",
+  "A": "RULE(=0) MEASURE(=+4) VALUE(=-4) | o",
+  "B": "TOUCH(=+2) CHANGE(=-1) PART(=+2) | o FOR VALUE(=-1) ABOVE(=-2) PART(=+3) | o",
+  "C": "RULE(=0) MEASURE(=+4) VALUE(=-4) | o",
+  "rA": 2,
+  "rB": 33,
+  "rC": 2
+ }
+]
