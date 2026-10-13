@@ -1,0 +1,27 @@
+значений модели ≠ 0: 123; знак совпал: M 65% (0 у M считается промахом), измерение по слову 74%, по толкованию 71%
+по корням (измерение по слову, совпало / всего): RULE 13/15, PART 12/15, JOIN 5/8, FIGHT 6/7, ABOVE 2/6, GRAIN 6/6, CONSUME 4/5, INSIDE 3/5, BIG 4/5, GIVE 3/4, KNOW 2/4, THING 3/4, GOOD 2/3, MOOD 3/3, MEASURE 3/3, ART 3/3, HEAT 1/2, FEEL 1/2, BEGIN 2/2, TIME 1/2, CAN 1/2, NEAR 1/2, TOUCH 2/2, SAME 2/2, MOVE 1/2, CARE 1/1, MANY 0/1, LONG 1/1, SOMEONE 0/1, SAY 0/1, FRIEND 1/1, SEX 1/1, WANT 1/1, VALUE 0/1
+  malaria GOOD: модель -5, M -4, z -1.5
+  malaria HEAT: модель 5, M -1, z -0.8
+  employee RULE: модель 4, M -4, z -2.3
+  resignation CONSUME: модель 5, M -2, z -1.0
+  resignation MOOD: модель -5, M -5, z -2.4
+  consideration CARE: модель 5, M 3, z 3.0
+  profit JOIN: модель 5, M -1, z -0.7
+  relegation GIVE: модель 5, M -1, z -0.6
+  relegation RULE: модель 4, M 4, z 0.8
+  religion KNOW: модель 5, M -5, z -0.9
+  religion RULE: модель 4, M 4, z 0.3
+  religion ABOVE: модель 5, M -5, z -1.4
+  bubble GRAIN: модель -5, M -1, z -1.8
+  bubble INSIDE: модель 5, M 2, z 1.5
+  chapel KNOW: модель 5, M -2, z -0.9
+  chapel ABOVE: модель 5, M 2, z 0.4
+  lake GRAIN: модель -3, M -1, z -0.7
+  era BIG: модель 5, M 1, z 0.7
+  donation GIVE: модель 5, M 3, z 4.7
+  gate JOIN: модель -5, M -1, z -0.4
+  homer GOOD: модель 4, M -5, z -0.5
+  coca CONSUME: модель 5, M 5, z 2.9
+  coca FEEL: модель 5, M 0, z -0.6
+  dose MEASURE: модель -5, M 0, z -0.9
+  dose CONSUME: модель 5, M 1, z 2.1

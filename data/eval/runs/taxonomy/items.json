@@ -1,0 +1,1222 @@
+[
+ {
+  "w": "helm",
+  "A": "LONG(=+2) SIDE(=+2) RULE(=+3) | o",
+  "H": "MOVE SIDE | o tool",
+  "T": "ART(=-5) LONG(=+5) SIDE(=+3) | o",
+  "M": "MOVE(=-1) SIDE(=+2) | o tool",
+  "head": {
+   "root": "ART",
+   "v": -5,
+   "via": "device.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "malaria",
+  "A": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "H": "BODY GOOD(=-5) HEAT(=+5) | o",
+  "T": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "M": "BODY HEAT(=-1) GOOD(=-4) | o",
+  "head": {
+   "root": "BODY",
+   "v": null,
+   "via": "infection.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "pianist",
+  "A": "ART(=+2) GOOD(=+2) THINK(=-2) | o",
+  "H": "SAY ART | o agent",
+  "T": "SOMEONE ART(=+5) GOOD(=+3) | o",
+  "M": "SAY ART(=+5) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "employee",
+  "A": "RULE(=-1) FRIEND(=+2) ART(=-4) | o",
+  "H": "DO RULE(=+4) | o agent",
+  "T": "SOMEONE RULE(=-4) ART(=-5) | o",
+  "M": "DO RULE(=-4) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "resignation",
+  "A": "RULE(=+2) MOOD(=-2) GIVE(=+2) | o",
+  "H": "CONSUME(=+5) MOOD(=-5) | o",
+  "T": "FEEL MOOD(=-4) RULE(=+4) | o",
+  "M": "CONSUME(=-2) MOOD(=-5) | o",
+  "head": {
+   "root": "FEEL",
+   "v": null,
+   "via": "feeling.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "revision",
+  "A": "CHANGE(=+2) TEXT CARE(=+1) | o",
+  "H": "THINK CHANGE | o",
+  "T": "DO CHANGE(=+4) TEXT | o",
+  "M": "THINK CHANGE(=+5) | o",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "act.n.02",
+   "steps": 5
+  }
+ },
+ {
+  "w": "consideration",
+  "A": "CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+  "H": "THINK CARE(=+5) | o",
+  "T": "THINK CARE(=+3) GIVE(=+3) | o",
+  "M": "THINK(=-2) CARE(=+3) | o",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "profit",
+  "A": "MEASURE(=+2) VALUE(=-1) GIVE(=+1) | o",
+  "H": "JOIN(=+5) VALUE | o result",
+  "T": "VALUE MEASURE(=+4) GIVE(=+1) | o",
+  "M": "JOIN(=-1) VALUE(=-2) | o result",
+  "head": {
+   "root": "VALUE",
+   "v": null,
+   "via": "financial_gain.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "relegation",
+  "A": "FIGHT(=-2) ABOVE(=-4) JOIN(=-3) | o",
+  "H": "GIVE(=+5) RULE(=+4) | o",
+  "T": "HAPPEN ABOVE(=-5) FIGHT(=-3) | o",
+  "M": "GIVE(=-1) RULE(=+4) | o",
+  "head": {
+   "root": "HAPPEN",
+   "v": null,
+   "via": "event.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "religion",
+  "A": "ART(=+3) RULE(=+2) FRIEND(=+2) | o",
+  "H": "KNOW(=+5) RULE(=+4) ABOVE(=+5) | o",
+  "T": "THINK ART(=+5) RULE(=+1) | o",
+  "M": "KNOW(=-5) RULE(=+4) ABOVE(=-5) | o",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "belief.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "bubble",
+  "A": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o",
+  "H": "GRAIN(=-5) INSIDE(=+5) | o",
+  "T": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o",
+  "M": "GRAIN(=-1) INSIDE(=+2) | o",
+  "head": null
+ },
+ {
+  "w": "chapel",
+  "A": "INSIDE(=0) NEAR(=+5) ART(=+4) | o",
+  "H": "PLACE KNOW(=+5) ABOVE(=+5) | o",
+  "T": "PLACE NEAR(=+5) ART(=+4) | o",
+  "M": "PLACE ABOVE(=+2) KNOW(=-2) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "structure.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "people",
+  "A": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "H": "SOMEONE | o N+3",
+  "T": "SOMEONE PART(=+4) FRIEND(=+2) | o",
+  "M": "SOMEONE(=-1) | o N+3",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "people.n.01",
+   "steps": 0
+  }
+ },
+ {
+  "w": "lake",
+  "A": "PLACE THING(=-1) HEAT(=-2) | o",
+  "H": "PLACE GRAIN(=-3) | o",
+  "T": "GRAIN(=-3) THING(=-5) HEAT(=-5) | o",
+  "M": "PLACE GRAIN(=-1) | o",
+  "head": {
+   "root": "GRAIN",
+   "v": -3,
+   "via": "body_of_water.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "topic",
+  "A": "TEXT THINK(=-1) PART(=0) | o",
+  "H": "SAY | o result",
+  "T": "SAY TEXT THINK(=-1) | o",
+  "M": "SAY(=-5) | o result",
+  "head": {
+   "root": "SAY",
+   "v": null,
+   "via": "communication.n.02",
+   "steps": 2
+  }
+ },
+ {
+  "w": "era",
+  "A": "TIME(=-2) BEGIN(=0) ART(=+1) | o",
+  "H": "TIME BIG(=+5) | o",
+  "T": "TIME BEGIN FIGHT | o",
+  "M": "TIME(=-2) BIG(=+1) | o",
+  "head": {
+   "root": "TIME",
+   "v": null,
+   "via": "time_period.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "donation",
+  "A": "GIVE(=+4) FRIEND(=+2) PART(=+1) | o",
+  "H": "GIVE(=+5) | o result",
+  "T": "GIVE(=+5) FRIEND(=+2) PART(=+1) | o",
+  "M": "GIVE(=+3) | o result",
+  "head": {
+   "root": "GIVE",
+   "v": 5,
+   "via": "gift.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "gate",
+  "A": "INSIDE(=-1) NEAR(=+3) LONG(=+2) | o",
+  "H": "JOIN(=-5) MOVE | o tool",
+  "T": "PLACE INSIDE(=-4) NEAR(=+5) | o",
+  "M": "JOIN(=-1) MOVE(=+5) | o tool",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "structure.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "homer",
+  "A": "FIGHT(=-2) SAY(=+5) LONG(=+5) | o",
+  "H": "HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o",
+  "T": "DO FIGHT(=-5) SAY(=+5) | o",
+  "M": "HAPPEN GOOD(=-5) | o PI FIGHT(=-5) | o",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "act.n.02",
+   "steps": 6
+  }
+ },
+ {
+  "w": "coca",
+  "A": "GRAIN(=-2) CONSUME(=+5) HEAT(=-4) | o",
+  "H": "THING(=0) CONSUME(=+5) FEEL(=+5) | o",
+  "T": "THING(=0) CONSUME(=+5) GRAIN(=-4) | o",
+  "M": "THING CONSUME(=+5) FEEL | o",
+  "head": {
+   "root": "THING",
+   "v": 0,
+   "via": "plant.n.02",
+   "steps": 4
+  }
+ },
+ {
+  "w": "dose",
+  "A": "MEASURE(=0) PART(=-2) GIVE(=+1) | o",
+  "H": "MEASURE(=-5) CONSUME(=+5) | o",
+  "T": "MEASURE(=0) PART(=-2) GIVE(=+1) | o",
+  "M": "MEASURE CONSUME(=+1) | o",
+  "head": null
+ },
+ {
+  "w": "reservoir",
+  "A": "THING(=-1) GRAIN(=-4) PLACE | o",
+  "H": "MANY(=+3) INSIDE(=+5) | o",
+  "T": "MEASURE GRAIN(=-5) THING(=-3) | o",
+  "M": "MANY(=-2) INSIDE(=-3) | o",
+  "head": {
+   "root": "MEASURE",
+   "v": null,
+   "via": "measure.n.02",
+   "steps": 3
+  }
+ },
+ {
+  "w": "crater",
+  "A": "NEAR(=-1) THING(=-5) GRAIN(=-1) | o",
+  "H": "PLACE INSIDE(=+5) ABOVE(=+5) | o",
+  "T": "PLACE THING(=-5) NEAR(=-2) | o",
+  "M": "PLACE ABOVE(=-2) INSIDE(=-1) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "geological_formation.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "businessman",
+  "A": "ART(=-1) TOUCH(=+5) VALUE(=-5) | o",
+  "H": "GIVE(=0) VALUE | o agent",
+  "T": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+  "M": "GIVE VALUE(=-5) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "phase",
+  "A": "BEGIN(=-1) ART(=-1) PART(=0) | o",
+  "H": "TIME PART(=-2) | o",
+  "T": "TIME BEGIN(=-2) PART | o",
+  "M": "TIME(=+1) PART | o",
+  "head": {
+   "root": "TIME",
+   "v": null,
+   "via": "time_period.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "labour",
+  "A": "MEASURE(=+1) CAN(=-5) ART(=-3) | o",
+  "H": "SOMEONE PART(=+5) DO | o",
+  "T": "SOMEONE CAN(=-5) ART(=-4) | o",
+  "M": "SOMEONE(=+1) DO PART(=+5) | o",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "people.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "airline",
+  "A": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o",
+  "H": "LONG(=-5) GRAIN(=-5) | o",
+  "T": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o",
+  "M": "LONG GRAIN(=-5) | o",
+  "head": null
+ },
+ {
+  "w": "satisfaction",
+  "A": "WANT(=+3) BEGIN(=+4) MEASURE(=+2) | o",
+  "H": "WANT BEGIN(=+5) MOOD(=+3) | o quality",
+  "T": "FEEL WANT(=+5) BEGIN(=+5) | o",
+  "M": "WANT(=+3) BEGIN(=+4) MOOD(=+2) | o quality",
+  "head": {
+   "root": "FEEL",
+   "v": null,
+   "via": "feeling.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "yesterday",
+  "A": "TIME(=-1) SOMEONE(=+1) | o",
+  "H": "TIME(=-1) PART(=-2) | o",
+  "T": "MEASURE TIME(=-4) SOMEONE(=+3) | o",
+  "M": "TIME(=-1) PART | o",
+  "head": {
+   "root": "MEASURE",
+   "v": null,
+   "via": "measure.n.02",
+   "steps": 3
+  }
+ },
+ {
+  "w": "model",
+  "A": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+  "H": "THINK KNOW(=-3) | o result",
+  "T": "THINK SAME(=+2) ART(=-1) | o",
+  "M": "THINK(=+3) KNOW(=-4) | o result",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "outlet",
+  "A": "NEAR(=+2) GRAIN(=-3) VALUE(=-4) | o",
+  "H": "PLACE GIVE(=0) VALUE | o",
+  "T": "PLACE GRAIN(=-2) VALUE(=-4) | o",
+  "M": "PLACE VALUE(=-5) GIVE(=-1) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "structure.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "planet",
+  "A": "PLACE NEAR(=-5) PART(=0) | o",
+  "H": "BIG(=+5) THING(=-5) ABOVE(=+5) | o",
+  "T": "PLACE NEAR(=-5) PART(=0) | o",
+  "M": "BIG(=+3) THING(=-5) ABOVE(=-5) | o",
+  "head": null
+ },
+ {
+  "w": "representation",
+  "A": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "H": "SEE | o result",
+  "T": "THINK ART(=+3) RULE(=+3) | o",
+  "M": "SEE | o result",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "news",
+  "A": "TEXT TIME(=+1) MOOD(=-1) | o",
+  "H": "SAY HAPPEN TIME(=-1) | o",
+  "T": "SAY TEXT TIME(=+1) | o",
+  "M": "SAY TIME(=+1) HAPPEN | o",
+  "head": {
+   "root": "SAY",
+   "v": null,
+   "via": "communication.n.02",
+   "steps": 3
+  }
+ },
+ {
+  "w": "copyright",
+  "A": "TEXT SAME(=+4) ART(=+1) | o",
+  "H": "TEXT RULE(=+5) CAN(=+5) | o",
+  "T": "TEXT SAME(=+4) ART(=+1) | o",
+  "M": "TEXT RULE(=+3) CAN(=+1) | o",
+  "head": {
+   "root": "TEXT",
+   "v": null,
+   "via": "document.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "obstacle",
+  "A": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+  "H": "CAN(=-3) MOVE | o agent",
+  "T": "THINK CAN(=-4) SIDE(=+4) | o",
+  "M": "CAN(=-1) MOVE(=+1) | o agent",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "grief",
+  "A": "MOOD(=-2) | o",
+  "H": "MOOD(=-5) FEEL(=+5) | o",
+  "T": "FEEL MOOD(=-5) FRIEND(=+1) | o",
+  "M": "MOOD(=-3) FEEL(=-1) | o",
+  "head": {
+   "root": "FEEL",
+   "v": null,
+   "via": "feeling.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "lawmaker",
+  "A": "RULE(=+5) BIG(=-1) JOIN(=-1) | o",
+  "H": "TEXT RULE(=+5) | o agent",
+  "T": "SOMEONE RULE(=+5) TOUCH(=+2) | o",
+  "M": "TEXT RULE(=+5) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "harm",
+  "A": "FRIEND(=-1) MANY(=-4) DO | o",
+  "H": "CHANGE GOOD(=-4) BODY | o result",
+  "T": "FRIEND(=-1) MANY(=-4) DO | o",
+  "M": "CHANGE(=+1) GOOD(=-3) BODY | o result",
+  "head": null
+ },
+ {
+  "w": "spell",
+  "A": "DO HEAT(=-1) TEXT | o",
+  "H": "SAY DO CHANGE | o result",
+  "T": "DO HEAT(=-1) TEXT | o",
+  "M": "SAY DO CHANGE(=+2) | o result",
+  "head": null
+ },
+ {
+  "w": "lawsuit",
+  "A": "RULE(=+3) FIGHT(=-1) HAPPEN | o",
+  "H": "FIGHT RULE(=+5) | o",
+  "T": "HAPPEN RULE(=+5) FIGHT(=-1) | o",
+  "M": "FIGHT(=-1) RULE(=+4) | o",
+  "head": {
+   "root": "HAPPEN",
+   "v": null,
+   "via": "event.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "lens",
+  "A": "SEE NEAR(=-3) ART(=-1) | o",
+  "H": "SEE | o tool",
+  "T": "ART(=-5) SEE NEAR(=-5) | o",
+  "M": "SEE | o tool",
+  "head": {
+   "root": "ART",
+   "v": -5,
+   "via": "device.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "testimony",
+  "A": "RULE(=+2) TEXT SEE | o",
+  "H": "SAY RULE(=+5) | o result",
+  "T": "SAY RULE(=+3) TEXT | o",
+  "M": "SAY RULE(=+4) | o result",
+  "head": {
+   "root": "SAY",
+   "v": null,
+   "via": "communication.n.02",
+   "steps": 4
+  }
+ },
+ {
+  "w": "bowl",
+  "A": "FIGHT(=-2) LONG(=+3) PART(=-1) | o",
+  "H": "INSIDE THING | o",
+  "T": "INSIDE(=+5) FIGHT(=-5) LONG(=+5) | o",
+  "M": "INSIDE(=+3) THING | o",
+  "head": {
+   "root": "INSIDE",
+   "v": 5,
+   "via": "container.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "pitcher",
+  "A": "FIGHT(=-2) LONG(=+4) CONSUME(=0) | o",
+  "H": "GIVE FIGHT(=-5) | o agent",
+  "T": "SOMEONE FIGHT(=-4) LONG(=+5) | o",
+  "M": "GIVE FIGHT(=-5) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "ally",
+  "A": "FRIEND(=+1) JOIN(=+3) TIME(=-2) | o",
+  "H": "FRIEND JOIN | o",
+  "T": "RULE(=+4) FRIEND(=+3) JOIN(=+5) | o",
+  "M": "FRIEND(=+1) JOIN(=+2) | o",
+  "head": {
+   "root": "RULE",
+   "v": 4,
+   "via": "organization.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "contribution",
+  "A": "GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o",
+  "H": "PART(=-2) HAPPEN | o result",
+  "T": "DO GIVE(=+5) MEASURE(=+2) | o",
+  "M": "PART(=+1) HAPPEN | o result",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "activity.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "guest",
+  "A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "H": "SOMEONE(=-5) NEAR(=+5) | o",
+  "T": "SOMEONE RULE(=-5) GIVE(=+5) | o",
+  "M": "SOMEONE(=+2) NEAR(=+4) | o",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "expo",
+  "A": "ART(=0) FIGHT(=-4) PLACE | o",
+  "H": "PLACE SEE | o",
+  "T": "PART(=+5) FIGHT(=-5) ART(=+2) | o",
+  "M": "PLACE SEE | o",
+  "head": {
+   "root": "PART",
+   "v": 5,
+   "via": "group.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "regulation",
+  "A": "RULE(=+3) DO MEASURE(=0) | o",
+  "H": "RULE(=+4) | o",
+  "T": "SAY RULE(=+5) DO | o",
+  "M": "RULE(=+3) | o",
+  "head": {
+   "root": "SAY",
+   "v": null,
+   "via": "communication.n.02",
+   "steps": 4
+  }
+ },
+ {
+  "w": "list",
+  "A": "TEXT PART(=+5) SEE | o",
+  "H": "TEXT PART(=+5) | o",
+  "T": "SAY PART(=+5) TEXT | o",
+  "M": "TEXT PART(=+4) | o",
+  "head": {
+   "root": "SAY",
+   "v": null,
+   "via": "communication.n.02",
+   "steps": 4
+  }
+ },
+ {
+  "w": "existence",
+  "A": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "H": "LIVE | o quality",
+  "T": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "M": "LIVE(=+1) | o quality",
+  "head": null
+ },
+ {
+  "w": "fleet",
+  "A": "FIGHT(=+4) PART(=+5) LONG(=+3) | o",
+  "H": "PART(=+5) ABOVE MOVE | o",
+  "T": "PART(=+5) FIGHT(=+5) GRAIN(=-2) | o",
+  "M": "PART(=+5) MOVE(=+2) ABOVE(=-1) | o",
+  "head": {
+   "root": "PART",
+   "v": 5,
+   "via": "group.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "township",
+  "A": "PLACE THING(=0) RULE(=+2) | o",
+  "H": "PLACE PART(=-2) RULE(=+4) | o",
+  "T": "PLACE THING RULE(=+2) | o",
+  "M": "PLACE RULE(=+3) PART(=+2) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "location.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "bishop",
+  "A": "RULE(=+3) ART(=+2) MOVE(=+1) | o",
+  "H": "RULE(=+4) SEE | o agent",
+  "T": "SOMEONE RULE(=+5) ART(=+2) | o",
+  "M": "RULE(=+4) SEE | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "activist",
+  "A": "LIVE(=+2) TIME(=-3) PART(=+3) | o",
+  "H": "CHANGE FIGHT(=+5) | o agent",
+  "T": "SOMEONE TIME(=-5) LIVE(=+5) | o",
+  "M": "CHANGE(=+2) FIGHT(=+2) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "order",
+  "A": "RULE(=+2) MOVE(=+1) WANT(=+4) | o",
+  "H": "SAY(=+5) RULE(=+4) | o result",
+  "T": "DO RULE(=+4) WANT(=+5) | o",
+  "M": "SAY RULE(=+5) | o result",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "act.n.02",
+   "steps": 3
+  }
+ },
+ {
+  "w": "knight",
+  "A": "FIGHT(=+2) THING(=+4) TOUCH(=+4) | o",
+  "H": "FIGHT(=+5) RULE(=+4) | o agent",
+  "T": "SOMEONE FIGHT(=+4) THING(=+4) | o",
+  "M": "FIGHT(=+2) RULE(=+1) | o agent",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "diplomacy",
+  "A": "FIGHT(=+1) ART(=+1) FRIEND(=+2) | o",
+  "H": "SAY RULE(=+4) PART(=+5) | o",
+  "T": "SAY(=0) FIGHT(=+4) ART(=+3) | o",
+  "M": "SAY(=-5) RULE(=+5) PART(=-3) | o",
+  "head": {
+   "root": "SAY",
+   "v": 0,
+   "via": "speech.n.02",
+   "steps": 3
+  }
+ },
+ {
+  "w": "bronze",
+  "A": "GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o",
+  "H": "TOUCH(=+5) JOIN | o",
+  "T": "GRAIN ART(=+4) BEGIN(=+3) | o",
+  "M": "TOUCH(=+3) JOIN(=-4) | o",
+  "head": {
+   "root": "GRAIN",
+   "v": null,
+   "via": "substance.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "occupation",
+  "A": "PLACE FIGHT(=+4) RULE(=-2) | o",
+  "H": "DO VALUE | o",
+  "T": "DO FIGHT(=+5) RULE(=-3) | o",
+  "M": "DO VALUE(=-3) | o",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "activity.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "athletics",
+  "A": "FIGHT(=-3) MOVE(=+1) RULE(=0) | o",
+  "H": "FIGHT(=-5) MOVE | o",
+  "T": "FIGHT(=-5) MOVE(=+2) RULE(=-1) | o",
+  "M": "FIGHT(=-3) MOVE(=+1) | o",
+  "head": {
+   "root": "FIGHT",
+   "v": -5,
+   "via": "sport.n.01",
+   "steps": 0
+  }
+ },
+ {
+  "w": "piece",
+  "A": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "H": "PART(=-2) | o",
+  "T": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "M": "PART(=-1) | o",
+  "head": null
+ },
+ {
+  "w": "anode",
+  "A": "LONG(=0) ART(=-5) INSIDE(=-4) | o",
+  "H": "ART(=-5) GIVE(=+5) | o",
+  "T": "ART(=-5) INSIDE(=-5) PART(=-4) | o",
+  "M": "ART(=-5) GIVE(=+1) | o",
+  "head": {
+   "root": "ART",
+   "v": -5,
+   "via": "device.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "quantum",
+  "A": "ART(=-2) PART(=-2) MEASURE(=0) | o",
+  "H": "MEASURE PART(=-5) | o",
+  "T": "THINK ART(=-5) PART(=-3) | o",
+  "M": "MEASURE PART(=-3) | o",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "fist",
+  "A": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "H": "BODY TOUCH(=+5) | o",
+  "T": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "M": "BODY TOUCH(=+1) | o",
+  "head": {
+   "root": "BODY",
+   "v": null,
+   "via": "body_part.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "reservation",
+  "A": "PLACE GIVE(=+4) MOVE(=0) | o",
+  "H": "PLACE RULE(=+4) | o",
+  "T": "PLACE GIVE(=+4) MOVE | o",
+  "M": "PLACE RULE(=+1) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "location.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "campus",
+  "A": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "H": "PLACE KNOW(=+5) | o",
+  "T": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "M": "PLACE KNOW | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "location.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "flame",
+  "A": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "H": "HEAT(=+5) GRAIN(=-3) | o",
+  "T": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "M": "HEAT(=+4) GRAIN | o",
+  "head": null
+ },
+ {
+  "w": "privilege",
+  "A": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "H": "SAME(=-4) RULE(=+4) | o",
+  "T": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "M": "SAME(=-1) RULE(=+4) | o",
+  "head": null
+ },
+ {
+  "w": "sequence",
+  "A": "BEGIN(=-1) LONG(=-1) HAPPEN | o",
+  "H": "JOIN(=+5) TIME | o",
+  "T": "PART(=+5) BEGIN(=-4) LONG(=-5) | o",
+  "M": "JOIN(=-3) TIME(=-5) | o",
+  "head": {
+   "root": "PART",
+   "v": 5,
+   "via": "group.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "ratio",
+  "A": "MEASURE(=+1) | o",
+  "H": "MEASURE(=+5) | o",
+  "T": "MEASURE(=+1) | o",
+  "M": "MEASURE(=+1) | o",
+  "head": null
+ },
+ {
+  "w": "rest",
+  "A": "MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o",
+  "H": "PART(=-2) GIVE(=-5) | o",
+  "T": "PART(=-2) MOVE(=-5) FEEL(=-5) | o",
+  "M": "PART(=+1) GIVE(=-1) | o",
+  "head": {
+   "root": "PART",
+   "v": -2,
+   "via": "part.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "ankle",
+  "A": "BODY | o",
+  "H": "BODY JOIN ABOVE(=-5) | o",
+  "T": "BODY | o",
+  "M": "BODY ABOVE JOIN(=+1) | o",
+  "head": {
+   "root": "BODY",
+   "v": null,
+   "via": "body_part.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "discussion",
+  "A": "THINK(=-1) RULE(=-1) TEXT | o",
+  "H": "SAY GIVE(=0) | o",
+  "T": "DO THINK(=-5) RULE(=-3) | o",
+  "M": "SAY(=-3) GIVE(=+5) | o",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "act.n.02",
+   "steps": 2
+  }
+ },
+ {
+  "w": "road",
+  "A": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "H": "PLACE MOVE | o",
+  "T": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "M": "PLACE MOVE(=+2) | o",
+  "head": null
+ },
+ {
+  "w": "driver",
+  "A": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "H": "MOVE ART(=-5) | o agent",
+  "T": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "M": "MOVE(=+1) ART(=-5) | o agent",
+  "head": null
+ },
+ {
+  "w": "friend",
+  "A": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o",
+  "H": "FRIEND(=+5) SOMEONE | o",
+  "T": "SOMEONE FRIEND(=+5) TIME(=-2) | o",
+  "M": "FRIEND(=+2) SOMEONE(=+2) | o",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "integration",
+  "A": "JOIN(=+2) ART(=-2) GRAIN(=+2) | o",
+  "H": "JOIN(=+5) PART(=+2) | o",
+  "T": "HAPPEN JOIN(=+5) ART(=-3) | o",
+  "M": "JOIN(=+3) PART(=+1) | o",
+  "head": {
+   "root": "HAPPEN",
+   "v": null,
+   "via": "event.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "bachelor",
+  "A": "BEGIN(=+2) SEX(=+3) ART(=-1) | o",
+  "H": "SOMEONE SEX(=+5) JOIN(=-5) | o",
+  "T": "SOMEONE BEGIN(=+5) MEASURE(=+5) | o",
+  "M": "SOMEONE(=+5) SEX(=+3) JOIN(=+4) | o",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "overtime",
+  "A": "FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+  "H": "TIME ABOVE(=+3) | o",
+  "T": "TIME BEGIN(=+5) FIGHT(=-2) | o",
+  "M": "TIME(=-3) ABOVE(=+5) | o",
+  "head": {
+   "root": "TIME",
+   "v": null,
+   "via": "time_period.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "atmosphere",
+  "A": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "H": "GRAIN(=-5) NEAR(=+5) | o",
+  "T": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "M": "GRAIN(=-2) NEAR(=-1) | o",
+  "head": null
+ },
+ {
+  "w": "stomach",
+  "A": "BODY CONSUME(=0) FEEL(=-1) | o",
+  "H": "BODY CONSUME(=+5) | o",
+  "T": "BODY CONSUME FEEL(=-1) | o",
+  "M": "BODY CONSUME | o",
+  "head": {
+   "root": "BODY",
+   "v": null,
+   "via": "body_part.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "autumn",
+  "A": "HEAT(=-1) TIME(=+1) BEGIN(=0) | o",
+  "H": "TIME PART(=-2) | o",
+  "T": "TIME HEAT(=-1) BEGIN | o",
+  "M": "TIME(=+1) PART(=+1) | o",
+  "head": {
+   "root": "TIME",
+   "v": null,
+   "via": "time_period.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "post",
+  "A": "LONG(=+2) TIME(=-1) TEXT | o",
+  "H": "PLACE MOVE(=-5) | o",
+  "T": "PLACE LONG(=+2) TEXT | o",
+  "M": "PLACE MOVE(=+1) | o",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "location.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "lion",
+  "A": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "H": "THING(=+4) BIG(=+3) | o",
+  "T": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "M": "THING(=+3) BIG(=+2) | o",
+  "head": {
+   "root": "THING",
+   "v": 4,
+   "via": "animal.n.01",
+   "steps": 8
+  }
+ },
+ {
+  "w": "playoff",
+  "A": "FIGHT(=-2) BEGIN(=+2) | o",
+  "H": "FIGHT(=-5) BEGIN(=+5) | o",
+  "T": "FIGHT(=-5) BEGIN(=+3) | o",
+  "M": "FIGHT(=-2) BEGIN(=+2) | o",
+  "head": {
+   "root": "FIGHT",
+   "v": -5,
+   "via": "contest.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "brokerage",
+  "A": "RULE(=0) MEASURE(=+4) VALUE(=-4) | o",
+  "H": "GIVE(=0) JOIN(=+5) | o",
+  "T": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+  "M": "GIVE(=+5) JOIN(=+4) | o",
+  "head": {
+   "root": "RULE",
+   "v": 4,
+   "via": "institution.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "acre",
+  "A": "PLACE THING(=-1) MEASURE(=0) | o",
+  "H": "MEASURE(=-5) PLACE | o",
+  "T": "MEASURE(=-5) NEAR(=+5) PLACE | o",
+  "M": "MEASURE PLACE | o",
+  "head": {
+   "root": "MEASURE",
+   "v": -5,
+   "via": "unit_of_measurement.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "competitiveness",
+  "A": "FIGHT(=-3) MEASURE(=+1) LIVE(=+3) | o",
+  "H": "FIGHT(=+3) WANT(=+5) | o quality",
+  "T": "FIGHT(=-3) MEASURE(=+1) LIVE(=+3) | o",
+  "M": "FIGHT(=-3) WANT(=+2) | o quality",
+  "head": null
+ },
+ {
+  "w": "ideology",
+  "A": "ART(=+2) RULE(=+2) FRIEND(=-1) | o",
+  "H": "THINK PART(=+5) | o",
+  "T": "THINK ART(=+4) RULE(=+2) | o",
+  "M": "THINK(=-3) PART(=+4) | o",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "cake",
+  "A": "GRAIN(=+3) CONSUME(=+5) TOUCH(=-5) | o",
+  "H": "GRAIN(=+5) CONSUME(=+5) | o",
+  "T": "GRAIN(=+3) CONSUME(=+5) TOUCH(=-5) | o",
+  "M": "GRAIN(=+2) CONSUME(=+4) | o",
+  "head": null
+ },
+ {
+  "w": "pickup",
+  "A": "LONG(=+3) ART(=-2) THING(=0) | o",
+  "H": "THING(=-5) MOVE(=+5) | o",
+  "T": "INSIDE(=+5) LONG(=+5) ART(=-5) | o",
+  "M": "THING MOVE(=+2) | o",
+  "head": {
+   "root": "INSIDE",
+   "v": 5,
+   "via": "container.n.01",
+   "steps": 5
+  }
+ },
+ {
+  "w": "argentine",
+  "A": "THING(=0) RULE(=-2) TIME(=-1) | o",
+  "H": "THING(=+4) BIG(=-3) | o",
+  "T": "THING(=+4) RULE(=-5) JOIN(=-5) | o",
+  "M": "THING BIG(=+3) | o",
+  "head": {
+   "root": "THING",
+   "v": 4,
+   "via": "animal.n.01",
+   "steps": 8
+  }
+ },
+ {
+  "w": "prisoner",
+  "A": "RULE(=+2) FIGHT(=+4) LIVE(=0) | o",
+  "H": "SOMEONE INSIDE(=+5) | o",
+  "T": "SOMEONE FIGHT(=+5) RULE(=+5) | o",
+  "M": "SOMEONE(=-1) INSIDE(=+5) | o",
+  "head": {
+   "root": "SOMEONE",
+   "v": null,
+   "via": "person.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "atom",
+  "A": "PART(=-3) SAME(=+1) ART(=-2) | o",
+  "H": "PART(=-5) BIG(=-5) | o",
+  "T": "GRAIN PART(=-5) ART(=-3) | o",
+  "M": "PART(=-3) BIG | o",
+  "head": {
+   "root": "GRAIN",
+   "v": null,
+   "via": "substance.n.01",
+   "steps": 1
+  }
+ },
+ {
+  "w": "door",
+  "A": "INSIDE(=0) LONG(=+2) SIDE(=+1) | o",
+  "H": "JOIN(=-5) INSIDE(=+5) | o tool",
+  "T": "PLACE INSIDE LONG(=+5) | o",
+  "M": "JOIN(=-1) INSIDE(=+1) | o tool",
+  "head": {
+   "root": "PLACE",
+   "v": null,
+   "via": "structure.n.01",
+   "steps": 4
+  }
+ },
+ {
+  "w": "gambling",
+  "A": "FIGHT(=-2) GRAIN(=-2) THINK(=-1) | o",
+  "H": "FIGHT(=-5) VALUE(=+3) | o",
+  "T": "DO FIGHT(=-5) GRAIN(=-3) | o",
+  "M": "FIGHT(=-2) VALUE(=-2) | o",
+  "head": {
+   "root": "DO",
+   "v": null,
+   "via": "activity.n.01",
+   "steps": 2
+  }
+ },
+ {
+  "w": "folklore",
+  "A": "ART(=+5) RULE(=-1) CONSUME(=+2) | o",
+  "H": "SAY(=0) ART(=+5) | o",
+  "T": "THINK ART(=+5) RULE(=-1) | o",
+  "M": "SAY ART(=+5) | o",
+  "head": {
+   "root": "THINK",
+   "v": null,
+   "via": "cognition.n.01",
+   "steps": 3
+  }
+ },
+ {
+  "w": "hybrid",
+  "A": "SAME(=-1) ART(=-3) THING(=+2) | o",
+  "H": "JOIN(=+5) SAME(=-5) | o",
+  "T": "PART(=-2) ART(=-5) THING(=+4) | o",
+  "M": "JOIN(=+2) SAME(=-3) | o",
+  "head": {
+   "root": "PART",
+   "v": -2,
+   "via": "part.n.01",
+   "steps": 3
+  }
+ }
+]

@@ -1,0 +1,2072 @@
+{
+ "helm": {
+  "root": "ART",
+  "v": -5,
+  "via": "device.n.01",
+  "steps": 3
+ },
+ "malaria": {
+  "root": "BODY",
+  "v": null,
+  "via": "infection.n.01",
+  "steps": 2
+ },
+ "pianist": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "employee": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "resignation": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 2
+ },
+ "revision": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 5
+ },
+ "consideration": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 4
+ },
+ "profit": {
+  "root": "VALUE",
+  "v": null,
+  "via": "financial_gain.n.01",
+  "steps": 2
+ },
+ "relegation": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 5
+ },
+ "religion": {
+  "root": "THINK",
+  "v": null,
+  "via": "belief.n.01",
+  "steps": 1
+ },
+ "bubble": null,
+ "chapel": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 3
+ },
+ "people": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "people.n.01",
+  "steps": 0
+ },
+ "lake": {
+  "root": "GRAIN",
+  "v": -3,
+  "via": "body_of_water.n.01",
+  "steps": 1
+ },
+ "topic": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "era": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 1
+ },
+ "donation": {
+  "root": "GIVE",
+  "v": 5,
+  "via": "gift.n.01",
+  "steps": 1
+ },
+ "gate": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 4
+ },
+ "homer": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "coca": {
+  "root": "THING",
+  "v": 0,
+  "via": "plant.n.02",
+  "steps": 4
+ },
+ "dose": null,
+ "reservoir": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "crater": {
+  "root": "PLACE",
+  "v": null,
+  "via": "geological_formation.n.01",
+  "steps": 1
+ },
+ "businessman": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "phase": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 1
+ },
+ "labour": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "people.n.01",
+  "steps": 2
+ },
+ "airline": null,
+ "satisfaction": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 3
+ },
+ "yesterday": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "model": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 5
+ },
+ "outlet": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 3
+ },
+ "planet": null,
+ "representation": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 2
+ },
+ "news": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 3
+ },
+ "copyright": {
+  "root": "TEXT",
+  "v": null,
+  "via": "document.n.01",
+  "steps": 1
+ },
+ "obstacle": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 4
+ },
+ "grief": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 3
+ },
+ "lawmaker": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "harm": null,
+ "spell": null,
+ "lawsuit": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "lens": {
+  "root": "ART",
+  "v": -5,
+  "via": "device.n.01",
+  "steps": 2
+ },
+ "testimony": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "bowl": {
+  "root": "INSIDE",
+  "v": 5,
+  "via": "container.n.01",
+  "steps": 2
+ },
+ "pitcher": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "ally": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 4
+ },
+ "contribution": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "guest": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "expo": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 2
+ },
+ "regulation": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "list": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "existence": null,
+ "fleet": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 2
+ },
+ "township": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "bishop": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "activist": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "order": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 3
+ },
+ "knight": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "diplomacy": {
+  "root": "SAY",
+  "v": 0,
+  "via": "speech.n.02",
+  "steps": 3
+ },
+ "bronze": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "substance.n.01",
+  "steps": 4
+ },
+ "occupation": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 1
+ },
+ "athletics": {
+  "root": "FIGHT",
+  "v": -5,
+  "via": "sport.n.01",
+  "steps": 0
+ },
+ "piece": null,
+ "anode": {
+  "root": "ART",
+  "v": -5,
+  "via": "device.n.01",
+  "steps": 3
+ },
+ "quantum": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 5
+ },
+ "fist": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 4
+ },
+ "reservation": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "campus": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 5
+ },
+ "flame": null,
+ "privilege": null,
+ "sequence": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 4
+ },
+ "ratio": null,
+ "rest": {
+  "root": "PART",
+  "v": -2,
+  "via": "part.n.01",
+  "steps": 1
+ },
+ "ankle": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 4
+ },
+ "discussion": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 2
+ },
+ "road": null,
+ "driver": null,
+ "friend": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 1
+ },
+ "integration": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 2
+ },
+ "bachelor": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "overtime": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 2
+ },
+ "atmosphere": null,
+ "stomach": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 3
+ },
+ "autumn": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 2
+ },
+ "post": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 3
+ },
+ "lion": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 8
+ },
+ "playoff": {
+  "root": "FIGHT",
+  "v": -5,
+  "via": "contest.n.01",
+  "steps": 1
+ },
+ "brokerage": {
+  "root": "RULE",
+  "v": 4,
+  "via": "institution.n.01",
+  "steps": 3
+ },
+ "acre": {
+  "root": "MEASURE",
+  "v": -5,
+  "via": "unit_of_measurement.n.01",
+  "steps": 2
+ },
+ "competitiveness": null,
+ "ideology": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 3
+ },
+ "cake": null,
+ "pickup": {
+  "root": "INSIDE",
+  "v": 5,
+  "via": "container.n.01",
+  "steps": 5
+ },
+ "argentine": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 8
+ },
+ "prisoner": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "atom": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "substance.n.01",
+  "steps": 1
+ },
+ "door": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 4
+ },
+ "gambling": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "folklore": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 3
+ },
+ "hybrid": {
+  "root": "PART",
+  "v": -2,
+  "via": "part.n.01",
+  "steps": 3
+ },
+ "night": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 1
+ },
+ "extent": null,
+ "task": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "stress": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "dozen": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 5
+ },
+ "availability": null,
+ "turnover": null,
+ "thanksgiving": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 5
+ },
+ "telegram": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "sultan": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "strategist": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "hostilities": {
+  "root": "FIGHT",
+  "v": 5,
+  "via": "military_action.n.01",
+  "steps": 3
+ },
+ "tsunami": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "mechanics": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 7
+ },
+ "colonel": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 7
+ },
+ "separation": null,
+ "doctor": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "mentor": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "parole": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 3
+ },
+ "princess": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "meal": {
+  "root": "CONSUME",
+  "v": 5,
+  "via": "food.n.01",
+  "steps": 2
+ },
+ "wedding": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "double": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "defense": {
+  "root": "FIGHT",
+  "v": 5,
+  "via": "military_action.n.01",
+  "steps": 1
+ },
+ "counseling": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "bar": {
+  "root": "PLACE",
+  "v": null,
+  "via": "area.n.05",
+  "steps": 2
+ },
+ "leadership": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 1
+ },
+ "recipient": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "action": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 1
+ },
+ "statesman": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "cliff": {
+  "root": "PLACE",
+  "v": null,
+  "via": "geological_formation.n.01",
+  "steps": 1
+ },
+ "gang": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 2
+ },
+ "truck": {
+  "root": "INSIDE",
+  "v": 5,
+  "via": "container.n.01",
+  "steps": 4
+ },
+ "surname": {
+  "root": "PART",
+  "v": -2,
+  "via": "part.n.01",
+  "steps": 3
+ },
+ "integrity": null,
+ "difference": null,
+ "pride": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 1
+ },
+ "marseille": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "minutes": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 5
+ },
+ "bottle": {
+  "root": "INSIDE",
+  "v": 5,
+  "via": "container.n.01",
+  "steps": 2
+ },
+ "row": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 4
+ },
+ "folks": {
+  "root": "PART",
+  "v": 5,
+  "via": "social_group.n.01",
+  "steps": 2
+ },
+ "sitcom": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 5
+ },
+ "party": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 1
+ },
+ "behalf": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 5
+ },
+ "wood": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 2
+ },
+ "lab": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "preference": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 2
+ },
+ "sample": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 3
+ },
+ "disambiguation": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 6
+ },
+ "overhead": null,
+ "perspective": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 3
+ },
+ "petition": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "bread": {
+  "root": "CONSUME",
+  "v": 5,
+  "via": "food.n.02",
+  "steps": 2
+ },
+ "ministry": {
+  "root": "PART",
+  "v": 5,
+  "via": "social_group.n.01",
+  "steps": 5
+ },
+ "tang": null,
+ "ways": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 1
+ },
+ "genre": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 6
+ },
+ "fault": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 2
+ },
+ "treasure": {
+  "root": "VALUE",
+  "v": null,
+  "via": "assets.n.01",
+  "steps": 3
+ },
+ "user": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 1
+ },
+ "caretaker": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "skull": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 5
+ },
+ "exchange": null,
+ "river": {
+  "root": "GRAIN",
+  "v": -3,
+  "via": "body_of_water.n.01",
+  "steps": 2
+ },
+ "industry": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 3
+ },
+ "wind": null,
+ "desk": {
+  "root": "ART",
+  "v": -5,
+  "via": "instrumentality.n.03",
+  "steps": 4
+ },
+ "girlfriend": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "prison": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 5
+ },
+ "detective": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "ransom": null,
+ "copy": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 5
+ },
+ "dirt": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 2
+ },
+ "car": {
+  "root": "INSIDE",
+  "v": 5,
+  "via": "container.n.01",
+  "steps": 4
+ },
+ "porch": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 1
+ },
+ "analyst": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "tier": null,
+ "paper": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 1
+ },
+ "diameter": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "favorite": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 5
+ },
+ "uncertainty": null,
+ "disclosure": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 2
+ },
+ "joy": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 2
+ },
+ "canton": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "constitution": {
+  "root": "RULE",
+  "v": 5,
+  "via": "law.n.02",
+  "steps": 1
+ },
+ "striker": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "lunch": {
+  "root": "CONSUME",
+  "v": 5,
+  "via": "food.n.01",
+  "steps": 3
+ },
+ "homicide": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "gulf": {
+  "root": "GRAIN",
+  "v": -3,
+  "via": "body_of_water.n.01",
+  "steps": 1
+ },
+ "shortage": null,
+ "myth": {
+  "root": "TEXT",
+  "v": null,
+  "via": "writing.n.02",
+  "steps": 4
+ },
+ "dealings": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 4
+ },
+ "chairman": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "correction": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 5
+ },
+ "siege": {
+  "root": "FIGHT",
+  "v": 5,
+  "via": "military_action.n.01",
+  "steps": 2
+ },
+ "innings": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "napoleon": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "deficit": null,
+ "hand": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 3
+ },
+ "curb": null,
+ "receiver": {
+  "root": "ART",
+  "v": -5,
+  "via": "instrumentality.n.03",
+  "steps": 4
+ },
+ "branch": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 4
+ },
+ "vessel": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 3
+ },
+ "carnival": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 4
+ },
+ "missionary": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "frame": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 3
+ },
+ "tomb": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 3
+ },
+ "uniform": null,
+ "pentagon": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 3
+ },
+ "ceremony": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "champion": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "baker": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "zaire": {
+  "root": "MEASURE",
+  "v": -5,
+  "via": "unit_of_measurement.n.01",
+  "steps": 3
+ },
+ "consumption": null,
+ "anthrax": {
+  "root": "BODY",
+  "v": null,
+  "via": "disease.n.01",
+  "steps": 3
+ },
+ "army": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 3
+ },
+ "time": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "evacuation": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "target": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "spokesman": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "patron": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "horror": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 3
+ },
+ "strain": {
+  "root": "CHANGE",
+  "v": null,
+  "via": "change.n.01",
+  "steps": 2
+ },
+ "monk": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "orientation": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "pattern": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 2
+ },
+ "operations": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "fiber": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 1
+ },
+ "sniper": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "threshold": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "cow": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 11
+ },
+ "sunset": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 6
+ },
+ "salary": null,
+ "feature": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 5
+ },
+ "website": {
+  "root": "ART",
+  "v": -5,
+  "via": "device.n.01",
+  "steps": 3
+ },
+ "sequel": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "plateau": {
+  "root": "PLACE",
+  "v": null,
+  "via": "geological_formation.n.01",
+  "steps": 3
+ },
+ "baht": {
+  "root": "MEASURE",
+  "v": -5,
+  "via": "unit_of_measurement.n.01",
+  "steps": 3
+ },
+ "physics": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 6
+ },
+ "pregnancy": null,
+ "poultry": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 5
+ },
+ "flu": {
+  "root": "BODY",
+  "v": null,
+  "via": "disease.n.01",
+  "steps": 2
+ },
+ "sector": null,
+ "baron": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "mirror": {
+  "root": "ART",
+  "v": -5,
+  "via": "device.n.01",
+  "steps": 2
+ },
+ "treaty": {
+  "root": "TEXT",
+  "v": null,
+  "via": "document.n.01",
+  "steps": 3
+ },
+ "banker": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "stadium": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 1
+ },
+ "leg": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 4
+ },
+ "loss": null,
+ "slope": {
+  "root": "PLACE",
+  "v": null,
+  "via": "geological_formation.n.01",
+  "steps": 1
+ },
+ "sin": null,
+ "grid": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 3
+ },
+ "failure": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 2
+ },
+ "proposal": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "mercy": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 9
+ },
+ "rubble": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 3
+ },
+ "marina": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 3
+ },
+ "street": null,
+ "income": {
+  "root": "VALUE",
+  "v": null,
+  "via": "financial_gain.n.01",
+  "steps": 1
+ },
+ "effort": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 1
+ },
+ "star": null,
+ "art": {
+  "root": "ART",
+  "v": 5,
+  "via": "art.n.01",
+  "steps": 0
+ },
+ "therapy": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 5
+ },
+ "criticism": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 3
+ },
+ "plenty": null,
+ "curfew": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "exit": null,
+ "behavior": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 1
+ },
+ "store": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 4
+ },
+ "improvement": {
+  "root": "CHANGE",
+  "v": null,
+  "via": "change.n.01",
+  "steps": 2
+ },
+ "doctorate": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 5
+ },
+ "year": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 1
+ },
+ "kremlin": {
+  "root": "PLACE",
+  "v": null,
+  "via": "structure.n.01",
+  "steps": 4
+ },
+ "client": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "agent": null,
+ "mud": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 3
+ },
+ "judiciary": {
+  "root": "PART",
+  "v": 5,
+  "via": "social_group.n.01",
+  "steps": 3
+ },
+ "business": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 2
+ },
+ "appeal": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 3
+ },
+ "incentive": null,
+ "market": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 1
+ },
+ "clash": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "semiconductor": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 2
+ },
+ "martin": {
+  "root": "THINK",
+  "v": null,
+  "via": "belief.n.01",
+  "steps": 4
+ },
+ "gas": null,
+ "legitimacy": null,
+ "depth": null,
+ "turnaround": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 2
+ },
+ "newton": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "steel": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "substance.n.01",
+  "steps": 3
+ },
+ "phoenix": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 7
+ },
+ "savings": {
+  "root": "VALUE",
+  "v": null,
+  "via": "money.n.01",
+  "steps": 2
+ },
+ "easter": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 6
+ },
+ "culture": {
+  "root": "PART",
+  "v": 5,
+  "via": "social_group.n.01",
+  "steps": 2
+ },
+ "smith": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "length": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 2
+ },
+ "viewers": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 3
+ },
+ "morocco": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 6
+ },
+ "electricity": null,
+ "struggle": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "lieutenant": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 7
+ },
+ "patch": null,
+ "ton": {
+  "root": "MEASURE",
+  "v": -5,
+  "via": "unit_of_measurement.n.01",
+  "steps": 3
+ },
+ "jet": {
+  "root": "ART",
+  "v": -5,
+  "via": "instrumentality.n.03",
+  "steps": 7
+ },
+ "rubber": {
+  "root": "GRAIN",
+  "v": null,
+  "via": "material.n.01",
+  "steps": 4
+ },
+ "novel": {
+  "root": "TEXT",
+  "v": null,
+  "via": "writing.n.02",
+  "steps": 3
+ },
+ "cards": {
+  "root": "FIGHT",
+  "v": -5,
+  "via": "game.n.01",
+  "steps": 1
+ },
+ "racist": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "span": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 2
+ },
+ "livestock": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 5
+ },
+ "heroin": null,
+ "blow": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 5
+ },
+ "partner": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "engineer": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 1
+ },
+ "lap": {
+  "root": "BODY",
+  "v": null,
+  "via": "body_part.n.01",
+  "steps": 5
+ },
+ "reputation": null,
+ "example": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 2
+ },
+ "research": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 3
+ },
+ "rage": {
+  "root": "FEEL",
+  "v": null,
+  "via": "feeling.n.01",
+  "steps": 3
+ },
+ "hen": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 7
+ },
+ "robbery": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 6
+ },
+ "laundering": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 3
+ },
+ "gilbert": {
+  "root": "MEASURE",
+  "v": -5,
+  "via": "unit_of_measurement.n.01",
+  "steps": 3
+ },
+ "navigation": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 3
+ },
+ "variety": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 2
+ },
+ "noon": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 6
+ },
+ "sense": {
+  "root": "THINK",
+  "v": null,
+  "via": "cognition.n.01",
+  "steps": 5
+ },
+ "burial": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 5
+ },
+ "drummer": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "clearance": null,
+ "accounting": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 4
+ },
+ "birthday": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 4
+ },
+ "explorer": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 1
+ },
+ "medium": {
+  "root": "ART",
+  "v": -5,
+  "via": "instrumentality.n.03",
+  "steps": 1
+ },
+ "opportunity": null,
+ "elevation": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 5
+ },
+ "publication": null,
+ "stem": {
+  "root": "PART",
+  "v": -2,
+  "via": "part.n.01",
+  "steps": 4
+ },
+ "west": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 2
+ },
+ "pole": {
+  "root": "ART",
+  "v": -5,
+  "via": "instrumentality.n.03",
+  "steps": 3
+ },
+ "rain": null,
+ "cooper": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 5
+ },
+ "decade": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 1
+ },
+ "gen": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 3
+ },
+ "emergence": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "manhattan": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 5
+ },
+ "limit": null,
+ "singer": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "guard": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "evening": {
+  "root": "TIME",
+  "v": null,
+  "via": "time_period.n.01",
+  "steps": 2
+ },
+ "enforcement": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "legislation": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 4
+ },
+ "destruction": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 5
+ },
+ "fishing": {
+  "root": "FIGHT",
+  "v": -5,
+  "via": "sport.n.01",
+  "steps": 2
+ },
+ "input": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 2
+ },
+ "fielder": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "execution": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 5
+ },
+ "guerrilla": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "hearts": {
+  "root": "FIGHT",
+  "v": -5,
+  "via": "game.n.01",
+  "steps": 3
+ },
+ "contact": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 3
+ },
+ "replacement": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 4
+ },
+ "findings": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 2
+ },
+ "analysis": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 3
+ },
+ "isolation": null,
+ "compensation": null,
+ "socialist": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "premiere": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "merit": null,
+ "eve": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 3
+ },
+ "observer": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 1
+ },
+ "genocide": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "archive": null,
+ "ceiling": null,
+ "franklin": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 4
+ },
+ "hawk": {
+  "root": "THING",
+  "v": 4,
+  "via": "animal.n.01",
+  "steps": 5
+ },
+ "cable": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 3
+ },
+ "north": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 3
+ },
+ "nature": null,
+ "breakaway": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "ground": null,
+ "tons": {
+  "root": "MEASURE",
+  "v": null,
+  "via": "measure.n.02",
+  "steps": 3
+ },
+ "divorce": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 3
+ },
+ "imprisonment": {
+  "root": "HAPPEN",
+  "v": null,
+  "via": "event.n.01",
+  "steps": 4
+ },
+ "memorandum": {
+  "root": "SAY",
+  "v": null,
+  "via": "communication.n.02",
+  "steps": 6
+ },
+ "ambush": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 4
+ },
+ "aviation": {
+  "root": "PART",
+  "v": 5,
+  "via": "group.n.01",
+  "steps": 2
+ },
+ "boyfriend": {
+  "root": "SOMEONE",
+  "v": null,
+  "via": "person.n.01",
+  "steps": 2
+ },
+ "workshop": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 4
+ },
+ "entertainment": {
+  "root": "DO",
+  "v": null,
+  "via": "activity.n.01",
+  "steps": 2
+ },
+ "hamlet": {
+  "root": "PART",
+  "v": 5,
+  "via": "social_group.n.01",
+  "steps": 3
+ },
+ "reunification": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "statute": {
+  "root": "TEXT",
+  "v": null,
+  "via": "document.n.01",
+  "steps": 3
+ },
+ "graduation": {
+  "root": "DO",
+  "v": null,
+  "via": "act.n.02",
+  "steps": 6
+ },
+ "majors": {
+  "root": "RULE",
+  "v": 4,
+  "via": "organization.n.01",
+  "steps": 3
+ },
+ "island": null,
+ "battle": {
+  "root": "FIGHT",
+  "v": 5,
+  "via": "military_action.n.01",
+  "steps": 1
+ },
+ "hometown": {
+  "root": "PLACE",
+  "v": null,
+  "via": "location.n.01",
+  "steps": 6
+ },
+ "derby": null
+}
