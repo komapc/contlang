@@ -1,0 +1,502 @@
+[
+ {
+  "w": "helm",
+  "A": "LONG(=+2) SIDE(=+2) RULE(=+3) | o",
+  "N": "SIDE(=+2) BIG(=+4) LONG(=+2) | o"
+ },
+ {
+  "w": "malaria",
+  "A": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "N": "BODY GOOD(=-5) FIGHT(=+2) | o"
+ },
+ {
+  "w": "pianist",
+  "A": "ART(=+2) GOOD(=+2) THINK(=-2) | o",
+  "N": "ART(=+1) SOMEONE(=0) SAY(=-1) | o"
+ },
+ {
+  "w": "employee",
+  "A": "RULE(=-1) FRIEND(=+2) ART(=-4) | o",
+  "N": "SOMEONE(=0) RULE(=0) GIVE(=+2) | o"
+ },
+ {
+  "w": "resignation",
+  "A": "RULE(=+2) MOOD(=-2) GIVE(=+2) | o",
+  "N": "MOOD(=-3) WANT(=-5) THINK(=+5) | o"
+ },
+ {
+  "w": "revision",
+  "A": "CHANGE(=+2) TEXT CARE(=+1) | o",
+  "N": "CHANGE(=+1) TEXT RULE(=+3) | o"
+ },
+ {
+  "w": "consideration",
+  "A": "CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+  "N": "THINK(=+1) CARE(=+1) SAME(=-1) | o"
+ },
+ {
+  "w": "profit",
+  "A": "MEASURE(=+2) VALUE(=-1) GIVE(=+1) | o",
+  "N": "GIVE(=+2) VALUE(=-1) GOOD(=+1) | o"
+ },
+ {
+  "w": "relegation",
+  "A": "FIGHT(=-2) ABOVE(=-4) JOIN(=-3) | o",
+  "N": "FIGHT(=-2) ABOVE(=-3) JOIN(=-4) | o"
+ },
+ {
+  "w": "religion",
+  "A": "ART(=+3) RULE(=+2) FRIEND(=+2) | o",
+  "N": "RULE(=+2) ART(=+2) THINK(=-2) | o"
+ },
+ {
+  "w": "bubble",
+  "A": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o",
+  "N": "GRAIN(=-2) TOUCH(=-3) INSIDE(=+3) | o"
+ },
+ {
+  "w": "chapel",
+  "A": "INSIDE(=0) NEAR(=+5) ART(=+4) | o",
+  "N": "PLACE INSIDE(=+2) SAY(=-1) | o"
+ },
+ {
+  "w": "people",
+  "A": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "N": "SOMEONE(=-1) FRIEND(=+2) MANY(=+3) | o"
+ },
+ {
+  "w": "lake",
+  "A": "PLACE THING(=-1) HEAT(=-2) | o",
+  "N": "PLACE GRAIN(=-1) ABOVE(=0) | o"
+ },
+ {
+  "w": "topic",
+  "A": "TEXT THINK(=-1) PART(=0) | o",
+  "N": "KNOW(=0) PART(=-2) TEXT | o"
+ },
+ {
+  "w": "era",
+  "A": "TIME(=-2) BEGIN(=0) ART(=+1) | o",
+  "N": "TIME(=-1) | o"
+ },
+ {
+  "w": "donation",
+  "A": "GIVE(=+4) FRIEND(=+2) PART(=+1) | o",
+  "N": "GIVE(=+2) FRIEND(=+3) | o"
+ },
+ {
+  "w": "gate",
+  "A": "INSIDE(=-1) NEAR(=+3) LONG(=+2) | o",
+  "N": "INSIDE(=0) MOVE(=-2) PLACE | o"
+ },
+ {
+  "w": "homer",
+  "A": "FIGHT(=-2) SAY(=+5) LONG(=+5) | o",
+  "N": "FIGHT(=-3) LONG(=+2) SAY(=+4) | o"
+ },
+ {
+  "w": "coca",
+  "A": "GRAIN(=-2) CONSUME(=+5) HEAT(=-4) | o",
+  "N": "CONSUME(=+5) HEAT(=-3) FEEL(=+5) | o"
+ },
+ {
+  "w": "dose",
+  "A": "MEASURE(=0) PART(=-2) GIVE(=+1) | o",
+  "N": "MEASURE(=0) CONSUME(=+4) PART(=-2) | o"
+ },
+ {
+  "w": "reservoir",
+  "A": "THING(=-1) GRAIN(=-4) PLACE | o",
+  "N": "GRAIN(=-3) PLACE INSIDE(=+1) | o"
+ },
+ {
+  "w": "crater",
+  "A": "NEAR(=-1) THING(=-5) GRAIN(=-1) | o",
+  "N": "GRAIN(=+1) HEAT(=+4) PLACE | o"
+ },
+ {
+  "w": "businessman",
+  "A": "ART(=-1) TOUCH(=+5) VALUE(=-5) | o",
+  "N": "SOMEONE(=0) GIVE(=+2) VALUE(=-2) | o"
+ },
+ {
+  "w": "phase",
+  "A": "BEGIN(=-1) ART(=-1) PART(=0) | o",
+  "N": "BEGIN(=0) PART(=-2) CHANGE(=+1) | o"
+ },
+ {
+  "w": "labour",
+  "A": "MEASURE(=+1) CAN(=-5) ART(=-3) | o",
+  "N": "DO THINK(=+4) THING(=-1) | o"
+ },
+ {
+  "w": "airline",
+  "A": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o",
+  "N": "PART(=+5) VALUE(=-3) BEGIN(=+4) | o"
+ },
+ {
+  "w": "satisfaction",
+  "A": "WANT(=+3) BEGIN(=+4) MEASURE(=+2) | o",
+  "N": "FEEL(=+3) GOOD(=+5) THINK(=+2) | o"
+ },
+ {
+  "w": "yesterday",
+  "A": "TIME(=-1) SOMEONE(=+1) | o",
+  "N": "TIME(=0) NEAR(=+2) BIG(=-1) | o"
+ },
+ {
+  "w": "model",
+  "A": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+  "N": "THINK(=0) SAME(=+1) SOMEONE(=0) | o"
+ },
+ {
+  "w": "outlet",
+  "A": "NEAR(=+2) GRAIN(=-3) VALUE(=-4) | o",
+  "N": "INSIDE(=0) VALUE(=-3) GIVE(=+2) | o"
+ },
+ {
+  "w": "planet",
+  "A": "PLACE NEAR(=-5) PART(=0) | o",
+  "N": "MANY(=+2) NEAR(=-2) PART(=0) | o"
+ },
+ {
+  "w": "representation",
+  "A": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "N": "SEE PART(=+1) RULE(=+3) | o"
+ },
+ {
+  "w": "news",
+  "A": "TEXT TIME(=+1) MOOD(=-1) | o",
+  "N": "TEXT TIME(=+1) RULE(=+2) | o"
+ },
+ {
+  "w": "copyright",
+  "A": "TEXT SAME(=+4) ART(=+1) | o",
+  "N": "TEXT ART(=0) RULE(=+2) | o"
+ },
+ {
+  "w": "obstacle",
+  "A": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+  "N": "CAN(=0) JOIN(=-4) GRAIN(=+2) | o"
+ },
+ {
+  "w": "grief",
+  "A": "MOOD(=-2) | o",
+  "N": "MOOD(=-3) FEEL(=+1) | o"
+ },
+ {
+  "w": "lawmaker",
+  "A": "RULE(=+5) BIG(=-1) JOIN(=-1) | o",
+  "N": "RULE(=+3) SOMEONE(=0) SIDE(=+2) | o"
+ },
+ {
+  "w": "harm",
+  "A": "FRIEND(=-1) MANY(=-4) DO | o",
+  "N": "GOOD(=-2) DO | o"
+ },
+ {
+  "w": "spell",
+  "A": "DO HEAT(=-1) TEXT | o",
+  "N": "TEXT KNOW(=-5) ART(=-4) | o"
+ },
+ {
+  "w": "lawsuit",
+  "A": "RULE(=+3) FIGHT(=-1) HAPPEN | o",
+  "N": "HAPPEN THINK(=+4) RULE(=+5) | o"
+ },
+ {
+  "w": "lens",
+  "A": "SEE NEAR(=-3) ART(=-1) | o",
+  "N": "SEE LONG(=-1) CAN(=+3) | o"
+ },
+ {
+  "w": "testimony",
+  "A": "RULE(=+2) TEXT SEE | o",
+  "N": "THINK(=+2) SAY(=+1) SEE | o"
+ },
+ {
+  "w": "bowl",
+  "A": "FIGHT(=-2) LONG(=+3) PART(=-1) | o",
+  "N": "FIGHT(=-3) CONSUME(=+4) GRAIN(=0) | o"
+ },
+ {
+  "w": "pitcher",
+  "A": "FIGHT(=-2) LONG(=+4) CONSUME(=0) | o",
+  "N": "LONG(=+2) FIGHT(=-4) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "ally",
+  "A": "FRIEND(=+1) JOIN(=+3) TIME(=-2) | o",
+  "N": "FRIEND(=-1) JOIN(=+3) SOMEONE(=+1) | o"
+ },
+ {
+  "w": "contribution",
+  "A": "GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o",
+  "N": "GIVE(=+3) JOIN(=+3) FRIEND(=+3) | o"
+ },
+ {
+  "w": "guest",
+  "A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "N": "RULE(=-2) INSIDE(=+5) MOOD(=+5) | o"
+ },
+ {
+  "w": "expo",
+  "A": "ART(=0) FIGHT(=-4) PLACE | o",
+  "N": "HAPPEN GIVE(=+1) SEE | o"
+ },
+ {
+  "w": "regulation",
+  "A": "RULE(=+3) DO MEASURE(=0) | o",
+  "N": "RULE(=+2) | o"
+ },
+ {
+  "w": "list",
+  "A": "TEXT PART(=+5) SEE | o",
+  "N": "TEXT MEASURE(=-5) PART(=+4) | o"
+ },
+ {
+  "w": "existence",
+  "A": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "N": "MANY(=+1) THINK(=-2) CHANGE(=-3) | o"
+ },
+ {
+  "w": "fleet",
+  "A": "FIGHT(=+4) PART(=+5) LONG(=+3) | o",
+  "N": "PART(=+2) BIG(=+5) FIGHT(=+2) | o"
+ },
+ {
+  "w": "township",
+  "A": "PLACE THING(=0) RULE(=+2) | o",
+  "N": "PLACE MANY(=+2) | o"
+ },
+ {
+  "w": "bishop",
+  "A": "RULE(=+3) ART(=+2) MOVE(=+1) | o",
+  "N": "SOMEONE(=0) RULE(=+5) GIVE(=+3) | o"
+ },
+ {
+  "w": "activist",
+  "A": "LIVE(=+2) TIME(=-3) PART(=+3) | o",
+  "N": "SOMEONE(=0) SAY(=+5) FIGHT(=+1) | o"
+ },
+ {
+  "w": "order",
+  "A": "RULE(=+2) MOVE(=+1) WANT(=+4) | o",
+  "N": "RULE(=+2) MOVE(=+2) WANT(=+3) | o"
+ },
+ {
+  "w": "knight",
+  "A": "FIGHT(=+2) THING(=+4) TOUCH(=+4) | o",
+  "N": "SOMEONE(=+1) KNOW(=-4) FIGHT(=0) | o"
+ },
+ {
+  "w": "diplomacy",
+  "A": "FIGHT(=+1) ART(=+1) FRIEND(=+2) | o",
+  "N": "RULE(=+2) FIGHT(=+1) ART(=-1) | o"
+ },
+ {
+  "w": "bronze",
+  "A": "GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o",
+  "N": "TOUCH(=+4) FIGHT(=+4) GOOD(=+4) | o"
+ },
+ {
+  "w": "occupation",
+  "A": "PLACE FIGHT(=+4) RULE(=-2) | o",
+  "N": "FIGHT(=+2) DO SOMEONE(=0) | o"
+ },
+ {
+  "w": "athletics",
+  "A": "FIGHT(=-3) MOVE(=+1) RULE(=0) | o",
+  "N": "FIGHT(=-4) KNOW(=+1) RULE(=+2) | o"
+ },
+ {
+  "w": "piece",
+  "A": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "N": "PART(=-1) GRAIN(=+2) TEXT | o"
+ },
+ {
+  "w": "anode",
+  "A": "LONG(=0) ART(=-5) INSIDE(=-4) | o",
+  "N": "LONG(=+1) GRAIN(=-5) PART(=-4) | o"
+ },
+ {
+  "w": "quantum",
+  "A": "ART(=-2) PART(=-2) MEASURE(=0) | o",
+  "N": "ART(=-3) PART(=-3) KNOW(=-1) | o"
+ },
+ {
+  "w": "fist",
+  "A": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "N": "TOUCH(=+2) BODY | o"
+ },
+ {
+  "w": "reservation",
+  "A": "PLACE GIVE(=+4) MOVE(=0) | o",
+  "N": "PLACE PART(=+3) THINK(=+3) | o"
+ },
+ {
+  "w": "campus",
+  "A": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "N": "PLACE KNOW(=+1) ABOVE(=+3) | o"
+ },
+ {
+  "w": "flame",
+  "A": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "N": "HEAT(=+4) GRAIN(=-1) | o"
+ },
+ {
+  "w": "privilege",
+  "A": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "N": "RULE(=+2) GOOD(=+2) WANT(=0) | o"
+ },
+ {
+  "w": "sequence",
+  "A": "BEGIN(=-1) LONG(=-1) HAPPEN | o",
+  "N": "BEGIN(=0) PART(=-1) ART(=0) | o"
+ },
+ {
+  "w": "ratio",
+  "A": "MEASURE(=+1) | o",
+  "N": "MEASURE(=0) | o"
+ },
+ {
+  "w": "rest",
+  "A": "MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o",
+  "N": "FEEL(=-3) MOVE(=-3) BEGIN(=+2) | o"
+ },
+ {
+  "w": "ankle",
+  "A": "BODY | o",
+  "N": "BODY ABOVE(=-2) LONG(=-2) | o"
+ },
+ {
+  "w": "discussion",
+  "A": "THINK(=-1) RULE(=-1) TEXT | o",
+  "N": "SAY(=0) THINK(=+1) HAPPEN | o"
+ },
+ {
+  "w": "road",
+  "A": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "N": "PLACE LONG(=+2) SIDE(=+2) | o"
+ },
+ {
+  "w": "driver",
+  "A": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "N": "SOMEONE(=0) ART(=-3) SIDE(=+1) | o"
+ },
+ {
+  "w": "friend",
+  "A": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o",
+  "N": "FRIEND(=+1) SOMEONE(=+3) NEAR(=0) | o"
+ },
+ {
+  "w": "integration",
+  "A": "JOIN(=+2) ART(=-2) GRAIN(=+2) | o",
+  "N": "JOIN(=+1) ART(=-1) SAME(=-2) | o"
+ },
+ {
+  "w": "bachelor",
+  "A": "BEGIN(=+2) SEX(=+3) ART(=-1) | o",
+  "N": "ART(=-1) BEGIN(=+1) MOOD(=0) | o"
+ },
+ {
+  "w": "overtime",
+  "A": "FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+  "N": "FIGHT(=-2) BEGIN(=+4) DO | o"
+ },
+ {
+  "w": "atmosphere",
+  "A": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "N": "INSIDE(=+1) GRAIN(=-2) FEEL(=-1) | o"
+ },
+ {
+  "w": "stomach",
+  "A": "BODY CONSUME(=0) FEEL(=-1) | o",
+  "N": "BODY CONSUME(=+1) FEEL(=0) | o"
+ },
+ {
+  "w": "autumn",
+  "A": "HEAT(=-1) TIME(=+1) BEGIN(=0) | o",
+  "N": "TIME(=+1) GIVE(=-1) HEAT(=0) | o"
+ },
+ {
+  "w": "post",
+  "A": "LONG(=+2) TIME(=-1) TEXT | o",
+  "N": "TEXT LONG(=+2) TIME(=0) | o"
+ },
+ {
+  "w": "lion",
+  "A": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "N": "THING(=+2) BIG(=+1) FRIEND(=+2) | o"
+ },
+ {
+  "w": "playoff",
+  "A": "FIGHT(=-2) BEGIN(=+2) | o",
+  "N": "FIGHT(=-3) BEGIN(=+2) | o"
+ },
+ {
+  "w": "brokerage",
+  "A": "RULE(=0) MEASURE(=+4) VALUE(=-4) | o",
+  "N": "GIVE(=+2) RULE(=0) VALUE(=-1) | o"
+ },
+ {
+  "w": "acre",
+  "A": "PLACE THING(=-1) MEASURE(=0) | o",
+  "N": "PLACE MEASURE(=0) GRAIN(=+2) | o"
+ },
+ {
+  "w": "competitiveness",
+  "A": "FIGHT(=-3) MEASURE(=+1) LIVE(=+3) | o",
+  "N": "FIGHT(=-2) RULE(=0) MEASURE(=+2) | o"
+ },
+ {
+  "w": "ideology",
+  "A": "ART(=+2) RULE(=+2) FRIEND(=-1) | o",
+  "N": "THINK(=0) ART(=+1) RULE(=+1) | o"
+ },
+ {
+  "w": "cake",
+  "A": "GRAIN(=+3) CONSUME(=+5) TOUCH(=-5) | o",
+  "N": "GRAIN(=+2) CONSUME(=+4) MOOD(=+1) | o"
+ },
+ {
+  "w": "pickup",
+  "A": "LONG(=+3) ART(=-2) THING(=0) | o",
+  "N": "THING(=-2) GIVE(=-2) LONG(=+3) | o"
+ },
+ {
+  "w": "argentine",
+  "A": "THING(=0) RULE(=-2) TIME(=-1) | o",
+  "N": "TIME(=-1) TOUCH(=+5) HEAT(=+5) | o"
+ },
+ {
+  "w": "prisoner",
+  "A": "RULE(=+2) FIGHT(=+4) LIVE(=0) | o",
+  "N": "MOVE(=-3) RULE(=+3) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "atom",
+  "A": "PART(=-3) SAME(=+1) ART(=-2) | o",
+  "N": "PART(=-3) THING(=-4) ART(=-3) | o"
+ },
+ {
+  "w": "door",
+  "A": "INSIDE(=0) LONG(=+2) SIDE(=+1) | o",
+  "N": "INSIDE(=+1) SIDE(=0) PLACE | o"
+ },
+ {
+  "w": "gambling",
+  "A": "FIGHT(=-2) GRAIN(=-2) THINK(=-1) | o",
+  "N": "FIGHT(=-3) MANY(=+1) THINK(=0) | o"
+ },
+ {
+  "w": "folklore",
+  "A": "ART(=+5) RULE(=-1) CONSUME(=+2) | o",
+  "N": "ART(=+2) KNOW(=-3) TIME(=-2) | o"
+ },
+ {
+  "w": "hybrid",
+  "A": "SAME(=-1) ART(=-3) THING(=+2) | o",
+  "N": "SAME(=0) THING(=+2) TOUCH(=0) | o"
+ }
+]
