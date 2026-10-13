@@ -3,3 +3,4 @@ data/raw/
 __pycache__/
 *.pyc
 worker/.wrangler/
+data/eval/runs/reader/vec.npz

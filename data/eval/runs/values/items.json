@@ -1,0 +1,902 @@
+[
+ {
+  "w": "helm",
+  "H": "MOVE SIDE | o tool",
+  "SZ": "ART(=-5) SIDE(=+5) LONG(=+5) | o",
+  "Hc": "MOVE SIDE | o tool",
+  "SZp": "ART SIDE LONG | o",
+  "SZc": "ART(=-5) SIDE LONG(=+5) | o",
+  "SZcR": "ART(=-5) SIDE LONG(=+5) | o tool"
+ },
+ {
+  "w": "malaria",
+  "H": "BODY GOOD(=-5) HEAT(=+5) | o",
+  "SZ": "BODY GOOD(=-5) | o",
+  "Hc": "BODY GOOD(=-5) HEAT(=+5) | o",
+  "SZp": "BODY GOOD | o",
+  "SZc": "BODY GOOD(=-5) | o",
+  "SZcR": "BODY GOOD(=-5) | o"
+ },
+ {
+  "w": "pianist",
+  "H": "SAY ART | o agent",
+  "SZ": "SOMEONE ART(=+5) | o",
+  "Hc": "SAY ART(=+5) | o agent",
+  "SZp": "SOMEONE ART | o",
+  "SZc": "SOMEONE ART(=+5) | o",
+  "SZcR": "SOMEONE ART(=+5) | o"
+ },
+ {
+  "w": "employee",
+  "H": "DO RULE(=+4) | o agent",
+  "SZ": "SOMEONE RULE(=-5) ART(=-5) | o",
+  "Hc": "DO RULE(=-5) | o agent",
+  "SZp": "SOMEONE RULE ART | o",
+  "SZc": "SOMEONE RULE(=-5) ART(=-5) | o",
+  "SZcR": "SOMEONE RULE(=-5) ART(=-5) | o"
+ },
+ {
+  "w": "resignation",
+  "H": "CONSUME(=+5) MOOD(=-5) | o",
+  "SZ": "FEEL MOOD(=-5) | o",
+  "Hc": "CONSUME MOOD(=-5) | o",
+  "SZp": "FEEL MOOD | o",
+  "SZc": "FEEL MOOD(=-5) | o",
+  "SZcR": "FEEL MOOD(=-5) | o"
+ },
+ {
+  "w": "revision",
+  "H": "THINK CHANGE | o",
+  "SZ": "DO TEXT CHANGE(=+5) | o",
+  "Hc": "THINK CHANGE(=+5) | o",
+  "SZp": "DO TEXT CHANGE | o",
+  "SZc": "DO TEXT CHANGE(=+5) | o",
+  "SZcR": "DO TEXT CHANGE(=+5) | o"
+ },
+ {
+  "w": "consideration",
+  "H": "THINK CARE(=+5) | o",
+  "SZ": "THINK CARE(=+5) CAN(=+5) | o",
+  "Hc": "THINK(=-5) CARE(=+5) | o",
+  "SZp": "THINK CARE CAN | o",
+  "SZc": "THINK CARE(=+5) CAN(=+5) | o",
+  "SZcR": "THINK CARE(=+5) CAN(=+5) | o"
+ },
+ {
+  "w": "profit",
+  "H": "JOIN(=+5) VALUE | o result",
+  "SZ": "VALUE MEASURE(=+5) | o",
+  "Hc": "JOIN(=+5) VALUE(=+5) | o result",
+  "SZp": "VALUE MEASURE | o",
+  "SZc": "VALUE MEASURE(=+5) | o",
+  "SZcR": "VALUE MEASURE(=+5) | o"
+ },
+ {
+  "w": "relegation",
+  "H": "GIVE(=+5) RULE(=+4) | o",
+  "SZ": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
+  "Hc": "GIVE RULE | o",
+  "SZp": "HAPPEN ABOVE JOIN | o",
+  "SZc": "HAPPEN ABOVE(=-5) JOIN(=-5) | o",
+  "SZcR": "HAPPEN ABOVE(=-5) JOIN(=-5) | o"
+ },
+ {
+  "w": "religion",
+  "H": "KNOW(=+5) RULE(=+4) ABOVE(=+5) | o",
+  "SZ": "THINK ART(=+5) | o",
+  "Hc": "KNOW RULE(=+5) ABOVE | o",
+  "SZp": "THINK ART | o",
+  "SZc": "THINK ART(=+5) | o",
+  "SZcR": "THINK ART(=+5) | o"
+ },
+ {
+  "w": "bubble",
+  "H": "GRAIN(=-5) INSIDE(=+5) | o",
+  "SZ": "GRAIN(=-5) TOUCH(=-5) HEAT(=+5) | o",
+  "Hc": "GRAIN(=-5) INSIDE(=+5) | o",
+  "SZp": "GRAIN TOUCH HEAT | o",
+  "SZc": "GRAIN(=-5) TOUCH(=-5) HEAT | o",
+  "SZcR": "GRAIN(=-5) TOUCH(=-5) HEAT | o"
+ },
+ {
+  "w": "chapel",
+  "H": "PLACE KNOW(=+5) ABOVE(=+5) | o",
+  "SZ": "PLACE NEAR(=+5) INSIDE | o",
+  "Hc": "PLACE KNOW ABOVE | o",
+  "SZp": "PLACE NEAR INSIDE | o",
+  "SZc": "PLACE NEAR(=+5) INSIDE | o",
+  "SZcR": "PLACE NEAR(=+5) INSIDE | o"
+ },
+ {
+  "w": "people",
+  "H": "SOMEONE | o N+3",
+  "SZ": "SOMEONE MANY(=+5) PART(=+5) | o",
+  "Hc": "SOMEONE(=+5) | o N+3",
+  "SZp": "SOMEONE MANY PART | o",
+  "SZc": "SOMEONE MANY(=+5) PART(=+5) | o",
+  "SZcR": "SOMEONE MANY(=+5) PART(=+5) | o"
+ },
+ {
+  "w": "lake",
+  "H": "PLACE GRAIN(=-3) | o",
+  "SZ": "GRAIN(=-3) THING(=-5) PLACE | o",
+  "Hc": "PLACE GRAIN(=-5) | o",
+  "SZp": "GRAIN THING PLACE | o",
+  "SZc": "GRAIN(=-3) THING(=-5) PLACE | o",
+  "SZcR": "GRAIN(=-3) THING(=-5) PLACE | o"
+ },
+ {
+  "w": "topic",
+  "H": "SAY | o result",
+  "SZ": "SAY TEXT | o",
+  "Hc": "SAY | o result",
+  "SZp": "SAY TEXT | o",
+  "SZc": "SAY TEXT | o",
+  "SZcR": "SAY TEXT | o"
+ },
+ {
+  "w": "era",
+  "H": "TIME BIG(=+5) | o",
+  "SZ": "TIME BEGIN | o",
+  "Hc": "TIME(=-5) BIG | o",
+  "SZp": "TIME BEGIN | o",
+  "SZc": "TIME BEGIN | o",
+  "SZcR": "TIME BEGIN | o"
+ },
+ {
+  "w": "donation",
+  "H": "GIVE(=+5) | o result",
+  "SZ": "GIVE(=+5) FRIEND(=+5) | o",
+  "Hc": "GIVE(=+5) | o result",
+  "SZp": "GIVE FRIEND | o",
+  "SZc": "GIVE(=+5) FRIEND(=+5) | o",
+  "SZcR": "GIVE(=+5) FRIEND(=+5) | o"
+ },
+ {
+  "w": "gate",
+  "H": "JOIN(=-5) MOVE | o tool",
+  "SZ": "PLACE INSIDE(=-5) SIDE | o",
+  "Hc": "JOIN(=+5) MOVE | o tool",
+  "SZp": "PLACE INSIDE SIDE | o",
+  "SZc": "PLACE INSIDE(=-5) SIDE(=+5) | o",
+  "SZcR": "PLACE INSIDE(=-5) SIDE(=+5) | o"
+ },
+ {
+  "w": "homer",
+  "H": "HAPPEN GOOD(=+4) | o PI FIGHT(=-5) | o",
+  "SZ": "DO SAY(=+5) LONG(=+5) | o",
+  "Hc": "HAPPEN GOOD | o PI FIGHT(=-5) | o",
+  "SZp": "DO SAY LONG | o",
+  "SZc": "DO SAY(=+5) LONG(=+5) | o",
+  "SZcR": "DO SAY(=+5) LONG(=+5) | o"
+ },
+ {
+  "w": "coca",
+  "H": "THING(=0) CONSUME(=+5) FEEL(=+5) | o",
+  "SZ": "THING(=0) CONSUME(=+5) | o",
+  "Hc": "THING CONSUME(=+5) FEEL | o",
+  "SZp": "THING(=0) CONSUME | o",
+  "SZc": "THING(=0) CONSUME(=+5) | o",
+  "SZcR": "THING(=0) CONSUME(=+5) | o"
+ },
+ {
+  "w": "dose",
+  "H": "MEASURE(=-5) CONSUME(=+5) | o",
+  "SZ": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+  "Hc": "MEASURE CONSUME(=+5) | o",
+  "SZp": "MEASURE PART CONSUME | o",
+  "SZc": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o",
+  "SZcR": "MEASURE(=-5) PART(=-5) CONSUME(=+5) | o"
+ },
+ {
+  "w": "reservoir",
+  "H": "MANY(=+3) INSIDE(=+5) | o",
+  "SZ": "MEASURE THING(=-5) GRAIN(=-5) | o",
+  "Hc": "MANY INSIDE | o",
+  "SZp": "MEASURE THING GRAIN | o",
+  "SZc": "MEASURE THING(=-5) GRAIN(=-5) | o",
+  "SZcR": "MEASURE THING(=-5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "crater",
+  "H": "PLACE INSIDE(=+5) ABOVE(=+5) | o",
+  "SZ": "PLACE THING(=-5) LONG(=+5) | o",
+  "Hc": "PLACE INSIDE ABOVE | o",
+  "SZp": "PLACE THING LONG | o",
+  "SZc": "PLACE THING(=-5) LONG(=+5) | o",
+  "SZcR": "PLACE THING(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "businessman",
+  "H": "GIVE(=0) VALUE | o agent",
+  "SZ": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+  "Hc": "GIVE VALUE(=-5) | o agent",
+  "SZp": "SOMEONE TOUCH VALUE | o",
+  "SZc": "SOMEONE TOUCH(=+5) VALUE(=-5) | o",
+  "SZcR": "SOMEONE TOUCH(=+5) VALUE(=-5) | o"
+ },
+ {
+  "w": "phase",
+  "H": "TIME PART(=-2) | o",
+  "SZ": "TIME BEGIN(=-5) | o",
+  "Hc": "TIME PART(=-5) | o",
+  "SZp": "TIME BEGIN | o",
+  "SZc": "TIME BEGIN(=-5) | o",
+  "SZcR": "TIME BEGIN(=-5) | o"
+ },
+ {
+  "w": "labour",
+  "H": "SOMEONE PART(=+5) DO | o",
+  "SZ": "SOMEONE CAN(=-5) | o",
+  "Hc": "SOMEONE PART DO | o",
+  "SZp": "SOMEONE CAN | o",
+  "SZc": "SOMEONE CAN(=-5) | o",
+  "SZcR": "SOMEONE CAN(=-5) | o"
+ },
+ {
+  "w": "airline",
+  "H": "LONG(=-5) GRAIN(=-5) | o",
+  "SZ": "GRAIN(=-5) NEAR(=-5) | o",
+  "Hc": "LONG GRAIN(=-5) | o",
+  "SZp": "GRAIN NEAR | o",
+  "SZc": "GRAIN(=-5) NEAR(=-5) | o",
+  "SZcR": "GRAIN(=-5) NEAR(=-5) | o"
+ },
+ {
+  "w": "satisfaction",
+  "H": "WANT BEGIN(=+5) MOOD(=+3) | o quality",
+  "SZ": "FEEL WANT(=+5) BEGIN(=+5) | o",
+  "Hc": "WANT(=+5) BEGIN(=+5) MOOD | o quality",
+  "SZp": "FEEL WANT BEGIN | o",
+  "SZc": "FEEL WANT(=+5) BEGIN(=+5) | o",
+  "SZcR": "FEEL WANT(=+5) BEGIN(=+5) | o"
+ },
+ {
+  "w": "yesterday",
+  "H": "TIME(=-1) PART(=-2) | o",
+  "SZ": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+  "Hc": "TIME(=-5) PART | o",
+  "SZp": "MEASURE TIME SOMEONE | o",
+  "SZc": "MEASURE TIME(=-5) SOMEONE(=+5) | o",
+  "SZcR": "MEASURE TIME(=-5) SOMEONE(=+5) | o"
+ },
+ {
+  "w": "model",
+  "H": "THINK KNOW(=-3) | o result",
+  "SZ": "THINK ART(=-5) SAME(=+5) | o",
+  "Hc": "THINK KNOW | o result",
+  "SZp": "THINK ART SAME | o",
+  "SZc": "THINK ART(=+5) SAME | o",
+  "SZcR": "THINK ART(=+5) SAME | o"
+ },
+ {
+  "w": "outlet",
+  "H": "PLACE GIVE(=0) VALUE | o",
+  "SZ": "PLACE VALUE(=-5) NEAR(=+5) | o",
+  "Hc": "PLACE GIVE VALUE(=-5) | o",
+  "SZp": "PLACE VALUE NEAR | o",
+  "SZc": "PLACE VALUE(=-5) NEAR(=+5) | o",
+  "SZcR": "PLACE VALUE(=-5) NEAR(=+5) | o"
+ },
+ {
+  "w": "planet",
+  "H": "BIG(=+5) THING(=-5) ABOVE(=+5) | o",
+  "SZ": "NEAR(=-5) PLACE PART(=-5) | o",
+  "Hc": "BIG(=+5) THING ABOVE(=+5) | o",
+  "SZp": "NEAR PLACE PART | o",
+  "SZc": "NEAR(=-5) PLACE PART(=-5) | o",
+  "SZcR": "NEAR(=-5) PLACE PART(=-5) | o"
+ },
+ {
+  "w": "representation",
+  "H": "SEE | o result",
+  "SZ": "THINK GRAIN(=+5) | o",
+  "Hc": "SEE | o result",
+  "SZp": "THINK GRAIN | o",
+  "SZc": "THINK GRAIN(=+5) | o",
+  "SZcR": "THINK GRAIN(=+5) | o"
+ },
+ {
+  "w": "news",
+  "H": "SAY HAPPEN TIME(=-1) | o",
+  "SZ": "SAY TEXT TIME(=+5) | o",
+  "Hc": "SAY HAPPEN TIME(=-5) | o",
+  "SZp": "SAY TEXT TIME | o",
+  "SZc": "SAY TEXT TIME(=-5) | o",
+  "SZcR": "SAY TEXT TIME(=-5) | o"
+ },
+ {
+  "w": "copyright",
+  "H": "TEXT RULE(=+5) CAN(=+5) | o",
+  "SZ": "TEXT SAME(=+5) | o",
+  "Hc": "TEXT RULE CAN | o",
+  "SZp": "TEXT SAME | o",
+  "SZc": "TEXT SAME(=+5) | o",
+  "SZcR": "TEXT SAME(=+5) | o"
+ },
+ {
+  "w": "obstacle",
+  "H": "CAN(=-3) MOVE | o agent",
+  "SZ": "THINK CAN(=-5) THING(=-5) | o",
+  "Hc": "CAN(=-5) MOVE(=-5) | o agent",
+  "SZp": "THINK CAN THING | o",
+  "SZc": "THINK CAN(=-5) THING(=-5) | o",
+  "SZcR": "THINK CAN(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "grief",
+  "H": "MOOD(=-5) FEEL(=+5) | o",
+  "SZ": "FEEL MOOD(=-5) LIVE(=-5) | o",
+  "Hc": "MOOD(=-5) FEEL(=+5) | o",
+  "SZp": "FEEL MOOD LIVE | o",
+  "SZc": "FEEL MOOD(=-5) LIVE(=-5) | o",
+  "SZcR": "FEEL MOOD(=-5) LIVE(=-5) | o"
+ },
+ {
+  "w": "lawmaker",
+  "H": "TEXT RULE(=+5) | o agent",
+  "SZ": "SOMEONE RULE(=+5) | o",
+  "Hc": "TEXT RULE(=+5) | o agent",
+  "SZp": "SOMEONE RULE | o",
+  "SZc": "SOMEONE RULE(=+5) | o",
+  "SZcR": "SOMEONE RULE(=+5) | o"
+ },
+ {
+  "w": "harm",
+  "H": "CHANGE GOOD(=-4) BODY | o result",
+  "SZ": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+  "Hc": "CHANGE GOOD(=-5) BODY | o result",
+  "SZp": "FRIEND MANY FEEL | o",
+  "SZc": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o",
+  "SZcR": "FRIEND(=-5) MANY(=-5) FEEL(=-5) | o"
+ },
+ {
+  "w": "spell",
+  "H": "SAY DO CHANGE | o result",
+  "SZ": "HEAT(=-5) ABOVE(=-5) | o",
+  "Hc": "SAY DO CHANGE | o result",
+  "SZp": "HEAT ABOVE | o",
+  "SZc": "HEAT(=-5) ABOVE(=-5) | o",
+  "SZcR": "HEAT(=-5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "lawsuit",
+  "H": "FIGHT RULE(=+5) | o",
+  "SZ": "HAPPEN RULE(=+5) | o",
+  "Hc": "FIGHT RULE(=+5) | o",
+  "SZp": "HAPPEN RULE | o",
+  "SZc": "HAPPEN RULE(=+5) | o",
+  "SZcR": "HAPPEN RULE(=+5) | o"
+ },
+ {
+  "w": "lens",
+  "H": "SEE | o tool",
+  "SZ": "ART(=-5) SEE NEAR(=-5) | o",
+  "Hc": "SEE | o tool",
+  "SZp": "ART SEE NEAR | o",
+  "SZc": "ART(=-5) SEE NEAR(=-5) | o",
+  "SZcR": "ART(=-5) SEE NEAR(=-5) | o tool"
+ },
+ {
+  "w": "testimony",
+  "H": "SAY RULE(=+5) | o result",
+  "SZ": "SAY SEE TEXT | o",
+  "Hc": "SAY RULE(=+5) | o result",
+  "SZp": "SAY SEE TEXT | o",
+  "SZc": "SAY SEE TEXT | o",
+  "SZcR": "SAY SEE TEXT | o"
+ },
+ {
+  "w": "bowl",
+  "H": "INSIDE THING | o",
+  "SZ": "INSIDE(=+5) TOUCH(=-5) PART(=-5) | o",
+  "Hc": "INSIDE THING | o",
+  "SZp": "INSIDE TOUCH PART | o",
+  "SZc": "INSIDE(=+5) TOUCH(=-5) PART | o",
+  "SZcR": "INSIDE(=+5) TOUCH(=-5) PART | o tool"
+ },
+ {
+  "w": "pitcher",
+  "H": "GIVE FIGHT(=-5) | o agent",
+  "SZ": "SOMEONE LONG(=+5) FIGHT(=-5) | o",
+  "Hc": "GIVE FIGHT(=-5) | o agent",
+  "SZp": "SOMEONE LONG FIGHT | o",
+  "SZc": "SOMEONE LONG(=+5) FIGHT(=-5) | o",
+  "SZcR": "SOMEONE LONG(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "ally",
+  "H": "FRIEND JOIN | o",
+  "SZ": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+  "Hc": "FRIEND(=+5) JOIN(=+5) | o",
+  "SZp": "RULE FRIEND JOIN | o",
+  "SZc": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o",
+  "SZcR": "RULE(=+4) FRIEND(=+5) JOIN(=+5) | o"
+ },
+ {
+  "w": "contribution",
+  "H": "PART(=-2) HAPPEN | o result",
+  "SZ": "DO GIVE(=+5) GOOD(=+5) | o",
+  "Hc": "PART(=-5) HAPPEN | o result",
+  "SZp": "DO GIVE GOOD | o",
+  "SZc": "DO GIVE(=+5) GOOD(=+5) | o",
+  "SZcR": "DO GIVE(=+5) GOOD(=+5) | o"
+ },
+ {
+  "w": "guest",
+  "H": "SOMEONE(=-5) NEAR(=+5) | o",
+  "SZ": "SOMEONE RULE(=-5) MOOD(=+5) | o",
+  "Hc": "SOMEONE NEAR | o",
+  "SZp": "SOMEONE RULE MOOD | o",
+  "SZc": "SOMEONE RULE(=+5) MOOD(=+5) | o",
+  "SZcR": "SOMEONE RULE(=+5) MOOD(=+5) | o"
+ },
+ {
+  "w": "expo",
+  "H": "PLACE SEE | o",
+  "SZ": "PART(=+5) FIGHT(=-5) | o",
+  "Hc": "PLACE SEE | o",
+  "SZp": "PART FIGHT | o",
+  "SZc": "PART(=+5) FIGHT(=-5) | o",
+  "SZcR": "PART(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "regulation",
+  "H": "RULE(=+4) | o",
+  "SZ": "SAY RULE(=+5) ABOVE(=-5) | o",
+  "Hc": "RULE(=+5) | o",
+  "SZp": "SAY RULE ABOVE | o",
+  "SZc": "SAY RULE(=+5) ABOVE(=-5) | o",
+  "SZcR": "SAY RULE(=+5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "list",
+  "H": "TEXT PART(=+5) | o",
+  "SZ": "SAY TEXT PART(=+5) | o",
+  "Hc": "TEXT PART(=+5) | o",
+  "SZp": "SAY TEXT PART | o",
+  "SZc": "SAY TEXT PART(=+5) | o",
+  "SZcR": "SAY TEXT PART(=+5) | o"
+ },
+ {
+  "w": "existence",
+  "H": "LIVE | o quality",
+  "SZ": "LIVE MOVE(=-5) MANY(=-5) | o",
+  "Hc": "LIVE(=+5) | o quality",
+  "SZp": "LIVE MOVE MANY | o",
+  "SZc": "LIVE MOVE(=-5) MANY(=-5) | o",
+  "SZcR": "LIVE MOVE(=-5) MANY(=-5) | o"
+ },
+ {
+  "w": "fleet",
+  "H": "PART(=+5) ABOVE MOVE | o",
+  "SZ": "PART(=+5) FIGHT(=+5) | o",
+  "Hc": "PART(=+5) ABOVE MOVE | o",
+  "SZp": "PART FIGHT | o",
+  "SZc": "PART(=+5) FIGHT(=+5) | o",
+  "SZcR": "PART(=+5) FIGHT(=+5) | o"
+ },
+ {
+  "w": "township",
+  "H": "PLACE PART(=-2) RULE(=+4) | o",
+  "SZ": "PLACE NEAR(=+5) | o",
+  "Hc": "PLACE PART RULE | o",
+  "SZp": "PLACE NEAR | o",
+  "SZc": "PLACE NEAR(=+5) | o",
+  "SZcR": "PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "bishop",
+  "H": "RULE(=+4) SEE | o agent",
+  "SZ": "SOMEONE RULE(=+5) | o",
+  "Hc": "RULE(=+5) SEE | o agent",
+  "SZp": "SOMEONE RULE | o",
+  "SZc": "SOMEONE RULE(=+5) | o",
+  "SZcR": "SOMEONE RULE(=+5) | o"
+ },
+ {
+  "w": "activist",
+  "H": "CHANGE FIGHT(=+5) | o agent",
+  "SZ": "SOMEONE TOUCH(=+5) | o",
+  "Hc": "CHANGE FIGHT | o agent",
+  "SZp": "SOMEONE TOUCH | o",
+  "SZc": "SOMEONE TOUCH(=+5) | o",
+  "SZcR": "SOMEONE TOUCH(=+5) | o"
+ },
+ {
+  "w": "order",
+  "H": "SAY(=+5) RULE(=+4) | o result",
+  "SZ": "DO WANT(=+5) THINK(=+5) | o",
+  "Hc": "SAY(=+5) RULE(=+5) | o result",
+  "SZp": "DO WANT THINK | o",
+  "SZc": "DO WANT(=+5) THINK(=+5) | o",
+  "SZcR": "DO WANT(=+5) THINK(=+5) | o"
+ },
+ {
+  "w": "knight",
+  "H": "FIGHT(=+5) RULE(=+4) | o agent",
+  "SZ": "SOMEONE THING(=+4) VALUE(=+5) | o",
+  "Hc": "FIGHT RULE | o agent",
+  "SZp": "SOMEONE THING VALUE | o",
+  "SZc": "SOMEONE THING(=+5) VALUE(=+5) | o",
+  "SZcR": "SOMEONE THING(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "diplomacy",
+  "H": "SAY RULE(=+4) PART(=+5) | o",
+  "SZ": "SAY(=0) FRIEND FIGHT(=+5) | o",
+  "Hc": "SAY RULE PART | o",
+  "SZp": "SAY(=0) FRIEND FIGHT | o",
+  "SZc": "SAY(=0) FRIEND(=+5) FIGHT(=-5) | o",
+  "SZcR": "SAY(=0) FRIEND(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "bronze",
+  "H": "TOUCH(=+5) JOIN | o",
+  "SZ": "GRAIN THING(=-5) | o",
+  "Hc": "TOUCH JOIN | o",
+  "SZp": "GRAIN THING | o",
+  "SZc": "GRAIN THING | o",
+  "SZcR": "GRAIN THING | o"
+ },
+ {
+  "w": "occupation",
+  "H": "DO VALUE | o",
+  "SZ": "DO FIGHT(=+5) FRIEND(=-5) | o",
+  "Hc": "DO VALUE | o",
+  "SZp": "DO FIGHT FRIEND | o",
+  "SZc": "DO FIGHT(=-5) FRIEND(=-5) | o",
+  "SZcR": "DO FIGHT(=-5) FRIEND(=-5) | o"
+ },
+ {
+  "w": "athletics",
+  "H": "FIGHT(=-5) MOVE | o",
+  "SZ": "FIGHT(=-5) MOVE(=+5) | o",
+  "Hc": "FIGHT(=-5) MOVE(=+5) | o",
+  "SZp": "FIGHT MOVE | o",
+  "SZc": "FIGHT(=-5) MOVE(=+5) | o",
+  "SZcR": "FIGHT(=-5) MOVE(=+5) | o"
+ },
+ {
+  "w": "piece",
+  "H": "PART(=-2) | o",
+  "SZ": "PART(=-5) GRAIN(=+5) LONG(=-5) | o",
+  "Hc": "PART(=-5) | o",
+  "SZp": "PART GRAIN LONG | o",
+  "SZc": "PART(=-5) GRAIN(=+5) LONG(=+5) | o",
+  "SZcR": "PART(=-5) GRAIN(=+5) LONG(=+5) | o"
+ },
+ {
+  "w": "anode",
+  "H": "ART(=-5) GIVE(=+5) | o",
+  "SZ": "ART(=-5) INSIDE(=-5) LONG | o",
+  "Hc": "ART(=-5) GIVE | o",
+  "SZp": "ART INSIDE LONG | o",
+  "SZc": "ART(=-5) INSIDE(=-5) LONG | o",
+  "SZcR": "ART(=-5) INSIDE(=-5) LONG | o tool"
+ },
+ {
+  "w": "quantum",
+  "H": "MEASURE PART(=-5) | o",
+  "SZ": "THINK ART(=-5) PART(=-5) | o",
+  "Hc": "MEASURE(=-5) PART(=-5) | o",
+  "SZp": "THINK ART PART | o",
+  "SZc": "THINK ART(=-5) PART(=-5) | o",
+  "SZcR": "THINK ART(=-5) PART(=-5) | o"
+ },
+ {
+  "w": "fist",
+  "H": "BODY TOUCH(=+5) | o",
+  "SZ": "BODY SAY(=+5) GIVE(=-5) | o",
+  "Hc": "BODY TOUCH | o",
+  "SZp": "BODY SAY GIVE | o",
+  "SZc": "BODY SAY(=+5) GIVE(=-5) | o",
+  "SZcR": "BODY SAY(=+5) GIVE(=-5) | o"
+ },
+ {
+  "w": "reservation",
+  "H": "PLACE RULE(=+4) | o",
+  "SZ": "PLACE GIVE(=+5) | o",
+  "Hc": "PLACE RULE | o",
+  "SZp": "PLACE GIVE | o",
+  "SZc": "PLACE GIVE(=+5) | o",
+  "SZcR": "PLACE GIVE(=+5) | o"
+ },
+ {
+  "w": "campus",
+  "H": "PLACE KNOW(=+5) | o",
+  "SZ": "PLACE ABOVE(=+5) NEAR(=+5) | o",
+  "Hc": "PLACE KNOW | o",
+  "SZp": "PLACE ABOVE NEAR | o",
+  "SZc": "PLACE ABOVE(=+5) NEAR(=+5) | o",
+  "SZcR": "PLACE ABOVE(=+5) NEAR(=+5) | o"
+ },
+ {
+  "w": "flame",
+  "H": "HEAT(=+5) GRAIN(=-3) | o",
+  "SZ": "HEAT(=+5) GRAIN(=-5) | o",
+  "Hc": "HEAT(=+5) GRAIN(=-5) | o",
+  "SZp": "HEAT GRAIN | o",
+  "SZc": "HEAT(=+5) GRAIN(=-5) | o",
+  "SZcR": "HEAT(=+5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "privilege",
+  "H": "SAME(=-4) RULE(=+4) | o",
+  "SZ": "VALUE(=+5) RULE(=+5) WANT | o",
+  "Hc": "SAME RULE(=+5) | o",
+  "SZp": "VALUE RULE WANT | o",
+  "SZc": "VALUE(=+5) RULE(=+5) WANT | o",
+  "SZcR": "VALUE(=+5) RULE(=+5) WANT | o"
+ },
+ {
+  "w": "sequence",
+  "H": "JOIN(=+5) TIME | o",
+  "SZ": "PART(=+5) BEGIN(=-5) HAPPEN | o",
+  "Hc": "JOIN TIME | o",
+  "SZp": "PART BEGIN HAPPEN | o",
+  "SZc": "PART(=+5) BEGIN(=+5) HAPPEN | o",
+  "SZcR": "PART(=+5) BEGIN(=+5) HAPPEN | o"
+ },
+ {
+  "w": "ratio",
+  "H": "MEASURE(=+5) | o",
+  "SZ": "MEASURE(=+5) SAME(=+5) | o",
+  "Hc": "MEASURE(=+5) | o",
+  "SZp": "MEASURE SAME | o",
+  "SZc": "MEASURE(=+5) SAME(=+5) | o",
+  "SZcR": "MEASURE(=+5) SAME(=+5) | o"
+ },
+ {
+  "w": "rest",
+  "H": "PART(=-2) GIVE(=-5) | o",
+  "SZ": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+  "Hc": "PART GIVE(=-5) | o",
+  "SZp": "PART FEEL MOVE | o",
+  "SZc": "PART(=-2) FEEL(=-5) MOVE(=-5) | o",
+  "SZcR": "PART(=-2) FEEL(=-5) MOVE(=-5) | o"
+ },
+ {
+  "w": "ankle",
+  "H": "BODY JOIN ABOVE(=-5) | o",
+  "SZ": "BODY SIDE(=-5) LONG(=-5) | o",
+  "Hc": "BODY JOIN(=+5) ABOVE(=+5) | o",
+  "SZp": "BODY SIDE LONG | o",
+  "SZc": "BODY SIDE(=-5) LONG(=-5) | o",
+  "SZcR": "BODY SIDE(=-5) LONG(=-5) | o"
+ },
+ {
+  "w": "discussion",
+  "H": "SAY GIVE(=0) | o",
+  "SZ": "DO THINK(=-5) TEXT | o",
+  "Hc": "SAY(=+5) GIVE(=+5) | o",
+  "SZp": "DO THINK TEXT | o",
+  "SZc": "DO THINK(=-5) TEXT | o",
+  "SZcR": "DO THINK(=-5) TEXT | o"
+ },
+ {
+  "w": "road",
+  "H": "PLACE MOVE | o",
+  "SZ": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+  "Hc": "PLACE MOVE | o",
+  "SZp": "THING NEAR SIDE | o",
+  "SZc": "THING(=-5) NEAR(=+5) SIDE(=+5) | o",
+  "SZcR": "THING(=-5) NEAR(=+5) SIDE(=+5) | o"
+ },
+ {
+  "w": "driver",
+  "H": "MOVE ART(=-5) | o agent",
+  "SZ": "ART(=-5) SIDE | o",
+  "Hc": "MOVE ART(=-5) | o agent",
+  "SZp": "ART SIDE | o",
+  "SZc": "ART(=-5) SIDE | o",
+  "SZcR": "ART(=-5) SIDE | o agent"
+ },
+ {
+  "w": "friend",
+  "H": "FRIEND(=+5) SOMEONE | o",
+  "SZ": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+  "Hc": "FRIEND(=+5) SOMEONE(=+5) | o",
+  "SZp": "SOMEONE FRIEND LIVE | o",
+  "SZc": "SOMEONE FRIEND(=+5) LIVE(=-5) | o",
+  "SZcR": "SOMEONE FRIEND(=+5) LIVE(=-5) | o"
+ },
+ {
+  "w": "integration",
+  "H": "JOIN(=+5) PART(=+2) | o",
+  "SZ": "HAPPEN JOIN(=+5) ART(=-5) | o",
+  "Hc": "JOIN(=+5) PART(=+5) | o",
+  "SZp": "HAPPEN JOIN ART | o",
+  "SZc": "HAPPEN JOIN(=+5) ART(=-5) | o",
+  "SZcR": "HAPPEN JOIN(=+5) ART(=-5) | o"
+ },
+ {
+  "w": "bachelor",
+  "H": "SOMEONE SEX(=+5) JOIN(=-5) | o",
+  "SZ": "SOMEONE MEASURE(=+5) | o",
+  "Hc": "SOMEONE SEX JOIN | o",
+  "SZp": "SOMEONE MEASURE | o",
+  "SZc": "SOMEONE MEASURE(=+5) | o",
+  "SZcR": "SOMEONE MEASURE(=+5) | o"
+ },
+ {
+  "w": "overtime",
+  "H": "TIME ABOVE(=+3) | o",
+  "SZ": "TIME BEGIN(=+5) FIGHT(=-5) | o",
+  "Hc": "TIME ABOVE | o",
+  "SZp": "TIME BEGIN FIGHT | o",
+  "SZc": "TIME BEGIN(=+5) FIGHT | o",
+  "SZcR": "TIME BEGIN(=+5) FIGHT | o"
+ },
+ {
+  "w": "atmosphere",
+  "H": "GRAIN(=-5) NEAR(=+5) | o",
+  "SZ": "GRAIN(=-5) INSIDE(=+5) HEAT(=+5) | o",
+  "Hc": "GRAIN(=-5) NEAR | o",
+  "SZp": "GRAIN INSIDE HEAT | o",
+  "SZc": "GRAIN(=-5) INSIDE(=-5) HEAT | o",
+  "SZcR": "GRAIN(=-5) INSIDE(=-5) HEAT | o"
+ },
+ {
+  "w": "stomach",
+  "H": "BODY CONSUME(=+5) | o",
+  "SZ": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+  "Hc": "BODY CONSUME(=+5) | o",
+  "SZp": "BODY CONSUME INSIDE | o",
+  "SZc": "BODY CONSUME(=+5) INSIDE(=+5) | o",
+  "SZcR": "BODY CONSUME(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "autumn",
+  "H": "TIME PART(=-2) | o",
+  "SZ": "TIME HEAT(=-5) BEGIN | o",
+  "Hc": "TIME PART | o",
+  "SZp": "TIME HEAT BEGIN | o",
+  "SZc": "TIME HEAT(=+5) BEGIN | o",
+  "SZcR": "TIME HEAT(=+5) BEGIN | o"
+ },
+ {
+  "w": "post",
+  "H": "PLACE MOVE(=-5) | o",
+  "SZ": "PLACE LONG(=+5) TEXT | o",
+  "Hc": "PLACE MOVE(=+5) | o",
+  "SZp": "PLACE LONG TEXT | o",
+  "SZc": "PLACE LONG(=+5) TEXT | o",
+  "SZcR": "PLACE LONG(=+5) TEXT | o"
+ },
+ {
+  "w": "lion",
+  "H": "THING(=+4) BIG(=+3) | o",
+  "SZ": "THING(=+4) VALUE(=+5) | o",
+  "Hc": "THING(=+5) BIG(=+5) | o",
+  "SZp": "THING VALUE | o",
+  "SZc": "THING(=+4) VALUE(=+5) | o",
+  "SZcR": "THING(=+4) VALUE(=+5) | o"
+ },
+ {
+  "w": "playoff",
+  "H": "FIGHT(=-5) BEGIN(=+5) | o",
+  "SZ": "FIGHT(=-5) BEGIN(=+5) | o",
+  "Hc": "FIGHT(=-5) BEGIN(=+5) | o",
+  "SZp": "FIGHT BEGIN | o",
+  "SZc": "FIGHT(=-5) BEGIN(=+5) | o",
+  "SZcR": "FIGHT(=-5) BEGIN(=+5) | o"
+ },
+ {
+  "w": "brokerage",
+  "H": "GIVE(=0) JOIN(=+5) | o",
+  "SZ": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+  "Hc": "GIVE JOIN | o",
+  "SZp": "RULE MEASURE VALUE | o",
+  "SZc": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o",
+  "SZcR": "RULE(=+4) MEASURE(=+5) VALUE(=-5) | o"
+ },
+ {
+  "w": "acre",
+  "H": "MEASURE(=-5) PLACE | o",
+  "SZ": "MEASURE(=-5) PLACE THING(=-5) | o",
+  "Hc": "MEASURE(=-5) PLACE | o",
+  "SZp": "MEASURE PLACE THING | o",
+  "SZc": "MEASURE(=-5) PLACE THING(=-5) | o",
+  "SZcR": "MEASURE(=-5) PLACE THING(=-5) | o"
+ },
+ {
+  "w": "competitiveness",
+  "H": "FIGHT(=+3) WANT(=+5) | o quality",
+  "SZ": "FIGHT(=-5) TOUCH(=+5) FRIEND(=-5) | o",
+  "Hc": "FIGHT(=-5) WANT(=+5) | o quality",
+  "SZp": "FIGHT TOUCH FRIEND | o",
+  "SZc": "FIGHT(=-5) TOUCH(=+5) FRIEND | o",
+  "SZcR": "FIGHT(=-5) TOUCH(=+5) FRIEND | o"
+ },
+ {
+  "w": "ideology",
+  "H": "THINK PART(=+5) | o",
+  "SZ": "THINK ART(=+5) | o",
+  "Hc": "THINK PART | o",
+  "SZp": "THINK ART | o",
+  "SZc": "THINK ART(=+5) | o",
+  "SZcR": "THINK ART(=+5) | o"
+ },
+ {
+  "w": "cake",
+  "H": "GRAIN(=+5) CONSUME(=+5) | o",
+  "SZ": "TOUCH(=-5) CONSUME(=+5) HEAT(=-5) | o",
+  "Hc": "GRAIN(=+5) CONSUME(=+5) | o",
+  "SZp": "TOUCH CONSUME HEAT | o",
+  "SZc": "TOUCH(=-5) CONSUME(=+5) HEAT(=-5) | o",
+  "SZcR": "TOUCH(=-5) CONSUME(=+5) HEAT(=-5) | o"
+ },
+ {
+  "w": "pickup",
+  "H": "THING(=-5) MOVE(=+5) | o",
+  "SZ": "INSIDE(=+5) LONG(=+5) | o",
+  "Hc": "THING MOVE | o",
+  "SZp": "INSIDE LONG | o",
+  "SZc": "INSIDE(=+5) LONG(=+5) | o",
+  "SZcR": "INSIDE(=+5) LONG(=+5) | o tool"
+ },
+ {
+  "w": "argentine",
+  "H": "THING(=+4) BIG(=-3) | o",
+  "SZ": "THING(=+4) JOIN(=-5) | o",
+  "Hc": "THING BIG | o",
+  "SZp": "THING JOIN | o",
+  "SZc": "THING(=+4) JOIN | o",
+  "SZcR": "THING(=+4) JOIN | o"
+ },
+ {
+  "w": "prisoner",
+  "H": "SOMEONE INSIDE(=+5) | o",
+  "SZ": "SOMEONE FIGHT(=+5) | o",
+  "Hc": "SOMEONE INSIDE(=+5) | o",
+  "SZp": "SOMEONE FIGHT | o",
+  "SZc": "SOMEONE FIGHT(=+5) | o",
+  "SZcR": "SOMEONE FIGHT(=+5) | o"
+ },
+ {
+  "w": "atom",
+  "H": "PART(=-5) BIG(=-5) | o",
+  "SZ": "GRAIN PART(=-5) | o",
+  "Hc": "PART(=-5) BIG(=-5) | o",
+  "SZp": "GRAIN PART | o",
+  "SZc": "GRAIN PART(=-5) | o",
+  "SZcR": "GRAIN PART(=-5) | o"
+ },
+ {
+  "w": "door",
+  "H": "JOIN(=-5) INSIDE(=+5) | o tool",
+  "SZ": "PLACE INSIDE SIDE(=+5) | o",
+  "Hc": "JOIN INSIDE(=+5) | o tool",
+  "SZp": "PLACE INSIDE SIDE | o",
+  "SZc": "PLACE INSIDE(=+5) SIDE(=+5) | o",
+  "SZcR": "PLACE INSIDE(=+5) SIDE(=+5) | o"
+ },
+ {
+  "w": "gambling",
+  "H": "FIGHT(=-5) VALUE(=+3) | o",
+  "SZ": "DO FIGHT(=-5) | o",
+  "Hc": "FIGHT(=-5) VALUE | o",
+  "SZp": "DO FIGHT | o",
+  "SZc": "DO FIGHT(=-5) | o",
+  "SZcR": "DO FIGHT(=-5) | o"
+ },
+ {
+  "w": "folklore",
+  "H": "SAY(=0) ART(=+5) | o",
+  "SZ": "THINK ART(=+5) | o",
+  "Hc": "SAY ART(=+5) | o",
+  "SZp": "THINK ART | o",
+  "SZc": "THINK ART(=+5) | o",
+  "SZcR": "THINK ART(=+5) | o"
+ },
+ {
+  "w": "hybrid",
+  "H": "JOIN(=+5) SAME(=-5) | o",
+  "SZ": "PART(=-2) TOUCH(=-5) | o",
+  "Hc": "JOIN SAME(=-5) | o",
+  "SZp": "PART TOUCH | o",
+  "SZc": "PART(=-2) TOUCH(=-5) | o",
+  "SZcR": "PART(=-2) TOUCH(=-5) | o"
+ }
+]

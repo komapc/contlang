@@ -1,0 +1,8485 @@
+{
+"old": [
+[
+"lawsuit",
+"dispute",
+2
+],
+[
+"ratio",
+"rate",
+2
+],
+[
+"regulation",
+"provision",
+2
+],
+[
+"era",
+"tradition",
+0
+],
+[
+"lawsuit",
+"ceremony",
+0
+],
+[
+"existence",
+"alien",
+0
+],
+[
+"order",
+"movement",
+0
+],
+[
+"activist",
+"protester",
+2
+],
+[
+"integration",
+"chip",
+0
+],
+[
+"resignation",
+"tragedy",
+0
+],
+[
+"representation",
+"view",
+1
+],
+[
+"township",
+"nursery",
+0
+],
+[
+"representation",
+"monument",
+1
+],
+[
+"satisfaction",
+"longing",
+0
+],
+[
+"bachelor",
+"analyst",
+0
+],
+[
+"expo",
+"team",
+0
+],
+[
+"athletics",
+"sport",
+2
+],
+[
+"gate",
+"rafter",
+0
+],
+[
+"lawmaker",
+"member",
+2
+],
+[
+"occupation",
+"work",
+2
+],
+[
+"hybrid",
+"fluff",
+0
+],
+[
+"acre",
+"quarry",
+0
+],
+[
+"airline",
+"smog",
+0
+],
+[
+"driver",
+"machine",
+1
+],
+[
+"representation",
+"idea",
+1
+],
+[
+"flame",
+"smoke",
+1
+],
+[
+"dose",
+"dose",
+2
+],
+[
+"helm",
+"rocket",
+1
+],
+[
+"lion",
+"beast",
+2
+],
+[
+"regulation",
+"authority",
+1
+],
+[
+"bachelor",
+"boy",
+1
+],
+[
+"helm",
+"paddle",
+1
+],
+[
+"people",
+"neighbors",
+1
+],
+[
+"expo",
+"viewpoint",
+0
+],
+[
+"coca",
+"food",
+1
+],
+[
+"pickup",
+"projectile",
+0
+],
+[
+"contribution",
+"incident",
+0
+],
+[
+"list",
+"catalogue",
+2
+],
+[
+"grief",
+"grief",
+2
+],
+[
+"door",
+"corridor",
+1
+],
+[
+"atom",
+"particle",
+2
+],
+[
+"occupation",
+"attack",
+1
+],
+[
+"brokerage",
+"price",
+0
+],
+[
+"fleet",
+"airliner",
+1
+],
+[
+"bronze",
+"coin",
+1
+],
+[
+"fleet",
+"flock",
+1
+],
+[
+"flame",
+"steam",
+1
+],
+[
+"labour",
+"crew",
+1
+],
+[
+"quantum",
+"quantity",
+2
+],
+[
+"brokerage",
+"discount",
+0
+],
+[
+"discussion",
+"critique",
+1
+],
+[
+"religion",
+"sovereignty",
+0
+],
+[
+"coca",
+"spice",
+0
+],
+[
+"argentine",
+"rodent",
+0
+],
+[
+"existence",
+"survivor",
+1
+],
+[
+"regulation",
+"order",
+2
+],
+[
+"pitcher",
+"spear",
+1
+],
+[
+"competitiveness",
+"drive",
+1
+],
+[
+"phase",
+"introduction",
+0
+],
+[
+"playoff",
+"finish",
+0
+],
+[
+"existence",
+"creature",
+0
+],
+[
+"campus",
+"landmark",
+0
+],
+[
+"pickup",
+"missile",
+0
+],
+[
+"phase",
+"component",
+1
+],
+[
+"homer",
+"home run",
+2
+],
+[
+"piece",
+"page",
+1
+],
+[
+"fleet",
+"column",
+1
+],
+[
+"post",
+"station",
+2
+],
+[
+"contribution",
+"factor",
+1
+],
+[
+"activist",
+"ancestor",
+0
+],
+[
+"cake",
+"ice cream",
+1
+],
+[
+"satisfaction",
+"craving",
+0
+],
+[
+"reservoir",
+"gas station",
+1
+],
+[
+"lake",
+"cellar",
+0
+],
+[
+"phase",
+"interval",
+1
+],
+[
+"model",
+"mathematics",
+1
+],
+[
+"competitiveness",
+"aggression",
+1
+],
+[
+"lawmaker",
+"official",
+2
+],
+[
+"cake",
+"pill",
+0
+],
+[
+"malaria",
+"casualty",
+0
+],
+[
+"regulation",
+"procedure",
+2
+],
+[
+"guest",
+"employee",
+0
+],
+[
+"yesterday",
+"predecessor",
+0
+],
+[
+"outlet",
+"dump",
+1
+],
+[
+"piece",
+"piece",
+2
+],
+[
+"overtime",
+"season",
+1
+],
+[
+"bachelor",
+"bachelor",
+2
+],
+[
+"sequence",
+"sequence",
+2
+],
+[
+"testimony",
+"caption",
+0
+],
+[
+"spell",
+"trance",
+1
+],
+[
+"labour",
+"invalid",
+0
+],
+[
+"guest",
+"joker",
+0
+],
+[
+"knight",
+"soldier",
+2
+],
+[
+"integration",
+"whole",
+1
+],
+[
+"crater",
+"crater",
+2
+],
+[
+"religion",
+"sovereign",
+0
+],
+[
+"anode",
+"pipe",
+0
+],
+[
+"religion",
+"philosophy",
+1
+],
+[
+"consideration",
+"decision",
+1
+],
+[
+"pitcher",
+"dealer",
+0
+],
+[
+"copyright",
+"manuscript",
+1
+],
+[
+"topic",
+"footnote",
+0
+],
+[
+"donation",
+"donation",
+2
+],
+[
+"era",
+"history",
+2
+],
+[
+"sequence",
+"appointment",
+0
+],
+[
+"discussion",
+"note",
+1
+],
+[
+"testimony",
+"reading",
+0
+],
+[
+"bowl",
+"club",
+0
+],
+[
+"malaria",
+"fever",
+2
+],
+[
+"folklore",
+"audience",
+0
+],
+[
+"ankle",
+"spine",
+1
+],
+[
+"reservation",
+"homeland",
+1
+],
+[
+"businessman",
+"merchant",
+2
+],
+[
+"playoff",
+"finale",
+1
+],
+[
+"competitiveness",
+"race",
+1
+],
+[
+"diplomacy",
+"negotiations",
+2
+],
+[
+"topic",
+"word",
+0
+],
+[
+"reservoir",
+"crowd",
+0
+],
+[
+"contribution",
+"charity",
+1
+],
+[
+"reservation",
+"shop",
+0
+],
+[
+"athletics",
+"athletics",
+2
+],
+[
+"resignation",
+"sorrow",
+0
+],
+[
+"overtime",
+"truce",
+0
+],
+[
+"crater",
+"sand",
+0
+],
+[
+"knight",
+"general",
+1
+],
+[
+"expo",
+"exhibition",
+2
+],
+[
+"atmosphere",
+"air",
+2
+],
+[
+"relegation",
+"tax",
+0
+],
+[
+"brokerage",
+"tax",
+1
+],
+[
+"ideology",
+"philosophy",
+2
+],
+[
+"autumn",
+"autumn",
+2
+],
+[
+"atmosphere",
+"fuel",
+0
+],
+[
+"crater",
+"pier",
+0
+],
+[
+"ankle",
+"leg",
+2
+],
+[
+"era",
+"era",
+2
+],
+[
+"overtime",
+"defeat",
+0
+],
+[
+"argentine",
+"stray",
+0
+],
+[
+"airline",
+"space",
+0
+],
+[
+"overtime",
+"deadline",
+1
+],
+[
+"fleet",
+"army",
+1
+],
+[
+"knight",
+"pet",
+0
+],
+[
+"hybrid",
+"portmanteau",
+1
+],
+[
+"ally",
+"friendship",
+1
+],
+[
+"privilege",
+"privilege",
+2
+],
+[
+"order",
+"ambition",
+0
+],
+[
+"order",
+"purpose",
+0
+],
+[
+"harm",
+"neglect",
+1
+],
+[
+"news",
+"news",
+2
+],
+[
+"pianist",
+"critic",
+1
+],
+[
+"township",
+"office",
+0
+],
+[
+"businessman",
+"tradesman",
+2
+],
+[
+"consideration",
+"warning",
+0
+],
+[
+"sequence",
+"extension",
+0
+],
+[
+"piece",
+"letter",
+0
+],
+[
+"profit",
+"capital",
+1
+],
+[
+"stomach",
+"stomach",
+2
+],
+[
+"acre",
+"ground",
+1
+],
+[
+"malaria",
+"malaria",
+2
+],
+[
+"spell",
+"frost",
+0
+],
+[
+"era",
+"beginning",
+1
+],
+[
+"coca",
+"factory",
+0
+],
+[
+"quantum",
+"component",
+0
+],
+[
+"grief",
+"mourning",
+2
+],
+[
+"door",
+"gate",
+2
+],
+[
+"atom",
+"atom",
+2
+],
+[
+"employee",
+"hacker",
+0
+],
+[
+"driver",
+"driver",
+2
+],
+[
+"bubble",
+"flour",
+0
+],
+[
+"resignation",
+"charity",
+0
+],
+[
+"bronze",
+"joint",
+0
+],
+[
+"spell",
+"recipe",
+0
+],
+[
+"topic",
+"statement",
+1
+],
+[
+"bronze",
+"jewel",
+1
+],
+[
+"revision",
+"editing",
+2
+],
+[
+"regulation",
+"sentence",
+1
+],
+[
+"gate",
+"brake",
+1
+],
+[
+"relegation",
+"fall",
+2
+],
+[
+"copyright",
+"copy",
+1
+],
+[
+"satisfaction",
+"goal",
+0
+],
+[
+"relegation",
+"donation",
+0
+],
+[
+"playoff",
+"final",
+1
+],
+[
+"obstacle",
+"lid",
+0
+],
+[
+"revision",
+"revision",
+2
+],
+[
+"businessman",
+"trader",
+2
+],
+[
+"hybrid",
+"device",
+0
+],
+[
+"rest",
+"pause",
+2
+],
+[
+"pickup",
+"pole",
+0
+],
+[
+"discussion",
+"question",
+1
+],
+[
+"consideration",
+"prudence",
+1
+],
+[
+"homer",
+"scream",
+0
+],
+[
+"lawmaker",
+"clause",
+1
+],
+[
+"guest",
+"loan",
+0
+],
+[
+"overtime",
+"task",
+1
+],
+[
+"pitcher",
+"pitcher",
+2
+],
+[
+"cake",
+"sponge",
+2
+],
+[
+"outlet",
+"sewage",
+1
+],
+[
+"lawmaker",
+"legislator",
+2
+],
+[
+"labour",
+"limit",
+0
+],
+[
+"argentine",
+"heirloom",
+0
+],
+[
+"piece",
+"fiber",
+0
+],
+[
+"lake",
+"lake",
+2
+],
+[
+"relegation",
+"collapse",
+1
+],
+[
+"activist",
+"tough person",
+1
+],
+[
+"folklore",
+"philosophy",
+1
+],
+[
+"dose",
+"bite",
+0
+],
+[
+"profit",
+"price",
+1
+],
+[
+"stomach",
+"mouth",
+1
+],
+[
+"existence",
+"cell",
+0
+],
+[
+"order",
+"command",
+2
+],
+[
+"topic",
+"speech",
+1
+],
+[
+"bachelor",
+"scientist",
+0
+],
+[
+"employee",
+"hobbyist",
+0
+],
+[
+"news",
+"farewell",
+0
+],
+[
+"yesterday",
+"age",
+0
+],
+[
+"reservoir",
+"air",
+0
+],
+[
+"atom",
+"speck",
+2
+],
+[
+"autumn",
+"moment",
+0
+],
+[
+"expo",
+"arena",
+1
+],
+[
+"friend",
+"companion",
+2
+],
+[
+"bowl",
+"fiber",
+0
+],
+[
+"homer",
+"speech",
+0
+],
+[
+"people",
+"people",
+2
+],
+[
+"people",
+"supporters",
+1
+],
+[
+"ideology",
+"satire",
+0
+],
+[
+"playoff",
+"match",
+1
+],
+[
+"list",
+"library",
+1
+],
+[
+"bishop",
+"theater",
+0
+],
+[
+"gambling",
+"gamble",
+2
+],
+[
+"religion",
+"patron",
+0
+],
+[
+"athletics",
+"race",
+1
+],
+[
+"pickup",
+"tunnel",
+0
+],
+[
+"pickup",
+"truck",
+2
+],
+[
+"outlet",
+"market",
+1
+],
+[
+"diplomacy",
+"negotiation",
+2
+],
+[
+"order",
+"decision",
+1
+],
+[
+"fist",
+"bone",
+1
+],
+[
+"brokerage",
+"trade",
+1
+],
+[
+"knight",
+"predator",
+0
+],
+[
+"ankle",
+"foot",
+2
+],
+[
+"gambling",
+"bet",
+2
+],
+[
+"friend",
+"ghost",
+0
+],
+[
+"quantum",
+"bit",
+1
+],
+[
+"bubble",
+"balloon",
+2
+],
+[
+"lion",
+"livestock",
+1
+],
+[
+"road",
+"route",
+2
+],
+[
+"coca",
+"coffee",
+1
+],
+[
+"campus",
+"campus",
+2
+],
+[
+"rest",
+"member",
+0
+],
+[
+"door",
+"scoop",
+0
+],
+[
+"anode",
+"pole",
+1
+],
+[
+"bachelor",
+"successor",
+0
+],
+[
+"model",
+"guess",
+0
+],
+[
+"yesterday",
+"moment",
+0
+],
+[
+"acre",
+"area",
+2
+],
+[
+"quantum",
+"pinch",
+0
+],
+[
+"competitiveness",
+"determination",
+0
+],
+[
+"harm",
+"peace",
+0
+],
+[
+"airline",
+"duct",
+0
+],
+[
+"lion",
+"predator",
+2
+],
+[
+"spell",
+"resolution",
+0
+],
+[
+"profit",
+"surcharge",
+1
+],
+[
+"quantum",
+"computation",
+1
+],
+[
+"privilege",
+"welfare",
+0
+],
+[
+"homer",
+"homer",
+2
+],
+[
+"order",
+"proclamation",
+2
+],
+[
+"reservoir",
+"volume",
+1
+],
+[
+"integration",
+"connection",
+2
+],
+[
+"atmosphere",
+"atmosphere",
+2
+],
+[
+"model",
+"component",
+1
+],
+[
+"era",
+"age",
+2
+],
+[
+"pianist",
+"pianist",
+2
+],
+[
+"crater",
+"bridge",
+0
+],
+[
+"rest",
+"rest",
+2
+],
+[
+"planet",
+"organ",
+0
+],
+[
+"news",
+"notice",
+2
+],
+[
+"prisoner",
+"prisoner",
+2
+],
+[
+"existence",
+"life",
+2
+],
+[
+"campus",
+"address",
+1
+],
+[
+"lawsuit",
+"lawsuit",
+2
+],
+[
+"bronze",
+"gravel",
+1
+],
+[
+"atom",
+"grain",
+1
+],
+[
+"regulation",
+"regulation",
+2
+],
+[
+"ankle",
+"ankle",
+2
+],
+[
+"pitcher",
+"athlete",
+2
+],
+[
+"driver",
+"robot",
+1
+],
+[
+"folklore",
+"reading",
+1
+],
+[
+"reservoir",
+"cistern",
+2
+],
+[
+"donation",
+"generosity",
+2
+],
+[
+"ratio",
+"divisor",
+1
+],
+[
+"consideration",
+"worry",
+1
+],
+[
+"occupation",
+"battlefield",
+1
+],
+[
+"knight",
+"knight",
+2
+],
+[
+"coca",
+"drink",
+1
+],
+[
+"hybrid",
+"robot",
+0
+],
+[
+"list",
+"speech",
+0
+],
+[
+"gate",
+"backyard",
+1
+],
+[
+"township",
+"park",
+0
+],
+[
+"fleet",
+"pikes",
+1
+],
+[
+"model",
+"gadget",
+1
+],
+[
+"relegation",
+"decision",
+1
+],
+[
+"knight",
+"claw",
+0
+],
+[
+"helm",
+"wheel",
+2
+],
+[
+"fist",
+"cry",
+0
+],
+[
+"labour",
+"weakling",
+0
+],
+[
+"coca",
+"poppy",
+1
+],
+[
+"ankle",
+"body",
+1
+],
+[
+"overtime",
+"era",
+0
+],
+[
+"obstacle",
+"invalid",
+0
+],
+[
+"folklore",
+"literature",
+2
+],
+[
+"dose",
+"ration",
+1
+],
+[
+"quantum",
+"atom",
+1
+],
+[
+"post",
+"library",
+0
+],
+[
+"lens",
+"lens",
+2
+],
+[
+"anode",
+"antenna",
+1
+],
+[
+"hybrid",
+"blend",
+2
+],
+[
+"reservoir",
+"pressure",
+0
+],
+[
+"discussion",
+"discussion",
+2
+],
+[
+"grief",
+"sadness",
+2
+],
+[
+"representation",
+"metaphor",
+1
+],
+[
+"ratio",
+"ratio",
+2
+],
+[
+"road",
+"road",
+2
+],
+[
+"bishop",
+"inspector",
+0
+],
+[
+"planet",
+"mountain",
+0
+],
+[
+"news",
+"prophecy",
+0
+],
+[
+"order",
+"division",
+1
+],
+[
+"guest",
+"neighbor",
+1
+],
+[
+"activist",
+"revolutionary",
+2
+],
+[
+"integration",
+"connector",
+1
+],
+[
+"ratio",
+"equality",
+1
+],
+[
+"crater",
+"loft",
+0
+],
+[
+"guest",
+"guest",
+2
+],
+[
+"sequence",
+"onset",
+0
+],
+[
+"chapel",
+"studio",
+1
+],
+[
+"chapel",
+"heaven",
+1
+],
+[
+"homer",
+"tirade",
+0
+],
+[
+"piece",
+"part",
+2
+],
+[
+"news",
+"prediction",
+0
+],
+[
+"helm",
+"radar",
+1
+],
+[
+"door",
+"scalpel",
+0
+],
+[
+"dose",
+"portion",
+2
+],
+[
+"cake",
+"cake",
+2
+],
+[
+"anode",
+"electrode",
+2
+],
+[
+"competitiveness",
+"ambition",
+1
+],
+[
+"spell",
+"translation",
+0
+],
+[
+"lake",
+"river",
+2
+],
+[
+"lake",
+"freezer",
+0
+],
+[
+"integration",
+"initiative",
+0
+],
+[
+"consideration",
+"consideration",
+2
+],
+[
+"activist",
+"brute",
+0
+],
+[
+"harm",
+"injury",
+2
+],
+[
+"pianist",
+"poet",
+1
+],
+[
+"businessman",
+"scrap",
+0
+],
+[
+"testimony",
+"testimony",
+2
+],
+[
+"testimony",
+"sign",
+0
+],
+[
+"flame",
+"flame",
+2
+],
+[
+"township",
+"district",
+2
+],
+[
+"obstacle",
+"illusion",
+0
+],
+[
+"chapel",
+"church",
+2
+],
+[
+"diplomacy",
+"debate",
+1
+],
+[
+"obstacle",
+"delusion",
+0
+],
+[
+"autumn",
+"chill",
+1
+],
+[
+"prisoner",
+"insider",
+0
+],
+[
+"rest",
+"share",
+0
+],
+[
+"fist",
+"scream",
+0
+],
+[
+"relegation",
+"rift",
+0
+],
+[
+"ally",
+"ally",
+2
+],
+[
+"obstacle",
+"obstacle",
+2
+],
+[
+"people",
+"crowd",
+2
+],
+[
+"grief",
+"anguish",
+2
+],
+[
+"labour",
+"proletariat",
+1
+],
+[
+"road",
+"wall",
+0
+],
+[
+"gate",
+"fence",
+2
+],
+[
+"integration",
+"union",
+2
+],
+[
+"bowl",
+"bowl",
+2
+],
+[
+"testimony",
+"notice",
+0
+],
+[
+"phase",
+"origin",
+0
+],
+[
+"hybrid",
+"mixture",
+2
+],
+[
+"bowl",
+"contents",
+1
+],
+[
+"profit",
+"profit",
+2
+],
+[
+"integration",
+"reform",
+1
+],
+[
+"bishop",
+"official",
+2
+],
+[
+"privilege",
+"charity",
+0
+],
+[
+"revision",
+"idea",
+0
+],
+[
+"businessman",
+"thug",
+0
+],
+[
+"chapel",
+"summit",
+0
+],
+[
+"ideology",
+"ideology",
+2
+],
+[
+"atmosphere",
+"spa",
+0
+],
+[
+"cake",
+"bread",
+1
+],
+[
+"door",
+"entrance",
+2
+],
+[
+"sequence",
+"start",
+1
+],
+[
+"gambling",
+"play",
+1
+],
+[
+"topic",
+"topic",
+2
+],
+[
+"guest",
+"clown",
+0
+],
+[
+"bowl",
+"core",
+0
+],
+[
+"religion",
+"doctrine",
+2
+],
+[
+"diplomacy",
+"parliament",
+1
+],
+[
+"phase",
+"phase",
+2
+],
+[
+"coca",
+"beverage",
+1
+],
+[
+"ally",
+"companion",
+2
+],
+[
+"yesterday",
+"visitor",
+0
+],
+[
+"ideology",
+"idea",
+2
+],
+[
+"labour",
+"team",
+1
+],
+[
+"ally",
+"alliance",
+2
+],
+[
+"obstacle",
+"barrier",
+2
+],
+[
+"privilege",
+"right",
+2
+],
+[
+"bishop",
+"parishioner",
+1
+],
+[
+"employee",
+"official",
+1
+],
+[
+"acre",
+"acre",
+2
+],
+[
+"donation",
+"gift",
+2
+],
+[
+"reservation",
+"store",
+1
+],
+[
+"campus",
+"rooftop",
+1
+],
+[
+"fist",
+"mouth",
+1
+],
+[
+"stomach",
+"appetite",
+1
+],
+[
+"prisoner",
+"army",
+1
+],
+[
+"employee",
+"administrator",
+2
+],
+[
+"malaria",
+"illness",
+2
+],
+[
+"bowl",
+"pulp",
+1
+],
+[
+"overtime",
+"heyday",
+0
+],
+[
+"homer",
+"highlight",
+1
+],
+[
+"labour",
+"working class",
+2
+],
+[
+"existence",
+"plant",
+0
+],
+[
+"atmosphere",
+"bar",
+1
+],
+[
+"bubble",
+"air",
+1
+],
+[
+"lens",
+"tripod",
+1
+],
+[
+"lion",
+"lion",
+2
+],
+[
+"autumn",
+"period",
+1
+],
+[
+"athletics",
+"event",
+1
+],
+[
+"bronze",
+"sand",
+0
+],
+[
+"gambling",
+"prize",
+1
+],
+[
+"contribution",
+"key",
+0
+],
+[
+"list",
+"list",
+2
+],
+[
+"crater",
+"dust",
+0
+],
+[
+"brokerage",
+"broker",
+2
+],
+[
+"autumn",
+"heat",
+0
+],
+[
+"bronze",
+"bronze",
+2
+],
+[
+"ideology",
+"critic",
+0
+],
+[
+"bubble",
+"padding",
+1
+],
+[
+"driver",
+"rear",
+1
+],
+[
+"competitiveness",
+"boxing",
+0
+],
+[
+"pianist",
+"artist",
+2
+],
+[
+"prisoner",
+"inmate",
+2
+],
+[
+"contribution",
+"generosity",
+1
+],
+[
+"township",
+"vicinity",
+1
+],
+[
+"campus",
+"roof",
+1
+],
+[
+"outlet",
+"shop",
+2
+],
+[
+"harm",
+"insult",
+1
+],
+[
+"ideology",
+"school",
+1
+],
+[
+"argentine",
+"relic",
+0
+],
+[
+"post",
+"chronicle",
+1
+],
+[
+"folklore",
+"aesthetics",
+0
+],
+[
+"argentine",
+"trout",
+0
+],
+[
+"representation",
+"sculpture",
+1
+],
+[
+"model",
+"explanation",
+1
+],
+[
+"occupation",
+"job",
+2
+],
+[
+"consideration",
+"attention",
+1
+],
+[
+"bachelor",
+"guest",
+0
+],
+[
+"atom",
+"chip",
+1
+],
+[
+"chapel",
+"room",
+2
+],
+[
+"yesterday",
+"yesterday",
+2
+],
+[
+"resignation",
+"hopelessness",
+1
+],
+[
+"integration",
+"invention",
+0
+],
+[
+"satisfaction",
+"satisfaction",
+2
+],
+[
+"helm",
+"podium",
+0
+],
+[
+"copyright",
+"permit",
+1
+],
+[
+"homer",
+"victory",
+1
+],
+[
+"flame",
+"soup",
+0
+],
+[
+"employee",
+"employee",
+2
+],
+[
+"anode",
+"device",
+1
+],
+[
+"revision",
+"edit",
+2
+],
+[
+"folklore",
+"folklore",
+2
+],
+[
+"flame",
+"lava",
+1
+],
+[
+"guest",
+"baton",
+0
+],
+[
+"profit",
+"discount",
+0
+],
+[
+"outlet",
+"store",
+2
+],
+[
+"sequence",
+"outbreak",
+0
+],
+[
+"pitcher",
+"player",
+2
+],
+[
+"cake",
+"bite",
+1
+],
+[
+"planet",
+"outskirts",
+0
+],
+[
+"bishop",
+"dance",
+0
+],
+[
+"atom",
+"dust",
+1
+],
+[
+"satisfaction",
+"delight",
+2
+],
+[
+"list",
+"book",
+1
+],
+[
+"sequence",
+"birth",
+0
+],
+[
+"driver",
+"device",
+1
+],
+[
+"road",
+"surface",
+1
+],
+[
+"yesterday",
+"bygone",
+2
+],
+[
+"testimony",
+"decree",
+1
+],
+[
+"airline",
+"smoke",
+0
+],
+[
+"helm",
+"missile",
+0
+],
+[
+"pitcher",
+"fencer",
+0
+],
+[
+"businessman",
+"brute",
+0
+],
+[
+"malaria",
+"army",
+0
+],
+[
+"atmosphere",
+"flame",
+0
+],
+[
+"campus",
+"attic",
+1
+],
+[
+"bubble",
+"steam",
+1
+],
+[
+"contribution",
+"episode",
+0
+],
+[
+"gate",
+"gate",
+2
+],
+[
+"regulation",
+"clause",
+2
+],
+[
+"lawmaker",
+"bylaw",
+1
+],
+[
+"discussion",
+"conversation",
+2
+],
+[
+"helm",
+"column",
+0
+],
+[
+"gambling",
+"argument",
+0
+],
+[
+"pitcher",
+"staff",
+1
+],
+[
+"people",
+"tribe",
+2
+],
+[
+"crater",
+"attic",
+0
+],
+[
+"reservation",
+"territory",
+1
+],
+[
+"athletics",
+"game",
+2
+],
+[
+"post",
+"post",
+2
+],
+[
+"existence",
+"death",
+0
+],
+[
+"phase",
+"step",
+2
+],
+[
+"playoff",
+"tournament",
+2
+],
+[
+"autumn",
+"winter",
+2
+],
+[
+"flame",
+"torch",
+2
+],
+[
+"friend",
+"friend",
+2
+],
+[
+"pickup",
+"tube",
+0
+],
+[
+"road",
+"front",
+0
+],
+[
+"folklore",
+"myth",
+2
+],
+[
+"contribution",
+"gift",
+1
+],
+[
+"reservation",
+"capital",
+0
+],
+[
+"fist",
+"fist",
+2
+],
+[
+"phase",
+"period",
+2
+],
+[
+"argentine",
+"pet",
+0
+],
+[
+"friend",
+"buddy",
+2
+],
+[
+"prisoner",
+"soldier",
+1
+],
+[
+"lens",
+"telescope",
+1
+],
+[
+"people",
+"faction",
+1
+],
+[
+"folklore",
+"poetry",
+1
+]
+],
+"new": [
+{
+"j": 1,
+"t": 1,
+"w": "obstacle",
+"a": "handle"
+},
+{
+"j": 1,
+"t": 2,
+"w": "quantum",
+"a": "dose"
+},
+{
+"j": 1,
+"t": 3,
+"w": "testimony",
+"a": "review"
+},
+{
+"j": 1,
+"t": 4,
+"w": "malaria",
+"a": "injury"
+},
+{
+"j": 1,
+"t": 5,
+"w": "anode",
+"a": "rod"
+},
+{
+"j": 1,
+"t": 6,
+"w": "spell",
+"a": "craving"
+},
+{
+"j": 1,
+"t": 7,
+"w": "quantum",
+"a": "principle"
+},
+{
+"j": 1,
+"t": 8,
+"w": "post",
+"a": "path"
+},
+{
+"j": 1,
+"t": 9,
+"w": "gambling",
+"a": "joke"
+},
+{
+"j": 1,
+"t": 10,
+"w": "harm",
+"a": "favor"
+},
+{
+"j": 1,
+"t": 11,
+"w": "atom",
+"a": "chemical"
+},
+{
+"j": 1,
+"t": 12,
+"w": "bronze",
+"a": "finish"
+},
+{
+"j": 1,
+"t": 13,
+"w": "obstacle",
+"a": "weapon"
+},
+{
+"j": 1,
+"t": 14,
+"w": "news",
+"a": "timetable"
+},
+{
+"j": 1,
+"t": 15,
+"w": "obstacle",
+"a": "component"
+},
+{
+"j": 1,
+"t": 16,
+"w": "grief",
+"a": "melancholy"
+},
+{
+"j": 1,
+"t": 17,
+"w": "folklore",
+"a": "history"
+},
+{
+"j": 1,
+"t": 18,
+"w": "revision",
+"a": "translation"
+},
+{
+"j": 1,
+"t": 19,
+"w": "lake",
+"a": "beach"
+},
+{
+"j": 1,
+"t": 20,
+"w": "lawmaker",
+"a": "regulation"
+},
+{
+"j": 1,
+"t": 21,
+"w": "quantum",
+"a": "unit"
+},
+{
+"j": 1,
+"t": 22,
+"w": "order",
+"a": "officer"
+},
+{
+"j": 1,
+"t": 23,
+"w": "employee",
+"a": "hack"
+},
+{
+"j": 1,
+"t": 24,
+"w": "overtime",
+"a": "completion"
+},
+{
+"j": 1,
+"t": 25,
+"w": "door",
+"a": "extractor"
+},
+{
+"j": 1,
+"t": 26,
+"w": "crater",
+"a": "basement"
+},
+{
+"j": 1,
+"t": 27,
+"w": "knight",
+"a": "beast"
+},
+{
+"j": 1,
+"t": 28,
+"w": "topic",
+"a": "document"
+},
+{
+"j": 1,
+"t": 29,
+"w": "occupation",
+"a": "battle"
+},
+{
+"j": 1,
+"t": 30,
+"w": "bronze",
+"a": "gem"
+},
+{
+"j": 1,
+"t": 31,
+"w": "crater",
+"a": "ground"
+},
+{
+"j": 1,
+"t": 32,
+"w": "pickup",
+"a": "limb"
+},
+{
+"j": 1,
+"t": 33,
+"w": "integration",
+"a": "hybrid"
+},
+{
+"j": 1,
+"t": 34,
+"w": "copyright",
+"a": "document"
+},
+{
+"j": 1,
+"t": 35,
+"w": "lawmaker",
+"a": "government"
+},
+{
+"j": 1,
+"t": 36,
+"w": "spell",
+"a": "fad"
+},
+{
+"j": 1,
+"t": 37,
+"w": "representation",
+"a": "jurisprudence"
+},
+{
+"j": 1,
+"t": 38,
+"w": "piece",
+"a": "particle"
+},
+{
+"j": 1,
+"t": 39,
+"w": "sequence",
+"a": "gap"
+},
+{
+"j": 1,
+"t": 40,
+"w": "list",
+"a": "transcript"
+},
+{
+"j": 1,
+"t": 41,
+"w": "prisoner",
+"a": "military"
+},
+{
+"j": 1,
+"t": 42,
+"w": "knight",
+"a": "novice"
+},
+{
+"j": 1,
+"t": 43,
+"w": "diplomacy",
+"a": "lawyer"
+},
+{
+"j": 1,
+"t": 44,
+"w": "activist",
+"a": "impact"
+},
+{
+"j": 1,
+"t": 45,
+"w": "helm",
+"a": "wheelbarrow"
+},
+{
+"j": 1,
+"t": 46,
+"w": "acre",
+"a": "warehouse"
+},
+{
+"j": 1,
+"t": 47,
+"w": "knight",
+"a": "contest"
+},
+{
+"j": 1,
+"t": 48,
+"w": "door",
+"a": "interior"
+},
+{
+"j": 1,
+"t": 49,
+"w": "overtime",
+"a": "outcome"
+},
+{
+"j": 1,
+"t": 50,
+"w": "road",
+"a": "pet"
+},
+{
+"j": 1,
+"t": 51,
+"w": "playoff",
+"a": "sport"
+},
+{
+"j": 1,
+"t": 52,
+"w": "homer",
+"a": "foul"
+},
+{
+"j": 1,
+"t": 53,
+"w": "ankle",
+"a": "head"
+},
+{
+"j": 1,
+"t": 54,
+"w": "pickup",
+"a": "log"
+},
+{
+"j": 1,
+"t": 55,
+"w": "resignation",
+"a": "resentment"
+},
+{
+"j": 1,
+"t": 56,
+"w": "competitiveness",
+"a": "score"
+},
+{
+"j": 1,
+"t": 57,
+"w": "bachelor",
+"a": "auditor"
+},
+{
+"j": 1,
+"t": 58,
+"w": "helm",
+"a": "railing"
+},
+{
+"j": 1,
+"t": 59,
+"w": "labour",
+"a": "challenge"
+},
+{
+"j": 1,
+"t": 60,
+"w": "yesterday",
+"a": "past"
+},
+{
+"j": 1,
+"t": 61,
+"w": "friend",
+"a": "self"
+},
+{
+"j": 1,
+"t": 62,
+"w": "topic",
+"a": "passage"
+},
+{
+"j": 1,
+"t": 63,
+"w": "quantum",
+"a": "detail"
+},
+{
+"j": 1,
+"t": 64,
+"w": "bowl",
+"a": "blade"
+},
+{
+"j": 1,
+"t": 65,
+"w": "fleet",
+"a": "war"
+},
+{
+"j": 1,
+"t": 66,
+"w": "anode",
+"a": "equipment"
+},
+{
+"j": 1,
+"t": 67,
+"w": "helm",
+"a": "panel"
+},
+{
+"j": 1,
+"t": 68,
+"w": "brokerage",
+"a": "subsidy"
+},
+{
+"j": 1,
+"t": 69,
+"w": "flame",
+"a": "heat"
+},
+{
+"j": 1,
+"t": 70,
+"w": "bubble",
+"a": "dough"
+},
+{
+"j": 1,
+"t": 71,
+"w": "relegation",
+"a": "scrap"
+},
+{
+"j": 1,
+"t": 72,
+"w": "pitcher",
+"a": "bat"
+},
+{
+"j": 1,
+"t": 73,
+"w": "atmosphere",
+"a": "caf\u00e9"
+},
+{
+"j": 1,
+"t": 74,
+"w": "resignation",
+"a": "penalty"
+},
+{
+"j": 1,
+"t": 75,
+"w": "stomach",
+"a": "nutrition"
+},
+{
+"j": 1,
+"t": 76,
+"w": "knight",
+"a": "campaign"
+},
+{
+"j": 1,
+"t": 77,
+"w": "reservoir",
+"a": "minority"
+},
+{
+"j": 1,
+"t": 78,
+"w": "argentine",
+"a": "stray"
+},
+{
+"j": 1,
+"t": 79,
+"w": "reservoir",
+"a": "swamp"
+},
+{
+"j": 1,
+"t": 80,
+"w": "bishop",
+"a": "authority"
+},
+{
+"j": 1,
+"t": 81,
+"w": "autumn",
+"a": "heater"
+},
+{
+"j": 1,
+"t": 82,
+"w": "order",
+"a": "policy"
+},
+{
+"j": 1,
+"t": 83,
+"w": "coca",
+"a": "plant"
+},
+{
+"j": 1,
+"t": 84,
+"w": "employee",
+"a": "hobbyist"
+},
+{
+"j": 1,
+"t": 85,
+"w": "ideology",
+"a": "criticism"
+},
+{
+"j": 1,
+"t": 86,
+"w": "knight",
+"a": "competition"
+},
+{
+"j": 1,
+"t": 87,
+"w": "brokerage",
+"a": "devaluation"
+},
+{
+"j": 1,
+"t": 88,
+"w": "sequence",
+"a": "technique"
+},
+{
+"j": 1,
+"t": 89,
+"w": "gate",
+"a": "engine"
+},
+{
+"j": 1,
+"t": 90,
+"w": "competitiveness",
+"a": "competition"
+},
+{
+"j": 1,
+"t": 91,
+"w": "phase",
+"a": "step"
+},
+{
+"j": 1,
+"t": 92,
+"w": "spell",
+"a": "polemic"
+},
+{
+"j": 1,
+"t": 93,
+"w": "lion",
+"a": "pet"
+},
+{
+"j": 1,
+"t": 94,
+"w": "privilege",
+"a": "equality"
+},
+{
+"j": 1,
+"t": 95,
+"w": "sequence",
+"a": "chain"
+},
+{
+"j": 1,
+"t": 96,
+"w": "acre",
+"a": "site"
+},
+{
+"j": 1,
+"t": 97,
+"w": "phase",
+"a": "invention"
+},
+{
+"j": 1,
+"t": 98,
+"w": "hybrid",
+"a": "implant"
+},
+{
+"j": 1,
+"t": 99,
+"w": "phase",
+"a": "instant"
+},
+{
+"j": 1,
+"t": 100,
+"w": "rest",
+"a": "guest"
+},
+{
+"j": 1,
+"t": 101,
+"w": "diplomacy",
+"a": "strategy"
+},
+{
+"j": 1,
+"t": 102,
+"w": "activist",
+"a": "weapon"
+},
+{
+"j": 1,
+"t": 103,
+"w": "overtime",
+"a": "future"
+},
+{
+"j": 1,
+"t": 104,
+"w": "fist",
+"a": "gesture"
+},
+{
+"j": 1,
+"t": 105,
+"w": "helm",
+"a": "beam"
+},
+{
+"j": 1,
+"t": 106,
+"w": "lake",
+"a": "storage"
+},
+{
+"j": 1,
+"t": 107,
+"w": "lawsuit",
+"a": "treaty"
+},
+{
+"j": 1,
+"t": 108,
+"w": "spell",
+"a": "vow"
+},
+{
+"j": 1,
+"t": 109,
+"w": "existence",
+"a": "subject"
+},
+{
+"j": 1,
+"t": 110,
+"w": "bowl",
+"a": "popsicle"
+},
+{
+"j": 1,
+"t": 111,
+"w": "model",
+"a": "memory"
+},
+{
+"j": 1,
+"t": 112,
+"w": "relegation",
+"a": "defeat"
+},
+{
+"j": 1,
+"t": 113,
+"w": "pianist",
+"a": "martial art"
+},
+{
+"j": 1,
+"t": 114,
+"w": "prisoner",
+"a": "warrior"
+},
+{
+"j": 1,
+"t": 115,
+"w": "pickup",
+"a": "pipe"
+},
+{
+"j": 1,
+"t": 116,
+"w": "grief",
+"a": "compassion"
+},
+{
+"j": 1,
+"t": 117,
+"w": "gambling",
+"a": "puzzle"
+},
+{
+"j": 1,
+"t": 118,
+"w": "employee",
+"a": "formula"
+},
+{
+"j": 1,
+"t": 119,
+"w": "door",
+"a": "cable"
+},
+{
+"j": 1,
+"t": 120,
+"w": "homer",
+"a": "argument"
+},
+{
+"j": 1,
+"t": 121,
+"w": "resignation",
+"a": "grudge"
+},
+{
+"j": 1,
+"t": 122,
+"w": "integration",
+"a": "system"
+},
+{
+"j": 1,
+"t": 123,
+"w": "labour",
+"a": "deed"
+},
+{
+"j": 1,
+"t": 124,
+"w": "playoff",
+"a": "bout"
+},
+{
+"j": 1,
+"t": 125,
+"w": "road",
+"a": "facade"
+},
+{
+"j": 1,
+"t": 126,
+"w": "malaria",
+"a": "corpse"
+},
+{
+"j": 1,
+"t": 127,
+"w": "bubble",
+"a": "pulp"
+},
+{
+"j": 1,
+"t": 128,
+"w": "topic",
+"a": "diary"
+},
+{
+"j": 1,
+"t": 129,
+"w": "bowl",
+"a": "fencing"
+},
+{
+"j": 1,
+"t": 130,
+"w": "people",
+"a": "herd"
+},
+{
+"j": 1,
+"t": 131,
+"w": "acre",
+"a": "scale"
+},
+{
+"j": 1,
+"t": 132,
+"w": "copyright",
+"a": "regulation"
+},
+{
+"j": 1,
+"t": 133,
+"w": "homer",
+"a": "horn"
+},
+{
+"j": 1,
+"t": 134,
+"w": "folklore",
+"a": "taste"
+},
+{
+"j": 1,
+"t": 135,
+"w": "yesterday",
+"a": "presence"
+},
+{
+"j": 1,
+"t": 136,
+"w": "grief",
+"a": "sympathy"
+},
+{
+"j": 1,
+"t": 137,
+"w": "consideration",
+"a": "nuance"
+},
+{
+"j": 1,
+"t": 138,
+"w": "gambling",
+"a": "swim"
+},
+{
+"j": 1,
+"t": 139,
+"w": "phase",
+"a": "variant"
+},
+{
+"j": 1,
+"t": 140,
+"w": "anode",
+"a": "smoke"
+},
+{
+"j": 1,
+"t": 141,
+"w": "bachelor",
+"a": "forefather"
+},
+{
+"j": 1,
+"t": 142,
+"w": "labour",
+"a": "pressure"
+},
+{
+"j": 1,
+"t": 143,
+"w": "pickup",
+"a": "vehicle"
+},
+{
+"j": 1,
+"t": 144,
+"w": "obstacle",
+"a": "view"
+},
+{
+"j": 1,
+"t": 145,
+"w": "fleet",
+"a": "battle"
+},
+{
+"j": 1,
+"t": 146,
+"w": "post",
+"a": "history"
+},
+{
+"j": 1,
+"t": 147,
+"w": "prisoner",
+"a": "warfare"
+},
+{
+"j": 1,
+"t": 148,
+"w": "bachelor",
+"a": "experiment"
+},
+{
+"j": 1,
+"t": 149,
+"w": "obstacle",
+"a": "mobility"
+},
+{
+"j": 1,
+"t": 150,
+"w": "malaria",
+"a": "fistfight"
+},
+{
+"j": 1,
+"t": 151,
+"w": "planet",
+"a": "sun"
+},
+{
+"j": 1,
+"t": 152,
+"w": "employee",
+"a": "trick"
+},
+{
+"j": 1,
+"t": 153,
+"w": "lake",
+"a": "freezer"
+},
+{
+"j": 1,
+"t": 154,
+"w": "yesterday",
+"a": "present"
+},
+{
+"j": 1,
+"t": 155,
+"w": "religion",
+"a": "arts"
+},
+{
+"j": 1,
+"t": 156,
+"w": "sequence",
+"a": "birth"
+},
+{
+"j": 1,
+"t": 157,
+"w": "athletics",
+"a": "referee"
+},
+{
+"j": 1,
+"t": 158,
+"w": "prisoner",
+"a": "siege"
+},
+{
+"j": 1,
+"t": 159,
+"w": "anode",
+"a": "pole"
+},
+{
+"j": 1,
+"t": 160,
+"w": "township",
+"a": "place"
+},
+{
+"j": 1,
+"t": 161,
+"w": "grief",
+"a": "longing"
+},
+{
+"j": 1,
+"t": 162,
+"w": "spell",
+"a": "manifesto"
+},
+{
+"j": 1,
+"t": 163,
+"w": "representation",
+"a": "writing"
+},
+{
+"j": 2,
+"t": 1,
+"w": "helm",
+"a": "bowsprit"
+},
+{
+"j": 2,
+"t": 2,
+"w": "regulation",
+"a": "institution"
+},
+{
+"j": 2,
+"t": 3,
+"w": "knight",
+"a": "defense"
+},
+{
+"j": 2,
+"t": 4,
+"w": "pitcher",
+"a": "coach"
+},
+{
+"j": 2,
+"t": 5,
+"w": "list",
+"a": "anthology"
+},
+{
+"j": 2,
+"t": 6,
+"w": "diplomacy",
+"a": "patent"
+},
+{
+"j": 2,
+"t": 7,
+"w": "airline",
+"a": "pollution"
+},
+{
+"j": 2,
+"t": 8,
+"w": "planet",
+"a": "bedrock"
+},
+{
+"j": 2,
+"t": 9,
+"w": "list",
+"a": "statement"
+},
+{
+"j": 2,
+"t": 10,
+"w": "employee",
+"a": "gadget"
+},
+{
+"j": 2,
+"t": 11,
+"w": "argentine",
+"a": "building"
+},
+{
+"j": 2,
+"t": 12,
+"w": "topic",
+"a": "whisper"
+},
+{
+"j": 2,
+"t": 13,
+"w": "hybrid",
+"a": "model"
+},
+{
+"j": 2,
+"t": 14,
+"w": "obstacle",
+"a": "athlete"
+},
+{
+"j": 2,
+"t": 15,
+"w": "competitiveness",
+"a": "drive"
+},
+{
+"j": 2,
+"t": 16,
+"w": "anode",
+"a": "radiator"
+},
+{
+"j": 2,
+"t": 17,
+"w": "ally",
+"a": "arena"
+},
+{
+"j": 2,
+"t": 18,
+"w": "knight",
+"a": "ignoramus"
+},
+{
+"j": 2,
+"t": 19,
+"w": "diplomacy",
+"a": "treaty"
+},
+{
+"j": 2,
+"t": 20,
+"w": "helm",
+"a": "brake"
+},
+{
+"j": 2,
+"t": 21,
+"w": "order",
+"a": "service"
+},
+{
+"j": 2,
+"t": 22,
+"w": "labour",
+"a": "labor"
+},
+{
+"j": 2,
+"t": 23,
+"w": "helm",
+"a": "column"
+},
+{
+"j": 2,
+"t": 24,
+"w": "reservation",
+"a": "post office"
+},
+{
+"j": 2,
+"t": 25,
+"w": "privilege",
+"a": "principle"
+},
+{
+"j": 2,
+"t": 26,
+"w": "helm",
+"a": "bow"
+},
+{
+"j": 2,
+"t": 27,
+"w": "brokerage",
+"a": "inflation"
+},
+{
+"j": 2,
+"t": 28,
+"w": "sequence",
+"a": "history"
+},
+{
+"j": 2,
+"t": 29,
+"w": "argentine",
+"a": "thing"
+},
+{
+"j": 2,
+"t": 30,
+"w": "planet",
+"a": "organ"
+},
+{
+"j": 2,
+"t": 31,
+"w": "door",
+"a": "tube"
+},
+{
+"j": 2,
+"t": 32,
+"w": "chapel",
+"a": "culture"
+},
+{
+"j": 2,
+"t": 33,
+"w": "coca",
+"a": "nutrient"
+},
+{
+"j": 2,
+"t": 34,
+"w": "bishop",
+"a": "fashion"
+},
+{
+"j": 2,
+"t": 35,
+"w": "overtime",
+"a": "peace"
+},
+{
+"j": 2,
+"t": 36,
+"w": "lens",
+"a": "vision"
+},
+{
+"j": 2,
+"t": 37,
+"w": "overtime",
+"a": "deed"
+},
+{
+"j": 2,
+"t": 38,
+"w": "lawmaker",
+"a": "law"
+},
+{
+"j": 2,
+"t": 39,
+"w": "regulation",
+"a": "government"
+},
+{
+"j": 2,
+"t": 40,
+"w": "reservoir",
+"a": "garden"
+},
+{
+"j": 2,
+"t": 41,
+"w": "diplomacy",
+"a": "alliance"
+},
+{
+"j": 2,
+"t": 42,
+"w": "testimony",
+"a": "viewpoint"
+},
+{
+"j": 2,
+"t": 43,
+"w": "helm",
+"a": "dashboard"
+},
+{
+"j": 2,
+"t": 44,
+"w": "coca",
+"a": "drop"
+},
+{
+"j": 2,
+"t": 45,
+"w": "pitcher",
+"a": "quarterstaff"
+},
+{
+"j": 2,
+"t": 46,
+"w": "knight",
+"a": "spoils"
+},
+{
+"j": 2,
+"t": 47,
+"w": "obstacle",
+"a": "dilemma"
+},
+{
+"j": 2,
+"t": 48,
+"w": "fist",
+"a": "injury"
+},
+{
+"j": 2,
+"t": 49,
+"w": "lawmaker",
+"a": "scribe"
+},
+{
+"j": 2,
+"t": 50,
+"w": "businessman",
+"a": "standard"
+},
+{
+"j": 2,
+"t": 51,
+"w": "relegation",
+"a": "wrestling"
+},
+{
+"j": 2,
+"t": 52,
+"w": "campus",
+"a": "loft"
+},
+{
+"j": 2,
+"t": 53,
+"w": "resignation",
+"a": "mourning"
+},
+{
+"j": 2,
+"t": 54,
+"w": "spell",
+"a": "printing"
+},
+{
+"j": 2,
+"t": 55,
+"w": "anode",
+"a": "torch"
+},
+{
+"j": 2,
+"t": 56,
+"w": "news",
+"a": "reading"
+},
+{
+"j": 2,
+"t": 57,
+"w": "lawsuit",
+"a": "verdict"
+},
+{
+"j": 2,
+"t": 58,
+"w": "existence",
+"a": "survivor"
+},
+{
+"j": 2,
+"t": 59,
+"w": "gambling",
+"a": "prize"
+},
+{
+"j": 2,
+"t": 60,
+"w": "profit",
+"a": "waste"
+},
+{
+"j": 2,
+"t": 61,
+"w": "coca",
+"a": "sap"
+},
+{
+"j": 2,
+"t": 62,
+"w": "helm",
+"a": "barrier"
+},
+{
+"j": 2,
+"t": 63,
+"w": "playoff",
+"a": "finale"
+},
+{
+"j": 2,
+"t": 64,
+"w": "privilege",
+"a": "ideal"
+},
+{
+"j": 2,
+"t": 65,
+"w": "bronze",
+"a": "contact"
+},
+{
+"j": 2,
+"t": 66,
+"w": "bachelor",
+"a": "husband"
+},
+{
+"j": 2,
+"t": 67,
+"w": "argentine",
+"a": "bush"
+},
+{
+"j": 2,
+"t": 68,
+"w": "spell",
+"a": "copying"
+},
+{
+"j": 2,
+"t": 69,
+"w": "reservoir",
+"a": "amount"
+},
+{
+"j": 2,
+"t": 70,
+"w": "dose",
+"a": "fraction"
+},
+{
+"j": 2,
+"t": 71,
+"w": "folklore",
+"a": "imagination"
+},
+{
+"j": 2,
+"t": 72,
+"w": "crater",
+"a": "furnace"
+},
+{
+"j": 2,
+"t": 73,
+"w": "dose",
+"a": "unit"
+},
+{
+"j": 2,
+"t": 74,
+"w": "fist",
+"a": "contact"
+},
+{
+"j": 2,
+"t": 75,
+"w": "crater",
+"a": "foundation"
+},
+{
+"j": 2,
+"t": 76,
+"w": "bubble",
+"a": "steam"
+},
+{
+"j": 2,
+"t": 77,
+"w": "obstacle",
+"a": "sloth"
+},
+{
+"j": 2,
+"t": 78,
+"w": "sequence",
+"a": "draft"
+},
+{
+"j": 2,
+"t": 79,
+"w": "fleet",
+"a": "bloodshed"
+},
+{
+"j": 2,
+"t": 80,
+"w": "spell",
+"a": "resolution"
+},
+{
+"j": 2,
+"t": 81,
+"w": "gate",
+"a": "corridor"
+},
+{
+"j": 2,
+"t": 82,
+"w": "piece",
+"a": "debris"
+},
+{
+"j": 2,
+"t": 83,
+"w": "bowl",
+"a": "addiction"
+},
+{
+"j": 2,
+"t": 84,
+"w": "occupation",
+"a": "lifestyle"
+},
+{
+"j": 2,
+"t": 85,
+"w": "businessman",
+"a": "seller"
+},
+{
+"j": 2,
+"t": 86,
+"w": "gambling",
+"a": "sport"
+},
+{
+"j": 2,
+"t": 87,
+"w": "copyright",
+"a": "decree"
+},
+{
+"j": 2,
+"t": 88,
+"w": "regulation",
+"a": "match"
+},
+{
+"j": 2,
+"t": 89,
+"w": "outlet",
+"a": "junkyard"
+},
+{
+"j": 2,
+"t": 90,
+"w": "testimony",
+"a": "notice"
+},
+{
+"j": 2,
+"t": 91,
+"w": "road",
+"a": "surface"
+},
+{
+"j": 2,
+"t": 92,
+"w": "argentine",
+"a": "variety"
+},
+{
+"j": 2,
+"t": 93,
+"w": "profit",
+"a": "bargain"
+},
+{
+"j": 2,
+"t": 94,
+"w": "bowl",
+"a": "cereal"
+},
+{
+"j": 2,
+"t": 95,
+"w": "malaria",
+"a": "brawl"
+},
+{
+"j": 2,
+"t": 96,
+"w": "lens",
+"a": "painting"
+},
+{
+"j": 2,
+"t": 97,
+"w": "piece",
+"a": "page"
+},
+{
+"j": 2,
+"t": 98,
+"w": "quantum",
+"a": "physics"
+},
+{
+"j": 2,
+"t": 99,
+"w": "regulation",
+"a": "competition"
+},
+{
+"j": 2,
+"t": 100,
+"w": "anode",
+"a": "fiber"
+},
+{
+"j": 2,
+"t": 101,
+"w": "atom",
+"a": "component"
+},
+{
+"j": 2,
+"t": 102,
+"w": "rest",
+"a": "joint"
+},
+{
+"j": 2,
+"t": 103,
+"w": "harm",
+"a": "killing"
+},
+{
+"j": 2,
+"t": 104,
+"w": "driver",
+"a": "aspect"
+},
+{
+"j": 2,
+"t": 105,
+"w": "expo",
+"a": "martial art"
+},
+{
+"j": 2,
+"t": 106,
+"w": "model",
+"a": "opinion"
+},
+{
+"j": 2,
+"t": 107,
+"w": "relegation",
+"a": "hesitation"
+},
+{
+"j": 2,
+"t": 108,
+"w": "ally",
+"a": "sanctuary"
+},
+{
+"j": 2,
+"t": 109,
+"w": "consideration",
+"a": "advice"
+},
+{
+"j": 2,
+"t": 110,
+"w": "anode",
+"a": "product"
+},
+{
+"j": 2,
+"t": 111,
+"w": "flame",
+"a": "cook"
+},
+{
+"j": 2,
+"t": 112,
+"w": "religion",
+"a": "patronage"
+},
+{
+"j": 2,
+"t": 113,
+"w": "airline",
+"a": "gas"
+},
+{
+"j": 2,
+"t": 114,
+"w": "satisfaction",
+"a": "happiness"
+},
+{
+"j": 2,
+"t": 115,
+"w": "lawsuit",
+"a": "litigation"
+},
+{
+"j": 2,
+"t": 116,
+"w": "outlet",
+"a": "storeroom"
+},
+{
+"j": 2,
+"t": 117,
+"w": "crater",
+"a": "oven"
+},
+{
+"j": 2,
+"t": 118,
+"w": "reservation",
+"a": "store"
+},
+{
+"j": 2,
+"t": 119,
+"w": "reservation",
+"a": "shelter"
+},
+{
+"j": 2,
+"t": 120,
+"w": "atmosphere",
+"a": "resort"
+},
+{
+"j": 2,
+"t": 121,
+"w": "bubble",
+"a": "filling"
+},
+{
+"j": 2,
+"t": 122,
+"w": "homer",
+"a": "score"
+},
+{
+"j": 2,
+"t": 123,
+"w": "township",
+"a": "city"
+},
+{
+"j": 2,
+"t": 124,
+"w": "brokerage",
+"a": "penalty"
+},
+{
+"j": 2,
+"t": 125,
+"w": "road",
+"a": "neighbor"
+},
+{
+"j": 2,
+"t": 126,
+"w": "acre",
+"a": "ground"
+},
+{
+"j": 2,
+"t": 127,
+"w": "ankle",
+"a": "extremity"
+},
+{
+"j": 2,
+"t": 128,
+"w": "lawsuit",
+"a": "policy"
+},
+{
+"j": 2,
+"t": 129,
+"w": "prisoner",
+"a": "resident"
+},
+{
+"j": 2,
+"t": 130,
+"w": "ratio",
+"a": "degree"
+},
+{
+"j": 2,
+"t": 131,
+"w": "satisfaction",
+"a": "demand"
+},
+{
+"j": 2,
+"t": 132,
+"w": "competitiveness",
+"a": "fun"
+},
+{
+"j": 2,
+"t": 133,
+"w": "hybrid",
+"a": "variant"
+},
+{
+"j": 2,
+"t": 134,
+"w": "bronze",
+"a": "masterpiece"
+},
+{
+"j": 2,
+"t": 135,
+"w": "bowl",
+"a": "sparring"
+},
+{
+"j": 2,
+"t": 136,
+"w": "prisoner",
+"a": "bureaucrat"
+},
+{
+"j": 2,
+"t": 137,
+"w": "ally",
+"a": "reunion"
+},
+{
+"j": 2,
+"t": 138,
+"w": "reservoir",
+"a": "pool"
+},
+{
+"j": 2,
+"t": 139,
+"w": "lake",
+"a": "refrigerator"
+},
+{
+"j": 2,
+"t": 140,
+"w": "competitiveness",
+"a": "contest"
+},
+{
+"j": 2,
+"t": 141,
+"w": "ideology",
+"a": "discipline"
+},
+{
+"j": 2,
+"t": 142,
+"w": "quantum",
+"a": "portion"
+},
+{
+"j": 2,
+"t": 143,
+"w": "coca",
+"a": "pinch"
+},
+{
+"j": 2,
+"t": 144,
+"w": "pianist",
+"a": "art"
+},
+{
+"j": 2,
+"t": 145,
+"w": "discussion",
+"a": "debate"
+},
+{
+"j": 2,
+"t": 146,
+"w": "campus",
+"a": "workshop"
+},
+{
+"j": 2,
+"t": 147,
+"w": "people",
+"a": "company"
+},
+{
+"j": 2,
+"t": 148,
+"w": "discussion",
+"a": "essay"
+},
+{
+"j": 2,
+"t": 149,
+"w": "obstacle",
+"a": "can"
+},
+{
+"j": 2,
+"t": 150,
+"w": "autumn",
+"a": "forecast"
+},
+{
+"j": 2,
+"t": 151,
+"w": "representation",
+"a": "view"
+},
+{
+"j": 2,
+"t": 152,
+"w": "guest",
+"a": "gift"
+},
+{
+"j": 2,
+"t": 153,
+"w": "lion",
+"a": "dog"
+},
+{
+"j": 2,
+"t": 154,
+"w": "topic",
+"a": "speech"
+},
+{
+"j": 2,
+"t": 155,
+"w": "copyright",
+"a": "letter"
+},
+{
+"j": 2,
+"t": 156,
+"w": "reservation",
+"a": "parliament"
+},
+{
+"j": 2,
+"t": 157,
+"w": "knight",
+"a": "officer"
+},
+{
+"j": 2,
+"t": 158,
+"w": "privilege",
+"a": "tax"
+},
+{
+"j": 2,
+"t": 159,
+"w": "township",
+"a": "parliament"
+},
+{
+"j": 2,
+"t": 160,
+"w": "township",
+"a": "garden"
+},
+{
+"j": 2,
+"t": 161,
+"w": "door",
+"a": "key"
+},
+{
+"j": 2,
+"t": 162,
+"w": "fleet",
+"a": "flight"
+},
+{
+"j": 2,
+"t": 163,
+"w": "post",
+"a": "street"
+},
+{
+"j": 3,
+"t": 1,
+"w": "stomach",
+"a": "sedative"
+},
+{
+"j": 3,
+"t": 2,
+"w": "yesterday",
+"a": "time"
+},
+{
+"j": 3,
+"t": 3,
+"w": "outlet",
+"a": "swamp"
+},
+{
+"j": 3,
+"t": 4,
+"w": "fleet",
+"a": "soldier"
+},
+{
+"j": 3,
+"t": 5,
+"w": "profit",
+"a": "devaluation"
+},
+{
+"j": 3,
+"t": 6,
+"w": "cake",
+"a": "bread"
+},
+{
+"j": 3,
+"t": 7,
+"w": "discussion",
+"a": "promise"
+},
+{
+"j": 3,
+"t": 8,
+"w": "bubble",
+"a": "mist"
+},
+{
+"j": 3,
+"t": 9,
+"w": "campus",
+"a": "laboratory"
+},
+{
+"j": 3,
+"t": 10,
+"w": "road",
+"a": "hedge"
+},
+{
+"j": 3,
+"t": 11,
+"w": "contribution",
+"a": "donation"
+},
+{
+"j": 3,
+"t": 12,
+"w": "labour",
+"a": "limit"
+},
+{
+"j": 3,
+"t": 13,
+"w": "acre",
+"a": "granary"
+},
+{
+"j": 3,
+"t": 14,
+"w": "piece",
+"a": "bit"
+},
+{
+"j": 3,
+"t": 15,
+"w": "lawmaker",
+"a": "clerk"
+},
+{
+"j": 3,
+"t": 16,
+"w": "hybrid",
+"a": "fur"
+},
+{
+"j": 3,
+"t": 17,
+"w": "diplomacy",
+"a": "diplomat"
+},
+{
+"j": 3,
+"t": 18,
+"w": "contribution",
+"a": "consequence"
+},
+{
+"j": 3,
+"t": 19,
+"w": "folklore",
+"a": "poem"
+},
+{
+"j": 3,
+"t": 20,
+"w": "dose",
+"a": "share"
+},
+{
+"j": 3,
+"t": 21,
+"w": "testimony",
+"a": "ruling"
+},
+{
+"j": 3,
+"t": 22,
+"w": "list",
+"a": "publication"
+},
+{
+"j": 3,
+"t": 23,
+"w": "representation",
+"a": "aesthetics"
+},
+{
+"j": 3,
+"t": 24,
+"w": "athletics",
+"a": "brawl"
+},
+{
+"j": 3,
+"t": 25,
+"w": "expo",
+"a": "festival"
+},
+{
+"j": 3,
+"t": 26,
+"w": "fist",
+"a": "insult"
+},
+{
+"j": 3,
+"t": 27,
+"w": "guest",
+"a": "companion"
+},
+{
+"j": 3,
+"t": 28,
+"w": "ideology",
+"a": "academy"
+},
+{
+"j": 3,
+"t": 29,
+"w": "acre",
+"a": "spot"
+},
+{
+"j": 3,
+"t": 30,
+"w": "representation",
+"a": "sight"
+},
+{
+"j": 3,
+"t": 31,
+"w": "labour",
+"a": "calculation"
+},
+{
+"j": 3,
+"t": 32,
+"w": "pitcher",
+"a": "gambler"
+},
+{
+"j": 3,
+"t": 33,
+"w": "anode",
+"a": "supply"
+},
+{
+"j": 3,
+"t": 34,
+"w": "quantum",
+"a": "atom"
+},
+{
+"j": 3,
+"t": 35,
+"w": "knight",
+"a": "fortress"
+},
+{
+"j": 3,
+"t": 36,
+"w": "hybrid",
+"a": "copy"
+},
+{
+"j": 3,
+"t": 37,
+"w": "integration",
+"a": "collage"
+},
+{
+"j": 3,
+"t": 38,
+"w": "prisoner",
+"a": "conflict"
+},
+{
+"j": 3,
+"t": 39,
+"w": "argentine",
+"a": "mountain"
+},
+{
+"j": 3,
+"t": 40,
+"w": "competitiveness",
+"a": "wrestling"
+},
+{
+"j": 3,
+"t": 41,
+"w": "occupation",
+"a": "tactic"
+},
+{
+"j": 3,
+"t": 42,
+"w": "gambling",
+"a": "bet"
+},
+{
+"j": 3,
+"t": 43,
+"w": "sequence",
+"a": "interval"
+},
+{
+"j": 3,
+"t": 44,
+"w": "representation",
+"a": "ethics"
+},
+{
+"j": 3,
+"t": 45,
+"w": "resignation",
+"a": "welfare"
+},
+{
+"j": 3,
+"t": 46,
+"w": "quantum",
+"a": "theory"
+},
+{
+"j": 3,
+"t": 47,
+"w": "ideology",
+"a": "doubt"
+},
+{
+"j": 3,
+"t": 48,
+"w": "driver",
+"a": "panel"
+},
+{
+"j": 3,
+"t": 49,
+"w": "knight",
+"a": "fighter"
+},
+{
+"j": 3,
+"t": 50,
+"w": "bronze",
+"a": "blade"
+},
+{
+"j": 3,
+"t": 51,
+"w": "phase",
+"a": "variety"
+},
+{
+"j": 3,
+"t": 52,
+"w": "discussion",
+"a": "talk"
+},
+{
+"j": 3,
+"t": 53,
+"w": "atmosphere",
+"a": "mist"
+},
+{
+"j": 3,
+"t": 54,
+"w": "model",
+"a": "invention"
+},
+{
+"j": 3,
+"t": 55,
+"w": "autumn",
+"a": "future"
+},
+{
+"j": 3,
+"t": 56,
+"w": "pickup",
+"a": "cable"
+},
+{
+"j": 3,
+"t": 57,
+"w": "reservation",
+"a": "chamber"
+},
+{
+"j": 3,
+"t": 58,
+"w": "bowl",
+"a": "organ"
+},
+{
+"j": 3,
+"t": 59,
+"w": "pickup",
+"a": "rod"
+},
+{
+"j": 3,
+"t": 60,
+"w": "homer",
+"a": "back"
+},
+{
+"j": 3,
+"t": 61,
+"w": "activist",
+"a": "sword"
+},
+{
+"j": 3,
+"t": 62,
+"w": "reservation",
+"a": "government"
+},
+{
+"j": 3,
+"t": 63,
+"w": "driver",
+"a": "axle"
+},
+{
+"j": 3,
+"t": 64,
+"w": "harm",
+"a": "ostracism"
+},
+{
+"j": 3,
+"t": 65,
+"w": "discussion",
+"a": "doubt"
+},
+{
+"j": 3,
+"t": 66,
+"w": "bachelor",
+"a": "father"
+},
+{
+"j": 3,
+"t": 67,
+"w": "acre",
+"a": "neighborhood"
+},
+{
+"j": 3,
+"t": 68,
+"w": "prisoner",
+"a": "prisoner"
+},
+{
+"j": 3,
+"t": 69,
+"w": "gambling",
+"a": "squabble"
+},
+{
+"j": 3,
+"t": 70,
+"w": "expo",
+"a": "viewpoint"
+},
+{
+"j": 3,
+"t": 71,
+"w": "bowl",
+"a": "staff"
+},
+{
+"j": 3,
+"t": 72,
+"w": "bronze",
+"a": "combat"
+},
+{
+"j": 3,
+"t": 73,
+"w": "bronze",
+"a": "stick"
+},
+{
+"j": 3,
+"t": 74,
+"w": "expo",
+"a": "tournament"
+},
+{
+"j": 3,
+"t": 75,
+"w": "reservoir",
+"a": "pond"
+},
+{
+"j": 3,
+"t": 76,
+"w": "competitiveness",
+"a": "game"
+},
+{
+"j": 3,
+"t": 77,
+"w": "planet",
+"a": "region"
+},
+{
+"j": 3,
+"t": 78,
+"w": "employee",
+"a": "etiquette"
+},
+{
+"j": 3,
+"t": 79,
+"w": "overtime",
+"a": "heaven"
+},
+{
+"j": 3,
+"t": 80,
+"w": "argentine",
+"a": "giant"
+},
+{
+"j": 3,
+"t": 81,
+"w": "bishop",
+"a": "curator"
+},
+{
+"j": 3,
+"t": 82,
+"w": "occupation",
+"a": "brawl"
+},
+{
+"j": 3,
+"t": 83,
+"w": "era",
+"a": "bout"
+},
+{
+"j": 3,
+"t": 84,
+"w": "playoff",
+"a": "truce"
+},
+{
+"j": 3,
+"t": 85,
+"w": "contribution",
+"a": "contribution"
+},
+{
+"j": 3,
+"t": 86,
+"w": "businessman",
+"a": "rogue"
+},
+{
+"j": 3,
+"t": 87,
+"w": "lake",
+"a": "garden"
+},
+{
+"j": 3,
+"t": 88,
+"w": "outlet",
+"a": "thrift shop"
+},
+{
+"j": 3,
+"t": 89,
+"w": "consideration",
+"a": "trust"
+},
+{
+"j": 3,
+"t": 90,
+"w": "road",
+"a": "platform"
+},
+{
+"j": 3,
+"t": 91,
+"w": "coca",
+"a": "liquid"
+},
+{
+"j": 3,
+"t": 92,
+"w": "bowl",
+"a": "gymnastics"
+},
+{
+"j": 3,
+"t": 93,
+"w": "contribution",
+"a": "giving"
+},
+{
+"j": 3,
+"t": 94,
+"w": "revision",
+"a": "amendment"
+},
+{
+"j": 3,
+"t": 95,
+"w": "fleet",
+"a": "chemical weapon"
+},
+{
+"j": 3,
+"t": 96,
+"w": "sequence",
+"a": "beginning"
+},
+{
+"j": 3,
+"t": 97,
+"w": "expo",
+"a": "series"
+},
+{
+"j": 3,
+"t": 98,
+"w": "township",
+"a": "nursery"
+},
+{
+"j": 3,
+"t": 99,
+"w": "guest",
+"a": "buddy"
+},
+{
+"j": 3,
+"t": 100,
+"w": "spell",
+"a": "attempt"
+},
+{
+"j": 3,
+"t": 101,
+"w": "piece",
+"a": "fragments"
+},
+{
+"j": 3,
+"t": 102,
+"w": "pitcher",
+"a": "tournament"
+},
+{
+"j": 3,
+"t": 103,
+"w": "sequence",
+"a": "decision"
+},
+{
+"j": 3,
+"t": 104,
+"w": "anode",
+"a": "radiation"
+},
+{
+"j": 3,
+"t": 105,
+"w": "era",
+"a": "origin"
+},
+{
+"j": 3,
+"t": 106,
+"w": "brokerage",
+"a": "depreciation"
+},
+{
+"j": 3,
+"t": 107,
+"w": "harm",
+"a": "loner"
+},
+{
+"j": 3,
+"t": 108,
+"w": "pitcher",
+"a": "jousting"
+},
+{
+"j": 3,
+"t": 109,
+"w": "discussion",
+"a": "cheat"
+},
+{
+"j": 3,
+"t": 110,
+"w": "religion",
+"a": "grant"
+},
+{
+"j": 3,
+"t": 111,
+"w": "planet",
+"a": "ground"
+},
+{
+"j": 3,
+"t": 112,
+"w": "donation",
+"a": "charity"
+},
+{
+"j": 3,
+"t": 113,
+"w": "labour",
+"a": "engineering"
+},
+{
+"j": 3,
+"t": 114,
+"w": "homer",
+"a": "defender"
+},
+{
+"j": 3,
+"t": 115,
+"w": "people",
+"a": "others"
+},
+{
+"j": 3,
+"t": 116,
+"w": "coca",
+"a": "meal"
+},
+{
+"j": 3,
+"t": 117,
+"w": "campus",
+"a": "city"
+},
+{
+"j": 3,
+"t": 118,
+"w": "existence",
+"a": "doubt"
+},
+{
+"j": 3,
+"t": 119,
+"w": "ratio",
+"a": "proportion"
+},
+{
+"j": 3,
+"t": 120,
+"w": "coca",
+"a": "predator"
+},
+{
+"j": 3,
+"t": 121,
+"w": "privilege",
+"a": "exception"
+},
+{
+"j": 3,
+"t": 122,
+"w": "lawmaker",
+"a": "jurisdiction"
+},
+{
+"j": 3,
+"t": 123,
+"w": "airline",
+"a": "utility"
+},
+{
+"j": 3,
+"t": 124,
+"w": "people",
+"a": "neighbor"
+},
+{
+"j": 3,
+"t": 125,
+"w": "pickup",
+"a": "arm"
+},
+{
+"j": 3,
+"t": 126,
+"w": "folklore",
+"a": "arts"
+},
+{
+"j": 3,
+"t": 127,
+"w": "dose",
+"a": "sample"
+},
+{
+"j": 3,
+"t": 128,
+"w": "satisfaction",
+"a": "admirer"
+},
+{
+"j": 3,
+"t": 129,
+"w": "privilege",
+"a": "standard"
+},
+{
+"j": 3,
+"t": 130,
+"w": "lens",
+"a": "glance"
+},
+{
+"j": 3,
+"t": 131,
+"w": "atmosphere",
+"a": "tank"
+},
+{
+"j": 3,
+"t": 132,
+"w": "autumn",
+"a": "season"
+},
+{
+"j": 3,
+"t": 133,
+"w": "coca",
+"a": "dose"
+},
+{
+"j": 3,
+"t": 134,
+"w": "dose",
+"a": "serving"
+},
+{
+"j": 3,
+"t": 135,
+"w": "diplomacy",
+"a": "polemic"
+},
+{
+"j": 3,
+"t": 136,
+"w": "occupation",
+"a": "violence"
+},
+{
+"j": 3,
+"t": 137,
+"w": "ideology",
+"a": "theory"
+},
+{
+"j": 3,
+"t": 138,
+"w": "lens",
+"a": "screen"
+},
+{
+"j": 3,
+"t": 139,
+"w": "homer",
+"a": "trumpet"
+},
+{
+"j": 3,
+"t": 140,
+"w": "anode",
+"a": "casing"
+},
+{
+"j": 3,
+"t": 141,
+"w": "employee",
+"a": "club"
+},
+{
+"j": 3,
+"t": 142,
+"w": "grief",
+"a": "sadness"
+},
+{
+"j": 3,
+"t": 143,
+"w": "friend",
+"a": "old friend"
+},
+{
+"j": 3,
+"t": 144,
+"w": "anode",
+"a": "antenna"
+},
+{
+"j": 3,
+"t": 145,
+"w": "fleet",
+"a": "conflict"
+},
+{
+"j": 3,
+"t": 146,
+"w": "atom",
+"a": "molecule"
+},
+{
+"j": 3,
+"t": 147,
+"w": "chapel",
+"a": "sky"
+},
+{
+"j": 3,
+"t": 148,
+"w": "door",
+"a": "hallway"
+},
+{
+"j": 3,
+"t": 149,
+"w": "homer",
+"a": "goal"
+},
+{
+"j": 3,
+"t": 150,
+"w": "news",
+"a": "history"
+},
+{
+"j": 3,
+"t": 151,
+"w": "township",
+"a": "headquarters"
+},
+{
+"j": 3,
+"t": 152,
+"w": "bronze",
+"a": "stone"
+},
+{
+"j": 3,
+"t": 153,
+"w": "bubble",
+"a": "snow"
+},
+{
+"j": 3,
+"t": 154,
+"w": "bachelor",
+"a": "process"
+},
+{
+"j": 3,
+"t": 155,
+"w": "ideology",
+"a": "art"
+},
+{
+"j": 3,
+"t": 156,
+"w": "lion",
+"a": "thing"
+},
+{
+"j": 3,
+"t": 157,
+"w": "relegation",
+"a": "donation"
+},
+{
+"j": 3,
+"t": 158,
+"w": "pianist",
+"a": "arts"
+},
+{
+"j": 3,
+"t": 159,
+"w": "atom",
+"a": "chunk"
+},
+{
+"j": 3,
+"t": 160,
+"w": "chapel",
+"a": "interior"
+},
+{
+"j": 3,
+"t": 161,
+"w": "list",
+"a": "passage"
+},
+{
+"j": 3,
+"t": 162,
+"w": "labour",
+"a": "novice"
+},
+{
+"j": 3,
+"t": 163,
+"w": "privilege",
+"a": "justice"
+},
+{
+"j": 4,
+"t": 1,
+"w": "gate",
+"a": "yard"
+},
+{
+"j": 4,
+"t": 2,
+"w": "revision",
+"a": "regulation"
+},
+{
+"j": 4,
+"t": 3,
+"w": "representation",
+"a": "inspector"
+},
+{
+"j": 4,
+"t": 4,
+"w": "pickup",
+"a": "truck"
+},
+{
+"j": 4,
+"t": 5,
+"w": "stomach",
+"a": "hunger"
+},
+{
+"j": 4,
+"t": 6,
+"w": "existence",
+"a": "ruler"
+},
+{
+"j": 4,
+"t": 7,
+"w": "bronze",
+"a": "cane"
+},
+{
+"j": 4,
+"t": 8,
+"w": "expo",
+"a": "game"
+},
+{
+"j": 4,
+"t": 9,
+"w": "topic",
+"a": "note"
+},
+{
+"j": 4,
+"t": 10,
+"w": "folklore",
+"a": "legend"
+},
+{
+"j": 4,
+"t": 11,
+"w": "sequence",
+"a": "process"
+},
+{
+"j": 4,
+"t": 12,
+"w": "news",
+"a": "agenda"
+},
+{
+"j": 4,
+"t": 13,
+"w": "door",
+"a": "rod"
+},
+{
+"j": 4,
+"t": 14,
+"w": "sequence",
+"a": "past"
+},
+{
+"j": 4,
+"t": 15,
+"w": "airline",
+"a": "duct"
+},
+{
+"j": 4,
+"t": 16,
+"w": "overtime",
+"a": "endgame"
+},
+{
+"j": 4,
+"t": 17,
+"w": "bishop",
+"a": "law"
+},
+{
+"j": 4,
+"t": 18,
+"w": "labour",
+"a": "crank"
+},
+{
+"j": 4,
+"t": 19,
+"w": "piece",
+"a": "paragraph"
+},
+{
+"j": 4,
+"t": 20,
+"w": "satisfaction",
+"a": "eagerness"
+},
+{
+"j": 4,
+"t": 21,
+"w": "competitiveness",
+"a": "ambition"
+},
+{
+"j": 4,
+"t": 22,
+"w": "regulation",
+"a": "declaration"
+},
+{
+"j": 4,
+"t": 23,
+"w": "crater",
+"a": "furniture"
+},
+{
+"j": 4,
+"t": 24,
+"w": "contribution",
+"a": "support"
+},
+{
+"j": 4,
+"t": 25,
+"w": "hybrid",
+"a": "prosthesis"
+},
+{
+"j": 4,
+"t": 26,
+"w": "lawmaker",
+"a": "notary"
+},
+{
+"j": 4,
+"t": 27,
+"w": "order",
+"a": "administration"
+},
+{
+"j": 4,
+"t": 28,
+"w": "testimony",
+"a": "statute"
+},
+{
+"j": 4,
+"t": 29,
+"w": "acre",
+"a": "storage"
+},
+{
+"j": 4,
+"t": 30,
+"w": "lion",
+"a": "carnivore"
+},
+{
+"j": 4,
+"t": 31,
+"w": "copyright",
+"a": "statute"
+},
+{
+"j": 4,
+"t": 32,
+"w": "outlet",
+"a": "air"
+},
+{
+"j": 4,
+"t": 33,
+"w": "cake",
+"a": "snack"
+},
+{
+"j": 4,
+"t": 34,
+"w": "harm",
+"a": "harm"
+},
+{
+"j": 4,
+"t": 35,
+"w": "harm",
+"a": "ailment"
+},
+{
+"j": 4,
+"t": 36,
+"w": "sequence",
+"a": "origin"
+},
+{
+"j": 4,
+"t": 37,
+"w": "quantum",
+"a": "gauge"
+},
+{
+"j": 4,
+"t": 38,
+"w": "rest",
+"a": "deduction"
+},
+{
+"j": 4,
+"t": 39,
+"w": "resignation",
+"a": "lament"
+},
+{
+"j": 4,
+"t": 40,
+"w": "bronze",
+"a": "chunk"
+},
+{
+"j": 4,
+"t": 41,
+"w": "fleet",
+"a": "stream"
+},
+{
+"j": 4,
+"t": 42,
+"w": "argentine",
+"a": "plant"
+},
+{
+"j": 4,
+"t": 43,
+"w": "airline",
+"a": "clearance"
+},
+{
+"j": 4,
+"t": 44,
+"w": "reservation",
+"a": "market"
+},
+{
+"j": 4,
+"t": 45,
+"w": "satisfaction",
+"a": "humor"
+},
+{
+"j": 4,
+"t": 46,
+"w": "lake",
+"a": "atmosphere"
+},
+{
+"j": 4,
+"t": 47,
+"w": "satisfaction",
+"a": "ambition"
+},
+{
+"j": 4,
+"t": 48,
+"w": "representation",
+"a": "film"
+},
+{
+"j": 4,
+"t": 49,
+"w": "privilege",
+"a": "goal"
+},
+{
+"j": 4,
+"t": 50,
+"w": "guest",
+"a": "tip"
+},
+{
+"j": 4,
+"t": 51,
+"w": "activist",
+"a": "elder"
+},
+{
+"j": 4,
+"t": 52,
+"w": "integration",
+"a": "engineering"
+},
+{
+"j": 4,
+"t": 53,
+"w": "hybrid",
+"a": "type"
+},
+{
+"j": 4,
+"t": 54,
+"w": "ideology",
+"a": "satire"
+},
+{
+"j": 4,
+"t": 55,
+"w": "hybrid",
+"a": "animal"
+},
+{
+"j": 4,
+"t": 56,
+"w": "ideology",
+"a": "jurisprudence"
+},
+{
+"j": 4,
+"t": 57,
+"w": "pitcher",
+"a": "fencing"
+},
+{
+"j": 4,
+"t": 58,
+"w": "reservation",
+"a": "charity"
+},
+{
+"j": 4,
+"t": 59,
+"w": "crater",
+"a": "wilderness"
+},
+{
+"j": 4,
+"t": 60,
+"w": "anode",
+"a": "peripheral"
+},
+{
+"j": 4,
+"t": 61,
+"w": "businessman",
+"a": "giver"
+},
+{
+"j": 4,
+"t": 62,
+"w": "religion",
+"a": "critic"
+},
+{
+"j": 4,
+"t": 63,
+"w": "employee",
+"a": "donor"
+},
+{
+"j": 4,
+"t": 64,
+"w": "campus",
+"a": "school"
+},
+{
+"j": 4,
+"t": 65,
+"w": "religion",
+"a": "medicine"
+},
+{
+"j": 4,
+"t": 66,
+"w": "era",
+"a": "past"
+},
+{
+"j": 4,
+"t": 67,
+"w": "ally",
+"a": "friend"
+},
+{
+"j": 4,
+"t": 68,
+"w": "bronze",
+"a": "finale"
+},
+{
+"j": 4,
+"t": 69,
+"w": "competitiveness",
+"a": "passion"
+},
+{
+"j": 4,
+"t": 70,
+"w": "bowl",
+"a": "tube"
+},
+{
+"j": 4,
+"t": 71,
+"w": "driver",
+"a": "rail"
+},
+{
+"j": 4,
+"t": 72,
+"w": "ratio",
+"a": "rate"
+},
+{
+"j": 4,
+"t": 73,
+"w": "bishop",
+"a": "curriculum"
+},
+{
+"j": 4,
+"t": 74,
+"w": "employee",
+"a": "hacking"
+},
+{
+"j": 4,
+"t": 75,
+"w": "phase",
+"a": "beginning"
+},
+{
+"j": 4,
+"t": 76,
+"w": "bronze",
+"a": "cut"
+},
+{
+"j": 4,
+"t": 77,
+"w": "bronze",
+"a": "weapon"
+},
+{
+"j": 4,
+"t": 78,
+"w": "campus",
+"a": "square"
+},
+{
+"j": 4,
+"t": 79,
+"w": "campus",
+"a": "balcony"
+},
+{
+"j": 4,
+"t": 80,
+"w": "representation",
+"a": "creation"
+},
+{
+"j": 4,
+"t": 81,
+"w": "playoff",
+"a": "game"
+},
+{
+"j": 4,
+"t": 82,
+"w": "order",
+"a": "covenant"
+},
+{
+"j": 4,
+"t": 83,
+"w": "lawmaker",
+"a": "officer"
+},
+{
+"j": 4,
+"t": 84,
+"w": "occupation",
+"a": "waste"
+},
+{
+"j": 4,
+"t": 85,
+"w": "bubble",
+"a": "powder"
+},
+{
+"j": 4,
+"t": 86,
+"w": "road",
+"a": "object"
+},
+{
+"j": 4,
+"t": 87,
+"w": "lake",
+"a": "water"
+},
+{
+"j": 4,
+"t": 88,
+"w": "folklore",
+"a": "art"
+},
+{
+"j": 4,
+"t": 89,
+"w": "spell",
+"a": "command"
+},
+{
+"j": 4,
+"t": 90,
+"w": "representation",
+"a": "doctrine"
+},
+{
+"j": 4,
+"t": 91,
+"w": "airline",
+"a": "fumes"
+},
+{
+"j": 4,
+"t": 92,
+"w": "atmosphere",
+"a": "pool"
+},
+{
+"j": 4,
+"t": 93,
+"w": "reservation",
+"a": "town"
+},
+{
+"j": 4,
+"t": 94,
+"w": "prisoner",
+"a": "general"
+},
+{
+"j": 4,
+"t": 95,
+"w": "privilege",
+"a": "priority"
+},
+{
+"j": 4,
+"t": 96,
+"w": "rest",
+"a": "stillness"
+},
+{
+"j": 4,
+"t": 97,
+"w": "regulation",
+"a": "law"
+},
+{
+"j": 4,
+"t": 98,
+"w": "crater",
+"a": "quarry"
+},
+{
+"j": 4,
+"t": 99,
+"w": "airline",
+"a": "dispute"
+},
+{
+"j": 4,
+"t": 100,
+"w": "rest",
+"a": "passenger"
+},
+{
+"j": 4,
+"t": 101,
+"w": "crater",
+"a": "rock"
+},
+{
+"j": 4,
+"t": 102,
+"w": "bachelor",
+"a": "ancestor"
+},
+{
+"j": 4,
+"t": 103,
+"w": "rest",
+"a": "patience"
+},
+{
+"j": 4,
+"t": 104,
+"w": "bachelor",
+"a": "mortality"
+},
+{
+"j": 4,
+"t": 105,
+"w": "fist",
+"a": "criticism"
+},
+{
+"j": 4,
+"t": 106,
+"w": "crater",
+"a": "stone"
+},
+{
+"j": 4,
+"t": 107,
+"w": "employee",
+"a": "group"
+},
+{
+"j": 4,
+"t": 108,
+"w": "township",
+"a": "park"
+},
+{
+"j": 4,
+"t": 109,
+"w": "topic",
+"a": "rumor"
+},
+{
+"j": 4,
+"t": 110,
+"w": "coca",
+"a": "appetite"
+},
+{
+"j": 4,
+"t": 111,
+"w": "regulation",
+"a": "command"
+},
+{
+"j": 4,
+"t": 112,
+"w": "anode",
+"a": "cable"
+},
+{
+"j": 4,
+"t": 113,
+"w": "privilege",
+"a": "policy"
+},
+{
+"j": 4,
+"t": 114,
+"w": "relegation",
+"a": "quit"
+},
+{
+"j": 4,
+"t": 115,
+"w": "campus",
+"a": "attic"
+},
+{
+"j": 4,
+"t": 116,
+"w": "outlet",
+"a": "sewage"
+},
+{
+"j": 4,
+"t": 117,
+"w": "occupation",
+"a": "habit"
+},
+{
+"j": 4,
+"t": 118,
+"w": "autumn",
+"a": "spring"
+},
+{
+"j": 4,
+"t": 119,
+"w": "ideology",
+"a": "skill"
+},
+{
+"j": 4,
+"t": 120,
+"w": "autumn",
+"a": "spark"
+},
+{
+"j": 4,
+"t": 121,
+"w": "spell",
+"a": "manual"
+},
+{
+"j": 4,
+"t": 122,
+"w": "planet",
+"a": "space"
+},
+{
+"j": 4,
+"t": 123,
+"w": "folklore",
+"a": "entertainment"
+},
+{
+"j": 4,
+"t": 124,
+"w": "crater",
+"a": "surroundings"
+},
+{
+"j": 4,
+"t": 125,
+"w": "coca",
+"a": "smoke"
+},
+{
+"j": 4,
+"t": 126,
+"w": "employee",
+"a": "patron"
+},
+{
+"j": 4,
+"t": 127,
+"w": "phase",
+"a": "variation"
+},
+{
+"j": 4,
+"t": 128,
+"w": "model",
+"a": "device"
+},
+{
+"j": 4,
+"t": 129,
+"w": "chapel",
+"a": "gallery"
+},
+{
+"j": 4,
+"t": 130,
+"w": "diplomacy",
+"a": "rumor"
+},
+{
+"j": 4,
+"t": 131,
+"w": "fleet",
+"a": "traffic"
+},
+{
+"j": 4,
+"t": 132,
+"w": "athletics",
+"a": "game"
+},
+{
+"j": 4,
+"t": 133,
+"w": "pickup",
+"a": "animal"
+},
+{
+"j": 4,
+"t": 134,
+"w": "consideration",
+"a": "suspicion"
+},
+{
+"j": 4,
+"t": 135,
+"w": "diplomacy",
+"a": "diplomacy"
+},
+{
+"j": 4,
+"t": 136,
+"w": "bishop",
+"a": "judge"
+},
+{
+"j": 4,
+"t": 137,
+"w": "integration",
+"a": "group"
+},
+{
+"j": 4,
+"t": 138,
+"w": "overtime",
+"a": "ancestor"
+},
+{
+"j": 4,
+"t": 139,
+"w": "era",
+"a": "round"
+},
+{
+"j": 4,
+"t": 140,
+"w": "argentine",
+"a": "shrub"
+},
+{
+"j": 4,
+"t": 141,
+"w": "argentine",
+"a": "possession"
+},
+{
+"j": 4,
+"t": 142,
+"w": "harm",
+"a": "conflict"
+},
+{
+"j": 4,
+"t": 143,
+"w": "era",
+"a": "moment"
+},
+{
+"j": 4,
+"t": 144,
+"w": "guest",
+"a": "favor"
+},
+{
+"j": 4,
+"t": 145,
+"w": "integration",
+"a": "adapter"
+},
+{
+"j": 4,
+"t": 146,
+"w": "existence",
+"a": "member"
+},
+{
+"j": 4,
+"t": 147,
+"w": "outlet",
+"a": "marsh"
+},
+{
+"j": 4,
+"t": 148,
+"w": "pitcher",
+"a": "joust"
+},
+{
+"j": 4,
+"t": 149,
+"w": "activist",
+"a": "ancestors"
+},
+{
+"j": 4,
+"t": 150,
+"w": "airline",
+"a": "vapor"
+},
+{
+"j": 4,
+"t": 151,
+"w": "occupation",
+"a": "attack"
+},
+{
+"j": 4,
+"t": 152,
+"w": "existence",
+"a": "citizen"
+},
+{
+"j": 4,
+"t": 153,
+"w": "competitiveness",
+"a": "rivalry"
+},
+{
+"j": 4,
+"t": 154,
+"w": "bachelor",
+"a": "masculinity"
+},
+{
+"j": 4,
+"t": 155,
+"w": "era",
+"a": "outbreak"
+},
+{
+"j": 4,
+"t": 156,
+"w": "labour",
+"a": "constraint"
+},
+{
+"j": 4,
+"t": 157,
+"w": "road",
+"a": "station"
+},
+{
+"j": 4,
+"t": 158,
+"w": "planet",
+"a": "wilderness"
+},
+{
+"j": 4,
+"t": 159,
+"w": "sequence",
+"a": "fringe"
+},
+{
+"j": 4,
+"t": 160,
+"w": "model",
+"a": "equation"
+},
+{
+"j": 4,
+"t": 161,
+"w": "playoff",
+"a": "round"
+},
+{
+"j": 4,
+"t": 162,
+"w": "hybrid",
+"a": "hybrid"
+},
+{
+"j": 4,
+"t": 163,
+"w": "bachelor",
+"a": "sex ratio"
+},
+{
+"j": 5,
+"t": 1,
+"w": "reservation",
+"a": "office"
+},
+{
+"j": 5,
+"t": 2,
+"w": "crater",
+"a": "mineral"
+},
+{
+"j": 5,
+"t": 3,
+"w": "sequence",
+"a": "thread"
+},
+{
+"j": 5,
+"t": 4,
+"w": "topic",
+"a": "text"
+},
+{
+"j": 5,
+"t": 5,
+"w": "bishop",
+"a": "tradition"
+},
+{
+"j": 5,
+"t": 6,
+"w": "businessman",
+"a": "regulation"
+},
+{
+"j": 5,
+"t": 7,
+"w": "satisfaction",
+"a": "desire"
+},
+{
+"j": 5,
+"t": 8,
+"w": "order",
+"a": "decree"
+},
+{
+"j": 5,
+"t": 9,
+"w": "crater",
+"a": "gravel"
+},
+{
+"j": 5,
+"t": 10,
+"w": "township",
+"a": "plantation"
+},
+{
+"j": 5,
+"t": 11,
+"w": "post",
+"a": "track"
+},
+{
+"j": 5,
+"t": 12,
+"w": "pitcher",
+"a": "winner"
+},
+{
+"j": 5,
+"t": 13,
+"w": "township",
+"a": "town"
+},
+{
+"j": 5,
+"t": 14,
+"w": "testimony",
+"a": "proclamation"
+},
+{
+"j": 5,
+"t": 15,
+"w": "piece",
+"a": "piece"
+},
+{
+"j": 5,
+"t": 16,
+"w": "people",
+"a": "companion"
+},
+{
+"j": 5,
+"t": 17,
+"w": "quantum",
+"a": "component"
+},
+{
+"j": 5,
+"t": 18,
+"w": "planet",
+"a": "foundation"
+},
+{
+"j": 5,
+"t": 19,
+"w": "anode",
+"a": "exchange"
+},
+{
+"j": 5,
+"t": 20,
+"w": "township",
+"a": "vicinity"
+},
+{
+"j": 5,
+"t": 21,
+"w": "door",
+"a": "inside"
+},
+{
+"j": 5,
+"t": 22,
+"w": "integration",
+"a": "installation"
+},
+{
+"j": 5,
+"t": 23,
+"w": "stomach",
+"a": "food"
+},
+{
+"j": 5,
+"t": 24,
+"w": "quantum",
+"a": "fraction"
+},
+{
+"j": 5,
+"t": 25,
+"w": "obstacle",
+"a": "objection"
+},
+{
+"j": 5,
+"t": 26,
+"w": "driver",
+"a": "zoology"
+},
+{
+"j": 5,
+"t": 27,
+"w": "yesterday",
+"a": "person"
+},
+{
+"j": 5,
+"t": 28,
+"w": "discussion",
+"a": "guideline"
+},
+{
+"j": 5,
+"t": 29,
+"w": "atom",
+"a": "crumb"
+},
+{
+"j": 5,
+"t": 30,
+"w": "obstacle",
+"a": "saw"
+},
+{
+"j": 5,
+"t": 31,
+"w": "contribution",
+"a": "ration"
+},
+{
+"j": 5,
+"t": 32,
+"w": "testimony",
+"a": "statement"
+},
+{
+"j": 5,
+"t": 33,
+"w": "occupation",
+"a": "actor"
+},
+{
+"j": 5,
+"t": 34,
+"w": "reservation",
+"a": "station"
+},
+{
+"j": 5,
+"t": 35,
+"w": "religion",
+"a": "subject"
+},
+{
+"j": 5,
+"t": 36,
+"w": "order",
+"a": "demand"
+},
+{
+"j": 5,
+"t": 37,
+"w": "lion",
+"a": "beast"
+},
+{
+"j": 5,
+"t": 38,
+"w": "bishop",
+"a": "patron"
+},
+{
+"j": 5,
+"t": 39,
+"w": "flame",
+"a": "ash"
+},
+{
+"j": 5,
+"t": 40,
+"w": "reservoir",
+"a": "heap"
+},
+{
+"j": 5,
+"t": 41,
+"w": "bronze",
+"a": "pigment"
+},
+{
+"j": 5,
+"t": 42,
+"w": "gate",
+"a": "porch"
+},
+{
+"j": 5,
+"t": 43,
+"w": "atmosphere",
+"a": "haven"
+},
+{
+"j": 5,
+"t": 44,
+"w": "helm",
+"a": "antenna"
+},
+{
+"j": 5,
+"t": 45,
+"w": "ankle",
+"a": "limb"
+},
+{
+"j": 5,
+"t": 46,
+"w": "religion",
+"a": "philosophy"
+},
+{
+"j": 5,
+"t": 47,
+"w": "relegation",
+"a": "truce"
+},
+{
+"j": 5,
+"t": 48,
+"w": "testimony",
+"a": "claim"
+},
+{
+"j": 5,
+"t": 49,
+"w": "occupation",
+"a": "rebellion"
+},
+{
+"j": 5,
+"t": 50,
+"w": "ratio",
+"a": "measure"
+},
+{
+"j": 5,
+"t": 51,
+"w": "lake",
+"a": "ice"
+},
+{
+"j": 5,
+"t": 52,
+"w": "overtime",
+"a": "end"
+},
+{
+"j": 5,
+"t": 53,
+"w": "quantum",
+"a": "concept"
+},
+{
+"j": 5,
+"t": 54,
+"w": "driver",
+"a": "engineer"
+},
+{
+"j": 5,
+"t": 55,
+"w": "satisfaction",
+"a": "passion"
+},
+{
+"j": 5,
+"t": 56,
+"w": "fist",
+"a": "voice"
+},
+{
+"j": 5,
+"t": 57,
+"w": "fist",
+"a": "mob"
+},
+{
+"j": 5,
+"t": 58,
+"w": "friend",
+"a": "neighbor"
+},
+{
+"j": 5,
+"t": 59,
+"w": "sequence",
+"a": "series"
+},
+{
+"j": 5,
+"t": 60,
+"w": "rest",
+"a": "wait"
+},
+{
+"j": 5,
+"t": 61,
+"w": "topic",
+"a": "excerpt"
+},
+{
+"j": 5,
+"t": 62,
+"w": "fist",
+"a": "body"
+},
+{
+"j": 5,
+"t": 63,
+"w": "discussion",
+"a": "hint"
+},
+{
+"j": 5,
+"t": 64,
+"w": "ratio",
+"a": "average"
+},
+{
+"j": 5,
+"t": 65,
+"w": "township",
+"a": "court"
+},
+{
+"j": 5,
+"t": 66,
+"w": "businessman",
+"a": "technology"
+},
+{
+"j": 5,
+"t": 67,
+"w": "cake",
+"a": "flour"
+},
+{
+"j": 5,
+"t": 68,
+"w": "brokerage",
+"a": "rate"
+},
+{
+"j": 5,
+"t": 69,
+"w": "autumn",
+"a": "eternity"
+},
+{
+"j": 5,
+"t": 70,
+"w": "ankle",
+"a": "neck"
+},
+{
+"j": 5,
+"t": 71,
+"w": "argentine",
+"a": "spark"
+},
+{
+"j": 5,
+"t": 72,
+"w": "copyright",
+"a": "text"
+},
+{
+"j": 5,
+"t": 73,
+"w": "malaria",
+"a": "boxing"
+},
+{
+"j": 5,
+"t": 74,
+"w": "township",
+"a": "state"
+},
+{
+"j": 5,
+"t": 75,
+"w": "malaria",
+"a": "chill"
+},
+{
+"j": 5,
+"t": 76,
+"w": "prisoner",
+"a": "war"
+},
+{
+"j": 5,
+"t": 77,
+"w": "spell",
+"a": "cooking"
+},
+{
+"j": 5,
+"t": 78,
+"w": "model",
+"a": "routine"
+},
+{
+"j": 5,
+"t": 79,
+"w": "gate",
+"a": "launcher"
+},
+{
+"j": 5,
+"t": 80,
+"w": "bachelor",
+"a": "finisher"
+},
+{
+"j": 5,
+"t": 81,
+"w": "folklore",
+"a": "literature"
+},
+{
+"j": 5,
+"t": 82,
+"w": "discussion",
+"a": "gamble"
+},
+{
+"j": 5,
+"t": 83,
+"w": "consideration",
+"a": "concern"
+},
+{
+"j": 5,
+"t": 84,
+"w": "hybrid",
+"a": "anatomy"
+},
+{
+"j": 5,
+"t": 85,
+"w": "fist",
+"a": "skin"
+},
+{
+"j": 5,
+"t": 86,
+"w": "brokerage",
+"a": "tariff"
+},
+{
+"j": 5,
+"t": 87,
+"w": "obstacle",
+"a": "mover"
+},
+{
+"j": 5,
+"t": 88,
+"w": "expo",
+"a": "games"
+},
+{
+"j": 5,
+"t": 89,
+"w": "religion",
+"a": "sport"
+},
+{
+"j": 5,
+"t": 90,
+"w": "businessman",
+"a": "donor"
+},
+{
+"j": 5,
+"t": 91,
+"w": "road",
+"a": "face"
+},
+{
+"j": 5,
+"t": 92,
+"w": "door",
+"a": "spine"
+},
+{
+"j": 5,
+"t": 93,
+"w": "harm",
+"a": "hostility"
+},
+{
+"j": 5,
+"t": 94,
+"w": "overtime",
+"a": "surrender"
+},
+{
+"j": 5,
+"t": 95,
+"w": "expo",
+"a": "gallery"
+},
+{
+"j": 5,
+"t": 96,
+"w": "spell",
+"a": "transcript"
+},
+{
+"j": 5,
+"t": 97,
+"w": "lawmaker",
+"a": "leader"
+},
+{
+"j": 5,
+"t": 98,
+"w": "township",
+"a": "warehouse"
+},
+{
+"j": 5,
+"t": 99,
+"w": "employee",
+"a": "amateur"
+},
+{
+"j": 5,
+"t": 100,
+"w": "guest",
+"a": "donor"
+},
+{
+"j": 5,
+"t": 101,
+"w": "planet",
+"a": "spark"
+},
+{
+"j": 5,
+"t": 102,
+"w": "bachelor",
+"a": "spouse"
+},
+{
+"j": 5,
+"t": 103,
+"w": "lake",
+"a": "swamp"
+},
+{
+"j": 5,
+"t": 104,
+"w": "coca",
+"a": "pet"
+},
+{
+"j": 5,
+"t": 105,
+"w": "order",
+"a": "resolution"
+},
+{
+"j": 5,
+"t": 106,
+"w": "hybrid",
+"a": "difference"
+},
+{
+"j": 5,
+"t": 107,
+"w": "post",
+"a": "fence"
+},
+{
+"j": 5,
+"t": 108,
+"w": "occupation",
+"a": "fighter"
+},
+{
+"j": 5,
+"t": 109,
+"w": "bishop",
+"a": "official"
+},
+{
+"j": 5,
+"t": 110,
+"w": "bachelor",
+"a": "limit"
+},
+{
+"j": 5,
+"t": 111,
+"w": "fleet",
+"a": "avalanche"
+},
+{
+"j": 5,
+"t": 112,
+"w": "coca",
+"a": "thirst"
+},
+{
+"j": 5,
+"t": 113,
+"w": "gate",
+"a": "interior"
+},
+{
+"j": 5,
+"t": 114,
+"w": "representation",
+"a": "poster"
+},
+{
+"j": 5,
+"t": 115,
+"w": "lawsuit",
+"a": "politics"
+},
+{
+"j": 5,
+"t": 116,
+"w": "phase",
+"a": "moment"
+},
+{
+"j": 5,
+"t": 117,
+"w": "topic",
+"a": "footnote"
+},
+{
+"j": 5,
+"t": 118,
+"w": "cake",
+"a": "morsel"
+},
+{
+"j": 5,
+"t": 119,
+"w": "integration",
+"a": "party"
+},
+{
+"j": 5,
+"t": 120,
+"w": "yesterday",
+"a": "period"
+},
+{
+"j": 5,
+"t": 121,
+"w": "contribution",
+"a": "allowance"
+},
+{
+"j": 5,
+"t": 122,
+"w": "order",
+"a": "requirement"
+},
+{
+"j": 5,
+"t": 123,
+"w": "ankle",
+"a": "fingertip"
+},
+{
+"j": 5,
+"t": 124,
+"w": "homer",
+"a": "victory"
+},
+{
+"j": 5,
+"t": 125,
+"w": "acre",
+"a": "vicinity"
+},
+{
+"j": 5,
+"t": 126,
+"w": "brokerage",
+"a": "gift"
+},
+{
+"j": 5,
+"t": 127,
+"w": "diplomacy",
+"a": "epic"
+},
+{
+"j": 5,
+"t": 128,
+"w": "obstacle",
+"a": "pessimism"
+},
+{
+"j": 5,
+"t": 129,
+"w": "helm",
+"a": "prow"
+},
+{
+"j": 5,
+"t": 130,
+"w": "businessman",
+"a": "junk"
+},
+{
+"j": 5,
+"t": 131,
+"w": "religion",
+"a": "museum"
+},
+{
+"j": 5,
+"t": 132,
+"w": "reservoir",
+"a": "matter"
+},
+{
+"j": 5,
+"t": 133,
+"w": "era",
+"a": "battle"
+},
+{
+"j": 5,
+"t": 134,
+"w": "atmosphere",
+"a": "space"
+},
+{
+"j": 5,
+"t": 135,
+"w": "argentine",
+"a": "relic"
+},
+{
+"j": 5,
+"t": 136,
+"w": "employee",
+"a": "layman"
+},
+{
+"j": 5,
+"t": 137,
+"w": "anode",
+"a": "machinery"
+},
+{
+"j": 5,
+"t": 138,
+"w": "consideration",
+"a": "caution"
+},
+{
+"j": 5,
+"t": 139,
+"w": "bowl",
+"a": "sword"
+},
+{
+"j": 5,
+"t": 140,
+"w": "employee",
+"a": "diplomacy"
+},
+{
+"j": 5,
+"t": 141,
+"w": "religion",
+"a": "academy"
+},
+{
+"j": 5,
+"t": 142,
+"w": "argentine",
+"a": "flash"
+},
+{
+"j": 5,
+"t": 143,
+"w": "rest",
+"a": "peace"
+},
+{
+"j": 5,
+"t": 144,
+"w": "pianist",
+"a": "literature"
+},
+{
+"j": 5,
+"t": 145,
+"w": "campus",
+"a": "landmark"
+},
+{
+"j": 5,
+"t": 146,
+"w": "existence",
+"a": "organism"
+},
+{
+"j": 5,
+"t": 147,
+"w": "occupation",
+"a": "lawsuit"
+},
+{
+"j": 5,
+"t": 148,
+"w": "post",
+"a": "hallway"
+},
+{
+"j": 5,
+"t": 149,
+"w": "guest",
+"a": "self"
+},
+{
+"j": 5,
+"t": 150,
+"w": "ally",
+"a": "club"
+},
+{
+"j": 5,
+"t": 151,
+"w": "piece",
+"a": "word"
+},
+{
+"j": 5,
+"t": 152,
+"w": "lion",
+"a": "elephant"
+},
+{
+"j": 5,
+"t": 153,
+"w": "contribution",
+"a": "payment"
+},
+{
+"j": 5,
+"t": 154,
+"w": "integration",
+"a": "border"
+},
+{
+"j": 5,
+"t": 155,
+"w": "lens",
+"a": "glasses"
+},
+{
+"j": 5,
+"t": 156,
+"w": "privilege",
+"a": "need"
+},
+{
+"j": 5,
+"t": 157,
+"w": "pianist",
+"a": "humanities"
+},
+{
+"j": 5,
+"t": 158,
+"w": "contribution",
+"a": "distribution"
+},
+{
+"j": 5,
+"t": 159,
+"w": "model",
+"a": "logic"
+},
+{
+"j": 5,
+"t": 160,
+"w": "contribution",
+"a": "key"
+},
+{
+"j": 5,
+"t": 161,
+"w": "post",
+"a": "pier"
+},
+{
+"j": 5,
+"t": 162,
+"w": "lawsuit",
+"a": "competition"
+},
+{
+"j": 5,
+"t": 163,
+"w": "profit",
+"a": "speed"
+},
+{
+"j": 6,
+"t": 1,
+"w": "ideology",
+"a": "humanities"
+},
+{
+"j": 6,
+"t": 2,
+"w": "businessman",
+"a": "pauper"
+},
+{
+"j": 6,
+"t": 3,
+"w": "ratio",
+"a": "level"
+},
+{
+"j": 6,
+"t": 4,
+"w": "ankle",
+"a": "corpse"
+},
+{
+"j": 6,
+"t": 5,
+"w": "bronze",
+"a": "metal"
+},
+{
+"j": 6,
+"t": 6,
+"w": "harm",
+"a": "accident"
+},
+{
+"j": 6,
+"t": 7,
+"w": "airline",
+"a": "atmosphere"
+},
+{
+"j": 6,
+"t": 8,
+"w": "contribution",
+"a": "share"
+},
+{
+"j": 6,
+"t": 9,
+"w": "airline",
+"a": "dust"
+},
+{
+"j": 6,
+"t": 10,
+"w": "hybrid",
+"a": "creature"
+},
+{
+"j": 6,
+"t": 11,
+"w": "overtime",
+"a": "finish"
+},
+{
+"j": 6,
+"t": 12,
+"w": "competitiveness",
+"a": "tag"
+},
+{
+"j": 6,
+"t": 13,
+"w": "lawsuit",
+"a": "ruling"
+},
+{
+"j": 6,
+"t": 14,
+"w": "relegation",
+"a": "bottom"
+},
+{
+"j": 6,
+"t": 15,
+"w": "diplomacy",
+"a": "gossip"
+},
+{
+"j": 6,
+"t": 16,
+"w": "bishop",
+"a": "exception"
+},
+{
+"j": 6,
+"t": 17,
+"w": "diplomacy",
+"a": "rhetoric"
+},
+{
+"j": 6,
+"t": 18,
+"w": "coca",
+"a": "breath"
+},
+{
+"j": 6,
+"t": 19,
+"w": "revision",
+"a": "decree"
+},
+{
+"j": 6,
+"t": 20,
+"w": "homer",
+"a": "cheer"
+},
+{
+"j": 6,
+"t": 21,
+"w": "flame",
+"a": "ember"
+},
+{
+"j": 6,
+"t": 22,
+"w": "grief",
+"a": "sorrow"
+},
+{
+"j": 6,
+"t": 23,
+"w": "era",
+"a": "eon"
+},
+{
+"j": 6,
+"t": 24,
+"w": "airline",
+"a": "pipeline"
+},
+{
+"j": 6,
+"t": 25,
+"w": "bishop",
+"a": "lawyer"
+},
+{
+"j": 6,
+"t": 26,
+"w": "knight",
+"a": "warrior"
+},
+{
+"j": 6,
+"t": 27,
+"w": "lawmaker",
+"a": "instruction"
+},
+{
+"j": 6,
+"t": 28,
+"w": "existence",
+"a": "remnant"
+},
+{
+"j": 6,
+"t": 29,
+"w": "profit",
+"a": "fee"
+},
+{
+"j": 6,
+"t": 30,
+"w": "integration",
+"a": "gathering"
+},
+{
+"j": 6,
+"t": 31,
+"w": "driver",
+"a": "scientist"
+},
+{
+"j": 6,
+"t": 32,
+"w": "quantum",
+"a": "particle"
+},
+{
+"j": 6,
+"t": 33,
+"w": "piece",
+"a": "pieces"
+},
+{
+"j": 6,
+"t": 34,
+"w": "donation",
+"a": "payment"
+},
+{
+"j": 6,
+"t": 35,
+"w": "pitcher",
+"a": "sponsor"
+},
+{
+"j": 6,
+"t": 36,
+"w": "lawmaker",
+"a": "official"
+},
+{
+"j": 6,
+"t": 37,
+"w": "list",
+"a": "page"
+},
+{
+"j": 6,
+"t": 38,
+"w": "stomach",
+"a": "organ"
+},
+{
+"j": 6,
+"t": 39,
+"w": "businessman",
+"a": "kitsch"
+},
+{
+"j": 6,
+"t": 40,
+"w": "businessman",
+"a": "vendor"
+},
+{
+"j": 6,
+"t": 41,
+"w": "athletics",
+"a": "rugby"
+},
+{
+"j": 6,
+"t": 42,
+"w": "driver",
+"a": "back"
+},
+{
+"j": 6,
+"t": 43,
+"w": "friend",
+"a": "friend"
+},
+{
+"j": 6,
+"t": 44,
+"w": "chapel",
+"a": "library"
+},
+{
+"j": 6,
+"t": 45,
+"w": "phase",
+"a": "start"
+},
+{
+"j": 6,
+"t": 46,
+"w": "testimony",
+"a": "announcement"
+},
+{
+"j": 6,
+"t": 47,
+"w": "bishop",
+"a": "exhibition"
+},
+{
+"j": 6,
+"t": 48,
+"w": "model",
+"a": "explanation"
+},
+{
+"j": 6,
+"t": 49,
+"w": "diplomacy",
+"a": "clause"
+},
+{
+"j": 6,
+"t": 50,
+"w": "door",
+"a": "room"
+},
+{
+"j": 6,
+"t": 51,
+"w": "representation",
+"a": "performance"
+},
+{
+"j": 6,
+"t": 52,
+"w": "representation",
+"a": "literature"
+},
+{
+"j": 6,
+"t": 53,
+"w": "activist",
+"a": "rebel"
+},
+{
+"j": 6,
+"t": 54,
+"w": "integration",
+"a": "craft"
+},
+{
+"j": 6,
+"t": 55,
+"w": "airline",
+"a": "air"
+},
+{
+"j": 6,
+"t": 56,
+"w": "autumn",
+"a": "dawn"
+},
+{
+"j": 6,
+"t": 57,
+"w": "atmosphere",
+"a": "blood"
+},
+{
+"j": 6,
+"t": 58,
+"w": "post",
+"a": "essay"
+},
+{
+"j": 6,
+"t": 59,
+"w": "spell",
+"a": "experiment"
+},
+{
+"j": 6,
+"t": 60,
+"w": "ally",
+"a": "pub"
+},
+{
+"j": 6,
+"t": 61,
+"w": "diplomacy",
+"a": "martial art"
+},
+{
+"j": 6,
+"t": 62,
+"w": "satisfaction",
+"a": "fun"
+},
+{
+"j": 6,
+"t": 63,
+"w": "stomach",
+"a": "body"
+},
+{
+"j": 6,
+"t": 64,
+"w": "revision",
+"a": "innovation"
+},
+{
+"j": 6,
+"t": 65,
+"w": "news",
+"a": "forecast"
+},
+{
+"j": 6,
+"t": 66,
+"w": "revision",
+"a": "invention"
+},
+{
+"j": 6,
+"t": 67,
+"w": "autumn",
+"a": "summer"
+},
+{
+"j": 6,
+"t": 68,
+"w": "testimony",
+"a": "license"
+},
+{
+"j": 6,
+"t": 69,
+"w": "chapel",
+"a": "attic"
+},
+{
+"j": 6,
+"t": 70,
+"w": "order",
+"a": "army"
+},
+{
+"j": 6,
+"t": 71,
+"w": "news",
+"a": "announcement"
+},
+{
+"j": 6,
+"t": 72,
+"w": "campus",
+"a": "neighborhood"
+},
+{
+"j": 6,
+"t": 73,
+"w": "pickup",
+"a": "beam"
+},
+{
+"j": 6,
+"t": 74,
+"w": "copyright",
+"a": "form"
+},
+{
+"j": 6,
+"t": 75,
+"w": "road",
+"a": "leaf"
+},
+{
+"j": 6,
+"t": 76,
+"w": "ally",
+"a": "accomplice"
+},
+{
+"j": 6,
+"t": 77,
+"w": "outlet",
+"a": "tip"
+},
+{
+"j": 6,
+"t": 78,
+"w": "integration",
+"a": "integration"
+},
+{
+"j": 6,
+"t": 79,
+"w": "expo",
+"a": "troupe"
+},
+{
+"j": 6,
+"t": 80,
+"w": "people",
+"a": "community"
+},
+{
+"j": 6,
+"t": 81,
+"w": "rest",
+"a": "break"
+},
+{
+"j": 6,
+"t": 82,
+"w": "phase",
+"a": "stage"
+},
+{
+"j": 6,
+"t": 83,
+"w": "model",
+"a": "craft"
+},
+{
+"j": 6,
+"t": 84,
+"w": "malaria",
+"a": "wound"
+},
+{
+"j": 6,
+"t": 85,
+"w": "acre",
+"a": "location"
+},
+{
+"j": 6,
+"t": 86,
+"w": "flame",
+"a": "warmth"
+},
+{
+"j": 6,
+"t": 87,
+"w": "helm",
+"a": "leader"
+},
+{
+"j": 6,
+"t": 88,
+"w": "fleet",
+"a": "vehicle"
+},
+{
+"j": 6,
+"t": 89,
+"w": "satisfaction",
+"a": "appetite"
+},
+{
+"j": 6,
+"t": 90,
+"w": "labour",
+"a": "task"
+},
+{
+"j": 6,
+"t": 91,
+"w": "helm",
+"a": "lance"
+},
+{
+"j": 6,
+"t": 92,
+"w": "lawmaker",
+"a": "rule"
+},
+{
+"j": 6,
+"t": 93,
+"w": "resignation",
+"a": "sorrow"
+},
+{
+"j": 6,
+"t": 94,
+"w": "news",
+"a": "schedule"
+},
+{
+"j": 6,
+"t": 95,
+"w": "obstacle",
+"a": "worry"
+},
+{
+"j": 6,
+"t": 96,
+"w": "folklore",
+"a": "opinion"
+},
+{
+"j": 6,
+"t": 97,
+"w": "topic",
+"a": "essay"
+},
+{
+"j": 6,
+"t": 98,
+"w": "labour",
+"a": "impossibility"
+},
+{
+"j": 6,
+"t": 99,
+"w": "argentine",
+"a": "belonging"
+},
+{
+"j": 6,
+"t": 100,
+"w": "homer",
+"a": "megaphone"
+},
+{
+"j": 6,
+"t": 101,
+"w": "competitiveness",
+"a": "odds"
+},
+{
+"j": 6,
+"t": 102,
+"w": "obstacle",
+"a": "means"
+},
+{
+"j": 6,
+"t": 103,
+"w": "reservoir",
+"a": "vent"
+},
+{
+"j": 6,
+"t": 104,
+"w": "lens",
+"a": "sight"
+},
+{
+"j": 6,
+"t": 105,
+"w": "brokerage",
+"a": "donation"
+},
+{
+"j": 6,
+"t": 106,
+"w": "road",
+"a": "promenade"
+},
+{
+"j": 6,
+"t": 107,
+"w": "lawsuit",
+"a": "trial"
+},
+{
+"j": 6,
+"t": 108,
+"w": "religion",
+"a": "criticism"
+},
+{
+"j": 6,
+"t": 109,
+"w": "yesterday",
+"a": "contemporary"
+},
+{
+"j": 6,
+"t": 110,
+"w": "satisfaction",
+"a": "pride"
+},
+{
+"j": 6,
+"t": 111,
+"w": "stomach",
+"a": "sense"
+},
+{
+"j": 6,
+"t": 112,
+"w": "resignation",
+"a": "punishment"
+},
+{
+"j": 6,
+"t": 113,
+"w": "grief",
+"a": "gloom"
+},
+{
+"j": 6,
+"t": 114,
+"w": "acre",
+"a": "space"
+},
+{
+"j": 6,
+"t": 115,
+"w": "regulation",
+"a": "tournament"
+},
+{
+"j": 6,
+"t": 116,
+"w": "overtime",
+"a": "match"
+},
+{
+"j": 6,
+"t": 117,
+"w": "guest",
+"a": "clown"
+},
+{
+"j": 6,
+"t": 118,
+"w": "planet",
+"a": "abroad"
+},
+{
+"j": 6,
+"t": 119,
+"w": "discussion",
+"a": "message"
+},
+{
+"j": 6,
+"t": 120,
+"w": "grief",
+"a": "grief"
+},
+{
+"j": 6,
+"t": 121,
+"w": "integration",
+"a": "joint"
+},
+{
+"j": 6,
+"t": 122,
+"w": "fleet",
+"a": "gas warfare"
+},
+{
+"j": 6,
+"t": 123,
+"w": "occupation",
+"a": "military"
+},
+{
+"j": 6,
+"t": 124,
+"w": "spell",
+"a": "proposal"
+},
+{
+"j": 6,
+"t": 125,
+"w": "flame",
+"a": "fire"
+},
+{
+"j": 6,
+"t": 126,
+"w": "lawsuit",
+"a": "war"
+},
+{
+"j": 6,
+"t": 127,
+"w": "harm",
+"a": "mistake"
+},
+{
+"j": 6,
+"t": 128,
+"w": "copyright",
+"a": "prose"
+},
+{
+"j": 6,
+"t": 129,
+"w": "model",
+"a": "technique"
+},
+{
+"j": 6,
+"t": 130,
+"w": "testimony",
+"a": "inspection"
+},
+{
+"j": 6,
+"t": 131,
+"w": "religion",
+"a": "patron"
+},
+{
+"j": 6,
+"t": 132,
+"w": "model",
+"a": "chip"
+},
+{
+"j": 6,
+"t": 133,
+"w": "coca",
+"a": "tea"
+},
+{
+"j": 6,
+"t": 134,
+"w": "reservoir",
+"a": "gas"
+},
+{
+"j": 6,
+"t": 135,
+"w": "activist",
+"a": "hug"
+},
+{
+"j": 6,
+"t": 136,
+"w": "copyright",
+"a": "correspondence"
+},
+{
+"j": 6,
+"t": 137,
+"w": "lawmaker",
+"a": "publication"
+},
+{
+"j": 6,
+"t": 138,
+"w": "businessman",
+"a": "waster"
+},
+{
+"j": 6,
+"t": 139,
+"w": "cake",
+"a": "food"
+},
+{
+"j": 6,
+"t": 140,
+"w": "piece",
+"a": "passage"
+},
+{
+"j": 6,
+"t": 141,
+"w": "guest",
+"a": "joke"
+},
+{
+"j": 6,
+"t": 142,
+"w": "occupation",
+"a": "mistake"
+},
+{
+"j": 6,
+"t": 143,
+"w": "order",
+"a": "soldier"
+},
+{
+"j": 6,
+"t": 144,
+"w": "people",
+"a": "companions"
+},
+{
+"j": 6,
+"t": 145,
+"w": "spell",
+"a": "summary"
+},
+{
+"j": 6,
+"t": 146,
+"w": "profit",
+"a": "loss"
+},
+{
+"j": 6,
+"t": 147,
+"w": "employee",
+"a": "rebel"
+},
+{
+"j": 6,
+"t": 148,
+"w": "anode",
+"a": "electron"
+},
+{
+"j": 6,
+"t": 149,
+"w": "knight",
+"a": "hunter"
+},
+{
+"j": 6,
+"t": 150,
+"w": "ally",
+"a": "associate"
+},
+{
+"j": 6,
+"t": 151,
+"w": "relegation",
+"a": "plan"
+},
+{
+"j": 6,
+"t": 152,
+"w": "lake",
+"a": "pantry"
+},
+{
+"j": 6,
+"t": 153,
+"w": "gambling",
+"a": "game"
+},
+{
+"j": 6,
+"t": 154,
+"w": "guest",
+"a": "giver"
+},
+{
+"j": 6,
+"t": 155,
+"w": "spell",
+"a": "erase"
+},
+{
+"j": 6,
+"t": 156,
+"w": "lion",
+"a": "animal"
+},
+{
+"j": 6,
+"t": 157,
+"w": "businessman",
+"a": "sculpture"
+},
+{
+"j": 6,
+"t": 158,
+"w": "resignation",
+"a": "condolence"
+},
+{
+"j": 6,
+"t": 159,
+"w": "bishop",
+"a": "donor"
+}
+]
+}

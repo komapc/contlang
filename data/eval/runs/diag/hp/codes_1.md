@@ -1,0 +1,50 @@
+1. MOVE SIDE | o tool
+2. BODY GOOD HEAT | o
+3. SAY ART | o agent
+4. DO RULE | o agent
+5. CONSUME MOOD | o
+6. THINK CHANGE | o
+7. THINK CARE | o
+8. JOIN VALUE | o result
+9. GIVE RULE | o
+10. KNOW RULE ABOVE | o
+11. GRAIN INSIDE | o
+12. PLACE KNOW ABOVE | o
+13. SOMEONE | o N+3
+14. PLACE GRAIN | o
+15. SAY | o result
+16. TIME BIG | o
+17. GIVE | o result
+18. JOIN MOVE | o tool
+19. HAPPEN GOOD | o PI FIGHT(=-5) | o
+20. THING CONSUME FEEL | o
+21. MEASURE CONSUME | o
+22. MANY INSIDE | o
+23. PLACE INSIDE ABOVE | o
+24. GIVE VALUE | o agent
+25. TIME PART | o
+26. SOMEONE PART DO | o
+27. LONG GRAIN | o
+28. WANT BEGIN MOOD | o quality
+29. TIME PART | o
+30. THINK KNOW | o result
+31. PLACE GIVE VALUE | o
+32. BIG THING ABOVE | o
+33. SEE | o result
+34. SAY HAPPEN TIME | o
+35. TEXT RULE CAN | o
+36. CAN MOVE | o agent
+37. MOOD FEEL | o
+38. TEXT RULE | o agent
+39. CHANGE GOOD BODY | o result
+40. SAY DO CHANGE | o result
+41. FIGHT RULE | o
+42. SEE | o tool
+43. SAY RULE | o result
+44. INSIDE THING | o
+45. GIVE FIGHT | o agent
+46. FRIEND JOIN | o
+47. PART HAPPEN | o result
+48. SOMEONE NEAR | o
+49. PLACE SEE | o
+50. RULE | o
