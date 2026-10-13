@@ -48,11 +48,13 @@
       return this.grids[key] || (this.grids[key] = grid(S.map((r) => this.lv[r])));
     }
     // ban — корни, которых у этого слова быть не может (SEX у слова без пола, Reader.ban)
-    encode(x, m = 3, ban) {
+    encode(x, m = 3, ban) { return this.top(x, 1, m, ban)[0]; }
+    // K лучших по cos кодов с разными наборами корней (у каждого набора — лучший порядок и уровни)
+    top(x, K = 1, m = 3, ban) {
       const cx = this.C.map((c) => dot(c, x)), ax = this.A.map((a) => dot(a, x));
       const order = [...Array(this.R).keys()].filter((r) => !(ban && ban.includes(r))).sort((i, j) => (Math.abs(cx[j]) + Math.abs(ax[j])) - (Math.abs(cx[i]) + Math.abs(ax[i])));
       const cand = order.slice(0, this.topr);
-      let best = { cos: -2 };
+      let best = { cos: -2 }; const byS = new Map();
       for (let k = 1; k <= m; k++) {
         for (const S of combos(cand, k)) {
           const heads = (k > 1 && this.wts.slice(0, k).some((t) => t !== 1)) ? [...Array(k).keys()] : [0];
@@ -78,11 +80,12 @@
               }
               const cos = d / Math.sqrt(Math.max(n, 1e-9));
               if (cos > best.cos) best = { cos, S: S2, v: g.slice() };
+              if (K > 1) { const key = S.slice().sort((p, q) => p - q).join(","), o = byS.get(key); if (!o || cos > o.cos) byS.set(key, { cos, S: S2, v: g.slice() }); }
             }
           }
         }
       }
-      return best;
+      return K > 1 ? [...byS.values()].sort((a, b) => b.cos - a.cos).slice(0, K) : [best];
     }
     // слагаемые кода по корням: w_j (c_r + s·v·a_r); их сумма — вектор кода y
     parts(S, v) {

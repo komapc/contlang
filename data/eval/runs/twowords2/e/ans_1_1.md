@@ -1,0 +1,50 @@
+1. radar | sonar | compass
+2. malaria | dengue | yellow fever
+3. pianist | keyboardist | organist
+4. employee | executive | worker
+5. hopelessness | misery | anguish
+6. revision | edit | correction
+7. consideration | deliberation | reasoning
+8. capital | revenue | profit
+9. decision | directive | measure
+10. doctrine | dogma | creed
+11. balloon | bubble | blister
+12. church | temple | mosque
+13. faction | tribe | minority
+14. river | stream | creek
+15. topic | theme | agenda
+16. era | epoch | age
+17. donation | contribution | offering
+18. gate | gateway | wicket
+19. home run | single | double
+20. factory | laboratory | refinery
+21. dose | dosage | quantity
+22. cistern | reservoir | vat
+23. crater | vent | caldera
+24. trader | merchant | craftsman
+25. phase | step | stage
+26. working class | proletariat | labor force
+27. duct | pipe | hose
+28. delight | joy | bliss
+29. yesterday | bygone day | memory
+30. explanation | account | summary
+31. shop | store | outlet
+32. organ | element | component
+33. metaphor | symbol | illustration
+34. news | article | report
+35. manuscript | draft | copy
+36. obstacle | hindrance | impediment
+37. grief | sorrow | mourning
+38. member | MP | legislator
+39. injury | wound | bruise
+40. trance | ecstasy | rapture
+41. lawsuit | trial | suit
+42. lens | tripod | flash
+43. testimony | affidavit | deposition
+44. bowl | tureen | plate
+45. pitcher | batter | player
+46. ally | neighbor | partner
+47. key | ingredient | factor
+48. guest | receptionist | concierge
+49. exhibition | exhibit | gallery
+50. clause | provision | statute
