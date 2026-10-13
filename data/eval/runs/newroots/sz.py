@@ -37,7 +37,7 @@ def build(new, items, V, sexok, opts=None):
             names.append(r); C.append(c / np.linalg.norm(c)); A.append(a / np.linalg.norm(a)); ax.append(True)
     C, A = np.stack(C), np.stack(A); W = np.stack([V[w] for w in m["words"][::5] if w in V])
     dC, dA = W @ C.T, W @ A.T; mC, sC, mA, sA = dC.mean(0), dC.std(0), dA.mean(0), dA.std(0)
-    ANCH = (NEW_ANCH + [a for a in ANCH0 if not (a[0] == "container.n.01" or a[0] == "body_of_water.n.01")]) if new else ANCH0
+    ANCH = [a for a in ((NEW_ANCH + [a for a in ANCH0 if not (a[0] == "container.n.01" or a[0] == "body_of_water.n.01")]) if new else ANCH0) if a[1] not in opts.get("drop", ())]
     lv = lambda r: m["levels"].get(r, list(range(-5, 6)))
     out = {}
     for w in items:
@@ -47,7 +47,7 @@ def build(new, items, V, sexok, opts=None):
             if not ax[i] or abs(zA[i]) < Z0: return 0
             t = int(np.sign(zA[i]) * 5); L = lv(names[i]); return t if t in L else (max(L) if t > 0 else min(L))
         one = lambda i, v: names[i] if not ax[i] or not v else f"{names[i]}(={v:+d})"
-        ban = set() if w in sexok else {names.index("SEX")}
+        ban = (set() if w in sexok else {names.index("SEX")}) | {names.index(r) for r in opts.get("drop", ())}
         rank = [i for i in np.argsort(-sal) if i not in ban]
         h = None if (bw and bw in V) else head(w, ANCH)
         if h: hi, hv = names.index(h[0]), h[1]

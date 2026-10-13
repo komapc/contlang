@@ -1,0 +1,1472 @@
+[
+ {
+  "w": "suburbs",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=+5) INSIDE | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "costa",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "BODY SAME(=-5) | o",
+  "sz2": "BODY LAND(=-5) | o"
+ },
+ {
+  "w": "scene",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE SEE PART | o",
+  "sz2": "LAND PLACE SEE | o"
+ },
+ {
+  "w": "drought",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "HEAT MOOD(=-5) GOOD(=-5) | o",
+  "sz2": "HEAT LAND(=+5) MOOD(=-5) | o"
+ },
+ {
+  "w": "plane",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "ART(=-5) GRAIN(=-5) NEAR(=-5) | o",
+  "sz2": "ART(=-5) LAND(=+5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "soil",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "THING(=-5) ABOVE(=-5) TOUCH(=-5) | o",
+  "sz2": "LAND(=+5) THING(=-5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "waves",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "HAPPEN SAY(=+5) HEAT(=+5) | o",
+  "sz2": "HAPPEN LAND(=-5) SAY(=+5) | o"
+ },
+ {
+  "w": "cemetery",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE LIVE(=-5) FEEL(=-5) | o",
+  "sz2": "LAND LIVE(=-5) FEEL(=-5) | o"
+ },
+ {
+  "w": "corner",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE SIDE(=-5) NEAR(=+5) | o",
+  "sz2": "LAND SIDE(=-5) NEAR(=+5) | o"
+ },
+ {
+  "w": "gardens",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE INSIDE(=-5) THING(=-5) | o",
+  "sz2": "LAND INSIDE(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "planes",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "ART(=-5) GRAIN(=-5) FIGHT(=+5) | o",
+  "sz2": "ART(=-5) GRAIN(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "ocean",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GRAIN(=-3) NEAR(=-5) THING(=-5) | o",
+  "sz2": "LAND(=-5) NEAR(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "canal",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GRAIN(=-3) NEAR(=+5) | o",
+  "sz2": "LAND(=-5) NEAR(=+5) | o"
+ },
+ {
+  "w": "mountains",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE THING(=-5) ABOVE(=+5) | o",
+  "sz2": "LAND THING(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "submarine",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "ART(=-5) FIGHT(=+5) ABOVE(=-5) | o",
+  "sz2": "ART(=-5) LAND(=-5) FIGHT(=+5) | o"
+ },
+ {
+  "w": "draws",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE ART(=+5) THING(=+4) | o",
+  "sz2": "LAND ART(=+5) THING(=+4) | o"
+ },
+ {
+  "w": "properties",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE PART NEAR(=+5) | o",
+  "sz2": "PLACE LAND(=+5) PART | o"
+ },
+ {
+  "w": "mainland",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "NEAR(=-5) INSIDE(=-5) | o",
+  "sz2": "LAND(=+5) NEAR(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "sky",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GRAIN(=-5) NEAR(=-5) ABOVE(=+5) | o",
+  "sz2": "GRAIN(=-5) NEAR(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "scenes",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE SEE HAPPEN | o",
+  "sz2": "LAND PLACE SEE | o"
+ },
+ {
+  "w": "agriculture",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GIVE(=0) THING(=+4) | o",
+  "sz2": "GIVE(=0) THING(=+4) LAND(=+5) | o"
+ },
+ {
+  "w": "climate",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "HEAT(=-5) CHANGE(=+5) GRAIN(=-5) | o",
+  "sz2": "HEAT(=-5) LAND CHANGE(=+5) | o"
+ },
+ {
+  "w": "nations",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "RULE(=+4) PLACE | o",
+  "sz2": "RULE(=+4) LAND PLACE | o"
+ },
+ {
+  "w": "creek",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GRAIN(=-3) THING(=-5) PLACE | o",
+  "sz2": "LAND(=-5) THING(=-5) PLACE | o"
+ },
+ {
+  "w": "empire",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE MEASURE(=-5) | o",
+  "sz2": "LAND MEASURE(=-5) | o"
+ },
+ {
+  "w": "zones",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE INSIDE(=+5) HEAT(=-5) | o",
+  "sz2": "PLACE LAND(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "territories",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=-5) INSIDE | o",
+  "sz2": "LAND PLACE NEAR(=-5) | o"
+ },
+ {
+  "w": "rocks",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "THING(=-5) GRAIN(=+5) PART(=-5) | o",
+  "sz2": "THING(=-5) LAND(=-5) GRAIN(=+5) | o"
+ },
+ {
+  "w": "continent",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "NEAR(=-5) PLACE BIG(=+5) | o",
+  "sz2": "LAND(=+5) NEAR(=-5) PLACE | o"
+ },
+ {
+  "w": "crop",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "GIVE(=0) THING(=+4) | o",
+  "sz2": "GIVE(=0) THING(=+4) LAND(=+5) | o"
+ },
+ {
+  "w": "palm",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "BODY THING(=-5) | o",
+  "sz2": "BODY LAND(=-5) | o"
+ },
+ {
+  "w": "floods",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "HEAT(=+5) HAPPEN GOOD(=-5) | o",
+  "sz2": "HEAT(=+5) LAND(=-5) HAPPEN | o"
+ },
+ {
+  "w": "marine",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "SOMEONE FIGHT(=+5) | o",
+  "sz2": "SOMEONE FIGHT(=+5) LAND(=-5) | o"
+ },
+ {
+  "w": "bases",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "FIGHT(=+5) LONG(=+5) | o",
+  "sz2": "FIGHT(=+5) LONG(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "forests",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PART(=+5) THING(=-5) PLACE | o",
+  "sz2": "PART(=+5) LAND(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "seat",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE SIDE(=-5) LONG(=+5) | o",
+  "sz2": "LAND SIDE(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "site",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=+5) TEXT | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "garden",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE INSIDE(=-5) THING(=-5) | o",
+  "sz2": "LAND INSIDE(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "islands",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=-5) | o",
+  "sz2": "LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "middle",
+  "set": "NR",
+  "root": "LAND",
+  "sz": "PLACE SIDE(=-5) BEGIN(=+5) | o",
+  "sz2": "LAND SIDE(=-5) BEGIN(=+5) | o"
+ },
+ {
+  "w": "kings",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE RULE(=+5) | o",
+  "sz2": "SOMEONE SACRED(=+5) | o"
+ },
+ {
+  "w": "confidence",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) WANT(=+5) INSIDE(=+5) | o",
+  "sz2": "SACRED(=+5) FRIEND(=+5) WANT(=+5) | o"
+ },
+ {
+  "w": "power",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "MEASURE(=-5) ART(=-5) RULE(=+5) | o",
+  "sz2": "SACRED(=+5) MEASURE(=-5) ART(=-5) | o"
+ },
+ {
+  "w": "shrine",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PLACE INSIDE(=+5) ART(=+5) | o",
+  "sz2": "SACRED INSIDE(=+5) PLACE | o"
+ },
+ {
+  "w": "muslim",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE INSIDE(=+5) | o",
+  "sz2": "SACRED INSIDE(=+5) | o"
+ },
+ {
+  "w": "mosque",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PLACE NEAR(=+5) HEAT(=+5) | o",
+  "sz2": "SACRED NEAR(=+5) HEAT(=+5) | o"
+ },
+ {
+  "w": "tradition",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "THINK ART(=+5) FRIEND(=+5) | o",
+  "sz2": "THINK SACRED(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "wealth",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "BIG(=+5) VALUE(=+5) MEASURE(=+5) | o",
+  "sz2": "BIG(=+5) VALUE(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "presence",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SAME(=-5) MOVE(=-5) SEE | o",
+  "sz2": "SAME(=-5) MOVE(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "possession",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "DO GIVE(=-5) VALUE(=+5) | o",
+  "sz2": "DO GIVE(=-5) SACRED(=-5) | o"
+ },
+ {
+  "w": "catholics",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SACRED ART(=+5) | o"
+ },
+ {
+  "w": "true",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SAME(=+5) KNOW(=-5) MANY(=-5) | o",
+  "sz2": "SAME(=+5) KNOW(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "nature",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) THING SAME(=-5) | o",
+  "sz2": "FRIEND(=+5) SACRED(=+5) THING | o"
+ },
+ {
+  "w": "ceremony",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "HAPPEN SIDE(=+5) | o",
+  "sz2": "HAPPEN SACRED(=+5) | o"
+ },
+ {
+  "w": "saint",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "THINK ART(=+5) | o",
+  "sz2": "SACRED ART(=+5) | o"
+ },
+ {
+  "w": "metropolitan",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE PLACE | o",
+  "sz2": "SACRED PLACE | o"
+ },
+ {
+  "w": "constitution",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "RULE(=+5) TEXT | o",
+  "sz2": "RULE(=+5) SACRED(=+5) TEXT | o"
+ },
+ {
+  "w": "prosperity",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "LIVE(=+5) WANT(=+5) JOIN(=+5) | o",
+  "sz2": "SACRED(=+5) LIVE(=+5) WANT(=+5) | o"
+ },
+ {
+  "w": "trust",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) RULE(=+5) WANT(=+5) | o",
+  "sz2": "FRIEND(=+5) SACRED(=+5) RULE(=+5) | o"
+ },
+ {
+  "w": "protestant",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SACRED ART(=+5) | o"
+ },
+ {
+  "w": "ancient",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE TIME(=-5) SIDE(=-5) | o",
+  "sz2": "SOMEONE TIME(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "celtic",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SAY ART(=+5) | o",
+  "sz2": "SAY SACRED ART(=+5) | o"
+ },
+ {
+  "w": "islam",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PART(=+5) ART(=+5) | o",
+  "sz2": "PART(=+5) SACRED(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "tribe",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PART(=+5) PLACE | o",
+  "sz2": "PART(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "angel",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "THINK INSIDE(=-5) | o",
+  "sz2": "SACRED INSIDE(=-5) | o"
+ },
+ {
+  "w": "minister",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=+5) RULE(=+5) | o",
+  "sz2": "SACRED SEX(=+5) RULE(=+5) | o"
+ },
+ {
+  "w": "cardinals",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE FIGHT(=-5) | o",
+  "sz2": "SACRED FIGHT(=-5) | o"
+ },
+ {
+  "w": "fantasy",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "THINK WANT(=+5) KNOW(=-5) | o",
+  "sz2": "THINK WANT(=+5) SACRED(=-5) | o"
+ },
+ {
+  "w": "joy",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "FEEL MOOD(=+5) WANT(=+5) | o",
+  "sz2": "FEEL MOOD(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "archbishop",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE RULE(=+5) | o",
+  "sz2": "SACRED RULE(=+5) | o"
+ },
+ {
+  "w": "universe",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PART(=-5) NEAR(=-5) | o",
+  "sz2": "PART(=-5) NEAR(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "christians",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SACRED ART(=+5) | o"
+ },
+ {
+  "w": "clan",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "PART(=+5) TOUCH(=+5) | o",
+  "sz2": "PART(=+5) SACRED(=-5) | o"
+ },
+ {
+  "w": "churches",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "RULE(=+4) ART(=+5) | o",
+  "sz2": "RULE(=+4) SACRED(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "integrity",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "GOOD(=+5) VALUE(=+5) CHANGE(=-5) | o",
+  "sz2": "GOOD(=+5) SACRED(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "truth",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "THINK KNOW ABOVE(=-5) | o",
+  "sz2": "THINK KNOW SACRED(=+5) | o"
+ },
+ {
+  "w": "revival",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "CHANGE LIVE SIDE(=-5) | o",
+  "sz2": "CHANGE LIVE SACRED(=+5) | o"
+ },
+ {
+  "w": "ability",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "CAN(=-5) WANT(=+5) BIG(=+5) | o",
+  "sz2": "CAN(=-5) SACRED(=-5) WANT(=+5) | o"
+ },
+ {
+  "w": "islamist",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SOMEONE SACRED(=+5) | o"
+ },
+ {
+  "w": "identity",
+  "set": "NR",
+  "root": "SACRED",
+  "sz": "WANT(=+5) INSIDE(=+5) RULE(=-5) | o",
+  "sz2": "WANT(=+5) SACRED(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "plastic",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "LONG(=-5) TOUCH(=-5) GRAIN(=+5) | o",
+  "sz2": "CONTAINER(=+5) LONG(=-5) TOUCH(=-5) | o"
+ },
+ {
+  "w": "filing",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "SAY TEXT | o",
+  "sz2": "SAY TEXT CONTAINER | o"
+ },
+ {
+  "w": "french",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "SAY PART(=-5) | o",
+  "sz2": "SAY CONTAINER(=-5) | o"
+ },
+ {
+  "w": "holds",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "DO LONG MOVE(=-5) | o",
+  "sz2": "DO CONTAINER(=+5) LONG | o"
+ },
+ {
+  "w": "case",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "HAPPEN PART(=-5) | o",
+  "sz2": "HAPPEN CONTAINER(=+5) PART(=-5) | o"
+ },
+ {
+  "w": "pepper",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "THING(=0) HEAT(=+5) | o",
+  "sz2": "THING(=0) CONTAINER | o"
+ },
+ {
+  "w": "table",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "PART(=+5) LONG(=+5) MOVE(=-5) | o",
+  "sz2": "PART(=+5) CONTAINER(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "cypriot",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "SOMEONE INSIDE(=+5) | o",
+  "sz2": "SOMEONE CONTAINER(=-5) | o"
+ },
+ {
+  "w": "drinking",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) GRAIN(=-5) HEAT(=-5) | o",
+  "sz2": "CONSUME(=+5) GRAIN(=-5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "wine",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) GRAIN(=-5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=+5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "cups",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) CONSUME(=+5) HEAT(=-5) | o",
+  "sz2": "CONTAINER CONSUME(=+5) HEAT(=-5) | o"
+ },
+ {
+  "w": "volume",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "MEASURE ABOVE GRAIN(=-5) | o",
+  "sz2": "MEASURE CONTAINER(=+5) ABOVE | o"
+ },
+ {
+  "w": "tank",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) GRAIN(=-5) FIGHT(=+5) | o",
+  "sz2": "CONTAINER GRAIN(=-5) FIGHT(=+5) | o"
+ },
+ {
+  "w": "restaurant",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "PLACE CONSUME(=+5) NEAR(=+5) | o",
+  "sz2": "PLACE CONSUME(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "can",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) CAN(=+5) SOMEONE(=-5) | o",
+  "sz2": "CONTAINER CAN(=+5) SOMEONE(=-5) | o"
+ },
+ {
+  "w": "holder",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) LONG(=+5) | o",
+  "sz2": "ART(=-5) LONG(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "store",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "PLACE VALUE(=-5) NEAR(=+5) | o",
+  "sz2": "PLACE CONTAINER(=+5) VALUE(=-5) | o"
+ },
+ {
+  "w": "mail",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "SAY TEXT MOVE(=+5) | o",
+  "sz2": "SAY TEXT CONTAINER(=+5) | o"
+ },
+ {
+  "w": "files",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "SAY TEXT INSIDE(=+5) | o",
+  "sz2": "SAY TEXT CONTAINER | o"
+ },
+ {
+  "w": "tea",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) HEAT(=-5) GRAIN(=-5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=-5) HEAT(=-5) | o"
+ },
+ {
+  "w": "opener",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "HAPPEN FIGHT(=-5) | o",
+  "sz2": "HAPPEN CONTAINER(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "package",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "PART(=+5) MEASURE(=-5) | o",
+  "sz2": "PART(=+5) CONTAINER(=+5) MEASURE(=-5) | o"
+ },
+ {
+  "w": "portfolio",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) TEXT BODY | o",
+  "sz2": "CONTAINER TEXT BODY | o"
+ },
+ {
+  "w": "eggs",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) THING(=+4) TOUCH(=-5) | o",
+  "sz2": "CONSUME(=+5) THING(=+4) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "label",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "DO MEASURE(=-5) TEXT | o",
+  "sz2": "DO CONTAINER(=+5) MEASURE(=-5) | o"
+ },
+ {
+  "w": "fruit",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "HEAT(=-5) CONSUME(=+5) TOUCH(=-5) | o",
+  "sz2": "CONTAINER HEAT(=-5) CONSUME(=+5) | o"
+ },
+ {
+  "w": "ships",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) LONG(=+5) FIGHT(=+5) | o",
+  "sz2": "ART(=-5) CONTAINER(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "shell",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) INSIDE(=-5) PART(=-5) | o",
+  "sz2": "ART(=-5) INSIDE(=-5) CONTAINER | o"
+ },
+ {
+  "w": "serving",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "MEASURE CONSUME(=+5) LONG(=+5) | o",
+  "sz2": "MEASURE CONTAINER(=-5) CONSUME(=+5) | o"
+ },
+ {
+  "w": "bag",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) PART MEASURE(=-5) | o",
+  "sz2": "CONTAINER PART MEASURE(=-5) | o"
+ },
+ {
+  "w": "seal",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) INSIDE BEGIN(=+5) | o",
+  "sz2": "ART(=-5) INSIDE CONTAINER(=+5) | o"
+ },
+ {
+  "w": "ounce",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "MEASURE(=-5) PART(=-5) SOMEONE(=+5) | o",
+  "sz2": "MEASURE(=-5) CONTAINER(=+5) PART(=-5) | o"
+ },
+ {
+  "w": "beer",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) HEAT(=-5) LONG(=+5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=+5) HEAT(=-5) | o"
+ },
+ {
+  "w": "trucks",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) LONG(=+5) THING | o",
+  "sz2": "CONTAINER LONG(=+5) THING | o"
+ },
+ {
+  "w": "empty",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) KNOW(=-5) JOIN(=-5) | o",
+  "sz2": "CONTAINER KNOW(=-5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "pan",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) LONG(=+5) PART(=-5) | o",
+  "sz2": "ART(=-5) CONTAINER(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "tape",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "LONG(=-5) MEASURE(=-5) | o",
+  "sz2": "LONG(=-5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "cargo",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "LONG(=+5) GRAIN(=-5) | o",
+  "sz2": "CONTAINER LONG(=+5) | o"
+ },
+ {
+  "w": "automobile",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) ART(=-5) | o",
+  "sz2": "CONTAINER ART(=-5) | o"
+ },
+ {
+  "w": "object",
+  "set": "NR",
+  "root": "CONTAINER",
+  "sz": "PART(=-5) LONG WANT | o",
+  "sz2": "PART(=-5) LONG CONTAINER | o"
+ },
+ {
+  "w": "advances",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "HAPPEN SIDE(=+5) GIVE(=+5) | o",
+  "drop": "HAPPEN GIVE(=+5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "prospects",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "TIME(=+5) SEE SIDE(=+5) | o",
+  "drop": "TIME(=+5) SEE | o"
+ },
+ {
+  "w": "witnesses",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SOMEONE SEE SIDE(=+5) | o",
+  "drop": "SOMEONE SEE LIVE(=-5) | o"
+ },
+ {
+  "w": "leg",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "BODY SIDE(=-5) LONG | o",
+  "drop": "BODY LONG MOVE(=-5) | o"
+ },
+ {
+  "w": "push",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "DO SIDE(=+5) GIVE(=-5) | o",
+  "drop": "DO GIVE(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "pace",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "MOVE(=+5) MEASURE(=+5) SIDE(=+5) | o",
+  "drop": "MOVE(=+5) MEASURE(=+5) FEEL(=-5) | o"
+ },
+ {
+  "w": "defense",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "FIGHT(=+5) FRIEND(=-5) SIDE(=+5) | o",
+  "drop": "FIGHT(=+5) FRIEND(=-5) | o"
+ },
+ {
+  "w": "serbian",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SOMEONE SIDE(=+5) | o",
+  "drop": "SOMEONE LONG(=-5) | o"
+ },
+ {
+  "w": "classical",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "ART(=+5) SIDE(=-5) | o",
+  "drop": "ART(=+5) SAME(=-5) | o"
+ },
+ {
+  "w": "ninth",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "BEGIN(=+5) SIDE(=-5) | o",
+  "drop": "BEGIN(=+5) PLACE | o"
+ },
+ {
+  "w": "motion",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SAY MOVE(=+5) SIDE(=-5) | o",
+  "drop": "SAY MOVE(=+5) RULE(=+5) | o"
+ },
+ {
+  "w": "shah",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SOMEONE SIDE(=-5) ABOVE(=-5) | o",
+  "drop": "SOMEONE ABOVE(=-5) | o"
+ },
+ {
+  "w": "feet",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "BODY ABOVE(=-5) SIDE(=-5) | o",
+  "drop": "BODY ABOVE(=-5) MEASURE(=-5) | o"
+ },
+ {
+  "w": "preliminary",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "FIGHT(=-5) BEGIN(=-5) SIDE(=+5) | o",
+  "drop": "FIGHT(=-5) BEGIN(=-5) RULE(=-5) | o"
+ },
+ {
+  "w": "remote",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "ART(=-5) NEAR(=-5) SIDE(=-5) | o",
+  "drop": "ART(=-5) NEAR(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "stem",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "PART(=-2) LONG SIDE | o",
+  "drop": "PART(=-2) LONG BODY | o"
+ },
+ {
+  "w": "jurors",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SOMEONE SIDE(=+5) RULE(=+5) | o",
+  "drop": "SOMEONE RULE(=+5) | o"
+ },
+ {
+  "w": "spin",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "HAPPEN SIDE(=-5) LONG(=-5) | o",
+  "drop": "HAPPEN LONG(=-5) MOVE(=+5) | o"
+ },
+ {
+  "w": "stern",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "TOUCH(=+5) SIDE(=+5) LONG(=+5) | o",
+  "drop": "TOUCH(=+5) LONG(=+5) | o"
+ },
+ {
+  "w": "leftist",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SOMEONE SIDE KNOW(=-5) | o",
+  "drop": "SOMEONE KNOW(=-5) | o"
+ },
+ {
+  "w": "arrangements",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "THINK SIDE(=+5) TIME(=+5) | o",
+  "drop": "THINK TIME(=+5) PART(=+5) | o"
+ },
+ {
+  "w": "recovery",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "CHANGE SIDE(=-5) MOVE(=+5) | o",
+  "drop": "CHANGE MOVE(=+5) | o"
+ },
+ {
+  "w": "pushing",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "DO SIDE(=+5) ABOVE(=+5) | o",
+  "drop": "DO ABOVE(=+5) FEEL(=+5) | o"
+ },
+ {
+  "w": "developments",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "DO SIDE(=+5) NEAR(=+5) | o",
+  "drop": "DO NEAR(=+5) PLACE | o"
+ },
+ {
+  "w": "toll",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "LIVE(=-5) SIDE(=+5) GOOD(=-5) | o",
+  "drop": "LIVE(=-5) GOOD(=-5) | o"
+ },
+ {
+  "w": "defensive",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "THINK SIDE FIGHT(=+5) | o",
+  "drop": "THINK FIGHT(=+5) FRIEND(=-5) | o"
+ },
+ {
+  "w": "scottish",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "SAY SIDE(=+5) | o",
+  "drop": "SAY HEAT(=-5) | o"
+ },
+ {
+  "w": "hand",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "BODY LONG SIDE(=-5) | o",
+  "drop": "BODY LONG GIVE(=-5) | o"
+ },
+ {
+  "w": "southeast",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "PLACE LAND SIDE(=+5) | o",
+  "drop": "PLACE LAND NEAR(=+5) | o"
+ },
+ {
+  "w": "roots",
+  "set": "AB",
+  "root": "SIDE",
+  "sz2": "BEGIN(=-5) LONG(=-5) SIDE(=-5) | o",
+  "drop": "BEGIN(=-5) LONG(=-5) ART(=+5) | o"
+ },
+ {
+  "w": "detail",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "THINK CARE(=+5) PART(=-5) | o",
+  "drop": "THINK PART(=-5) SEE | o"
+ },
+ {
+  "w": "emphasis",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "SAME(=-5) CARE LIVE(=+5) | o",
+  "drop": "SAME(=-5) LIVE(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "accidents",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "HAPPEN CARE(=-5) GOOD(=-5) | o",
+  "drop": "HAPPEN GOOD(=-5) LIVE(=-5) | o"
+ },
+ {
+  "w": "damage",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "CHANGE GOOD(=-5) CARE(=-5) | o",
+  "drop": "CHANGE GOOD(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "researcher",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "SOMEONE ART(=-5) CARE(=+5) | o",
+  "drop": "SOMEONE ART(=-5) SEX(=+5) | o"
+ },
+ {
+  "w": "fast",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO MOVE(=+5) CARE(=-5) | o",
+  "drop": "DO MOVE(=+5) TOUCH(=+5) | o"
+ },
+ {
+  "w": "ill",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "GOOD(=-5) CARE(=-5) LIVE(=-5) | o",
+  "drop": "GOOD(=-5) LIVE(=-5) | o"
+ },
+ {
+  "w": "vice",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "RULE(=+5) CARE(=-5) | o",
+  "drop": "RULE(=+5) TIME(=-5) | o"
+ },
+ {
+  "w": "treatment",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO BODY CARE(=+5) | o",
+  "drop": "DO BODY GIVE(=+5) | o"
+ },
+ {
+  "w": "fraud",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO KNOW(=-5) CARE(=-5) | o",
+  "drop": "DO KNOW(=-5) | o"
+ },
+ {
+  "w": "quick",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "BODY MOVE(=+5) CARE(=-5) | o",
+  "drop": "BODY MOVE(=+5) CAN(=+5) | o"
+ },
+ {
+  "w": "actions",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=-5) FRIEND(=-5) | o",
+  "drop": "DO FRIEND(=-5) HAPPEN | o"
+ },
+ {
+  "w": "comprehensive",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=+5) BIG(=+5) | o",
+  "drop": "DO BIG(=+5) BEGIN | o"
+ },
+ {
+  "w": "fine",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "GOOD(=+5) TOUCH CARE | o",
+  "drop": "GOOD(=+5) TOUCH | o"
+ },
+ {
+  "w": "monitoring",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO SEE CARE(=+5) | o",
+  "drop": "DO SEE ART(=-5) | o"
+ },
+ {
+  "w": "exercise",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE | o",
+  "drop": "DO INSIDE(=-5) | o"
+ },
+ {
+  "w": "investigation",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "THINK CARE(=+5) SEE | o",
+  "drop": "THINK SEE | o"
+ },
+ {
+  "w": "falls",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "ABOVE(=-5) THING(=-5) CARE(=-5) | o",
+  "drop": "ABOVE(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "violations",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=-5) RULE(=+5) | o",
+  "drop": "DO RULE(=+5) | o"
+ },
+ {
+  "w": "professional",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "SOMEONE RULE(=-5) CARE(=+5) | o",
+  "drop": "SOMEONE RULE(=-5) KNOW(=+5) | o"
+ },
+ {
+  "w": "intensive",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "PART(=-2) CARE(=+5) FEEL(=+5) | o",
+  "drop": "PART(=-2) FEEL(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "mistake",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=-5) HAPPEN | o",
+  "drop": "DO HAPPEN KNOW(=-5) | o"
+ },
+ {
+  "w": "slip",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=-5) ABOVE(=-5) | o",
+  "drop": "DO ABOVE(=-5) GIVE(=-5) | o"
+ },
+ {
+  "w": "report",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "TEXT SEE CARE(=+5) | o",
+  "drop": "TEXT SEE MEASURE(=+5) | o"
+ },
+ {
+  "w": "practice",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO RULE(=-5) CARE | o",
+  "drop": "DO RULE(=-5) | o"
+ },
+ {
+  "w": "candidates",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "SOMEONE CARE(=+5) | o",
+  "drop": "SOMEONE PART(=+5) | o"
+ },
+ {
+  "w": "rapid",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "LAND(=-5) MOVE(=+5) CARE(=-5) | o",
+  "drop": "LAND(=-5) MOVE(=+5) FEEL(=+5) | o"
+ },
+ {
+  "w": "analysis",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=+5) MEASURE(=+5) | o",
+  "drop": "DO MEASURE(=+5) ART(=-5) | o"
+ },
+ {
+  "w": "leads",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "BEGIN(=+5) SIDE(=+5) CARE(=-5) | o",
+  "drop": "BEGIN(=+5) MOVE(=+5) LONG(=-5) | o"
+ },
+ {
+  "w": "survey",
+  "set": "AB",
+  "root": "CARE",
+  "sz2": "DO CARE(=+5) MEASURE(=+5) | o",
+  "drop": "DO MEASURE(=+5) SEE | o"
+ },
+ {
+  "w": "dying",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "MEASURE LIVE(=-5) MOOD(=-5) | o",
+  "drop": "MEASURE LIVE(=-5) | o"
+ },
+ {
+  "w": "drama",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "TEXT MOOD(=-5) ART(=+5) | o",
+  "drop": "TEXT ART(=+5) FIGHT | o"
+ },
+ {
+  "w": "feels",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "THINK MOOD(=-5) FEEL | o",
+  "drop": "THINK FEEL KNOW(=+5) | o"
+ },
+ {
+  "w": "shortage",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "MOOD(=-5) SAME(=-5) | o",
+  "drop": "SAME(=-5) MANY(=-5) | o"
+ },
+ {
+  "w": "tale",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "SAY MOOD TEXT | o",
+  "drop": "SAY TEXT HAPPEN | o"
+ },
+ {
+  "w": "activities",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "DO LIVE(=+5) MOOD(=+5) | o",
+  "drop": "DO LIVE(=+5) RULE(=-5) | o"
+ },
+ {
+  "w": "disaster",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "HAPPEN GOOD(=-5) MOOD(=-5) | o",
+  "drop": "HAPPEN GOOD(=-5) MOVE(=+5) | o"
+ },
+ {
+  "w": "dance",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "ART(=+5) MOOD(=+5) | o",
+  "drop": "ART(=+5) DO | o"
+ },
+ {
+  "w": "moral",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "SAY RULE(=+5) MOOD(=-5) | o",
+  "drop": "SAY RULE(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "failing",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "CAN(=-5) CARE(=-5) MOOD(=-5) | o",
+  "drop": "CAN(=-5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "crew",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "RULE(=+4) PART(=+5) MOOD(=+5) | o",
+  "drop": "RULE(=+4) PART(=+5) | o"
+ },
+ {
+  "w": "loss",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "MOOD(=-5) MEASURE CARE(=-5) | o",
+  "drop": "MEASURE GOOD(=-5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "mood",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "FEEL MOOD ART(=+5) | o",
+  "drop": "FEEL ART(=+5) SAME(=-5) | o"
+ },
+ {
+  "w": "nationalist",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "SOMEONE MOOD(=-5) SEX(=+5) | o",
+  "drop": "SOMEONE SEX(=+5) | o"
+ },
+ {
+  "w": "celebration",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "HAPPEN MOOD(=+5) | o",
+  "drop": "HAPPEN ART(=+5) | o"
+ },
+ {
+  "w": "relief",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "FEEL MOOD(=-5) | o",
+  "drop": "FEEL GIVE(=+5) | o"
+ },
+ {
+  "w": "horror",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "FEEL GOOD(=-5) MOOD(=-5) | o",
+  "drop": "FEEL GOOD(=-5) FRIEND(=-5) | o"
+ },
+ {
+  "w": "festival",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "TIME ART(=+5) MOOD(=+5) | o",
+  "drop": "TIME ART(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "depression",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "ABOVE(=-5) MOOD(=-5) GOOD(=-5) | o",
+  "drop": "ABOVE(=-5) GOOD(=-5) | o"
+ },
+ {
+  "w": "romantic",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "SOMEONE MOOD(=-5) RULE(=-5) | o",
+  "drop": "SOMEONE RULE(=-5) ART(=+5) | o"
+ },
+ {
+  "w": "robin",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "THING(=+4) MOOD(=+5) | o",
+  "drop": "THING(=+4) INSIDE(=-5) | o"
+ },
+ {
+  "w": "death",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "CHANGE LIVE(=-5) MOOD(=-5) | o",
+  "drop": "CHANGE LIVE(=-5) | o"
+ },
+ {
+  "w": "damages",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "VALUE MOOD(=-5) | o",
+  "drop": "VALUE SAY(=+5) | o"
+ },
+ {
+  "w": "tsunami",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "HAPPEN MOOD(=-5) LAND(=-5) | o",
+  "drop": "HAPPEN LAND(=-5) | o"
+ },
+ {
+  "w": "triumph",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "HAPPEN BEGIN(=+5) MOOD | o",
+  "drop": "HAPPEN BEGIN(=+5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "christmas",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "TIME MOOD(=+5) THING(=+4) | o",
+  "drop": "TIME THING(=+4) | o"
+ },
+ {
+  "w": "pride",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "FEEL MOOD GOOD(=+5) | o",
+  "drop": "FEEL GOOD(=+5) | o"
+ },
+ {
+  "w": "straits",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "MOOD(=-5) LAND(=-5) CAN(=-5) | o",
+  "drop": "LAND(=-5) CAN(=-5) | o"
+ },
+ {
+  "w": "smile",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "SAY MOOD(=+5) BODY | o",
+  "drop": "SAY BODY SEE | o"
+ },
+ {
+  "w": "fun",
+  "set": "AB",
+  "root": "MOOD",
+  "sz2": "DO MOOD(=+5) WANT(=+5) | o",
+  "drop": "DO WANT(=+5) FIGHT(=-5) | o"
+ }
+]
