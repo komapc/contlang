@@ -9,6 +9,7 @@ roots.yaml, вес lam); затем атомы нормируются, и есл
 Пишет data/sparse_learn.md и data/sparse_dict_learned.npz (словарь только
 для анализа: в roots.yaml остаются человеческие списки полюсов).
 """
+import os
 import sys
 from pathlib import Path
 
@@ -19,7 +20,8 @@ from common import ROOT  # noqa: E402
 from lib_code import (HEAD, SEP, Coder, Data, encode_all, fmt_code, metrics,  # noqa: E402
                       root_specs, row, unit)
 
-LAM, TAU, ITERS, HW = 30.0, 0.85, 3, 0.6
+LAM, TAU, ITERS = 30.0, 0.85, 3
+HW = float(os.environ.get("MATH_HW", 0.6))  # вес не главных корней (data/eval/runs/relearn)
 OUT = ROOT / "data" / "sparse_learn.md"
 NPZ = ROOT / "data" / "sparse_dict_learned.npz"
 SHOW = ("river knife bank teacher city money anger hope winter child friend "

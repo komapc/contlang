@@ -12,6 +12,7 @@ vocab.bin: N частых слов и весь список data/wordlist_en_x5.
 """
 import gzip
 import json
+import os
 import sys
 from pathlib import Path
 
@@ -24,7 +25,7 @@ from mincode import spec  # noqa: E402
 
 N = 10000
 OUT = REPO / "site" / "data"
-S, HW = 0.4, 0.6  # масштаб оси и вес не главных корней
+S, HW = 0.4, float(os.environ.get("MATH_HW", 0.6))  # масштаб оси и вес не главных корней
 SOFT = 2.0        # крутизна soft-min в «И»-части декодера
 
 
