@@ -1,0 +1,70 @@
+1. tray | dish | pan
+2. churchyard | shrine | cemetery
+3. icon | hymn | liturgy
+4. scruple | qualm | nicety
+5. engineer | technician | mechanic
+6. desert | wasteland | badland
+7. trough | channel | gutter
+8. mountain | rocks | cliff
+9. commandment | canon | decree
+10. serving | portion | ration
+11. landscape | vista | viewpoint
+12. spectator | witness | observer
+13. anguish | despair | worry
+14. show | performance | presentation
+15. attack | assault | seizure
+16. region | district | territory
+17. prayer | chant | sermon
+18. caregiver | nurse | guardian
+19. kickoff | opener | prelude
+20. tragedy | disaster | calamity
+21. sanctuary | sanctum | shrine
+22. obsession | fixation | idolatry
+23. patriarch | prophet | saint
+24. hygiene | grooming | exercise
+25. haste | hurry | scramble
+26. aftermath | sequel | wake
+27. icon | hymn | liturgy
+28. icon | hymn | liturgy
+29. sentence | verdict | decree
+30. wave | surge | breaker
+31. miracle | revelation | epiphany
+32. interior | inland | hinterland
+33. shell | bomb | grenade
+34. pebble | boulder | stone
+35. spine | backbone | spinal cord
+36. sentiment | emotion | atmosphere
+37. waiter | server | butler
+38. finesse | tact | gentleness
+39. lifestyle | way of life | vitality
+40. ending | conclusion | finale
+41. underling | subordinate | follower
+42. sacrilege | desecration | profanation
+43. naval warfare | sea battle | navy
+44. tragedy | elegy | drama
+45. scripture | canon | holy book
+46. acreage | area | extent
+47. leader | chief | ruler
+48. outskirts | hinterland | backcountry
+49. inhaler | aerosol | respirator
+50. storm | thunder | roar
+51. homeland | hometown | locality
+52. rear | tail | stern
+53. saint | prophet | priest
+54. loss | sacrifice | sorrow
+55. guardian | caretaker | nanny
+56. tournament | contest | festival
+57. death | dying | demise
+58. reef | seabed | shoal
+59. sleeve | tube | pouch
+60. refrigerator | cooler | icebox
+61. forecast | prediction | prospect
+62. dish | basin | tank
+63. sacred music | liturgy | pantheon
+64. backbone | spine | spinal cord
+65. restaurant | cafeteria | canteen
+66. retreat | flight | reversal
+67. vapor | fog | haze
+68. shipwreck | disaster | catastrophe
+69. devotion | piety | zeal
+70. joke | comedy | farce
