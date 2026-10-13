@@ -48,16 +48,19 @@
       return this.grids[key] || (this.grids[key] = grid(S.map((r) => this.lv[r])));
     }
     // ban — корни, которых у этого слова быть не может (SEX у слова без пола, Reader.ban)
-    encode(x, m = 3, ban) { return this.top(x, 1, m, ban)[0]; }
-    // K лучших по cos кодов с разными наборами корней (у каждого набора — лучший порядок и уровни)
-    top(x, K = 1, m = 3, ban) {
+    encode(x, m = 3, ban, head) { return this.top(x, 1, m, ban, head)[0]; }
+    // K лучших по cos кодов с разными наборами корней (у каждого набора — лучший порядок и уровни);
+    // head — корень, который обязан быть главным (род слова), иначе главный выбирается вместе с остальными
+    top(x, K = 1, m = 3, ban, head) {
       const cx = this.C.map((c) => dot(c, x)), ax = this.A.map((a) => dot(a, x));
       const order = [...Array(this.R).keys()].filter((r) => !(ban && ban.includes(r))).sort((i, j) => (Math.abs(cx[j]) + Math.abs(ax[j])) - (Math.abs(cx[i]) + Math.abs(ax[i])));
-      const cand = order.slice(0, this.topr);
+      let cand = order.slice(0, this.topr);
+      if (head != null && !cand.includes(head)) cand = [head].concat(cand.slice(0, this.topr - 1));
       let best = { cos: -2 }; const byS = new Map();
       for (let k = 1; k <= m; k++) {
         for (const S of combos(cand, k)) {
-          const heads = (k > 1 && this.wts.slice(0, k).some((t) => t !== 1)) ? [...Array(k).keys()] : [0];
+          if (head != null && !S.includes(head)) continue;
+          const heads = head != null ? [S.indexOf(head)] : (k > 1 && this.wts.slice(0, k).some((t) => t !== 1)) ? [...Array(k).keys()] : [0];
           for (const h of heads) {
             const S2 = [S[h]].concat(S.filter((_, i) => i !== h));
             const w = S2.map((_, i) => this.wts[i]);

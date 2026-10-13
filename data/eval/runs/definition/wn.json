@@ -1,0 +1,2002 @@
+{
+ "helm": {
+  "gloss": "steering mechanism for a vessel; a mechanical device by which a vessel is steered",
+  "genus": "mechanism",
+  "test": true
+ },
+ "malaria": {
+  "gloss": "an infective disease caused by sporozoan parasites that are transmitted through the bite of an infected Anopheles mosquito; marked by paroxysms of chills and fever",
+  "genus": "infection",
+  "test": true
+ },
+ "pianist": {
+  "gloss": "a person who plays the piano",
+  "genus": "musician",
+  "test": true
+ },
+ "employee": {
+  "gloss": "a worker who is hired to perform a job",
+  "genus": "worker",
+  "test": true
+ },
+ "resignation": {
+  "gloss": "acceptance of despair",
+  "genus": "despair",
+  "test": true
+ },
+ "revision": {
+  "gloss": "the act of revising or altering (involving reconsideration and modification)",
+  "genus": "transformation",
+  "test": true
+ },
+ "consideration": {
+  "gloss": "the process of giving careful thought to something",
+  "genus": "thinking",
+  "test": true
+ },
+ "profit": {
+  "gloss": "the excess of revenues over outlays in a given period of time (including depreciation and other non-cash expenses)",
+  "genus": "income",
+  "test": true
+ },
+ "relegation": {
+  "gloss": "authorizing subordinates to make certain decisions",
+  "genus": "management",
+  "test": true
+ },
+ "religion": {
+  "gloss": "a strong belief in a supernatural power or powers that control human destiny",
+  "genus": "belief",
+  "test": true
+ },
+ "bubble": {
+  "gloss": "a hollow globule of gas (e.g., air or carbon dioxide)",
+  "genus": "ball",
+  "test": true
+ },
+ "chapel": {
+  "gloss": "a place of worship that has its own altar",
+  "genus": "building",
+  "test": true
+ },
+ "people": {
+  "gloss": "(plural) any group of human beings (men or women or children) collectively",
+  "genus": "group",
+  "test": true
+ },
+ "lake": {
+  "gloss": "a body of (usually fresh) water surrounded by land",
+  "genus": "water",
+  "test": true
+ },
+ "topic": {
+  "gloss": "the subject matter of a conversation or discussion",
+  "genus": "message",
+  "test": true
+ },
+ "era": {
+  "gloss": "a period marked by distinctive character or reckoned from a fixed point or event",
+  "genus": "period",
+  "test": true
+ },
+ "donation": {
+  "gloss": "a voluntary gift (as of money or service or ideas) made to some worthwhile cause",
+  "genus": "gift",
+  "test": true
+ },
+ "gate": {
+  "gloss": "a movable barrier in a fence or wall",
+  "genus": "barrier",
+  "test": true
+ },
+ "homer": {
+  "gloss": "a base hit on which the batter scores a run",
+  "genus": "safety",
+  "test": true
+ },
+ "coca": {
+  "gloss": "a South American shrub whose leaves are chewed by natives of the Andes; a source of cocaine",
+  "genus": "bush",
+  "test": true
+ },
+ "dose": {
+  "gloss": "a measured portion of medicine taken at any one time",
+  "genus": "medicine",
+  "test": true
+ },
+ "reservoir": {
+  "gloss": "a large or extra supply of something",
+  "genus": "supply",
+  "test": true
+ },
+ "crater": {
+  "gloss": "a bowl-shaped geological formation at the top of a volcano",
+  "genus": "formation",
+  "test": true
+ },
+ "businessman": {
+  "gloss": "a person engaged in commercial or industrial business (especially an owner or executive)",
+  "genus": "person",
+  "test": true
+ },
+ "phase": {
+  "gloss": "any distinct time period in a sequence of events",
+  "genus": "period",
+  "test": true
+ },
+ "labour": {
+  "gloss": "a social class comprising those who do manual labor or work for wages",
+  "genus": "class",
+  "test": true
+ },
+ "airline": {
+  "gloss": "a hose that carries air under pressure",
+  "genus": "tube",
+  "test": true
+ },
+ "satisfaction": {
+  "gloss": "the contentment one feels when one has fulfilled a desire, need, or expectation",
+  "genus": "happiness",
+  "test": true
+ },
+ "yesterday": {
+  "gloss": "the day immediately before today",
+  "genus": "day",
+  "test": true
+ },
+ "model": {
+  "gloss": "a hypothetical description of a complex entity or process",
+  "genus": "possibility",
+  "test": true
+ },
+ "outlet": {
+  "gloss": "a place of business for retailing goods",
+  "genus": "establishment",
+  "test": true
+ },
+ "planet": {
+  "gloss": "(astronomy) any of the nine large celestial bodies in the solar system that revolve around the sun and shine by reflected light; Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune, and Pluto in order of their proximity to the sun; viewed from the constellation Hercules, all the planets rotate around the sun in a counterclockwise direction",
+  "genus": "whole",
+  "test": true
+ },
+ "representation": {
+  "gloss": "a presentation to the mind in the form of an idea or image",
+  "genus": "content",
+  "test": true
+ },
+ "news": {
+  "gloss": "information about recent and important events",
+  "genus": "information",
+  "test": true
+ },
+ "copyright": {
+  "gloss": "a document granting exclusive right to publish and sell literary or musical or artistic work",
+  "genus": "document",
+  "test": true
+ },
+ "obstacle": {
+  "gloss": "something immaterial that stands in the way and must be circumvented or surmounted",
+  "genus": "check",
+  "test": true
+ },
+ "grief": {
+  "gloss": "intense sorrow caused by loss of a loved one (especially by death)",
+  "genus": "feeling",
+  "test": true
+ },
+ "lawmaker": {
+  "gloss": "a maker of laws; someone who gives a code of laws",
+  "genus": "leader",
+  "test": true
+ },
+ "harm": {
+  "gloss": "any physical damage to the body caused by violence or accident or fracture etc.",
+  "genus": "condition",
+  "test": true
+ },
+ "spell": {
+  "gloss": "a psychological state induced by (or as if induced by) a magical incantation",
+  "genus": "condition",
+  "test": true
+ },
+ "lawsuit": {
+  "gloss": "a comprehensive term for any proceeding in a court of law whereby an individual seeks a legal remedy",
+  "genus": "proceedings",
+  "test": true
+ },
+ "lens": {
+  "gloss": "a transparent optical device used to converge or diverge transmitted light and to form images",
+  "genus": "device",
+  "test": true
+ },
+ "testimony": {
+  "gloss": "a solemn statement made under oath",
+  "genus": "evidence",
+  "test": true
+ },
+ "bowl": {
+  "gloss": "a round vessel that is open at the top; used chiefly for holding food or liquids",
+  "genus": "vessel",
+  "test": true
+ },
+ "pitcher": {
+  "gloss": "(baseball) the person who does the pitching",
+  "genus": "athlete",
+  "test": true
+ },
+ "ally": {
+  "gloss": "a friendly nation",
+  "genus": "state",
+  "test": true
+ },
+ "contribution": {
+  "gloss": "the part played by a person in bringing about a result",
+  "genus": "attempt",
+  "test": true
+ },
+ "guest": {
+  "gloss": "a visitor to whom hospitality is extended",
+  "genus": "visitor",
+  "test": true
+ },
+ "expo": {
+  "gloss": "a collection of things (goods or works of art etc.) for public display",
+  "genus": "collection",
+  "test": true
+ },
+ "regulation": {
+  "gloss": "an authoritative rule",
+  "genus": "rule",
+  "test": true
+ },
+ "list": {
+  "gloss": "a database containing an ordered array of items (names or topics)",
+  "genus": "database",
+  "test": true
+ },
+ "existence": {
+  "gloss": "the state or fact of existing",
+  "genus": "state",
+  "test": true
+ },
+ "fleet": {
+  "gloss": "group of aircraft operating together under the same ownership",
+  "genus": "collection",
+  "test": true
+ },
+ "township": {
+  "gloss": "an administrative division of a county",
+  "genus": "district",
+  "test": true
+ },
+ "bishop": {
+  "gloss": "a senior member of the Christian clergy having spiritual and administrative authority; appointed in Christian churches to oversee priests or ministers; considered in some churches to be successors of the twelve Apostles of Christ",
+  "genus": "priest",
+  "test": true
+ },
+ "activist": {
+  "gloss": "a militant reformer",
+  "genus": "person",
+  "test": true
+ },
+ "order": {
+  "gloss": "(often plural) a command given by a superior (e.g., a military or law enforcement officer) that must be obeyed",
+  "genus": "command",
+  "test": true
+ },
+ "knight": {
+  "gloss": "originally a person of noble birth trained to arms and chivalry; today in Great Britain a person honored by the sovereign for personal merit",
+  "genus": "leader",
+  "test": true
+ },
+ "diplomacy": {
+  "gloss": "negotiation between nations",
+  "genus": "negotiation",
+  "test": true
+ },
+ "bronze": {
+  "gloss": "an alloy of copper and tin and sometimes other elements; also any copper-base alloy containing other elements in place of tin",
+  "genus": "metal",
+  "test": true
+ },
+ "occupation": {
+  "gloss": "the principal activity in your life that you do to earn money",
+  "genus": "activity",
+  "test": true
+ },
+ "athletics": {
+  "gloss": "an active diversion requiring physical exertion and competition",
+  "genus": "recreation",
+  "test": true
+ },
+ "piece": {
+  "gloss": "a separate part of a whole",
+  "genus": "part",
+  "test": true
+ },
+ "anode": {
+  "gloss": "a positively charged electrode by which electrons leave an electrical device",
+  "genus": "conductor",
+  "test": true
+ },
+ "quantum": {
+  "gloss": "a discrete amount of something that is analogous to the quantities in quantum theory",
+  "genus": "quantity",
+  "test": true
+ },
+ "fist": {
+  "gloss": "a hand with the fingers clenched in the palm (as for hitting)",
+  "genus": "hand",
+  "test": true
+ },
+ "reservation": {
+  "gloss": "a district that is reserved for particular purpose",
+  "genus": "district",
+  "test": true
+ },
+ "campus": {
+  "gloss": "a field on which the buildings of a university are situated",
+  "genus": "field",
+  "test": true
+ },
+ "flame": {
+  "gloss": "the process of combustion of inflammable materials producing heat and light and (often) smoke",
+  "genus": "burning",
+  "test": true
+ },
+ "privilege": {
+  "gloss": "a special advantage or immunity or benefit not enjoyed by all",
+  "genus": "advantage",
+  "test": true
+ },
+ "sequence": {
+  "gloss": "serial arrangement in which things follow in logical order or a recurrent pattern",
+  "genus": "series",
+  "test": true
+ },
+ "ratio": {
+  "gloss": "the relative magnitudes of two quantities (usually expressed as a quotient)",
+  "genus": "relation",
+  "test": true
+ },
+ "rest": {
+  "gloss": "something left after other parts have been taken away",
+  "genus": "part",
+  "test": true
+ },
+ "ankle": {
+  "gloss": "a gliding joint between the distal ends of the tibia and fibula and the proximal end of the talus",
+  "genus": "joint",
+  "test": true
+ },
+ "discussion": {
+  "gloss": "an extended communication (often interactive) dealing with some particular topic",
+  "genus": "communication",
+  "test": true
+ },
+ "road": {
+  "gloss": "an open way (generally public) for travel or transportation",
+  "genus": "way",
+  "test": true
+ },
+ "driver": {
+  "gloss": "the operator of a motor vehicle",
+  "genus": "operator",
+  "test": true
+ },
+ "friend": {
+  "gloss": "a person you know well and regard with affection and trust",
+  "genus": "person",
+  "test": true
+ },
+ "integration": {
+  "gloss": "the action of incorporating a racial or religious group into a community",
+  "genus": "event",
+  "test": true
+ },
+ "bachelor": {
+  "gloss": "a man who has never been married",
+  "genus": "man",
+  "test": true
+ },
+ "overtime": {
+  "gloss": "work done in addition to regular working hours",
+  "genus": "period",
+  "test": true
+ },
+ "atmosphere": {
+  "gloss": "a particular environment or surrounding influence",
+  "genus": "condition",
+  "test": true
+ },
+ "stomach": {
+  "gloss": "an enlarged and muscular saclike organ of the alimentary canal; the principal organ of digestion",
+  "genus": "organ",
+  "test": true
+ },
+ "autumn": {
+  "gloss": "the season when the leaves fall from the trees",
+  "genus": "season",
+  "test": true
+ },
+ "post": {
+  "gloss": "the position where someone (as a guard or sentry) stands or is assigned to stand",
+  "genus": "position",
+  "test": true
+ },
+ "lion": {
+  "gloss": "large gregarious predatory feline of Africa and India having a tawny coat with a shaggy mane in the male",
+  "genus": "cat",
+  "test": true
+ },
+ "playoff": {
+  "gloss": "any final competition to determine a championship",
+  "genus": "contest",
+  "test": true
+ },
+ "brokerage": {
+  "gloss": "a stock broker's business; charges a fee to act as intermediary between buyer and seller",
+  "genus": "institution",
+  "test": true
+ },
+ "acre": {
+  "gloss": "a unit of area (4840 square yards) used in English-speaking countries",
+  "genus": "unit",
+  "test": true
+ },
+ "competitiveness": {
+  "gloss": "an aggressive willingness to compete",
+  "genus": "drive",
+  "test": true
+ },
+ "ideology": {
+  "gloss": "an orientation that characterizes the thinking of a group or nation",
+  "genus": "orientation",
+  "test": true
+ },
+ "cake": {
+  "gloss": "a block of solid substance (such as soap or wax)",
+  "genus": "block",
+  "test": true
+ },
+ "pickup": {
+  "gloss": "a light truck with an open body and low sides and a tailboard",
+  "genus": "truck",
+  "test": true
+ },
+ "argentine": {
+  "gloss": "any of various small silver-scaled salmon-like marine fishes",
+  "genus": "fish",
+  "test": true
+ },
+ "prisoner": {
+  "gloss": "a person who is confined; especially a prisoner of war",
+  "genus": "unfortunate",
+  "test": true
+ },
+ "atom": {
+  "gloss": "(physics and chemistry) the smallest component of an element having the chemical properties of the element",
+  "genus": "substance",
+  "test": true
+ },
+ "door": {
+  "gloss": "a swinging or sliding barrier that will close the entrance to a room or building or vehicle",
+  "genus": "barrier",
+  "test": true
+ },
+ "gambling": {
+  "gloss": "the act of playing for stakes in the hope of winning (including the payment of a price for a chance to win a prize)",
+  "genus": "recreation",
+  "test": true
+ },
+ "folklore": {
+  "gloss": "the unwritten lore (stories and proverbs and riddles and songs) of a culture",
+  "genus": "content",
+  "test": true
+ },
+ "hybrid": {
+  "gloss": "a word that is composed of parts from different languages (e.g., `monolingual' has a Greek prefix and a Latin root)",
+  "genus": "word",
+  "test": true
+ },
+ "night": {
+  "gloss": "the time after sunset and before sunrise while it is dark outside",
+  "genus": "period",
+  "test": false
+ },
+ "extent": {
+  "gloss": "the point or degree to which something extends",
+  "genus": "degree",
+  "test": false
+ },
+ "task": {
+  "gloss": "any piece of work that is undertaken or attempted",
+  "genus": "work",
+  "test": false
+ },
+ "stress": {
+  "gloss": "the relative prominence of a syllable or musical note (especially with regard to stress or pitch)",
+  "genus": "speech",
+  "test": false
+ },
+ "dozen": {
+  "gloss": "the cardinal number that is the sum of eleven and one",
+  "genus": "number",
+  "test": false
+ },
+ "availability": {
+  "gloss": "the quality of being at hand when needed",
+  "genus": "convenience",
+  "test": false
+ },
+ "turnover": {
+  "gloss": "the ratio of the number of workers that had to be replaced in a given time period to the average number of workers",
+  "genus": "ratio",
+  "test": false
+ },
+ "thanksgiving": {
+  "gloss": "fourth Thursday in November in the United States; second Monday in October in Canada; commemorates a feast held in 1621 by the Pilgrims and the Wampanoag",
+  "genus": "holiday",
+  "test": false
+ },
+ "telegram": {
+  "gloss": "a message transmitted by telegraph",
+  "genus": "message",
+  "test": false
+ },
+ "sultan": {
+  "gloss": "the ruler of a Muslim country (especially of the former Ottoman Empire)",
+  "genus": "ruler",
+  "test": false
+ },
+ "strategist": {
+  "gloss": "an expert in strategy (especially in warfare)",
+  "genus": "person",
+  "test": false
+ },
+ "hostilities": {
+  "gloss": "fighting; acts of overt warfare",
+  "genus": "combat",
+  "test": false
+ },
+ "tsunami": {
+  "gloss": "a cataclysm resulting from a destructive sea wave caused by an earthquake or volcanic eruption",
+  "genus": "catastrophe",
+  "test": false
+ },
+ "mechanics": {
+  "gloss": "the branch of physics concerned with the motion of bodies in a frame of reference",
+  "genus": "physics",
+  "test": false
+ },
+ "colonel": {
+  "gloss": "a commissioned military officer in the United States Army or Air Force or Marines who ranks above a lieutenant colonel and below a brigadier general",
+  "genus": "officer",
+  "test": false
+ },
+ "separation": {
+  "gloss": "the state of lacking unity",
+  "genus": "state",
+  "test": false
+ },
+ "doctor": {
+  "gloss": "a licensed medical practitioner",
+  "genus": "professional",
+  "test": false
+ },
+ "mentor": {
+  "gloss": "a wise and trusted guide and advisor",
+  "genus": "intellectual",
+  "test": false
+ },
+ "parole": {
+  "gloss": "a promise",
+  "genus": "promise",
+  "test": false
+ },
+ "princess": {
+  "gloss": "a female member of a royal family other than the queen (especially the daughter of a sovereign)",
+  "genus": "leader",
+  "test": false
+ },
+ "meal": {
+  "gloss": "the food served and eaten at one time",
+  "genus": "nutrition",
+  "test": false
+ },
+ "wedding": {
+  "gloss": "the social event at which the ceremony of marriage is performed",
+  "genus": "ceremony",
+  "test": false
+ },
+ "double": {
+  "gloss": "a base hit on which the batter stops safely at second base",
+  "genus": "safety",
+  "test": false
+ },
+ "defense": {
+  "gloss": "(military) military action or resources protecting a country against potential enemies",
+  "genus": "action",
+  "test": false
+ },
+ "counseling": {
+  "gloss": "something that provides direction or advice as to a decision or course of action",
+  "genus": "message",
+  "test": false
+ },
+ "bar": {
+  "gloss": "a room or establishment where alcoholic drinks are served over a counter",
+  "genus": "room",
+  "test": false
+ },
+ "leadership": {
+  "gloss": "the activity of leading",
+  "genus": "activity",
+  "test": false
+ },
+ "recipient": {
+  "gloss": "a person who receives something",
+  "genus": "person",
+  "test": false
+ },
+ "action": {
+  "gloss": "something done (usually as opposed to something said)",
+  "genus": "act",
+  "test": false
+ },
+ "statesman": {
+  "gloss": "a man who is a respected leader in national or international affairs",
+  "genus": "politician",
+  "test": false
+ },
+ "cliff": {
+  "gloss": "a steep high face of rock",
+  "genus": "formation",
+  "test": false
+ },
+ "gang": {
+  "gloss": "an association of criminals",
+  "genus": "association",
+  "test": false
+ },
+ "truck": {
+  "gloss": "an automotive vehicle suitable for hauling",
+  "genus": "container",
+  "test": false
+ },
+ "surname": {
+  "gloss": "the name used to identify the members of a family (as distinguished from each member's given name)",
+  "genus": "name",
+  "test": false
+ },
+ "integrity": {
+  "gloss": "an undivided or unbroken completeness or totality with nothing wanting",
+  "genus": "state",
+  "test": false
+ },
+ "difference": {
+  "gloss": "the quality of being unlike or dissimilar",
+  "genus": "quality",
+  "test": false
+ },
+ "pride": {
+  "gloss": "a feeling of self-respect and personal worth",
+  "genus": "feeling",
+  "test": false
+ },
+ "marseille": {
+  "gloss": "a port city in southeastern France on the Mediterranean",
+  "genus": "city",
+  "test": false
+ },
+ "minutes": {
+  "gloss": "a written account of what transpired at a meeting",
+  "genus": "record",
+  "test": false
+ },
+ "bottle": {
+  "gloss": "a glass or plastic vessel used for storing drinks or other liquids; typically cylindrical without handles and with a narrow neck that can be plugged or capped",
+  "genus": "vessel",
+  "test": false
+ },
+ "row": {
+  "gloss": "an arrangement of objects or people side by side in a line",
+  "genus": "line",
+  "test": false
+ },
+ "folks": {
+  "gloss": "your parents",
+  "genus": "clan",
+  "test": false
+ },
+ "sitcom": {
+  "gloss": "a humorous drama based on situations that might arise in day-to-day life",
+  "genus": "comedy",
+  "test": false
+ },
+ "party": {
+  "gloss": "an organization to gain political power",
+  "genus": "organization",
+  "test": false
+ },
+ "behalf": {
+  "gloss": "as the agent of or on someone's part (usually expressed as  rather than )",
+  "genus": "position",
+  "test": false
+ },
+ "wood": {
+  "gloss": "the hard fibrous lignified substance under the bark of trees",
+  "genus": "material",
+  "test": false
+ },
+ "lab": {
+  "gloss": "a workplace for the conduct of scientific research",
+  "genus": "workplace",
+  "test": false
+ },
+ "preference": {
+  "gloss": "a strong liking",
+  "genus": "feeling",
+  "test": false
+ },
+ "sample": {
+  "gloss": "a small part of something intended as representative of the whole",
+  "genus": "example",
+  "test": false
+ },
+ "disambiguation": {
+  "gloss": "clarification that follows from the removal of ambiguity",
+  "genus": "interpretation",
+  "test": false
+ },
+ "overhead": {
+  "gloss": "the expense of maintaining property (e.g., paying property taxes and utilities and insurance); it does not include depreciation or the cost of financing or income taxes",
+  "genus": "expense",
+  "test": false
+ },
+ "perspective": {
+  "gloss": "a way of regarding situations or topics etc.",
+  "genus": "orientation",
+  "test": false
+ },
+ "petition": {
+  "gloss": "a formal message requesting something that is submitted to an authority",
+  "genus": "message",
+  "test": false
+ },
+ "bread": {
+  "gloss": "food made from dough of flour or meal and usually raised with yeast or baking powder and then baked",
+  "genus": "food",
+  "test": false
+ },
+ "ministry": {
+  "gloss": "religious ministers collectively (especially Presbyterian)",
+  "genus": "profession",
+  "test": false
+ },
+ "tang": {
+  "gloss": "a tart spicy quality",
+  "genus": "property",
+  "test": false
+ },
+ "ways": {
+  "gloss": "structure consisting of a sloping way down to the water from the place where ships are built or repaired",
+  "genus": "structure",
+  "test": false
+ },
+ "genre": {
+  "gloss": "a kind of literary or artistic work",
+  "genus": "kind",
+  "test": false
+ },
+ "fault": {
+  "gloss": "a wrong action attributable to bad judgment or ignorance or inattention",
+  "genus": "act",
+  "test": false
+ },
+ "treasure": {
+  "gloss": "accumulated wealth in the form of money or jewels etc.",
+  "genus": "wealth",
+  "test": false
+ },
+ "user": {
+  "gloss": "a person who makes use of a thing; someone who uses or employs something",
+  "genus": "person",
+  "test": false
+ },
+ "caretaker": {
+  "gloss": "a custodian who is hired to take care of something (property or a person)",
+  "genus": "keeper",
+  "test": false
+ },
+ "skull": {
+  "gloss": "the bony skeleton of the head of vertebrates",
+  "genus": "bone",
+  "test": false
+ },
+ "exchange": {
+  "gloss": "chemical process in which one atom or ion or group changes places with another",
+  "genus": "phenomenon",
+  "test": false
+ },
+ "river": {
+  "gloss": "a large natural stream of water (larger than a creek)",
+  "genus": "stream",
+  "test": false
+ },
+ "industry": {
+  "gloss": "the people or companies engaged in a particular kind of commercial enterprise",
+  "genus": "enterprise",
+  "test": false
+ },
+ "wind": {
+  "gloss": "air moving (sometimes with considerable force) from an area of high pressure to an area of low pressure",
+  "genus": "weather",
+  "test": false
+ },
+ "desk": {
+  "gloss": "a piece of furniture with a writing surface and usually drawers or other compartments",
+  "genus": "table",
+  "test": false
+ },
+ "girlfriend": {
+  "gloss": "any female friend",
+  "genus": "friend",
+  "test": false
+ },
+ "prison": {
+  "gloss": "a correctional institution where persons are confined while on trial or for punishment",
+  "genus": "institution",
+  "test": false
+ },
+ "detective": {
+  "gloss": "a police officer who investigates crimes",
+  "genus": "policeman",
+  "test": false
+ },
+ "ransom": {
+  "gloss": "money demanded for the return of a captured person",
+  "genus": "cost",
+  "test": false
+ },
+ "copy": {
+  "gloss": "a reproduction of a written record (e.g. of a legal or school record)",
+  "genus": "record",
+  "test": false
+ },
+ "dirt": {
+  "gloss": "the part of the earth's surface consisting of humus and disintegrated rock",
+  "genus": "earth",
+  "test": false
+ },
+ "car": {
+  "gloss": "a motor vehicle with four wheels; usually propelled by an internal combustion engine",
+  "genus": "container",
+  "test": false
+ },
+ "porch": {
+  "gloss": "a structure attached to the exterior of a building often forming a covered entrance",
+  "genus": "structure",
+  "test": false
+ },
+ "analyst": {
+  "gloss": "someone who is skilled at analyzing data",
+  "genus": "expert",
+  "test": false
+ },
+ "tier": {
+  "gloss": "a relative position or degree of value in a graded group",
+  "genus": "rank",
+  "test": false
+ },
+ "paper": {
+  "gloss": "a material made of cellulose pulp derived mainly from wood or rags or certain grasses",
+  "genus": "material",
+  "test": false
+ },
+ "diameter": {
+  "gloss": "the length of a straight line passing through the center of a circle and connecting two points on the circumference",
+  "genus": "length",
+  "test": false
+ },
+ "favorite": {
+  "gloss": "something regarded with special favor or liking",
+  "genus": "choice",
+  "test": false
+ },
+ "uncertainty": {
+  "gloss": "being unsettled or in doubt or dependent on chance",
+  "genus": "quality",
+  "test": false
+ },
+ "disclosure": {
+  "gloss": "the speech act of making something evident",
+  "genus": "act",
+  "test": false
+ },
+ "joy": {
+  "gloss": "the emotion of great happiness",
+  "genus": "emotion",
+  "test": false
+ },
+ "canton": {
+  "gloss": "a city on the Zhu Jiang delta in southern China; the capital of Guangdong province and a major deep-water port",
+  "genus": "city",
+  "test": false
+ },
+ "constitution": {
+  "gloss": "law determining the fundamental political principles of a government",
+  "genus": "law",
+  "test": false
+ },
+ "striker": {
+  "gloss": "a forward on a soccer team",
+  "genus": "athlete",
+  "test": false
+ },
+ "lunch": {
+  "gloss": "a midday meal",
+  "genus": "meal",
+  "test": false
+ },
+ "homicide": {
+  "gloss": "the killing of a human being by another human being",
+  "genus": "killing",
+  "test": false
+ },
+ "gulf": {
+  "gloss": "an arm of a sea or ocean partly enclosed by land; larger than a bay",
+  "genus": "water",
+  "test": false
+ },
+ "shortage": {
+  "gloss": "the property of being an amount by which something is less than expected or required",
+  "genus": "amount",
+  "test": false
+ },
+ "myth": {
+  "gloss": "a traditional story accepted as history; serves to explain the world view of a people",
+  "genus": "story",
+  "test": false
+ },
+ "dealings": {
+  "gloss": "social or verbal interchange (usually followed by `with')",
+  "genus": "interaction",
+  "test": false
+ },
+ "chairman": {
+  "gloss": "the officer who presides at the meetings of an organization",
+  "genus": "leader",
+  "test": false
+ },
+ "correction": {
+  "gloss": "the act of offering an improvement to replace a mistake; setting right",
+  "genus": "improvement",
+  "test": false
+ },
+ "siege": {
+  "gloss": "the action of an armed force that surrounds a fortified place and isolates it while continuing to attack",
+  "genus": "blockade",
+  "test": false
+ },
+ "innings": {
+  "gloss": "the batting turn of a cricket player or team",
+  "genus": "turn",
+  "test": false
+ },
+ "napoleon": {
+  "gloss": "French general who became emperor of the French (1769-1821)",
+  "genus": "general",
+  "test": false
+ },
+ "deficit": {
+  "gloss": "the property of being an amount by which something is less than expected or required",
+  "genus": "amount",
+  "test": false
+ },
+ "hand": {
+  "gloss": "the (prehensile) extremity of the superior limb",
+  "genus": "part",
+  "test": false
+ },
+ "curb": {
+  "gloss": "an edge between a sidewalk and a roadway consisting of a line of curbstones (usually forming part of a gutter)",
+  "genus": "edge",
+  "test": false
+ },
+ "receiver": {
+  "gloss": "set that receives radio or tv signals",
+  "genus": "set",
+  "test": false
+ },
+ "branch": {
+  "gloss": "a division of some larger or more complex organization",
+  "genus": "division",
+  "test": false
+ },
+ "vessel": {
+  "gloss": "a tube in which a body fluid circulates",
+  "genus": "tube",
+  "test": false
+ },
+ "carnival": {
+  "gloss": "a festival marked by merrymaking and processions",
+  "genus": "festival",
+  "test": false
+ },
+ "missionary": {
+  "gloss": "someone who attempts to convert others to a particular doctrine or program",
+  "genus": "teacher",
+  "test": false
+ },
+ "frame": {
+  "gloss": "the framework for a pair of eyeglasses",
+  "genus": "framework",
+  "test": false
+ },
+ "tomb": {
+  "gloss": "a place for the burial of a corpse (especially beneath the ground and marked by a tombstone)",
+  "genus": "place",
+  "test": false
+ },
+ "uniform": {
+  "gloss": "clothing of distinctive design worn by members of a particular group as a means of identification",
+  "genus": "clothing",
+  "test": false
+ },
+ "pentagon": {
+  "gloss": "a government building with five sides that serves as the headquarters of the United States Department of Defense",
+  "genus": "building",
+  "test": false
+ },
+ "ceremony": {
+  "gloss": "a formal event performed on a special occasion",
+  "genus": "affair",
+  "test": false
+ },
+ "champion": {
+  "gloss": "someone who has won first place in a competition",
+  "genus": "rival",
+  "test": false
+ },
+ "baker": {
+  "gloss": "someone who bakes commercially",
+  "genus": "merchant",
+  "test": false
+ },
+ "zaire": {
+  "gloss": "the basic unit of money in Zaire",
+  "genus": "unit",
+  "test": false
+ },
+ "consumption": {
+  "gloss": "the process of taking food into the body through the mouth (as by eating)",
+  "genus": "activity",
+  "test": false
+ },
+ "anthrax": {
+  "gloss": "a highly infectious animal disease (especially cattle and sheep); it can be transmitted to people",
+  "genus": "disease",
+  "test": false
+ },
+ "army": {
+  "gloss": "a permanent organization of the military land forces of a nation or state",
+  "genus": "service",
+  "test": false
+ },
+ "time": {
+  "gloss": "an instance or single occasion for some event",
+  "genus": "case",
+  "test": false
+ },
+ "evacuation": {
+  "gloss": "the act of removing the contents of something",
+  "genus": "removal",
+  "test": false
+ },
+ "target": {
+  "gloss": "a reference point to shoot at",
+  "genus": "reference",
+  "test": false
+ },
+ "spokesman": {
+  "gloss": "a male spokesperson",
+  "genus": "representative",
+  "test": false
+ },
+ "patron": {
+  "gloss": "a regular customer",
+  "genus": "customer",
+  "test": false
+ },
+ "horror": {
+  "gloss": "intense and profound fear",
+  "genus": "fear",
+  "test": false
+ },
+ "strain": {
+  "gloss": "(physics) deformation of a physical body under the action of applied forces",
+  "genus": "change",
+  "test": false
+ },
+ "monk": {
+  "gloss": "a male religious living in a cloister and devoting himself to contemplation and prayer and work",
+  "genus": "religious",
+  "test": false
+ },
+ "orientation": {
+  "gloss": "the act of orienting",
+  "genus": "placement",
+  "test": false
+ },
+ "pattern": {
+  "gloss": "a perceptual structure",
+  "genus": "structure",
+  "test": false
+ },
+ "operations": {
+  "gloss": "financial transactions at a brokerage; having to do with the execution of trades and keeping customer records",
+  "genus": "transaction",
+  "test": false
+ },
+ "fiber": {
+  "gloss": "a slender and greatly elongated substance capable of being spun into yarn",
+  "genus": "material",
+  "test": false
+ },
+ "sniper": {
+  "gloss": "a marksman who shoots at people from a concealed place",
+  "genus": "shot",
+  "test": false
+ },
+ "threshold": {
+  "gloss": "the starting point for a new state or experience",
+  "genus": "beginning",
+  "test": false
+ },
+ "cow": {
+  "gloss": "female of domestic cattle:",
+  "genus": "cattle",
+  "test": false
+ },
+ "sunset": {
+  "gloss": "the time in the evening at which the sun begins to fall below the horizon",
+  "genus": "hour",
+  "test": false
+ },
+ "salary": {
+  "gloss": "something that remunerates",
+  "genus": "payment",
+  "test": false
+ },
+ "feature": {
+  "gloss": "a prominent attribute or aspect of something",
+  "genus": "property",
+  "test": false
+ },
+ "website": {
+  "gloss": "a computer connected to the internet that maintains a series of web pages on the World Wide Web",
+  "genus": "computer",
+  "test": false
+ },
+ "sequel": {
+  "gloss": "something that follows something else",
+  "genus": "result",
+  "test": false
+ },
+ "plateau": {
+  "gloss": "a relatively flat highland",
+  "genus": "elevation",
+  "test": false
+ },
+ "baht": {
+  "gloss": "the basic unit of money in Thailand",
+  "genus": "unit",
+  "test": false
+ },
+ "physics": {
+  "gloss": "the science of matter and energy and their interactions",
+  "genus": "science",
+  "test": false
+ },
+ "pregnancy": {
+  "gloss": "the state of being pregnant; the period from conception to birth when a woman carries a developing fetus in her uterus",
+  "genus": "condition",
+  "test": false
+ },
+ "poultry": {
+  "gloss": "a domesticated gallinaceous bird thought to be descended from the red jungle fowl",
+  "genus": "bird",
+  "test": false
+ },
+ "flu": {
+  "gloss": "an acute febrile highly contagious viral disease",
+  "genus": "disease",
+  "test": false
+ },
+ "sector": {
+  "gloss": "a plane figure bounded by two radii and the included arc of a circle",
+  "genus": "figure",
+  "test": false
+ },
+ "baron": {
+  "gloss": "a nobleman (in various countries) of varying rank",
+  "genus": "lord",
+  "test": false
+ },
+ "mirror": {
+  "gloss": "polished surface that forms images by reflecting light",
+  "genus": "device",
+  "test": false
+ },
+ "treaty": {
+  "gloss": "a written agreement between two states or sovereigns",
+  "genus": "agreement",
+  "test": false
+ },
+ "banker": {
+  "gloss": "a financier who owns or is an executive in a bank",
+  "genus": "person",
+  "test": false
+ },
+ "stadium": {
+  "gloss": "a large structure for open-air sports or entertainments",
+  "genus": "structure",
+  "test": false
+ },
+ "leg": {
+  "gloss": "a human limb; commonly used to refer to a whole limb but technically only the part of the limb between the knee and ankle",
+  "genus": "member",
+  "test": false
+ },
+ "loss": {
+  "gloss": "something that is lost",
+  "genus": "possession",
+  "test": false
+ },
+ "slope": {
+  "gloss": "an elevated geological formation",
+  "genus": "formation",
+  "test": false
+ },
+ "sin": {
+  "gloss": "estrangement from god",
+  "genus": "quality",
+  "test": false
+ },
+ "grid": {
+  "gloss": "a pattern of regularly spaced horizontal and vertical lines",
+  "genus": "form",
+  "test": false
+ },
+ "failure": {
+  "gloss": "an act that fails",
+  "genus": "act",
+  "test": false
+ },
+ "proposal": {
+  "gloss": "something proposed (such as a plan or assumption)",
+  "genus": "message",
+  "test": false
+ },
+ "mercy": {
+  "gloss": "leniency and compassion shown toward offenders by a person or agency charged with administering justice",
+  "genus": "tolerance",
+  "test": false
+ },
+ "rubble": {
+  "gloss": "the remains of something that has been destroyed or broken up",
+  "genus": "trash",
+  "test": false
+ },
+ "marina": {
+  "gloss": "a fancy dock for small yachts and cabin cruisers",
+  "genus": "dock",
+  "test": false
+ },
+ "street": {
+  "gloss": "a thoroughfare (usually including sidewalks) that is lined with buildings",
+  "genus": "road",
+  "test": false
+ },
+ "income": {
+  "gloss": "the financial gain (earned or unearned) accruing over a given period of time",
+  "genus": "gain",
+  "test": false
+ },
+ "effort": {
+  "gloss": "earnest and conscientious activity intended to do or accomplish something",
+  "genus": "activity",
+  "test": false
+ },
+ "star": {
+  "gloss": "(astronomy) a celestial body of hot gases that radiates energy derived from thermonuclear reactions in the interior",
+  "genus": "whole",
+  "test": false
+ },
+ "art": {
+  "gloss": "the products of human creativity; works of art collectively",
+  "genus": "creation",
+  "test": false
+ },
+ "therapy": {
+  "gloss": "(medicine) the act of caring for someone (as by medication or remedial training etc.)",
+  "genus": "treatment",
+  "test": false
+ },
+ "criticism": {
+  "gloss": "disapproval expressed by pointing out faults or shortcomings",
+  "genus": "message",
+  "test": false
+ },
+ "plenty": {
+  "gloss": "a full supply",
+  "genus": "quantity",
+  "test": false
+ },
+ "curfew": {
+  "gloss": "the time that the curfew signal is sounded",
+  "genus": "deadline",
+  "test": false
+ },
+ "exit": {
+  "gloss": "an opening that permits escape or release",
+  "genus": "opening",
+  "test": false
+ },
+ "behavior": {
+  "gloss": "manner of acting or controlling yourself",
+  "genus": "activity",
+  "test": false
+ },
+ "store": {
+  "gloss": "a mercantile establishment for the retail sale of goods or services",
+  "genus": "outlet",
+  "test": false
+ },
+ "improvement": {
+  "gloss": "a change for the better; progress in development",
+  "genus": "transformation",
+  "test": false
+ },
+ "doctorate": {
+  "gloss": "one of the highest earned academic degrees conferred by a university",
+  "genus": "degree",
+  "test": false
+ },
+ "year": {
+  "gloss": "a period of time containing 365 (or 366) days",
+  "genus": "period",
+  "test": false
+ },
+ "kremlin": {
+  "gloss": "citadel of Moscow, housing the offices of the Russian government",
+  "genus": "stronghold",
+  "test": false
+ },
+ "client": {
+  "gloss": "a person who seeks the advice of a lawyer",
+  "genus": "case",
+  "test": false
+ },
+ "agent": {
+  "gloss": "an active and efficient cause; capable of producing a certain effect",
+  "genus": "cause",
+  "test": false
+ },
+ "mud": {
+  "gloss": "water soaked soil; soft wet earth",
+  "genus": "soil",
+  "test": false
+ },
+ "judiciary": {
+  "gloss": "persons who administer justice",
+  "genus": "administration",
+  "test": false
+ },
+ "business": {
+  "gloss": "a commercial or industrial enterprise and the people who constitute it",
+  "genus": "enterprise",
+  "test": false
+ },
+ "appeal": {
+  "gloss": "earnest or urgent request",
+  "genus": "request",
+  "test": false
+ },
+ "incentive": {
+  "gloss": "a positive motivational influence",
+  "genus": "motivation",
+  "test": false
+ },
+ "market": {
+  "gloss": "the world of commercial activity where goods and services are bought and sold",
+  "genus": "activity",
+  "test": false
+ },
+ "clash": {
+  "gloss": "a loud resonant repeating noise",
+  "genus": "noise",
+  "test": false
+ },
+ "semiconductor": {
+  "gloss": "a substance as germanium or silicon whose electrical conductivity is intermediate between that of a metal and an insulator; its conductivity increases with temperature and in the presence of impurities",
+  "genus": "conductor",
+  "test": false
+ },
+ "martin": {
+  "gloss": "French bishop who is a patron saint of France (died in 397)",
+  "genus": "saint",
+  "test": false
+ },
+ "gas": {
+  "gloss": "the state of matter distinguished from the solid and liquid states by: relatively low density and viscosity; relatively great expansion and contraction with changes in pressure and temperature; the ability to diffuse readily; and the spontaneous tendency to become distributed uniformly throughout any container",
+  "genus": "state",
+  "test": false
+ },
+ "legitimacy": {
+  "gloss": "lawfulness by virtue of being authorized or in accordance with law",
+  "genus": "quality",
+  "test": false
+ },
+ "depth": {
+  "gloss": "the extent downward or backward or inward",
+  "genus": "extent",
+  "test": false
+ },
+ "turnaround": {
+  "gloss": "time need to prepare a vessel or ship for a return trip",
+  "genus": "period",
+  "test": false
+ },
+ "newton": {
+  "gloss": "English mathematician and physicist; remembered for developing the calculus and for his law of gravitation and his three laws of motion (1642-1727)",
+  "genus": "scientist",
+  "test": false
+ },
+ "steel": {
+  "gloss": "an alloy of iron with small amounts of carbon; widely used in construction; mechanical properties can be varied over a wide range",
+  "genus": "metal",
+  "test": false
+ },
+ "phoenix": {
+  "gloss": "the state capital and largest city located in south central Arizona; situated in a former desert that has become a prosperous agricultural area thanks to irrigation",
+  "genus": "city",
+  "test": false
+ },
+ "savings": {
+  "gloss": "a fund of money put by as a reserve",
+  "genus": "fund",
+  "test": false
+ },
+ "easter": {
+  "gloss": "a Christian celebration of the Resurrection of Christ; celebrated on the Sunday following the first full moon after the vernal equinox",
+  "genus": "holiday",
+  "test": false
+ },
+ "culture": {
+  "gloss": "a particular society at a particular time and place",
+  "genus": "society",
+  "test": false
+ },
+ "smith": {
+  "gloss": "Rhodesian statesman who declared independence of Zimbabwe from Great Britain (born in 1919)",
+  "genus": "statesman",
+  "test": false
+ },
+ "length": {
+  "gloss": "the linear extent in space from one end to the other; the longest dimension of something that is fixed in place",
+  "genus": "dimension",
+  "test": false
+ },
+ "viewers": {
+  "gloss": "the audience reached by television",
+  "genus": "audience",
+  "test": false
+ },
+ "morocco": {
+  "gloss": "a kingdom (constitutional monarchy) in northwestern Africa with a largely Muslim population; achieved independence from France in 1956",
+  "genus": "country",
+  "test": false
+ },
+ "electricity": {
+  "gloss": "a physical phenomenon associated with stationary or moving electrons and protons",
+  "genus": "phenomenon",
+  "test": false
+ },
+ "struggle": {
+  "gloss": "an energetic attempt to achieve something",
+  "genus": "attempt",
+  "test": false
+ },
+ "lieutenant": {
+  "gloss": "a commissioned military officer",
+  "genus": "officer",
+  "test": false
+ },
+ "patch": {
+  "gloss": "a small contrasting part of something",
+  "genus": "marking",
+  "test": false
+ },
+ "ton": {
+  "gloss": "a United States unit of weight equivalent to 2000 pounds",
+  "genus": "unit",
+  "test": false
+ },
+ "jet": {
+  "gloss": "an airplane powered by one or more jet engines",
+  "genus": "airplane",
+  "test": false
+ },
+ "rubber": {
+  "gloss": "an elastic material obtained from the latex sap of trees (especially trees of the genera Hevea and Ficus) that can be vulcanized and finished into a variety of products",
+  "genus": "discharge",
+  "test": false
+ },
+ "novel": {
+  "gloss": "an extended fictional work in prose; usually in the form of a story",
+  "genus": "fiction",
+  "test": false
+ },
+ "cards": {
+  "gloss": "a game played with playing cards",
+  "genus": "game",
+  "test": false
+ },
+ "racist": {
+  "gloss": "a person with a prejudiced belief that one race is superior to others",
+  "genus": "partisan",
+  "test": false
+ },
+ "span": {
+  "gloss": "the complete duration of something",
+  "genus": "duration",
+  "test": false
+ },
+ "livestock": {
+  "gloss": "any animals kept for use or profit",
+  "genus": "animal",
+  "test": false
+ },
+ "heroin": {
+  "gloss": "a narcotic that is considered a hard drug; a highly addictive morphine derivative; intravenous injection provides the fastest and most intense rush",
+  "genus": "drug",
+  "test": false
+ },
+ "blow": {
+  "gloss": "a powerful stroke with the fist or a weapon",
+  "genus": "stroke",
+  "test": false
+ },
+ "partner": {
+  "gloss": "a person's partner in marriage",
+  "genus": "relative",
+  "test": false
+ },
+ "engineer": {
+  "gloss": "a person who uses scientific knowledge to solve practical problems",
+  "genus": "person",
+  "test": false
+ },
+ "lap": {
+  "gloss": "the upper side of the thighs of a seated person",
+  "genus": "member",
+  "test": false
+ },
+ "reputation": {
+  "gloss": "the state of being held in high esteem and honor",
+  "genus": "honor",
+  "test": false
+ },
+ "example": {
+  "gloss": "an item of information that is typical of a class or group",
+  "genus": "information",
+  "test": false
+ },
+ "research": {
+  "gloss": "systematic investigation to establish facts",
+  "genus": "investigation",
+  "test": false
+ },
+ "rage": {
+  "gloss": "a feeling of intense anger",
+  "genus": "anger",
+  "test": false
+ },
+ "hen": {
+  "gloss": "adult female chicken",
+  "genus": "chicken",
+  "test": false
+ },
+ "robbery": {
+  "gloss": "larceny by threat of violence",
+  "genus": "theft",
+  "test": false
+ },
+ "laundering": {
+  "gloss": "washing clothes and bed linens",
+  "genus": "wash",
+  "test": false
+ },
+ "gilbert": {
+  "gloss": "a unit of magnetomotive force equal to 0.7958 ampere-turns",
+  "genus": "unit",
+  "test": false
+ },
+ "navigation": {
+  "gloss": "the guidance of ships or airplanes from place to place",
+  "genus": "steering",
+  "test": false
+ },
+ "variety": {
+  "gloss": "a collection containing a variety of sorts of things",
+  "genus": "collection",
+  "test": false
+ },
+ "noon": {
+  "gloss": "the middle of the day",
+  "genus": "hour",
+  "test": false
+ },
+ "sense": {
+  "gloss": "a general conscious awareness",
+  "genus": "awareness",
+  "test": false
+ },
+ "burial": {
+  "gloss": "the ritual placing of a corpse in a grave",
+  "genus": "funeral",
+  "test": false
+ },
+ "drummer": {
+  "gloss": "someone who plays a drum",
+  "genus": "musician",
+  "test": false
+ },
+ "clearance": {
+  "gloss": "the distance by which one thing clears another; the space between them",
+  "genus": "interval",
+  "test": false
+ },
+ "accounting": {
+  "gloss": "a convincing explanation that reveals basic causes",
+  "genus": "explanation",
+  "test": false
+ },
+ "birthday": {
+  "gloss": "an anniversary of the day on which a person was born (or the celebration of it)",
+  "genus": "anniversary",
+  "test": false
+ },
+ "explorer": {
+  "gloss": "someone who travels into little known regions (especially for some scientific purpose)",
+  "genus": "person",
+  "test": false
+ },
+ "medium": {
+  "gloss": "a means or instrumentality for storing or communicating information",
+  "genus": "whole",
+  "test": false
+ },
+ "opportunity": {
+  "gloss": "a possibility due to a favorable combination of circumstances",
+  "genus": "possibility",
+  "test": false
+ },
+ "elevation": {
+  "gloss": "the event of something being raised upward",
+  "genus": "rise",
+  "test": false
+ },
+ "publication": {
+  "gloss": "a copy of a printed work offered for distribution",
+  "genus": "work",
+  "test": false
+ },
+ "stem": {
+  "gloss": "(linguistics) the form of a word after all affixes are removed",
+  "genus": "form",
+  "test": false
+ },
+ "west": {
+  "gloss": "the countries of (originally) Europe and (now including) North America and South America",
+  "genus": "region",
+  "test": false
+ },
+ "pole": {
+  "gloss": "a long (usually round) rod of wood or metal or plastic",
+  "genus": "rod",
+  "test": false
+ },
+ "rain": {
+  "gloss": "water falling in drops from vapor condensed in the atmosphere",
+  "genus": "weather",
+  "test": false
+ },
+ "cooper": {
+  "gloss": "United States industrialist who built the first American locomotive; founded Cooper Union in New York City to offer free courses in the arts and sciences (1791-1883)",
+  "genus": "donor",
+  "test": false
+ },
+ "decade": {
+  "gloss": "a period of 10 years",
+  "genus": "period",
+  "test": false
+ },
+ "gen": {
+  "gloss": "informal term for information",
+  "genus": "information",
+  "test": false
+ },
+ "emergence": {
+  "gloss": "the gradual beginning or coming forth",
+  "genus": "beginning",
+  "test": false
+ },
+ "manhattan": {
+  "gloss": "one of the five boroughs of New York City",
+  "genus": "borough",
+  "test": false
+ },
+ "limit": {
+  "gloss": "the greatest possible degree of something",
+  "genus": "extent",
+  "test": false
+ },
+ "singer": {
+  "gloss": "a person who sings",
+  "genus": "musician",
+  "test": false
+ },
+ "guard": {
+  "gloss": "a person who keeps watch over something or someone",
+  "genus": "defender",
+  "test": false
+ },
+ "evening": {
+  "gloss": "the latter part of the day (the period of decreasing daylight from late afternoon until nightfall)",
+  "genus": "day",
+  "test": false
+ },
+ "enforcement": {
+  "gloss": "the act of enforcing; ensuring observance of or obedience to",
+  "genus": "event",
+  "test": false
+ },
+ "legislation": {
+  "gloss": "law enacted by a legislative body",
+  "genus": "law",
+  "test": false
+ },
+ "destruction": {
+  "gloss": "the termination of something by causing so much damage to it that it cannot be repaired or no longer exists",
+  "genus": "ending",
+  "test": false
+ },
+ "fishing": {
+  "gloss": "the act of someone who fishes as a diversion",
+  "genus": "sport",
+  "test": false
+ },
+ "input": {
+  "gloss": "signal going into an electronic system",
+  "genus": "signal",
+  "test": false
+ },
+ "fielder": {
+  "gloss": "a member of the baseball team that is in the field instead of at bat",
+  "genus": "athlete",
+  "test": false
+ },
+ "execution": {
+  "gloss": "putting a condemned person to death",
+  "genus": "punishment",
+  "test": false
+ },
+ "guerrilla": {
+  "gloss": "a member of an irregular armed force that fights a stronger force by sabotage and harassment",
+  "genus": "warrior",
+  "test": false
+ },
+ "hearts": {
+  "gloss": "a form of whist in which players avoid winning tricks containing hearts or the queen of spades",
+  "genus": "cards",
+  "test": false
+ },
+ "contact": {
+  "gloss": "close interaction",
+  "genus": "interaction",
+  "test": false
+ },
+ "replacement": {
+  "gloss": "the act of furnishing an equivalent person or thing in the place of another",
+  "genus": "exchange",
+  "test": false
+ },
+ "findings": {
+  "gloss": "a collection of tools and other articles used by an artisan to make jewelry or clothing or shoes",
+  "genus": "collection",
+  "test": false
+ },
+ "analysis": {
+  "gloss": "an investigation of the component parts of a whole and their relations in making up the whole",
+  "genus": "investigation",
+  "test": false
+ },
+ "isolation": {
+  "gloss": "a state of separation between persons or groups",
+  "genus": "separation",
+  "test": false
+ },
+ "compensation": {
+  "gloss": "something (such as money) given or received as payment or reparation (as for a service or loss or injury)",
+  "genus": "payment",
+  "test": false
+ },
+ "socialist": {
+  "gloss": "a political advocate of socialism",
+  "genus": "politician",
+  "test": false
+ },
+ "premiere": {
+  "gloss": "the first public performance of a play or movie",
+  "genus": "performance",
+  "test": false
+ },
+ "merit": {
+  "gloss": "any admirable quality or attribute",
+  "genus": "worth",
+  "test": false
+ },
+ "eve": {
+  "gloss": "(Old Testament) Adam's wife in Judeo-Christian mythology: the first woman and mother of the human race; God created Eve from Adam's rib and placed Adam and Eve in the Garden of Eden",
+  "genus": "woman",
+  "test": false
+ },
+ "observer": {
+  "gloss": "a person who becomes aware (of things or events) through the senses",
+  "genus": "person",
+  "test": false
+ },
+ "genocide": {
+  "gloss": "systematic killing of a racial or cultural group",
+  "genus": "killing",
+  "test": false
+ },
+ "archive": {
+  "gloss": "a depository containing historical records and documents",
+  "genus": "deposit",
+  "test": false
+ },
+ "ceiling": {
+  "gloss": "the overhead upper surface of a covered space",
+  "genus": "side",
+  "test": false
+ },
+ "franklin": {
+  "gloss": "United States historian noted for studies of Black American history (born in 1915)",
+  "genus": "historian",
+  "test": false
+ },
+ "hawk": {
+  "gloss": "diurnal bird of prey typically having short rounded wings and a long tail",
+  "genus": "bird",
+  "test": false
+ },
+ "cable": {
+  "gloss": "a telegram sent abroad",
+  "genus": "telegram",
+  "test": false
+ },
+ "north": {
+  "gloss": "the region of the United States lying to the north of the Mason-Dixon line",
+  "genus": "region",
+  "test": false
+ },
+ "nature": {
+  "gloss": "the essential qualities or characteristics by which something is recognized",
+  "genus": "quality",
+  "test": false
+ },
+ "breakaway": {
+  "gloss": "the act of breaking away or withdrawing from",
+  "genus": "withdrawal",
+  "test": false
+ },
+ "ground": {
+  "gloss": "the solid part of the earth's surface",
+  "genus": "object",
+  "test": false
+ },
+ "tons": {
+  "gloss": "a large number or amount",
+  "genus": "measure",
+  "test": false
+ },
+ "divorce": {
+  "gloss": "the legal dissolution of a marriage",
+  "genus": "separation",
+  "test": false
+ },
+ "imprisonment": {
+  "gloss": "putting someone in prison or in jail as lawful punishment",
+  "genus": "punishment",
+  "test": false
+ },
+ "memorandum": {
+  "gloss": "a written proposal or reminder",
+  "genus": "note",
+  "test": false
+ },
+ "ambush": {
+  "gloss": "the act of concealing yourself and lying in wait to attack by surprise",
+  "genus": "attack",
+  "test": false
+ },
+ "aviation": {
+  "gloss": "the aggregation of a country's military aircraft",
+  "genus": "collection",
+  "test": false
+ },
+ "boyfriend": {
+  "gloss": "a man who is the lover of a girl or young woman",
+  "genus": "man",
+  "test": false
+ },
+ "workshop": {
+  "gloss": "small workplace where handcrafts or manufacturing are done",
+  "genus": "workplace",
+  "test": false
+ },
+ "entertainment": {
+  "gloss": "an activity that is diverting and that holds the attention",
+  "genus": "recreation",
+  "test": false
+ },
+ "hamlet": {
+  "gloss": "a community of people smaller than a village",
+  "genus": "community",
+  "test": false
+ },
+ "reunification": {
+  "gloss": "the act of coming together again",
+  "genus": "union",
+  "test": false
+ },
+ "statute": {
+  "gloss": "an act passed by a legislative body",
+  "genus": "act",
+  "test": false
+ },
+ "graduation": {
+  "gloss": "the successful completion of a program of study",
+  "genus": "completion",
+  "test": false
+ },
+ "majors": {
+  "gloss": "the most important league in any sport (especially baseball)",
+  "genus": "league",
+  "test": false
+ },
+ "island": {
+  "gloss": "a land mass (smaller than a continent) that is surrounded by water",
+  "genus": "land",
+  "test": false
+ },
+ "battle": {
+  "gloss": "a hostile meeting of opposing military forces in the course of a war",
+  "genus": "action",
+  "test": false
+ },
+ "hometown": {
+  "gloss": "the town (or city) where you grew up or where you have your principal residence",
+  "genus": "town",
+  "test": false
+ },
+ "derby": {
+  "gloss": "a felt hat that is round and hard with a narrow brim",
+  "genus": "hat",
+  "test": false
+ }
+}

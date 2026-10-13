@@ -1,0 +1,602 @@
+[
+ {
+  "w": "helm",
+  "A": "LONG(=+2) SIDE(=+2) RULE(=+3) | o",
+  "S": "LONG(=+2) ART(=-4) SIDE(=+1) | o",
+  "GTS": "LONG(=+2) ART(=-4) SIDE(=+1) | o"
+ },
+ {
+  "w": "malaria",
+  "A": "BODY FIGHT(=+3) NEAR(=-4) | o",
+  "S": "BODY HEAT(=+1) HAPPEN | o",
+  "GTS": "BODY HEAT(=+1) HAPPEN | o"
+ },
+ {
+  "w": "pianist",
+  "A": "ART(=+2) GOOD(=+2) THINK(=-2) | o",
+  "S": "ART(=+2) DO FIGHT(=-2) | o",
+  "GTS": "ART(=+2) DO FIGHT(=-2) | o"
+ },
+ {
+  "w": "employee",
+  "A": "RULE(=-1) FRIEND(=+2) ART(=-4) | o",
+  "S": "DO RULE(=-2) ART(=-4) | o",
+  "GTS": "ART(=-2) RULE(=-2) DO | o"
+ },
+ {
+  "w": "resignation",
+  "A": "RULE(=+2) MOOD(=-2) GIVE(=+2) | o",
+  "S": "MOOD(=-2) GIVE(=+2) RULE(=+3) | o",
+  "GTS": "MOOD(=-2) GIVE(=+2) RULE(=+3) | o"
+ },
+ {
+  "w": "revision",
+  "A": "CHANGE(=+2) TEXT CARE(=+1) | o",
+  "S": "DO RULE(=+2) TEXT | o",
+  "GTS": "CHANGE(=+2) DO TEXT | o"
+ },
+ {
+  "w": "consideration",
+  "A": "CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+  "S": "CARE(=+2) THINK(=-3) GIVE(=+2) | o",
+  "GTS": "THINK(=-2) CARE(=+3) GIVE(=+2) | o"
+ },
+ {
+  "w": "profit",
+  "A": "MEASURE(=+2) VALUE(=-1) GIVE(=+1) | o",
+  "S": "MEASURE(=+1) GIVE(=+1) VALUE(=-1) | o",
+  "GTS": "MEASURE(=+1) GIVE(=+1) VALUE(=-1) | o"
+ },
+ {
+  "w": "relegation",
+  "A": "FIGHT(=-2) ABOVE(=-4) JOIN(=-3) | o",
+  "S": "DO THINK(=-1) BEGIN(=+3) | o",
+  "GTS": "PART(=+2) THINK(=0) DO | o"
+ },
+ {
+  "w": "religion",
+  "A": "ART(=+3) RULE(=+2) FRIEND(=+2) | o",
+  "S": "RULE(=+2) ART(=+1) WANT(=+2) | o",
+  "GTS": "ART(=+1) RULE(=+2) BODY | o"
+ },
+ {
+  "w": "bubble",
+  "A": "GRAIN(=-1) TOUCH(=-3) INSIDE(=+2) | o",
+  "S": "GRAIN(=-1) | o",
+  "GTS": "GRAIN(=-1) | o"
+ },
+ {
+  "w": "chapel",
+  "A": "INSIDE(=0) NEAR(=+5) ART(=+4) | o",
+  "S": "PLACE INSIDE(=+1) MANY(=0) | o",
+  "GTS": "INSIDE(=+1) PLACE MANY(=0) | o"
+ },
+ {
+  "w": "people",
+  "A": "SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o",
+  "S": "SOMEONE(=-1) PART(=+4) THING(=+2) | o",
+  "GTS": "PART(=+2) SOMEONE(=-2) FRIEND(=+2) | o"
+ },
+ {
+  "w": "lake",
+  "A": "PLACE THING(=-1) HEAT(=-2) | o",
+  "S": "PLACE THING(=-1) HEAT(=-1) | o",
+  "GTS": "HEAT(=-1) THING(=-1) PLACE | o"
+ },
+ {
+  "w": "topic",
+  "A": "TEXT THINK(=-1) PART(=0) | o",
+  "S": "TEXT RULE(=-1) THINK(=-2) | o",
+  "GTS": "TEXT RULE(=-1) THINK(=-2) | o"
+ },
+ {
+  "w": "era",
+  "A": "TIME(=-2) BEGIN(=0) ART(=+1) | o",
+  "S": "BEGIN(=0) TIME(=-3) SAME(=-2) | o",
+  "GTS": "BEGIN(=0) TIME(=-3) SAME(=-2) | o"
+ },
+ {
+  "w": "donation",
+  "A": "GIVE(=+4) FRIEND(=+2) PART(=+1) | o",
+  "S": "GIVE(=+4) VALUE(=0) PART(=+1) | o",
+  "GTS": "GIVE(=+4) VALUE(=0) PART(=+1) | o"
+ },
+ {
+  "w": "gate",
+  "A": "INSIDE(=-1) NEAR(=+3) LONG(=+2) | o",
+  "S": "INSIDE(=-2) NEAR(=+2) LONG(=+2) | o",
+  "GTS": "INSIDE(=-2) NEAR(=+2) LONG(=+2) | o"
+ },
+ {
+  "w": "homer",
+  "A": "FIGHT(=-2) SAY(=+5) LONG(=+5) | o",
+  "S": "BEGIN(=+1) SAY(=+5) LONG(=+3) | o",
+  "GTS": "LONG(=+2) SAY(=+5) BEGIN(=+2) | o"
+ },
+ {
+  "w": "coca",
+  "A": "GRAIN(=-2) CONSUME(=+5) HEAT(=-4) | o",
+  "S": "GRAIN(=-1) MEASURE(=-3) CONSUME(=+3) | o",
+  "GTS": "HEAT(=0) GRAIN(=-1) MEASURE(=-4) | o"
+ },
+ {
+  "w": "dose",
+  "A": "MEASURE(=0) PART(=-2) GIVE(=+1) | o",
+  "S": "MEASURE(=0) PART(=-1) CONSUME(=+1) | o",
+  "GTS": "CONSUME(=+1) MEASURE(=0) PART(=-1) | o"
+ },
+ {
+  "w": "reservoir",
+  "A": "THING(=-1) GRAIN(=-4) PLACE | o",
+  "S": "BIG(=+1) GRAIN(=-2) THING(=0) | o",
+  "GTS": "MEASURE(=-1) BIG(=+2) GRAIN(=-1) | o"
+ },
+ {
+  "w": "crater",
+  "A": "NEAR(=-1) THING(=-5) GRAIN(=-1) | o",
+  "S": "GRAIN(=0) THING(=-4) ABOVE(=0) | o",
+  "GTS": "THING(=-2) GRAIN(=0) ABOVE(=0) | o"
+ },
+ {
+  "w": "businessman",
+  "A": "ART(=-1) TOUCH(=+5) VALUE(=-5) | o",
+  "S": "RULE(=0) ART(=-2) VALUE(=-3) | o",
+  "GTS": "RULE(=0) ART(=-2) VALUE(=-3) | o"
+ },
+ {
+  "w": "phase",
+  "A": "BEGIN(=-1) ART(=-1) PART(=0) | o",
+  "S": "BEGIN(=0) SAME(=-1) PART(=0) | o",
+  "GTS": "BEGIN(=0) SAME(=-1) PART(=0) | o"
+ },
+ {
+  "w": "labour",
+  "A": "MEASURE(=+1) CAN(=-5) ART(=-3) | o",
+  "S": "DO CAN(=-2) PART(=+3) | o",
+  "GTS": "PART(=+2) CAN(=-2) DO | o"
+ },
+ {
+  "w": "airline",
+  "A": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o",
+  "S": "ABOVE(=-1) GRAIN(=-5) RULE(=+2) | o",
+  "GTS": "GRAIN(=-3) ABOVE(=-1) RULE(=+2) | o"
+ },
+ {
+  "w": "satisfaction",
+  "A": "WANT(=+3) BEGIN(=+4) MEASURE(=+2) | o",
+  "S": "WANT(=+3) SOMEONE(=-1) BEGIN(=+2) | o",
+  "GTS": "WANT(=+3) SOMEONE(=-1) BEGIN(=+2) | o"
+ },
+ {
+  "w": "yesterday",
+  "A": "TIME(=-1) SOMEONE(=+1) | o",
+  "S": "TIME(=0) SOMEONE(=0) | o",
+  "GTS": "TIME(=0) SOMEONE(=0) | o"
+ },
+ {
+  "w": "model",
+  "A": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+  "S": "ART(=-1) GRAIN(=+2) SAME(=0) | o",
+  "GTS": "CAN(=+1) ART(=-1) PART(=0) | o"
+ },
+ {
+  "w": "outlet",
+  "A": "NEAR(=+2) GRAIN(=-3) VALUE(=-4) | o",
+  "S": "PLACE VALUE(=-3) INSIDE(=-1) | o",
+  "GTS": "PLACE VALUE(=-3) INSIDE(=-1) | o"
+ },
+ {
+  "w": "planet",
+  "A": "PLACE NEAR(=-5) PART(=0) | o",
+  "S": "NEAR(=-2) HEAT(=+2) PART(=+1) | o",
+  "GTS": "PART(=0) NEAR(=-3) HEAT(=+2) | o"
+ },
+ {
+  "w": "representation",
+  "A": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "S": "SEE ART(=+2) TEXT | o",
+  "GTS": "TEXT ART(=+2) SEE | o"
+ },
+ {
+  "w": "news",
+  "A": "TEXT TIME(=+1) MOOD(=-1) | o",
+  "S": "TIME(=0) KNOW(=+2) TEXT | o",
+  "GTS": "TEXT TIME(=0) HAPPEN | o"
+ },
+ {
+  "w": "copyright",
+  "A": "TEXT SAME(=+4) ART(=+1) | o",
+  "S": "TEXT ART(=+1) GIVE(=0) | o",
+  "GTS": "TEXT ART(=+1) GIVE(=0) | o"
+ },
+ {
+  "w": "obstacle",
+  "A": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+  "S": "CAN(=0) MOVE(=-1) MANY(=0) | o",
+  "GTS": "SEE CAN(=-1) MOVE(=-1) | o"
+ },
+ {
+  "w": "grief",
+  "A": "MOOD(=-2) | o",
+  "S": "MOOD(=-2) LIVE(=-1) WANT(=+1) | o",
+  "GTS": "MOOD(=-2) LIVE(=-1) WANT(=+1) | o"
+ },
+ {
+  "w": "lawmaker",
+  "A": "RULE(=+5) BIG(=-1) JOIN(=-1) | o",
+  "S": "RULE(=+4) TEXT DO | o",
+  "GTS": "RULE(=+4) TEXT DO | o"
+ },
+ {
+  "w": "harm",
+  "A": "FRIEND(=-1) MANY(=-4) DO | o",
+  "S": "HAPPEN FRIEND(=-2) LIVE(=-1) | o",
+  "GTS": "HAPPEN FRIEND(=-2) LIVE(=-1) | o"
+ },
+ {
+  "w": "spell",
+  "A": "DO HEAT(=-1) TEXT | o",
+  "S": "DO MANY(=0) THINK(=-1) | o",
+  "GTS": "HAPPEN MANY(=-1) WANT(=+5) | o"
+ },
+ {
+  "w": "lawsuit",
+  "A": "RULE(=+3) FIGHT(=-1) HAPPEN | o",
+  "S": "RULE(=+2) THINK(=+1) BIG(=0) | o",
+  "GTS": "RULE(=+2) THINK(=+1) BIG(=0) | o"
+ },
+ {
+  "w": "lens",
+  "A": "SEE NEAR(=-3) ART(=-1) | o",
+  "S": "SEE PART(=-1) ART(=-2) | o",
+  "GTS": "ART(=-1) SEE NEAR(=-2) | o"
+ },
+ {
+  "w": "testimony",
+  "A": "RULE(=+2) TEXT SEE | o",
+  "S": "RULE(=+2) TEXT SEE | o",
+  "GTS": "MANY(=-1) RULE(=+4) TEXT | o"
+ },
+ {
+  "w": "bowl",
+  "A": "FIGHT(=-2) LONG(=+3) PART(=-1) | o",
+  "S": "LONG(=+2) FIGHT(=-2) PART(=+1) | o",
+  "GTS": "LONG(=+2) FIGHT(=-2) PART(=+1) | o"
+ },
+ {
+  "w": "pitcher",
+  "A": "FIGHT(=-2) LONG(=+4) CONSUME(=0) | o",
+  "S": "FIGHT(=-2) LONG(=+3) MANY(=0) | o",
+  "GTS": "FIGHT(=-2) LONG(=+3) MANY(=0) | o"
+ },
+ {
+  "w": "ally",
+  "A": "FRIEND(=+1) JOIN(=+3) TIME(=-2) | o",
+  "S": "FRIEND(=+2) PLACE FIGHT(=0) | o",
+  "GTS": "FRIEND(=+2) PLACE FIGHT(=0) | o"
+ },
+ {
+  "w": "contribution",
+  "A": "GIVE(=+4) MEASURE(=+2) GOOD(=+3) | o",
+  "S": "GIVE(=+3) MEASURE(=+1) PART(=0) | o",
+  "GTS": "GIVE(=+3) MEASURE(=+1) PART(=0) | o"
+ },
+ {
+  "w": "guest",
+  "A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "S": "GIVE(=+3) RULE(=-4) FRIEND(=+3) | o",
+  "GTS": "FRIEND(=+2) RULE(=-3) GIVE(=+4) | o"
+ },
+ {
+  "w": "expo",
+  "A": "ART(=0) FIGHT(=-4) PLACE | o",
+  "S": "ART(=+1) PART(=+3) SEE | o",
+  "GTS": "PART(=+2) ART(=+1) SEE | o"
+ },
+ {
+  "w": "regulation",
+  "A": "RULE(=+3) DO MEASURE(=0) | o",
+  "S": "RULE(=+4) DO FIGHT(=-2) | o",
+  "GTS": "RULE(=+4) DO FIGHT(=-2) | o"
+ },
+ {
+  "w": "list",
+  "A": "TEXT PART(=+5) SEE | o",
+  "S": "TEXT PART(=+4) MEASURE(=-1) | o",
+  "GTS": "TEXT PART(=+4) MEASURE(=-1) | o"
+ },
+ {
+  "w": "existence",
+  "A": "LIVE(=+1) MANY(=-2) PART(=0) | o",
+  "S": "MANY(=-1) LIVE(=+1) RULE(=+1) | o",
+  "GTS": "RULE(=+1) MANY(=-2) LIVE(=+1) | o"
+ },
+ {
+  "w": "fleet",
+  "A": "FIGHT(=+4) PART(=+5) LONG(=+3) | o",
+  "S": "PART(=+3) SAME(=+3) FIGHT(=+3) | o",
+  "GTS": "PART(=+3) SAME(=+3) FIGHT(=+3) | o"
+ },
+ {
+  "w": "township",
+  "A": "PLACE THING(=0) RULE(=+2) | o",
+  "S": "PLACE RULE(=+2) | o",
+  "GTS": "PLACE RULE(=+2) | o"
+ },
+ {
+  "w": "bishop",
+  "A": "RULE(=+3) ART(=+2) MOVE(=+1) | o",
+  "S": "RULE(=+2) TIME(=-1) ART(=+2) | o",
+  "GTS": "RULE(=+2) TIME(=-1) ART(=+2) | o"
+ },
+ {
+  "w": "activist",
+  "A": "LIVE(=+2) TIME(=-3) PART(=+3) | o",
+  "S": "FIGHT(=+2) TOUCH(=+4) TIME(=-3) | o",
+  "GTS": "FRIEND(=0) FIGHT(=+3) TOUCH(=+4) | o"
+ },
+ {
+  "w": "order",
+  "A": "RULE(=+2) MOVE(=+1) WANT(=+4) | o",
+  "S": "RULE(=+3) FIGHT(=+3) SOMEONE(=-1) | o",
+  "GTS": "RULE(=+3) FIGHT(=+3) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "knight",
+  "A": "FIGHT(=+2) THING(=+4) TOUCH(=+4) | o",
+  "S": "RULE(=0) FIGHT(=+2) GOOD(=+2) | o",
+  "GTS": "RULE(=0) FIGHT(=+2) GOOD(=+2) | o"
+ },
+ {
+  "w": "diplomacy",
+  "A": "FIGHT(=+1) ART(=+1) FRIEND(=+2) | o",
+  "S": "FIGHT(=0) FRIEND(=+2) RULE(=+2) | o",
+  "GTS": "FRIEND(=+1) FIGHT(=0) RULE(=+2) | o"
+ },
+ {
+  "w": "bronze",
+  "A": "GRAIN(=+3) VALUE(=+3) BEGIN(=+3) | o",
+  "S": "GRAIN(=+1) LONG(=0) SOMEONE(=-1) | o",
+  "GTS": "GRAIN(=+1) LONG(=0) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "occupation",
+  "A": "PLACE FIGHT(=+4) RULE(=-2) | o",
+  "S": "DO RULE(=-2) MEASURE(=+1) | o",
+  "GTS": "LIVE(=+1) RULE(=-2) DO | o"
+ },
+ {
+  "w": "athletics",
+  "A": "FIGHT(=-3) MOVE(=+1) RULE(=0) | o",
+  "S": "FIGHT(=-2) RULE(=-1) MOVE(=0) | o",
+  "GTS": "FIGHT(=-2) RULE(=-1) MOVE(=0) | o"
+ },
+ {
+  "w": "piece",
+  "A": "PART(=-2) GRAIN(=+3) TEXT | o",
+  "S": "PART(=-1) MANY(=+2) JOIN(=-1) | o",
+  "GTS": "PART(=-1) MANY(=+2) JOIN(=-1) | o"
+ },
+ {
+  "w": "anode",
+  "A": "LONG(=0) ART(=-5) INSIDE(=-4) | o",
+  "S": "LONG(=+1) ART(=-5) GRAIN(=-2) | o",
+  "GTS": "ART(=-4) LONG(=0) HEAT(=+2) | o"
+ },
+ {
+  "w": "quantum",
+  "A": "ART(=-2) PART(=-2) MEASURE(=0) | o",
+  "S": "MEASURE(=-1) PART(=-2) ART(=-2) | o",
+  "GTS": "MEASURE(=-1) PART(=-2) ART(=-2) | o"
+ },
+ {
+  "w": "fist",
+  "A": "BODY SAY(=+2) FRIEND(=-1) | o",
+  "S": "BODY SAY(=+1) | o",
+  "GTS": "BODY SAY(=+1) | o"
+ },
+ {
+  "w": "reservation",
+  "A": "PLACE GIVE(=+4) MOVE(=0) | o",
+  "S": "PLACE RULE(=+1) GIVE(=+2) | o",
+  "GTS": "PLACE RULE(=+1) GIVE(=+2) | o"
+ },
+ {
+  "w": "campus",
+  "A": "PLACE NEAR(=+3) ABOVE(=+5) | o",
+  "S": "PLACE NEAR(=+2) ART(=-1) | o",
+  "GTS": "PLACE NEAR(=+2) ART(=-1) | o"
+ },
+ {
+  "w": "flame",
+  "A": "HEAT(=+4) GRAIN(=-1) LONG(=+1) | o",
+  "S": "HEAT(=+3) GRAIN(=-1) SOMEONE(=-1) | o",
+  "GTS": "HEAT(=+3) GRAIN(=-1) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "privilege",
+  "A": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "S": "RULE(=+1) GOOD(=+2) WANT(=+1) | o",
+  "GTS": "GIVE(=+1) MANY(=+1) RULE(=+1) | o"
+ },
+ {
+  "w": "sequence",
+  "A": "BEGIN(=-1) LONG(=-1) HAPPEN | o",
+  "S": "BEGIN(=-1) LONG(=-1) SAME(=0) | o",
+  "GTS": "BEGIN(=-1) LONG(=-1) SAME(=0) | o"
+ },
+ {
+  "w": "ratio",
+  "A": "MEASURE(=+1) | o",
+  "S": "MEASURE(=+1) SAME(=0) | o",
+  "GTS": "MEASURE(=+1) SAME(=0) | o"
+ },
+ {
+  "w": "rest",
+  "A": "MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o",
+  "S": "MOVE(=-2) TIME(=-1) SOMEONE(=-1) | o",
+  "GTS": "PART(=0) MOVE(=-3) SOMEONE(=-1) | o"
+ },
+ {
+  "w": "ankle",
+  "A": "BODY | o",
+  "S": "BODY BEGIN(=+2) NEAR(=+1) | o",
+  "GTS": "BODY BEGIN(=+2) NEAR(=+1) | o"
+ },
+ {
+  "w": "discussion",
+  "A": "THINK(=-1) RULE(=-1) TEXT | o",
+  "S": "TEXT RULE(=-2) THINK(=-1) | o",
+  "GTS": "RULE(=-1) TEXT THINK(=-1) | o"
+ },
+ {
+  "w": "road",
+  "A": "THING(=-1) NEAR(=+1) SIDE(=+2) | o",
+  "S": "NEAR(=0) THING(=0) SIDE(=+2) | o",
+  "GTS": "NEAR(=0) THING(=0) SIDE(=+2) | o"
+ },
+ {
+  "w": "driver",
+  "A": "ART(=-3) THING(=+2) SIDE(=0) | o",
+  "S": "ART(=-3) MOVE(=0) THING(=+2) | o",
+  "GTS": "ART(=-3) MOVE(=0) THING(=+2) | o"
+ },
+ {
+  "w": "friend",
+  "A": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o",
+  "S": "FRIEND(=+2) SOMEONE(=+2) KNOW(=+2) | o",
+  "GTS": "FRIEND(=+2) SOMEONE(=+2) KNOW(=+2) | o"
+ },
+ {
+  "w": "integration",
+  "A": "JOIN(=+2) ART(=-2) GRAIN(=+2) | o",
+  "S": "PART(=+2) JOIN(=+2) ART(=-1) | o",
+  "GTS": "HAPPEN PART(=+4) JOIN(=+3) | o"
+ },
+ {
+  "w": "bachelor",
+  "A": "BEGIN(=+2) SEX(=+3) ART(=-1) | o",
+  "S": "MANY(=-1) TIME(=-2) SEX(=+3) | o",
+  "GTS": "SEX(=+3) TIME(=-3) MANY(=-1) | o"
+ },
+ {
+  "w": "overtime",
+  "A": "FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+  "S": "DO BEGIN(=+3) TIME(=-2) | o",
+  "GTS": "BEGIN(=+2) DO TIME(=-2) | o"
+ },
+ {
+  "w": "atmosphere",
+  "A": "GRAIN(=-2) PLACE FRIEND(=+1) | o",
+  "S": "PLACE GRAIN(=-2) INSIDE(=0) | o",
+  "GTS": "INSIDE(=0) GRAIN(=-2) PLACE | o"
+ },
+ {
+  "w": "stomach",
+  "A": "BODY CONSUME(=0) FEEL(=-1) | o",
+  "S": "BODY INSIDE(=+1) CONSUME(=0) | o",
+  "GTS": "BODY INSIDE(=+1) CONSUME(=0) | o"
+ },
+ {
+  "w": "autumn",
+  "A": "HEAT(=-1) TIME(=+1) BEGIN(=0) | o",
+  "S": "HEAT(=0) TIME(=+1) BEGIN(=0) | o",
+  "GTS": "BEGIN(=0) TIME(=+1) HEAT(=-1) | o"
+ },
+ {
+  "w": "post",
+  "A": "LONG(=+2) TIME(=-1) TEXT | o",
+  "S": "LONG(=+2) MOVE(=-3) PLACE | o",
+  "GTS": "LONG(=+2) MOVE(=-3) PLACE | o"
+ },
+ {
+  "w": "lion",
+  "A": "THING(=+4) CONSUME(=+2) BIG(=+3) | o",
+  "S": "THING(=+2) BIG(=+2) INSIDE(=0) | o",
+  "GTS": "THING(=+2) BIG(=+2) INSIDE(=0) | o"
+ },
+ {
+  "w": "playoff",
+  "A": "FIGHT(=-2) BEGIN(=+2) | o",
+  "S": "FIGHT(=-2) BEGIN(=+2) THINK(=+1) | o",
+  "GTS": "FIGHT(=-2) BEGIN(=+2) THINK(=+1) | o"
+ },
+ {
+  "w": "brokerage",
+  "A": "RULE(=0) MEASURE(=+4) VALUE(=-4) | o",
+  "S": "VALUE(=-3) MEASURE(=+2) RULE(=0) | o",
+  "GTS": "VALUE(=-3) MEASURE(=+2) RULE(=0) | o"
+ },
+ {
+  "w": "acre",
+  "A": "PLACE THING(=-1) MEASURE(=0) | o",
+  "S": "PLACE NEAR(=+1) MEASURE(=0) | o",
+  "GTS": "PLACE NEAR(=+1) MEASURE(=0) | o"
+ },
+ {
+  "w": "competitiveness",
+  "A": "FIGHT(=-3) MEASURE(=+1) LIVE(=+3) | o",
+  "S": "FIGHT(=-2) TOUCH(=+3) WANT(=+2) | o",
+  "GTS": "MOVE(=0) FIGHT(=-5) FRIEND(=-2) | o"
+ },
+ {
+  "w": "ideology",
+  "A": "ART(=+2) RULE(=+2) FRIEND(=-1) | o",
+  "S": "ART(=+1) PART(=+4) THINK(=-1) | o",
+  "GTS": "PART(=+3) ART(=+2) THINK(=-1) | o"
+ },
+ {
+  "w": "cake",
+  "A": "GRAIN(=+3) CONSUME(=+5) TOUCH(=-5) | o",
+  "S": "GRAIN(=+2) PART(=-1) CONSUME(=0) | o",
+  "GTS": "GRAIN(=+2) PART(=-1) CONSUME(=0) | o"
+ },
+ {
+  "w": "pickup",
+  "A": "LONG(=+3) ART(=-2) THING(=0) | o",
+  "S": "LONG(=+3) NEAR(=+1) BODY | o",
+  "GTS": "LONG(=+3) NEAR(=+1) BODY | o"
+ },
+ {
+  "w": "argentine",
+  "A": "THING(=0) RULE(=-2) TIME(=-1) | o",
+  "S": "BIG(=-1) THING(=0) SAME(=-1) | o",
+  "GTS": "THING(=0) BIG(=-1) SAME(=-1) | o"
+ },
+ {
+  "w": "prisoner",
+  "A": "RULE(=+2) FIGHT(=+4) LIVE(=0) | o",
+  "S": "FIGHT(=+2) LIVE(=0) RULE(=+1) | o",
+  "GTS": "GOOD(=-1) FIGHT(=+5) RULE(=+1) | o"
+ },
+ {
+  "w": "atom",
+  "A": "PART(=-3) SAME(=+1) ART(=-2) | o",
+  "S": "PART(=-2) ART(=-3) GRAIN(=-1) | o",
+  "GTS": "PART(=-2) ART(=-3) GRAIN(=-1) | o"
+ },
+ {
+  "w": "door",
+  "A": "INSIDE(=0) LONG(=+2) SIDE(=+1) | o",
+  "S": "INSIDE(=0) NEAR(=+2) LONG(=+3) | o",
+  "GTS": "INSIDE(=0) NEAR(=+2) LONG(=+3) | o"
+ },
+ {
+  "w": "gambling",
+  "A": "FIGHT(=-2) GRAIN(=-2) THINK(=-1) | o",
+  "S": "FIGHT(=-2) GIVE(=+1) MEASURE(=+1) | o",
+  "GTS": "FIGHT(=-2) GIVE(=+1) MEASURE(=+1) | o"
+ },
+ {
+  "w": "folklore",
+  "A": "ART(=+5) RULE(=-1) CONSUME(=+2) | o",
+  "S": "ART(=+3) TEXT MOOD(=+1) | o",
+  "GTS": "ART(=+3) TEXT MOOD(=+1) | o"
+ },
+ {
+  "w": "hybrid",
+  "A": "SAME(=-1) ART(=-3) THING(=+2) | o",
+  "S": "SAME(=-1) ART(=-1) PART(=+1) | o",
+  "GTS": "SAME(=-1) ART(=-1) PART(=+1) | o"
+ }
+]

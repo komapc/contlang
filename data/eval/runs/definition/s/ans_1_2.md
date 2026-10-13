@@ -1,0 +1,50 @@
+1. dashboard | bumper | fender
+2. fever | illness | sweat
+3. martial art | karate | judo
+4. hack | tinkering | hacking
+5. condolence | sympathy | mourning
+6. decree | statute | ordinance
+7. trust | faith | confidence
+8. discount | rebate | markdown
+9. hesitation | doubt | reservation
+10. patronage | sponsorship | philanthropy
+11. mist | dust | fog
+12. room | hall | interior
+13. herd | flock | pack
+14. cellar | cave | cold storage
+15. diary | journal | note
+16. history | past | antiquity
+17. donation | contribution | gift
+18. fence | wall | railing
+19. speech | oration | tirade
+20. dose | sip | taste
+21. bite | mouthful | morsel
+22. swamp | marsh | lake
+23. gravel | pebble | rubble
+24. standard | specification | norm
+25. variety | variation | difference
+26. labor | chore | toil
+27. atmosphere | air | sky
+28. desire | longing | craving
+29. contemporary | person | individual
+30. chip | component | part
+31. thrift shop | bazaar | market
+32. spark | ember | flame
+33. literature | reading | poetry
+34. news | report | bulletin
+35. correspondence | letter | exchange
+36. mobility | movement | walking
+37. longing | nostalgia | yearning
+38. regulation | procedure | policy
+39. conflict | quarrel | feud
+40. experiment | trial | test
+41. ruling | verdict | decision
+42. screen | monitor | display
+43. notice | sign | announcement
+44. staff | quarterstaff | baton
+45. fencing | jousting | pole vault
+46. pub | tavern | bar
+47. contribution | share | installment
+48. favor | gift | courtesy
+49. exhibition | show | gallery
+50. tournament | competition | match
