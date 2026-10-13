@@ -9,7 +9,7 @@ sexed — номера слов, у которых пол — часть смы�
         с «a woman / a male / a young man…» либо лежит под man, woman, male, female. Только им кодер даёт корень SEX:
         teacher, president, chief — без пола (data/eval/runs/sex).
 proper — номера имён собственных: все значения слова в WordNet — с заглавной (jakarta, monroe); кодер пишет их в кавычках.
-plural — номера форм множественного числа имени (dolphins → dolphin, лемма есть в словаре): кодер кодирует лемму с меткой N+3.
+plural — номера форм множественного числа имени (cities → city): кодер пишет код леммы (если её нет в словаре — самого слова) с меткой N+3.
 
 Запуск локально (нужен WordNet в data/raw/nltk):
     .venv/bin/python scripts/site/build_words.py
@@ -91,7 +91,7 @@ def main():
         lemma.append(index[base] if base and base != w and base in index else -1)
         if sh and i not in stop[-1:] and proper(w):
             pr.append(i)
-        elif sh and max(P, key=sh.get) == "n" and lemma[-1] >= 0:
+        elif sh and max(P, key=sh.get) == "n" and (wn.morphy(w, "n") or w) != w:
             pl.append(i)
     (OUT / "words.json").write_text(json.dumps({"pos": pos, "lemma": lemma, "stop": stop, "sexed": sx, "proper": pr, "plural": pl}, separators=(",", ":")), encoding="utf8")
     print(f"слов {len(words)}, служебных {len(stop)}, со своей леммой в словаре {sum(x >= 0 for x in lemma)}, "

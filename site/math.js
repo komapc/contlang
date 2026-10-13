@@ -422,7 +422,7 @@
         return { code: q, rank: 1, base: q, rank0: 1, mod: "", S: [], v: [], cos: 1, form: "", name: true };
       }
       if (!this.opt.plain && V.plural && i !== undefined && V.plural[i] && !form) {
-        const e = this.encode(V.words[V.group[i]], "o");
+        const e = V.group[i] !== i ? this.encode(V.words[V.group[i]], "o") : this.encodeWith(word, "o");
         if (e && !e.name) return Object.assign(e, { code: e.code.replace(/^([^|]*\| o)/, "$1 N+3"), base: e.base.replace(/ \| o$/, " | o N+3"), lemma: V.words[V.group[i]] });
         return e;
       }
