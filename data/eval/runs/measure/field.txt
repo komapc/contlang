@@ -1,0 +1,39 @@
+вариант | среднее cos | ≥ 0,3 | ≥ 0,5 | точно
+A нынешний | 0.26 [0.23–0.30] | 26% | 14% | 5%
+B выбор модели из 8 | 0.30 [0.26–0.33] | 33% | 16% | 10%
+T род по таксономии | 0.26 [0.24–0.29] | 32% | 9% | 4%
+M корни модели + значения математики | 0.30 [0.26–0.34] | 31% | 17% | 12%
+N перенесённый словарь | 0.28 [0.25–0.32] | 32% | 15% | 7%
+S толкование | 0.28 [0.24–0.32] | 33% | 12% | 8%
+B5 резко | 0.27 [0.24–0.31] | 36% | 15% | 8%
+TZ | 0.28 [0.25–0.31] | 32% | 14% | 6%
+SZ | 0.29 [0.26–0.32] | 36% | 14% | 6%
+MZ | 0.27 [0.23–0.31] | 26% | 16% | 8%
+H код модели (идеал) | 0.39 [0.35–0.44] | 45% | 28% | 18%
+E пара словами | 0.70 [0.66–0.75] | 79% | 66% | 51%
+
+калибровка (первый ответ → слово, cos):
+  A helm ← podium: 0.18
+  A religion ← patron: 0.10
+  A homer ← tirade: 0.17
+  A satisfaction ← craving: 0.45
+  A grief ← sadness: 0.92
+  A ally ← alliance: 0.52
+  A bishop ← theater: -0.04
+  A anode ← antenna: 0.19
+  A rest ← pause: 0.54
+  A atmosphere ← spa: 0.23
+  A ideology ← satire: 0.23
+  A hybrid ← robot: 0.12
+  H helm ← wheel: 0.30
+  H religion ← sovereignty: 0.23
+  H homer ← highlight: 0.08
+  H satisfaction ← satisfaction: 1.00
+  H grief ← anguish: 0.76
+  H ally ← friendship: 0.49
+  H bishop ← inspector: 0.13
+  H anode ← device: 0.24
+  H rest ← share: 0.12
+  H atmosphere ← air: 1.00
+  H ideology ← idea: 0.27
+  H hybrid ← mixture: 0.32
