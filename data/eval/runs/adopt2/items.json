@@ -1,0 +1,962 @@
+[
+ {
+  "w": "roads",
+  "root": "LAND",
+  "sz": "PLACE THING(=-5) NEAR(=+5) | o",
+  "sz2": "LAND THING(=-5) NEAR(=+5) | o"
+ },
+ {
+  "w": "neighborhood",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=+5) INSIDE | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "lakes",
+  "root": "LAND",
+  "sz": "GRAIN(=-3) THING(=-5) HEAT(=-5) | o",
+  "sz2": "LAND(=-5) THING(=-5) HEAT(=-5) | o"
+ },
+ {
+  "w": "boundaries",
+  "root": "LAND",
+  "sz": "PLACE NEAR | o",
+  "sz2": "PLACE LAND(=+5) NEAR | o"
+ },
+ {
+  "w": "national",
+  "root": "LAND",
+  "sz": "SOMEONE RULE PLACE | o",
+  "sz2": "SOMEONE LAND(=+5) RULE | o"
+ },
+ {
+  "w": "main",
+  "root": "LAND",
+  "sz": "GRAIN(=-3) NEAR(=+5) SAME(=-5) | o",
+  "sz2": "LAND(=-5) NEAR(=+5) SIDE | o"
+ },
+ {
+  "w": "federal",
+  "root": "LAND",
+  "sz": "SOMEONE RULE(=+5) | o",
+  "sz2": "SOMEONE RULE(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "coverage",
+  "root": "LAND",
+  "sz": "VALUE SEE | o",
+  "sz2": "VALUE LAND(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "fishing",
+  "root": "LAND",
+  "sz": "FIGHT(=-5) LONG(=-5) | o",
+  "sz2": "FIGHT(=-5) LAND(=-5) LONG(=-5) | o"
+ },
+ {
+  "w": "airways",
+  "root": "LAND",
+  "sz": "GRAIN(=-5) FEEL(=-5) | o",
+  "sz2": "GRAIN(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "domain",
+  "root": "LAND",
+  "sz": "PLACE RULE(=-5) | o",
+  "sz2": "LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "peoples",
+  "root": "LAND",
+  "sz": "SOMEONE FRIEND(=+5) MANY(=+5) | o",
+  "sz2": "SOMEONE LAND(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "draws",
+  "root": "LAND",
+  "sz": "PLACE ART(=+5) GIVE(=-5) | o",
+  "sz2": "LAND ART(=+5) THING(=+4) | o"
+ },
+ {
+  "w": "sky",
+  "root": "LAND",
+  "sz": "GRAIN(=-5) ABOVE(=+5) NEAR(=-5) | o",
+  "sz2": "GRAIN(=-5) ABOVE(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "routes",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=-5) MOVE(=+5) | o",
+  "sz2": "PLACE NEAR(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "franchise",
+  "root": "LAND",
+  "sz": "TEXT RULE | o",
+  "sz2": "TEXT LAND(=+5) | o"
+ },
+ {
+  "w": "ferry",
+  "root": "LAND",
+  "sz": "ART(=-5) INSIDE(=-5) | o",
+  "sz2": "ART(=-5) LAND(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "counties",
+  "root": "LAND",
+  "sz": "PLACE RULE(=+5) | o",
+  "sz2": "PLACE LAND(=+5) | o"
+ },
+ {
+  "w": "emirates",
+  "root": "LAND",
+  "sz": "PLACE GRAIN(=-5) | o",
+  "sz2": "LAND GRAIN(=-5) | o"
+ },
+ {
+  "w": "silva",
+  "root": "LAND",
+  "sz": "PART(=+5) HEAT(=+5) | o",
+  "sz2": "LAND(=+5) HEAT(=+5) | o"
+ },
+ {
+  "w": "territorial",
+  "root": "LAND",
+  "sz": "SOMEONE RULE FIGHT(=+5) | o",
+  "sz2": "SOMEONE LAND(=+5) RULE | o"
+ },
+ {
+  "w": "boat",
+  "root": "LAND",
+  "sz": "ART(=-5) LONG(=+5) NEAR(=-5) | o",
+  "sz2": "ART(=-5) LAND(=-5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "universe",
+  "root": "LAND",
+  "sz": "PART(=-5) NEAR(=-5) | o",
+  "sz2": "LAND(=+5) SACRED(=+5) PART(=-5) | o"
+ },
+ {
+  "w": "plane",
+  "root": "LAND",
+  "sz": "ART(=-5) GRAIN(=-5) NEAR(=-5) | o",
+  "sz2": "ART(=-5) GRAIN(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "rough",
+  "root": "LAND",
+  "sz": "PLACE TOUCH(=+5) THING(=-5) | o",
+  "sz2": "LAND TOUCH(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "unknown",
+  "root": "LAND",
+  "sz": "PLACE KNOW(=-5) RULE(=-5) | o",
+  "sz2": "LAND KNOW(=-5) RULE(=-5) | o"
+ },
+ {
+  "w": "colonial",
+  "root": "LAND",
+  "sz": "SOMEONE FIGHT(=+5) | o",
+  "sz2": "SOMEONE LAND(=+5) FIGHT(=+5) | o"
+ },
+ {
+  "w": "southwestern",
+  "root": "LAND",
+  "sz": "SAY PLACE NEAR | o",
+  "sz2": "SAY LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "romanian",
+  "root": "LAND",
+  "sz": "SOMEONE BIG(=-5) | o",
+  "sz2": "SOMEONE LAND(=+5) | o"
+ },
+ {
+  "w": "town",
+  "root": "LAND",
+  "sz": "PLACE NEAR(=+5) | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "ranch",
+  "root": "LAND",
+  "sz": "PLACE THING(=+4) | o",
+  "sz2": "PLACE THING(=+4) LAND(=+5) | o"
+ },
+ {
+  "w": "landing",
+  "root": "LAND",
+  "sz": "LONG(=+5) NEAR | o",
+  "sz2": "LAND(=+5) LONG(=+5) PLACE | o"
+ },
+ {
+  "w": "space",
+  "root": "LAND",
+  "sz": "INSIDE PLACE GRAIN(=-5) | o",
+  "sz2": "INSIDE PLACE LAND(=+5) | o"
+ },
+ {
+  "w": "reactor",
+  "root": "LAND",
+  "sz": "ART(=-5) GRAIN(=-5) HEAT(=+5) | o",
+  "sz2": "ART(=-5) GRAIN(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "boats",
+  "root": "LAND",
+  "sz": "ART(=-5) LONG(=+5) | o",
+  "sz2": "ART(=-5) LAND(=-5) CONTAINER | o"
+ },
+ {
+  "w": "environment",
+  "root": "LAND",
+  "sz": "INSIDE PLACE FRIEND | o",
+  "sz2": "INSIDE LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "district",
+  "root": "LAND",
+  "sz": "PLACE RULE(=+5) | o",
+  "sz2": "LAND PLACE | o"
+ },
+ {
+  "w": "assets",
+  "root": "LAND",
+  "sz": "VALUE MEASURE(=+5) | o",
+  "sz2": "VALUE LAND(=+5) MEASURE(=+5) | o"
+ },
+ {
+  "w": "nasa",
+  "root": "LAND",
+  "sz": "RULE(=+4) NEAR(=-5) | o",
+  "sz2": "RULE(=+4) LAND(=+5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "hill",
+  "root": "LAND",
+  "sz": "PLACE THING(=-5) ABOVE(=+5) | o",
+  "sz2": "LAND THING(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "gross",
+  "root": "SACRED",
+  "sz": "MEASURE GOOD(=-5) FRIEND(=-5) | o",
+  "sz2": "MEASURE GOOD(=-5) SACRED(=-5) | o"
+ },
+ {
+  "w": "guidance",
+  "root": "SACRED",
+  "sz": "SAY KNOW(=+5) GIVE(=+5) | o",
+  "sz2": "SAY KNOW(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "legend",
+  "root": "SACRED",
+  "sz": "TEXT ART(=+5) | o",
+  "sz2": "TEXT ART(=+5) SACRED | o"
+ },
+ {
+  "w": "powers",
+  "root": "SACRED",
+  "sz": "RULE(=+5) ART(=-5) | o",
+  "sz2": "SACRED ART(=-5) | o"
+ },
+ {
+  "w": "music",
+  "root": "SACRED",
+  "sz": "ART(=+5) SAY(=+5) | o",
+  "sz2": "ART(=+5) SACRED | o"
+ },
+ {
+  "w": "michael",
+  "root": "SACRED",
+  "sz": "THINK SEX | o",
+  "sz2": "SACRED SEX | o"
+ },
+ {
+  "w": "minister",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=+5) RULE(=+5) | o",
+  "sz2": "SACRED SEX(=+5) RULE(=+5) | o"
+ },
+ {
+  "w": "buddhist",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SACRED ART(=+5) | o"
+ },
+ {
+  "w": "virgin",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=-5) | o",
+  "sz2": "SOMEONE SEX(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "hindu",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SOMEONE SACRED(=+5) | o"
+ },
+ {
+  "w": "roman",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SOMEONE SACRED(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "power",
+  "root": "SACRED",
+  "sz": "ART(=-5) MEASURE(=-5) | o",
+  "sz2": "ART(=-5) SACRED(=+5) MEASURE(=-5) | o"
+ },
+ {
+  "w": "followers",
+  "root": "SACRED",
+  "sz": "PART(=+5) FEEL(=+5) | o",
+  "sz2": "PART(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "citizenship",
+  "root": "SACRED",
+  "sz": "WANT(=+5) RULE(=+5) | o",
+  "sz2": "SACRED(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "bad",
+  "root": "SACRED",
+  "sz": "GOOD(=-5) CARE(=-5) FRIEND(=-5) | o",
+  "sz2": "GOOD(=-5) CARE(=-5) SACRED(=-5) | o"
+ },
+ {
+  "w": "democracy",
+  "root": "SACRED",
+  "sz": "THINK RULE(=+5) | o",
+  "sz2": "THINK RULE(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "constitution",
+  "root": "SACRED",
+  "sz": "RULE(=+5) TEXT | o",
+  "sz2": "RULE(=+5) SACRED(=+5) TEXT | o"
+ },
+ {
+  "w": "believes",
+  "root": "SACRED",
+  "sz": "THINK WANT(=-5) KNOW(=+5) | o",
+  "sz2": "THINK WANT(=-5) SACRED(=+5) | o"
+ },
+ {
+  "w": "protestant",
+  "root": "SACRED",
+  "sz": "SOMEONE TOUCH(=+5) | o",
+  "sz2": "SACRED WANT(=-5) | o"
+ },
+ {
+  "w": "father",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=+5) LIVE(=-5) | o",
+  "sz2": "SOMEONE SEX(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "solidarity",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) JOIN(=+5) PART(=+5) | o",
+  "sz2": "FRIEND(=+5) JOIN(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "honor",
+  "root": "SACRED",
+  "sz": "SAY VALUE(=+5) GOOD(=+5) | o",
+  "sz2": "SAY SACRED(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "cardinals",
+  "root": "SACRED",
+  "sz": "SOMEONE FIGHT(=-5) | o",
+  "sz2": "SACRED FIGHT(=-5) | o"
+ },
+ {
+  "w": "man",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=+5) FRIEND(=+5) | o",
+  "sz2": "SOMEONE SEX(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "bible",
+  "root": "SACRED",
+  "sz": "TEXT ART(=+5) CONSUME(=+5) | o",
+  "sz2": "TEXT SACRED(=+5) | o"
+ },
+ {
+  "w": "pope",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=+5) | o",
+  "sz2": "SACRED SEX(=+5) | o"
+ },
+ {
+  "w": "willingness",
+  "root": "SACRED",
+  "sz": "WANT(=+5) SIDE(=+5) FRIEND(=+5) | o",
+  "sz2": "WANT(=+5) FRIEND(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "tradition",
+  "root": "SACRED",
+  "sz": "THINK ART(=+5) FRIEND(=+5) | o",
+  "sz2": "THINK SACRED(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "friendship",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) WANT(=+5) JOIN(=+5) | o",
+  "sz2": "FRIEND(=+5) SACRED(=+5) WANT(=+5) | o"
+ },
+ {
+  "w": "dutch",
+  "root": "SACRED",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SOMEONE SACRED(=-5) | o"
+ },
+ {
+  "w": "credibility",
+  "root": "SACRED",
+  "sz": "MANY(=-5) VALUE(=+5) | o",
+  "sz2": "SACRED(=+5) MANY(=-5) VALUE(=+5) | o"
+ },
+ {
+  "w": "true",
+  "root": "SACRED",
+  "sz": "MANY(=-5) KNOW(=+5) SAME(=+5) | o",
+  "sz2": "MANY(=-5) SACRED(=+5) SAME(=+5) | o"
+ },
+ {
+  "w": "scheme",
+  "root": "SACRED",
+  "sz": "THINK BEGIN(=-5) PART(=+5) | o",
+  "sz2": "THINK BEGIN(=-5) SACRED(=-5) | o"
+ },
+ {
+  "w": "ministry",
+  "root": "SACRED",
+  "sz": "PART(=+5) INSIDE(=+5) | o",
+  "sz2": "PART(=+5) INSIDE(=+5) SACRED(=+5) | o"
+ },
+ {
+  "w": "humanity",
+  "root": "SACRED",
+  "sz": "FRIEND(=+5) LIVE(=+5) | o",
+  "sz2": "SACRED(=+5) FRIEND(=+5) LIVE(=+5) | o"
+ },
+ {
+  "w": "conspiracy",
+  "root": "SACRED",
+  "sz": "SAY VALUE(=-5) JOIN(=+5) | o",
+  "sz2": "SAY SACRED(=-5) VALUE(=-5) | o"
+ },
+ {
+  "w": "identity",
+  "root": "SACRED",
+  "sz": "WANT(=+5) INSIDE(=+5) RULE(=-5) | o",
+  "sz2": "SACRED(=+5) WANT(=+5) RULE(=-5) | o"
+ },
+ {
+  "w": "wolf",
+  "root": "SACRED",
+  "sz": "THING(=+4) SAY | o",
+  "sz2": "THING(=+4) SACRED(=-5) | o"
+ },
+ {
+  "w": "grace",
+  "root": "SACRED",
+  "sz": "GOOD(=+5) RULE(=+5) VALUE(=+5) | o",
+  "sz2": "SACRED(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "catholic",
+  "root": "SACRED",
+  "sz": "SOMEONE SEX(=-5) | o",
+  "sz2": "SACRED SEX(=-5) | o"
+ },
+ {
+  "w": "coffee",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) HEAT(=-5) NEAR(=+5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "terminal",
+  "root": "CONTAINER",
+  "sz": "NEAR(=+5) BEGIN(=+5) | o",
+  "sz2": "NEAR(=+5) BEGIN(=+5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "brands",
+  "root": "CONTAINER",
+  "sz": "PART(=-2) MEASURE(=-5) | o",
+  "sz2": "PART(=-2) CONTAINER(=+5) THING(=+4) | o"
+ },
+ {
+  "w": "savings",
+  "root": "CONTAINER",
+  "sz": "VALUE MEASURE(=+5) | o",
+  "sz2": "VALUE CONTAINER(=+5) MEASURE(=+5) | o"
+ },
+ {
+  "w": "handling",
+  "root": "CONTAINER",
+  "sz": "DO CARE | o",
+  "sz2": "DO CARE CONTAINER(=+5) | o"
+ },
+ {
+  "w": "filing",
+  "root": "CONTAINER",
+  "sz": "SAY TEXT | o",
+  "sz2": "SAY TEXT CONTAINER(=+5) | o"
+ },
+ {
+  "w": "old",
+  "root": "CONTAINER",
+  "sz": "TIME(=-5) LIVE(=-5) SIDE(=-5) | o",
+  "sz2": "TIME(=-5) LIVE(=-5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "restaurant",
+  "root": "CONTAINER",
+  "sz": "PLACE CONSUME(=+5) NEAR(=+5) | o",
+  "sz2": "PLACE CONTAINER(=-5) CONSUME(=+5) | o"
+ },
+ {
+  "w": "stores",
+  "root": "CONTAINER",
+  "sz": "PLACE NEAR(=+5) VALUE(=-5) | o",
+  "sz2": "PLACE CONTAINER(=+5) VALUE(=-5) | o"
+ },
+ {
+  "w": "station",
+  "root": "CONTAINER",
+  "sz": "PLACE NEAR(=+5) LONG(=+5) | o",
+  "sz2": "PLACE NEAR(=+5) CONTAINER | o"
+ },
+ {
+  "w": "cocaine",
+  "root": "CONTAINER",
+  "sz": "MEASURE(=-5) LONG(=-5) | o",
+  "sz2": "CONTAINER(=+5) PART(=-5) | o"
+ },
+ {
+  "w": "baker",
+  "root": "CONTAINER",
+  "sz": "SOMEONE SEX | o",
+  "sz2": "SOMEONE CONTAINER(=-5) | o"
+ },
+ {
+  "w": "auto",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) ART(=-5) LONG(=+5) | o",
+  "sz2": "CONTAINER ART(=-5) MOVE(=+5) | o"
+ },
+ {
+  "w": "equipment",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) VALUE(=+5) LONG | o",
+  "sz2": "ART(=-5) CONTAINER VALUE(=+5) | o"
+ },
+ {
+  "w": "surface",
+  "root": "CONTAINER",
+  "sz": "THING(=-5) ABOVE(=-5) GRAIN(=+5) | o",
+  "sz2": "CONTAINER(=-5) THING(=-5) GRAIN | o"
+ },
+ {
+  "w": "hosts",
+  "root": "CONTAINER",
+  "sz": "SOMEONE PART(=+5) | o",
+  "sz2": "SOMEONE CONTAINER(=-5) | o"
+ },
+ {
+  "w": "chips",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) TOUCH(=-5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=-5) PART(=-5) | o"
+ },
+ {
+  "w": "donations",
+  "root": "CONTAINER",
+  "sz": "GIVE(=+5) FRIEND(=+5) | o",
+  "sz2": "GIVE(=+5) FRIEND(=+5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "waste",
+  "root": "CONTAINER",
+  "sz": "GRAIN VALUE(=+5) CARE(=-5) | o",
+  "sz2": "GRAIN CONTAINER(=+5) VALUE(=+5) | o"
+ },
+ {
+  "w": "chip",
+  "root": "CONTAINER",
+  "sz": "PART(=-2) GRAIN(=+5) BIG(=-5) | o",
+  "sz2": "PART(=-2) GRAIN(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "device",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) LONG BIG(=-5) | o",
+  "sz2": "ART(=-5) CONTAINER BIG(=-5) | o"
+ },
+ {
+  "w": "machine",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) LONG | o",
+  "sz2": "ART(=-5) CONTAINER | o"
+ },
+ {
+  "w": "zoo",
+  "root": "CONTAINER",
+  "sz": "THING(=+4) MOOD(=+5) | o",
+  "sz2": "THING(=+4) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "bulk",
+  "root": "CONTAINER",
+  "sz": "MEASURE(=-5) BIG(=+5) GRAIN(=+5) | o",
+  "sz2": "MEASURE(=-5) BIG(=+5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "immigrant",
+  "root": "CONTAINER",
+  "sz": "SOMEONE PART(=-5) | o",
+  "sz2": "SOMEONE CONTAINER(=-5) | o"
+ },
+ {
+  "w": "chemicals",
+  "root": "CONTAINER",
+  "sz": "GRAIN THING ART(=-5) | o",
+  "sz2": "GRAIN CONTAINER(=+5) THING | o"
+ },
+ {
+  "w": "storage",
+  "root": "CONTAINER",
+  "sz": "DO INSIDE(=+5) PLACE | o",
+  "sz2": "DO CONTAINER(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "transport",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) GRAIN(=-5) GIVE(=-5) | o",
+  "sz2": "ART(=-5) CONTAINER GRAIN(=-5) | o"
+ },
+ {
+  "w": "carrier",
+  "root": "CONTAINER",
+  "sz": "SOMEONE ART(=-5) NEAR(=-5) | o",
+  "sz2": "SOMEONE CONTAINER(=+5) NEAR(=-5) | o"
+ },
+ {
+  "w": "operators",
+  "root": "CONTAINER",
+  "sz": "ART(=-5) FRIEND(=+5) | o",
+  "sz2": "ART(=-5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "dollars",
+  "root": "CONTAINER",
+  "sz": "MEASURE(=-5) VALUE(=+5) | o",
+  "sz2": "MEASURE(=-5) VALUE(=+5) CONTAINER(=+5) | o"
+ },
+ {
+  "w": "portfolio",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=+5) BODY | o",
+  "sz2": "CONTAINER BODY TEXT | o"
+ },
+ {
+  "w": "stuff",
+  "root": "CONTAINER",
+  "sz": "GRAIN PART TOUCH(=-5) | o",
+  "sz2": "GRAIN CONTAINER(=+5) PART | o"
+ },
+ {
+  "w": "object",
+  "root": "CONTAINER",
+  "sz": "PART(=-5) LONG GRAIN(=+5) | o",
+  "sz2": "CONTAINER PART(=-5) LONG | o"
+ },
+ {
+  "w": "serve",
+  "root": "CONTAINER",
+  "sz": "DO GIVE(=+5) THINK(=+5) | o",
+  "sz2": "DO CONTAINER(=-5) GIVE(=+5) | o"
+ },
+ {
+  "w": "dinner",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) FEEL(=-5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=-5) | o"
+ },
+ {
+  "w": "breakfast",
+  "root": "CONTAINER",
+  "sz": "CONSUME(=+5) FEEL(=-5) TOUCH(=-5) | o",
+  "sz2": "CONSUME(=+5) CONTAINER(=-5) FEEL(=-5) | o"
+ },
+ {
+  "w": "files",
+  "root": "CONTAINER",
+  "sz": "SAY TEXT INSIDE(=+5) | o",
+  "sz2": "SAY TEXT CONTAINER(=+5) | o"
+ },
+ {
+  "w": "cover",
+  "root": "CONTAINER",
+  "sz": "INSIDE(=-5) TOUCH(=-5) | o",
+  "sz2": "INSIDE(=-5) CONTAINER(=-5) TOUCH(=-5) | o"
+ },
+ {
+  "w": "exports",
+  "root": "CONTAINER",
+  "sz": "BIG(=+5) NEAR(=-5) | o",
+  "sz2": "CONTAINER(=+5) THING(=+4) | o"
+ },
+ {
+  "w": "success",
+  "root": "-",
+  "sz": "HAPPEN BEGIN(=+5) | o",
+  "sz2": "HAPPEN BEGIN(=+5) CAN(=-5) | o"
+ },
+ {
+  "w": "walking",
+  "root": "-",
+  "sz": "DO NEAR(=+5) MOVE | o",
+  "sz2": "DO NEAR THING(=-5) | o"
+ },
+ {
+  "w": "fit",
+  "root": "-",
+  "sz": "FEEL MEASURE(=-5) SAME(=+5) | o",
+  "sz2": "FEEL MEASURE(=-5) JOIN(=+5) | o"
+ },
+ {
+  "w": "danger",
+  "root": "-",
+  "sz": "VALUE(=+5) KNOW GRAIN(=-5) | o",
+  "sz2": "VALUE(=+5) KNOW FRIEND(=-5) | o"
+ },
+ {
+  "w": "debts",
+  "root": "-",
+  "sz": "MOOD(=-5) MEASURE(=+5) | o",
+  "sz2": "MOOD(=-5) BIG(=+5) | o"
+ },
+ {
+  "w": "german",
+  "root": "-",
+  "sz": "SOMEONE SAY(=-5) | o",
+  "sz2": "SOMEONE LIVE(=-5) | o"
+ },
+ {
+  "w": "lost",
+  "root": "-",
+  "sz": "SOMEONE VALUE(=+5) MOOD(=-5) | o",
+  "sz2": "SOMEONE VALUE(=+5) SIDE(=-5) | o"
+ },
+ {
+  "w": "loss",
+  "root": "-",
+  "sz": "MOOD(=-5) ABOVE(=-5) MEASURE | o",
+  "sz2": "MOOD(=-5) ABOVE(=-5) GOOD(=-5) | o"
+ },
+ {
+  "w": "invitation",
+  "root": "-",
+  "sz": "DO GIVE(=+5) JOIN(=+5) | o",
+  "sz2": "DO GIVE(=+5) FRIEND(=+5) | o"
+ },
+ {
+  "w": "stage",
+  "root": "-",
+  "sz": "TIME BEGIN(=-5) DO | o",
+  "sz2": "TIME BEGIN(=-5) SIDE(=+5) | o"
+ },
+ {
+  "w": "want",
+  "root": "-",
+  "sz": "WANT(=+5) DO THINK | o",
+  "sz2": "WANT(=+5) DO THINK(=-5) | o"
+ },
+ {
+  "w": "currency",
+  "root": "-",
+  "sz": "MEASURE VALUE(=+5) | o",
+  "sz2": "MEASURE VALUE | o"
+ },
+ {
+  "w": "expenses",
+  "root": "-",
+  "sz": "VALUE(=+5) MEASURE(=+5) | o",
+  "sz2": "VALUE(=+5) MEASURE(=+5) NEAR(=-5) | o"
+ },
+ {
+  "w": "studying",
+  "root": "-",
+  "sz": "THINK CONSUME(=+5) CARE(=+5) | o",
+  "sz2": "THINK CONSUME(=+5) ART(=+5) | o"
+ },
+ {
+  "w": "speed",
+  "root": "-",
+  "sz": "MOVE(=+5) MEASURE(=-5) SIDE(=+5) | o",
+  "sz2": "MOVE(=+5) MEASURE(=-5) ART(=-5) | o"
+ },
+ {
+  "w": "snow",
+  "root": "-",
+  "sz": "HEAT(=-5) THING(=-5) | o",
+  "sz2": "HEAT(=-5) THING(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "gap",
+  "root": "-",
+  "sz": "GRAIN(=+5) LONG(=-5) | o",
+  "sz2": "GRAIN(=+5) BEGIN(=+5) | o"
+ },
+ {
+  "w": "iron",
+  "root": "-",
+  "sz": "GRAIN(=+5) THING(=-5) LONG | o",
+  "sz2": "GRAIN(=+5) THING(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "summit",
+  "root": "-",
+  "sz": "ABOVE(=+5) THING(=-5) BEGIN(=+5) | o",
+  "sz2": "ABOVE(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "song",
+  "root": "-",
+  "sz": "ART(=+5) TEXT SAY(=+5) | o",
+  "sz2": "ART(=+5) MOOD TEXT | o"
+ },
+ {
+  "w": "pass",
+  "root": "-",
+  "sz": "DO GIVE(=-5) MOVE(=+5) | o",
+  "sz2": "DO GIVE(=-5) CONSUME | o"
+ },
+ {
+  "w": "substitute",
+  "root": "-",
+  "sz": "THINK TOUCH(=-5) | o",
+  "sz2": "THINK TOUCH(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "elements",
+  "root": "-",
+  "sz": "PART GRAIN INSIDE(=-5) | o",
+  "sz2": "PART(=-5) GRAIN SAME(=-5) | o"
+ },
+ {
+  "w": "riots",
+  "root": "-",
+  "sz": "DO HEAT(=+5) FRIEND(=-5) | o",
+  "sz2": "DO FRIEND(=-5) HAPPEN | o"
+ },
+ {
+  "w": "siege",
+  "root": "-",
+  "sz": "FIGHT(=+5) FRIEND(=-5) | o",
+  "sz2": "FIGHT(=+5) FRIEND(=-5) CAN(=-5) | o"
+ },
+ {
+  "w": "addition",
+  "root": "-",
+  "sz": "JOIN(=+5) BIG(=+5) PART | o",
+  "sz2": "JOIN(=+5) PART BIG(=+5) | o"
+ },
+ {
+  "w": "surveillance",
+  "root": "-",
+  "sz": "DO SEE ART(=-5) | o",
+  "sz2": "DO SEE SAY(=-5) | o"
+ },
+ {
+  "w": "trouble",
+  "root": "-",
+  "sz": "THINK CAN(=-5) HAPPEN | o",
+  "sz2": "THINK CAN(=-5) FEEL(=-5) | o"
+ },
+ {
+  "w": "membership",
+  "root": "-",
+  "sz": "PART(=+5) FRIEND(=+5) | o",
+  "sz2": "PART(=+5) FRIEND(=+5) GIVE(=+5) | o"
+ },
+ {
+  "w": "interim",
+  "root": "-",
+  "sz": "MEASURE RULE TIME | o",
+  "sz2": "MEASURE RULE(=+5) TIME | o"
+ },
+ {
+  "w": "hungarian",
+  "root": "-",
+  "sz": "SOMEONE SAY(=-5) | o",
+  "sz2": "SOMEONE THING(=+4) | o"
+ },
+ {
+  "w": "lebanese",
+  "root": "-",
+  "sz": "SOMEONE MOOD(=-5) | o",
+  "sz2": "SOMEONE CONSUME(=+5) | o"
+ },
+ {
+  "w": "bat",
+  "root": "-",
+  "sz": "THING(=+4) BODY LONG(=+5) | o",
+  "sz2": "THING(=+4) LONG(=+5) BODY | o"
+ },
+ {
+  "w": "conservatives",
+  "root": "-",
+  "sz": "SOMEONE SIDE(=-5) RULE(=+5) | o",
+  "sz2": "SOMEONE SIDE(=-5) TOUCH(=+5) | o"
+ },
+ {
+  "w": "services",
+  "root": "-",
+  "sz": "DO RULE(=-5) FRIEND(=+5) | o",
+  "sz2": "DO RULE(=-5) GIVE(=+5) | o"
+ },
+ {
+  "w": "minor",
+  "root": "-",
+  "sz": "SOMEONE BIG(=-5) HAPPEN | o",
+  "sz2": "SOMEONE BIG(=-5) PART(=-5) | o"
+ },
+ {
+  "w": "monument",
+  "root": "-",
+  "sz": "PLACE THING(=-5) GRAIN(=+5) | o",
+  "sz2": "PLACE THING(=-5) ART(=+5) | o"
+ },
+ {
+  "w": "recognition",
+  "root": "-",
+  "sz": "FRIEND(=+5) GOOD(=+5) | o",
+  "sz2": "FRIEND(=+5) SEE | o"
+ },
+ {
+  "w": "recession",
+  "root": "-",
+  "sz": "ABOVE(=-5) MEASURE(=+5) GOOD(=-5) | o",
+  "sz2": "ABOVE(=-5) MEASURE(=+5) | o"
+ },
+ {
+  "w": "exercises",
+  "root": "-",
+  "sz": "DO PART(=+5) | o",
+  "sz2": "DO GRAIN(=-5) | o"
+ }
+]
