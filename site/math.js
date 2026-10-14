@@ -210,6 +210,7 @@
       this.infl = meta.infl || {}; this.sense = meta.sense || {};
       const ex = meta.extra || { words: [] }, raw = ex.vec ? Uint8Array.from(atob(ex.vec), (c) => c.charCodeAt(0)) : new Uint8Array(0);
       this.extra = new Map(ex.words.map((w, k) => [w, k])); this.extraX = new Int8Array(raw.buffer); this.extraPerson = new Set(ex.person || []);
+      this.extraPos = new Map(); for (const [b, fo] of Object.values(this.infl)) if (this.extra.has(b) && !this.extraPos.has(b)) this.extraPos.set(b, fo === "a" ? "i" : fo);
     }
     extraVec(w) {
       const k = this.extra ? this.extra.get(w) : undefined;
@@ -441,6 +442,7 @@
     // часть речи слова по WordNet (наибольшая доля смыслов), "o", если неизвестна
     posOf(word) {
       const V = this.V, i = V.index.get(word);
+      if (i === undefined && V.extraPos && V.extraPos.has(word)) return V.extraPos.get(word);
       if (!V.pos || i === undefined || V.pos[i * 4] < 0) return "o";
       let j = 0; for (let k = 1; k < 4; k++) if (V.pos[i * 4 + k] > V.pos[i * 4 + j]) j = k;
       return "oiae"[j];
