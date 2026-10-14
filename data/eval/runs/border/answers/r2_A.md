@@ -1,0 +1,10 @@
+1. border | edge | frontier
+2. state | nation | country
+3. inhabitant | native | citizen
+4. mist | vapor | fog
+5. dirt | soil | ground
+6. property | territory | estate
+7. map | plan | atlas
+8. path | road | line
+9. habitat | zoo | farm
+10. voyage | journey | crossing

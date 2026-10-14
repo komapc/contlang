@@ -1,0 +1,10 @@
+1. area | territory | region
+2. territory | country | state
+3. root | tendril | vine
+4. native | resident | countryman
+5. border | boundary | frontier
+6. wasteland | barren | desert
+7. air | atmosphere | vapor
+8. gravel | rubble | rock
+9. roadside | edge | verge
+10. reef | coral | sandbar

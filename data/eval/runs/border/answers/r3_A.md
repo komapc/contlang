@@ -1,0 +1,10 @@
+1. border | frontier | edge
+2. country | nation | state
+3. native | countryman | resident
+4. pipe | hose | duct
+5. dirt | mud | rubble
+6. territory | estate | property
+7. map | plan | atlas
+8. path | route | trail
+9. habitat | zoo | range
+10. voyage | journey | sailing

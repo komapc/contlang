@@ -1,0 +1,10 @@
+1. border | frontier | boundary
+2. state | nation | country
+3. citizen | native | resident
+4. pipeline | pipe | conduit
+5. basement | cellar | wasteland
+6. territory | jurisdiction | domain
+7. study | office | den
+8. path | trail | lane
+9. zoo | farm | habitat
+10. voyage | cruise | expedition

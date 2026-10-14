@@ -1,0 +1,182 @@
+{
+ "cand": {
+  "1": "PLACE LONG(=-5) | o",
+  "2": "PLACE NEAR LONG(=-5) | o",
+  "3": "LAND RULE LONG(=-5) | o",
+  "4": "PLACE JOIN(=-5) LONG(=-5) | o",
+  "5": "SIDE | o PI LAND RULE | o",
+  "6": "LONG(=-5) | o PI LAND RULE | o"
+ },
+ "lists": {
+  "A": [
+   [
+    "cand",
+    5,
+    "SIDE | o PI LAND RULE | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND RULE(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "SOMEONE LAND | o"
+   ],
+   [
+    "fill",
+    null,
+    "LONG(=+5) GRAIN(=-5) LAND(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=+5) ABOVE(=-5) VALUE(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=+5) RULE(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "THINK PLACE LAND(=+5) | o"
+   ],
+   [
+    "cand",
+    1,
+    "PLACE LONG(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "PLACE THING(=+4) LAND(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "DO LAND(=-5) NEAR(=-5) | o"
+   ]
+  ],
+  "B": [
+   [
+    "fill",
+    null,
+    "LAND(=+5) PLACE MEASURE(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=+5) RULE(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "THING(=0) LAND(=+5) LONG(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "SOMEONE LAND | o"
+   ],
+   [
+    "cand",
+    6,
+    "LONG(=-5) | o PI LAND RULE | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=+5) ABOVE(=-5) VALUE(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "GRAIN(=-5) NEAR(=+5) LAND(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "PART(=+5) LAND(=+5) THING(=-5) | o"
+   ],
+   [
+    "cand",
+    2,
+    "PLACE NEAR LONG(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LONG(=-5) LAND(=-5) THING(=-5) | o"
+   ]
+  ],
+  "C": [
+   [
+    "cand",
+    3,
+    "LAND RULE LONG(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND NEAR(=-5) PLACE | o"
+   ],
+   [
+    "cand",
+    4,
+    "PLACE JOIN(=-5) LONG(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "RULE(=+4) LAND(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=-5) THING(=-5) GRAIN(=-5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "HAPPEN LAND(=+5) PLACE | o"
+   ],
+   [
+    "fill",
+    null,
+    "SOMEONE PLACE LAND(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "THINK PLACE LAND(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "LAND(=+5) RULE(=+5) | o"
+   ],
+   [
+    "fill",
+    null,
+    "GRAIN LAND(=-5) | o"
+   ]
+  ]
+ },
+ "readers": {
+  "1": "A",
+  "2": "A",
+  "3": "A",
+  "4": "A",
+  "5": "B",
+  "6": "B",
+  "7": "B",
+  "8": "B",
+  "9": "C",
+  "10": "C",
+  "11": "C",
+  "12": "C"
+ }
+}

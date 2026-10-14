@@ -1,0 +1,10 @@
+1. density | area | ratio
+2. territory | country | jurisdiction
+3. root | rhizome | tuber
+4. native | citizen | inhabitant
+5. border | boundary | frontier
+6. dirt | soil | dust
+7. air | atmosphere | vapor
+8. gravel | rubble | stones
+9. edge | rim | margin
+10. cable | rope | line

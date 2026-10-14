@@ -1,0 +1,10 @@
+1. territory | area | zone
+2. jurisdiction | state | territory
+3. grass | vine | weed
+4. citizen | native | resident
+5. strand | thread | rope
+6. wasteland | badlands | lowland
+7. air | atmosphere | vapor
+8. rock | gravel | rubble
+9. border | edge | boundary
+10. river | stream | channel

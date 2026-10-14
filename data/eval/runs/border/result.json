@@ -1,0 +1,38 @@
+{
+ "5": [
+  "border | edge | frontier",
+  "border | edge | frontier",
+  "border | frontier | edge",
+  "border | frontier | boundary"
+ ],
+ "1": [
+  "path | trail | lane",
+  "path | road | line",
+  "path | route | trail",
+  "path | trail | lane"
+ ],
+ "6": [
+  "border | boundary | frontier",
+  "strand | thread | rope",
+  "border | boundary | frontier",
+  "border | boundary | frontier"
+ ],
+ "2": [
+  "edge | rim | margin",
+  "border | edge | boundary",
+  "roadside | edge | verge",
+  "cord | rope | string"
+ ],
+ "3": [
+  "border | boundary | frontier",
+  "border | frontier | boundary",
+  "border | boundary | frontier",
+  "border | boundary | frontier"
+ ],
+ "4": [
+  "boundary | divide | gap",
+  "fence | divide | barrier",
+  "gap | opening | cleft",
+  "boundary | border | divide"
+ ]
+}
