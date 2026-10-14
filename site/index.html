@@ -88,6 +88,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .slot{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:190px;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,box-shadow .15s,transform .15s}
 .slot.empty{border-style:dashed;align-items:center;justify-content:center;color:var(--mut);cursor:pointer;text-align:center}
 .slot.empty:hover,.slot.sel{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc2)}
+.slot:not(.empty){cursor:pointer}.slot.sel .slhead>span:first-child{color:var(--acc);font-weight:700}
+.mxslots.ask .slot:not(.empty){border-color:var(--warn);box-shadow:0 0 0 3px var(--warnbg)}
 .slot.over{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc2);transform:scale(1.015)}
 .slot .plus{font-size:28px;line-height:1;color:var(--acc)}
 .slhead{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
@@ -190,7 +192,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   </div>
   <div class="mxslots" id="mxSlots"></div>
   <h3><span data-l="en">Roots</span><span data-l="ru">Корни</span></h3>
-  <div class="mxhint"><span data-l="en">Click a root to put it into the selected (or first free) slot, or drag it onto a slot. Drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в выбранную (или первую свободную) ячейку; можно и перетащить его на ячейку. Ячейки переставляются перетаскиванием за имя корня.</span></div>
+  <div class="mxhint"><span data-l="en">Click a root: it goes into the first free slot. To replace a root, first click its slot (it lights up), then click the new root. You can also drag a root onto a slot, and drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в первую свободную ячейку. Чтобы заменить корень, сначала нажмите на его ячейку (она подсветится), потом на новый корень. Корень можно и перетащить на ячейку, а ячейки — переставить, перетащив за имя.</span></div>
   <div class="mxpal" id="mxPal"></div>
 </section>
 
@@ -794,10 +796,12 @@ RDP.then(() => { const w = () => RD ? drawMc() : setTimeout(w, 20); w(); });
 const MX = { slots: [null, null, null], pos: "o", sel: null, drag: null };
 const MXT = {
   en: { head: "head", mod: "modifier", empty: "add a root", plain: "no value (plain)", noAxis: "no axis — used as is", none: "Put a root into a slot", load: "loading vectors (~3.5 MB)…",
-        notWord: "not in the dictionary", pos: { o: "noun", i: "verb", a: "adjective", e: "adverb" }, ph: "start from a word: river, alleged…", plainR: "the root as such, no degree",
+        notWord: "not in the dictionary", pos: { o: "noun", i: "verb", a: "adjective", e: "adverb" }, ph: "start from a word: river, alleged…", plainR: "the root as such, no degree", full: "All three slots are full: click a slot to choose which root to replace, or remove one with ✕.",
+        pick: "Click to choose this slot: the next root you click goes here", here: "next root goes here",
         between: (a, b) => `between ${a} and ${b}, nearer ${a}`, beyond: (a) => `${a}, even more`, left: "move left", right: "move right", del: "remove" },
   ru: { head: "главный", mod: "уточняет", empty: "добавить корень", plain: "без значения", noAxis: "без оси — как есть", none: "Положите корень в ячейку", load: "загрузка векторов (~3,5 МБ)…",
-        notWord: "нет в словаре", pos: { o: "имя", i: "глагол", a: "признак", e: "наречие" }, ph: "начать со слова: river, alleged…", plainR: "корень как есть, без степени",
+        notWord: "нет в словаре", pos: { o: "имя", i: "глагол", a: "признак", e: "наречие" }, ph: "начать со слова: river, alleged…", plainR: "корень как есть, без степени", full: "Все три ячейки заняты: нажмите на ячейку, чтобы выбрать, какой корень заменить, или уберите один кнопкой ✕.",
+        pick: "Нажмите, чтобы выбрать ячейку: следующий корень встанет сюда", here: "следующий корень — сюда",
         between: (a, b) => `между «${a}» и «${b}», ближе к «${a}»`, beyond: (a) => `«${a}», ещё сильнее`, left: "влево", right: "вправо", del: "убрать" } };
 const mt = (k) => MXT[LANG()][k];
 // подписи полюсов: в английском — все опорные точки из строки корня (-5 dead … -2 asleep … +5 alive), в русском — neg / mid / pos
@@ -832,7 +836,8 @@ function mxCode(){
 function mxPut(name, at){
   if (MX.slots.some(x => x && x.name === name)) return;
   let i = at != null ? at : MX.sel != null ? MX.sel : MX.slots.indexOf(null);
-  if (i < 0) i = 2;
+  if (i < 0) { $("mxStatus").textContent = mt("full"); $("mxSlots").classList.add("ask"); setTimeout(() => $("mxSlots").classList.remove("ask"), 900); return; }
+  if ($("mxStatus").textContent === mt("full")) $("mxStatus").textContent = "";
   MX.slots[i] = { name, v: RD.root.get(name).axis ? 0 : null };
   MX.slots = MX.slots.filter(Boolean).concat([null, null, null]).slice(0, 3); MX.sel = null; mxDraw();
 }
@@ -853,7 +858,10 @@ function mxSlot(i){
     return box;
   }
   const r = RD.root.get(x.name), n = MX.slots.filter(Boolean).length;
-  const hd = el("div", null, "slhead"); hd.appendChild(el("span", (i + 1) + " · " + (i === 0 ? mt("head") : mt("mod"))));
+  // щелчок по занятой ячейке выбирает её: следующий корень из палитры встанет сюда вместо нынешнего
+  box.addEventListener("click", e => { if (e.target.closest("button,input,label,.ticks")) return; MX.sel = MX.sel === i ? null : i; mxDraw(); });
+  box.title = mt("pick");
+  const hd = el("div", null, "slhead"); hd.appendChild(el("span", (i + 1) + " · " + (MX.sel === i ? mt("here") : i === 0 ? mt("head") : mt("mod"))));
   const ctl = el("span", null, "ctl");
   [["◀", mt("left"), () => mxMove(i, -1), i === 0], ["▶", mt("right"), () => mxMove(i, 1), i >= n - 1], ["✕", mt("del"), () => { MX.slots[i] = null; MX.slots = MX.slots.filter(Boolean).concat([null, null, null]).slice(0, 3); mxDraw(); }, false]]
     .forEach(([t, ti, f, dis]) => { const b = el("button", t); b.type = "button"; b.title = ti; b.setAttribute("aria-label", ti); b.disabled = dis; b.addEventListener("click", f); ctl.appendChild(b); });
