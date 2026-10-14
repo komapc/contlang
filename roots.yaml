@@ -11,8 +11,8 @@ pos:
   what: обстоятельство
 roles:  # роль имени после `| o` (как эсперантские -ist, -il, -aĵ, -ec), без значения; v2, data/eval/runs/toki
 - name: agent
-  what: 'тот, кто это делает (человек или вещь): `TEXT | o agent` писатель, `HAPPEN | o agent` причина'
-  en_what: 'the one who does it (person or thing): `TEXT | o agent` writer, `HAPPEN | o agent` cause'
+  what: 'тот, кто это делает, или человек этой области (человек или вещь): `TEXT | o agent` писатель, `HAPPEN | o agent` причина, `ART(=+5) | o agent` художник'
+  en_what: 'the one who does it, or a person of that field (person or thing): `TEXT | o agent` writer, `HAPPEN | o agent` cause, `ART(=+5) | o agent` artist'
 - name: tool
   what: 'орудие, средство: `TEXT | o tool` ручка, `JOIN(=-4) TOUCH(=+4) | o tool` нож'
   en_what: 'the means or instrument: `TEXT | o tool` pen, `JOIN(=-4) TOUCH(=+4) | o tool` knife'
@@ -177,12 +177,12 @@ roots:
   - small tiny little minor miniature
 - name: NEAR
   axis:
-    neg: далеко
+    neg: далеко, за границей, в пути
     mid: ''
-    pos: близко (этот / тот)
-  ru_axis: далеко … близко (в том числе «этот / тот»)
+    pos: близко, рядом, в центре (этот / тот)
+  ru_axis: далеко … близко (−5 далеко, за границей, путешествие, +5 здесь, рядом, в центре; в том числе «этот / тот»)
   status: принято
-  en_axis: '-5 far … +5 here'
+  en_axis: '-5 far, abroad, journey … +5 here, nearby, downtown, center'
   semaxis:
   - near close here nearby adjacent
   - far distant remote away faraway
@@ -265,12 +265,12 @@ roots:
   - back rear behind backward posterior
 - name: KNOW
   axis:
-    neg: не знаю
-    mid: ''
-    pos: знаю
-  ru_axis: не знаю … знаю
+    neg: глупо, нелепо, не знаю
+    mid: осведомлён
+    pos: знаю, сообщить, научить
+  ru_axis: 'глупо, не знаю … знаю (−5 глупый, нелепый, 0 осведомлённый, +5 знать, сообщить, научить)'
   status: принято
-  en_axis: '-5 ignorant … +5 sure'
+  en_axis: '-5 stupid, foolish, absurd … 0 aware … +5 know, inform, teach'
   semaxis:
   - know knowing aware informed knowledgeable
   - ignorant unaware unknown clueless uninformed
@@ -309,23 +309,23 @@ roots:
   - begin start first initial commence
 - name: GIVE
   axis:
-    neg: взять
-    mid: обмен
-    pos: отдать
-  ru_axis: 'взять … отдать (−5 взять / украсть, 0 обмен, +5 отдать / подарить): `GIVE(=-5) \| i` брать, `GIVE(=+5) \| i` давать, `GIVE(=-5) GOOD(=-4) \| i` красть, `GIVE(=-3) TIME(=+3) \| i` брать взаймы'
+    neg: схватить, отнять
+    mid: обмен, получить
+    pos: отдать, подарить, пожертвовать
+  ru_axis: 'взять … отдать (−5 схватить / отнять / украсть, 0 обмен / получить, +5 отдать / подарить / пожертвовать): `GIVE(=-5) \| i` брать, `GIVE(=+5) \| i` давать, `GIVE(=-5) GOOD(=-4) \| i` красть, `GIVE(=-3) TIME(=+3) \| i` брать взаймы'
   status: '**новое**, принято (MOVE + INSIDE не работает, `data/translation_test/roundtrip_200.md`)'
-  en_axis: '-5 take … 0 exchange … +5 give'
+  en_axis: '-5 grab, seize, steal … 0 exchange, get … +5 give, donate, grant'
   semaxis:
   - give donate present offer grant
   - take steal seize grab snatch
 - name: TOUCH
   axis:
-    neg: мягкое
+    neg: мягкое, гладкое, нежное
     mid: обычное
-    pos: твёрдое
-  ru_axis: 'мягкое … твёрдое (−5 мягкое / нежное, 0 обычное, +5 твёрдое / острое): `TOUCH(=-4) \| a` мягкий, `TOUCH(=+5) \| a` твёрдый'
+    pos: твёрдое, жёсткое, суровое
+  ru_axis: 'мягкое … твёрдое (−5 мягкое / нежное / гладкое, 0 обычное, +5 твёрдое / жёсткое / суровое): `TOUCH(=-4) \| a` мягкий, `TOUCH(=+5) \| a` твёрдый'
   status: '**новое**, принято (тест: sharp, concrete, board перепутаны без оси)'
-  en_axis: '-5 soft … +5 hard, sharp'
+  en_axis: '-5 soft, smooth, tender … +5 hard, stiff, tough, harsh'
   semaxis:
   - hard rigid stiff firm rough sharp
   - soft squishy fluffy spongy mushy pliable supple
@@ -472,24 +472,24 @@ roots:
   en_gloss: join, add, attach, separate
 - name: VALUE
   axis:
-    neg: дёшево, бесполезно
+    neg: дёшево, распродажа, купля-продажа
     mid: обычная цена
-    pos: дорого, ценно
-  ru_axis: 'дёшево … дорого (−5 дёшево, бесполезно, ничего не стоит, 0 обычная цена, +5 дорого, ценно, драгоценно): `VALUE(=+4) \| a` дорогой, ценный, `VALUE(=-4) \| a` дешёвый; покупка и продажа — вместе с `GIVE`'
+    pos: дорого, ценно, важно
+  ru_axis: 'дёшево … дорого (−5 дёшево, скидка, купля-продажа, 0 обычная цена, +5 дорого, ценно, важно, жизненно нужно): `VALUE(=+4) \| a` дорогой, ценный, `VALUE(=-4) \| a` дешёвый; покупка и продажа — вместе с `GIVE`'
   status: '**новое**, предложено (SemAxis: полюса cheap/worthless/useless против expensive/valuable/precious, LOO 0.91); принято (слепой тест: 10 из 10 на прилагательных; *buy/sell* путаются по знаку `GIVE`)'
-  en_axis: '-5 worthless … +5 precious (price, worth)'
+  en_axis: '-5 cheap, a bargain, buying and selling … +5 precious, important, vital (price, worth)'
   semaxis:
   - expensive valuable precious costly priceless
   - cheap inexpensive worthless bargain trivial
   en_gloss: price, worth
 - name: CARE
   axis:
-    neg: небрежно, лениво
+    neg: небрежно, ошибка, вина
     mid: обычно
     pos: старательно, тщательно
-  ru_axis: 'отношение к делу: небрежно … старательно (−5 небрежно, лениво, наспех, 0 обычно, +5 старательно, тщательно, внимательно): `CARE(=+4) \| e` тщательно, `CARE(=-4) \| a` небрежный, ленивый'
+  ru_axis: 'отношение к делу: небрежно … старательно (−5 небрежно, наспех, ошибка, вина, 0 обычно, +5 старательно, тщательно, внимательно): `CARE(=+4) \| e` тщательно, `CARE(=-4) \| a` небрежный, ленивый'
   status: 'принято; в 2026-10 полюса — прилагательные о деле (careful, diligent … careless, lazy) вместо наречий образа действия: центр был близок к TONE (cos 0,65), с FRIEND — 0,12'
-  en_axis: '-5 careless, lazy … +5 careful, thorough, diligent (attitude to a task)'
+  en_axis: '-5 careless, a mistake, fault … +5 careful, thorough, diligent'
   semaxis:
   - careful thorough diligent meticulous attentive
   - careless sloppy negligent lazy hasty
@@ -534,22 +534,22 @@ roots:
   axis:
     neg: величина сама по себе (размер, количество)
     mid: уровень, степень
-    pos: величина относительно другой (отношение, доля)
-  ru_axis: 'величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, скорость-как-отношение, среднее): `MEASURE(=-5) \| o` количество, размер, `MEASURE(=+5) \| o` отношение, `MEASURE \| i` измерять, единица — `MEASURE SAME \| o`'
+    pos: величина относительно другой (отношение, доля, процент, статистика)
+  ru_axis: 'величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, статистика, скорость-как-отношение, среднее): `MEASURE(=-5) \| o` количество, размер, `MEASURE(=+5) \| o` отношение, `MEASURE \| i` измерять, единица — `MEASURE SAME \| o`'
   status: '**новое**, введено по правилу (*ratio / proportion / measurement* дважды не читались через `PART`, `BIG`, `SAME`, `SEE`); первая версия оси (единица … количество … отношение) была смесью трёх понятий, переписана; ось независима (SemAxis, максимум косинуса с BIG −0,18); слепой тест v2 26 из 32 — см. [roundtrip_measure](../data/translation_test/roundtrip_measure.md)'
-  en_axis: '-5 an amount (size, length, weight) … 0 a level, degree … +5 a ratio, rate'
+  en_axis: '-5 an amount (size, length, weight, quantity) … 0 a level, degree … +5 a ratio, rate, percentage, statistics'
   semaxis:
   - ratio proportion rate percentage fraction relative average degree
   - amount size quantity length weight number volume height
   en_gloss: measure, amount, ratio, rate
 - name: LONG
   axis:
-    neg: нить, верёвка (тонкое, гибкое)
-    mid: палочка, прут
-    pos: столб, бревно (толстое, жёсткое)
-  ru_axis: 'тонкое гибкое … толстое жёсткое длинное (−5 нить, верёвка, волос, проволока, 0 палочка, прут, ветка, +5 столб, бревно, балка, шест): `LONG(=-5) \| o` нить, `LONG(=+4) \| o` шест, `LONG \| a` длинный, высокий, `LONG(=+3) PLACE \| o` башня'
+    neg: нить, ткань, верёвка (тонкое, гибкое)
+    mid: проволока, прут, крепёж
+    pos: балка, доска, бревно, деревянная мебель
+  ru_axis: 'тонкое гибкое … толстое жёсткое длинное (−5 нить, ткань, верёвка, волос, 0 проволока, прут, крепёж, +5 балка, доска, бревно, деревянная мебель; длинные предметы и то, что из них сделано): `LONG(=-5) \| o` нить, `LONG(=+4) \| o` шест, `LONG \| a` длинный, высокий, `LONG(=+3) PLACE \| o` башня'
   status: '**новое**, по просьбе автора (аналог *palisa* / *linja* в Toki Pona: длинный предмет); ось независима (SemAxis, косинус с ABSTRACT −0,17, TOUCH 0,13, BIG ≈ 0); слепой тест — [roundtrip_long](../data/translation_test/roundtrip_long.md)'
-  en_axis: '-5 thread, rope … 0 stick … +5 pole, beam (long objects)'
+  en_axis: '-5 thread, cloth, textile … 0 wire, rod, fastening … +5 beam, plank, wooden furniture (long objects and what is made of them)'
   semaxis:
   - rod pole beam log pillar trunk stick post bar
   - thread string rope wire hair needle strand ribbon

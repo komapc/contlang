@@ -21,7 +21,7 @@ Roots marked "no axis" never take a value.
 Marks go after the part of speech. They are not roots and do not count toward the limit of 3.
 
 Noun roles turn the meaning into a related noun:
-- `agent`: the one who does it (person or thing). `TEXT | o agent` = writer, `HAPPEN | o agent` = cause.
+- `agent`: the one who does it, or a person of that field (person or thing). `ART(=+5) | o agent` = artist. `TEXT | o agent` = writer, `HAPPEN | o agent` = cause.
 - `tool`: the means or instrument. `TEXT | o tool` = pen, `JOIN(=-4) TOUCH(=+4) | o tool` = knife.
 - `result`: what comes out of it. `HAPPEN | o result` = consequence, `TEXT | o result` = a text.
 - `quality`: the quality or state itself. `GOOD | o quality` = goodness, `CAN | o quality` = ability.

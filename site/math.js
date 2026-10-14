@@ -204,6 +204,8 @@
       // имена собственные (в кавычках) и формы множественного числа имени (лемма + N+3)
       this.proper = new Uint8Array(N); (meta.proper || []).forEach((i) => { this.proper[i] = 1; });
       this.plural = new Uint8Array(N); (meta.plural || []).forEach((i) => { this.plural[i] = 1; });
+      // люди (первое значение имени — noun.person): кодер ставит роль agent (data/eval/runs/fix1)
+      this.person = new Uint8Array(N); (meta.person || []).forEach((i) => { this.person[i] = 1; });
     }
     // поправка оценок под форму кода: служебные слова убираются, слово не той части речи теряет pen·(1 − доля смыслов этой части речи)
     adjust(sc, form, pen) {
@@ -429,7 +431,7 @@
       }
       if (!this.opt.plain && V.plural && i !== undefined && V.plural[i] && !form) {
         const e = V.group[i] !== i ? this.encode(V.words[V.group[i]], "o") : this.encodeWith(word, "o");
-        if (e && !e.name) return Object.assign(e, { code: e.code.replace(/^([^|]*\| o)/, "$1 N+3"), base: e.base.replace(/ \| o$/, " | o N+3"), lemma: V.words[V.group[i]] });
+        if (e && !e.name) return Object.assign(e, { code: e.code.replace(/^([^|]*\| o( agent)?)/, "$1 N+3"), base: e.base.replace(/ \| o( agent)?$/, " | o$1 N+3"), lemma: V.words[V.group[i]] });
         return e;
       }
       if (!form && !this.opt.plain) form = this.posOf(word);
@@ -438,7 +440,9 @@
     encodeWith(word, form) {
       const V = this.V, co = this.co, x = V.vec(word);
       if (!x) return null;
-      const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x, 3, this.ban(word)), base = co.format(b.S, b.v, form || "o"), sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
+      // роль agent у людей (Vocab.person): «человек этой области», lawyer = RULE … | o agent (data/eval/runs/fix1); opt.plain — без роли
+      const i = V.index.get(word), role = !this.opt.plain && (form || "o") === "o" && V.person && i !== undefined && V.person[i] ? " agent" : "";
+      const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x, 3, this.ban(word)), base = co.format(b.S, b.v, form || "o") + role, sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "", S: b.S, v: b.v, cos: co.cosOf(x, b.S, b.v), form: form || "" };
       if (rank0 === 1 || (form && form !== "o")) return out;  // второе слово через PI — только у имени
       for (const n of V.near(x, this.opt.pairN, word)) {
