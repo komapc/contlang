@@ -148,7 +148,7 @@
     }
     vec(w) {
       const i = this.index.get(w);
-      if (i == null) return null;
+      if (i == null) return this.extraVec ? this.extraVec(w) : null;
       const x = new Float64Array(this.dim);
       let n = 0;
       for (let j = 0; j < this.dim; j++) { x[j] = this.X[i * this.dim + j]; n += x[j] * x[j]; }
@@ -206,6 +206,31 @@
       this.plural = new Uint8Array(N); (meta.plural || []).forEach((i) => { this.plural[i] = 1; });
       // люди (первое значение имени — noun.person): кодер ставит роль agent (data/eval/runs/fix1)
       this.person = new Uint8Array(N); (meta.person || []).forEach((i) => { this.person[i] = 1; });
+      // базовая форма словоформы и метки (infl), базы вне словаря (extra, только для кодера), один смысл омонима (sense) — build_words.py
+      this.infl = meta.infl || {}; this.sense = meta.sense || {};
+      const ex = meta.extra || { words: [] }, raw = ex.vec ? Uint8Array.from(atob(ex.vec), (c) => c.charCodeAt(0)) : new Uint8Array(0);
+      this.extra = new Map(ex.words.map((w, k) => [w, k])); this.extraX = new Int8Array(raw.buffer); this.extraPerson = new Set(ex.person || []);
+    }
+    extraVec(w) {
+      const k = this.extra ? this.extra.get(w) : undefined;
+      if (k === undefined) return null;
+      const D = this.dim, x = new Float64Array(D); let n = 0;
+      for (let j = 0; j < D; j++) { x[j] = this.extraX[k * D + j]; n += x[j] * x[j]; }
+      n = Math.sqrt(n); for (let j = 0; j < D; j++) x[j] /= n;
+      return x;
+    }
+    // вектор слова по номеру: в словаре или в extra (номер ≥ N)
+    vecAt(i) { const N = this.words.length; return i < N ? this.vec(this.words[i]) : this.extraVec([...this.extra.keys()][i - N]); }
+    // один смысл омонима: норм(слово) + норм(среднее опорных слов смысла); нет записи — вектор слова
+    senseVec(w, form) {
+      const x = this.vec(w), A = this.sense && this.sense[`${w}|${form}`];
+      if (!x || !A || !A.length) return x;
+      const m = new Float64Array(this.dim);
+      for (const i of A) { const v = this.vecAt(i); if (v) for (let j = 0; j < this.dim; j++) m[j] += v[j]; }
+      const nm = Math.hypot(...m) || 1, y = new Float64Array(this.dim);
+      for (let j = 0; j < this.dim; j++) y[j] = x[j] + m[j] / nm;
+      const ny = Math.hypot(...y); for (let j = 0; j < this.dim; j++) y[j] /= ny;
+      return y;
     }
     // поправка оценок под форму кода: служебные слова убираются, слово не той части речи теряет pen·(1 − доля смыслов этой части речи)
     adjust(sc, form, pen) {
@@ -420,26 +445,29 @@
       let j = 0; for (let k = 1; k < 4; k++) if (V.pos[i * 4 + k] > V.pos[i * 4 + j]) j = k;
       return "oiae"[j];
     }
-    // имя собственное — в кавычках; множественное — код леммы с N+3; часть речи — из WordNet, если не задана (opt.plain — как раньше)
+    // имя собственное — в кавычках; словоформа — код базовой формы с метками (V.infl: cities → city N+3, discussed → discuss T-2,
+    // tired → tire | a V-4); часть речи — из WordNet, если не задана; один смысл омонима (V.senseVec). opt.plain — как раньше
     encode(word, form) {
       const V = this.V, i = V.index.get(word);
       if (!this.opt.plain && V.proper && i !== undefined && V.proper[i]) {
         const q = `"${word[0].toUpperCase()}${word.slice(1)}"`;
         return { code: q, rank: 1, base: q, rank0: 1, mod: "", S: [], v: [], cos: 1, form: "", name: true };
       }
-      if (!this.opt.plain && V.plural && i !== undefined && V.plural[i] && !form) {
-        const e = V.group[i] !== i ? this.encode(V.words[V.group[i]], "o") : this.encodeWith(word, "o");
-        if (e && !e.name) return Object.assign(e, { code: e.code.replace(/^([^|]*\| o( agent)?)/, "$1 N+3"), base: e.base.replace(/ \| o( agent)?$/, " | o$1 N+3"), lemma: V.words[V.group[i]] });
-        return e;
+      const f = !this.opt.plain && !form && i !== undefined && V.infl ? V.infl[i] : null;
+      if (f) {
+        const [b, fo, mk] = f, e = this.encodeWith(b, fo);
+        if (!e) return this.encodeWith(word, fo);
+        const add = (c) => (mk ? c.replace(/^([^|]*\| [oiae]( agent)?)/, `$1 ${mk}`) : c);
+        return Object.assign(e, { code: add(e.code), base: add(e.base), lemma: b, marks: mk });
       }
       if (!form && !this.opt.plain) form = this.posOf(word);
       return this.encodeWith(word, form);
     }
     encodeWith(word, form) {
-      const V = this.V, co = this.co, x = V.vec(word);
+      const V = this.V, co = this.co, x = this.opt.plain || !V.senseVec ? V.vec(word) : V.senseVec(word, form || "o");
       if (!x) return null;
       // роль agent у людей (Vocab.person): «человек этой области», lawyer = RULE … | o agent (data/eval/runs/fix1); opt.plain — без роли
-      const i = V.index.get(word), role = !this.opt.plain && (form || "o") === "o" && V.person && i !== undefined && V.person[i] ? " agent" : "";
+      const i = V.index.get(word), role = !this.opt.plain && (form || "o") === "o" && V.person && ((i !== undefined && V.person[i]) || (i === undefined && V.extraPerson && V.extraPerson.has(V.words.length + V.extra.get(word)))) ? " agent" : "";
       const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x, 3, this.ban(word)), base = co.format(b.S, b.v, form || "o") + role, sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "", S: b.S, v: b.v, cos: co.cosOf(x, b.S, b.v), form: form || "" };
       return out;
