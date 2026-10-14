@@ -1,0 +1,1026 @@
+[
+ {
+  "w": "state",
+  "gloss": "the territory occupied by one of the constituent administrative districts of a nation",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+4) | o",
+  "new": "PLACE RULE(=+4) | o"
+ },
+ {
+  "w": "home",
+  "gloss": "where you live at a particular time",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE LIVE | o",
+  "new": "PLACE LIVE | o"
+ },
+ {
+  "w": "left",
+  "gloss": "location near or direction toward the left side; i.e. the side to the north when a person or object faces east",
+  "geo": true,
+  "batch": 2,
+  "old": "SIDE(=-5) | o",
+  "new": "SIDE(=-5) | o"
+ },
+ {
+  "w": "top",
+  "gloss": "the upper part of anything",
+  "geo": true,
+  "batch": 2,
+  "old": "ABOVE(=+5) PART(=-2) | o",
+  "new": "ABOVE(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "center",
+  "gloss": "an area that is approximately central within some larger region",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=+5) PART(=+2) | o",
+  "new": "PLACE INSIDE(=+5) PART(=+2) | o"
+ },
+ {
+  "w": "side",
+  "gloss": "a place within a region identified relative to a center or reference location",
+  "geo": true,
+  "batch": 2,
+  "old": "SIDE | o",
+  "new": "SIDE | o"
+ },
+ {
+  "w": "island",
+  "gloss": "a land mass (smaller than a continent) that is surrounded by water",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE JOIN(=-5) | o",
+  "new": "LAND(=+5) JOIN(=-5) | o"
+ },
+ {
+  "w": "field",
+  "gloss": "a piece of land cleared of trees and usually enclosed",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=0) JOIN(=+5) | o",
+  "new": "LAND THING(=0) JOIN(=+5) | o"
+ },
+ {
+  "w": "province",
+  "gloss": "the territory occupied by one of the constituent administrative districts of a nation",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+4) PART(=-2) | o",
+  "new": "PLACE RULE(=+4) PART(=-2) | o"
+ },
+ {
+  "w": "position",
+  "gloss": "the particular portion of space occupied by something",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR | o",
+  "new": "PLACE NEAR | o"
+ },
+ {
+  "w": "rock",
+  "gloss": "a lump or mass of hard consolidated mineral matter",
+  "geo": true,
+  "batch": 2,
+  "old": "THING(=-5) GRAIN(=+5) | o",
+  "new": "THING(=-5) GRAIN(=+5) | o"
+ },
+ {
+  "w": "web",
+  "gloss": "an intricate network suggesting something that was formed by weaving or interweaving",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG(=-5) JOIN(=+5) | o",
+  "new": "LONG(=-5) JOIN(=+5) | o"
+ },
+ {
+  "w": "source",
+  "gloss": "the place where something begins, where it springs into being",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BEGIN(=-5) | o",
+  "new": "PLACE BEGIN(=-5) | o"
+ },
+ {
+  "w": "territory",
+  "gloss": "a region marked off for administrative or other purposes",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+3) PART(=+2) | o",
+  "new": "PLACE RULE(=+3) PART(=+2) | o"
+ },
+ {
+  "w": "valley",
+  "gloss": "a long depression in the surface of the land that usually contains a river",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=-5) LONG(=+5) | o",
+  "new": "LAND ABOVE(=-5) LONG(=+5) | o"
+ },
+ {
+  "w": "necessary",
+  "gloss": "anything indispensable",
+  "geo": true,
+  "batch": 2,
+  "old": "THINK(=+5) M+4 | a",
+  "new": "THINK(=+5) M+4 | a"
+ },
+ {
+  "w": "sites",
+  "gloss": "the piece of land on which something is located (or is to be located)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE HAPPEN | o N+3",
+  "new": "PLACE HAPPEN | o N+3"
+ },
+ {
+  "w": "mountain",
+  "gloss": "a land mass that projects well above its surroundings; higher than a hill",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) BIG(=+5) | o",
+  "new": "LAND ABOVE(=+5) BIG(=+5) | o"
+ },
+ {
+  "w": "polls",
+  "gloss": "the place where people vote",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THINK(=+5) MANY(=+3) | o N+3",
+  "new": "PLACE THINK(=+5) MANY(=+3) | o N+3"
+ },
+ {
+  "w": "spot",
+  "gloss": "a point located with respect to surface features of some region",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=-5) | o",
+  "new": "PLACE PART(=-5) | o"
+ },
+ {
+  "w": "setting",
+  "gloss": "the context and environment in which something is set",
+  "geo": true,
+  "batch": 2,
+  "old": "HAPPEN INSIDE(=+5) | o",
+  "new": "HAPPEN INSIDE(=+5) | o"
+ },
+ {
+  "w": "agent",
+  "gloss": "an active and efficient cause; capable of producing a certain effect",
+  "geo": true,
+  "batch": 2,
+  "old": "DO | o agent",
+  "new": "DO | o agent"
+ },
+ {
+  "w": "positions",
+  "gloss": "the particular portion of space occupied by something",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR | o N+3",
+  "new": "PLACE NEAR | o N+3"
+ },
+ {
+  "w": "agents",
+  "gloss": "an active and efficient cause; capable of producing a certain effect",
+  "geo": true,
+  "batch": 2,
+  "old": "DO | o agent N+3",
+  "new": "DO | o agent N+3"
+ },
+ {
+  "w": "municipality",
+  "gloss": "an urban district having corporate status and powers of self-government",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MANY(=+3) RULE(=+4) | o",
+  "new": "PLACE MANY(=+3) RULE(=+4) | o"
+ },
+ {
+  "w": "tracks",
+  "gloss": "a line or route along which something travels or moves",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG MOVE | o N+3",
+  "new": "LONG MOVE | o N+3"
+ },
+ {
+  "w": "districts",
+  "gloss": "a region marked off for administrative or other purposes",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=-2) RULE(=+4) | o N+3",
+  "new": "PLACE PART(=-2) RULE(=+4) | o N+3"
+ },
+ {
+  "w": "trail",
+  "gloss": "a track or mark left by something that has passed",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG MOVE TIME(=-5) | o",
+  "new": "LONG MOVE TIME(=-5) | o"
+ },
+ {
+  "w": "essential",
+  "gloss": "anything indispensable",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=+2) THINK(=+5) | a",
+  "new": "PART(=+2) THINK(=+5) | a"
+ },
+ {
+  "w": "desert",
+  "gloss": "arid land with little or no vegetation",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=0) MANY(=-1) | o",
+  "new": "LAND THING(=0) MANY(=-1) | o"
+ },
+ {
+  "w": "thick",
+  "gloss": "the location of something surrounded by other things",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MANY(=+3) INSIDE(=+5) | o",
+  "new": "PLACE MANY(=+3) INSIDE(=+5) | o"
+ },
+ {
+  "w": "trails",
+  "gloss": "a track or mark left by something that has passed",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG MOVE TIME(=-5) | o N+3",
+  "new": "LONG MOVE TIME(=-5) | o N+3"
+ },
+ {
+  "w": "hell",
+  "gloss": "any place of pain and turmoil",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE FEEL(=+5) GOOD(=-5) | o",
+  "new": "PLACE FEEL(=+5) GOOD(=-5) | o"
+ },
+ {
+  "w": "sheet",
+  "gloss": "any broad thin expanse or surface",
+  "geo": true,
+  "batch": 2,
+  "old": "THING TOUCH(=-5) SIDE | o",
+  "new": "THING TOUCH(=-5) SIDE | o"
+ },
+ {
+  "w": "origins",
+  "gloss": "the place where something begins, where it springs into being",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BEGIN(=-5) | o N+3",
+  "new": "PLACE BEGIN(=-5) | o N+3"
+ },
+ {
+  "w": "boundary",
+  "gloss": "the line or plane indicating the limit or extent of something",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG BEGIN(=+5) | o",
+  "new": "LONG BEGIN(=+5) | o"
+ },
+ {
+  "w": "commune",
+  "gloss": "the smallest administrative district of several European countries",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=-2) RULE(=+4) | o",
+  "new": "PLACE PART(=-2) RULE(=+4) | o"
+ },
+ {
+  "w": "arroyo",
+  "gloss": "a stream or brook",
+  "geo": true,
+  "batch": 2,
+  "old": "GRAIN(=-3) MOVE | o",
+  "new": "GRAIN(=-3) MOVE | o"
+ },
+ {
+  "w": "trends",
+  "gloss": "a general direction in which something tends to move",
+  "geo": true,
+  "batch": 2,
+  "old": "CHANGE MOVE | o N+3",
+  "new": "CHANGE MOVE | o N+3"
+ },
+ {
+  "w": "cave",
+  "gloss": "a geological formation consisting of an underground enclosure with access from the surface of the ground or from the sea",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=+5) THING(=-5) | o",
+  "new": "PLACE INSIDE(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "mere",
+  "gloss": "a small pond of standing water",
+  "geo": true,
+  "batch": 2,
+  "old": "GRAIN(=-3) MOVE(=-5) BIG(=-5) | o",
+  "new": "LAND(=-5) MOVE(=-5) BIG(=-5) | o"
+ },
+ {
+  "w": "pit",
+  "gloss": "a sizeable hole (usually in the ground)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=+5) BIG(=+3) | o",
+  "new": "PLACE INSIDE(=+5) BIG(=+3) | o"
+ },
+ {
+  "w": "steep",
+  "gloss": "a steep place (as on a hill)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MEASURE(=+5) ABOVE(=+5) | o",
+  "new": "PLACE MEASURE(=+5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "plaza",
+  "gloss": "a public square with room for pedestrians",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=+5) SOMEONE MOVE | o",
+  "new": "PLACE PART(=+5) SOMEONE MOVE | o"
+ },
+ {
+  "w": "upgrade",
+  "gloss": "an upward slope or grade (as in a road)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) MOVE | o",
+  "new": "PLACE ABOVE(=+5) MOVE | o"
+ },
+ {
+  "w": "heaven",
+  "gloss": "any place of complete bliss and delight and peace",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GOOD(=+5) ABOVE(=+5) | o",
+  "new": "PLACE GOOD(=+5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "venues",
+  "gloss": "the scene of any event or action (especially the place of a meeting)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE HAPPEN | o N+3",
+  "new": "PLACE HAPPEN | o N+3"
+ },
+ {
+  "w": "mansion",
+  "gloss": "(astrology) one of 12 equal areas into which the zodiac is divided",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) PART(=-2) | o",
+  "new": "PLACE ABOVE(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "tee",
+  "gloss": "the starting place for each hole on a golf course",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BEGIN(=-5) FIGHT(=-5) | o",
+  "new": "PLACE BEGIN(=-5) FIGHT(=-5) | o"
+ },
+ {
+  "w": "municipalities",
+  "gloss": "an urban district having corporate status and powers of self-government",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=+5) RULE(=+4) | o N+3",
+  "new": "PLACE PART(=+5) RULE(=+4) | o N+3"
+ },
+ {
+  "w": "orbit",
+  "gloss": "the (usually elliptical) path described by one celestial body in its revolution about another",
+  "geo": true,
+  "batch": 2,
+  "old": "MOVE SAME(=+5) | o",
+  "new": "MOVE SAME(=+5) | o"
+ },
+ {
+  "w": "worlds",
+  "gloss": "everything that exists anywhere",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=+2) THING | o",
+  "new": "PART(=+2) THING | o"
+ },
+ {
+  "w": "outskirts",
+  "gloss": "outlying areas (as of a city or town)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR(=-3) PART(=-2) | o N+3",
+  "new": "PLACE NEAR(=-3) PART(=-2) | o N+3"
+ },
+ {
+  "w": "commons",
+  "gloss": "a piece of open land for recreational use in an urban area",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=+5) MOOD(=+3) | o",
+  "new": "LAND PART(=+5) MOOD(=+3) | o"
+ },
+ {
+  "w": "sidelines",
+  "gloss": "a line that marks the side boundary of a playing field",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG SIDE FIGHT(=-5) | o",
+  "new": "LONG SIDE FIGHT(=-5) | o"
+ },
+ {
+  "w": "tips",
+  "gloss": "the extreme end of something; especially something pointed",
+  "geo": true,
+  "batch": 2,
+  "old": "BEGIN(=+5) TOUCH(=+5) | o N+3",
+  "new": "BEGIN(=+5) TOUCH(=+5) | o N+3"
+ },
+ {
+  "w": "spa",
+  "gloss": "a health resort near a spring or at the seaside",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GOOD(=+5) GRAIN(=-3) | o",
+  "new": "PLACE GOOD(=+5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "clearing",
+  "gloss": "a tract of land with few or no trees in the middle of a wooded area",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MANY(=-5) THING(=0) | o",
+  "new": "PLACE MANY(=-5) THING(=0) | o"
+ },
+ {
+  "w": "nova",
+  "gloss": "a star that ejects some of its material in the form of a cloud and become more luminous in the process",
+  "geo": true,
+  "batch": 2,
+  "old": "HEAT(=+5) THING(=-5) BEGIN(=-5) | o",
+  "new": "HEAT(=+5) THING(=-5) BEGIN(=-5) | o"
+ },
+ {
+  "w": "canyon",
+  "gloss": "a ravine formed by a river in an area with little rainfall",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=-5) BIG(=+5) | o",
+  "new": "PLACE ABOVE(=-5) BIG(=+5) | o"
+ },
+ {
+  "w": "enclave",
+  "gloss": "an enclosed territory that is culturally distinct from the foreign territory that surrounds it",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=-2) INSIDE(=+5) SAME(=-5) | o",
+  "new": "LAND INSIDE(=+5) SAME(=-5) | o"
+ },
+ {
+  "w": "downhill",
+  "gloss": "the downward slope of a hill",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=-5) MOVE | o",
+  "new": "PLACE ABOVE(=-5) MOVE | o"
+ },
+ {
+  "w": "jungle",
+  "gloss": "a location marked by an intense competition and struggle for survival",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE FIGHT(=+3) LIVE(=+5) | o",
+  "new": "PLACE FIGHT(=+3) LIVE(=+5) | o"
+ },
+ {
+  "w": "dale",
+  "gloss": "an open river valley (in a hilly area)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=-5) GRAIN(=-3) | o",
+  "new": "PLACE ABOVE(=-5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "aerospace",
+  "gloss": "the atmosphere and outer space considered as a whole",
+  "geo": true,
+  "batch": 2,
+  "old": "ART(=-5) ABOVE(=+5) | o",
+  "new": "ART(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "dell",
+  "gloss": "a small wooded hollow",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=0) BIG(=-5) | o",
+  "new": "PLACE THING(=0) BIG(=-5) | o"
+ },
+ {
+  "w": "countryside",
+  "gloss": "rural regions",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BIG(=+5) THING(=0) | o",
+  "new": "LAND THING(=0) | o"
+ },
+ {
+  "w": "terrain",
+  "gloss": "a piece of ground having specific characteristics or military potential",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=-5) | o",
+  "new": "LAND(=+5) | o"
+ },
+ {
+  "w": "beaches",
+  "gloss": "an area of sand sloping down to the water of a sea or lake",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=0) NEAR(=+3) | o",
+  "new": "LAND(=0) GRAIN(=0) | o N+3"
+ },
+ {
+  "w": "destinations",
+  "gloss": "the place designated as the end (as of a race or journey)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BEGIN(=+5) MOVE(=0) | o N+3",
+  "new": "PLACE BEGIN(=+5) MOVE(=0) | o N+3"
+ },
+ {
+  "w": "leak",
+  "gloss": "an accidental hole that allows something (fluid or light etc.) to enter or escape",
+  "geo": true,
+  "batch": 2,
+  "old": "HAPPEN JOIN(=-5) GRAIN(=-3) | o",
+  "new": "HAPPEN JOIN(=-5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "reservations",
+  "gloss": "a district that is reserved for particular purpose",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE SAME(=-4) PART(=-2) | o N+3",
+  "new": "PLACE SAME(=-4) PART(=-2) | o N+3"
+ },
+ {
+  "w": "sheets",
+  "gloss": "any broad thin expanse or surface",
+  "geo": true,
+  "batch": 2,
+  "old": "GRAIN(=+5) BIG(=+3) | o N+3",
+  "new": "GRAIN(=+5) BIG(=+3) | o N+3"
+ },
+ {
+  "w": "midway",
+  "gloss": "the place at a fair or carnival where sideshows and similar amusements are located",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MOOD(=+5) MANY(=+3) | o",
+  "new": "PLACE MOOD(=+5) MANY(=+3) | o"
+ },
+ {
+  "w": "glen",
+  "gloss": "a narrow secluded valley (in the mountains)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=+5) ABOVE(=-5) | o",
+  "new": "PLACE INSIDE(=+5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "prefecture",
+  "gloss": "the district administered by a prefect (as in France or Japan or the Roman Empire)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+5) PART(=-2) | o",
+  "new": "PLACE RULE(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "checkpoint",
+  "gloss": "a place (as at a frontier) where travellers are stopped for inspection and clearance",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MOVE(=-5) RULE(=+5) | o",
+  "new": "PLACE MOVE(=-5) RULE(=+5) | o"
+ },
+ {
+  "w": "harbour",
+  "gloss": "a sheltered port where ships can take on or discharge cargo",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GIVE(=0) THING(=-5) | o",
+  "new": "PLACE LAND(=0) GIVE(=0) | o"
+ },
+ {
+  "w": "midst",
+  "gloss": "the location of something surrounded by other things",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=+5) MANY(=+3) | o",
+  "new": "PLACE INSIDE(=+5) MANY(=+3) | o"
+ },
+ {
+  "w": "flies",
+  "gloss": "(theater) the space over the stage (out of view of the audience) used to store scenery (drop curtains)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) ART(=+5) | o N+3",
+  "new": "PLACE ABOVE(=+5) ART(=+5) | o N+3"
+ },
+ {
+  "w": "cliff",
+  "gloss": "a steep high face of rock",
+  "geo": true,
+  "batch": 2,
+  "old": "THING(=-5) ABOVE(=+5) SIDE(=+5) | o",
+  "new": "THING(=-5) ABOVE(=+5) SIDE(=+5) | o"
+ },
+ {
+  "w": "corners",
+  "gloss": "a place off to the side of an area",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE SIDE(=-5) PART(=-2) | o N+3",
+  "new": "PLACE SIDE(=-5) PART(=-2) | o N+3"
+ },
+ {
+  "w": "volcano",
+  "gloss": "a fissure in the earth's crust (or in the surface of some other planet) through which molten lava and gases erupt",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE HEAT(=+5) THING(=-5) | o",
+  "new": "PLACE HEAT(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "dig",
+  "gloss": "the site of an archeological exploration",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=-5) TIME(=-5) | o",
+  "new": "PLACE ABOVE(=-5) TIME(=-5) | o"
+ },
+ {
+  "w": "horizon",
+  "gloss": "the line at which the sky and Earth appear to meet",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR(=-5) ABOVE(=+5) | o",
+  "new": "PLACE NEAR(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "hemisphere",
+  "gloss": "half of the terrestrial globe",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BIG(=+5) PART(=-2) | o",
+  "new": "PLACE BIG(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "turf",
+  "gloss": "surface layer of ground containing a mat of grass and grass roots",
+  "geo": true,
+  "batch": 2,
+  "old": "SIDE(=+5) THING(=0) | o",
+  "new": "LAND(=+5) SIDE(=+5) THING(=0) | o"
+ },
+ {
+  "w": "tops",
+  "gloss": "the upper part of anything",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=-2) ABOVE(=+5) | o N+3",
+  "new": "PART(=-2) ABOVE(=+5) | o N+3"
+ },
+ {
+  "w": "battlefield",
+  "gloss": "a region where a battle is being (or has been) fought",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE FIGHT(=+5) | o",
+  "new": "PLACE FIGHT(=+5) | o"
+ },
+ {
+  "w": "skies",
+  "gloss": "the atmosphere and outer space as viewed from the earth",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) | o N+3",
+  "new": "PLACE ABOVE(=+5) | o N+3"
+ },
+ {
+  "w": "den",
+  "gloss": "the habitation of wild animals",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE LIVE THING(=+4) | o",
+  "new": "PLACE LIVE THING(=+4) | o"
+ },
+ {
+  "w": "lawn",
+  "gloss": "a field of cultivated and mowed grass",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=0) TOUCH(=-5) | o",
+  "new": "PLACE THING(=0) TOUCH(=-5) | o"
+ },
+ {
+  "w": "edges",
+  "gloss": "the boundary of a surface",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=-2) SIDE(=+5) | o N+3",
+  "new": "PART(=-2) SIDE(=+5) | o N+3"
+ },
+ {
+  "w": "resorts",
+  "gloss": "a hotel located in a resort area",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MOOD(=+3) GOOD(=+5) | o N+3",
+  "new": "PLACE MOOD(=+3) GOOD(=+5) | o N+3"
+ },
+ {
+  "w": "shallow",
+  "gloss": "a stretch of shallow water",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=-3) BIG(=-3) | o",
+  "new": "PLACE LAND(=-3) BIG(=-3) | o"
+ },
+ {
+  "w": "scrap",
+  "gloss": "a small fragment of something broken off from the whole",
+  "geo": true,
+  "batch": 2,
+  "old": "PART(=-5) JOIN(=-5) | o",
+  "new": "PART(=-5) JOIN(=-5) | o"
+ },
+ {
+  "w": "pond",
+  "gloss": "a small lake",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=-3) BIG(=-4) | o",
+  "new": "PLACE GRAIN(=-3) BIG(=-4) | o"
+ },
+ {
+  "w": "variable",
+  "gloss": "something that is likely to vary; something that is subject to variation",
+  "geo": true,
+  "batch": 2,
+  "old": "MEASURE CHANGE | o",
+  "new": "MEASURE CHANGE | o"
+ },
+ {
+  "w": "paradise",
+  "gloss": "any place of complete bliss and delight and peace",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GOOD(=+5) FEEL(=-5) | o",
+  "new": "PLACE GOOD(=+5) FEEL(=-5) | o"
+ },
+ {
+  "w": "papua",
+  "gloss": "the southeastern part of Papua New Guinea",
+  "geo": true,
+  "batch": 2,
+  "old": "\"Papua\" | o",
+  "new": "\"Papua\" | o"
+ },
+ {
+  "w": "plateau",
+  "gloss": "a relatively flat highland",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+4) BIG(=+2) | o",
+  "new": "PLACE ABOVE(=+4) BIG(=+2) | o"
+ },
+ {
+  "w": "marsh",
+  "gloss": "low-lying wet land with grassy vegetation; usually is a transition zone between land and water",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=-3) THING(=0) | o",
+  "new": "PLACE GRAIN(=-3) THING(=0) | o"
+ },
+ {
+  "w": "streams",
+  "gloss": "a natural body of running water flowing on or under the earth",
+  "geo": true,
+  "batch": 2,
+  "old": "GRAIN(=-3) MOVE(=+2) | o N+3",
+  "new": "GRAIN(=-3) MOVE(=+2) | o N+3"
+ },
+ {
+  "w": "archdiocese",
+  "gloss": "the diocese of an archbishop",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+4) ABOVE(=+4) | o",
+  "new": "PLACE RULE(=+4) ABOVE(=+4) | o"
+ },
+ {
+  "w": "glacier",
+  "gloss": "a slowly moving mass of ice",
+  "geo": true,
+  "batch": 2,
+  "old": "GRAIN(=+5) HEAT(=-5) MOVE(=-2) | o",
+  "new": "GRAIN(=+5) HEAT(=-5) MOVE(=-2) | o"
+ },
+ {
+  "w": "slopes",
+  "gloss": "an elevated geological formation",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+3) SIDE(=0) | o N+3",
+  "new": "PLACE ABOVE(=+3) SIDE(=0) | o N+3"
+ },
+ {
+  "w": "terminus",
+  "gloss": "a place where something ends or is complete",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE BEGIN(=+5) | o",
+  "new": "PLACE BEGIN(=+5) | o"
+ },
+ {
+  "w": "nest",
+  "gloss": "a structure in which animals lay eggs or give birth to their young",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=+4) BEGIN(=-5) | o",
+  "new": "PLACE THING(=+4) BEGIN(=-5) | o"
+ },
+ {
+  "w": "premises",
+  "gloss": "land and the buildings on it",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE THING(=-5) PART(=+2) | o N+3",
+  "new": "PLACE LAND(=+5) THING(=-5) | o N+3"
+ },
+ {
+  "w": "airspace",
+  "gloss": "the space in the atmosphere immediately above the earth",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=-5) ABOVE(=+5) | o",
+  "new": "PLACE GRAIN(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "rift",
+  "gloss": "a gap between cloud masses",
+  "geo": true,
+  "batch": 2,
+  "old": "JOIN(=-5) PART(=-2) | o",
+  "new": "JOIN(=-5) PART(=-2) | o"
+ },
+ {
+  "w": "checkpoints",
+  "gloss": "a place (as at a frontier) where travellers are stopped for inspection and clearance",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE MOVE(=-5) CARE(=+5) | o N+3",
+  "new": "PLACE MOVE(=-5) CARE(=+5) | o N+3"
+ },
+ {
+  "w": "slope",
+  "gloss": "an elevated geological formation",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+3) SIDE(=0) | o",
+  "new": "PLACE ABOVE(=+3) SIDE(=0) | o"
+ },
+ {
+  "w": "stretches",
+  "gloss": "a large and unbroken expanse or distance",
+  "geo": true,
+  "batch": 2,
+  "old": "MEASURE(=-5) BIG(=+4) PART(=+2) | o N+3",
+  "new": "MEASURE(=-5) BIG(=+4) PART(=+2) | o N+3"
+ },
+ {
+  "w": "rainbow",
+  "gloss": "an arc of colored light in the sky caused by refraction of the sun's rays by rain",
+  "geo": true,
+  "batch": 2,
+  "old": "ABOVE(=+5) GRAIN(=-3) MANY(=+3) | o",
+  "new": "ABOVE(=+5) GRAIN(=-3) MANY(=+3) | o"
+ },
+ {
+  "w": "settings",
+  "gloss": "the context and environment in which something is set",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR(=+5) INSIDE(=+5) | o N+3",
+  "new": "PLACE NEAR(=+5) INSIDE(=+5) | o N+3"
+ },
+ {
+  "w": "outline",
+  "gloss": "the line that appears to bound an object",
+  "geo": true,
+  "batch": 2,
+  "old": "LONG(=-5) INSIDE(=-5) | o",
+  "new": "LONG(=-5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "campuses",
+  "gloss": "a field on which the buildings of a university are situated",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE RULE(=+4) THING(=-5) | o N+3",
+  "new": "PLACE RULE(=+4) THING(=-5) | o N+3"
+ },
+ {
+  "w": "exterior",
+  "gloss": "the region that is outside of something",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE INSIDE(=-5) | o",
+  "new": "PLACE INSIDE(=-5) | o"
+ },
+ {
+  "w": "midfield",
+  "gloss": "(sports) the middle part of a playing field (as in football or lacrosse)",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE FIGHT(=-5) INSIDE(=+3) | o",
+  "new": "PLACE FIGHT(=-5) INSIDE(=+3) | o"
+ },
+ {
+  "w": "archipelago",
+  "gloss": "a group of many islands in a large body of water",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE PART(=+5) GRAIN(=+5) | o",
+  "new": "PLACE PART(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "whereabouts",
+  "gloss": "the general location where something is",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR(=0) | o",
+  "new": "PLACE NEAR(=0) | o"
+ },
+ {
+  "w": "lick",
+  "gloss": "a salt deposit that animals regularly lick",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE GRAIN(=0) THING(=+4) | o",
+  "new": "PLACE GRAIN(=0) THING(=+4) | o"
+ },
+ {
+  "w": "spit",
+  "gloss": "a narrow strip of land that juts out into the sea",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE LONG(=+5) GRAIN(=+5) | o",
+  "new": "PLACE LAND(=0) LONG(=+5) | o"
+ },
+ {
+  "w": "overlook",
+  "gloss": "a high place affording a good view",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE ABOVE(=+5) SEE | o",
+  "new": "PLACE ABOVE(=+5) SEE | o"
+ },
+ {
+  "w": "sprawl",
+  "gloss": "an aggregation or continuous network of urban communities",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE SOMEONE(=0) PART(=+5) | o",
+  "new": "PLACE SOMEONE(=0) PART(=+5) | o"
+ },
+ {
+  "w": "surround",
+  "gloss": "the area in which something exists or lives",
+  "geo": true,
+  "batch": 2,
+  "old": "PLACE NEAR(=+4) INSIDE(=-3) | o",
+  "new": "PLACE NEAR(=+4) INSIDE(=-3) | o"
+ },
+ {
+  "w": "rearward",
+  "gloss": "direction toward the rear",
+  "geo": true,
+  "batch": 2,
+  "old": "SIDE(=-5) | e",
+  "new": "SIDE(=-5) | e"
+ }
+]

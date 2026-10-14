@@ -1,0 +1,476 @@
+[
+ {
+  "test": "site",
+  "w": "chad",
+  "old": "SIDE(=-3) NEAR(=-5) LONG(=+4) | o",
+  "new": "LAND(=-1) SIDE(=-4) LONG(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "captain",
+  "old": "FIGHT(=+1) LONG(=+3) RULE(=+2) | o",
+  "new": "FIGHT(=+2) LONG(=+4) LAND(=-5) | o PI RULE(=+2) TIME(=-1) | o"
+ },
+ {
+  "test": "site",
+  "w": "decade",
+  "old": "TIME(=-3) BEGIN(=+2) MEASURE(=0) | o PI PART(=+1) ART(=-3) | o",
+  "new": "TIME(=-3) BEGIN(=+2) LAND(=0) | o"
+ },
+ {
+  "test": "site",
+  "w": "euros",
+  "old": "VALUE(=0) MEASURE(=+3) GRAIN(=+1) | o N+3 PI PLACE NEAR(=-5) | o",
+  "new": "VALUE(=0) MEASURE(=+3) GRAIN(=+1) | o N+3 PI LAND(=0) NEAR(=-4) | o"
+ },
+ {
+  "test": "site",
+  "w": "villagers",
+  "old": "FRIEND(=+2) SOMEONE(=-5) FIGHT(=+4) | o N+3 PI PLACE NEAR(=+1) | o",
+  "new": "FRIEND(=+2) SOMEONE(=-5) FIGHT(=+4) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "brain",
+  "old": "BODY ART(=-1) LIVE(=+1) | o PI INSIDE(=+2) SIDE(=-3) | o",
+  "new": "BODY ART(=-1) LIVE(=+1) | o PI LAND(=0) SIDE(=+1) | o"
+ },
+ {
+  "test": "site",
+  "w": "estate",
+  "old": "PLACE RULE(=+1) VALUE(=-1) | o",
+  "new": "LAND(=+1) RULE(=0) VALUE(=-1) | o"
+ },
+ {
+  "test": "site",
+  "w": "prince",
+  "old": "SEX(=+3) RULE(=+3) MEASURE(=-3) | o PI INSIDE(=+1) NEAR(=+3) | o",
+  "new": "SEX(=+3) RULE(=+2) LAND(=-1) | o PI INSIDE(=+1) NEAR(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "cotton",
+  "old": "LONG(=-4) TOUCH(=-3) GRAIN(=0) | o PI THING(=+1) ART(=-2) | o",
+  "new": "LONG(=-4) TOUCH(=-3) GRAIN(=0) | o PI THING(=+2) LAND(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "economies",
+  "old": "ART(=-1) MEASURE(=+3) ABOVE(=-4) | o N+3",
+  "new": "ART(=-1) MEASURE(=+3) ABOVE(=-4) | o N+3 PI VALUE(=-1) CAN(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "assassination",
+  "old": "LIVE(=-3) FRIEND(=-5) GIVE(=-1) | o",
+  "new": "LIVE(=-3) FRIEND(=-5) GIVE(=-1) | o PI TEXT LAND(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "yards",
+  "old": "INSIDE(=0) LONG(=0) THING(=+1) | o N+3 PI BEGIN(=+2) GIVE(=-3) | o",
+  "new": "INSIDE(=0) LONG(=0) THING(=+1) | o N+3 PI BEGIN(=+3) LAND(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "immigration",
+  "old": "INSIDE(=0) MOVE(=+4) RULE(=+5) | o PI GRAIN(=+2) MOOD(=-4) | o",
+  "new": "LAND(=0) MOVE(=+3) RULE(=+4) | o"
+ },
+ {
+  "test": "site",
+  "w": "channel",
+  "old": "LONG(=0) GRAIN(=-1) SIDE(=+2) | o PI TIME(=-1) INSIDE(=-5) | o",
+  "new": "LAND(=-2) LONG(=0) GRAIN(=0) | o PI CONSUME(=-1) ART(=-3) | o"
+ },
+ {
+  "test": "site",
+  "w": "pirates",
+  "old": "LONG(=+1) GIVE(=-2) FIGHT(=+1) | o N+3",
+  "new": "LAND(=-4) FIGHT(=0) LONG(=+2) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "asset",
+  "old": "VALUE(=+1) MEASURE(=+3) PLACE | o PI RULE(=+1) CARE(=-2) | o",
+  "new": "VALUE(=+1) MEASURE(=+3) LAND(=0) | o PI RULE(=+1) CARE(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "southwest",
+  "old": "PLACE SIDE(=+1) HEAT(=0) | o",
+  "new": "PLACE LAND(=-1) SIDE(=+1) | o"
+ },
+ {
+  "test": "site",
+  "w": "giant",
+  "old": "BIG(=+2) GRAIN(=+2) | o PI RULE(=0) PART(=+3) | o",
+  "new": "BIG(=+2) GRAIN(=+2) | o PI PART(=+4) ART(=-5) | o"
+ },
+ {
+  "test": "site",
+  "w": "ship",
+  "old": "LONG(=+3) NEAR(=-3) FIGHT(=+2) | o",
+  "new": "LONG(=+3) LAND(=-5) FIGHT(=+2) | o PI MEASURE(=-2) TIME(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "cowboys",
+  "old": "THING(=+2) FIGHT(=-1) PLACE | o N+3",
+  "new": "THING(=+2) LAND(=+1) FIGHT(=-2) | o N+3 PI PLACE LIVE(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "map",
+  "old": "TEXT PLACE NEAR(=0) | o",
+  "new": "TEXT LAND(=+1) NEAR(=0) | o"
+ },
+ {
+  "test": "site",
+  "w": "record",
+  "old": "TEXT RULE(=-2) TIME(=-3) | o PI MOVE(=+1) THING(=0) | o",
+  "new": "TEXT RULE(=-2) TIME(=-3) | o PI PART(=+2) ART(=+4) | o"
+ },
+ {
+  "test": "site",
+  "w": "tribes",
+  "old": "PART(=+2) PLACE FRIEND(=+1) | o N+3",
+  "new": "LAND(=0) PART(=+3) FRIEND(=+1) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "farmers",
+  "old": "THING(=+2) VALUE(=-3) | o N+3 PI FRIEND(=+2) PART(=+4) | o",
+  "new": "THING(=+2) LAND(=+2) VALUE(=-3) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "farmer",
+  "old": "THING(=+2) VALUE(=-3) | o PI FRIEND(=+2) PART(=+4) | o",
+  "new": "THING(=+2) LAND(=+2) VALUE(=-3) | o"
+ },
+ {
+  "test": "site",
+  "w": "class",
+  "old": "PART(=+2) BEGIN(=0) ART(=+1) | o PI SAME(=0) MEASURE(=-3) | o",
+  "new": "PART(=+2) BEGIN(=0) ART(=+1) | o PI KNOW(=+2) GIVE(=+1) | o"
+ },
+ {
+  "test": "site",
+  "w": "title",
+  "old": "TEXT FIGHT(=-3) PLACE | o",
+  "new": "TEXT FIGHT(=-3) LAND(=0) | o"
+ },
+ {
+  "test": "site",
+  "w": "euro",
+  "old": "VALUE(=0) MEASURE(=+3) GRAIN(=+1) | o PI PLACE NEAR(=-5) | o",
+  "new": "VALUE(=0) MEASURE(=+3) GRAIN(=+1) | o PI LAND(=0) NEAR(=-4) | o"
+ },
+ {
+  "test": "site",
+  "w": "ticket",
+  "old": "VALUE(=-1) GIVE(=+2) FIGHT(=-2) | o PI NEAR(=-1) THING(=0) | o",
+  "new": "VALUE(=-1) GIVE(=+2) FIGHT(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "patriots",
+  "old": "FIGHT(=+2) WANT(=+3) GOOD(=+3) | o N+3",
+  "new": "FIGHT(=+2) LAND(=+1) WANT(=+3) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "brad",
+  "old": "LONG(=+1) JOIN(=+1) | o PI THING(=+3) SEX(=+3) | o",
+  "new": "LONG(=+1) JOIN(=+1) | o PI LAND(=-1) SIDE(=-3) | o"
+ },
+ {
+  "test": "site",
+  "w": "poll",
+  "old": "THINK(=0) MEASURE(=+4) FIGHT(=-2) | o PI TEXT SEE | o",
+  "new": "THINK(=0) MEASURE(=+4) FIGHT(=-2) | o PI THING(=-3) BIG(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "neighbor",
+  "old": "FRIEND(=+3) NEAR(=+1) INSIDE(=-1) | o",
+  "new": "FRIEND(=+2) NEAR(=+1) LAND(=0) | o"
+ },
+ {
+  "test": "site",
+  "w": "giants",
+  "old": "BIG(=+2) GRAIN(=+2) | o N+3 PI RULE(=0) PART(=+3) | o",
+  "new": "BIG(=+2) GRAIN(=+2) | o N+3 PI PART(=+4) ART(=-5) | o"
+ },
+ {
+  "test": "site",
+  "w": "federation",
+  "old": "PART(=+3) FIGHT(=-3) RULE(=+4) | o",
+  "new": "PART(=+3) FIGHT(=-3) RULE(=+4) | o PI JOIN(=+3) GRAIN(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "acres",
+  "old": "PLACE THING(=0) VALUE(=-1) | o",
+  "new": "LAND(=+1) NEAR(=+3) THING(=0) | o PI MEASURE(=0) GIVE(=+3) | o"
+ },
+ {
+  "test": "site",
+  "w": "buyers",
+  "old": "VALUE(=-3) GIVE(=+1) PLACE | o N+3",
+  "new": "VALUE(=-3) LAND(=0) KNOW(=+2) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "haven",
+  "old": "PLACE INSIDE(=-2) FEEL(=-3) | o",
+  "new": "PLACE LAND(=-4) INSIDE(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "bridge",
+  "old": "LONG(=+2) NEAR(=+3) ABOVE(=+2) | o",
+  "new": "LONG(=+2) NEAR(=+3) LAND(=-4) | o"
+ },
+ {
+  "test": "site",
+  "w": "max",
+  "old": "MEASURE(=-1) ABOVE(=+1) MOVE(=0) | o PI THING(=+3) FEEL(=+2) | o",
+  "new": "MEASURE(=-1) ABOVE(=+1) MOVE(=0) | o PI THING(=0) TIME(=-1) | o"
+ },
+ {
+  "test": "site",
+  "w": "fort",
+  "old": "PLACE FIGHT(=+5) TOUCH(=+2) | o PI INSIDE(=+1) NEAR(=+3) | o",
+  "new": "PLACE FIGHT(=+5) TOUCH(=+2) | o PI INSIDE(=0) NEAR(=+1) | o"
+ },
+ {
+  "test": "site",
+  "w": "tourists",
+  "old": "PLACE INSIDE(=-4) FEEL(=-4) | o N+3 PI WANT(=+2) NEAR(=+3) | o",
+  "new": "LAND(=-1) INSIDE(=-3) FEEL(=-3) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "governors",
+  "old": "RULE(=+3) TIME(=0) | o N+3 PI FIGHT(=-2) CAN(=+3) | o",
+  "new": "RULE(=+3) TIME(=0) LAND(=-1) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "airlines",
+  "old": "VALUE(=-2) GRAIN(=-5) FIGHT(=0) | o N+3 PI PLACE SIDE(=+1) | o",
+  "new": "VALUE(=-2) GRAIN(=-5) LAND(=+3) | o N+3"
+ },
+ {
+  "test": "site",
+  "w": "sand",
+  "old": "THING(=-4) TOUCH(=-2) MOVE(=-1) | o",
+  "new": "THING(=-3) TOUCH(=-1) LAND(=-3) | o"
+ },
+ {
+  "test": "site",
+  "w": "clothing",
+  "old": "INSIDE(=-1) LONG(=-5) PART(=+2) | o",
+  "new": "INSIDE(=-1) LONG(=-5) PART(=+2) | o PI SAY(=0) GRAIN(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "invasion",
+  "old": "BEGIN(=0) FIGHT(=+5) FRIEND(=-2) | o",
+  "new": "LAND(=0) FIGHT(=+5) FRIEND(=-2) | o"
+ },
+ {
+  "test": "site",
+  "w": "victor",
+  "old": "FIGHT(=-2) BEGIN(=+2) | o PI BIG(=+2) NEAR(=+5) | o",
+  "new": "FIGHT(=-2) BEGIN(=+2) | o PI THINK(=-5) CONSUME(=-5) | o"
+ },
+ {
+  "test": "site",
+  "w": "shipping",
+  "old": "VALUE(=-1) MEASURE(=-3) ART(=-3) | i",
+  "new": "VALUE(=-1) MEASURE(=-3) LAND(=-4) | i"
+ },
+ {
+  "test": "site",
+  "w": "parish",
+  "old": "RULE(=+1) NEAR(=+5) PART(=+3) | o PI INSIDE(=0) ART(=+4) | o",
+  "new": "RULE(=+1) NEAR(=+5) PART(=+3) | o PI PLACE FRIEND(=+2) | o"
+ },
+ {
+  "test": "site",
+  "w": "folk",
+  "old": "ART(=+3) PART(=+4) FRIEND(=+2) | o PI PLACE THING(=+1) | o",
+  "new": "ART(=+4) LAND(=+2) PART(=+5) | o"
+ },
+ {
+  "test": "site",
+  "w": "channels",
+  "old": "GRAIN(=0) NEAR(=-2) SAME(=-4) | i",
+  "new": "LAND(=-2) GRAIN(=0) SAME(=-3) | i"
+ },
+ {
+  "test": "model",
+  "w": "park",
+  "old": "PLACE BIG THING | o",
+  "new": "PLACE LAND BIG | o"
+ },
+ {
+  "test": "model",
+  "w": "narrow",
+  "old": "PLACE JOIN(=+5) GRAIN(=-3) | o",
+  "new": "PLACE JOIN(=+5) LAND(=-5) | o"
+ },
+ {
+  "test": "model",
+  "w": "peninsula",
+  "old": "PLACE PART(=-2) JOIN(=+5) | o",
+  "new": "LAND PART(=-2) JOIN(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "provinces",
+  "old": "PLACE RULE(=+4) PART(=-2) | o N+3",
+  "new": "LAND RULE(=+4) PART(=-2) | o N+3"
+ },
+ {
+  "test": "model",
+  "w": "beach",
+  "old": "PLACE GRAIN(=0) TOUCH(=-5) | o",
+  "new": "LAND(=0) GRAIN(=0) TOUCH(=-5) | o"
+ },
+ {
+  "test": "model",
+  "w": "states",
+  "old": "PLACE RULE(=+4) PART(=-2) | o",
+  "new": "LAND RULE(=+4) PART(=-2) | o"
+ },
+ {
+  "test": "model",
+  "w": "bank",
+  "old": "PLACE NEAR(=+5) ABOVE(=+2) | o",
+  "new": "LAND(=0) ABOVE(=+2) | o"
+ },
+ {
+  "test": "model",
+  "w": "county",
+  "old": "PLACE RULE(=+4) NEAR(=+3) | o",
+  "new": "LAND RULE(=+4) NEAR(=+3) | o"
+ },
+ {
+  "test": "model",
+  "w": "gulf",
+  "old": "PLACE GRAIN(=-3) BIG(=+3) | o",
+  "new": "LAND(=-5) INSIDE(=+5) BIG(=+3) | o"
+ },
+ {
+  "test": "model",
+  "w": "cape",
+  "old": "PLACE SIDE(=+5) LONG(=+5) | o",
+  "new": "LAND(=0) SIDE(=+5) LONG(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "island",
+  "old": "PLACE JOIN(=-5) | o",
+  "new": "LAND(=+5) JOIN(=-5) | o"
+ },
+ {
+  "test": "model",
+  "w": "field",
+  "old": "PLACE THING(=0) JOIN(=+5) | o",
+  "new": "LAND THING(=0) JOIN(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "valley",
+  "old": "PLACE ABOVE(=-5) LONG(=+5) | o",
+  "new": "LAND ABOVE(=-5) LONG(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "mountain",
+  "old": "PLACE ABOVE(=+5) BIG(=+5) | o",
+  "new": "LAND ABOVE(=+5) BIG(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "desert",
+  "old": "PLACE THING(=0) MANY(=-1) | o",
+  "new": "LAND THING(=0) MANY(=-1) | o"
+ },
+ {
+  "test": "model",
+  "w": "mere",
+  "old": "GRAIN(=-3) MOVE(=-5) BIG(=-5) | o",
+  "new": "LAND(=-5) MOVE(=-5) BIG(=-5) | o"
+ },
+ {
+  "test": "model",
+  "w": "commons",
+  "old": "PLACE PART(=+5) MOOD(=+3) | o",
+  "new": "LAND PART(=+5) MOOD(=+3) | o"
+ },
+ {
+  "test": "model",
+  "w": "enclave",
+  "old": "PART(=-2) INSIDE(=+5) SAME(=-5) | o",
+  "new": "LAND INSIDE(=+5) SAME(=-5) | o"
+ },
+ {
+  "test": "model",
+  "w": "countryside",
+  "old": "PLACE BIG(=+5) THING(=0) | o",
+  "new": "LAND THING(=0) | o"
+ },
+ {
+  "test": "model",
+  "w": "terrain",
+  "old": "PLACE THING(=-5) | o",
+  "new": "LAND(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "beaches",
+  "old": "PLACE GRAIN(=0) NEAR(=+3) | o",
+  "new": "LAND(=0) GRAIN(=0) | o N+3"
+ },
+ {
+  "test": "model",
+  "w": "harbour",
+  "old": "PLACE GIVE(=0) THING(=-5) | o",
+  "new": "PLACE LAND(=0) GIVE(=0) | o"
+ },
+ {
+  "test": "model",
+  "w": "turf",
+  "old": "SIDE(=+5) THING(=0) | o",
+  "new": "LAND(=+5) SIDE(=+5) THING(=0) | o"
+ },
+ {
+  "test": "model",
+  "w": "shallow",
+  "old": "PLACE GRAIN(=-3) BIG(=-3) | o",
+  "new": "PLACE LAND(=-3) BIG(=-3) | o"
+ },
+ {
+  "test": "model",
+  "w": "premises",
+  "old": "PLACE THING(=-5) PART(=+2) | o N+3",
+  "new": "PLACE LAND(=+5) THING(=-5) | o N+3"
+ },
+ {
+  "test": "model",
+  "w": "archipelago",
+  "old": "PLACE PART(=+5) GRAIN(=+5) | o",
+  "new": "PLACE PART(=+5) LAND(=+5) | o"
+ },
+ {
+  "test": "model",
+  "w": "spit",
+  "old": "PLACE LONG(=+5) GRAIN(=+5) | o",
+  "new": "PLACE LAND(=0) LONG(=+5) | o"
+ }
+]
