@@ -111,12 +111,12 @@
   {
    "name": "SIDE",
    "axis": true,
-   "neg": "зад",
+   "neg": "зад, назад; вернуться",
    "mid": "",
-   "pos": "перёд",
-   "ru": "зад … перёд",
-   "en": "-5 back … +5 front",
-   "en_neg": "back … +5 front",
+   "pos": "перёд, вперёд; предстоящий",
+   "ru": "зад, назад, вернуться … перёд, вперёд, предстоящий",
+   "en": "-5 back, behind, backward; also going back, return … +5 front, ahead, forward; also coming up, ready",
+   "en_neg": "back, behind, backward",
    "en_mid": "",
    "en_pos": ""
   },

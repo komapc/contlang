@@ -254,12 +254,12 @@ roots:
   - crumb fragment piece bit particle speck
 - name: SIDE
   axis:
-    neg: зад
+    neg: зад, назад; вернуться
     mid: ''
-    pos: перёд
-  ru_axis: зад … перёд
-  status: принято
-  en_axis: '-5 back … +5 front'
+    pos: перёд, вперёд; предстоящий
+  ru_axis: зад, назад, вернуться … перёд, вперёд, предстоящий
+  status: 'принято; определение по атому (2026-10-14): «назад, вернуться … вперёд, предстоящий, готовый» — +4,3 % [−0,7 … +9,2] против «зад … перёд», +6,4 % против удаления ([side_kind](../data/eval/runs/side_kind/README.md))'
+  en_axis: '-5 back, behind, backward; also going back, return … +5 front, ahead, forward; also coming up, ready'
   semaxis:
   - front forward ahead fore frontal
   - back rear behind backward posterior
