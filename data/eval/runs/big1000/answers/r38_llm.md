@@ -1,0 +1,50 @@
+1. monster | predator | pest
+2. put | place | insert
+3. retreat | recede | reverse
+4. statistics | graphs | charts
+5. benzoin | resin | balsam
+6. surely | certainly | definitely
+7. transform | convert | change
+8. denounce | condemn | accuse
+9. exactly | precisely | just
+10. heard | listened | understood
+11. island | isle | islet
+12. institutions | offices | agencies
+13. workers | producers | merchants
+14. friendship | companionship | loyalty
+15. casualties | the dead | the fallen
+16. curiosity | rarity | anomaly
+17. rarely | seldom | hardly
+18. glance | look | sight
+19. carbon dioxide | oxygen | air
+20. doze | nap | faint
+21. revolution | rebellion | coup
+22. constitution | law | charter
+23. educated | cultured | learned
+24. founders | pioneers | originators
+25. country | state | territory
+26. spared | saved | protected
+27. clones | crowd | population
+28. arrived | reached | came
+29. present | now | time
+30. illness | ailment | tumor
+31. write | type | print
+32. metropolis | city | world
+33. benefits | goods | virtues
+34. include | insert | enclose
+35. learn | study | discover
+36. vote | poll | elect
+37. about | roughly | nearly
+38. battlefield | battleground | front
+39. assault | charge | raid
+40. calculate | compute | measure
+41. expel | banish | remove
+42. trade | exchange | barter
+43. back up | reverse | retreat
+44. ruled | governed | commanded
+45. keep | preserve | maintain
+46. experts | scholars | scientists
+47. price | cost | worth
+48. prevent | avoid | stop
+49. martyr | saint | hero
+50. deliver | hand over | bring

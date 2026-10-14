@@ -1,0 +1,50 @@
+1. sports | matches | games
+2. grumpy | bitter | cold
+3. warm up | heat | liven up
+4. caption | footnote | title
+5. glacier | iceberg | ice sheet
+6. compact | small | tight
+7. mobile | portable | agile
+8. sign | notice | poster
+9. adjustment | calibration | correction
+10. department | office | branch
+11. erupt | explode | blaze
+12. challenge | dispute | argue
+13. late | advanced | major
+14. ocean | sea | water
+15. current | present | clinical
+16. machine | device | gadget
+17. livestock | pets | cattle
+18. teach | inform | explain
+19. permit | allow | authorize
+20. present | now | moment
+21. ponder | consider | reflect
+22. string | cord | ribbon
+23. creative | active | artistic
+24. referee | umpire | judge
+25. data | figures | statistics
+26. slope | gradient | incline
+27. stingy | reluctant | skeptical
+28. demands | wishes | desires
+29. rival | enemy | competitor
+30. calm down | soothe | relax
+31. avoid | decline | refuse
+32. wing | fin | arm
+33. preface | foreword | introduction
+34. combat | boxing | wrestling
+35. root | stem | tail
+36. accept | receive | take
+37. rush | dive | launch
+38. pet | animal | creature
+39. thin | light | soft
+40. warm | excite | stir
+41. symptom | injury | mutation
+42. games | matches | contests
+43. clause | section | paragraph
+44. unread | unpublished | new
+45. obscure | vague | remote
+46. trade | exchange | bargain
+47. carve | forge | build
+48. do | make | act
+49. soup | broth | stew
+50. alternate | take turns | rotate

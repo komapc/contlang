@@ -1,0 +1,9 @@
+math  n 1000  близко  24%  рядом  31%  мимо  46%
+llm   n 1000  близко  52%  рядом  28%  мимо  20%
+оба близко: 161
+оба мимо: 128
+math лучше llm: 125, хуже: 484
+  noun      n 521  math  21%  llm  50%
+  verb      n 331  math  25%  llm  50%
+  adjective n 110  math  28%  llm  56%
+  adverb    n  38  math  32%  llm  71%

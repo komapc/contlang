@@ -1,0 +1,50 @@
+1. hit | strike | beat
+2. sentence | statement | fact
+3. building | house | inside
+4. ruler | governor | leader
+5. resident | neighbor | inhabitant
+6. battlefield | front | camp
+7. slowly | gently | still
+8. recently | lately | just now
+9. hurry | run | act quickly
+10. artfully | skillfully | technically
+11. weapon | arms | sword
+12. helped | benefited | improved
+13. surprise | shock | astonish
+14. rarely | seldom | infrequently
+15. invited | encouraged | welcomed
+16. speech | announcement | lecture
+17. restarted | repeated | renewed
+18. fell | descended | dropped
+19. decided | determined | resolved
+20. Puck | sprite | elf
+21. missiles | rockets | weapons
+22. rise | ascend | climb
+23. argumentative | contentious | combative
+24. wonder | ask | question
+25. carefully | diligently | thoroughly
+26. suffered | feared | dreaded
+27. debts | loans | bills
+28. finale | epilogue | conclusion
+29. improved | bettered | enhanced
+30. ordered | decreed | enacted
+31. fell | descended | dropped
+32. people | crowd | group
+33. quietly | softly | in a whisper
+34. traded | exchanged | bought
+35. offer | sell | suggest
+36. flood | torrent | stream
+37. two | double | second
+38. love | adore | cherish
+39. beginner | novice | learner
+40. villages | hamlets | towns
+41. laser | beam | light
+42. grew | expanded | enlarged
+43. word | phrase | term
+44. pig | boar | swine
+45. boy | son | young man
+46. play | exercise | train
+47. headline | title | header
+48. women | wives | ladies
+49. inspector | supervisor | overseer
+50. share | portion | sample

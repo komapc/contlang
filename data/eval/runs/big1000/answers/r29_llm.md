@@ -1,0 +1,50 @@
+1. close | near | intimate
+2. yearn | approach | long for
+3. payments | fees | prices
+4. confirm | verify | ensure
+5. shrink | reduce | diminish
+6. decrease | lower | reduce
+7. survey | review | scan
+8. separate | distinct | discrete
+9. publications | writings | documents
+10. drained | separated | dissolved
+11. unchanged | static | constant
+12. venues | scenes | sites
+13. affordable | cheap | inexpensive
+14. school | academy | classroom
+15. lengths | distances | dimensions
+16. trader | merchant | seller
+17. broadcaster | broadcasting company | station
+18. governments | authorities | administrations
+19. choose | prefer | opt
+20. team | staff | crew
+21. heat | warm | burn
+22. crowd | mob | march
+23. horror | rage | terror
+24. debts | loans | obligations
+25. abandon | desert | betray
+26. ugly | hideous | unsightly
+27. thrive | flourish | live well
+28. participant | partner | joiner
+29. tax | duty | levy
+30. organizer | gatherer | assembler
+31. fed | served | nourished
+32. law | rule | regulation
+33. death | fatality | accident
+34. decision | choice | resolution
+35. calculation | result | answer
+36. horror | rage | terror
+37. amount | quantity | size
+38. breath | air | inhalation
+39. genes | gene sequences | alleles
+40. thoroughly | carefully | meticulously
+41. detach | separate | disconnect
+42. origin | start | source
+43. appendix | supplement | addendum
+44. took | received | seized
+45. future | potential | possibility
+46. compatible | suitable | cooperative
+47. statement | declaration | announcement
+48. improve | benefit | succeed
+49. asked | questioned | wondered
+50. presentation | show | lecture

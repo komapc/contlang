@@ -1,0 +1,50 @@
+1. fell | dropped | sank
+2. rifles | guns | cannons
+3. listen | hear | read
+4. verbal | spoken | oral
+5. heights | levels | peaks
+6. holidays | festivities | celebrations
+7. advertisement | ad | commercial
+8. flower | blossom | bloom
+9. trade | commerce | business
+10. steam | smoke | vapor
+11. junction | intersection | crossroads
+12. approved | praised | endorsed
+13. news | report | update
+14. members | participants | associates
+15. mountain | peak | summit
+16. warm | hot | feverish
+17. interior | inside | core
+18. humanity | people | population
+19. literature | publication | writing
+20. especially | particularly | uniquely
+21. fasten | attach | weld
+22. events | occurrences | incidents
+23. newspapers | publications | press
+24. unsure | uncertain | unknown
+25. separate | split | divide
+26. experts | appraisers | connoisseurs
+27. courts | tribunals | law courts
+28. end | finish | stop
+29. attacks | charges | assaults
+30. era | period | age
+31. joint | limb | organ
+32. seller | vendor | merchant
+33. touch | feel | handle
+34. continental | terrestrial | overland
+35. ancestors | forefathers | elders
+36. consider | ponder | deliberate
+37. annually | yearly | every year
+38. female | hen | doe
+39. fasten | attach | clamp
+40. nation | population | people
+41. rumor | gossip | hearsay
+42. address | speak to | tell
+43. harmed | damaged | hurt
+44. launched | started | sprang
+45. return | go back | come back
+46. improve | enhance | refine
+47. office | bureau | department
+48. pour | fill | load
+49. chamber | building | headquarters
+50. tall | high | lofty

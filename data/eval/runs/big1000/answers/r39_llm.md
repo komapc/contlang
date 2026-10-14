@@ -1,0 +1,50 @@
+1. authority | power | rule
+2. increase | raise | lift
+3. nowhere | away | absent
+4. rule | norm | standard
+5. conservative | traditionalist | keeper
+6. newspapers | diaries | journals
+7. harmed | damaged | ruined
+8. spoiled | ruined | corrupted
+9. difficulty | problem | obstacle
+10. descendants | heirs | successors
+11. usually | generally | mostly
+12. cursed | insulted | slandered
+13. improve | elevate | uplift
+14. markets | shops | bazaars
+15. examine | inspect | understand
+16. newcomer | immigrant | visitor
+17. almanac | yearbook | annual
+18. agree | concur | accord
+19. finish | end | complete
+20. refuse | hate | reject
+21. cheaters | losers | bad players
+22. navy | fleet | flotilla
+23. fall | dive | plunge
+24. mothers | women | nurses
+25. confine | detain | lock in
+26. participation | involvement | role
+27. leagues | teams | tournaments
+28. countries | regions | states
+29. shift | adjustment | move
+30. guessed | assumed | supposed
+31. airport | terminal | station
+32. match | round | game
+33. fact | information | item
+34. start | begin | launch
+35. succeed | manage | accomplish
+36. chisel | brush | pen
+37. rush | dash | arrival
+38. heal | cure | revive
+39. men | males | fathers
+40. be dead | remain dead | lie dead
+41. delight | please | thrill
+42. unity | wholeness | integrity
+43. flow rate | discharge | current
+44. stroke | caress | pat
+45. certain | sure | confident
+46. artworks | paintings | pictures
+47. divorcee | widow | separatist
+48. governance | administration | authority
+49. players | athletes | champions
+50. joined | added | attached

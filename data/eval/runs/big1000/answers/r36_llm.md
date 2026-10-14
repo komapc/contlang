@@ -1,0 +1,50 @@
+1. allow | permit | authorize
+2. helped | benefited | succeeded
+3. rebels | guerrillas | militia
+4. road | street | path
+5. thriller | novel | drama
+6. dollar | currency | buck
+7. laws | regulations | documents
+8. army | troops | military
+9. entered | penetrated | went in
+10. football | soccer | rugby
+11. sprint | dash | run
+12. feature | trait | exception
+13. junction | hub | meeting place
+14. duplicate | copy | replica
+15. threaten | harm | damage
+16. know | understand | realize
+17. thinking | thought | idea
+18. entire | whole | complete
+19. greatly | largely | very much
+20. woman | lady | girl
+21. final | last | ultimate
+22. magazine | newspaper | sports
+23. judges | officials | jurors
+24. teaching | lesson | instruction
+25. peace | armistice | truce
+26. opponents | rivals | competitors
+27. tenderness | gentleness | kindness
+28. strange | odd | unusual
+29. low | below | down
+30. join | attach | add
+31. prevail | triumph | overcome
+32. identity | sameness | equality
+33. mandatory | compulsory | obligatory
+34. confirmed | verified | established
+35. overrule | revoke | reverse
+36. join | attach | add
+37. ended | finished | stopped
+38. edge | border | surface
+39. goodness | virtue | benefit
+40. altered | transformed | unusual
+41. score | point | goal
+42. payment | price | cost
+43. question | hesitate | doubt aloud
+44. pale | sickly | pallid
+45. landlocked | inland | continental
+46. like | love | favor
+47. officials | officers | administrators
+48. thought | considered | reflected
+49. kohl | eyeliner | cosmetic
+50. llama | lama | camelid
