@@ -6,7 +6,7 @@
 
 - 1000 слов ([big1000](../data/eval/runs/big1000/result.txt)): кодер сайта 24 %, Haiku с ENC_SPEC 52 %.
 - Приняты: оси 8 корней (LONG, KNOW, MEASURE, TOUCH, NEAR, GIVE, VALUE, CARE) по словам вокруг выученных атомов и роль `agent` у людей ([fix1](../data/eval/runs/fix1/README.md)).
-- Не приняты: раздельные коды смыслов многозначных слов ([senses](../data/eval/runs/senses/README.md), −2 %), корень KIND ([kind](../data/eval/runs/kind/README.md), +5,6 % при пороге), роли `tool` и `quality` по WordNet.
+- Не приняты: раздельные коды смыслов многозначных слов ([senses](../data/eval/runs/senses/README.md), −2 %), корень KIND ([kind](../data/eval/runs/kind/README.md), +5,6 % при пороге; только головой +6,7 % [−2,7 … +16], [side_kind](../data/eval/runs/side_kind/README.md); решение пользователя 2026-10-14), роли `tool` и `quality` по WordNet.
 - Отложено: убрать у кодера сайта пару через PI.
 
 ## Мера и эталон (прежняя)
