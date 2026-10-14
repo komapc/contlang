@@ -1,0 +1,36 @@
+1. quarry | mine | rock pile
+2. gunpowder | ember | fuel
+3. stalk | stem | cane
+4. roof | rooftop | balcony
+5. vacuum | exhaust | evacuation
+6. air | gas | vapor
+7. water | liquid | oil
+8. superior | god | boss
+9. liquid | fluid | drink
+10. resident | local | native
+11. treasury | sanctuary | homeland
+12. dump | junkyard | slum
+13. scene | site | venue
+14. trade | livestock | barter
+15. beginner | novice | newcomer
+16. past | history | ancient times
+17. location | spot | here
+18. prohibition | ban | restriction
+19. yard | courtyard | garden
+20. courthouse | court | office
+21. perspective | viewpoint | vision
+22. alley | lane | passage
+23. padding | cushion | lining
+24. marsh | swamp | bog
+25. entrance | front | lobby
+26. zoo | farm | pen
+27. mountain | peak | cliff
+28. home | residence | dwelling
+29. jurisdiction | treaty | law
+30. gallery | studio | museum
+31. liquid | fluid | water
+32. predator | carnivore | eater
+33. ground | site | floor
+34. room | interior | indoors
+35. region | district | network
+36. bottom | dregs | scum

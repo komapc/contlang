@@ -1,0 +1,434 @@
+[
+ {
+  "w": "residents",
+  "grp": "LAND",
+  "sz": "SOMEONE PLACE NEAR(=+5) | o",
+  "sz2": "SOMEONE PLACE LAND(=+5) | o"
+ },
+ {
+  "w": "diocese",
+  "grp": "LAND",
+  "sz": "PLACE RULE(=+5) | o",
+  "sz2": "LAND RULE(=+5) | o"
+ },
+ {
+  "w": "harbor",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=+5) | o",
+  "sz2": "PLACE LAND(=-5) | o"
+ },
+ {
+  "w": "swimming",
+  "grp": "LAND",
+  "sz": "FIGHT(=-5) GRAIN(=-5) | o",
+  "sz2": "FIGHT(=-5) LAND(=-5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "ridge",
+  "grp": "LAND",
+  "sz": "PLACE THING(=-5) ABOVE(=+5) | o",
+  "sz2": "LAND THING(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "steam",
+  "grp": "LAND",
+  "sz": "GRAIN HEAT(=+5) CONSUME(=-5) | o",
+  "sz2": "GRAIN HEAT(=+5) LAND(=-5) | o"
+ },
+ {
+  "w": "flat",
+  "grp": "LAND",
+  "sz": "ABOVE(=-5) VALUE(=-5) TOUCH | o",
+  "sz2": "LAND(=+5) ABOVE(=-5) VALUE(=-5) | o"
+ },
+ {
+  "w": "sovereignty",
+  "grp": "LAND",
+  "sz": "RULE(=+5) NEAR(=-5) | o",
+  "sz2": "LAND(=+5) RULE(=+5) | o"
+ },
+ {
+  "w": "cox",
+  "grp": "LAND",
+  "sz": "GRAIN RULE(=+5) | o",
+  "sz2": "GRAIN LAND(=-5) | o"
+ },
+ {
+  "w": "barrel",
+  "grp": "LAND",
+  "sz": "LONG(=+5) GRAIN(=-5) ABOVE(=-5) | o",
+  "sz2": "LONG(=+5) GRAIN(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "property",
+  "grp": "LAND",
+  "sz": "PLACE VALUE(=+5) NEAR(=+5) | o",
+  "sz2": "LAND(=+5) PLACE VALUE(=+5) | o"
+ },
+ {
+  "w": "border",
+  "grp": "LAND",
+  "sz": "PLACE NEAR LONG(=-5) | o",
+  "sz2": "PLACE LAND(=+5) NEAR | o"
+ },
+ {
+  "w": "somali",
+  "grp": "LAND",
+  "sz": "SOMEONE ART(=+5) | o",
+  "sz2": "SOMEONE LAND(=-5) | o"
+ },
+ {
+  "w": "spots",
+  "grp": "LAND",
+  "sz": "THINK PLACE SEE | o",
+  "sz2": "THINK PLACE LAND(=+5) | o"
+ },
+ {
+  "w": "rivers",
+  "grp": "LAND",
+  "sz": "GRAIN(=-3) THING(=-5) | o",
+  "sz2": "LAND(=-5) THING(=-5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "floor",
+  "grp": "LAND",
+  "sz": "ABOVE(=-5) INSIDE(=+5) PLACE | o",
+  "sz2": "ABOVE(=-5) LAND(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "sectors",
+  "grp": "LAND",
+  "sz": "PLACE MEASURE(=+5) INSIDE(=-5) | o",
+  "sz2": "LAND(=+5) PLACE MEASURE(=+5) | o"
+ },
+ {
+  "w": "storm",
+  "grp": "LAND",
+  "sz": "HEAT(=-5) SIDE(=+5) | o",
+  "sz2": "HEAT(=-5) SIDE(=+5) LAND(=-5) | o"
+ },
+ {
+  "w": "nation",
+  "grp": "LAND",
+  "sz": "RULE(=+4) PLACE MANY(=+5) | o",
+  "sz2": "RULE(=+4) LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "homes",
+  "grp": "LAND",
+  "sz": "PLACE INSIDE(=+5) THING(=+4) | o",
+  "sz2": "PLACE INSIDE(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "farms",
+  "grp": "LAND",
+  "sz": "PLACE THING(=+4) | o",
+  "sz2": "PLACE THING(=+4) LAND(=+5) | o"
+ },
+ {
+  "w": "flooding",
+  "grp": "LAND",
+  "sz": "DO HEAT(=+5) | o",
+  "sz2": "DO HEAT(=+5) LAND(=-5) | o"
+ },
+ {
+  "w": "arabs",
+  "grp": "LAND",
+  "sz": "SOMEONE ABOVE(=+5) | o",
+  "sz2": "SOMEONE LAND | o"
+ },
+ {
+  "w": "crops",
+  "grp": "LAND",
+  "sz": "GIVE(=0) THING(=+4) | o",
+  "sz2": "GIVE(=0) LAND(=+5) THING(=+4) | o"
+ },
+ {
+  "w": "western",
+  "grp": "LAND",
+  "sz": "HAPPEN PLACE | o",
+  "sz2": "HAPPEN LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "government",
+  "grp": "LAND",
+  "sz": "RULE(=+4) CAN(=-5) | o",
+  "sz2": "RULE(=+4) LAND(=+5) | o"
+ },
+ {
+  "w": "landscape",
+  "grp": "LAND",
+  "sz": "PLACE SAME(=-5) ART(=+5) | o",
+  "sz2": "LAND PLACE SAME(=-5) | o"
+ },
+ {
+  "w": "resident",
+  "grp": "LAND",
+  "sz": "SOMEONE PLACE | o",
+  "sz2": "SOMEONE PLACE LAND(=+5) | o"
+ },
+ {
+  "w": "northeast",
+  "grp": "LAND",
+  "sz": "PLACE SIDE(=+5) NEAR(=+5) | o",
+  "sz2": "PLACE LAND(=+5) SIDE(=+5) | o"
+ },
+ {
+  "w": "grass",
+  "grp": "LAND",
+  "sz": "THING(=0) LONG(=-5) TOUCH(=-5) | o",
+  "sz2": "THING(=0) LAND(=+5) LONG(=-5) | o"
+ },
+ {
+  "w": "salt",
+  "grp": "LAND",
+  "sz": "GRAIN THING(=-5) HEAT(=-5) | o",
+  "sz2": "GRAIN THING(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "refuge",
+  "grp": "LAND",
+  "sz": "PLACE INSIDE(=-5) NEAR | o",
+  "sz2": "LAND PLACE INSIDE(=-5) | o"
+ },
+ {
+  "w": "flows",
+  "grp": "LAND",
+  "sz": "HAPPEN GRAIN(=-5) CONSUME(=-5) | o",
+  "sz2": "HAPPEN LAND(=-5) GRAIN(=-5) | o"
+ },
+ {
+  "w": "immigrants",
+  "grp": "LAND",
+  "sz": "SOMEONE BEGIN(=-5) | o",
+  "sz2": "SOMEONE LAND(=+5) | o"
+ },
+ {
+  "w": "strait",
+  "grp": "LAND",
+  "sz": "GRAIN(=-3) NEAR | o",
+  "sz2": "LAND(=-5) NEAR | o"
+ },
+ {
+  "w": "trees",
+  "grp": "LAND",
+  "sz": "THING(=0) LONG | o",
+  "sz2": "THING(=0) LONG LAND(=+5) | o"
+ },
+ {
+  "w": "residence",
+  "grp": "LAND",
+  "sz": "PLACE INSIDE(=+5) LONG(=+5) | o",
+  "sz2": "PLACE INSIDE(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "common",
+  "grp": "LAND",
+  "sz": "PLACE SAME(=+5) HAPPEN | o",
+  "sz2": "LAND SAME(=+5) HAPPEN | o"
+ },
+ {
+  "w": "pool",
+  "grp": "LAND",
+  "sz": "INSIDE THING(=-5) TOUCH(=-5) | o",
+  "sz2": "LAND(=-5) INSIDE THING(=-5) | o"
+ },
+ {
+  "w": "hills",
+  "grp": "LAND",
+  "sz": "PLACE THING(=-5) ABOVE(=+5) | o",
+  "sz2": "LAND THING(=-5) PLACE | o"
+ },
+ {
+  "w": "woods",
+  "grp": "LAND",
+  "sz": "PART(=+5) THING(=-5) PLACE | o",
+  "sz2": "PART(=+5) THING(=-5) LAND(=+5) | o"
+ },
+ {
+  "w": "constituency",
+  "grp": "LAND",
+  "sz": "PART(=+5) PLACE | o",
+  "sz2": "PART(=+5) LAND(=+5) PLACE | o"
+ },
+ {
+  "w": "commonwealth",
+  "grp": "LAND",
+  "sz": "PLACE RULE(=+5) | o",
+  "sz2": "LAND RULE(=+5) | o"
+ },
+ {
+  "w": "frontier",
+  "grp": "LAND",
+  "sz": "PLACE INSIDE(=-5) ABOVE(=+5) | o",
+  "sz2": "LAND INSIDE(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "area",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=+5) INSIDE(=+5) | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "flood",
+  "grp": "LAND",
+  "sz": "HEAT(=+5) BIG(=+5) | o",
+  "sz2": "HEAT(=+5) LAND(=-5) | o"
+ },
+ {
+  "w": "stars",
+  "grp": "LAND",
+  "sz": "NEAR(=-5) SEE | o",
+  "sz2": "LAND NEAR(=-5) | o"
+ },
+ {
+  "w": "cruise",
+  "grp": "LAND",
+  "sz": "DO NEAR(=-5) GRAIN(=-5) | o",
+  "sz2": "DO LAND(=-5) NEAR(=-5) | o"
+ },
+ {
+  "w": "homeland",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=-5) WANT(=+5) | o",
+  "sz2": "LAND NEAR(=-5) PLACE | o"
+ },
+ {
+  "w": "plot",
+  "grp": "LAND",
+  "sz": "THINK SAY(=-5) TEXT | o",
+  "sz2": "THINK LAND(=+5) SAY(=-5) | o"
+ },
+ {
+  "w": "cities",
+  "grp": "LAND",
+  "sz": "PLACE NEAR | o",
+  "sz2": "LAND PLACE NEAR | o"
+ },
+ {
+  "w": "arab",
+  "grp": "LAND",
+  "sz": "SOMEONE THING | o",
+  "sz2": "SOMEONE LAND | o"
+ },
+ {
+  "w": "native",
+  "grp": "LAND",
+  "sz": "SOMEONE BEGIN(=-5) | o",
+  "sz2": "SOMEONE LAND(=+5) BEGIN(=-5) | o"
+ },
+ {
+  "w": "settlements",
+  "grp": "LAND",
+  "sz": "PART(=+5) THING(=-5) VALUE(=-5) | o",
+  "sz2": "PART(=+5) LAND(=+5) THING(=-5) | o"
+ },
+ {
+  "w": "wildlife",
+  "grp": "LAND",
+  "sz": "THING(=+4) INSIDE(=-5) FRIEND | o",
+  "sz2": "THING(=+4) LAND(=+5) INSIDE(=-5) | o"
+ },
+ {
+  "w": "blue",
+  "grp": "LAND",
+  "sz": "LONG(=-5) THING(=-5) | o",
+  "sz2": "LONG(=-5) LAND(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "short",
+  "grp": "LAND",
+  "sz": "PLACE BIG(=-5) LONG(=-5) | o",
+  "sz2": "LAND BIG(=-5) LONG(=-5) | o"
+ },
+ {
+  "w": "flow",
+  "grp": "LAND",
+  "sz": "HAPPEN GRAIN(=-5) CONSUME(=-5) | o",
+  "sz2": "HAPPEN GRAIN(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "tourist",
+  "grp": "LAND",
+  "sz": "SOMEONE CONSUME(=+5) | o",
+  "sz2": "SOMEONE LAND(=-5) | o"
+ },
+ {
+  "w": "vacation",
+  "grp": "LAND",
+  "sz": "TIME NEAR(=-5) | o",
+  "sz2": "TIME NEAR(=-5) LAND(=-5) | o"
+ },
+ {
+  "w": "river",
+  "grp": "LAND",
+  "sz": "GRAIN(=-3) THING(=-5) | o",
+  "sz2": "LAND(=-5) THING(=-5) | o"
+ },
+ {
+  "w": "kingdom",
+  "grp": "LAND",
+  "sz": "TOUCH(=-5) PLACE | o",
+  "sz2": "LAND(=+5) TOUCH(=-5) | o"
+ },
+ {
+  "w": "suburb",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=+5) VALUE(=-5) | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "republic",
+  "grp": "LAND",
+  "sz": "PART(=+5) NEAR(=-5) | o",
+  "sz2": "PART(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "bay",
+  "grp": "LAND",
+  "sz": "GRAIN(=-3) PLACE | o",
+  "sz2": "LAND(=-5) PLACE | o"
+ },
+ {
+  "w": "fish",
+  "grp": "LAND",
+  "sz": "THING(=+4) CONSUME(=+5) | o",
+  "sz2": "THING(=+4) LAND(=-5) | o"
+ },
+ {
+  "w": "towns",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=+5) THING(=-5) | o",
+  "sz2": "LAND PLACE NEAR(=+5) | o"
+ },
+ {
+  "w": "australian",
+  "grp": "LAND",
+  "sz": "SOMEONE THING(=+4) | o",
+  "sz2": "SOMEONE LAND(=+5) | o"
+ },
+ {
+  "w": "neighborhoods",
+  "grp": "LAND",
+  "sz": "PLACE LIVE(=+5) NEAR(=+5) | o",
+  "sz2": "LAND PLACE LIVE(=+5) | o"
+ },
+ {
+  "w": "airports",
+  "grp": "LAND",
+  "sz": "GRAIN(=-5) NEAR(=+5) | o",
+  "sz2": "GRAIN(=-5) NEAR(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "location",
+  "grp": "LAND",
+  "sz": "PLACE NEAR(=+5) | o",
+  "sz2": "PLACE NEAR(=+5) LAND(=+5) | o"
+ },
+ {
+  "w": "forest",
+  "grp": "LAND",
+  "sz": "PART(=+5) THING(=-5) PLACE | o",
+  "sz2": "PART(=+5) LAND(=+5) THING(=-5) | o"
+ }
+]
