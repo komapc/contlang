@@ -159,8 +159,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <div data-l="en">
   <p>Switch it on under the input field: every code gets a line with its pronunciation. Not checked by ear yet; the source is <code>phonetics.yaml</code>.</p>
   <ul>
-    <li><b>A root is a Toki Pona word</b> where one fits (<code>pona</code> GOOD, <code>suli</code> BIG, <code>sona</code> KNOW, <code>moku</code> CONSUME), and each root has a family of three sounds that differ in the first consonant: voiceless (<code>pona</code>) for the positive pole, voiced (<code>bona</code>) for the negative pole, sonorant (<code>lona</code>) for the neutral form — no value written; an explicit <code>(=0)</code> adds a short <code>y</code> (Russian <i>ы</i>, as in Polish): <code>lonay</code>. Words that start with a vowel use their first consonant (<code>ijo</code> / <code>iso</code> / <code>izo</code>). Roots without an axis keep their own word (<code>SEE</code> <code>lukin</code>, <code>DO</code> <code>pali</code>, <code>TEXT</code> <code>lipu</code>).</li>
-    <li><b>Magnitude is repetition:</b> <code>GOOD(=+3)</code> is <code>ponaponapona</code>, <code>GOOD(=-2)</code> is <code>bonabona</code>, <code>GOOD(=+5)</code> is five times <code>pona</code>.</li>
+    <li><b>A root is a Toki Pona word</b> where one fits (<code>pona</code> GOOD, <code>suli</code> BIG, <code>sona</code> KNOW, <code>moku</code> CONSUME), and the word itself never changes — the head of a word is always the plain Toki Pona word. The value on its axis is a suffix of syllables that Toki Pona forbids, so it cannot be mistaken for a word: <code>ti</code> positive, <code>wu</code> negative, repeated |v| times; an explicit <code>(=0)</code> is a short <code>y</code> (Russian <i>ы</i>, as in Polish); nothing written means no value. Roots without an axis take no suffix (<code>SEE</code> <code>lukin</code>, <code>DO</code> <code>pali</code>, <code>TEXT</code> <code>lipu</code>).</li>
+    <li><b>Examples:</b> <code>GOOD</code> is <code>pona</code>, <code>GOOD(=+3)</code> is <code>ponatititi</code>, <code>GOOD(=-2)</code> is <code>ponawuwu</code>, <code>GOOD(=0)</code> is <code>ponay</code>.</li>
     <li><b>Word</b> = root blocks joined with <code>-</code>, then <code>'</code> and the vowel of the part of speech, then the role and labels after <code>·</code> (<code>ul il aj ec</code> for agent, tool, result, quality; a label is a vowel and a consonant: <code>at</code> <code>T+</code>, <code>ad</code> <code>T−</code>, <code>an</code> <code>T0</code>).</li>
     <li><b>Particles</b> all start with <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> are the brackets, <code>hum</code> is <code>;</code>. Quoted names are read in their own language.</li>
   </ul>
@@ -169,8 +169,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <div data-l="ru">
   <p>Включается под полем ввода: у каждого кода появляется строка с произношением. На слух ещё не проверено; источник — <code>phonetics.yaml</code>.</p>
   <ul>
-    <li><b>Корень — токипонское слово</b>, где оно подходит (<code>pona</code> GOOD, <code>suli</code> BIG, <code>sona</code> KNOW, <code>moku</code> CONSUME); у каждого три звучания, различающиеся первым согласным: глухое (<code>pona</code>) — положительный полюс, звонкое (<code>bona</code>) — отрицательный, сонорное (<code>lona</code>) — нейтральная форма, значение не названо; явный <code>(=0)</code> добавляет короткое <code>y</code> (<i>ы</i>, как в польском): <code>lonay</code>. Слова на гласную берут первый согласный (<code>ijo</code> / <code>iso</code> / <code>izo</code>). У корней без оси остаётся само слово (<code>SEE</code> — <code>lukin</code>, <code>DO</code> — <code>pali</code>, <code>TEXT</code> — <code>lipu</code>).</li>
-    <li><b>Величина — повтор слога:</b> <code>GOOD(=+3)</code> — <code>ponaponapona</code>, <code>GOOD(=-2)</code> — <code>bonabona</code>, <code>GOOD(=+5)</code> — пять раз <code>pona</code>.</li>
+    <li><b>Корень — токипонское слово</b>, где оно подходит (<code>pona</code> GOOD, <code>suli</code> BIG, <code>sona</code> KNOW, <code>moku</code> CONSUME); само слово не меняется, голова слова — всегда обычное токипонское слово. Значение оси — суффикс из слогов, которые запрещает токипонская фонотактика, поэтому он не спутается со словом: <code>ti</code> — положительное, <code>wu</code> — отрицательное, повторённые |v| раз; явный <code>(=0)</code> — короткое <code>y</code> (<i>ы</i>, как в польском); ничего не названо — значения нет. У корней без оси суффикса нет (<code>SEE</code> — <code>lukin</code>, <code>DO</code> — <code>pali</code>, <code>TEXT</code> — <code>lipu</code>).</li>
+    <li><b>Примеры:</b> <code>GOOD</code> — <code>pona</code>, <code>GOOD(=+3)</code> — <code>ponatititi</code>, <code>GOOD(=-2)</code> — <code>ponawuwu</code>, <code>GOOD(=0)</code> — <code>ponay</code>.</li>
     <li><b>Слово</b> = блоки корней через <code>-</code>, затем <code>'</code> и гласная части речи, затем роль и метки после <code>·</code> (<code>ul il aj ec</code> — agent, tool, result, quality; метка — гласная и согласный: <code>at</code> — <code>T+</code>, <code>ad</code> — <code>T−</code>, <code>an</code> — <code>T0</code>).</li>
     <li><b>Частицы</b> все начинаются на <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> — скобки, <code>hum</code> — <code>;</code>. Имена в кавычках читаются на своём языке.</li>
   </ul>
@@ -467,9 +467,9 @@ try { PH_ON = localStorage.getItem("minco-ph") === "1"; } catch (e) {}
 const PHP = fetch("data/phonetics.json").then(r => r.json()).then(d => { PH = d; PHS.forEach(n => phDraw(n)); drawRoots(); }).catch(() => {});
 function phBlock(r, v){
   if (!r) return "?";
-  if (r.axis && v === 0) return r.z + "y";   // явная середина оси: нейтральная форма + ы
-  const n = r.axis && v ? Math.min(5, Math.abs(v)) : 1;
-  return (!r.axis || !v ? r.z : v > 0 ? r.p : r.n).repeat(n);
+  if (!r.axis || v == null) return r.w;                     // слово без значения: само токипонское слово
+  if (v === 0) return r.w + PH.value.zero;                   // явная середина оси: «ы»
+  return r.w + (v > 0 ? PH.value.positive : PH.value.negative).repeat(Math.min(5, Math.abs(v)));
 }
 function phMark(k){
   const l = PH.labels[k.text[0]]; if (!l) return "?";
@@ -678,7 +678,7 @@ function drawDict(){
 function rootCell(name){
   const c = document.createElement("span"); c.appendChild(codeEl(name));
   const r = PH && PH_ON && PH.roots[name];
-  if (r) c.appendChild(el("span", r.axis ? r.p + " · " + r.n + " · " + r.z : r.z, "snd"));
+  if (r) c.appendChild(el("span", r.axis ? r.w + " · " + r.w + PH.value.positive + " · " + r.w + PH.value.negative + " · " + r.w + PH.value.zero : r.w, "snd"));
   return c;
 }
 function drawRoots(){

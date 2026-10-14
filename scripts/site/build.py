@@ -101,18 +101,11 @@ def phonetics_json():
     """Звучание корней, меток, ролей и частиц из phonetics.yaml (опция сайта «Фонетика»)."""
     ph = yaml.safe_load((REPO / "phonetics.yaml").read_text(encoding="utf8"))
     roots = {r["name"]: bool(r.get("axis")) for r in yaml.safe_load((REPO / "roots.yaml").read_text(encoding="utf8"))["roots"]}
-    fam = {c: f for f in ph["families"] for c in f}
     cod = {f[0]: f for f in ph["coda_families"]}
 
-    out = {"roots": {}, "labels": {}, "roles": ph["roles"], "particles": ph["particles"], "pos": "o i a e"}
+    out = {"roots": {}, "labels": {}, "roles": ph["roles"], "particles": ph["particles"], "pos": "o i a e", "value": ph["value_marks"]}
     for name, word in ph["roots"].items():
-        if not roots[name]:
-            out["roots"][name] = {"p": word, "n": word, "z": word, "axis": False}
-            continue
-        i = next(k for k, c in enumerate(word) if c not in "aeiou")  # первый согласный
-        p, n, z = fam[word[i]]
-        out["roots"][name] = {c: word[:i] + x + word[i + 1:] for c, x in zip("pnz", (p, n, z))}
-        out["roots"][name]["axis"] = True
+        out["roots"][name] = {"w": word, "axis": roots[name]}
     for name, syl in ph["labels"].items():
         v, c = syl[:-1], syl[-1]
         p, n, z = cod[c]

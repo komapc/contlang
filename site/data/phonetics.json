@@ -1,273 +1,183 @@
 {
 "roots": {
 "GOOD": {
-"p": "pona",
-"n": "bona",
-"z": "lona",
+"w": "pona",
 "axis": true
 },
 "BIG": {
-"p": "suli",
-"n": "zuli",
-"z": "juli",
+"w": "suli",
 "axis": true
 },
 "NEAR": {
-"p": "poka",
-"n": "boka",
-"z": "loka",
+"w": "poka",
 "axis": true
 },
 "ABOVE": {
-"p": "sewi",
-"n": "zewi",
-"z": "jewi",
+"w": "sewi",
 "axis": true
 },
 "LIVE": {
-"p": "toli",
-"n": "doli",
-"z": "moli",
+"w": "moli",
 "axis": true
 },
 "SAME": {
-"p": "sama",
-"n": "zama",
-"z": "jama",
+"w": "sama",
 "axis": true
 },
 "TIME": {
-"p": "tenpo",
-"n": "denpo",
-"z": "menpo",
+"w": "tenpo",
 "axis": true
 },
 "INSIDE": {
-"p": "iksa",
-"n": "igsa",
-"z": "insa",
+"w": "insa",
 "axis": true
 },
 "PART": {
-"p": "kulupu",
-"n": "gulupu",
-"z": "nulupu",
+"w": "kulupu",
 "axis": true
 },
 "SIDE": {
-"p": "sinpin",
-"n": "zinpin",
-"z": "jinpin",
+"w": "sinpin",
 "axis": true
 },
 "KNOW": {
-"p": "sona",
-"n": "zona",
-"z": "jona",
+"w": "sona",
 "axis": true
 },
 "WANT": {
-"p": "file",
-"n": "vile",
-"z": "wile",
+"w": "wile",
 "axis": true
 },
 "HEAT": {
-"p": "seli",
-"n": "zeli",
-"z": "jeli",
+"w": "seli",
 "axis": true
 },
 "BEGIN": {
-"p": "pini",
-"n": "bini",
-"z": "lini",
+"w": "pini",
 "axis": true
 },
 "GIVE": {
-"p": "pana",
-"n": "bana",
-"z": "lana",
+"w": "pana",
 "axis": true
 },
 "TOUCH": {
-"p": "kiwen",
-"n": "giwen",
-"z": "niwen",
+"w": "kiwen",
 "axis": true
 },
 "SEX": {
-"p": "tije",
-"n": "dije",
-"z": "mije",
+"w": "mije",
 "axis": true
 },
 "HAPPEN": {
-"p": "kama",
-"n": "kama",
-"z": "kama",
+"w": "kama",
 "axis": false
 },
 "THINK": {
-"p": "kon",
-"n": "gon",
-"z": "non",
+"w": "kon",
 "axis": true
 },
 "CAN": {
-"p": "ken",
-"n": "gen",
-"z": "nen",
+"w": "ken",
 "axis": true
 },
 "MANY": {
-"p": "tute",
-"n": "dute",
-"z": "mute",
+"w": "mute",
 "axis": true
 },
 "SOMEONE": {
-"p": "san",
-"n": "zan",
-"z": "jan",
+"w": "jan",
 "axis": true
 },
 "THING": {
-"p": "iso",
-"n": "izo",
-"z": "ijo",
+"w": "ijo",
 "axis": true
 },
 "MOVE": {
-"p": "tawa",
-"n": "dawa",
-"z": "mawa",
+"w": "tawa",
 "axis": true
 },
 "FEEL": {
-"p": "pilin",
-"n": "bilin",
-"z": "lilin",
+"w": "pilin",
 "axis": true
 },
 "RULE": {
-"p": "pawa",
-"n": "bawa",
-"z": "lawa",
+"w": "lawa",
 "axis": true
 },
 "CHANGE": {
-"p": "akte",
-"n": "agte",
-"z": "ante",
+"w": "ante",
 "axis": true
 },
 "ART": {
-"p": "sitelen",
-"n": "zitelen",
-"z": "jitelen",
+"w": "sitelen",
 "axis": true
 },
 "JOIN": {
-"p": "fan",
-"n": "van",
-"z": "wan",
+"w": "wan",
 "axis": true
 },
 "VALUE": {
-"p": "tani",
-"n": "dani",
-"z": "mani",
+"w": "mani",
 "axis": true
 },
 "CARE": {
-"p": "afen",
-"n": "aven",
-"z": "awen",
+"w": "awen",
 "axis": true
 },
 "FRIEND": {
-"p": "opin",
-"n": "obin",
-"z": "olin",
+"w": "olin",
 "axis": true
 },
 "MOOD": {
-"p": "tusi",
-"n": "dusi",
-"z": "musi",
+"w": "musi",
 "axis": true
 },
 "CONSUME": {
-"p": "toku",
-"n": "doku",
-"z": "moku",
+"w": "moku",
 "axis": true
 },
 "MEASURE": {
-"p": "kanpa",
-"n": "ganpa",
-"z": "nanpa",
+"w": "nanpa",
 "axis": true
 },
 "LONG": {
-"p": "pinja",
-"n": "binja",
-"z": "linja",
+"w": "linja",
 "axis": true
 },
 "SAY": {
-"p": "toki",
-"n": "doki",
-"z": "moki",
+"w": "toki",
 "axis": true
 },
 "GRAIN": {
-"p": "ko",
-"n": "go",
-"z": "no",
+"w": "ko",
 "axis": true
 },
 "FIGHT": {
-"p": "utala",
-"n": "udala",
-"z": "umala",
+"w": "utala",
 "axis": true
 },
 "LAND": {
-"p": "ta",
-"n": "da",
-"z": "ma",
+"w": "ma",
 "axis": true
 },
 "BODY": {
-"p": "sijelo",
-"n": "sijelo",
-"z": "sijelo",
+"w": "sijelo",
 "axis": false
 },
 "SEE": {
-"p": "lukin",
-"n": "lukin",
-"z": "lukin",
+"w": "lukin",
 "axis": false
 },
 "DO": {
-"p": "pali",
-"n": "pali",
-"z": "pali",
+"w": "pali",
 "axis": false
 },
 "PLACE": {
-"p": "tomo",
-"n": "tomo",
-"z": "tomo",
+"w": "tomo",
 "axis": false
 },
 "TEXT": {
-"p": "lipu",
-"n": "lipu",
-"z": "lipu",
+"w": "lipu",
 "axis": false
 }
 },
@@ -352,5 +262,10 @@
 "]": "hom",
 ";": "hum"
 },
-"pos": "o i a e"
+"pos": "o i a e",
+"value": {
+"positive": "ti",
+"negative": "wu",
+"zero": "y"
+}
 }
