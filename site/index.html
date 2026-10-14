@@ -159,7 +159,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <div data-l="en">
   <p>Switch it on under the input field: every code gets a line with its pronunciation. Not checked by ear yet; the source is <code>phonetics.yaml</code>.</p>
   <ul>
-    <li><b>A root is one syllable</b>, and each root has a family of three sounds: a voiceless onset (<code>po</code>) for the positive pole, a voiced one (<code>bo</code>) for the negative pole, a sonorant (<code>lo</code>) for the neutral form — no value written; an explicit <code>(=0)</code> adds <code>ain</code>: <code>loain</code>. Roots without an axis only have the neutral form (<code>SEE</code> is <code>lu</code>, <code>PLACE</code> <code>ma</code>, <code>TEXT</code> <code>li</code>).</li>
+    <li><b>A root is one syllable</b>, and each root has a family of three sounds: a voiceless onset (<code>po</code>) for the positive pole, a voiced one (<code>bo</code>) for the negative pole, a sonorant (<code>lo</code>) for the neutral form — no value written; an explicit <code>(=0)</code> adds a short <code>y</code> (Russian <i>ы</i>, as in Polish): <code>loy</code>. Roots without an axis only have the neutral form (<code>SEE</code> is <code>lu</code>, <code>PLACE</code> <code>ma</code>, <code>TEXT</code> <code>li</code>).</li>
     <li><b>Magnitude is repetition:</b> <code>GOOD(=+3)</code> is <code>popopo</code>, <code>GOOD(=-2)</code> is <code>bobo</code>, <code>GOOD(=+5)</code> is five times <code>po</code>.</li>
     <li><b>Word</b> = root blocks joined with <code>-</code>, then <code>'</code> and the vowel of the part of speech, then the role and labels after <code>·</code> (<code>ul il aj ec</code> for agent, tool, result, quality; a label is a vowel and a consonant: <code>at</code> <code>T+</code>, <code>ad</code> <code>T−</code>, <code>an</code> <code>T0</code>).</li>
     <li><b>Particles</b> all start with <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> are the brackets, <code>hum</code> is <code>;</code>. Quoted names are read in their own language.</li>
@@ -169,7 +169,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <div data-l="ru">
   <p>Включается под полем ввода: у каждого кода появляется строка с произношением. На слух ещё не проверено; источник — <code>phonetics.yaml</code>.</p>
   <ul>
-    <li><b>Корень — один слог</b>, у каждого три звучания: глухое начало (<code>po</code>) — положительный полюс, звонкое (<code>bo</code>) — отрицательный, сонорное (<code>lo</code>) — нейтральная форма, значение не названо; явный <code>(=0)</code> добавляет <code>ain</code>: <code>loain</code>. У корней без оси только нейтральная форма (<code>SEE</code> — <code>lu</code>, <code>PLACE</code> — <code>ma</code>, <code>TEXT</code> — <code>li</code>).</li>
+    <li><b>Корень — один слог</b>, у каждого три звучания: глухое начало (<code>po</code>) — положительный полюс, звонкое (<code>bo</code>) — отрицательный, сонорное (<code>lo</code>) — нейтральная форма, значение не названо; явный <code>(=0)</code> добавляет короткое <code>y</code> (<i>ы</i>, как в польском): <code>loy</code>. У корней без оси только нейтральная форма (<code>SEE</code> — <code>lu</code>, <code>PLACE</code> — <code>ma</code>, <code>TEXT</code> — <code>li</code>).</li>
     <li><b>Величина — повтор слога:</b> <code>GOOD(=+3)</code> — <code>popopo</code>, <code>GOOD(=-2)</code> — <code>bobo</code>, <code>GOOD(=+5)</code> — пять раз <code>po</code>.</li>
     <li><b>Слово</b> = блоки корней через <code>-</code>, затем <code>'</code> и гласная части речи, затем роль и метки после <code>·</code> (<code>ul il aj ec</code> — agent, tool, result, quality; метка — гласная и согласный: <code>at</code> — <code>T+</code>, <code>ad</code> — <code>T−</code>, <code>an</code> — <code>T0</code>).</li>
     <li><b>Частицы</b> все начинаются на <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> — скобки, <code>hum</code> — <code>;</code>. Имена в кавычках читаются на своём языке.</li>
@@ -467,7 +467,7 @@ try { PH_ON = localStorage.getItem("minco-ph") === "1"; } catch (e) {}
 const PHP = fetch("data/phonetics.json").then(r => r.json()).then(d => { PH = d; PHS.forEach(n => phDraw(n)); drawRoots(); }).catch(() => {});
 function phBlock(r, v){
   if (!r) return "?";
-  if (r.axis && v === 0) return r.z + "ain";   // явная середина оси
+  if (r.axis && v === 0) return r.z + "y";   // явная середина оси: нейтральная форма + ы
   const n = r.axis && v ? Math.min(5, Math.abs(v)) : 1;
   return (!r.axis || !v ? r.z : v > 0 ? r.p : r.n).repeat(n);
 }
