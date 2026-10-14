@@ -1,0 +1,1002 @@
+{
+ "intensified": {
+  "A": "CHANGE(=+1) FEEL(=+3) TOUCH(=+3) | i",
+  "V2": "CHANGE FEEL(=+5) TOUCH(=+5) | i",
+  "V3": null
+ },
+ "sheer": {
+  "A": "BIG(=+2) MEASURE(=-2) LONG(=-2) | a",
+  "V2": "BIG(=+5) MEASURE(=-5) LONG(=-5) | a",
+  "V3": null
+ },
+ "guest": {
+  "A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o",
+  "V2": "GIVE(=+5) RULE(=-5) | o PI INSIDE FRIEND(=+5) | o",
+  "V3": "GIVE(=+5) RULE(=-5) | o agent PI INSIDE FRIEND(=+5) | o"
+ },
+ "resolve": {
+  "A": "THINK(=+3) CAN(=-2) CHANGE(=-1) | i",
+  "V2": "THINK(=+5) CAN(=-5) | i",
+  "V3": null
+ },
+ "saint": {
+  "A": "LIVE(=0) ART(=+5) NEAR(=+4) | o PI GOOD(=+2) MOOD(=+2) | o",
+  "V2": "ART(=+5) NEAR(=+5) | o PI THING(=+4) THINK(=-5) | o",
+  "V3": "ART(=+5) NEAR(=+5) | o agent PI THING(=+4) THINK(=-5) | o"
+ },
+ "woman": {
+  "A": "SEX(=-3) THING(=+3) CAN(=-2) | o",
+  "V2": "SEX(=-5) THING(=+4) | o PI RULE MANY | o",
+  "V3": "SEX(=-5) THING(=+4) | o agent PI RULE MANY | o"
+ },
+ "poles": {
+  "A": "LONG(=+1) | o N+3 PI MOVE(=+1) SIDE(=-4) | o",
+  "V2": "LONG PLACE | o N+3",
+  "V3": "LONG PLACE | o tool N+3"
+ },
+ "dire": {
+  "A": "GOOD(=-2) MOOD(=-3) TIME(=+2) | a",
+  "V2": "GOOD(=-5) MOOD(=-5) | a",
+  "V3": null
+ },
+ "frequently": {
+  "A": "HAPPEN MANY(=+3) SOMEONE(=-5) | e",
+  "V2": "HAPPEN MANY(=+5) SOMEONE(=-5) | e",
+  "V3": null
+ },
+ "monster": {
+  "A": "GOOD(=-3) BIG(=+3) GRAIN(=+3) | o",
+  "V2": "GOOD(=-5) BIG(=+5) GRAIN(=+5) | o",
+  "V3": "GOOD(=-5) BIG(=+5) GRAIN(=+5) | o agent"
+ },
+ "fighters": {
+  "A": "FIGHT(=+1) | o N+3 PI GRAIN(=-3) MOVE(=+1) | o",
+  "V2": "FIGHT | o N+3 PI GRAIN(=-5) MOVE | o",
+  "V3": "FIGHT | o agent N+3 PI GRAIN(=-5) MOVE | o"
+ },
+ "corruption": {
+  "A": "RULE(=+4) FRIEND(=-4) CARE(=-3) | o PI HAPPEN BIG(=+2) | o",
+  "V2": "RULE(=+5) FRIEND(=-5) | o PI HAPPEN MOOD(=-5) | o",
+  "V3": "RULE(=+5) FRIEND(=-5) | o quality PI HAPPEN MOOD(=-5) | o"
+ },
+ "chairman": {
+  "A": "RULE(=+4) TIME(=-2) PART(=+4) | o",
+  "V2": "RULE(=+5) PART(=+5) | o PI LONG(=+5) MOVE(=-5) | o",
+  "V3": "RULE(=+5) PART(=+5) | o agent PI LONG(=+5) MOVE(=-5) | o"
+ },
+ "elders": {
+  "A": "TIME(=-1) FRIEND(=+3) RULE(=+2) | o N+3 PI SEX(=+3) | o",
+  "V2": "BIG TIME(=-5) KNOW(=+5) | o N+3 PI SEX(=-5) LIVE | o",
+  "V3": "BIG TIME(=-5) KNOW(=+5) | o agent N+3 PI SEX(=-5) LIVE | o"
+ },
+ "financially": {
+  "A": "CAN(=0) SOMEONE(=0) GIVE(=+2) | e",
+  "V2": "CAN SOMEONE | e",
+  "V3": null
+ },
+ "dealer": {
+  "A": "VALUE(=-4) ART(=-1) KNOW(=+5) | o",
+  "V2": "VALUE(=-5) ART KNOW(=+5) | o",
+  "V3": "VALUE(=-5) ART KNOW(=+5) | o agent"
+ },
+ "uncertainty": {
+  "A": "THINK(=-2) MOOD(=-2) CHANGE(=-1) | o",
+  "V2": "THINK(=-5) CHANGE | o",
+  "V3": "THINK(=-5) CHANGE | o quality"
+ },
+ "low": {
+  "A": "ABOVE(=-1) MEASURE(=+1) VALUE(=-2) | a",
+  "V2": "ABOVE VALUE | a",
+  "V3": null
+ },
+ "plaintiffs": {
+  "A": "RULE(=+3) SOMEONE(=-5) THING(=-2) | o N+3",
+  "V2": "RULE(=+5) SOMEONE(=-5) | o N+3 PI HAPPEN TEXT | o",
+  "V3": "RULE(=+5) SOMEONE(=-5) | o agent N+3 PI HAPPEN TEXT | o"
+ },
+ "professor": {
+  "A": "ART(=+1) KNOW(=+2) TIME(=-1) | o",
+  "V2": "ART TIME | o",
+  "V3": "ART TIME | o agent"
+ },
+ "expense": {
+  "A": "VALUE(=0) MEASURE(=+2) INSIDE(=-1) | o",
+  "V2": "VALUE MEASURE | o PI RULE CARE(=-5) | o",
+  "V3": null
+ },
+ "sidelines": {
+  "A": "SIDE(=0) MOVE(=-4) FIGHT(=-2) | o N+3",
+  "V2": "SIDE MOVE(=-5) | o N+3",
+  "V3": null
+ },
+ "ancestors": {
+  "A": "LIVE(=-2) LAND(=+4) WANT(=+5) | o N+3",
+  "V2": "WANT(=+5) LIVE(=-5) LAND(=+5) | o N+3",
+  "V3": "WANT(=+5) LIVE(=-5) LAND(=+5) | o agent N+3"
+ },
+ "instrument": {
+  "A": "ART(=-1) LONG(=0) DO | o",
+  "V2": "ART LONG DO | o",
+  "V3": "ART LONG DO | o tool"
+ },
+ "weapon": {
+  "A": "BODY FIGHT(=+4) ART(=-2) | o",
+  "V2": "BODY FIGHT(=+5) | o",
+  "V3": "BODY FIGHT(=+5) | o tool"
+ },
+ "button": {
+  "A": "LONG(=-1) ABOVE(=-3) MOVE(=+2) | o",
+  "V2": "LONG SIDE | o PI TEXT | o",
+  "V3": "LONG SIDE | o tool PI TEXT | o"
+ },
+ "sharing": {
+  "A": "FRIEND(=+3) JOIN(=+1) SAME(=+2) | i",
+  "V2": "JOIN FRIEND(=+5) | i",
+  "V3": null
+ },
+ "uncertain": {
+  "A": "THINK(=-2) CAN(=-1) CHANGE(=-1) | a",
+  "V2": "THINK(=-5) CAN(=-5) TIME(=+5) | a",
+  "V3": null
+ },
+ "finale": {
+  "A": "BEGIN(=+2) FIGHT(=-1) | o PI MOOD(=-1) ART(=+2) | o",
+  "V2": "BEGIN(=+5) FIGHT | o",
+  "V3": null
+ },
+ "stability": {
+  "A": "CHANGE(=-2) ART(=-1) MEASURE(=-1) | o",
+  "V2": "CHANGE MEASURE | o PI PART JOIN(=+5) | o",
+  "V3": "CHANGE MEASURE | o quality PI PART JOIN(=+5) | o"
+ },
+ "killer": {
+  "A": "LIVE(=-3) FRIEND(=-5) GOOD(=+2) | o",
+  "V2": "LIVE(=-5) FRIEND(=-5) | o PI TIME(=-5) BIG(=+5) | o",
+  "V3": "LIVE(=-5) FRIEND(=-5) | o agent PI TIME(=-5) BIG(=+5) | o"
+ },
+ "jurors": {
+  "A": "RULE(=+4) SIDE(=+5) JOIN(=-3) | o N+3",
+  "V2": "RULE(=+5) SIDE(=+5) JOIN(=-5) | o N+3",
+  "V3": "RULE(=+5) SIDE(=+5) JOIN(=-5) | o agent N+3"
+ },
+ "chiefs": {
+  "A": "RULE(=+3) TIME(=-1) BODY | o N+3 PI FIGHT(=+2) KNOW(=+3) | o",
+  "V2": "TIME RULE(=+5) | o N+3 PI BODY ABOVE | o",
+  "V3": "TIME RULE(=+5) | o agent N+3 PI BODY ABOVE | o"
+ },
+ "investor": {
+  "A": "RULE(=0) MEASURE(=+4) VALUE(=-3) | o PI ART(=-1) BEGIN(=-4) | o",
+  "V2": "RULE MEASURE(=+5) | o PI INSIDE(=-5) BEGIN(=-5) | o",
+  "V3": "RULE MEASURE(=+5) | o agent PI INSIDE(=-5) BEGIN(=-5) | o"
+ },
+ "economists": {
+  "A": "ART(=0) MEASURE(=+5) TIME(=-1) | o N+3",
+  "V2": "ART MEASURE(=+5) | o N+3 PI TEXT FIGHT | o",
+  "V3": "ART MEASURE(=+5) | o agent N+3 PI TEXT FIGHT | o"
+ },
+ "sin": {
+  "A": "WANT(=+1) CARE(=-5) FRIEND(=-5) | o",
+  "V2": "CARE(=-5) FRIEND(=-5) | o PI LIVE ART(=+5) | o",
+  "V3": "CARE(=-5) FRIEND(=-5) | o quality PI LIVE ART(=+5) | o"
+ },
+ "pole": {
+  "A": "LONG(=+1) | o PI MOVE(=+1) SIDE(=-4) | o",
+  "V2": "LONG PLACE | o",
+  "V3": "LONG PLACE | o tool"
+ },
+ "bishops": {
+  "A": "RULE(=+3) ART(=+2) MOVE(=+1) | o N+3 PI SEX(=+3) SAY(=-5) | o",
+  "V2": "RULE(=+5) ART(=+5) | o N+3 PI SAY(=-5) MANY(=+5) | o",
+  "V3": "RULE(=+5) ART(=+5) | o agent N+3 PI SAY(=-5) MANY(=+5) | o"
+ },
+ "functioning": {
+  "A": "LIVE(=+2) ART(=-5) CAN(=0) | i",
+  "V2": "CAN ART(=-5) LIVE(=+5) | i",
+  "V3": null
+ },
+ "mentor": {
+  "A": "KNOW(=+3) FRIEND(=+3) RULE(=-1) | o PI WANT(=+5) ART(=+5) | o",
+  "V2": "KNOW(=+5) FRIEND(=+5) | o",
+  "V3": "KNOW(=+5) FRIEND(=+5) | o agent"
+ },
+ "quest": {
+  "A": "BEGIN(=0) WANT(=+5) FIGHT(=0) | o PI THINK(=+2) SEE | o",
+  "V2": "BEGIN WANT(=+5) FIGHT | o",
+  "V3": null
+ },
+ "deficits": {
+  "A": "MEASURE(=0) ABOVE(=-4) BEGIN(=+3) | o N+3",
+  "V2": "MEASURE ABOVE(=-5) | o N+3 PI WANT MANY(=-5) | o",
+  "V3": "MEASURE ABOVE(=-5) | o quality N+3 PI WANT MANY(=-5) | o"
+ },
+ "mountain": {
+  "A": "THING(=-1) ABOVE(=+3) PLACE | o PI HEAT(=-4) MOVE(=+5) | o",
+  "V2": "PLACE THING(=-5) ABOVE(=+5) | o PI HEAT(=-5) MOVE(=+5) | o",
+  "V3": null
+ },
+ "examined": {
+  "A": "THINK(=+1) CARE(=+5) TIME(=-2) | i",
+  "V2": "THINK CARE(=+5) | i",
+  "V3": null
+ },
+ "sons": {
+  "A": "SEX(=+3) | o N+3",
+  "V2": "SEX(=+5) LIVE | o N+3 PI BIG(=-5) ABOVE(=+5) | o",
+  "V3": "SEX(=+5) LIVE | o agent N+3 PI BIG(=-5) ABOVE(=+5) | o"
+ },
+ "lords": {
+  "A": "RULE(=+4) SOMEONE(=+4) FRIEND(=+2) | o N+3",
+  "V2": "RULE(=+5) SOMEONE(=+5) | o N+3",
+  "V3": "RULE(=+5) SOMEONE(=+5) | o agent N+3"
+ },
+ "heir": {
+  "A": "TIME(=+2) LIVE(=-5) RULE(=+4) | o",
+  "V2": "LIVE(=-5) TIME(=+5) | o PI SEX(=+5) SOMEONE | o",
+  "V3": "LIVE(=-5) TIME(=+5) | o agent PI SEX(=+5) SOMEONE | o"
+ },
+ "creditors": {
+  "A": "RULE(=+1) CAN(=-2) PART(=+4) | o N+3 PI MEASURE(=+1) GRAIN(=-2) | o",
+  "V2": "RULE PART(=+5) | o N+3 PI ABOVE(=-5) MOOD(=-5) | o",
+  "V3": "RULE PART(=+5) | o agent N+3 PI ABOVE(=-5) MOOD(=-5) | o"
+ },
+ "indeed": {
+  "A": "MANY(=-1) SOMEONE(=0) GOOD(=+1) | e",
+  "V2": "MANY GOOD | e",
+  "V3": null
+ },
+ "mechanics": {
+  "A": "ART(=-2) FIGHT(=0) CARE(=0) | o",
+  "V2": "ART(=-5) FIGHT | o",
+  "V3": null
+ },
+ "inspector": {
+  "A": "RULE(=+3) THING(=+3) SEE | o PI CARE(=+1) THINK(=+5) | o",
+  "V2": "SEE RULE(=+5) THING(=+4) | o",
+  "V3": "SEE RULE(=+5) THING(=+4) | o agent"
+ },
+ "professionals": {
+  "A": "RULE(=-2) CARE(=+2) FIGHT(=-2) | o N+3",
+  "V2": "RULE(=-5) KNOW(=+5) | o N+3 PI GOOD(=+5) BIG(=+5) | o",
+  "V3": "RULE(=-5) KNOW(=+5) | o agent N+3 PI GOOD(=+5) BIG(=+5) | o"
+ },
+ "women": {
+  "A": "SEX(=-3) THING(=+3) CAN(=-2) | o N+3",
+  "V2": "SEX(=-5) THING(=+4) | o N+3 PI RULE MANY | o",
+  "V3": "SEX(=-5) THING(=+4) | o agent N+3 PI RULE MANY | o"
+ },
+ "fan": {
+  "A": "WANT(=0) FEEL(=+4) SOMEONE(=+4) | o PI FIGHT(=-2) PLACE | o",
+  "V2": "WANT FEEL(=+5) SOMEONE(=+5) | o PI FIGHT(=-5) LAND | o",
+  "V3": "WANT FEEL(=+5) SOMEONE(=+5) | o tool PI FIGHT(=-5) LAND | o"
+ },
+ "moratorium": {
+  "A": "MOVE(=-1) WANT(=-2) RULE(=+4) | o",
+  "V2": "MOVE RULE(=+5) | o",
+  "V3": null
+ },
+ "sound": {
+  "A": "SAY(=+1) ART(=0) DO | o",
+  "V2": "SAY ART | o",
+  "V3": "SAY ART | o quality"
+ },
+ "computers": {
+  "A": "ART(=-3) RULE(=-1) MOVE(=0) | o N+3",
+  "V2": "ART(=-5) RULE | o N+3 PI TEXT LONG(=+5) | o",
+  "V3": "ART(=-5) RULE | o tool N+3 PI TEXT LONG(=+5) | o"
+ },
+ "prison": {
+  "A": "INSIDE(=+1) RULE(=+5) FRIEND(=-2) | o",
+  "V2": "INSIDE RULE(=+5) | o PI FRIEND(=-5) CHANGE(=-5) | o",
+  "V3": null
+ },
+ "emerge": {
+  "A": "HAPPEN TIME(=+4) BEGIN(=-3) | i",
+  "V2": "HAPPEN TIME(=+5) BEGIN(=-5) | i",
+  "V3": null
+ },
+ "performer": {
+  "A": "DO ART(=+2) GOOD(=+2) | o",
+  "V2": "DO ART | o",
+  "V3": "DO ART | o agent"
+ },
+ "lama": {
+  "A": "THING(=+2) GIVE(=+4) NEAR(=-4) | o",
+  "V2": "THING(=+4) NEAR(=-5) | o",
+  "V3": "THING(=+4) NEAR(=-5) | o agent"
+ },
+ "heated": {
+  "A": "HEAT(=+1) FEEL(=+1) RULE(=0) | i",
+  "V2": "HEAT FEEL | i",
+  "V3": null
+ },
+ "annually": {
+  "A": "MEASURE(=+2) MANY(=+5) GIVE(=+4) | e",
+  "V2": "MANY(=+5) MEASURE(=+5) GIVE(=+5) | e",
+  "V3": null
+ },
+ "cotton": {
+  "A": "LONG(=-4) TOUCH(=-3) GRAIN(=0) | o PI THING(=+2) LAND(=+3) | o",
+  "V2": "LONG(=-5) TOUCH(=-5) | o PI THING HEAT | o",
+  "V3": null
+ },
+ "lists": {
+  "A": "TEXT PART(=+5) SEE | o N+3",
+  "V2": "TEXT PART(=+5) | o N+3 PI DO JOIN | o",
+  "V3": null
+ },
+ "widow": {
+  "A": "SEX(=-3) LIVE(=-5) MOOD(=-3) | o",
+  "V2": "LIVE(=-5) SEX(=-5) | o",
+  "V3": "LIVE(=-5) SEX(=-5) | o agent"
+ },
+ "user": {
+  "A": "TEXT RULE(=-3) ART(=-5) | o",
+  "V2": "TEXT RULE(=-5) ART(=-5) | o",
+  "V3": "TEXT RULE(=-5) ART(=-5) | o agent"
+ },
+ "device": {
+  "A": "ART(=-4) PART(=-2) LONG(=+1) | o",
+  "V2": "ART(=-5) PART(=-5) | o PI SAY(=+5) RULE(=-5) | o",
+  "V3": "ART(=-5) PART(=-5) | o tool PI SAY(=+5) RULE(=-5) | o"
+ },
+ "confined": {
+  "A": "INSIDE(=+1) NEAR(=-1) MOVE(=-3) | i",
+  "V2": "NEAR INSIDE(=+5) MOVE(=-5) | i",
+  "V3": null
+ },
+ "thoughts": {
+  "A": "THINK(=-2) SOMEONE(=+2) KNOW(=+1) | o N+3 PI MANY(=0) GOOD(=0) | o",
+  "V2": "SOMEONE THINK(=-5) | o N+3 PI KNOW WANT(=+5) | o",
+  "V3": null
+ },
+ "virgin": {
+  "A": "CHANGE(=-5) BEGIN(=-4) LAND(=+1) | o PI GOOD(=+2) MOOD(=+2) | o",
+  "V2": "CHANGE(=-5) BEGIN(=-5) | o",
+  "V3": "CHANGE(=-5) BEGIN(=-5) | o agent"
+ },
+ "marshall": {
+  "A": "RULE(=+3) FIGHT(=+4) GOOD(=-1) | o PI THING(=-2) SAY(=+3) | o",
+  "V2": "RULE(=+5) FIGHT(=+5) | o PI THING(=-5) SAY(=+5) | o",
+  "V3": "RULE(=+5) FIGHT(=+5) | o agent PI THING(=-5) SAY(=+5) | o"
+ },
+ "missiles": {
+  "A": "ART(=-2) FIGHT(=+4) NEAR(=-3) | o N+3",
+  "V2": "ART(=-5) FIGHT(=+5) NEAR(=-5) | o N+3",
+  "V3": "ART(=-5) FIGHT(=+5) NEAR(=-5) | o tool N+3"
+ },
+ "career": {
+  "A": "BEGIN(=+2) RULE(=-4) ABOVE(=+4) | o",
+  "V2": "BEGIN RULE(=-5) ABOVE(=+5) | o",
+  "V3": null
+ },
+ "trigger": {
+  "A": "HAPPEN JOIN(=-1) FEEL(=0) | o PI FIGHT(=+2) LONG(=+1) | o",
+  "V2": "HAPPEN JOIN FEEL | o",
+  "V3": "HAPPEN JOIN FEEL | o tool"
+ },
+ "spirit": {
+  "A": "LIVE(=+2) FRIEND(=+3) GRAIN(=-1) | o",
+  "V2": "LIVE(=+5) FRIEND(=+5) WANT(=+5) | o",
+  "V3": "LIVE(=+5) FRIEND(=+5) WANT(=+5) | o agent"
+ },
+ "mom": {
+  "A": "SOMEONE(=+2) FRIEND(=+3) FEEL(=0) | o PI SEX(=-3) | o",
+  "V2": "SOMEONE FEEL | o PI SEX(=-5) LIVE | o",
+  "V3": "SOMEONE FEEL | o agent PI SEX(=-5) LIVE | o"
+ },
+ "clearing": {
+  "A": "GRAIN(=0) JOIN(=-5) LAND(=+4) | i",
+  "V2": "GRAIN JOIN(=-5) LAND(=+5) | i",
+  "V3": null
+ },
+ "request": {
+  "A": "GIVE(=+3) WANT(=+2) TEXT | i",
+  "V2": "GIVE(=+5) WANT(=+5) TEXT | i",
+  "V3": null
+ },
+ "gun": {
+  "A": "BODY FIGHT(=+4) LONG(=+1) | o PI GIVE(=-2) CONSUME(=-4) | o",
+  "V2": "BODY FIGHT(=+5) | o PI GIVE(=-5) CONSUME(=-5) | o",
+  "V3": "BODY FIGHT(=+5) | o tool PI GIVE(=-5) CONSUME(=-5) | o"
+ },
+ "alter": {
+  "A": "CHANGE(=+2) | i",
+  "V2": "CHANGE(=+5) JOIN | i",
+  "V3": null
+ },
+ "puck": {
+  "A": "FIGHT(=-3) HEAT(=-4) LONG(=+4) | o PI PLACE LAND(=+1) | o",
+  "V2": "FIGHT(=-5) HEAT(=-5) LONG(=+5) | o",
+  "V3": "FIGHT(=-5) HEAT(=-5) LONG(=+5) | o agent"
+ },
+ "composition": {
+  "A": "ART(=+1) PART(=0) TEXT | o",
+  "V2": "TEXT ART(=+5) PART | o",
+  "V3": "TEXT ART(=+5) PART | o quality"
+ },
+ "excess": {
+  "A": "MEASURE(=0) JOIN(=-2) CARE(=-1) | o",
+  "V2": "MEASURE JOIN(=-5) | o",
+  "V3": "MEASURE JOIN(=-5) | o quality"
+ },
+ "keeper": {
+  "A": "CHANGE(=-3) GIVE(=-3) THING(=+4) | o",
+  "V2": "CHANGE(=-5) GIVE(=-5) THING(=+4) | o",
+  "V3": "CHANGE(=-5) GIVE(=-5) THING(=+4) | o agent"
+ },
+ "jay": {
+  "A": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o",
+  "V2": "SIDE MOOD(=+5) | o PI SAY ART(=-5) | o",
+  "V3": "SIDE MOOD(=+5) | o agent PI SAY ART(=-5) | o"
+ },
+ "deputies": {
+  "A": "RULE(=+3) TIME(=-1) | o N+3",
+  "V2": "RULE(=+5) TIME(=-5) | o N+3",
+  "V3": "RULE(=+5) TIME(=-5) | o agent N+3"
+ },
+ "entrepreneurs": {
+  "A": "ART(=-1) BEGIN(=-5) TOUCH(=+5) | o N+3",
+  "V2": "ART BEGIN(=-5) | o N+3",
+  "V3": "ART BEGIN(=-5) | o agent N+3"
+ },
+ "maiden": {
+  "A": "SEX(=-3) BEGIN(=-1) FIGHT(=-1) | o",
+  "V2": "BEGIN SEX(=-5) | o",
+  "V3": "BEGIN SEX(=-5) | o agent"
+ },
+ "neighbor": {
+  "A": "FRIEND(=+2) NEAR(=+1) LAND(=0) | o",
+  "V2": "NEAR FRIEND(=+5) | o",
+  "V3": "NEAR FRIEND(=+5) | o agent"
+ },
+ "character": {
+  "A": "TEXT SAME(=-4) MEASURE(=-2) | o",
+  "V2": "TEXT SAME(=-5) | o",
+  "V3": "TEXT SAME(=-5) | o agent"
+ },
+ "griffin": {
+  "A": "THING(=+3) INSIDE(=-3) GIVE(=-4) | o",
+  "V2": "THING(=+4) FRIEND(=-5) | o PI ART TOUCH(=+5) | o",
+  "V3": "THING(=+4) FRIEND(=-5) | o agent PI ART TOUCH(=+5) | o"
+ },
+ "ratings": {
+  "A": "MEASURE(=+1) RULE(=+2) | o N+3 PI ABOVE(=+1) BEGIN(=+2) | o",
+  "V2": "MEASURE RULE | o N+3 PI THINK CARE(=+5) | o",
+  "V3": null
+ },
+ "book": {
+  "A": "TEXT | o PI MEASURE(=-1) SAY(=0) | o",
+  "V2": "TEXT | o PI MEASURE SAY | o",
+  "V3": null
+ },
+ "love": {
+  "A": "WANT(=+1) FRIEND(=+2) | i",
+  "V2": "WANT FRIEND(=+5) | i",
+  "V3": null
+ },
+ "representation": {
+  "A": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+  "V2": "PART ART(=+5) RULE(=+5) | o",
+  "V3": null
+ },
+ "counsel": {
+  "A": "RULE(=+2) KNOW(=+2) SIDE(=+2) | o",
+  "V2": "RULE(=+5) KNOW(=+5) | o",
+  "V3": "RULE(=+5) KNOW(=+5) | o agent"
+ },
+ "credentials": {
+  "A": "RULE(=+1) MANY(=-3) GIVE(=+1) | o",
+  "V2": "RULE MANY(=-5) | o",
+  "V3": null
+ },
+ "hoped": {
+  "A": "TIME(=+1) WANT(=+1) CAN(=+1) | i",
+  "V2": "WANT TIME(=+5) CAN | i",
+  "V3": null
+ },
+ "fishermen": {
+  "A": "LAND(=-5) THING(=0) FIGHT(=-1) | o N+3",
+  "V2": "LAND(=-5) THING | o N+3 PI LONG | o",
+  "V3": "LAND(=-5) THING | o agent N+3 PI LONG | o"
+ },
+ "scientists": {
+  "A": "ART(=-1) FIGHT(=+1) | o N+3 PI FRIEND(=+2) TIME(=-2) | o",
+  "V2": "ART FIGHT | o N+3 PI RULE CARE(=+5) | o",
+  "V3": "ART FIGHT | o agent N+3 PI RULE CARE(=+5) | o"
+ },
+ "odds": {
+  "A": "MEASURE(=+2) FIGHT(=-2) THINK(=-1) | o",
+  "V2": "FIGHT MEASURE(=+5) THINK | o",
+  "V3": "FIGHT MEASURE(=+5) THINK | o quality"
+ },
+ "number": {
+  "A": "MEASURE(=-1) TIME(=-1) SAME(=-2) | o",
+  "V2": "MEASURE TIME | o PI RULE SAY(=+5) | o",
+  "V3": "MEASURE TIME | o quality PI RULE SAY(=+5) | o"
+ },
+ "deputy": {
+  "A": "RULE(=+3) TIME(=-1) | o",
+  "V2": "RULE(=+5) TIME(=-5) | o",
+  "V3": "RULE(=+5) TIME(=-5) | o agent"
+ },
+ "nominee": {
+  "A": "RULE(=+3) GIVE(=+3) FIGHT(=-3) | o PI THINK(=+1) SAME(=-5) | o",
+  "V2": "RULE(=+5) GIVE(=+5) FIGHT(=-5) | o PI PART(=+5) SAME(=-5) | o",
+  "V3": "RULE(=+5) GIVE(=+5) FIGHT(=-5) | o agent PI PART(=+5) SAME(=-5) | o"
+ },
+ "small": {
+  "A": "BIG(=-1) | a",
+  "V2": "BIG | a",
+  "V3": null
+ },
+ "highs": {
+  "A": "ABOVE(=+2) | o N+3",
+  "V2": "ABOVE(=+5) MEASURE | o N+3 PI RULE(=+5) BIG(=+5) | o",
+  "V3": "ABOVE(=+5) MEASURE | o quality N+3 PI RULE(=+5) BIG(=+5) | o"
+ },
+ "computer": {
+  "A": "ART(=-3) RULE(=-1) MOVE(=0) | o",
+  "V2": "ART(=-5) RULE | o PI TEXT LONG(=+5) | o",
+  "V3": "ART(=-5) RULE | o tool PI TEXT LONG(=+5) | o"
+ },
+ "creator": {
+  "A": "ART(=+1) WANT(=+1) LIVE(=0) | o PI DO JOIN(=+1) | o",
+  "V2": "ART LIVE | o PI TIME(=-5) BEGIN(=-5) | o",
+  "V3": "ART LIVE | o agent PI TIME(=-5) BEGIN(=-5) | o"
+ },
+ "justified": {
+  "A": "THINK(=-1) CAN(=+4) CARE(=-2) | i",
+  "V2": "THINK CAN(=+5) FRIEND(=-5) | i",
+  "V3": null
+ },
+ "identities": {
+  "A": "RULE(=0) INSIDE(=+3) WANT(=+4) | o N+3",
+  "V2": "RULE WANT(=+5) | o N+3 PI SEE SAME(=-5) | o",
+  "V3": "RULE WANT(=+5) | o quality N+3 PI SEE SAME(=-5) | o"
+ },
+ "likelihood": {
+  "A": "MEASURE(=+1) THINK(=-1) HAPPEN | o",
+  "V2": "MEASURE THINK HAPPEN | o",
+  "V3": "MEASURE THINK HAPPEN | o quality"
+ },
+ "luxury": {
+  "A": "VALUE(=0) WANT(=+2) INSIDE(=+2) | o",
+  "V2": "VALUE INSIDE | o",
+  "V3": "VALUE INSIDE | o quality"
+ },
+ "privilege": {
+  "A": "RULE(=+2) GOOD(=+2) WANT(=+1) | o",
+  "V2": "WANT VALUE(=+5) RULE(=+5) | o",
+  "V3": "WANT VALUE(=+5) RULE(=+5) | o quality"
+ },
+ "refugee": {
+  "A": "NEAR(=-1) MOOD(=-3) GIVE(=+4) | o",
+  "V2": "NEAR MOOD(=-5) GIVE(=+5) | o",
+  "V3": "NEAR MOOD(=-5) GIVE(=+5) | o agent"
+ },
+ "dissidents": {
+  "A": "PART(=+2) SAME(=-5) TOUCH(=+5) | o N+3",
+  "V2": "RULE SAME(=-5) | o N+3 PI FIGHT(=+5) FRIEND(=-5) | o",
+  "V3": "RULE SAME(=-5) | o agent N+3 PI FIGHT(=+5) FRIEND(=-5) | o"
+ },
+ "nelson": {
+  "A": "FIGHT(=-1) SIDE(=-3) THINK(=-2) | o PI THING(=-2) SAY(=+3) | o",
+  "V2": "FIGHT SIDE(=-5) | o PI GIVE THINK(=-5) | o",
+  "V3": "FIGHT SIDE(=-5) | o agent PI GIVE THINK(=-5) | o"
+ },
+ "accusing": {
+  "A": "CARE(=-2) WANT(=-5) TIME(=-4) | i",
+  "V2": "WANT(=-5) CARE(=-5) | i",
+  "V3": null
+ },
+ "commissioners": {
+  "A": "RULE(=+3) TIME(=0) | o N+3 PI FIGHT(=+1) LONG(=+3) | o",
+  "V2": "RULE(=+5) TIME | o N+3 PI FIGHT LONG(=+5) | o",
+  "V3": "RULE(=+5) TIME | o agent N+3 PI FIGHT LONG(=+5) | o"
+ },
+ "merit": {
+  "A": "RULE(=+2) GIVE(=+4) GOOD(=+3) | o PI VALUE(=0) MEASURE(=0) | o",
+  "V2": "GIVE(=+5) GOOD(=+5) MANY(=-5) | o PI FIGHT LONG | o",
+  "V3": "GIVE(=+5) GOOD(=+5) MANY(=-5) | o quality PI FIGHT LONG | o"
+ },
+ "heavyweight": {
+  "A": "FIGHT(=-1) MEASURE(=-4) TOUCH(=+2) | o",
+  "V2": "FIGHT MEASURE(=-5) TOUCH | o",
+  "V3": "FIGHT MEASURE(=-5) TOUCH | o agent"
+ },
+ "concentration": {
+  "A": "MEASURE(=0) PART(=0) FEEL(=-1) | o",
+  "V2": "MEASURE FEEL | o",
+  "V3": "MEASURE FEEL | o quality"
+ },
+ "traders": {
+  "A": "VALUE(=-4) KNOW(=+4) ART(=-1) | o N+3 PI THING(=+2) LAND(=+2) | o",
+  "V2": "VALUE(=-5) KNOW(=+5) | o N+3",
+  "V3": "VALUE(=-5) KNOW(=+5) | o agent N+3"
+ },
+ "reopened": {
+  "A": "NEAR(=+4) BEGIN(=-3) TIME(=-2) | i",
+  "V2": "NEAR(=+5) BEGIN(=-5) | i",
+  "V3": null
+ },
+ "ladies": {
+  "A": "SEX(=-3) SOMEONE(=+3) THING(=+4) | o N+3",
+  "V2": "SEX(=-5) SOMEONE(=+5) | o N+3 PI FIGHT PART(=+5) | o",
+  "V3": "SEX(=-5) SOMEONE(=+5) | o agent N+3 PI FIGHT PART(=+5) | o"
+ },
+ "rivals": {
+  "A": "FIGHT(=-2) FRIEND(=-1) TIME(=-1) | i",
+  "V2": "FIGHT(=-5) FRIEND(=-5) | i",
+  "V3": null
+ },
+ "loop": {
+  "A": "LONG(=-3) NEAR(=+2) SIDE(=-3) | o",
+  "V2": "LONG(=-5) SIDE(=-5) | o",
+  "V3": "LONG(=-5) SIDE(=-5) | o tool"
+ },
+ "retain": {
+  "A": "CHANGE(=-2) GIVE(=-1) JOIN(=0) | i",
+  "V2": "GIVE CHANGE(=-5) JOIN | i",
+  "V3": null
+ },
+ "explicitly": {
+  "A": "TEXT SOMEONE(=-4) MANY(=-2) | e",
+  "V2": "TEXT SOMEONE(=-5) MANY | e",
+  "V3": null
+ },
+ "spectators": {
+  "A": "FIGHT(=-2) FEEL(=+2) INSIDE(=-3) | o N+3",
+  "V2": "FIGHT(=-5) FEEL(=+5) INSIDE(=-5) | o N+3",
+  "V3": "FIGHT(=-5) FEEL(=+5) INSIDE(=-5) | o agent N+3"
+ },
+ "wheat": {
+  "A": "THING(=+1) PART(=-1) HEAT(=0) | o PI VALUE(=0) ABOVE(=-1) | o",
+  "V2": "THING HEAT | o PI VALUE | o",
+  "V3": null
+ },
+ "ranges": {
+  "A": "MEASURE(=-1) NEAR(=-2) PART(=+4) | o N+3",
+  "V2": "MEASURE NEAR PART(=+5) | o N+3",
+  "V3": "MEASURE NEAR PART(=+5) | o quality N+3"
+ },
+ "rifles": {
+  "A": "FIGHT(=+2) LONG(=+1) BODY | o N+3 PI SEE | o",
+  "V2": "BODY FIGHT(=+5) | o N+3 PI SEE | o",
+  "V3": "BODY FIGHT(=+5) | o tool N+3 PI SEE | o"
+ },
+ "aunt": {
+  "A": "SEX(=-3) FRIEND(=+1) | o",
+  "V2": "SEX(=-5) SOMEONE | o PI NEAR FRIEND(=+5) | o",
+  "V3": "SEX(=-5) SOMEONE | o agent PI NEAR FRIEND(=+5) | o"
+ },
+ "knockout": {
+  "A": "FIGHT(=-2) BEGIN(=+1) TOUCH(=+2) | o PI GOOD(=-2) BIG(=+3) | o",
+  "V2": "FIGHT(=-5) FRIEND(=-5) | o PI GOOD(=+5) BIG(=+5) | o",
+  "V3": "FIGHT(=-5) FRIEND(=-5) | o agent PI GOOD(=+5) BIG(=+5) | o"
+ },
+ "carnival": {
+  "A": "FIGHT(=-2) MOOD(=+4) THING(=+3) | o",
+  "V2": "MOOD(=+5) FIGHT(=-5) | o",
+  "V3": null
+ },
+ "machines": {
+  "A": "ART(=-4) GRAIN(=0) LONG(=0) | o N+3",
+  "V2": "ART(=-5) LONG | o N+3",
+  "V3": "ART(=-5) LONG | o tool N+3"
+ },
+ "sophomore": {
+  "A": "BEGIN(=+1) ABOVE(=+4) FIGHT(=-3) | o",
+  "V2": "BEGIN ABOVE(=+5) FIGHT(=-5) | o",
+  "V3": "BEGIN ABOVE(=+5) FIGHT(=-5) | o agent"
+ },
+ "laser": {
+  "A": "ART(=-3) NEAR(=-3) HEAT(=+3) | o",
+  "V2": "ART(=-5) NEAR(=-5) | o PI SEE | o",
+  "V3": "ART(=-5) NEAR(=-5) | o tool PI SEE | o"
+ },
+ "goods": {
+  "A": "GOOD(=+1) CAN(=+2) | o N+3 PI MOOD(=+2) FEEL(=0) | o",
+  "V2": "GOOD | o N+3 PI CARE CAN(=+5) | o",
+  "V3": "GOOD | o quality N+3 PI CARE CAN(=+5) | o"
+ },
+ "clearance": {
+  "A": "GIVE(=+1) RULE(=+3) MEASURE(=0) | o PI PLACE NEAR(=+3) | o",
+  "V2": "GIVE RULE(=+5) MEASURE | o",
+  "V3": "GIVE RULE(=+5) MEASURE | o quality"
+ },
+ "verbal": {
+  "A": "RULE(=-1) CONSUME(=-3) TEXT | a",
+  "V2": "RULE FRIEND TEXT | a",
+  "V3": null
+ },
+ "monks": {
+  "A": "SEX(=+3) THING(=+3) SAY(=-5) | o N+3",
+  "V2": "SEX(=+5) SAY(=-5) | o N+3",
+  "V3": "SEX(=+5) SAY(=-5) | o agent N+3"
+ },
+ "till": {
+  "A": "TIME(=+1) MOVE(=-2) BEGIN(=0) | o",
+  "V2": "TIME MOVE | o PI BEGIN NEAR | o",
+  "V3": null
+ },
+ "equality": {
+  "A": "RULE(=+2) SAME(=+5) SIDE(=+2) | o",
+  "V2": "SAME(=+5) RULE(=+5) | o",
+  "V3": "SAME(=+5) RULE(=+5) | o quality"
+ },
+ "dipped": {
+  "A": "ABOVE(=-1) HEAT(=0) CONSUME(=0) | i",
+  "V2": "ABOVE HEAT | i",
+  "V3": null
+ },
+ "legislators": {
+  "A": "RULE(=+3) | o N+3 PI FIGHT(=-2) CAN(=+3) | o",
+  "V2": "RULE(=+5) | o N+3 PI SAY ART | o",
+  "V3": "RULE(=+5) | o agent N+3 PI SAY ART | o"
+ },
+ "figure": {
+  "A": "MEASURE(=+1) THINK(=+1) ART(=+2) | o",
+  "V2": "MEASURE THINK | o PI SEE TEXT | o",
+  "V3": null
+ },
+ "noted": {
+  "A": "SAME(=-2) TIME(=-3) KNOW(=+3) | i",
+  "V2": "SAME TIME(=-5) KNOW(=+5) | i",
+  "V3": null
+ },
+ "dealers": {
+  "A": "VALUE(=-4) ART(=-1) KNOW(=+5) | o N+3",
+  "V2": "VALUE(=-5) ART KNOW(=+5) | o N+3",
+  "V3": "VALUE(=-5) ART KNOW(=+5) | o agent N+3"
+ },
+ "closest": {
+  "A": "NEAR(=+1) FRIEND(=+1) BEGIN(=+1) | a",
+  "V2": "NEAR | a",
+  "V3": null
+ },
+ "stem": {
+  "A": "LONG(=0) JOIN(=-1) SIDE(=+1) | o PI CHANGE(=+1) ABOVE(=+3) | o",
+  "V2": "LONG CHANGE | o",
+  "V3": null
+ },
+ "excellence": {
+  "A": "GOOD(=+3) CHANGE(=-2) ART(=0) | o",
+  "V2": "ART GOOD(=+5) | o PI WANT FRIEND(=+5) | o",
+  "V3": "ART GOOD(=+5) | o quality PI WANT FRIEND(=+5) | o"
+ },
+ "trader": {
+  "A": "VALUE(=-4) KNOW(=+4) ART(=-1) | o PI THING(=+2) LAND(=+2) | o",
+  "V2": "VALUE(=-5) KNOW(=+5) | o",
+  "V3": "VALUE(=-5) KNOW(=+5) | o agent"
+ },
+ "gong": {
+  "A": "SAY(=+3) ART(=+2) GRAIN(=+3) | o",
+  "V2": "SAY(=+5) GRAIN(=+5) | o PI PLACE TIME | o",
+  "V3": "SAY(=+5) GRAIN(=+5) | o tool PI PLACE TIME | o"
+ },
+ "merchants": {
+  "A": "VALUE(=-5) ART(=-1) KNOW(=+5) | o N+3",
+  "V2": "VALUE(=-5) KNOW(=+5) | o N+3 PI LAND(=-5) LONG(=+5) | o",
+  "V3": "VALUE(=-5) KNOW(=+5) | o agent N+3 PI LAND(=-5) LONG(=+5) | o"
+ },
+ "powers": {
+  "A": "MEASURE(=-2) ART(=-3) RULE(=+4) | o N+3",
+  "V2": "RULE(=+5) MEASURE(=-5) ART(=-5) | o N+3",
+  "V3": "RULE(=+5) MEASURE(=-5) ART(=-5) | o quality N+3"
+ },
+ "managed": {
+  "A": "CAN(=0) GIVE(=-1) SOMEONE(=-1) | i",
+  "V2": "CAN GIVE | i",
+  "V3": null
+ },
+ "amir": {
+  "A": "WANT(=-5) MEASURE(=-5) CARE(=-5) | o",
+  "V2": "CARE(=-5) WANT(=-5) | o PI TIME(=-5) ABOVE(=-5) | o",
+  "V3": "CARE(=-5) WANT(=-5) | o agent PI TIME(=-5) ABOVE(=-5) | o"
+ },
+ "pleasant": {
+  "A": "MOOD(=+2) GOOD(=+2) FEEL(=-4) | a",
+  "V2": "GOOD MOOD(=+5) FEEL(=-5) | a",
+  "V3": null
+ },
+ "guards": {
+  "A": "INSIDE(=-1) FIGHT(=+4) MOVE(=-3) | o N+3",
+  "V2": "INSIDE FIGHT(=+5) MOVE(=-5) | o N+3",
+  "V3": "INSIDE FIGHT(=+5) MOVE(=-5) | o agent N+3"
+ },
+ "officers": {
+  "A": "RULE(=+2) FIGHT(=+5) TIME(=-1) | o N+3",
+  "V2": "FIGHT(=+5) RULE(=+5) | o N+3",
+  "V3": "FIGHT(=+5) RULE(=+5) | o agent N+3"
+ },
+ "risen": {
+  "A": "ABOVE(=+1) MEASURE(=+2) LIVE(=0) | i",
+  "V2": "ABOVE LIVE | i",
+  "V3": null
+ },
+ "opponents": {
+  "A": "FIGHT(=-2) FRIEND(=-3) BODY | o N+3",
+  "V2": "FIGHT(=-5) FRIEND(=-5) | o N+3",
+  "V3": "FIGHT(=-5) FRIEND(=-5) | o agent N+3"
+ },
+ "taxpayer": {
+  "A": "MEASURE(=+2) VALUE(=+3) GIVE(=+5) | o PI RULE(=+2) LAND(=0) | o",
+  "V2": "GIVE(=+5) MEASURE(=+5) VALUE(=+5) | o PI RULE(=+5) LAND | o",
+  "V3": "GIVE(=+5) MEASURE(=+5) VALUE(=+5) | o agent PI RULE(=+5) LAND | o"
+ },
+ "rookie": {
+  "A": "FIGHT(=-1) BEGIN(=-2) BIG(=-2) | o",
+  "V2": "FIGHT BEGIN | o PI SEE THINK(=-5) | o",
+  "V3": "FIGHT BEGIN | o agent PI SEE THINK(=-5) | o"
+ },
+ "environmentalists": {
+  "A": "LAND(=-1) INSIDE(=-3) WANT(=-3) | o N+3",
+  "V2": "LAND INSIDE(=-5) WANT(=-5) | o N+3",
+  "V3": "LAND INSIDE(=-5) WANT(=-5) | o agent N+3"
+ },
+ "buy": {
+  "A": "VALUE(=-2) GIVE(=+1) CONSUME(=+1) | i",
+  "V2": "GIVE VALUE(=-5) | i",
+  "V3": null
+ },
+ "move": {
+  "A": "MOVE(=0) GIVE(=-1) CHANGE(=+3) | i",
+  "V2": "MOVE CHANGE(=+5) | i",
+  "V3": null
+ },
+ "lawyer": {
+  "A": "RULE(=+3) KNOW(=+2) SIDE(=+2) | o",
+  "V2": "RULE(=+5) KNOW(=+5) | o",
+  "V3": "RULE(=+5) KNOW(=+5) | o agent"
+ },
+ "whites": {
+  "A": "GRAIN(=+2) TOUCH(=-4) MEASURE(=-5) | o N+3 PI HEAT(=+2) LONG(=-2) | o",
+  "V2": "THING TOUCH(=-5) MEASURE(=-5) | o N+3 PI HEAT LONG(=-5) | o",
+  "V3": "THING TOUCH(=-5) MEASURE(=-5) | o agent N+3 PI HEAT LONG(=-5) | o"
+ },
+ "loyalty": {
+  "A": "FRIEND(=+1) WANT(=+2) CHANGE(=-2) | o",
+  "V2": "FRIEND WANT(=+5) CHANGE(=-5) | o",
+  "V3": "FRIEND WANT(=+5) CHANGE(=-5) | o quality"
+ },
+ "extension": {
+  "A": "LONG(=0) BIG(=+3) GIVE(=+4) | o",
+  "V2": "LONG BIG(=+5) GIVE(=+5) | o",
+  "V3": null
+ },
+ "organizer": {
+  "A": "PART(=+4) JOIN(=+3) FIGHT(=-5) | o PI TEXT | o",
+  "V2": "PART(=+5) JOIN(=+5) | o PI TIME(=-5) BEGIN(=-5) | o",
+  "V3": "PART(=+5) JOIN(=+5) | o agent PI TIME(=-5) BEGIN(=-5) | o"
+ },
+ "sleeping": {
+  "A": "FEEL(=-3) | i",
+  "V2": "FEEL(=-5) CONSUME | i",
+  "V3": null
+ },
+ "fed": {
+  "A": "FEEL(=-1) CONSUME(=+2) THING(=+4) | i",
+  "V2": "THING(=+4) CONSUME(=+5) | i",
+  "V3": null
+ },
+ "nephew": {
+  "A": "SEX(=+3) FRIEND(=+2) TIME(=0) | o",
+  "V2": "SEX(=+5) FRIEND(=+5) | o PI TIME BIG(=-5) | o",
+  "V3": "SEX(=+5) FRIEND(=+5) | o agent PI TIME BIG(=-5) | o"
+ },
+ "favourite": {
+  "A": "SAME(=-3) VALUE(=+5) CONSUME(=+5) | o",
+  "V2": "SAME(=-5) VALUE(=+5) CONSUME(=+5) | o",
+  "V3": "SAME(=-5) VALUE(=+5) CONSUME(=+5) | o agent"
+ },
+ "warriors": {
+  "A": "FIGHT(=+3) FRIEND(=+1) TOUCH(=+2) | o N+3",
+  "V2": "FIGHT(=+5) FRIEND | o N+3 PI TOUCH(=+5) GOOD(=+5) | o",
+  "V3": "FIGHT(=+5) FRIEND | o agent N+3 PI TOUCH(=+5) GOOD(=+5) | o"
+ },
+ "harbour": {
+  "A": "LAND(=-5) NEAR(=+1) PLACE | i",
+  "V2": "LAND(=-5) NEAR | i",
+  "V3": null
+ },
+ "daughters": {
+  "A": "SEX(=-3) BIG(=-2) | o N+3 PI SOMEONE(=+2) FEEL(=0) | o",
+  "V2": "SEX(=-5) SOMEONE | o N+3 PI LIVE(=-5) TIME(=+5) | o",
+  "V3": "SEX(=-5) SOMEONE | o agent N+3 PI LIVE(=-5) TIME(=+5) | o"
+ },
+ "involves": {
+  "A": "DO JOIN(=+2) HAPPEN | i",
+  "V2": "DO HAPPEN | i",
+  "V3": null
+ },
+ "clinical": {
+  "A": "RULE(=-1) ART(=-3) THING(=+4) | a",
+  "V2": "RULE BEGIN | a",
+  "V3": null
+ },
+ "burke": {
+  "A": "LIVE(=-1) MOVE(=+3) JOIN(=-2) | o PI SIDE(=+4) TIME(=-5) | o",
+  "V2": "LIVE MOVE(=+5) | o PI SIDE(=+5) TIME(=-5) | o",
+  "V3": "LIVE MOVE(=+5) | o agent PI SIDE(=+5) TIME(=-5) | o"
+ },
+ "junk": {
+  "A": "VALUE(=-1) PART(=0) LONG(=+2) | o PI THING(=-1) WANT(=-3) | o",
+  "V2": "VALUE PART | o PI THING WANT(=-5) | o",
+  "V3": null
+ },
+ "regardless": {
+  "A": "THINK(=-1) MANY(=+1) SAME(=0) | e",
+  "V2": "MANY THINK | e",
+  "V3": null
+ },
+ "growth": {
+  "A": "MEASURE(=+2) CHANGE(=+1) LIVE(=+3) | o",
+  "V2": "CHANGE MEASURE(=+5) | o PI ART BEGIN(=-5) | o",
+  "V3": null
+ },
+ "broadcaster": {
+  "A": "FIGHT(=-2) ART(=-2) TIME(=-1) | o",
+  "V2": "TIME FIGHT(=-5) | o PI LONG | o",
+  "V3": "TIME FIGHT(=-5) | o agent PI LONG | o"
+ },
+ "friends": {
+  "A": "FRIEND(=+2) SOMEONE(=+2) TIME(=-1) | o N+3 PI SEX(=+3) | o",
+  "V2": "FRIEND(=+5) SOMEONE(=+5) | o N+3",
+  "V3": "FRIEND(=+5) SOMEONE(=+5) | o agent N+3"
+ },
+ "styles": {
+  "A": "SAME(=-1) ART(=+3) MEASURE(=-3) | o N+3",
+  "V2": "SAME ART(=+5) | o N+3",
+  "V3": "SAME ART(=+5) | o quality N+3"
+ },
+ "winners": {
+  "A": "FIGHT(=-2) BEGIN(=+2) | o N+3 PI RULE(=+2) GIVE(=+3) | o",
+  "V2": "FIGHT(=-5) BEGIN(=+5) | o N+3 PI RULE(=+5) GIVE(=+5) | o",
+  "V3": "FIGHT(=-5) BEGIN(=+5) | o agent N+3 PI RULE(=+5) GIVE(=+5) | o"
+ },
+ "politicians": {
+  "A": "RULE(=+3) FIGHT(=+1) HAPPEN | o N+3",
+  "V2": "FIGHT RULE(=+5) | o N+3 PI SAY ART | o",
+  "V3": "FIGHT RULE(=+5) | o agent N+3 PI SAY ART | o"
+ },
+ "mothers": {
+  "A": "SEX(=-3) | o N+3",
+  "V2": "SEX(=-5) LIVE | o N+3",
+  "V3": "SEX(=-5) LIVE | o agent N+3"
+ },
+ "managers": {
+  "A": "RULE(=+2) ART(=-4) PART(=+5) | o N+3 PI THING(=+2) VALUE(=-2) | o",
+  "V2": "PART(=+5) ART(=-5) KNOW(=+5) | o N+3 PI SEE RULE(=+5) | o",
+  "V3": "PART(=+5) ART(=-5) KNOW(=+5) | o agent N+3 PI SEE RULE(=+5) | o"
+ },
+ "wear": {
+  "A": "DO LONG(=-5) CONSUME(=+1) | i",
+  "V2": "DO LONG(=-5) | i",
+  "V3": null
+ },
+ "napoleon": {
+  "A": "FIGHT(=+3) MEASURE(=-5) SIDE(=-4) | o",
+  "V2": "FIGHT(=+5) MEASURE(=-5) | o PI THING(=-5) THINK | o",
+  "V3": "FIGHT(=+5) MEASURE(=-5) | o agent PI THING(=-5) THINK | o"
+ },
+ "losers": {
+  "A": "FIGHT(=-3) KNOW(=-5) MOOD(=-4) | o N+3",
+  "V2": "FIGHT(=-5) KNOW(=-5) MOOD(=-5) | o N+3",
+  "V3": "FIGHT(=-5) KNOW(=-5) MOOD(=-5) | o agent N+3"
+ },
+ "adviser": {
+  "A": "RULE(=+1) KNOW(=+3) TIME(=-1) | o",
+  "V2": "RULE KNOW(=+5) | o PI ART MEASURE(=+5) | o",
+  "V3": "RULE KNOW(=+5) | o agent PI ART MEASURE(=+5) | o"
+ },
+ "based": {
+  "A": "SAME(=0) RULE(=0) ART(=-1) | i",
+  "V2": "SAME RULE ART | i",
+  "V3": null
+ },
+ "cavalry": {
+  "A": "FIGHT(=+5) THING(=+3) PART(=+3) | o",
+  "V2": "FIGHT(=+5) THING(=+4) | o",
+  "V3": null
+ }
+}

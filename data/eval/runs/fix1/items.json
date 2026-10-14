@@ -1,0 +1,1202 @@
+[
+{
+"w": "intensified",
+"pos": "verb",
+"gloss": "increase in extent or intensity",
+"role": null
+},
+{
+"w": "sheer",
+"pos": "adjective",
+"gloss": "complete and without restriction or qualification; sometimes used informally as intensifiers",
+"role": null
+},
+{
+"w": "guest",
+"pos": "noun",
+"gloss": "a visitor to whom hospitality is extended",
+"role": "agent"
+},
+{
+"w": "resolve",
+"pos": "verb",
+"gloss": "bring to an end; settle conclusively",
+"role": null
+},
+{
+"w": "saint",
+"pos": "noun",
+"gloss": "a person who has died and has been declared a saint by canonization",
+"role": "agent"
+},
+{
+"w": "woman",
+"pos": "noun",
+"gloss": "an adult female person (as opposed to a man)",
+"role": "agent"
+},
+{
+"w": "poles",
+"pos": "noun",
+"gloss": "a long (usually round) rod of wood or metal or plastic",
+"role": "tool"
+},
+{
+"w": "dire",
+"pos": "adjective",
+"gloss": "fraught with extreme danger; nearly hopeless; ; - G.C.Marshall",
+"role": null
+},
+{
+"w": "frequently",
+"pos": "adverb",
+"gloss": "many times at short intervals",
+"role": null
+},
+{
+"w": "monster",
+"pos": "noun",
+"gloss": "an imaginary creature usually having various human and animal parts",
+"role": "agent"
+},
+{
+"w": "fighters",
+"pos": "noun",
+"gloss": "someone who fights (or is fighting)",
+"role": "agent"
+},
+{
+"w": "corruption",
+"pos": "noun",
+"gloss": "lack of integrity or honesty (especially susceptibility to bribery); use of a position of trust for dishonest gain",
+"role": "quality"
+},
+{
+"w": "chairman",
+"pos": "noun",
+"gloss": "the officer who presides at the meetings of an organization",
+"role": "agent"
+},
+{
+"w": "elders",
+"pos": "noun",
+"gloss": "a person who is older than you are",
+"role": "agent"
+},
+{
+"w": "financially",
+"pos": "adverb",
+"gloss": "from a financial point of view",
+"role": null
+},
+{
+"w": "dealer",
+"pos": "noun",
+"gloss": "someone who purchases and maintains an inventory of goods to be sold",
+"role": "agent"
+},
+{
+"w": "uncertainty",
+"pos": "noun",
+"gloss": "being unsettled or in doubt or dependent on chance",
+"role": "quality"
+},
+{
+"w": "low",
+"pos": "adjective",
+"gloss": "less than normal in degree or intensity or amount",
+"role": null
+},
+{
+"w": "plaintiffs",
+"pos": "noun",
+"gloss": "a person who brings an action in a court of law",
+"role": "agent"
+},
+{
+"w": "professor",
+"pos": "noun",
+"gloss": "someone who is a member of the faculty at a college or university",
+"role": "agent"
+},
+{
+"w": "expense",
+"pos": "noun",
+"gloss": "amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)",
+"role": null
+},
+{
+"w": "sidelines",
+"pos": "noun",
+"gloss": "a line that marks the side boundary of a playing field",
+"role": null
+},
+{
+"w": "ancestors",
+"pos": "noun",
+"gloss": "someone from whom you are descended (but usually more remote than a grandparent)",
+"role": "agent"
+},
+{
+"w": "instrument",
+"pos": "noun",
+"gloss": "a device that requires skill for proper use",
+"role": "tool"
+},
+{
+"w": "weapon",
+"pos": "noun",
+"gloss": "any instrument or instrumentality used in fighting or hunting",
+"role": "tool"
+},
+{
+"w": "button",
+"pos": "noun",
+"gloss": "a round fastener sewn to shirts and coats etc to fit through buttonholes",
+"role": "tool"
+},
+{
+"w": "sharing",
+"pos": "verb",
+"gloss": "have in common",
+"role": null
+},
+{
+"w": "uncertain",
+"pos": "adjective",
+"gloss": "lacking or indicating lack of confidence or assurance",
+"role": null
+},
+{
+"w": "finale",
+"pos": "noun",
+"gloss": "the closing section of a musical composition",
+"role": null
+},
+{
+"w": "stability",
+"pos": "noun",
+"gloss": "the quality or attribute of being firm and steadfast",
+"role": "quality"
+},
+{
+"w": "killer",
+"pos": "noun",
+"gloss": "someone who causes the death of a person or animal",
+"role": "agent"
+},
+{
+"w": "jurors",
+"pos": "noun",
+"gloss": "someone who serves (or waits to be called to serve) on a jury",
+"role": "agent"
+},
+{
+"w": "chiefs",
+"pos": "noun",
+"gloss": "a person who is in charge",
+"role": "agent"
+},
+{
+"w": "investor",
+"pos": "noun",
+"gloss": "someone who commits capital in order to gain financial returns",
+"role": "agent"
+},
+{
+"w": "economists",
+"pos": "noun",
+"gloss": "an expert in the science of economics",
+"role": "agent"
+},
+{
+"w": "sin",
+"pos": "noun",
+"gloss": "estrangement from god",
+"role": "quality"
+},
+{
+"w": "pole",
+"pos": "noun",
+"gloss": "a long (usually round) rod of wood or metal or plastic",
+"role": "tool"
+},
+{
+"w": "bishops",
+"pos": "noun",
+"gloss": "a senior member of the Christian clergy having spiritual and administrative authority; appointed in Christian churches to oversee priests or ministers; considered in some churches to be successors of the twelve Apostles of Christ",
+"role": "agent"
+},
+{
+"w": "functioning",
+"pos": "verb",
+"gloss": "perform as expected when applied",
+"role": null
+},
+{
+"w": "mentor",
+"pos": "noun",
+"gloss": "a wise and trusted guide and advisor",
+"role": "agent"
+},
+{
+"w": "quest",
+"pos": "noun",
+"gloss": "a search for an alternative that meets cognitive criteria",
+"role": null
+},
+{
+"w": "deficits",
+"pos": "noun",
+"gloss": "the property of being an amount by which something is less than expected or required",
+"role": "quality"
+},
+{
+"w": "mountain",
+"pos": "noun",
+"gloss": "a land mass that projects well above its surroundings; higher than a hill",
+"role": null
+},
+{
+"w": "examined",
+"pos": "verb",
+"gloss": "consider in detail and subject to an analysis in order to discover essential features or meaning",
+"role": null
+},
+{
+"w": "sons",
+"pos": "noun",
+"gloss": "a male human offspring",
+"role": "agent"
+},
+{
+"w": "lords",
+"pos": "noun",
+"gloss": "terms referring to the Judeo-Christian God",
+"role": "agent"
+},
+{
+"w": "heir",
+"pos": "noun",
+"gloss": "a person who is entitled by law or by the terms of a will to inherit the estate of another",
+"role": "agent"
+},
+{
+"w": "creditors",
+"pos": "noun",
+"gloss": "a person to whom money is owed by a debtor; someone to whom an obligation exists",
+"role": "agent"
+},
+{
+"w": "indeed",
+"pos": "adverb",
+"gloss": "in truth (often tends to intensify)",
+"role": null
+},
+{
+"w": "mechanics",
+"pos": "noun",
+"gloss": "the branch of physics concerned with the motion of bodies in a frame of reference",
+"role": null
+},
+{
+"w": "inspector",
+"pos": "noun",
+"gloss": "a high ranking police officer",
+"role": "agent"
+},
+{
+"w": "professionals",
+"pos": "noun",
+"gloss": "a person engaged in one of the learned professions",
+"role": "agent"
+},
+{
+"w": "women",
+"pos": "noun",
+"gloss": "an adult female person (as opposed to a man)",
+"role": "agent"
+},
+{
+"w": "fan",
+"pos": "noun",
+"gloss": "a device for creating a current of air by movement of a surface or surfaces",
+"role": "tool"
+},
+{
+"w": "moratorium",
+"pos": "noun",
+"gloss": "a legally authorized postponement before some obligation must be discharged",
+"role": null
+},
+{
+"w": "sound",
+"pos": "noun",
+"gloss": "the particular auditory effect produced by a given cause",
+"role": "quality"
+},
+{
+"w": "computers",
+"pos": "noun",
+"gloss": "a machine for performing calculations automatically",
+"role": "tool"
+},
+{
+"w": "prison",
+"pos": "noun",
+"gloss": "a correctional institution where persons are confined while on trial or for punishment",
+"role": null
+},
+{
+"w": "emerge",
+"pos": "verb",
+"gloss": "come out into view, as from concealment",
+"role": null
+},
+{
+"w": "performer",
+"pos": "noun",
+"gloss": "an entertainer who performs a dramatic or musical work for an audience",
+"role": "agent"
+},
+{
+"w": "lama",
+"pos": "noun",
+"gloss": "a Tibetan or Mongolian priest of Lamaism",
+"role": "agent"
+},
+{
+"w": "heated",
+"pos": "verb",
+"gloss": "make hot or hotter",
+"role": null
+},
+{
+"w": "annually",
+"pos": "adverb",
+"gloss": "without missing a year",
+"role": null
+},
+{
+"w": "cotton",
+"pos": "noun",
+"gloss": "soft silky fibers from cotton plants in their raw state",
+"role": null
+},
+{
+"w": "lists",
+"pos": "noun",
+"gloss": "a database containing an ordered array of items (names or topics)",
+"role": null
+},
+{
+"w": "widow",
+"pos": "noun",
+"gloss": "a woman whose husband is dead especially one who has not remarried",
+"role": "agent"
+},
+{
+"w": "user",
+"pos": "noun",
+"gloss": "a person who makes use of a thing; someone who uses or employs something",
+"role": "agent"
+},
+{
+"w": "device",
+"pos": "noun",
+"gloss": "an instrumentality invented for a particular purpose",
+"role": "tool"
+},
+{
+"w": "confined",
+"pos": "verb",
+"gloss": "place limits on (extent or access)",
+"role": null
+},
+{
+"w": "thoughts",
+"pos": "noun",
+"gloss": "the content of cognition; the main thing you are thinking about",
+"role": null
+},
+{
+"w": "virgin",
+"pos": "noun",
+"gloss": "a person who has never had sex",
+"role": "agent"
+},
+{
+"w": "marshall",
+"pos": "noun",
+"gloss": "United States actor (1914-1998)",
+"role": "agent"
+},
+{
+"w": "missiles",
+"pos": "noun",
+"gloss": "a rocket carrying a warhead of conventional or nuclear explosives; may be ballistic or directed by remote control",
+"role": "tool"
+},
+{
+"w": "career",
+"pos": "noun",
+"gloss": "the particular occupation for which you are trained",
+"role": null
+},
+{
+"w": "trigger",
+"pos": "noun",
+"gloss": "lever that activates the firing mechanism of a gun",
+"role": "tool"
+},
+{
+"w": "spirit",
+"pos": "noun",
+"gloss": "the vital principle or animating force within living things",
+"role": "agent"
+},
+{
+"w": "mom",
+"pos": "noun",
+"gloss": "informal terms for a mother",
+"role": "agent"
+},
+{
+"w": "clearing",
+"pos": "verb",
+"gloss": "rid of obstructions",
+"role": null
+},
+{
+"w": "request",
+"pos": "verb",
+"gloss": "express the need or desire for; ask for",
+"role": null
+},
+{
+"w": "gun",
+"pos": "noun",
+"gloss": "a weapon that discharges a missile at high velocity (especially from a metal tube or barrel)",
+"role": "tool"
+},
+{
+"w": "alter",
+"pos": "verb",
+"gloss": "cause to change; make different; cause a transformation",
+"role": null
+},
+{
+"w": "puck",
+"pos": "noun",
+"gloss": "a mischievous sprite of English folklore",
+"role": "agent"
+},
+{
+"w": "composition",
+"pos": "noun",
+"gloss": "the spatial property resulting from the arrangement of parts in relation to each other and to the whole",
+"role": "quality"
+},
+{
+"w": "excess",
+"pos": "noun",
+"gloss": "a quantity much larger than is needed",
+"role": "quality"
+},
+{
+"w": "keeper",
+"pos": "noun",
+"gloss": "someone in charge of other people",
+"role": "agent"
+},
+{
+"w": "jay",
+"pos": "noun",
+"gloss": "United States diplomat and jurist who negotiated peace treaties with Britain and served as the first chief justice of the United States Supreme Court (1745-1829)",
+"role": "agent"
+},
+{
+"w": "deputies",
+"pos": "noun",
+"gloss": "someone authorized to exercise the powers of sheriff in emergencies",
+"role": "agent"
+},
+{
+"w": "entrepreneurs",
+"pos": "noun",
+"gloss": "someone who organizes a business venture and assumes the risk for it",
+"role": "agent"
+},
+{
+"w": "maiden",
+"pos": "noun",
+"gloss": "an unmarried girl (especially a virgin)",
+"role": "agent"
+},
+{
+"w": "neighbor",
+"pos": "noun",
+"gloss": "a person who lives (or is located) near another",
+"role": "agent"
+},
+{
+"w": "character",
+"pos": "noun",
+"gloss": "an imaginary person represented in a work of fiction (play or film or story)",
+"role": "agent"
+},
+{
+"w": "griffin",
+"pos": "noun",
+"gloss": "winged monster with the head of an eagle and the body of a lion",
+"role": "agent"
+},
+{
+"w": "ratings",
+"pos": "noun",
+"gloss": "an appraisal of the value of something",
+"role": null
+},
+{
+"w": "book",
+"pos": "noun",
+"gloss": "a written work or composition that has been published (printed on pages bound together)",
+"role": null
+},
+{
+"w": "love",
+"pos": "verb",
+"gloss": "have a great affection or liking for",
+"role": null
+},
+{
+"w": "representation",
+"pos": "noun",
+"gloss": "a presentation to the mind in the form of an idea or image",
+"role": null
+},
+{
+"w": "counsel",
+"pos": "noun",
+"gloss": "a lawyer who pleads cases in court",
+"role": "agent"
+},
+{
+"w": "credentials",
+"pos": "noun",
+"gloss": "a document attesting to the truth of certain stated facts",
+"role": null
+},
+{
+"w": "hoped",
+"pos": "verb",
+"gloss": "expect and wish",
+"role": null
+},
+{
+"w": "fishermen",
+"pos": "noun",
+"gloss": "someone whose occupation is catching fish",
+"role": "agent"
+},
+{
+"w": "scientists",
+"pos": "noun",
+"gloss": "a person with advanced knowledge of one or more sciences",
+"role": "agent"
+},
+{
+"w": "odds",
+"pos": "noun",
+"gloss": "the likelihood of a thing occurring rather than not occurring",
+"role": "quality"
+},
+{
+"w": "number",
+"pos": "noun",
+"gloss": "the property possessed by a sum or total or indefinite quantity of units or individuals",
+"role": "quality"
+},
+{
+"w": "deputy",
+"pos": "noun",
+"gloss": "someone authorized to exercise the powers of sheriff in emergencies",
+"role": "agent"
+},
+{
+"w": "nominee",
+"pos": "noun",
+"gloss": "a politician who is running for public office",
+"role": "agent"
+},
+{
+"w": "small",
+"pos": "adjective",
+"gloss": "limited or below average in number or quantity or magnitude or extent",
+"role": null
+},
+{
+"w": "highs",
+"pos": "noun",
+"gloss": "a lofty level or position or degree",
+"role": "quality"
+},
+{
+"w": "computer",
+"pos": "noun",
+"gloss": "a machine for performing calculations automatically",
+"role": "tool"
+},
+{
+"w": "creator",
+"pos": "noun",
+"gloss": "terms referring to the Judeo-Christian God",
+"role": "agent"
+},
+{
+"w": "justified",
+"pos": "verb",
+"gloss": "show to be reasonable or provide adequate ground for",
+"role": null
+},
+{
+"w": "identities",
+"pos": "noun",
+"gloss": "the distinct personality of an individual regarded as a persisting entity",
+"role": "quality"
+},
+{
+"w": "likelihood",
+"pos": "noun",
+"gloss": "the probability of a specified outcome",
+"role": "quality"
+},
+{
+"w": "luxury",
+"pos": "noun",
+"gloss": "something that is an indulgence rather than a necessity",
+"role": "quality"
+},
+{
+"w": "privilege",
+"pos": "noun",
+"gloss": "a special advantage or immunity or benefit not enjoyed by all",
+"role": "quality"
+},
+{
+"w": "refugee",
+"pos": "noun",
+"gloss": "an exile who flees for safety",
+"role": "agent"
+},
+{
+"w": "dissidents",
+"pos": "noun",
+"gloss": "a person who dissents from some established policy",
+"role": "agent"
+},
+{
+"w": "nelson",
+"pos": "noun",
+"gloss": "English admiral who defeated the French fleets of Napoleon but was mortally wounded at Trafalgar (1758-1805)",
+"role": "agent"
+},
+{
+"w": "accusing",
+"pos": "verb",
+"gloss": "bring an accusation against; level a charge against",
+"role": null
+},
+{
+"w": "commissioners",
+"pos": "noun",
+"gloss": "a government administrator",
+"role": "agent"
+},
+{
+"w": "merit",
+"pos": "noun",
+"gloss": "any admirable quality or attribute",
+"role": "quality"
+},
+{
+"w": "heavyweight",
+"pos": "noun",
+"gloss": "an amateur boxer who weighs no more than 201 pounds",
+"role": "agent"
+},
+{
+"w": "concentration",
+"pos": "noun",
+"gloss": "the strength of a solution; number of molecules of a substance in a given volume",
+"role": "quality"
+},
+{
+"w": "traders",
+"pos": "noun",
+"gloss": "someone who purchases and maintains an inventory of goods to be sold",
+"role": "agent"
+},
+{
+"w": "reopened",
+"pos": "verb",
+"gloss": "open again or anew",
+"role": null
+},
+{
+"w": "ladies",
+"pos": "noun",
+"gloss": "a polite name for any woman",
+"role": "agent"
+},
+{
+"w": "rivals",
+"pos": "verb",
+"gloss": "be equal to in quality or ability",
+"role": null
+},
+{
+"w": "loop",
+"pos": "noun",
+"gloss": "fastener consisting of a metal ring for lining a small hole to permit the attachment of cords or lines",
+"role": "tool"
+},
+{
+"w": "retain",
+"pos": "verb",
+"gloss": "hold back within",
+"role": null
+},
+{
+"w": "explicitly",
+"pos": "adverb",
+"gloss": "in an explicit manner",
+"role": null
+},
+{
+"w": "spectators",
+"pos": "noun",
+"gloss": "a close observer; someone who looks at something (such as an exhibition of some kind)",
+"role": "agent"
+},
+{
+"w": "wheat",
+"pos": "noun",
+"gloss": "annual or biennial grass having erect flower spikes and light brown grains",
+"role": null
+},
+{
+"w": "ranges",
+"pos": "noun",
+"gloss": "an area in which something acts or operates or has power or control:",
+"role": "quality"
+},
+{
+"w": "rifles",
+"pos": "noun",
+"gloss": "a shoulder firearm with a long barrel and a rifled bore",
+"role": "tool"
+},
+{
+"w": "aunt",
+"pos": "noun",
+"gloss": "the sister of your father or mother; the wife of your uncle",
+"role": "agent"
+},
+{
+"w": "knockout",
+"pos": "noun",
+"gloss": "a very attractive or seductive looking woman",
+"role": "agent"
+},
+{
+"w": "carnival",
+"pos": "noun",
+"gloss": "a festival marked by merrymaking and processions",
+"role": null
+},
+{
+"w": "machines",
+"pos": "noun",
+"gloss": "any mechanical or electrical device that transmits or modifies energy to perform or assist in the performance of human tasks",
+"role": "tool"
+},
+{
+"w": "sophomore",
+"pos": "noun",
+"gloss": "a second-year undergraduate",
+"role": "agent"
+},
+{
+"w": "laser",
+"pos": "noun",
+"gloss": "an acronym for light amplification by stimulated emission of radiation; an optical device that produces an intense monochromatic beam of coherent light",
+"role": "tool"
+},
+{
+"w": "goods",
+"pos": "noun",
+"gloss": "benefit",
+"role": "quality"
+},
+{
+"w": "clearance",
+"pos": "noun",
+"gloss": "the distance by which one thing clears another; the space between them",
+"role": "quality"
+},
+{
+"w": "verbal",
+"pos": "adjective",
+"gloss": "communicated in the form of words",
+"role": null
+},
+{
+"w": "monks",
+"pos": "noun",
+"gloss": "a male religious living in a cloister and devoting himself to contemplation and prayer and work",
+"role": "agent"
+},
+{
+"w": "till",
+"pos": "noun",
+"gloss": "unstratified soil deposited by a glacier; consists of sand and clay and gravel and boulders mixed together",
+"role": null
+},
+{
+"w": "equality",
+"pos": "noun",
+"gloss": "the quality of being the same in quantity or measure or value or status",
+"role": "quality"
+},
+{
+"w": "dipped",
+"pos": "verb",
+"gloss": "immerse briefly into a liquid so as to wet, coat, or saturate",
+"role": null
+},
+{
+"w": "legislators",
+"pos": "noun",
+"gloss": "someone who makes or enacts laws",
+"role": "agent"
+},
+{
+"w": "figure",
+"pos": "noun",
+"gloss": "a diagram or picture illustrating textual material",
+"role": null
+},
+{
+"w": "noted",
+"pos": "verb",
+"gloss": "make mention of",
+"role": null
+},
+{
+"w": "dealers",
+"pos": "noun",
+"gloss": "someone who purchases and maintains an inventory of goods to be sold",
+"role": "agent"
+},
+{
+"w": "closest",
+"pos": "adjective",
+"gloss": "at or within a short distance in space or time or having elements near each other",
+"role": null
+},
+{
+"w": "stem",
+"pos": "noun",
+"gloss": "(linguistics) the form of a word after all affixes are removed",
+"role": null
+},
+{
+"w": "excellence",
+"pos": "noun",
+"gloss": "the quality of excelling; possessing good qualities in high degree",
+"role": "quality"
+},
+{
+"w": "trader",
+"pos": "noun",
+"gloss": "someone who purchases and maintains an inventory of goods to be sold",
+"role": "agent"
+},
+{
+"w": "gong",
+"pos": "noun",
+"gloss": "a percussion instrument consisting of a metal plate that is struck with a softheaded drumstick",
+"role": "tool"
+},
+{
+"w": "merchants",
+"pos": "noun",
+"gloss": "a businessperson engaged in retail trade",
+"role": "agent"
+},
+{
+"w": "powers",
+"pos": "noun",
+"gloss": "possession of controlling influence",
+"role": "quality"
+},
+{
+"w": "managed",
+"pos": "verb",
+"gloss": "be successful; achieve a goal",
+"role": null
+},
+{
+"w": "amir",
+"pos": "noun",
+"gloss": "an independent ruler or chieftain (especially in Africa or Arabia)",
+"role": "agent"
+},
+{
+"w": "pleasant",
+"pos": "adjective",
+"gloss": "affording pleasure; being in harmony with your taste or likings",
+"role": null
+},
+{
+"w": "guards",
+"pos": "noun",
+"gloss": "a person who keeps watch over something or someone",
+"role": "agent"
+},
+{
+"w": "officers",
+"pos": "noun",
+"gloss": "any person in the armed services who holds a position of authority or command",
+"role": "agent"
+},
+{
+"w": "risen",
+"pos": "verb",
+"gloss": "move upward",
+"role": null
+},
+{
+"w": "opponents",
+"pos": "noun",
+"gloss": "a contestant that you are matched against",
+"role": "agent"
+},
+{
+"w": "taxpayer",
+"pos": "noun",
+"gloss": "someone who pays taxes",
+"role": "agent"
+},
+{
+"w": "rookie",
+"pos": "noun",
+"gloss": "an awkward and inexperienced youth",
+"role": "agent"
+},
+{
+"w": "environmentalists",
+"pos": "noun",
+"gloss": "someone who works to protect the environment from destruction or pollution",
+"role": "agent"
+},
+{
+"w": "buy",
+"pos": "verb",
+"gloss": "obtain by purchase; acquire by means of a financial transaction",
+"role": null
+},
+{
+"w": "move",
+"pos": "verb",
+"gloss": "change location; move, travel, or proceed, also metaphorically",
+"role": null
+},
+{
+"w": "lawyer",
+"pos": "noun",
+"gloss": "a professional person authorized to practice law; conducts lawsuits or gives legal advice",
+"role": "agent"
+},
+{
+"w": "whites",
+"pos": "noun",
+"gloss": "a member of the Caucasoid race",
+"role": "agent"
+},
+{
+"w": "loyalty",
+"pos": "noun",
+"gloss": "the quality of being loyal",
+"role": "quality"
+},
+{
+"w": "extension",
+"pos": "noun",
+"gloss": "a mutually agreed delay in the date set for the completion of a job or payment of a debt",
+"role": null
+},
+{
+"w": "organizer",
+"pos": "noun",
+"gloss": "a person who brings order and organization to an enterprise",
+"role": "agent"
+},
+{
+"w": "sleeping",
+"pos": "verb",
+"gloss": "be asleep",
+"role": null
+},
+{
+"w": "fed",
+"pos": "verb",
+"gloss": "provide as food",
+"role": null
+},
+{
+"w": "nephew",
+"pos": "noun",
+"gloss": "a son of your brother or sister",
+"role": "agent"
+},
+{
+"w": "favourite",
+"pos": "noun",
+"gloss": "a competitor thought likely to win",
+"role": "agent"
+},
+{
+"w": "warriors",
+"pos": "noun",
+"gloss": "someone engaged in or experienced in warfare",
+"role": "agent"
+},
+{
+"w": "harbour",
+"pos": "verb",
+"gloss": "secretly shelter (as of fugitives or criminals)",
+"role": null
+},
+{
+"w": "daughters",
+"pos": "noun",
+"gloss": "a female human offspring",
+"role": "agent"
+},
+{
+"w": "involves",
+"pos": "verb",
+"gloss": "connect closely and often incriminatingly",
+"role": null
+},
+{
+"w": "clinical",
+"pos": "adjective",
+"gloss": "relating to a clinic or conducted in or as if in a clinic and depending on direct observation of patients",
+"role": null
+},
+{
+"w": "burke",
+"pos": "noun",
+"gloss": "British statesman famous for his oratory; pleaded the cause of the American colonists in British Parliament and defended the parliamentary system (1729-1797)",
+"role": "agent"
+},
+{
+"w": "junk",
+"pos": "noun",
+"gloss": "the remains of something that has been destroyed or broken up",
+"role": null
+},
+{
+"w": "regardless",
+"pos": "adverb",
+"gloss": "in spite of everything; without regard to drawbacks",
+"role": null
+},
+{
+"w": "growth",
+"pos": "noun",
+"gloss": "(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+"role": null
+},
+{
+"w": "broadcaster",
+"pos": "noun",
+"gloss": "someone who broadcasts on radio or television",
+"role": "agent"
+},
+{
+"w": "friends",
+"pos": "noun",
+"gloss": "a person you know well and regard with affection and trust",
+"role": "agent"
+},
+{
+"w": "styles",
+"pos": "noun",
+"gloss": "how something is done or how it happens",
+"role": "quality"
+},
+{
+"w": "winners",
+"pos": "noun",
+"gloss": "the contestant who wins the contest",
+"role": "agent"
+},
+{
+"w": "politicians",
+"pos": "noun",
+"gloss": "a leader engaged in civil administration",
+"role": "agent"
+},
+{
+"w": "mothers",
+"pos": "noun",
+"gloss": "a woman who has given birth to a child (also used as a term of address to your mother)",
+"role": "agent"
+},
+{
+"w": "managers",
+"pos": "noun",
+"gloss": "someone who controls resources and expenditures",
+"role": "agent"
+},
+{
+"w": "wear",
+"pos": "verb",
+"gloss": "be dressed in",
+"role": null
+},
+{
+"w": "napoleon",
+"pos": "noun",
+"gloss": "French general who became emperor of the French (1769-1821)",
+"role": "agent"
+},
+{
+"w": "losers",
+"pos": "noun",
+"gloss": "a contestant who loses the contest",
+"role": "agent"
+},
+{
+"w": "adviser",
+"pos": "noun",
+"gloss": "an expert who gives advice",
+"role": "agent"
+},
+{
+"w": "based",
+"pos": "verb",
+"gloss": "use as a basis for; found on",
+"role": null
+},
+{
+"w": "cavalry",
+"pos": "noun",
+"gloss": "troops trained to fight on horseback",
+"role": null
+}
+]
