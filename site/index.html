@@ -71,6 +71,42 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .opt{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px;color:var(--mut)}
 .axes .rd{font-size:13px}.axes .form{font-size:13px;color:var(--mut);margin-top:4px}
 @media(max-width:480px){.langsw{position:static;display:inline-flex;margin-top:10px}}
+
+.mxtop{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;align-items:start}
+.mxbig{font-size:34px;font-weight:700;letter-spacing:-.01em;line-height:1.15;min-height:40px;transition:opacity .15s}
+.mxbig.dim{opacity:.35}
+.mxcloud{display:flex;flex-wrap:wrap;gap:4px 12px;margin:8px 0 14px;align-items:baseline;min-height:28px}
+.mxcloud button{background:none;border:0;padding:0;font:inherit;color:var(--fg);cursor:pointer;line-height:1.3}
+.mxcloud button:hover{color:var(--acc);text-decoration:underline}
+.mxtools{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin:14px 0 10px}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{background:none;border:0;border-right:1px solid var(--line);color:var(--mut);font:inherit;font-size:14px;padding:6px 11px;cursor:pointer}
+.seg button:last-child{border-right:0}.seg button[aria-pressed=true]{background:var(--acc);color:var(--bg)}
+.mxfrom{display:flex;gap:6px;flex:1 1 220px;min-width:0}.mxfrom input{flex:1;min-width:0;font:inherit;font-size:14px;padding:6px 10px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--fg)}
+.mxslots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+@media(max-width:720px){.mxslots{grid-template-columns:1fr}.mxtop{grid-template-columns:1fr}}
+.slot{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:190px;display:flex;flex-direction:column;gap:6px;transition:border-color .15s,box-shadow .15s,transform .15s}
+.slot.empty{border-style:dashed;align-items:center;justify-content:center;color:var(--mut);cursor:pointer;text-align:center}
+.slot.empty:hover,.slot.sel{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc2)}
+.slot.over{border-color:var(--acc);box-shadow:0 0 0 3px var(--acc2);transform:scale(1.015)}
+.slot .plus{font-size:28px;line-height:1;color:var(--acc)}
+.slhead{display:flex;justify-content:space-between;align-items:center;gap:6px;font-size:12px;color:var(--mut);text-transform:uppercase;letter-spacing:.04em}
+.slhead .ctl{display:flex;gap:2px}.slhead .ctl button{background:none;border:1px solid transparent;border-radius:6px;color:var(--mut);cursor:pointer;font-size:14px;padding:0 6px;line-height:22px}
+.slhead .ctl button:hover{border-color:var(--line);color:var(--fg)}.slhead .ctl button[disabled]{opacity:.3;cursor:default;border-color:transparent}
+.slname{display:flex;justify-content:space-between;align-items:baseline;gap:8px;cursor:grab}
+.slname b{font-family:var(--mono);font-size:20px;color:var(--acc)}
+.slval{font-family:var(--mono);font-size:22px;font-weight:700;min-width:2.4em;text-align:right}
+.sldesc{font-size:13px;color:var(--mut);min-height:2.6em}
+.slot input[type=range]{width:100%;accent-color:var(--acc);margin:4px 0 0;cursor:pointer}
+.ticks{display:flex;justify-content:space-between;font-size:10px;color:var(--mut);font-family:var(--mono);padding:0 4px}.ticks span{cursor:pointer;min-width:1.4em;text-align:center}.ticks span.an{color:var(--acc);font-weight:700}
+.slot .axlab{margin-top:2px}
+.slplain{display:flex;gap:6px;align-items:center;font-size:13px;color:var(--mut);margin-top:auto}
+.slot .rd{font-size:14px;color:var(--fg);font-style:italic}
+.mxpal{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chip{font-family:var(--mono);font-size:13px;background:var(--card);border:1px solid var(--line);color:var(--fg);border-radius:99px;padding:4px 11px;cursor:grab;user-select:none;transition:background .12s,border-color .12s}
+.chip:hover{border-color:var(--acc);background:var(--acc2)}.chip.used{background:var(--acc);color:var(--bg);border-color:var(--acc)}
+.chip.na{font-style:italic}
+.mxhint{font-size:13px;color:var(--mut);margin-top:6px}
 </style>
 </head>
 <body>
@@ -83,6 +119,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 </header>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-t="demo"><span data-l="en">Try it</span><span data-l="ru">Проба</span></button>
+  <button role="tab" aria-selected="false" data-t="mix"><span data-l="en">Mixer</span><span data-l="ru">Смеситель</span></button>
   <button role="tab" aria-selected="false" data-t="how"><span data-l="en">How to read a code</span><span data-l="ru">Как читать код</span></button>
   <button role="tab" aria-selected="false" data-t="roots"><span data-l="en">Roots</span><span data-l="ru">Корни</span></button>
   <button role="tab" aria-selected="false" data-t="dict"><span data-l="en">Dictionary</span><span data-l="ru">Словарь</span></button>
@@ -131,6 +168,30 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <p class="mut" data-l="en">Two series. <b>Recipes</b> (law, money, food, transport, society, health, direction of motion): the Sonnet decoders saw the recipe list, so this checks that a recipe reads unambiguously, not that it can be guessed from scratch. <b>Substances and numbers</b>: the decoder saw only the root tables.</p>
   <p class="mut" data-l="ru">Две серии. <b>Рецепты</b> (право, деньги, еда, транспорт, общество, здоровье, направление движения): декодеры Sonnet видели список рецептов, так что это проверка того, что рецепт читается однозначно, а не того, что его можно угадать с нуля. <b>Вещества и числа</b>: декодер видел только таблицы корней.</p>
   <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span><span data-l="ru">слово</span></th><th><span data-l="en">code</span><span data-l="ru">код</span></th><th><span data-l="en">read as</span><span data-l="ru">прочитано</span></th></tr></thead><tbody id="examples"></tbody></table></div>
+</section>
+
+<section id="mix">
+  <h2><span data-l="en">Root mixer</span><span data-l="ru">Смеситель корней</span></h2>
+  <p class="mut" data-l="en">Put up to three roots into the slots and move their values: the vectors (no language model) read the code at once and show the words nearest to it. The first root is the head — what kind of thing it is; the next ones narrow it. Click a word in the cloud to see how it is coded.</p>
+  <p class="mut" data-l="ru">Положите до трёх корней в ячейки и двигайте их значения: векторы (без языковой модели) сразу читают код и показывают ближайшие к нему слова. Первый корень — главный: что это за вещь; следующие его сужают. Нажмите на слово в облаке — увидите, как кодируется оно само.</p>
+  <div class="card">
+    <div class="lab"><span data-l="en">meaning</span><span data-l="ru">смысл</span></div>
+    <div class="mxbig" id="mxBest">—</div>
+    <div class="mxcloud" id="mxCloud"></div>
+    <div class="lab"><span data-l="en">code</span><span data-l="ru">код</span></div>
+    <span class="code" id="mxCode">—</span>
+    <div class="mut small" id="mxStatus"></div>
+  </div>
+  <div class="mxtools">
+    <div class="seg" id="mxPos" role="group" aria-label="part of speech"></div>
+    <form class="mxfrom" id="mxFrom"><input id="mxWord" maxlength="40" autocomplete="off" placeholder="start from a word: river, alleged…"><button class="ghost" type="submit"><span data-l="en">Load</span><span data-l="ru">Загрузить</span></button></form>
+    <button class="ghost" type="button" id="mxRand"><span data-l="en">Random</span><span data-l="ru">Случайно</span></button>
+    <button class="ghost" type="button" id="mxClear"><span data-l="en">Clear</span><span data-l="ru">Очистить</span></button>
+  </div>
+  <div class="mxslots" id="mxSlots"></div>
+  <h3><span data-l="en">Roots</span><span data-l="ru">Корни</span></h3>
+  <div class="mxhint"><span data-l="en">Click a root to put it into the selected (or first free) slot, or drag it onto a slot. Drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в выбранную (или первую свободную) ячейку; можно и перетащить его на ячейку. Ячейки переставляются перетаскиванием за имя корня.</span></div>
+  <div class="mxpal" id="mxPal"></div>
 </section>
 
 <section id="how">
@@ -723,10 +784,170 @@ function applyLang(l){
   if (RECL.length) drawDict();
   drawRoots();
   ["codeAx", "code2Ax", "mcodeAx", "howExAx"].forEach(id => { const n = $(id); if (n._code) showAxes(n, n._code); });
+  if (window.mxRedraw) window.mxRedraw();
 }
 document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.lang)));
 applyLang(document.documentElement.classList.contains("mc") ? "mc" : LANG());
 RDP.then(() => { const w = () => RD ? drawMc() : setTimeout(w, 20); w(); });
+
+// ---- смеситель: до трёх корней со значениями → чтение векторами (Reader.scores) на лету
+const MX = { slots: [null, null, null], pos: "o", sel: null, drag: null };
+const MXT = {
+  en: { head: "head", mod: "modifier", empty: "add a root", plain: "no value (plain)", noAxis: "no axis — used as is", none: "Put a root into a slot", load: "loading vectors (~3.5 MB)…",
+        notWord: "not in the dictionary", pos: { o: "noun", i: "verb", a: "adjective", e: "adverb" }, ph: "start from a word: river, alleged…", plainR: "the root as such, no degree",
+        between: (a, b) => `between ${a} and ${b}, nearer ${a}`, beyond: (a) => `${a}, even more`, left: "move left", right: "move right", del: "remove" },
+  ru: { head: "главный", mod: "уточняет", empty: "добавить корень", plain: "без значения", noAxis: "без оси — как есть", none: "Положите корень в ячейку", load: "загрузка векторов (~3,5 МБ)…",
+        notWord: "нет в словаре", pos: { o: "имя", i: "глагол", a: "признак", e: "наречие" }, ph: "начать со слова: river, alleged…", plainR: "корень как есть, без степени",
+        between: (a, b) => `между «${a}» и «${b}», ближе к «${a}»`, beyond: (a) => `«${a}», ещё сильнее`, left: "влево", right: "вправо", del: "убрать" } };
+const mt = (k) => MXT[LANG()][k];
+// подписи полюсов: в английском — все опорные точки из строки корня (-5 dead … -2 asleep … +5 alive), в русском — neg / mid / pos
+function mxPoles(r){
+  if (LANG() === "en") {
+    const out = []; for (const m of String(r.en || "").matchAll(/(?:^|…)\s*([+-]?\d)\s+([^…]+?)\s*(?=…|$)/g)) out.push([Number(m[1]), clean(m[2]).replace(/\s*\(.*$/, "")]);
+    return out;
+  }
+  // по-русски: опорные точки из скобок строки корня («−5 газ, пар, −3 жидкость, 0 сыпучее, +5 цельное»), иначе neg / mid / pos
+  const num = (t) => Number(String(t).replace("−", "-")), out = [], par = String(r.ru || "").match(/\(([^()]*[−+-]?\d[^()]*)\)/);
+  if (par) for (const m of par[1].matchAll(/(?:^|,)\s*([−+-]?\d)\s+([^,:]+)/g)) out.push([num(m[1]), clean(m[2])]);
+  if (out.length >= 2) return out;
+  const st = (t) => short(String(t || "").replace(/^[−+-]?\d\s*/, ""));
+  return [[-5, st(r.neg)], [0, st(r.mid)], [5, st(r.pos)]].filter(x => x[1]);
+}
+// прочтение значения по опорным точкам оси: точно на точке — она сама, между точками — «между A и B» (ближняя первой)
+function mxRead(r, v){
+  if (!r.axis) return clean(rf(r, "ru")).split(/[(:;]/)[0].trim();
+  if (v == null) return mt("plainR");
+  const P = mxPoles(r).sort((a, b) => a[0] - b[0]); if (!P.length) return sgn(v);
+  const eq = P.find(p => p[0] === v); if (eq) return eq[1];
+  const lo = [...P].reverse().find(p => p[0] < v), hi = P.find(p => p[0] > v);
+  if (!lo) return mt("beyond")(hi[1]); if (!hi) return mt("beyond")(lo[1]);
+  const [a, b] = v - lo[0] <= hi[0] - v ? [lo, hi] : [hi, lo];
+  return mt("between")(a[1], b[1]);
+}
+const mxLv = (name) => { const m = CO; const r = m ? m.names.indexOf(name) : -1; return r >= 0 ? m.lv[r] : [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5]; };
+function mxCode(){
+  const S = MX.slots.filter(Boolean); if (!S.length) return "";
+  return S.map(x => RD.root.get(x.name).axis && x.v != null ? `${x.name}(=${x.v > 0 ? "+" : ""}${x.v})` : x.name).join(" ") + " | " + MX.pos;
+}
+function mxPut(name, at){
+  if (MX.slots.some(x => x && x.name === name)) return;
+  let i = at != null ? at : MX.sel != null ? MX.sel : MX.slots.indexOf(null);
+  if (i < 0) i = 2;
+  MX.slots[i] = { name, v: RD.root.get(name).axis ? 0 : null };
+  MX.slots = MX.slots.filter(Boolean).concat([null, null, null]).slice(0, 3); MX.sel = null; mxDraw();
+}
+function mxMove(i, d){ const j = i + d, s = MX.slots; if (j < 0 || j > 2 || !s[j]) return; [s[i], s[j]] = [s[j], s[i]]; mxDraw(); }
+function mxSlot(i){
+  const x = MX.slots[i], box = el("div", null, "slot" + (x ? "" : " empty") + (MX.sel === i ? " sel" : ""));
+  box.addEventListener("dragover", e => { e.preventDefault(); box.classList.add("over"); });
+  box.addEventListener("dragleave", () => box.classList.remove("over"));
+  box.addEventListener("drop", e => {
+    e.preventDefault(); box.classList.remove("over"); const d = e.dataTransfer.getData("text/plain");
+    if (d.startsWith("slot:")) { const k = Number(d.slice(5)); if (MX.slots[i]) { [MX.slots[k], MX.slots[i]] = [MX.slots[i], MX.slots[k]]; mxDraw(); } }
+    else if (RD.root.has(d)) { if (MX.slots[i]) MX.slots[i] = null; MX.slots = MX.slots.slice(0, i).concat([null]).concat(MX.slots.slice(i + 1)); mxPut(d, Math.min(i, MX.slots.filter(Boolean).length)); }
+  });
+  if (!x) {
+    const first = MX.slots.indexOf(null) === i;
+    box.append(el("div", "+", "plus"), el("div", first ? mt("empty") : "—"));
+    box.addEventListener("click", () => { MX.sel = MX.sel === i ? null : MX.slots.indexOf(null); mxDraw(); $("mxPal").scrollIntoView({ behavior: "smooth", block: "nearest" }); });
+    return box;
+  }
+  const r = RD.root.get(x.name), n = MX.slots.filter(Boolean).length;
+  const hd = el("div", null, "slhead"); hd.appendChild(el("span", (i + 1) + " · " + (i === 0 ? mt("head") : mt("mod"))));
+  const ctl = el("span", null, "ctl");
+  [["◀", mt("left"), () => mxMove(i, -1), i === 0], ["▶", mt("right"), () => mxMove(i, 1), i >= n - 1], ["✕", mt("del"), () => { MX.slots[i] = null; MX.slots = MX.slots.filter(Boolean).concat([null, null, null]).slice(0, 3); mxDraw(); }, false]]
+    .forEach(([t, ti, f, dis]) => { const b = el("button", t); b.type = "button"; b.title = ti; b.setAttribute("aria-label", ti); b.disabled = dis; b.addEventListener("click", f); ctl.appendChild(b); });
+  hd.appendChild(ctl); box.appendChild(hd);
+  const nm = el("div", null, "slname"); nm.draggable = true;
+  nm.addEventListener("dragstart", e => e.dataTransfer.setData("text/plain", "slot:" + i));
+  nm.appendChild(el("b", x.name)); const val = el("span", r.axis ? (x.v == null ? "·" : sgn(x.v)) : "", "slval"); nm.appendChild(val); box.appendChild(nm);
+  box.appendChild(el("div", clean(rf(r, "ru")).slice(0, 120), "sldesc"));
+  const rd = el("div", "→ " + mxRead(r, x.v), "rd");
+  if (r.axis) {
+    const lv = mxLv(x.name), rg = el("input"); rg.type = "range"; rg.min = lv[0]; rg.max = lv[lv.length - 1]; rg.step = 1; rg.value = x.v == null ? 0 : x.v;
+    rg.setAttribute("aria-label", x.name); rg.disabled = x.v == null; rg.style.opacity = x.v == null ? .4 : 1;
+    rg.addEventListener("input", () => { let v = Number(rg.value); if (!lv.includes(v)) v = lv.reduce((a, b) => Math.abs(b - v) < Math.abs(a - v) ? b : a); x.v = v; val.textContent = sgn(v); rd.textContent = "→ " + mxRead(r, v); mxRun(); });
+    const P = mxPoles(r).sort((a, b) => a[0] - b[0]), tk = el("div", null, "ticks");
+    for (let t = -5; t <= 5; t++) {  // опорные точки оси выделены; нажатие ставит значение
+      const a = P.find(p => p[0] === t), sp = el("span", t > 0 ? "+" + t : String(t), a ? "an" : ""); if (a) sp.title = a[1];
+      if (lv.includes(t)) sp.addEventListener("click", () => { if (x.v == null) return; rg.value = t; rg.dispatchEvent(new Event("input")); });
+      tk.appendChild(sp);
+    }
+    const lab = el("div", null, "axlab"), neg = P.filter(p => p[0] < 0), pos = P.filter(p => p[0] > 0);
+    [neg.length ? neg[0][1] : "", (P.find(p => p[0] === 0) || [0, ""])[1], pos.length ? pos[pos.length - 1][1] : ""].forEach(t => lab.appendChild(el("span", t)));
+    const pl = el("label", null, "slplain"), cb = el("input"); cb.type = "checkbox"; cb.checked = x.v == null;
+    cb.addEventListener("change", () => { x.v = cb.checked ? null : Number(rg.value); mxDraw(); });
+    pl.append(cb, el("span", mt("plain")));
+    box.append(rg, tk, lab, rd, pl);
+  } else box.append(el("div", mt("noAxis"), "mut small"), rd);
+  return box;
+}
+function mxDraw(){
+  if (!RD) return;
+  const sl = $("mxSlots"); sl.textContent = ""; for (let i = 0; i < 3; i++) sl.appendChild(mxSlot(i));
+  const pos = $("mxPos"); pos.textContent = "";
+  ["o", "i", "a", "e"].forEach(p => { const b = el("button", p + " · " + mt("pos")[p]); b.type = "button"; b.setAttribute("aria-pressed", MX.pos === p); b.addEventListener("click", () => { MX.pos = p; mxDraw(); }); pos.appendChild(b); });
+  const pal = $("mxPal"); pal.textContent = "";
+  RD.d.roots.forEach(r => {
+    const c = el("button", r.name, "chip" + (r.axis ? "" : " na") + (MX.slots.some(x => x && x.name === r.name) ? " used" : "")); c.type = "button"; c.draggable = true;
+    c.title = clean(rf(r, "ru")); c.addEventListener("click", () => mxPut(r.name)); c.addEventListener("dragstart", e => e.dataTransfer.setData("text/plain", r.name)); pal.appendChild(c);
+  });
+  $("mxWord").placeholder = mt("ph");
+  mxRun();
+}
+let mxBusy = false, mxAgain = false;
+async function mxRun(){
+  if (mxBusy) { mxAgain = true; return; } mxBusy = true;
+  try {
+    const code = mxCode();
+    setCode($("mxCode"), null, code || "—");
+    try { history.replaceState(null, "", code ? "#mix=" + encodeURIComponent(code) : location.pathname + location.search); } catch (e) {}
+    if (!code) { $("mxBest").textContent = mt("none"); $("mxBest").classList.add("dim"); $("mxCloud").textContent = ""; return; }
+    const first = !RDR; if (first) $("mxStatus").textContent = mt("load");
+    const rd = await reader(), { V } = await coder(); if ($("mxStatus").textContent === mt("load")) $("mxStatus").textContent = "";
+    // уровни корней (THING до +4, SEX только явный пол) известны после загрузки кодера: ячейки перерисовываются один раз
+    if (first) { mxAgain = true; mxDraw(); return; }
+    await new Promise(r => setTimeout(r, 0));
+    const top = V.top(rd.scores(mxCode()), 19), cl = $("mxCloud"); cl.textContent = "";
+    $("mxBest").textContent = top[0] ? top[0].word : "—"; $("mxBest").classList.remove("dim");
+    const hi = top[1] ? top[1].score : 1, lo = top[top.length - 1] ? top[top.length - 1].score : 0;
+    top.slice(1).forEach(t => {
+      const k = hi > lo ? (t.score - lo) / (hi - lo) : 1, b = el("button", t.word); b.type = "button";
+      b.style.fontSize = (13 + 11 * k).toFixed(1) + "px"; b.style.opacity = (.55 + .45 * k).toFixed(2); b.addEventListener("click", () => mxFromWord(t.word)); cl.appendChild(b);
+    });
+    const b0 = $("mxBest"); b0.style.cursor = "pointer"; b0.onclick = () => top[0] && mxFromWord(top[0].word);
+  } catch (e) { $("mxStatus").textContent = e.message; }
+  finally { mxBusy = false; if (mxAgain) { mxAgain = false; mxRun(); } }
+}
+function mxLoad(code){
+  const [h, f] = String(code).split("|"), S = [];
+  for (const m of h.matchAll(/\b([A-Z]{2,})\b(?:\(=\s*([+-]?\d+)\s*\))?/g)) if (RD.root.has(m[1]) && S.length < 3 && !S.some(x => x.name === m[1])) S.push({ name: m[1], v: m[2] != null && RD.root.get(m[1]).axis ? Number(m[2]) : null });
+  MX.slots = S.concat([null, null, null]).slice(0, 3);
+  const p = (f || "").trim()[0]; if ("oiae".includes(p) && p) MX.pos = p;
+  mxDraw();
+}
+async function mxFromWord(w){
+  w = String(w || "").trim().toLowerCase(); if (!w) return;
+  $("mxWord").value = w; $("mxStatus").textContent = RDR ? "" : mt("load");
+  const rd = await reader(), e = /^[a-z]+$/.test(w) ? rd.encode(w) : null;
+  if (!e || e.name) { $("mxStatus").textContent = w + " — " + mt("notWord"); return; }
+  mxLoad(e.code); $("mxStatus").textContent = w + " → " + e.code;
+}
+$("mxFrom").addEventListener("submit", e => { e.preventDefault(); mxFromWord($("mxWord").value); });
+$("mxClear").addEventListener("click", () => { MX.slots = [null, null, null]; MX.sel = null; mxDraw(); });
+$("mxRand").addEventListener("click", () => {
+  const R = RD.d.roots, k = 1 + Math.floor(Math.random() * 3), S = [];
+  while (S.length < k) { const r = R[Math.floor(Math.random() * R.length)]; if (!S.some(x => x.name === r.name) && r.name !== "SEX") { const lv = mxLv(r.name); S.push({ name: r.name, v: r.axis ? lv[Math.floor(Math.random() * lv.length)] : null }); } }
+  MX.slots = S.concat([null, null, null]).slice(0, 3); mxDraw();
+});
+let mxStarted = false;
+window.mxRedraw = () => { if (mxStarted) mxDraw(); };
+function mxOpen(){ if (mxStarted) return; mxStarted = true; const w = () => RD ? (MX.slots.some(Boolean) ? mxDraw() : mxLoad("PLACE GRAIN(=-3) MOVE(=+3) | o")) : setTimeout(w, 20); w(); }
+document.querySelector('nav button[data-t=mix]').addEventListener("click", mxOpen);
+if (location.hash.startsWith("#mix=")) {
+  document.querySelector('nav button[data-t=mix]').click();
+  const c = decodeURIComponent(location.hash.slice(5)); mxStarted = true; const w = () => RD ? mxLoad(c) : setTimeout(w, 20); w();
+}
 </script>
 </body>
 </html>
