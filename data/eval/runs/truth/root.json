@@ -1,0 +1,4 @@
+{"name": "TRUE", "axis_scale": 0.5,
+ "pos": ["true","real","fact","proof","certain","evidence","correct","actual","truth","sure"],
+ "neg": ["false","lie","fake","myth","rumor","wrong","fiction","doubt","untrue","pretend"],
+ "spec": "- TRUE: -5 fantasy, fraud … -3 false, rumor … 0 claimed, alleged, supposed … +2 true, fact, evidence … +5 certain, proven"}
