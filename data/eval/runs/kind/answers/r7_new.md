@@ -1,0 +1,44 @@
+1. germs | microbes | bacteria
+2. observation | evidence | data
+3. crisis | threat | danger
+4. organism | creature | being
+5. stranger | acquaintance | other person
+6. transcript | dialogue | script
+7. relic | fossil | antique
+8. cries | shouts | screams
+9. victim | prisoner | corpse
+10. thread | string | yarn
+11. machines | robots | devices
+12. image | picture | painting
+13. professional | expert | worker
+14. standard | norm | rule
+15. case | precedent | incident
+16. object | protest | deny
+17. start | launch | beginning
+18. service | benefit | charity
+19. face | approach | confront
+20. lack | shortage | deficit
+21. dissident | rebel | opponent
+22. habit | custom | routine
+23. exhibit | display | present
+24. exception | rarity | anomaly
+25. schedule | timetable | period
+26. mass | block | unit
+27. variant | variation | alternative
+28. level | layer | stage
+29. variety | mixture | range
+30. formula | equation | procedure
+31. jot | scribble | draft
+32. skeptics | doubters | critics
+33. cushion | pad | sponge
+34. assumption | guess | hypothesis
+35. trait | feature | detail
+36. news | information | knowledge
+37. biography | memoir | literature
+38. masterpiece | artwork | exhibit
+39. puzzle | trick | riddle
+40. junk | rubbish | clutter
+41. debate | argument | disagreement
+42. show | display | present
+43. indicate | point out | reveal
+44. revise | reconsider | change my mind

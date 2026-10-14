@@ -1,0 +1,44 @@
+1. competition | match | contest
+2. team | squad | club
+3. helper | assistant | servant
+4. stick | rod | cane
+5. deliver | hand over | pass
+6. roof | ceiling | top
+7. companion | pal | buddy
+8. kickoff | opening | start of game
+9. front | bow | nose
+10. rocks | stones | blades
+11. spectacle | show | performance
+12. note | excerpt | snippet
+13. record | document | archive
+14. transcript | subtitle | script
+15. accident | injury | illness
+16. incidental | accidental | chance
+17. story | narrative | saga
+18. office | institution | base
+19. essay | article | paper
+20. connoisseur | audience | critic
+21. literature | novel | poetry
+22. revolution | coup | upheaval
+23. instance | occurrence | case
+24. document | law | legal text
+25. reformer | agent | activist
+26. variation | variant | difference
+27. technique | method | procedure
+28. casual | informal | friendly
+29. boyfriend | lover | partner
+30. opportunity | chance | possibility
+31. line | pole | beam
+32. hypothesis | theory | idea
+33. crust | shell | skin
+34. insects | pests | vermin
+35. adjustment | tweak | tip
+36. comparison | contrast | perspective
+37. testament | will | obituary
+38. crowds | audience | fans
+39. glance | check | notice
+40. basics | foundations | preparation
+41. variety | diversity | range
+42. poster | sign | billboard
+43. coast | shore | border
+44. creature | beast | monster

@@ -1,0 +1,3 @@
+KIND(=-5): example, sample, demonstration, illustrate, picture, instance, photograph, image, evidence, demonstrate, portrait, photo, fig, comparison, proof, test, testimony, experiment
+KIND(=0): type, sort, kind, pattern, model, example, method, typical, style, instance, thing, characteristic, mode, form, manner, category, prototype, variant
+KIND(=5): sort, type, kind, category, genre, classification, classify, class, species, gender, style, variety, level, designation, like, specific, status, mode
