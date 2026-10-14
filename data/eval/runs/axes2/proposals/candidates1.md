@@ -1,0 +1,40 @@
+1. cold - hot | cold chilly freezing icy frosty cool frozen wintry | hot warm boiling burning scorching blazing sultry steaming
+2. dry - wet | dry arid parched dusty barren desiccated waterless dehydrated | wet soggy damp moist soaked drenched humid sodden waterlogged
+3. light - heavy | light weightless feathery airy slight flimsy portable buoyant | heavy weighty hefty dense leaden ponderous burdensome cumbersome
+4. hard - soft | hard solid firm rigid stiff dense tough unyielding | soft squishy spongy supple tender fluffy mushy pliant
+5. smooth - rough | smooth even sleek polished glossy silky level flat | rough coarse bumpy uneven jagged gritty craggy rugged
+6. bright - dark | bright brilliant luminous radiant shining vivid glowing lit | dark dim murky shadowy gloomy dusky unlit black
+7. loud - quiet | loud noisy deafening booming blaring thunderous shrill raucous | quiet silent hushed muted mute still faint soundless
+8. clean - dirty | clean spotless pure tidy sanitary washed unsoiled hygienic | dirty filthy soiled grimy muddy stained unclean grubby
+9. fast - slow | fast quick rapid swift speedy brisk hasty fleet | slow sluggish leisurely unhurried gradual lethargic plodding tardy
+10. near - far | near close nearby adjacent neighboring proximate next immediate | far distant remote faraway outlying farther isolated outer
+11. high - low | high tall lofty towering elevated soaring steep raised | low short squat shallow stunted lowly sunken flat
+12. straight - curved | straight linear direct upright erect unbent level aligned | curved bent curly crooked winding arched bowed twisted
+13. full - empty | full packed crowded stuffed loaded brimming abundant teeming | empty vacant bare hollow void unoccupied deserted blank
+14. sweet - bitter | sweet sugary honeyed saccharine syrupy candied luscious cloying | bitter sour tart acrid sharp tangy astringent pungent
+15. sharp - blunt | sharp keen pointed cutting edged honed piercing acute | blunt dull rounded edgeless unsharpened worn obtuse
+16. permanent - temporary | permanent lasting enduring eternal fixed lifelong perpetual durable | temporary brief passing transient momentary fleeting provisional interim
+17. many - few | many numerous abundant countless myriad multiple plentiful frequent | few scarce sparse rare meager scant limited sporadic
+18. big - small | big large huge vast enormous giant massive great | small tiny little minute miniature petite compact slight
+19. whole - partial | whole complete entire full total intact unbroken undivided | partial incomplete fragmentary unfinished sketchy abridged piecemeal limited
+20. simple - complex | simple easy plain basic elementary straightforward uncomplicated lucid | complex complicated intricate elaborate sophisticated involved convoluted tangled
+21. certain - uncertain | certain sure definite positive confident assured clear settled | uncertain unsure doubtful dubious unclear vague ambiguous hazy
+22. true - false | true factual accurate correct real valid genuine authentic | false untrue wrong incorrect erroneous mistaken fake invalid
+23. alive - dead | alive living breathing animate live vital conscious sentient | dead lifeless deceased extinct defunct departed inert dormant
+24. young - old | young youthful juvenile adolescent immature budding callow | old aged elderly senior ancient grey hoary venerable
+25. strong - weak | strong powerful mighty sturdy tough muscular forceful robust | weak feeble frail fragile flimsy puny delicate faint
+26. tame - wild | tame domestic docile gentle obedient broken meek domesticated | wild untamed feral savage fierce unruly rough undomesticated
+27. happy - sad | happy glad joyful cheerful merry content delighted elated | sad unhappy sorrowful miserable gloomy melancholy downcast grieving
+28. calm - anxious | calm serene relaxed tranquil composed placid collected unruffled | anxious nervous tense uneasy restless agitated jittery worried
+29. brave - cowardly | brave bold courageous fearless daring heroic valiant gallant | cowardly timid fearful craven spineless meek timorous scared
+30. kind - cruel | kind gentle caring generous warm tender compassionate benevolent | cruel harsh brutal vicious mean heartless ruthless callous
+31. rich - poor | rich wealthy affluent prosperous opulent flush loaded moneyed | poor needy broke impoverished destitute penniless bankrupt indigent
+32. free - restricted | free liberal unrestricted open independent autonomous unbound unfettered | restricted confined bound captive enslaved imprisoned controlled shackled
+33. public - private | public common communal collective shared general civic national | private personal secret confidential intimate hidden individual covert
+34. legal - illegal | legal lawful legitimate licit permitted authorized sanctioned allowed | illegal unlawful illicit illegitimate banned forbidden criminal prohibited
+35. peaceful - violent | peaceful pacific nonviolent harmonious amicable friendly peaceable civil | violent aggressive hostile brutal fierce belligerent savage warlike
+36. build - destroy | build construct create make erect assemble found establish | destroy demolish ruin wreck raze break smash eliminate
+37. give - take | give offer donate provide grant hand award present | take grab seize steal snatch grasp capture confiscate
+38. join - separate | join connect unite attach merge combine link fasten | separate split divide detach sever part disconnect isolate
+39. push - pull | push press shove thrust drive propel ram nudge | pull draw tow drag haul tug yank heave
+40. accept - reject | accept approve allow admit embrace welcome adopt endorse | reject refuse deny decline ban dismiss spurn disapprove

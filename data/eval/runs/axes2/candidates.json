@@ -1,0 +1,2960 @@
+[
+{
+"src": "haiku-1",
+"name": "cold - hot",
+"neg": [
+"cold",
+"chilly",
+"freezing",
+"icy",
+"frosty",
+"cool",
+"frozen",
+"wintry"
+],
+"pos": [
+"hot",
+"warm",
+"boiling",
+"burning",
+"scorching",
+"blazing",
+"sultry",
+"steaming"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "dry - wet",
+"neg": [
+"dry",
+"arid",
+"parched",
+"dusty",
+"barren",
+"desiccated",
+"waterless",
+"dehydrated"
+],
+"pos": [
+"wet",
+"soggy",
+"damp",
+"moist",
+"soaked",
+"drenched",
+"humid",
+"sodden",
+"waterlogged"
+],
+"np": 9,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "light - heavy",
+"neg": [
+"light",
+"weightless",
+"feathery",
+"airy",
+"slight",
+"flimsy",
+"portable",
+"buoyant"
+],
+"pos": [
+"heavy",
+"weighty",
+"hefty",
+"dense",
+"leaden",
+"ponderous",
+"burdensome",
+"cumbersome"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "hard - soft",
+"neg": [
+"hard",
+"solid",
+"firm",
+"rigid",
+"stiff",
+"dense",
+"tough",
+"unyielding"
+],
+"pos": [
+"soft",
+"squishy",
+"spongy",
+"supple",
+"tender",
+"fluffy",
+"mushy",
+"pliant"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "smooth - rough",
+"neg": [
+"smooth",
+"even",
+"sleek",
+"polished",
+"glossy",
+"silky",
+"level",
+"flat"
+],
+"pos": [
+"rough",
+"coarse",
+"bumpy",
+"uneven",
+"jagged",
+"gritty",
+"craggy",
+"rugged"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "bright - dark",
+"neg": [
+"bright",
+"brilliant",
+"luminous",
+"radiant",
+"shining",
+"vivid",
+"glowing",
+"lit"
+],
+"pos": [
+"dark",
+"dim",
+"murky",
+"shadowy",
+"gloomy",
+"dusky",
+"unlit",
+"black"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "loud - quiet",
+"neg": [
+"loud",
+"noisy",
+"deafening",
+"booming",
+"blaring",
+"thunderous",
+"shrill",
+"raucous"
+],
+"pos": [
+"quiet",
+"silent",
+"hushed",
+"muted",
+"mute",
+"still",
+"faint",
+"soundless"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "clean - dirty",
+"neg": [
+"clean",
+"spotless",
+"pure",
+"tidy",
+"sanitary",
+"washed",
+"unsoiled",
+"hygienic"
+],
+"pos": [
+"dirty",
+"filthy",
+"soiled",
+"grimy",
+"muddy",
+"stained",
+"unclean",
+"grubby"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "fast - slow",
+"neg": [
+"fast",
+"quick",
+"rapid",
+"swift",
+"speedy",
+"brisk",
+"hasty",
+"fleet"
+],
+"pos": [
+"slow",
+"sluggish",
+"leisurely",
+"unhurried",
+"gradual",
+"lethargic",
+"plodding",
+"tardy"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "near - far",
+"neg": [
+"near",
+"close",
+"nearby",
+"adjacent",
+"neighboring",
+"proximate",
+"next",
+"immediate"
+],
+"pos": [
+"far",
+"distant",
+"remote",
+"faraway",
+"outlying",
+"farther",
+"isolated",
+"outer"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "high - low",
+"neg": [
+"high",
+"tall",
+"lofty",
+"towering",
+"elevated",
+"soaring",
+"steep",
+"raised"
+],
+"pos": [
+"low",
+"short",
+"squat",
+"shallow",
+"stunted",
+"lowly",
+"sunken",
+"flat"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "straight - curved",
+"neg": [
+"straight",
+"linear",
+"direct",
+"upright",
+"erect",
+"unbent",
+"level",
+"aligned"
+],
+"pos": [
+"curved",
+"bent",
+"curly",
+"crooked",
+"winding",
+"arched",
+"bowed",
+"twisted"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "full - empty",
+"neg": [
+"full",
+"packed",
+"crowded",
+"stuffed",
+"loaded",
+"brimming",
+"abundant",
+"teeming"
+],
+"pos": [
+"empty",
+"vacant",
+"bare",
+"hollow",
+"void",
+"unoccupied",
+"deserted",
+"blank"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "sweet - bitter",
+"neg": [
+"sweet",
+"sugary",
+"honeyed",
+"saccharine",
+"syrupy",
+"candied",
+"luscious",
+"cloying"
+],
+"pos": [
+"bitter",
+"sour",
+"tart",
+"acrid",
+"sharp",
+"tangy",
+"astringent",
+"pungent"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "sharp - blunt",
+"neg": [
+"sharp",
+"keen",
+"pointed",
+"cutting",
+"edged",
+"honed",
+"piercing",
+"acute"
+],
+"pos": [
+"blunt",
+"dull",
+"rounded",
+"edgeless",
+"unsharpened",
+"worn",
+"obtuse"
+],
+"np": 7,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "permanent - temporary",
+"neg": [
+"permanent",
+"lasting",
+"enduring",
+"eternal",
+"fixed",
+"lifelong",
+"perpetual",
+"durable"
+],
+"pos": [
+"temporary",
+"brief",
+"passing",
+"transient",
+"momentary",
+"fleeting",
+"provisional",
+"interim"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "many - few",
+"neg": [
+"many",
+"numerous",
+"abundant",
+"countless",
+"myriad",
+"multiple",
+"plentiful",
+"frequent"
+],
+"pos": [
+"few",
+"scarce",
+"sparse",
+"rare",
+"meager",
+"scant",
+"limited",
+"sporadic"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "big - small",
+"neg": [
+"big",
+"large",
+"huge",
+"vast",
+"enormous",
+"giant",
+"massive",
+"great"
+],
+"pos": [
+"small",
+"tiny",
+"little",
+"minute",
+"miniature",
+"petite",
+"compact",
+"slight"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "whole - partial",
+"neg": [
+"whole",
+"complete",
+"entire",
+"full",
+"total",
+"intact",
+"unbroken",
+"undivided"
+],
+"pos": [
+"partial",
+"incomplete",
+"fragmentary",
+"unfinished",
+"sketchy",
+"abridged",
+"piecemeal",
+"limited"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "simple - complex",
+"neg": [
+"simple",
+"easy",
+"plain",
+"basic",
+"elementary",
+"straightforward",
+"uncomplicated",
+"lucid"
+],
+"pos": [
+"complex",
+"complicated",
+"intricate",
+"elaborate",
+"sophisticated",
+"involved",
+"convoluted",
+"tangled"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "certain - uncertain",
+"neg": [
+"certain",
+"sure",
+"definite",
+"positive",
+"confident",
+"assured",
+"clear",
+"settled"
+],
+"pos": [
+"uncertain",
+"unsure",
+"doubtful",
+"dubious",
+"unclear",
+"vague",
+"ambiguous",
+"hazy"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "true - false",
+"neg": [
+"true",
+"factual",
+"accurate",
+"correct",
+"real",
+"valid",
+"genuine",
+"authentic"
+],
+"pos": [
+"false",
+"untrue",
+"wrong",
+"incorrect",
+"erroneous",
+"mistaken",
+"fake",
+"invalid"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "alive - dead",
+"neg": [
+"alive",
+"living",
+"breathing",
+"animate",
+"live",
+"vital",
+"conscious",
+"sentient"
+],
+"pos": [
+"dead",
+"lifeless",
+"deceased",
+"extinct",
+"defunct",
+"departed",
+"inert",
+"dormant"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "young - old",
+"neg": [
+"young",
+"youthful",
+"juvenile",
+"adolescent",
+"immature",
+"budding",
+"callow"
+],
+"pos": [
+"old",
+"aged",
+"elderly",
+"senior",
+"ancient",
+"grey",
+"hoary",
+"venerable"
+],
+"np": 8,
+"nn": 7
+},
+{
+"src": "haiku-1",
+"name": "strong - weak",
+"neg": [
+"strong",
+"powerful",
+"mighty",
+"sturdy",
+"tough",
+"muscular",
+"forceful",
+"robust"
+],
+"pos": [
+"weak",
+"feeble",
+"frail",
+"fragile",
+"flimsy",
+"puny",
+"delicate",
+"faint"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "tame - wild",
+"neg": [
+"tame",
+"domestic",
+"docile",
+"gentle",
+"obedient",
+"broken",
+"meek",
+"domesticated"
+],
+"pos": [
+"wild",
+"untamed",
+"feral",
+"savage",
+"fierce",
+"unruly",
+"rough",
+"undomesticated"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "happy - sad",
+"neg": [
+"happy",
+"glad",
+"joyful",
+"cheerful",
+"merry",
+"content",
+"delighted",
+"elated"
+],
+"pos": [
+"sad",
+"unhappy",
+"sorrowful",
+"miserable",
+"gloomy",
+"melancholy",
+"downcast",
+"grieving"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "calm - anxious",
+"neg": [
+"calm",
+"serene",
+"relaxed",
+"tranquil",
+"composed",
+"placid",
+"collected",
+"unruffled"
+],
+"pos": [
+"anxious",
+"nervous",
+"tense",
+"uneasy",
+"restless",
+"agitated",
+"jittery",
+"worried"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "brave - cowardly",
+"neg": [
+"brave",
+"bold",
+"courageous",
+"fearless",
+"daring",
+"heroic",
+"valiant",
+"gallant"
+],
+"pos": [
+"cowardly",
+"timid",
+"fearful",
+"craven",
+"spineless",
+"meek",
+"timorous",
+"scared"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "kind - cruel",
+"neg": [
+"kind",
+"gentle",
+"caring",
+"generous",
+"warm",
+"tender",
+"compassionate",
+"benevolent"
+],
+"pos": [
+"cruel",
+"harsh",
+"brutal",
+"vicious",
+"mean",
+"heartless",
+"ruthless",
+"callous"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "rich - poor",
+"neg": [
+"rich",
+"wealthy",
+"affluent",
+"prosperous",
+"opulent",
+"flush",
+"loaded",
+"moneyed"
+],
+"pos": [
+"poor",
+"needy",
+"broke",
+"impoverished",
+"destitute",
+"penniless",
+"bankrupt",
+"indigent"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "free - restricted",
+"neg": [
+"free",
+"liberal",
+"unrestricted",
+"open",
+"independent",
+"autonomous",
+"unbound",
+"unfettered"
+],
+"pos": [
+"restricted",
+"confined",
+"bound",
+"captive",
+"enslaved",
+"imprisoned",
+"controlled",
+"shackled"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "public - private",
+"neg": [
+"public",
+"common",
+"communal",
+"collective",
+"shared",
+"general",
+"civic",
+"national"
+],
+"pos": [
+"private",
+"personal",
+"secret",
+"confidential",
+"intimate",
+"hidden",
+"individual",
+"covert"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "legal - illegal",
+"neg": [
+"legal",
+"lawful",
+"legitimate",
+"licit",
+"permitted",
+"authorized",
+"sanctioned",
+"allowed"
+],
+"pos": [
+"illegal",
+"unlawful",
+"illicit",
+"illegitimate",
+"banned",
+"forbidden",
+"criminal",
+"prohibited"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "peaceful - violent",
+"neg": [
+"peaceful",
+"pacific",
+"nonviolent",
+"harmonious",
+"amicable",
+"friendly",
+"peaceable",
+"civil"
+],
+"pos": [
+"violent",
+"aggressive",
+"hostile",
+"brutal",
+"fierce",
+"belligerent",
+"savage",
+"warlike"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "build - destroy",
+"neg": [
+"build",
+"construct",
+"create",
+"make",
+"erect",
+"assemble",
+"found",
+"establish"
+],
+"pos": [
+"destroy",
+"demolish",
+"ruin",
+"wreck",
+"raze",
+"break",
+"smash",
+"eliminate"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "give - take",
+"neg": [
+"give",
+"offer",
+"donate",
+"provide",
+"grant",
+"hand",
+"award",
+"present"
+],
+"pos": [
+"take",
+"grab",
+"seize",
+"steal",
+"snatch",
+"grasp",
+"capture",
+"confiscate"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "join - separate",
+"neg": [
+"join",
+"connect",
+"unite",
+"attach",
+"merge",
+"combine",
+"link",
+"fasten"
+],
+"pos": [
+"separate",
+"split",
+"divide",
+"detach",
+"sever",
+"part",
+"disconnect",
+"isolate"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "push - pull",
+"neg": [
+"push",
+"press",
+"shove",
+"thrust",
+"drive",
+"propel",
+"ram",
+"nudge"
+],
+"pos": [
+"pull",
+"draw",
+"tow",
+"drag",
+"haul",
+"tug",
+"yank",
+"heave"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-1",
+"name": "accept - reject",
+"neg": [
+"accept",
+"approve",
+"allow",
+"admit",
+"embrace",
+"welcome",
+"adopt",
+"endorse"
+],
+"pos": [
+"reject",
+"refuse",
+"deny",
+"decline",
+"ban",
+"dismiss",
+"spurn",
+"disapprove"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "cold - hot",
+"neg": [
+"cold",
+"icy",
+"chilly",
+"frigid",
+"frozen",
+"freezing",
+"nippy",
+"frosty",
+"wintry"
+],
+"pos": [
+"hot",
+"warm",
+"burning",
+"scorching",
+"boiling",
+"sizzling",
+"blazing",
+"sultry",
+"searing"
+],
+"np": 9,
+"nn": 9
+},
+{
+"src": "haiku-2",
+"name": "dry - wet",
+"neg": [
+"dry",
+"arid",
+"parched",
+"desiccated",
+"dusty",
+"withered",
+"waterless",
+"thirsty"
+],
+"pos": [
+"wet",
+"damp",
+"soaked",
+"moist",
+"soggy",
+"drenched",
+"humid",
+"watery",
+"sodden"
+],
+"np": 9,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "hard - soft",
+"neg": [
+"hard",
+"solid",
+"firm",
+"rigid",
+"stiff",
+"dense",
+"tough",
+"unyielding"
+],
+"pos": [
+"soft",
+"squishy",
+"spongy",
+"fluffy",
+"supple",
+"yielding",
+"pliable",
+"mushy",
+"tender"
+],
+"np": 9,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "heavy - light",
+"neg": [
+"heavy",
+"weighty",
+"massive",
+"hefty",
+"bulky",
+"ponderous",
+"leaden",
+"burdensome"
+],
+"pos": [
+"light",
+"weightless",
+"airy",
+"feathery",
+"slight",
+"nimble",
+"buoyant",
+"lightweight"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "bright - dark",
+"neg": [
+"bright",
+"luminous",
+"brilliant",
+"shining",
+"glowing",
+"vivid",
+"radiant",
+"lit",
+"dazzling"
+],
+"pos": [
+"dark",
+"dim",
+"dusky",
+"shadowy",
+"murky",
+"unlit",
+"shady",
+"gloomy"
+],
+"np": 8,
+"nn": 9
+},
+{
+"src": "haiku-2",
+"name": "loud - quiet",
+"neg": [
+"loud",
+"noisy",
+"thunderous",
+"blaring",
+"deafening",
+"booming",
+"roaring",
+"shrill",
+"raucous"
+],
+"pos": [
+"quiet",
+"silent",
+"hushed",
+"muted",
+"mute",
+"faint",
+"soundless",
+"subdued"
+],
+"np": 8,
+"nn": 9
+},
+{
+"src": "haiku-2",
+"name": "clean - dirty",
+"neg": [
+"clean",
+"spotless",
+"pure",
+"sterile",
+"tidy",
+"immaculate",
+"neat",
+"hygienic",
+"washed"
+],
+"pos": [
+"dirty",
+"filthy",
+"grimy",
+"muddy",
+"stained",
+"soiled",
+"messy",
+"foul",
+"greasy"
+],
+"np": 9,
+"nn": 9
+},
+{
+"src": "haiku-2",
+"name": "sweet - sour",
+"neg": [
+"sweet",
+"sugary",
+"honeyed",
+"syrupy",
+"candied",
+"saccharine",
+"luscious",
+"cloying"
+],
+"pos": [
+"sour",
+"tart",
+"acidic",
+"tangy",
+"vinegary",
+"sharp",
+"acrid",
+"biting"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "spicy - bland",
+"neg": [
+"spicy",
+"peppery",
+"piquant",
+"fiery",
+"zesty",
+"pungent",
+"spiced",
+"seasoned"
+],
+"pos": [
+"bland",
+"tasteless",
+"insipid",
+"flat",
+"mild",
+"plain",
+"dull",
+"unseasoned"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "straight - curved",
+"neg": [
+"straight",
+"linear",
+"direct",
+"level",
+"upright",
+"aligned",
+"taut",
+"unbent"
+],
+"pos": [
+"curved",
+"bent",
+"crooked",
+"twisted",
+"winding",
+"arched",
+"bowed",
+"wavy"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "large - small",
+"neg": [
+"large",
+"big",
+"huge",
+"vast",
+"enormous",
+"giant",
+"immense",
+"massive",
+"great"
+],
+"pos": [
+"small",
+"little",
+"tiny",
+"minute",
+"miniature",
+"petite",
+"compact",
+"wee"
+],
+"np": 8,
+"nn": 9
+},
+{
+"src": "haiku-2",
+"name": "thin - thick",
+"neg": [
+"thin",
+"slim",
+"slender",
+"narrow",
+"skinny",
+"lean",
+"lanky",
+"gaunt"
+],
+"pos": [
+"thick",
+"broad",
+"chunky",
+"fat",
+"stout",
+"beefy",
+"fleshy",
+"plump"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "far - near",
+"neg": [
+"far",
+"distant",
+"remote",
+"faraway",
+"outlying",
+"isolated",
+"secluded",
+"afar"
+],
+"pos": [
+"near",
+"close",
+"nearby",
+"adjacent",
+"neighboring",
+"proximate",
+"handy",
+"adjoining"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "low - high",
+"neg": [
+"low",
+"lower",
+"lowly",
+"sunken",
+"nether",
+"subterranean",
+"depressed",
+"lowest"
+],
+"pos": [
+"high",
+"tall",
+"lofty",
+"elevated",
+"towering",
+"soaring",
+"upper",
+"raised"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "outer - inner",
+"neg": [
+"outer",
+"outside",
+"external",
+"exterior",
+"outward",
+"peripheral",
+"outdoor",
+"outermost"
+],
+"pos": [
+"inner",
+"inside",
+"internal",
+"interior",
+"inward",
+"central",
+"enclosed",
+"indoor"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "closed - open",
+"neg": [
+"closed",
+"shut",
+"locked",
+"sealed",
+"blocked",
+"fastened",
+"barred",
+"bolted"
+],
+"pos": [
+"open",
+"unlocked",
+"ajar",
+"exposed",
+"unsealed",
+"accessible",
+"available",
+"clear"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "weak - strong",
+"neg": [
+"weak",
+"feeble",
+"frail",
+"fragile",
+"puny",
+"flimsy",
+"delicate",
+"weedy"
+],
+"pos": [
+"strong",
+"powerful",
+"robust",
+"sturdy",
+"mighty",
+"muscular",
+"tough",
+"brawny"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "slow - fast",
+"neg": [
+"slow",
+"sluggish",
+"leisurely",
+"unhurried",
+"gradual",
+"plodding",
+"dawdling",
+"tardy"
+],
+"pos": [
+"fast",
+"quick",
+"rapid",
+"swift",
+"speedy",
+"brisk",
+"hasty",
+"fleet"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "old - new",
+"neg": [
+"old",
+"ancient",
+"aged",
+"antique",
+"outdated",
+"obsolete",
+"bygone",
+"dated"
+],
+"pos": [
+"new",
+"fresh",
+"recent",
+"modern",
+"novel",
+"current",
+"latest",
+"contemporary"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "temporary - permanent",
+"neg": [
+"temporary",
+"passing",
+"fleeting",
+"transient",
+"momentary",
+"ephemeral",
+"interim",
+"provisional"
+],
+"pos": [
+"permanent",
+"lasting",
+"enduring",
+"eternal",
+"constant",
+"perpetual",
+"lifelong",
+"stable"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "irregular - regular",
+"neg": [
+"irregular",
+"erratic",
+"sporadic",
+"random",
+"uneven",
+"intermittent",
+"unpredictable",
+"spasmodic"
+],
+"pos": [
+"regular",
+"steady",
+"routine",
+"periodic",
+"uniform",
+"consistent",
+"orderly",
+"even"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "few - many",
+"neg": [
+"few",
+"scarce",
+"rare",
+"sparse",
+"meager",
+"scant",
+"limited",
+"infrequent"
+],
+"pos": [
+"many",
+"numerous",
+"countless",
+"abundant",
+"plentiful",
+"ample",
+"copious",
+"myriad"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "illegal - legal",
+"neg": [
+"illegal",
+"unlawful",
+"illicit",
+"criminal",
+"prohibited",
+"banned",
+"forbidden",
+"illegitimate"
+],
+"pos": [
+"legal",
+"lawful",
+"legitimate",
+"licit",
+"permitted",
+"allowed",
+"authorized",
+"valid"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "dead - alive",
+"neg": [
+"dead",
+"lifeless",
+"deceased",
+"extinct",
+"departed",
+"defunct",
+"inanimate",
+"dormant"
+],
+"pos": [
+"alive",
+"living",
+"breathing",
+"animate",
+"vital",
+"lively",
+"live",
+"animated"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "sick - healthy",
+"neg": [
+"sick",
+"ill",
+"unwell",
+"diseased",
+"ailing",
+"infirm",
+"feverish",
+"poorly"
+],
+"pos": [
+"healthy",
+"well",
+"fit",
+"robust",
+"hale",
+"hearty",
+"sound",
+"vigorous"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "female - male",
+"neg": [
+"female",
+"feminine",
+"womanly",
+"maternal",
+"ladylike",
+"sisterly",
+"matronly",
+"girlish"
+],
+"pos": [
+"male",
+"masculine",
+"manly",
+"virile",
+"paternal",
+"fraternal",
+"macho",
+"gentlemanly"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "tame - wild",
+"neg": [
+"tame",
+"domestic",
+"docile",
+"trained",
+"obedient",
+"housebroken",
+"harnessed",
+"gentle"
+],
+"pos": [
+"wild",
+"feral",
+"savage",
+"untamed",
+"unruly",
+"rugged",
+"primitive",
+"undomesticated"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "stupid - smart",
+"neg": [
+"stupid",
+"dumb",
+"foolish",
+"dull",
+"obtuse",
+"simple",
+"ignorant",
+"brainless"
+],
+"pos": [
+"smart",
+"clever",
+"bright",
+"intelligent",
+"brilliant",
+"wise",
+"astute",
+"gifted"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "strange - familiar",
+"neg": [
+"strange",
+"unfamiliar",
+"foreign",
+"alien",
+"odd",
+"exotic",
+"bizarre",
+"weird"
+],
+"pos": [
+"familiar",
+"known",
+"common",
+"ordinary",
+"everyday",
+"routine",
+"recognized",
+"habitual"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "doubtful - certain",
+"neg": [
+"doubtful",
+"uncertain",
+"unsure",
+"dubious",
+"hesitant",
+"vague",
+"ambiguous",
+"questionable"
+],
+"pos": [
+"certain",
+"sure",
+"definite",
+"positive",
+"confident",
+"convinced",
+"assured",
+"decided"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "false - true",
+"neg": [
+"false",
+"untrue",
+"wrong",
+"incorrect",
+"erroneous",
+"fake",
+"mistaken",
+"bogus"
+],
+"pos": [
+"true",
+"real",
+"accurate",
+"correct",
+"factual",
+"valid",
+"genuine",
+"right"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "sad - happy",
+"neg": [
+"sad",
+"unhappy",
+"sorrowful",
+"tearful",
+"miserable",
+"downcast",
+"melancholy",
+"blue"
+],
+"pos": [
+"happy",
+"glad",
+"joyful",
+"cheerful",
+"elated",
+"delighted",
+"content",
+"merry"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "violent - peaceful",
+"neg": [
+"violent",
+"aggressive",
+"brutal",
+"fierce",
+"hostile",
+"savage",
+"bloody",
+"warlike"
+],
+"pos": [
+"peaceful",
+"pacifist",
+"nonviolent",
+"calm",
+"harmonious",
+"amicable",
+"mild",
+"tranquil"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "bad - good",
+"neg": [
+"bad",
+"evil",
+"wicked",
+"immoral",
+"corrupt",
+"sinful",
+"vile",
+"rotten"
+],
+"pos": [
+"good",
+"virtuous",
+"decent",
+"moral",
+"righteous",
+"admirable",
+"honest",
+"noble"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "ugly - beautiful",
+"neg": [
+"ugly",
+"hideous",
+"unsightly",
+"grotesque",
+"homely",
+"repulsive",
+"ghastly",
+"plain"
+],
+"pos": [
+"beautiful",
+"pretty",
+"lovely",
+"attractive",
+"gorgeous",
+"handsome",
+"elegant",
+"graceful"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "trivial - important",
+"neg": [
+"trivial",
+"minor",
+"unimportant",
+"petty",
+"negligible",
+"insignificant",
+"marginal",
+"trifling"
+],
+"pos": [
+"important",
+"vital",
+"crucial",
+"essential",
+"key",
+"critical",
+"major",
+"significant"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "private - public",
+"neg": [
+"private",
+"personal",
+"confidential",
+"secret",
+"restricted",
+"individual",
+"intimate",
+"exclusive"
+],
+"pos": [
+"public",
+"common",
+"communal",
+"shared",
+"collective",
+"civic",
+"popular",
+"general"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "poor - rich",
+"neg": [
+"poor",
+"needy",
+"broke",
+"impoverished",
+"destitute",
+"penniless",
+"indigent",
+"strapped"
+],
+"pos": [
+"rich",
+"wealthy",
+"affluent",
+"prosperous",
+"opulent",
+"loaded",
+"moneyed",
+"flush"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "passive - active",
+"neg": [
+"passive",
+"inactive",
+"idle",
+"lethargic",
+"inert",
+"still",
+"sedentary",
+"static"
+],
+"pos": [
+"active",
+"busy",
+"energetic",
+"engaged",
+"dynamic",
+"working",
+"moving",
+"industrious"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "haiku-2",
+"name": "dangerous - safe",
+"neg": [
+"dangerous",
+"risky",
+"hazardous",
+"perilous",
+"unsafe",
+"threatening",
+"menacing",
+"precarious"
+],
+"pos": [
+"safe",
+"secure",
+"protected",
+"harmless",
+"careful",
+"guarded",
+"unharmed",
+"shielded"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "roots",
+"name": "GOOD",
+"pos": [
+"good",
+"excellent",
+"great",
+"wonderful",
+"fine"
+],
+"neg": [
+"bad",
+"terrible",
+"awful",
+"horrible",
+"poor"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "BIG",
+"pos": [
+"big",
+"large",
+"huge",
+"enormous",
+"vast"
+],
+"neg": [
+"small",
+"tiny",
+"little",
+"minor",
+"miniature"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "NEAR",
+"pos": [
+"near",
+"close",
+"here",
+"nearby",
+"adjacent"
+],
+"neg": [
+"far",
+"distant",
+"remote",
+"away",
+"faraway"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "ABOVE",
+"pos": [
+"above",
+"up",
+"high",
+"over",
+"upward"
+],
+"neg": [
+"below",
+"down",
+"low",
+"under",
+"downward"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "LIVE",
+"pos": [
+"alive",
+"living",
+"lively",
+"vital",
+"animate"
+],
+"neg": [
+"dead",
+"death",
+"lifeless",
+"dying",
+"deceased"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "SAME",
+"pos": [
+"same",
+"identical",
+"equal",
+"similar",
+"alike"
+],
+"neg": [
+"different",
+"opposite",
+"unlike",
+"distinct",
+"dissimilar"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "TIME",
+"pos": [
+"future",
+"later",
+"soon",
+"tomorrow",
+"upcoming"
+],
+"neg": [
+"past",
+"ago",
+"earlier",
+"yesterday",
+"former"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "INSIDE",
+"pos": [
+"inside",
+"within",
+"interior",
+"internal",
+"indoors"
+],
+"neg": [
+"outside",
+"external",
+"exterior",
+"outer",
+"outdoors"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "PART",
+"pos": [
+"group",
+"set",
+"collection",
+"bunch",
+"cluster",
+"assortment"
+],
+"neg": [
+"crumb",
+"fragment",
+"piece",
+"bit",
+"particle",
+"speck"
+],
+"np": 6,
+"nn": 6
+},
+{
+"src": "roots",
+"name": "SIDE",
+"pos": [
+"front",
+"forward",
+"ahead",
+"fore",
+"frontal"
+],
+"neg": [
+"back",
+"rear",
+"behind",
+"backward",
+"posterior"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "KNOW",
+"pos": [
+"know",
+"knowing",
+"aware",
+"informed",
+"knowledgeable"
+],
+"neg": [
+"ignorant",
+"unaware",
+"unknown",
+"clueless",
+"uninformed"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "WANT",
+"pos": [
+"love",
+"desire",
+"want",
+"crave",
+"adore"
+],
+"neg": [
+"hate",
+"loathe",
+"refuse",
+"reject",
+"detest"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "HEAT",
+"pos": [
+"hot",
+"fire",
+"burning",
+"warm",
+"scorching"
+],
+"neg": [
+"cold",
+"ice",
+"freezing",
+"cool",
+"frosty"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "BEGIN",
+"pos": [
+"end",
+"finish",
+"final",
+"last",
+"conclude"
+],
+"neg": [
+"begin",
+"start",
+"first",
+"initial",
+"commence"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "GIVE",
+"pos": [
+"give",
+"donate",
+"present",
+"offer",
+"grant"
+],
+"neg": [
+"take",
+"steal",
+"seize",
+"grab",
+"snatch"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "TOUCH",
+"pos": [
+"hard",
+"rigid",
+"stiff",
+"firm",
+"rough",
+"sharp"
+],
+"neg": [
+"soft",
+"squishy",
+"fluffy",
+"spongy",
+"mushy",
+"pliable",
+"supple"
+],
+"np": 6,
+"nn": 7
+},
+{
+"src": "roots",
+"name": "SEX",
+"pos": [
+"brother",
+"son",
+"father",
+"husband",
+"uncle"
+],
+"neg": [
+"sister",
+"daughter",
+"mother",
+"wife",
+"aunt"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "THINK",
+"pos": [
+"decide",
+"conclude",
+"choose",
+"determine",
+"resolve"
+],
+"neg": [
+"doubt",
+"hesitate",
+"wonder",
+"uncertain",
+"ponder"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "CAN",
+"pos": [
+"able",
+"easy",
+"possible",
+"capable",
+"feasible"
+],
+"neg": [
+"unable",
+"difficult",
+"incapable",
+"impossible",
+"hard"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "MANY",
+"pos": [
+"all",
+"every",
+"everyone",
+"everything",
+"always"
+],
+"neg": [
+"none",
+"nothing",
+"nobody",
+"zero",
+"never"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "SOMEONE",
+"pos": [
+"i",
+"me",
+"my",
+"myself",
+"mine"
+],
+"neg": [
+"they",
+"them",
+"their",
+"others",
+"themselves"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "THING",
+"pos": [
+"animal",
+"dog",
+"cat",
+"horse",
+"cow"
+],
+"neg": [
+"stone",
+"pebble",
+"boulder",
+"mineral",
+"gravel"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "MOVE",
+"pos": [
+"run",
+"sprint",
+"fast",
+"rush",
+"hurry"
+],
+"neg": [
+"stand",
+"still",
+"stop",
+"rest",
+"motionless"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "FEEL",
+"pos": [
+"excited",
+"intense",
+"passionate",
+"thrilled",
+"frantic"
+],
+"neg": [
+"calm",
+"sluggish",
+"bored",
+"quiet",
+"sleepy"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "RULE",
+"pos": [
+"law",
+"official",
+"authority",
+"formal",
+"legal",
+"govern",
+"rule"
+],
+"neg": [
+"personal",
+"private",
+"informal",
+"individual",
+"unofficial"
+],
+"np": 7,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "CHANGE",
+"pos": [
+"change",
+"transform",
+"alter",
+"vary",
+"shift"
+],
+"neg": [
+"remain",
+"stay",
+"constant",
+"stable",
+"unchanged"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "ART",
+"pos": [
+"art",
+"painting",
+"music",
+"poetry",
+"sculpture",
+"beauty",
+"literature",
+"philosophy"
+],
+"neg": [
+"technology",
+"machine",
+"engineering",
+"device",
+"mechanical",
+"electronics",
+"mathematics",
+"physics"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "roots",
+"name": "JOIN",
+"pos": [
+"join",
+"add",
+"attach",
+"connect",
+"combine",
+"unite"
+],
+"neg": [
+"separate",
+"remove",
+"detach",
+"disconnect",
+"divide",
+"subtract"
+],
+"np": 6,
+"nn": 6
+},
+{
+"src": "roots",
+"name": "VALUE",
+"pos": [
+"expensive",
+"valuable",
+"precious",
+"costly",
+"priceless"
+],
+"neg": [
+"cheap",
+"inexpensive",
+"worthless",
+"bargain",
+"trivial"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "CARE",
+"pos": [
+"careful",
+"thorough",
+"diligent",
+"meticulous",
+"attentive"
+],
+"neg": [
+"careless",
+"sloppy",
+"negligent",
+"lazy",
+"hasty"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "FRIEND",
+"pos": [
+"friend",
+"friendship",
+"kindness",
+"friendly",
+"kind"
+],
+"neg": [
+"enemy",
+"hostility",
+"cruelty",
+"hostile",
+"cruel"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "MOOD",
+"pos": [
+"funny",
+"hilarious",
+"cheerful",
+"joyful",
+"merry"
+],
+"neg": [
+"tragic",
+"grief",
+"sorrowful",
+"mournful",
+"despairing"
+],
+"np": 5,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "CONSUME",
+"pos": [
+"eat",
+"drink",
+"swallow",
+"absorb",
+"inhale",
+"devour",
+"read",
+"listen"
+],
+"neg": [
+"excrete",
+"spit",
+"vomit",
+"emit",
+"exhale",
+"write",
+"speak"
+],
+"np": 8,
+"nn": 7
+},
+{
+"src": "roots",
+"name": "MEASURE",
+"pos": [
+"ratio",
+"proportion",
+"rate",
+"percentage",
+"fraction",
+"relative",
+"average",
+"degree"
+],
+"neg": [
+"amount",
+"size",
+"quantity",
+"length",
+"weight",
+"number",
+"volume",
+"height"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "roots",
+"name": "LONG",
+"pos": [
+"rod",
+"pole",
+"beam",
+"log",
+"pillar",
+"trunk",
+"stick",
+"post",
+"bar"
+],
+"neg": [
+"thread",
+"string",
+"rope",
+"wire",
+"hair",
+"needle",
+"strand",
+"ribbon"
+],
+"np": 9,
+"nn": 8
+},
+{
+"src": "roots",
+"name": "SAY",
+"pos": [
+"shout",
+"yell",
+"scream",
+"roar",
+"bellow",
+"shrill",
+"loud",
+"noise"
+],
+"neg": [
+"whisper",
+"murmur",
+"mumble",
+"hush",
+"mutter",
+"faint",
+"silent",
+"quiet"
+],
+"np": 8,
+"nn": 8
+},
+{
+"src": "roots",
+"name": "GRAIN",
+"pos": [
+"solid",
+"monolith",
+"ingot",
+"lump",
+"slab",
+"block",
+"chunk",
+"seamless"
+],
+"neg": [
+"gas",
+"vapor",
+"steam",
+"smoke",
+"air"
+],
+"np": 8,
+"nn": 5
+},
+{
+"src": "roots",
+"name": "LAND",
+"pos": [
+"land",
+"ground",
+"soil",
+"earth",
+"terrain",
+"mainland"
+],
+"neg": [
+"sea",
+"ocean",
+"water",
+"lake",
+"waves",
+"seawater"
+],
+"np": 6,
+"nn": 6
+},
+{
+"src": "osgood",
+"name": "bad - good",
+"neg": [
+"bad",
+"awful",
+"unpleasant",
+"ugly",
+"cruel",
+"nasty"
+],
+"pos": [
+"good",
+"nice",
+"pleasant",
+"beautiful",
+"kind",
+"lovely"
+],
+"np": 6,
+"nn": 6
+},
+{
+"src": "osgood",
+"name": "weak - strong",
+"neg": [
+"weak",
+"feeble",
+"light",
+"soft",
+"small",
+"fragile"
+],
+"pos": [
+"strong",
+"powerful",
+"heavy",
+"hard",
+"big",
+"mighty"
+],
+"np": 6,
+"nn": 6
+},
+{
+"src": "osgood",
+"name": "passive - active",
+"neg": [
+"passive",
+"slow",
+"still",
+"calm",
+"quiet",
+"lazy"
+],
+"pos": [
+"active",
+"fast",
+"lively",
+"quick",
+"energetic",
+"busy"
+],
+"np": 6,
+"nn": 6
+}
+]
