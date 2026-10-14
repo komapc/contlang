@@ -3,7 +3,7 @@
 import json, os, re, sys, random, numpy as np
 D = os.path.dirname(os.path.abspath(__file__)); LP = f"{D}/../reader/labels.json"; cmd, S = sys.argv[1], sys.argv[2]
 CA = json.load(open(f"{D}/codes_all.json")); WS = json.load(open(f"{D}/words.json"))
-W = sorted(w for w in WS["worst"] + WS["field"] if w in CA and CA[w]["M"] != CA[w]["T"] and w != "alleged")  # alleged — пример в строке TRUE; C = {w: CA[w] for w in W}
+W = sorted(w for w in WS["worst"] + WS["field"] if w in CA and CA[w]["M"] != CA[w]["T"] and w != "alleged"); C = {w: CA[w] for w in W}  # alleged — пример в строке TRUE
 grp = {w: "worst" if w in WS["worst"] else "field" for w in W}; LS = [("M", 1), ("M", 2), ("T", 1), ("T", 2)]
 if cmd == "readers":
     sp = os.popen(f"cd {D}/../../../../worker && node -e 'import(\"./prompts.js\").then(m=>process.stdout.write(m.DEC_SPEC))'").read(); assert "## Roots (45)" in sp
