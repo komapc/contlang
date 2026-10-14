@@ -66,3 +66,9 @@ def test_no_one_sided_wording():
         text = (REPO / rel).read_text(encoding="utf8")
         for s in stale:
             assert s not in text, f"{rel}: {s}"
+
+
+def test_learned_dict_matches_roots():
+    import numpy as np
+    names = [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()]
+    assert list(np.load(REPO / "data" / "sparse_dict_learned.npz")["names"]) == names, "запустите scripts/18_sparse_learn.py (дообучение новых корней)"

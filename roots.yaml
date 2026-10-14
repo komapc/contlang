@@ -600,6 +600,7 @@ roots:
   semaxis:
   - land ground soil earth terrain mainland
   - sea ocean water lake waves seawater
+  center: land country region territory landscape shore
   en_gloss: land, country, region
 - name: BODY
   axis: null

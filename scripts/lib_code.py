@@ -54,9 +54,9 @@ def root_specs(overrides=None, extra=None, axes=None):
     кандидаты в новые корни, такие же четвёрки (minus None — без оси).
     """
     out = []
-    for r in spec.axis_roots():
+    for r in spec.axis_roots():  # center в roots.yaml — слова центра, если он не середина полюсов
         p, n = (overrides or {}).get(r["name"], r["semaxis"])
-        out.append((r["name"], p, n, None))
+        out.append((r["name"], p, n, r.get("center")))
     for name, ws in NOAXIS.items():
         if name in (axes or {}):
             out.append((name, *axes[name], ws))

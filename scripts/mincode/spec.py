@@ -37,5 +37,5 @@ def poles_hash(doc=None):
     import hashlib
     import json
     doc = doc or load()
-    key = [[r["name"], r.get("semaxis")] for r in doc["roots"]]
+    key = [[r["name"], r.get("semaxis")] + ([r["center"]] if r.get("center") else []) for r in doc["roots"]]
     return hashlib.sha1(json.dumps(key, ensure_ascii=False).encode()).hexdigest()[:12]

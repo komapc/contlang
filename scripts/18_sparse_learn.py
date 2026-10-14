@@ -8,6 +8,11 @@ roots.yaml, вес lam); затем атомы нормируются, и есл
 
 Пишет data/sparse_learn.md и data/sparse_dict_learned.npz (словарь только
 для анализа: в roots.yaml остаются человеческие списки полюсов).
+
+По умолчанию — дообучение: корни, уже обученные в data/sparse_dict_learned.npz, заморожены
+(коды слов без новых корней не меняются), обучаются только новые корни roots.yaml
+(learn_new; так добавлен LAND, data/eval/runs/adopt3). Полное переобучение — `--full`:
+оно сдвигает все атомы (на 47 корнях −8 % «близко» у слов без новых корней, data/eval/runs/adopt2).
 """
 import os
 import sys
@@ -61,7 +66,56 @@ def learn(d, C0, A0, lam=LAM, tau=TAU, iters=ITERS, hw=HW, log=None):
     return C, A
 
 
+def learn_new(d, C0, A0, C, A, new, lam=LAM, tau=TAU, iters=ITERS, hw=HW, log=None):
+    """Обучить только строки new (центр и ось), остальные атомы заморожены:
+    min ‖M_new θ_new − (T − M_old θ_old)‖² + λ‖θ_new − θ0_new‖², затем возврат к исходному до cos = tau."""
+    R, has = len(C0), A0.any(1)
+    C, A = C.copy(), A.copy()
+    L = [i for r in new.values() for i in ((r, R + r) if has[r] else (r,))]
+    O = [i for i in range(2 * R) if i not in L]
+    Th0, Xtr = np.concatenate([C0, A0]), d.V[d.train]
+    for it in range(iters):
+        co = Coder(C, A, head_w=hw)
+        codes = encode_all(co, Xtr)
+        M = co.design(codes)
+        Th = np.concatenate([C, A])
+        T = np.linalg.norm(M @ Th, axis=1)[:, None] * Xtr - M[:, O] @ Th[O]
+        ML = M[:, L]
+        sol = np.linalg.solve(ML.T @ ML + lam * np.eye(len(L)), ML.T @ T + lam * Th0[L])
+        for k, i in enumerate(L):
+            Th[i] = clamp(unit(sol[k]), Th0[i], tau)
+        C, A = Th[:R], Th[R:]
+        if log is not None:
+            log.append(f"итерация {it + 1}: " + ", ".join(f"cos({n}, исходный) {C[r] @ C0[r]:.2f}" for n, r in new.items()))
+    return C, A
+
+
+def incremental():
+    """Дообучение: новые корни roots.yaml при замороженных атомах из NPZ."""
+    specs = root_specs()
+    d = Data([specs])
+    names, C0, A0 = d.dictionary(specs)
+    D = np.load(NPZ)
+    old = {n: i for i, n in enumerate(D["names"])}
+    gone = set(old) - set(names)
+    assert not gone, f"корни убраны из roots.yaml: {sorted(gone)} — нужно --full"
+    new = {n: r for r, n in enumerate(names) if n not in old}
+    if not new:
+        print("новых корней нет, словарь не меняется")
+        return
+    C, A = C0.copy(), A0.copy()
+    for r, n in enumerate(names):
+        if n in old:
+            C[r], A[r] = D["C"][old[n]], D["A"][old[n]]
+    log = []
+    C, A = learn_new(d, C0, A0, C, A, new, log=log)
+    print("дообучены " + ", ".join(new) + "; " + "; ".join(log))
+    np.savez(NPZ, names=np.array(names), C=C, A=A, C0=C0, A0=A0)
+
+
 def main():
+    if "--full" not in sys.argv:
+        return incremental()
     specs = root_specs()
     d = Data([specs])
     names, C0, A0 = d.dictionary(specs)
