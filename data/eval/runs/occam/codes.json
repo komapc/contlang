@@ -1,0 +1,602 @@
+{
+"acid": {
+"M": "GRAIN(=-2) THING(=-2) SAME(=-1) | o",
+"O": "GRAIN(=-2) THING(=-2) | o"
+},
+"adjacent": {
+"M": "NEAR(=+3) LAND(=0) SAME(=-1) | a",
+"O": "NEAR(=+2) | a"
+},
+"admitted": {
+"M": "WANT(=-1) MANY(=-2) KNOW(=+1) | i T-2",
+"O": "WANT(=0) MANY(=-2) | i T-2"
+},
+"age": {
+"M": "MEASURE(=-1) TIME(=-2) LIVE(=0) | o",
+"O": "MEASURE(=-1) TIME(=-2) | o"
+},
+"agency": {
+"M": "RULE(=+2) PART(=+2) PLACE | o",
+"O": "RULE(=+2) PLACE | o"
+},
+"archbishop": {
+"M": "RULE(=+5) ART(=+4) TIME(=-2) | o agent",
+"O": "RULE(=+4) | o agent"
+},
+"architecture": {
+"M": "ART(=0) GRAIN(=+3) INSIDE(=0) | o",
+"O": "ART(=0) GRAIN(=+2) | o"
+},
+"artillery": {
+"M": "BIG(=+1) FIGHT(=+5) ART(=-1) | o",
+"O": "BIG(=+1) FIGHT(=+4) | o"
+},
+"attempt": {
+"M": "DO CAN(=-2) GIVE(=-1) | i",
+"O": "DO CAN(=-1) | i"
+},
+"attorney": {
+"M": "RULE(=+3) KNOW(=+2) SIDE(=+2) | o agent",
+"O": "RULE(=+2) | o agent"
+},
+"authorities": {
+"M": "RULE(=+2) GIVE(=0) | o N+3",
+"O": "RULE(=+2) | o N+3"
+},
+"bankers": {
+"M": "RULE(=0) MEASURE(=+4) SIDE(=+4) | o agent N+3",
+"O": "RULE(=+1) | o agent N+3"
+},
+"bar": {
+"M": "LONG(=+3) CONSUME(=+3) PART(=+3) | o",
+"O": "LONG(=+3) CONSUME(=+3) | o"
+},
+"boy": {
+"M": "SEX(=+3) BIG(=-4) THING(=+2) | o agent",
+"O": "SEX(=+3) BIG(=-3) | o agent"
+},
+"bullet": {
+"M": "GRAIN(=0) FIGHT(=+3) BODY | o",
+"O": "GRAIN(=0) FIGHT(=+3) | o"
+},
+"burning": {
+"M": "HEAT(=+4) JOIN(=-1) LIVE(=-1) | i A0",
+"O": "HEAT(=+3) JOIN(=-1) | i A0"
+},
+"campaign": {
+"M": "FIGHT(=0) PART(=+3) BEGIN(=0) | o",
+"O": "FIGHT(=0) | o"
+},
+"carbon": {
+"M": "GRAIN(=-1) THING(=-1) HAPPEN | o",
+"O": "GRAIN(=0) HAPPEN | o"
+},
+"catholic": {
+"M": "RULE(=+2) ART(=+5) INSIDE(=+4) | a",
+"O": "RULE(=+2) ART(=+4) | a"
+},
+"celebration": {
+"M": "MOOD(=+2) BEGIN(=+1) HAPPEN | o",
+"O": "MOOD(=+2) | o"
+},
+"championships": {
+"M": "FIGHT(=-3) RULE(=+2) PLACE | o N+3",
+"O": "FIGHT(=-2) | o N+3"
+},
+"chicken": {
+"M": "THING(=+3) PART(=0) HEAT(=0) | o",
+"O": "THING(=+2) | o"
+},
+"civil": {
+"M": "RULE(=+1) FIGHT(=+3) FEEL(=-2) | a",
+"O": "RULE(=+1) FIGHT(=+3) | a"
+},
+"clients": {
+"M": "RULE(=0) SOMEONE(=+1) TEXT | o agent N+3",
+"O": "RULE(=0) | o agent N+3"
+},
+"clock": {
+"M": "MOVE(=0) INSIDE(=0) SEE | o",
+"O": "MOVE(=0) | o"
+},
+"cloud": {
+"M": "GRAIN(=-2) PART(=-1) NEAR(=-1) | o",
+"O": "GRAIN(=-2) PART(=-1) | o"
+},
+"comfortable": {
+"M": "FEEL(=-2) CAN(=+4) GOOD(=+1) | a",
+"O": "FEEL(=-2) CAN(=+3) | a"
+},
+"conduct": {
+"M": "DO CARE(=+1) RULE(=+1) | i",
+"O": "DO | i"
+},
+"congress": {
+"M": "RULE(=+4) PART(=+2) SIDE(=+1) | o",
+"O": "RULE(=+3) | o"
+},
+"conspiracy": {
+"M": "DO KNOW(=-2) PART(=+1) | o",
+"O": "DO KNOW(=-2) | o"
+},
+"cooking": {
+"M": "HEAT(=+1) CONSUME(=+2) DO | i A0",
+"O": "HEAT(=+1) CONSUME(=+2) | i A0"
+},
+"cool": {
+"M": "HEAT(=-1) FEEL(=-1) | a",
+"O": "HEAT(=0) | a"
+},
+"corporate": {
+"M": "RULE(=0) PART(=+4) ART(=-2) | a",
+"O": "RULE(=0) PART(=+3) | a"
+},
+"critic": {
+"M": "ART(=+2) WANT(=-3) TEXT | o agent",
+"O": "ART(=+2) WANT(=-3) | o agent"
+},
+"crown": {
+"M": "RULE(=+4) VALUE(=+3) LONG(=-1) | o",
+"O": "RULE(=+3) | o"
+},
+"crystal": {
+"M": "GRAIN(=+1) PART(=+1) CHANGE(=-1) | o",
+"O": "GRAIN(=+1) | o"
+},
+"danish": {
+"M": "SAME(=-1) TEXT LAND(=-1) | a",
+"O": "SAME(=-1) | a"
+},
+"dead": {
+"M": "LIVE(=-1) MANY(=-2) TIME(=+1) | a",
+"O": "LIVE(=-1) TIME(=+1) | a"
+},
+"debris": {
+"M": "PART(=-1) THING(=-3) GRAIN(=-2) | o",
+"O": "PART(=-1) THING(=-3) | o"
+},
+"degrees": {
+"M": "MEASURE(=0) ABOVE(=+1) PLACE | o N+3",
+"O": "MEASURE(=0) | o N+3"
+},
+"deposits": {
+"M": "GIVE(=+1) RULE(=0) SOMEONE(=+1) | i",
+"O": "GIVE(=+1) | i"
+},
+"difficulties": {
+"M": "CAN(=-2) FEEL(=-1) MEASURE(=-1) | o N+3",
+"O": "CAN(=-1) | o N+3"
+},
+"digital": {
+"M": "ART(=-2) VALUE(=+1) ABOVE(=+3) | a",
+"O": "ART(=-1) | a"
+},
+"diocese": {
+"M": "RULE(=+3) LAND(=0) PLACE | o",
+"O": "RULE(=+2) | o"
+},
+"drivers": {
+"M": "ART(=-3) MOVE(=0) THING(=+2) | o agent N+3",
+"O": "ART(=-3) | o agent N+3"
+},
+"economics": {
+"M": "ART(=0) MEASURE(=+3) VALUE(=-2) | o",
+"O": "ART(=0) MEASURE(=+3) | o"
+},
+"efforts": {
+"M": "CAN(=-2) CARE(=+2) DO | o N+3",
+"O": "CAN(=-1) CARE(=+2) | o N+3"
+},
+"electricity": {
+"M": "ART(=-2) GRAIN(=-2) HEAT(=+3) | o",
+"O": "HEAT(=+2) ART(=-4) | o"
+},
+"encounter": {
+"M": "HAPPEN JOIN(=+4) TIME(=+1) | i",
+"O": "HAPPEN JOIN(=+4) | i"
+},
+"entirely": {
+"M": "MANY(=0) SOMEONE(=0) GRAIN(=+1) | e",
+"O": "MANY(=0) | e"
+},
+"equally": {
+"M": "SAME(=+1) MANY(=+2) SOMEONE(=-3) | e",
+"O": "MANY(=+1) SAME(=+1) | e"
+},
+"error": {
+"M": "CARE(=-2) HAPPEN RULE(=+3) | o",
+"O": "CARE(=-2) HAPPEN | o"
+},
+"exactly": {
+"M": "MANY(=0) SAME(=+2) THINK(=+1) | e",
+"O": "MANY(=0) SAME(=+2) | e"
+},
+"expect": {
+"M": "THINK(=0) TIME(=+3) MEASURE(=+2) | i",
+"O": "THINK(=0) TIME(=+2) | i"
+},
+"features": {
+"M": "SAME(=-2) MEASURE(=-2) SEE | o N+3",
+"O": "SAME(=-2) MEASURE(=-1) | o N+3"
+},
+"field": {
+"M": "LAND(=+2) FIGHT(=0) LONG(=+1) | o",
+"O": "LAND(=+2) LONG(=+1) | o"
+},
+"fighting": {
+"M": "FIGHT(=0) CAN(=-1) GIVE(=0) | i A0",
+"O": "FIGHT(=0) | i A0"
+},
+"flash": {
+"M": "SEE HEAT(=+3) SAY(=-1) | i",
+"O": "SEE HEAT(=+2) | i"
+},
+"foods": {
+"M": "THING(=+2) CONSUME(=+2) GRAIN(=0) | o N+3",
+"O": "THING(=+2) CONSUME(=+1) | o N+3"
+},
+"forest": {
+"M": "LAND(=0) THING(=0) SAY(=-1) | o",
+"O": "LAND(=0) | o"
+},
+"freed": {
+"M": "GIVE(=+1) CARE(=-3) RULE(=+1) | i T-2",
+"O": "GIVE(=+1) | i T-2"
+},
+"girl": {
+"M": "SEX(=-3) BIG(=-4) THING(=+2) | o agent",
+"O": "SEX(=-3) BIG(=-4) | o agent"
+},
+"guerrilla": {
+"M": "FIGHT(=+3) FRIEND(=-1) ART(=+2) | o agent",
+"O": "FIGHT(=+3) | o agent"
+},
+"guess": {
+"M": "THINK(=0) SOMEONE(=+2) MANY(=-1) | i",
+"O": "THINK(=0) MANY(=-1) | i"
+},
+"hearts": {
+"M": "BODY INSIDE(=+2) LIVE(=+1) | o N+3",
+"O": "BODY LIVE(=+1) | o N+3"
+},
+"helps": {
+"M": "GIVE(=+2) FRIEND(=+2) CAN(=0) | i",
+"O": "GIVE(=+2) | i"
+},
+"historical": {
+"M": "RULE(=-1) VALUE(=+2) NEAR(=+3) | a",
+"O": "RULE(=-1) VALUE(=+2) | a"
+},
+"honored": {
+"M": "GIVE(=+2) GOOD(=+3) WANT(=0) | i T-2",
+"O": "GIVE(=+2) GOOD(=+2) | i T-2"
+},
+"hopefully": {
+"M": "TIME(=+3) SOMEONE(=+2) CAN(=+2) | e",
+"O": "TIME(=+3) SOMEONE(=+1) | e"
+},
+"housing": {
+"M": "INSIDE(=+1) GIVE(=+1) DO | i A0",
+"O": "INSIDE(=+1) GIVE(=+1) | i A0"
+},
+"hundreds": {
+"M": "TIME(=-3) BEGIN(=+3) MEASURE(=-1) | o N+3",
+"O": "TIME(=-2) MEASURE(=-1) | o N+3"
+},
+"hunter": {
+"M": "THING(=+3) FIGHT(=+3) SAY(=-2) | o agent",
+"O": "THING(=+3) FIGHT(=+3) | o agent"
+},
+"husband": {
+"M": "SEX(=+3) SOMEONE(=+1) FRIEND(=+1) | o agent",
+"O": "SEX(=+3) | o agent"
+},
+"immigration": {
+"M": "LAND(=0) MOVE(=+1) THINK(=+1) | o",
+"O": "LAND(=0) MOVE(=+1) | o"
+},
+"individual": {
+"M": "RULE(=-1) PART(=0) LIVE(=+1) | o",
+"O": "RULE(=-1) LIVE(=+1) | o"
+},
+"inmates": {
+"M": "RULE(=+1) LIVE(=-1) FRIEND(=0) | o agent N+3",
+"O": "RULE(=+1) LIVE(=-1) | o agent N+3"
+},
+"invested": {
+"M": "GIVE(=+1) DO MEASURE(=+1) | i T-2",
+"O": "GIVE(=+1) DO | i T-2"
+},
+"job": {
+"M": "DO RULE(=0) PLACE | o",
+"O": "DO MEASURE(=+2) PLACE | o"
+},
+"jump": {
+"M": "ABOVE(=+1) MOVE(=+3) GIVE(=-1) | i",
+"O": "ABOVE(=+1) MOVE(=+3) | i"
+},
+"keep": {
+"M": "CHANGE(=-2) MOVE(=-3) GIVE(=-1) | i",
+"O": "CHANGE(=-2) GIVE(=-1) | i"
+},
+"knee": {
+"M": "BODY SIDE(=-1) JOIN(=+2) | o",
+"O": "BODY SIDE(=-1) | o"
+},
+"lab": {
+"M": "ART(=-3) THING(=+3) PART(=0) | o",
+"O": "ART(=-3) | o"
+},
+"largest": {
+"M": "BIG(=+1) MEASURE(=0) | a C+5",
+"O": "BIG(=+1) | a C+5"
+},
+"legacy": {
+"M": "CHANGE(=-1) VALUE(=+5) LIVE(=-4) | o",
+"O": "VALUE(=+5) LIVE(=-5) | o"
+},
+"luck": {
+"M": "HAPPEN BEGIN(=+3) THINK(=-1) | o",
+"O": "HAPPEN BEGIN(=+3) | o"
+},
+"meetings": {
+"M": "TIME(=+1) PART(=+4) RULE(=0) | o N+3",
+"O": "PART(=+3) TIME(=+1) | o N+3"
+},
+"messages": {
+"M": "TEXT KNOW(=+1) SAY(=+1) | o N+3",
+"O": "TEXT | o N+3"
+},
+"metal": {
+"M": "GRAIN(=+2) INSIDE(=-2) LONG(=0) | o",
+"O": "GRAIN(=+2) INSIDE(=-2) | o"
+},
+"metro": {
+"M": "PLACE NEAR(=+5) MOVE(=+3) | o",
+"O": "PLACE MOVE(=+2) | o"
+},
+"middle": {
+"M": "PLACE SIDE(=0) BIG(=0) | o",
+"O": "PLACE NEAR(=+1) ABOVE(=+1) | o"
+},
+"militants": {
+"M": "FIGHT(=+2) TOUCH(=+4) TIME(=-3) | o agent N+3",
+"O": "FIGHT(=+2) TOUCH(=+4) | o agent N+3"
+},
+"ministers": {
+"M": "RULE(=+2) GIVE(=+2) ART(=+2) | o agent N+3",
+"O": "RULE(=+1) | o agent N+3"
+},
+"missed": {
+"M": "HAPPEN CARE(=-1) WANT(=0) | i T-2",
+"O": "HAPPEN CARE(=-1) GIVE(=+1) | i T-2"
+},
+"motor": {
+"M": "ART(=-3) MOVE(=+1) BODY | o",
+"O": "ART(=-2) | o"
+},
+"multiple": {
+"M": "SAME(=-1) BIG(=+3) SOMEONE(=-3) | a",
+"O": "SAME(=-1) BIG(=+3) | a"
+},
+"nations": {
+"M": "LAND(=0) PART(=+1) RULE(=+1) | o N+3",
+"O": "LAND(=0) RULE(=+1) | o N+3"
+},
+"nomination": {
+"M": "RULE(=+2) GIVE(=+3) FIGHT(=-2) | o",
+"O": "RULE(=+2) GIVE(=+3) | o"
+},
+"noticed": {
+"M": "SEE KNOW(=+2) MANY(=-2) | i T-2",
+"O": "SEE KNOW(=+1) | i T-2"
+},
+"offers": {
+"M": "GIVE(=+2) CAN(=+2) VALUE(=-2) | i",
+"O": "GIVE(=+2) CAN(=+2) | i"
+},
+"offices": {
+"M": "RULE(=0) DO TIME(=0) | o N+3",
+"O": "RULE(=0) DO | o N+3"
+},
+"opera": {
+"M": "ART(=+2) DO MOOD(=0) | o",
+"O": "ART(=+2) DO | o"
+},
+"orchestra": {
+"M": "PART(=+3) ART(=+1) DO | o",
+"O": "PART(=+3) | o"
+},
+"orthodox": {
+"M": "RULE(=+2) ART(=+4) SAME(=0) | a",
+"O": "RULE(=+2) ART(=+4) | a"
+},
+"pension": {
+"M": "RULE(=0) MEASURE(=+5) GIVE(=+4) | o",
+"O": "RULE(=+1) MEASURE(=+4) | o"
+},
+"planes": {
+"M": "BEGIN(=-1) CAN(=+2) CHANGE(=+2) | i",
+"O": "BEGIN(=-1) | i"
+},
+"popularity": {
+"M": "MEASURE(=0) ABOVE(=+1) SAME(=-4) | o",
+"O": "MEASURE(=0) | o"
+},
+"populations": {
+"M": "LAND(=0) PLACE MEASURE(=+1) | o N+3",
+"O": "LAND(=0) MEASURE(=+1) | o N+3"
+},
+"posed": {
+"M": "DO MOVE(=-4) ART(=+1) | i T-2",
+"O": "DO MOVE(=-4) | i T-2"
+},
+"possession": {
+"M": "RULE(=+2) GIVE(=-4) MEASURE(=0) | o",
+"O": "RULE(=+2) GIVE(=-4) | o"
+},
+"praised": {
+"M": "THINK(=+1) GOOD(=+3) MEASURE(=0) | i T-2",
+"O": "THINK(=+1) WANT(=-1) GOOD(=+4) | i T-2"
+},
+"purchase": {
+"M": "VALUE(=-2) GIVE(=+1) THINK(=+2) | i",
+"O": "VALUE(=-2) GIVE(=+1) | i"
+},
+"radical": {
+"M": "CHANGE(=+4) FEEL(=+3) ART(=-1) | a",
+"O": "CHANGE(=+3) | a"
+},
+"relatively": {
+"M": "BIG(=-1) MEASURE(=+3) MANY(=0) | e",
+"O": "BIG(=-1) MEASURE(=+3) | e"
+},
+"reporters": {
+"M": "TEXT TIME(=-1) FIGHT(=0) | o agent N+3",
+"O": "TEXT | o agent N+3"
+},
+"researcher": {
+"M": "ART(=-1) CARE(=+4) TIME(=-3) | o agent",
+"O": "ART(=-1) CARE(=+3) | o agent"
+},
+"residence": {
+"M": "PLACE INSIDE(=+1) CHANGE(=-1) | o",
+"O": "PLACE CHANGE(=-1) | o"
+},
+"resumed": {
+"M": "BEGIN(=-1) CHANGE(=-2) JOIN(=0) | i T-2",
+"O": "BEGIN(=-1) CHANGE(=-1) | i T-2"
+},
+"roles": {
+"M": "DO RULE(=+1) LIVE(=+2) | o N+3",
+"O": "DO RULE(=+1) | o N+3"
+},
+"roof": {
+"M": "INSIDE(=-1) LONG(=+1) ABOVE(=0) | o",
+"O": "INSIDE(=-1) | o"
+},
+"rooms": {
+"M": "INSIDE(=+1) LONG(=+3) PLACE | o N+3",
+"O": "INSIDE(=+1) LONG(=+2) | o N+3"
+},
+"sees": {
+"M": "SEE KNOW(=+1) | i",
+"O": "SEE | i"
+},
+"selected": {
+"M": "THINK(=+3) PART(=+2) SAME(=-3) | i T-2",
+"O": "THINK(=+2) | i T-2"
+},
+"shirts": {
+"M": "BODY LONG(=-5) FIGHT(=-1) | o N+3",
+"O": "LONG(=-5) | o N+3"
+},
+"shooting": {
+"M": "GIVE(=-2) FIGHT(=+3) CONSUME(=-4) | i A0",
+"O": "GIVE(=-2) FIGHT(=+3) | i A0"
+},
+"shrine": {
+"M": "PLACE INSIDE(=+1) VALUE(=+2) | o",
+"O": "PLACE INSIDE(=+1) | o"
+},
+"spell": {
+"M": "RULE(=-1) GIVE(=-4) WANT(=+5) | o",
+"O": "GOOD(=-1) WANT(=+5) | o"
+},
+"spokesman": {
+"M": "RULE(=+3) TIME(=-2) SEX(=+3) | o agent",
+"O": "RULE(=+3) TIME(=-2) | o agent"
+},
+"starting": {
+"M": "BEGIN(=-2) MOVE(=-1) DO | i A0",
+"O": "BEGIN(=-2) | i A0"
+},
+"storage": {
+"M": "MOVE(=-2) PART(=+2) INSIDE(=0) | o",
+"O": "MOVE(=-3) PART(=+3) | o"
+},
+"strength": {
+"M": "MEASURE(=-1) TOUCH(=+3) GIVE(=0) | o",
+"O": "MEASURE(=-1) TOUCH(=+3) | o"
+},
+"study": {
+"M": "CARE(=+3) SEE RULE(=+1) | o",
+"O": "CARE(=+3) SEE | o"
+},
+"survivors": {
+"M": "FIGHT(=-1) LIVE(=-2) CAN(=0) | o agent N+3",
+"O": "LIVE(=0) | o agent N+3"
+},
+"techniques": {
+"M": "ART(=0) CAN(=+1) PART(=0) | o N+3",
+"O": "ART(=0) | o N+3"
+},
+"tell": {
+"M": "KNOW(=+2) THINK(=+2) GIVE(=+2) | i",
+"O": "KNOW(=+2) GIVE(=+2) | i"
+},
+"terminal": {
+"M": "NEAR(=+1) GRAIN(=-1) ART(=-3) | o",
+"O": "NEAR(=+1) ART(=-3) | o"
+},
+"testimony": {
+"M": "RULE(=+2) TEXT SEE | o",
+"O": "RULE(=+2) SEE | o"
+},
+"timing": {
+"M": "MEASURE(=-1) TIME(=-1) MOVE(=0) | i A0",
+"O": "MEASURE(=-1) TIME(=-1) DO | i A0"
+},
+"tools": {
+"M": "DO ART(=-2) CAN(=+2) | o N+3",
+"O": "DO ART(=-2) | o N+3"
+},
+"topics": {
+"M": "TEXT THINK(=-1) PART(=0) | o N+3",
+"O": "TEXT THINK(=-1) | o N+3"
+},
+"tradition": {
+"M": "ART(=+2) SAME(=-2) CHANGE(=-3) | o",
+"O": "ART(=+2) SAME(=-2) | o"
+},
+"trafficking": {
+"M": "VALUE(=-3) NEAR(=+2) GIVE(=0) | i A0",
+"O": "VALUE(=-2) | i A0"
+},
+"tree": {
+"M": "LONG(=+1) THING(=0) BIG(=0) | o",
+"O": "LONG(=+1) SAME(=-2) | o"
+},
+"typical": {
+"M": "SAME(=-1) HAPPEN | a",
+"O": "SAME(=-1) | a"
+},
+"unprecedented": {
+"M": "HAPPEN BIG(=+5) GOOD(=+1) | a",
+"O": "HAPPEN BIG(=+5) | a"
+},
+"violations": {
+"M": "RULE(=+4) CARE(=-2) FRIEND(=-2) | o N+3",
+"O": "RULE(=+3) FRIEND(=-1) | o N+3"
+},
+"warned": {
+"M": "KNOW(=+2) WANT(=-2) SAY(=+1) | i T-2",
+"O": "KNOW(=+2) WANT(=-2) | i T-2"
+},
+"wildlife": {
+"M": "LAND(=-1) THING(=+3) INSIDE(=-2) | o",
+"O": "LAND(=-1) THING(=+3) | o"
+},
+"withdrawal": {
+"M": "JOIN(=-4) GIVE(=+3) TIME(=+2) | o",
+"O": "JOIN(=-4) | o"
+},
+"yards": {
+"M": "MEASURE(=0) INSIDE(=0) MOVE(=0) | o N+3",
+"O": "MEASURE(=0) INSIDE(=+1) | o N+3"
+},
+"yesterday": {
+"M": "TIME(=0) SOMEONE(=0) | o",
+"O": "TIME(=0) | o"
+}
+}
