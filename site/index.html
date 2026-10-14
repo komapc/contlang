@@ -336,7 +336,7 @@ const RDP = fetch("data/roots.json").then(r => r.json());
 let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])), rol: new Map((d.roles || []).map(r => [r.name, r])) }; });
 const clean = (t) => String(t || "").replace(/`/g, "").replace(/\\\|/g, "|").replace(/\*/g, "").trim();
 const sgn = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
-const PARTRE = /^(E|PI|FROM|FOR|LIKE|LA|LI|PE|AND)$/;
+const PARTRE = /^(E|PI|FROM|FOR|LIKE|LA|PE|AND)$/;
 // токены: "кавычки", метка формы (T-2, N+3, A0), корень с осью, скобки и черта, часть речи, роль имени
 const TOKRE = /"[^"]*"|\b[TRNMACIDVK][+-]?\d\b|\b[A-Z][A-Z]*\b(?:\(=\s*[+-]?\d+\s*\))?\??|[{}\[\];|!?]|\b[oiae]\b|\b(?:agent|tool|result|quality)\b/g;
 function tokens(code){

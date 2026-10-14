@@ -15,5 +15,5 @@ A sentence is a sequence of words and particles. Every word has its own `| FORM`
 - `[ … ]`: a clause used inside another, as its object or modifier.
 - `;`: separates independent clauses.
 - `AND`: joins two words of the same kind.
-- A word with part of speech `i` is the verb; there is no separate predicate particle.
+- A word with part of speech `i` is the verb; there is no separate predicate particle. An adjective or noun used as the predicate also takes `i`: `PLACE INSIDE(=+5) LIVE | o BIG | i` = the house is big.
 {{CLAUSE_RULE}}

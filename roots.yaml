@@ -140,9 +140,6 @@ particles:
 - name: AND
   role: 'сочинение: и, также'
   en_role: 'coordination: and, also'
-- name: LI
-  role: 'сказуемое (решено: остаётся отдельным словом)'
-  en_role: 'predicate marker'
 - name: '[ ]'
   role: клауза
   en_role: 'clause'

@@ -81,7 +81,7 @@ def test_quoted_content_is_opaque():
 
 
 def test_legacy_notation_is_warning_not_error():
-    iss = V.check("SOMEONE-o LI SEE-i(TIME=-2)")
+    iss = V.check("SOMEONE-o SEE-i(TIME=-2)")
     assert iss and all(i.level == "warning" for i in iss), iss
 
 

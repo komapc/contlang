@@ -50,7 +50,7 @@ function wordProblems(word) {
   for (const t of body.split(/\s+/)) {
     const m = t.match(/^([A-Z]+)(?:\(=([+-]?)(\d+)\))?$/);
     if (!m) { bad.push(`malformed token ${t}`); continue; }
-    if (["PI", "FROM", "FOR", "LIKE", "E", "AND", "LA", "PE", "LI"].includes(m[1])) continue;
+    if (["PI", "FROM", "FOR", "LIKE", "E", "AND", "LA", "PE"].includes(m[1])) continue;
     if (!CHECK.roots.includes(m[1])) bad.push(`unknown root ${m[1]}`);
     else roots.push(m[1]);
     if (!m[3]) continue;
