@@ -1,0 +1,45 @@
+1. dispute | grievance | complaint
+2. record | file | archive
+3. area | region | district
+4. lawyers | attorneys | legislators
+5. create | produce | craft
+6. formally | legally | officially
+7. upcoming | future | impending
+8. the public | audiences | crowds
+9. organization | institution | system
+10. automatic | mechanical | routine
+11. heat | warm | fire
+12. note | write | record
+13. sense | suspect | realize
+14. secretly | privately | quietly
+15. lower | weaken | knock out
+16. fighter | martial artist | boxer
+17. obsolete | outlawed | antiquated
+18. permit | allow | license
+19. grant | authorize | allow
+20. resentment | grievance | bitterness
+21. political | governmental | public
+22. right | entitlement | claim
+23. plan | schedule | estimate
+24. draft | write | compose
+25. spy | monitor | observe
+26. withdraw | isolate | separate
+27. tyranny | dictatorship | oppression
+28. enter | insert | record
+29. military | strategic | tactical
+30. provoke | incite | inflame
+31. bargain | negotiate | haggle
+32. gang | faction | club
+33. doubt | reservation | misgiving
+34. surplus | excess | remainder
+35. complain | moan | lament
+36. national | official | civic
+37. revive | restore | resuscitate
+38. allow | let | permit
+39. sabotage | violate | damage
+40. products | goods | creatures
+41. waste | junk | scrap
+42. imprison | confine | detain
+43. test | check | examine
+44. opinion | judgment | view
+45. consider | judge | view

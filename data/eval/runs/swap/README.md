@@ -30,3 +30,22 @@ OPEN отброшен: странные употребления (corruption `OP
 | только −CARE, MOOD, CONSUME | 633 (−29) | 126 |
 
 Оговорки: CONSUME ≈ *moku* Токипоны и часто в рецептах; DO и HAPPEN — общие корни без оси; удаление CARE отменяет часть [fix1](../fix1/README.md). Шаги 3 (словарь, спецификация) и 4 (слепой тест) — после решения пользователя.
+
+## Шаг 4. Слепой тест: +MAKE, PUBLIC, LAW −CARE, HAPPEN (решение пользователя: CONSUME оставить, убрать два)
+Пороги — [dec.md](dec.md) (до листов и ответов). Наборы без CONSUME — v2/ (`cmp2.py`): −CARE, HAPPEN 662 (=), −CARE, HAPPEN, DO 657, −CARE, HAPPEN, SAY 652.
+`run.py readers|pairs|merge|score` → items.json, lists.json, spec_new.md, answers/, judge/, result.txt, table.md. 12 слепых читателей Haiku, судья Haiku.
+
+| | O | N | разница (95 %) | n | порог |
+|---|--:|--:|---|--:|---|
+| C: изменённые коды | 24 % | 24 % | +0,6 % [−6,1 … +7,2] | 180 | не пройден (нижняя граница ≤ −5 %) |
+| U: тот же код, спецификация new − old | 37 % | 36 % | −1,0 % [−9,0 … +7,0] | 100 | пройден (точка ≥ −5 %) |
+| — C, в O был CARE или HAPPEN | 23 % | 15 % | −7,6 % [−16,7 … +1,5] | 66 | |
+| — C, в N есть новый корень | 21 % | 28 % | +6,6 % [−1,7 … +14,9] | 121 | |
+
+Итог: в среднем без изменений (+0,6 %), правило не пройдено на 1,1 п. (нижняя граница −6,1 % при пороге −5 %). Новые корни помогают
+(news, villages → towns, parliamentary → political, imprisoned, kidnapping → seize, violating, dirty → corrupt, creating, junk → waste),
+удаление вредит (procedure, preparation, routinely, usually, likelihood, extensively — слова «как обычно, тщательно, вероятность»).
+PUBLIC иногда ставится не к месту: viewers → spectacle, provincial → national, posted, separate.
+
+Сбой: в контекст читателей попала реплика пользователя «уберем два»; часть читателей дала только первый ответ без альтернатив
+(мера — только первый ответ), r7 сначала не записал ответы и был перезапущен. Слов-целей реплика не раскрывает.
