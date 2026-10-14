@@ -5,13 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>min-co: test bench</title>
 <meta name="description" content="The constructed language min-co: type a word, get a code with an explanation, then a blind decoding.">
-<script>try { const l = localStorage.getItem("minco-lang"); if (l === "ru" || l === "en") document.documentElement.lang = l; } catch (e) {}</script>
+<script>try { const l = localStorage.getItem("minco-lang"); if (l === "ru" || l === "en") document.documentElement.lang = l; if (l === "mc") { document.documentElement.lang = "en"; document.documentElement.classList.add("mc"); } } catch (e) {}</script>
 <style>
 :root{--ok:#2e7d4f;--bad:#b3412e;--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--warn:#8a5a00;--warnbg:#fdf3dc;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ok:#7fd19b;--bad:#f0907d;--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c;--warn:#e8c070;--warnbg:#332a14}}
 :root[data-theme=dark]{--ok:#7fd19b;--bad:#f0907d;--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c;--warn:#e8c070;--warnbg:#332a14}
 *{box-sizing:border-box}[hidden]{display:none!important}
-html[lang=en] [data-l=ru],html[lang=ru] [data-l=en]{display:none!important}
+html[lang=en] [data-l=ru],html[lang=ru] [data-l=en],html:not(.mc) [data-l=mc],html.mc [data-l=en].mcalt{display:none!important}
+.mctext{display:block;line-height:1.9}.mcgloss{display:block;margin-top:2px}
 body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.55 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
 .wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
 header{padding:28px 0 8px;position:relative}
@@ -74,9 +75,9 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 <div class="wrap">
 <header>
   <h1>min-co</h1>
-  <p class="sub" data-l="en">A language of 45 meaning roots with value axes. A word is encoded in two ways — by <b>AI</b> (a language model) and by <b>Vectors</b> (pure math, no model) — and then decoded blind.</p>
+  <p class="sub mcalt" data-l="en">A language of 45 meaning roots with value axes. A word is encoded in two ways — by <b>AI</b> (a language model) and by <b>Vectors</b> (pure math, no model) — and then decoded blind.</p><p class="sub" data-l="mc"><span class="code mctext" data-mc='SAY TEXT | o INSIDE(=+5) | i E PART(=-2) BEGIN(=-5) | o N+3 "45" ; THINK ART(=-5) | o tool AND MEASURE ART(=-5) | o TEXT | i E SAY PART(=-2) | o ; LA [ SOMEONE(=-5) | o SEE | i M-5 E SAY PART(=-2) | o ] SOMEONE(=-5) | o KNOW(=+2) | i E TEXT | o result'></span></p>
   <p class="sub" data-l="ru">Язык из 45 смысловых корней с осями значений. Слово кодируется двумя способами — <b>ИИ</b> (языковая модель) и <b>Векторы</b> (чистая математика, без модели) — и раскодируется вслепую.</p>
-  <div class="langsw" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button></div>
+  <div class="langsw" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="mc" title="min-co: descriptions and instructions in the language itself">MC</button></div>
 </header>
 <nav role="tablist">
   <button role="tab" aria-selected="true" data-t="demo"><span data-l="en">Try it</span><span data-l="ru">Проба</span></button>
@@ -96,7 +97,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
       <button class="go" id="run" type="submit"><span data-l="en">Translate there and back</span><span data-l="ru">Перевести туда и обратно</span></button>
     </div>
     <div class="mut" id="status"></div>
-    <div class="mut small" data-l="en">Hover over any part of a code (on a phone, tap it): a root, a label, a particle. Below the code are the axes of its roots.</div>
+    <div class="mut small mcalt" data-l="en">Hover over any part of a code (on a phone, tap it): a root, a label, a particle. Below the code are the axes of its roots.</div><div class="mut small" data-l="mc"><span class="code mctext" data-mc='SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result ; SOMEONE(=+3) | o SEE | i E MEASURE(=0) LONG(=0) | o N+3 PI PART(=-2) BEGIN(=-5) | o N+3'></span></div>
     <div class="mut small" data-l="ru">Наведите курсор на любую часть кода (на телефоне — нажмите): корень, метку, частицу. Под кодом — оси его корней.</div>
   </form>
 
@@ -122,7 +123,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   </div>
 
   <h2><span data-l="en">Saved examples</span><span data-l="ru">Сохранённые примеры</span></h2>
-  <p class="mut" data-l="en">Results of blind tests: one model encoded, another decoded without seeing the word. Green — the word was guessed first, yellow — it is among the alternatives, red — a miss. Click a row: the model is not called, the math is recomputed.</p>
+  <p class="mut mcalt" data-l="en">Results of blind tests: one model encoded, another decoded without seeing the word. Green — the word was guessed first, yellow — it is among the alternatives, red — a miss. Click a row: the model is not called, the math is recomputed.</p><p class="mut" data-l="mc"><span class="code mctext" data-mc='TEXT | o result N+3 PI THINK ART(=-5) | o tool ; THINK ART(=-5) | o tool TEXT | i E SAY PART(=-2) | o ; THINK ART(=-5) | o tool SAME(=-5) | a KNOW(=+2) | i E SAY PART(=-2) | o'></span></p>
   <p class="mut" data-l="ru">Результаты слепых тестов: кодировала одна модель, раскодировала другая, не видя слова. Зелёным — слово угадано первым, жёлтым — оно среди альтернатив, красным — промах. Нажмите строку — модель не вызывается, математика считает заново.</p>
   <p class="mut" data-l="en">Two series. <b>Recipes</b> (law, money, food, transport, society, health, direction of motion): the Sonnet decoders saw the recipe list, so this checks that a recipe reads unambiguously, not that it can be guessed from scratch. <b>Substances and numbers</b>: the decoder saw only the root tables.</p>
   <p class="mut" data-l="ru">Две серии. <b>Рецепты</b> (право, деньги, еда, транспорт, общество, здоровье, направление движения): декодеры Sonnet видели список рецептов, так что это проверка того, что рецепт читается однозначно, а не того, что его можно угадать с нуля. <b>Вещества и числа</b>: декодер видел только таблицы корней.</p>
@@ -141,12 +142,12 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, у имени — необязательная роль, как суффиксы эсперанто <i>-ist, -il, -aĵ, -ec</i>: <code>agent</code> тот, кто делает, или человек этой области (<code>ART(=+5) | o agent</code> художник), <code>tool</code> орудие, <code>result</code> результат, <code>quality</code> свойство; и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span class="noaxis"></span>) значений не берут.</p>
   <p>В кавычках пишутся только числа, имена собственные и <b>конкретные члены семейства</b> в латинской или международной форме: вид <code>"Canis"</code>, вещество <code>"iodine"</code>, орган <code>"hepar"</code>, светило <code>"Luna"</code>, игра <code>"chess"</code>, узкий термин <code>"enzyme"</code>. Сама категория строится из корней: орган — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, звезда — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. Если для слова есть рецепт, кавычки не нужны.</p>
   </div>
-  <div class="card"><div class="lab"><span data-l="en">example — hover over the parts of the code</span><span data-l="ru">пример — наведите на части кода</span></div>
+  <div class="card"><div class="lab"><span data-l="en" class="mcalt">example — hover over the parts of the code</span><span data-l="mc"><span class="code mctext" data-mc='TEXT SAME(=+3) | o result ; SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result'></span></span><span data-l="ru">пример — наведите на части кода</span></div>
     <div class="row" id="howPick"></div>
     <span class="code" id="howEx" style="margin-top:8px"></span><div class="axes" id="howExAx"></div></div>
   <h3><span data-l="en">Particles</span><span data-l="ru">Частицы</span></h3><table><tbody id="particles"></tbody></table>
   <h3><span data-l="en">Form labels</span><span data-l="ru">Метки формы</span></h3>
-  <p class="mut" data-l="en">Labels are not roots. They go after the bar, separated by spaces, once on the head word.</p>
+  <p class="mut mcalt" data-l="en">Labels are not roots. They go after the bar, separated by spaces, once on the head word.</p><p class="mut" data-l="mc"><span class="code mctext" data-mc='TEXT PART(=-5) | o N+3 PART(=-2) BEGIN(=-5) | i M-5 ; TEXT PART(=-5) | o N+3 SIDE(=-5) | i E LONG(=0) | o'></span></p>
   <p class="mut" data-l="ru">Метки — не корни. Ставятся после черты через пробел, один раз на главном слове.</p>
   <table><thead><tr><th><span data-l="en">label</span><span data-l="ru">метка</span></th><th><span data-l="en">what</span><span data-l="ru">что</span></th><th><span data-l="en">scale</span><span data-l="ru">шкала</span></th></tr></thead><tbody id="labels"></tbody></table>
   <p class="note" data-l="en">Single words use this notation (with the part of speech after the bar) because it is the one verified by blind tests on words. The Toki Pona-style notation (no bar) won on whole sentences but was not measured on single words.</p>
@@ -620,10 +621,19 @@ RDP.then(() => { const w = () => RD ? drawRoots() : setTimeout(w, 20); w(); });
 $("dq").addEventListener("input", drawDict);
 $("q").addEventListener("input", drawRoots);
 
+function drawMc(){
+  document.querySelectorAll("[data-mc]").forEach(n => {
+    showCode(n, n.dataset.mc);
+    const en = n.parentNode.previousElementSibling; if (en && !n.nextSibling) n.after(el("span", "≈ " + en.textContent, "mut small mcgloss"));
+  });
+}
 function applyLang(l){
+  const mc = l === "mc"; if (mc) l = "en";
+  document.documentElement.classList.toggle("mc", mc);
   document.documentElement.lang = l;
-  try { localStorage.setItem("minco-lang", l); } catch (e) {}
-  document.querySelectorAll(".langsw button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === l));
+  try { localStorage.setItem("minco-lang", mc ? "mc" : l); } catch (e) {}
+  document.querySelectorAll(".langsw button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === (mc ? "mc" : l)));
+  if (mc) drawMc();
   document.title = l === "ru" ? "min-co: пробный стенд" : "min-co: test bench";
   $("q").placeholder = T("qPh"); $("dq").placeholder = T("dqPh"); $("inp").placeholder = T("inpPh");
   if (!API) { $("modeNote").hidden = false; $("modeNote").textContent = T("modeNote"); }
@@ -634,7 +644,8 @@ function applyLang(l){
   ["codeAx", "code2Ax", "mcodeAx", "howExAx"].forEach(id => { const n = $(id); if (n._code) showAxes(n, n._code); });
 }
 document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.lang)));
-applyLang(LANG());
+applyLang(document.documentElement.classList.contains("mc") ? "mc" : LANG());
+RDP.then(() => { const w = () => RD ? drawMc() : setTimeout(w, 20); w(); });
 </script>
 </body>
 </html>
