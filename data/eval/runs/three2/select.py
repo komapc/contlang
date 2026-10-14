@@ -10,7 +10,7 @@ from proxy import feats, vec, LINK, X, ix, D, W
 SP = sys.argv[1]; R = f"{D}/../../../.."; BETA, PEN, NEST = 0.35, 0.01, 0.5
 B = np.load(f"{D}/proxy_B_heldout.npy"); n = lambda v: v / (np.linalg.norm(v) + 1e-9); p = lambda c: n(feats(c) @ B)
 pool = {}
-for k in range(4): pool.update(json.load(open(f"{SP}/enc{k}.json")))
+pool.update(json.load(open(f"{D}/pool_enc.json")))  # enc.js: 3200 частых лемм
 pool.update({w: o["code"] for w, o in json.load(open(f"{D}/../swap/remove.json")).items()})
 for o in json.load(open(f"{D}/../three/pool.json")).values(): pool.update({a: c for a, c, _ in o["anchors"]})
 pos = lambda c: (re.search(r"\|\s*([oiae])\b", c) or [0, None])[1]
@@ -24,7 +24,7 @@ for a, b, r, wt in g["edges"]:
     if r == "HasA" and wt >= 1: E.setdefault((W[b], W[a]), "PI")
 link = lambda x, y: E.get((x, y), "LIKE")
 syn = lambda w: {l.name().lower() for s in wn.synsets(w) for l in s.lemmas()} | {w}
-H = json.load(open(f"{SP}/heads.json")); C3 = json.load(open(f"{D}/../three/codes.json")); out = {}
+H = json.load(open(f"{D}/heads.json")); C3 = json.load(open(f"{D}/../three/codes.json")); out = {}
 XV = np.stack([X[ix[x]] for x in PW]); NB = 150  # кандидаты — 150 ближайших к цели по смыслу (Numberbatch)
 PT = PV @ PV.T  # cos(p, p) между кандидатами — для векторной оценки пар
 PSYN = [syn(x) for x in PW]; P5 = np.array([x[:5] for x in PW])
