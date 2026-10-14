@@ -1,0 +1,3565 @@
+[
+{
+"w": "regulation",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an authoritative rule",
+"anchors": [
+"ordinance",
+"rule",
+"prescript",
+"authoritative",
+"rule"
+]
+},
+{
+"gloss": "a principle or condition that customarily governs behavior",
+"anchors": [
+"rule",
+"concept",
+"conception",
+"construct",
+"principle",
+"condition",
+"that",
+"customarily",
+"governs",
+"behavior"
+]
+}
+]
+},
+{
+"w": "continue",
+"pos": "verb",
+"senses": [
+{
+"gloss": "continue a certain state, condition, or activity",
+"anchors": [
+"proceed",
+"keep",
+"act",
+"move",
+"certain",
+"state",
+"condition",
+"activity"
+]
+},
+{
+"gloss": "continue talking;  he continued,",
+"anchors": [
+"proceed",
+"talk",
+"speak",
+"talking",
+"continued"
+]
+}
+]
+},
+{
+"w": "content",
+"pos": "noun",
+"senses": [
+{
+"gloss": "everything that is included in a collection and that is held or included in something",
+"anchors": [
+"collection",
+"aggregation",
+"accumulation",
+"assemblage",
+"everything",
+"that",
+"included",
+"collection",
+"and",
+"that",
+"held",
+"included",
+"something"
+]
+},
+{
+"gloss": "something (a person or object or scene) selected by an artist or photographer for graphic representation",
+"anchors": [
+"subject",
+"thing",
+"something",
+"person",
+"object",
+"scene",
+"selected",
+"artist",
+"photographer",
+"for",
+"graphic",
+"representation"
+]
+}
+]
+},
+{
+"w": "unions",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an organization of employees formed to bargain with the employer",
+"anchors": [
+"union",
+"brotherhood",
+"organization",
+"organisation",
+"organization",
+"employees",
+"formed",
+"bargain",
+"with",
+"the",
+"employer"
+]
+},
+{
+"gloss": "the United States (especially the northern states during the American Civil War)",
+"anchors": [
+"union",
+"north",
+"the",
+"united",
+"states",
+"especially",
+"the",
+"northern",
+"states",
+"during",
+"the",
+"american",
+"civil",
+"war"
+]
+}
+]
+},
+{
+"w": "expense",
+"pos": "noun",
+"senses": [
+{
+"gloss": "amounts paid for goods and services that may be currently tax deductible (as opposed to capital expenditures)",
+"anchors": [
+"disbursal",
+"disbursement",
+"cost",
+"amounts",
+"paid",
+"for",
+"goods",
+"and",
+"services",
+"that",
+"may",
+"currently",
+"tax",
+"deductible",
+"opposed",
+"capital",
+"expenditures"
+]
+},
+{
+"gloss": "a detriment or sacrifice",
+"anchors": [
+"detriment",
+"hurt",
+"detriment",
+"sacrifice"
+]
+}
+]
+},
+{
+"w": "uprising",
+"pos": "verb",
+"senses": [
+{
+"gloss": "come into existence; take on form or shape",
+"anchors": [
+"originate",
+"arise",
+"rise",
+"develop",
+"uprise",
+"grow",
+"become",
+"come",
+"into",
+"existence",
+"take",
+"form",
+"shape"
+]
+},
+{
+"gloss": "rise to one's feet",
+"anchors": [
+"arise",
+"rise",
+"uprise",
+"rise",
+"one",
+"feet"
+]
+}
+]
+},
+{
+"w": "showing",
+"pos": "verb",
+"senses": [
+{
+"gloss": "give an exhibition of to an interested audience",
+"anchors": [
+"show",
+"demo",
+"exhibit",
+"present",
+"demonstrate",
+"show",
+"give",
+"exhibition",
+"interested",
+"audience"
+]
+},
+{
+"gloss": "provide evidence for",
+"anchors": [
+"testify",
+"prove",
+"evidence",
+"show",
+"inform",
+"provide",
+"evidence",
+"for"
+]
+}
+]
+},
+{
+"w": "favourite",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a special loved one",
+"anchors": [
+"darling",
+"favorite",
+"pet",
+"dearie",
+"deary",
+"ducky",
+"lover",
+"special",
+"loved",
+"one"
+]
+},
+{
+"gloss": "something regarded with special favor or liking",
+"anchors": [
+"favorite",
+"choice",
+"pick",
+"selection",
+"something",
+"regarded",
+"with",
+"special",
+"favor",
+"liking"
+]
+}
+]
+},
+{
+"w": "refuse",
+"pos": "verb",
+"senses": [
+{
+"gloss": "show unwillingness towards",
+"anchors": [
+"decline",
+"react",
+"respond",
+"show",
+"unwillingness",
+"towards"
+]
+},
+{
+"gloss": "elude, especially in a baffling way",
+"anchors": [
+"defy",
+"resist",
+"elude",
+"escape",
+"elude",
+"especially",
+"baffling",
+"way"
+]
+}
+]
+},
+{
+"w": "asking",
+"pos": "verb",
+"senses": [
+{
+"gloss": "inquire about",
+"anchors": [
+"ask",
+"inquire",
+"enquire",
+"communicate",
+"intercommunicate",
+"inquire",
+"about"
+]
+},
+{
+"gloss": "require as useful, just, or proper",
+"anchors": [
+"necessitate",
+"ask",
+"postulate",
+"need",
+"require",
+"take",
+"involve",
+"demand",
+"require",
+"useful",
+"just",
+"proper"
+]
+}
+]
+},
+{
+"w": "pledges",
+"pos": "verb",
+"senses": [
+{
+"gloss": "promise solemnly and formally",
+"anchors": [
+"pledge",
+"plight",
+"promise",
+"assure",
+"promise",
+"solemnly",
+"and",
+"formally"
+]
+},
+{
+"gloss": "propose a toast to",
+"anchors": [
+"toast",
+"drink",
+"pledge",
+"salute",
+"wassail",
+"honor",
+"honour",
+"reward",
+"propose",
+"toast"
+]
+}
+]
+},
+{
+"w": "wondering",
+"pos": "verb",
+"senses": [
+{
+"gloss": "have a wish or desire to know something",
+"anchors": [
+"wonder",
+"inquire",
+"enquire",
+"question",
+"query",
+"have",
+"wish",
+"desire",
+"know",
+"something"
+]
+},
+{
+"gloss": "place in doubt or express doubtful speculation",
+"anchors": [
+"wonder",
+"question",
+"meditate",
+"ponder",
+"excogitate",
+"contemplate",
+"muse",
+"reflect",
+"mull",
+"ruminate",
+"speculate",
+"place",
+"doubt",
+"express",
+"doubtful",
+"speculation"
+]
+}
+]
+},
+{
+"w": "performs",
+"pos": "verb",
+"senses": [
+{
+"gloss": "carry out or perform an action",
+"anchors": [
+"perform",
+"execute",
+"carry",
+"out",
+"perform",
+"action"
+]
+},
+{
+"gloss": "get (something) done",
+"anchors": [
+"perform",
+"accomplish",
+"execute",
+"action",
+"fulfill",
+"fulfil",
+"get",
+"something",
+"done"
+]
+}
+]
+},
+{
+"w": "favored",
+"pos": "verb",
+"senses": [
+{
+"gloss": "promote over another",
+"anchors": [
+"prefer",
+"favor",
+"favour",
+"promote",
+"upgrade",
+"advance",
+"raise",
+"elevate",
+"promote",
+"over",
+"another"
+]
+},
+{
+"gloss": "consider as the favorite",
+"anchors": [
+"favor",
+"favour",
+"see",
+"consider",
+"reckon",
+"view",
+"regard",
+"consider",
+"the",
+"favorite"
+]
+}
+]
+},
+{
+"w": "contains",
+"pos": "verb",
+"senses": [
+{
+"gloss": "include or contain; have as a component",
+"anchors": [
+"incorporate",
+"contain",
+"comprise",
+"include",
+"include",
+"contain",
+"have",
+"component"
+]
+},
+{
+"gloss": "lessen the intensity of; temper; hold in restraint; hold or keep within limits",
+"anchors": [
+"control",
+"hold",
+"contain",
+"check",
+"curb",
+"moderate",
+"restrain",
+"keep",
+"lessen",
+"the",
+"intensity",
+"temper",
+"hold",
+"restraint",
+"hold",
+"keep",
+"within",
+"limits"
+]
+}
+]
+},
+{
+"w": "stood",
+"pos": "verb",
+"senses": [
+{
+"gloss": "be standing; be upright",
+"anchors": [
+"stand",
+"rest",
+"standing",
+"upright"
+]
+},
+{
+"gloss": "be in some specified state or condition",
+"anchors": [
+"stand",
+"some",
+"specified",
+"state",
+"condition"
+]
+}
+]
+},
+{
+"w": "pair",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a set of two similar things considered as a unit",
+"anchors": [
+"brace",
+"set",
+"set",
+"two",
+"similar",
+"things",
+"considered",
+"unit"
+]
+},
+{
+"gloss": "two items of the same kind",
+"anchors": [
+"couple",
+"twosome",
+"twain",
+"brace",
+"span",
+"yoke",
+"couplet",
+"distich",
+"duo",
+"duet",
+"dyad",
+"duad",
+"two",
+"deuce",
+"two",
+"items",
+"the",
+"same",
+"kind"
+]
+}
+]
+},
+{
+"w": "addresses",
+"pos": "noun",
+"senses": [
+{
+"gloss": "(computer science) the code that identifies where a piece of information is stored",
+"anchors": [
+"address",
+"reference",
+"code",
+"computer",
+"science",
+"the",
+"code",
+"that",
+"identifies",
+"where",
+"piece",
+"information",
+"stored"
+]
+},
+{
+"gloss": "the place where a person or organization can be found or communicated with",
+"anchors": [
+"address",
+"the",
+"place",
+"where",
+"person",
+"organization",
+"can",
+"found",
+"communicated",
+"with"
+]
+}
+]
+},
+{
+"w": "add",
+"pos": "verb",
+"senses": [
+{
+"gloss": "make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of",
+"anchors": [
+"increase",
+"make",
+"addition",
+"join",
+"combine",
+"unite",
+"with",
+"others",
+"increase",
+"the",
+"quality",
+"quantity",
+"size",
+"scope"
+]
+},
+{
+"gloss": "state or say further",
+"anchors": [
+"append",
+"supply",
+"state",
+"say",
+"tell",
+"state",
+"say",
+"further"
+]
+}
+]
+},
+{
+"w": "sticking",
+"pos": "verb",
+"senses": [
+{
+"gloss": "put, fix, force, or implant",
+"anchors": [
+"lodge",
+"wedge",
+"stick",
+"deposit",
+"fasten",
+"fix",
+"secure",
+"put",
+"fix",
+"force",
+"implant"
+]
+},
+{
+"gloss": "stay put (in a certain place)",
+"anchors": [
+"stay",
+"stick",
+"stay",
+"put",
+"certain",
+"place"
+]
+}
+]
+},
+{
+"w": "restoring",
+"pos": "verb",
+"senses": [
+{
+"gloss": "return to its original or usable and functioning condition",
+"anchors": [
+"restore",
+"reconstruct",
+"regenerate",
+"renew",
+"return",
+"its",
+"original",
+"usable",
+"and",
+"functioning",
+"condition"
+]
+},
+{
+"gloss": "restore by replacing a part or putting together what is torn or broken",
+"anchors": [
+"repair",
+"mend",
+"fix",
+"bushel",
+"doctor",
+"restore",
+"better",
+"improve",
+"amend",
+"ameliorate",
+"meliorate",
+"restore",
+"replacing",
+"part",
+"putting",
+"together",
+"what",
+"torn",
+"broken"
+]
+}
+]
+},
+{
+"w": "bidding",
+"pos": "verb",
+"senses": [
+{
+"gloss": "propose a payment",
+"anchors": [
+"offer",
+"bid",
+"tender",
+"propose",
+"payment"
+]
+},
+{
+"gloss": "invoke upon",
+"anchors": [
+"wish",
+"bid",
+"greet",
+"recognize",
+"recognise",
+"invoke",
+"upon"
+]
+}
+]
+},
+{
+"w": "chair",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a seat for one person, with a support for the back",
+"anchors": [
+"seat",
+"seat",
+"for",
+"one",
+"person",
+"with",
+"support",
+"for",
+"the",
+"back"
+]
+},
+{
+"gloss": "the position of professor",
+"anchors": [
+"professorship",
+"position",
+"post",
+"berth",
+"office",
+"spot",
+"billet",
+"place",
+"situation",
+"the",
+"position",
+"professor"
+]
+}
+]
+},
+{
+"w": "functioning",
+"pos": "verb",
+"senses": [
+{
+"gloss": "perform as expected when applied",
+"anchors": [
+"function",
+"work",
+"operate",
+"run",
+"perform",
+"expected",
+"when",
+"applied"
+]
+},
+{
+"gloss": "serve a purpose, role, or function",
+"anchors": [
+"serve",
+"function",
+"suffice",
+"answer",
+"serve",
+"serve",
+"purpose",
+"role",
+"function"
+]
+}
+]
+},
+{
+"w": "dish",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a piece of dishware normally used as a container for holding or serving food",
+"anchors": [
+"crockery",
+"dishware",
+"container",
+"piece",
+"dishware",
+"normally",
+"used",
+"container",
+"for",
+"holding",
+"serving",
+"food"
+]
+},
+{
+"gloss": "a particular item of prepared food",
+"anchors": [
+"nutriment",
+"nourishment",
+"nutrition",
+"sustenance",
+"aliment",
+"alimentation",
+"victuals",
+"particular",
+"item",
+"prepared",
+"food"
+]
+}
+]
+},
+{
+"w": "labels",
+"pos": "verb",
+"senses": [
+{
+"gloss": "assign a label to; designate with a label",
+"anchors": [
+"label",
+"designate",
+"denominate",
+"assign",
+"label",
+"designate",
+"with",
+"label"
+]
+},
+{
+"gloss": "attach a tag or label to",
+"anchors": [
+"tag",
+"label",
+"mark",
+"attach",
+"attach",
+"tag",
+"label"
+]
+}
+]
+},
+{
+"w": "advertising",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a public promotion of some product or service",
+"anchors": [
+"advertisement",
+"advertizement",
+"advertizing",
+"advert",
+"promotion",
+"publicity",
+"packaging",
+"public",
+"promotion",
+"some",
+"product",
+"service"
+]
+},
+{
+"gloss": "the business of drawing public attention to goods and services",
+"anchors": [
+"publicizing",
+"business",
+"the",
+"business",
+"drawing",
+"public",
+"attention",
+"goods",
+"and",
+"services"
+]
+}
+]
+},
+{
+"w": "qualify",
+"pos": "verb",
+"senses": [
+{
+"gloss": "prove capable or fit; meet requirements",
+"anchors": [
+"suffice",
+"answer",
+"serve",
+"prove",
+"capable",
+"fit",
+"meet",
+"requirements"
+]
+},
+{
+"gloss": "pronounce fit or able",
+"anchors": [
+"pronounce",
+"label",
+"judge",
+"pronounce",
+"fit",
+"able"
+]
+}
+]
+},
+{
+"w": "counsel",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a lawyer who pleads cases in court",
+"anchors": [
+"advocate",
+"counselor",
+"counsellor",
+"counselor-at-law",
+"pleader",
+"lawyer",
+"attorney",
+"lawyer",
+"who",
+"pleads",
+"cases",
+"court"
+]
+},
+{
+"gloss": "something that provides direction or advice as to a decision or course of action",
+"anchors": [
+"guidance",
+"counseling",
+"counselling",
+"direction",
+"message",
+"content",
+"substance",
+"something",
+"that",
+"provides",
+"direction",
+"advice",
+"decision",
+"course",
+"action"
+]
+}
+]
+},
+{
+"w": "troubled",
+"pos": "verb",
+"senses": [
+{
+"gloss": "move deeply",
+"anchors": [
+"disturb",
+"upset",
+"trouble",
+"affect",
+"impress",
+"move",
+"strike",
+"move",
+"deeply"
+]
+},
+{
+"gloss": "to cause inconvenience or discomfort to",
+"anchors": [
+"trouble",
+"inconvenience",
+"disoblige",
+"discommode",
+"incommode",
+"bother",
+"affect",
+"impact",
+"touch",
+"cause",
+"inconvenience",
+"discomfort"
+]
+}
+]
+},
+{
+"w": "nominated",
+"pos": "verb",
+"senses": [
+{
+"gloss": "propose as a candidate for some honor",
+"anchors": [
+"nominate",
+"nominate",
+"propose",
+"propose",
+"candidate",
+"for",
+"some",
+"honor"
+]
+},
+{
+"gloss": "charge with a function; charge to be",
+"anchors": [
+"name",
+"nominate",
+"make",
+"appoint",
+"charge",
+"charge",
+"with",
+"function",
+"charge"
+]
+}
+]
+},
+{
+"w": "requirement",
+"pos": "noun",
+"senses": [
+{
+"gloss": "required activity",
+"anchors": [
+"demand",
+"duty",
+"responsibility",
+"obligation",
+"required",
+"activity"
+]
+},
+{
+"gloss": "anything indispensable",
+"anchors": [
+"necessity",
+"essential",
+"requisite",
+"necessary",
+"thing",
+"anything",
+"indispensable"
+]
+}
+]
+},
+{
+"w": "step",
+"pos": "noun",
+"senses": [
+{
+"gloss": "any maneuver made as part of progress toward a goal",
+"anchors": [
+"measure",
+"maneuver",
+"manoeuvre",
+"any",
+"maneuver",
+"made",
+"part",
+"progress",
+"toward",
+"goal"
+]
+},
+{
+"gloss": "the distance covered by a step",
+"anchors": [
+"footstep",
+"pace",
+"stride",
+"the",
+"distance",
+"covered"
+]
+}
+]
+},
+{
+"w": "composition",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the spatial property resulting from the arrangement of parts in relation to each other and to the whole",
+"anchors": [
+"composing",
+"placement",
+"arrangement",
+"the",
+"spatial",
+"property",
+"resulting",
+"from",
+"the",
+"arrangement",
+"parts",
+"relation",
+"each",
+"other",
+"and",
+"the",
+"whole"
+]
+},
+{
+"gloss": "the act of creating written works",
+"anchors": [
+"writing",
+"authorship",
+"penning",
+"the",
+"act",
+"creating",
+"written",
+"works"
+]
+}
+]
+},
+{
+"w": "designed",
+"pos": "verb",
+"senses": [
+{
+"gloss": "make or work out a plan for; devise",
+"anchors": [
+"plan",
+"project",
+"contrive",
+"design",
+"make",
+"work",
+"out",
+"plan",
+"for",
+"devise"
+]
+},
+{
+"gloss": "plan something for a specific role or purpose or effect",
+"anchors": [
+"design",
+"intend",
+"destine",
+"designate",
+"specify",
+"plan",
+"something",
+"for",
+"specific",
+"role",
+"purpose",
+"effect"
+]
+}
+]
+},
+{
+"w": "entered",
+"pos": "verb",
+"senses": [
+{
+"gloss": "to come or go into",
+"anchors": [
+"enter",
+"come",
+"into"
+]
+},
+{
+"gloss": "register formally as a participant or member",
+"anchors": [
+"enroll",
+"inscribe",
+"enter",
+"enrol",
+"recruit",
+"register",
+"register",
+"formally",
+"participant",
+"member"
+]
+}
+]
+},
+{
+"w": "mechanics",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the branch of physics concerned with the motion of bodies in a frame of reference",
+"anchors": [
+"physics",
+"the",
+"branch",
+"physics",
+"concerned",
+"with",
+"the",
+"motion",
+"bodies",
+"frame",
+"reference"
+]
+},
+{
+"gloss": "a craftsman skilled in operating machine tools",
+"anchors": [
+"machinist",
+"mechanic",
+"craftsman",
+"artisan",
+"journeyman",
+"artificer",
+"craftsman",
+"skilled",
+"operating",
+"machine",
+"tools"
+]
+}
+]
+},
+{
+"w": "finds",
+"pos": "verb",
+"senses": [
+{
+"gloss": "come upon, as if by accident; meet with",
+"anchors": [
+"find",
+"happen",
+"chance",
+"bump",
+"encounter",
+"come",
+"upon",
+"accident",
+"meet",
+"with"
+]
+},
+{
+"gloss": "perceive or be contemporaneous with",
+"anchors": [
+"witness",
+"find",
+"see",
+"experience",
+"see",
+"perceive",
+"contemporaneous",
+"with"
+]
+}
+]
+},
+{
+"w": "highs",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a lofty level or position or degree",
+"anchors": [
+"high",
+"degree",
+"grade",
+"level",
+"lofty",
+"level",
+"position",
+"degree"
+]
+},
+{
+"gloss": "a public secondary school usually including grades 9 through 12",
+"anchors": [
+"high",
+"highschool",
+"lyceum",
+"lycee",
+"gymnasium",
+"public",
+"secondary",
+"school",
+"usually",
+"including",
+"grades",
+"through"
+]
+}
+]
+},
+{
+"w": "develop",
+"pos": "verb",
+"senses": [
+{
+"gloss": "make something new, such as a product or a mental or artistic creation",
+"anchors": [
+"create",
+"make",
+"something",
+"new",
+"such",
+"product",
+"mental",
+"artistic",
+"creation"
+]
+},
+{
+"gloss": "change the use of and make available or usable",
+"anchors": [
+"better",
+"improve",
+"amend",
+"ameliorate",
+"meliorate",
+"change",
+"the",
+"use",
+"and",
+"make",
+"available",
+"usable"
+]
+}
+]
+},
+{
+"w": "boots",
+"pos": "noun",
+"senses": [
+{
+"gloss": "footwear that covers the whole foot and lower leg",
+"anchors": [
+"boot",
+"footwear",
+"footgear",
+"footwear",
+"that",
+"covers",
+"the",
+"whole",
+"foot",
+"and",
+"lower",
+"leg"
+]
+},
+{
+"gloss": "the swift release of a store of affective force",
+"anchors": [
+"bang",
+"boot",
+"charge",
+"rush",
+"flush",
+"thrill",
+"kick",
+"exhilaration",
+"excitement",
+"the",
+"swift",
+"release",
+"store",
+"affective",
+"force"
+]
+}
+]
+},
+{
+"w": "contribute",
+"pos": "verb",
+"senses": [
+{
+"gloss": "bestow a quality on",
+"anchors": [
+"lend",
+"impart",
+"bestow",
+"add",
+"bring",
+"change",
+"alter",
+"modify",
+"bestow",
+"quality"
+]
+},
+{
+"gloss": "be conducive to",
+"anchors": [
+"lead",
+"conduce",
+"promote",
+"advance",
+"boost",
+"further",
+"encourage",
+"conducive"
+]
+}
+]
+},
+{
+"w": "hitting",
+"pos": "verb",
+"senses": [
+{
+"gloss": "cause to move by striking",
+"anchors": [
+"hit",
+"propel",
+"impel",
+"cause",
+"move",
+"striking"
+]
+},
+{
+"gloss": "hit with a missile from a weapon",
+"anchors": [
+"shoot",
+"hit",
+"pip",
+"injure",
+"wound",
+"hit",
+"with",
+"missile",
+"from",
+"weapon"
+]
+}
+]
+},
+{
+"w": "march",
+"pos": "verb",
+"senses": [
+{
+"gloss": "march in a procession",
+"anchors": [
+"process",
+"walk",
+"procession"
+]
+},
+{
+"gloss": "lie adjacent to another or share a boundary",
+"anchors": [
+"border",
+"adjoin",
+"edge",
+"abut",
+"butt",
+"touch",
+"adjoin",
+"meet",
+"contact",
+"lie",
+"adjacent",
+"another",
+"share",
+"boundary"
+]
+}
+]
+},
+{
+"w": "love",
+"pos": "verb",
+"senses": [
+{
+"gloss": "have a great affection or liking for",
+"anchors": [
+"have",
+"great",
+"affection",
+"liking",
+"for"
+]
+},
+{
+"gloss": "have sexual intercourse with",
+"anchors": [
+"know",
+"screw",
+"fuck",
+"jazz",
+"eff",
+"hump",
+"bed",
+"bang",
+"bonk",
+"copulate",
+"mate",
+"pair",
+"couple",
+"have",
+"sexual",
+"intercourse",
+"with"
+]
+}
+]
+},
+{
+"w": "head",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the upper part of the human body or the front part of the body in animals; contains the face and brains",
+"anchors": [
+"caput",
+"the",
+"upper",
+"part",
+"the",
+"human",
+"body",
+"the",
+"front",
+"part",
+"the",
+"body",
+"animals",
+"contains",
+"the",
+"face",
+"and",
+"brains"
+]
+},
+{
+"gloss": "a single domestic animal",
+"anchors": [
+"single",
+"domestic",
+"animal"
+]
+}
+]
+},
+{
+"w": "knows",
+"pos": "verb",
+"senses": [
+{
+"gloss": "be cognizant or aware of a fact or a specific piece of information; possess knowledge or information about",
+"anchors": [
+"know",
+"cognize",
+"cognise",
+"cognizant",
+"aware",
+"fact",
+"specific",
+"piece",
+"information",
+"possess",
+"knowledge",
+"information",
+"about"
+]
+},
+{
+"gloss": "have sexual intercourse with",
+"anchors": [
+"love",
+"know",
+"screw",
+"fuck",
+"jazz",
+"eff",
+"hump",
+"bed",
+"bang",
+"bonk",
+"copulate",
+"mate",
+"pair",
+"couple",
+"have",
+"sexual",
+"intercourse",
+"with"
+]
+}
+]
+},
+{
+"w": "property",
+"pos": "noun",
+"senses": [
+{
+"gloss": "something owned; any tangible or intangible possession that is owned by someone",
+"anchors": [
+"belongings",
+"holding",
+"possession",
+"something",
+"owned",
+"any",
+"tangible",
+"intangible",
+"possession",
+"that",
+"owned",
+"someone"
+]
+},
+{
+"gloss": "any area set aside for a particular purpose",
+"anchors": [
+"place",
+"any",
+"area",
+"set",
+"aside",
+"for",
+"particular",
+"purpose"
+]
+}
+]
+},
+{
+"w": "defining",
+"pos": "verb",
+"senses": [
+{
+"gloss": "determine the essential quality of",
+"anchors": [
+"specify",
+"define",
+"delineate",
+"delimit",
+"delimitate",
+"determine",
+"the",
+"essential",
+"quality"
+]
+},
+{
+"gloss": "give a definition for the meaning of a word",
+"anchors": [
+"define",
+"specify",
+"set",
+"determine",
+"define",
+"fix",
+"limit",
+"give",
+"definition",
+"for",
+"the",
+"meaning",
+"word"
+]
+}
+]
+},
+{
+"w": "expectations",
+"pos": "noun",
+"senses": [
+{
+"gloss": "belief about (or mental picture of) the future",
+"anchors": [
+"expectation",
+"outlook",
+"prospect",
+"belief",
+"belief",
+"about",
+"mental",
+"picture",
+"the",
+"future"
+]
+},
+{
+"gloss": "anticipating with confidence of fulfillment",
+"anchors": [
+"anticipation",
+"expectation",
+"hopefulness",
+"anticipating",
+"with",
+"confidence",
+"fulfillment"
+]
+}
+]
+},
+{
+"w": "viewed",
+"pos": "verb",
+"senses": [
+{
+"gloss": "deem to be",
+"anchors": [
+"see",
+"consider",
+"reckon",
+"view",
+"regard",
+"think",
+"believe",
+"consider",
+"conceive",
+"deem"
+]
+},
+{
+"gloss": "look at carefully; study mentally",
+"anchors": [
+"view",
+"consider",
+"analyze",
+"analyse",
+"study",
+"examine",
+"canvass",
+"canvas",
+"look",
+"carefully",
+"study",
+"mentally"
+]
+}
+]
+},
+{
+"w": "session",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a meeting for execution of a group's functions",
+"anchors": [
+"conference",
+"meeting",
+"for",
+"execution",
+"group",
+"functions"
+]
+},
+{
+"gloss": "the time during which a school holds classes",
+"anchors": [
+"term",
+"the",
+"time",
+"during",
+"which",
+"school",
+"holds",
+"classes"
+]
+}
+]
+},
+{
+"w": "singing",
+"pos": "verb",
+"senses": [
+{
+"gloss": "deliver by singing",
+"anchors": [
+"sing",
+"interpret",
+"render",
+"sing",
+"deliver"
+]
+},
+{
+"gloss": "to make melodious sounds",
+"anchors": [
+"sing",
+"utter",
+"emit",
+"make",
+"melodious",
+"sounds"
+]
+}
+]
+},
+{
+"w": "maintain",
+"pos": "verb",
+"senses": [
+{
+"gloss": "keep in a certain state, position, or activity; e.g.,",
+"anchors": [
+"keep",
+"hold",
+"keep",
+"certain",
+"state",
+"position",
+"activity"
+]
+},
+{
+"gloss": "maintain by writing regular records",
+"anchors": [
+"keep",
+"record",
+"enter",
+"writing",
+"regular",
+"records"
+]
+}
+]
+},
+{
+"w": "establish",
+"pos": "verb",
+"senses": [
+{
+"gloss": "set up or found",
+"anchors": [
+"found",
+"launch",
+"open",
+"set",
+"found"
+]
+},
+{
+"gloss": "set up or lay the groundwork for",
+"anchors": [
+"found",
+"plant",
+"constitute",
+"institute",
+"initiate",
+"pioneer",
+"set",
+"lay",
+"the",
+"groundwork",
+"for"
+]
+}
+]
+},
+{
+"w": "draft",
+"pos": "verb",
+"senses": [
+{
+"gloss": "draw up an outline or sketch for something",
+"anchors": [
+"outline",
+"write",
+"compose",
+"pen",
+"indite",
+"draw",
+"outline",
+"sketch",
+"for",
+"something"
+]
+},
+{
+"gloss": "engage somebody to enter the army",
+"anchors": [
+"enlist",
+"enroll",
+"inscribe",
+"enter",
+"enrol",
+"recruit",
+"engage",
+"somebody",
+"enter",
+"the",
+"army"
+]
+}
+]
+},
+{
+"w": "organizing",
+"pos": "verb",
+"senses": [
+{
+"gloss": "create (as an entity)",
+"anchors": [
+"form",
+"organize",
+"organise",
+"make",
+"create",
+"create",
+"entity"
+]
+},
+{
+"gloss": "plan and direct (a complex undertaking)",
+"anchors": [
+"mastermind",
+"engineer",
+"direct",
+"organize",
+"organise",
+"orchestrate",
+"plan",
+"plan",
+"and",
+"direct",
+"complex",
+"undertaking"
+]
+}
+]
+},
+{
+"w": "expedition",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a military campaign designed to achieve a specific objective in a foreign country",
+"anchors": [
+"campaign",
+"military",
+"campaign",
+"designed",
+"achieve",
+"specific",
+"objective",
+"foreign",
+"country"
+]
+},
+{
+"gloss": "an organized group of people undertaking a journey for a particular purpose",
+"anchors": [
+"organized",
+"group",
+"people",
+"undertaking",
+"journey",
+"for",
+"particular",
+"purpose"
+]
+}
+]
+},
+{
+"w": "served",
+"pos": "verb",
+"senses": [
+{
+"gloss": "serve a purpose, role, or function",
+"anchors": [
+"serve",
+"function",
+"suffice",
+"answer",
+"serve",
+"serve",
+"purpose",
+"role",
+"function"
+]
+},
+{
+"gloss": "do duty or hold offices; serve in a specific function",
+"anchors": [
+"serve",
+"work",
+"duty",
+"hold",
+"offices",
+"serve",
+"specific",
+"function"
+]
+}
+]
+},
+{
+"w": "operates",
+"pos": "verb",
+"senses": [
+{
+"gloss": "direct or control; projects, businesses, etc.",
+"anchors": [
+"operate",
+"run",
+"direct",
+"direct",
+"control",
+"projects",
+"businesses",
+"etc"
+]
+},
+{
+"gloss": "perform as expected when applied",
+"anchors": [
+"function",
+"work",
+"operate",
+"run",
+"perform",
+"expected",
+"when",
+"applied"
+]
+}
+]
+},
+{
+"w": "mountain",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a land mass that projects well above its surroundings; higher than a hill",
+"anchors": [
+"mount",
+"elevation",
+"land",
+"mass",
+"that",
+"projects",
+"well",
+"above",
+"its",
+"surroundings",
+"higher",
+"than",
+"hill"
+]
+},
+{
+"gloss": "(often followed by `of') a large number or amount or extent",
+"anchors": [
+"batch",
+"deal",
+"flock",
+"hatful",
+"heap",
+"lot",
+"mass",
+"mess",
+"mickle",
+"mint",
+"muckle",
+"passel",
+"peck",
+"pile",
+"plenty",
+"pot",
+"raft",
+"sight",
+"slew",
+"spate",
+"stack",
+"wad",
+"often",
+"followed",
+"large",
+"number",
+"amount",
+"extent"
+]
+}
+]
+},
+{
+"w": "ranges",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an area in which something acts or operates or has power or control:",
+"anchors": [
+"scope",
+"range",
+"reach",
+"orbit",
+"compass",
+"ambit",
+"extent",
+"area",
+"which",
+"something",
+"acts",
+"operates",
+"has",
+"power",
+"control"
+]
+},
+{
+"gloss": "the limits within which something can be effective",
+"anchors": [
+"range",
+"reach",
+"limit",
+"the",
+"limits",
+"within",
+"which",
+"something",
+"can",
+"effective"
+]
+}
+]
+},
+{
+"w": "representation",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a presentation to the mind in the form of an idea or image",
+"anchors": [
+"content",
+"presentation",
+"the",
+"mind",
+"the",
+"form",
+"idea",
+"image"
+]
+},
+{
+"gloss": "a creation that is a visual or tangible rendering of someone or something",
+"anchors": [
+"creation",
+"creation",
+"that",
+"visual",
+"tangible",
+"rendering",
+"someone",
+"something"
+]
+}
+]
+},
+{
+"w": "markets",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the world of commercial activity where goods and services are bought and sold",
+"anchors": [
+"market",
+"marketplace",
+"activity",
+"the",
+"world",
+"commercial",
+"activity",
+"where",
+"goods",
+"and",
+"services",
+"are",
+"bought",
+"and",
+"sold"
+]
+},
+{
+"gloss": "a marketplace where groceries are sold",
+"anchors": [
+"grocery",
+"market",
+"marketplace",
+"mart",
+"market",
+"marketplace",
+"where",
+"groceries",
+"are",
+"sold"
+]
+}
+]
+},
+{
+"w": "amount",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a quantity of money",
+"anchors": [
+"sum",
+"assets",
+"quantity",
+"money"
+]
+},
+{
+"gloss": "a quantity obtained by the addition of a group of numbers",
+"anchors": [
+"sum",
+"total",
+"quantity",
+"quantity",
+"obtained",
+"the",
+"addition",
+"group",
+"numbers"
+]
+}
+]
+},
+{
+"w": "subjects",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the subject matter of a conversation or discussion",
+"anchors": [
+"subject",
+"topic",
+"theme",
+"message",
+"content",
+"substance",
+"the",
+"subject",
+"matter",
+"conversation",
+"discussion"
+]
+},
+{
+"gloss": "something (a person or object or scene) selected by an artist or photographer for graphic representation",
+"anchors": [
+"subject",
+"content",
+"thing",
+"something",
+"person",
+"object",
+"scene",
+"selected",
+"artist",
+"photographer",
+"for",
+"graphic",
+"representation"
+]
+}
+]
+},
+{
+"w": "test",
+"pos": "verb",
+"senses": [
+{
+"gloss": "put to the test, as for its quality, or give experimental use to",
+"anchors": [
+"prove",
+"try",
+"examine",
+"essay",
+"evaluate",
+"judge",
+"put",
+"the",
+"for",
+"its",
+"quality",
+"give",
+"experimental",
+"use"
+]
+},
+{
+"gloss": "examine someone's knowledge of something",
+"anchors": [
+"quiz",
+"examine",
+"examine",
+"someone",
+"knowledge",
+"something"
+]
+}
+]
+},
+{
+"w": "resolve",
+"pos": "verb",
+"senses": [
+{
+"gloss": "bring to an end; settle conclusively",
+"anchors": [
+"decide",
+"settle",
+"adjudicate",
+"end",
+"terminate",
+"bring",
+"end",
+"settle",
+"conclusively"
+]
+},
+{
+"gloss": "reach a conclusion after a discussion or deliberation",
+"anchors": [
+"conclude",
+"agree",
+"hold",
+"concur",
+"concord",
+"reach",
+"conclusion",
+"after",
+"discussion",
+"deliberation"
+]
+}
+]
+},
+{
+"w": "cancel",
+"pos": "verb",
+"senses": [
+{
+"gloss": "postpone indefinitely or annul something that was scheduled",
+"anchors": [
+"scratch",
+"scrub",
+"postpone",
+"indefinitely",
+"annul",
+"something",
+"that",
+"was",
+"scheduled"
+]
+},
+{
+"gloss": "make up for",
+"anchors": [
+"offset",
+"balance",
+"equilibrate",
+"equilibrize",
+"equilibrise",
+"make",
+"for"
+]
+}
+]
+},
+{
+"w": "box",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a (usually rectangular) container; may have a lid",
+"anchors": [
+"container",
+"usually",
+"rectangular",
+"container",
+"may",
+"have",
+"lid"
+]
+},
+{
+"gloss": "the quantity contained in a box",
+"anchors": [
+"boxful",
+"containerful",
+"the",
+"quantity",
+"contained"
+]
+}
+]
+},
+{
+"w": "number",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the property possessed by a sum or total or indefinite quantity of units or individuals",
+"anchors": [
+"figure",
+"amount",
+"the",
+"property",
+"possessed",
+"sum",
+"total",
+"indefinite",
+"quantity",
+"units",
+"individuals"
+]
+},
+{
+"gloss": "a short theatrical performance that is part of a longer program",
+"anchors": [
+"act",
+"routine",
+"turn",
+"bit",
+"performance",
+"short",
+"theatrical",
+"performance",
+"that",
+"part",
+"longer",
+"program"
+]
+}
+]
+},
+{
+"w": "added",
+"pos": "verb",
+"senses": [
+{
+"gloss": "make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of",
+"anchors": [
+"add",
+"increase",
+"make",
+"addition",
+"join",
+"combine",
+"unite",
+"with",
+"others",
+"increase",
+"the",
+"quality",
+"quantity",
+"size",
+"scope"
+]
+},
+{
+"gloss": "state or say further",
+"anchors": [
+"add",
+"append",
+"supply",
+"state",
+"say",
+"tell",
+"state",
+"say",
+"further"
+]
+}
+]
+},
+{
+"w": "villages",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a community of people smaller than a town",
+"anchors": [
+"village",
+"settlement",
+"community",
+"community",
+"people",
+"smaller",
+"than",
+"town"
+]
+},
+{
+"gloss": "a settlement smaller than a town",
+"anchors": [
+"village",
+"hamlet",
+"settlement",
+"settlement",
+"smaller",
+"than",
+"town"
+]
+}
+]
+},
+{
+"w": "aims",
+"pos": "verb",
+"senses": [
+{
+"gloss": "point or cause to go (blows, weapons, or objects such as photographic equipment) towards",
+"anchors": [
+"aim",
+"take",
+"train",
+"direct",
+"position",
+"point",
+"cause",
+"blows",
+"weapons",
+"objects",
+"such",
+"photographic",
+"equipment",
+"towards"
+]
+},
+{
+"gloss": "propose or intend",
+"anchors": [
+"aim",
+"purpose",
+"purport",
+"propose",
+"intend",
+"mean",
+"think",
+"propose",
+"intend"
+]
+}
+]
+},
+{
+"w": "follow",
+"pos": "verb",
+"senses": [
+{
+"gloss": "to travel behind, go after, come after",
+"anchors": [
+"travel",
+"move",
+"locomote",
+"travel",
+"behind",
+"after",
+"come",
+"after"
+]
+},
+{
+"gloss": "come as a logical consequence; follow logically",
+"anchors": [
+"result",
+"ensue",
+"come",
+"logical",
+"consequence",
+"logically"
+]
+}
+]
+},
+{
+"w": "exhibited",
+"pos": "verb",
+"senses": [
+{
+"gloss": "show an attribute, property, knowledge, or skill",
+"anchors": [
+"exhibit",
+"possess",
+"show",
+"attribute",
+"property",
+"knowledge",
+"skill"
+]
+},
+{
+"gloss": "to show, make visible or apparent",
+"anchors": [
+"expose",
+"exhibit",
+"display",
+"show",
+"show",
+"make",
+"visible",
+"apparent"
+]
+}
+]
+},
+{
+"w": "slopes",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an elevated geological formation",
+"anchors": [
+"slope",
+"incline",
+"side",
+"formation",
+"elevated",
+"geological",
+"formation"
+]
+},
+{
+"gloss": "the property possessed by a line or surface that departs from the horizontal",
+"anchors": [
+"gradient",
+"slope",
+"position",
+"the",
+"property",
+"possessed",
+"line",
+"surface",
+"that",
+"departs",
+"from",
+"the",
+"horizontal"
+]
+}
+]
+},
+{
+"w": "appeal",
+"pos": "noun",
+"senses": [
+{
+"gloss": "earnest or urgent request",
+"anchors": [
+"entreaty",
+"prayer",
+"request",
+"asking",
+"earnest",
+"urgent",
+"request"
+]
+},
+{
+"gloss": "attractiveness that interests or pleases or stimulates",
+"anchors": [
+"appealingness",
+"charm",
+"attractiveness",
+"attractiveness",
+"that",
+"interests",
+"pleases",
+"stimulates"
+]
+}
+]
+},
+{
+"w": "throws",
+"pos": "verb",
+"senses": [
+{
+"gloss": "propel through the air",
+"anchors": [
+"throw",
+"propel",
+"impel",
+"propel",
+"through",
+"the",
+"air"
+]
+},
+{
+"gloss": "move violently, energetically, or carelessly",
+"anchors": [
+"throw",
+"move",
+"move",
+"violently",
+"energetically",
+"carelessly"
+]
+}
+]
+},
+{
+"w": "qualifying",
+"pos": "verb",
+"senses": [
+{
+"gloss": "prove capable or fit; meet requirements",
+"anchors": [
+"qualify",
+"suffice",
+"answer",
+"serve",
+"prove",
+"capable",
+"fit",
+"meet",
+"requirements"
+]
+},
+{
+"gloss": "pronounce fit or able",
+"anchors": [
+"qualify",
+"pronounce",
+"label",
+"judge",
+"pronounce",
+"fit",
+"able"
+]
+}
+]
+},
+{
+"w": "stem",
+"pos": "noun",
+"senses": [
+{
+"gloss": "(linguistics) the form of a word after all affixes are removed",
+"anchors": [
+"root",
+"base",
+"theme",
+"radical",
+"form",
+"signifier",
+"descriptor",
+"linguistics",
+"the",
+"form",
+"word",
+"after",
+"all",
+"affixes",
+"are",
+"removed"
+]
+},
+{
+"gloss": "a slender or elongated structure that supports a plant or fungus or a plant part or plant organ",
+"anchors": [
+"stalk",
+"slender",
+"elongated",
+"structure",
+"that",
+"supports",
+"plant",
+"fungus",
+"plant",
+"part",
+"plant",
+"organ"
+]
+}
+]
+},
+{
+"w": "handled",
+"pos": "verb",
+"senses": [
+{
+"gloss": "be in charge of, act on, or dispose of",
+"anchors": [
+"manage",
+"deal",
+"care",
+"handle",
+"control",
+"command",
+"charge",
+"act",
+"dispose"
+]
+},
+{
+"gloss": "act on verbally or in some form of artistic expression",
+"anchors": [
+"cover",
+"treat",
+"handle",
+"plow",
+"deal",
+"address",
+"broach",
+"initiate",
+"act",
+"verbally",
+"some",
+"form",
+"artistic",
+"expression"
+]
+}
+]
+},
+{
+"w": "success",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an event that accomplishes its intended purpose",
+"anchors": [
+"happening",
+"occurrence",
+"occurrent",
+"event",
+"that",
+"accomplishes",
+"its",
+"intended",
+"purpose"
+]
+},
+{
+"gloss": "a state of prosperity or fame",
+"anchors": [
+"prosperity",
+"successfulness",
+"state",
+"prosperity",
+"fame"
+]
+}
+]
+},
+{
+"w": "credit",
+"pos": "noun",
+"senses": [
+{
+"gloss": "approval",
+"anchors": [
+"recognition",
+"approval",
+"commendation",
+"approval"
+]
+},
+{
+"gloss": "used in the phrase `to your credit' in order to indicate an achievement deserving praise",
+"anchors": [
+"accomplishment",
+"achievement",
+"used",
+"the",
+"phrase",
+"your",
+"order",
+"indicate",
+"achievement",
+"deserving",
+"praise"
+]
+}
+]
+},
+{
+"w": "elevated",
+"pos": "verb",
+"senses": [
+{
+"gloss": "give a promotion to or assign to a higher position",
+"anchors": [
+"promote",
+"upgrade",
+"advance",
+"raise",
+"elevate",
+"delegate",
+"designate",
+"depute",
+"assign",
+"give",
+"promotion",
+"assign",
+"higher",
+"position"
+]
+},
+{
+"gloss": "raise from a lower to a higher position",
+"anchors": [
+"raise",
+"lift",
+"elevate",
+"move",
+"displace",
+"raise",
+"from",
+"lower",
+"higher",
+"position"
+]
+}
+]
+},
+{
+"w": "cult",
+"pos": "noun",
+"senses": [
+{
+"gloss": "followers of an exclusive system of religious beliefs and practices",
+"anchors": [
+"religion",
+"faith",
+"followers",
+"exclusive",
+"system",
+"religious",
+"beliefs",
+"and",
+"practices"
+]
+},
+{
+"gloss": "an interest followed with exaggerated zeal",
+"anchors": [
+"fad",
+"craze",
+"furor",
+"furore",
+"rage",
+"fashion",
+"interest",
+"followed",
+"with",
+"exaggerated",
+"zeal"
+]
+}
+]
+},
+{
+"w": "combined",
+"pos": "verb",
+"senses": [
+{
+"gloss": "have or possess in combination",
+"anchors": [
+"unite",
+"combine",
+"have",
+"feature",
+"have",
+"possess",
+"combination"
+]
+},
+{
+"gloss": "put or add together",
+"anchors": [
+"compound",
+"combine",
+"add",
+"put",
+"add",
+"together"
+]
+}
+]
+},
+{
+"w": "university",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the body of faculty and students at a university",
+"anchors": [
+"body",
+"the",
+"body",
+"faculty",
+"and",
+"students"
+]
+},
+{
+"gloss": "establishment where a seat of higher learning is housed, including administrative and living quarters as well as facilities for research and teaching",
+"anchors": [
+"establishment",
+"establishment",
+"where",
+"seat",
+"higher",
+"learning",
+"housed",
+"including",
+"administrative",
+"and",
+"living",
+"quarters",
+"well",
+"facilities",
+"for",
+"research",
+"and",
+"teaching"
+]
+}
+]
+},
+{
+"w": "mark",
+"pos": "verb",
+"senses": [
+{
+"gloss": "attach a tag or label to",
+"anchors": [
+"tag",
+"label",
+"attach",
+"attach",
+"tag",
+"label"
+]
+},
+{
+"gloss": "designate as if by a mark",
+"anchors": [
+"bespeak",
+"betoken",
+"indicate",
+"point",
+"signal",
+"designate"
+]
+}
+]
+},
+{
+"w": "centers",
+"pos": "noun",
+"senses": [
+{
+"gloss": "an area that is approximately central within some larger region",
+"anchors": [
+"center",
+"centre",
+"middle",
+"heart",
+"eye",
+"area",
+"country",
+"area",
+"that",
+"approximately",
+"central",
+"within",
+"some",
+"larger",
+"region"
+]
+},
+{
+"gloss": "the choicest or most essential or most vital part of some idea or experience",
+"anchors": [
+"kernel",
+"substance",
+"core",
+"center",
+"centre",
+"essence",
+"gist",
+"heart",
+"inwardness",
+"marrow",
+"meat",
+"nub",
+"pith",
+"sum",
+"nitty-gritty",
+"content",
+"the",
+"choicest",
+"most",
+"essential",
+"most",
+"vital",
+"part",
+"some",
+"idea",
+"experience"
+]
+}
+]
+},
+{
+"w": "figure",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a diagram or picture illustrating textual material",
+"anchors": [
+"fig",
+"illustration",
+"diagram",
+"picture",
+"illustrating",
+"textual",
+"material"
+]
+},
+{
+"gloss": "alternative names for the body of a human being",
+"anchors": [
+"soma",
+"build",
+"physique",
+"anatomy",
+"shape",
+"bod",
+"chassis",
+"frame",
+"form",
+"flesh",
+"body",
+"alternative",
+"names",
+"for",
+"the",
+"body",
+"human",
+"being"
+]
+}
+]
+},
+{
+"w": "climb",
+"pos": "verb",
+"senses": [
+{
+"gloss": "go upward with gradual or continuous progress",
+"anchors": [
+"mount",
+"rise",
+"lift",
+"arise",
+"uprise",
+"upward",
+"with",
+"gradual",
+"continuous",
+"progress"
+]
+},
+{
+"gloss": "go up or advance",
+"anchors": [
+"wax",
+"mount",
+"rise",
+"increase",
+"advance"
+]
+}
+]
+},
+{
+"w": "spirit",
+"pos": "noun",
+"senses": [
+{
+"gloss": "the vital principle or animating force within living things",
+"anchors": [
+"the",
+"vital",
+"principle",
+"animating",
+"force",
+"within",
+"living",
+"things"
+]
+},
+{
+"gloss": "the general atmosphere of a place or situation and the effect that it has on people",
+"anchors": [
+"tone",
+"feel",
+"feeling",
+"flavor",
+"flavour",
+"look",
+"smell",
+"atmosphere",
+"ambiance",
+"ambience",
+"the",
+"general",
+"atmosphere",
+"place",
+"situation",
+"and",
+"the",
+"effect",
+"that",
+"has",
+"people"
+]
+}
+]
+},
+{
+"w": "saved",
+"pos": "verb",
+"senses": [
+{
+"gloss": "save from ruin, destruction, or harm",
+"anchors": [
+"salvage",
+"salve",
+"relieve",
+"save",
+"rescue",
+"deliver",
+"save",
+"from",
+"ruin",
+"destruction",
+"harm"
+]
+},
+{
+"gloss": "to keep up and reserve for personal or special use",
+"anchors": [
+"save",
+"preserve",
+"keep",
+"keep",
+"and",
+"reserve",
+"for",
+"personal",
+"special",
+"use"
+]
+}
+]
+},
+{
+"w": "erupted",
+"pos": "verb",
+"senses": [
+{
+"gloss": "start abruptly",
+"anchors": [
+"erupt",
+"begin",
+"start",
+"start",
+"abruptly"
+]
+},
+{
+"gloss": "start to burn or burst into flames",
+"anchors": [
+"erupt",
+"ignite",
+"combust",
+"conflagrate",
+"turn",
+"start",
+"burn",
+"burst",
+"into",
+"flames"
+]
+}
+]
+},
+{
+"w": "listen",
+"pos": "verb",
+"senses": [
+{
+"gloss": "hear with intention",
+"anchors": [
+"perceive",
+"comprehend",
+"hear",
+"with",
+"intention"
+]
+},
+{
+"gloss": "pay close attention to; give heed to",
+"anchors": [
+"heed",
+"mind",
+"obey",
+"pay",
+"close",
+"attention",
+"give",
+"heed"
+]
+}
+]
+},
+{
+"w": "becoming",
+"pos": "verb",
+"senses": [
+{
+"gloss": "enter or assume a certain state or condition",
+"anchors": [
+"become",
+"get",
+"turn",
+"enter",
+"assume",
+"certain",
+"state",
+"condition"
+]
+},
+{
+"gloss": "undergo a change or development",
+"anchors": [
+"become",
+"turn",
+"transform",
+"transmute",
+"metamorphose",
+"undergo",
+"change",
+"development"
+]
+}
+]
+},
+{
+"w": "growth",
+"pos": "noun",
+"senses": [
+{
+"gloss": "(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+"anchors": [
+"growing",
+"maturation",
+"development",
+"ontogeny",
+"ontogenesis",
+"biology",
+"the",
+"process",
+"individual",
+"organism",
+"growing",
+"organically",
+"purely",
+"biological",
+"unfolding",
+"events",
+"involved",
+"organism",
+"changing",
+"gradually",
+"from",
+"simple",
+"more",
+"complex",
+"level"
+]
+},
+{
+"gloss": "vegetation that has grown",
+"anchors": [
+"vegetation",
+"flora",
+"botany",
+"vegetation",
+"that",
+"has",
+"grown"
+]
+}
+]
+},
+{
+"w": "lease",
+"pos": "verb",
+"senses": [
+{
+"gloss": "let for money",
+"anchors": [
+"rent",
+"contract",
+"undertake",
+"let",
+"for",
+"money"
+]
+},
+{
+"gloss": "engage for service under a term of contract",
+"anchors": [
+"rent",
+"hire",
+"charter",
+"engage",
+"take",
+"get",
+"acquire",
+"engage",
+"for",
+"service",
+"under",
+"term",
+"contract"
+]
+}
+]
+},
+{
+"w": "publishers",
+"pos": "noun",
+"senses": [
+{
+"gloss": "a firm in the publishing business",
+"anchors": [
+"publisher",
+"firm",
+"house",
+"firm",
+"the",
+"publishing",
+"business"
+]
+},
+{
+"gloss": "a person engaged in publishing periodicals or books or music",
+"anchors": [
+"publisher",
+"professional",
+"person",
+"engaged",
+"publishing",
+"periodicals",
+"books",
+"music"
+]
+}
+]
+}
+]
