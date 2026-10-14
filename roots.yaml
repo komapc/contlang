@@ -233,11 +233,11 @@ roots:
 - name: INSIDE
   axis:
     neg: снаружи
-    mid: ''
+    mid: на границе
     pos: внутри
-  ru_axis: снаружи … внутри
-  status: 'принято (данные: полюса в одной семье)'
-  en_axis: '-5 outside … +5 inside'
+  ru_axis: 'снаружи … на границе, на краю, поверхность … внутри'
+  status: 'принято (данные: полюса в одной семье); середина `INSIDE(=0)` — граница, край, поверхность (слепой тест 22 кода: 32 → 53 % «близко», [inside0](../data/eval/runs/inside0/README.md))'
+  en_axis: '-5 outside … 0 on the border, at the edge, the surface … +5 inside'
   semaxis:
   - inside within interior internal indoors
   - outside external exterior outer outdoors
