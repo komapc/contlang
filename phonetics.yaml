@@ -1,0 +1,98 @@
+# Фонетика min-co (опция сайта «Фонетика»). Источник правды о звучании; из него
+# `python3 scripts/site/build.py` строит site/data/phonetics.json. Черновик: на слух не проверялся.
+#
+# Слот = корень + значение оси. Корень — один слог. Знак значения — в начальном согласном:
+# глухой = положительный полюс, звонкий = отрицательный, сонорный = нейтральная форма
+# («не указано» и (=0) звучат одинаково). Величина — число повторов слога (|v|, нейтральная — один раз).
+# Слово = блоки корней через «-», затем «'» и гласная части речи, затем роль и метки через «·».
+#
+# families: тройки согласных [глухой, звонкий, нейтральный]; roots: положительная форма слога.
+# У корней без оси звучит только нейтральная форма (SEE → lu, PLACE → ma, TEXT → li).
+families:
+  - [p, b, l]
+  - [t, d, m]
+  - [k, g, n]
+  - [s, z, j]
+  - [f, v, w]
+# Метки формы: гласная + согласный; тройки [положительная, отрицательная, нейтральная] — коды слогов
+# [at, ad, an]: знак метки — звонкость конечного согласного, нейтральная — сонорный.
+coda_families:
+  - [t, d, n]
+  - [k, g, m]
+  - [s, z, r]
+roots:
+  HAPPEN: ka
+  BODY: si
+  SEE: pu
+  DO: pa
+  PLACE: ta
+  TEXT: pi
+  GOOD: po
+  BIG: su
+  NEAR: pe
+  ABOVE: se
+  LIVE: ti
+  SAME: sa
+  TIME: te
+  INSIDE: fo
+  PART: ki
+  SIDE: fu
+  KNOW: so
+  WANT: fi
+  HEAT: pan
+  BEGIN: tan
+  GIVE: kan
+  TOUCH: san
+  SEX: fan
+  THINK: pen
+  CAN: ke
+  MANY: tu
+  SOMEONE: ten
+  THING: ken
+  MOVE: fa
+  FEEL: sen
+  RULE: fen
+  CHANGE: pin
+  ART: tin
+  JOIN: ku
+  VALUE: kin
+  CARE: fe
+  FRIEND: sin
+  MOOD: fin
+  CONSUME: to
+  MEASURE: pon
+  LONG: ton
+  SAY: kon
+  GRAIN: ko
+  FIGHT: son
+  LAND: fon
+labels:           # положительная форма; ! и ? без значения
+  T: at
+  R: et
+  N: ak
+  M: ot
+  A: as
+  C: ik
+  I: it
+  D: ut
+  V: os
+  K: ok
+  "!": us
+  "?": ek
+roles:
+  agent: ul
+  tool: il
+  result: aj
+  quality: ec
+particles:
+  E: he
+  PI: hi
+  LA: ha
+  PE: ho
+  AND: hu
+  FROM: hen
+  FOR: hon
+  LIKE: hin
+  "[": hem
+  "]": hom
+  ";": hum

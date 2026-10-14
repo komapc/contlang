@@ -1,0 +1,356 @@
+{
+"roots": {
+"HAPPEN": {
+"p": "ka",
+"n": "ga",
+"z": "na",
+"axis": false
+},
+"BODY": {
+"p": "si",
+"n": "zi",
+"z": "ji",
+"axis": false
+},
+"SEE": {
+"p": "pu",
+"n": "bu",
+"z": "lu",
+"axis": false
+},
+"DO": {
+"p": "pa",
+"n": "ba",
+"z": "la",
+"axis": false
+},
+"PLACE": {
+"p": "ta",
+"n": "da",
+"z": "ma",
+"axis": false
+},
+"TEXT": {
+"p": "pi",
+"n": "bi",
+"z": "li",
+"axis": false
+},
+"GOOD": {
+"p": "po",
+"n": "bo",
+"z": "lo",
+"axis": true
+},
+"BIG": {
+"p": "su",
+"n": "zu",
+"z": "ju",
+"axis": true
+},
+"NEAR": {
+"p": "pe",
+"n": "be",
+"z": "le",
+"axis": true
+},
+"ABOVE": {
+"p": "se",
+"n": "ze",
+"z": "je",
+"axis": true
+},
+"LIVE": {
+"p": "ti",
+"n": "di",
+"z": "mi",
+"axis": true
+},
+"SAME": {
+"p": "sa",
+"n": "za",
+"z": "ja",
+"axis": true
+},
+"TIME": {
+"p": "te",
+"n": "de",
+"z": "me",
+"axis": true
+},
+"INSIDE": {
+"p": "fo",
+"n": "vo",
+"z": "wo",
+"axis": true
+},
+"PART": {
+"p": "ki",
+"n": "gi",
+"z": "ni",
+"axis": true
+},
+"SIDE": {
+"p": "fu",
+"n": "vu",
+"z": "wu",
+"axis": true
+},
+"KNOW": {
+"p": "so",
+"n": "zo",
+"z": "jo",
+"axis": true
+},
+"WANT": {
+"p": "fi",
+"n": "vi",
+"z": "wi",
+"axis": true
+},
+"HEAT": {
+"p": "pan",
+"n": "ban",
+"z": "lan",
+"axis": true
+},
+"BEGIN": {
+"p": "tan",
+"n": "dan",
+"z": "man",
+"axis": true
+},
+"GIVE": {
+"p": "kan",
+"n": "gan",
+"z": "nan",
+"axis": true
+},
+"TOUCH": {
+"p": "san",
+"n": "zan",
+"z": "jan",
+"axis": true
+},
+"SEX": {
+"p": "fan",
+"n": "van",
+"z": "wan",
+"axis": true
+},
+"THINK": {
+"p": "pen",
+"n": "ben",
+"z": "len",
+"axis": true
+},
+"CAN": {
+"p": "ke",
+"n": "ge",
+"z": "ne",
+"axis": true
+},
+"MANY": {
+"p": "tu",
+"n": "du",
+"z": "mu",
+"axis": true
+},
+"SOMEONE": {
+"p": "ten",
+"n": "den",
+"z": "men",
+"axis": true
+},
+"THING": {
+"p": "ken",
+"n": "gen",
+"z": "nen",
+"axis": true
+},
+"MOVE": {
+"p": "fa",
+"n": "va",
+"z": "wa",
+"axis": true
+},
+"FEEL": {
+"p": "sen",
+"n": "zen",
+"z": "jen",
+"axis": true
+},
+"RULE": {
+"p": "fen",
+"n": "ven",
+"z": "wen",
+"axis": true
+},
+"CHANGE": {
+"p": "pin",
+"n": "bin",
+"z": "lin",
+"axis": true
+},
+"ART": {
+"p": "tin",
+"n": "din",
+"z": "min",
+"axis": true
+},
+"JOIN": {
+"p": "ku",
+"n": "gu",
+"z": "nu",
+"axis": true
+},
+"VALUE": {
+"p": "kin",
+"n": "gin",
+"z": "nin",
+"axis": true
+},
+"CARE": {
+"p": "fe",
+"n": "ve",
+"z": "we",
+"axis": true
+},
+"FRIEND": {
+"p": "sin",
+"n": "zin",
+"z": "jin",
+"axis": true
+},
+"MOOD": {
+"p": "fin",
+"n": "vin",
+"z": "win",
+"axis": true
+},
+"CONSUME": {
+"p": "to",
+"n": "do",
+"z": "mo",
+"axis": true
+},
+"MEASURE": {
+"p": "pon",
+"n": "bon",
+"z": "lon",
+"axis": true
+},
+"LONG": {
+"p": "ton",
+"n": "don",
+"z": "mon",
+"axis": true
+},
+"SAY": {
+"p": "kon",
+"n": "gon",
+"z": "non",
+"axis": true
+},
+"GRAIN": {
+"p": "ko",
+"n": "go",
+"z": "no",
+"axis": true
+},
+"FIGHT": {
+"p": "son",
+"n": "zon",
+"z": "jon",
+"axis": true
+},
+"LAND": {
+"p": "fon",
+"n": "von",
+"z": "won",
+"axis": true
+}
+},
+"labels": {
+"T": {
+"p": "at",
+"n": "ad",
+"z": "an"
+},
+"R": {
+"p": "et",
+"n": "ed",
+"z": "en"
+},
+"N": {
+"p": "ak",
+"n": "ag",
+"z": "am"
+},
+"M": {
+"p": "ot",
+"n": "od",
+"z": "on"
+},
+"A": {
+"p": "as",
+"n": "az",
+"z": "ar"
+},
+"C": {
+"p": "ik",
+"n": "ig",
+"z": "im"
+},
+"I": {
+"p": "it",
+"n": "id",
+"z": "in"
+},
+"D": {
+"p": "ut",
+"n": "ud",
+"z": "un"
+},
+"V": {
+"p": "os",
+"n": "oz",
+"z": "or"
+},
+"K": {
+"p": "ok",
+"n": "og",
+"z": "om"
+},
+"!": {
+"p": "us",
+"n": "uz",
+"z": "ur"
+},
+"?": {
+"p": "ek",
+"n": "eg",
+"z": "em"
+}
+},
+"roles": {
+"agent": "ul",
+"tool": "il",
+"result": "aj",
+"quality": "ec"
+},
+"particles": {
+"E": "he",
+"PI": "hi",
+"LA": "ha",
+"PE": "ho",
+"AND": "hu",
+"FROM": "hen",
+"FOR": "hon",
+"LIKE": "hin",
+"[": "hem",
+"]": "hom",
+";": "hum"
+},
+"pos": "o i a e"
+}

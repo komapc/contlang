@@ -67,6 +67,8 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .cmp>*{min-width:0}td code{overflow-wrap:break-word}.tok{white-space:nowrap}
 .axes{margin-top:8px}.axes table{table-layout:fixed}.axes table td{border:0;padding:4px 6px;vertical-align:middle;overflow-wrap:anywhere}.axes td:first-child{width:30%}.axes td:nth-child(2){width:40%}
 @media(max-width:560px){.axes table,.axes tbody{display:block}.axes tr{display:grid;grid-template-columns:auto 1fr;gap:0 8px;padding:4px 0;border-bottom:1px solid var(--line)}.axes td{width:auto!important;padding:2px 0}.axes td:nth-child(2){grid-column:1/-1;order:3}}
+.ph{font-family:var(--mono);font-size:14px;color:var(--acc2);margin-top:6px;overflow-wrap:anywhere}.ph b{font-weight:400;color:var(--mut)}.snd{display:block;font-family:var(--mono);font-size:12px;color:var(--acc2)}
+.opt{display:flex;gap:8px;align-items:center;margin-top:10px;font-size:14px;color:var(--mut)}
 .axes .rd{font-size:13px}.axes .form{font-size:13px;color:var(--mut);margin-top:4px}
 @media(max-width:480px){.langsw{position:static;display:inline-flex;margin-top:10px}}
 </style>
@@ -97,6 +99,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
       <button class="go" id="run" type="submit"><span data-l="en">Translate there and back</span><span data-l="ru">Перевести туда и обратно</span></button>
     </div>
     <div class="mut" id="status"></div>
+    <label class="opt"><input type="checkbox" id="phOn"><span data-l="en">Phonetics: also show how the code sounds</span><span data-l="ru">Фонетика: показывать, как код звучит</span></label>
     <div class="mut small mcalt" data-l="en">Hover over any part of a code (on a phone, tap it): a root, a label, a particle. Below the code are the axes of its roots.</div><div class="mut small" data-l="mc"><span class="code mctext" data-mc='SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result ; SOMEONE(=+3) | o SEE | i E MEASURE(=0) LONG(=0) | o N+3 PI PART(=-2) BEGIN(=-5) | o N+3'></span></div>
     <div class="mut small" data-l="ru">Наведите курсор на любую часть кода (на телефоне — нажмите): корень, метку, частицу. Под кодом — оси его корней.</div>
   </form>
@@ -152,6 +155,27 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <table><thead><tr><th><span data-l="en">label</span><span data-l="ru">метка</span></th><th><span data-l="en">what</span><span data-l="ru">что</span></th><th><span data-l="en">scale</span><span data-l="ru">шкала</span></th></tr></thead><tbody id="labels"></tbody></table>
   <p class="note" data-l="en">Single words use this notation (with the part of speech after the bar) because it is the one verified by blind tests on words. The Toki Pona-style notation (no bar) won on whole sentences but was not measured on single words.</p>
   <p class="note" data-l="ru">Для отдельных слов используется эта запись (с частью речи после черты), потому что именно она проверена слепыми тестами на словах. Запись в стиле токи пона (без черты) выиграла на целых предложениях, на словах отдельно не измерялась.</p>
+  <h3 id="phonetics"><span data-l="en">Phonetics (optional, draft)</span><span data-l="ru">Фонетика (опция, черновик)</span></h3>
+  <div data-l="en">
+  <p>Switch it on under the input field: every code gets a line with its pronunciation. Not checked by ear yet; the source is <code>phonetics.yaml</code>.</p>
+  <ul>
+    <li><b>A root is one syllable</b>, and each root has a family of three sounds: a voiceless onset (<code>po</code>) for the positive pole, a voiced one (<code>bo</code>) for the negative pole, a sonorant (<code>lo</code>) for the neutral form: no value, or <code>(=0)</code> — they sound alike. Roots without an axis only have the neutral form (<code>SEE</code> is <code>lu</code>, <code>PLACE</code> <code>ma</code>, <code>TEXT</code> <code>li</code>).</li>
+    <li><b>Magnitude is repetition:</b> <code>GOOD(=+3)</code> is <code>popopo</code>, <code>GOOD(=-2)</code> is <code>bobo</code>, <code>GOOD(=+5)</code> is five times <code>po</code>.</li>
+    <li><b>Word</b> = root blocks joined with <code>-</code>, then <code>'</code> and the vowel of the part of speech, then the role and labels after <code>·</code> (<code>ul il aj ec</code> for agent, tool, result, quality; a label is a vowel and a consonant: <code>at</code> <code>T+</code>, <code>ad</code> <code>T−</code>, <code>an</code> <code>T0</code>).</li>
+    <li><b>Particles</b> all start with <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> are the brackets, <code>hum</code> is <code>;</code>. Quoted names are read in their own language.</li>
+  </ul>
+  <p>In the Roots tab the sounds of each root show next to its name.</p>
+  </div>
+  <div data-l="ru">
+  <p>Включается под полем ввода: у каждого кода появляется строка с произношением. На слух ещё не проверено; источник — <code>phonetics.yaml</code>.</p>
+  <ul>
+    <li><b>Корень — один слог</b>, у каждого три звучания: глухое начало (<code>po</code>) — положительный полюс, звонкое (<code>bo</code>) — отрицательный, сонорное (<code>lo</code>) — нейтральная форма: без значения и <code>(=0)</code> звучат одинаково. У корней без оси только нейтральная форма (<code>SEE</code> — <code>lu</code>, <code>PLACE</code> — <code>ma</code>, <code>TEXT</code> — <code>li</code>).</li>
+    <li><b>Величина — повтор слога:</b> <code>GOOD(=+3)</code> — <code>popopo</code>, <code>GOOD(=-2)</code> — <code>bobo</code>, <code>GOOD(=+5)</code> — пять раз <code>po</code>.</li>
+    <li><b>Слово</b> = блоки корней через <code>-</code>, затем <code>'</code> и гласная части речи, затем роль и метки после <code>·</code> (<code>ul il aj ec</code> — agent, tool, result, quality; метка — гласная и согласный: <code>at</code> — <code>T+</code>, <code>ad</code> — <code>T−</code>, <code>an</code> — <code>T0</code>).</li>
+    <li><b>Частицы</b> все начинаются на <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> — скобки, <code>hum</code> — <code>;</code>. Имена в кавычках читаются на своём языке.</li>
+  </ul>
+  <p>В таблице «Корни» рядом с каждым корнем показано его звучание.</p>
+  </div>
 </section>
 
 <section id="roots">
@@ -261,7 +285,7 @@ function row(tbody, cells, cls){const tr=document.createElement("tr");if(cls)tr.
 const LANG = () => document.documentElement.lang === "ru" ? "ru" : "en";
 const I18N = {
   en: {
-    think: "thinking…", err: "error ", notInVocab: (n) => "the word is not among the " + n + " words of the dictionary", onlyWords: "the math encodes single words only",
+    sound: "sounds:", think: "thinking…", err: "error ", notInVocab: (n) => "the word is not among the " + n + " words of the dictionary", onlyWords: "the math encodes single words only",
     cos: (c) => "similarity of the code to the word cos " + c + "; the math does not know the part of speech, so it puts o",
     next: "then: ", rank: (k, n) => " · the original word is at place " + k + " of " + n, noRoots: "no roots in the code", unknown: "unknown: ",
     codeGiven: "the code is given; the math only reads it", saved: "a saved result of a blind test", noModel: "the model is not connected",
@@ -284,7 +308,7 @@ const I18N = {
     qPh: "search by root or meaning", dqPh: "search by word or root (money, LIVE, PLACE…)", inpPh: "example, knife, river… or GRAIN(=-3) CONSUME(=+5) | o",
   },
   ru: {
-    think: "думаю…", err: "ошибка ", notInVocab: (n) => "слова нет среди " + n + " слов словаря", onlyWords: "математика кодирует только отдельные слова",
+    sound: "звучит:", think: "думаю…", err: "ошибка ", notInVocab: (n) => "слова нет среди " + n + " слов словаря", onlyWords: "математика кодирует только отдельные слова",
     cos: (c) => "сходство кода со словом cos " + c + "; часть речи математика не знает, стоит o",
     next: "далее: ", rank: (k, n) => " · исходное слово на " + k + "-м месте из " + n, noRoots: "в коде нет корней", unknown: "неизвестно: ",
     codeGiven: "код задан, математика только читает его", saved: "сохранённый результат слепого теста", noModel: "модель не подключена",
@@ -437,7 +461,56 @@ async function showAxes(node, code){
   });
   if (fm.length) node.appendChild(el("div", T("form") + fm.join(", "), "form"));
 }
-function setCode(node, axNode, code){ showCode(node, code); if (axNode) showAxes(axNode, code); }
+// фонетика (опция): звучание из data/phonetics.json (источник — phonetics.yaml, docs/phonology.md)
+let PH = null, PH_ON = false; const PHS = new Set();
+try { PH_ON = localStorage.getItem("minco-ph") === "1"; } catch (e) {}
+const PHP = fetch("data/phonetics.json").then(r => r.json()).then(d => { PH = d; PHS.forEach(n => phDraw(n)); drawRoots(); }).catch(() => {});
+function phBlock(r, v){
+  if (!r) return "?";
+  const n = r.axis && v ? Math.min(5, Math.abs(v)) : 1;
+  return (!r.axis || !v ? r.z : v > 0 ? r.p : r.n).repeat(n);
+}
+function phMark(k){
+  const l = PH.labels[k.text[0]]; if (!l) return "?";
+  if (k.text === "!" || k.text === "?") return l.p;
+  const v = k.v || 0; return (!v ? l.z : v > 0 ? l.p : l.n).repeat(Math.max(1, Math.min(5, Math.abs(v))));
+}
+function phonetic(code){
+  const out = []; let cur = null;
+  const flush = () => {
+    if (!cur) return;
+    const s = cur.blocks.join("-") + (cur.pos ? "'" + cur.pos : "") + (cur.role ? "·" + cur.role : "") + cur.marks.map(m => "·" + m).join("");
+    if (s) out.push(s); cur = null;
+  };
+  for (const k of tokens(code)) {
+    if (k.kind === "root") {
+      if (cur && cur.form) flush();
+      cur = cur || { blocks: [], marks: [] };
+      cur.blocks.push(phBlock(PH.roots[k.name], k.v));
+      if (k.q) cur.marks.push(PH.labels["?"].p);
+    } else if (k.kind === "bar") { cur = cur || { blocks: [], marks: [] }; cur.form = true; }
+    else if (cur && k.kind === "pos") cur.pos = k.text;
+    else if (cur && k.kind === "role") cur.role = PH.roles[k.text];
+    else if (cur && k.kind === "mark") cur.marks.push(phMark(k));
+    else if (k.kind === "ptl") { flush(); out.push(PH.particles[k.text]); }
+    else if (k.kind === "lit") { flush(); out.push(k.text); }
+    else if (k.kind === "br") { flush(); if (PH.particles[k.text]) out.push(PH.particles[k.text]); }
+  }
+  flush(); return out.join(" ");
+}
+function phDraw(node){
+  const p = node._ph; if (!p) return;
+  p.hidden = !PH_ON || !p._code || p._code === "—";
+  p.textContent = ""; if (p.hidden) return;
+  p.appendChild(el("b", T("sound") + " ")); p.appendChild(document.createTextNode(PH ? phonetic(p._code) : "…"));
+}
+function phLine(node, code){
+  if (!node._ph) { const p = el("div", null, "ph"); node.after(p); node._ph = p; PHS.add(node); }
+  node._ph._code = code; phDraw(node);
+}
+function setCode(node, axNode, code){ showCode(node, code); phLine(node, code); if (axNode) showAxes(axNode, code); }
+$("phOn").checked = PH_ON;
+$("phOn").addEventListener("change", () => { PH_ON = $("phOn").checked; try { localStorage.setItem("minco-ph", PH_ON ? "1" : "0"); } catch (e) {} PHS.forEach(n => phDraw(n)); drawRoots(); });
 // подсказка: мышь, фокус с клавиатуры, нажатие на телефоне
 const tip = $("tip"); let tipFor_ = null;
 function openTip(sp){
@@ -600,13 +673,20 @@ function drawDict(){
     tr.addEventListener("click", () => { $("inp").value = e.code; document.querySelector('nav button[data-t=demo]').click(); run(e.code); window.scrollTo({top: 0, behavior: "smooth"}); });
   });
 }
+// ячейка корня; при включённой фонетике — как он звучит (положительный · отрицательный · нейтральный)
+function rootCell(name){
+  const c = document.createElement("span"); c.appendChild(codeEl(name));
+  const r = PH && PH_ON && PH.roots[name];
+  if (r) c.appendChild(el("span", r.axis ? r.p + " · " + r.n + " · " + r.z : r.z, "snd"));
+  return c;
+}
 function drawRoots(){
   if (!RD) return; const d = RD.d;
   $("rootCount").textContent = T("rootCount")(d.counts);
   const tb = $("rootRows"); tb.innerHTML = ""; const q = ($("q").value || "").toLowerCase();
   d.roots.filter(r => !q || [r.name, r.ru, r.neg, r.mid, r.pos, r.en, r.en_neg, r.en_mid, r.en_pos].join(" ").toLowerCase().includes(q)).forEach(r => {
-    if (r.axis) row(tb, [codeEl(r.name), clean(rf(r, "neg")), clean(rf(r, "mid")), clean(rf(r, "pos"))]);
-    else row(tb, [codeEl(r.name), clean(rf(r, "ru")) + T("noAxisRow"), "", ""]);
+    if (r.axis) row(tb, [rootCell(r.name), clean(rf(r, "neg")), clean(rf(r, "mid")), clean(rf(r, "pos"))]);
+    else row(tb, [rootCell(r.name), clean(rf(r, "ru")) + T("noAxisRow"), "", ""]);
   });
   document.querySelectorAll(".noaxis").forEach(x => x.textContent = d.roots.filter(r => !r.axis).map(r => r.name).join(", "));
   $("particles").innerHTML = ""; d.particles.forEach(p => row($("particles"), [codeEl(p.name), clean(pf(p))]));

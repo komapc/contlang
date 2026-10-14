@@ -7,6 +7,8 @@
 import json
 import re
 import sys
+
+import yaml
 from pathlib import Path
 
 HERE = Path(__file__).resolve().parent
@@ -95,8 +97,34 @@ def prompts_js():
             + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
 
 
+def phonetics_json():
+    """Звучание корней, меток, ролей и частиц из phonetics.yaml (опция сайта «Фонетика»)."""
+    ph = yaml.safe_load((REPO / "phonetics.yaml").read_text(encoding="utf8"))
+    roots = {r["name"]: bool(r.get("axis")) for r in yaml.safe_load((REPO / "roots.yaml").read_text(encoding="utf8"))["roots"]}
+    fam = {f[0]: f for f in ph["families"]}
+    cod = {f[0]: f for f in ph["coda_families"]}
+
+    def onset(s):
+        for i, c in enumerate(s):
+            if c in "aeiou":
+                return s[:i], s[i:]
+        raise ValueError(s)
+
+    out = {"roots": {}, "labels": {}, "roles": ph["roles"], "particles": ph["particles"], "pos": "o i a e"}
+    for name, syl in ph["roots"].items():
+        o, rest = onset(syl)
+        p, n, z = fam[o]
+        out["roots"][name] = {"p": o + rest, "n": n + rest, "z": z + rest, "axis": roots[name]}
+    for name, syl in ph["labels"].items():
+        v, c = syl[:-1], syl[-1]
+        p, n, z = cod[c]
+        out["labels"][name] = {"p": v + p, "n": v + n, "z": v + z}
+    return out
+
+
 def outputs():
     return {
+        REPO / "site" / "data" / "phonetics.json": json.dumps(phonetics_json(), ensure_ascii=False, indent=0) + "\n",
         REPO / "site" / "data" / "roots.json": json.dumps(roots_json(), ensure_ascii=False, indent=1) + "\n",
         REPO / "site" / "data" / "examples.json": json.dumps(examples_json(), ensure_ascii=False, indent=1) + "\n",
         REPO / "site" / "data" / "recipes.json": json.dumps(recipes_json(), ensure_ascii=False, indent=0) + "\n",
