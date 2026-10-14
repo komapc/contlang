@@ -56,7 +56,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .bars td:last-child{width:45%}
 .tok{border-radius:4px;padding:0 1px;cursor:help}
 .tok:hover,.tok:focus,.tok.on{background:var(--card);outline:1px solid var(--acc);outline-offset:0}
-.tok.root{color:var(--acc);font-weight:600}.tok.mark{color:var(--warn)}.tok.pos{color:var(--mut)}.tok.ptl{font-style:italic}.tok.bad{text-decoration:wavy underline var(--bad)}
+.tok.root{color:var(--acc);font-weight:600}.tok.mark,.tok.role{color:var(--warn)}.tok.pos{color:var(--mut)}.tok.ptl{font-style:italic}.tok.bad{text-decoration:wavy underline var(--bad)}
 #tip{position:absolute;z-index:20;max-width:min(340px,calc(100vw - 32px));background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:10px;padding:10px 12px;box-shadow:0 6px 24px rgba(0,0,0,.18);font-size:14px;line-height:1.45}
 #tip .th{font-family:var(--mono);font-weight:600}#tip .role{color:var(--mut);font-size:12px}
 .axis{position:relative;height:8px;border-radius:4px;background:linear-gradient(90deg,var(--line),var(--acc2) 50%,var(--line));border:1px solid var(--line);margin:10px 4px 3px}
@@ -133,12 +133,12 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   <h2><span data-l="en">How to read a code</span><span data-l="ru">Как читать код</span></h2>
   <div data-l="en">
   <p>A word is written as <code>ROOTS | form</code>. Before the bar is the meaning: the <b>head root</b> and up to two modifying roots, each with a value on its axis when needed: <code>GOOD(=+3)</code> (fairly good), <code>TIME(=-2)</code> (recently), <code>MANY(=-5)</code> (none at all). No value written means the value is unspecified. Each next root refines everything before it: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — “loose crumbs of stone” (sand).</p>
-  <p>After the bar comes the part of speech — <code>o</code> thing, <code>i</code> action, <code>a</code> property, <code>e</code> circumstance — and the form labels below: <code>SAY | i T-2 M-5</code> — “did not say”. Roots without an axis (<span class="noaxis"></span>) take no value.</p>
+  <p>After the bar comes the part of speech — <code>o</code> thing, <code>i</code> action, <code>a</code> property, <code>e</code> circumstance — then, for a noun, an optional role like the Esperanto suffixes <i>-ist, -il, -aĵ, -ec</i>: <code>agent</code> the one who does it or a person of that field (<code>ART(=+5) | o agent</code> artist), <code>tool</code>, <code>result</code>, <code>quality</code>; and the form labels below: <code>SAY | i T-2 M-5</code> — “did not say”. Roots without an axis (<span class="noaxis"></span>) take no value.</p>
   <p>Quotes are used only for numbers, proper names and <b>specific members of a family</b> in Latin or international form: a species <code>"Canis"</code>, a substance <code>"iodine"</code>, an organ <code>"hepar"</code>, a celestial body <code>"Luna"</code>, a game <code>"chess"</code>, a narrow term <code>"enzyme"</code>. The category itself is built from roots: organ — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, star — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. If a word has a recipe, no quotes are needed.</p>
   </div>
   <div data-l="ru">
   <p>Слово записывается как <code>КОРНИ | форма</code>. До черты — смысл: <b>главный корень</b> и до двух уточняющих, у каждого при необходимости значение его оси: <code>GOOD(=+3)</code> (скорее хороший), <code>TIME(=-2)</code> (недавно), <code>MANY(=-5)</code> (ни одного). Ось не написана — значение не указано. Каждый следующий корень уточняет всё, что стоит перед ним: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — «сыпучие крошки камня» (песок).</p>
-  <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span class="noaxis"></span>) значений не берут.</p>
+  <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, у имени — необязательная роль, как суффиксы эсперанто <i>-ist, -il, -aĵ, -ec</i>: <code>agent</code> тот, кто делает, или человек этой области (<code>ART(=+5) | o agent</code> художник), <code>tool</code> орудие, <code>result</code> результат, <code>quality</code> свойство; и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span class="noaxis"></span>) значений не берут.</p>
   <p>В кавычках пишутся только числа, имена собственные и <b>конкретные члены семейства</b> в латинской или международной форме: вид <code>"Canis"</code>, вещество <code>"iodine"</code>, орган <code>"hepar"</code>, светило <code>"Luna"</code>, игра <code>"chess"</code>, узкий термин <code>"enzyme"</code>. Сама категория строится из корней: орган — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, звезда — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. Если для слова есть рецепт, кавычки не нужны.</p>
   </div>
   <div class="card"><div class="lab"><span data-l="en">example — hover over the parts of the code</span><span data-l="ru">пример — наведите на части кода</span></div>
@@ -270,7 +270,7 @@ const I18N = {
     recipe: "verified recipe: ", matched: " (matched)", modeNote: "The language model is not connected: the math and the saved examples still work.",
     recipes: (n) => n + " verified recipes.", rootCount: (d) => d.roots + " roots: " + d.with_axis + " with an axis, " + d.without_axis + " without.", noAxisRow: " (no axis)",
     alts: "among the alternatives:", loading: "loading tables…", notRoot: "not a min-co root", head: "head root of the word", mod: "refines what stands before it",
-    question: " · question: which?", noAxisTip: "the root has no axis: it takes no value", mark: "form label (not a root)", here: "here: ", posT: "part of speech",
+    question: " · question: which?", noAxisTip: "the root has no axis: it takes no value", mark: "form label (not a root)", roleT: "noun role (not a root)", here: "here: ", posT: "part of speech",
     barT: "bar", barD: "left: meaning (roots); right: form (part of speech and labels)", ptlT: "particle", num: "number", quoted: "in quotes",
     numD: "an exact number is written in digits", quotedD: "a name, a number or a specific member of a family, kept as is", brT: "bracket",
     brD: "{ } word boundary, [ ] nested clause, ; clause boundary", noAxis: "no axis", form: "form: ",
@@ -294,7 +294,7 @@ const I18N = {
     recipe: "проверенный рецепт: ", matched: " (совпал)", modeNote: "Языковая модель не подключена: работают математика и сохранённые примеры.",
     recipes: (n) => n + " проверенных рецептов.", rootCount: (d) => d.roots + " корней: " + d.with_axis + " с осью, " + d.without_axis + " без оси.", noAxisRow: " (без оси)",
     alts: "в альтернативах:", loading: "загрузка таблиц…", notRoot: "не корень min-co", head: "главный корень слова", mod: "уточняет то, что стоит перед ним",
-    question: " · вопрос: какой?", noAxisTip: "у корня нет оси: значение не берётся", mark: "метка формы (не корень)", here: "здесь: ", posT: "часть речи",
+    question: " · вопрос: какой?", noAxisTip: "у корня нет оси: значение не берётся", mark: "метка формы (не корень)", roleT: "роль имени (не корень)", here: "здесь: ", posT: "часть речи",
     barT: "черта", barD: "слева смысл (корни), справа форма: часть речи и метки", ptlT: "частица", num: "число", quoted: "в кавычках",
     numD: "точное число пишется цифрами", quotedD: "имя, число или конкретный член семейства — передаётся как есть", brT: "скобка",
     brD: "{ } — граница слова, [ ] — вложенная клауза, ; — граница клауз", noAxis: "без оси", form: "форма: ",
@@ -335,12 +335,12 @@ async function call(mode, text, extra){
 
 // ---- разметка кода: подсказки к корням, меткам, частицам; оси корней
 const RDP = fetch("data/roots.json").then(r => r.json());
-let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])) }; });
+let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])), rol: new Map((d.roles || []).map(r => [r.name, r])) }; });
 const clean = (t) => String(t || "").replace(/`/g, "").replace(/\\\|/g, "|").replace(/\*/g, "").trim();
 const sgn = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
 const PARTRE = /^(E|PI|FROM|FOR|LIKE|LA|LI|PE|AND)$/;
-// токены: "кавычки", метка формы (T-2, N+3, A0), корень с осью, скобки и черта, часть речи
-const TOKRE = /"[^"]*"|\b[TRNMACIDVK][+-]?\d\b|\b[A-Z][A-Z]*\b(?:\(=\s*[+-]?\d+\s*\))?\??|[{}\[\];|!?]|\b[oiae]\b/g;
+// токены: "кавычки", метка формы (T-2, N+3, A0), корень с осью, скобки и черта, часть речи, роль имени
+const TOKRE = /"[^"]*"|\b[TRNMACIDVK][+-]?\d\b|\b[A-Z][A-Z]*\b(?:\(=\s*[+-]?\d+\s*\))?\??|[{}\[\];|!?]|\b[oiae]\b|\b(?:agent|tool|result|quality)\b/g;
 function tokens(code){
   const out = []; let last = 0, form = false, idx = 0, fresh = true;
   for (const m of String(code).matchAll(TOKRE)) {
@@ -351,6 +351,7 @@ function tokens(code){
     else if (t === "|") { k.kind = "bar"; form = true; }
     else if ("{}[];".includes(t)) { k.kind = "br"; form = false; fresh = true; }
     else if (/^[oiae]$/.test(t)) k.kind = form ? "pos" : null;
+    else if (/^[a-z]/.test(t)) k.kind = form ? "role" : null;
     else if (/^[TRNMACIDVK][+-]?\d$/.test(t) || ((t === "!" || t === "?") && form)) { k.kind = "mark"; k.v = t.length > 1 ? Number(t.slice(1)) : null; }
     else if (PARTRE.test(t)) { k.kind = "ptl"; form = false; fresh = true; }
     else if (/^[A-Z]/.test(t)) {
@@ -399,6 +400,7 @@ function tipFor(k){
     if (l) { box.appendChild(el("div", clean(lf(l, "what")))); if (l.scale) box.appendChild(el("div", clean(lf(l, "scale")), "mut small")); }
     if (k.v != null) box.appendChild(el("div", T("here") + sgn(k.v), "small"));
   } else if (k.kind === "pos") { head(k.text, T("posT")); box.appendChild(el("div", T("pos")[k.text])); }
+  else if (k.kind === "role") { const r = RD.rol.get(k.text); head(k.text, T("roleT")); box.appendChild(el("div", r ? clean(lf(r, "what")) : "")); }
   else if (k.kind === "bar") { head("|", T("barT")); box.appendChild(el("div", T("barD"))); }
   else if (k.kind === "ptl") { const p = RD.ptl.get(k.text); head(k.text, T("ptlT")); box.appendChild(el("div", p ? clean(pf(p)) : "")); }
   else if (k.kind === "lit") { const n = /^"\d+"$/.test(k.text); head(k.text, n ? T("num") : T("quoted")); box.appendChild(el("div", n ? T("numD") : T("quotedD"))); }

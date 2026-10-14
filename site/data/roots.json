@@ -731,6 +731,28 @@
    "en_role": "names, numbers, dates, Latin"
   }
  ],
+ "roles": [
+  {
+   "name": "agent",
+   "what": "тот, кто это делает, или человек этой области (человек или вещь): `TEXT | o agent` писатель, `HAPPEN | o agent` причина, `ART(=+5) | o agent` художник",
+   "en_what": "the one who does it, or a person of that field (person or thing): `TEXT | o agent` writer, `HAPPEN | o agent` cause, `ART(=+5) | o agent` artist"
+  },
+  {
+   "name": "tool",
+   "what": "орудие, средство: `TEXT | o tool` ручка, `JOIN(=-4) TOUCH(=+4) | o tool` нож",
+   "en_what": "the means or instrument: `TEXT | o tool` pen, `JOIN(=-4) TOUCH(=+4) | o tool` knife"
+  },
+  {
+   "name": "result",
+   "what": "то, что получается: `HAPPEN | o result` следствие",
+   "en_what": "what comes out of it: `HAPPEN | o result` consequence"
+  },
+  {
+   "name": "quality",
+   "what": "само качество или состояние: `GOOD | o quality` доброта, `CAN | o quality` способность",
+   "en_what": "the quality or state itself: `GOOD | o quality` goodness, `CAN | o quality` ability"
+  }
+ ],
  "counts": {
   "roots": 45,
   "with_axis": 39,

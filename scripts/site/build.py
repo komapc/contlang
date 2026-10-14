@@ -52,7 +52,8 @@ def roots_json():
     labels = [{"name": l["name"], "what": l["what"], "range": l.get("range"), "scale": l.get("scale", ""),
                "en_what": l.get("en_what", ""), "en_scale": l.get("en_scale", "")} for l in doc["labels"]]
     particles = [{"name": p["name"], "role": p["role"], "en_role": p.get("en_role", "")} for p in doc["particles"]]
-    return {"roots": roots, "labels": labels, "particles": particles, "counts": dict(zip(("roots", "with_axis", "without_axis"), (len(roots), sum(x["axis"] for x in roots), sum(not x["axis"] for x in roots))))}
+    roles = [{"name": r["name"], "what": r["what"], "en_what": r.get("en_what", "")} for r in doc["roles"]]
+    return {"roots": roots, "labels": labels, "particles": particles, "roles": roles, "counts": dict(zip(("roots", "with_axis", "without_axis"), (len(roots), sum(x["axis"] for x in roots), sum(not x["axis"] for x in roots))))}
 
 
 def examples_json():

@@ -6,6 +6,7 @@
 
 **Источник правды о языке — [`roots.yaml`](roots.yaml)** (корни, оси, метки, частицы); из него генерируются [таблицы](docs/tables.md) и блоки в словаре (`python3 scripts/mincode/gen.py`).
 
+- [Как читать min-co](docs/reading.md) — короткая памятка для знающих Toki Pona и эсперанто
 - [Модель: корень и структура](docs/model.md)
 - [Философия и принципы](docs/philosophy.md)
 - [Синтаксис](docs/syntax.md)
@@ -21,7 +22,7 @@
 
 - Скилл `mincode` (`.claude/skills/mincode/SKILL.md`): закодировать слово или раскодировать код.
 - `scripts/mincode/`: `gen.py` (генерация документов из `roots.yaml`, `--check`), `validator.py` (проверка кодов: корни, оси, метки, лимит корней).
-- `scripts/eval/`: слепой тест кодирования (спецификации, лист судьи, подсчёт с интервалом), протокол — [scripts/eval/README.md](scripts/eval/README.md); данные и прогоны — `data/eval/`.
+- `scripts/eval/`: слепой тест кодирования (спецификации, лист судьи, подсчёт с интервалом; нынешняя мера — доля ответов «близко» по слепому судье), протокол — [scripts/eval/README.md](scripts/eval/README.md); данные и прогоны — `data/eval/`.
 - Проверка: `.venv/bin/python -m pytest tests` (зависимости — `requirements.txt`) (согласованность файлов, валидатор, сборка спецификаций).
 - Сайт: статическая страница `site/` (GitHub Pages, обновляется сама при push) и прокси-воркер `worker/` для модели (выкладывается вручную); что генерируется и порядок обновления — [worker/README.md](worker/README.md). На GitHub при каждом push проверяется, что сгенерированные файлы не устарели и тесты проходят (`.github/workflows/check.yml`).
 
