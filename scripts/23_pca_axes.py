@@ -150,7 +150,8 @@ Sk = S[:, :K] / S[:, :K].std(0)
 Rv = varimax(Sk)
 Bv = (Rv.T @ V[:K])
 order = np.argsort(-((Z @ Bv.T) ** 2).sum(0))
-L += table(Bv[order], f"Varimax, {K} осей", "Поворот верхних K компонент: базис ортогонален, оценки слов разреженнее (у слова меньше сильных осей).")
+Bv = Bv[order]
+L += table(Bv, f"Varimax, {K} осей", "Поворот верхних K компонент: базис ортогонален, оценки слов разреженнее (у слова меньше сильных осей).")
 
 ica = FastICA(n_components=K, random_state=0, max_iter=2000, whiten="unit-variance").fit(S[:, :K])
 Bi = np.array([unit(v) for v in ica.components_ @ V[:K]])
@@ -180,6 +181,8 @@ cap = [float(np.linalg.norm(Qa.T @ v) ** 2) for v in VK]
 L += [f"Покрытие главных компонент осями всех {Ax.shape[0]} корней (доля длины компоненты в их линейной оболочке): "
       + ", ".join(f"PC{j + 1} {c:.0%}" for j, c in enumerate(cap)) + ".", ""]
 
+# пространство для шага 2 (data/eval/runs/axes2): леммы, вычитаемые направления, среднее, PCA, varimax
+np.savez(REPO / "data" / "eval" / "runs" / "axes2" / "space.npz", keep=np.array(keep), Q=Q, mean=Y.mean(0), V=V, Bv=Bv, Bi=Bi)
 out = REPO / "data" / "pca_axes.md"
 out.write_text("\n".join(L) + "\n", encoding="utf8")
 print("записано", out, "слов", n)
