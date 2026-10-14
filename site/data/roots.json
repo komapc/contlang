@@ -469,6 +469,18 @@
    "en_pos": ""
   },
   {
+   "name": "LAND",
+   "axis": true,
+   "neg": "море, вода",
+   "mid": "берег",
+   "pos": "суша, твёрдая земля",
+   "ru": "вода … суша (−5 море, озеро, вода как место, 0 берег, побережье, +5 суша, почва, твёрдая земля); без значения — земля, страна, край: `LAND \\| o` страна, край, `LAND RULE \\| o` государство, область, `LAND(=+5) ABOVE(=+5) \\| o` гора, `LAND(=-5) BIG(=+5) \\| o` океан, `LAND(=0) GRAIN(=0) \\| o` пляж, `LAND RULE LONG(=-5) \\| o` государственная граница. Аналог *ma* в Toki Pona",
+   "en": "-5 sea, water … 0 shore, coast … +5 dry land, ground (the plain root means land, country, region)",
+   "en_neg": "sea, water … 0 shore, coast … +5 dry land, ground",
+   "en_mid": "",
+   "en_pos": ""
+  },
+  {
    "name": "BODY",
    "axis": false,
    "neg": "",
@@ -720,8 +732,8 @@
   }
  ],
  "counts": {
-  "roots": 44,
-  "with_axis": 38,
+  "roots": 45,
+  "with_axis": 39,
   "without_axis": 6
  }
 }

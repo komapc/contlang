@@ -589,6 +589,18 @@ roots:
   - warfare bloodshed combat battlefield
   - tournament contest playful sportsmanship match
   en_gloss: fight, war, quarrel; game, sport
+- name: LAND
+  axis:
+    neg: море, вода
+    mid: берег
+    pos: суша, твёрдая земля
+  ru_axis: 'вода … суша (−5 море, озеро, вода как место, 0 берег, побережье, +5 суша, почва, твёрдая земля); без значения — земля, страна, край: `LAND \| o` страна, край, `LAND RULE \| o` государство, область, `LAND(=+5) ABOVE(=+5) \| o` гора, `LAND(=-5) BIG(=+5) \| o` океан, `LAND(=0) GRAIN(=0) \| o` пляж, `LAND RULE LONG(=-5) \| o` государственная граница. Аналог *ma* в Toki Pona'
+  status: '**новый корень** (Toki Pona *ma*); слепые тесты на свежих словах: кодер SZ +20 % и +12 % «близко», коды модели +19 %, кодер сайта +2 % (не вредит) — [adopt3](../data/eval/runs/adopt3/README.md), [adopt4](../data/eval/runs/adopt4/README.md); граница `LAND RULE LONG(=-5)` — 4 из 4 «border» ([border](../data/eval/runs/border/README.md))'
+  en_axis: '-5 sea, water … 0 shore, coast … +5 dry land, ground (the plain root means land, country, region)'
+  semaxis:
+  - land ground soil earth terrain mainland
+  - sea ocean water lake waves seawater
+  en_gloss: land, country, region
 - name: BODY
   axis: null
   en_gloss: body
