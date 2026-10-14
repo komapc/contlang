@@ -192,7 +192,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
   </div>
   <div class="mxslots" id="mxSlots"></div>
   <h3><span data-l="en">Roots</span><span data-l="ru">Корни</span></h3>
-  <div class="mxhint"><span data-l="en">Click a root: it goes into the first free slot. To replace a root, first click its slot (it lights up), then click the new root. You can also drag a root onto a slot, and drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в первую свободную ячейку. Чтобы заменить корень, сначала нажмите на его ячейку (она подсветится), потом на новый корень. Корень можно и перетащить на ячейку, а ячейки — переставить, перетащив за имя.</span></div>
+  <div class="mxhint"><span data-l="en">Click a root: it goes into the first free slot; click a highlighted root again to take it out. To replace a root, first click its slot (it lights up), then click the new root. You can also drag a root onto a slot, and drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в первую свободную ячейку; повторное нажатие на подсвеченный корень убирает его. Чтобы заменить корень, сначала нажмите на его ячейку (она подсветится), потом на новый корень. Корень можно и перетащить на ячейку, а ячейки — переставить, перетащив за имя.</span></div>
   <div class="mxpal" id="mxPal"></div>
 </section>
 
@@ -841,6 +841,7 @@ function mxPut(name, at){
   MX.slots[i] = { name, v: RD.root.get(name).axis ? 0 : null };
   MX.slots = MX.slots.filter(Boolean).concat([null, null, null]).slice(0, 3); MX.sel = null; mxDraw();
 }
+function mxDrop(name){ MX.slots = MX.slots.filter(x => x && x.name !== name).concat([null, null, null]).slice(0, 3); MX.sel = null; mxDraw(); }
 function mxMove(i, d){ const j = i + d, s = MX.slots; if (j < 0 || j > 2 || !s[j]) return; [s[i], s[j]] = [s[j], s[i]]; mxDraw(); }
 function mxSlot(i){
   const x = MX.slots[i], box = el("div", null, "slot" + (x ? "" : " empty") + (MX.sel === i ? " sel" : ""));
@@ -898,7 +899,9 @@ function mxDraw(){
   const pal = $("mxPal"); pal.textContent = "";
   RD.d.roots.forEach(r => {
     const c = el("button", r.name, "chip" + (r.axis ? "" : " na") + (MX.slots.some(x => x && x.name === r.name) ? " used" : "")); c.type = "button"; c.draggable = true;
-    c.title = clean(rf(r, "ru")); c.addEventListener("click", () => mxPut(r.name)); c.addEventListener("dragstart", e => e.dataTransfer.setData("text/plain", r.name)); pal.appendChild(c);
+    c.title = clean(rf(r, "ru")); c.setAttribute("aria-pressed", c.classList.contains("used"));
+    // корень в палитре — переключатель: нажатие кладёт его в ячейку, повторное — убирает
+    c.addEventListener("click", () => { if (MX.slots.some(x => x && x.name === r.name)) mxDrop(r.name); else mxPut(r.name); }); c.addEventListener("dragstart", e => e.dataTransfer.setData("text/plain", r.name)); pal.appendChild(c);
   });
   $("mxWord").placeholder = mt("ph");
   mxRun();
