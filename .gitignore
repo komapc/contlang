@@ -5,3 +5,4 @@ __pycache__/
 worker/.wrangler/
 data/eval/runs/reader/vec.npz
 data/eval/runs/adopt2/*.npz
+data/eval/runs/adopt3/*.npz
