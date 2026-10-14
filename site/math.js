@@ -309,10 +309,9 @@
   // Чтение кода векторами: слова, часть речи, пары. Общее для сайта и проверочных скриптов (scripts/site/eval_math.js).
   // opt: posPen — штраф за чужую часть речи; pairK, pairLam — сколько прочтений уточняющего слова брать и с каким весом связи;
   // modW — вес корней уточняющего слова в общем векторе (0: они уводят чтение от главного, по 107 парам слепых тестов место 203 → 112);
-  // pairN — сколько соседей слова кодер пробует вторым словом (Reader.encode);
   // prfMu, prfK — PRF: сдвиг оценок к центру prfK лучших прочтений. Выключен: парам моделей помогает, а круг математики портит (docs/math.md, раздел 9).
   // graphW — вес связи по графу ConceptNet (Vocab.setGraph), relW — какие отношения считает каждая частица.
-  const READ = { selfCheck: false, keepHead: true, headAbs: false, absLam: 0.5, absTau: 1, negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, pairN: 40, graphW: 0, relW: {
+  const READ = { selfCheck: false, keepHead: true, headAbs: false, absLam: 0.5, absTau: 1, negW: 0, posPen: 1.5, pairK: 10, pairLam: 0.25, prfK: 20, prfMu: 0, modW: 0, graphW: 0, relW: {
     PI: { "PartOf>": 1, "AtLocation>": 1, "HasA<": 1, "MadeOf>": 1, "UsedFor>": 1, "IsA>": 0.5, "CapableOf>": 0.5, "ReceivesAction>": 0.5, RelatedTo: 0.5 },
     FOR: { "UsedFor>": 1, "CapableOf>": 1, "AtLocation>": 0.5, "PartOf>": 0.5, RelatedTo: 0.5 },
     FROM: { "MadeOf>": 1, RelatedTo: 0.5 },
@@ -384,9 +383,8 @@
       if (gw) for (const r of rd) { const g = this.V.graphScore(r.words, this.opt.relW[r.link] || {}); for (let i = 0; i < out.length; i++) out[i] += gw * g[i]; }
       return out;
     }
-    // код слова кодером; если векторы не ставят слово первым — пара «код PI второе слово»: второе слово — один из pairN
-    // ближайших соседей слова, закодированный не более чем двумя корнями, без корней главного (иначе пара лишь удваивает его вес).
-    // Векторы связку не различают (graphW = 0), поэтому PI. → {code, rank, base, rank0, mod}
+    // код слова кодером: только главное слово, без второго через PI — пара соседей не дала пользы
+    // (без неё «близко» 23 % против 19 % на 137 кодах, data/eval/runs/pi). → {code, rank, base, rank0, mod: ""}
     // form — часть речи слова, если известна (иначе код с o, оценки без штрафа за часть речи)
     // самопроверка: кандидаты — лучшие коды в 1, 2, 3 корня и их соседи (значение ±1, без одного корня); берётся код,
     // при котором слово читается выше всего, при равенстве — короче. keepHead: головной корень кода в 3 корня не меняется.
@@ -444,13 +442,6 @@
       const i = V.index.get(word), role = !this.opt.plain && (form || "o") === "o" && V.person && i !== undefined && V.person[i] ? " agent" : "";
       const b = this.opt.selfCheck ? this.best(word, form) : co.encode(x, 3, this.ban(word)), base = co.format(b.S, b.v, form || "o") + role, sc = this.prf(this.roots(b.S, b.v, form || "")), rank0 = V.rankIn(sc, word);
       const out = { code: base, rank: rank0, base, rank0, mod: "", S: b.S, v: b.v, cos: co.cosOf(x, b.S, b.v), form: form || "" };
-      if (rank0 === 1 || (form && form !== "o")) return out;  // второе слово через PI — только у имени
-      for (const n of V.near(x, this.opt.pairN, word)) {
-        const e = co.encode(V.vec(n), 2, this.ban(n));
-        if (e.S.some((r) => b.S.includes(r))) continue;
-        const mc = co.format(e.S, e.v, "o"), r = V.rankIn(V.pair(sc, this.readings(mc), this.opt.pairLam), word);
-        if (r < out.rank) Object.assign(out, { code: `${base} PI ${mc}`, rank: r, mod: n });
-      }
       return out;
     }
   }
