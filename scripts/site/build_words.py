@@ -20,7 +20,7 @@ infl  — словоформа → [база, часть речи кода, ме
 extra — базы, которых нет в словаре сайта (allege, imprison, plaintiff): векторы Numberbatch (int8 × 127, base64), только для кодера.
 sense — один смысл омонима (решение пользователя): у слова в этой части речи есть далёкий смысл (другой lexname, wup < 0.3,
         или другая часть речи без словообразовательной связи) → кодер кодирует вектор первого смысла:
-        норм(слово) + норм(среднее опорных слов: леммы синсета, гиперонимов и слова толкования), как в data/eval/runs/senses.
+        норм(слово) + норм(среднее опорных слов: леммы синсета и слова толкования; без гиперонимов — у blessed они invoke, arouse), как в data/eval/runs/senses.
         Ключ «база|часть речи кода», значение — номера опорных слов (в словаре сайта или в extra: номер ≥ N).
 
 Запуск локально (нужен WordNet в data/raw/nltk):
@@ -133,9 +133,29 @@ def derived(w, vb):
                for r in l.derivationally_related_forms() + l._related("<"))
 
 
+_BROWN = None
+
+
+def brown_pos(w):
+    """часть речи самой формы по Brown (n/v/a/r), если форма встречается ≥ 5 раз; WordNet считает по базе: projects → project (глагол)"""
+    global _BROWN
+    if _BROWN is None:
+        from nltk.corpus import brown
+        _BROWN = {}
+        for x, t in brown.tagged_words():
+            q = None if t.startswith(("NP", "BE", "DO", "HV")) else {"N": "n", "V": "v", "J": "a", "R": "r"}.get(t[:1])
+            if q:
+                _BROWN.setdefault(x.lower(), {}).setdefault(q, 0)
+                _BROWN[x.lower()][q] += 1
+    c = _BROWN.get(w, {})
+    return max(c, key=c.get) if sum(c.values()) >= 5 else None
+
+
 def infl(w, sh):
     """словоформа → (база, часть речи кода, метки) или None, если w — сама базовая форма"""
     d = max(P, key=sh.get)
+    if any(bases(w, p) and w not in bases(w, p) for p in P) and (b := brown_pos(w) or "") in "na" and sh.get(b):  # только в имя или признак: Brown метит armed, accounting глаголом (VBN, VBG)
+        d = b
     vb = base(w, "v")
     if d == "v" and vb:
         if w.endswith("ing"):
@@ -192,7 +212,7 @@ def homonym(w, p, vec):
 
 
 def anchors(w, s):
-    a = [l.name() for l in s.lemmas()] + [l.name() for h in s.hypernyms() for l in h.lemmas()] + re.findall(r"[a-z]+", s.definition().lower())
+    a = [l.name() for l in s.lemmas()] + re.findall(r"[a-z]+", s.definition().lower())
     return [x.lower() for x in a if "_" not in x and x.lower() != w and len(x) > 2 and x.lower() not in FUNC]
 
 
