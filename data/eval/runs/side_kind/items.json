@@ -1,0 +1,1514 @@
+[
+{
+"w": "sample",
+"set": "H",
+"old": "PART(=-1) THINK(=+3) TEXT | o",
+"new": "KIND(=-3) PART(=0) CONSUME(=0) | o",
+"rep": true
+},
+{
+"w": "demonstration",
+"set": "H",
+"old": "SEE BEGIN(=-1) ART(=-1) | o",
+"new": "KIND(=-4) ART(=-1) GIVE(=+2) | o",
+"rep": true
+},
+{
+"w": "picture",
+"set": "H",
+"old": "SEE ART(=+2) TEXT | o",
+"new": "KIND(=-3) SEE ART(=+2) | o",
+"rep": true
+},
+{
+"w": "instance",
+"set": "H",
+"old": "HAPPEN TIME(=-3) SAME(=0) | o",
+"new": "KIND(=-2) TIME(=-2) HAPPEN | o",
+"rep": true
+},
+{
+"w": "photograph",
+"set": "H",
+"old": "SEE ART(=+2) TEXT | o",
+"new": "KIND(=-4) SEE ART(=+2) | o",
+"rep": true
+},
+{
+"w": "image",
+"set": "H",
+"old": "SEE ART(=+1) TEXT | o",
+"new": "KIND(=-2) SEE ART(=+1) | o",
+"rep": true
+},
+{
+"w": "photo",
+"set": "H",
+"old": "SEE TEXT ART(=+1) | o",
+"new": "KIND(=-3) TEXT SEE | o",
+"rep": true
+},
+{
+"w": "experiment",
+"set": "H",
+"old": "ART(=-1) BEGIN(=-1) THINK(=+1) | o",
+"new": "KIND(=-3) ART(=-1) BEGIN(=-1) | o",
+"rep": true
+},
+{
+"w": "prototype",
+"set": "H",
+"old": "ART(=-2) BEGIN(=-3) PART(=-2) | o",
+"new": "KIND(=-2) ART(=-2) BEGIN(=-1) | o",
+"rep": true
+},
+{
+"w": "model",
+"set": "H",
+"old": "ART(=-1) SAME(=+1) GRAIN(=+1) | o",
+"new": "KIND(=-1) ART(=-1) | o",
+"rep": true
+},
+{
+"w": "protesters",
+"set": "H",
+"old": "MOVE(=-4) FRIEND(=-4) SAY(=+5) | o agent N+3",
+"new": "KIND(=-5) MOVE(=-5) SAY(=+4) | o agent N+3",
+"rep": true
+},
+{
+"w": "videotape",
+"set": "H",
+"old": "SEE TIME(=-2) TEXT | o",
+"new": "KIND(=-5) TIME(=-1) VALUE(=+2) | o",
+"rep": true
+},
+{
+"w": "pattern",
+"set": "H",
+"old": "SAME(=-1) LONG(=-3) GRAIN(=+2) | o",
+"new": "KIND(=-1) LONG(=-1) CHANGE(=0) | o",
+"rep": true
+},
+{
+"w": "lesson",
+"set": "H",
+"old": "KNOW(=+2) ART(=+3) BEGIN(=0) | o",
+"new": "KIND(=-3) KNOW(=+4) ART(=+3) | o",
+"rep": true
+},
+{
+"w": "scenario",
+"set": "H",
+"old": "HAPPEN TEXT CAN(=+2) | o",
+"new": "KIND(=-1) HAPPEN TEXT | o",
+"rep": true
+},
+{
+"w": "method",
+"set": "H",
+"old": "CAN(=+1) BEGIN(=-1) ART(=0) | o",
+"new": "KIND(=-1) CAN(=+1) ART(=0) | o",
+"rep": true
+},
+{
+"w": "context",
+"set": "H",
+"old": "TEXT SAME(=-2) LIVE(=+3) | o",
+"new": "KIND(=-1) TEXT LIVE(=+3) | o",
+"rep": true
+},
+{
+"w": "impression",
+"set": "H",
+"old": "SEE THINK(=-4) GRAIN(=+1) | o",
+"new": "KIND(=-2) THINK(=-4) TEXT | o",
+"rep": true
+},
+{
+"w": "sort",
+"set": "H",
+"old": "PART(=0) SAME(=0) FRIEND(=+3) | o",
+"new": "KIND(=+2) PART(=0) THINK(=+1) | o",
+"rep": true
+},
+{
+"w": "kind",
+"set": "H",
+"old": "FRIEND(=+2) MANY(=0) PART(=0) | o",
+"new": "KIND(=+1) FRIEND(=+2) MANY(=0) | o",
+"rep": true
+},
+{
+"w": "style",
+"set": "H",
+"old": "SAME(=-1) ART(=+3) MEASURE(=-3) | o",
+"new": "KIND(=0) ART(=+3) SAME(=0) | o",
+"rep": true
+},
+{
+"w": "mode",
+"set": "H",
+"old": "MOVE(=0) CAN(=+3) SAME(=-2) | o",
+"new": "KIND(=0) CAN(=+2) MOVE(=0) | o",
+"rep": true
+},
+{
+"w": "form",
+"set": "H",
+"old": "GRAIN(=+1) JOIN(=+3) TEXT | o",
+"new": "KIND(=0) GRAIN(=+1) JOIN(=+2) | o",
+"rep": true
+},
+{
+"w": "manner",
+"set": "H",
+"old": "SOMEONE(=-2) FRIEND(=+1) DO | o",
+"new": "KIND(=0) SOMEONE(=-3) FRIEND(=0) | o",
+"rep": true
+},
+{
+"w": "category",
+"set": "H",
+"old": "PART(=+2) MEASURE(=-1) ABOVE(=-3) | o",
+"new": "KIND(=+3) PART(=+2) ABOVE(=-2) | o",
+"rep": true
+},
+{
+"w": "variant",
+"set": "H",
+"old": "SAME(=-1) CHANGE(=+2) PART(=0) | o",
+"new": "KIND(=0) SAME(=-2) CHANGE(=+1) | o",
+"rep": true
+},
+{
+"w": "classification",
+"set": "H",
+"old": "PART(=+2) MEASURE(=+1) RULE(=+2) | o",
+"new": "KIND(=+3) PART(=+2) RULE(=+3) | o",
+"rep": true
+},
+{
+"w": "shape",
+"set": "H",
+"old": "CHANGE(=+2) MEASURE(=-3) GRAIN(=+4) | o",
+"new": "KIND(=0) CHANGE(=+2) GRAIN(=+2) | o",
+"rep": true
+},
+{
+"w": "concept",
+"set": "H",
+"old": "ART(=+1) BEGIN(=-3) THINK(=-2) | o",
+"new": "KIND(=-1) ART(=+1) THINK(=-2) | o",
+"rep": true
+},
+{
+"w": "class",
+"set": "H",
+"old": "PART(=+2) BEGIN(=0) ART(=+1) | o",
+"new": "KIND(=+2) PART(=+2) ABOVE(=+1) | o",
+"rep": true
+},
+{
+"w": "aspect",
+"set": "H",
+"old": "PART(=-2) MANY(=+3) SAME(=-5) | o",
+"new": "KIND(=0) PART(=-3) SAME(=-4) | o",
+"rep": true
+},
+{
+"w": "approach",
+"set": "H",
+"old": "NEAR(=0) BEGIN(=-2) CARE(=+2) | i",
+"new": "KIND(=0) NEAR(=0) SIDE(=+2) | i",
+"rep": true
+},
+{
+"w": "attitude",
+"set": "H",
+"old": "FRIEND(=+1) CHANGE(=+2) ART(=+1) | o",
+"new": "KIND(=-1) CHANGE(=+1) FRIEND(=0) | o",
+"rep": true
+},
+{
+"w": "behavior",
+"set": "H",
+"old": "FRIEND(=0) CHANGE(=+1) DO | o",
+"new": "KIND(=-1) CHANGE(=+1) FRIEND(=-1) | o",
+"rep": true
+},
+{
+"w": "arrangement",
+"set": "H",
+"old": "PART(=+2) FRIEND(=+3) VALUE(=-5) | o",
+"new": "KIND(=-1) PART(=+3) VALUE(=-4) | o",
+"rep": true
+},
+{
+"w": "criteria",
+"set": "H",
+"old": "RULE(=+2) THINK(=+2) SAME(=-1) | o N+3",
+"new": "KIND(=+1) THINK(=+1) RULE(=+3) | o N+3",
+"rep": true
+},
+{
+"w": "formula",
+"set": "H",
+"old": "ART(=0) SAME(=+3) TEXT | o",
+"new": "KIND(=+1) MEASURE(=+1) TEXT | o",
+"rep": true
+},
+{
+"w": "routine",
+"set": "H",
+"old": "DO FEEL(=-3) HAPPEN | o",
+"new": "KIND(=-1) FEEL(=-3) DO | o",
+"rep": true
+},
+{
+"w": "scheme",
+"set": "H",
+"old": "PART(=+1) BEGIN(=-3) CAN(=+2) | o",
+"new": "KIND(=0) BEGIN(=-2) GIVE(=+1) | o",
+"rep": true
+},
+{
+"w": "person",
+"set": "H",
+"old": "RULE(=-1) MANY(=+2) FRIEND(=+3) | o",
+"new": "KIND(=0) RULE(=-1) MANY(=+1) | o",
+"rep": true
+},
+{
+"w": "fashion",
+"set": "H",
+"old": "ART(=+2) LONG(=-4) HAPPEN | o",
+"new": "KIND(=0) LONG(=-4) ART(=+2) | o",
+"rep": true
+},
+{
+"w": "tactic",
+"set": "H",
+"old": "FIGHT(=+1) CHANGE(=+2) CAN(=+1) | o",
+"new": "KIND(=-1) FIGHT(=+2) CAN(=+1) | o",
+"rep": true
+},
+{
+"w": "behaviour",
+"set": "H",
+"old": "FRIEND(=0) CHANGE(=+1) DO | o",
+"new": "KIND(=0) FRIEND(=-1) CHANGE(=+1) | o",
+"rep": true
+},
+{
+"w": "habit",
+"set": "H",
+"old": "WANT(=+1) BEGIN(=-4) FEEL(=-4) | o",
+"new": "KIND(=0) WANT(=+1) FEEL(=-3) | o",
+"rep": true
+},
+{
+"w": "nickname",
+"set": "H",
+"old": "SAME(=0) FIGHT(=-2) PLACE | o",
+"new": "KIND(=+3) FIGHT(=-3) VALUE(=+5) | o",
+"rep": true
+},
+{
+"w": "pictures",
+"set": "H",
+"old": "SEE ART(=+2) TEXT | o N+3",
+"new": "KIND(=-3) SEE ART(=+2) | o N+3",
+"rep": true
+},
+{
+"w": "figure",
+"set": "H",
+"old": "MEASURE(=+1) THINK(=+1) ART(=+2) | o",
+"new": "KIND(=-1) MEASURE(=+1) THINK(=0) | o",
+"rep": true
+},
+{
+"w": "representation",
+"set": "H",
+"old": "RULE(=+2) ART(=+2) GRAIN(=+2) | o",
+"new": "KIND(=-2) ART(=+2) RULE(=+2) | o",
+"rep": true
+},
+{
+"w": "classes",
+"set": "H",
+"old": "PART(=+2) BEGIN(=0) ART(=+1) | o N+3",
+"new": "KIND(=+2) PART(=+2) ABOVE(=+1) | o N+3",
+"rep": true
+},
+{
+"w": "hybrid",
+"set": "H",
+"old": "SAME(=-1) ART(=-3) THING(=+2) | o",
+"new": "KIND(=+1) ART(=-3) THING(=+3) | o",
+"rep": true
+},
+{
+"w": "example",
+"set": "H",
+"old": "SAME(=-1) HAPPEN TEXT | o",
+"new": "KIND(=-2) SAME(=-1) | o",
+"rep": true
+},
+{
+"w": "norm",
+"set": "H",
+"old": "SAME(=-1) MEASURE(=+3) RULE(=+3) | o",
+"new": "KIND(=0) MEASURE(=+3) RULE(=+3) | o",
+"rep": true
+},
+{
+"w": "instances",
+"set": "H",
+"old": "HAPPEN TIME(=-3) SAME(=0) | o N+3",
+"new": "KIND(=-2) TIME(=-2) HAPPEN | o N+3",
+"rep": true
+},
+{
+"w": "styles",
+"set": "H",
+"old": "SAME(=-1) ART(=+3) MEASURE(=-3) | o N+3",
+"new": "KIND(=0) ART(=+3) SAME(=0) | o N+3",
+"rep": true
+},
+{
+"w": "backdrop",
+"set": "H",
+"old": "SEE INSIDE(=-3) MOVE(=-2) | o",
+"new": "KIND(=-2) INSIDE(=-2) MOVE(=-2) | o",
+"rep": true
+},
+{
+"w": "definition",
+"set": "H",
+"old": "RULE(=+2) MEASURE(=0) SEE | o",
+"new": "KIND(=+1) RULE(=+3) SEE | o",
+"rep": true
+},
+{
+"w": "amir",
+"set": "H",
+"old": "WANT(=-5) MEASURE(=-5) CARE(=-5) | o agent",
+"new": "KIND(=-5) MEASURE(=-5) WANT(=-5) | o agent",
+"rep": true
+},
+{
+"w": "test",
+"set": "H",
+"old": "THINK(=+2) ART(=-3) FIGHT(=-1) | i",
+"new": "KIND(=-3) THINK(=+3) ART(=-2) | i",
+"rep": true
+},
+{
+"w": "genes",
+"set": "H",
+"old": "PART(=0) ART(=-2) THING(=+4) | o N+3",
+"new": "KIND(=+1) ART(=-2) THING(=+4) | o N+3",
+"rep": true
+},
+{
+"w": "symbol",
+"set": "H",
+"old": "SAME(=0) VALUE(=+2) LONG(=0) | o",
+"new": "KIND(=-1) VALUE(=+2) LONG(=0) | o",
+"rep": true
+},
+{
+"w": "procedure",
+"set": "H",
+"old": "HAPPEN RULE(=+4) CARE(=+3) | o",
+"new": "KIND(=-1) RULE(=+4) HAPPEN | o",
+"rep": true
+},
+{
+"w": "type",
+"set": "H",
+"old": "SAME(=0) MEASURE(=-4) FRIEND(=+3) | o",
+"new": "KIND(=+1) | o",
+"rep": true
+},
+{
+"w": "setting",
+"set": "H",
+"old": "PLACE HEAT(=+3) PART(=+4) | i",
+"new": "KIND(=0) HEAT(=+3) PLACE | i",
+"rep": true
+},
+{
+"w": "portrait",
+"set": "H",
+"old": "SEE ART(=+5) TEXT | o",
+"new": "KIND(=-3) ART(=+4) SEE | o",
+"rep": true
+},
+{
+"w": "methods",
+"set": "H",
+"old": "CAN(=+1) BEGIN(=-1) ART(=0) | o N+3",
+"new": "KIND(=-1) CAN(=+1) ART(=0) | o N+3",
+"rep": true
+},
+{
+"w": "fig",
+"set": "H",
+"old": "PART(=-1) SIDE(=-4) ABOVE(=+1) | o",
+"new": "KIND(=-4) SIDE(=-3) ABOVE(=0) | o",
+"rep": false
+},
+{
+"w": "indication",
+"set": "H",
+"old": "MANY(=-5) SEE SAME(=-3) | o",
+"new": "KIND(=-1) MANY(=-5) THINK(=-1) | o",
+"rep": false
+},
+{
+"w": "response",
+"set": "H",
+"old": "TEXT FRIEND(=+1) MEASURE(=+1) | o",
+"new": "KIND(=-1) TEXT GIVE(=+3) | o",
+"rep": false
+},
+{
+"w": "icon",
+"set": "H",
+"old": "ART(=+1) LIVE(=0) SEE | o",
+"new": "KIND(=-1) ART(=+2) LIVE(=0) | o",
+"rep": false
+},
+{
+"w": "orientation",
+"set": "H",
+"old": "SIDE(=+1) CHANGE(=+3) FRIEND(=+2) | o",
+"new": "KIND(=-1) CHANGE(=+2) SIDE(=+2) | o",
+"rep": false
+},
+{
+"w": "stance",
+"set": "H",
+"old": "MOVE(=-3) CHANGE(=+3) LONG(=+3) | o",
+"new": "KIND(=0) MOVE(=-4) SIDE(=+1) | o",
+"rep": false
+},
+{
+"w": "attribute",
+"set": "H",
+"old": "MEASURE(=-1) WANT(=-2) HAPPEN | i",
+"new": "KIND(=0) MEASURE(=-1) WANT(=-1) | i",
+"rep": false
+},
+{
+"w": "pseudo",
+"set": "H",
+"old": "SAME(=+1) KNOW(=-5) ART(=+2) | a",
+"new": "KIND(=0) KNOW(=-5) CONSUME(=-3) | a",
+"rep": false
+},
+{
+"w": "trap",
+"set": "H",
+"old": "LONG(=0) GIVE(=-5) ABOVE(=-4) | o",
+"new": "KIND(=0) GIVE(=-5) ABOVE(=-3) | o",
+"rep": false
+},
+{
+"w": "pansy",
+"set": "H",
+"old": "TOUCH(=-2) MOVE(=-3) THING(=+3) | o",
+"new": "KIND(=+1) TOUCH(=-3) MOVE(=-3) | o",
+"rep": false
+},
+{
+"w": "return",
+"set": "S",
+"O": "GIVE(=+1) SIDE(=-5) TIME(=+3) | i",
+"R": "GIVE(=+1) TIME(=+2) CHANGE(=-2) | i",
+"D": "GIVE(=+1) SIDE(=-5) TIME(=+3) | i"
+},
+{
+"w": "jay",
+"set": "S",
+"O": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent",
+"R": "MOOD(=+5) TOUCH(=+5) RULE(=-5) | o agent",
+"D": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent"
+},
+{
+"w": "presided",
+"set": "S",
+"O": "RULE(=+4) TIME(=-4) SIDE(=+4) | i",
+"R": "RULE(=+3) TIME(=-2) HAPPEN | i",
+"D": "RULE(=+4) TIME(=-4) SIDE(=+4) | i"
+},
+{
+"w": "obstacle",
+"set": "S",
+"O": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+"R": "CAN(=-1) THING(=-1) MOVE(=+1) | o",
+"D": "CAN(=-1) THING(=-1) SIDE(=+3) | o"
+},
+{
+"w": "counsel",
+"set": "S",
+"O": "RULE(=+2) KNOW(=+2) SIDE(=+2) | o agent",
+"R": "RULE(=+2) KNOW(=+2) GIVE(=+3) | o agent",
+"D": "RULE(=+2) KNOW(=+2) SIDE(=+2) | o agent"
+},
+{
+"w": "boulevard",
+"set": "S",
+"O": "NEAR(=+3) PLACE SIDE(=+2) | o",
+"R": "NEAR(=+5) PLACE INSIDE(=-5) | o",
+"D": "NEAR(=+3) PLACE SIDE(=+2) | o"
+},
+{
+"w": "rolled",
+"set": "S",
+"O": "SIDE(=0) TOUCH(=-2) GRAIN(=+1) | i",
+"R": "ABOVE(=0) TOUCH(=-2) GRAIN(=+2) | i",
+"D": "SIDE(=0) TOUCH(=-2) GRAIN(=+1) | i"
+},
+{
+"w": "courts",
+"set": "S",
+"O": "RULE(=+3) SIDE(=+1) FIGHT(=-1) | o N+3",
+"R": "RULE(=+4) FIGHT(=-1) INSIDE(=0) | o N+3",
+"D": "RULE(=+3) SIDE(=+1) FIGHT(=-1) | o N+3"
+},
+{
+"w": "sidelines",
+"set": "S",
+"O": "SIDE(=0) MOVE(=-4) FIGHT(=-2) | o N+3",
+"R": "MOVE(=-2) FIGHT(=-2) INSIDE(=-2) | o N+3",
+"D": "SIDE(=0) MOVE(=-4) FIGHT(=-2) | o N+3"
+},
+{
+"w": "democratic",
+"set": "S",
+"O": "RULE(=+3) FIGHT(=-2) SIDE(=0) | a",
+"R": "RULE(=+3) FIGHT(=-1) LIVE(=+2) | a",
+"D": "RULE(=+3) FIGHT(=-2) SIDE(=0) | a"
+},
+{
+"w": "jurors",
+"set": "S",
+"O": "RULE(=+4) SIDE(=+5) JOIN(=-3) | o agent N+3",
+"R": "RULE(=+3) THINK(=0) FIGHT(=-1) | o agent N+3",
+"D": "RULE(=+4) SIDE(=+5) JOIN(=-3) | o agent N+3"
+},
+{
+"w": "boot",
+"set": "S",
+"O": "HEAT(=0) SIDE(=-3) THING(=0) | o",
+"R": "BODY INSIDE(=+2) THING(=-1) | o",
+"D": "HEAT(=0) SIDE(=-3) THING(=0) | o"
+},
+{
+"w": "heads",
+"set": "S",
+"O": "BODY SIDE(=+1) ABOVE(=0) | o N+3",
+"R": "BODY ABOVE(=0) | o N+3",
+"D": "BODY SIDE(=+1) ABOVE(=0) | o N+3"
+},
+{
+"w": "directly",
+"set": "S",
+"O": "SOMEONE(=-1) NEAR(=+1) SIDE(=+1) | e",
+"R": "SOMEONE(=-2) NEAR(=+1) RULE(=0) | e",
+"D": "SOMEONE(=-1) NEAR(=+1) SIDE(=+1) | e"
+},
+{
+"w": "rear",
+"set": "S",
+"O": "SIDE(=-1) INSIDE(=-1) | o",
+"R": "INSIDE(=-1) LONG(=+4) ABOVE(=0) | o",
+"D": "SIDE(=-1) INSIDE(=-1) | o"
+},
+{
+"w": "tackle",
+"set": "S",
+"O": "SIDE(=+1) GIVE(=-3) THINK(=+2) | i",
+"R": "BODY GIVE(=-3) THINK(=+2) | i",
+"D": "SIDE(=+1) GIVE(=-3) THINK(=+2) | i"
+},
+{
+"w": "intersection",
+"set": "S",
+"O": "NEAR(=+3) SIDE(=+3) PLACE | o",
+"R": "NEAR(=+3) PLACE THING(=0) | o",
+"D": "NEAR(=+3) SIDE(=+3) PLACE | o"
+},
+{
+"w": "returning",
+"set": "S",
+"O": "TIME(=+1) SIDE(=-5) CHANGE(=-1) | i",
+"R": "TIME(=+1) CHANGE(=-2) NEAR(=-3) | i",
+"D": "TIME(=+1) SIDE(=-5) CHANGE(=-1) | i"
+},
+{
+"w": "upward",
+"set": "S",
+"O": "ABOVE(=+1) SIDE(=0) | e",
+"R": "ABOVE(=+1) | e",
+"D": "ABOVE(=+1) SIDE(=0) | e"
+},
+{
+"w": "ninth",
+"set": "S",
+"O": "BEGIN(=+2) SIDE(=-1) PLACE | a",
+"R": "BEGIN(=+2) PLACE | a",
+"D": "BEGIN(=+2) SIDE(=-1) PLACE | a"
+},
+{
+"w": "receiver",
+"set": "S",
+"O": "ART(=-3) NEAR(=-5) SIDE(=-3) | o",
+"R": "LONG(=0) ART(=-5) NEAR(=-5) | o",
+"D": "ART(=-3) NEAR(=-5) SIDE(=-3) | o"
+},
+{
+"w": "neck",
+"set": "S",
+"O": "BODY LONG(=-3) SIDE(=-2) | o",
+"R": "BODY LONG(=-1) | o",
+"D": "BODY LONG(=-3) SIDE(=-2) | o"
+},
+{
+"w": "belt",
+"set": "S",
+"O": "LONG(=-3) LAND(=+2) SIDE(=-2) | o",
+"R": "LONG(=-2) LAND(=+1) BODY | o",
+"D": "LONG(=-3) LAND(=+2) SIDE(=-2) | o"
+},
+{
+"w": "restored",
+"set": "S",
+"O": "CHANGE(=0) SIDE(=-5) LIVE(=+1) | i",
+"R": "CHANGE(=0) TIME(=-1) LIVE(=+1) | i",
+"D": "CHANGE(=0) SIDE(=-5) LIVE(=+1) | i"
+},
+{
+"w": "nelson",
+"set": "S",
+"O": "FIGHT(=-1) SIDE(=-3) THINK(=-2) | o agent",
+"R": "FIGHT(=-1) MOVE(=-2) THING(=-2) | o agent",
+"D": "FIGHT(=-1) SIDE(=-3) THINK(=-2) | o agent"
+},
+{
+"w": "lawyer",
+"set": "S",
+"O": "RULE(=+3) KNOW(=+2) SIDE(=+2) | o agent",
+"R": "RULE(=+3) KNOW(=+2) TOUCH(=+2) | o agent",
+"D": "RULE(=+3) KNOW(=+2) SIDE(=+2) | o agent"
+},
+{
+"w": "napoleon",
+"set": "S",
+"O": "FIGHT(=+3) MEASURE(=-5) SIDE(=-4) | o agent",
+"R": "FIGHT(=+3) MEASURE(=-5) ART(=+3) | o agent",
+"D": "FIGHT(=+3) MEASURE(=-5) SIDE(=-4) | o agent"
+},
+{
+"w": "left",
+"set": "S",
+"O": "SIDE(=-1) NEAR(=0) TIME(=-1) | i",
+"R": "NEAR(=0) TIME(=-1) BODY | i",
+"D": "SIDE(=-1) NEAR(=0) TIME(=-1) | i"
+},
+{
+"w": "aside",
+"set": "S",
+"O": "JOIN(=-3) MOVE(=-3) SIDE(=+2) | e",
+"R": "JOIN(=-3) MOVE(=-3) SAME(=-3) | e",
+"D": "JOIN(=-3) MOVE(=-3) SIDE(=+2) | e"
+},
+{
+"w": "header",
+"set": "S",
+"O": "TEXT SIDE(=0) FIGHT(=-3) | o",
+"R": "TEXT LONG(=+3) FIGHT(=-3) | o",
+"D": "TEXT SIDE(=0) FIGHT(=-3) | o"
+},
+{
+"w": "reformed",
+"set": "S",
+"O": "RULE(=+2) CHANGE(=+2) SIDE(=-2) | i",
+"R": "CHANGE(=+1) RULE(=+3) PART(=+1) | i",
+"D": "RULE(=+2) CHANGE(=+2) SIDE(=-2) | i"
+},
+{
+"w": "fourth",
+"set": "S",
+"O": "BEGIN(=+2) SIDE(=0) PLACE | a",
+"R": "BEGIN(=+2) TIME(=-1) PLACE | a",
+"D": "BEGIN(=+2) SIDE(=0) PLACE | a"
+},
+{
+"w": "punch",
+"set": "S",
+"O": "SIDE(=+1) GIVE(=-4) SAY(=+5) | i",
+"R": "LONG(=+1) GIVE(=-3) SAY(=+5) | i",
+"D": "SIDE(=+1) GIVE(=-4) SAY(=+5) | i"
+},
+{
+"w": "loop",
+"set": "S",
+"O": "LONG(=-3) NEAR(=+2) SIDE(=-3) | o",
+"R": "LONG(=-2) NEAR(=+1) CHANGE(=-1) | o",
+"D": "LONG(=-3) NEAR(=+2) SIDE(=-3) | o"
+},
+{
+"w": "sliding",
+"set": "S",
+"O": "ABOVE(=-2) SIDE(=-2) LONG(=+2) | i",
+"R": "ABOVE(=-2) LONG(=+2) MOVE(=+2) | i",
+"D": "ABOVE(=-2) SIDE(=-2) LONG(=+2) | i"
+},
+{
+"w": "exiled",
+"set": "S",
+"O": "NEAR(=-4) SIDE(=-4) LIVE(=-1) | i",
+"R": "NEAR(=-3) LIVE(=0) TIME(=-1) | i",
+"D": "NEAR(=-4) SIDE(=-4) LIVE(=-1) | i"
+},
+{
+"w": "head",
+"set": "S",
+"O": "BODY SIDE(=+1) ABOVE(=0) | o",
+"R": "BODY ABOVE(=0) | o",
+"D": "BODY SIDE(=+1) ABOVE(=0) | o"
+},
+{
+"w": "steps",
+"set": "S",
+"O": "ABOVE(=0) SIDE(=0) DO | i",
+"R": "ABOVE(=0) MOVE(=+1) DO | i",
+"D": "ABOVE(=0) SIDE(=0) DO | i"
+},
+{
+"w": "centers",
+"set": "S",
+"O": "PLACE NEAR(=+3) SIDE(=0) | o N+3",
+"R": "PLACE NEAR(=+4) PART(=+1) | o N+3",
+"D": "PLACE NEAR(=+3) SIDE(=0) | o N+3"
+},
+{
+"w": "confronted",
+"set": "S",
+"O": "SIDE(=+2) CAN(=-5) KNOW(=+3) | i",
+"R": "KNOW(=+3) CAN(=-5) FRIEND(=-4) | i",
+"D": "SIDE(=+2) CAN(=-5) KNOW(=+3) | i"
+},
+{
+"w": "restoring",
+"set": "S",
+"O": "LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i",
+"R": "CHANGE(=+1) VALUE(=+3) LIVE(=+1) | i",
+"D": "LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i"
+},
+{
+"w": "highway",
+"set": "S",
+"O": "NEAR(=+1) THING(=-1) SIDE(=+3) | o",
+"R": "NEAR(=+1) THING(=-1) LAND(=0) | o",
+"D": "NEAR(=+1) THING(=-1) SIDE(=+3) | o"
+},
+{
+"w": "disk",
+"set": "S",
+"O": "PART(=0) SIDE(=-4) CAN(=-1) | o",
+"R": "PART(=0) CAN(=-1) LONG(=+2) | o",
+"D": "PART(=0) SIDE(=-4) CAN(=-1) | o"
+},
+{
+"w": "dos",
+"set": "S",
+"O": "SAME(=+2) RULE(=-3) SIDE(=-5) | i",
+"R": "DO SAME(=+2) TIME(=-4) | i",
+"D": "SAME(=+2) RULE(=-3) SIDE(=-5) | i"
+},
+{
+"w": "stem",
+"set": "S",
+"O": "LONG(=0) JOIN(=-1) SIDE(=+1) | o",
+"R": "LONG(=+1) BEGIN(=-1) CHANGE(=+1) | o",
+"D": "LONG(=0) JOIN(=-1) SIDE(=+1) | o"
+},
+{
+"w": "causing",
+"set": "S",
+"O": "HAPPEN FEEL(=0) SIDE(=-1) | i",
+"R": "HAPPEN FEEL(=+1) DO | i",
+"D": "HAPPEN FEEL(=0) SIDE(=-1) | i"
+},
+{
+"w": "projections",
+"set": "S",
+"O": "MEASURE(=+3) TIME(=+3) SIDE(=0) | o N+3",
+"R": "MEASURE(=+3) TIME(=+3) ART(=0) | o N+3",
+"D": "MEASURE(=+3) TIME(=+3) SIDE(=0) | o N+3"
+},
+{
+"w": "spur",
+"set": "S",
+"O": "SIDE(=+1) FEEL(=0) JOIN(=+1) | o",
+"R": "JOIN(=+1) MOVE(=+4) ABOVE(=+3) | o",
+"D": "SIDE(=+1) FEEL(=0) JOIN(=+1) | o"
+},
+{
+"w": "rebound",
+"set": "S",
+"O": "SIDE(=-1) GIVE(=-4) MEASURE(=+3) | i",
+"R": "GIVE(=-4) MEASURE(=+5) SAY(=+5) | i",
+"D": "SIDE(=-1) GIVE(=-4) MEASURE(=+3) | i"
+},
+{
+"w": "drafting",
+"set": "S",
+"O": "TEXT SIDE(=+2) ART(=0) | i",
+"R": "TEXT BEGIN(=0) ART(=0) | i",
+"D": "TEXT SIDE(=+2) ART(=0) | i"
+},
+{
+"w": "oppose",
+"set": "S",
+"O": "WANT(=-3) JOIN(=+2) SIDE(=+1) | i",
+"R": "WANT(=-3) JOIN(=+2) MOVE(=-1) | i",
+"D": "WANT(=-3) JOIN(=+2) SIDE(=+1) | i"
+},
+{
+"w": "equality",
+"set": "S",
+"O": "RULE(=+2) SAME(=+5) SIDE(=+2) | o",
+"R": "RULE(=+2) SAME(=+5) FRIEND(=+1) | o",
+"D": "RULE(=+2) SAME(=+5) SIDE(=+2) | o"
+},
+{
+"w": "second",
+"set": "S",
+"O": "BEGIN(=+1) SIDE(=-1) PLACE | a",
+"R": "BEGIN(=+1) TIME(=-1) PLACE | a",
+"D": "BEGIN(=+1) SIDE(=-1) PLACE | a"
+},
+{
+"w": "boots",
+"set": "S",
+"O": "HEAT(=0) SIDE(=-3) THING(=0) | o N+3",
+"R": "BODY INSIDE(=+2) THING(=-1) | o N+3",
+"D": "HEAT(=0) SIDE(=-3) THING(=0) | o N+3"
+},
+{
+"w": "seated",
+"set": "S",
+"O": "MOVE(=-4) SIDE(=0) LONG(=+2) | i",
+"R": "MOVE(=-3) LONG(=+2) CONSUME(=+1) | i",
+"D": "MOVE(=-4) SIDE(=0) LONG(=+2) | i"
+},
+{
+"w": "bend",
+"set": "S",
+"O": "SIDE(=0) CHANGE(=+3) LONG(=-1) | i",
+"R": "LONG(=0) CHANGE(=+4) ABOVE(=-1) | i",
+"D": "SIDE(=0) CHANGE(=+3) LONG(=-1) | i"
+},
+{
+"w": "assists",
+"set": "S",
+"O": "GIVE(=+2) SIDE(=+1) CAN(=+1) | i",
+"R": "GIVE(=+2) KNOW(=+3) BEGIN(=+2) | i",
+"D": "GIVE(=+2) SIDE(=+1) CAN(=+1) | i"
+},
+{
+"w": "advocated",
+"set": "S",
+"O": "WANT(=-1) SIDE(=+2) RULE(=+3) | i",
+"R": "WANT(=-2) KNOW(=+3) RULE(=+3) | i",
+"D": "WANT(=-1) SIDE(=+2) RULE(=+3) | i"
+},
+{
+"w": "rehabilitation",
+"set": "S",
+"O": "SIDE(=-4) GIVE(=+5) CHANGE(=+2) | o",
+"R": "BODY GIVE(=+5) CHANGE(=+1) | o",
+"D": "SIDE(=-4) GIVE(=+5) CHANGE(=+2) | o"
+},
+{
+"w": "lesbian",
+"set": "S",
+"O": "FRIEND(=+3) SEX(=-3) SIDE(=+3) | o agent",
+"R": "FRIEND(=+3) SEX(=-3) RULE(=-2) | o agent",
+"D": "FRIEND(=+3) SEX(=-3) SIDE(=+3) | o agent"
+},
+{
+"w": "unilateral",
+"set": "S",
+"O": "RULE(=+1) WANT(=-2) SIDE(=-1) | a",
+"R": "RULE(=+1) WANT(=-2) VALUE(=-4) | a",
+"D": "RULE(=+1) WANT(=-2) SIDE(=-1) | a"
+},
+{
+"w": "recover",
+"set": "S",
+"O": "GIVE(=-1) SIDE(=-5) THINK(=+5) | i",
+"R": "GIVE(=-2) THINK(=+5) CHANGE(=-1) | i",
+"D": "GIVE(=-1) SIDE(=-5) THINK(=+5) | i"
+},
+{
+"w": "maria",
+"set": "S",
+"O": "SOMEONE(=+3) THINK(=-5) SIDE(=+5) | o",
+"R": "SOMEONE(=+3) THINK(=-5) ART(=+5) | o",
+"D": "SOMEONE(=+3) THINK(=-5) SIDE(=+5) | o"
+},
+{
+"w": "kicking",
+"set": "S",
+"O": "SIDE(=-1) SAY(=+4) FIGHT(=-3) | i",
+"R": "LIVE(=+2) SAY(=+5) BODY | i",
+"D": "SIDE(=-1) SAY(=+4) FIGHT(=-3) | i"
+},
+{
+"w": "defender",
+"set": "S",
+"O": "SIDE(=0) FIGHT(=0) RULE(=+3) | o agent",
+"R": "FIGHT(=0) TIME(=-4) RULE(=+5) | o agent",
+"D": "SIDE(=0) FIGHT(=0) RULE(=+3) | o agent"
+},
+{
+"w": "typhoon",
+"set": "S",
+"O": "HEAT(=0) LAND(=-4) SIDE(=+3) | o",
+"R": "HEAT(=0) LAND(=-4) LONG(=+3) | o",
+"D": "HEAT(=0) LAND(=-4) SIDE(=+3) | o"
+},
+{
+"w": "bold",
+"set": "S",
+"O": "TOUCH(=+3) SIDE(=+3) GOOD(=+3) | a",
+"R": "TOUCH(=+4) GOOD(=+5) CARE(=-3) | a",
+"D": "TOUCH(=+3) SIDE(=+3) GOOD(=+3) | a"
+},
+{
+"w": "verge",
+"set": "S",
+"O": "NEAR(=0) FEEL(=+3) SIDE(=+2) | o",
+"R": "NEAR(=+1) FEEL(=+4) BEGIN(=+2) | o",
+"D": "NEAR(=0) FEEL(=+3) SIDE(=+2) | o"
+},
+{
+"w": "bilateral",
+"set": "S",
+"O": "FRIEND(=+2) SIDE(=0) SAME(=0) | a",
+"R": "FRIEND(=+3) BIG(=+4) VALUE(=-5) | a",
+"D": "FRIEND(=+2) SIDE(=0) SAME(=0) | a"
+},
+{
+"w": "direction",
+"set": "S",
+"O": "SIDE(=+1) CHANGE(=+2) NEAR(=-1) | o",
+"R": "NEAR(=-1) CHANGE(=+3) ABOVE(=-2) | o",
+"D": "SIDE(=+1) CHANGE(=+2) NEAR(=-1) | o"
+},
+{
+"w": "bills",
+"set": "S",
+"O": "TEXT RULE(=+4) SIDE(=0) | o N+3",
+"R": "TEXT RULE(=+4) PART(=+1) | o N+3",
+"D": "TEXT RULE(=+4) SIDE(=0) | o N+3"
+},
+{
+"w": "tipped",
+"set": "S",
+"O": "SIDE(=+1) GIVE(=0) LONG(=0) | i",
+"R": "ABOVE(=-1) GIVE(=0) LONG(=0) | i",
+"D": "SIDE(=+1) GIVE(=0) LONG(=0) | i"
+},
+{
+"w": "pacific",
+"set": "S",
+"O": "LAND(=-2) SIDE(=+1) FEEL(=-2) | o",
+"R": "LAND(=-3) FIGHT(=+1) FEEL(=-2) | o",
+"D": "LAND(=-2) SIDE(=+1) FEEL(=-2) | o"
+},
+{
+"w": "opposes",
+"set": "S",
+"O": "WANT(=-3) SIDE(=+1) JOIN(=+2) | i",
+"R": "WANT(=-4) JOIN(=+2) MOVE(=-1) | i",
+"D": "WANT(=-3) SIDE(=+1) JOIN(=+2) | i"
+},
+{
+"w": "passengers",
+"set": "S",
+"O": "SIDE(=+1) GRAIN(=-5) LONG(=+5) | o agent N+3",
+"R": "LONG(=+4) GRAIN(=-5) BIG(=-2) | o agent N+3",
+"D": "SIDE(=+1) GRAIN(=-5) LONG(=+5) | o agent N+3"
+},
+{
+"w": "columns",
+"set": "S",
+"O": "TEXT LONG(=+2) SIDE(=0) | o N+3",
+"R": "TEXT LONG(=+3) GRAIN(=+1) | o N+3",
+"D": "TEXT LONG(=+2) SIDE(=0) | o N+3"
+},
+{
+"w": "defenders",
+"set": "S",
+"O": "SIDE(=0) FIGHT(=0) RULE(=+3) | o agent N+3",
+"R": "FIGHT(=0) TIME(=-4) RULE(=+5) | o agent N+3",
+"D": "SIDE(=0) FIGHT(=0) RULE(=+3) | o agent N+3"
+},
+{
+"w": "positioned",
+"set": "S",
+"O": "PLACE SIDE(=+1) CAN(=+1) | i",
+"R": "PLACE MOVE(=-3) CAN(=+2) | i",
+"D": "PLACE SIDE(=+1) CAN(=+1) | i"
+},
+{
+"w": "advocacy",
+"set": "S",
+"O": "RULE(=+2) SIDE(=+1) PART(=+3) | o",
+"R": "RULE(=+2) PART(=+4) GIVE(=+4) | o",
+"D": "RULE(=+2) SIDE(=+1) PART(=+3) | o"
+},
+{
+"w": "push",
+"set": "S",
+"O": "SIDE(=+1) GIVE(=-2) ABOVE(=0) | i",
+"R": "GIVE(=-1) MOVE(=+1) ABOVE(=0) | i",
+"D": "SIDE(=+1) GIVE(=-2) ABOVE(=0) | i"
+},
+{
+"w": "right",
+"set": "S",
+"O": "SIDE(=0) NEAR(=+2) MANY(=+1) | o",
+"R": "BODY NEAR(=+2) MANY(=+1) | o",
+"D": "SIDE(=0) NEAR(=+2) MANY(=+1) | o"
+},
+{
+"w": "side",
+"set": "S",
+"O": "SIDE(=+1) INSIDE(=-2) BODY | o",
+"R": "BODY INSIDE(=-3) NEAR(=+1) | o",
+"D": "SIDE(=+1) INSIDE(=-2) BODY | o"
+},
+{
+"w": "advance",
+"set": "S",
+"O": "GIVE(=+1) SIDE(=+4) BEGIN(=0) | i",
+"R": "GIVE(=+2) MOVE(=+2) BEGIN(=0) | i",
+"D": "GIVE(=+1) SIDE(=+4) BEGIN(=0) | i"
+},
+{
+"w": "judiciary",
+"set": "S",
+"O": "RULE(=+3) SIDE(=+1) | o",
+"R": "RULE(=+3) | o",
+"D": "RULE(=+3) SIDE(=+1) | o"
+},
+{
+"w": "returned",
+"set": "S",
+"O": "TIME(=0) SIDE(=-5) CHANGE(=-2) | i",
+"R": "TIME(=0) CHANGE(=-2) NEAR(=-2) | i",
+"D": "TIME(=0) SIDE(=-5) CHANGE(=-2) | i"
+},
+{
+"w": "spurs",
+"set": "S",
+"O": "SIDE(=+1) FEEL(=0) JOIN(=+1) | o N+3",
+"R": "JOIN(=+1) MOVE(=+4) ABOVE(=+3) | o N+3",
+"D": "SIDE(=+1) FEEL(=0) JOIN(=+1) | o N+3"
+},
+{
+"w": "stems",
+"set": "S",
+"O": "LONG(=0) JOIN(=-1) SIDE(=+1) | o N+3",
+"R": "LONG(=+1) BEGIN(=-1) CHANGE(=+1) | o N+3",
+"D": "LONG(=0) JOIN(=-1) SIDE(=+1) | o N+3"
+},
+{
+"w": "sidelined",
+"set": "S",
+"O": "SIDE(=-1) MOVE(=-3) FIGHT(=-2) | i",
+"R": "MOVE(=-2) FIGHT(=-2) BODY | i",
+"D": "SIDE(=-1) MOVE(=-3) FIGHT(=-2) | i"
+},
+{
+"w": "collision",
+"set": "S",
+"O": "HAPPEN LIVE(=-1) SIDE(=0) | o",
+"R": "HAPPEN FIGHT(=0) GRAIN(=+2) | o",
+"D": "HAPPEN LIVE(=-1) SIDE(=0) | o"
+},
+{
+"w": "conductor",
+"set": "S",
+"O": "ART(=-1) LONG(=-1) SIDE(=+3) | o agent",
+"R": "ART(=-1) LONG(=-1) HEAT(=+1) | o agent",
+"D": "ART(=-1) LONG(=-1) SIDE(=+3) | o agent"
+},
+{
+"w": "regain",
+"set": "S",
+"O": "GIVE(=-1) SIDE(=-5) CHANGE(=0) | i",
+"R": "CHANGE(=0) GIVE(=-4) THINK(=+3) | i",
+"D": "GIVE(=-1) SIDE(=-5) CHANGE(=0) | i"
+},
+{
+"w": "midfield",
+"set": "S",
+"O": "FIGHT(=-2) SIDE(=+2) MOVE(=-1) | o",
+"R": "FIGHT(=-2) LAND(=+1) MOVE(=0) | o",
+"D": "FIGHT(=-2) SIDE(=+2) MOVE(=-1) | o"
+},
+{
+"w": "advocates",
+"set": "S",
+"O": "RULE(=+2) SIDE(=+2) FEEL(=+3) | i",
+"R": "RULE(=+2) WANT(=-3) FEEL(=+4) | i",
+"D": "RULE(=+2) SIDE(=+2) FEEL(=+3) | i"
+},
+{
+"w": "woes",
+"set": "S",
+"O": "MOOD(=-2) TIME(=+1) SIDE(=+1) | o N+3",
+"R": "MOOD(=-2) TIME(=+2) ABOVE(=-2) | o N+3",
+"D": "MOOD(=-2) TIME(=+1) SIDE(=+1) | o N+3"
+},
+{
+"w": "edge",
+"set": "S",
+"O": "SIDE(=+1) NEAR(=+1) PART(=-2) | o",
+"R": "NEAR(=0) PART(=-2) ABOVE(=+1) | o",
+"D": "SIDE(=+1) NEAR(=+1) PART(=-2) | o"
+},
+{
+"w": "northern",
+"set": "S",
+"O": "LAND(=0) HEAT(=-1) SIDE(=+1) | a",
+"R": "LAND(=0) HEAT(=-1) NEAR(=0) | a",
+"D": "LAND(=0) HEAT(=-1) SIDE(=+1) | a"
+},
+{
+"w": "jury",
+"set": "S",
+"O": "RULE(=+5) THINK(=+1) SIDE(=+4) | o",
+"R": "RULE(=+4) THINK(=0) FIGHT(=-1) | o",
+"D": "RULE(=+5) THINK(=+1) SIDE(=+4) | o"
+},
+{
+"w": "chuck",
+"set": "S",
+"O": "GIVE(=-1) SIDE(=-4) CONSUME(=-4) | i",
+"R": "LONG(=+2) GIVE(=-2) CONSUME(=-3) | i",
+"D": "GIVE(=-1) SIDE(=-4) CONSUME(=-4) | i"
+},
+{
+"w": "past",
+"set": "S",
+"O": "TIME(=-3) NEAR(=-1) SIDE(=+1) | o",
+"R": "TIME(=-4) ABOVE(=+1) BEGIN(=+3) | o",
+"D": "TIME(=-3) NEAR(=-1) SIDE(=+1) | o"
+},
+{
+"w": "recovering",
+"set": "S",
+"O": "LIVE(=0) SIDE(=-5) FEEL(=-2) | i",
+"R": "LIVE(=0) CAN(=-2) FEEL(=-3) | i",
+"D": "LIVE(=0) SIDE(=-5) FEEL(=-2) | i"
+},
+{
+"w": "curb",
+"set": "S",
+"O": "SIDE(=0) JOIN(=-1) THING(=0) | o",
+"R": "ABOVE(=0) INSIDE(=-4) JOIN(=-1) | o",
+"D": "SIDE(=0) JOIN(=-1) THING(=0) | o"
+},
+{
+"w": "foes",
+"set": "S",
+"O": "FRIEND(=-1) FIGHT(=-1) SIDE(=+1) | o agent N+3",
+"R": "FRIEND(=-1) FIGHT(=-1) | o agent N+3",
+"D": "FRIEND(=-1) FIGHT(=-1) SIDE(=+1) | o agent N+3"
+},
+{
+"w": "walked",
+"set": "S",
+"O": "NEAR(=0) SIDE(=0) CONSUME(=-1) | i",
+"R": "NEAR(=0) MOVE(=0) CONSUME(=-1) | i",
+"D": "NEAR(=0) SIDE(=0) CONSUME(=-1) | i"
+},
+{
+"w": "leftist",
+"set": "S",
+"O": "SIDE(=+1) TIME(=-3) KNOW(=-4) | o agent",
+"R": "ART(=+1) TIME(=-4) KNOW(=-5) | o agent",
+"D": "SIDE(=+1) TIME(=-3) KNOW(=-4) | o agent"
+},
+{
+"w": "fifth",
+"set": "S",
+"O": "BEGIN(=+2) SIDE(=-1) PLACE | a",
+"R": "BEGIN(=+2) PLACE | a",
+"D": "BEGIN(=+2) SIDE(=-1) PLACE | a"
+},
+{
+"w": "democrat",
+"set": "S",
+"O": "RULE(=+3) FIGHT(=-2) SIDE(=0) | o agent",
+"R": "FIGHT(=-1) RULE(=+5) WANT(=-2) | o agent",
+"D": "RULE(=+3) FIGHT(=-2) SIDE(=0) | o agent"
+},
+{
+"w": "prop",
+"set": "S",
+"O": "LONG(=+1) MOVE(=-4) SIDE(=+1) | o",
+"R": "LONG(=+1) MOVE(=-3) CHANGE(=+2) | o",
+"D": "LONG(=+1) MOVE(=-4) SIDE(=+1) | o"
+},
+{
+"w": "offshore",
+"set": "S",
+"O": "LAND(=-3) NEAR(=-2) SIDE(=+2) | e",
+"R": "LAND(=-3) NEAR(=-2) ABOVE(=-1) | e",
+"D": "LAND(=-3) NEAR(=-2) SIDE(=+2) | e"
+},
+{
+"w": "rebuilding",
+"set": "S",
+"O": "CHANGE(=+1) BEGIN(=-3) SIDE(=-3) | i",
+"R": "CHANGE(=+1) BEGIN(=-3) VALUE(=+2) | i",
+"D": "CHANGE(=+1) BEGIN(=-3) SIDE(=-3) | i"
+},
+{
+"w": "centres",
+"set": "S",
+"O": "PLACE NEAR(=+3) SIDE(=+1) | o N+3",
+"R": "PLACE NEAR(=+3) LIVE(=+2) | o N+3",
+"D": "PLACE NEAR(=+3) SIDE(=+1) | o N+3"
+},
+{
+"w": "flip",
+"set": "S",
+"O": "SIDE(=-1) GIVE(=-3) CHANGE(=+4) | i",
+"R": "GIVE(=-3) CHANGE(=+5) SAY(=+5) | i",
+"D": "SIDE(=-1) GIVE(=-3) CHANGE(=+4) | i"
+},
+{
+"w": "lead",
+"set": "S",
+"O": "DO BEGIN(=+2) SIDE(=+2) | i",
+"R": "BEGIN(=+1) DO LONG(=-1) | i",
+"D": "DO BEGIN(=+2) SIDE(=+2) | i"
+},
+{
+"w": "rights",
+"set": "S",
+"O": "SIDE(=0) NEAR(=+2) MANY(=+1) | o N+3",
+"R": "BODY NEAR(=+2) MANY(=+1) | o N+3",
+"D": "SIDE(=0) NEAR(=+2) MANY(=+1) | o N+3"
+},
+{
+"w": "backward",
+"set": "S",
+"O": "SIDE(=-1) | e",
+"R": "ABOVE(=-1) MOVE(=+1) NEAR(=-4) | e",
+"D": "SIDE(=-1) | e"
+},
+{
+"w": "tee",
+"set": "S",
+"O": "FIGHT(=-3) LONG(=-2) SIDE(=+3) | o",
+"R": "FIGHT(=-3) LONG(=-2) CONSUME(=0) | o",
+"D": "FIGHT(=-3) LONG(=-2) SIDE(=+3) | o"
+},
+{
+"w": "bringing",
+"set": "S",
+"O": "GIVE(=+1) LIVE(=+2) SIDE(=0) | i",
+"R": "GIVE(=+1) ABOVE(=+1) LIVE(=+2) | i",
+"D": "GIVE(=+1) LIVE(=+2) SIDE(=0) | i"
+},
+{
+"w": "jihad",
+"set": "S",
+"O": "FIGHT(=+1) SIDE(=+1) WANT(=+2) | o",
+"R": "FIGHT(=+1) WANT(=+1) LIVE(=+2) | o",
+"D": "FIGHT(=+1) SIDE(=+1) WANT(=+2) | o"
+},
+{
+"w": "border",
+"set": "S",
+"O": "LAND(=0) NEAR(=+1) SIDE(=+1) | o",
+"R": "LAND(=0) NEAR(=+1) LONG(=0) | o",
+"D": "LAND(=0) NEAR(=+1) SIDE(=+1) | o"
+},
+{
+"w": "ball",
+"set": "S",
+"O": "FIGHT(=-3) SIDE(=-1) GRAIN(=+1) | o",
+"R": "FIGHT(=-3) LONG(=+1) GRAIN(=+1) | o",
+"D": "FIGHT(=-3) SIDE(=-1) GRAIN(=+1) | o"
+},
+{
+"w": "stepped",
+"set": "S",
+"O": "SIDE(=0) ABOVE(=0) MOVE(=0) | i",
+"R": "ABOVE(=0) MOVE(=0) GRAIN(=+1) | i",
+"D": "SIDE(=0) ABOVE(=0) MOVE(=0) | i"
+},
+{
+"w": "turning",
+"set": "S",
+"O": "SIDE(=-1) CHANGE(=+4) HEAT(=+2) | i",
+"R": "CHANGE(=+3) ABOVE(=0) MOVE(=-1) | i",
+"D": "SIDE(=-1) CHANGE(=+4) HEAT(=+2) | i"
+},
+{
+"w": "attacking",
+"set": "S",
+"O": "FRIEND(=-3) GIVE(=-2) SIDE(=+1) | i",
+"R": "FRIEND(=-3) FIGHT(=0) GIVE(=-2) | i",
+"D": "FRIEND(=-3) GIVE(=-2) SIDE(=+1) | i"
+},
+{
+"w": "southeastern",
+"set": "S",
+"O": "LAND(=-1) PLACE SIDE(=+1) | a",
+"R": "LAND(=-1) PLACE BIG(=0) | a",
+"D": "LAND(=-1) PLACE SIDE(=+1) | a"
+},
+{
+"w": "toll",
+"set": "S",
+"O": "MEASURE(=0) LIVE(=-5) SIDE(=+5) | o",
+"R": "MEASURE(=0) LIVE(=-5) SAY(=+4) | o",
+"D": "MEASURE(=0) LIVE(=-5) SIDE(=+5) | o"
+},
+{
+"w": "assist",
+"set": "S",
+"O": "GIVE(=+2) CAN(=+1) SIDE(=+1) | i",
+"R": "GIVE(=+2) KNOW(=+2) CAN(=+1) | i",
+"D": "GIVE(=+2) CAN(=+1) SIDE(=+1) | i"
+},
+{
+"w": "stalled",
+"set": "S",
+"O": "MOVE(=-1) SIDE(=+1) BEGIN(=0) | i",
+"R": "MOVE(=-1) BEGIN(=+1) FEEL(=0) | i",
+"D": "MOVE(=-1) SIDE(=+1) BEGIN(=0) | i"
+},
+{
+"w": "reverse",
+"set": "S",
+"O": "SIDE(=-1) CHANGE(=+3) SAME(=0) | i",
+"R": "MOVE(=0) CHANGE(=+4) SAME(=0) | i",
+"D": "SIDE(=-1) CHANGE(=+3) SAME(=0) | i"
+},
+{
+"w": "blow",
+"set": "S",
+"O": "GRAIN(=-1) GIVE(=-3) SIDE(=+3) | o",
+"R": "GRAIN(=-1) GIVE(=-2) SAY(=+2) | o",
+"D": "GRAIN(=-1) GIVE(=-3) SIDE(=+3) | o"
+},
+{
+"w": "rebuild",
+"set": "S",
+"O": "CHANGE(=+2) THINK(=+5) SIDE(=-4) | i",
+"R": "CHANGE(=+1) THINK(=+5) GRAIN(=+3) | i",
+"D": "CHANGE(=+2) THINK(=+5) SIDE(=-4) | i"
+},
+{
+"w": "bolster",
+"set": "S",
+"O": "CHANGE(=+1) JOIN(=+3) SIDE(=-1) | i",
+"R": "CHANGE(=+1) JOIN(=+3) LONG(=+2) | i",
+"D": "CHANGE(=+1) JOIN(=+3) SIDE(=-1) | i"
+},
+{
+"w": "winger",
+"set": "S",
+"O": "SIDE(=+1) FIGHT(=-2) LONG(=+2) | o agent",
+"R": "FIGHT(=-2) MOVE(=+1) LONG(=+3) | o agent",
+"D": "SIDE(=+1) FIGHT(=-2) LONG(=+2) | o agent"
+},
+{
+"w": "seconds",
+"set": "S",
+"O": "BEGIN(=+1) SIDE(=-1) PLACE | o N+3",
+"R": "BEGIN(=+1) TIME(=-1) PLACE | o N+3",
+"D": "BEGIN(=+1) SIDE(=-1) PLACE | o N+3"
+},
+{
+"w": "bank",
+"set": "S",
+"O": "RULE(=+1) LAND(=-2) SIDE(=+1) | o",
+"R": "RULE(=+1) LAND(=-3) NEAR(=+2) | o",
+"D": "RULE(=+1) LAND(=-2) SIDE(=+1) | o"
+},
+{
+"w": "backers",
+"set": "S",
+"O": "SIDE(=0) PART(=+4) WANT(=-1) | o agent N+3",
+"R": "PART(=+5) FEEL(=+5) INSIDE(=-5) | o agent N+3",
+"D": "SIDE(=0) PART(=+4) WANT(=-1) | o agent N+3"
+},
+{
+"w": "rebuilt",
+"set": "S",
+"O": "CHANGE(=+2) SIDE(=-5) NEAR(=+5) | i",
+"R": "CHANGE(=+1) TIME(=-3) NEAR(=+4) | i",
+"D": "CHANGE(=+2) SIDE(=-5) NEAR(=+5) | i"
+},
+{
+"w": "rebounds",
+"set": "S",
+"O": "SIDE(=-1) GIVE(=-4) MEASURE(=+3) | i",
+"R": "FIGHT(=-2) GIVE(=-5) MEASURE(=+4) | i",
+"D": "SIDE(=-1) GIVE(=-4) MEASURE(=+3) | i"
+},
+{
+"w": "bearing",
+"set": "S",
+"O": "LONG(=+2) SIDE(=+3) MEASURE(=-1) | i",
+"R": "LONG(=+3) MEASURE(=-2) CHANGE(=-1) | i",
+"D": "LONG(=+2) SIDE(=+3) MEASURE(=-1) | i"
+},
+{
+"w": "alongside",
+"set": "S",
+"O": "SIDE(=+2) NEAR(=+3) MOVE(=-4) | e",
+"R": "SAME(=-1) NEAR(=+3) MOVE(=-3) | e",
+"D": "SIDE(=+2) NEAR(=+3) MOVE(=-4) | e"
+},
+{
+"w": "challenges",
+"set": "S",
+"O": "CAN(=-2) FIGHT(=-3) SIDE(=+3) | i",
+"R": "FIGHT(=-2) CAN(=-4) THINK(=0) | i",
+"D": "CAN(=-2) FIGHT(=-3) SIDE(=+3) | i"
+},
+{
+"w": "favor",
+"set": "S",
+"O": "WANT(=-1) FRIEND(=+3) SIDE(=0) | i",
+"R": "WANT(=-1) GIVE(=+2) FRIEND(=+2) | i",
+"D": "WANT(=-1) FRIEND(=+3) SIDE(=0) | i"
+},
+{
+"w": "evolution",
+"set": "S",
+"O": "ART(=0) CHANGE(=+1) SIDE(=+2) | o",
+"R": "CHANGE(=+1) ART(=0) BEGIN(=-1) | o",
+"D": "ART(=0) CHANGE(=+1) SIDE(=+2) | o"
+}
+]

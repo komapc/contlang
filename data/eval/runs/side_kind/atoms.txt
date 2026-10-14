@@ -1,0 +1,5 @@
+SIDE(=-5): back, rearward, backward, rear, return, regain, recover, hip, restore, reverse, comeback, shoulder, retrieve, bounce, recovery, leg, tail, knee
+SIDE(=-3): back, rearward, backward, rear, reverse, return, regain, hip, shoulder, recover, downward, leg, bounce, tail, comeback, knee, bottom, corner
+SIDE(=0): rearward, back, backward, forward, front, rear, side, ahead, thrust, reverse, forth, downward, upward, straight, tilt, push, southward, corner
+SIDE(=3): ahead, forward, front, advance, southward, northward, westward, side, upcoming, direction, rearward, north, alongside, progress, precede, prepare, straight, proceed
+SIDE(=5): ahead, forward, front, advance, northward, prepare, southward, upcoming, westward, precede, forthcoming, ready, preparation, progress, underway, north, proceed, imminent
