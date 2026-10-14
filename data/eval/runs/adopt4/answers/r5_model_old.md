@@ -1,0 +1,27 @@
+1. garden | farm | orchard
+2. quarry | mine | warehouse
+3. exit | border | gap
+4. sea | ocean | lake
+5. drop | droplet | dew
+6. pond | pool | puddle
+7. front | face | facade
+8. pier | dock | bridge
+9. basement | cellar | tunnel
+10. sky | heaven | summit
+11. park | zoo | forest
+12. organ | ingredient | component
+13. roof | attic | ceiling
+14. beach | desert | dune
+15. office | court | station
+16. department | branch | division
+17. fair | carnival | playground
+18. grove | thicket | copse
+19. quarry | gravel pit | rock field
+20. beach | shore | sandbox
+21. pool | reservoir | tank
+22. platform | stage | pier
+23. junction | hub | interchange
+24. warehouse | depot | storeroom
+25. market | shop | store
+26. departments | agencies | offices
+27. forest | jungle | woodland

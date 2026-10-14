@@ -1,0 +1,27 @@
+1. citizen | national | resident
+2. island | isle | islet
+3. neighbor | border | frontier
+4. harbor | port | dock
+5. plant | vegetation | crop
+6. ground | soil | earth
+7. pier | jetty | quay
+8. pond | lake | puddle
+9. marsh | swamp | wetland
+10. interior | inland | hinterland
+11. peninsula | isthmus | cape
+12. paradise | resort | playground
+13. sand | beach | gravel
+14. waterfront | shoreline | promenade
+15. shrub | bush | herb
+16. market | port | bazaar
+17. quarries | mines | ruins
+18. continent | mainland | region
+19. promontory | headland | cape
+20. mud | silt | clay
+21. root | tree | plant
+22. lake | inland sea | reservoir
+23. tunnel | pipe | cave
+24. cliff | bluff | hill
+25. country | nation | region
+26. citizens | members | subjects
+27. mountain | peak | hill
