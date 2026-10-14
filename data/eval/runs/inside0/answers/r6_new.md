@@ -1,0 +1,22 @@
+1. surface | top | upper side
+2. outskirts | suburb | periphery
+3. skin | hide | epidermis
+4. crust | shell | slab
+5. entrance | threshold | doorway
+6. road | path | street
+7. ground | floor | bottom
+8. coating | shell | skin
+9. window | lens | glasses
+10. flicker | motion | sway
+11. verge | edge | margin
+12. ceiling | roof | top
+13. neighborhood | village | district
+14. edge | border | boundary
+15. frontier | outpost | wilderness
+16. shore | coast | bank
+17. seam | joint | junction
+18. horizon | skyline | sky
+19. hem | edge | rim
+20. voice | cry | groan
+21. mixture | solution | blend
+22. borderland | threshold | fringe

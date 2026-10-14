@@ -1,0 +1,502 @@
+[
+ {
+  "w": "border",
+  "old": "JOIN(=-5) LONG(=-5) | o",
+  "new": "INSIDE(=0) LONG(=-5) | o"
+ },
+ {
+  "w": "boundary",
+  "old": "JOIN(=-5) PLACE | o",
+  "new": "INSIDE(=0) PLACE | o"
+ },
+ {
+  "w": "frontier",
+  "old": "SIDE(=+5) LIVE(=-2) | o",
+  "new": "INSIDE(=0) PLACE LIVE(=-2) | o"
+ },
+ {
+  "w": "edge",
+  "old": "TOUCH(=+5) SIDE(=+5) | o",
+  "new": "INSIDE(=0) | o"
+ },
+ {
+  "w": "margin",
+  "old": "INSIDE(=+3) SIDE(=+5) | o",
+  "new": "INSIDE(=+3) SIDE(=+5) | o"
+ },
+ {
+  "w": "rim",
+  "old": "ABOVE(=+5) SIDE(=+5) | o",
+  "new": "INSIDE(=0) ABOVE(=+5) | o"
+ },
+ {
+  "w": "brink",
+  "old": "NEAR(=+5) ABOVE(=-5) | o",
+  "new": "INSIDE(=0) NEAR(=+5) ABOVE(=-5) | o"
+ },
+ {
+  "w": "verge",
+  "old": "NEAR(=+5) BEGIN(=-5) | o",
+  "new": "INSIDE(=0) NEAR(=+5) BEGIN(=-5) | o"
+ },
+ {
+  "w": "threshold",
+  "old": "BEGIN(=-5) CHANGE(=+5) | o",
+  "new": "BEGIN(=-5) CHANGE(=+5) | o"
+ },
+ {
+  "w": "limit",
+  "old": "BIG(=+5) MEASURE(=+5) | o",
+  "new": "BIG(=+5) MEASURE(=+5) | o"
+ },
+ {
+  "w": "surface",
+  "old": "SIDE(=+5) THING(=-5) | o",
+  "new": "INSIDE(=0) THING(=-5) | o"
+ },
+ {
+  "w": "face",
+  "old": "SIDE(=+5) BODY | o",
+  "new": "SIDE(=+5) BODY | o"
+ },
+ {
+  "w": "exterior",
+  "old": "INSIDE(=-5) PLACE | o",
+  "new": "INSIDE(=-5) PLACE | o"
+ },
+ {
+  "w": "outline",
+  "old": "LONG(=-5) SIDE(=+5) | o",
+  "new": "LONG(=-5) SIDE(=+5) | o"
+ },
+ {
+  "w": "coast",
+  "old": "NEAR(=+5) BIG(=+5) GRAIN(=-3) | o",
+  "new": "NEAR(=+5) BIG(=+5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "shore",
+  "old": "NEAR(=+5) GRAIN(=-3) | o",
+  "new": "INSIDE(=0) NEAR(=+5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "beach",
+  "old": "GRAIN(=0) NEAR(=+5) GRAIN(=-3) | o",
+  "new": "GRAIN(=0) NEAR(=+5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "bank",
+  "old": "ABOVE(=-2) NEAR(=+5) GRAIN(=-3) | o",
+  "new": "ABOVE(=-2) NEAR(=+5) GRAIN(=-3) | o"
+ },
+ {
+  "w": "horizon",
+  "old": "NEAR(=-5) ABOVE(=+5) | o",
+  "new": "INSIDE(=0) NEAR(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "wall",
+  "old": "TOUCH(=+5) JOIN(=-5) PLACE | o",
+  "new": "TOUCH(=+5) JOIN(=-5) PLACE | o"
+ },
+ {
+  "w": "fence",
+  "old": "LONG(=0) JOIN(=-5) PLACE | o",
+  "new": "LONG(=0) JOIN(=-5) PLACE | o"
+ },
+ {
+  "w": "hedge",
+  "old": "THING(=0) JOIN(=-5) PLACE | o",
+  "new": "THING(=0) JOIN(=-5) PLACE | o"
+ },
+ {
+  "w": "gate",
+  "old": "MOVE JOIN(=-5) PLACE | o",
+  "new": "MOVE JOIN(=-5) PLACE | o"
+ },
+ {
+  "w": "door",
+  "old": "MOVE JOIN(=-5) INSIDE(=+5) | o",
+  "new": "MOVE JOIN(=-5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "window",
+  "old": "SEE JOIN(=-5) PLACE | o",
+  "new": "SEE JOIN(=-5) PLACE | o"
+ },
+ {
+  "w": "skin",
+  "old": "BODY INSIDE(=-5) | o",
+  "new": "BODY INSIDE(=0) | o"
+ },
+ {
+  "w": "shell",
+  "old": "FIGHT(=+5) TOUCH(=+5) | o",
+  "new": "FIGHT(=+5) TOUCH(=+5) | o"
+ },
+ {
+  "w": "film",
+  "old": "ART(=+5) SEE | o",
+  "new": "ART(=+5) SEE | o"
+ },
+ {
+  "w": "layer",
+  "old": "PART(=-2) SAME(=+5) | o",
+  "new": "PART(=-2) SAME(=+5) | o"
+ },
+ {
+  "w": "cover",
+  "old": "ABOVE(=+5) JOIN(=+5) | o",
+  "new": "ABOVE(=+5) JOIN(=+5) | o"
+ },
+ {
+  "w": "cap",
+  "old": "BODY ABOVE(=+5) JOIN(=+5) | o",
+  "new": "BODY ABOVE(=+5) JOIN(=+5) | o"
+ },
+ {
+  "w": "seal",
+  "old": "JOIN(=+5) TEXT | o tool",
+  "new": "JOIN(=+5) TEXT | o tool"
+ },
+ {
+  "w": "frame",
+  "old": "LONG(=+5) JOIN(=+5) | o",
+  "new": "LONG(=+5) JOIN(=+5) | o"
+ },
+ {
+  "w": "checkpoint",
+  "old": "PLACE MOVE(=-5) RULE(=+4) | o",
+  "new": "PLACE MOVE(=-5) RULE(=+4) | o"
+ },
+ {
+  "w": "customs",
+  "old": "GIVE(=-5) RULE(=+4) | o",
+  "new": "GIVE(=-5) RULE(=+4) | o"
+ },
+ {
+  "w": "crossing",
+  "old": "MOVE SIDE | o",
+  "new": "MOVE INSIDE(=0) | o"
+ },
+ {
+  "w": "outskirts",
+  "old": "PLACE INSIDE(=-5) NEAR(=-3) | o",
+  "new": "PLACE INSIDE(=0) NEAR(=-3) | o"
+ },
+ {
+  "w": "suburb",
+  "old": "PLACE LIVE INSIDE(=-5) | o",
+  "new": "PLACE LIVE INSIDE(=0) | o"
+ },
+ {
+  "w": "line",
+  "old": "PART(=+5) SIDE | o",
+  "new": "PART(=+5) SIDE | o"
+ },
+ {
+  "w": "divide",
+  "old": "JOIN(=-5) PART(=+5) | o",
+  "new": "JOIN(=-5) PART(=+5) | o"
+ },
+ {
+  "w": "barrier",
+  "old": "MOVE(=-5) TOUCH(=+5) | o",
+  "new": "MOVE(=-5) TOUCH(=+5) | o"
+ },
+ {
+  "w": "curb",
+  "old": "THING(=-5) LONG(=+5) SIDE | o",
+  "new": "THING(=-5) LONG(=+5) SIDE | o"
+ },
+ {
+  "w": "roadside",
+  "old": "PLACE MOVE SIDE | o",
+  "new": "PLACE MOVE SIDE | o"
+ },
+ {
+  "w": "sidewalk",
+  "old": "MOVE(=0) TOUCH(=+5) PLACE | o",
+  "new": "MOVE(=0) TOUCH(=+5) PLACE | o"
+ },
+ {
+  "w": "porch",
+  "old": "PLACE INSIDE(=-5) ABOVE(=+5) | o",
+  "new": "PLACE INSIDE(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "entrance",
+  "old": "PLACE INSIDE(=+5) MOVE | o",
+  "new": "PLACE INSIDE(=+5) MOVE | o"
+ },
+ {
+  "w": "exit",
+  "old": "PLACE INSIDE(=-5) MOVE | o",
+  "new": "PLACE INSIDE(=-5) MOVE | o"
+ },
+ {
+  "w": "gateway",
+  "old": "PLACE INSIDE(=+5) MOVE(=-5) | o",
+  "new": "PLACE INSIDE(=+5) MOVE(=-5) | o"
+ },
+ {
+  "w": "hull",
+  "old": "THING(=0) INSIDE(=-5) | o",
+  "new": "THING(=0) INSIDE(=-5) | o"
+ },
+ {
+  "w": "mask",
+  "old": "BODY SAME(=-5) JOIN(=+5) | o",
+  "new": "BODY SAME(=-5) JOIN(=+5) | o"
+ },
+ {
+  "w": "screen",
+  "old": "SEE | o tool",
+  "new": "SEE INSIDE(=0) | o tool"
+ },
+ {
+  "w": "interface",
+  "old": "SIDE JOIN | o",
+  "new": "INSIDE(=0) JOIN | o"
+ },
+ {
+  "w": "contact",
+  "old": "NEAR(=+3) GIVE(=0) | o",
+  "new": "NEAR(=+3) GIVE(=0) | o"
+ },
+ {
+  "w": "junction",
+  "old": "PLACE JOIN | o",
+  "new": "PLACE JOIN | o"
+ },
+ {
+  "w": "joint",
+  "old": "BODY JOIN | o",
+  "new": "BODY JOIN | o"
+ },
+ {
+  "w": "ridge",
+  "old": "ABOVE(=+2) LONG(=+5) | o",
+  "new": "ABOVE(=+2) LONG(=+5) | o"
+ },
+ {
+  "w": "cliff",
+  "old": "SIDE(=+5) THING(=-5) ABOVE(=+5) | o",
+  "new": "SIDE(=+5) THING(=-5) ABOVE(=+5) | o"
+ },
+ {
+  "w": "rail",
+  "old": "LONG(=+5) MOVE(=-5) | o",
+  "new": "LONG(=+5) MOVE(=-5) | o"
+ },
+ {
+  "w": "corner",
+  "old": "PLACE SIDE | o",
+  "new": "PLACE SIDE INSIDE(=0) | o"
+ },
+ {
+  "w": "tip",
+  "old": "BEGIN(=+5) TOUCH(=+5) | o",
+  "new": "BEGIN(=+5) TOUCH(=+5) | o"
+ },
+ {
+  "w": "end",
+  "old": "BEGIN(=+5) | o",
+  "new": "BEGIN(=+5) | o"
+ },
+ {
+  "w": "terminal",
+  "old": "PLACE MOVE GIVE(=0) | o",
+  "new": "PLACE MOVE GIVE(=0) | o"
+ },
+ {
+  "w": "outer",
+  "old": "INSIDE(=-5) | a",
+  "new": "INSIDE(=-5) | a"
+ },
+ {
+  "w": "outside",
+  "old": "INSIDE(=-5) PLACE | o",
+  "new": "INSIDE(=-5) PLACE | o"
+ },
+ {
+  "w": "top",
+  "old": "ABOVE(=+5) PART(=-2) | o",
+  "new": "ABOVE(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "bottom",
+  "old": "ABOVE(=-5) PART(=-2) | o",
+  "new": "ABOVE(=-5) PART(=-2) | o"
+ },
+ {
+  "w": "front",
+  "old": "SIDE(=+5) | o",
+  "new": "SIDE(=+5) | o"
+ },
+ {
+  "w": "back",
+  "old": "SIDE(=-5) BODY | o",
+  "new": "SIDE(=-5) BODY | o"
+ },
+ {
+  "w": "side",
+  "old": "SIDE | o",
+  "new": "SIDE | o"
+ },
+ {
+  "w": "rear",
+  "old": "SIDE(=-5) FIGHT(=+5) | o",
+  "new": "SIDE(=-5) FIGHT(=+5) | o"
+ },
+ {
+  "w": "floor",
+  "old": "ABOVE(=-5) INSIDE(=+5) | o",
+  "new": "ABOVE(=-5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "roof",
+  "old": "ABOVE(=+5) PLACE LIVE | o",
+  "new": "ABOVE(=+5) PLACE LIVE | o"
+ },
+ {
+  "w": "ceiling",
+  "old": "ABOVE(=+5) INSIDE(=+5) | o",
+  "new": "ABOVE(=+5) INSIDE(=0) | o"
+ },
+ {
+  "w": "base",
+  "old": "PLACE FIGHT(=+5) BEGIN(=-5) | o",
+  "new": "PLACE FIGHT(=+5) BEGIN(=-5) | o"
+ },
+ {
+  "w": "platform",
+  "old": "ABOVE(=+5) MOVE(=-5) | o",
+  "new": "ABOVE(=+5) MOVE(=-5) | o"
+ },
+ {
+  "w": "deck",
+  "old": "PLACE ABOVE | o",
+  "new": "PLACE ABOVE | o"
+ },
+ {
+  "w": "lining",
+  "old": "JOIN INSIDE(=+5) | o",
+  "new": "JOIN INSIDE(=+5) | o"
+ },
+ {
+  "w": "coat",
+  "old": "BODY INSIDE(=-5) BIG(=+3) | o",
+  "new": "BODY INSIDE(=-5) BIG(=+3) | o"
+ },
+ {
+  "w": "paint",
+  "old": "JOIN(=+5) GRAIN(=-3) | o",
+  "new": "JOIN(=+5) INSIDE(=0) GRAIN(=-3) | o"
+ },
+ {
+  "w": "wrap",
+  "old": "TOUCH(=-5) BODY INSIDE(=-5) | o",
+  "new": "TOUCH(=-5) BODY INSIDE(=-5) | o"
+ },
+ {
+  "w": "package",
+  "old": "PART(=+5) JOIN(=+5) | o",
+  "new": "PART(=+5) JOIN(=+5) | o"
+ },
+ {
+  "w": "box",
+  "old": "TOUCH(=+5) INSIDE(=+5) | o",
+  "new": "TOUCH(=+5) INSIDE(=+5) | o"
+ },
+ {
+  "w": "passport",
+  "old": "TEXT RULE(=+4) MOVE | o",
+  "new": "TEXT RULE(=+4) MOVE | o"
+ },
+ {
+  "w": "visa",
+  "old": "RULE(=+4) INSIDE(=+5) | o",
+  "new": "RULE(=+4) INSIDE(=+5) | o"
+ },
+ {
+  "w": "immigration",
+  "old": "MOVE INSIDE(=+5) | o",
+  "new": "MOVE INSIDE(=+5) | o"
+ },
+ {
+  "w": "smuggling",
+  "old": "MOVE INSIDE(=+5) RULE(=-5) | o",
+  "new": "MOVE INSIDE(=+5) RULE(=-5) | o"
+ },
+ {
+  "w": "neighbor",
+  "old": "SOMEONE NEAR | o",
+  "new": "SOMEONE NEAR | o"
+ },
+ {
+  "w": "territory",
+  "old": "PLACE RULE(=+4) | o",
+  "new": "PLACE RULE(=+4) | o"
+ },
+ {
+  "w": "zone",
+  "old": "PLACE SAME(=-4) | o",
+  "new": "PLACE SAME(=-4) | o"
+ },
+ {
+  "w": "district",
+  "old": "PLACE PART(=-2) RULE(=+4) | o",
+  "new": "PLACE PART(=-2) RULE(=+4) | o"
+ },
+ {
+  "w": "dock",
+  "old": "PLACE RULE(=+5) PART(=-2) | o",
+  "new": "PLACE RULE(=+5) PART(=-2) | o"
+ },
+ {
+  "w": "harbor",
+  "old": "PLACE INSIDE(=+5) MOVE(=-5) | o",
+  "new": "PLACE INSIDE(=+5) MOVE(=-5) | o"
+ },
+ {
+  "w": "harbour",
+  "old": "PLACE INSIDE(=+5) MOVE(=-5) | o",
+  "new": "PLACE INSIDE(=+5) MOVE(=-5) | o"
+ },
+ {
+  "w": "port",
+  "old": "PLACE MOVE | o",
+  "new": "PLACE MOVE INSIDE(=0) | o"
+ },
+ {
+  "w": "lip",
+  "old": "BODY SAY TOUCH(=-5) | o",
+  "new": "BODY INSIDE(=0) SAY | o"
+ },
+ {
+  "w": "jacket",
+  "old": "BODY INSIDE(=-5) BIG(=-2) | o",
+  "new": "BODY INSIDE(=-5) BIG(=-2) | o"
+ },
+ {
+  "w": "blanket",
+  "old": "TOUCH(=-5) HEAT(=+2) | o",
+  "new": "TOUCH(=-5) HEAT(=+2) | o"
+ },
+ {
+  "w": "sheet",
+  "old": "GRAIN(=+5) BIG(=+3) | o",
+  "new": "INSIDE(=0) GRAIN(=+5) BIG(=+3) | o"
+ },
+ {
+  "w": "cell",
+  "old": "PLACE INSIDE(=+5) BIG(=-5) | o",
+  "new": "PLACE INSIDE(=+5) BIG(=-5) | o"
+ },
+ {
+  "w": "inner",
+  "old": "INSIDE(=+5) | a",
+  "new": "INSIDE(=+5) | a"
+ }
+]

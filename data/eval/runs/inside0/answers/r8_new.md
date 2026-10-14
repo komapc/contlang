@@ -1,0 +1,22 @@
+1. border | edge | boundary
+2. screen | window | lens
+3. motion | movement | shift
+4. sky | horizon | heavens
+5. road | path | street
+6. joint | seam | junction
+7. ground | floor | bottom
+8. skin | surface | hide
+9. glue | adhesive | paste
+10. wall | side | edge
+11. top | summit | peak
+12. mouth | lip | voice
+13. surface | skin | crust
+14. top | upper surface | cover
+15. suburb | outskirts | periphery
+16. hem | edge | rim
+17. film | skin | coating
+18. edge | border | surface
+19. slab | plate | sheet
+20. frontier | borderland | fringe
+21. bed | couch | cot
+22. threshold | doorstep | entrance

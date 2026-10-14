@@ -1,0 +1,22 @@
+1. crust | shell | rind
+2. outskirts | periphery | margin
+3. hem | seam | edge
+4. threshold | doorway | gateway
+5. skin | hide | surface
+6. surface | top | upper face
+7. roof | lid | cover
+8. film | coating | layer
+9. horizon | skyline | rim
+10. lens | window | glass
+11. border | edge | boundary
+12. crossing | passage | transit
+13. floor | ground | bottom
+14. brink | verge | threshold
+15. lip | mouth | lips
+16. joint | seam | junction
+17. brim | rim | surface
+18. edge | verge | shoulder
+19. bed | cradle | nest
+20. suburb | outskirts | frontier
+21. slab | plate | wall
+22. surface | edge | boundary

@@ -1,0 +1,22 @@
+1. crossing | border | passage
+2. slab | sheet | plate
+3. top | peak | summit
+4. gate | checkpoint | border crossing
+5. mouth | lips | voice
+6. sky | heavens | ceiling
+7. outskirts | periphery | suburb
+8. skin | hide | epidermis
+9. shell | crust | skin
+10. seam | joint | junction
+11. floor | bottom | ground
+12. threshold | doorstep | entrance
+13. window | lens | glass
+14. string | thread | cord
+15. lid | cover | roof
+16. wall | side | edge
+17. edge | surface | boundary
+18. bed | cot | couch
+19. porch | balcony | yard
+20. border | frontier | edge
+21. paint | coating | varnish
+22. dew | moisture | sweat
