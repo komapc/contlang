@@ -1,0 +1,3157 @@
+{
+"academy": {
+"A": "ART(=+1) ABOVE(=+4) FIGHT(=0) | o",
+"S": "ART(=+1) ABOVE(=+4) FIGHT(=0) | o LIKE PART(=+4) RULE(=+1) KNOW(=+2) | o LIKE PLACE KNOW CONSUME(=+5) | o",
+"HS": "ART(=+1) FIGHT(=0) RULE(=+1) | o LIKE PLACE KNOW ABOVE(=+4) | o LIKE PLACE KNOW CONSUME(=+5) | o",
+"sA": 0.212,
+"sS": 0.327,
+"sHS": 0.354,
+"wS": [
+"organization",
+"school"
+],
+"wHS": [
+"university",
+"school"
+],
+"W3": "ART(=+1) ABOVE(=+4) FIGHT(=0) | o LIKE FIGHT(=+4) LAND(=-5) RULE(=+2) | o LIKE PLACE KNOW CONSUME(=+5) | o"
+},
+"accusing": {
+"A": "CARE(=-2) WANT(=-5) TIME(=-4) | i",
+"S": "CARE(=-2) WANT(=-5) TIME(=-4) | i LIKE SAY THINK | i LIKE FRIEND(=-2) GOOD(=-3) FEEL(=+1) | i",
+"HS": "WANT(=-4) FRIEND(=-3) TIME(=-5) | i LIKE SAY THINK | i LIKE FRIEND(=-2) GOOD(=-3) FEEL(=+1) | i",
+"sA": 0.114,
+"sS": 0.2,
+"sHS": 0.273,
+"wS": [
+"imply",
+"threatening"
+],
+"wHS": [
+"imply",
+"threatening"
+],
+"W3": "CARE(=-2) WANT(=-5) TIME(=-4) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i LIKE DO BEGIN(=-3) ART(=+1) | i"
+},
+"acting": {
+"A": "DO KNOW(=-2) RULE(=+2) | i",
+"S": "DO KNOW(=-2) RULE(=+2) | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE SAY ART(=+5) FEEL(=+3) | i",
+"HS": "DO RULE(=+2) MOVE(=-1) | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE SAY ART(=+5) FEEL(=+3) | i",
+"sA": 0.193,
+"sS": 0.269,
+"sHS": 0.332,
+"wS": [
+"painting",
+"sing"
+],
+"wHS": [
+"painting",
+"sing"
+],
+"W3": "DO KNOW(=-2) RULE(=+2) | i LIKE DO | i LIKE LIVE(=+2) ART(=-5) CAN(=0) | i"
+},
+"activities": {
+"A": "LIVE(=+3) MEASURE(=+2) HAPPEN | o N+3",
+"S": "LIVE(=+3) MEASURE(=+2) HAPPEN | o N+3 LIKE RULE(=+1) PART(=+5) ART(=-2) | o LIKE ART(=-1) CARE(=+5) GIVE(=+2) | o",
+"HS": "DO RULE(=-3) LIVE(=+4) | o N+3 LIKE ART(=-1) CARE(=+5) GIVE(=+2) | o LIKE MOOD(=+4) FIGHT(=-2) WANT(=+3) | o",
+"sA": 0.223,
+"sS": 0.336,
+"sHS": 0.39,
+"wS": [
+"management",
+"research"
+],
+"wHS": [
+"research",
+"fun"
+],
+"W3": "LIVE(=+3) MEASURE(=+2) HAPPEN | o N+3 LIKE TEXT PART(=+3) TIME(=+3) | o LIKE FIGHT(=-1) | o N+3"
+},
+"agree": {
+"A": "WANT(=-2) JOIN(=+3) THINK(=0) | i",
+"S": "WANT(=-2) JOIN(=+3) THINK(=0) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE SAY THINK(=+5) | i K+3",
+"HS": "WANT(=-2) JOIN(=+3) THINK(=0) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE SAY THINK(=+5) | i K+3",
+"sA": 0.539,
+"sS": 0.564,
+"sHS": 0.564,
+"wS": [
+"bargaining",
+"persuade"
+],
+"wHS": [
+"bargaining",
+"persuade"
+],
+"W3": "WANT(=-2) JOIN(=+3) THINK(=0) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i LIKE RULE(=+3) | i K0"
+},
+"alleged": {
+"A": "THINK(=+2) TIME(=-5) MANY(=-5) | i",
+"S": "THINK(=+2) TIME(=-5) MANY(=-5) | i LIKE SAY(=+1) KNOW(=+2) TIME(=-1) | i LIKE GIVE(=0) FRIEND(=-5) HAPPEN | i",
+"HS": "THINK(=+1) TIME(=-5) CARE(=-1) | i LIKE SAY(=+1) KNOW(=+2) TIME(=-1) | i LIKE GIVE(=0) FRIEND(=-5) HAPPEN | i",
+"sA": 0.102,
+"sS": 0.214,
+"sHS": 0.258,
+"wS": [
+"heard",
+"rape"
+],
+"wHS": [
+"heard",
+"rape"
+],
+"W3": "THINK(=+2) TIME(=-5) MANY(=-5) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i LIKE FIGHT(=0) | i"
+},
+"alleging": {
+"A": "THINK(=+1) TIME(=-5) RULE(=+3) | i",
+"S": "THINK(=+1) TIME(=-5) RULE(=+3) | i LIKE FRIEND(=-2) RULE(=+1) GIVE(=0) | i LIKE SAY(=+1) WANT(=-3) FRIEND(=-3) | i",
+"HS": "RULE(=+3) TIME(=-5) CARE(=-1) | i LIKE SAY(=+1) WANT(=-3) FRIEND(=-3) | i LIKE GIVE(=0) FRIEND(=-5) HAPPEN | i",
+"sA": 0.165,
+"sS": 0.302,
+"sHS": 0.329,
+"wS": [
+"abuse",
+"protests"
+],
+"wHS": [
+"protests",
+"rape"
+],
+"W3": "THINK(=+1) TIME(=-5) RULE(=+3) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i LIKE RULE(=+5) WANT(=+1) FEEL(=+2) | i"
+},
+"applications": {
+"A": "ART(=-2) GIVE(=+4) TEXT | o N+3",
+"S": "ART(=-2) GIVE(=+4) TEXT | o N+3 LIKE RULE(=+2) WANT(=+2) CAN(=+1) | o LIKE ART(=-3) CAN(=+3) MEASURE(=-1) | o",
+"HS": "ART(=-2) GIVE(=+4) CAN(=+2) | o N+3 LIKE BEGIN(=0) ART(=-3) RULE(=+4) | o LIKE WANT(=+2) RULE(=+5) SAY(=+3) | o",
+"sA": 0.293,
+"sS": 0.359,
+"sHS": 0.388,
+"wS": [
+"requirement",
+"utility"
+],
+"wHS": [
+"implementation",
+"appeal"
+],
+"W3": "ART(=-2) GIVE(=+4) TEXT | o N+3 LIKE RULE(=+2) GIVE(=+2) BEGIN(=0) | o LIKE ART(=-4) DO THING | o"
+},
+"assume": {
+"A": "THINK(=0) GIVE(=0) MANY(=-1) | i",
+"S": "THINK(=0) GIVE(=0) MANY(=-1) | i LIKE KNOW(=+1) WANT(=+1) DO | i LIKE THINK(=-2) SOMEONE(=+2) DO | i",
+"HS": "THINK(=-1) GIVE(=-1) DO | i LIKE KNOW(=+2) MANY(=-1) WANT(=+1) | i",
+"sA": 0.506,
+"sS": 0.551,
+"sHS": 0.576,
+"wS": [
+"realize",
+"think"
+],
+"wHS": [
+"know"
+],
+"W3": "THINK(=0) GIVE(=0) MANY(=-1) | i LIKE ART(=-5) THINK MEASURE | i LIKE RULE(=+3) | i K0"
+},
+"attracting": {
+"A": "FEEL(=+1) INSIDE(=-3) SAME(=-3) | i",
+"S": "FEEL(=+1) INSIDE(=-3) SAME(=-3) | i LIKE NEAR(=-1) MOVE(=+3) THING(=+3) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i",
+"HS": "FEEL(=+1) INSIDE(=-4) BIG(=+1) | i LIKE NEAR(=-1) MOVE(=+3) THING(=+3) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i",
+"sA": 0.112,
+"sS": 0.159,
+"sHS": 0.181,
+"wS": [
+"chased",
+"chasing"
+],
+"wHS": [
+"chased",
+"chasing"
+],
+"W3": "FEEL(=+1) INSIDE(=-3) SAME(=-3) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i"
+},
+"believe": {
+"A": "THINK(=-1) WANT(=0) MANY(=-1) | i",
+"S": "THINK(=-1) WANT(=0) MANY(=-1) | i LIKE KNOW(=+2) THINK(=+1) CAN(=-1) | i LIKE THINK(=-2) KNOW(=+1) FEEL(=0) | i",
+"HS": "THINK(=-1) WANT(=0) | i LIKE KNOW(=+2) MANY(=-1) | i",
+"sA": 0.508,
+"sS": 0.537,
+"sHS": 0.565,
+"wS": [
+"understand",
+"wondering"
+],
+"wHS": [
+"knows"
+],
+"W3": "THINK(=-1) WANT(=0) MANY(=-1) | i LIKE RULE(=+2) CHANGE(=+2) SIDE(=-2) | i LIKE CAN(=0) DO BEGIN(=+1) | i"
+},
+"billboard": {
+"A": "TEXT LONG(=+3) ART(=+2) | o",
+"S": "TEXT LONG(=+3) ART(=+2) | o LIKE PLACE SEE | o LIKE PLACE ABOVE(=+3) LONG(=+3) | o",
+"HS": "TEXT LONG(=+3) ABOVE(=+2) | o LIKE PLACE SEE | o LIKE GRAIN(=+3) ART(=+5) MOVE(=-5) | o",
+"sA": 0.25,
+"sS": 0.309,
+"sHS": 0.347,
+"wS": [
+"spot",
+"tower"
+],
+"wHS": [
+"spot",
+"statue"
+],
+"W3": "TEXT LONG(=+3) ART(=+2) | o LIKE MOVE(=+4) | o tool LIKE VALUE(=-3) NEAR(=+2) PLACE | o"
+},
+"blessed": {
+"A": "GOOD(=+1) MOOD(=+3) WANT(=+2) | i",
+"S": "GOOD(=+1) MOOD(=+3) WANT(=+2) | i LIKE HAPPEN | o result LIKE GIVE(=+3) GOOD(=+4) LIVE(=-2) | i",
+"HS": "GOOD(=+2) MOOD(=+2) | i LIKE GIVE(=+3) GOOD(=+4) LIVE(=-2) | i",
+"sA": 0.244,
+"sS": 0.267,
+"sHS": 0.278,
+"wS": [
+"consequence",
+"honor"
+],
+"wHS": [
+"honor"
+],
+"W3": "GOOD(=+1) MOOD(=+3) WANT(=+2) | i LIKE RULE(=+3) LIVE(=-1) SOMEONE(=+2) | i LIKE DO MOOD(=+3) PART(=+5) | i"
+},
+"box": {
+"A": "LONG(=+2) INSIDE(=+2) PART(=+1) | o",
+"S": "LONG(=+2) INSIDE(=+2) PART(=+1) | o LIKE INSIDE(=+1) PLACE NEAR(=-2) | o PI INSIDE(=+1) ABOVE(=-2) PLACE | o",
+"HS": "LONG(=+2) INSIDE(=+2) SOMEONE(=+1) | o LIKE INSIDE(=+1) PLACE NEAR(=-2) | o PI INSIDE(=+1) ABOVE(=-2) PLACE | o",
+"sA": 0.203,
+"sS": 0.298,
+"sHS": 0.308,
+"wS": [
+"home",
+"basement"
+],
+"wHS": [
+"home",
+"basement"
+],
+"W3": "LONG(=+2) INSIDE(=+2) PART(=+1) | o LIKE THING(=-5) FIGHT(=-5) | o LIKE INSIDE(=+1) ABOVE(=-2) PLACE | o"
+},
+"breath": {
+"A": "CONSUME(=0) GRAIN(=-4) SAY(=-2) | o",
+"S": "CONSUME(=0) GRAIN(=-4) SAY(=-2) | o LIKE BODY MEASURE(=-2) TOUCH(=+1) | o LIKE ABOVE(=-1) GRAIN(=-4) CAN(=-3) | o",
+"HS": "CONSUME(=0) GRAIN(=-4) BODY | o LIKE MOVE(=-3) FEEL(=-5) BEGIN(=+2) | o LIKE WANT(=+4) TIME(=-5) SAY(=-4) | o",
+"sA": 0.436,
+"sS": 0.483,
+"sHS": 0.478,
+"wS": [
+"muscle",
+"pressure"
+],
+"wHS": [
+"rest",
+"memory"
+],
+"W3": "CONSUME(=0) GRAIN(=-4) SAY(=-2) | o LIKE BODY CONSUME(=-1) SAY(=-1) | o LIKE GRAIN(=-5) HEAT(=+3) | o"
+},
+"button": {
+"A": "LONG(=-1) ABOVE(=-3) MOVE(=+2) | o",
+"S": "LONG(=-1) ABOVE(=-3) MOVE(=+2) | o LIKE SIDE(=-1) INSIDE(=-1) | o LIKE TEXT RULE(=-3) ART(=-5) | o agent",
+"HS": "LONG(=-1) SIDE(=0) BIG(=-2) | o LIKE SIDE(=-1) INSIDE(=-1) | o LIKE TEXT RULE(=-3) ART(=-5) | o agent",
+"sA": 0.077,
+"sS": 0.163,
+"sHS": 0.249,
+"wS": [
+"rear",
+"user"
+],
+"wHS": [
+"rear",
+"user"
+],
+"W3": "LONG(=-1) ABOVE(=-3) MOVE(=+2) | o LIKE SOMEONE FIGHT(=-5) | o LIKE INSIDE(=+4) CAN(=+4) | o tool"
+},
+"carefully": {
+"A": "CARE(=+3) SOMEONE(=-3) SAY(=-2) | e",
+"S": "CARE(=+3) SOMEONE(=-3) SAY(=-2) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e LIKE SOMEONE(=0) MOOD(=-4) CARE(=+4) | e",
+"HS": "CARE(=+3) MANY(=+3) SAY(=-3) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e LIKE SOMEONE(=0) MOOD(=-4) CARE(=+4) | e",
+"sA": 0.574,
+"sS": 0.591,
+"sHS": 0.606,
+"wS": [
+"extensively",
+"deeply"
+],
+"wHS": [
+"extensively",
+"deeply"
+],
+"W3": "CARE(=+3) SOMEONE(=-3) SAY(=-2) | e LIKE CARE(=+5) PART(=+2) | e LIKE SAY(=-3) SOMEONE(=-4) MOVE(=0) | e"
+},
+"carnival": {
+"A": "FIGHT(=-2) MOOD(=+4) THING(=+3) | o",
+"S": "FIGHT(=-2) MOOD(=+4) THING(=+3) | o LIKE HAPPEN MOOD(=+1) GIVE(=+1) | o LIKE PLACE LAND(=-4) INSIDE(=-2) | o",
+"HS": "FIGHT(=-2) MOOD(=+4) HAPPEN | o LIKE HAPPEN MOOD(=+1) GIVE(=+1) | o LIKE PART(=+4) FIGHT(=-4) LONG(=+2) | o",
+"sA": 0.279,
+"sS": 0.309,
+"sHS": 0.312,
+"wS": [
+"occasion",
+"haven"
+],
+"wHS": [
+"occasion",
+"club"
+],
+"W3": "FIGHT(=-2) MOOD(=+4) THING(=+3) | o LIKE MOOD(=+3) PART(=+5) | o LIKE MOOD(=+3) BEGIN(=+3) LAND(=-2) | o N+3"
+},
+"cast": {
+"A": "GRAIN(=+2) PART(=+4) JOIN(=-2) | i",
+"S": "GRAIN(=+2) PART(=+4) JOIN(=-2) | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE MEASURE(=+1) LONG(=+2) TOUCH(=0) | i",
+"HS": "GRAIN(=+2) LONG(=+1) DO | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE JOIN(=-1) WANT(=-2) MOVE(=-2) | i",
+"sA": 0.153,
+"sS": 0.214,
+"sHS": 0.275,
+"wS": [
+"painting",
+"weighted"
+],
+"wHS": [
+"painting",
+"suspend"
+],
+"W3": "GRAIN(=+2) PART(=+4) JOIN(=-2) | i LIKE GRAIN(=+4) ART(=+4) SAME(=-2) | i LIKE THINK(=+5) MANY(=+5) | i"
+},
+"causing": {
+"A": "HAPPEN FEEL(=0) SIDE(=-1) | i",
+"S": "HAPPEN FEEL(=0) SIDE(=-1) | i LIKE DO JOIN(=+1) GRAIN(=+1) | i LIKE DO JOIN(=+2) HAPPEN | i",
+"HS": "HAPPEN FEEL(=0) | i LIKE DO JOIN(=+1) GRAIN(=+1) | i LIKE DO JOIN(=+2) HAPPEN | i",
+"sA": 0.253,
+"sS": 0.312,
+"sHS": 0.325,
+"wS": [
+"create",
+"involve"
+],
+"wHS": [
+"create",
+"involve"
+],
+"W3": "HAPPEN FEEL(=0) SIDE(=-1) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE CHANGE(=+1) VALUE(=+5) GOOD(=-5) | i"
+},
+"certain": {
+"A": "SAME(=-1) MANY(=0) THINK(=+1) | a",
+"S": "SAME(=-1) MANY(=0) THINK(=+1) | a LIKE CAN(=+1) | a LIKE KNOW(=+2) | a",
+"HS": "SAME(=-1) MANY(=0) CAN(=+1) | a LIKE KNOW(=+2) | a LIKE RULE(=+2) WANT(=0) BEGIN(=-1) | a",
+"sA": 0.258,
+"sS": 0.357,
+"sHS": 0.409,
+"wS": [
+"able",
+"aware"
+],
+"wHS": [
+"aware",
+"mandatory"
+],
+"W3": "SAME(=-1) MANY(=0) THINK(=+1) | a LIKE CAN(=+2) SAME(=+1) THINK(=+2) | a LIKE FRIEND(=+4) | a"
+},
+"chair": {
+"A": "LONG(=+2) MOVE(=-3) RULE(=+2) | o",
+"S": "LONG(=+2) MOVE(=-3) RULE(=+2) | o PI ABOVE(=-1) GRAIN(=+1) PLACE | o FOR FEEL(=-3) LONG(=+3) BODY | o",
+"HS": "LONG(=+3) RULE(=+3) BODY | o LIKE SOMEONE SIDE(=+5) RULE | o PI ABOVE(=-1) GRAIN(=+1) PLACE | o",
+"sA": 0.254,
+"sS": 0.312,
+"sHS": 0.342,
+"wS": [
+"floor",
+"bed"
+],
+"wHS": [
+"leader",
+"floor"
+],
+"W3": "LONG(=+2) MOVE(=-3) RULE(=+2) | o LIKE PLACE INSIDE(=+5) PART(=-2) | o LIKE SOMEONE SIDE(=+5) RULE | o"
+},
+"chairman": {
+"A": "RULE(=+4) TIME(=-2) PART(=+4) | o agent",
+"S": "RULE(=+4) TIME(=-2) PART(=+4) | o agent LIKE SOMEONE SIDE(=+5) RULE | o LIKE TIME(=+1) RULE(=+4) CAN(=+3) | o agent",
+"HS": "RULE(=+4) TIME(=-2) SIDE(=+2) | o agent LIKE SOMEONE SIDE(=+5) RULE | o",
+"sA": 0.387,
+"sS": 0.441,
+"sHS": 0.478,
+"wS": [
+"leader",
+"successor"
+],
+"wHS": [
+"leader"
+],
+"W3": "RULE(=+4) TIME(=-2) PART(=+4) | o agent LIKE TIME(=+2) LIVE(=-5) RULE(=+4) | o agent LIKE SOMEONE SIDE(=+5) RULE | o"
+},
+"chapel": {
+"A": "INSIDE(=0) NEAR(=+5) ART(=+4) | o",
+"S": "INSIDE(=0) NEAR(=+5) ART(=+4) | o LIKE PLACE THING(=-1) SAY(=-1) | o LIKE PLACE LIVE(=-5) THING(=-1) | o",
+"HS": "PLACE NEAR(=+5) ART(=+4) | o LIKE PLACE THING(=-1) SAY(=-1) | o LIKE NEAR(=+1) LIVE(=-3) THING(=-4) | o N+3",
+"sA": 0.154,
+"sS": 0.279,
+"sHS": 0.341,
+"wS": [
+"grove",
+"cemetery"
+],
+"wHS": [
+"grove",
+"ruins"
+],
+"W3": "INSIDE(=0) NEAR(=+5) ART(=+4) | o LIKE MOOD(=-5) LIVE(=-5) PART(=+5) | o LIKE BEGIN(=-1) HAPPEN RULE(=+2) | o"
+},
+"charging": {
+"A": "MOVE(=-1) CARE(=-4) BEGIN(=-5) | i",
+"S": "MOVE(=-1) CARE(=-4) BEGIN(=-5) | i LIKE VALUE GIVE(=+4) | i LIKE VALUE(=-2) MEASURE(=+1) GIVE(=+2) | i",
+"HS": "MOVE(=0) BEGIN(=-5) SIDE(=+1) | i LIKE VALUE GIVE(=+4) | i LIKE VALUE(=0) MEASURE(=+1) | i",
+"sA": 0.2,
+"sS": 0.275,
+"sHS": 0.298,
+"wS": [
+"pay",
+"discount"
+],
+"wHS": [
+"pay",
+"costs"
+],
+"W3": "MOVE(=-1) CARE(=-4) BEGIN(=-5) | i LIKE VALUE GIVE(=+4) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i"
+},
+"chief": {
+"A": "RULE(=+3) TIME(=-1) BODY | a",
+"S": "RULE(=+3) TIME(=-1) BODY | a LIKE RULE(=+3) SOMEONE(=-3) THING(=+2) | o LIKE RULE(=+1) TIME(=-4) ABOVE(=+3) | a",
+"HS": "RULE(=+3) TIME(=-2) SIDE(=+2) | a LIKE ( RULE(=+3) SOMEONE(=-3) THING(=+2) | o LIKE GOOD(=+2) ABOVE(=+2) RULE(=+2) | a )",
+"sA": 0.328,
+"sS": 0.368,
+"sHS": 0.418,
+"wS": [
+"authorities",
+"senior"
+],
+"wHS": [
+"authorities",
+"superior",
+"nested"
+],
+"W3": "RULE(=+3) TIME(=-1) BODY | a LIKE SAME(=+4) MANY(=+5) | a LIKE ABOVE(=+2) BEGIN(=+2) MEASURE(=+1) | a"
+},
+"choose": {
+"A": "THINK(=+3) WANT(=0) SAME(=-3) | i",
+"S": "THINK(=+3) WANT(=0) SAME(=-3) | i LIKE THINK(=+5) MANY(=+5) | i LIKE CAN(=0) THINK(=+5) GIVE(=-2) | i",
+"HS": "THINK(=+3) WANT(=0) SAME(=-3) | i LIKE THINK(=+5) MANY(=+5) | i LIKE CAN(=0) THINK(=+5) GIVE(=-2) | i",
+"sA": 0.58,
+"sS": 0.611,
+"sHS": 0.611,
+"wS": [
+"vote",
+"manage"
+],
+"wHS": [
+"vote",
+"manage"
+],
+"W3": "THINK(=+3) WANT(=0) SAME(=-3) | i LIKE WANT(=-1) SAME(=-3) CAN(=+4) | i LIKE THINK(=+5) MANY(=+5) | i"
+},
+"churches": {
+"A": "INSIDE(=0) ART(=+4) PART(=+3) | o N+3",
+"S": "INSIDE(=0) ART(=+4) PART(=+3) | o N+3 LIKE PLACE THING(=0) RULE(=+2) | o LIKE PLACE PART(=+3) FRIEND(=+2) | o",
+"HS": "PLACE ART(=+5) PART(=+5) | o N+3 LIKE PLACE THING(=0) RULE(=+2) | o LIKE BODY INSIDE(=+5) PART(=-2) | o",
+"sA": 0.226,
+"sS": 0.296,
+"sHS": 0.346,
+"wS": [
+"township",
+"commune"
+],
+"wHS": [
+"township",
+"organ"
+],
+"W3": "INSIDE(=0) ART(=+4) PART(=+3) | o N+3 LIKE PLACE INSIDE(=+5) LIVE | o LIKE FIGHT(=+5) FRIEND(=-3) HEAT(=+5) | o N+3"
+},
+"cigarette": {
+"A": "GRAIN(=-2) HEAT(=+5) CONSUME(=+4) | o",
+"S": "GRAIN(=-2) HEAT(=+5) CONSUME(=+4) | o LIKE LONG(=0) TOUCH(=-2) ART(=-1) | o FOR HEAT(=+2) BIG(=-2) SEE | o",
+"HS": "GRAIN(=-2) HEAT(=+5) CONSUME(=+4) | o LIKE LONG(=0) TOUCH(=-2) ART(=-1) | o FOR HEAT(=+2) BIG(=-2) SEE | o",
+"sA": 0.26,
+"sS": 0.313,
+"sHS": 0.313,
+"wS": [
+"plastic",
+"light"
+],
+"wHS": [
+"plastic",
+"light"
+],
+"W3": "GRAIN(=-2) HEAT(=+5) CONSUME(=+4) | o LIKE HEAT(=+4) GRAIN(=-1) LONG(=+1) | o LIKE GRAIN(=-3) HEAT(=+4) ART(=-2) | o"
+},
+"claiming": {
+"A": "GIVE(=+1) MANY(=-5) SOMEONE(=-4) | i",
+"S": "GIVE(=+1) MANY(=-5) SOMEONE(=-4) | i LIKE SAY THINK | i LIKE SAY(=+1) WANT(=-3) FRIEND(=-3) | i",
+"HS": "GIVE(=+1) MANY(=-4) TIME(=-3) | i LIKE SAY(=+1) WANT(=-2) THINK(=0) | i LIKE SAY(=+1) WANT(=-3) FRIEND(=-3) | i",
+"sA": 0.042,
+"sS": 0.194,
+"sHS": 0.247,
+"wS": [
+"imply",
+"protests"
+],
+"wHS": [
+"complain",
+"protests"
+],
+"W3": "GIVE(=+1) MANY(=-5) SOMEONE(=-4) | i LIKE FIGHT(=0) THINK(=0) RULE(=+1) | i LIKE DO GOOD(=-4) | i K-4"
+},
+"clearing": {
+"A": "GRAIN(=0) JOIN(=-5) LAND(=+4) | i",
+"S": "GRAIN(=0) JOIN(=-5) LAND(=+4) | i LIKE FIGHT(=-1) GIVE(=-4) CARE(=+2) | i LIKE ABOVE(=+1) GIVE(=-1) BODY | i",
+"HS": "FEEL(=-1) JOIN(=-5) LAND(=+4) | i LIKE CHANGE(=+3) PART(=+4) CARE(=+2) | i LIKE ABOVE(=+1) GIVE(=-1) BODY | i",
+"sA": 0.212,
+"sS": 0.226,
+"sHS": 0.227,
+"wS": [
+"sweep",
+"lifts"
+],
+"wHS": [
+"restructuring",
+"lifts"
+],
+"W3": "GRAIN(=0) JOIN(=-5) LAND(=+4) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i"
+},
+"collapsed": {
+"A": "ABOVE(=-2) LIVE(=-3) GRAIN(=+2) | i",
+"S": "ABOVE(=-2) LIVE(=-3) GRAIN(=+2) | i LIKE LIVE(=+1) JOIN(=+1) TIME(=-1) | i LIKE GRAIN(=0) ABOVE(=-3) INSIDE(=+1) | i",
+"HS": "ABOVE(=-3) LIVE(=-3) TIME(=-2) | i LIKE GRAIN(=0) ABOVE(=-3) INSIDE(=+1) | i LIKE JOIN(=-4) LONG(=-5) SAY(=+5) | i",
+"sA": 0.308,
+"sS": 0.342,
+"sHS": 0.379,
+"wS": [
+"revive",
+"tunnel"
+],
+"wHS": [
+"tunnel",
+"ripped"
+],
+"W3": "ABOVE(=-2) LIVE(=-3) GRAIN(=+2) | i LIKE ABOVE(=-3) GIVE(=-1) LAND(=-4) | i LIKE ABOVE(=-1) JOIN(=-2) TIME(=-1) | i"
+},
+"confined": {
+"A": "INSIDE(=+1) NEAR(=-1) MOVE(=-3) | i",
+"S": "INSIDE(=+1) NEAR(=-1) MOVE(=-3) | i LIKE MOVE INSIDE(=+5) | i LIKE LONG(=0) CAN(=+4) INSIDE(=+2) | i",
+"HS": "INSIDE(=+1) MOVE(=-3) BIG(=0) | i LIKE LONG(=0) CAN(=+4) INSIDE(=+2) | i",
+"sA": 0.263,
+"sS": 0.279,
+"sHS": 0.305,
+"wS": [
+"enter",
+"fitted"
+],
+"wHS": [
+"fitted"
+],
+"W3": "INSIDE(=+1) NEAR(=-1) MOVE(=-3) | i LIKE RULE(=+3) LAND(=0) CHANGE(=0) | i LIKE BEGIN(=-1) INSIDE(=+3) NEAR(=+1) | i"
+},
+"confused": {
+"A": "FEEL(=0) THINK(=-1) KNOW(=-1) | i",
+"S": "FEEL(=0) THINK(=-1) KNOW(=-1) | i LIKE FEEL(=+4) GOOD(=-4) | i K+4 LIKE THINK(=0) MANY(=-2) FEEL(=+2) | i",
+"HS": "FEEL(=0) KNOW(=-1) SOMEONE(=0) | i LIKE MOOD(=-5) CAN(=-5) | o LIKE THINK(=0) MANY(=-2) FEEL(=+2) | i",
+"sA": 0.309,
+"sS": 0.333,
+"sHS": 0.382,
+"wS": [
+"frighten",
+"convinced"
+],
+"wHS": [
+"despair",
+"convinced"
+],
+"W3": "FEEL(=0) THINK(=-1) KNOW(=-1) | i LIKE FEEL(=0) MOOD(=-2) WANT(=-2) | i LIKE FEEL(=+4) GOOD(=-4) | i K+4"
+},
+"consensus": {
+"A": "RULE(=+4) BEGIN(=+3) PART(=+3) | o",
+"S": "RULE(=+4) BEGIN(=+3) PART(=+3) | o LIKE THINK(=+5) SAME(=+5) | o LIKE FIGHT(=-1) THINK(=-2) HEAT(=+2) | o",
+"HS": "RULE(=+3) BEGIN(=+3) THINK(=0) | o LIKE THINK(=+5) SAME(=+5) | o LIKE PART(=+3) JOIN(=+5) FRIEND(=0) | o",
+"sA": 0.36,
+"sS": 0.416,
+"sHS": 0.438,
+"wS": [
+"agreement",
+"controversy"
+],
+"wHS": [
+"agreement",
+"alliance"
+],
+"W3": "RULE(=+4) BEGIN(=+3) PART(=+3) | o LIKE FIGHT(=+1) FRIEND(=0) HAPPEN | o LIKE HEAT(=0) CHANGE(=+2) LAND(=0) | o"
+},
+"controversial": {
+"A": "THINK(=-1) VALUE(=+4) WANT(=-5) | a",
+"S": "THINK(=-1) VALUE(=+4) WANT(=-5) | a LIKE RULE(=+1) ART(=+1) FIGHT(=+1) | a LIKE TIME(=-2) BIG(=+4) FRIEND(=-4) | a",
+"HS": "THINK(=-1) VALUE(=+2) SAME(=-4) | a LIKE RULE(=+1) ART(=+1) FIGHT(=+1) | a LIKE TIME(=-2) BIG(=+4) FRIEND(=-4) | a",
+"sA": 0.249,
+"sS": 0.379,
+"sHS": 0.415,
+"wS": [
+"political",
+"notorious"
+],
+"wHS": [
+"political",
+"notorious"
+],
+"W3": "THINK(=-1) VALUE(=+4) WANT(=-5) | a LIKE KNOW MANY(=+5) | a LIKE THINK(=-3) FEEL(=+2) WANT(=-4) | a"
+},
+"conventional": {
+"A": "SAME(=-1) RULE(=0) ART(=0) | a",
+"S": "SAME(=-1) RULE(=0) ART(=0) | a LIKE ART(=-3) BIG(=-1) | a LIKE SAME(=-2) WANT(=-3) MANY(=-2) | a",
+"HS": "SAME(=-1) RULE(=0) CAN(=+2) | a LIKE ART(=-3) BIG(=-1) | a LIKE RULE(=+2) ART(=+4) SAME(=0) | a",
+"sA": 0.367,
+"sS": 0.39,
+"sHS": 0.422,
+"wS": [
+"mechanical",
+"contrary"
+],
+"wHS": [
+"mechanical",
+"orthodox"
+],
+"W3": "SAME(=-1) RULE(=0) ART(=0) | a LIKE SAME(=+3) | a LIKE VALUE(=+4) | a"
+},
+"convinced": {
+"A": "THINK(=0) MANY(=-2) FEEL(=+2) | i",
+"S": "THINK(=0) MANY(=-2) FEEL(=+2) | i LIKE THINK(=+5) GOOD(=+4) | i LIKE CHANGE(=-3) THINK(=+5) KNOW(=+4) | i",
+"HS": "KNOW(=+1) THINK(=-1) WANT(=-1) | i LIKE THINK(=+5) GOOD(=+4) | i LIKE THINK(=-2) SOMEONE(=+2) DO | i",
+"sA": 0.32,
+"sS": 0.388,
+"sHS": 0.434,
+"wS": [
+"trust",
+"ensure"
+],
+"wHS": [
+"trust",
+"think"
+],
+"W3": "THINK(=0) MANY(=-2) FEEL(=+2) | i LIKE FEEL(=0) MOOD(=-2) WANT(=-2) | i LIKE SAY THINK(=+5) | i K+3"
+},
+"cow": {
+"A": "THING(=+3) GRAIN(=+2) | o",
+"S": "THING(=+3) GRAIN(=+2) | o LIKE GRAIN(=0) ABOVE(=+2) NEAR(=-3) | o LIKE THING(=+3) SEX(=-4) RULE(=-2) | o",
+"HS": "THING(=+3) GRAIN(=+2) | o LIKE GRAIN(=0) ABOVE(=+2) NEAR(=-3) | o LIKE THING(=+3) SEX(=-4) RULE(=-2) | o",
+"sA": 0.474,
+"sS": 0.486,
+"sHS": 0.486,
+"wS": [
+"cloud",
+"female"
+],
+"wHS": [
+"cloud",
+"female"
+],
+"W3": "THING(=+3) GRAIN(=+2) | o LIKE THING(=+4) CONSUME(=-1) GRAIN(=+2) | o N+3 LIKE PLACE THING(=0) DO | o"
+},
+"creator": {
+"A": "ART(=+1) WANT(=+1) LIVE(=0) | o agent",
+"S": "ART(=+1) WANT(=+1) LIVE(=0) | o agent LIKE DO ART(=+2) GOOD(=+2) | o agent LIKE TEXT RULE(=-3) ART(=-5) | o agent",
+"HS": "ART(=+1) WANT(=+2) GIVE(=+4) | o agent LIKE DO ART(=+2) GOOD(=+2) | o agent LIKE DO ART(=+1) MOOD(=-1) | o agent",
+"sA": 0.303,
+"sS": 0.363,
+"sHS": 0.379,
+"wS": [
+"performer",
+"user"
+],
+"wHS": [
+"performer",
+"actor"
+],
+"W3": "ART(=+1) WANT(=+1) LIVE(=0) | o agent LIKE ART MOOD(=+5) | o LIKE TEXT | o agent"
+},
+"credentials": {
+"A": "RULE(=+1) MANY(=-3) GIVE(=+1) | o",
+"S": "RULE(=+1) MANY(=-3) GIVE(=+1) | o LIKE CAN | o quality LIKE KNOW(=+2) RULE(=+1) ART(=0) | o",
+"HS": "RULE(=+1) GIVE(=+1) SOMEONE(=-2) | o LIKE CAN | o quality LIKE KNOW(=+2) RULE(=+1) ART(=0) | o",
+"sA": 0.16,
+"sS": 0.273,
+"sHS": 0.365,
+"wS": [
+"ability",
+"knowledge"
+],
+"wHS": [
+"ability",
+"knowledge"
+],
+"W3": "RULE(=+1) MANY(=-3) GIVE(=+1) | o LIKE ART(=+4) KNOW TIME(=-3) | o LIKE CAN | o quality"
+},
+"credit": {
+"A": "GIVE(=+1) MEASURE(=+2) RULE(=0) | o",
+"S": "GIVE(=+1) MEASURE(=+2) RULE(=0) | o FOR VALUE GIVE(=0) | o FOR VALUE GIVE(=+4) TIME(=+3) | o",
+"HS": "GIVE(=+2) MEASURE(=+2) GOOD(=+1) | o FOR VALUE GIVE(=0) | o FOR VALUE GIVE(=+4) TIME(=+3) | o",
+"sA": 0.301,
+"sS": 0.348,
+"sHS": 0.358,
+"wS": [
+"money",
+"debt"
+],
+"wHS": [
+"money",
+"debt"
+],
+"W3": "GIVE(=+1) MEASURE(=+2) RULE(=0) | o LIKE MOVE(=+4) | o tool LIKE MANY(=-5) MEASURE(=-5) | o"
+},
+"creditors": {
+"A": "RULE(=+1) CAN(=-2) PART(=+4) | o agent N+3",
+"S": "RULE(=+1) CAN(=-2) PART(=+4) | o agent N+3 LIKE VALUE GIVE(=+4) TIME(=+3) | o LIKE VALUE(=-3) TEXT HAPPEN | o",
+"HS": "RULE(=+2) PART(=+5) INSIDE(=-5) | o agent N+3 LIKE VALUE GIVE(=+4) TIME(=+3) | o LIKE VALUE(=-3) TEXT HAPPEN | o",
+"sA": 0.195,
+"sS": 0.293,
+"sHS": 0.323,
+"wS": [
+"debt",
+"transaction"
+],
+"wHS": [
+"debt",
+"transaction"
+],
+"W3": "RULE(=+1) CAN(=-2) PART(=+4) | o agent N+3 LIKE WANT(=+2) TIME(=+3) MEASURE(=+3) | o N+3 LIKE VALUE GIVE(=+4) TIME(=+3) | o"
+},
+"cricket": {
+"A": "FIGHT(=-3) INSIDE(=-3) MOVE(=+1) | o",
+"S": "FIGHT(=-3) INSIDE(=-3) MOVE(=+1) | o LIKE VALUE(=-1) FIGHT(=-4) RULE(=+4) | o LIKE FIGHT(=-3) HEAT(=-4) LONG(=+4) | o agent",
+"HS": "FIGHT(=-2) LONG(=+2) | o LIKE VALUE(=-1) FIGHT(=-4) RULE(=+4) | o LIKE FIGHT(=-5) BODY | o",
+"sA": 0.367,
+"sS": 0.402,
+"sHS": 0.411,
+"wS": [
+"monopoly",
+"puck"
+],
+"wHS": [
+"monopoly",
+"sport"
+],
+"W3": "FIGHT(=-3) INSIDE(=-3) MOVE(=+1) | o LIKE PLACE RULE(=+4) THINK(=+5) | o LIKE ART(=+5) SAY THING | o"
+},
+"criticized": {
+"A": "WANT(=-3) CARE(=-1) TIME(=-3) | i",
+"S": "WANT(=-3) CARE(=-1) TIME(=-3) | i LIKE SAY(=+1) WANT(=-3) RULE(=+2) | i LIKE SAY(=+1) WANT(=-2) THINK(=0) | i",
+"HS": "WANT(=-4) CARE(=-2) FRIEND(=-2) | i LIKE SAY(=+1) WANT(=-3) RULE(=+2) | i LIKE SAY(=+1) WANT(=-2) THINK(=0) | i",
+"sA": 0.215,
+"sS": 0.305,
+"sHS": 0.385,
+"wS": [
+"protest",
+"complain"
+],
+"wHS": [
+"protest",
+"complain"
+],
+"W3": "WANT(=-3) CARE(=-1) TIME(=-3) | i LIKE SAY(=+1) WANT(=-2) THINK(=0) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i"
+},
+"cult": {
+"A": "PART(=+3) ART(=+4) LIVE(=-2) | o",
+"S": "PART(=+3) ART(=+4) LIVE(=-2) | o LIKE PART(=+3) RULE(=-3) FRIEND(=+5) | o LIKE PART(=+5) FEEL(=+5) LIVE(=-2) | o",
+"HS": "PART(=+3) ART(=+5) THING(=0) | o LIKE PART(=+3) RULE(=-3) FRIEND(=+5) | o LIKE PART(=+5) FEEL(=+5) LIVE(=-2) | o",
+"sA": 0.28,
+"sS": 0.299,
+"sHS": 0.309,
+"wS": [
+"family",
+"followers"
+],
+"wHS": [
+"family",
+"followers"
+],
+"W3": "PART(=+3) ART(=+4) LIVE(=-2) | o LIKE RULE(=+4) | o LIKE LAND(=+1) ABOVE(=+2) THING(=-2) | o"
+},
+"damaged": {
+"A": "JOIN(=-3) VALUE(=+5) GOOD(=-5) | i",
+"S": "JOIN(=-3) VALUE(=+5) GOOD(=-5) | i LIKE CHANGE(=0) SIDE(=-5) LIVE(=+1) | i LIKE FIGHT(=+4) HEAT(=+4) INSIDE(=-5) | i",
+"HS": "LIVE(=0) JOIN(=-4) GOOD(=-4) | i LIKE CHANGE(=0) SIDE(=-5) LIVE(=+1) | i LIKE FIGHT(=+4) HEAT(=+4) INSIDE(=-5) | i",
+"sA": 0.211,
+"sS": 0.261,
+"sHS": 0.281,
+"wS": [
+"restored",
+"shelling"
+],
+"wHS": [
+"restored",
+"shelling"
+],
+"W3": "JOIN(=-3) VALUE(=+5) GOOD(=-5) | i LIKE LIVE(=+2) ART(=-5) CAN(=0) | i LIKE JOIN(=-4) LONG(=-5) SAY(=+5) | i"
+},
+"death": {
+"A": "LIVE(=-2) | o",
+"S": "LIVE(=-2) | o LIKE MEASURE(=0) LIVE(=-5) SIDE(=+5) | o LIKE SEX(=-3) LIVE(=-5) MOOD(=-3) | o agent",
+"HS": "LIVE(=-4) FRIEND(=-1) | o LIKE MEASURE(=0) LIVE(=-5) SIDE(=+5) | o LIKE SEX(=-3) LIVE(=-5) MOOD(=-3) | o agent",
+"sA": 0.465,
+"sS": 0.594,
+"sHS": 0.677,
+"wS": [
+"toll",
+"widow"
+],
+"wHS": [
+"toll",
+"widow"
+],
+"W3": "LIVE(=-2) | o LIKE MOOD(=-5) LIVE(=-5) PART(=+5) | o LIKE ART MOOD(=-5) | o"
+},
+"debts": {
+"A": "MEASURE(=+2) GIVE(=+4) CAN(=-2) | o N+3",
+"S": "MEASURE(=+2) GIVE(=+4) CAN(=-2) | o N+3 LIKE VALUE(=-2) PART(=+3) ABOVE(=-1) | o LIKE VALUE(=0) ABOVE(=-1) GIVE(=+3) | o",
+"HS": "MEASURE(=+2) GIVE(=+4) SIDE(=-1) | o N+3 LIKE VALUE(=-2) PART(=+3) ABOVE(=-1) | o LIKE VALUE(=0) ABOVE(=-1) GIVE(=+3) | o",
+"sA": 0.157,
+"sS": 0.267,
+"sHS": 0.327,
+"wS": [
+"stock",
+"dollar"
+],
+"wHS": [
+"stock",
+"dollar"
+],
+"W3": "MEASURE(=+2) GIVE(=+4) CAN(=-2) | o N+3 LIKE WANT(=+2) TIME(=+3) MEASURE(=+3) | o N+3 LIKE VALUE GIVE(=0) | o"
+},
+"deficits": {
+"A": "MEASURE(=0) ABOVE(=-4) BEGIN(=+3) | o N+3",
+"S": "MEASURE(=0) ABOVE(=-4) BEGIN(=+3) | o N+3 LIKE BODY ART(=-1) LIVE(=+1) | o LIKE ABOVE(=-3) CARE(=-5) SAME(=-5) | o",
+"HS": "MEASURE(=+1) CHANGE(=0) SIDE(=+1) | o N+3 LIKE BODY ART(=-1) LIVE(=+1) | o LIKE ABOVE(=-3) CARE(=-5) SAME(=-5) | o",
+"sA": 0.203,
+"sS": 0.267,
+"sHS": 0.328,
+"wS": [
+"brain",
+"weakness"
+],
+"wHS": [
+"brain",
+"weakness"
+],
+"W3": "MEASURE(=0) ABOVE(=-4) BEGIN(=+3) | o N+3 LIKE CAN | o quality LIKE THING(=+4) CONSUME(=-1) GRAIN(=+2) | o N+3"
+},
+"defining": {
+"A": "THINK(=+2) SAME(=-3) LIVE(=+2) | i",
+"S": "THINK(=+2) SAME(=-3) LIVE(=+2) | i LIKE MOOD(=-5) | o LIKE SAME(=-2) THINK(=+3) KNOW(=+1) | i",
+"HS": "THINK(=+2) SAME(=-3) MEASURE(=-1) | i LIKE MOOD(=-5) | o LIKE SAME(=-2) THINK(=+3) KNOW(=+1) | i",
+"sA": 0.332,
+"sS": 0.346,
+"sHS": 0.354,
+"wS": [
+"grief",
+"identified"
+],
+"wHS": [
+"grief",
+"identified"
+],
+"W3": "THINK(=+2) SAME(=-3) LIVE(=+2) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE THINK(=0) WANT(=-2) SEE | i"
+},
+"delivered": {
+"A": "GIVE(=+1) CONSUME(=-2) TIME(=0) | i",
+"S": "GIVE(=+1) CONSUME(=-2) TIME(=0) | i LIKE MOVE NEAR(=+5) | i LIKE GIVE(=+2) MOVE(=+4) CONSUME(=-3) | i",
+"HS": "GIVE(=+2) CONSUME(=-2) | i LIKE MOVE NEAR(=+5) | i K+3 LIKE GIVE(=+2) MOVE(=+4) CONSUME(=-3) | i",
+"sA": 0.334,
+"sS": 0.374,
+"sHS": 0.389,
+"wS": [
+"arrive",
+"express"
+],
+"wHS": [
+"bring",
+"express"
+],
+"W3": "GIVE(=+1) CONSUME(=-2) TIME(=0) | i LIKE LONG(=0) CAN(=+4) INSIDE(=+2) | i LIKE MOVE NEAR(=+5) | i"
+},
+"democratic": {
+"A": "RULE(=+3) FIGHT(=-2) SIDE(=0) | a",
+"S": "RULE(=+3) FIGHT(=-2) SIDE(=0) | a LIKE RULE(=+2) PLACE THING(=+1) | a LIKE RULE(=+3) CARE(=-3) GOOD(=-3) | a",
+"HS": "RULE(=+3) SIDE(=0) CHANGE(=+1) | a LIKE RULE(=+3) PART(=+2) FIGHT(=0) | a",
+"sA": 0.229,
+"sS": 0.244,
+"sHS": 0.286,
+"wS": [
+"municipal",
+"corrupt"
+],
+"wHS": [
+"congressional"
+],
+"W3": "RULE(=+3) FIGHT(=-2) SIDE(=0) | a LIKE SAME(=+4) MANY(=+5) | a LIKE FRIEND(=+2) CHANGE(=-4) CARE(=+2) | a"
+},
+"descendants": {
+"A": "LIVE(=-1) TIME(=+3) PART(=+2) | o",
+"S": "LIVE(=-1) TIME(=+3) PART(=+2) | o LIKE ART(=+3) TIME(=-3) FIGHT(=+4) | o agent LIKE TIME(=+2) LIVE(=-5) RULE(=+4) | o agent",
+"HS": "TIME(=+2) LIVE(=-3) CHANGE(=-5) | o LIKE LIVE(=-2) LAND(=+4) WANT(=+5) | o agent N+3 LIKE ART(=+3) TIME(=-3) FIGHT(=+4) | o agent",
+"sA": 0.191,
+"sS": 0.283,
+"sHS": 0.401,
+"wS": [
+"historian",
+"heir"
+],
+"wHS": [
+"ancestors",
+"historian"
+],
+"W3": "LIVE(=-1) TIME(=+3) PART(=+2) | o LIKE SEX(=-3) | o agent N+3 LIKE MEASURE(=+1) THINK(=-1) HAPPEN | o"
+},
+"deserved": {
+"A": "GOOD(=+1) GIVE(=+2) CARE(=0) | i",
+"S": "GOOD(=+1) GIVE(=+2) CARE(=0) | i LIKE FIGHT GOOD(=+4) | i LIKE WANT(=-1) GOOD(=+5) SAY(=+2) | i",
+"HS": "GOOD(=+1) BEGIN(=+3) WANT(=0) | i LIKE FIGHT GOOD(=+4) | i LIKE GIVE(=+3) GOOD(=+4) LIVE(=-2) | i",
+"sA": 0.203,
+"sS": 0.291,
+"sHS": 0.343,
+"wS": [
+"win",
+"praise"
+],
+"wHS": [
+"win",
+"honor"
+],
+"W3": "GOOD(=+1) GIVE(=+2) CARE(=0) | i LIKE FIGHT(=0) | i LIKE CHANGE(=0) SIDE(=-5) LIVE(=+1) | i"
+},
+"detention": {
+"A": "RULE(=+4) CHANGE(=-3) NEAR(=0) | o",
+"S": "RULE(=+4) CHANGE(=-3) NEAR(=0) | o LIKE INSIDE(=-1) PLACE GIVE(=+2) | o LIKE PLACE MOVE(=-5) RULE(=+4) | o",
+"HS": "RULE(=+4) CHANGE(=-4) FRIEND(=-3) | o LIKE INSIDE(=-1) PLACE GIVE(=+2) | o LIKE PLACE MOVE(=-5) RULE(=+4) | o",
+"sA": 0.186,
+"sS": 0.241,
+"sHS": 0.262,
+"wS": [
+"shelter",
+"prison"
+],
+"wHS": [
+"shelter",
+"prison"
+],
+"W3": "RULE(=+4) CHANGE(=-3) NEAR(=0) | o LIKE PLACE MOVE(=-5) RULE(=+4) | o LIKE SOMEONE GOOD(=-4) RULE(=+4) | o"
+},
+"develop": {
+"A": "CHANGE(=+1) BEGIN(=-4) JOIN(=+3) | i",
+"S": "CHANGE(=+1) BEGIN(=-4) JOIN(=+3) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE CAN(=+3) MANY(=+3) ART(=-2) | i",
+"HS": "DO BEGIN(=-4) CHANGE(=+1) | i LIKE CAN(=+3) MANY(=+3) ART(=-2) | i LIKE CHANGE(=+2) ABOVE(=+3) LIVE(=+3) | i",
+"sA": 0.537,
+"sS": 0.604,
+"sHS": 0.623,
+"wS": [
+"creating",
+"designed"
+],
+"wHS": [
+"designed",
+"enhancing"
+],
+"W3": "CHANGE(=+1) BEGIN(=-4) JOIN(=+3) | i LIKE CHANGE GOOD(=+3) | i LIKE DO BEGIN(=-3) ART(=+1) | i"
+},
+"diplomatic": {
+"A": "RULE(=0) FIGHT(=+2) FRIEND(=+2) | a",
+"S": "RULE(=0) FIGHT(=+2) FRIEND(=+2) | a LIKE RULE(=+2) INSIDE(=+1) TIME(=+1) | a LIKE RULE(=0) FIGHT(=+3) ART(=-2) | a",
+"HS": "RULE(=0) FIGHT(=+2) CAN(=-1) | a LIKE RULE(=-1) CONSUME(=-3) TEXT | a",
+"sA": 0.286,
+"sS": 0.298,
+"sHS": 0.314,
+"wS": [
+"ministerial",
+"strategic"
+],
+"wHS": [
+"verbal"
+],
+"W3": "RULE(=0) FIGHT(=+2) FRIEND(=+2) | a LIKE SAY CARE(=-3) | a LIKE MOOD(=-2) FRIEND(=-2) HEAT(=-1) | a"
+},
+"disclosure": {
+"A": "RULE(=+1) KNOW(=+2) TEXT | o",
+"S": "RULE(=+1) KNOW(=+2) TEXT | o LIKE RULE(=+2) GIVE(=+3) MANY(=-3) | o LIKE TEXT GIVE(=+4) SEE | o",
+"HS": "TEXT KNOW(=+3) GIVE(=+2) | o LIKE RULE(=+2) GIVE(=+3) MANY(=-3) | o LIKE SEE CARE(=+2) RULE(=+2) | o",
+"sA": 0.312,
+"sS": 0.357,
+"sHS": 0.414,
+"wS": [
+"confirmation",
+"presentation"
+],
+"wHS": [
+"confirmation",
+"inspection"
+],
+"W3": "RULE(=+1) KNOW(=+2) TEXT | o LIKE BEGIN(=+2) FIGHT(=-1) | o LIKE ART(=0) VALUE(=-3) TEXT | o"
+},
+"discovery": {
+"A": "BEGIN(=-1) VALUE(=+2) PART(=-2) | o",
+"S": "BEGIN(=-1) VALUE(=+2) PART(=-2) | o LIKE NEAR(=-4) THING(=-4) BEGIN(=-1) | o LIKE ART(=-1) CARE(=+5) GIVE(=+2) | o",
+"HS": "BEGIN(=-1) PART(=-2) KNOW(=+1) | o LIKE DO GOOD(=+4) | o result LIKE NEAR(=-4) THING(=-4) BEGIN(=-1) | o",
+"sA": 0.186,
+"sS": 0.261,
+"sHS": 0.334,
+"wS": [
+"mars",
+"research"
+],
+"wHS": [
+"success",
+"mars"
+],
+"W3": "BEGIN(=-1) VALUE(=+2) PART(=-2) | o LIKE CARE(=+3) THINK(=-1) RULE(=+2) | o LIKE SOMEONE ART(=-4) KNOW | o"
+},
+"discussed": {
+"A": "THINK(=0) KNOW(=+2) TIME(=-1) | i",
+"S": "THINK(=0) KNOW(=+2) TIME(=-1) | i LIKE CONSUME(=-5) SAY | i LIKE TIME(=+2) JOIN(=+5) THINK(=+4) | i",
+"HS": "THINK(=0) TIME(=0) TEXT | i LIKE SAY(=0) KNOW(=+2) RULE(=-2) | i LIKE TIME(=+2) JOIN(=+5) THINK(=+4) | i",
+"sA": 0.365,
+"sS": 0.426,
+"sHS": 0.456,
+"wS": [
+"speak",
+"meet"
+],
+"wHS": [
+"talk",
+"meet"
+],
+"W3": "THINK(=0) KNOW(=+2) TIME(=-1) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i LIKE THINK(=+1) CARE(=+4) SEE | i"
+},
+"dish": {
+"A": "LONG(=+3) CONSUME(=+3) PART(=-2) | o",
+"S": "LONG(=+3) CONSUME(=+3) PART(=-2) | o LIKE GRAIN(=0) CONSUME(=+5) THING(=0) | o PI PLACE HEAT(=+3) CONSUME(=+5) | o",
+"HS": "LONG(=+2) CONSUME(=+3) HEAT(=-1) | o FOR CONSUME(=+4) PART(=-1) RULE(=-2) | o LIKE GRAIN(=0) CONSUME(=+5) THING(=0) | o",
+"sA": 0.253,
+"sS": 0.314,
+"sHS": 0.34,
+"wS": [
+"flour",
+"kitchen"
+],
+"wHS": [
+"meal",
+"flour"
+],
+"W3": "LONG(=+3) CONSUME(=+3) PART(=-2) | o LIKE SAY GIVE(=+3) MANY(=+5) | o LIKE PLACE HEAT(=+3) CONSUME(=+5) | o"
+},
+"disrupt": {
+"A": "JOIN(=0) CHANGE(=+2) FEEL(=-2) | i",
+"S": "JOIN(=0) CHANGE(=+2) FEEL(=-2) | i LIKE DO GOOD(=-4) | i LIKE HAPPEN TIME(=+2) DO | i",
+"HS": "JOIN(=0) CHANGE(=+2) FEEL(=-2) | i LIKE DO GOOD(=-4) | i LIKE HAPPEN TIME(=+2) DO | i",
+"sA": 0.305,
+"sS": 0.352,
+"sHS": 0.352,
+"wS": [
+"fail",
+"happen"
+],
+"wHS": [
+"fail",
+"happen"
+],
+"W3": "JOIN(=0) CHANGE(=+2) FEEL(=-2) | i LIKE CHANGE(=+1) VALUE(=+5) GOOD(=-5) | i LIKE CHANGE(=+2) | i"
+},
+"dos": {
+"A": "SAME(=+2) RULE(=-3) SIDE(=-5) | i",
+"S": "SAME(=+2) RULE(=-3) SIDE(=-5) | i LIKE MANY(=0) TIME(=-4) BEGIN(=+3) | a LIKE DO ART(=-3) NEAR(=0) | i",
+"HS": "DO TIME(=-4) RULE(=-2) | i",
+"sA": 0.15,
+"sS": 0.161,
+"sHS": 0.193,
+"wS": [
+"one",
+"operate"
+],
+"wHS": [],
+"W3": "SAME(=+2) RULE(=-3) SIDE(=-5) | i LIKE FIGHT(=+4) HEAT(=+4) INSIDE(=-5) | i LIKE SAY(=+1) WANT(=-2) THINK(=0) | i"
+},
+"emerge": {
+"A": "HAPPEN TIME(=+4) BEGIN(=-3) | i",
+"S": "HAPPEN TIME(=+4) BEGIN(=-3) | i LIKE MOVE INSIDE(=+5) | i LIKE LIVE(=+5) BEGIN(=-4) | i",
+"HS": "TIME(=+3) BEGIN(=-4) INSIDE(=+1) | i LIKE HAPPEN ABOVE(=-3) GRAIN(=+2) | i LIKE LIVE(=+5) BEGIN(=-4) | i",
+"sA": 0.347,
+"sS": 0.408,
+"sHS": 0.421,
+"wS": [
+"enter",
+"wake"
+],
+"wHS": [
+"collapse",
+"wake"
+],
+"W3": "HAPPEN TIME(=+4) BEGIN(=-3) | i LIKE MOVE NEAR(=+5) | i LIKE CHANGE BIG(=+3) | i"
+},
+"entity": {
+"A": "RULE(=0) PART(=0) LAND(=-1) | o",
+"S": "RULE(=0) PART(=0) LAND(=-1) | o LIKE PART(=-1) ART(=-2) JOIN(=+1) | o LIKE PART(=-1) GRAIN(=-1) LIVE(=+4) | o",
+"HS": "RULE(=0) PART(=0) | o LIKE PART(=-1) GRAIN(=-1) LIVE(=+4) | o LIKE LAND(=0) ART(=-4) GRAIN(=+3) | o",
+"sA": 0.288,
+"sS": 0.324,
+"sHS": 0.351,
+"wS": [
+"component",
+"element"
+],
+"wHS": [
+"element",
+"infrastructure"
+],
+"W3": "RULE(=0) PART(=0) LAND(=-1) | o LIKE RULE(=+4) | o LIKE THING(=+2) PART(=-1) FRIEND(=-1) | o N+3"
+},
+"evident": {
+"A": "SAME(=-2) MANY(=-4) CARE(=+2) | a",
+"S": "SAME(=-2) MANY(=-4) CARE(=+2) | a LIKE KNOW(=+2) | a LIKE TOUCH(=+3) ABOVE(=-1) SEE | a",
+"HS": "SAME(=-2) MANY(=-3) SEE | a LIKE KNOW(=+2) | a LIKE THINK(=-1) KNOW(=-2) TOUCH(=+1) | a",
+"sA": 0.267,
+"sS": 0.345,
+"sHS": 0.402,
+"wS": [
+"aware",
+"sharp"
+],
+"wHS": [
+"aware",
+"unclear"
+],
+"W3": "SAME(=-2) MANY(=-4) CARE(=+2) | a LIKE MOOD(=0) | a LIKE LIVE(=+3) VALUE(=+3) CAN(=0) | a"
+},
+"exists": {
+"A": "MANY(=-3) MOVE(=-4) HAPPEN | i",
+"S": "MANY(=-3) MOVE(=-4) HAPPEN | i LIKE KNOW(=-1) MANY(=-4) SAME(=+2) | i LIKE LIVE(=+2) ART(=-5) CAN(=0) | i",
+"HS": "MANY(=-3) HAPPEN CAN(=+2) | i LIKE KNOW(=-1) MANY(=-4) SAME(=+2) | i LIKE LIVE(=+2) ART(=-5) CAN(=0) | i",
+"sA": 0.204,
+"sS": 0.287,
+"sHS": 0.324,
+"wS": [
+"assumed",
+"functioning"
+],
+"wHS": [
+"assumed",
+"functioning"
+],
+"W3": "MANY(=-3) MOVE(=-4) HAPPEN | i LIKE LIVE(=+2) ART(=-5) CAN(=0) | i LIKE DO ART(=-3) NEAR(=+1) | i"
+},
+"explicitly": {
+"A": "TEXT SOMEONE(=-4) MANY(=-2) | e",
+"S": "TEXT SOMEONE(=-4) MANY(=-2) | e LIKE SOMEONE(=0) RULE(=-2) WANT(=-1) | e LIKE SOMEONE(=-2) WANT(=-3) RULE(=-1) | e",
+"HS": "TEXT SOMEONE(=-3) WANT(=-1) | e LIKE SOMEONE(=-2) WANT(=-3) RULE(=-1) | e",
+"sA": 0.355,
+"sS": 0.39,
+"sHS": 0.417,
+"wS": [
+"personally",
+"publicly"
+],
+"wHS": [
+"publicly"
+],
+"W3": "TEXT SOMEONE(=-4) MANY(=-2) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e LIKE TIME(=-2) SOMEONE(=-2) | e"
+},
+"exposed": {
+"A": "KNOW(=0) INSIDE(=-1) ABOVE(=-1) | i",
+"S": "KNOW(=0) INSIDE(=-1) ABOVE(=-1) | i LIKE JOIN(=0) BIG(=+3) CONSUME(=-2) | i LIKE JOIN(=-4) WANT(=-5) CONSUME(=-4) | i",
+"HS": "INSIDE(=0) KNOW(=0) CONSUME(=-1) | i LIKE SEE | i LIKE JOIN(=-3) VALUE(=+5) GOOD(=-5) | i",
+"sA": 0.242,
+"sS": 0.278,
+"sHS": 0.275,
+"wS": [
+"spread",
+"expelled"
+],
+"wHS": [
+"viewed",
+"damaged"
+],
+"W3": "KNOW(=0) INSIDE(=-1) ABOVE(=-1) | i LIKE SAME(=-2) SEE GIVE(=+2) | i LIKE SEE GIVE(=+3) SAME(=-3) | i"
+},
+"extension": {
+"A": "LONG(=0) BIG(=+3) GIVE(=+4) | o",
+"S": "LONG(=0) BIG(=+3) GIVE(=+4) | o LIKE BEGIN(=+1) MEASURE(=0) RULE(=+1) | o LIKE RULE(=+4) CHANGE(=+3) TEXT | o",
+"HS": "LONG(=0) GIVE(=+4) MEASURE(=-1) | o LIKE BIG(=+2) BEGIN(=-1) CHANGE(=+2) | o LIKE TIME(=+2) BEGIN(=+3) TEXT | o",
+"sA": 0.379,
+"sS": 0.424,
+"sHS": 0.467,
+"wS": [
+"term",
+"amendment"
+],
+"wHS": [
+"expansion",
+"deadline"
+],
+"W3": "LONG(=0) BIG(=+3) GIVE(=+4) | o LIKE CARE(=+3) THINK(=-1) RULE(=+2) | o LIKE THINK(=+5) SAME(=+5) | o"
+},
+"flood": {
+"A": "HEAT(=+2) LAND(=-4) THING(=-1) | o",
+"S": "HEAT(=+2) LAND(=-4) THING(=-1) | o LIKE HAPPEN LIVE(=-2) CARE(=0) | o LIKE MANY(=-4) BIG(=+5) WANT(=+5) | o",
+"HS": "HEAT(=+1) LAND(=-4) FEEL(=+2) | o LIKE HAPPEN LIVE(=-2) CARE(=0) | o LIKE LAND(=-2) GRAIN(=-1) LONG(=+3) | o",
+"sA": 0.194,
+"sS": 0.246,
+"sHS": 0.268,
+"wS": [
+"accident",
+"shortage"
+],
+"wHS": [
+"accident",
+"basin"
+],
+"W3": "HEAT(=+2) LAND(=-4) THING(=-1) | o LIKE MOOD(=-5) | o LIKE PLACE GRAIN(=-3) MOVE(=+3) | o"
+},
+"flower": {
+"A": "THING(=0) LONG(=-2) ART(=+4) | o",
+"S": "THING(=0) LONG(=-2) ART(=+4) | o LIKE GRAIN(=-2) MEASURE(=-1) THING(=0) | o LIKE NEAR(=-3) LIVE(=-2) WANT(=+5) | o",
+"HS": "THING(=0) LONG(=-2) ART(=+4) | o LIKE GRAIN(=-2) MEASURE(=-1) THING(=0) | o LIKE NEAR(=-3) LIVE(=-2) WANT(=+5) | o",
+"sA": 0.273,
+"sS": 0.3,
+"sHS": 0.3,
+"wS": [
+"marijuana",
+"heaven"
+],
+"wHS": [
+"marijuana",
+"heaven"
+],
+"W3": "THING(=0) LONG(=-2) ART(=+4) | o LIKE VALUE(=-3) NEAR(=+2) PLACE | o LIKE CONSUME(=+5) THING(=0) | o"
+},
+"forensic": {
+"A": "RULE(=+1) CARE(=+3) ART(=-1) | a",
+"S": "RULE(=+1) CARE(=+3) ART(=-1) | a",
+"HS": "RULE(=+1) CARE(=+3) ART(=-1) | a",
+"sA": 0.281,
+"sS": 0.281,
+"sHS": 0.281,
+"wS": [],
+"wHS": [],
+"W3": "RULE(=+1) CARE(=+3) ART(=-1) | a LIKE KNOW THINK | a LIKE THINK(=-3) FEEL(=+2) WANT(=-4) | a"
+},
+"gain": {
+"A": "GIVE(=-1) MEASURE(=+2) BEGIN(=0) | i",
+"S": "GIVE(=-1) MEASURE(=+2) BEGIN(=0) | i LIKE CHANGE GOOD(=+3) | i LIKE FIGHT GOOD(=-4) | i",
+"HS": "GIVE(=-1) MEASURE(=+1) ABOVE(=+1) | i LIKE CHANGE GOOD(=+3) | i LIKE FIGHT GOOD(=-4) | i",
+"sA": 0.378,
+"sS": 0.427,
+"sHS": 0.446,
+"wS": [
+"improve",
+"lose"
+],
+"wHS": [
+"improve",
+"lose"
+],
+"W3": "GIVE(=-1) MEASURE(=+2) BEGIN(=0) | i LIKE CHANGE BIG(=+3) | i LIKE FIGHT GOOD(=-4) | i"
+},
+"generated": {
+"A": "DO MEASURE(=+3) CONSUME(=-5) | i",
+"S": "DO MEASURE(=+3) CONSUME(=-5) | i LIKE GIVE(=+1) CHANGE(=+3) ABOVE(=+2) | i LIKE HEAT(=+3) LIVE(=+3) FEEL(=0) | i",
+"HS": "DO MEASURE(=+2) ART(=-2) | i LIKE HEAT(=+3) LIVE(=+3) FEEL(=0) | i",
+"sA": 0.264,
+"sS": 0.305,
+"sHS": 0.335,
+"wS": [
+"boost",
+"sparking"
+],
+"wHS": [
+"sparking"
+],
+"W3": "DO MEASURE(=+3) CONSUME(=-5) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE JOIN(=+2) SAME(=0) MEASURE(=+1) | i"
+},
+"gilbert": {
+"A": "TEXT FEEL(=+5) THING(=-4) | o",
+"S": "TEXT FEEL(=+5) THING(=-4) | o LIKE FIGHT(=-2) BEGIN(=+2) | o agent LIKE SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent",
+"HS": "TEXT FEEL(=+5) THING(=-4) | o LIKE FIGHT(=-2) BEGIN(=+2) | o agent LIKE SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent",
+"sA": 0.141,
+"sS": 0.153,
+"sHS": 0.153,
+"wS": [
+"victor",
+"jay"
+],
+"wHS": [
+"victor",
+"jay"
+],
+"W3": "TEXT FEEL(=+5) THING(=-4) | o LIKE THING(=+3) INSIDE(=-3) GIVE(=-4) | o agent LIKE FRIEND FIGHT | o"
+},
+"got": {
+"A": "GIVE(=0) SOMEONE(=+1) TIME(=-2) | i",
+"S": "GIVE(=0) SOMEONE(=+1) TIME(=-2) | i LIKE FIGHT GOOD(=+4) | i LIKE WANT(=+2) SOMEONE(=+1) CAN(=+2) | i",
+"HS": "GIVE(=0) SOMEONE(=+1) | i LIKE WANT(=+2) SOMEONE(=+1) CAN(=+2) | i",
+"sA": 0.377,
+"sS": 0.41,
+"sHS": 0.437,
+"wS": [
+"win",
+"wish"
+],
+"wHS": [
+"wish"
+],
+"W3": "GIVE(=0) SOMEONE(=+1) TIME(=-2) | i LIKE NEAR(=-1) MOVE(=+3) THING(=+3) | i LIKE ABOVE(=-1) JOIN(=-2) TIME(=-1) | i"
+},
+"governmental": {
+"A": "RULE(=+1) | a",
+"S": "RULE(=+1) | a LIKE RULE(=+2) LAND(=0) | a LIKE RULE(=+2) LAND(=+1) BIG(=-1) | a",
+"HS": "RULE(=+1) | a LIKE RULE(=+2) LAND(=0) | a LIKE RULE(=+2) LAND(=+1) BIG(=-1) | a",
+"sA": 0.491,
+"sS": 0.531,
+"sHS": 0.531,
+"wS": [
+"sovereign",
+"provincial"
+],
+"wHS": [
+"sovereign",
+"provincial"
+],
+"W3": "RULE(=+1) | a LIKE RULE(=+2) PLACE THING(=+1) | a LIKE RULE(=+2) LAND(=+1) BIG(=-1) | a"
+},
+"graduate": {
+"A": "ART(=0) ABOVE(=+4) BEGIN(=+1) | i",
+"S": "ART(=0) ABOVE(=+4) BEGIN(=+1) | i LIKE PLACE KNOW CONSUME(=+5) | o LIKE ART(=+1) KNOW(=+3) RULE(=+1) | i",
+"HS": "ABOVE(=+3) BEGIN(=+2) RULE(=0) | i LIKE PLACE KNOW CONSUME(=+5) | o LIKE ART(=+1) KNOW(=+3) RULE(=+1) | i",
+"sA": 0.188,
+"sS": 0.24,
+"sHS": 0.271,
+"wS": [
+"school",
+"teaching"
+],
+"wHS": [
+"school",
+"teaching"
+],
+"W3": "ART(=0) ABOVE(=+4) BEGIN(=+1) | i LIKE ART(=+1) KNOW(=+3) RULE(=+1) | i LIKE KNOW | i K+4"
+},
+"grew": {
+"A": "ABOVE(=+2) BEGIN(=-4) CONSUME(=+2) | i",
+"S": "ABOVE(=+2) BEGIN(=-4) CONSUME(=+2) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i LIKE GIVE(=+1) THING(=+4) LIVE(=+4) | i",
+"HS": "ABOVE(=+2) BEGIN(=-3) BIG(=-1) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i LIKE GIVE(=+1) THING(=+4) LIVE(=+4) | i",
+"sA": 0.44,
+"sS": 0.519,
+"sHS": 0.555,
+"wS": [
+"raising",
+"foster"
+],
+"wHS": [
+"raising",
+"foster"
+],
+"W3": "ABOVE(=+2) BEGIN(=-4) CONSUME(=+2) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i LIKE TIME(=-2) BEGIN(=-5) GIVE(=+3) | i"
+},
+"grown": {
+"A": "BIG(=0) ABOVE(=+4) TOUCH(=-1) | i",
+"S": "BIG(=0) ABOVE(=+4) TOUCH(=-1) | i LIKE CONSUME(=+5) THING(=0) | o LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i",
+"HS": "BIG(=-1) ABOVE(=+4) CONSUME(=+1) | i LIKE ABOVE(=+1) MEASURE(=+2) LIVE(=0) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i",
+"sA": 0.339,
+"sS": 0.448,
+"sHS": 0.463,
+"wS": [
+"vegetable",
+"raising"
+],
+"wHS": [
+"risen",
+"raising"
+],
+"W3": "BIG(=0) ABOVE(=+4) TOUCH(=-1) | i LIKE GIVE(=-4) THING(=0) PART(=+5) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i"
+},
+"guest": {
+"A": "GIVE(=+3) RULE(=-5) LONG(=+4) | o agent",
+"S": "GIVE(=+3) RULE(=-5) LONG(=+4) | o agent PI PLACE INSIDE(=+5) LIVE | o LIKE SAME(=-3) VALUE(=+5) CONSUME(=+5) | o agent",
+"HS": "GIVE(=+3) RULE(=-5) INSIDE(=+2) | o agent PI PLACE INSIDE(=+5) LIVE | o LIKE SAME(=-3) VALUE(=+5) CONSUME(=+5) | o agent",
+"sA": 0.157,
+"sS": 0.255,
+"sHS": 0.279,
+"wS": [
+"house",
+"favourite"
+],
+"wHS": [
+"house",
+"favourite"
+],
+"W3": "GIVE(=+3) RULE(=-5) LONG(=+4) | o agent LIKE MOOD(=+3) PART(=+5) | o LIKE PLACE INSIDE(=+5) PART(=-2) | o"
+},
+"hatch": {
+"A": "INSIDE(=0) LONG(=+3) BEGIN(=-1) | i",
+"S": "INSIDE(=0) LONG(=+3) BEGIN(=-1) | i LIKE SIDE(=+1) PLACE LAND(=-2) | o LIKE SAY(=+2) MOVE(=+4) HEAT(=+5) | i",
+"HS": "INSIDE(=0) BEGIN(=-1) ABOVE(=-2) | i LIKE SIDE(=+1) PLACE LAND(=-2) | o LIKE SAY(=+2) MOVE(=+4) HEAT(=+5) | i",
+"sA": 0.115,
+"sS": 0.156,
+"sHS": 0.206,
+"wS": [
+"south",
+"burst"
+],
+"wHS": [
+"south",
+"burst"
+],
+"W3": "INSIDE(=0) LONG(=+3) BEGIN(=-1) | i LIKE HEAT(=+3) CONSUME(=+5) | i LIKE HAPPEN TIME(=+4) BEGIN(=-3) | i"
+},
+"header": {
+"A": "TEXT SIDE(=0) FIGHT(=-3) | o",
+"S": "TEXT SIDE(=0) FIGHT(=-3) | o LIKE INSIDE(=-1) LONG(=+2) ABOVE(=0) | o LIKE LONG(=+1) PART(=-3) GIVE(=+2) | o",
+"HS": "TEXT LONG(=+2) SIDE(=+1) | o LIKE SIDE(=-1) INSIDE(=-1) | o LIKE BODY FIGHT(=-4) MOVE(=+2) | o",
+"sA": 0.294,
+"sS": 0.342,
+"sHS": 0.35,
+"wS": [
+"roof",
+"tip"
+],
+"wHS": [
+"rear",
+"stroke"
+],
+"W3": "TEXT SIDE(=0) FIGHT(=-3) | o LIKE PLACE MOVE ABOVE(=+4) | o LIKE TEXT | o"
+},
+"hide": {
+"A": "INSIDE(=0) JOIN(=-2) SAY(=-3) | i",
+"S": "INSIDE(=0) JOIN(=-2) SAY(=-3) | i LIKE KNOW(=0) INSIDE(=-1) ABOVE(=-1) | i LIKE WANT(=-2) MANY(=-3) JOIN(=-1) | i",
+"HS": "INSIDE(=0) JOIN(=-2) SAY(=-3) | i LIKE KNOW(=0) INSIDE(=-1) ABOVE(=-1) | i LIKE WANT(=-2) MANY(=-3) JOIN(=-1) | i",
+"sA": 0.396,
+"sS": 0.421,
+"sHS": 0.421,
+"wS": [
+"exposed",
+"deny"
+],
+"wHS": [
+"exposed",
+"deny"
+],
+"W3": "INSIDE(=0) JOIN(=-2) SAY(=-3) | i LIKE MOVE NEAR(=-5) | i LIKE JOIN(=-4) | i"
+},
+"hire": {
+"A": "GIVE(=+1) THINK(=+2) VALUE(=-3) | i",
+"S": "GIVE(=+1) THINK(=+2) VALUE(=-3) | i LIKE DO JOIN(=+2) CARE(=-1) | i LIKE GIVE(=+1) CARE(=-2) MEASURE(=+1) | i",
+"HS": "GIVE(=+1) VALUE(=-3) RULE(=0) | i LIKE DO JOIN(=+2) CARE(=-1) | i LIKE DO WANT(=+1) CAN(=+1) | i",
+"sA": 0.347,
+"sS": 0.375,
+"sHS": 0.39,
+"wS": [
+"commit",
+"charge"
+],
+"wHS": [
+"commit",
+"requires"
+],
+"W3": "GIVE(=+1) THINK(=+2) VALUE(=-3) | i LIKE FIGHT(=-2) RULE(=-1) KNOW(=+3) | i LIKE MOVE NEAR(=+5) | i K+3"
+},
+"hiring": {
+"A": "RULE(=-1) KNOW(=+5) VALUE(=-5) | i",
+"S": "RULE(=-1) KNOW(=+5) VALUE(=-5) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i",
+"HS": "VALUE(=-3) GIVE(=+3) KNOW(=+4) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i",
+"sA": 0.178,
+"sS": 0.226,
+"sHS": 0.253,
+"wS": [
+"bargaining",
+"charging"
+],
+"wHS": [
+"bargaining",
+"charging"
+],
+"W3": "RULE(=-1) KNOW(=+5) VALUE(=-5) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i LIKE JOIN(=+1) MEASURE(=0) BIG(=0) | i"
+},
+"holidays": {
+"A": "MOOD(=+3) BEGIN(=+3) LAND(=-2) | o N+3",
+"S": "MOOD(=+3) BEGIN(=+3) LAND(=-2) | o N+3 LIKE TIME(=+1) BEGIN(=-1) HEAT(=-1) | o LIKE FIGHT(=+1) FRIEND(=+3) VALUE(=-5) | o",
+"HS": "MOOD(=+3) NEAR(=-4) HEAT(=-1) | o N+3 LIKE TIME(=0) MOVE(=-1) MEASURE(=-1) | o LIKE FIGHT(=+1) FRIEND(=+3) VALUE(=-5) | o",
+"sA": 0.195,
+"sS": 0.254,
+"sHS": 0.334,
+"wS": [
+"spring",
+"truce"
+],
+"wHS": [
+"hours",
+"truce"
+],
+"W3": "MOOD(=+3) BEGIN(=+3) LAND(=-2) | o N+3 LIKE PLACE GRAIN(=-3) INSIDE(=+5) | o LIKE BEGIN(=-1) CARE(=+2) SIDE(=+4) | o"
+},
+"identities": {
+"A": "RULE(=0) INSIDE(=+3) WANT(=+4) | o N+3",
+"S": "RULE(=0) INSIDE(=+3) WANT(=+4) | o N+3 LIKE CAN | o quality LIKE JOIN(=-2) SAME(=-2) GRAIN(=+1) | o",
+"HS": "SAME(=-2) INSIDE(=+3) WANT(=+5) | o N+3 LIKE DO SAME(=-3) LIVE(=+2) | o LIKE CAN | o quality",
+"sA": 0.154,
+"sS": 0.228,
+"sHS": 0.3,
+"wS": [
+"ability",
+"separation"
+],
+"wHS": [
+"role",
+"ability"
+],
+"W3": "RULE(=0) INSIDE(=+3) WANT(=+4) | o N+3 LIKE SAME(=0) FIGHT(=+4) LONG(=-3) | o LIKE RULE(=+2) SAME(=+5) SIDE(=+2) | o"
+},
+"imprisoned": {
+"A": "LIVE(=0) FRIEND(=-4) INSIDE(=+3) | i",
+"S": "LIVE(=0) FRIEND(=-4) INSIDE(=+3) | i LIKE GIVE(=-1) MOVE(=-4) LONG(=0) | i LIKE TIME(=0) CHANGE(=-5) RULE(=+4) | i",
+"HS": "INSIDE(=+2) FRIEND(=-5) MOVE(=-5) | i LIKE GIVE(=-1) MOVE(=-4) LONG(=0) | i LIKE TIME(=0) CHANGE(=-5) RULE(=+4) | i",
+"sA": 0.106,
+"sS": 0.156,
+"sHS": 0.236,
+"wS": [
+"hold",
+"detained"
+],
+"wHS": [
+"hold",
+"detained"
+],
+"W3": "LIVE(=0) FRIEND(=-4) INSIDE(=+3) | i LIKE CHANGE(=-4) | i LIKE NEAR(=-1) MOVE(=+3) THING(=+3) | i"
+},
+"including": {
+"A": "SAME(=-1) TIME(=-1) PART(=+4) | i",
+"S": "SAME(=-1) TIME(=-1) PART(=+4) | i LIKE MOVE INSIDE(=+5) | i K+3 LIKE PART(=0) INSIDE(=+3) DO | i",
+"HS": "SAME(=-1) INSIDE(=+1) JOIN(=+2) | i LIKE MOVE INSIDE(=+5) | i K+3 LIKE PART(=0) INSIDE(=+3) DO | i",
+"sA": 0.235,
+"sS": 0.334,
+"sHS": 0.364,
+"wS": [
+"insert",
+"contains"
+],
+"wHS": [
+"insert",
+"contains"
+],
+"W3": "SAME(=-1) TIME(=-1) PART(=+4) | i LIKE PART(=+2) SAME(=-2) BEGIN(=-1) | i LIKE PART(=0) INSIDE(=+3) DO | i"
+},
+"instrumental": {
+"A": "ART(=+1) LIVE(=+2) DO | a",
+"S": "ART(=+1) LIVE(=+2) DO | a LIKE CONSUME(=+5) THING(=0) | o LIKE ART(=-1) BEGIN(=-2) PART(=-1) | a",
+"HS": "ART(=+1) GOOD(=+3) DO | a LIKE ( CONSUME(=+5) THING(=0) | o LIKE MOOD(=-2) RULE(=-2) FEEL(=+1) | a )",
+"sA": 0.289,
+"sS": 0.309,
+"sHS": 0.351,
+"wS": [
+"vegetable",
+"experimental"
+],
+"wHS": [
+"vegetable",
+"emotional",
+"nested"
+],
+"W3": "ART(=+1) LIVE(=+2) DO | a LIKE BIG(=-2) | a LIKE CAN(=+3) VALUE(=+1) GOOD(=+1) | a"
+},
+"intent": {
+"A": "WANT(=+3) BEGIN(=-1) RULE(=+3) | o",
+"S": "WANT(=+3) BEGIN(=-1) RULE(=+3) | o LIKE BEGIN(=+2) THINK(=0) | o LIKE TEXT PART(=+3) TIME(=+3) | o",
+"HS": "WANT(=+3) BEGIN(=-1) DO | o LIKE TEXT PART(=+3) TIME(=+3) | o LIKE KNOW(=+1) WANT(=+4) FEEL(=-3) | o",
+"sA": 0.365,
+"sS": 0.405,
+"sHS": 0.426,
+"wS": [
+"conclusion",
+"agenda"
+],
+"wHS": [
+"agenda",
+"mind"
+],
+"W3": "WANT(=+3) BEGIN(=-1) RULE(=+3) | o LIKE WANT(=+2) | o LIKE TEXT PART(=+3) TIME(=+3) | o"
+},
+"intercepted": {
+"A": "GIVE(=-2) BEGIN(=+2) NEAR(=-1) | i",
+"S": "GIVE(=-2) BEGIN(=+2) NEAR(=-1) | i LIKE SIDE(=-1) GIVE(=-4) MEASURE(=+3) | i LIKE GIVE(=0) MOVE(=+2) BEGIN(=+3) | i",
+"HS": "GIVE(=-3) BEGIN(=+4) MOVE(=+2) | i",
+"sA": 0.178,
+"sS": 0.188,
+"sHS": 0.274,
+"wS": [
+"rebound",
+"pass"
+],
+"wHS": [],
+"W3": "GIVE(=-2) BEGIN(=+2) NEAR(=-1) | i LIKE TEXT TIME(=-1) GIVE(=+1) | i LIKE THINK(=-2) CARE(=+3) RULE(=+1) | i"
+},
+"international": {
+"A": "RULE(=+1) BIG(=+4) FIGHT(=-5) | a",
+"S": "RULE(=+1) BIG(=+4) FIGHT(=-5) | a LIKE RULE(=+1) LAND(=+2) BIG(=+4) | a LIKE RULE(=0) JOIN(=+5) NEAR(=+2) | a",
+"HS": "FIGHT(=-4) BIG(=+5) JOIN(=+4) | a LIKE RULE(=0) VALUE(=+1) MEASURE(=+1) | a LIKE RULE(=+1) LAND(=+2) BIG(=+4) | a",
+"sA": 0.352,
+"sS": 0.421,
+"sHS": 0.429,
+"wS": [
+"nationwide",
+"affiliated"
+],
+"wHS": [
+"monetary",
+"nationwide"
+],
+"W3": "RULE(=+1) BIG(=+4) FIGHT(=-5) | a LIKE RULE(=+1) LAND(=+2) BIG(=+4) | a LIKE RULE(=0) FIGHT(=+2) FRIEND(=+2) | a"
+},
+"investigating": {
+"A": "THINK(=0) CARE(=+4) LIVE(=-2) | i",
+"S": "THINK(=0) CARE(=+4) LIVE(=-2) | i LIKE THINK(=+2) KNOW(=+2) SEE | i",
+"HS": "THINK(=0) CARE(=+4) KNOW(=0) | i",
+"sA": 0.448,
+"sS": 0.459,
+"sHS": 0.49,
+"wS": [
+"discover"
+],
+"wHS": [],
+"W3": "THINK(=0) CARE(=+4) LIVE(=-2) | i LIKE THINK(=+1) CARE(=+4) SEE | i LIKE THINK(=-2) CARE(=+3) RULE(=+1) | i"
+},
+"investigative": {
+"A": "RULE(=+1) CARE(=+4) THINK(=0) | a",
+"S": "RULE(=+1) CARE(=+4) THINK(=0) | a LIKE INSIDE(=+1) RULE(=0) | a LIKE THINK(=-2) KNOW(=-2) CARE(=+1) | a",
+"HS": "RULE(=+1) CARE(=+5) KNOW(=-1) | a LIKE THINK(=-2) KNOW(=-2) CARE(=+1) | a",
+"sA": 0.317,
+"sS": 0.348,
+"sHS": 0.395,
+"wS": [
+"internal",
+"suspicious"
+],
+"wHS": [
+"suspicious"
+],
+"W3": "RULE(=+1) CARE(=+4) THINK(=0) | a LIKE CARE(=-1) GOOD(=-4) CONSUME(=-3) | a LIKE KNOW THINK | a"
+},
+"island": {
+"A": "LAND(=-2) NEAR(=-2) PLACE | o",
+"S": "LAND(=-2) NEAR(=-2) PLACE | o LIKE LAND(=-4) LONG(=+3) | o N+3 FOR LAND(=-4) THING(=-2) NEAR(=0) | o",
+"HS": "LAND(=-2) NEAR(=-1) | o PI LAND(=-5) PLACE SIDE(=+1) | o",
+"sA": 0.452,
+"sS": 0.471,
+"sHS": 0.489,
+"wS": [
+"boats",
+"beach"
+],
+"wHS": [
+"bay"
+],
+"W3": "LAND(=-2) NEAR(=-2) PLACE | o LIKE HEAT(=-5) THING(=-4) BIG(=+3) | o LIKE GRAIN(=0) THING(=-5) | o"
+},
+"jay": {
+"A": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent",
+"S": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent LIKE ART(=+1) THING(=-4) TIME(=-1) | o agent LIKE SOMEONE(=-2) THING(=-4) JOIN(=+5) | o agent",
+"HS": "MOOD(=+5) SIDE(=-4) JOIN(=+4) | o agent LIKE SAY(=0) ART(=-3) LONG(=+2) | o LIKE SOMEONE(=-2) THING(=-4) JOIN(=+5) | o agent",
+"sA": -0.012,
+"sS": 0.037,
+"sHS": 0.066,
+"wS": [
+"guitarist",
+"cooper"
+],
+"wHS": [
+"mike",
+"cooper"
+],
+"W3": "SIDE(=-1) MOOD(=+5) RULE(=-2) | o agent LIKE SOMEONE SAY FEEL(=+3) | o LIKE FRIEND FIGHT | o"
+},
+"journalism": {
+"A": "TEXT ART(=+1) FIGHT(=0) | o",
+"S": "TEXT ART(=+1) FIGHT(=0) | o LIKE RULE(=+3) LAND(=+1) LIVE(=+3) | o LIKE ART(=+1) KNOW(=+2) TIME(=-1) | o agent",
+"HS": "TEXT ART(=+1) LIVE(=+1) | o LIKE SOMEONE KNOW CONSUME(=+5) | o",
+"sA": 0.34,
+"sS": 0.37,
+"sHS": 0.393,
+"wS": [
+"citizenship",
+"professor"
+],
+"wHS": [
+"student"
+],
+"W3": "TEXT ART(=+1) FIGHT(=0) | o LIKE PLACE KNOW ABOVE(=+4) | o LIKE SOMEONE PART(=-2) RULE(=+4) | o"
+},
+"junk": {
+"A": "VALUE(=-1) PART(=0) LONG(=+2) | o",
+"S": "VALUE(=-1) PART(=0) LONG(=+2) | o LIKE THING(=-2) CONSUME(=-3) HEAT(=-2) | o LIKE THING(=0) WANT(=-3) GRAIN(=-1) | o",
+"HS": "VALUE(=-2) PART(=0) THING(=0) | o LIKE THING(=-2) CONSUME(=-3) HEAT(=-2) | o LIKE LAND(=-4) NEAR(=-2) THING(=-1) | o",
+"sA": 0.148,
+"sS": 0.23,
+"sHS": 0.305,
+"wS": [
+"mud",
+"garbage"
+],
+"wHS": [
+"mud",
+"ocean"
+],
+"W3": "VALUE(=-1) PART(=0) LONG(=+2) | o LIKE FIGHT(=-3) KNOW(=-5) MOOD(=-4) | o agent N+3 LIKE LAND(=-4) NEAR(=-2) THING(=-1) | o"
+},
+"justified": {
+"A": "THINK(=-1) CAN(=+4) CARE(=-2) | i",
+"S": "THINK(=-1) CAN(=+4) CARE(=-2) | i LIKE RULE(=+5) WANT(=+1) FEEL(=+2) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i",
+"HS": "CAN(=+3) THINK(=-2) WANT(=-2) | i LIKE RULE(=+5) WANT(=+1) FEEL(=+2) | i",
+"sA": 0.238,
+"sS": 0.266,
+"sHS": 0.299,
+"wS": [
+"appealed",
+"argue"
+],
+"wHS": [
+"appealed"
+],
+"W3": "THINK(=-1) CAN(=+4) CARE(=-2) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i LIKE SAY THINK | i"
+},
+"justify": {
+"A": "THINK(=+1) WANT(=-1) DO | i",
+"S": "THINK(=+1) WANT(=-1) DO | i LIKE DO THINK(=+4) MANY(=-4) | i LIKE VALUE(=0) MEASURE(=+1) | i",
+"HS": "THINK(=+2) WANT(=-1) MANY(=-3) | i LIKE DO WANT(=-2) RULE(=+3) | i LIKE VALUE(=0) MEASURE(=+1) | i",
+"sA": 0.358,
+"sS": 0.395,
+"sHS": 0.415,
+"wS": [
+"demonstrate",
+"costs"
+],
+"wHS": [
+"impose",
+"costs"
+],
+"W3": "THINK(=+1) WANT(=-1) DO | i LIKE THINK(=-2) CARE(=+3) RULE(=+1) | i LIKE DO GOOD(=-4) | i K-4"
+},
+"keeper": {
+"A": "CHANGE(=-3) GIVE(=-3) THING(=+4) | o agent",
+"S": "CHANGE(=-3) GIVE(=-3) THING(=+4) | o agent LIKE SIDE(=0) FIGHT(=0) RULE(=+3) | o agent LIKE TIME(=-1) FRIEND(=+3) RULE(=+2) | o agent",
+"HS": "CHANGE(=-3) THING(=+4) LONG(=+4) | o agent LIKE SIDE(=0) FIGHT(=0) RULE(=+3) | o agent LIKE TIME(=-1) FRIEND(=+3) RULE(=+2) | o agent",
+"sA": 0.333,
+"sS": 0.38,
+"sHS": 0.397,
+"wS": [
+"defender",
+"elder"
+],
+"wHS": [
+"defender",
+"elder"
+],
+"W3": "CHANGE(=-3) GIVE(=-3) THING(=+4) | o agent LIKE TEXT | o tool LIKE INSIDE(=-1) FIGHT(=+4) MOVE(=-3) | o agent N+3"
+},
+"kidnapping": {
+"A": "GIVE(=-3) LIVE(=-3) FRIEND(=-3) | i",
+"S": "GIVE(=-3) LIVE(=-3) FRIEND(=-3) | i LIKE RULE(=+5) FRIEND(=-3) TIME(=+2) | i",
+"HS": "GIVE(=-3) LIVE(=-3) FRIEND(=-3) | i LIKE RULE(=+5) FRIEND(=-3) TIME(=+2) | i",
+"sA": 0.214,
+"sS": 0.217,
+"sHS": 0.217,
+"wS": [
+"sentencing"
+],
+"wHS": [
+"sentencing"
+],
+"W3": "GIVE(=-3) LIVE(=-3) FRIEND(=-3) | i LIKE GIVE(=+3) VALUE | i LIKE LIVE(=-1) | i"
+},
+"libraries": {
+"A": "ART(=+1) NEAR(=+4) PART(=+3) | o N+3",
+"S": "ART(=+1) NEAR(=+4) PART(=+3) | o N+3 LIKE TEXT LONG(=-3) PLACE | o LIKE TEXT ART(=+3) KNOW(=-3) | o",
+"HS": "TEXT NEAR(=+2) PART(=+3) | o N+3 LIKE INSIDE(=0) ART(=+4) PART(=+3) | o N+3 LIKE PLACE KNOW ABOVE(=+4) | o",
+"sA": 0.28,
+"sS": 0.395,
+"sHS": 0.499,
+"wS": [
+"web",
+"fiction"
+],
+"wHS": [
+"churches",
+"university"
+],
+"W3": "ART(=+1) NEAR(=+4) PART(=+3) | o N+3 LIKE TEXT | o agent LIKE INSIDE(=+1) ABOVE(=-2) PLACE | o"
+},
+"looming": {
+"A": "TIME(=+3) BIG(=+3) ABOVE(=+1) | i",
+"S": "TIME(=+3) BIG(=+3) ABOVE(=+1) | i LIKE ( MOOD(=-5) CAN(=-5) | o LIKE BEGIN(=+2) NEAR(=+4) JOIN(=-2) | i )",
+"HS": "TIME(=+3) BIG(=+3) ABOVE(=+1) | i LIKE ( MOOD(=-5) CAN(=-5) | o LIKE BEGIN(=+2) NEAR(=+4) JOIN(=-2) | i )",
+"sA": 0.474,
+"sS": 0.476,
+"sHS": 0.476,
+"wS": [
+"despair",
+"closing",
+"nested"
+],
+"wHS": [
+"despair",
+"closing",
+"nested"
+],
+"W3": "TIME(=+3) BIG(=+3) ABOVE(=+1) | i LIKE TIME(=+3) FEEL(=+1) WANT(=0) | i LIKE HAPPEN TIME(=+4) BEGIN(=-3) | i"
+},
+"maintain": {
+"A": "CHANGE(=-3) THINK(=+4) GIVE(=-1) | i",
+"S": "CHANGE(=-3) THINK(=+4) GIVE(=-1) | i LIKE CHANGE(=-4) | i LIKE INSIDE(=-1) CHANGE(=-3) KNOW(=+1) | i",
+"HS": "CHANGE(=-3) THINK(=+5) LIVE(=+3) | i LIKE CHANGE(=-4) | i LIKE INSIDE(=-1) CHANGE(=-3) KNOW(=+1) | i",
+"sA": 0.464,
+"sS": 0.537,
+"sHS": 0.583,
+"wS": [
+"remain",
+"protected"
+],
+"wHS": [
+"remain",
+"protected"
+],
+"W3": "CHANGE(=-3) THINK(=+4) GIVE(=-1) | i LIKE CHANGE(=-4) | i LIKE CHANGE(=-2) BEGIN(=-1) DO | i"
+},
+"mandatory": {
+"A": "RULE(=+2) WANT(=0) BEGIN(=-1) | a",
+"S": "RULE(=+2) WANT(=0) BEGIN(=-1) | a LIKE SAME(=0) ART(=-1) RULE(=+2) | a LIKE CAN(=+2) CARE(=+1) RULE(=+2) | a",
+"HS": "RULE(=+2) WANT(=0) SAME(=0) | a LIKE BEGIN(=-1) CARE(=+2) RULE(=+1) | a LIKE CAN(=+2) CARE(=+1) RULE(=+2) | a",
+"sA": 0.333,
+"sS": 0.37,
+"sHS": 0.414,
+"wS": [
+"universal",
+"proper"
+],
+"wHS": [
+"preliminary",
+"proper"
+],
+"W3": "RULE(=+2) WANT(=0) BEGIN(=-1) | a LIKE CAN(=+3) VALUE(=+1) GOOD(=+1) | a LIKE VALUE(=+4) | a"
+},
+"meet": {
+"A": "TIME(=+2) JOIN(=+5) THINK(=+4) | i",
+"S": "TIME(=+2) JOIN(=+5) THINK(=+4) | i LIKE FIGHT(=-1) PART(=+3) MOVE(=0) | i LIKE SEE ART(=+2) GIVE(=+3) | i",
+"HS": "TIME(=+2) JOIN(=+4) | i LIKE FIGHT(=-1) PART(=+3) MOVE(=0) | i LIKE SEE ART(=+2) GIVE(=+3) | i",
+"sA": 0.354,
+"sS": 0.406,
+"sHS": 0.427,
+"wS": [
+"rally",
+"exhibit"
+],
+"wHS": [
+"rally",
+"exhibit"
+],
+"W3": "TIME(=+2) JOIN(=+5) THINK(=+4) | i LIKE MOVE NEAR(=+5) | i LIKE MOVE NEAR(=+5) | i K+3"
+},
+"mom": {
+"A": "SOMEONE(=+2) FRIEND(=+3) FEEL(=0) | o agent",
+"S": "SOMEONE(=+2) FRIEND(=+3) FEEL(=0) | o agent LIKE FRIEND(=+2) SEX(=-3) TIME(=-1) | o agent LIKE SEX(=-3) LIVE(=-5) MOOD(=-3) | o agent",
+"HS": "SOMEONE(=+2) FRIEND(=+3) FEEL(=0) | o agent LIKE FRIEND(=+2) SEX(=-3) TIME(=-1) | o agent LIKE SEX(=-3) LIVE(=-5) MOOD(=-3) | o agent",
+"sA": 0.239,
+"sS": 0.313,
+"sHS": 0.313,
+"wS": [
+"girlfriend",
+"widow"
+],
+"wHS": [
+"girlfriend",
+"widow"
+],
+"W3": "SOMEONE(=+2) FRIEND(=+3) FEEL(=0) | o agent LIKE SEX(=-3) | o agent N+3 LIKE SOMEONE LIVE GOOD(=+4) | o"
+},
+"monks": {
+"A": "SEX(=+3) THING(=+3) SAY(=-5) | o agent N+3",
+"S": "SEX(=+3) THING(=+3) SAY(=-5) | o agent N+3 LIKE ART(=+1) THING(=-4) TIME(=-1) | o agent LIKE RULE(=+3) SOMEONE(=+2) ABOVE(=+3) | o agent",
+"HS": "SOMEONE(=-3) ART(=+5) FIGHT(=+5) | o agent N+3 LIKE THING(=-3) GRAIN(=+3) | o LIKE RULE(=+3) SOMEONE(=+2) ABOVE(=+3) | o agent",
+"sA": 0.164,
+"sS": 0.233,
+"sHS": 0.23,
+"wS": [
+"guitarist",
+"priest"
+],
+"wHS": [
+"stone",
+"priest"
+],
+"W3": "SEX(=+3) THING(=+3) SAY(=-5) | o agent N+3 LIKE SOMEONE SIDE(=+5) RULE | o LIKE THING(=-3) GRAIN(=+3) | o"
+},
+"multimedia": {
+"A": "ART(=-1) JOIN(=+3) BIG(=+2) | o",
+"S": "ART(=-1) JOIN(=+3) BIG(=+2) | o LIKE LIVE(=+2) ART(=0) MOOD(=+2) | o LIKE TEXT GIVE(=+4) SEE | o",
+"HS": "ART(=-1) CAN(=+4) JOIN(=+3) | o LIKE LIVE(=+2) ART(=0) MOOD(=+2) | o LIKE TEXT GIVE(=+4) SEE | o",
+"sA": 0.204,
+"sS": 0.249,
+"sHS": 0.279,
+"wS": [
+"animation",
+"presentation"
+],
+"wHS": [
+"animation",
+"presentation"
+],
+"W3": "ART(=-1) JOIN(=+3) BIG(=+2) | o LIKE TEXT TIME(=+1) MOOD(=-1) | o LIKE ART(=+5) SAY THING | o"
+},
+"negative": {
+"A": "CHANGE(=0) MEASURE(=+3) GOOD(=-2) | a",
+"S": "CHANGE(=0) MEASURE(=+3) GOOD(=-2) | a LIKE CARE(=+2) TOUCH(=+1) THINK(=-2) | a LIKE THINK(=-3) FEEL(=+2) WANT(=-4) | a",
+"HS": "CHANGE(=0) MEASURE(=+3) WANT(=-2) | a LIKE MEASURE(=+1) GOOD(=-2) CONSUME(=-2) | a LIKE CARE(=+2) TOUCH(=+1) THINK(=-2) | a",
+"sA": 0.296,
+"sS": 0.345,
+"sHS": 0.335,
+"wS": [
+"cautious",
+"skeptical"
+],
+"wHS": [
+"gross",
+"cautious"
+],
+"W3": "CHANGE(=0) MEASURE(=+3) GOOD(=-2) | a LIKE FRIEND(=-5) | a LIKE THINK(=-3) FEEL(=+2) WANT(=-4) | a"
+},
+"negotiated": {
+"A": "VALUE(=-4) THINK(=+2) CAN(=-1) | i",
+"S": "VALUE(=-4) THINK(=+2) CAN(=-1) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE FIGHT(=-1) GIVE(=+2) VALUE(=-2) | i",
+"HS": "VALUE(=-4) THINK(=+2) GIVE(=+2) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE SAY THINK(=+5) | i K+3",
+"sA": 0.47,
+"sS": 0.508,
+"sHS": 0.509,
+"wS": [
+"bargaining",
+"bidding"
+],
+"wHS": [
+"bargaining",
+"persuade"
+],
+"W3": "VALUE(=-4) THINK(=+2) CAN(=-1) | i LIKE VALUE(=-2) FIGHT(=-1) RULE(=+2) | i LIKE VALUE(=-4) GIVE(=0) FRIEND(=+1) | i"
+},
+"notorious": {
+"A": "TIME(=-2) BIG(=+4) FRIEND(=-4) | a",
+"S": "TIME(=-2) BIG(=+4) FRIEND(=-4) | a LIKE GOOD(=-3) BEGIN(=+2) MEASURE(=+2) | a LIKE KNOW MANY(=+5) | a",
+"HS": "TIME(=-2) BIG(=+4) FRIEND(=-4) | a LIKE GOOD(=-3) BEGIN(=+2) MEASURE(=+2) | a LIKE KNOW MANY(=+5) | a",
+"sA": 0.328,
+"sS": 0.377,
+"sHS": 0.377,
+"wS": [
+"worst",
+"famous"
+],
+"wHS": [
+"worst",
+"famous"
+],
+"W3": "TIME(=-2) BIG(=+4) FRIEND(=-4) | a LIKE KNOW MANY(=+5) | a LIKE ABOVE(=+2) BEGIN(=+2) MEASURE(=+1) | a"
+},
+"number": {
+"A": "MEASURE(=-1) TIME(=-1) SAME(=-2) | o",
+"S": "MEASURE(=-1) TIME(=-1) SAME(=-2) | o LIKE PART(=-2) MEASURE(=+5) | o FOR MANY JOIN(=+4) MEASURE(=-5) | o",
+"HS": "MEASURE(=-1) | o LIKE TEXT RULE(=-2) TIME(=-3) | o FOR MANY JOIN(=+4) MEASURE(=-5) | o",
+"sA": 0.324,
+"sS": 0.37,
+"sHS": 0.41,
+"wS": [
+"fraction",
+"sum"
+],
+"wHS": [
+"record",
+"sum"
+],
+"W3": "MEASURE(=-1) TIME(=-1) SAME(=-2) | o LIKE ART(=-5) MANY SEE | o LIKE MEASURE(=+1) THINK(=-1) HAPPEN | o"
+},
+"obscure": {
+"A": "SAME(=-3) SAY(=-4) NEAR(=-2) | i",
+"S": "SAME(=-3) SAY(=-4) NEAR(=-2) | i LIKE MANY(=0) TIME(=-4) BEGIN(=+3) | a LIKE TEXT MEASURE(=-4) PART(=+3) | i",
+"HS": "SAME(=-3) SAY(=-4) KNOW(=-3) | i LIKE MANY(=0) TIME(=-4) BEGIN(=+3) | a LIKE TEXT MEASURE(=-4) PART(=+3) | i",
+"sA": 0.215,
+"sS": 0.28,
+"sHS": 0.356,
+"wS": [
+"one",
+"labels"
+],
+"wHS": [
+"one",
+"labels"
+],
+"W3": "SAME(=-3) SAY(=-4) NEAR(=-2) | i LIKE HAPPEN TIME(=+4) BEGIN(=-3) | i LIKE PART(=0) INSIDE(=+3) DO | i"
+},
+"obstacle": {
+"A": "CAN(=-1) THING(=-1) SIDE(=+3) | o",
+"S": "CAN(=-1) THING(=-1) SIDE(=+3) | o LIKE NEAR(=-1) MEASURE(=-1) MOVE(=0) | o LIKE FIGHT(=-2) MOVE(=+4) LONG(=+1) | o agent",
+"HS": "CAN(=-1) MOVE(=+1) SIDE(=+3) | o LIKE GRAIN(=+3) JOIN(=-3) NEAR(=+2) | o LIKE FIGHT(=-3) MOVE(=+4) THING(=-3) | o",
+"sA": 0.22,
+"sS": 0.287,
+"sHS": 0.32,
+"wS": [
+"distance",
+"runner"
+],
+"wHS": [
+"block",
+"slalom"
+],
+"W3": "CAN(=-1) THING(=-1) SIDE(=+3) | o LIKE PLACE MOVE LONG(=-3) | o LIKE FRIEND(=-5) | o"
+},
+"obtained": {
+"A": "GIVE(=0) CAN(=+2) TIME(=-2) | i",
+"S": "GIVE(=0) CAN(=+2) TIME(=-2) | i LIKE DO CARE(=+2) ART(=-3) | i LIKE CAN(=0) GIVE(=-1) SOMEONE(=-1) | i",
+"HS": "GIVE(=0) CAN(=+2) SAME(=+1) | i LIKE DO CARE(=+2) ART(=-3) | i LIKE GIVE(=0) SOMEONE(=+1) TIME(=-2) | i",
+"sA": 0.302,
+"sS": 0.315,
+"sHS": 0.318,
+"wS": [
+"implemented",
+"managed"
+],
+"wHS": [
+"implemented",
+"got"
+],
+"W3": "GIVE(=0) CAN(=+2) TIME(=-2) | i LIKE SEE | i LIKE BEGIN(=-1) INSIDE(=+3) NEAR(=+1) | i"
+},
+"ordained": {
+"A": "RULE(=+3) LIVE(=-1) SOMEONE(=+2) | i",
+"S": "RULE(=+3) LIVE(=-1) SOMEONE(=+2) | i LIKE RULE(=+4) TIME(=-4) SIDE(=+4) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i",
+"HS": "RULE(=+2) | i",
+"sA": 0.179,
+"sS": 0.184,
+"sHS": 0.201,
+"wS": [
+"presided",
+"dedicated"
+],
+"wHS": [],
+"W3": "RULE(=+3) LIVE(=-1) SOMEONE(=+2) | i LIKE LONG(=0) CAN(=+4) INSIDE(=+2) | i LIKE CAN(=+3) MANY(=+3) ART(=-2) | i"
+},
+"organization": {
+"A": "PART(=+4) RULE(=+1) KNOW(=+2) | o",
+"S": "PART(=+4) RULE(=+1) KNOW(=+2) | o LIKE RULE(=+3) PART(=+5) LIVE(=+4) | o LIKE CARE(=0) JOIN(=+5) PART(=+4) | o",
+"HS": "PART(=+4) RULE(=+1) | o LIKE RULE(=+3) PART(=+5) LIVE(=+4) | o LIKE CARE(=0) JOIN(=+5) PART(=+4) | o",
+"sA": 0.412,
+"sS": 0.504,
+"sHS": 0.536,
+"wS": [
+"leadership",
+"coordination"
+],
+"wHS": [
+"leadership",
+"coordination"
+],
+"W3": "PART(=+4) RULE(=+1) KNOW(=+2) | o LIKE PART(=+5) DO VALUE | o LIKE PART(=+3) ART(=+1) FRIEND(=+2) | o N+3"
+},
+"organizing": {
+"A": "PART(=+4) FEEL(=+2) THINK(=+3) | i",
+"S": "PART(=+4) FEEL(=+2) THINK(=+3) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE ART(=-3) JOIN(=+5) RULE(=-3) | i",
+"HS": "PART(=+5) JOIN(=+3) BEGIN(=-2) | i LIKE HAPPEN | o result LIKE DO BEGIN(=-3) ART(=+1) | i",
+"sA": 0.287,
+"sS": 0.326,
+"sHS": 0.372,
+"wS": [
+"creating",
+"networking"
+],
+"wHS": [
+"consequence",
+"creating"
+],
+"W3": "PART(=+4) FEEL(=+2) THINK(=+3) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE TEXT SIDE(=+2) ART(=0) | i"
+},
+"parliamentary": {
+"A": "RULE(=+3) INSIDE(=+1) FIGHT(=-1) | a",
+"S": "RULE(=+3) INSIDE(=+1) FIGHT(=-1) | a LIKE RULE(=+3) SOMEONE(=-3) THING(=+2) | o LIKE RULE(=+4) BIG(=+3) BEGIN(=+2) | a",
+"HS": "RULE(=+3) INSIDE(=+1) PART(=+2) | a LIKE FIGHT(=-1) RULE(=+4) BIG(=+1) | a",
+"sA": 0.258,
+"sS": 0.294,
+"sHS": 0.341,
+"wS": [
+"authorities",
+"supreme"
+],
+"wHS": [
+"electoral"
+],
+"W3": "RULE(=+3) INSIDE(=+1) FIGHT(=-1) | a LIKE SAME(=+4) MANY(=+5) | a LIKE SAME(=+3) | a"
+},
+"pink": {
+"A": "LONG(=-1) TOUCH(=-4) BIG(=-2) | a",
+"S": "LONG(=-1) TOUCH(=-4) BIG(=-2) | a LIKE TIME(=0) SOMEONE(=-1) | e LIKE TOUCH(=-2) MOOD(=+2) VALUE(=+1) | a",
+"HS": "TOUCH(=-3) LONG(=-3) VALUE(=0) | a LIKE TIME(=0) SOMEONE(=-1) | e LIKE BIG(=-2) | a",
+"sA": 0.19,
+"sS": 0.213,
+"sHS": 0.243,
+"wS": [
+"later",
+"sweet"
+],
+"wHS": [
+"later",
+"little"
+],
+"W3": "LONG(=-1) TOUCH(=-4) BIG(=-2) | a LIKE VALUE(=+4) | a LIKE BIG(=+1) | a"
+},
+"placed": {
+"A": "PLACE MOVE(=-3) JOIN(=0) | i",
+"S": "PLACE MOVE(=-3) JOIN(=0) | i LIKE MOVE INSIDE(=+5) | i K+3 LIKE MOVE(=-4) ABOVE(=+1) LONG(=+2) | i",
+"HS": "PLACE MOVE(=-3) INSIDE(=+2) | i LIKE MOVE(=-4) ABOVE(=+1) LONG(=+2) | i LIKE GIVE(=+3) FIGHT(=-2) GOOD(=+2) | i",
+"sA": 0.204,
+"sS": 0.264,
+"sHS": 0.308,
+"wS": [
+"insert",
+"stood"
+],
+"wHS": [
+"stood",
+"awarded"
+],
+"W3": "PLACE MOVE(=-3) JOIN(=0) | i LIKE TEXT TIME(=-1) GIVE(=+1) | i LIKE JOIN(=+1) MEASURE(=-1) TIME(=-1) | i"
+},
+"plaintiffs": {
+"A": "RULE(=+3) SOMEONE(=-5) THING(=-2) | o agent N+3",
+"S": "RULE(=+3) SOMEONE(=-5) THING(=-2) | o agent N+3 LIKE SIDE(=+1) FRIEND(=-3) WANT(=-2) | o LIKE SOMEONE RULE(=+4) THINK(=+5) | o",
+"HS": "RULE(=+3) SOMEONE(=-4) THINK(=+2) | o agent N+3 LIKE SIDE(=+1) FRIEND(=-3) WANT(=-2) | o LIKE SOMEONE RULE(=+4) THINK(=+5) | o",
+"sA": 0.114,
+"sS": 0.2,
+"sHS": 0.234,
+"wS": [
+"opposition",
+"judge"
+],
+"wHS": [
+"opposition",
+"judge"
+],
+"W3": "RULE(=+3) SOMEONE(=-5) THING(=-2) | o agent N+3 LIKE SOMEONE RULE(=+4) THINK(=+5) | o LIKE PLACE RULE(=+4) THINK(=+5) | o"
+},
+"preceded": {
+"A": "BEGIN(=0) SAME(=0) HAPPEN | i",
+"S": "BEGIN(=0) SAME(=0) HAPPEN | i LIKE RULE(=+4) TIME(=-4) SIDE(=+4) | i LIKE BEGIN(=-1) INSIDE(=+3) NEAR(=+1) | i",
+"HS": "BEGIN(=0) SAME(=+1) SIDE(=+3) | i LIKE RULE(=+4) TIME(=-4) SIDE(=+4) | i",
+"sA": 0.284,
+"sS": 0.329,
+"sHS": 0.353,
+"wS": [
+"presided",
+"entered"
+],
+"wHS": [
+"presided"
+],
+"W3": "BEGIN(=0) SAME(=0) HAPPEN | i LIKE RULE(=+4) TIME(=-4) SIDE(=+4) | i LIKE TIME(=+3) FEEL(=+1) WANT(=0) | i"
+},
+"prevent": {
+"A": "JOIN(=-1) MOVE(=-2) HAPPEN | i",
+"S": "JOIN(=-1) MOVE(=-2) HAPPEN | i LIKE DO WANT(=-2) RULE(=+3) | i LIKE WANT(=-2) MANY(=-3) JOIN(=-1) | i",
+"HS": "JOIN(=-1) MOVE(=-2) HAPPEN | i LIKE DO WANT(=-2) RULE(=+3) | i LIKE WANT(=-2) MANY(=-3) JOIN(=-1) | i",
+"sA": 0.343,
+"sS": 0.404,
+"sHS": 0.404,
+"wS": [
+"impose",
+"deny"
+],
+"wHS": [
+"impose",
+"deny"
+],
+"W3": "JOIN(=-1) MOVE(=-2) HAPPEN | i LIKE WANT(=-3) JOIN(=+2) SIDE(=+1) | i LIKE DO GOOD(=-4) | i K-4"
+},
+"process": {
+"A": "BEGIN(=-1) ART(=-1) CARE(=+1) | o",
+"S": "BEGIN(=-1) ART(=-1) CARE(=+1) | o PI ART(=-2) MANY(=+2) RULE(=+2) | o LIKE CHANGE(=+3) MOVE(=+1) BEGIN(=0) | o",
+"HS": "BEGIN(=-1) CARE(=+2) PART(=0) | o PI ART(=-2) MANY(=+2) RULE(=+2) | o LIKE CHANGE(=+3) MOVE(=+1) BEGIN(=0) | o",
+"sA": 0.429,
+"sS": 0.48,
+"sHS": 0.51,
+"wS": [
+"system",
+"transition"
+],
+"wHS": [
+"system",
+"transition"
+],
+"W3": "BEGIN(=-1) ART(=-1) CARE(=+1) | o LIKE THINK | o result LIKE THING(=-5) MOVE DO | o"
+},
+"projects": {
+"A": "ART(=0) GIVE(=+3) SOMEONE(=0) | i",
+"S": "ART(=0) GIVE(=+3) SOMEONE(=0) | i LIKE LAND(=+1) MANY(=+3) RULE(=+2) | o LIKE DO BEGIN(=-3) ART(=+1) | i",
+"HS": "ART(=0) GIVE(=+4) SIDE(=+2) | i LIKE LAND(=+1) MANY(=+3) RULE(=+2) | o LIKE DO BEGIN(=-3) ART(=+1) | i",
+"sA": 0.238,
+"sS": 0.295,
+"sHS": 0.332,
+"wS": [
+"nation",
+"creating"
+],
+"wHS": [
+"nation",
+"creating"
+],
+"W3": "ART(=0) GIVE(=+3) SOMEONE(=0) | i LIKE TEXT SIDE(=+2) ART(=0) | i LIKE GIVE(=+3) JOIN(=+3) CHANGE(=+1) | i"
+},
+"protected": {
+"A": "INSIDE(=-1) CHANGE(=-3) KNOW(=+1) | i",
+"S": "INSIDE(=-1) CHANGE(=-3) KNOW(=+1) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i LIKE LIVE(=+1) VALUE(=+5) LAND(=-1) | i",
+"HS": "INSIDE(=-2) CHANGE(=-5) THINK(=+3) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i LIKE LIVE(=+1) VALUE(=+5) LAND(=-1) | i",
+"sA": 0.193,
+"sS": 0.212,
+"sHS": 0.233,
+"wS": [
+"dedicated",
+"endangered"
+],
+"wHS": [
+"dedicated",
+"endangered"
+],
+"W3": "INSIDE(=-1) CHANGE(=-3) KNOW(=+1) | i LIKE CHANGE(=0) SIDE(=-5) LIVE(=+1) | i LIKE DO GOOD(=-4) | i K-4"
+},
+"proved": {
+"A": "MANY(=-3) THINK(=+3) GOOD(=+2) | i",
+"S": "MANY(=-3) THINK(=+3) GOOD(=+2) | i LIKE SEE | i LIKE THINK(=-1) CAN(=+4) CARE(=-2) | i",
+"HS": "MANY(=-3) CAN(=+1) GOOD(=+2) | i LIKE SEE | i LIKE THINK(=-1) CAN(=+4) CARE(=-2) | i",
+"sA": 0.201,
+"sS": 0.243,
+"sHS": 0.259,
+"wS": [
+"viewed",
+"justified"
+],
+"wHS": [
+"viewed",
+"justified"
+],
+"W3": "MANY(=-3) THINK(=+3) GOOD(=+2) | i LIKE BEGIN(=-1) INSIDE(=+3) NEAR(=+1) | i LIKE THINK(=0) WANT(=-3) FIGHT(=-1) | i"
+},
+"punch": {
+"A": "SIDE(=+1) GIVE(=-4) SAY(=+5) | i",
+"S": "SIDE(=+1) GIVE(=-4) SAY(=+5) | i LIKE TOUCH(=+5) MOVE(=+4) | o tool LIKE TOUCH(=+4) MOVE(=+4) BODY | i",
+"HS": "TOUCH(=+1) GIVE(=-3) SAY(=+5) | i LIKE TOUCH(=+5) MOVE(=+4) | o tool LIKE TOUCH(=+4) MOVE(=+4) BODY | i",
+"sA": 0.127,
+"sS": 0.293,
+"sHS": 0.337,
+"wS": [
+"hammer",
+"kick"
+],
+"wHS": [
+"hammer",
+"kick"
+],
+"W3": "SIDE(=+1) GIVE(=-4) SAY(=+5) | i LIKE FIGHT(=0) | i LIKE JOIN(=+1) MEASURE(=-1) | i"
+},
+"purpose": {
+"A": "BEGIN(=+1) WANT(=+5) RULE(=+1) | o",
+"S": "BEGIN(=+1) WANT(=+5) RULE(=+1) | o LIKE RULE THINK | o LIKE ART(=-3) CAN(=+3) MEASURE(=-1) | o",
+"HS": "BEGIN(=+1) WANT(=+5) THINK(=+1) | o LIKE LIVE(=+1) MANY(=-2) PART(=0) | o LIKE ART(=-3) CAN(=+3) MEASURE(=-1) | o",
+"sA": 0.293,
+"sS": 0.367,
+"sHS": 0.377,
+"wS": [
+"principle",
+"utility"
+],
+"wHS": [
+"existence",
+"utility"
+],
+"W3": "BEGIN(=+1) WANT(=+5) RULE(=+1) | o LIKE HAPPEN | o agent LIKE THINK | o result"
+},
+"qualify": {
+"A": "THINK(=+2) GIVE(=+2) FIGHT(=-3) | i",
+"S": "THINK(=+2) GIVE(=+2) FIGHT(=-3) | i LIKE MANY(=-3) KNOW(=+4) GIVE(=+3) | i LIKE CAN(=+2) SAME(=+1) JOIN(=+2) | i",
+"HS": "THINK(=+2) GIVE(=+2) FIGHT(=-3) | i LIKE MANY(=-3) KNOW(=+4) GIVE(=+3) | i LIKE CAN(=+2) SAME(=+1) JOIN(=+2) | i",
+"sA": 0.407,
+"sS": 0.447,
+"sHS": 0.447,
+"wS": [
+"mention",
+"fit"
+],
+"wHS": [
+"mention",
+"fit"
+],
+"W3": "THINK(=+2) GIVE(=+2) FIGHT(=-3) | i LIKE MOVE INSIDE(=+5) | i LIKE GIVE(=+2) RULE(=+3) CAN(=+1) | i"
+},
+"question": {
+"A": "THINK(=-1) TEXT | o",
+"S": "THINK(=-1) TEXT | o LIKE THINK(=-3) FRIEND(=-1) | o LIKE THINK(=-3) RULE(=-1) VALUE(=-3) | o",
+"HS": "THINK(=-1) | o LIKE THINK(=-1) RULE(=-1) TEXT | o LIKE CARE(=+2) THINK(=-4) GIVE(=+3) | o",
+"sA": 0.538,
+"sS": 0.597,
+"sHS": 0.597,
+"wS": [
+"suspicion",
+"speculation"
+],
+"wHS": [
+"discussion",
+"consideration"
+],
+"W3": "THINK(=-1) TEXT | o LIKE THINK | o result LIKE CARE(=+3) THINK(=-1) RULE(=+2) | o"
+},
+"randy": {
+"A": "FEEL(=+2) LONG(=+3) THING(=+1) | a",
+"S": "FEEL(=+2) LONG(=+3) THING(=+1) | a LIKE SAY MOOD(=+5) | o LIKE HEAT(=+1) KNOW(=-4) MOVE(=-2) | a",
+"HS": "FEEL(=+2) MOOD(=+2) THING(=+1) | a LIKE RULE(=-2) FRIEND(=0) WANT(=+4) | a LIKE HEAT(=+1) KNOW(=-4) MOVE(=-2) | a",
+"sA": 0.14,
+"sS": 0.164,
+"sHS": 0.174,
+"wS": [
+"joke",
+"naked"
+],
+"wHS": [
+"sexual",
+"naked"
+],
+"W3": "FEEL(=+2) LONG(=+3) THING(=+1) | a LIKE VALUE MANY(=+5) | a LIKE CARE(=-1) GOOD(=-4) CONSUME(=-3) | a"
+},
+"ratings": {
+"A": "MEASURE(=+1) RULE(=+2) | o N+3",
+"S": "MEASURE(=+1) RULE(=+2) | o N+3 LIKE FIGHT(=-2) LONG(=+3) SEE | o LIKE TEXT MEASURE(=+3) ABOVE(=-1) | o",
+"HS": "MEASURE(=+1) ABOVE(=-1) SEE | o N+3 LIKE RULE(=+3) GIVE(=+3) FEEL(=+1) | o LIKE FIGHT(=-2) MEASURE(=+3) RULE(=+3) | o",
+"sA": 0.32,
+"sS": 0.377,
+"sHS": 0.459,
+"wS": [
+"scoreboard",
+"index"
+],
+"wHS": [
+"approval",
+"polls"
+],
+"W3": "MEASURE(=+1) RULE(=+2) | o N+3 LIKE SEE FIGHT(=-2) SOMEONE(=-2) | o LIKE SAY GIVE(=+3) MANY(=+5) | o"
+},
+"raw": {
+"A": "TOUCH(=0) FRIEND(=-3) THING(=0) | a",
+"S": "TOUCH(=0) FRIEND(=-3) THING(=0) | a LIKE GRAIN(=0) CONSUME(=+5) THING(=0) | o LIKE RULE(=-2) SAME(=+3) MANY(=-4) | a",
+"HS": "TOUCH(=+1) THING(=0) CONSUME(=0) | a LIKE GRAIN(=0) CONSUME(=+5) THING(=0) | o LIKE THING(=+2) FEEL(=+3) FRIEND(=-3) | a",
+"sA": 0.237,
+"sS": 0.307,
+"sHS": 0.328,
+"wS": [
+"flour",
+"actual"
+],
+"wHS": [
+"flour",
+"wild"
+],
+"W3": "TOUCH(=0) FRIEND(=-3) THING(=0) | a LIKE VALUE MANY(=+5) | a LIKE MOOD(=-2) RULE(=-2) FEEL(=+1) | a"
+},
+"receiver": {
+"A": "ART(=-3) NEAR(=-5) SIDE(=-3) | o",
+"S": "ART(=-3) NEAR(=-5) SIDE(=-3) | o LIKE FIGHT(=-3) MOVE(=+1) RULE(=-1) | o agent LIKE GIVE(=+2) FIGHT(=-3) PLACE | o agent",
+"HS": "LONG(=0) ART(=-5) NEAR(=-5) | o LIKE SAY GIVE(=+3) MANY(=+5) | o LIKE GIVE(=+2) FIGHT(=-3) PLACE | o agent",
+"sA": 0.071,
+"sS": 0.148,
+"sHS": 0.204,
+"wS": [
+"athlete",
+"host"
+],
+"wHS": [
+"broadcasting",
+"host"
+],
+"W3": "ART(=-3) NEAR(=-5) SIDE(=-3) | o LIKE SAY GIVE(=+3) MANY(=+5) | o LIKE SOMEONE FIGHT(=-5) | o"
+},
+"related": {
+"A": "SAME(=0) JOIN(=+3) HAPPEN | i",
+"S": "SAME(=0) JOIN(=+3) HAPPEN | i LIKE MOOD(=+5) | i LIKE JOIN(=+4) NEAR(=+1) PART(=+2) | i",
+"HS": "SAME(=0) JOIN(=+3) NEAR(=+1) | i LIKE MOOD(=+5) | i LIKE HAPPEN | i",
+"sA": 0.301,
+"sS": 0.316,
+"sHS": 0.336,
+"wS": [
+"laugh",
+"joining"
+],
+"wHS": [
+"laugh",
+"occur"
+],
+"W3": "SAME(=0) JOIN(=+3) HAPPEN | i LIKE KNOW(=+2) TIME(=-4) WANT(=+2) | i LIKE SAY THINK | i"
+},
+"remainder": {
+"A": "BEGIN(=+2) JOIN(=-4) MOVE(=-5) | o",
+"S": "BEGIN(=+2) JOIN(=-4) MOVE(=-5) | o LIKE PART(=0) GRAIN(=-1) SAME(=-1) | o LIKE BEGIN(=+2) MEASURE(=+3) TIME(=-1) | o",
+"HS": "BEGIN(=+2) CHANGE(=-2) PART(=0) | o LIKE PART(=-1) THING(=-3) GRAIN(=-2) | o LIKE MEASURE(=+1) JOIN(=-4) GIVE(=+3) | o",
+"sA": 0.348,
+"sS": 0.404,
+"sHS": 0.467,
+"wS": [
+"mixture",
+"quarter"
+],
+"wHS": [
+"debris",
+"surplus"
+],
+"W3": "BEGIN(=+2) JOIN(=-4) MOVE(=-5) | o LIKE PART(=-2) MEASURE(=+5) | o LIKE MANY JOIN(=+4) MEASURE(=-5) | o"
+},
+"remains": {
+"A": "CHANGE(=-3) LIVE(=-2) PART(=-2) | i",
+"S": "CHANGE(=-3) LIVE(=-2) PART(=-2) | i LIKE ( TIME(=0) SOMEONE(=-1) | e LIKE CHANGE(=-2) TIME(=-3) THINK(=0) | i )",
+"HS": "CHANGE(=-3) LIVE(=-2) GRAIN(=+1) | i LIKE ( TIME(=0) SOMEONE(=-1) | e LIKE CHANGE(=-2) TIME(=-3) THINK(=0) | i )",
+"sA": 0.399,
+"sS": 0.408,
+"sHS": 0.452,
+"wS": [
+"later",
+"reiterated",
+"nested"
+],
+"wHS": [
+"later",
+"reiterated",
+"nested"
+],
+"W3": "CHANGE(=-3) LIVE(=-2) PART(=-2) | i LIKE MOVE NEAR(=-5) | i LIKE CHANGE(=0) SIDE(=-5) LIVE(=+1) | i"
+},
+"requires": {
+"A": "DO WANT(=+1) CAN(=+1) | i",
+"S": "DO WANT(=+1) CAN(=+1) | i LIKE GIVE(=+2) RULE(=+4) CAN(=+2) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i",
+"HS": "DO WANT(=+1) CAN(=+1) | i LIKE GIVE(=+2) RULE(=+4) CAN(=+2) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i",
+"sA": 0.554,
+"sS": 0.583,
+"sHS": 0.583,
+"wS": [
+"permits",
+"dedicated"
+],
+"wHS": [
+"permits",
+"dedicated"
+],
+"W3": "DO WANT(=+1) CAN(=+1) | i LIKE RULE(=+3) | i K0 LIKE GIVE(=+2) RULE(=+3) CAN(=+1) | i"
+},
+"reserved": {
+"A": "RULE(=0) MOVE(=-4) FEEL(=-1) | i",
+"S": "RULE(=0) MOVE(=-4) FEEL(=-1) | i LIKE SAY MOOD(=+5) | o LIKE VALUE(=-2) GIVE(=+1) PLACE | i",
+"HS": "RULE(=-1) MOVE(=-4) SAY(=-3) | i LIKE MOVE INSIDE(=+5) | i K+3 LIKE VALUE(=-2) GIVE(=+1) PLACE | i",
+"sA": 0.207,
+"sS": 0.239,
+"sHS": 0.26,
+"wS": [
+"joke",
+"rent"
+],
+"wHS": [
+"insert",
+"rent"
+],
+"W3": "RULE(=0) MOVE(=-4) FEEL(=-1) | i LIKE RULE(=+3) LAND(=0) CHANGE(=0) | i LIKE CHANGE(=-4) | i"
+},
+"rick": {
+"A": "LONG(=+1) HEAT(=+1) KNOW(=-1) | o",
+"S": "LONG(=+1) HEAT(=+1) KNOW(=-1) | o LIKE ART(=+1) THING(=-4) TIME(=-1) | o agent LIKE TOUCH(=+5) THING(=-5) SIDE(=-5) | o agent",
+"HS": "LONG(=+2) KNOW(=-1) THING(=0) | o LIKE HEAT(=+3) PART(=-2) NEAR(=-4) | o LIKE TOUCH(=+5) THING(=-5) SIDE(=-5) | o agent",
+"sA": 0.162,
+"sS": 0.205,
+"sHS": 0.212,
+"wS": [
+"guitarist",
+"miller"
+],
+"wHS": [
+"ray",
+"miller"
+],
+"W3": "LONG(=+1) HEAT(=+1) KNOW(=-1) | o LIKE FIGHT(=-3) KNOW(=-5) MOOD(=-4) | o agent N+3 LIKE THINK | o result"
+},
+"ruins": {
+"A": "NEAR(=+1) LIVE(=-3) THING(=-4) | o N+3",
+"S": "NEAR(=+1) LIVE(=-3) THING(=-4) | o N+3 LIKE PLACE LIVE(=-1) SEE | o N+3 LIKE PLACE BEGIN(=+3) GRAIN(=+3) | o",
+"HS": "LIVE(=-2) LAND(=+3) THING(=-5) | o N+3 LIKE PLACE LIVE(=-1) SEE | o N+3 LIKE PLACE BEGIN(=+3) GRAIN(=+3) | o",
+"sA": 0.294,
+"sS": 0.376,
+"sHS": 0.408,
+"wS": [
+"scenes",
+"landmark"
+],
+"wHS": [
+"scenes",
+"landmark"
+],
+"W3": "NEAR(=+1) LIVE(=-3) THING(=-4) | o N+3 LIKE FIGHT(=+5) FRIEND(=-3) HEAT(=+5) | o N+3 LIKE PART(=+3) ART(=+1) FRIEND(=+2) | o N+3"
+},
+"saint": {
+"A": "LIVE(=0) ART(=+5) NEAR(=+4) | o agent",
+"S": "LIVE(=0) ART(=+5) NEAR(=+4) | o agent LIKE GRAIN(=0) ABOVE(=+2) NEAR(=-3) | o LIKE FIGHT(=0) WANT(=+4) GOOD(=+4) | o",
+"HS": "ART(=+4) NEAR(=+5) WANT(=+4) | o agent LIKE GRAIN(=0) ABOVE(=+2) NEAR(=-3) | o LIKE BODY NEAR(=0) LAND(=-3) | o",
+"sA": 0.161,
+"sS": 0.206,
+"sHS": 0.208,
+"wS": [
+"cloud",
+"glory"
+],
+"wHS": [
+"cloud",
+"palm"
+],
+"W3": "LIVE(=0) ART(=+5) NEAR(=+4) | o agent LIKE SOMEONE RULE(=+5) SEX(=+5) | o LIKE THING(=+3) INSIDE(=-3) GIVE(=-4) | o agent"
+},
+"saving": {
+"A": "VALUE(=+1) LIVE(=+1) MEASURE(=+1) | i",
+"S": "VALUE(=+1) LIVE(=+1) MEASURE(=+1) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i",
+"HS": "VALUE(=0) LIVE(=+1) SIDE(=-1) | i LIKE CARE(=+2) CHANGE(=-4) GIVE(=+5) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i",
+"sA": 0.213,
+"sS": 0.256,
+"sHS": 0.276,
+"wS": [
+"dedicated",
+"restoring"
+],
+"wHS": [
+"dedicated",
+"restoring"
+],
+"W3": "VALUE(=+1) LIVE(=+1) MEASURE(=+1) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i"
+},
+"searching": {
+"A": "THINK(=0) CARE(=+4) LIVE(=-1) | i",
+"S": "THINK(=0) CARE(=+4) LIVE(=-1) | i LIKE THINK(=+1) CAN(=-2) NEAR(=+1) | i LIKE MOVE(=+2) FIGHT(=-2) THING(=+3) | i",
+"HS": "THINK(=0) CARE(=+4) FEEL(=+1) | i LIKE MOVE(=+2) FIGHT(=-2) THING(=+3) | i",
+"sA": 0.306,
+"sS": 0.311,
+"sHS": 0.334,
+"wS": [
+"finding",
+"chase"
+],
+"wHS": [
+"chase"
+],
+"W3": "THINK(=0) CARE(=+4) LIVE(=-1) | i LIKE MOVE(=0) THING(=+2) FIGHT(=-2) | i LIKE THINK(=+1) CARE(=+4) SEE | i"
+},
+"sect": {
+"A": "PART(=+2) RULE(=+3) PLACE | o",
+"S": "PART(=+2) RULE(=+3) PLACE | o LIKE PART(=+3) | o LIKE PART(=+3) JOIN(=+2) FRIEND(=-1) | o",
+"HS": "PART(=+2) RULE(=+3) | o LIKE PART(=+3) JOIN(=+2) FRIEND(=-1) | o",
+"sA": 0.198,
+"sS": 0.238,
+"sHS": 0.289,
+"wS": [
+"group",
+"gang"
+],
+"wHS": [
+"gang"
+],
+"W3": "PART(=+2) RULE(=+3) PLACE | o LIKE FIGHT(=+3) FRIEND(=-3) PART(=+2) | o LIKE SAME(=0) FIGHT(=+4) LONG(=-3) | o"
+},
+"semi": {
+"A": "SOMEONE(=0) BEGIN(=+3) GRAIN(=+3) | o",
+"S": "SOMEONE(=0) BEGIN(=+3) GRAIN(=+3) | o LIKE SIDE(=-1) SAME(=+4) BIG(=+2) | o LIKE MEASURE(=-1) TOUCH(=-2) BIG(=-1) | o",
+"HS": "SOMEONE(=0) BEGIN(=+4) BIG(=-1) | o LIKE MEASURE(=-1) TOUCH(=-2) BIG(=-1) | o LIKE FIGHT(=-3) MOVE(=+4) THING(=-3) | o",
+"sA": 0.187,
+"sS": 0.257,
+"sHS": 0.339,
+"wS": [
+"double",
+"medium"
+],
+"wHS": [
+"medium",
+"slalom"
+],
+"W3": "SOMEONE(=0) BEGIN(=+3) GRAIN(=+3) | o LIKE BEGIN(=+2) FIGHT(=-1) | o LIKE FIGHT(=-5) PART(=+5) | o"
+},
+"sentencing": {
+"A": "RULE(=+5) FRIEND(=-3) TIME(=+2) | i",
+"S": "RULE(=+5) FRIEND(=-3) TIME(=+2) | i LIKE GIVE(=-2) LIVE(=-1) RULE(=+5) | i LIKE TEXT CARE(=+2) THINK(=+1) | i",
+"HS": "RULE(=+5) FRIEND(=-3) TEXT | i LIKE TIME(=0) BEGIN(=-2) FEEL(=-2) | a LIKE GIVE(=-2) LIVE(=-1) RULE(=+5) | i",
+"sA": 0.234,
+"sS": 0.261,
+"sHS": 0.266,
+"wS": [
+"arrest",
+"review"
+],
+"wHS": [
+"early",
+"arrest"
+],
+"W3": "RULE(=+5) FRIEND(=-3) TIME(=+2) | i LIKE RULE(=+5) WANT(=+1) FEEL(=+2) | i LIKE MOVE(=-1) CARE(=-4) BEGIN(=-5) | i"
+},
+"session": {
+"A": "PART(=+2) BEGIN(=+1) TIME(=0) | o",
+"S": "PART(=+2) BEGIN(=+1) TIME(=0) | o LIKE ART(=0) RULE(=-2) BODY | o LIKE MOVE(=0) BIG(=-3) BEGIN(=+2) | o",
+"HS": "BEGIN(=+1) PART(=+3) RULE(=+1) | o LIKE MOVE(=0) BIG(=-3) BEGIN(=+2) | o LIKE SAY(=+1) PART(=+3) SOMEONE(=-1) | o",
+"sA": 0.251,
+"sS": 0.311,
+"sHS": 0.349,
+"wS": [
+"therapy",
+"minute"
+],
+"wHS": [
+"minute",
+"audience"
+],
+"W3": "PART(=+2) BEGIN(=+1) TIME(=0) | o LIKE RULE(=+3) | o agent N+3 LIKE PLACE INSIDE(=+5) PART(=-2) | o"
+},
+"setting": {
+"A": "PLACE HEAT(=+3) PART(=+4) | i",
+"S": "PLACE HEAT(=+3) PART(=+4) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE THINK(=+3) FEEL(=-3) MOVE(=-1) | i",
+"HS": "PLACE HEAT(=+3) BEGIN(=-2) | i LIKE HAPPEN | o result LIKE THINK(=+1) MEASURE(=0) SAME(=-2) | i",
+"sA": 0.181,
+"sS": 0.252,
+"sHS": 0.3,
+"wS": [
+"creating",
+"settle"
+],
+"wHS": [
+"consequence",
+"determining"
+],
+"W3": "PLACE HEAT(=+3) PART(=+4) | i LIKE DO BEGIN(=-3) ART(=+1) | i LIKE ABOVE(=+2) LIVE(=+2) THING(=+2) | i"
+},
+"shares": {
+"A": "GIVE(=+1) MEASURE(=+2) VALUE(=-2) | i",
+"S": "GIVE(=+1) MEASURE(=+2) VALUE(=-2) | i LIKE SAY MOOD(=+5) | o LIKE ABOVE(=-2) GIVE(=-2) TIME(=-3) | i",
+"HS": "GIVE(=+1) MEASURE(=+2) VALUE(=-2) | i LIKE SAY MOOD(=+5) | o LIKE ABOVE(=-2) GIVE(=-2) TIME(=-3) | i",
+"sA": 0.438,
+"sS": 0.455,
+"sHS": 0.455,
+"wS": [
+"joke",
+"fell"
+],
+"wHS": [
+"joke",
+"fell"
+],
+"W3": "GIVE(=+1) MEASURE(=+2) VALUE(=-2) | i LIKE ABOVE(=-3) GIVE(=-1) LAND(=-4) | i LIKE SEE GIVE(=+3) SAME(=-3) | i"
+},
+"sharing": {
+"A": "FRIEND(=+3) JOIN(=+1) SAME(=+2) | i",
+"S": "FRIEND(=+3) JOIN(=+1) SAME(=+2) | i LIKE GIVE(=0) CHANGE(=+2) JOIN(=-1) | i LIKE FEEL(=0) CONSUME(=+5) MOOD(=+5) | i",
+"HS": "JOIN(=+1) FRIEND(=+4) MOOD(=+1) | i LIKE GIVE(=0) CHANGE(=+2) JOIN(=-1) | i LIKE GIVE(=+3) JOIN(=+3) CHANGE(=+1) | i",
+"sA": 0.32,
+"sS": 0.365,
+"sHS": 0.38,
+"wS": [
+"transfer",
+"enjoying"
+],
+"wHS": [
+"transfer",
+"contribute"
+],
+"W3": "FRIEND(=+3) JOIN(=+1) SAME(=+2) | i LIKE GIVE(=+2) | i LIKE JOIN(=+4) NEAR(=+1) PART(=+2) | i"
+},
+"shoe": {
+"A": "THING(=-1) LONG(=-4) MEASURE(=-3) | o",
+"S": "THING(=-1) LONG(=-4) MEASURE(=-3) | o PI PLACE NEAR(=+3) VALUE(=-3) | o LIKE BODY LONG(=-5) FIGHT(=-1) | o",
+"HS": "THING(=-1) LONG(=-4) BODY | o LIKE ART(=-1) LONG(=-5) GRAIN(=+1) | o LIKE VALUE(=-3) NEAR(=+2) PLACE | o",
+"sA": 0.212,
+"sS": 0.257,
+"sHS": 0.279,
+"wS": [
+"mall",
+"shirt"
+],
+"wHS": [
+"textile",
+"mart"
+],
+"W3": "THING(=-1) LONG(=-4) MEASURE(=-3) | o LIKE FIGHT(=+4) LAND(=-5) RULE(=+2) | o LIKE VALUE(=-3) NEAR(=+2) PART(=+3) | o"
+},
+"shows": {
+"A": "SEE DO MANY(=-1) | i",
+"S": "SEE DO MANY(=-1) | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE SAME(=-2) SEE GIVE(=+2) | i",
+"HS": "SEE DO TIME(=-1) | i LIKE ART(=+5) SEE GRAIN(=-3) | o LIKE SAME(=-2) SEE GIVE(=+2) | i",
+"sA": 0.38,
+"sS": 0.471,
+"sHS": 0.511,
+"wS": [
+"painting",
+"exhibited"
+],
+"wHS": [
+"painting",
+"exhibited"
+],
+"W3": "SEE DO MANY(=-1) | i LIKE SEE GIVE(=+3) SAME(=-3) | i LIKE SAME(=-2) SEE GIVE(=+2) | i"
+},
+"shutdown": {
+"A": "JOIN(=-3) NEAR(=+4) ART(=-4) | o",
+"S": "JOIN(=-3) NEAR(=+4) ART(=-4) | o LIKE HAPPEN RULE(=+4) CARE(=+3) | o LIKE FIGHT(=-1) BEGIN(=+5) CARE(=-2) | o",
+"HS": "BEGIN(=+1) JOIN(=-4) ART(=-4) | o LIKE HAPPEN RULE(=+4) CARE(=+3) | o LIKE HAPPEN CAN(=-4) CARE(=-2) | o",
+"sA": 0.154,
+"sS": 0.253,
+"sHS": 0.313,
+"wS": [
+"procedure",
+"overtime"
+],
+"wHS": [
+"procedure",
+"failure"
+],
+"W3": "JOIN(=-3) NEAR(=+4) ART(=-4) | o LIKE BEGIN(=-1) HAPPEN RULE(=+2) | o LIKE THING(=-5) THINK ART(=-5) | o"
+},
+"sin": {
+"A": "WANT(=+1) CARE(=-5) FRIEND(=-5) | o",
+"S": "WANT(=+1) CARE(=-5) FRIEND(=-5) | o LIKE LIVE(=-4) MOOD(=-3) ABOVE(=+3) | o LIKE WANT(=-3) JOIN(=-5) MOOD(=-5) | o",
+"HS": "WANT(=0) CARE(=-5) MOOD(=-4) | o LIKE PART(=0) FRIEND(=-5) LIVE(=-4) | o",
+"sA": 0.167,
+"sS": 0.208,
+"sHS": 0.229,
+"wS": [
+"suicide",
+"abortion"
+],
+"wHS": [
+"destruction"
+],
+"W3": "WANT(=+1) CARE(=-5) FRIEND(=-5) | o LIKE PART(=-2) MEASURE(=+5) | o LIKE TEXT | o"
+},
+"source": {
+"A": "TEXT CHANGE(=-2) CAN(=+3) | o",
+"S": "TEXT CHANGE(=-2) CAN(=+3) | o LIKE ART(=-2) ABOVE(=-3) PART(=+3) | o agent LIKE GRAIN(=0) LONG(=-1) LAND(=-2) | o",
+"HS": "TEXT PART(=0) CAN(=+3) | o LIKE ART(=-2) ABOVE(=-3) PART(=+3) | o agent LIKE GRAIN(=0) LONG(=-1) LAND(=-2) | o",
+"sA": 0.185,
+"sS": 0.265,
+"sHS": 0.271,
+"wS": [
+"producer",
+"pipeline"
+],
+"wHS": [
+"producer",
+"pipeline"
+],
+"W3": "TEXT CHANGE(=-2) CAN(=+3) | o LIKE FRIEND FIGHT | o LIKE HEAT(=+5) ABOVE(=+5) PART(=-2) | o"
+},
+"specifically": {
+"A": "SAME(=-1) SOMEONE(=-1) CARE(=+2) | e",
+"S": "SAME(=-1) SOMEONE(=-1) CARE(=+2) | e LIKE TIME(=-1) | e LIKE SOMEONE(=-1) CHANGE(=+3) SAME(=-1) | e",
+"HS": "SAME(=-2) MANY(=+2) GIVE(=+3) | e LIKE TIME(=-1) | e LIKE NEAR(=+1) CARE(=+5) SAME(=+1) | e",
+"sA": 0.394,
+"sS": 0.414,
+"sHS": 0.445,
+"wS": [
+"earlier",
+"differently"
+],
+"wHS": [
+"earlier",
+"closely"
+],
+"W3": "SAME(=-1) SOMEONE(=-1) CARE(=+2) | e LIKE TIME(=-2) SOMEONE(=-2) | e LIKE JOIN(=-3) MOVE(=-3) SIDE(=+2) | e"
+},
+"stabilize": {
+"A": "CHANGE(=0) THINK(=+3) ABOVE(=-2) | i",
+"S": "CHANGE(=0) THINK(=+3) ABOVE(=-2) | i LIKE CHANGE(=+1) FEEL(=+3) TOUCH(=+3) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i",
+"HS": "CHANGE(=0) ABOVE(=-2) JOIN(=+1) | i LIKE CHANGE(=+1) FEEL(=+3) TOUCH(=+3) | i LIKE LIVE(=+1) SIDE(=-5) CHANGE(=+1) | i",
+"sA": 0.373,
+"sS": 0.438,
+"sHS": 0.451,
+"wS": [
+"intensified",
+"restoring"
+],
+"wHS": [
+"intensified",
+"restoring"
+],
+"W3": "CHANGE(=0) THINK(=+3) ABOVE(=-2) | i LIKE JOIN(=+1) THINK(=+2) GRAIN(=+2) | i LIKE CHANGE GOOD(=+3) | i"
+},
+"stem": {
+"A": "LONG(=0) JOIN(=-1) SIDE(=+1) | o",
+"S": "LONG(=0) JOIN(=-1) SIDE(=+1) | o LIKE BODY PART(=-2) THING(=+1) | o LIKE MEASURE(=+2) CHANGE(=+1) LIVE(=+3) | o",
+"HS": "LONG(=+1) JOIN(=-1) CHANGE(=0) | o LIKE ABOVE(=+1) BEGIN(=+2) LONG(=+1) | o LIKE BODY PART(=-2) THING(=+1) | o",
+"sA": 0.287,
+"sS": 0.325,
+"sHS": 0.356,
+"wS": [
+"bone",
+"growth"
+],
+"wHS": [
+"top",
+"bone"
+],
+"W3": "LONG(=0) JOIN(=-1) SIDE(=+1) | o LIKE HAPPEN | o agent LIKE CONSUME(=+5) THING(=0) | o"
+},
+"steps": {
+"A": "ABOVE(=0) SIDE(=0) DO | i",
+"S": "ABOVE(=0) SIDE(=0) DO | i LIKE NEAR(=0) BEGIN(=-2) CARE(=+2) | i LIKE MOVE(=0) BEGIN(=-2) THINK(=+3) | i",
+"HS": "ABOVE(=0) MOVE(=+1) DO | i LIKE NEAR(=0) BEGIN(=-2) CARE(=+2) | i",
+"sA": 0.314,
+"sS": 0.346,
+"sHS": 0.396,
+"wS": [
+"approach",
+"proceed"
+],
+"wHS": [
+"approach"
+],
+"W3": "ABOVE(=0) SIDE(=0) DO | i LIKE MOVE INSIDE(=-5) | i LIKE LIVE(=+1) INSIDE(=0) | i"
+},
+"subjects": {
+"A": "TEXT RULE(=0) MEASURE(=-2) | o N+3",
+"S": "TEXT RULE(=0) MEASURE(=-2) | o N+3 LIKE SOMEONE(=-2) PART(=+4) FRIEND(=+2) | o LIKE THING(=+2) PART(=-1) FRIEND(=-1) | o N+3",
+"HS": "SOMEONE(=-1) ART(=+2) MEASURE(=-1) | o N+3 LIKE THINK(=-1) TEXT | o LIKE THING(=+2) PART(=-1) FRIEND(=-1) | o N+3",
+"sA": 0.196,
+"sS": 0.299,
+"sHS": 0.388,
+"wS": [
+"people",
+"creatures"
+],
+"wHS": [
+"question",
+"creatures"
+],
+"W3": "TEXT RULE(=0) MEASURE(=-2) | o N+3 LIKE THINK(=-2) GIVE(=+4) TEXT | o N+3 LIKE SOMEONE RULE(=+5) SEX(=+5) | o"
+},
+"sufficient": {
+"A": "CAN(=+1) BIG(=0) RULE(=+3) | a",
+"S": "CAN(=+1) BIG(=0) RULE(=+3) | a LIKE GOOD(=+1) CAN(=+2) | a LIKE CAN(=+3) CHANGE(=-4) CARE(=+1) | a",
+"HS": "CAN(=+1) MANY(=-2) RULE(=+3) | a LIKE GOOD(=+1) CAN(=+2) | a",
+"sA": 0.425,
+"sS": 0.452,
+"sHS": 0.489,
+"wS": [
+"good",
+"reliable"
+],
+"wHS": [
+"good"
+],
+"W3": "CAN(=+1) BIG(=0) RULE(=+3) | a LIKE CAN(=+2) SAME(=+1) THINK(=+2) | a LIKE CAN(=+3) VALUE(=+1) GOOD(=+1) | a"
+},
+"surprising": {
+"A": "GOOD(=+1) THINK(=-3) HAPPEN | i",
+"S": "GOOD(=+1) THINK(=-3) HAPPEN | i LIKE FRIEND(=-5) TOUCH(=+4) | a LIKE SIDE(=+2) CAN(=-5) KNOW(=+3) | i",
+"HS": "GOOD(=+1) THINK(=-3) HAPPEN | i LIKE FRIEND(=-5) TOUCH(=+4) | a LIKE SIDE(=+2) CAN(=-5) KNOW(=+3) | i",
+"sA": 0.241,
+"sS": 0.286,
+"sHS": 0.286,
+"wS": [
+"cruel",
+"confronted"
+],
+"wHS": [
+"cruel",
+"confronted"
+],
+"W3": "GOOD(=+1) THINK(=-3) HAPPEN | i LIKE THINK(=-2) KNOW(=+1) FEEL(=0) | i LIKE FEEL(=0) MOOD(=-2) WANT(=-2) | i"
+},
+"syndrome": {
+"A": "HAPPEN BODY MOOD(=-2) | o",
+"S": "HAPPEN BODY MOOD(=-2) | o LIKE BODY FEEL(=+4) GOOD(=-4) | o LIKE MANY(=-5) CHANGE(=-4) SAME(=-5) | o",
+"HS": "BODY HAPPEN SAME(=-1) | o LIKE MANY(=-4) BIG(=+5) WANT(=+5) | o LIKE HAPPEN GOOD(=-5) FIGHT(=+3) | o",
+"sA": 0.195,
+"sS": 0.217,
+"sHS": 0.248,
+"wS": [
+"pain",
+"absence"
+],
+"wHS": [
+"shortage",
+"epidemic"
+],
+"W3": "HAPPEN BODY MOOD(=-2) | o LIKE TEXT | o LIKE ART(=0) THINK(=-2) RULE(=+1) | o"
+},
+"tackle": {
+"A": "SIDE(=+1) GIVE(=-3) THINK(=+2) | i",
+"S": "SIDE(=+1) GIVE(=-3) THINK(=+2) | i LIKE FIGHT(=-2) LONG(=+2) ABOVE(=0) | i LIKE TOUCH(=+4) MOVE(=+4) BODY | i",
+"HS": "SIDE(=+1) GIVE(=-3) FIGHT(=-2) | i LIKE LONG(=+1) LAND(=-3) ABOVE(=-1) | i LIKE TOUCH(=+4) MOVE(=+4) BODY | i",
+"sA": 0.235,
+"sS": 0.351,
+"sHS": 0.404,
+"wS": [
+"pitching",
+"kick"
+],
+"wHS": [
+"anchor",
+"kick"
+],
+"W3": "SIDE(=+1) GIVE(=-3) THINK(=+2) | i LIKE JOIN(=+2) SAME(=0) MEASURE(=+1) | i LIKE KNOW | i K+4"
+},
+"taxpayer": {
+"A": "MEASURE(=+2) VALUE(=+3) GIVE(=+5) | o agent",
+"S": "MEASURE(=+2) VALUE(=+3) GIVE(=+5) | o agent LIKE RULE(=+2) PLACE LAND(=-2) | o LIKE RULE(=+2) ABOVE(=-5) MOOD(=-4) | o",
+"HS": "RULE(=+2) VALUE(=+2) GIVE(=+5) | o agent LIKE RULE(=+2) ABOVE(=-5) MOOD(=-4) | o LIKE VALUE(=+1) MEASURE(=+3) LAND(=0) | o",
+"sA": 0.269,
+"sS": 0.31,
+"sHS": 0.31,
+"wS": [
+"municipality",
+"bankruptcy"
+],
+"wHS": [
+"bankruptcy",
+"asset"
+],
+"W3": "MEASURE(=+2) VALUE(=+3) GIVE(=+5) | o agent LIKE RULE(=+3) | o agent N+3 LIKE SOMEONE LIVE(=0) GOOD(=-4) | o"
+},
+"tears": {
+"A": "MOOD(=-2) SAY(=+1) CONSUME(=-2) | i",
+"S": "MOOD(=-2) SAY(=+1) CONSUME(=-2) | i LIKE JOIN(=-1) GRAIN(=-2) TOUCH(=-1) | i LIKE JOIN(=-4) LONG(=-5) SAY(=+5) | i",
+"HS": "MOOD(=-2) SAY(=+1) FEEL(=+1) | i LIKE JOIN(=-1) GRAIN(=-2) TOUCH(=-1) | i LIKE JOIN(=-4) LONG(=-5) SAY(=+5) | i",
+"sA": 0.179,
+"sS": 0.335,
+"sHS": 0.384,
+"wS": [
+"dissolved",
+"ripped"
+],
+"wHS": [
+"dissolved",
+"ripped"
+],
+"W3": "MOOD(=-2) SAY(=+1) CONSUME(=-2) | i LIKE JOIN(=-4) LONG(=-5) SAY(=+5) | i LIKE MOOD(=-3) CONSUME(=-5) GRAIN(=-3) | i"
+},
+"test": {
+"A": "THINK(=+2) ART(=-3) FIGHT(=-1) | i",
+"S": "THINK(=+2) ART(=-3) FIGHT(=-1) | i LIKE SEE HAPPEN RULE(=+2) | i LIKE CARE(=+3) MEASURE(=+4) THINK(=+2) | i",
+"HS": "THINK(=+3) ART(=-3) CARE(=+3) | i LIKE HAPPEN | o result LIKE SEE HAPPEN RULE(=+2) | i",
+"sA": 0.256,
+"sS": 0.322,
+"sHS": 0.369,
+"wS": [
+"witness",
+"survey"
+],
+"wHS": [
+"consequence",
+"witness"
+],
+"W3": "THINK(=+2) ART(=-3) FIGHT(=-1) | i LIKE ART(=-5) THINK MEASURE | i LIKE THINK(=-2) CARE(=+3) RULE(=+1) | i"
+},
+"theory": {
+"A": "ART(=0) THINK(=-2) RULE(=+1) | o",
+"S": "ART(=0) THINK(=-2) RULE(=+1) | o LIKE MEASURE(=+1) THINK(=-1) HAPPEN | o",
+"HS": "ART(=0) THINK(=-2) BEGIN(=-1) | o LIKE RULE THINK | o LIKE RULE(=+5) THINK(=-3) TOUCH(=+3) | o",
+"sA": 0.486,
+"sS": 0.493,
+"sHS": 0.51,
+"wS": [
+"likelihood"
+],
+"wHS": [
+"principle",
+"conviction"
+],
+"W3": "ART(=0) THINK(=-2) RULE(=+1) | o LIKE TEXT | o LIKE ART(=-4) GRAIN MOVE | o"
+},
+"thoroughly": {
+"A": "CARE(=+3) MANY(=+2) SOMEONE(=-2) | e",
+"S": "CARE(=+3) MANY(=+2) SOMEONE(=-2) | e LIKE SOMEONE(=0) GOOD(=-3) CARE(=+3) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e",
+"HS": "SOMEONE(=-2) CARE(=+5) GOOD(=0) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e",
+"sA": 0.497,
+"sS": 0.557,
+"sHS": 0.626,
+"wS": [
+"seriously",
+"extensively"
+],
+"wHS": [
+"extensively"
+],
+"W3": "CARE(=+3) MANY(=+2) SOMEONE(=-2) | e LIKE CARE(=+3) | e LIKE SOMEONE(=-2) BIG(=+4) CARE(=+4) | e"
+},
+"thoughts": {
+"A": "THINK(=-2) SOMEONE(=+2) KNOW(=+1) | o N+3",
+"S": "THINK(=-2) SOMEONE(=+2) KNOW(=+1) | o N+3 LIKE WANT(=+4) FEEL(=-4) NEAR(=-3) | o N+3 LIKE FEEL(=-1) MOOD(=-3) THINK(=-2) | o",
+"HS": "THINK(=-2) WANT(=+5) FEEL(=-1) | o N+3 LIKE TEXT THINK(=-1) PART(=0) | o LIKE FEEL(=-1) MOOD(=-3) THINK(=-2) | o",
+"sA": 0.343,
+"sS": 0.446,
+"sHS": 0.508,
+"wS": [
+"dreams",
+"anxiety"
+],
+"wHS": [
+"topic",
+"anxiety"
+],
+"W3": "THINK(=-2) SOMEONE(=+2) KNOW(=+1) | o N+3 LIKE MOOD(=-5) | o LIKE LIVE(=0) SEE THINK | o"
+},
+"tired": {
+"A": "FEEL(=-1) | a",
+"S": "FEEL(=-1) | a LIKE MOOD(=-5) | o LIKE INSIDE(=+1) KNOW(=-5) MOOD(=-3) | a",
+"HS": "FEEL(=-1) MOVE(=-2) MOOD(=-1) | a LIKE FIGHT(=+2) LIVE(=-1) BODY | a LIKE INSIDE(=+1) KNOW(=-5) MOOD(=-3) | a",
+"sA": 0.257,
+"sS": 0.314,
+"sHS": 0.37,
+"wS": [
+"grief",
+"empty"
+],
+"wHS": [
+"wounded",
+"empty"
+],
+"W3": "FEEL(=-1) | a LIKE LIVE(=0) GOOD(=-4) | a LIKE CARE(=-1) GOOD(=-4) CONSUME(=-3) | a"
+},
+"truth": {
+"A": "KNOW(=0) MANY(=-3) WANT(=+3) | o",
+"S": "KNOW(=0) MANY(=-3) WANT(=+3) | o LIKE RULE(=+2) SAME(=+5) SIDE(=+2) | o",
+"HS": "KNOW(=0) MANY(=-3) WANT(=+3) | o LIKE RULE(=+2) SAME(=+5) SIDE(=+2) | o",
+"sA": 0.35,
+"sS": 0.361,
+"sHS": 0.361,
+"wS": [
+"equality"
+],
+"wHS": [
+"equality"
+],
+"W3": "KNOW(=0) MANY(=-3) WANT(=+3) | o LIKE RULE(=+2) SAME(=+5) SIDE(=+2) | o LIKE RULE THINK | o"
+},
+"type": {
+"A": "SAME(=0) MEASURE(=-4) FRIEND(=+3) | o",
+"S": "SAME(=0) MEASURE(=-4) FRIEND(=+3) | o LIKE ART(=-1) SAME(=+1) GRAIN(=+1) | o LIKE TEXT MEASURE(=-1) SAME(=-1) | o",
+"HS": "SAME(=0) MEASURE(=-3) | o LIKE ART(=-1) SAME(=+1) GRAIN(=+1) | o LIKE TEXT SAME(=-2) LIVE(=+3) | o",
+"sA": 0.303,
+"sS": 0.368,
+"sHS": 0.39,
+"wS": [
+"model",
+"description"
+],
+"wHS": [
+"model",
+"context"
+],
+"W3": "SAME(=0) MEASURE(=-4) FRIEND(=+3) | o LIKE MEASURE(=0) PART(=0) GIVE(=+2) | o LIKE PART(=-1) ART(=-2) JOIN(=+1) | o"
+},
+"university": {
+"A": "ART(=0) NEAR(=+2) RULE(=+1) | o",
+"S": "ART(=0) NEAR(=+2) RULE(=+1) | o LIKE SOMEONE KNOW CONSUME(=+5) | o FOR PLACE KNOW CONSUME(=+5) | o",
+"HS": "ART(=0) RULE(=+1) PLACE | o LIKE SOMEONE KNOW CONSUME(=+5) | o FOR PLACE KNOW CONSUME(=+5) | o",
+"sA": 0.169,
+"sS": 0.254,
+"sHS": 0.323,
+"wS": [
+"student",
+"school"
+],
+"wHS": [
+"student",
+"school"
+],
+"W3": "ART(=0) NEAR(=+2) RULE(=+1) | o LIKE FIGHT(=-2) | o N+3 LIKE SOMEONE ART(=-4) KNOW | o"
+},
+"verify": {
+"A": "THINK(=+3) CARE(=+3) MANY(=-4) | i",
+"S": "THINK(=+3) CARE(=+3) MANY(=-4) | i LIKE SEE | i LIKE TEXT CARE(=+2) SEE | i",
+"HS": "THINK(=+3) CARE(=+2) SEE | i LIKE KNOW(=+2) MANY(=-1) | i LIKE TEXT CARE(=+2) SEE | i",
+"sA": 0.384,
+"sS": 0.464,
+"sHS": 0.51,
+"wS": [
+"see",
+"report"
+],
+"wHS": [
+"knows",
+"report"
+],
+"W3": "THINK(=+3) CARE(=+3) MANY(=-4) | i LIKE THINK(=+1) CARE(=+4) SEE | i LIKE ART(=-5) THINK MEASURE | i"
+},
+"villages": {
+"A": "PLACE NEAR(=+1) THING(=0) | o N+3",
+"S": "PLACE NEAR(=+1) THING(=0) | o N+3 LIKE LAND(=+1) | o LIKE PART(=+3) FIGHT(=+5) NEAR(=-2) | o",
+"HS": "LAND(=0) NEAR(=0) PART(=+2) | o N+3 LIKE PLACE TIME(=-2) LIVE(=+2) | o agent LIKE PLACE FIGHT(=+5) TOUCH(=+2) | o",
+"sA": 0.458,
+"sS": 0.535,
+"sHS": 0.565,
+"wS": [
+"land",
+"convoy"
+],
+"wHS": [
+"resident",
+"fort"
+],
+"W3": "PLACE NEAR(=+1) THING(=0) | o N+3 LIKE LAND(=0) PART(=+3) FRIEND(=+1) | o LIKE FIGHT(=+4) PART(=+4) RULE(=+2) | o N+3"
+},
+"violating": {
+"A": "RULE(=+3) FRIEND(=-1) JOIN(=-1) | i",
+"S": "RULE(=+3) FRIEND(=-1) JOIN(=-1) | i LIKE GIVE(=-4) GOOD(=-4) | i LIKE FRIEND(=-2) GOOD(=-3) FEEL(=+1) | i",
+"HS": "RULE(=+3) FRIEND(=0) GOOD(=-1) | i LIKE JOIN(=-3) VALUE(=+5) GOOD(=-5) | i",
+"sA": 0.23,
+"sS": 0.251,
+"sHS": 0.304,
+"wS": [
+"steal",
+"threatening"
+],
+"wHS": [
+"damaged"
+],
+"W3": "RULE(=+3) FRIEND(=-1) JOIN(=-1) | i LIKE RULE(=+4) DO | i K-5 LIKE CHANGE(=+1) VALUE(=+5) GOOD(=-5) | i"
+},
+"voting": {
+"A": "FIGHT(=-2) RULE(=+5) PART(=+3) | i",
+"S": "FIGHT(=-2) RULE(=+5) PART(=+3) | i LIKE HAPPEN | o result LIKE THINK(=+2) GIVE(=-3) PART(=+1) | i",
+"HS": "RULE(=+3) FIGHT(=-2) THINK(=0) | i LIKE HAPPEN | o result LIKE THINK(=+2) RULE(=+4) PART(=+3) | i",
+"sA": 0.223,
+"sS": 0.245,
+"sHS": 0.243,
+"wS": [
+"consequence",
+"pick"
+],
+"wHS": [
+"consequence",
+"elect"
+],
+"W3": "FIGHT(=-2) RULE(=+5) PART(=+3) | i LIKE THINK(=0) WANT(=-2) SEE | i LIKE MOVE INSIDE(=-5) | i"
+},
+"warnings": {
+"A": "KNOW(=+1) SAY(=+2) TEXT | o N+3",
+"S": "KNOW(=+1) SAY(=+2) TEXT | o N+3 LIKE INSIDE(=-2) RULE(=+4) GIVE(=+1) | o LIKE CARE(=-2) HAPPEN TEXT | o",
+"HS": "KNOW(=+1) TEXT HEAT(=+1) | o N+3 LIKE MOVE(=-1) WANT(=-2) RULE(=+4) | o LIKE LONG(=+1) SAY(=+3) THING(=+3) | o",
+"sA": 0.328,
+"sS": 0.376,
+"sHS": 0.393,
+"wS": [
+"protection",
+"error"
+],
+"wHS": [
+"moratorium",
+"horn"
+],
+"W3": "KNOW(=+1) SAY(=+2) TEXT | o N+3 LIKE THINK(=-2) GIVE(=+4) TEXT | o N+3 LIKE TEXT LONG(=+1) SEE | o"
+}
+}
