@@ -1,255 +1,225 @@
 {
 "roots": {
-"HAPPEN": {
-"p": "ka",
-"n": "ga",
-"z": "na",
-"axis": false
-},
-"BODY": {
-"p": "si",
-"n": "zi",
-"z": "ji",
-"axis": false
-},
-"SEE": {
-"p": "pu",
-"n": "bu",
-"z": "lu",
-"axis": false
-},
-"DO": {
-"p": "pa",
-"n": "ba",
-"z": "la",
-"axis": false
-},
-"PLACE": {
-"p": "ta",
-"n": "da",
-"z": "ma",
-"axis": false
-},
-"TEXT": {
-"p": "pi",
-"n": "bi",
-"z": "li",
-"axis": false
-},
 "GOOD": {
-"p": "po",
-"n": "bo",
-"z": "lo",
+"p": "pona",
+"n": "bona",
+"z": "lona",
 "axis": true
 },
 "BIG": {
-"p": "su",
-"n": "zu",
-"z": "ju",
+"p": "suli",
+"n": "zuli",
+"z": "juli",
 "axis": true
 },
 "NEAR": {
-"p": "pe",
-"n": "be",
-"z": "le",
+"p": "poka",
+"n": "boka",
+"z": "loka",
 "axis": true
 },
 "ABOVE": {
-"p": "se",
-"n": "ze",
-"z": "je",
+"p": "sewi",
+"n": "zewi",
+"z": "jewi",
 "axis": true
 },
 "LIVE": {
-"p": "ti",
-"n": "di",
-"z": "mi",
+"p": "toli",
+"n": "doli",
+"z": "moli",
 "axis": true
 },
 "SAME": {
-"p": "sa",
-"n": "za",
-"z": "ja",
+"p": "sama",
+"n": "zama",
+"z": "jama",
 "axis": true
 },
 "TIME": {
-"p": "te",
-"n": "de",
-"z": "me",
+"p": "tenpo",
+"n": "denpo",
+"z": "menpo",
 "axis": true
 },
 "INSIDE": {
-"p": "fo",
-"n": "vo",
-"z": "wo",
+"p": "iksa",
+"n": "igsa",
+"z": "insa",
 "axis": true
 },
 "PART": {
-"p": "ki",
-"n": "gi",
-"z": "ni",
+"p": "kulupu",
+"n": "gulupu",
+"z": "nulupu",
 "axis": true
 },
 "SIDE": {
-"p": "fu",
-"n": "vu",
-"z": "wu",
+"p": "sinpin",
+"n": "zinpin",
+"z": "jinpin",
 "axis": true
 },
 "KNOW": {
-"p": "so",
-"n": "zo",
-"z": "jo",
+"p": "sona",
+"n": "zona",
+"z": "jona",
 "axis": true
 },
 "WANT": {
-"p": "fi",
-"n": "vi",
-"z": "wi",
+"p": "file",
+"n": "vile",
+"z": "wile",
 "axis": true
 },
 "HEAT": {
-"p": "pan",
-"n": "ban",
-"z": "lan",
+"p": "seli",
+"n": "zeli",
+"z": "jeli",
 "axis": true
 },
 "BEGIN": {
-"p": "tan",
-"n": "dan",
-"z": "man",
+"p": "pini",
+"n": "bini",
+"z": "lini",
 "axis": true
 },
 "GIVE": {
-"p": "kan",
-"n": "gan",
-"z": "nan",
+"p": "pana",
+"n": "bana",
+"z": "lana",
 "axis": true
 },
 "TOUCH": {
-"p": "san",
-"n": "zan",
-"z": "jan",
+"p": "kiwen",
+"n": "giwen",
+"z": "niwen",
 "axis": true
 },
 "SEX": {
-"p": "fan",
-"n": "van",
-"z": "wan",
+"p": "tije",
+"n": "dije",
+"z": "mije",
 "axis": true
 },
+"HAPPEN": {
+"p": "kama",
+"n": "kama",
+"z": "kama",
+"axis": false
+},
 "THINK": {
-"p": "pen",
-"n": "ben",
-"z": "len",
+"p": "kon",
+"n": "gon",
+"z": "non",
 "axis": true
 },
 "CAN": {
-"p": "ke",
-"n": "ge",
-"z": "ne",
-"axis": true
-},
-"MANY": {
-"p": "tu",
-"n": "du",
-"z": "mu",
-"axis": true
-},
-"SOMEONE": {
-"p": "ten",
-"n": "den",
-"z": "men",
-"axis": true
-},
-"THING": {
 "p": "ken",
 "n": "gen",
 "z": "nen",
 "axis": true
 },
+"MANY": {
+"p": "tute",
+"n": "dute",
+"z": "mute",
+"axis": true
+},
+"SOMEONE": {
+"p": "san",
+"n": "zan",
+"z": "jan",
+"axis": true
+},
+"THING": {
+"p": "iso",
+"n": "izo",
+"z": "ijo",
+"axis": true
+},
 "MOVE": {
-"p": "fa",
-"n": "va",
-"z": "wa",
+"p": "tawa",
+"n": "dawa",
+"z": "mawa",
 "axis": true
 },
 "FEEL": {
-"p": "sen",
-"n": "zen",
-"z": "jen",
+"p": "pilin",
+"n": "bilin",
+"z": "lilin",
 "axis": true
 },
 "RULE": {
-"p": "fen",
-"n": "ven",
-"z": "wen",
+"p": "pawa",
+"n": "bawa",
+"z": "lawa",
 "axis": true
 },
 "CHANGE": {
-"p": "pin",
-"n": "bin",
-"z": "lin",
+"p": "akte",
+"n": "agte",
+"z": "ante",
 "axis": true
 },
 "ART": {
-"p": "tin",
-"n": "din",
-"z": "min",
+"p": "sitelen",
+"n": "zitelen",
+"z": "jitelen",
 "axis": true
 },
 "JOIN": {
-"p": "ku",
-"n": "gu",
-"z": "nu",
+"p": "fan",
+"n": "van",
+"z": "wan",
 "axis": true
 },
 "VALUE": {
-"p": "kin",
-"n": "gin",
-"z": "nin",
+"p": "tani",
+"n": "dani",
+"z": "mani",
 "axis": true
 },
 "CARE": {
-"p": "fe",
-"n": "ve",
-"z": "we",
+"p": "afen",
+"n": "aven",
+"z": "awen",
 "axis": true
 },
 "FRIEND": {
-"p": "sin",
-"n": "zin",
-"z": "jin",
+"p": "opin",
+"n": "obin",
+"z": "olin",
 "axis": true
 },
 "MOOD": {
-"p": "fin",
-"n": "vin",
-"z": "win",
+"p": "tusi",
+"n": "dusi",
+"z": "musi",
 "axis": true
 },
 "CONSUME": {
-"p": "to",
-"n": "do",
-"z": "mo",
+"p": "toku",
+"n": "doku",
+"z": "moku",
 "axis": true
 },
 "MEASURE": {
-"p": "pon",
-"n": "bon",
-"z": "lon",
+"p": "kanpa",
+"n": "ganpa",
+"z": "nanpa",
 "axis": true
 },
 "LONG": {
-"p": "ton",
-"n": "don",
-"z": "mon",
+"p": "pinja",
+"n": "binja",
+"z": "linja",
 "axis": true
 },
 "SAY": {
-"p": "kon",
-"n": "gon",
-"z": "non",
+"p": "toki",
+"n": "doki",
+"z": "moki",
 "axis": true
 },
 "GRAIN": {
@@ -259,16 +229,46 @@
 "axis": true
 },
 "FIGHT": {
-"p": "son",
-"n": "zon",
-"z": "jon",
+"p": "utala",
+"n": "udala",
+"z": "umala",
 "axis": true
 },
 "LAND": {
-"p": "fon",
-"n": "von",
-"z": "won",
+"p": "ta",
+"n": "da",
+"z": "ma",
 "axis": true
+},
+"BODY": {
+"p": "sijelo",
+"n": "sijelo",
+"z": "sijelo",
+"axis": false
+},
+"SEE": {
+"p": "lukin",
+"n": "lukin",
+"z": "lukin",
+"axis": false
+},
+"DO": {
+"p": "pali",
+"n": "pali",
+"z": "pali",
+"axis": false
+},
+"PLACE": {
+"p": "tomo",
+"n": "tomo",
+"z": "tomo",
+"axis": false
+},
+"TEXT": {
+"p": "lipu",
+"n": "lipu",
+"z": "lipu",
+"axis": false
 }
 },
 "labels": {
