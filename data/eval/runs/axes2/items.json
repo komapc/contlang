@@ -1,0 +1,2550 @@
+[
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "build - destroy",
+"sign": 1,
+"words": [
+"miss",
+"top",
+"hurt",
+"burst",
+"collapse"
+],
+"intruder": "top"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SIDE",
+"sign": 1,
+"words": [
+"progress",
+"silence",
+"forecast",
+"ready",
+"preparation"
+],
+"intruder": "silence"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LAND",
+"sign": -1,
+"words": [
+"pearl",
+"creek",
+"fishing",
+"marine",
+"numerous"
+],
+"intruder": "numerous"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "legal - illegal",
+"sign": 1,
+"words": [
+"violent",
+"illegally",
+"fly",
+"deadly",
+"kidnapping"
+],
+"intruder": "fly"
+},
+{
+"set": "PCA",
+"axis": "PC11",
+"sign": -1,
+"words": [
+"youth",
+"partnership",
+"tradition",
+"prayer",
+"spiritual"
+],
+"intruder": "partnership"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SOMEONE",
+"sign": -1,
+"words": [
+"troops",
+"authorities",
+"attack",
+"humans",
+"commonly"
+],
+"intruder": "attack"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SEX",
+"sign": -1,
+"words": [
+"march",
+"virgin",
+"detained",
+"girlfriend",
+"maria"
+],
+"intruder": "detained"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "WANT",
+"sign": -1,
+"words": [
+"bad",
+"gross",
+"manufacturer",
+"veto",
+"terrible"
+],
+"intruder": "manufacturer"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "BEGIN",
+"sign": 1,
+"words": [
+"closure",
+"result",
+"overtime",
+"reach",
+"customs"
+],
+"intruder": "customs"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "public - private",
+"sign": -1,
+"words": [
+"gradually",
+"solidarity",
+"community",
+"municipality",
+"nationwide"
+],
+"intruder": "gradually"
+},
+{
+"set": "PCA",
+"axis": "PC4",
+"sign": 1,
+"words": [
+"present",
+"teach",
+"president",
+"describe",
+"associate"
+],
+"intruder": "president"
+},
+{
+"set": "PCA",
+"axis": "PC3",
+"sign": 1,
+"words": [
+"sense",
+"remarkable",
+"obviously",
+"thing",
+"academic"
+],
+"intruder": "academic"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "join - separate",
+"sign": -1,
+"words": [
+"comfortable",
+"bring",
+"submit",
+"affiliated",
+"associate"
+],
+"intruder": "comfortable"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "FEEL",
+"sign": -1,
+"words": [
+"silence",
+"split",
+"bed",
+"steady",
+"wake"
+],
+"intruder": "split"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "build - destroy",
+"sign": -1,
+"words": [
+"obtain",
+"provide",
+"creation",
+"shortly",
+"produce"
+],
+"intruder": "shortly"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "build - destroy",
+"sign": -1,
+"words": [
+"obtain",
+"put",
+"guard",
+"grow",
+"framework"
+],
+"intruder": "guard"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "simple - complex",
+"sign": 1,
+"words": [
+"turmoil",
+"controversy",
+"involve",
+"greatly",
+"tough"
+],
+"intruder": "tough"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "young - old",
+"sign": 1,
+"words": [
+"honor",
+"tradition",
+"leave",
+"modern",
+"historically"
+],
+"intruder": "leave"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "legal - illegal",
+"sign": 1,
+"words": [
+"corruption",
+"flu",
+"smuggling",
+"violence",
+"unfair"
+],
+"intruder": "flu"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LIVE",
+"sign": -1,
+"words": [
+"victim",
+"unidentified",
+"late",
+"fatal",
+"fire"
+],
+"intruder": "fire"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "ABOVE",
+"sign": 1,
+"words": [
+"millennium",
+"foundation",
+"summit",
+"heights",
+"triple"
+],
+"intruder": "foundation"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "full - empty",
+"sign": 1,
+"words": [
+"quit",
+"rent",
+"space",
+"prestigious",
+"silent"
+],
+"intruder": "prestigious"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SIDE",
+"sign": -1,
+"words": [
+"isolated",
+"lap",
+"somewhere",
+"retire",
+"desperate"
+],
+"intruder": "desperate"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SAME",
+"sign": -1,
+"words": [
+"predominantly",
+"perspective",
+"evidence",
+"playoff",
+"isolated"
+],
+"intruder": "playoff"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "closed - open",
+"sign": -1,
+"words": [
+"boycott",
+"stop",
+"detained",
+"tight",
+"teen"
+],
+"intruder": "teen"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "bright - dark",
+"sign": -1,
+"words": [
+"amazing",
+"lightning",
+"impressive",
+"discover",
+"smart"
+],
+"intruder": "discover"
+},
+{
+"set": "PCA",
+"axis": "PC9",
+"sign": -1,
+"words": [
+"constitution",
+"mostly",
+"perfect",
+"supreme",
+"defend"
+],
+"intruder": "mostly"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "BEGIN",
+"sign": -1,
+"words": [
+"rapidly",
+"abroad",
+"panic",
+"formation",
+"slowly"
+],
+"intruder": "abroad"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CARE",
+"sign": -1,
+"words": [
+"loose",
+"badly",
+"painful",
+"error",
+"unfair"
+],
+"intruder": "painful"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "light - heavy",
+"sign": -1,
+"words": [
+"spirit",
+"perfect",
+"temporary",
+"keep",
+"pure"
+],
+"intruder": "keep"
+},
+{
+"set": "PCA",
+"axis": "PC1",
+"sign": 1,
+"words": [
+"drop",
+"throw",
+"guest",
+"blow",
+"slide"
+],
+"intruder": "guest"
+},
+{
+"set": "PCA",
+"axis": "PC12",
+"sign": 1,
+"words": [
+"captain",
+"infantry",
+"squad",
+"consumption",
+"fighter"
+],
+"intruder": "consumption"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "join - separate",
+"sign": -1,
+"words": [
+"participate",
+"contribute",
+"tie",
+"apply",
+"peace"
+],
+"intruder": "peace"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "TOUCH",
+"sign": 1,
+"words": [
+"fierce",
+"intense",
+"severe",
+"steel",
+"afraid"
+],
+"intruder": "afraid"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "INSIDE",
+"sign": 1,
+"words": [
+"deep",
+"secret",
+"succeed",
+"stalled",
+"contain"
+],
+"intruder": "succeed"
+},
+{
+"set": "PCA",
+"axis": "PC20",
+"sign": 1,
+"words": [
+"competitive",
+"fell",
+"decline",
+"restructuring",
+"trend"
+],
+"intruder": "competitive"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "VALUE",
+"sign": -1,
+"words": [
+"relatively",
+"reign",
+"negotiate",
+"lowest",
+"agreement"
+],
+"intruder": "reign"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "simple - complex",
+"sign": -1,
+"words": [
+"wonderful",
+"clear",
+"modest",
+"merely",
+"pure"
+],
+"intruder": "wonderful"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "THING",
+"sign": 1,
+"words": [
+"chaos",
+"foster",
+"humans",
+"wildlife",
+"chicken"
+],
+"intruder": "chaos"
+},
+{
+"set": "PCA",
+"axis": "PC17",
+"sign": 1,
+"words": [
+"president",
+"legislature",
+"experiment",
+"senator",
+"deputy"
+],
+"intruder": "experiment"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MEASURE",
+"sign": -1,
+"words": [
+"depth",
+"extensive",
+"larger",
+"eager",
+"tall"
+],
+"intruder": "eager"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "alive - dead",
+"sign": 1,
+"words": [
+"secret",
+"grave",
+"successor",
+"funeral",
+"officially"
+],
+"intruder": "secret"
+},
+{
+"set": "PCA",
+"axis": "PC5",
+"sign": 1,
+"words": [
+"awareness",
+"culture",
+"leadership",
+"actively",
+"congressional"
+],
+"intruder": "congressional"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "permanent - temporary",
+"sign": 1,
+"words": [
+"moment",
+"burden",
+"handful",
+"briefing",
+"pass"
+],
+"intruder": "burden"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LIVE",
+"sign": 1,
+"words": [
+"landscape",
+"spirit",
+"essential",
+"elements",
+"strong"
+],
+"intruder": "landscape"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LONG",
+"sign": -1,
+"words": [
+"tape",
+"connection",
+"tie",
+"pattern",
+"starter"
+],
+"intruder": "starter"
+},
+{
+"set": "PCA",
+"axis": "PC7",
+"sign": -1,
+"words": [
+"guarantee",
+"rural",
+"cent",
+"fee",
+"valued"
+],
+"intruder": "rural"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MOVE",
+"sign": 1,
+"words": [
+"race",
+"mile",
+"lightning",
+"yellow",
+"quick"
+],
+"intruder": "yellow"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "FRIEND",
+"sign": -1,
+"words": [
+"threat",
+"collapse",
+"siege",
+"assault",
+"brutal"
+],
+"intruder": "collapse"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "JOIN",
+"sign": -1,
+"words": [
+"break",
+"removal",
+"stalled",
+"apart",
+"negative"
+],
+"intruder": "stalled"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "KNOW",
+"sign": -1,
+"words": [
+"unable",
+"disappointing",
+"huge",
+"plain",
+"reject"
+],
+"intruder": "huge"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "fast - slow",
+"sign": 1,
+"words": [
+"slowdown",
+"calm",
+"quiet",
+"weak",
+"innocent"
+],
+"intruder": "innocent"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "bright - dark",
+"sign": 1,
+"words": [
+"underground",
+"somewhat",
+"anonymity",
+"unclear",
+"peace"
+],
+"intruder": "peace"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "irregular - regular",
+"sign": 1,
+"words": [
+"whole",
+"fact",
+"learn",
+"conventional",
+"duty"
+],
+"intruder": "learn"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "THINK",
+"sign": 1,
+"words": [
+"retain",
+"elect",
+"successfully",
+"establish",
+"select"
+],
+"intruder": "retain"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "permanent - temporary",
+"sign": 1,
+"words": [
+"notice",
+"shortly",
+"uncertain",
+"briefly",
+"soon"
+],
+"intruder": "uncertain"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "join - separate",
+"sign": 1,
+"words": [
+"tremendous",
+"isolated",
+"separately",
+"partial",
+"eliminate"
+],
+"intruder": "tremendous"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CARE",
+"sign": 1,
+"words": [
+"alternative",
+"intensive",
+"closely",
+"aware",
+"dedicated"
+],
+"intruder": "alternative"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "RULE",
+"sign": -1,
+"words": [
+"personality",
+"separate",
+"self",
+"feelings",
+"husband"
+],
+"intruder": "husband"
+},
+{
+"set": "PCA",
+"axis": "PC3",
+"sign": -1,
+"words": [
+"operations",
+"reverse",
+"corporation",
+"executive",
+"bureau"
+],
+"intruder": "reverse"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "trivial - important",
+"sign": 1,
+"words": [
+"ensure",
+"unclear",
+"priority",
+"influential",
+"prominent"
+],
+"intruder": "unclear"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "give - take",
+"sign": -1,
+"words": [
+"receive",
+"normal",
+"support",
+"foundation",
+"dedicated"
+],
+"intruder": "normal"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "WANT",
+"sign": 1,
+"words": [
+"eager",
+"dream",
+"somewhere",
+"ensure",
+"element"
+],
+"intruder": "element"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "simple - complex",
+"sign": 1,
+"words": [
+"detail",
+"intense",
+"closely",
+"heavily",
+"lift"
+],
+"intruder": "lift"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "light - heavy",
+"sign": -1,
+"words": [
+"pure",
+"reliable",
+"perfect",
+"sky",
+"stable"
+],
+"intruder": "reliable"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "alive - dead",
+"sign": -1,
+"words": [
+"make",
+"environment",
+"awareness",
+"honest",
+"slightly"
+],
+"intruder": "slightly"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "legal - illegal",
+"sign": -1,
+"words": [
+"accept",
+"claim",
+"little",
+"jurisdiction",
+"willing"
+],
+"intruder": "little"
+},
+{
+"set": "PCA",
+"axis": "PC8",
+"sign": 1,
+"words": [
+"prominent",
+"combat",
+"congressional",
+"mostly",
+"notably"
+],
+"intruder": "combat"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "public - private",
+"sign": 1,
+"words": [
+"merely",
+"anonymity",
+"personally",
+"remote",
+"mystery"
+],
+"intruder": "merely"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "join - separate",
+"sign": 1,
+"words": [
+"tear",
+"away",
+"apart",
+"distinct",
+"quick"
+],
+"intruder": "quick"
+},
+{
+"set": "PCA",
+"axis": "PC16",
+"sign": 1,
+"words": [
+"improve",
+"environmental",
+"educational",
+"constitutional",
+"president"
+],
+"intruder": "president"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "sick - healthy",
+"sign": 1,
+"words": [
+"affiliated",
+"integrity",
+"reasonable",
+"solid",
+"consistent"
+],
+"intruder": "affiliated"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "BIG",
+"sign": -1,
+"words": [
+"bit",
+"slight",
+"brief",
+"carefully",
+"kid"
+],
+"intruder": "carefully"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "TOUCH",
+"sign": -1,
+"words": [
+"numerous",
+"bread",
+"chocolate",
+"afghan",
+"baby"
+],
+"intruder": "numerous"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "BIG",
+"sign": 1,
+"words": [
+"contrast",
+"spectacular",
+"tons",
+"massive",
+"greatest"
+],
+"intruder": "contrast"
+},
+{
+"set": "PCA",
+"axis": "PC8",
+"sign": -1,
+"words": [
+"quite",
+"comfort",
+"assistance",
+"hope",
+"shelter"
+],
+"intruder": "quite"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "give - take",
+"sign": 1,
+"words": [
+"hold",
+"urgent",
+"moment",
+"kidnapped",
+"detained"
+],
+"intruder": "urgent"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "KNOW",
+"sign": 1,
+"words": [
+"careful",
+"personally",
+"highly",
+"threat",
+"learn"
+],
+"intruder": "threat"
+},
+{
+"set": "PCA",
+"axis": "PC17",
+"sign": -1,
+"words": [
+"mostly",
+"match",
+"competitive",
+"tournament",
+"score"
+],
+"intruder": "mostly"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "simple - complex",
+"sign": -1,
+"words": [
+"receive",
+"cheap",
+"merely",
+"reliable",
+"quick"
+],
+"intruder": "receive"
+},
+{
+"set": "PCA",
+"axis": "PC15",
+"sign": -1,
+"words": [
+"predict",
+"author",
+"disaster",
+"explore",
+"confirm"
+],
+"intruder": "disaster"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GRAIN",
+"sign": -1,
+"words": [
+"helicopter",
+"wind",
+"pressure",
+"previously",
+"pilot"
+],
+"intruder": "previously"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "TIME",
+"sign": 1,
+"words": [
+"please",
+"potential",
+"arrive",
+"accept",
+"proceed"
+],
+"intruder": "accept"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SEX",
+"sign": 1,
+"words": [
+"revenge",
+"amazing",
+"male",
+"man",
+"dad"
+],
+"intruder": "amazing"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "near - far",
+"sign": 1,
+"words": [
+"journey",
+"autonomous",
+"detained",
+"seem",
+"sky"
+],
+"intruder": "detained"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GOOD",
+"sign": 1,
+"words": [
+"develop",
+"nice",
+"perfect",
+"amazing",
+"fun"
+],
+"intruder": "develop"
+},
+{
+"set": "PCA",
+"axis": "PC11",
+"sign": 1,
+"words": [
+"ball",
+"assault",
+"quite",
+"pretty",
+"unfair"
+],
+"intruder": "ball"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "young - old",
+"sign": 1,
+"words": [
+"traditional",
+"normal",
+"legacy",
+"longtime",
+"grandfather"
+],
+"intruder": "normal"
+},
+{
+"set": "PCA",
+"axis": "PC13",
+"sign": -1,
+"words": [
+"conference",
+"sit",
+"narrow",
+"celebration",
+"nice"
+],
+"intruder": "celebration"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GIVE",
+"sign": -1,
+"words": [
+"ma",
+"arrest",
+"rob",
+"easily",
+"kidnapping"
+],
+"intruder": "ma"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "light - heavy",
+"sign": 1,
+"words": [
+"component",
+"carry",
+"difficult",
+"complicated",
+"large"
+],
+"intruder": "component"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "full - empty",
+"sign": -1,
+"words": [
+"tremendous",
+"personally",
+"crowd",
+"comprehensive",
+"massive"
+],
+"intruder": "personally"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "light - heavy",
+"sign": 1,
+"words": [
+"massive",
+"hard",
+"weight",
+"thick",
+"actual"
+],
+"intruder": "actual"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "PART",
+"sign": 1,
+"words": [
+"dozen",
+"overtime",
+"roster",
+"gather",
+"lineup"
+],
+"intruder": "overtime"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CHANGE",
+"sign": -1,
+"words": [
+"insist",
+"stability",
+"keep",
+"loyal",
+"disappointing"
+],
+"intruder": "disappointing"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GOOD",
+"sign": -1,
+"words": [
+"poverty",
+"assault",
+"horror",
+"unfair",
+"devastating"
+],
+"intruder": "assault"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "young - old",
+"sign": -1,
+"words": [
+"innocent",
+"talent",
+"underground",
+"teen",
+"little"
+],
+"intruder": "underground"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "high - low",
+"sign": -1,
+"words": [
+"impressive",
+"free",
+"rise",
+"huge",
+"tower"
+],
+"intruder": "free"
+},
+{
+"set": "PCA",
+"axis": "PC2",
+"sign": -1,
+"words": [
+"impression",
+"develop",
+"range",
+"output",
+"ratio"
+],
+"intruder": "impression"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "high - low",
+"sign": 1,
+"words": [
+"residence",
+"basically",
+"minor",
+"dirty",
+"discover"
+],
+"intruder": "residence"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "give - take",
+"sign": -1,
+"words": [
+"severely",
+"assistance",
+"volunteer",
+"benefit",
+"participate"
+],
+"intruder": "severely"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SOMEONE",
+"sign": 1,
+"words": [
+"recently",
+"definitely",
+"guess",
+"collaboration",
+"originally"
+],
+"intruder": "collaboration"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CONSUME",
+"sign": -1,
+"words": [
+"normal",
+"forth",
+"studio",
+"call",
+"officially"
+],
+"intruder": "normal"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "INSIDE",
+"sign": -1,
+"words": [
+"weather",
+"alternative",
+"apparently",
+"boundary",
+"concrete"
+],
+"intruder": "apparently"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CHANGE",
+"sign": 1,
+"words": [
+"conversion",
+"milk",
+"unusual",
+"turn",
+"variety"
+],
+"intruder": "milk"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "FRIEND",
+"sign": 1,
+"words": [
+"relationship",
+"type",
+"uncle",
+"family",
+"quickly"
+],
+"intruder": "quickly"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "peaceful - violent",
+"sign": -1,
+"words": [
+"rest",
+"destruction",
+"peace",
+"silence",
+"calm"
+],
+"intruder": "destruction"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "full - empty",
+"sign": -1,
+"words": [
+"plenty",
+"deliver",
+"bring",
+"efficient",
+"highly"
+],
+"intruder": "efficient"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "RULE",
+"sign": 1,
+"words": [
+"enforcement",
+"judge",
+"court",
+"crystal",
+"authorities"
+],
+"intruder": "crystal"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "THING",
+"sign": -1,
+"words": [
+"ridge",
+"iron",
+"debris",
+"pearl",
+"fence"
+],
+"intruder": "fence"
+},
+{
+"set": "PCA",
+"axis": "PC12",
+"sign": -1,
+"words": [
+"comfort",
+"review",
+"comprehensive",
+"announcement",
+"approval"
+],
+"intruder": "comfort"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MOOD",
+"sign": 1,
+"words": [
+"hostile",
+"smart",
+"nice",
+"smile",
+"fair"
+],
+"intruder": "hostile"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "permanent - temporary",
+"sign": -1,
+"words": [
+"keep",
+"sustainable",
+"willing",
+"constantly",
+"ongoing"
+],
+"intruder": "willing"
+},
+{
+"set": "PCA",
+"axis": "PC6",
+"sign": 1,
+"words": [
+"successful",
+"debut",
+"internationally",
+"win",
+"clash"
+],
+"intruder": "clash"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "near - far",
+"sign": -1,
+"words": [
+"exclusive",
+"historic",
+"junction",
+"opposite",
+"subsequently"
+],
+"intruder": "exclusive"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "peaceful - violent",
+"sign": 1,
+"words": [
+"harsh",
+"intensive",
+"shortly",
+"strong",
+"wild"
+],
+"intruder": "shortly"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "THINK",
+"sign": -1,
+"words": [
+"panic",
+"ask",
+"takeover",
+"worry",
+"afraid"
+],
+"intruder": "takeover"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "near - far",
+"sign": 1,
+"words": [
+"abroad",
+"little",
+"rest",
+"alone",
+"travel"
+],
+"intruder": "rest"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LAND",
+"sign": 1,
+"words": [
+"estate",
+"keep",
+"homeland",
+"acres",
+"rural"
+],
+"intruder": "keep"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "near - far",
+"sign": -1,
+"words": [
+"neighbouring",
+"gather",
+"park",
+"alongside",
+"immediately"
+],
+"intruder": "gather"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "ART",
+"sign": 1,
+"words": [
+"painter",
+"artist",
+"exhibition",
+"mom",
+"artistic"
+],
+"intruder": "mom"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CAN",
+"sign": -1,
+"words": [
+"rough",
+"solo",
+"harsh",
+"tough",
+"terrible"
+],
+"intruder": "solo"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "peaceful - violent",
+"sign": 1,
+"words": [
+"wild",
+"severely",
+"tower",
+"strong",
+"tough"
+],
+"intruder": "tower"
+},
+{
+"set": "PCA",
+"axis": "PC10",
+"sign": -1,
+"words": [
+"quickly",
+"position",
+"runner",
+"coach",
+"faith"
+],
+"intruder": "faith"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "irregular - regular",
+"sign": 1,
+"words": [
+"conventional",
+"willingness",
+"proper",
+"necessary",
+"duty"
+],
+"intruder": "willingness"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MOOD",
+"sign": -1,
+"words": [
+"feelings",
+"unable",
+"supreme",
+"painful",
+"losses"
+],
+"intruder": "supreme"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "trivial - important",
+"sign": 1,
+"words": [
+"primary",
+"enable",
+"influential",
+"ensure",
+"historical"
+],
+"intruder": "historical"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "irregular - regular",
+"sign": -1,
+"words": [
+"burst",
+"rare",
+"harm",
+"violent",
+"strange"
+],
+"intruder": "harm"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "full - empty",
+"sign": 1,
+"words": [
+"silent",
+"heights",
+"replace",
+"rent",
+"isolated"
+],
+"intruder": "heights"
+},
+{
+"set": "PCA",
+"axis": "PC20",
+"sign": -1,
+"words": [
+"extent",
+"election",
+"polls",
+"presidential",
+"voter"
+],
+"intruder": "extent"
+},
+{
+"set": "PCA",
+"axis": "PC7",
+"sign": 1,
+"words": [
+"town",
+"investigation",
+"discussion",
+"incident",
+"investigate"
+],
+"intruder": "town"
+},
+{
+"set": "PCA",
+"axis": "PC19",
+"sign": -1,
+"words": [
+"automatic",
+"automobile",
+"necessarily",
+"insist",
+"riot"
+],
+"intruder": "riot"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "NEAR",
+"sign": -1,
+"words": [
+"typically",
+"exile",
+"distance",
+"trip",
+"runner"
+],
+"intruder": "typically"
+},
+{
+"set": "PCA",
+"axis": "PC1",
+"sign": -1,
+"words": [
+"regard",
+"veteran",
+"declaration",
+"approve",
+"provision"
+],
+"intruder": "veteran"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "sick - healthy",
+"sign": -1,
+"words": [
+"weak",
+"various",
+"unable",
+"illness",
+"disease"
+],
+"intruder": "various"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "HEAT",
+"sign": 1,
+"words": [
+"pool",
+"heat",
+"smoke",
+"explosive",
+"explosion"
+],
+"intruder": "pool"
+},
+{
+"set": "PCA",
+"axis": "PC10",
+"sign": 1,
+"words": [
+"southwestern",
+"downtown",
+"exist",
+"structure",
+"population"
+],
+"intruder": "structure"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "bright - dark",
+"sign": 1,
+"words": [
+"slightly",
+"diverse",
+"somewhat",
+"uncertainty",
+"mystery"
+],
+"intruder": "diverse"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SAY",
+"sign": 1,
+"words": [
+"tremendous",
+"bull",
+"tape",
+"boom",
+"crazy"
+],
+"intruder": "tape"
+},
+{
+"set": "PCA",
+"axis": "PC18",
+"sign": 1,
+"words": [
+"effort",
+"sense",
+"venture",
+"preliminary",
+"exploration"
+],
+"intruder": "sense"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "public - private",
+"sign": 1,
+"words": [
+"spy",
+"exclusive",
+"detail",
+"detailed",
+"enormous"
+],
+"intruder": "enormous"
+},
+{
+"set": "PCA",
+"axis": "PC19",
+"sign": 1,
+"words": [
+"mostly",
+"slightly",
+"remainder",
+"part",
+"somewhat"
+],
+"intruder": "mostly"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "TIME",
+"sign": -1,
+"words": [
+"recent",
+"previous",
+"longtime",
+"steady",
+"times"
+],
+"intruder": "steady"
+},
+{
+"set": "PCA",
+"axis": "PC4",
+"sign": -1,
+"words": [
+"downturn",
+"teammate",
+"decline",
+"momentum",
+"fiscal"
+],
+"intruder": "teammate"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "legal - illegal",
+"sign": -1,
+"words": [
+"reasonable",
+"claim",
+"essential",
+"sufficient",
+"jurisdiction"
+],
+"intruder": "essential"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "HEAT",
+"sign": -1,
+"words": [
+"fruit",
+"milk",
+"crystal",
+"freeze",
+"remove"
+],
+"intruder": "remove"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CAN",
+"sign": 1,
+"words": [
+"likely",
+"probably",
+"whole",
+"effective",
+"smart"
+],
+"intruder": "whole"
+},
+{
+"set": "PCA",
+"axis": "PC9",
+"sign": 1,
+"words": [
+"comfort",
+"recent",
+"sales",
+"frequently",
+"interested"
+],
+"intruder": "comfort"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "young - old",
+"sign": -1,
+"words": [
+"eager",
+"talent",
+"rebellion",
+"development",
+"average"
+],
+"intruder": "average"
+},
+{
+"set": "PCA",
+"axis": "PC18",
+"sign": -1,
+"words": [
+"automatically",
+"disabled",
+"switch",
+"senator",
+"condition"
+],
+"intruder": "senator"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "VALUE",
+"sign": 1,
+"words": [
+"rare",
+"influential",
+"intensive",
+"ready",
+"greatly"
+],
+"intruder": "ready"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "fast - slow",
+"sign": -1,
+"words": [
+"lightning",
+"bring",
+"fierce",
+"reliable",
+"urgent"
+],
+"intruder": "bring"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "LONG",
+"sign": 1,
+"words": [
+"front",
+"load",
+"plate",
+"quick",
+"rear"
+],
+"intruder": "quick"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "alive - dead",
+"sign": -1,
+"words": [
+"environment",
+"aware",
+"affair",
+"sustainable",
+"freedom"
+],
+"intruder": "affair"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "permanent - temporary",
+"sign": -1,
+"words": [
+"ensure",
+"maintain",
+"integrity",
+"powerful",
+"commitment"
+],
+"intruder": "powerful"
+},
+{
+"set": "PCA",
+"axis": "PC15",
+"sign": 1,
+"words": [
+"combination",
+"normally",
+"create",
+"training",
+"generally"
+],
+"intruder": "create"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "give - take",
+"sign": 1,
+"words": [
+"pull",
+"renamed",
+"illegally",
+"escape",
+"raid"
+],
+"intruder": "renamed"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "trivial - important",
+"sign": -1,
+"words": [
+"seem",
+"slight",
+"plain",
+"comparison",
+"ban"
+],
+"intruder": "ban"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "fast - slow",
+"sign": -1,
+"words": [
+"emergency",
+"fierce",
+"land",
+"reliable",
+"possible"
+],
+"intruder": "land"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "PART",
+"sign": -1,
+"words": [
+"moment",
+"chip",
+"girlfriend",
+"physics",
+"slight"
+],
+"intruder": "girlfriend"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SAME",
+"sign": 1,
+"words": [
+"total",
+"share",
+"perfect",
+"detained",
+"par"
+],
+"intruder": "detained"
+},
+{
+"set": "PCA",
+"axis": "PC6",
+"sign": -1,
+"words": [
+"evidence",
+"note",
+"reasonable",
+"explain",
+"wonder"
+],
+"intruder": "wonder"
+},
+{
+"set": "PCA",
+"axis": "PC13",
+"sign": 1,
+"words": [
+"army",
+"deadly",
+"lifetime",
+"interest",
+"release"
+],
+"intruder": "interest"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "ART",
+"sign": -1,
+"words": [
+"electronic",
+"hardware",
+"technical",
+"tobacco",
+"devices"
+],
+"intruder": "tobacco"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "peaceful - violent",
+"sign": -1,
+"words": [
+"heart",
+"smooth",
+"agreement",
+"peace",
+"silent"
+],
+"intruder": "heart"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "FEEL",
+"sign": 1,
+"words": [
+"ambitious",
+"tough",
+"love",
+"proud",
+"exciting"
+],
+"intruder": "tough"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "high - low",
+"sign": 1,
+"words": [
+"minor",
+"semi",
+"junction",
+"little",
+"dirty"
+],
+"intruder": "junction"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "bright - dark",
+"sign": -1,
+"words": [
+"display",
+"smart",
+"extraordinary",
+"junction",
+"tremendous"
+],
+"intruder": "junction"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GIVE",
+"sign": 1,
+"words": [
+"begin",
+"support",
+"gift",
+"contribute",
+"announce"
+],
+"intruder": "begin"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "sick - healthy",
+"sign": -1,
+"words": [
+"illness",
+"violence",
+"desperate",
+"infected",
+"fever"
+],
+"intruder": "violence"
+},
+{
+"set": "PCA",
+"axis": "PC16",
+"sign": -1,
+"words": [
+"confirmation",
+"dispute",
+"resistance",
+"stronghold",
+"refusal"
+],
+"intruder": "dispute"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "build - destroy",
+"sign": 1,
+"words": [
+"miss",
+"blow",
+"kill",
+"quarters",
+"hurt"
+],
+"intruder": "quarters"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MEASURE",
+"sign": 1,
+"words": [
+"graduate",
+"normal",
+"equity",
+"benchmark",
+"hip"
+],
+"intruder": "hip"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "high - low",
+"sign": -1,
+"words": [
+"enormous",
+"tower",
+"peak",
+"substantial",
+"rise"
+],
+"intruder": "substantial"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "closed - open",
+"sign": -1,
+"words": [
+"keep",
+"guard",
+"tie",
+"block",
+"task"
+],
+"intruder": "task"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "NEAR",
+"sign": 1,
+"words": [
+"alongside",
+"shut",
+"situated",
+"love",
+"join"
+],
+"intruder": "love"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "JOIN",
+"sign": 1,
+"words": [
+"partnership",
+"allied",
+"associate",
+"contain",
+"alliance"
+],
+"intruder": "contain"
+},
+{
+"set": "PCA",
+"axis": "PC5",
+"sign": -1,
+"words": [
+"later",
+"completion",
+"days",
+"final",
+"delegation"
+],
+"intruder": "delegation"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "SAY",
+"sign": -1,
+"words": [
+"remain",
+"calm",
+"mystery",
+"boundary",
+"anonymity"
+],
+"intruder": "boundary"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "GRAIN",
+"sign": 1,
+"words": [
+"framework",
+"concrete",
+"rock",
+"segment",
+"effectively"
+],
+"intruder": "effectively"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "closed - open",
+"sign": 1,
+"words": [
+"reveal",
+"willing",
+"willingness",
+"easy",
+"requirement"
+],
+"intruder": "requirement"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "ABOVE",
+"sign": -1,
+"words": [
+"soft",
+"underground",
+"sub",
+"slow",
+"immediate"
+],
+"intruder": "immediate"
+},
+{
+"set": "PCA",
+"axis": "PC2",
+"sign": 1,
+"words": [
+"commander",
+"envoy",
+"deputy",
+"remarkable",
+"lieutenant"
+],
+"intruder": "remarkable"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "alive - dead",
+"sign": 1,
+"words": [
+"old",
+"funeral",
+"successor",
+"expensive",
+"cemetery"
+],
+"intruder": "expensive"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "irregular - regular",
+"sign": -1,
+"words": [
+"legacy",
+"unusual",
+"wild",
+"volatile",
+"uncertain"
+],
+"intruder": "legacy"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "closed - open",
+"sign": 1,
+"words": [
+"demonstrate",
+"learn",
+"solar",
+"obvious",
+"emerge"
+],
+"intruder": "solar"
+},
+{
+"set": "PCA",
+"axis": "PC14",
+"sign": 1,
+"words": [
+"unique",
+"notable",
+"regard",
+"significantly",
+"honor"
+],
+"intruder": "unique"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MANY",
+"sign": 1,
+"words": [
+"association",
+"part",
+"day",
+"gather",
+"prepare"
+],
+"intruder": "association"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "CONSUME",
+"sign": 1,
+"words": [
+"food",
+"breakfast",
+"consumption",
+"clothing",
+"favorite"
+],
+"intruder": "clothing"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "sick - healthy",
+"sign": 1,
+"words": [
+"modest",
+"reliable",
+"put",
+"consistent",
+"nice"
+],
+"intruder": "put"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "public - private",
+"sign": -1,
+"words": [
+"wild",
+"association",
+"universal",
+"municipality",
+"citizen"
+],
+"intruder": "wild"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "fast - slow",
+"sign": 1,
+"words": [
+"block",
+"slump",
+"slowly",
+"bit",
+"sleep"
+],
+"intruder": "block"
+},
+{
+"set": "PCA",
+"axis": "PC14",
+"sign": -1,
+"words": [
+"blast",
+"solution",
+"deal",
+"essentially",
+"abandon"
+],
+"intruder": "blast"
+},
+{
+"set": "\u043d\u043e\u0432\u044b\u0435",
+"axis": "trivial - important",
+"sign": -1,
+"words": [
+"tiny",
+"fairly",
+"modest",
+"affiliated",
+"random"
+],
+"intruder": "affiliated"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MOVE",
+"sign": -1,
+"words": [
+"forever",
+"statue",
+"quiet",
+"unemployment",
+"maintain"
+],
+"intruder": "unemployment"
+},
+{
+"set": "\u043a\u043e\u0440\u043d\u0438",
+"axis": "MANY",
+"sign": -1,
+"words": [
+"less",
+"actually",
+"indeed",
+"doubt",
+"air"
+],
+"intruder": "air"
+}
+]
