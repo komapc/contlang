@@ -115,6 +115,7 @@ details{margin-top:10px}summary{cursor:pointer;color:var(--mut);font-size:14px}
 .chip:hover{border-color:var(--acc);background:var(--acc2)}.chip.used{background:var(--acc);color:var(--bg);border-color:var(--acc)}
 .chip.na{font-style:italic}
 .mxhint{font-size:13px;color:var(--mut);margin-top:6px}
+a.rt{color:inherit;text-decoration:underline dotted var(--acc);text-underline-offset:3px;cursor:help}a.rt:hover{color:var(--acc)}
 footer.projects{margin-top:40px;padding-top:16px;border-top:1px solid var(--line);color:var(--mut);font-size:14px}
 footer.projects a{color:var(--acc)}
 </style>
@@ -128,7 +129,8 @@ footer.projects a{color:var(--acc)}
   <div class="langsw" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="mc" title="min-co: descriptions and instructions in the language itself">MC</button></div>
 </header>
 <nav role="tablist">
-  <button role="tab" aria-selected="true" data-t="demo"><span data-l="en">Try it</span><span data-l="ru">Проба</span></button>
+  <button role="tab" aria-selected="true" data-t="idea"><span data-l="en">Idea</span><span data-l="ru">Идея</span></button>
+  <button role="tab" aria-selected="false" data-t="demo"><span data-l="en">Try it</span><span data-l="ru">Проба</span></button>
   <button role="tab" aria-selected="false" data-t="mix"><span data-l="en">Mixer</span><span data-l="ru">Смеситель</span></button>
   <button role="tab" aria-selected="false" data-t="how"><span data-l="en">How to read a code</span><span data-l="ru">Как читать код</span></button>
   <button role="tab" aria-selected="false" data-t="roots"><span data-l="en">Roots</span><span data-l="ru">Корни</span></button>
@@ -137,7 +139,66 @@ footer.projects a{color:var(--acc)}
   <button role="tab" aria-selected="false" data-t="docs"><span data-l="en">Docs</span><span data-l="ru">Документация</span></button>
 </nav>
 
-<section id="demo" class="on">
+<section id="idea" class="on">
+  <div data-l="en">
+<h2>What min-co is</h2>
+<p><b>min-co</b> (working name) is a small constructed language inspired by Toki Pona. It has about 45 roots, roughly a third of Toki Pona's vocabulary, and a word is up to three roots, the main one first: <i>house</i> = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code>.</p>
+<p class="mut">Every root name on this site is a link to the Roots tab; hover for a short hint.</p>
+<h3>Roots are axes</h3>
+<p>In Esperanto, shades of meaning come from affixes: <i>granda, grandega, malgranda, malgrandeta</i>. In min-co a root carries a scale from −5 to +5, and a number says where on the scale you mean. One root, many words:</p>
+<div class="card" style="overflow-x:auto"><table><thead><tr><th>code</th><th>meaning</th></tr></thead><tbody><tr><td><code><a class="rt" href="#roots">SAY</a>(=-5) &#124; i</code></td><td>mutter</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-4) &#124; i</code></td><td>whisper</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a> &#124; i</code></td><td>say, speak</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) &#124; i</code></td><td>call out, speak loudly</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+5) &#124; i</code></td><td>scream, roar</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-3) &#124; o</code></td><td>a whisper</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+4) &#124; o</code></td><td>a shout</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) <a class="rt" href="#roots">THING</a> &#124; o</code></td><td>noise</td></tr></tbody></table></div>
+<p>The same works elsewhere: <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code> is a home, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-2) &#124; o</code> a bedroom, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-5) &#124; o</code> a morgue. A value left out means “not specified”; <code>(=0)</code> is the explicit middle.</p>
+<h3>Where the idea comes from</h3>
+<p>Computers represent meaning as a long list of numbers per word (word2vec, GloVe, ConceptNet Numberbatch): a word is a point in a meaning-space. Dimensionality reduction such as PCA finds the few directions along which words differ most. In principle those could be the axes of a language.</p>
+<p>In practice they are not readable. The axes PCA finds mix unrelated senses: one pole of the first axis is <i>mandate, requirement, approval</i>, the other <i>fell, blast, hit, beat</i>. Twenty axes explain only about 20% of the variation. They are made for computers and are not suitable for learning or speaking, and the words they give look odd: a knife comes out as <code><a class="rt" href="#roots">LONG</a>(=-1) <a class="rt" href="#roots">PART</a>(=-5) <a class="rt" href="#roots">TOUCH</a>(=+5) &#124; o</code>.</p>
+<details><summary>Show the top five axes</summary>
+<div class="card" style="overflow-x:auto"><table><thead><tr><th>axis</th><th>one pole</th><th>the other pole</th></tr></thead><tbody><tr><td>1</td><td>mandate, requirement, approval, agreement</td><td>fell, blast, hit, beat</td></tr><tr><td>2</td><td>amount, extent, ratio, size</td><td>deputy, secretary, chairman, president</td></tr><tr><td>3</td><td>administrative, department, office</td><td>indeed, certainly, truly, really</td></tr><tr><td>4</td><td>downturn, slowdown, recession</td><td>unique, famous, wonderful, beautiful</td></tr><tr><td>5</td><td>final, deadline, next, last</td><td>deeply, strongly, leadership, advocate</td></tr></tbody></table></div>
+<p class="mut">5,949 words of this site's vocabulary, Numberbatch vectors.</p></details>
+<h3>What we did instead</h3>
+<ul>
+<li><b>Readable roots.</b> We picked concepts a person understands (<i>time, good, big, say, know, place…</i>) and gave each its own axis, with poles you can name.</li>
+<li><b>Limits.</b> At most three roots in a word, one axis per root, about 45 roots in all.</li>
+<li><b>Grammar.</b> Toki Pona-like (head first, particles, no inflection) with a few changes: part of speech and a small set of marks after the <code>&#124;</code>.</li>
+</ul>
+<p>Some words: school = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">CONSUME</a>(=+5) &#124; o</code>; teacher = <code><a class="rt" href="#roots">SOMEONE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">GIVE</a>(=+4) &#124; o</code>; money = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=0) &#124; o</code>; debt = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=+4) <a class="rt" href="#roots">TIME</a>(=+3) &#124; o</code>; hospital = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=0) <a class="rt" href="#roots">GOOD</a>(=-4) &#124; o</code>.</p>
+<h3>Two ways to write a code</h3>
+<p><b>By math.</b> The word's vector is approximated by a sum of at most three roots with integer axis values, found by trying all combinations (<a href="#" data-go="demo">try the decoder</a>, <a href="#" data-go="mix">play with the mixer</a>). It needs no model: on 2,000 words the original comes back first in about half the cases and in the top ten in over 90%. It is a good analysis tool: it shows which concepts have no root, whether two roots overlap, which poles of an axis are wrong. But its codes are hard to read by people and models (1–3 of 24 words in an early blind test): the math picks whatever fits the numbers, not what makes sense.</p>
+<p><b>By a language model.</b> A model that understands what the roots mean writes codes that read much better. In blind tests, with the recipes for hard words (law, money, food, transport…) 24 of 24 were restored against 13–19 without, and the Toki Pona-style notation scored +0.33 on a three-point scale over the earlier notation. The limit: on encyclopedic sentences the average is 1.2–1.4 of 3; the language carries the topic and the main relations, not the details. See <a href="#" data-go="method">Method</a>.</p>
+<p>Ideally the two work together: the math proposes a candidate, the model reads and corrects it.</p>
+<h3>Phonetics</h3>
+<p>Not decided yet. The current draft: a root is a Toki Pona word, an axis value is a repeated syllable (<code>ti</code> for plus, <code>wu</code> for minus, <code>y</code> for the explicit middle). Options still open: vowel or consonant quality for the sign, vowel length for the value.</p>
+  </div>
+  <div data-l="ru">
+<h2>Что такое min-co</h2>
+<p><b>min-co</b> (рабочее название) — небольшой искусственный язык по мотивам Toki Pona. В нём около 45 корней, примерно треть словаря Toki Pona, а слово — это до трёх корней, главный первым: <i>дом</i> = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code>.</p>
+<p class="mut">Каждое название корня на сайте — ссылка на вкладку «Корни»; при наведении появляется короткая подсказка.</p>
+<h3>Корни — это оси</h3>
+<p>В эсперанто оттенки смысла дают аффиксы: <i>granda, grandega, malgranda, malgrandeta</i>. В min-co у корня есть шкала от −5 до +5, а число показывает, где на шкале вы находитесь. Один корень, много слов:</p>
+<div class="card" style="overflow-x:auto"><table><thead><tr><th>код</th><th>значение</th></tr></thead><tbody><tr><td><code><a class="rt" href="#roots">SAY</a>(=-5) &#124; i</code></td><td>бормотать</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-4) &#124; i</code></td><td>шептать</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a> &#124; i</code></td><td>говорить</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) &#124; i</code></td><td>окликнуть, говорить громко</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+5) &#124; i</code></td><td>кричать, реветь</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-3) &#124; o</code></td><td>шёпот</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+4) &#124; o</code></td><td>крик</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) <a class="rt" href="#roots">THING</a> &#124; o</code></td><td>шум</td></tr></tbody></table></div>
+<p>То же и в других местах: <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code> — дом, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-2) &#124; o</code> — спальня, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-5) &#124; o</code> — морг. Если значение не написано, оно «не указано»; <code>(=0)</code> — явная середина.</p>
+<h3>Откуда идея</h3>
+<p>Компьютеры представляют смысл длинным списком чисел на слово (word2vec, GloVe, ConceptNet Numberbatch): слово — точка в пространстве смыслов. Методы сжатия, например PCA, находят немногие направления, по которым слова различаются сильнее всего. В принципе, это могли бы быть оси языка.</p>
+<p>На практике их нельзя читать. Оси PCA смешивают несвязанные значения: один полюс первой оси — <i>mandate, requirement, approval</i> (поручение, требование, одобрение), другой — <i>fell, blast, hit, beat</i> (упасть, взрыв, удар, бить). Двадцать осей объясняют лишь около 20 % разброса. Они сделаны для компьютеров и не годятся для изучения и речи, а слова выходят странные: нож получается как <code><a class="rt" href="#roots">LONG</a>(=-1) <a class="rt" href="#roots">PART</a>(=-5) <a class="rt" href="#roots">TOUCH</a>(=+5) &#124; o</code>.</p>
+<details><summary>Показать пять главных осей</summary>
+<div class="card" style="overflow-x:auto"><table><thead><tr><th>ось</th><th>один полюс</th><th>другой полюс</th></tr></thead><tbody><tr><td>1</td><td>mandate, requirement, approval, agreement</td><td>fell, blast, hit, beat</td></tr><tr><td>2</td><td>amount, extent, ratio, size</td><td>deputy, secretary, chairman, president</td></tr><tr><td>3</td><td>administrative, department, office</td><td>indeed, certainly, truly, really</td></tr><tr><td>4</td><td>downturn, slowdown, recession</td><td>unique, famous, wonderful, beautiful</td></tr><tr><td>5</td><td>final, deadline, next, last</td><td>deeply, strongly, leadership, advocate</td></tr></tbody></table></div>
+<p class="mut">5949 слов словаря сайта, векторы Numberbatch.</p></details>
+<h3>Что сделали мы</h3>
+<ul>
+<li><b>Читаемые корни.</b> Взяли понятия, которые человек понимает (<i>время, хорошо, большой, говорить, знать, место…</i>), и дали каждому свою ось с полюсами, которые можно назвать.</li>
+<li><b>Ограничения.</b> В слове не больше трёх корней, у корня одна ось, всего около 45 корней.</li>
+<li><b>Грамматика.</b> Как в Toki Pona (главное слово первым, частицы, без склонений) с небольшими изменениями: часть речи и небольшой набор меток после <code>&#124;</code>.</li>
+</ul>
+<p>Несколько слов: школа = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">CONSUME</a>(=+5) &#124; o</code>; учитель = <code><a class="rt" href="#roots">SOMEONE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">GIVE</a>(=+4) &#124; o</code>; деньги = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=0) &#124; o</code>; долг = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=+4) <a class="rt" href="#roots">TIME</a>(=+3) &#124; o</code>; больница = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=0) <a class="rt" href="#roots">GOOD</a>(=-4) &#124; o</code>.</p>
+<h3>Два способа записать код</h3>
+<p><b>Математикой.</b> Вектор слова приближается суммой не больше чем трёх корней с целыми значениями осей, перебором всех сочетаний (<a href="#" data-go="demo">декодер</a>, <a href="#" data-go="mix">смеситель</a>). Модель не нужна: на 2000 слов исходное слово возвращается первым примерно в половине случаев и в первой десятке больше чем в 90 %. Это хороший инструмент анализа: он показывает, для каких понятий нет корня, пересекаются ли два корня, неверны ли полюса оси. Но такие коды плохо читают люди и модели (1–3 слова из 24 в раннем слепом тесте): математика выбирает то, что подходит по числам, а не по смыслу.</p>
+<p><b>Языковой моделью.</b> Модель, которая понимает, что значат корни, пишет коды, которые читаются заметно лучше. В слепых тестах с рецептами для трудных слов (право, деньги, еда, транспорт…) восстановлено 24 из 24 против 13–19 без них, а токипонская запись дала +0,33 по трёхбалльной шкале против прежней. Предел: на энциклопедических предложениях средняя оценка 1,2–1,4 из 3; язык передаёт тему и главные связи, а не детали. См. <a href="#" data-go="method">Методологию</a>.</p>
+<p>В идеале они работают вместе: математика предлагает кандидата, модель читает и исправляет.</p>
+<h3>Фонетика</h3>
+<p>Пока не решено. Нынешний черновик: корень — слово Toki Pona, значение оси — повторённый слог (<code>ti</code> для плюса, <code>wu</code> для минуса, <code>y</code> для явной середины). Открытые варианты: качество гласной или согласной для знака, долгота гласной для значения.</p>
+  </div>
+</section>
+
+<section id="demo">
   <div id="modeNote" class="note" hidden></div>
   <form class="card ask" id="ask">
     <label for="inp"><b data-l="en">An English word</b><b data-l="ru">Слово по-английски</b> <span class="mut" data-l="en">or a min-co code to decode</span><span class="mut" data-l="ru">или код min-co, чтобы раскодировать</span></label>
@@ -976,6 +1037,19 @@ if (location.hash.startsWith("#mix=")) {
   document.querySelector('nav button[data-t=mix]').click();
   const c = decodeURIComponent(location.hash.slice(5)); mxStarted = true; const w = () => RD ? mxLoad(c) : setTimeout(w, 20); w();
 }
+
+// ---- вкладка «Идея»: ссылки на вкладки и подсказки у корней
+document.querySelectorAll("a[data-go]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); document.querySelector('nav button[data-t=' + a.dataset.go + ']').click(); window.scrollTo({top: 0}); }));
+function ideaHints(){
+  if (!RD) return;
+  document.querySelectorAll("a.rt").forEach(a => {
+    const r = RD.root.get(a.textContent); if (!r) return;
+    a.title = r.axis ? clean(rf(r, "neg")) + " … " + clean(rf(r, "pos")) : clean(rf(r, "ru"));
+    a.onclick = e => { e.preventDefault(); $("q").value = r.name; document.querySelector("nav button[data-t=roots]").click(); drawRoots(); window.scrollTo({top: 0}); };
+  });
+}
+RDP.then(() => setTimeout(ideaHints, 0));
+document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => setTimeout(ideaHints, 0)));
 </script>
 </body>
 </html>
