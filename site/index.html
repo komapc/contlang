@@ -3,13 +3,21 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>min-co: test bench</title>
-<meta name="description" content="The constructed language min-co: type a word, get a code with an explanation, then a blind decoding.">
+<title>min-co — a minimal continuous constructed language</title>
+<meta name="description" content="min-co is a minimal continuous constructed language: 45 meaning roots with value axes. Encode any word as a short code, then decode it blind — by AI and by pure vector math.">
 <link rel="canonical" href="https://minco.lipu.dev/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://minco.lipu.dev/">
 <meta property="og:title" content="min-co: a minimal continuous constructed language">
-<meta property="og:description" content="The constructed language min-co: type a word, get a code with an explanation, then a blind decoding.">
+<meta property="og:description" content="45 meaning roots with value axes. Encode any word as a short code, then decode it blind — by AI and by pure vector math.">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="min-co: a minimal continuous constructed language">
+<meta name="twitter:image" content="https://minco.lipu.dev/og.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"min-co","url":"https://minco.lipu.dev/","description":"A minimal continuous constructed language: 45 meaning roots with value axes; encode a word as a code and decode it blind.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":["en","ru"],"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
 <meta name="msvalidate.01" content="CAFA7BE0D5D83695993D635831499022">
 <script>try { const l = localStorage.getItem("minco-lang"); if (l === "ru" || l === "en") document.documentElement.lang = l; if (l === "mc") { document.documentElement.lang = "en"; document.documentElement.classList.add("mc"); } } catch (e) {}</script>
 <style>
@@ -856,7 +864,7 @@ function applyLang(l){
   try { localStorage.setItem("minco-lang", mc ? "mc" : l); } catch (e) {}
   document.querySelectorAll(".langsw button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === (mc ? "mc" : l)));
   if (mc) drawMc();
-  document.title = l === "ru" ? "min-co: пробный стенд" : "min-co: test bench";
+  document.title = l === "ru" ? "min-co — минимальный непрерывный конструируемый язык" : "min-co — a minimal continuous constructed language";
   $("q").placeholder = T("qPh"); $("dq").placeholder = T("dqPh"); $("inp").placeholder = T("inpPh");
   if (!API) { $("modeNote").hidden = false; $("modeNote").textContent = T("modeNote"); }
   closeTip();
