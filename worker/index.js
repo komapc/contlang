@@ -2,7 +2,7 @@
 // Развёртывание: см. worker/README.md
 import { ENC_SPEC, DEC_SPEC, CHECK } from "./prompts.js";
 
-const DEFAULT_MODEL = "openai/gpt-4o-mini"; // можно сменить переменной MODEL в wrangler.toml
+const DEFAULT_MODEL = "openai/gpt-5-mini"; // можно сменить переменной MODEL в wrangler.toml
 const MAX_INPUT = 300;
 
 const ENCODE_TASK_RU = `
@@ -68,7 +68,7 @@ async function ask(env, messages) {
   const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: { "authorization": "Bearer " + env.OPENROUTER_API_KEY, "content-type": "application/json", "X-Title": "min-co demo" },
-    body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 700, temperature: 0, messages }),
+    body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 2000, messages }),
   });
   if (!r.ok) return { error: r.status };
   const data = await r.json().catch(() => ({}));
