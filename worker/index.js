@@ -68,7 +68,7 @@ async function ask(env, messages) {
   const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {
     method: "POST",
     headers: { "authorization": "Bearer " + env.OPENROUTER_API_KEY, "content-type": "application/json", "X-Title": "min-co demo" },
-    body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 2000, messages }),
+    body: JSON.stringify({ model: env.MODEL || DEFAULT_MODEL, max_tokens: 2000, reasoning: { effort: "low" }, messages }),
   });
   if (!r.ok) return { error: r.status };
   const data = await r.json().catch(() => ({}));
