@@ -193,6 +193,7 @@ def page_html(title, desc, path, body, lastmod=None):
 <style>
 {CSS}
 </style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{{"token": "df534d82af8c40d9871e1fb408a5a378"}}'></script>
 </head>
 <body>
 <div class="wrap">
