@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Документация min-co — искусственный язык из 45 корней</title>
+<meta name="description" content="Документы о min-co, минимальном искусственном языке из 45 смысловых корней: модель, синтаксис, словарь, фонология, рецепты кодирования, математика.">
+<link rel="canonical" href="https://minco.lipu.dev/docs/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Документация min-co — искусственный язык из 45 корней">
+<meta property="og:description" content="Документы о min-co, минимальном искусственном языке из 45 смысловых корней: модель, синтаксис, словарь, фонология, рецепты кодирования, математика.">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Документация min-co — искусственный язык из 45 корней","description":"Документы о min-co, минимальном искусственном языке из 45 смысловых корней: модель, синтаксис, словарь, фонология, рецепты кодирования, математика.","url":"https://minco.lipu.dev/docs/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1>Документация min-co</h1>
+<p>min-co — минимальный непрерывный искусственный язык: слово — до трёх смысловых корней с осями значений и часть речи с метками после черты. Здесь собраны документы о языке; источник правды о корнях — <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. Попробовать язык — на <a href="/ru/">главной странице</a>.</p>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a> — Для тех, кто знает Toki Pona и эсперанто. Слово min-co — короткое описание, как jan pona. Читать его — значит найти смысловое поле: дом, жилище, хата — все…</li>
+<li><a href="/docs/model/">Модель: корень и структура</a> — Всё в языке сводится к двум вещам: корню и структуре. Ось — не отдельная сущность, а корень в позиции модификатора со значением (как в эсперанто корень и…</li>
+<li><a href="/docs/philosophy/">Философия min-co</a> — Схема не придумана целиком вручную, а подобрана экспериментами на данных (английский, эмбеддинги ConceptNet Numberbatch, 3000 слов): сравнивались глобальные…</li>
+<li><a href="/docs/syntax/">Синтаксис</a> — Связь слов в предложении задаётся частицами (три из Toki Pona; PE, AND и связки FROM, FOR, LIKE добавлены). Конструкции вкладываются друг в друга. Сказуемое…</li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a> — Краткий обзор текущего состояния. Источники правды: roots.yaml (корни и оси), syntax.md (метки и частицы), model.md (модель). Здесь только сводка; при…</li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a> — Приёмы подобраны слепыми тестами (кодировщик видит только спецификацию). Для каждого дана ссылка на тест; без теста — подсказка не проверена. Корни и оси — в…</li>
+<li><a href="/docs/lexicon/">Словарь</a> — Корни, оси, метки и частицы — в roots.yaml; блоки между маркерами generated и tables.md генерируются из него. Приёмы кодирования — encoding.md. Прежние схемы…</li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a> — Корни в записи обозначены английскими глоссами (MOVE, THINK). Для сайта есть черновик звучания (ниже, «Черновик звучания»): на слух не проверялся, это опция…</li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a> — Цель: проверить, можно ли переводить слово в код min-co без языковой модели, одной матрицей и простым перебором, и использовать ту же математику, чтобы…</li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a> — Главная мера теперь другая: доля первых ответов слепого читателя, которые слепой судья (Haiku) считает «близко» — то же смысловое поле (2 близко, 1 рядом, 0…</li>
+</ul>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

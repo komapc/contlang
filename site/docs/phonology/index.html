@@ -1,0 +1,96 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фонология и структура слова — min-co</title>
+<meta name="description" content="Корни в записи обозначены английскими глоссами (MOVE, THINK). Для сайта есть черновик звучания (ниже, «Черновик звучания»): на слух не проверялся, это опция…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/phonology/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/phonology/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Фонология и структура слова — min-co">
+<meta property="og:description" content="Корни в записи обозначены английскими глоссами (MOVE, THINK). Для сайта есть черновик звучания (ниже, «Черновик звучания»): на слух не проверялся, это опция…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Фонология и структура слова — min-co","description":"Корни в записи обозначены английскими глоссами (MOVE, THINK). Для сайта есть черновик звучания (ниже, «Черновик звучания»): на слух не проверялся, это опция…","url":"https://minco.lipu.dev/docs/phonology/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="фонология-и-структура-слова">Фонология и структура слова</h1>
+<p>Корни в записи обозначены английскими глоссами (<code>MOVE</code>, <code>THINK</code>). Для сайта есть <strong>черновик звучания</strong> (ниже, «Черновик звучания»): на слух не проверялся, это опция страницы, а не решение языка.</p>
+<h2 id="принято">Принято</h2>
+<ul>
+<li><strong>Часть речи</strong> — гласные эсперанто: <code>o</code> имя, <code>i</code> глагол, <code>a</code> признак, <code>e</code> обстоятельство. В записи они стоят в форме после <code>|</code> (<code>MOVE | i</code>), в звучании задуманы как суффиксы <code>-o -i -a -e</code> (<a href="/docs/syntax/">синтаксис</a>).</li>
+<li>Из этого следует разумное ограничение: корень не должен оканчиваться на гласную, иначе его нельзя отличить от слова с суффиксом (как в эсперанто). Это ограничение предварительное и потребует проверки при выборе звуков корней.</li>
+</ul>
+<h2 id="ранний-прототип-не-принят-открыт">Ранний прототип (не принят, открыт)</h2>
+<p>Идея первоначального документа: признаки кодировать в звучании слова.</p>
+<ul>
+<li>Повтор гласной = интенсивность значения: <code>DOM-T-a</code>, <code>DOM-T-aa</code>, <code>DOM-T-aaa</code> — дом возрастающего размера.</li>
+<li>Пара T/D задаёт направление признака (T = +, D = -): <code>GO-T-aa</code> — идти в будущее, <code>GO-D-aa</code> — в прошлое.</li>
+</ul>
+<p>Проблемы: 11 уровней на признак плохо ложатся на повтор гласной, а гласные теперь заняты суффиксами части речи. Скорее всего, признаки придётся записывать отдельно от корня (особыми словами или аффиксами), как в Toki Pona, а не внутри звучания корня.</p>
+<h2 id="открыто">Открыто</h2>
+<ul>
+<li>Инвентарь звуков и слоговая структура корня.</li>
+<li>Как произносятся и пишутся значения признаков (-5..+5).</li>
+<li>Не конфликтуют ли суффиксы <code>-o/-i/-a/-e</code> с частицами <code>E</code>, <code>PI</code>, <code>LA</code> (например, <code>E</code> как отдельное слово).</li>
+</ul>
+<h2 id="черновик-звучания-опция-сайта-фонетика">Черновик звучания (опция сайта «Фонетика»)</h2>
+<p>Источник — <a href="https://github.com/komapc/contlang/blob/main/phonetics.yaml"><code>phonetics.yaml</code></a>, из него строится <code>site/data/phonetics.json</code>; на странице включается переключателем под полем ввода. Проверено только машинно (тест уникальности слогов), на слух и на людях нет.</p>
+<ul>
+<li><strong>Корень — токипонское слово целиком</strong>, где оно подходит по смыслу (<code>pona</code> — <code>GOOD</code>, <code>suli</code> — <code>BIG</code>, <code>sona</code> — <code>KNOW</code>, <code>moku</code> — <code>CONSUME</code>, <code>toki</code> — <code>SAY</code>). Слово <strong>не меняется</strong>: голова слова — всегда обычное токипонское слово (решение 2026-10-14: «голова — токипонская»). У остальных корней слова с токипонской фонотактикой.</li>
+<li><strong>Значение оси — суффикс</strong> из слогов, которых нет в токипонском (<code>ti</code>, <code>wu</code>, <code>ji</code>, <code>wo</code> запрещены его фонотактикой), поэтому он не спутается со словом: <code>ti</code> — положительное, <code>wu</code> — отрицательное, повторённые |v| раз; явный <code>(=0)</code> — короткое <code>y</code> (<code>ы</code>); «не указано» — без суффикса. Примеры: <code>GOOD</code> — <code>pona</code>, <code>GOOD(=+3)</code> — <code>ponatititi</code>, <code>GOOD(=-2)</code> — <code>ponawuwu</code>, <code>GOOD(=0)</code> — <code>ponay</code>. Правило нуля из <a href="/docs/model/">model.md</a> сохранено. В кодах математического кодера ось всегда названа (<code>(=0)</code> — 12 %), в кодах модели не названа в 22 % случаев (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/big1000/README.md">big1000</a>).</li>
+<li><strong>Почему не звонкость первого согласного</strong> (предыдущий вариант: <code>pona</code> / <code>bona</code> / <code>lona</code>): она меняла слово, и токипонским оставалась одна из трёх форм (голое <code>SAY</code> звучало <code>moki</code>, <code>insa</code> → <code>iksa</code>). Суффикс оставляет слово целым. Цена: знак стоит в конце слова, а не на самом корне; на слух не проверялось.</li>
+<li><strong>Счёт повторов:</strong> повтор считается, а длину гласной слух не измеряет (5 против 6 мор не различить); суффикс <code>ti</code>/<code>wu</code> короче повтора целого слова (<code>GOOD(=+5)</code> — <code>pona</code> и пять <code>ti</code>, а не пять <code>pona</code>).</li>
+<li><strong>Корни без оси</strong> (<code>SEE</code> — <code>lukin</code>, <code>PLACE</code> — <code>tomo</code>, <code>TEXT</code> — <code>lipu</code>, <code>DO</code> — <code>pali</code>, <code>BODY</code> — <code>sijelo</code>, <code>HAPPEN</code> — <code>kama</code>) суффикса не берут.</li>
+<li><strong>Слово</strong> = блоки корней через <code>-</code>, затем <code>'</code> (глоттальный стоп) и гласная части речи <code>o i a e</code>, затем роль (<code>ul il aj ec</code>) и метки через <code>·</code>. Метка — гласная + согласный: <code>at</code> — <code>T+</code>, <code>ad</code> — <code>T−</code>, <code>an</code> — <code>T0</code>; число — тем же повтором (<code>T-2</code> → <code>adad</code>).</li>
+<li><strong>Частицы</strong> начинаются на <code>h</code>, больше нигде <code>h</code> нет: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>ho</code> PE, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>hem … hom</code> — скобки, <code>hum</code> — <code>;</code>.</li>
+</ul>
+<p>Выбор <code>y</code> вместо <code>ain</code> и носовой гласной: слог <code>ain</code> тяжёл в конце, а носовая гласная сливается с <code>n</code> и <code>m</code> внутри слов. Открыто: слуховой тест счёта 2–6 повторов и пар <code>p/b</code>, <code>t/d</code>, <code>s/z</code>, <code>f/v</code>; проверка слогов на созвучие с живыми словами (<code>ma-ma</code>, <code>pa-pa</code> в нейтрали не встречаются, но повторы <code>ta-ta</code>, <code>ka-ka</code>, <code>ba-ba</code> — да); длина слов при значениях, которые выбирает модель; произношение кавычек и скобок; токипонские слова без точного соответствия (<code>LIVE</code> — <code>moli</code>, на самом деле «умереть», <code>SEX</code> — <code>mije</code>, <code>THINK</code> — <code>kon</code>, <code>THING</code> — <code>ijo</code>) надо заменить или оставить с оговоркой; длина слов.</p>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/phonology.md">docs/phonology.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

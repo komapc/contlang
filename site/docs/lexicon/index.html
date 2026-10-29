@@ -1,0 +1,363 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Словарь — min-co</title>
+<meta name="description" content="Корни, оси, метки и частицы — в roots.yaml; блоки между маркерами generated и tables.md генерируются из него. Приёмы кодирования — encoding.md. Прежние схемы…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/lexicon/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/lexicon/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Словарь — min-co">
+<meta property="og:description" content="Корни, оси, метки и частицы — в roots.yaml; блоки между маркерами generated и tables.md генерируются из него. Приёмы кодирования — encoding.md. Прежние схемы…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Словарь — min-co","description":"Корни, оси, метки и частицы — в roots.yaml; блоки между маркерами generated и tables.md генерируются из него. Приёмы кодирования — encoding.md. Прежние схемы…","url":"https://minco.lipu.dev/docs/lexicon/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="словарь">Словарь</h1>
+<p>Корни, оси, метки и частицы — в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a>; блоки между маркерами <code>generated</code> и <a href="/docs/tables/">tables.md</a> генерируются из него. Приёмы кодирования — <a href="/docs/encoding/">encoding.md</a>. Прежние схемы (автоподбор корней, универсальные оси, суффиксы <code>-o/-i</code>) — <a href="https://github.com/komapc/contlang/blob/main/docs/history/lexicon_archive.md">history/lexicon_archive.md</a>.</p>
+<p>Фиксированного словаря нет: слово — до трёх корней, главный первым, у каждого корня своя ось −5…+5 или никакой (<a href="/docs/model/">модель</a>). Общих осей нет: оттенок задаёт ещё один корень.</p>
+<h2 id="корни-текущий-список-черновик">Корни: текущий список (черновик)</h2>
+<p>Правило: у каждого корня <strong>своя</strong> ось (одна) или никакой; составные слова из двух-трёх корней, как в эсперанто (главное первым, остальные уточняют; см. <a href="/docs/model/">модель</a>). Корни берутся из NSM; автоматически подобранные слова корнями не берутся (проверено: выигрыш по wup ≤ 0,01, корни нечитаемы, набор нестабилен, см. <code>data/roots_optimization.md</code>).</p>
+<!-- BEGIN generated:roots-with-axis -->
+<p><strong>Всего 45 корней: 39 с осью, 6 без оси.</strong> Блок сгенерирован из <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a>.</p>
+<p><strong>С осью (39):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">корень</th>
+<th style="text-align: left;">ось (−5 … +5)</th>
+<th style="text-align: left;">статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GOOD</td>
+<td style="text-align: left;">плохо … хорошо</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">BIG</td>
+<td style="text-align: left;">мало … много</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">NEAR</td>
+<td style="text-align: left;">далеко … близко (−5 далеко, за границей, путешествие, +5 здесь, рядом, в центре; в том числе «этот / тот»)</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">ABOVE</td>
+<td style="text-align: left;">ниже … выше</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">LIVE</td>
+<td style="text-align: left;">мёртвое … живое</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAME</td>
+<td style="text-align: left;">другое … то же (−5 другое, противоположное, −4 особое, не как другие, +3 обычное, +5 то же, тождественное): <code>SAME(=-4) | a</code> особый, уникальный, <code>SAME(=-4) | e</code> особенно, <code>SAME(=+3) | a</code> обычный, <code>SAME(=+4) MANY(=+5) | a</code> общий, всеобщий, <code>SAME(=-4) JOIN(=-5) RULE | o</code> исключение</td>
+<td style="text-align: left;">принято; <strong>с 2026-10 вбирает корень PARTICULAR</strong> (общее … особое): слепой тест 12 слов × 2 кодировщика — с PARTICULAR 13 точных из 24, через SAME 12 из 24 — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">TIME</td>
+<td style="text-align: left;">раньше … позже</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">INSIDE</td>
+<td style="text-align: left;">снаружи … на границе, на краю, поверхность … внутри</td>
+<td style="text-align: left;">принято (данные: полюса в одной семье); середина <code>INSIDE(=0)</code> — граница, край, поверхность (слепой тест 22 кода: 32 → 53 % «близко», <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/inside0/README.md">inside0</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PART</td>
+<td style="text-align: left;">лестница: частица … часть … целое … группа (−5 крошка, −2 часть / член, +2 целое / «полностью», +5 группа, набор, союз); после главного слова <code>PART(=+5)</code> — собрание таких вещей, как <em>-aro</em> в эсперанто: <code>SOMEONE PART(=+5) | o</code> общество, <code>THING(=0) PART(=+5) | o</code> стадо / роща; <code>SOMEONE PART(=-2) | o</code> член</td>
+<td style="text-align: left;">принято, слепой тест 10 из 10 (<code>data/translation_test/roundtrip_part_ladder.md</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SIDE</td>
+<td style="text-align: left;">зад, назад, вернуться … перёд, вперёд, предстоящий</td>
+<td style="text-align: left;">принято; определение по атому (2026-10-14): «назад, вернуться … вперёд, предстоящий, готовый» — +4,3 % [−0,7 … +9,2] против «зад … перёд», +6,4 % против удаления (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">KNOW</td>
+<td style="text-align: left;">глупо, не знаю … знаю (−5 глупый, нелепый, 0 осведомлённый, +5 знать, сообщить, научить)</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">WANT</td>
+<td style="text-align: left;">не хочу … хочу (ненависть … любовь)</td>
+<td style="text-align: left;">принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">HEAT</td>
+<td style="text-align: left;">холодно … жарко (−5 лёд, 0 тепло/комнатная, +5 огонь)</td>
+<td style="text-align: left;"><strong>новое</strong>, принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">BEGIN</td>
+<td style="text-align: left;">начало … конец (−5 начать, 0 идёт / середина, +5 закончить): <code>BEGIN(=-5) | i</code> начинать, <code>BEGIN(=+5) | i</code> заканчивать, <code>BEGIN(=-4) | a</code> первый, <code>BEGIN(=+4) | a</code> последний</td>
+<td style="text-align: left;"><strong>новое</strong>, принято</td>
+</tr>
+<tr>
+<td style="text-align: left;">GIVE</td>
+<td style="text-align: left;">взять … отдать (−5 схватить / отнять / украсть, 0 обмен / получить, +5 отдать / подарить / пожертвовать): <code>GIVE(=-5) | i</code> брать, <code>GIVE(=+5) | i</code> давать, <code>GIVE(=-5) GOOD(=-4) | i</code> красть, <code>GIVE(=-3) TIME(=+3) | i</code> брать взаймы</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (MOVE + INSIDE не работает, <code>data/translation_test/roundtrip_200.md</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">TOUCH</td>
+<td style="text-align: left;">мягкое … твёрдое (−5 мягкое / нежное / гладкое, 0 обычное, +5 твёрдое / жёсткое / суровое): <code>TOUCH(=-4) | a</code> мягкий, <code>TOUCH(=+5) | a</code> твёрдый</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (тест: sharp, concrete, board перепутаны без оси)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEX</td>
+<td style="text-align: left;">женское … мужское (только у слов с явным полом: −5 женщина, +5 мужчина; слабые ±1, ±2 не ставятся)</td>
+<td style="text-align: left;"><strong>новое</strong>, предложено</td>
+</tr>
+<tr>
+<td style="text-align: left;">THINK</td>
+<td style="text-align: left;">idea, thing</td>
+<td style="text-align: left;">think, suppose</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN</td>
+<td style="text-align: left;">не могу … могу (−5 невозможно, −3 трудно, +4 легко); из NSM, нужен для «трудно / возможно»</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (BECAUSE отвергнут)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MANY</td>
+<td style="text-align: left;">сколько (−5 ни одного, нет вовсе, −4 нет нужного: нехватка, отсутствие, −3 почти нет, едва, −1 мало, немногие, 0 сколько-то, +3 многие, +4 большинство, +5 все, всегда): <code>THING MANY(=-5) | o</code> ничто, <code>MANY(=-4) | o</code> нехватка, отсутствие, <code>MANY(=-3) | e</code> едва, почти не, <code>SOMEONE MANY(=+5) | o</code> все</td>
+<td style="text-align: left;">принято; <strong>с 2026-10 двусторонняя</strong> (до 2026-10 шкала была 0 … +5, «ни одного» было 0): у математики полюс none / zero / absence стоит на −5, а 0 читается как <em>certainly, absolutely</em>; кодер ставил отрицательные уровни в 46 % кодов с MANY (<em>lack, absence, insufficient, hardly, barely</em>) — <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/many/README.md">data/eval/runs/many</a>; «один» и точные числа — числа из послаблений</td>
+</tr>
+<tr>
+<td style="text-align: left;">SOMEONE</td>
+<td style="text-align: left;">лицо (−5 они / другой, 0 кто-то, +3 ты, +5 я): <code>SOMEONE(=+5) | o</code> я, <code>SOMEONE(=+3) | o</code> ты, <code>SOMEONE(=-3) | o</code> он; множественное — <code>MANY</code> вторым корнем: <code>SOMEONE(=+5) MANY(=+3) | o</code> мы</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (слепой тест: 8 из 8 местоимений)</td>
+</tr>
+<tr>
+<td style="text-align: left;">THING</td>
+<td style="text-align: left;">одушевлённость (−5 камень … 0 растение … +4 животное; человек — SOMEONE): <code>THING(=-5) | o</code> камень, <code>THING(=+4) BIG(=+5) | o</code> слон</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (тест: камень, насекомое, животное, слон верно; растения слабо)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOVE</td>
+<td style="text-align: left;">movement, motion</td>
+<td style="text-align: left;">move, shift</td>
+</tr>
+<tr>
+<td style="text-align: left;">FEEL</td>
+<td style="text-align: left;">спокойно … возбуждённо (−5 вялость, +5 сильное чувство; приятно или нет — GOOD): <code>FEEL(=+4) GOOD(=-4) | a</code> злой</td>
+<td style="text-align: left;"><strong>новое</strong>, принято (тест: 6 из 8; «злой» и «испуганный» путаются)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RULE</td>
+<td style="text-align: left;">личное … официальное (−5 личное, неформальное, частное; 0 обычное; +5 официальное, учреждение, закон): <code>RULE(=+4) | o</code> власть, учреждение, <code>SOMEONE PART(=+5) RULE(=+4) | o</code> комитет, ведомство</td>
+<td style="text-align: left;"><strong>новое</strong>, принято; полюса SemAxis сменены с ведомств (authority committee agency commission government) на закон и власть: прежние тянули любой код с RULE к <em>commissions, agencies</em>, институты (суд, банк, школа, выборы…) попадали в top10 в 6% случаев, теперь в 32% (data/lacunae.md)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CHANGE</td>
+<td style="text-align: left;">остаться … измениться (−5 остаться, не меняться, 0 меняться, +5 превратить, измениться полностью): <code>CHANGE | i</code> менять, <code>CHANGE(=-4) | i</code> оставаться, <code>CHANGE BIG(=+3) | i</code> расти, <code>CHANGE GOOD(=+3) | i</code> улучшать</td>
+<td style="text-align: left;"><strong>новое</strong>, предложено (SemAxis: alter, transform, modify, shift; направление увеличить/уменьшить даётся осями <code>BIG</code> и <code>GOOD</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ART</td>
+<td style="text-align: left;">техника … творчество (−5 расчёт, техника, устройства, точные науки, 0 смешанное, +5 творчество, культура, гуманитарное): <code>ART(=-4) KNOW | o</code> физика, <code>ART(=+5) SAY | o</code> поэзия, <code>ART(=-5) SOMEONE | o</code> инженер; корень без значения — умение, ремесло, дисциплина</td>
+<td style="text-align: left;"><strong>новое</strong>, предложено (SemAxis: полюса «гуманитарное + искусство» против «точные науки + техника», LOO 1.00, оси покрывают 10 %); принято (слепой тест: 29 из 32, мимо только <em>architecture</em>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">JOIN</td>
+<td style="text-align: left;">отделить … присоединить (−5 отделить, убрать, уйти, вычесть, 0 состав не меняется, +5 присоединить, добавить, привнести, объединить): <code>JOIN(=+4) | i</code> присоединять, <code>JOIN(=-4) | i</code> убирать</td>
+<td style="text-align: left;"><strong>новое</strong>, предложено (SemAxis: полюса join/add/attach против separate/remove/detach, LOO 1.00; ближайшие оси GIVE +0.3, NEAR +0.2); принято с оговоркой (слепой тест: ~8 из 10; <em>add</em> не читается, внутри кластера слова сливаются)</td>
+</tr>
+<tr>
+<td style="text-align: left;">VALUE</td>
+<td style="text-align: left;">дёшево … дорого (−5 дёшево, скидка, купля-продажа, 0 обычная цена, +5 дорого, ценно, важно, жизненно нужно): <code>VALUE(=+4) | a</code> дорогой, ценный, <code>VALUE(=-4) | a</code> дешёвый; покупка и продажа — вместе с <code>GIVE</code></td>
+<td style="text-align: left;"><strong>новое</strong>, предложено (SemAxis: полюса cheap/worthless/useless против expensive/valuable/precious, LOO 0.91); принято (слепой тест: 10 из 10 на прилагательных; <em>buy/sell</em> путаются по знаку <code>GIVE</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CARE</td>
+<td style="text-align: left;">отношение к делу: небрежно … старательно (−5 небрежно, наспех, ошибка, вина, 0 обычно, +5 старательно, тщательно, внимательно): <code>CARE(=+4) | e</code> тщательно, <code>CARE(=-4) | a</code> небрежный, ленивый</td>
+<td style="text-align: left;">принято; в 2026-10 полюса — прилагательные о деле (careful, diligent … careless, lazy) вместо наречий образа действия: центр был близок к TONE (cos 0,65), с FRIEND — 0,12</td>
+</tr>
+<tr>
+<td style="text-align: left;">FRIEND</td>
+<td style="text-align: left;">отношение к людям: враг … друг (−5 враг, враждебный, жестокий, 0 нейтрально, +5 друг, дружелюбный, добрый): <code>FRIEND | o</code> друг, <code>FRIEND(=-5) | o</code> враг, <code>FRIEND(=+4) | a</code> добрый, дружелюбный, <code>FRIEND(=-3) | a</code> грубый</td>
+<td style="text-align: left;">принято в 2026-10 вместо TONE (грубо … вежливо): у TONE и CARE полюса были наречиями образа действия, центры близки (cos 0,65); FRIEND — отношение к людям, CARE — к делу</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOOD</td>
+<td style="text-align: left;">горе … смешно (−5 горе, отчаяние, трагическое, −3 грусть, 0 всерьёз, спокойно, без шуток, +3 весело, радостно, +5 смешно, хохот, комическое): <code>MOOD(=+5) | a</code> смешной, <code>MOOD(=-3) | a</code> грустный, <code>MOOD(=0) | a</code> серьёзный, <code>ART MOOD(=+5) | o</code> комедия</td>
+<td style="text-align: left;"><strong>новое</strong> (предложение автора: ось «комедия … трагедия»; SemAxis: ближайшие оси LIVE +0.40, GOOD +0.31); принято (слепой тест без рецептов тестовых слов: 24 из 32 против 11 без корня; <em>happy / cheerful</em> сливаются)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CONSUME</td>
+<td style="text-align: left;">выделить … поглотить (−5 выделить, выбросить, излить, 0 обмен, +5 поглотить, принять внутрь: есть, пить, читать, слушать; −5 выделять: испражняться, писать, говорить, излучать): <code>CONSUME(=+4) | i</code> поглощать, есть, <code>CONSUME(=-4) | i</code> выделять; канал задаёт второй корень: <code>CONSUME(=+4) SEE | i</code> читать, <code>CONSUME(=-4) SAY | i</code> говорить</td>
+<td style="text-align: left;"><strong>новое</strong>, предложено пользователем (приём ↔ выдача: есть / испражняться, читать / писать, слушать / говорить); принято (слепой тест: 26 из 32; еда, дыхание, речь читаются, <em>read / write</em> нет)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MEASURE</td>
+<td style="text-align: left;">величина сама по себе … относительно другой (−5 величина как есть: размер, количество, длина, число, 0 уровень, степень, +5 величина относительно другой: отношение, доля, пропорция, процент, статистика, скорость-как-отношение, среднее): <code>MEASURE(=-5) | o</code> количество, размер, <code>MEASURE(=+5) | o</code> отношение, <code>MEASURE | i</code> измерять, единица — <code>MEASURE SAME | o</code></td>
+<td style="text-align: left;"><strong>новое</strong>, введено по правилу (<em>ratio / proportion / measurement</em> дважды не читались через <code>PART</code>, <code>BIG</code>, <code>SAME</code>, <code>SEE</code>); первая версия оси (единица … количество … отношение) была смесью трёх понятий, переписана; ось независима (SemAxis, максимум косинуса с BIG −0,18); слепой тест v2 26 из 32 — см. <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_measure.md">roundtrip_measure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LONG</td>
+<td style="text-align: left;">тонкое гибкое … толстое жёсткое длинное (−5 нить, ткань, верёвка, волос, 0 проволока, прут, крепёж, +5 балка, доска, бревно, деревянная мебель; длинные предметы и то, что из них сделано): <code>LONG(=-5) | o</code> нить, <code>LONG(=+4) | o</code> шест, <code>LONG | a</code> длинный, высокий, <code>LONG(=+3) PLACE | o</code> башня</td>
+<td style="text-align: left;"><strong>новое</strong>, по просьбе автора (аналог <em>palisa</em> / <em>linja</em> в Toki Pona: длинный предмет); ось независима (SemAxis, косинус с ABSTRACT −0,17, TOUCH 0,13, BIG ≈ 0); слепой тест — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_long.md">roundtrip_long</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAY</td>
+<td style="text-align: left;">тихо … громко (−5 шёпот, бормотание, 0 обычная речь, +5 крик, рёв, визг): <code>SAY(=-4) | i</code> шептать, <code>SAY(=+5) | i</code> кричать, <code>SAY(=+4) | o</code> крик, <code>SAY(=-3) | o</code> шёпот, шум — <code>SAY(=+3) THING | o</code></td>
+<td style="text-align: left;"><strong>новая ось на существующем корне</strong> (принято автором; остаточный PCA слабых слов: <em>whistle, groan, wail, roar, murmur, buzz</em>; SemAxis косинус с FEEL 0,41, MOVE 0,26, остальные ≤ 0,15); слепой тест — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_say.md">roundtrip_say</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">GRAIN</td>
+<td style="text-align: left;">как вещество держится вместе (−5 газ, пар, дым, −3 жидкость, течёт: вода, мёд, 0 сыпучее: песок, мука, крупа, +5 цельное, твёрдое: камень, слиток, монолит): <code>GRAIN(=-5) | o</code> газ, <code>GRAIN(=-3) | o</code> жидкость, <code>GRAIN(=0) THING(=-5) | o</code> песок, <code>GRAIN(=+5) | a</code> цельный, сплошной, твёрдый; есть <code>CONSUME(=+5) GRAIN(=+3) | i</code>, пить <code>CONSUME(=+5) GRAIN(=-3) | i</code>, вдыхать <code>CONSUME(=+5) GRAIN(=-5) | i</code>. Аналог <em>ko</em> в Toki Pona (бесформенное вещество), но шире; шаг между значениями у чисел: действительные — текучие (−3), целые — около −1</td>
+<td style="text-align: left;"><strong>новый корень, предложено автором</strong>; условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (sand, dust, granular, seamless, continuous, ingot не собираются); слепой тест с корнем: 7 точных из 24 и 14 из 24 среди трёх ответов против 3 и 4 без корня — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_grain.md">roundtrip_grain</a>. <strong>С 2026-10 вбирает корень MATTER</strong> (твёрдое … жидкое … газ): одна шкала вместо двух встречных, слепой тест 12 слов — 11 → 17 точных из 24 — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT</td>
+<td style="text-align: left;">всерьёз ли борьба (−5 игра, спорт, соревнование по правилам … 0 драка, спор … +5 война насмерть); без значения — бой, ссора: <code>FIGHT(=-5) | o</code> игра, спорт, <code>SOMEONE FIGHT(=-5) | o</code> игрок, <code>FIGHT(=-5) PART(=+5) | o</code> турнир, <code>FIGHT(=+5) | o</code> война, <code>SOMEONE FIGHT(=+5) | o</code> солдат</td>
+<td style="text-align: left;"><strong>ось добавлена</strong> (лакуна из математического кодирования, <a href="/docs/math/">docs/math.md</a>): слепой тест 12 слов × 2 кодировщика — без оси 11 точных из 24 (игра и спорт читаются как <em>duel, boxing</em>), с осью 17 из 24 и 21 из 24 среди трёх ответов — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_candidates.md">roundtrip_candidates</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LAND</td>
+<td style="text-align: left;">вода … суша (−5 море, озеро, вода как место, 0 берег, побережье, +5 суша, почва, твёрдая земля); без значения — земля, страна, край: <code>LAND | o</code> страна, край, <code>LAND RULE | o</code> государство, область, <code>LAND(=+5) ABOVE(=+5) | o</code> гора, <code>LAND(=-5) BIG(=+5) | o</code> океан, <code>LAND(=0) GRAIN(=0) | o</code> пляж, <code>LAND RULE LONG(=-5) | o</code> государственная граница. Аналог <em>ma</em> в Toki Pona</td>
+<td style="text-align: left;"><strong>новый корень</strong> (Toki Pona <em>ma</em>); слепые тесты на свежих словах: кодер SZ +20 % и +12 % «близко», коды модели +19 %, кодер сайта +2 % (не вредит) — <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt3/README.md">adopt3</a>, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt4/README.md">adopt4</a>; граница <code>LAND RULE LONG(=-5)</code> — 4 из 4 «border» (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/border/README.md">border</a>)</td>
+</tr>
+</tbody>
+</table>
+<!-- END generated:roots-with-axis -->
+
+<p><strong>Правило нуля.</strong> Ось не написана — значение не указано. <code>(=0)</code> — явное значение: у двусторонних осей середина (<code>TIME(=0)</code> — «сейчас»), односторонних осей нет: <code>MANY</code> с 2026-10 двусторонняя, «ни одного» — <code>MANY(=-5)</code>, 0 — «сколько-то».</p>
+<p><strong>Новые оси и корни</strong> (слепой тест на 46 словах, <code>data/translation_test/roundtrip_axes_rules.md</code>: слово или синоним 31 из 46, 67%; слова подбирались под оси, поэтому оценка завышена по сравнению со случайными 26–34%). SOMEONE получил ось «лицо», THING — одушевлённости, MOVE — скорости, FEEL — возбуждения. Добавлены <strong>RULE</strong> (закон, правило, управлять) и <strong>FIGHT</strong> (бой, война, ссора) без осей; <em>peace</em> = <code>FIGHT MANY(=-5) | o</code>. Слабые места: <em>tax, duty, defend, politics</em>; <em>though, instead, nevertheless</em> корней не получают намеренно.</p>
+<p><strong>Эмоции</strong> (слепой тест на 40 словах, <code>data/translation_test/roundtrip_emotions.md</code>): <code>FEEL</code> (возбуждение) + <code>GOOD</code> (приятность) + третий корень по смыслу, а не ось «направления» (<code>NEAR</code>/<code>WANT</code> дали 24–25 из 40 против 21; по смыслу — 28). Страх <code>FEEL(=+4) GOOD(=-4) TIME(=+3) | a</code> (плохое впереди), злость и ненависть <code>… FIGHT</code>, социальные эмоции <code>… SOMEONE</code> (+ <code>SEE | i</code>). Слабо: <em>shy, contempt, pity, jealous, amused</em>.</p>
+<!-- BEGIN generated:roots-no-axis -->
+<p><strong>Без оси (6):</strong> HAPPEN, BODY, SEE, DO, PLACE, TEXT.</p>
+<!-- END generated:roots-no-axis -->
+
+<p>Убраны CONTAINER и MAYBE (слепой тест на 224 пунктах без них: в пределах шума, <code>data/translation_test/roundtrip_ablation3.md</code>; ёмкость — <code>THING INSIDE</code>, вероятность — метка <code>M</code>).</p>
+<p><strong>Правки по тесту на 200 слов</strong> (<code>data/translation_test/roundtrip_200.md</code>): убраны HEAR, KIND, WORD (в тесте 0 удач из 7; звук читается через <code>SAY</code>, <code>FEEL</code>, тип — через <code>THING</code>, слово — <code>SAY | o</code>). Добавлены <strong>CONSUME</strong> (есть, пить, поглощать; <em>eat</em> = <code>CONSUME | i</code>, <em>food</em> = <code>THING CONSUME | o</code>, вместо трёх корней eat/food/drink) и <strong>CONTAINER</strong> (ёмкость, как <em>poki</em> в токипоне: <em>bag, pitcher, bottle, box</em>; <code>CONTAINER | o</code>). Обе без оси, пока не проверено. Правило употребления: <code>ABOVE</code>, <code>INSIDE</code>, <code>BIG</code> — только настоящее «верх / внутри / размер», не метафора и не усилитель.</p>
+<p><strong>PEOPLE убран:</strong> <code>SOMEONE MANY(=+4) | o</code> («многие кто-то») заменяет его без потерь (слепой тест на 12 словах с PEOPLE: слово или синоним 2 из 12 как до замены, «мимо» 3 вместо 5). Добавлены также HEAT, BEGIN, GIVE (см. таблицу).</p>
+<p>Примеры составных слов: дом = <code>PLACE LIVE | o</code>; спальня = <code>PLACE LIVE(=-2) | o</code>; морг = <code>PLACE LIVE(=-5) | o</code>; мужчина = <code>SOMEONE SEX(=+5) | o</code>. Дыры (анатомия, родство) идут в послабления.</p>
+<p><strong>Коррелятивы (идея эсперанто) без списка слов</strong> (в таблице только корни; у слова ещё форма, например <code>SOMEONE NEAR(=+3) | o</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">кто</th>
+<th style="text-align: left;">что</th>
+<th style="text-align: left;">где</th>
+<th style="text-align: left;">когда</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">вопрос</td>
+<td style="text-align: left;"><code>SOMEONE | o ?</code></td>
+<td style="text-align: left;"><code>THING | o ?</code></td>
+<td style="text-align: left;"><code>PLACE | o ?</code></td>
+<td style="text-align: left;"><code>TIME | o ?</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">неопределённое</td>
+<td style="text-align: left;"><code>SOMEONE</code></td>
+<td style="text-align: left;"><code>THING</code></td>
+<td style="text-align: left;"><code>PLACE</code></td>
+<td style="text-align: left;"><code>TIME</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">этот / здесь / сейчас</td>
+<td style="text-align: left;"><code>SOMEONE NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>THING NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>PLACE NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>TIME(=0)</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">тот / там / тогда</td>
+<td style="text-align: left;"><code>SOMEONE NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>THING NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>PLACE NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>TIME(=-3)</code> или <code>+3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">всё / везде / всегда</td>
+<td style="text-align: left;"><code>SOMEONE MANY(=+5)</code></td>
+<td style="text-align: left;"><code>THING MANY(=+5)</code></td>
+<td style="text-align: left;"><code>PLACE MANY(=+5)</code></td>
+<td style="text-align: left;"><code>TIME MANY(=+5)</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">ничто / нигде / никогда</td>
+<td style="text-align: left;"><code>SOMEONE MANY(=-5)</code></td>
+<td style="text-align: left;"><code>THING MANY(=-5)</code></td>
+<td style="text-align: left;"><code>PLACE MANY(=-5)</code></td>
+<td style="text-align: left;"><code>TIME MANY(=-5)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Открыто: у «когда» ось NEAR не подходит (там своя ось TIME); «сейчас / тогда» пока записаны через TIME.</p>
+<h2 id="послабления-слова-вне-корней">Послабления (слова вне корней)</h2>
+<p>Часть лексики не имеет смысла кодировать через общие корни и оси. Она выносится за пределы корней и не расходует оси:</p>
+<ul>
+<li><strong>Названия стран</strong> (и вообще имена собственные-топонимы) — заимствуются как есть, без корня и признаков.</li>
+<li><strong>Числа</strong> — отдельная система счёта, не корни.</li>
+<li><strong>Месяцы и дни недели</strong> — по номеру: месяц 3, день недели 2 (а не слова <em>March</em>, <em>Tuesday</em>).</li>
+<li><strong>Цвета</strong> — непрерывные координаты (RGB или HSL), а не слова и не корень COLOR (убран из списка корней).</li>
+<li><strong>Имена собственные</strong> (люди, места, организации, марки) — заимствуются как есть, как и названия стран.</li>
+<li><strong>Национальности и религии</strong> (<em>american</em>, <em>mexican</em>, <em>christian</em>, <em>catholic</em>) — производные от имён собственных, заимствуются вместе с ними. В эксперименте они сами собирались в корни AMERICAN и CHRISTIAN.</li>
+<li><strong>Биологические таксоны</strong> — латинская номенклатура как есть (<em>Canis lupus familiaris</em>, <em>Opuntia indica</em>); для обычной речи достаточно названия рода или вида (<em>Canis</em>, <em>Felis</em>, <em>Quercus</em>). Корни ANIMAL и PLANT поэтому не нужны. Анатомия и медицина (латинские термины, болезни) пока не решены, см. <a href="/docs/rethink/">открытые вопросы</a>.</li>
+<li><strong>Химия</strong> — названия элементов и соединений по IUPAC/латинские (<em>H2O</em>, <em>natrii chloridum</em>), формулы как есть.</li>
+<li><strong>Минералы и горные породы</strong> — научные названия как есть (<em>quartz</em>, <em>granite</em> в латинской/минералогической форме).</li>
+<li><strong>Астрономия</strong> — названия звёзд, созвездий, планет и других небесных тел как есть (<em>Sol</em>, <em>Ursa Major</em>).</li>
+</ul>
+<p>Следствие: корень MONTH больше не нужен, а с ним уходит и ошибка с омонимами <em>march</em> (шагать) и <em>rent</em> (аренда): их отнесли в MONTH из-за «месячного» контекста. Остаётся открытым, как записывать сами числа, как отличить заимствованное имя от слова языка (метка или фонологический признак) и как склонять/присоединять суффиксы к ним (<a href="/docs/phonology/">фонология</a>).</p>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/lexicon.md">docs/lexicon.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

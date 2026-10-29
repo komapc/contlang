@@ -1,0 +1,504 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Математическое кодирование: постановка, метрики, результаты — min-co</title>
+<meta name="description" content="Цель: проверить, можно ли переводить слово в код min-co без языковой модели, одной матрицей и простым перебором, и использовать ту же математику, чтобы…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/math/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/math/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Математическое кодирование: постановка, метрики, результаты — min-co">
+<meta property="og:description" content="Цель: проверить, можно ли переводить слово в код min-co без языковой модели, одной матрицей и простым перебором, и использовать ту же математику, чтобы…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Математическое кодирование: постановка, метрики, результаты — min-co","description":"Цель: проверить, можно ли переводить слово в код min-co без языковой модели, одной матрицей и простым перебором, и использовать ту же математику, чтобы…","url":"https://minco.lipu.dev/docs/math/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="математическое-кодирование-постановка-метрики-результаты">Математическое кодирование: постановка, метрики, результаты</h1>
+<p>Цель: проверить, можно ли переводить слово в код min-co <strong>без языковой модели</strong>, одной матрицей и простым перебором, и использовать ту же математику, чтобы проверять оси и искать недостающие корни. Это отчёт о логике и результатах; скрипты <code>scripts/17_sparse_code.py</code>, <code>18_sparse_learn.py</code>, <code>19_math_codes.py</code>, общая часть <code>scripts/lib_code.py</code>.</p>
+<h2 id="1-постановка">1. Постановка</h2>
+<p>Слово — единичный вектор x в пространстве S₁ (Numberbatch, 300 измерений). Код — не больше m корней (у нас m = 3), у каждого корня целый уровень v ∈ {−5 … +5}, корни без оси — без уровня. Значение <code>=0</code> — середина оси, а не отсутствие корня.</p>
+<p>Декодер линейный:</p>
+<pre><code>y = Σⱼ wⱼ · ( c_{rⱼ} + (s/5) · vⱼ · a_{rⱼ} )
+</code></pre>
+<ul>
+<li>c_r — <strong>центр</strong> корня (среднее его слов-полюсов: «о чём ось»), a_r — <strong>ось</strong> (среднее полюса + минус среднее полюса −, как в SemAxis);</li>
+<li>s — общий масштаб оси (подобран: s = 2);</li>
+<li>wⱼ — вес позиции: главный корень 1, остальные w (у нас 0,6; так учитывается правило «главное слово первым» из <a href="/docs/model/">model.md</a>).</li>
+</ul>
+<p>Кодер — точный перебор: из 8 корней, лучших по корреляции с x, перебираются все опоры до трёх корней, все сочетания уровней и выбор главного корня; цель — максимум cos(x, y). Это <strong>наилучшее m-членное приближение по словарю с целыми коэффициентами</strong> (sparse approximation; с группами «центр + ось» — групповая разреженность). Дискретный вариант близок к sparse superposition codes (Barron, Joseph); обучение словаря — к dictionary learning (K-SVD) и k-sparse autoencoder. Отличие от всех них — <strong>атомы названы и должны оставаться узнаваемыми</strong>: это и есть цена читаемости.</p>
+<p>Обучение словаря (λ-член постановки): при фиксированных кодах направления корней подбираются гребневой регрессией с притяжением к исходным (из полюсов) с весом λ, атомы нормируются и, если ушли дальше cos &lt; 0,85 от исходного, возвращаются по дуге до 0,85; затем слова кодируются заново (3 итерации). Учимся на 70% слов, все числа — на отложенных 30%.</p>
+<h2 id="2-данные">2. Данные</h2>
+<ul>
+<li>Пространство: Numberbatch 19.08 (ConceptNet), английский.</li>
+<li>Слова: <code>data/wordlist_en_x5.tsv</code> — 3000 частых слов (1000 сущ., 1000 глаг., 600 прил., 400 нареч.). После исключения слов-полюсов около 2700.</li>
+<li>Полюса осей: <code>roots.yaml</code>, поле <code>semaxis</code> (по 5–9 слов на полюс); корни без оси — короткие списки в <code>lib_code.NOAXIS</code>.</li>
+</ul>
+<p>Что ещё подходит (не использовано): fastText с выравниванием языков (русско-английские лакуны), векторы смыслов LMMS / SensEmbed (многозначность), человеческие оценки по шкалам — Glasgow Norms (размер, валентность, конкретность…), Warriner VAD, Brysbaert concreteness, Lancaster sensorimotor — для внешней проверки осей.</p>
+<h2 id="3-метрики-и-почему-четыре">3. Метрики и почему четыре</h2>
+<p>Узнавание: место настоящего слова среди всех слов словаря по cos(y, слово). Всегда вместе:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">метрика</th>
+<th style="text-align: left;">что значит</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">top1 / top10 / top50</td>
+<td style="text-align: left;">точное узнавание в закрытом словаре</td>
+</tr>
+<tr>
+<td style="text-align: left;">cos(x, y)</td>
+<td style="text-align: left;">насколько декодированный вектор похож на смысл слова</td>
+</tr>
+<tr>
+<td style="text-align: left;">«промах похож»</td>
+<td style="text-align: left;">средняя близость неверной догадки к настоящему слову: близкий промах лучше далёкого</td>
+</tr>
+</tbody>
+</table>
+<p>Одного top1 мало: <strong>случайная матрица той же формы даёт top1 63% при cos(x, y) 0,22</strong>, а корни — 21% при 0,43. Случайный код работает как хеш: декодированная точка уходит в пустое место пространства, где ближе всех случайно оказывается нужное слово, смысла код не несёт. Рост top1 при падении cos — это хеш, а не прогресс.</p>
+<p>Окончательная проверка — не математика, а <strong>слепой круговой тест</strong> с языковой моделью (кодировщик видит спецификацию, декодер — только таблицы и правила чтения), как во всех <code>data/translation_test/roundtrip_*.md</code>.</p>
+<h2 id="4-найденные-ловушки">4. Найденные ловушки</h2>
+<ol>
+<li><strong>Утечка полюсов.</strong> Слова-полюса нельзя оставлять ни в тесте, ни среди кандидатов: код, попавший в середину полюса, «узнаёт» само слово-полюс (<em>river</em> декодировалась в <em>milk</em>, потому что <em>milk</em> был в жидком полюсе). С исключением top1 вырос с 3% до 21% при тех же корнях.</li>
+<li><strong>Хеш-эффект</strong> (выше): нужен cos(x, y) рядом с top1.</li>
+<li><strong>Ось с серединой и два полюса.</strong> У осей вида −5 … 0 … +5 SemAxis берёт только крайние полюса; если в полюс −5 записаны слова середины, ось сдвигается. Так было у GRAIN (полюс −5 был «песок, мука» — это 0) и у PART (+5 было «целое» — это +2). Исправлено; проверка — ближайшие слова к каждому полюсу.</li>
+<li><strong>Тематические полюса.</strong> Полюс тянет за собой тему, если в нём слова одной области: жидкое из напитков тянуло к <em>liquor, bottle</em>, мягкое — к <em>sweet, lovely</em>, дешёвое — к <em>stupid</em>. Полюса подбирать из слов, у которых общее только свойство оси.</li>
+</ol>
+<h2 id="5-результаты-отложенные-слова-m--3">5. Результаты (отложенные слова, m = 3)</h2>
+<p>Словарь из 44 корней (<code>TEXT</code>, оси у <code>FIGHT</code> и <code>DO</code>, <code>MATTER</code> влит в <code>GRAIN</code>, <code>PARTICULAR</code> — в <code>SAME</code>, полюса <code>RULE</code> — закон и власть вместо ведомств, см. раздел 6). До смены полюсов <code>RULE</code> top1 трёх строк был 20,8 / 22,8 / 28,5%. Для сравнения top1 трёх строк и cos: 45 корней — 19,0 / 21,7 / 26,0% и 0,425 / 0,432 / 0,487; 46 корней — 21,8 / 24,0 / 28,7% и 0,432 / 0,440 / 0,495. Минус два корня стоят около процента; набор слов каждый раз немного другой (полюса исключаются), так что сравнение приблизительное.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">словарь</th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">top50</th>
+<th style="text-align: right;">cos(x,y)</th>
+<th style="text-align: right;">промах похож</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">корни из полюсов, порядок не важен</td>
+<td style="text-align: right;">21,3%</td>
+<td style="text-align: right;">73,5%</td>
+<td style="text-align: right;">97,0%</td>
+<td style="text-align: right;">0,431</td>
+<td style="text-align: right;">0,290</td>
+</tr>
+<tr>
+<td style="text-align: left;">то же, главный корень первым (вес остальных 0,6)</td>
+<td style="text-align: right;">23,8%</td>
+<td style="text-align: right;">74,5%</td>
+<td style="text-align: right;">96,9%</td>
+<td style="text-align: right;">0,439</td>
+<td style="text-align: right;">0,291</td>
+</tr>
+<tr>
+<td style="text-align: left;">обученные корни (λ = 30, cos с исходным ≥ 0,85)</td>
+<td style="text-align: right;">25,6%</td>
+<td style="text-align: right;">80,6%</td>
+<td style="text-align: right;">98,8%</td>
+<td style="text-align: right;">0,494</td>
+<td style="text-align: right;">0,367</td>
+</tr>
+<tr>
+<td style="text-align: left;">для сравнения: случайная матрица</td>
+<td style="text-align: right;">63%</td>
+<td style="text-align: right;">96%</td>
+<td style="text-align: right;">99,9%</td>
+<td style="text-align: right;">0,22</td>
+<td style="text-align: right;">0,22</td>
+</tr>
+</tbody>
+</table>
+<p>Близость слова к его настоящему ближайшему соседу в среднем 0,62, к случайному слову 0,03.</p>
+<p>Выводы:</p>
+<ul>
+<li><strong>Дискретность почти бесплатна</strong>: 11 и 5 уровней дают одно и то же, 3 уровня теряют около процента. Главное ограничение — число корней m: m = 1 → 2 → 3 → 5 даёт top50 64 → 87 → 96 → 99,8%.</li>
+<li><strong>Сумма корней даёт область смысла, а не слово</strong>: 95–98% слов в top50, но различение внутри области слабое.</li>
+<li><strong>Обучение словаря помогает</strong> (top1 +2…7 в разных запусках, top10 +6, cos +0,06, промахи заметно ближе), корни остаются узнаваемыми по ближайшим словам (<code>data/sparse_learn.md</code>, таблица «до / после»). Без ограничения cos ≥ 0,85 корни уплывают и начинают служить «слотами» для частых групп слов: MANY → <em>generally, really</em>, SOMEONE → <em>anyway, maybe</em>, BEGIN+ → порядковые <em>fourth, ninth</em>, SIDE+ → стороны света, SEX+ → профессии. Это и вред, и подсказка, чего не хватает.</li>
+<li>Центрирование пространства (вычесть средний вектор) даёт top50 98% против 95%, но ниже cos; в основную схему не взято.</li>
+</ul>
+<h2 id="6-лакуны">6. Лакуны</h2>
+<p>Расчёт на словаре из 45 корней (до кандидатов). Слова с худшим восстановлением (нижние 35% по cos), остатки x − proj(x на y) кластеризованы (k-means, 25 кластеров). Кластеры — тематические области: тексты и публикации, политика, суд, спорт, финансы, сюжеты и кино, бизнес, школа, армия, оружие, медицина, религия, транспорт, работа. Большая часть — институты и термины, которые по правилам языка идут в кавычках. Понятные человеку кандидаты (правило: сначала ось у корня без оси):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">кандидат</th>
+<th style="text-align: left;">кластер</th>
+<th style="text-align: left;">top10 кластера без → с</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">ось у BODY: −5 болезнь … +5 здоровье</td>
+<td style="text-align: left;">медицина (disease, patient, hospital, doctor…)</td>
+<td style="text-align: left;">7% → 43%</td>
+</tr>
+<tr>
+<td style="text-align: left;">ось у FIGHT: −5 игра, спорт … +5 война</td>
+<td style="text-align: left;">спорт; армия и оружие</td>
+<td style="text-align: left;">18% → 64%; 55% → 73%</td>
+</tr>
+<tr>
+<td style="text-align: left;">новый корень TEXT (письменная речь)</td>
+<td style="text-align: left;">тексты (article, newspaper, page, book…)</td>
+<td style="text-align: left;">21% → 71%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Без ограничения числа корней</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/lacunae.md">lacunae.md</a>, <code>scripts/20_lacunae.py</code>). Кодер жадно добавляет корни (медиана 8). Попадание засчитывается, если среди 10 ближайших из 10 000 частых слов есть слово с той же основой. Результат: 87% обычных слов из списка 3000 частых и 63% всех слов. Второй проход берёт обычные слова шире: все нарицательные из 10 000, имена собственные отсеяны по разметке корпуса Brown. Это 7128 слов, из них 77,5% в top10, 1605 промахов в 40 кластерах (<a href="https://github.com/komapc/contlang/blob/main/data/lacunae.md">lacunae.md</a>).</p>
+<p>Первая находка — полюса <code>RULE</code>. Прежние полюса были словами ведомств (<em>authority, committee, agency, commission, government</em>), и любой код с <code>RULE</code> раскрывался в <em>commissions, agencies</em>. Из-за этого государство, суд, банк, школа и выборы сливались: эти институты попадали в top10 в 6% случаев. Новые полюса — закон и власть (<em>law, official, authority, formal, legal, govern, rule</em> против <em>personal, private, informal, individual, unofficial</em>): теперь 32%, а общий результат не изменился. Смысл оси прежний, поменялись только слова для SemAxis.</p>
+<p>Вторая находка — единицы времени и части суток. Для них появились рецепты, проверенные слепым тестом (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_time.md">roundtrip_time</a>): 24 из 24 с рецептами против 13 и 12 из 24 без них. Рецепты — в <a href="/docs/encoding/">encoding.md</a>, раздел «Время». Промахи среди всех слов — в основном имена, страны и названия, они идут в кавычках. Среди обычных слов 270 промахов, они собираются в области:</p>
+<ul>
+<li>мораль и общество;</li>
+<li>болезнь и медицина;</li>
+<li>религия;</li>
+<li>выборы и политика;</li>
+<li>торговля;</li>
+<li>школа;</li>
+<li>безопасность;</li>
+<li>суд;</li>
+<li>стороны света;</li>
+<li>полёт;</li>
+<li>время суток и календарь;</li>
+<li>небесные тела;</li>
+<li>пресса;</li>
+<li>кредит;</li>
+<li>полиция;</li>
+<li>связки (<em>moreover</em>);</li>
+<li>город;</li>
+<li>порядковые числа;</li>
+<li>оружие.</li>
+</ul>
+<p>На всех тестовых словах прирост мал (top10 72,5% → 74,8%): кандидаты закрывают свои области и не мешают остальным. Эти же корни сами возникали в ранних автоматических запусках (DISEASE, WRITER, AUTHOR, COMPETE в <a href="/docs/lexicon/">lexicon.md</a>). Слепой тест — в разделе 7.</p>
+<h2 id="7-слепые-тесты">7. Слепые тесты</h2>
+<p>Математика только предлагает; решает слепой круговой тест (кодировщик и декодер — модели, декодер не видит оригиналов).</p>
+<p><strong>Кандидаты</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_candidates.md">roundtrip_candidates.md</a>, 36 слов, по 12 из области кандидата; точно / среди трёх):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">область</th>
+<th style="text-align: left;">без кандидатов</th>
+<th style="text-align: left;">с кандидатами</th>
+<th style="text-align: left;">решение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">BODY, ось здоровья</td>
+<td style="text-align: left;">15 / 20 из 24</td>
+<td style="text-align: left;">19 / 22 из 24</td>
+<td style="text-align: left;">не добавлена: здоровье и так выражается через <code>LIVE</code>, <code>GOOD</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT, ось игра … война</td>
+<td style="text-align: left;">11 / 15 из 24</td>
+<td style="text-align: left;">17 / 21 из 24</td>
+<td style="text-align: left;"><strong>добавлена</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">TEXT, новый корень</td>
+<td style="text-align: left;">3 / 5 из 24</td>
+<td style="text-align: left;">15 / 17 из 23</td>
+<td style="text-align: left;"><strong>добавлен</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Затем убирали лишнее (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge.md</a>, сходство осей и центров — подсказка математики): <code>MATTER</code> влит в <code>GRAIN</code> (11 → 17 из 24), <code>PARTICULAR</code> — в <code>SAME</code> (13 → 12), орудия — ось у <code>DO</code> (17 из 24 против 13 с меткой <code>U</code>). Итог — 44 корня.</p>
+<p><strong>Коды математического кодера</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_math.md">roundtrip_math.md</a>, 24 слова): корни из полюсов — 1 из 24 точно, обученный словарь — 3 из 24 (4 среди трёх). Для сравнения, кодировщик-модель на тех же орудиях — 1 из 24 без метки <code>U</code> и 13 из 24 с ней. Математический код попадает в область смысла, но берёт корни, которыми человек слово не описал бы (<em>saw</em> → <code>SEE TIME(=-4)</code>: вектор смешан с прошедшим временем <em>see</em>; <code>ABSTRACT</code>, <code>PARTICULAR</code> как заполнитель).</p>
+<p>Вывод: математика — <strong>инструмент анализа языка</strong> (найти лакуны, проверить полюса, сравнить варианты осей за секунды, без модели), а не переводчик. Высокий top50 в пространстве не означает читаемости человеком.</p>
+<h2 id="8-декодер-смесь">8. Декодер «смесь»</h2>
+<p>Декодер «ближайшие слова к сумме корней» почти не возвращает слово: побеждают слова-хабы, близкие к любому коду (<em>things, someone, matters</em>). Декодер «смесь» оценивает каждое слово так:</p>
+<pre><code>mix = ½ · z(2·cos(слово, y) − hub(слово)) + ½ · И,   И = −log Σⱼ exp(−2·zⱼ) / 2
+</code></pre>
+<ul>
+<li>первое слагаемое — CSLS: из близости к коду вычитается хабовость слова (средний cos с 10 ближайшими из 3000 случайных кодов);</li>
+<li>И — мягкий минимум z-оценок близости слова к каждому корню по отдельности: слово должно подходить ко всем корням, а не к сумме;</li>
+<li>z — нормировка по всему словарю.</li>
+</ul>
+<p>На собственных кодах математики (2000 случайных слов словаря сайта, без полюсов и имён собственных, <code>scripts/experiments/decoder/site_eval.py</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">словарь</th>
+<th style="text-align: left;">декодер</th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top3</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">cos первой догадки со словом (медиана)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">из полюсов</td>
+<td style="text-align: left;">сумма</td>
+<td style="text-align: right;">1,4%</td>
+<td style="text-align: right;">5,2%</td>
+<td style="text-align: right;">24,3%</td>
+<td style="text-align: right;">0,26</td>
+</tr>
+<tr>
+<td style="text-align: left;">из полюсов</td>
+<td style="text-align: left;">смесь</td>
+<td style="text-align: right;">45,5%</td>
+<td style="text-align: right;">70,0%</td>
+<td style="text-align: right;">90,8%</td>
+<td style="text-align: right;">0,83</td>
+</tr>
+<tr>
+<td style="text-align: left;">обученный</td>
+<td style="text-align: left;">сумма</td>
+<td style="text-align: right;">6,8%</td>
+<td style="text-align: right;">19,1%</td>
+<td style="text-align: right;">44,3%</td>
+<td style="text-align: right;">0,30</td>
+</tr>
+<tr>
+<td style="text-align: left;">обученный</td>
+<td style="text-align: left;">смесь</td>
+<td style="text-align: right;"><strong>50,7%</strong></td>
+<td style="text-align: right;">75,1%</td>
+<td style="text-align: right;">93,0%</td>
+<td style="text-align: right;">1,00</td>
+</tr>
+</tbody>
+</table>
+<p>Это не хеш-эффект из раздела 3: при хеше растёт top1, а промахи далёкие. Здесь первая догадка близка к слову (медиана cos 0,83–1,00 против 0,26–0,30 у суммы), а догадок с cos &lt; 0,3 втрое меньше. Остальные опыты (4 корня, кодер с проверкой декодером, пара слов, порядок корней, корень SPIRIT) — в <a href="https://github.com/komapc/contlang/blob/main/data/decoder_experiments.md">decoder_experiments.md</a>.</p>
+<h2 id="9-на-сайте">9. На сайте</h2>
+<p>На странице «Проба» (<a href="https://minco.lipu.dev/">minco.lipu.dev</a>) рядом с языковой моделью работает этот же кодер, перенесённый на JavaScript (<code>site/math.js</code>, коды и места слов совпадают с Python на проверочных словах), с обученным словарём: код слова, слова, которые декодер «смесь» ставит первыми, место исходного слова среди 10 721 слова (10 000 частых и весь список 3000) и 10 корней, лучше всего описывающих слово поодиночке. Он же читает код, выданный моделью. Данные — <code>scripts/site/build_math.py</code>.</p>
+<p><strong>Новые корни дообучаются, старые атомы заморожены</strong> (с 2026-10, LAND). <code>scripts/18_sparse_learn.py</code> по умолчанию берёт атомы из <code>data/sparse_dict_learned.npz</code> как есть и обучает только корни roots.yaml, которых там нет (та же постановка, но решаются только их строки), — коды слов без новых корней не меняются. Полное переобучение — <code>--full</code>: на 47 корнях оно сдвигало старые атомы и портило коды без новых корней (−8 % «близко», <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt2/README.md">adopt2</a>). Если центр корня — не середина полюсов, слова центра пишутся в roots.yaml полем <code>center</code> (у LAND: <em>land, country, region, territory, landscape, shore</em>). Дообучение воспроизводит проверенный атом LAND (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt3/README.md">adopt3</a>) с точностью 0,001.</p>
+<p><strong>Поправки декодера на сайте</strong> (только в <code>site/math.js</code>, в Python их нет, поэтому места слов с Python больше не совпадают). Данные — <code>site/data/words.json</code> (<code>scripts/site/build_words.py</code>, WordNet).</p>
+<ol>
+<li><strong>Служебные слова</strong> (местоимения, предлоги, союзы, модальные и всё, чего нет в WordNet, включая имена собственные) не предлагаются.</li>
+<li><strong>Словоформы одной леммы</strong> (tool / tools, house / housed) считаются одним словом: показывается лемма, место считается по леммам.</li>
+<li><strong>Часть речи кода</strong> (<code>o/i/a/e</code>): слово теряет 1,5·(1 − доля его смыслов этой части речи по счётчикам WordNet). Коэффициент выбран по рецептам из сетки 0…5.</li>
+<li><strong>Пара через PI</strong>: z(оценка слитых корней обоих слов) + 0,5·z(связь), где связь — наибольший cos слова с одним из 10 первых прочтений уточняющего слова (или со словом в кавычках). Так «мебель · дом» ищет слова, похожие на «неживые вещи» и связанные с apartment, home, residence. Numberbatch несёт связи ConceptNet, поэтому cos здесь — это и «где находится», и «для чего».</li>
+</ol>
+<p>На 214 рецептах из одного слова:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">top50</th>
+<th style="text-align: right;">медиана места</th>
+<th style="text-align: right;">место &gt; 1000</th>
+<th style="text-align: right;">cos первого прочтения со словом (медиана)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>было</td>
+<td style="text-align: right;">6%</td>
+<td style="text-align: right;">27%</td>
+<td style="text-align: right;">49%</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0,20</td>
+</tr>
+<tr>
+<td>п. 1–3</td>
+<td style="text-align: right;">12%</td>
+<td style="text-align: right;">41%</td>
+<td style="text-align: right;">63%</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0,26</td>
+</tr>
+</tbody>
+</table>
+<p>На 27 парах из слепых тестов key и furniture (геометрическое среднее места): было 367 (key 206, furniture 1912), стало 143 (key 147, furniture 132). Пар мало, а λ и K выбраны по ним же, так что это оценка, а не проверка.</p>
+<p>Узкое место пар — само уточняющее слово: «дверь» <code>PART(=-2) PLACE SIDE(=+5)</code> векторы читают как edges, aspect, frontier. Поэтому key через дверь, которую читает Haiku, математика не находит.</p>
+<p>Код чтения собран в класс <code>Reader</code> (<code>site/math.js</code>): сайт и проверка <code>scripts/site/eval_math.js</code> вызывают одно и то же. Связки уточняющего слова — <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>, <code>PI</code>.</p>
+<p><strong>Граф ConceptNet для пар</strong> (<code>scripts/site/build_graph.py</code>, рёбра UsedFor, AtLocation, PartOf, HasA, MadeOf, CapableOf, IsA, ReceivesAction, RelatedTo между словами словаря; 7,6 МБ). К оценке пары добавляется graphW·(вес ребра от слова к прочтениям уточняющего слова), у каждой связки свои веса отношений (PI — часть, место, материал; FOR — назначение). На 51 паре (27 прежних и 24 из теста PI/FOR) среднее место падает с 197 до 161 при graphW = 4, у пар с PI — с 186 до 145, у пар с FOR почти не меняется (235 → 225). Если читать те же коды через чужую связку, места почти те же. Значит, типы отношений математике мало что дают: узким местом остаётся прочтение самого уточняющего слова. На сайт граф не идёт, graphW = 0.</p>
+<p><strong>Корни уточняющего слова не сливаются с главным.</strong> Раньше корни обоих слов складывались в один вектор. На 107 парах из слепых тестов (все <code>pairs.json</code>, key, furniture) это хуже, чем вовсе не читать второе слово:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">корни второго слова в общем векторе (modW)</th>
+<th style="text-align: right;">вес связи λ</th>
+<th style="text-align: right;">среднее место</th>
+<th style="text-align: right;">top10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1 (было)</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">0,5</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0 (второе слово не читается)</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0,25 (сайт)</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<p>Теперь второе слово только подталкивает к словам, связанным с его прочтениями. Для векторов оно даёт мало (120 → 112); польза пар — в первую очередь для LLM-декодера (слепой тест связок, <code>data/eval/runs/links</code>).</p>
+<p><strong>Кодер с парой</strong> (<code>Reader.encode</code>, до 2026-10-14): если векторы не ставили слово первым, кодер перебирал 40 ближайших соседей слова, кодировал каждого не более чем двумя корнями без корней главного и брал пару «код PI сосед» с лучшим местом. Слепой тест <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/pi/README.md">pi</a> пользы не нашёл, и пара убрана: кодер пишет только главное слово. Чтение пар, набранных вручную, осталось.</p>
+<p>Круг математики (слово → код → чтение) на 400 случайных словах словаря:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">соседей</th>
+<th style="text-align: right;">первыми</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">время на слово (наибольшее)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">без пары</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">318</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">352</td>
+<td style="text-align: right;">0,4 с (2,8 с)</td>
+</tr>
+<tr>
+<td style="text-align: right;">40 (сайт)</td>
+<td style="text-align: right;">248</td>
+<td style="text-align: right;">367</td>
+<td style="text-align: right;">1,0 с (5,5 с)</td>
+</tr>
+</tbody>
+</table>
+<p>Примеры: ship + sailors, star + galaxy, vegetable + garden, harvest + corn (111 → 12).</p>
+<p><strong>Самопроверка кодера и штраф за неупомянутый корень</strong> (<code>READ.selfCheck</code>, <code>absLam 0,5</code>; data/eval/runs/selfcheck, data/eval/runs/absence). Кодер пробует лучшие коды из 1, 2 и 3 корней и их соседей (значение ±1, без одного корня), читает каждый своим же чтением и берёт тот, где слово стоит выше; при равенстве — короче. Главный корень кода не меняется. Чтение отнимает у слова 0,5·max(0, z − 1), где z — наибольшее сродство слова (z-оценка cos) с корнем, которого нет в коде: если бы слово было сильно похоже на этот корень, кодер бы его назвал.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">dev (100)</th>
+<th style="text-align: right;">1000</th>
+<th style="text-align: right;">другие 1000</th>
+<th style="text-align: right;">корней в коде</th>
+<th style="text-align: right;">коды моделей, cos первого прочтения</th>
+<th style="text-align: right;">пары, среднее место</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>было</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">406</td>
+<td style="text-align: right;">382</td>
+<td style="text-align: right;">2,91</td>
+<td style="text-align: right;">0,172</td>
+<td style="text-align: right;">183</td>
+</tr>
+<tr>
+<td>только штраф (сайт)</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">466</td>
+<td style="text-align: right;">449</td>
+<td style="text-align: right;">2,91</td>
+<td style="text-align: right;">0,227</td>
+<td style="text-align: right;">142</td>
+</tr>
+<tr>
+<td>самопроверка + штраф</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">558</td>
+<td style="text-align: right;">555</td>
+<td style="text-align: right;">2,53</td>
+<td style="text-align: right;">0,227</td>
+<td style="text-align: right;">142</td>
+</tr>
+</tbody>
+</table>
+<p>Прирост первыми на 2000 словах +325 (95 % +288…+363), из них штраф +127. Самопроверка на сайте выключена: она выкидывает осмысленные корни ради векторов — teacher <code>ART(=+1) SEX(=-3) KNOW(=+3)</code> → <code>ART(=+1) SEX(=-3)</code>, т. е. вычитывает уклон корпуса, а не смысл. Нужна проверка читаемости людьми или LLM. Веса не главных корней 0,6 оптимальны: 1 и 0,8 хуже, 0,4 почти так же, а словарь, переученный при 0,4, не лучше (data/eval/runs/weights, data/eval/runs/relearn).</p>
+<p><strong>Имена, число, часть речи, пол</strong> (data/eval/runs/forms, data/eval/runs/sex). Имя собственное (все значения в WordNet с заглавной) кодер пишет в кавычках, форму множественного числа — кодом леммы с <code>N+3</code>, часть речи берёт из WordNet (раньше <code>| o</code> у любого слова). SEX ставится только словам, у которых пол — часть смысла (81 слово: mother, king, actress…; не teacher, president). Часть речи даёт на круге математики +158 первыми на 854 случайных словах без имён (399 → 557).</p>
+<p><strong>Роль у людей</strong> (data/eval/runs/fix1). Если первое значение имени в WordNet — человек (noun.person, 952 слова), кодер ставит роль <code>| o agent</code>: «тот, кто делает, или человек этой области» (эсперантское <em>-ist-</em>), lawyer <code>RULE(=+3) KNOW(=+2) SIDE(=+2) | o agent</code>. Слепые читатели: +19 % «близко» на 88 таких словах [+10 … +30]. Роли <code>tool</code> и <code>quality</code> по WordNet пользы не дали.</p>
+<p><strong>Что пробовалось для чтения пар и не вошло.</strong> Связь со вторым словом можно считать не как наибольший cos с одним из 10 прочтений, а как cos с центром 20 прочтений. Кроме того, можно добавить PRF: сдвигать оценки к центру 20 лучших прочтений самого кода (<code>Vocab.toward</code>, <code>Reader.prf</code>, на сайте prfMu = 0). На парах из слепых тестов, которые писали модели, это лучше: среднее место 112 → 86, с PRF 72; на рецептах с PRF top10 41% → 44%. Но на круге математики хуже. С центром прочтений из 150 не первых слов первыми становятся 23 против 32 при max. PRF на 1000 словах одним кодом даёт 336 первыми вместо 381. Сочетания max и центра хуже обоих по отдельности. Главная мера — круг математики, поэтому на сайте max и без PRF.</p>
+<h2 id="10-слепая-проверка-кодов-сайта">10. Слепая проверка кодов сайта</h2>
+<p>Главная мера теперь — доля первых ответов слепого читателя, которые слепой судья считает «близко» (2 — близко, 1 — рядом, 0 — мимо): важно смысловое поле, а не точное слово.</p>
+<ul>
+<li><strong>1000 слов</strong> (<a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/big1000">big1000</a>): кодер сайта 24 % «близко», Haiku с ENC_SPEC 52 %. По частям речи у кодера сайта: имена 21 %, глаголы 25 %, прилагательные 28 %, наречия 32 %. Хуже всего люди (15 % против 62 % у модели; это до роли agent), вещи и места. 40 худших слов — в <code>worst.md</code>.</li>
+<li><strong>Оси 8 корней по атомам и роль agent у людей</strong> (<a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/fix1">fix1</a>) — приняты (§ 9, «Роль у людей»).</li>
+<li><strong>Раздельные коды смыслов</strong> многозначных слов (вектор смысла по WordNet, <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/senses">senses</a>): −2 % [−10 … +5], не принято.</li>
+<li><strong>Корень KIND</strong> («вид, разновидность», <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/kind">kind</a>): +5,6 % [−1 … +12], порог не пройден, не принят. Головой кода KIND помогал (+15 %), в середине кода читался как «свидетельство».</li>
+<li><strong>Пара через PI у кодера сайта</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/pi/README.md">pi</a>, 137 кодов-пар): без второго слова не хуже (+3,6 % [−3,6 … +11,7]); второе слово — ближайшее опорное слово-рецепт (+5 % к нынешней паре) или связка по типу ребра ConceptNet (хуже) порогов не прошли. Широкое определение PI («часть, место или разновидность Y») тоже в пределах шума. Узкое место — код главного слова; PI в языке остаётся. Пара у кодера сайта убрана (2026-10-14).</li>
+<li><strong>KIND только головой и SIDE</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>): KIND-голова +6,7 % [−2,7 … +16] на 75 словах — прежние +15 % не повторились; KIND не принят (решение пользователя, 2026-10-14). Без SIDE −2,1 % [−8,5 … +3,5] на 141 слове (удалить можно по правилу adopt); SIDE с определением по атому («назад, вернуться … вперёд, предстоящий») +4,3 % [−0,7 … +9,2], порог не пройден; пользователь выбрал переопределить (2026-10-14), roots.yaml.</li>
+<li><strong>Перенос кодов модели в словарь</strong> (дистилляция, <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/distill">distill</a>): коды осмысленнее на вид, но читаются почти как прежние; словарь сайта не менялся.</li>
+</ul>
+<h2 id="11-что-дальше">11. Что дальше</h2>
+<ul>
+<li>Пара слов «главное + уточнение» для слов, которые код не ставит первыми (главное — гипероним из WordNet).</li>
+<li>Внешняя проверка осей по человеческим шкалам (Glasgow, Warriner, Brysbaert).</li>
+<li>Русский и выравнивание пространств: лакуны между языками (коды, рядом с которыми есть русское слово, но нет английского).</li>
+<li>Штраф кодеру за выбор корня по побочному смыслу вектора — шаг к читаемым кодам.</li>
+</ul>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

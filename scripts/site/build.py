@@ -1,4 +1,5 @@
-"""Сборка данных сайта из roots.yaml и спецификаций: site/data/roots.json, site/data/examples.json, worker/prompts.js.
+"""Сборка данных сайта из roots.yaml и спецификаций: site/data/roots.json, site/data/examples.json, worker/prompts.js;
+страницы сайта (site/index.html, site/ru/, site/docs/, sitemap.xml) — scripts/site/pages.py.
 (Данные математического кодера — отдельно, scripts/site/build_math.py; здесь --check лишь проверяет, что они не устарели.)
 
     python3 scripts/site/build.py          # записать
@@ -16,6 +17,7 @@ REPO = HERE.parents[1]
 sys.path.insert(0, str(REPO / "scripts" / "mincode"))
 sys.path.insert(0, str(REPO / "scripts" / "eval"))
 import spec  # noqa: E402
+import pages  # noqa: E402  (site/index.html, site/ru/, site/docs/, sitemap.xml)
 from prepare import build_spec  # noqa: E402
 from validator import Validator, iter_codes  # noqa: E402
 
@@ -120,6 +122,7 @@ def outputs():
         REPO / "site" / "data" / "examples.json": json.dumps(examples_json(), ensure_ascii=False, indent=1) + "\n",
         REPO / "site" / "data" / "recipes.json": json.dumps(recipes_json(), ensure_ascii=False, indent=0) + "\n",
         REPO / "worker" / "prompts.js": prompts_js(),
+        **pages.outputs(),
     }
 
 
@@ -146,6 +149,7 @@ def main():
         print("устарели: " + ", ".join(bad) if bad else "в порядке")
         sys.exit(1 if bad else 0)
     for p, t in out.items():
+        p.parent.mkdir(parents=True, exist_ok=True)
         p.write_text(t, encoding="utf8")
         print("записано", p.relative_to(REPO))
 

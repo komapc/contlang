@@ -1,0 +1,124 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Модель: корень и структура — min-co</title>
+<meta name="description" content="Всё в языке сводится к двум вещам: корню и структуре. Ось — не отдельная сущность, а корень в позиции модификатора со значением (как в эсперанто корень и…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/model/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/model/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Модель: корень и структура — min-co">
+<meta property="og:description" content="Всё в языке сводится к двум вещам: корню и структуре. Ось — не отдельная сущность, а корень в позиции модификатора со значением (как в эсперанто корень и…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Модель: корень и структура — min-co","description":"Всё в языке сводится к двум вещам: корню и структуре. Ось — не отдельная сущность, а корень в позиции модификатора со значением (как в эсперанто корень и…","url":"https://minco.lipu.dev/docs/model/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="модель-корень-и-структура">Модель: корень и структура</h1>
+<p>Всё в языке сводится к двум вещам: корню и структуре. Ось — не отдельная сущность, а корень в позиции модификатора со значением (как в эсперанто корень и суффикс — примерно одно и то же). Решено в обсуждении; прежняя модель «корень, ось, структура» заменена.</p>
+<h2 id="1-корень">1. Корень</h2>
+<p>Дискретная опора: что это за предмет, действие, понятие. Около 45, в основном примитивы NSM (<em>someone, thing, move, think, want, see, place, …</em>); текущий список — в <a href="/docs/lexicon/">словаре</a>. Корень не знает части речи.</p>
+<p><strong>У каждого корня своя ось или никакой.</strong> Ось — непрерывная шкала от −5 до +5, заданная полюсами в духе NSM: у GOOD «плохо … хорошо», у INSIDE «снаружи … внутри», у LIVE «мёртвое … живое». Значение относительно корня (<em>big mouse</em> меньше, чем <em>small elephant</em>). Все оси двусторонние: −5 — противоположный полюс, 0 — середина, +5 — полный полюс (у MANY: −5 ни одного … 0 сколько-то … +5 все).</p>
+<p><strong>Правило нуля.</strong> Ось не написана — значение не указано, это ничего не стоит по битам. <code>(=0)</code> — явное значение: середина оси. Точные количества (<code>1</code>, <code>17</code>) — числа из послаблений.</p>
+<p>Общих «универсальных осей» (M1–M9) нет: если нужен тонкий оттенок, берётся ещё один корень.</p>
+<h2 id="2-составные-слова">2. Составные слова</h2>
+<p>Слово — один, два или три корня, как в эсперанто. Главное слово первым, каждое следующее уточняет всё, что стоит перед ним, без скобок (слева направо); больше трёх корней нельзя. Второй корень работает то как корень, то как суффикс. Корень в позиции модификатора с значением оси — это «ось» прежней модели:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">слово</th>
+<th style="text-align: left;">запись</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">дом</td>
+<td style="text-align: left;"><code>PLACE LIVE | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">спальня</td>
+<td style="text-align: left;"><code>PLACE LIVE(=-2) | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">морг</td>
+<td style="text-align: left;"><code>PLACE LIVE(=-5) | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">хорошая вещь</td>
+<td style="text-align: left;"><code>THING GOOD(=+3) | o</code></td>
+</tr>
+</tbody>
+</table>
+<p>Ось без вещи (<em>good</em>) — корень в позиции главного слова: <code>GOOD(=+5)</code>. Двусмысленная группировка пишется скобками <code>[ … ]</code>. Два слова (<code>X | o СВЯЗКА Y | o</code>) строятся по той же логике: первое — род, второе сужает его (<a href="/docs/syntax/">синтаксис</a>).</p>
+<p>Цена по битам: плотно (9 общих осей) ≈ 31 бит на значения; разреженно (оси в корнях) ≈ 8,4 бита на каждую нужную ось (номер корня + значение). Разреженный способ дешевле, пока слову нужно не больше трёх-четырёх осей. Проверка на данных ещё не сделана.</p>
+<h2 id="3-структура">3. Структура</h2>
+<ul>
+<li><strong>Два слоя в слове, разделитель <code>|</code>.</strong> Слева смысл: корни (главный первым, до трёх) со значениями осей. Справа форма: часть речи (<code>o</code> имя, <code>i</code> глагол, <code>a</code> признак, <code>e</code> обстоятельство; 2 бита, как раньше суффиксы эсперанто), у имени — роль (<code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code>, как <em>-ist, -il, -aĵ, -ec</em> эсперанто) и грамматические метки. Метки — закрытый набор, не корни и не входят в лимит трёх: <code>T</code> время (момент отсчёта относительно «сейчас»), <code>R</code> время события относительно этого отсчёта (Рейхенбах S, R, E), <code>N</code> число, <code>M</code> отрицание и вероятность, <code>A</code> вид, <code>C</code> сравнение, <code>I</code> интенсивность, <code>D</code> определённость, <code>V</code> залог, <code>K</code> побуждение, <code>!</code> приказ, <code>?</code> вопрос; значения на шкале −5…+5 по правилу нуля. Пример: <code>FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4</code> — «испугаются» (страх: чувство, плохое, в будущем; форма: глагол, будущее, много). Смысловой <code>TIME(=+3)</code> слева и грамматическое <code>T+2</code> справа не смешиваются. Грамматические метки ставятся один раз на главном слове группы.</li>
+<li><strong>Порядок:</strong> главное слово первым, определения после.</li>
+<li><strong>Частицы:</strong> <code>E</code> дополнение, <code>PI</code> существительное-определение, <code>LA</code> условие, скобки <code>[ … ]</code> для клаузы, <code>?</code> для запрошенного значения. Сказуемое — слово с <code>| i</code>; <code>LI</code> убран (2026-10-14, <a href="/docs/syntax/">синтаксис</a>).</li>
+<li><strong>Время и отрицание</strong> — метки <code>T</code> и <code>M</code> после <code>|</code>; смысловой <code>TIME</code> остаётся корнем слева; корня <code>MAYBE</code> нет, вероятность — метка <code>M</code>.</li>
+</ul>
+<h2 id="что-взять-у-других-языков-принято-к-проработке">Что взять у других языков (принято к проработке)</h2>
+<ul>
+<li>Таблица коррелятивов эсперанто: вопросы, указания, «все / никто» собираются из корней SOMEONE, THING, PLACE, TIME, NEAR, MANY и частицы <code>?</code> (см. словарь).</li>
+<li>Свидетельность («видел», «слышал») — корни SEE, THINK, KNOW (HEAR убран) как частица-определение предложения.</li>
+<li>Число — корень MANY (<code>THING MANY(=+3)</code> — «несколько»); ось двусторонняя (−5 ни одного … 0 сколько-то … +5 все); без значения число не указано.</li>
+<li>Места аргументов у корня (Ложбан) вместо падежей.</li>
+<li>Длина формы по частоте (код Хаффмана).</li>
+<li>Маркер имён и заимствований (Ложбан, <em>cmevla</em>) для послаблений.</li>
+<li>Формальная грамматика, проверяемая парсером.</li>
+</ul>
+<h2 id="что-осталось-открытым">Что осталось открытым</h2>
+<ul>
+<li>Абстракции (<em>responsibility, category, probability, career…</em>) пока без корней; корни добавляются по мере провалов. Корень KIND («вид, разновидность») проверен и не принят, в том числе только головой (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/kind/README.md">kind</a>, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>; решение 2026-10-14).</li>
+<li>Проверить на данных: разреженное кодирование (корень + до 3 корней-модификаторов) против 9 общих осей при одинаковом числе бит.</li>
+<li>Глаголы смены состояния через головной корень со значением (<em>grow</em> = <code>BIG(=+3) | i</code> вместо <code>CHANGE BIG(=+3) | i</code>) проверены и не приняты: разницы нет (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/verbs/README.md">verbs</a>).</li>
+</ul>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/model.md">docs/model.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

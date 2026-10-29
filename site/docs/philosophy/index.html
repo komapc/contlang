@@ -1,0 +1,86 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Философия min-co</title>
+<meta name="description" content="Схема не придумана целиком вручную, а подобрана экспериментами на данных (английский, эмбеддинги ConceptNet Numberbatch, 3000 слов): сравнивались глобальные…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/philosophy/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/philosophy/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Философия min-co">
+<meta property="og:description" content="Схема не придумана целиком вручную, а подобрана экспериментами на данных (английский, эмбеддинги ConceptNet Numberbatch, 3000 слов): сравнивались глобальные…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Философия min-co","description":"Схема не придумана целиком вручную, а подобрана экспериментами на данных (английский, эмбеддинги ConceptNet Numberbatch, 3000 слов): сравнивались глобальные…","url":"https://minco.lipu.dev/docs/philosophy/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="философия-min-co">Философия min-co</h1>
+<p><strong>min-co</strong> (<em>minimal + continuous</em>) — минимальный философский язык (artlang) для точной и гибкой мысли.</p>
+<ul>
+<li>Минимум грамматики и словаря (вдохновлено Toki Pona и эсперанто).</li>
+<li>Максимум выразительности через небольшой набор универсальных непрерывных признаков.</li>
+<li>Понятия — не категории, а позиции в концептуальном пространстве.</li>
+<li>Нюанс вместо ярлыка: смысл слова — корень плюс непрерывные поправки.</li>
+</ul>
+<h2 id="принципы">Принципы</h2>
+<ol>
+<li><strong>Малый набор общих корней.</strong> Около 45 общих, не привязанных к части речи понятий (<em>move, think, want, good, big, …</em>), в основном примитивы NSM; у большинства есть своя ось. Список и правила добавления — в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a> и <a href="/docs/lexicon/">словаре</a>.</li>
+<li><strong>Часть речи — как суффиксы эсперанто, в форме после <code>|</code>.</strong> <code>o</code> имя, <code>i</code> глагол, <code>a</code> признак, <code>e</code> обстоятельство; у имени может быть роль <code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code> (<em>-ist, -il, -aĵ, -ec</em>). Любой корень берёт любую часть речи: <code>MOVE | o</code> (движение), <code>MOVE | i</code> (двигаться), <code>MOVE | a</code> (подвижный), <code>MOVE | e</code> (подвижно). Форма отделена от смысла: корень не знает, какой он части речи.</li>
+<li><strong>Оси — единственный непрерывный механизм.</strong> Смысловые поправки слова — оси со значением от -5 до +5 и областью применимости: у каждого корня своя ось или никакой (GOOD, BIG, TIME, …); общих неназванных осей нет. Отдельных «градиентных корней» и локальных осей нет: это те же оси (<a href="/docs/model/">модель</a>).</li>
+<li><strong>Признаки необязательны.</strong> Ось не написана — значение не указано (правило нуля: ничего не стоит по битам); <code>(=0)</code> — явная середина. Маркер <code>?</code> — запрос значения (см. <a href="/docs/syntax/">синтаксис</a>, <a href="/docs/model/">модель</a>).</li>
+<li><strong>Минимальная грамматика.</strong> Главное слово первым, частицы <code>E</code>, <code>PI</code>, <code>LA</code>, связки <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>, скобки и <code>?</code>; сказуемое — слово с <code>| i</code>, без <code>LI</code> (<a href="/docs/syntax/">синтаксис</a>).</li>
+<li><strong>Не совсем бесконечный словарь.</strong> Слова порождаются как корни + значения осей + форма; составные (два слова через связку) строятся по той же логике. Устойчивые рецепты закрепляются проверкой, но заучивать словарь не нужно.</li>
+<li><strong>Цель — смысловое поле.</strong> Код удался, если читатель называет слово того же поля (<em>дом, жилище, хата</em>), а не обязательно то же слово.</li>
+<li><strong>Кодирует математика.</strong> Код слова на сайте строит математика (векторы слов и корней), а не языковая модель; модель служит только читателем и судьёй в слепых тестах (<a href="/docs/math/">математика</a>). Образец простоты — Toki Pona.</li>
+</ol>
+<h2 id="откуда-это-взялось">Откуда это взялось</h2>
+<p>Схема не придумана целиком вручную, а подобрана экспериментами на данных (английский, эмбеддинги ConceptNet Numberbatch, 3000 слов): сравнивались глобальные оси, корни с локальными осями, корни с универсальными осями, непрерывная форма против суффикса. Подробности и метрики: <a href="https://github.com/komapc/contlang/blob/main/docs/history/plan.md">план работ (исторический)</a>, каталог <code>data/</code>.</p>
+<p>Устройство в целом: <a href="/docs/model/">модель</a>. Подробнее: <a href="/docs/syntax/">синтаксис</a>, <a href="/docs/lexicon/">словарь</a>, <a href="/docs/phonology/">фонология</a>.</p>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/philosophy.md">docs/philosophy.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>
