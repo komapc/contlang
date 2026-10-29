@@ -1,0 +1,511 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Сводные таблицы: корни, оси, метки — min-co</title>
+<meta name="description" content="Краткий обзор текущего состояния. Источники правды: roots.yaml (корни и оси), syntax.md (метки и частицы), model.md (модель). Здесь только сводка; при…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/tables/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/tables/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Сводные таблицы: корни, оси, метки — min-co">
+<meta property="og:description" content="Краткий обзор текущего состояния. Источники правды: roots.yaml (корни и оси), syntax.md (метки и частицы), model.md (модель). Здесь только сводка; при…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Сводные таблицы: корни, оси, метки — min-co","description":"Краткий обзор текущего состояния. Источники правды: roots.yaml (корни и оси), syntax.md (метки и частицы), model.md (модель). Здесь только сводка; при…","url":"https://minco.lipu.dev/docs/tables/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="сводные-таблицы-корни-оси-метки">Сводные таблицы: корни, оси, метки</h1>
+<blockquote>
+<p>Файл сгенерирован из <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a> (<code>python3 scripts/mincode/gen.py</code>); руками не править.</p>
+</blockquote>
+<p>Краткий обзор текущего состояния. Источники правды: <code>roots.yaml</code> (корни и оси), <a href="/docs/syntax/">syntax.md</a> (метки и частицы), <a href="/docs/model/">model.md</a> (модель). Здесь только сводка; при расхождении верны они.</p>
+<h2 id="корни-с-осью-39">Корни с осью (39)</h2>
+<p>Ось — шкала −5 … +5; ось не написана — значение не указано, <code>(=0)</code> — явная середина.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">корень</th>
+<th style="text-align: left;">−5</th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">+5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GOOD</td>
+<td style="text-align: left;">плохо</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">хорошо</td>
+</tr>
+<tr>
+<td style="text-align: left;">BIG</td>
+<td style="text-align: left;">мало</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">много</td>
+</tr>
+<tr>
+<td style="text-align: left;">NEAR</td>
+<td style="text-align: left;">далеко, за границей, в пути</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">близко, рядом, в центре (этот / тот)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ABOVE</td>
+<td style="text-align: left;">ниже</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">выше</td>
+</tr>
+<tr>
+<td style="text-align: left;">LIVE</td>
+<td style="text-align: left;">мёртвое</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">живое</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAME</td>
+<td style="text-align: left;">другое, особое</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">то же, общее</td>
+</tr>
+<tr>
+<td style="text-align: left;">TIME</td>
+<td style="text-align: left;">давно</td>
+<td style="text-align: left;">сейчас</td>
+<td style="text-align: left;">когда-нибудь</td>
+</tr>
+<tr>
+<td style="text-align: left;">INSIDE</td>
+<td style="text-align: left;">снаружи</td>
+<td style="text-align: left;">на границе</td>
+<td style="text-align: left;">внутри</td>
+</tr>
+<tr>
+<td style="text-align: left;">PART</td>
+<td style="text-align: left;">крошка (−2 часть, член)</td>
+<td style="text-align: left;">+2 целое, «полностью»</td>
+<td style="text-align: left;">+5 группа, набор (после слова: собрание таких вещей, <em>-aro</em>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SIDE</td>
+<td style="text-align: left;">зад, назад; вернуться</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">перёд, вперёд; предстоящий</td>
+</tr>
+<tr>
+<td style="text-align: left;">KNOW</td>
+<td style="text-align: left;">глупо, нелепо, не знаю</td>
+<td style="text-align: left;">осведомлён</td>
+<td style="text-align: left;">знаю, сообщить, научить</td>
+</tr>
+<tr>
+<td style="text-align: left;">WANT</td>
+<td style="text-align: left;">ненависть</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">любовь</td>
+</tr>
+<tr>
+<td style="text-align: left;">HEAT</td>
+<td style="text-align: left;">лёд</td>
+<td style="text-align: left;">тепло</td>
+<td style="text-align: left;">огонь</td>
+</tr>
+<tr>
+<td style="text-align: left;">BEGIN</td>
+<td style="text-align: left;">начать</td>
+<td style="text-align: left;">идёт</td>
+<td style="text-align: left;">закончить</td>
+</tr>
+<tr>
+<td style="text-align: left;">GIVE</td>
+<td style="text-align: left;">схватить, отнять</td>
+<td style="text-align: left;">обмен, получить</td>
+<td style="text-align: left;">отдать, подарить, пожертвовать</td>
+</tr>
+<tr>
+<td style="text-align: left;">TOUCH</td>
+<td style="text-align: left;">мягкое, гладкое, нежное</td>
+<td style="text-align: left;">обычное</td>
+<td style="text-align: left;">твёрдое, жёсткое, суровое</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEX</td>
+<td style="text-align: left;">женское</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">мужское</td>
+</tr>
+<tr>
+<td style="text-align: left;">THINK</td>
+<td style="text-align: left;">сомневаться</td>
+<td style="text-align: left;">думать</td>
+<td style="text-align: left;">решить</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN</td>
+<td style="text-align: left;">невозможно (−3 трудно)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">легко</td>
+</tr>
+<tr>
+<td style="text-align: left;">MANY</td>
+<td style="text-align: left;">−5 ни одного, нет вовсе (−3 почти нет, нехватка)</td>
+<td style="text-align: left;">0 сколько-то</td>
+<td style="text-align: left;">+5 все (+3 многие)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SOMEONE</td>
+<td style="text-align: left;">они / другой</td>
+<td style="text-align: left;">кто-то</td>
+<td style="text-align: left;">я (+3 ты)</td>
+</tr>
+<tr>
+<td style="text-align: left;">THING</td>
+<td style="text-align: left;">камень</td>
+<td style="text-align: left;">растение</td>
+<td style="text-align: left;">животное (+4)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOVE</td>
+<td style="text-align: left;">стоять</td>
+<td style="text-align: left;">идти</td>
+<td style="text-align: left;">мчаться</td>
+</tr>
+<tr>
+<td style="text-align: left;">FEEL</td>
+<td style="text-align: left;">вялость</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">сильное чувство</td>
+</tr>
+<tr>
+<td style="text-align: left;">RULE</td>
+<td style="text-align: left;">личное, неформальное</td>
+<td style="text-align: left;">обычное</td>
+<td style="text-align: left;">официальное, учреждение, закон</td>
+</tr>
+<tr>
+<td style="text-align: left;">CHANGE</td>
+<td style="text-align: left;">остаться</td>
+<td style="text-align: left;">меняться</td>
+<td style="text-align: left;">превратить, измениться полностью</td>
+</tr>
+<tr>
+<td style="text-align: left;">ART</td>
+<td style="text-align: left;">расчёт, техника, точные науки</td>
+<td style="text-align: left;">смешанное</td>
+<td style="text-align: left;">творчество, культура, гуманитарное</td>
+</tr>
+<tr>
+<td style="text-align: left;">JOIN</td>
+<td style="text-align: left;">отделить, убрать</td>
+<td style="text-align: left;">состав не меняется</td>
+<td style="text-align: left;">присоединить, добавить, объединить</td>
+</tr>
+<tr>
+<td style="text-align: left;">VALUE</td>
+<td style="text-align: left;">дёшево, распродажа, купля-продажа</td>
+<td style="text-align: left;">обычная цена</td>
+<td style="text-align: left;">дорого, ценно, важно</td>
+</tr>
+<tr>
+<td style="text-align: left;">CARE</td>
+<td style="text-align: left;">небрежно, ошибка, вина</td>
+<td style="text-align: left;">обычно</td>
+<td style="text-align: left;">старательно, тщательно</td>
+</tr>
+<tr>
+<td style="text-align: left;">FRIEND</td>
+<td style="text-align: left;">враг, враждебно</td>
+<td style="text-align: left;">нейтрально</td>
+<td style="text-align: left;">друг, дружелюбно, добрый</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOOD</td>
+<td style="text-align: left;">горе, отчаяние, трагическое (−3 грусть)</td>
+<td style="text-align: left;">всерьёз, спокойно</td>
+<td style="text-align: left;">смешно, хохот (+3 весело, радостно)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CONSUME</td>
+<td style="text-align: left;">выделить (писать, говорить, испражняться)</td>
+<td style="text-align: left;">обмен</td>
+<td style="text-align: left;">поглотить (есть, читать, слушать)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MEASURE</td>
+<td style="text-align: left;">величина сама по себе (размер, количество)</td>
+<td style="text-align: left;">уровень, степень</td>
+<td style="text-align: left;">величина относительно другой (отношение, доля, процент, статистика)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LONG</td>
+<td style="text-align: left;">нить, ткань, верёвка (тонкое, гибкое)</td>
+<td style="text-align: left;">проволока, прут, крепёж</td>
+<td style="text-align: left;">балка, доска, бревно, деревянная мебель</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAY</td>
+<td style="text-align: left;">шёпот, бормотание</td>
+<td style="text-align: left;">обычная речь</td>
+<td style="text-align: left;">крик, рёв</td>
+</tr>
+<tr>
+<td style="text-align: left;">GRAIN</td>
+<td style="text-align: left;">газ, пар (−3 жидкость, вода)</td>
+<td style="text-align: left;">сыпучее, рассыпчатое</td>
+<td style="text-align: left;">цельное, одним куском</td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT</td>
+<td style="text-align: left;">игра, спорт, соревнование</td>
+<td style="text-align: left;">драка, спор</td>
+<td style="text-align: left;">война насмерть</td>
+</tr>
+<tr>
+<td style="text-align: left;">LAND</td>
+<td style="text-align: left;">море, вода</td>
+<td style="text-align: left;">берег</td>
+<td style="text-align: left;">суша, твёрдая земля</td>
+</tr>
+</tbody>
+</table>
+<h2 id="корни-без-оси-6">Корни без оси (6)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">корень</th>
+<th style="text-align: left;">значение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">HAPPEN</td>
+<td style="text-align: left;">событие, случаться</td>
+</tr>
+<tr>
+<td style="text-align: left;">BODY</td>
+<td style="text-align: left;">тело</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEE</td>
+<td style="text-align: left;">видеть</td>
+</tr>
+<tr>
+<td style="text-align: left;">DO</td>
+<td style="text-align: left;">делать</td>
+</tr>
+<tr>
+<td style="text-align: left;">PLACE</td>
+<td style="text-align: left;">место</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;">письменная речь, текст, запись</td>
+</tr>
+</tbody>
+</table>
+<h2 id="форма-слова-после-">Форма слова: после <code>|</code></h2>
+<p>Часть речи (2 бита): <code>o</code> имя, <code>i</code> глагол, <code>a</code> признак, <code>e</code> обстоятельство.</p>
+<p>Метки (не корни, в лимит трёх корней не входят; метки ставятся один раз на главном слове группы):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">метка</th>
+<th style="text-align: left;">что</th>
+<th style="text-align: left;">шкала</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>T</code></td>
+<td style="text-align: left;">время: опорная точка относительно «сейчас»</td>
+<td style="text-align: left;">−5 давно … 0 сейчас … +5 когда-нибудь (<code>T-2</code> прошлое, <code>T+2</code> будущее)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>R</code></td>
+<td style="text-align: left;">время события относительно опорной точки</td>
+<td style="text-align: left;">−3 раньше … 0 одновременно … +3 позже</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>N</code></td>
+<td style="text-align: left;">число</td>
+<td style="text-align: left;">0 нет … +5 все (<code>N+3</code> несколько)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>M</code></td>
+<td style="text-align: left;">отрицание, вероятность</td>
+<td style="text-align: left;">−5 не … −3 может быть … +4 наверняка</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>A</code></td>
+<td style="text-align: left;">вид</td>
+<td style="text-align: left;">−5 вот-вот начнётся … 0 идёт … +5 закончено</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>C</code></td>
+<td style="text-align: left;">сравнение</td>
+<td style="text-align: left;">−3 меньше, +3 больше, +5 самый</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>I</code></td>
+<td style="text-align: left;">интенсивность</td>
+<td style="text-align: left;">−5 едва … −2 слегка … +2 довольно … +5 чрезвычайно (<code>I+4</code> очень; <code>I0</code> не писать)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>D</code></td>
+<td style="text-align: left;">определённость</td>
+<td style="text-align: left;">−3 <em>a</em>, +3 <em>the</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>V</code></td>
+<td style="text-align: left;">залог</td>
+<td style="text-align: left;">−4 претерпевает, 0 само собой, +4 намеренно</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K</code></td>
+<td style="text-align: left;">побуждение (каузатив)</td>
+<td style="text-align: left;">−5 помешать, отговорить … 0 допустить … +5 заставить, вызвать</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!</code></td>
+<td style="text-align: left;">приказ</td>
+<td style="text-align: left;">без значения</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>?</code></td>
+<td style="text-align: left;">вопрос</td>
+<td style="text-align: left;">без значения</td>
+</tr>
+</tbody>
+</table>
+<h2 id="роли-имени">Роли имени</h2>
+<p>После <code>| o</code>, не больше одной, без значения; в лимит корней не входят.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">роль</th>
+<th style="text-align: left;">что значит</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>agent</code></td>
+<td style="text-align: left;">тот, кто это делает, или человек этой области (человек или вещь): <code>TEXT | o agent</code> писатель, <code>HAPPEN | o agent</code> причина, <code>ART(=+5) | o agent</code> художник</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tool</code></td>
+<td style="text-align: left;">орудие, средство: <code>TEXT | o tool</code> ручка, <code>JOIN(=-4) TOUCH(=+4) | o tool</code> нож</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>result</code></td>
+<td style="text-align: left;">то, что получается: <code>HAPPEN | o result</code> следствие</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>quality</code></td>
+<td style="text-align: left;">само качество или состояние: <code>GOOD | o quality</code> доброта, <code>CAN | o quality</code> способность</td>
+</tr>
+</tbody>
+</table>
+<h2 id="частицы-фразы">Частицы фразы</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">частица</th>
+<th style="text-align: left;">роль</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>E</code></td>
+<td style="text-align: left;">дополнение</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FROM</code></td>
+<td style="text-align: left;">связка существительных: X FROM Y — X сделан из Y (материал, источник); первым проверяется он</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FOR</code></td>
+<td style="text-align: left;">связка: X FOR Y — X сделан для Y (им пользуются с Y, на Y или Y); вторым</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LIKE</code></td>
+<td style="text-align: left;">связка: X LIKE Y — X похож на Y, но не Y; третьим</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PI</code></td>
+<td style="text-align: left;">связка: X PI Y — всё прочее: X часть Y или находится, живёт в Y; последним</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LA</code></td>
+<td style="text-align: left;">условие, контекст, опорная точка для <code>R</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PE</code></td>
+<td style="text-align: left;">деятель при <code>V-4</code> («кем»)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AND</code></td>
+<td style="text-align: left;">сочинение: и, также</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>[ ]</code></td>
+<td style="text-align: left;">клауза</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>;</code></td>
+<td style="text-align: left;">граница независимых клауз длинного предложения (у каждого слова своя форма <code>| …</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>"…"</code></td>
+<td style="text-align: left;">имена, числа, даты, латынь</td>
+</tr>
+</tbody>
+</table>
+<h2 id="счёт">Счёт</h2>
+<p>Корней 45 (39 с осью, 6 без); меток формы 12; ролей имени 4; частиц и знаков 11 (+ кавычки); частей речи 4. Лимит: до 3 корней в слове, без исключений.</p>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/tables.md">docs/tables.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

@@ -1,4 +1,5 @@
 <!doctype html>
+<!-- сгенерировано scripts/site/pages.py из data/site/index.html, руками не править -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
@@ -6,8 +7,12 @@
 <title>min-co — a minimal conlang with 45 meaning roots</title>
 <meta name="description" content="min-co is a minimal constructed language (conlang) built from 45 meaning roots with value axes. Encode any word as a short code, then decode it blind — by AI and by pure vector math (semantic vectors).">
 <link rel="canonical" href="https://minco.lipu.dev/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://minco.lipu.dev/">
+<meta property="og:locale" content="en_US">
 <meta property="og:title" content="min-co — a minimal conlang with 45 meaning roots">
 <meta property="og:description" content="45 meaning roots with value axes. Encode any word as a short code, then decode it blind — by AI and by pure vector math.">
 <meta property="og:image" content="https://minco.lipu.dev/og.png">
@@ -17,9 +22,9 @@
 <meta name="twitter:title" content="min-co — a minimal conlang with 45 meaning roots">
 <meta name="twitter:image" content="https://minco.lipu.dev/og.png">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"min-co","url":"https://minco.lipu.dev/","description":"A minimal continuous constructed language: 45 meaning roots with value axes; encode a word as a code and decode it blind.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":["en","ru"],"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"min-co","url":"https://minco.lipu.dev/","description":"A minimal continuous constructed language: 45 meaning roots with value axes; encode a word as a code and decode it blind.","applicationCategory":"EducationalApplication","operatingSystem":"Any","inLanguage":"en","author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
 <meta name="msvalidate.01" content="CAFA7BE0D5D83695993D635831499022">
-<script>try { const l = localStorage.getItem("minco-lang"); if (l === "ru" || l === "en") document.documentElement.lang = l; if (l === "mc") { document.documentElement.lang = "en"; document.documentElement.classList.add("mc"); } } catch (e) {}</script>
+<script>try { const l = localStorage.getItem("minco-lang"); if (l === "ru") location.replace("/ru/" + location.hash); else if (l === "mc") document.documentElement.classList.add("mc"); } catch (e) {}</script>
 <style>
 :root{--ok:#2e7d4f;--bad:#b3412e;--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--warn:#8a5a00;--warnbg:#fdf3dc;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--ok:#7fd19b;--bad:#f0907d;--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c;--warn:#e8c070;--warnbg:#332a14}}
@@ -33,8 +38,8 @@ header{padding:28px 0 8px;position:relative}
 h1{font-size:28px;margin:0 0 4px;letter-spacing:-.01em}
 .sub{color:var(--mut);margin:0}
 .langsw{position:absolute;top:28px;right:0;display:flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
-.langsw button{background:none;border:0;color:var(--mut);font:inherit;font-size:14px;padding:4px 10px;cursor:pointer}
-.langsw button[aria-pressed=true]{background:var(--acc2);color:var(--acc);font-weight:600}
+.langsw button,.langsw a{background:none;border:0;color:var(--mut);font:inherit;font-size:14px;padding:4px 10px;cursor:pointer;text-decoration:none}
+.langsw button[aria-pressed=true],.langsw a[aria-current=page]{background:var(--acc2);color:var(--acc);font-weight:600}
 nav{display:flex;gap:4px;flex-wrap:wrap;margin:18px 0 22px;border-bottom:1px solid var(--line)}
 nav button{background:none;border:0;border-bottom:2px solid transparent;color:var(--mut);font:inherit;padding:8px 12px;cursor:pointer}
 nav button[aria-selected=true]{color:var(--fg);border-bottom-color:var(--acc)}
@@ -133,18 +138,17 @@ footer.projects a{color:var(--acc)}
 <header>
   <h1>min-co</h1>
   <p class="sub mcalt" data-l="en">A language of 45 meaning roots with value axes. A word is encoded in two ways — by <b>AI</b> (a language model) and by <b>Vectors</b> (pure math, no model) — and then decoded blind.</p><p class="sub" data-l="mc"><span class="code mctext" data-mc='SAY TEXT | o INSIDE(=+5) | i E PART(=-2) BEGIN(=-5) | o N+3 "45" ; THINK ART(=-5) | o tool AND MEASURE ART(=-5) | o TEXT | i E SAY PART(=-2) | o ; LA [ SOMEONE(=-5) | o SEE | i M-5 E SAY PART(=-2) | o ] SOMEONE(=-5) | o KNOW(=+2) | i E TEXT | o result'></span></p>
-  <p class="sub" data-l="ru">Язык из 45 смысловых корней с осями значений. Слово кодируется двумя способами — <b>ИИ</b> (языковая модель) и <b>Векторы</b> (чистая математика, без модели) — и раскодируется вслепую.</p>
-  <div class="langsw" role="group" aria-label="Language"><button type="button" data-lang="en">EN</button><button type="button" data-lang="ru">RU</button><button type="button" data-lang="mc" title="min-co: descriptions and instructions in the language itself">MC</button></div>
+  <div class="langsw" role="group" aria-label="Language"><a href="/" hreflang="en" lang="en" data-lang="en">EN</a><a href="/ru/" hreflang="ru" lang="ru" data-lang="ru">RU</a><button data-l="en" type="button" data-lang="mc" title="min-co: descriptions and instructions in the language itself">MC</button></div>
 </header>
 <nav role="tablist">
-  <button role="tab" aria-selected="true" data-t="idea"><span data-l="en">Idea</span><span data-l="ru">Идея</span></button>
-  <button role="tab" aria-selected="false" data-t="demo"><span data-l="en">Try it</span><span data-l="ru">Проба</span></button>
-  <button role="tab" aria-selected="false" data-t="mix"><span data-l="en">Mixer</span><span data-l="ru">Смеситель</span></button>
-  <button role="tab" aria-selected="false" data-t="how"><span data-l="en">How to read a code</span><span data-l="ru">Как читать код</span></button>
-  <button role="tab" aria-selected="false" data-t="roots"><span data-l="en">Roots</span><span data-l="ru">Корни</span></button>
-  <button role="tab" aria-selected="false" data-t="dict"><span data-l="en">Dictionary</span><span data-l="ru">Словарь</span></button>
-  <button role="tab" aria-selected="false" data-t="method"><span data-l="en">Method</span><span data-l="ru">Методология</span></button>
-  <button role="tab" aria-selected="false" data-t="docs"><span data-l="en">Docs</span><span data-l="ru">Документация</span></button>
+  <button role="tab" aria-selected="true" data-t="idea"><span data-l="en">Idea</span></button>
+  <button role="tab" aria-selected="false" data-t="demo"><span data-l="en">Try it</span></button>
+  <button role="tab" aria-selected="false" data-t="mix"><span data-l="en">Mixer</span></button>
+  <button role="tab" aria-selected="false" data-t="how"><span data-l="en">How to read a code</span></button>
+  <button role="tab" aria-selected="false" data-t="roots"><span data-l="en">Roots</span></button>
+  <button role="tab" aria-selected="false" data-t="dict"><span data-l="en">Dictionary</span></button>
+  <button role="tab" aria-selected="false" data-t="method"><span data-l="en">Method</span></button>
+  <button role="tab" aria-selected="false" data-t="docs"><span data-l="en">Docs</span></button>
 </nav>
 
 <section id="idea" class="on">
@@ -176,126 +180,87 @@ footer.projects a{color:var(--acc)}
 <h3>Phonetics</h3>
 <p>Not decided yet. The current draft: a root is a Toki Pona word, an axis value is a repeated syllable (<code>ti</code> for plus, <code>wu</code> for minus, <code>y</code> for the explicit middle). Options still open: vowel or consonant quality for the sign, vowel length for the value.</p>
   </div>
-  <div data-l="ru">
-<h2>Что такое min-co</h2>
-<p><b>min-co</b> (рабочее название) — небольшой искусственный язык по мотивам Toki Pona. В нём около 45 корней, примерно треть словаря Toki Pona, а слово — это до трёх корней, главный первым: <i>дом</i> = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code>.</p>
-<p class="mut">Каждое название корня на сайте — ссылка на вкладку «Корни»; при наведении появляется короткая подсказка.</p>
-<h3>Корни — это оси</h3>
-<p>В эсперанто оттенки смысла дают аффиксы: <i>granda, grandega, malgranda, malgrandeta</i>. В min-co у корня есть шкала от −5 до +5, а число показывает, где на шкале вы находитесь. Один корень, много слов:</p>
-<div class="card" style="overflow-x:auto"><table><thead><tr><th>код</th><th>значение</th></tr></thead><tbody><tr><td><code><a class="rt" href="#roots">SAY</a>(=-5) &#124; i</code></td><td>бормотать</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-4) &#124; i</code></td><td>шептать</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a> &#124; i</code></td><td>говорить</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) &#124; i</code></td><td>окликнуть, говорить громко</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+5) &#124; i</code></td><td>кричать, реветь</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=-3) &#124; o</code></td><td>шёпот</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+4) &#124; o</code></td><td>крик</td></tr><tr><td><code><a class="rt" href="#roots">SAY</a>(=+3) <a class="rt" href="#roots">THING</a> &#124; o</code></td><td>шум</td></tr></tbody></table></div>
-<p>То же и в других местах: <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a> &#124; o</code> — дом, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-2) &#124; o</code> — спальня, <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=-5) &#124; o</code> — морг. Если значение не написано, оно «не указано»; <code>(=0)</code> — явная середина.</p>
-<h3>Откуда идея</h3>
-<p>Компьютеры представляют смысл длинным списком чисел на слово (word2vec, GloVe, ConceptNet Numberbatch): слово — точка в пространстве смыслов. Методы сжатия, например PCA, находят немногие направления, по которым слова различаются сильнее всего. В принципе, это могли бы быть оси языка.</p>
-<p>На практике их нельзя читать. Оси PCA смешивают несвязанные значения: один полюс первой оси — <i>mandate, requirement, approval</i> (поручение, требование, одобрение), другой — <i>fell, blast, hit, beat</i> (упасть, взрыв, удар, бить). Двадцать осей объясняют лишь около 20 % разброса. Они сделаны для компьютеров и не годятся для изучения и речи, а слова выходят странные: нож получается как <code><a class="rt" href="#roots">LONG</a>(=-1) <a class="rt" href="#roots">PART</a>(=-5) <a class="rt" href="#roots">TOUCH</a>(=+5) &#124; o</code>.</p>
-<details><summary>Показать пять главных осей</summary>
-<div class="card" style="overflow-x:auto"><table><thead><tr><th>ось</th><th>один полюс</th><th>другой полюс</th></tr></thead><tbody><tr><td>1</td><td>mandate, requirement, approval, agreement</td><td>fell, blast, hit, beat</td></tr><tr><td>2</td><td>amount, extent, ratio, size</td><td>deputy, secretary, chairman, president</td></tr><tr><td>3</td><td>administrative, department, office</td><td>indeed, certainly, truly, really</td></tr><tr><td>4</td><td>downturn, slowdown, recession</td><td>unique, famous, wonderful, beautiful</td></tr><tr><td>5</td><td>final, deadline, next, last</td><td>deeply, strongly, leadership, advocate</td></tr></tbody></table></div>
-<p class="mut">5949 слов словаря сайта, векторы Numberbatch.</p></details>
-<h3>Что сделали мы</h3>
-<ul>
-<li><b>Читаемые корни.</b> Взяли понятия, которые человек понимает (<i>время, хорошо, большой, говорить, знать, место…</i>), и дали каждому свою ось с полюсами, которые можно назвать.</li>
-<li><b>Ограничения.</b> В слове не больше трёх корней, у корня одна ось, всего около 45 корней.</li>
-<li><b>Грамматика.</b> Как в Toki Pona (главное слово первым, частицы, без склонений) с небольшими изменениями: часть речи и небольшой набор меток после <code>&#124;</code>.</li>
-</ul>
-<p>Несколько слов: школа = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">CONSUME</a>(=+5) &#124; o</code>; учитель = <code><a class="rt" href="#roots">SOMEONE</a> <a class="rt" href="#roots">KNOW</a> <a class="rt" href="#roots">GIVE</a>(=+4) &#124; o</code>; деньги = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=0) &#124; o</code>; долг = <code><a class="rt" href="#roots">VALUE</a> <a class="rt" href="#roots">GIVE</a>(=+4) <a class="rt" href="#roots">TIME</a>(=+3) &#124; o</code>; больница = <code><a class="rt" href="#roots">PLACE</a> <a class="rt" href="#roots">LIVE</a>(=0) <a class="rt" href="#roots">GOOD</a>(=-4) &#124; o</code>.</p>
-<h3>Два способа записать код</h3>
-<p><b>Математикой.</b> Вектор слова приближается суммой не больше чем трёх корней с целыми значениями осей, перебором всех сочетаний (<a href="#" data-go="demo">декодер</a>, <a href="#" data-go="mix">смеситель</a>). Модель не нужна: на 2000 слов исходное слово возвращается первым примерно в половине случаев и в первой десятке больше чем в 90 %. Это хороший инструмент анализа: он показывает, для каких понятий нет корня, пересекаются ли два корня, неверны ли полюса оси. Но такие коды плохо читают люди и модели (1–3 слова из 24 в раннем слепом тесте): математика выбирает то, что подходит по числам, а не по смыслу.</p>
-<p><b>Языковой моделью.</b> Модель, которая понимает, что значат корни, пишет коды, которые читаются заметно лучше. В слепых тестах с рецептами для трудных слов (право, деньги, еда, транспорт…) восстановлено 24 из 24 против 13–19 без них, а токипонская запись дала +0,33 по трёхбалльной шкале против прежней. Предел: на энциклопедических предложениях средняя оценка 1,2–1,4 из 3; язык передаёт тему и главные связи, а не детали. См. <a href="#" data-go="method">Методологию</a>.</p>
-<p>В идеале они работают вместе: математика предлагает кандидата, модель читает и исправляет.</p>
-<h3>Фонетика</h3>
-<p>Пока не решено. Нынешний черновик: корень — слово Toki Pona, значение оси — повторённый слог (<code>ti</code> для плюса, <code>wu</code> для минуса, <code>y</code> для явной середины). Открытые варианты: качество гласной или согласной для знака, долгота гласной для значения.</p>
-  </div>
 </section>
 
 <section id="demo">
   <div id="modeNote" class="note" hidden></div>
   <form class="card ask" id="ask">
-    <label for="inp"><b data-l="en">An English word</b><b data-l="ru">Слово по-английски</b> <span class="mut" data-l="en">or a min-co code to decode</span><span class="mut" data-l="ru">или код min-co, чтобы раскодировать</span></label>
+    <label for="inp"><b data-l="en">An English word</b> <span class="mut" data-l="en">or a min-co code to decode</span></label>
     <div class="askrow">
       <input id="inp" maxlength="300" autocomplete="off" placeholder="example, knife, river… or GRAIN(=-3) CONSUME(=+5) | o">
-      <button class="go" id="run" type="submit"><span data-l="en">Translate there and back</span><span data-l="ru">Перевести туда и обратно</span></button>
+      <button class="go" id="run" type="submit"><span data-l="en">Translate there and back</span></button>
     </div>
     <div class="mut" id="status"></div>
-    <label class="opt"><input type="checkbox" id="phOn"><span data-l="en">Phonetics: also show how the code sounds</span><span data-l="ru">Фонетика: показывать, как код звучит</span></label>
+    <label class="opt"><input type="checkbox" id="phOn"><span data-l="en">Phonetics: also show how the code sounds</span></label>
     <div class="mut small mcalt" data-l="en">Hover over any part of a code (on a phone, tap it): a root, a label, a particle. Below the code are the axes of its roots.</div><div class="mut small" data-l="mc"><span class="code mctext" data-mc='SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result ; SOMEONE(=+3) | o SEE | i E MEASURE(=0) LONG(=0) | o N+3 PI PART(=-2) BEGIN(=-5) | o N+3'></span></div>
-    <div class="mut small" data-l="ru">Наведите курсор на любую часть кода (на телефоне — нажмите): корень, метку, частицу. Под кодом — оси его корней.</div>
   </form>
 
   <div class="cmp" id="out" hidden>
     <div class="card col" id="llm">
-      <div class="colhead"><b><span data-l="en">AI</span><span data-l="ru">ИИ</span></b><span class="mut"><span data-l="en">language model gpt-4o-mini, given the language description</span><span data-l="ru">языковая модель gpt-4o-mini по описанию языка</span></span></div>
-      <div class="step"><div class="lab"><span data-l="en">code</span><span data-l="ru">код</span></div><span class="code" id="code">—</span><div class="axes" id="codeAx"></div><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
-      <details id="expl" hidden><summary><span data-l="en">how the code is built</span><span data-l="ru">из чего собран код</span></summary><table><tbody id="tokens"></tbody></table></details>
-      <div class="step"><div class="lab"><span data-l="en">blind decoding <span class="mut">(a separate call that sees only the code)</span></span><span data-l="ru">слепое раскодирование <span class="mut">(другой вызов, видит только код)</span></span></div>
+      <div class="colhead"><b><span data-l="en">AI</span></b><span class="mut"><span data-l="en">language model gpt-4o-mini, given the language description</span></span></div>
+      <div class="step"><div class="lab"><span data-l="en">code</span></div><span class="code" id="code">—</span><div class="axes" id="codeAx"></div><div class="warnline" id="warn"></div><div class="mut small" id="conf"></div><div class="mut small" id="recipe"></div></div>
+      <details id="expl" hidden><summary><span data-l="en">how the code is built</span></summary><table><tbody id="tokens"></tbody></table></details>
+      <div class="step"><div class="lab"><span data-l="en">blind decoding <span class="mut">(a separate call that sees only the code)</span></span></div>
         <div class="big" id="best">—</div><div class="mut small" id="alts"></div><div class="mut small" id="why"></div></div>
-      <div class="step"><div class="lab"><span data-l="en">the same code read by vectors</span><span data-l="ru">тот же код, прочитанный векторами</span></div><div class="mut" id="llmMath">—</div></div>
-      <div class="step" id="second" hidden><div class="lab"><span data-l="en">second word</span><span data-l="ru">второе слово</span></div><div class="mut small" id="secWhy"></div>
+      <div class="step"><div class="lab"><span data-l="en">the same code read by vectors</span></div><div class="mut" id="llmMath">—</div></div>
+      <div class="step" id="second" hidden><div class="lab"><span data-l="en">second word</span></div><div class="mut small" id="secWhy"></div>
         <span class="code" id="code2">—</span><div class="axes" id="code2Ax"></div><div class="mut small" id="conf2"></div>
-        <div class="lab" style="margin-top:8px"><span data-l="en">blind decoding of the pair</span><span data-l="ru">слепое раскодирование пары</span></div>
+        <div class="lab" style="margin-top:8px"><span data-l="en">blind decoding of the pair</span></div>
         <div class="big" id="best2">—</div><div class="mut small" id="alts2"></div><div class="mut small" id="why2"></div><div class="mut small" id="llmMath2"></div></div>
     </div>
     <div class="card col" id="math">
-      <div class="colhead"><b><span data-l="en">Vectors</span><span data-l="ru">Векторы</span></b><span class="mut"><span data-l="en">no model: word vector → roots and back</span><span data-l="ru">без модели: вектор слова → корни и обратно</span></span></div>
-      <div class="step"><div class="lab"><span data-l="en">code</span><span data-l="ru">код</span></div><span class="code" id="mcode">—</span><div class="axes" id="mcodeAx"></div><div class="mut small" id="mcos"></div></div>
-      <div class="step"><div class="lab"><span data-l="en">words nearest to the code</span><span data-l="ru">ближайшие слова к коду</span></div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
-      <div class="step"><div class="lab"><span data-l="en">10 nearest roots <span class="mut">(each with its best value)</span></span><span data-l="ru">10 ближайших корней <span class="mut">(наше пространство: один корень с лучшим значением)</span></span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
+      <div class="colhead"><b><span data-l="en">Vectors</span></b><span class="mut"><span data-l="en">no model: word vector → roots and back</span></span></div>
+      <div class="step"><div class="lab"><span data-l="en">code</span></div><span class="code" id="mcode">—</span><div class="axes" id="mcodeAx"></div><div class="mut small" id="mcos"></div></div>
+      <div class="step"><div class="lab"><span data-l="en">words nearest to the code</span></div><div class="big" id="mbest">—</div><div class="mut small" id="mnear"></div></div>
+      <div class="step"><div class="lab"><span data-l="en">10 nearest roots <span class="mut">(each with its best value)</span></span></div><table class="bars"><tbody id="mroots"></tbody></table></div>
     </div>
   </div>
 
-  <h2><span data-l="en">Saved examples</span><span data-l="ru">Сохранённые примеры</span></h2>
+  <h2><span data-l="en">Saved examples</span></h2>
   <p class="mut mcalt" data-l="en">Results of blind tests: one model encoded, another decoded without seeing the word. Green — the word was guessed first, yellow — it is among the alternatives, red — a miss. Click a row: the model is not called, the math is recomputed.</p><p class="mut" data-l="mc"><span class="code mctext" data-mc='TEXT | o result N+3 PI THINK ART(=-5) | o tool ; THINK ART(=-5) | o tool TEXT | i E SAY PART(=-2) | o ; THINK ART(=-5) | o tool SAME(=-5) | a KNOW(=+2) | i E SAY PART(=-2) | o'></span></p>
-  <p class="mut" data-l="ru">Результаты слепых тестов: кодировала одна модель, раскодировала другая, не видя слова. Зелёным — слово угадано первым, жёлтым — оно среди альтернатив, красным — промах. Нажмите строку — модель не вызывается, математика считает заново.</p>
   <p class="mut" data-l="en">Two series. <b>Recipes</b> (law, money, food, transport, society, health, direction of motion): the Sonnet decoders saw the recipe list, so this checks that a recipe reads unambiguously, not that it can be guessed from scratch. <b>Substances and numbers</b>: the decoder saw only the root tables.</p>
-  <p class="mut" data-l="ru">Две серии. <b>Рецепты</b> (право, деньги, еда, транспорт, общество, здоровье, направление движения): декодеры Sonnet видели список рецептов, так что это проверка того, что рецепт читается однозначно, а не того, что его можно угадать с нуля. <b>Вещества и числа</b>: декодер видел только таблицы корней.</p>
-  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span><span data-l="ru">слово</span></th><th><span data-l="en">code</span><span data-l="ru">код</span></th><th><span data-l="en">read as</span><span data-l="ru">прочитано</span></th></tr></thead><tbody id="examples"></tbody></table></div>
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span></th><th><span data-l="en">code</span></th><th><span data-l="en">read as</span></th></tr></thead><tbody id="examples"></tbody></table></div>
 </section>
 
 <section id="mix">
-  <h2><span data-l="en">Root mixer</span><span data-l="ru">Смеситель корней</span></h2>
+  <h2><span data-l="en">Root mixer</span></h2>
   <p class="mut" data-l="en">Put up to three roots into the slots and move their values: the vectors (no language model) read the code at once and show the words nearest to it. The first root is the head — what kind of thing it is; the next ones narrow it. Click a word in the cloud to see how it is coded.</p>
-  <p class="mut" data-l="ru">Положите до трёх корней в ячейки и двигайте их значения: векторы (без языковой модели) сразу читают код и показывают ближайшие к нему слова. Первый корень — главный: что это за вещь; следующие его сужают. Нажмите на слово в облаке — увидите, как кодируется оно само.</p>
   <div class="card">
-    <div class="lab"><span data-l="en">meaning</span><span data-l="ru">смысл</span></div>
+    <div class="lab"><span data-l="en">meaning</span></div>
     <div class="mxbig" id="mxBest">—</div>
     <div class="mxcloud" id="mxCloud"></div>
-    <div class="lab"><span data-l="en">code</span><span data-l="ru">код</span></div>
+    <div class="lab"><span data-l="en">code</span></div>
     <span class="code" id="mxCode">—</span>
     <div class="mut small" id="mxStatus"></div>
   </div>
   <div class="mxtools">
     <div class="seg" id="mxPos" role="group" aria-label="part of speech"></div>
-    <form class="mxfrom" id="mxFrom"><input id="mxWord" maxlength="40" autocomplete="off" placeholder="start from a word: river, alleged…"><button class="ghost" type="submit"><span data-l="en">Load</span><span data-l="ru">Загрузить</span></button></form>
-    <button class="ghost" type="button" id="mxRand"><span data-l="en">Random</span><span data-l="ru">Случайно</span></button>
-    <button class="ghost" type="button" id="mxClear"><span data-l="en">Clear</span><span data-l="ru">Очистить</span></button>
+    <form class="mxfrom" id="mxFrom"><input id="mxWord" maxlength="40" autocomplete="off" placeholder="start from a word: river, alleged…"><button class="ghost" type="submit"><span data-l="en">Load</span></button></form>
+    <button class="ghost" type="button" id="mxRand"><span data-l="en">Random</span></button>
+    <button class="ghost" type="button" id="mxClear"><span data-l="en">Clear</span></button>
   </div>
   <div class="mxslots" id="mxSlots"></div>
-  <h3><span data-l="en">Roots</span><span data-l="ru">Корни</span></h3>
-  <div class="mxhint"><span data-l="en">Click a root: it goes into the first free slot; click a highlighted root again to take it out. To replace a root, first click its slot (it lights up), then click the new root. You can also drag a root onto a slot, and drag a slot by its name to reorder.</span><span data-l="ru">Нажмите на корень — он встанет в первую свободную ячейку; повторное нажатие на подсвеченный корень убирает его. Чтобы заменить корень, сначала нажмите на его ячейку (она подсветится), потом на новый корень. Корень можно и перетащить на ячейку, а ячейки — переставить, перетащив за имя.</span></div>
+  <h3><span data-l="en">Roots</span></h3>
+  <div class="mxhint"><span data-l="en">Click a root: it goes into the first free slot; click a highlighted root again to take it out. To replace a root, first click its slot (it lights up), then click the new root. You can also drag a root onto a slot, and drag a slot by its name to reorder.</span></div>
   <div class="mxpal" id="mxPal"></div>
 </section>
 
 <section id="how">
-  <h2><span data-l="en">How to read a code</span><span data-l="ru">Как читать код</span></h2>
+  <h2><span data-l="en">How to read a code</span></h2>
   <div data-l="en">
   <p>A word is written as <code>ROOTS | form</code>. Before the bar is the meaning: the <b>head root</b> and up to two modifying roots, each with a value on its axis when needed: <code>GOOD(=+3)</code> (fairly good), <code>TIME(=-2)</code> (recently), <code>MANY(=-5)</code> (none at all). No value written means the value is unspecified. Each next root refines everything before it: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — “loose crumbs of stone” (sand).</p>
   <p>After the bar comes the part of speech — <code>o</code> thing, <code>i</code> action, <code>a</code> property, <code>e</code> circumstance — then, for a noun, an optional role like the Esperanto suffixes <i>-ist, -il, -aĵ, -ec</i>: <code>agent</code> the one who does it or a person of that field (<code>ART(=+5) | o agent</code> artist), <code>tool</code>, <code>result</code>, <code>quality</code>; and the form labels below: <code>SAY | i T-2 M-5</code> — “did not say”. Roots without an axis (<span class="noaxis"></span>) take no value.</p>
   <p>Quotes are used only for numbers, proper names and <b>specific members of a family</b> in Latin or international form: a species <code>"Canis"</code>, a substance <code>"iodine"</code>, an organ <code>"hepar"</code>, a celestial body <code>"Luna"</code>, a game <code>"chess"</code>, a narrow term <code>"enzyme"</code>. The category itself is built from roots: organ — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, star — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. If a word has a recipe, no quotes are needed.</p>
   </div>
-  <div data-l="ru">
-  <p>Слово записывается как <code>КОРНИ | форма</code>. До черты — смысл: <b>главный корень</b> и до двух уточняющих, у каждого при необходимости значение его оси: <code>GOOD(=+3)</code> (скорее хороший), <code>TIME(=-2)</code> (недавно), <code>MANY(=-5)</code> (ни одного). Ось не написана — значение не указано. Каждый следующий корень уточняет всё, что стоит перед ним: <code>GRAIN(=0) THING(=-5) PART(=-5)</code> — «сыпучие крошки камня» (песок).</p>
-  <p>После черты — часть речи: <code>o</code> предмет, <code>i</code> действие, <code>a</code> признак, <code>e</code> обстоятельство, у имени — необязательная роль, как суффиксы эсперанто <i>-ist, -il, -aĵ, -ec</i>: <code>agent</code> тот, кто делает, или человек этой области (<code>ART(=+5) | o agent</code> художник), <code>tool</code> орудие, <code>result</code> результат, <code>quality</code> свойство; и метки формы ниже: <code>SAY | i T-2 M-5</code> — «не сказал». Корни без оси (<span class="noaxis"></span>) значений не берут.</p>
-  <p>В кавычках пишутся только числа, имена собственные и <b>конкретные члены семейства</b> в латинской или международной форме: вид <code>"Canis"</code>, вещество <code>"iodine"</code>, орган <code>"hepar"</code>, светило <code>"Luna"</code>, игра <code>"chess"</code>, узкий термин <code>"enzyme"</code>. Сама категория строится из корней: орган — <code>BODY INSIDE(=+5) PART(=-2) | o</code>, звезда — <code>HEAT(=+5) ABOVE(=+5) PART(=-2) | o</code>. Если для слова есть рецепт, кавычки не нужны.</p>
-  </div>
-  <div class="card"><div class="lab"><span data-l="en" class="mcalt">example — hover over the parts of the code</span><span data-l="mc"><span class="code mctext" data-mc='TEXT SAME(=+3) | o result ; SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result'></span></span><span data-l="ru">пример — наведите на части кода</span></div>
+  <div class="card"><div class="lab"><span data-l="en" class="mcalt">example — hover over the parts of the code</span><span data-l="mc"><span class="code mctext" data-mc='TEXT SAME(=+3) | o result ; SOMEONE(=+3) | o TOUCH(=-3) | i ! E PART(=-2) | o N+3 PI TEXT | o result'></span></span></div>
     <div class="row" id="howPick"></div>
     <span class="code" id="howEx" style="margin-top:8px"></span><div class="axes" id="howExAx"></div></div>
-  <h3><span data-l="en">Particles</span><span data-l="ru">Частицы</span></h3><table><tbody id="particles"></tbody></table>
-  <h3><span data-l="en">Form labels</span><span data-l="ru">Метки формы</span></h3>
+  <h3><span data-l="en">Particles</span></h3><table><tbody id="particles"></tbody></table>
+  <h3><span data-l="en">Form labels</span></h3>
   <p class="mut mcalt" data-l="en">Labels are not roots. They go after the bar, separated by spaces, once on the head word.</p><p class="mut" data-l="mc"><span class="code mctext" data-mc='TEXT PART(=-5) | o N+3 PART(=-2) BEGIN(=-5) | i M-5 ; TEXT PART(=-5) | o N+3 SIDE(=-5) | i E LONG(=0) | o'></span></p>
-  <p class="mut" data-l="ru">Метки — не корни. Ставятся после черты через пробел, один раз на главном слове.</p>
-  <table><thead><tr><th><span data-l="en">label</span><span data-l="ru">метка</span></th><th><span data-l="en">what</span><span data-l="ru">что</span></th><th><span data-l="en">scale</span><span data-l="ru">шкала</span></th></tr></thead><tbody id="labels"></tbody></table>
+  <table><thead><tr><th><span data-l="en">label</span></th><th><span data-l="en">what</span></th><th><span data-l="en">scale</span></th></tr></thead><tbody id="labels"></tbody></table>
   <p class="note" data-l="en">Single words use this notation (with the part of speech after the bar) because it is the one verified by blind tests on words. The Toki Pona-style notation (no bar) won on whole sentences but was not measured on single words.</p>
-  <p class="note" data-l="ru">Для отдельных слов используется эта запись (с частью речи после черты), потому что именно она проверена слепыми тестами на словах. Запись в стиле токи пона (без черты) выиграла на целых предложениях, на словах отдельно не измерялась.</p>
-  <h3 id="phonetics"><span data-l="en">Phonetics (optional, draft)</span><span data-l="ru">Фонетика (опция, черновик)</span></h3>
+  <h3 id="phonetics"><span data-l="en">Phonetics (optional, draft)</span></h3>
   <div data-l="en">
   <p>Switch it on under the input field: every code gets a line with its pronunciation. Not checked by ear yet; the source is <code>phonetics.yaml</code>.</p>
   <ul>
@@ -306,34 +271,22 @@ footer.projects a{color:var(--acc)}
   </ul>
   <p>In the Roots tab the sounds of each root show next to its name.</p>
   </div>
-  <div data-l="ru">
-  <p>Включается под полем ввода: у каждого кода появляется строка с произношением. На слух ещё не проверено; источник — <code>phonetics.yaml</code>.</p>
-  <ul>
-    <li><b>Корень — токипонское слово</b>, где оно подходит (<code>pona</code> GOOD, <code>suli</code> BIG, <code>sona</code> KNOW, <code>moku</code> CONSUME); само слово не меняется, голова слова — всегда обычное токипонское слово. Значение оси — суффикс из слогов, которые запрещает токипонская фонотактика, поэтому он не спутается со словом: <code>ti</code> — положительное, <code>wu</code> — отрицательное, повторённые |v| раз; явный <code>(=0)</code> — короткое <code>y</code> (<i>ы</i>, как в польском); ничего не названо — значения нет. У корней без оси суффикса нет (<code>SEE</code> — <code>lukin</code>, <code>DO</code> — <code>pali</code>, <code>TEXT</code> — <code>lipu</code>).</li>
-    <li><b>Примеры:</b> <code>GOOD</code> — <code>pona</code>, <code>GOOD(=+3)</code> — <code>ponatititi</code>, <code>GOOD(=-2)</code> — <code>ponawuwu</code>, <code>GOOD(=0)</code> — <code>ponay</code>.</li>
-    <li><b>Слово</b> = блоки корней через <code>-</code>, затем <code>'</code> и гласная части речи, затем роль и метки после <code>·</code> (<code>ul il aj ec</code> — agent, tool, result, quality; метка — гласная и согласный: <code>at</code> — <code>T+</code>, <code>ad</code> — <code>T−</code>, <code>an</code> — <code>T0</code>).</li>
-    <li><b>Частицы</b> все начинаются на <code>h</code>: <code>he</code> E, <code>hi</code> PI, <code>ha</code> LA, <code>hu</code> AND, <code>hen</code> FROM, <code>hon</code> FOR, <code>hin</code> LIKE, <code>ho</code> PE; <code>hem … hom</code> — скобки, <code>hum</code> — <code>;</code>. Имена в кавычках читаются на своём языке.</li>
-  </ul>
-  <p>В таблице «Корни» рядом с каждым корнем показано его звучание.</p>
-  </div>
 </section>
 
 <section id="roots">
-  <h2><span data-l="en">Roots</span><span data-l="ru">Корни</span></h2>
+  <h2><span data-l="en">Roots</span></h2>
   <p class="mut" id="rootCount"></p>
   <input type="search" id="q" placeholder="search by root or meaning">
-  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">root</span><span data-l="ru">корень</span></th><th>−5</th><th>0</th><th>+5</th></tr></thead><tbody id="rootRows"></tbody></table></div>
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">root</span></th><th>−5</th><th>0</th><th>+5</th></tr></thead><tbody id="rootRows"></tbody></table></div>
   <p class="mut" data-l="en">Source: the file <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>; the table on the site is built from it.</p>
-  <p class="mut" data-l="ru">Источник — файл <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>; таблица на сайте собирается из него.</p>
 </section>
 
 <section id="dict">
-  <h2><span data-l="en">Recipe dictionary</span><span data-l="ru">Словарь рецептов</span></h2>
+  <h2><span data-l="en">Recipe dictionary</span></h2>
   <p class="mut" id="dictCount"></p>
   <input type="search" id="dq" placeholder="search by word or root (money, LIVE, PLACE…)">
-  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span><span data-l="ru">слово</span></th><th><span data-l="en">code</span><span data-l="ru">код</span></th></tr></thead><tbody id="dictRows"></tbody></table></div>
-  <p class="mut" data-l="en">The recipes are collected from <a href="https://github.com/komapc/contlang/blob/main/docs/encoding.md">encoding.md</a> and from the hints the model gets on the site; each was checked by a blind test (reports in <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Click a row — the code opens in “Try it”: the model decodes it blind and the math reads it.</p>
-  <p class="mut" data-l="ru">Рецепты собраны из <a href="https://github.com/komapc/contlang/blob/main/docs/encoding.md">encoding.md</a> и подсказок, которые получает модель на сайте; каждый проверен слепым тестом (отчёты — в <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Нажмите строку — код откроется на «Пробе»: модель раскодирует его вслепую, математика прочитает.</p>
+  <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span></th><th><span data-l="en">code</span></th></tr></thead><tbody id="dictRows"></tbody></table></div>
+  <p class="mut" data-l="en">The recipes are collected from <a href="/docs/encoding/">the encoding recipes</a> (in Russian) and from the hints the model gets on the site; each was checked by a blind test (reports in <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Click a row — the code opens in “Try it”: the model decodes it blind and the math reads it.</p>
 </section>
 
 <section id="method">
@@ -356,7 +309,7 @@ footer.projects a{color:var(--acc)}
   </tbody></table>
   <h3>Math without a model</h3>
   <p>The right column in “Try it” encodes a word without a language model: the word vector (ConceptNet Numberbatch) is approximated by a sum of at most three roots with integer axis values, by trying all variants. A root is a “center” (what the axis is about) plus an axis direction, built from pole words in <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. The root directions are then fitted on 70% of frequent words, with the condition that each stays close to the original (cos ≥ 0.85). Decoding: a word must be close to each root of the code separately, and hub words that are close to any code are penalized.</p>
-  <p>What it gives: on the math's own codes (2000 words of the site dictionary) the word is restored first in 46–51% of cases and in the top ten in 91–93%. But people and models hardly read the math's codes (1–3 of 24 in an earlier blind test). So it serves as an analysis tool — finding missing roots, checking axis poles, finding duplicate roots (this is how MATTER and GRAIN were merged) — not as a translator. Details: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a> (in Russian).</p>
+  <p>What it gives: on the math's own codes (2000 words of the site dictionary) the word is restored first in 46–51% of cases and in the top ten in 91–93%. But people and models hardly read the math's codes (1–3 of 24 in an earlier blind test). So it serves as an analysis tool — finding missing roots, checking axis poles, finding duplicate roots (this is how MATTER and GRAIN were merged) — not as a translator. Details: <a href="/docs/math/">mathematical encoding</a> (in Russian).</p>
   <h3>Honest caveats</h3>
   <ul>
     <li>Absolute accuracy is modest: on encyclopedic sentences the average score is about 1.2–1.4 of 3. The language carries the topic and the main relations, not the details.</li>
@@ -366,57 +319,32 @@ footer.projects a{color:var(--acc)}
   </ul>
   <p>Protocol and scripts: <a href="https://github.com/komapc/contlang/tree/main/scripts/eval">scripts/eval</a>; results: <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>.</p>
   </div>
-  <div data-l="ru">
-  <h2>Методология</h2>
-  <p>Главный вопрос: сохраняется ли смысл при цепочке <i>текст → код → текст</i>. Проверка слепая:</p>
-  <ol>
-    <li><b>Кодировщик</b> видит только описание языка и текст и пишет код.</li>
-    <li><b>Декодер</b> — отдельный экземпляр — видит только описание и код и восстанавливает текст.</li>
-    <li><b>Судья</b> (другая, более сильная модель) видит оригинал и перемешанные варианты и ставит 0–3: 3 тот же смысл, 2 главное сохранено, 1 только тема, 0 мимо.</li>
-    <li>Разницу между вариантами считаем с 95%-ным бутстреп-интервалом по предложениям. Меняем язык, только если интервал не содержит нуля.</li>
-  </ol>
-  <h3>Что получилось</h3>
-  <table><thead><tr><th>проверка</th><th>результат</th></tr></thead><tbody>
-    <tr><td>Убрали корни CONTAINER и MAYBE (вместо них сочетания и метка)</td><td>в пределах шума; корней стало меньше</td></tr>
-    <tr><td>Ось у корня «видеть»</td><td>хуже, чем без оси (−0,43, интервал на границе); не введена</td></tr>
-    <tr><td>Фигурные скобки вокруг слов</td><td>кодов без ошибок формата стало намного больше (8–10% ошибок вместо 30–58%), смысл не изменился (+0,04 [−0,20, +0,26])</td></tr>
-    <tr><td>Рецепты для лакун (право, деньги, еда, транспорт, общество, власть, война, здоровье)</td><td>в двух слепых тестах по 24 из 24 с рецептами против 17, 13 и 19 без них; новых корней не понадобилось</td></tr>
-    <tr><td><b>Запись в стиле токи пона</b> (слова-корни, роли по позиции)</td><td>смысл лучше: +0,33 [+0,05, +0,60] на отложенном наборе из 40 предложений</td></tr>
-  </tbody></table>
-  <h3>Математика без модели</h3>
-  <p>Правая колонка на «Пробе» кодирует слово без языковой модели: вектор слова (ConceptNet Numberbatch) приближается суммой не больше трёх корней с целыми значениями осей, перебором всех вариантов. Корень — это «центр» (о чём ось) плюс направление оси, построенные из слов-полюсов в <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. Направления корней затем подогнаны по 70% частых слов с условием, что каждый остаётся похож на исходный (cos ≥ 0,85). Раскодирование: слово должно быть близко к каждому корню кода по отдельности, а слова-хабы, близкие к любому коду, штрафуются.</p>
-  <p>Что это даёт: на собственных кодах математики (2000 слов словаря сайта) слово восстанавливается первым в 46–51% случаев и в первой десятке в 91–93%. Но люди и модели коды математики почти не читают (1–3 из 24 в прежнем слепом тесте). Поэтому она служит инструментом анализа — искать недостающие корни, проверять полюса осей, находить корни-дубли (так слиты MATTER и GRAIN), — а не переводчиком. Подробно: <a href="https://github.com/komapc/contlang/blob/main/docs/math.md">docs/math.md</a>.</p>
-  <h3>Честные оговорки</h3>
-  <ul>
-    <li>Абсолютная точность невысока: на энциклопедических предложениях средняя оценка около 1,2–1,4 из 3. Язык пока передаёт тему и главные связи, но не детали.</li>
-    <li>Кодировщик, декодер и судья — модели одной семьи; людей и других языков в проверке нет. Кодировщиков по два на вариант, предложений 40–60, шум порядка ±0,3.</li>
-    <li>Первый прогон записи «токи» оказался раздутым: кодировщики вставляли обычные английские слова в кавычках. Лазейку закрыли и повторили, результат выше — после исправления.</li>
-    <li>Корни и оси подбирались на настроечных наборах; поэтому итоговые цифры берём с отложенного набора свежих статей.</li>
-  </ul>
-  <p>Протокол и скрипты: <a href="https://github.com/komapc/contlang/tree/main/scripts/eval">scripts/eval</a>; результаты: <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>.</p>
-  </div>
 </section>
 
 <section id="docs">
-  <h2><span data-l="en">Documentation</span><span data-l="ru">Документация</span></h2>
-  <p class="note" data-l="en">The documents in the repository are in Russian and still describe the previous notation (with <code>|</code> and suffixes). The Toki Pona-style notation is accepted for testing and has not been moved into them yet.</p>
-  <p class="note" data-l="ru">Документы в репозитории пока описывают предыдущую запись (с <code>|</code> и суффиксами). Запись в стиле токи пона принята для проверки и ещё не перенесена в них.</p>
+  <h2><span data-l="en">Documentation</span></h2>
+  <p class="note" data-l="en">The documents are in Russian and still describe the previous notation (with <code>|</code> and suffixes). The Toki Pona-style notation is accepted for testing and has not been moved into them yet.</p>
   <ul>
-    <li><a href="https://github.com/komapc/contlang/blob/main/README.md">README</a> — <span data-l="en">project overview and tools</span><span data-l="ru">обзор проекта и инструменты</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/model.md">model.md</a> — <span data-l="en">the language model</span><span data-l="ru">модель языка</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/syntax.md">syntax.md</a> — <span data-l="en">syntax, particles, labels</span><span data-l="ru">синтаксис, частицы, метки</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/tables.md">tables.md</a> — <span data-l="en">summary tables of roots and labels</span><span data-l="ru">сводные таблицы корней и меток</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/encoding.md">encoding.md</a> — <span data-l="en">encoding techniques</span><span data-l="ru">приёмы кодирования</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/philosophy.md">philosophy.md</a> — <span data-l="en">principles</span><span data-l="ru">принципы</span></li>
-    <li><a href="https://github.com/komapc/contlang/blob/main/docs/phonology.md">phonology.md</a> — <span data-l="en">phonology</span><span data-l="ru">фонология</span></li>
+    <li data-l="en"><a href="/docs/reading/">How to read min-co</a> — a short guide for those who know Toki Pona and Esperanto</li>
+    <li data-l="en"><a href="/docs/model/">The model: root and structure</a> — how a word is built</li>
+    <li data-l="en"><a href="/docs/philosophy/">Philosophy and principles</a> — why the language is built this way</li>
+    <li data-l="en"><a href="/docs/syntax/">Syntax</a> — particles, labels, sentences</li>
+    <li data-l="en"><a href="/docs/tables/">Summary tables</a> — roots, axes and labels (generated from roots.yaml)</li>
+    <li data-l="en"><a href="/docs/encoding/">Encoding recipes</a> — techniques and verified recipes for hard words</li>
+    <li data-l="en"><a href="/docs/lexicon/">Lexicon</a> — roots, suffixes, features</li>
+    <li data-l="en"><a href="/docs/phonology/">Phonology</a> — sounds and word structure</li>
+    <li data-l="en"><a href="/docs/math/">Mathematical encoding</a> — encoding by vector math: setup, metrics, results</li>
+    <li data-l="en"><a href="/docs/rethink/">Rethinking the language</a> — the Toki Pona benchmark, proposals, open questions</li>
+    <li data-l="en"><a href="https://github.com/komapc/contlang/blob/main/README.md">README</a> — project overview and tools (GitHub)</li>
   </ul>
+  <p class="mut"><a href="/docs/" data-l="en">All documents (in Russian)</a></p>
 </section>
 <footer class="projects">
   <a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a>
 </footer>
 </div>
-<script src="config.js"></script>
-<script src="math.js"></script>
+<script src="/config.js"></script>
+<script src="/math.js"></script>
 <div id="tip" role="tooltip" hidden></div>
 <script>
 const $ = (id) => document.getElementById(id);
@@ -424,7 +352,7 @@ const API = (window.MINCO_API || "").replace(/\/$/, "");
 function el(tag, text, cls){const e=document.createElement(tag);if(text!=null)e.textContent=text;if(cls)e.className=cls;return e}
 function row(tbody, cells, cls){const tr=document.createElement("tr");if(cls)tr.className=cls;cells.forEach(c=>{const td=document.createElement("td");if(c instanceof Node)td.appendChild(c);else td.textContent=c;tr.appendChild(td)});tbody.appendChild(tr);return tr}
 
-// ---- язык интерфейса: английский по умолчанию, русский — переключателем (выбор помнится в браузере)
+// ---- язык интерфейса: задан страницей (<html lang>): / — английский, /ru/ — русский
 const LANG = () => document.documentElement.lang === "ru" ? "ru" : "en";
 const I18N = {
   en: {
@@ -500,7 +428,7 @@ async function call(mode, text, extra){
 }
 
 // ---- разметка кода: подсказки к корням, меткам, частицам; оси корней
-const RDP = fetch("data/roots.json").then(r => r.json());
+const RDP = fetch("/data/roots.json").then(r => r.json());
 let RD = null; RDP.then(d => { RD = { d, root: new Map(d.roots.map(r => [r.name, r])), lab: new Map(d.labels.map(l => [l.name, l])), ptl: new Map(d.particles.map(p => [p.name, p])), rol: new Map((d.roles || []).map(r => [r.name, r])) }; });
 const clean = (t) => String(t || "").replace(/`/g, "").replace(/\\\|/g, "|").replace(/\*/g, "").trim();
 const sgn = (v) => (v > 0 ? "+" : v < 0 ? "−" : "") + Math.abs(v);
@@ -607,7 +535,7 @@ async function showAxes(node, code){
 // фонетика (опция): звучание из data/phonetics.json (источник — phonetics.yaml, docs/phonology.md)
 let PH = null, PH_ON = false; const PHS = new Set();
 try { PH_ON = localStorage.getItem("minco-ph") === "1"; } catch (e) {}
-const PHP = fetch("data/phonetics.json").then(r => r.json()).then(d => { PH = d; PHS.forEach(n => phDraw(n)); drawRoots(); }).catch(() => {});
+const PHP = fetch("/data/phonetics.json").then(r => r.json()).then(d => { PH = d; PHS.forEach(n => phDraw(n)); drawRoots(); }).catch(() => {});
 function phBlock(r, v){
   if (!r) return "?";
   if (!r.axis || v == null) return r.w;                     // слово без значения: само токипонское слово
@@ -676,7 +604,7 @@ document.addEventListener("keydown", e => { if (e.key === "Escape") closeTip(); 
 // ---- математика: данные грузятся при первом использовании (~3,5 МБ)
 let M = null, CO = null;
 function loadMath(){
-  if (!M) M = Promise.all([fetch("data/math.json").then(r => r.json()), fetch("data/vocab.bin").then(r => r.arrayBuffer()), fetch("data/words.json").then(r => r.json())])
+  if (!M) M = Promise.all([fetch("/data/math.json").then(r => r.json()), fetch("/data/vocab.bin").then(r => r.arrayBuffer()), fetch("/data/words.json").then(r => r.json())])
     .then(([m, buf, meta]) => { const V = new MincoMath.Vocab(m.words, new Int8Array(buf), m.dim); V.setMeta(meta); return {m, V}; })
     .catch(e => { M = null; throw e; });  // сбой сети не запоминается: следующий вызов грузит заново
   return M;
@@ -839,8 +767,8 @@ function drawRoots(){
   T("how").forEach(([w, c]) => { const b = el("button", w, "ghost"); b.type = "button"; b.addEventListener("click", () => setCode($("howEx"), $("howExAx"), c)); pick.appendChild(b); });
   if (!$("howEx").textContent) setCode($("howEx"), $("howExAx"), T("how")[0][1]);
 }
-fetch("data/examples.json").then(r=>r.json()).then(list=>{ EX = list; drawExamples(); });
-fetch("data/recipes.json").then(r=>r.json()).then(list=>{ RECL = list; list.forEach(e => REC[e.en] = e.code); drawDict(); });
+fetch("/data/examples.json").then(r=>r.json()).then(list=>{ EX = list; drawExamples(); });
+fetch("/data/recipes.json").then(r=>r.json()).then(list=>{ RECL = list; list.forEach(e => REC[e.en] = e.code); drawDict(); });
 RDP.then(() => { const w = () => RD ? drawRoots() : setTimeout(w, 20); w(); });
 $("dq").addEventListener("input", drawDict);
 $("q").addEventListener("input", drawRoots);
@@ -854,11 +782,11 @@ function drawMc(){
 function applyLang(l){
   const mc = l === "mc"; if (mc) l = "en";
   document.documentElement.classList.toggle("mc", mc);
-  document.documentElement.lang = l;
-  try { localStorage.setItem("minco-lang", mc ? "mc" : l); } catch (e) {}
-  document.querySelectorAll(".langsw button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === (mc ? "mc" : l)));
+  document.querySelectorAll(".langsw [data-lang]").forEach(b => {
+    const on = b.dataset.lang === (mc ? "mc" : l);
+    if (b.tagName === "A") { if (on) b.setAttribute("aria-current", "page"); else b.removeAttribute("aria-current"); } else b.setAttribute("aria-pressed", on);
+  });
   if (mc) drawMc();
-  document.title = l === "ru" ? "min-co — минимальный непрерывный конструируемый язык" : "min-co — a minimal continuous constructed language";
   $("q").placeholder = T("qPh"); $("dq").placeholder = T("dqPh"); $("inp").placeholder = T("inpPh");
   if (!API) { $("modeNote").hidden = false; $("modeNote").textContent = T("modeNote"); }
   closeTip();
@@ -868,7 +796,10 @@ function applyLang(l){
   ["codeAx", "code2Ax", "mcodeAx", "howExAx"].forEach(id => { const n = $(id); if (n._code) showAxes(n, n._code); });
   if (window.mxRedraw) window.mxRedraw();
 }
-document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.lang)));
+// EN и RU — ссылки на / и /ru/ (у каждого языка свой адрес); выбор запоминается, и / потом сам открывает /ru/. MC — режим английской страницы.
+const saveLang = (l) => { try { localStorage.setItem("minco-lang", l); } catch (e) {} };
+document.querySelectorAll(".langsw a").forEach(a => a.addEventListener("click", () => saveLang(a.dataset.lang)));
+document.querySelectorAll(".langsw button").forEach(b => b.addEventListener("click", () => { saveLang(b.dataset.lang); applyLang(b.dataset.lang); }));
 applyLang(document.documentElement.classList.contains("mc") ? "mc" : LANG());
 RDP.then(() => { const w = () => RD ? drawMc() : setTimeout(w, 20); w(); });
 

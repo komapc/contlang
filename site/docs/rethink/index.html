@@ -1,0 +1,281 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Пересмотр языка: где мы и что менять (2026-10) — min-co</title>
+<meta name="description" content="Главная мера теперь другая: доля первых ответов слепого читателя, которые слепой судья (Haiku) считает «близко» — то же смысловое поле (2 близко, 1 рядом, 0…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/rethink/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/rethink/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Пересмотр языка: где мы и что менять (2026-10) — min-co">
+<meta property="og:description" content="Главная мера теперь другая: доля первых ответов слепого читателя, которые слепой судья (Haiku) считает «близко» — то же смысловое поле (2 близко, 1 рядом, 0…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Пересмотр языка: где мы и что менять (2026-10) — min-co","description":"Главная мера теперь другая: доля первых ответов слепого читателя, которые слепой судья (Haiku) считает «близко» — то же смысловое поле (2 близко, 1 рядом, 0…","url":"https://minco.lipu.dev/docs/rethink/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="пересмотр-языка-где-мы-и-что-менять-2026-10">Пересмотр языка: где мы и что менять (2026-10)</h1>
+<h2 id="обновление-2026-10-14-мера-близко">Обновление (2026-10-14): мера «близко»</h2>
+<p>Главная мера теперь другая: доля первых ответов слепого читателя, которые слепой судья (Haiku) считает «близко» — то же смысловое поле (2 близко, 1 рядом, 0 мимо). Место среди 10 721 слова ниже — прежняя мера, оставлена для истории.</p>
+<ul>
+<li>1000 слов (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/big1000/result.txt">big1000</a>): кодер сайта 24 %, Haiku с ENC_SPEC 52 %.</li>
+<li>Приняты (решение пользователя 2026-10-14, без слепого теста): кодер сайта всегда кодирует базовую форму и дописывает метки (<code>discussed</code> → код discuss + <code>T-2</code>, <code>-ing</code> → <code>A0</code>, причастие-признак → <code>| a V-4</code>, множественное → <code>N+3</code>, степени → <code>C+3</code>/<code>C+5</code>); базы вне словаря берутся из Numberbatch; у омонима кодируется один смысл (WordNet, при почти равной частоте — ближайший к вектору слова). <code>scripts/site/build_words.py</code> → infl, extra, sense. Поправки 2026-10-14: часть речи словоформы — по Brown, если форма там ≥ 5 раз и Brown видит имя или признак (attacks, plans, projects, tears → имя, surprising → признак; 157 форм); якоря смысла — без гиперонимов (обратное чтение: слово первым 29,9 → 32,1 %).</li>
+<li>Приняты: оси 8 корней (LONG, KNOW, MEASURE, TOUCH, NEAR, GIVE, VALUE, CARE) по словам вокруг выученных атомов и роль <code>agent</code> у людей (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/fix1/README.md">fix1</a>).</li>
+<li>Слепые тесты кодера (не приняты): выбор кода моделью читателя (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/reader2/README.md">reader2</a>, +4,7 % [−4,0 … +13,3]), экономный кодер — меньше корней, без нулей (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/occam/README.md">occam</a>, −1,3 % [−8,0 … +5,3]).</li>
+<li>Не приняты: раздельные коды смыслов многозначных слов (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/senses/README.md">senses</a>, −2 %), корень KIND (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/kind/README.md">kind</a>, +5,6 % при пороге; только головой +6,7 % [−2,7 … +16], <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>; решение пользователя 2026-10-14), роли <code>tool</code> и <code>quality</code> по WordNet.</li>
+<li>Отложено: убрать у кодера сайта пару через PI.</li>
+</ul>
+<h2 id="мера-и-эталон-прежняя">Мера и эталон (прежняя)</h2>
+<p>Точность чтения измеряется местом загаданного слова среди 10 721 слова словаря сайта: слова упорядочены по cos с ответом слепого читателя, 1 — ответ ближе всего к загаданному.
+Берётся среднее геометрическое мест по 200 прочтениям: 100 слов dev, по два читателя Haiku.
+Подробности — <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki/README.md">data/eval/runs/toki</a>.</p>
+<p><strong>Мера для «в 10 раз точнее».</strong> Место с синонимами: попаданием считается любое слово из синсетов WordNet загаданного слова в его части речи (<em>car</em> вместо <em>automobile</em> — место 1). Среднее геометрическое такого места — это сколько равновероятных кандидатов остаётся у читателя; log2 места — оставшаяся неопределённость в битах.
+«В 10 раз точнее» = в 10 раз меньше кандидатов = на 3,3 бита меньше.</p>
+<table>
+<thead>
+<tr>
+<th>кто кодирует</th>
+<th style="text-align: right;">место</th>
+<th style="text-align: right;">место с синонимами</th>
+<th style="text-align: right;">бит</th>
+<th style="text-align: right;">1 − cos</th>
+<th style="text-align: right;">вне первых 10 (из 200, с синонимами)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Токипона</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">5,9</td>
+<td style="text-align: right;">0,68</td>
+<td style="text-align: right;">142</td>
+</tr>
+<tr>
+<td>min-co</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">4,7</td>
+<td style="text-align: right;">0,58</td>
+<td style="text-align: right;">121</td>
+</tr>
+<tr>
+<td>min-co v2</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">4,8</td>
+<td style="text-align: right;">0,59</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr>
+<td>математика сайта</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">6,4</td>
+<td style="text-align: right;">0,71</td>
+<td style="text-align: right;">156</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Сейчас min-co в 2,5 раза точнее Токипоны (на 1,2 бита). Цель 10× — место с синонимами около 6.</li>
+<li>Почему не другие меры:</li>
+<li>1 − cos сжата сверху и снизу: в 10 раз меньшая ошибка — это cos 0,93, почти только точные слова; разница Токипоны и min-co на ней 0,68 против 0,58.</li>
+<li>доля промахов (вне первых 10 с синонимами): 142 против 121 из 200 — почти не различает языки, а 10× (14 промахов из 200) означало бы почти безошибочное чтение.</li>
+<li>место без синонимов штрафует за <em>car</em> вместо <em>automobile</em>: синонимы делят одно место, читатель не виноват.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>кто кодирует</th>
+<th style="text-align: right;">место первого ответа (95 %)</th>
+<th style="text-align: right;">лучший из трёх</th>
+<th style="text-align: right;">точно первым из 200</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Токипона, Haiku</td>
+<td style="text-align: right;">120 (76–188)</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>min-co, Haiku</td>
+<td style="text-align: right;">51 (30–84)</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td>min-co v2, Haiku</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td>min-co, математика сайта*</td>
+<td style="text-align: right;">137 (88–214)</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Сейчас min-co в 2,4 раза точнее Токипоны.</li>
+<li>По частям речи разрыв разный: прилагательные 27 против 209, наречия 52 против 210, глаголы 173 против 373, существительные 34 против 44.</li>
+<li>Главные потери:</li>
+<li>глаголы;</li>
+<li>отглагольные и институциональные существительные: <em>installation, nomination, fee, municipality</em>.</li>
+<li>Коды математики сайта не лучше Токипоны.</li>
+<li>Оговорка: Haiku знает Токипону из обучения, а min-co — только из спецификации.</li>
+<li>* Коды математики сделаны до двусторонней MANY и ограничений уровней. ① от этих правок почти не изменился.</li>
+</ul>
+<h2 id="предложения">Предложения</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>предложение</th>
+<th>основание</th>
+<th>что убирает</th>
+<th>статус</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Короткая спецификация v2 (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki/spec_v2.md">spec_v2.md</a>, 4,8 КБ вместо 11 КБ)</td>
+<td>Слепой тест на тех же 100 словах: v2 / v1 = 1,19 (95 %: 0,76–1,87), разницы нет</td>
+<td>Четвёртый корень ABSTRACT, исключение для сторон света, BIG как «степень», старая запись <code>-o</code>, три разных описания меток. Одно правило осей: −5 противоположный полюс, 0 середина, +5 полный полюс</td>
+<td>принято (2026-10)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Роли в форме вместо осей DO и HAPPEN: <code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code> после <code>| o</code> (как <em>-ist, -il, -aĵ, -ec</em> в эсперанто)</td>
+<td>Входят в v2. Кодировщик ставил их в 10 словах из 100: telegraph 18 → 2, но beef 1 → 114 (<code>result</code> не к месту)</td>
+<td>Две оси, которые не шкалы (деятель … действие … орудие; причина … следствие)</td>
+<td>принято с v2; с 2026-10 кодер сайта ставит <code>agent</code> людям (noun.person в WordNet): +19 % «близко» [+10 … +30], <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/fix1/README.md">fix1</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>Список частых слов с закреплёнными кодами (около 1000, по проверенным рецептам). Состав — для остального</td>
+<td>Лучший из трёх ответов уже на месте 21: нужное слово обычно среди вариантов, но первым не выходит. Закреплённое слово читается точно (рецепты сайта)</td>
+<td>—</td>
+<td>единственный рычаг к 10×, который я вижу; меняет принцип «фиксированного словаря нет»; на этих 100 словах не проверено (сколько из них попадёт в список — не считалось)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Мерить на предложениях, а не на словах</td>
+<td><a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki_sents/README.md">toki_sents</a>: те же 100 слов в предложениях. Токипона 62 → 26, min-co 28 → 40. Токипона / min-co = 0,65 (0,36–1,17), разницы нет. Контекст помогает многозначной Токипоне. min-co в предложении кодирует слово грубее, а читатель не достраивает код по смыслу</td>
+<td>—</td>
+<td>сделано: выигрыш min-co на словах в тексте пропал</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Кодер сайта: выбирать корни, которые ставят модели (приор по корпусу кодов моделей, kNN), а не только y ≈ x</td>
+<td>Математика 137 против 51 у модели; подгонка словаря не сдвинула ② (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/anchor/README.md">anchor</a>)</td>
+<td>—</td>
+<td>проверено: перенос кодов модели в словарь (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/distill/README.md">distill</a>) читается почти как прежде, не принято</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CARE — отношение к делу, TONE заменён на FRIEND (враг … друг)</td>
+<td>Для математики корни разошлись: cos центров 0,65 → 0,12 (выученный словарь 0,07). Слепой тест на 20 словах (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/friend/README.md">friend</a>): FRIEND / TONE 1,45 (0,71–3,01), разницы нет; <em>friend</em> лучше, <em>polite</em> хуже</td>
+<td>Два корня с близкими центрами</td>
+<td>принято (2026-10)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Редкие корни не убирать: NEAR, WANT, BEGIN, SEX, FEEL, CHANGE, MEASURE (4–8 раз на 458 кодов)</td>
+<td>Каждый несёт свои слова (king, improve, unit…)</td>
+<td>—</td>
+<td>оставить</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Метки I, C, N на словах почти не встречаются (2, 1, 1 раз)</td>
+<td>На словах их не проверить</td>
+<td>—</td>
+<td>решать после теста на предложениях</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Одно правило кавычек: имена собственные, цифры, научные названия видов и веществ</td>
+<td>Входит в v2</td>
+<td>Списки категорий в encoding.md</td>
+<td>принято с v2</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Глагол с головным корнем со значением = переход в это состояние (<code>BIG(=+3) | i</code> grow, <code>LIVE(=-5) | i K+3</code> kill), без <code>CHANGE</code></td>
+<td><a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/verbs/README.md">verbs</a>: 40 глаголов, B / A = 0,89 (0,67–1,19), разницы нет. Лучше <em>learn, forget</em>, хуже <em>weaken, accelerate</em></td>
+<td><code>CHANGE</code> в глаголах смены состояния</td>
+<td>не принято: разницы нет</td>
+</tr>
+<tr>
+<td>11</td>
+<td>Новые корни по худшим словам: свет (тёмный … яркий), сила (слабый … сильный), влажность (сухой … мокрый), открытость, полнота; одежда, помощь, электричество, слово/имя</td>
+<td>Глаголы <em>darken, brighten, weaken, strengthen, dry, open, close, fill, empty</em> плохи в обоих вариантах (место 50–1800): у смысла нет оси. Слова теста Токипоны <em>suit, assistant, current, note, sentence</em></td>
+<td>—</td>
+<td>кандидаты: нужны кластеры и слепой тест</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/docs/encoding/">encoding.md</a> переписан в запись v2: роли вместо <code>DO(=+5)</code> и <code>HAPPEN(=±n)</code>, без ABSTRACT и четырёхкорневых сторон света. Рецепты, переведённые в роли, отдельно не проверялись.</p>
+<h2 id="открытые-вопросы">Открытые вопросы</h2>
+<ul>
+<li>~~Нужна ли частица <code>LI</code>, если глагол и так помечен <code>| i</code>.~~ Убрана (2026-10-14): сказуемое — слово с <code>| i</code>.</li>
+<li>Анатомия и медицина: латынь в кавычках или корни.</li>
+<li>Местоимения и родство.</li>
+<li>Звуки корней и запись значений (<a href="/docs/phonology/">фонология</a>).</li>
+<li>Проверка на русском.</li>
+</ul>
+<p>Прежние планы и вопросы — <a href="https://github.com/komapc/contlang/blob/main/docs/history/plan.md">history/plan.md</a>, <a href="https://github.com/komapc/contlang/blob/main/docs/history/roadmap.md">history/roadmap.md</a>.</p>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/rethink.md">docs/rethink.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

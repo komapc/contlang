@@ -1,0 +1,292 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Синтаксис — min-co</title>
+<meta name="description" content="Связь слов в предложении задаётся частицами (три из Toki Pona; PE, AND и связки FROM, FOR, LIKE добавлены). Конструкции вкладываются друг в друга. Сказуемое…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/syntax/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/syntax/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="Синтаксис — min-co">
+<meta property="og:description" content="Связь слов в предложении задаётся частицами (три из Toki Pona; PE, AND и связки FROM, FOR, LIKE добавлены). Конструкции вкладываются друг в друга. Сказуемое…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Синтаксис — min-co","description":"Связь слов в предложении задаётся частицами (три из Toki Pona; PE, AND и связки FROM, FOR, LIKE добавлены). Конструкции вкладываются друг в друга. Сказуемое…","url":"https://minco.lipu.dev/docs/syntax/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="синтаксис">Синтаксис</h1>
+<h2 id="частицы">Частицы</h2>
+<p>Связь слов в предложении задаётся частицами (три из Toki Pona; <code>PE</code>, <code>AND</code> и связки <code>FROM</code>, <code>FOR</code>, <code>LIKE</code> добавлены). Конструкции вкладываются друг в друга. Сказуемое — слово с формой <code>| i</code>, отдельной частицы для него нет: <code>LI</code> Toki Pona убран (2026-10-14), его работу делает форма. Признак или имя в роли сказуемого — тот же корень с <code>| i</code>: «дом большой» <code>PLACE INSIDE(=+5) LIVE | o BIG | i</code>, «собака — животное» <code>THING(=+4) | i</code> («быть животным»). Метки времени, отрицания, вопроса стоят на этом глаголе.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Частица</th>
+<th style="text-align: left;">Роль</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>E</code></td>
+<td style="text-align: left;">прямое дополнение</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FROM</code></td>
+<td style="text-align: left;">связка существительных: X сделан из Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FOR</code></td>
+<td style="text-align: left;">связка: X сделан для Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LIKE</code></td>
+<td style="text-align: left;">связка: X похож на Y, но не Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PI</code></td>
+<td style="text-align: left;">связка: всё прочее — X часть Y, находится или живёт в Y</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LA</code></td>
+<td style="text-align: left;">условие / контекстная клауза</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PE</code></td>
+<td style="text-align: left;">деятель при страдательном залоге (кем): <code>… V-4 PE X</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AND</code></td>
+<td style="text-align: left;">сочинение «и, также»: между словами, группами и клаузами</td>
+</tr>
+</tbody>
+</table>
+<h2 id="слово-смысл--форма">Слово: смысл | форма</h2>
+<p>Слово записывается как <strong><code>ROOT(=v) ROOT(=v) … | pos метки</code></strong>. До <code>|</code> стоит смысл: главный корень и до двух корней-модификаторов, у каждого при необходимости значение его оси <code>(=v)</code>. После <code>|</code>: часть речи и грамматические метки. Корни пока английские глоссы (<a href="/docs/phonology/">фонология</a>).</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Часть речи</th>
+<th style="text-align: left;">Значение</th>
+<th style="text-align: left;">Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>o</code></td>
+<td style="text-align: left;">имя (предмет, понятие)</td>
+<td style="text-align: left;"><code>MOVE | o</code> — движение</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>i</code></td>
+<td style="text-align: left;">глагол (действие, состояние)</td>
+<td style="text-align: left;"><code>MOVE | i</code> — двигаться</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>a</code></td>
+<td style="text-align: left;">признак (определение)</td>
+<td style="text-align: left;"><code>MOVE | a</code> — подвижный</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>e</code></td>
+<td style="text-align: left;">обстоятельство (образ действия)</td>
+<td style="text-align: left;"><code>MOVE(=+4) | e</code> — быстро</td>
+</tr>
+</tbody>
+</table>
+<p>Любой корень берёт любую часть речи (семьи слов, конверсия вроде <em>work</em>).</p>
+<p><strong>Роли имени</strong> — после <code>| o</code>, одна на слово, не корни и не в лимите (как <em>-ist, -il, -aĵ, -ec</em> эсперанто):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Роль</th>
+<th style="text-align: left;">Значение</th>
+<th style="text-align: left;">Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>agent</code></td>
+<td style="text-align: left;">кто или что делает, или человек этой области</td>
+<td style="text-align: left;"><code>ART(=+5) | o agent</code> — художник; <code>TEXT | o agent</code> — писатель; <code>HAPPEN | o agent</code> — причина</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tool</code></td>
+<td style="text-align: left;">орудие, средство</td>
+<td style="text-align: left;"><code>TEXT | o tool</code> — ручка; <code>JOIN(=-4) TOUCH(=+4) | o tool</code> — нож</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>result</code></td>
+<td style="text-align: left;">что получается</td>
+<td style="text-align: left;"><code>HAPPEN | o result</code> — следствие</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>quality</code></td>
+<td style="text-align: left;">само свойство, состояние</td>
+<td style="text-align: left;"><code>CAN | o quality</code> — способность</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Метки формы</strong> (не корни, не входят в лимит трёх; пропуск = не указано, как всегда):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Метка</th>
+<th style="text-align: left;">Значение</th>
+<th style="text-align: left;">Пример</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>T</code></td>
+<td style="text-align: left;">время: −5 давно … 0 сейчас … +5 когда-нибудь</td>
+<td style="text-align: left;"><code>T-2</code> прошлое, <code>T+2</code> будущее</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>N</code></td>
+<td style="text-align: left;">число: 0 нет, +1 один, +2 двое, +3 несколько, мн. ч. … +5 все; на глаголе — число подлежащего: <code>N+1</code> ед., <code>N+2</code> двойственное, <code>N+3</code> мн. (лицо не отмечается)</td>
+<td style="text-align: left;"><code>N+3</code> несколько, <code>N0</code> ни одного; <code>MOVE NEAR(=+4) | i T-2 N+3</code> — пришли (подлежащее во мн. ч.)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>M</code></td>
+<td style="text-align: left;">вероятность: −5 точно нет … −3 может быть … +4 наверняка</td>
+<td style="text-align: left;"><code>M-5</code> не</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>A</code></td>
+<td style="text-align: left;">вид: −5 вот-вот начнётся … 0 идёт … +5 закончено; <code>A+5</code> без <code>T</code> — причастие прошедшего (<em>known, gone</em>), <code>A0</code> — причастие настоящего (<em>-ing</em>)</td>
+<td style="text-align: left;"><code>A-4</code> начал, <code>A+5</code> закончил</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>C</code></td>
+<td style="text-align: left;">сравнение: −3 меньше, +3 больше, +5 самый (больше или меньше того, что назван корнем: <code>GOOD | a C+3</code> лучше, <code>C-3</code> хуже)</td>
+<td style="text-align: left;"><code>BIG | a C+5</code> самый большой</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>I</code></td>
+<td style="text-align: left;">интенсивность (насколько сильно проявлен признак или действие): −5 едва … −2 слегка … +2 довольно … +5 чрезвычайно; <code>I0</code> не писать (декодер его теряет), для «умеренно» брать <code>I+1…+2</code>; не сравнение (для него <code>C</code>)</td>
+<td style="text-align: left;"><code>GOOD(=+3) | a I+4</code> очень хороший; <code>GOOD | a I-4</code> едва хороший</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K</code></td>
+<td style="text-align: left;">побуждение, каузатив (подлежащее воздействует на дополнение <code>E</code>, чтобы оно совершило или претерпело действие глагола): −5 помешать, отговорить, запретить … 0 допустить … +5 заставить, вызвать, побудить; без корня действия база — <code>DO</code></td>
+<td style="text-align: left;"><code>DO | i K+4 E SOMEONE | o</code> — заставил его; <code>CONSUME | i K+4 E SOMEONE | o</code> — накормил; <code>DO | i K-4 E SOMEONE | o</code> — помешал ему</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>D</code></td>
+<td style="text-align: left;">определённость: −3 неопределённое (<em>a</em>), +3 определённое (<em>the</em>)</td>
+<td style="text-align: left;"><code>PLACE LIVE | o D+3</code> — этот дом</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>R</code></td>
+<td style="text-align: left;">событие относительно опорной точки (Рейхенбах: E↔R; <code>T</code> задаёт R↔сейчас): −3 раньше опорной точки, 0 одновременно, +3 позже</td>
+<td style="text-align: left;"><code>T-2 R-3</code> — уже ушёл (до того); <code>T-2 R+3</code> — позже (в прошлом); <code>T+2 R-3</code> — к тому времени уйдёт</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>V</code></td>
+<td style="text-align: left;">залог: −4 подлежащее претерпевает (страдательный), 0 происходит само (нет действующего), +4 подлежащее действует намеренно</td>
+<td style="text-align: left;"><code>PART | i T-2 V-4</code> — было разделено; <code>PART | i V0</code> — разделилось само</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!</code> <code>?</code></td>
+<td style="text-align: left;">приказ, вопрос (без значения)</td>
+<td style="text-align: left;"><code>CONSUME | i !</code> — ешь!</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Опорная точка R</strong> по умолчанию — ближайшее названное время или событие слева (в начале текста — момент речи); явно её задаёт клауза <code>LA [ … ]</code> (<em>после того как…</em>) или дата в кавычках. <code>R</code> не вид: <code>A</code> про фазу самого события (начало, процесс, конец), <code>R</code> про порядок во времени.</p>
+<p><code>THING(=+4) BIG(=+5) | o N+3</code> — слоны (три корня не тратятся на число). <code>MOVE NEAR(=+4) | i T-2 M-5</code> — не пришёл. Метки ставятся один раз на главном слове группы.</p>
+<h2 id="время-и-отрицание-принято">Время и отрицание (принято)</h2>
+<p>Время и отрицание — метки формы <code>T</code> и <code>M</code> после <code>|</code> (таблица выше), а не корни. Пропуск = не указано (<a href="/docs/model/">правило нуля</a>).</p>
+<ul>
+<li><strong><code>T</code></strong> — время от −5 («очень давно») через 0 («сейчас») до +5 («когда-нибудь»): <code>T-1</code> только что, <code>T-3</code> давно, <code>T+1</code> скоро. Без метки время не указано.</li>
+<li><strong><code>M</code></strong> — вероятность утверждения: простое утверждение — по умолчанию, метки нет; <code>M+4</code> наверняка, <code>M-1</code> вероятно, <code>M-3</code> может быть (50/50), <code>M-4</code> вряд ли, <code>M-5</code> точно нет. «Может быть, да» и «может быть, нет» различаются только степенью. Отрицание, «может быть» и «наверняка» — одна метка; отдельной частицы отрицания нет.</li>
+</ul>
+<p>Смысловой корень <code>TIME</code> слева от <code>|</code> (<code>TIME(=-2) | e</code> — «вчера», <code>FEEL(=+4) GOOD(=-4) TIME(=+3) | i</code> — «бояться») и метка <code>T</code> справа не смешиваются. Локальная ось корня пишется <code>(=v)</code>: <code>LIVE(=-2) | i</code> — «наполовину жив» (спит), <code>LIVE | i T-2</code> — «жил».</p>
+<p><em>She did not see the message</em> (слух читается через SEE и SAY):</p>
+<pre><code>SOMEONE | o SEE | i T-2 M-5 E THING | o PI SAY | o
+</code></pre>
+<p>Местоимения и указательные слова — коррелятивы из корней (<a href="/docs/lexicon/">словарь</a>).</p>
+<h2 id="группа-существительного-клаузы-и-вопросы-принято">Группа существительного, клаузы и вопросы (принято)</h2>
+<ul>
+<li><strong>Главное слово первым, модификаторы после</strong> (как в Toki Pona). Прилагательные (<code>-a</code>) идут сразу за существительным без частицы, плоским списком, и все относятся к нему: <code>THING | o MOVE | a BIG(=+3) | a</code> — большая движущаяся вещь.</li>
+<li><strong>Связки <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>, <code>PI</code></strong> вводят второе существительное, которое сужает главное: <code>X | o СВЯЗКА Y | o</code>. Первое слово X — всегда род, вся пара — его частный случай; прилагательные идут перед связкой. Говорящий задаёт вопросы по порядку и берёт первую подходящую связку, слушатель читает каждую одним способом:
+  1. <code>FROM</code> — X сделан из Y (материал, источник): свеча = <code>LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o</code> («свет из воска»);
+  2. <code>FOR</code> — X сделан для Y, им пользуются с Y, на Y или Y: ножны = <code>INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) | o tool</code> («покрытие для клинка»);
+  3. <code>LIKE</code> — X похож на Y, но не Y: подсолнух = <code>THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o</code> («растение, похожее на солнце»);
+  4. <code>PI</code> — всё прочее: X часть Y или находится, живёт в Y: крыша = <code>ABOVE(=+5) JOIN(=+5) | o PI PLACE LIVE(=+5) | o</code>; <code>SOMEONE | o BIG(=+3) | a PI SOMEONE MANY(=+4) | o</code> — большой человек народа (правитель).</li>
+</ul>
+<p>Слепой тест (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/links/README.md">результат</a>): одни и те же коды со связками читаются первым словом 46 раз из 80, с одним <code>PI</code> вместо всех связок — 31 из 80. Без <code>LIKE</code> набор не лучше одного <code>PI</code>.
+- <strong><code>LA</code></strong> — условие, контекст и причина («если», «когда», «потому что», «хотя»): <code>LA [ … ] …</code>. Клауза с <code>LA</code> стоит перед главной, поэтому «поэтому X» передаётся перестановкой: причина идёт в <code>LA [ … ]</code>, следствие после неё (<code>LA [ он болел ] он остался дома</code>). Если порядок слов приходится менять, его меняют.
+- <strong><code>AND</code></strong> — «и, также»: стоит между сочиняемыми словами, группами и клаузами и связывает то, что слева, с тем, что справа: <code>LIVE | i AND SAY | i</code> — <em>жил и говорил</em>, <code>[ … ] AND [ … ]</code>. В перечислении ставится перед последним элементом. Частица берёт оси как слово: <code>AND SAME(=-5)</code> — но, <code>AND SAME(=-2)</code> — хотя, <code>AND HAPPEN(=+4)</code> — поэтому, <code>AND HAPPEN(=-4)</code> — потому что, <code>AND BIG(=+4)</code> — тем более, <code>AND | M-3</code> — или (метка вероятности, не корень); порядок слов исходный (<a href="/docs/encoding/">encoding</a>). Отдельная частица, поэтому <code>JOIN</code>, <code>CHANGE</code>, <code>SAME</code> как связки не писать (они означают присоединение, изменение, тождество).
+- <strong><code>;</code></strong> — граница независимых клауз длинного предложения: каждая клауза со своими словами и частицами (<code>SOMEONE | o SAY | i T-2 ; THING | o LIVE | i</code>). Скобки <code>[ … ]</code> только для вложенной клаузы или клаузы-дополнения. Каждое слово, в том числе главное существительное перед связкой (<code>PI</code>, <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>) и <code>E</code>, имеет свою форму <code>| …</code> (хотя бы часть речи); слова не склеиваются без <code>|</code>. Проверка — <code>scripts/mincode/validator.py</code> (ввод <code>;</code> — по результату валидатора: кодировщики сами писали его в 25 из 60 предложений).
+- <strong><code>{ … }</code></strong> — явная граница слова в записи предложения: каждое слово <code>{ ROOTS | FORM }</code> в своих фигурных скобках (до трёх корней, одна форма); вне скобок только частицы <code>E PI FROM FOR LIKE LA PE AND</code>, <code>[ ]</code>, <code>;</code> и имена в кавычках (<code>"Europe"</code>). Без скобок кодировщики не ставили <code>| форма</code> у каждого слова (ошибки валидатора у 73–88% кодов; со скобками 28–70%, смысл по слепому судье на настроечном наборе +0,12 [+0,01, +0,25], на отложенном +0,01 [−0,20, +0,23], то есть смысл не улучшает и не ухудшает; <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/clause_rule.md">результат</a>). Пример: <code>{ SOMEONE | o } { SAY | i T-2 } E { THING | o }</code>; модификатор после <code>AND</code> может быть без формы: <code>AND { SAME(=-5) }</code>. Запись отдельного слова (<code>THING(=+4) BIG(=+5) | o N+3</code>) скобок не требует.
+- <strong>Клауза-содержание</strong> (после <em>думать, сказать, знать, хотеть</em>) берётся в скобки как дополнение: <code>THINK | i E [ … ]</code>. Устный маркер скобок — вопрос для фонологии.
+- <strong>Вопрос</strong> — запрошенное значение <code>?</code>: да/нет — метка <code>?</code> на сказуемом, «кто/что» — <code>SOMEONE | o ?</code>, <code>THING | o ?</code>. Отдельного слова вопроса нет.
+- <strong>Даты и время по часам</strong> — в кавычках, как числа: <code>"5.3"</code>, <code>"3:00"</code>; единицы времени и части суток — рецептами (<a href="/docs/encoding/">encoding</a>, «Время»).</p>
+<p><em>Who said that the king is dead?</em></p>
+<pre><code>SOMEONE | o ? SAY | i T-2 E [ SOMEONE RULE(=+5) SEX(=+5) | o D+3 LIVE(=-5) | i ]
+</code></pre>
+<h2 id="пропущенные-значения-и-не-важно">Пропущенные значения и «не важно»</h2>
+<p>Действует <a href="/docs/model/">правило нуля</a>: ось не написана — значение не указано (ничего не стоит по битам); <code>(=0)</code> — явная середина оси. <code>MOVE | i</code> — «двигаться» без уточнения скорости, <code>MOVE(=0) | i</code> — «идти обычным шагом».</p>
+<ul>
+<li>Если значение действительно <strong>не важно</strong>, ось просто не пишется. Отдельный маркер <code>?</code> нужен только для запроса («какое значение?»).</li>
+<li>Прежнее решение «пропуск = середина шкалы» и вариант «признак — интервал <code>[-5, +5]</code>» сняты: первое противоречит правилу нуля, второе не понадобилось.</li>
+</ul>
+<h2 id="примеры">Примеры</h2>
+<p>Проверены валидатором (<code>scripts/mincode/validator.py</code>); слепым тестом не проверялись.</p>
+<p><em>All humans are born free and equal.</em></p>
+<pre><code>SOMEONE MANY(=+5) | o LIVE BEGIN(=-5) | i T-2 V-4 CAN(=+5) | a SAME(=+5) | a
+</code></pre>
+<p><em>Some people fear authority.</em></p>
+<pre><code>SOMEONE MANY(=0) | o N+3 FEEL(=+4) GOOD(=-4) TIME(=+3) | i E RULE(=+4) | o
+</code></pre>
+<p><em>If someone acts freely, society benefits.</em></p>
+<pre><code>LA [ SOMEONE | o DO | i CAN(=+5) | e ] SOMEONE PART(=+5) | o CHANGE GOOD(=+3) | i
+</code></pre>
+<p class="mut">Исходник: <a href="https://github.com/komapc/contlang/blob/main/docs/syntax.md">docs/syntax.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>
+</main>
+<nav class="docs" aria-label="Документы"><b>Документы</b>
+<ul>
+<li><a href="/docs/reading/">Как читать min-co</a></li>
+<li><a href="/docs/model/">Модель: корень и структура</a></li>
+<li><a href="/docs/philosophy/">Философия min-co</a></li>
+<li><a href="/docs/syntax/">Синтаксис</a></li>
+<li><a href="/docs/tables/">Сводные таблицы: корни, оси, метки</a></li>
+<li><a href="/docs/encoding/">Как кодировать: приёмы</a></li>
+<li><a href="/docs/lexicon/">Словарь</a></li>
+<li><a href="/docs/phonology/">Фонология и структура слова</a></li>
+<li><a href="/docs/math/">Математическое кодирование: постановка, метрики, результаты</a></li>
+<li><a href="/docs/rethink/">Пересмотр языка: где мы и что менять (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>

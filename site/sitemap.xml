@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://minco.lipu.dev/</loc><lastmod>2026-10-17</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url><loc>https://minco.lipu.dev/</loc><lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/"/>
+  </url>
+  <url><loc>https://minco.lipu.dev/ru/</loc><lastmod>2026-10-29</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/"/>
+  </url>
+  <url><loc>https://minco.lipu.dev/docs/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/reading/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/model/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/philosophy/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/syntax/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/tables/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/encoding/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/lexicon/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/phonology/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/math/</loc><lastmod>2026-10-29</lastmod></url>
+  <url><loc>https://minco.lipu.dev/docs/rethink/</loc><lastmod>2026-10-29</lastmod></url>
 </urlset>
