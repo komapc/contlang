@@ -58,6 +58,10 @@ def only_lang(src, lang):
     return "".join(out)
 
 
+# Маяк Cloudflare Web Analytics берём из исходника главной, чтобы он был в одном месте.
+BEACON = next(l for l in SRC.read_text(encoding="utf8").splitlines() if "cf-beacon" in l)
+
+
 def close_of(src, tag, i):
     """Конец элемента tag, открытого перед позицией i (с учётом вложенных одноимённых)."""
     if tag == "script":
@@ -193,6 +197,7 @@ def page_html(title, desc, path, body, lastmod=None):
 <style>
 {CSS}
 </style>
+{BEACON}
 </head>
 <body>
 <div class="wrap">
