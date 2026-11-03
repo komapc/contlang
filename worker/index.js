@@ -32,6 +32,22 @@ SECOND WORD: your first code for this word was \`${prev}\`, but a reader who has
 Rewrite it as a two-word compound \`HEAD | o LINK MODIFIER | o\`: the head is the general kind (keep the first code or fix it), the modifier is ONE more min-co word of 1-3 roots for ANOTHER thing that narrows it, chosen so that the pair cannot be read as ${confused}. LINK is chosen by the LINKS rule of the spec: FROM (made of it), else FOR (made for it), else LIKE (looks like it), else PI (part of it, found or living in it). Do not just repeat or shift the head's roots in the modifier. Each of the two words has its own root limit.
 Verified compounds: key = small tool FOR doorway \`BIG(=-4) | o tool FOR PART(=-2) PLACE SIDE(=+5) | o\`; sheath = covering FOR blade \`INSIDE(=+5) JOIN(=+5) | o FOR JOIN(=-4) TOUCH(=+4) | o tool\`; candle = light FROM wax \`LONG(=0) HEAT(=+5) | o FROM GRAIN(=+5) TOUCH(=-5) | o\`; sunflower = plant LIKE sun \`THING(=0) ABOVE(=+5) | o LIKE ABOVE(=+5) HEAT(=+5) | o\`; furniture = collection of inanimate things PI house \`PART(=+5) THING(=-5) | o PI PLACE INSIDE(=+5) LIVE | o\`.
 In "tokens" explain both words; in "confusable" name what the new code could still be confused with.`;
+// Ключ лимита на адрес. Клиенту IPv6 выдают целую сеть /64, поэтому считается сеть,
+// а не адрес: иначе смена адреса обходит лимит.
+function limitKey(ip) {
+  if (!ip) return "anon";
+  if (!ip.includes(":")) return ip;
+  const [head, tail] = ip.split("::");
+  const left = head ? head.split(":") : [];
+  const right = tail ? tail.split(":") : [];
+  const zeros = ip.includes("::") ? Array(Math.max(0, 8 - left.length - right.length)).fill("0") : [];
+  return [...left, ...zeros, ...right].slice(0, 4).map((part) => part.toLowerCase().replace(/^0+(?=.)/, "")).join(":");
+}
+
+// Поля ответа, которые читает страница: остальное не отдаём, чтобы это не был открытый доступ к модели.
+const REPLY_FIELDS = ["idea", "code", "tokens", "confidence", "confusable", "warnings", "best", "alternatives", "why"];
+const replyOf = (obj) => Object.fromEntries(REPLY_FIELDS.filter((key) => key in obj).map((key) => [key, obj[key]]));
+
 const MSG = {
   en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
   ru: { busy: "слишком много запросов, подождите минуту", need: "mode и text обязательны", long: (n) => `не длиннее ${n} символов`, down: "модель недоступна", notJson: "модель вернула не JSON" },
@@ -100,9 +116,10 @@ export default {
     if (req.method !== "POST") return json({ error: "POST only" }, 405, h);
     if (h["Access-Control-Allow-Origin"] === "null") return json({ error: "origin not allowed" }, 403, h);
 
-    if (env.LIMITER) {
-      const ip = req.headers.get("CF-Connecting-IP") || "anon";
-      const { success } = await env.LIMITER.limit({ key: ip });
+    // Без лимитов ключ оплачивает кто угодно, поэтому без них запросы не принимаются.
+    if (!env.LIMITER || !env.GLOBAL_LIMITER) return json({ error: "limits are not configured" }, 503, h);
+    for (const [limiter, key] of [[env.LIMITER, limitKey(req.headers.get("CF-Connecting-IP"))], [env.GLOBAL_LIMITER, "all"]]) {
+      const { success } = await limiter.limit({ key });
       if (!success) return json({ error: "too many requests, wait a minute / слишком много запросов" }, 429, h);
     }
 
@@ -138,7 +155,7 @@ export default {
         if (left.length) a.obj.warnings = left;
       }
     }
-    if (!a.obj) return json({ error: t.notJson, raw: a.raw }, 502, h);
-    return json(a.obj, 200, h);
+    if (!a.obj) return json({ error: t.notJson }, 502, h);
+    return json(replyOf(a.obj), 200, h);
   },
 };
