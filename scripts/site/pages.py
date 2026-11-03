@@ -58,8 +58,9 @@ def only_lang(src, lang):
     return "".join(out)
 
 
-# Маяк Cloudflare Web Analytics берём из исходника главной, чтобы он был в одном месте.
-BEACON = next(l for l in SRC.read_text(encoding="utf8").splitlines() if "cf-beacon" in l)
+# Маяк Cloudflare Web Analytics и Google Analytics (грузится только после согласия, site/consent.js)
+# берём из исходника главной, чтобы они были в одном месте.
+BEACON = "\n".join(l for l in SRC.read_text(encoding="utf8").splitlines() if "cf-beacon" in l or "/consent.js" in l)
 
 
 def close_of(src, tag, i):
