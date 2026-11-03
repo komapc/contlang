@@ -14,3 +14,10 @@ name = "LIMITER"
 type = "ratelimit"
 namespace_id = "1001"
 simple = { limit = 10, period = 60 }
+
+# не более 30 запросов в минуту со всех адресов: потолок расходов, если обойдут лимит на адрес
+[[unsafe.bindings]]
+name = "GLOBAL_LIMITER"
+type = "ratelimit"
+namespace_id = "1002"
+simple = { limit = 30, period = 60 }
