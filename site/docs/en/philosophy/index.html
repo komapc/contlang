@@ -1,0 +1,91 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The philosophy of min-co</title>
+<meta name="description" content="The scheme was not invented entirely by hand but selected through experiments on data (English, ConceptNet Numberbatch embeddings, 3000 words): global axes…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/philosophy/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/philosophy/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/philosophy/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/philosophy/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/philosophy/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The philosophy of min-co">
+<meta property="og:description" content="The scheme was not invented entirely by hand but selected through experiments on data (English, ConceptNet Numberbatch embeddings, 3000 words): global axes…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"The philosophy of min-co","description":"The scheme was not invented entirely by hand but selected through experiments on data (English, ConceptNet Numberbatch embeddings, 3000 words): global axes…","url":"https://minco.lipu.dev/docs/en/philosophy/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/philosophy/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="the-philosophy-of-min-co">The philosophy of min-co</h1>
+<p><strong>min-co</strong> (<em>minimal + continuous</em>) is a minimal philosophical language (artlang) for precise and flexible thought.</p>
+<ul>
+<li>A minimum of grammar and vocabulary (inspired by Toki Pona and Esperanto).</li>
+<li>A maximum of expressiveness through a small set of universal continuous features.</li>
+<li>Concepts are not categories but positions in a conceptual space.</li>
+<li>Nuance instead of a label: the meaning of a word is a root plus continuous adjustments.</li>
+</ul>
+<h2 id="principles">Principles</h2>
+<ol>
+<li><strong>A small set of general roots.</strong> About 45 general concepts not tied to a part of speech (<em>move, think, want, good, big, …</em>), mostly NSM primitives; most have their own axis. The list and the rules for adding to it are in <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a> and the <a href="/docs/en/lexicon/">lexicon</a>.</li>
+<li><strong>The part of speech works like Esperanto suffixes, in the form after the <code>|</code>.</strong> <code>o</code> noun, <code>i</code> verb, <code>a</code> attribute, <code>e</code> adverbial; a noun may have the role <code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code> (<em>-ist, -il, -aĵ, -ec</em>). Any root takes any part of speech: <code>MOVE | o</code> (movement), <code>MOVE | i</code> (to move), <code>MOVE | a</code> (mobile), <code>MOVE | e</code> (movingly). The form is separate from the meaning: a root does not know what part of speech it is.</li>
+<li><strong>Axes are the only continuous mechanism.</strong> The semantic adjustments of a word are axes with a value from -5 to +5 and a scope: each root has its own axis or none (GOOD, BIG, TIME, …); there are no shared unnamed axes. There are no separate “gradient roots” or local axes: they are the same axes (<a href="/docs/en/model/">model</a>).</li>
+<li><strong>Features are optional.</strong> An axis that is not written has an unspecified value (the zero rule: it costs nothing in bits); <code>(=0)</code> is the explicit middle. The marker <code>?</code> requests a value (see <a href="/docs/en/syntax/">syntax</a>, <a href="/docs/en/model/">model</a>).</li>
+<li><strong>Minimal grammar.</strong> The head first, the particles <code>E</code>, <code>PI</code>, <code>LA</code>, the link words <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>, brackets and <code>?</code>; the predicate is the word with <code>| i</code>, without <code>LI</code> (<a href="/docs/en/syntax/">syntax</a>).</li>
+<li><strong>A not-quite-infinite vocabulary.</strong> Words are generated as roots + axis values + form; compounds (two words joined by a link word) are built by the same logic. Stable recipes are fixed by testing, but there is no need to memorize a vocabulary.</li>
+<li><strong>The goal is the semantic field.</strong> A code has succeeded if the reader names a word from the same field (<em>house, dwelling, hut</em>), not necessarily the same word.</li>
+<li><strong>Math does the encoding.</strong> The code of a word on the site is built by math (word and root vectors), not by a language model; the model serves only as reader and judge in blind tests (<a href="/docs/en/math/">math</a>). The model of simplicity is Toki Pona.</li>
+</ol>
+<h2 id="where-this-came-from">Where this came from</h2>
+<p>The scheme was not invented entirely by hand but selected through experiments on data (English, ConceptNet Numberbatch embeddings, 3000 words): global axes, roots with local axes, roots with universal axes, and a continuous form against a suffix were compared. Details and metrics: <a href="https://github.com/komapc/contlang/blob/main/docs/history/plan.md">work plan (historical, in Russian)</a>, the <code>data/</code> directory.</p>
+<p>The overall design: <a href="/docs/en/model/">model</a>. More: <a href="/docs/en/syntax/">syntax</a>, <a href="/docs/en/lexicon/">lexicon</a>, <a href="/docs/en/phonology/">phonology</a>.</p>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/philosophy.md">docs/en/philosophy.md</a> on GitHub, translated from the <a href="/docs/philosophy/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

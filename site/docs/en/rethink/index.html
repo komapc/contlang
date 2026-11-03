@@ -1,0 +1,286 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rethinking the language: where we are and what to change (2026-10) — min-co</title>
+<meta name="description" content="The main measure is now different: the share of a blind reader&#x27;s first answers that a blind judge (Haiku) considers “close”, the same semantic field (2 close…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/rethink/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/rethink/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/rethink/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/rethink/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/rethink/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Rethinking the language: where we are and what to change (2026-10) — min-co">
+<meta property="og:description" content="The main measure is now different: the share of a blind reader&#x27;s first answers that a blind judge (Haiku) considers “close”, the same semantic field (2 close…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Rethinking the language: where we are and what to change (2026-10) — min-co","description":"The main measure is now different: the share of a blind reader's first answers that a blind judge (Haiku) considers “close”, the same semantic field (2 close…","url":"https://minco.lipu.dev/docs/en/rethink/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/rethink/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="rethinking-the-language-where-we-are-and-what-to-change-2026-10">Rethinking the language: where we are and what to change (2026-10)</h1>
+<h2 id="update-2026-10-14-the-close-measure">Update (2026-10-14): the “close” measure</h2>
+<p>The main measure is now different: the share of a blind reader's first answers that a blind judge (Haiku) considers “close”, the same semantic field (2 close, 1 near, 0 miss). The rank among 10,721 words below is the earlier measure, kept for the record.</p>
+<ul>
+<li>1000 words (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/big1000/result.txt">big1000</a>): the site encoder 24%, Haiku with ENC_SPEC 52%.</li>
+<li>Accepted (user's decision of 2026-10-14, without a blind test): the site encoder always encodes the base form and appends labels (<code>discussed</code> → the code of discuss + <code>T-2</code>, <code>-ing</code> → <code>A0</code>, an attributive participle → <code>| a V-4</code>, plural → <code>N+3</code>, degrees → <code>C+3</code>/<code>C+5</code>); bases outside the dictionary are taken from Numberbatch; for a homonym, one sense is encoded (WordNet; at almost equal frequency, the one nearest the word's vector). <code>scripts/site/build_words.py</code> → infl, extra, sense. Corrections of 2026-10-14: the part of speech of a word form follows Brown if the form occurs there ≥ 5 times and Brown sees a noun or an attribute (attacks, plans, projects, tears → noun, surprising → attribute; 157 forms); sense anchors without hypernyms (reverse reading: word first 29.9 → 32.1%).</li>
+<li>Accepted: the axes of 8 roots (LONG, KNOW, MEASURE, TOUCH, NEAR, GIVE, VALUE, CARE) from the words around the learned atoms, and the role <code>agent</code> for people (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/fix1/README.md">fix1</a>).</li>
+<li>Blind tests of the encoder (not accepted): choosing the code by the reader model (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/reader2/README.md">reader2</a>, +4.7% [−4.0 … +13.3]), an economical encoder with fewer roots and no zeros (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/occam/README.md">occam</a>, −1.3% [−8.0 … +5.3]).</li>
+<li>Not accepted: separate codes for the senses of polysemous words (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/senses/README.md">senses</a>, −2%), the root KIND (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/kind/README.md">kind</a>, +5.6% at the threshold; as a head only +6.7% [−2.7 … +16], <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>; user's decision of 2026-10-14), the roles <code>tool</code> and <code>quality</code> by WordNet.</li>
+<li>Postponed: removing the PI pair from the site encoder.</li>
+</ul>
+<h2 id="the-measure-and-the-benchmark-earlier">The measure and the benchmark (earlier)</h2>
+<p>Reading accuracy is measured by the rank of the target word among the 10,721 words of the site dictionary: the words are ordered by cos with a blind reader's answer, and 1 means the answer is closest to the target.
+The geometric mean of ranks is taken over 200 readings: 100 dev words, two Haiku readers each.
+Details: <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki/README.md">data/eval/runs/toki</a>.</p>
+<p><strong>A measure for “10 times more accurate”.</strong> Rank with synonyms: any word from the WordNet synsets of the target word in its part of speech counts as a hit (<em>car</em> instead of <em>automobile</em> is rank 1). The geometric mean of this rank is how many equally likely candidates the reader has left; log2 of the rank is the remaining uncertainty in bits.
+“10 times more accurate” = 10 times fewer candidates = 3.3 bits less.</p>
+<table>
+<thead>
+<tr>
+<th>who encodes</th>
+<th style="text-align: right;">rank</th>
+<th style="text-align: right;">rank with synonyms</th>
+<th style="text-align: right;">bits</th>
+<th style="text-align: right;">1 − cos</th>
+<th style="text-align: right;">outside the top 10 (of 200, with synonyms)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toki Pona</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">62</td>
+<td style="text-align: right;">5.9</td>
+<td style="text-align: right;">0.68</td>
+<td style="text-align: right;">142</td>
+</tr>
+<tr>
+<td>min-co</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">4.7</td>
+<td style="text-align: right;">0.58</td>
+<td style="text-align: right;">121</td>
+</tr>
+<tr>
+<td>min-co v2</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">4.8</td>
+<td style="text-align: right;">0.59</td>
+<td style="text-align: right;">119</td>
+</tr>
+<tr>
+<td>site math</td>
+<td style="text-align: right;">137</td>
+<td style="text-align: right;">82</td>
+<td style="text-align: right;">6.4</td>
+<td style="text-align: right;">0.71</td>
+<td style="text-align: right;">156</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>For now min-co is 2.5 times more accurate than Toki Pona (by 1.2 bits). The 10× goal is a rank with synonyms of about 6.</li>
+<li>Why not other measures:</li>
+<li>1 − cos is compressed from above and below: a 10 times smaller error is cos 0.93, almost exact words only; the difference between Toki Pona and min-co on it is 0.68 against 0.58.</li>
+<li>the share of misses (outside the top 10 with synonyms): 142 against 121 of 200 hardly distinguishes the languages, and 10× (14 misses of 200) would mean almost error-free reading.</li>
+<li>rank without synonyms penalizes <em>car</em> instead of <em>automobile</em>: synonyms share one rank, and the reader is not at fault.</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>who encodes</th>
+<th style="text-align: right;">rank of the first answer (95%)</th>
+<th style="text-align: right;">best of three</th>
+<th style="text-align: right;">exactly first of 200</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Toki Pona, Haiku</td>
+<td style="text-align: right;">120 (76–188)</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">21</td>
+</tr>
+<tr>
+<td>min-co, Haiku</td>
+<td style="text-align: right;">51 (30–84)</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">44</td>
+</tr>
+<tr>
+<td>min-co v2, Haiku</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">22</td>
+<td style="text-align: right;">39</td>
+</tr>
+<tr>
+<td>min-co, site math*</td>
+<td style="text-align: right;">137 (88–214)</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">14</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>For now min-co is 2.4 times more accurate than Toki Pona.</li>
+<li>The gap differs by part of speech: adjectives 27 against 209, adverbs 52 against 210, verbs 173 against 373, nouns 34 against 44.</li>
+<li>The main losses:</li>
+<li>verbs;</li>
+<li>verbal and institutional nouns: <em>installation, nomination, fee, municipality</em>.</li>
+<li>The site math's codes are no better than Toki Pona.</li>
+<li>A caveat: Haiku knows Toki Pona from training, and min-co only from the specification.</li>
+<li>* The math codes were made before the two-sided MANY and the level limits. ① hardly changed from these edits.</li>
+</ul>
+<h2 id="proposals">Proposals</h2>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th>proposal</th>
+<th>basis</th>
+<th>what it removes</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>A short specification v2 (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki/spec_v2.md">spec_v2.md</a>, 4.8 KB instead of 11 KB)</td>
+<td>Blind test on the same 100 words: v2 / v1 = 1.19 (95%: 0.76–1.87), no difference</td>
+<td>The fourth root ABSTRACT, the exception for cardinal directions, BIG as “degree”, the old <code>-o</code> notation, three different descriptions of labels. One rule for axes: −5 the opposite pole, 0 the middle, +5 the full pole</td>
+<td>accepted (2026-10)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Roles in the form instead of the DO and HAPPEN axes: <code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code> after <code>| o</code> (like <em>-ist, -il, -aĵ, -ec</em> in Esperanto)</td>
+<td>Part of v2. The coder used them in 10 words of 100: telegraph 18 → 2, but beef 1 → 114 (<code>result</code> out of place)</td>
+<td>Two axes that are not scales (actor … action … tool; cause … consequence)</td>
+<td>accepted with v2; since 2026-10 the site encoder gives <code>agent</code> to people (noun.person in WordNet): +19% “close” [+10 … +30], <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/fix1/README.md">fix1</a></td>
+</tr>
+<tr>
+<td>3</td>
+<td>A list of frequent words with fixed codes (about 1000, from verified recipes). Composition for the rest</td>
+<td>The best of three answers is already at rank 21: the needed word is usually among the options but does not come first. A fixed word is read exactly (the site's recipes)</td>
+<td>—</td>
+<td>the only lever toward 10× that I see; it changes the principle “there is no fixed vocabulary”; not checked on these 100 words (how many of them would make the list was not counted)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Measure on sentences, not words</td>
+<td><a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/toki_sents/README.md">toki_sents</a>: the same 100 words in sentences. Toki Pona 62 → 26, min-co 28 → 40. Toki Pona / min-co = 0.65 (0.36–1.17), no difference. Context helps polysemous Toki Pona. min-co in a sentence encodes the word more coarsely, and the reader does not complete the code from the meaning</td>
+<td>—</td>
+<td>done: min-co's advantage on words disappeared in text</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Site encoder: choose the roots that models use (a prior over the corpus of model codes, kNN), not only y ≈ x</td>
+<td>Math 137 against 51 for the model; fitting the dictionary did not move ② (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/anchor/README.md">anchor</a>)</td>
+<td>—</td>
+<td>checked: moving model codes into the dictionary (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/distill/README.md">distill</a>) reads almost as before, not accepted</td>
+</tr>
+<tr>
+<td>6</td>
+<td>CARE is the attitude to work, TONE replaced by FRIEND (enemy … friend)</td>
+<td>For math the roots moved apart: cos of the centers 0.65 → 0.12 (learned dictionary 0.07). Blind test on 20 words (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/friend/README.md">friend</a>): FRIEND / TONE 1.45 (0.71–3.01), no difference; <em>friend</em> better, <em>polite</em> worse</td>
+<td>Two roots with close centers</td>
+<td>accepted (2026-10)</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Do not remove rare roots: NEAR, WANT, BEGIN, SEX, FEEL, CHANGE, MEASURE (4–8 times in 458 codes)</td>
+<td>Each carries its own words (king, improve, unit…)</td>
+<td>—</td>
+<td>keep</td>
+</tr>
+<tr>
+<td>8</td>
+<td>The labels I, C, N hardly occur on words (2, 1, 1 times)</td>
+<td>They cannot be tested on words</td>
+<td>—</td>
+<td>decide after the test on sentences</td>
+</tr>
+<tr>
+<td>9</td>
+<td>One quotes rule: proper names, digits, scientific names of species and substances</td>
+<td>Part of v2</td>
+<td>The category lists in encoding.md</td>
+<td>accepted with v2</td>
+</tr>
+<tr>
+<td>10</td>
+<td>A verb with a head root with a value = transition into that state (<code>BIG(=+3) | i</code> grow, <code>LIVE(=-5) | i K+3</code> kill), without <code>CHANGE</code></td>
+<td><a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/verbs/README.md">verbs</a>: 40 verbs, B / A = 0.89 (0.67–1.19), no difference. Better <em>learn, forget</em>, worse <em>weaken, accelerate</em></td>
+<td><code>CHANGE</code> in verbs of change of state</td>
+<td>not accepted: no difference</td>
+</tr>
+<tr>
+<td>11</td>
+<td>New roots from the worst words: light (dark … bright), strength (weak … strong), humidity (dry … wet), openness, fullness; clothing, help, electricity, word/name</td>
+<td>The verbs <em>darken, brighten, weaken, strengthen, dry, open, close, fill, empty</em> are bad in both variants (rank 50–1800): the meaning has no axis. Words from the Toki Pona test <em>suit, assistant, current, note, sentence</em></td>
+<td>—</td>
+<td>candidates: need clusters and a blind test</td>
+</tr>
+</tbody>
+</table>
+<p><a href="/docs/en/encoding/">encoding.md</a> was rewritten in the v2 notation: roles instead of <code>DO(=+5)</code> and <code>HAPPEN(=±n)</code>, without ABSTRACT and four-root cardinal directions. Recipes converted to roles were not checked separately.</p>
+<h2 id="open-questions">Open questions</h2>
+<ul>
+<li>~~Is the particle <code>LI</code> needed if the verb is already marked <code>| i</code>.~~ Removed (2026-10-14): the predicate is the word with <code>| i</code>.</li>
+<li>Anatomy and medicine: Latin in quotes or roots.</li>
+<li>Pronouns and kinship.</li>
+<li>The sounds of roots and the notation of values (<a href="/docs/en/phonology/">phonology</a>).</li>
+<li>A check in Russian.</li>
+</ul>
+<p>Earlier plans and questions (in Russian): <a href="https://github.com/komapc/contlang/blob/main/docs/history/plan.md">history/plan.md</a>, <a href="https://github.com/komapc/contlang/blob/main/docs/history/roadmap.md">history/roadmap.md</a>.</p>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/rethink.md">docs/en/rethink.md</a> on GitHub, translated from the <a href="/docs/rethink/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

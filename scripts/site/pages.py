@@ -1,5 +1,6 @@
 """Страницы сайта: из одного двуязычного источника data/site/index.html — site/index.html (английский) и site/ru/index.html (русский),
-из docs/*.md — site/docs/<имя>/index.html и оглавление site/docs/index.html, и site/sitemap.xml.
+из docs/*.md — site/docs/<имя>/index.html и оглавление site/docs/index.html, из их переводов docs/en/*.md —
+site/docs/en/<имя>/index.html и оглавление site/docs/en/index.html, и site/sitemap.xml.
 
 У каждого языка свой адрес (поисковики видят одну страницу на один язык): элемент с data-l="en" или data-l="ru"
 остаётся только на странице своего языка, data-l="mc" (запись на самом min-co) — на английской.
@@ -132,8 +133,9 @@ def fix_links(body, rel_dir):
         path, _, frag = href.partition("#")
         target = (REPO / rel_dir / path).resolve()
         rel = target.relative_to(REPO).as_posix() if target.is_relative_to(REPO) else path
-        if rel.startswith("docs/") and rel.endswith(".md") and Path(rel).stem in DOCS and "/" not in rel[5:]:
-            url = "/docs/%s/" % Path(rel).stem
+        m_doc = re.fullmatch(r"docs/(en/)?([^/]+)\.md", rel)
+        if m_doc and m_doc.group(2) in DOCS:
+            url = "/docs/%s%s/" % (m_doc.group(1) or "", m_doc.group(2))
         else:
             url = "%s/%s/main/%s" % (GH, "tree" if target.is_dir() else "blob", rel)
         if frag:
@@ -171,24 +173,44 @@ nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.d
 footer{margin-top:28px;color:var(--mut);font-size:14px}"""
 
 
-def page_html(title, desc, path, body, lastmod=None):
+# подписи страниц документов по языкам
+TEXT = {
+    "ru": {"locale": "ru_RU", "home": "/ru/", "docs": "Документация", "nav": "Документы", "code": "код"},
+    "en": {"locale": "en_US", "home": "/", "docs": "Documentation", "nav": "Documents", "code": "code"},
+}
+
+
+def docs_path(lang, n=None):
+    """Адрес документа n (или оглавления) на языке lang."""
+    return ("/docs/" if lang == "ru" else "/docs/en/") + (n + "/" if n else "")
+
+
+def page_html(title, desc, n, body, lang="ru"):
+    """Страница документа n (n=None — оглавление): у каждого языка свой canonical, перекрёстные hreflang, x-default — английский, как у главной."""
+    tx = TEXT[lang]
+    path, ru_path, en_path = docs_path(lang, n), docs_path("ru", n), docs_path("en", n)
     url = BASE + path
     t, d = html.escape(title, quote=True), html.escape(desc, quote=True)
-    ld = ('{"@context":"https://schema.org","@type":"TechArticle","headline":%s,"description":%s,"url":"%s","inLanguage":"ru",'
+    ld = ('{"@context":"https://schema.org","@type":"TechArticle","headline":%s,"description":%s,"url":"%s","inLanguage":"%s",'
           '"isPartOf":{"@type":"WebSite","name":"min-co","url":"%s/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}'
-          % (json_str(title), json_str(desc), url, BASE))
+          % (json_str(title), json_str(desc), url, lang, BASE))
+    switch = ('<a href="%s" hreflang="en" lang="en">English</a>' % en_path if lang == "ru"
+              else '<a href="%s" hreflang="ru" lang="ru">Русский</a>' % ru_path)
     return f"""<!doctype html>
 <!-- сгенерировано scripts/site/pages.py, руками не править -->
-<html lang="ru">
+<html lang="{lang}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{t}</title>
 <meta name="description" content="{d}">
 <link rel="canonical" href="{url}">
+<link rel="alternate" hreflang="ru" href="{BASE}{ru_path}">
+<link rel="alternate" hreflang="en" href="{BASE}{en_path}">
+<link rel="alternate" hreflang="x-default" href="{BASE}{en_path}">
 <meta property="og:type" content="article">
 <meta property="og:url" content="{url}">
-<meta property="og:locale" content="ru_RU">
+<meta property="og:locale" content="{tx['locale']}">
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:image" content="{BASE}/og.png">
@@ -202,12 +224,12 @@ def page_html(title, desc, path, body, lastmod=None):
 </head>
 <body>
 <div class="wrap">
-<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/" hreflang="en" lang="en">English</a></header>
+<header><a class="home" href="{tx['home']}">min-co</a><a href="{docs_path(lang)}">{tx['docs']}</a>{switch}</header>
 <main>
 {body}
 </main>
-{docs_nav()}
-<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="{GH}">код</a></footer>
+{docs_nav(lang)}
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="{GH}">{tx['code']}</a></footer>
 </div>
 </body>
 </html>
@@ -219,40 +241,57 @@ def json_str(s):
     return json.dumps(s, ensure_ascii=False)
 
 
-def docs_meta():
+def docs_meta(lang="ru"):
     out = []
+    folder = REPO / "docs" if lang == "ru" else REPO / "docs" / "en"
     for n in DOCS:
-        md = (REPO / "docs" / (n + ".md")).read_text(encoding="utf8")
+        md = (folder / (n + ".md")).read_text(encoding="utf8")
         out.append((n, doc_title(md), doc_description(md), md))
     return out
 
 
-def docs_nav():
-    items = "\n".join('<li><a href="/docs/%s/">%s</a></li>' % (n, html.escape(t)) for n, t, _, _ in docs_meta())
-    return '<nav class="docs" aria-label="Документы"><b>Документы</b>\n<ul>\n%s\n</ul>\n</nav>' % items
+def docs_nav(lang="ru"):
+    items = "\n".join('<li><a href="%s">%s</a></li>' % (docs_path(lang, n), html.escape(t)) for n, t, _, _ in docs_meta(lang))
+    label = TEXT[lang]["nav"]
+    return '<nav class="docs" aria-label="%s"><b>%s</b>\n<ul>\n%s\n</ul>\n</nav>' % (label, label, items)
 
 
-def doc_page(n, title, desc, md):
-    src = '<p class="mut">Исходник: <a href="%s/blob/main/docs/%s.md">docs/%s.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>' % (GH, n, n)
-    return page_html(title if "min-co" in title else title + " — min-co", desc, "/docs/%s/" % n, md_html(md) + "\n" + src)
+def doc_page(n, title, desc, md, lang="ru"):
+    if lang == "ru":
+        src = '<p class="mut">Исходник: <a href="%s/blob/main/docs/%s.md">docs/%s.md</a> на GitHub. Документ описывает предыдущую запись (с <code>|</code> и суффиксами); запись в стиле токи пона ещё не перенесена.</p>' % (GH, n, n)
+    else:
+        src = ('<p class="mut">Source: <a href="%s/blob/main/docs/en/%s.md">docs/en/%s.md</a> on GitHub, translated from the <a href="%s" hreflang="ru" lang="ru">Russian original</a>. '
+               "This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>" % (GH, n, n, docs_path("ru", n)))
+    return page_html(title if "min-co" in title else title + " — min-co", desc, n, md_html(md, "docs" if lang == "ru" else "docs/en") + "\n" + src, lang)
 
 
-def docs_index():
-    items = "\n".join('<li><a href="/docs/%s/">%s</a> — %s</li>' % (n, html.escape(t), html.escape(d)) for n, t, d, _ in docs_meta())
-    body = ("<h1>Документация min-co</h1>\n<p>min-co — минимальный непрерывный искусственный язык: слово — до трёх смысловых корней с осями значений "
-            "и часть речи с метками после черты. Здесь собраны документы о языке; источник правды о корнях — "
-            '<a href="%s/blob/main/roots.yaml">roots.yaml</a>. Попробовать язык — на <a href="/ru/">главной странице</a>.</p>\n<ul>\n%s\n</ul>' % (GH, items))
-    return page_html("Документация min-co — искусственный язык из 45 корней",
-                     "Документы о min-co, минимальном искусственном языке из 45 смысловых корней: модель, синтаксис, словарь, фонология, рецепты кодирования, математика.",
-                     "/docs/", body)
+def docs_index(lang="ru"):
+    items = "\n".join('<li><a href="%s">%s</a> — %s</li>' % (docs_path(lang, n), html.escape(t), html.escape(d)) for n, t, d, _ in docs_meta(lang))
+    if lang == "ru":
+        body = ("<h1>Документация min-co</h1>\n<p>min-co — минимальный непрерывный искусственный язык: слово — до трёх смысловых корней с осями значений "
+                "и часть речи с метками после черты. Здесь собраны документы о языке; источник правды о корнях — "
+                '<a href="%s/blob/main/roots.yaml">roots.yaml</a>. Попробовать язык — на <a href="/ru/">главной странице</a>.</p>\n<ul>\n%s\n</ul>' % (GH, items))
+        return page_html("Документация min-co — искусственный язык из 45 корней",
+                         "Документы о min-co, минимальном искусственном языке из 45 смысловых корней: модель, синтаксис, словарь, фонология, рецепты кодирования, математика.",
+                         None, body)
+    body = ("<h1>min-co documentation</h1>\n<p>min-co is a minimal continuous constructed language: a word is up to three meaning roots with value axes, "
+            "and a part of speech with labels after the bar. These are the documents about the language, translated from the "
+            '<a href="/docs/" hreflang="ru" lang="ru">Russian originals</a>; the source of truth about the roots is '
+            '<a href="%s/blob/main/roots.yaml">roots.yaml</a>. Try the language on the <a href="/">home page</a>.</p>\n<ul>\n%s\n</ul>' % (GH, items))
+    return page_html("min-co documentation: a constructed language of 45 roots",
+                     "Documents about min-co, a minimal constructed language of 45 meaning roots: model, syntax, lexicon, phonology, encoding recipes, math.",
+                     None, body, "en")
 
 
 # ---------- сборка и карта сайта
 
 def page_outputs():
-    out = {SITE / "index.html": main_page("en"), SITE / "ru" / "index.html": main_page("ru"), SITE / "docs" / "index.html": docs_index()}
+    out = {SITE / "index.html": main_page("en"), SITE / "ru" / "index.html": main_page("ru"), SITE / "docs" / "index.html": docs_index(),
+           SITE / "docs" / "en" / "index.html": docs_index("en")}
     for n, t, d, md in docs_meta():
         out[SITE / "docs" / n / "index.html"] = doc_page(n, t, d, md)
+    for n, t, d, md in docs_meta("en"):
+        out[SITE / "docs" / "en" / n / "index.html"] = doc_page(n, t, d, md, "en")
     return out
 
 
@@ -268,14 +307,18 @@ def sitemap(pages):
     if sm.exists():
         old = dict(re.findall(r"<loc>([^<]+)</loc><lastmod>([^<]+)</lastmod>", sm.read_text(encoding="utf8")))
     today = datetime.date.today().isoformat()
-    alt = ('\n    <xhtml:link rel="alternate" hreflang="en" href="%s/"/>\n    <xhtml:link rel="alternate" hreflang="ru" href="%s/ru/"/>'
-           '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s/"/>\n  ' % (BASE, BASE, BASE))
+
+    def alt(en, ru):
+        return ('\n    <xhtml:link rel="alternate" hreflang="en" href="%s"/>\n    <xhtml:link rel="alternate" hreflang="ru" href="%s"/>'
+                '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n  ' % (en, ru, en))
+    pairs = [(BASE + "/", BASE + "/ru/")] + [(BASE + docs_path("en", n), BASE + docs_path("ru", n)) for n in [None] + DOCS]
+    alts = {u: alt(en, ru) for en, ru in pairs for u in (en, ru)}
     rows = []
     for p, text in pages.items():
         u = url_of(p)
         same = p.exists() and p.read_text(encoding="utf8") == text
         lm = old[u] if same and u in old else today
-        rows.append("  <url><loc>%s</loc><lastmod>%s</lastmod>%s</url>" % (u, lm, alt if u in (BASE + "/", BASE + "/ru/") else ""))
+        rows.append("  <url><loc>%s</loc><lastmod>%s</lastmod>%s</url>" % (u, lm, alts.get(u, "")))
     return ('<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n'
             + "\n".join(rows) + "\n</urlset>\n")
 

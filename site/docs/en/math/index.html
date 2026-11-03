@@ -1,0 +1,509 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mathematical encoding: setup, metrics, results — min-co</title>
+<meta name="description" content="The goal: to check whether a word can be translated into a min-co code without a language model, with one matrix and simple brute force, and to use the same…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/math/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/math/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/math/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/math/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/math/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Mathematical encoding: setup, metrics, results — min-co">
+<meta property="og:description" content="The goal: to check whether a word can be translated into a min-co code without a language model, with one matrix and simple brute force, and to use the same…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Mathematical encoding: setup, metrics, results — min-co","description":"The goal: to check whether a word can be translated into a min-co code without a language model, with one matrix and simple brute force, and to use the same…","url":"https://minco.lipu.dev/docs/en/math/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/math/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="mathematical-encoding-setup-metrics-results">Mathematical encoding: setup, metrics, results</h1>
+<p>The goal: to check whether a word can be translated into a min-co code <strong>without a language model</strong>, with one matrix and simple brute force, and to use the same math to check axes and to look for missing roots. This is a report on the logic and results; the scripts are <code>scripts/17_sparse_code.py</code>, <code>18_sparse_learn.py</code>, <code>19_math_codes.py</code>, the shared part <code>scripts/lib_code.py</code>.</p>
+<h2 id="1-setup">1. Setup</h2>
+<p>A word is a unit vector x in the space S₁ (Numberbatch, 300 dimensions). A code is at most m roots (for us m = 3), each root with an integer level v ∈ {−5 … +5}, roots without an axis have no level. The value <code>=0</code> is the middle of the axis, not the absence of the root.</p>
+<p>The decoder is linear:</p>
+<pre><code>y = Σⱼ wⱼ · ( c_{rⱼ} + (s/5) · vⱼ · a_{rⱼ} )
+</code></pre>
+<ul>
+<li>c_r is the <strong>center</strong> of the root (the mean of its pole words: “what the axis is about”), a_r is the <strong>axis</strong> (the mean of the + pole minus the mean of the − pole, as in SemAxis);</li>
+<li>s is the common axis scale (fitted: s = 2);</li>
+<li>wⱼ is the position weight: the head root 1, the others w (for us 0.6; this accounts for the rule “the head first” from <a href="/docs/en/model/">model.md</a>).</li>
+</ul>
+<p>The encoder is an exact search: from the 8 roots with the best correlation with x, it tries all supports of up to three roots, all combinations of levels, and the choice of head root; the objective is the maximum of cos(x, y). This is the <strong>best m-term approximation over a dictionary with integer coefficients</strong> (sparse approximation; with “center + axis” groups, group sparsity). The discrete variant is close to sparse superposition codes (Barron, Joseph); dictionary learning is close to K-SVD and the k-sparse autoencoder. What differs from all of these is that <strong>the atoms are named and must stay recognizable</strong>: that is the price of readability.</p>
+<p>Dictionary learning (the λ term of the setup): with the codes fixed, the root directions are fitted by ridge regression with attraction to the original ones (from the poles) with weight λ, the atoms are normalized, and if they have moved further than cos &lt; 0.85 from the original, they are brought back along the arc to 0.85; then the words are encoded again (3 iterations). We train on 70% of the words, and all numbers are on the held-out 30%.</p>
+<h2 id="2-data">2. Data</h2>
+<ul>
+<li>Space: Numberbatch 19.08 (ConceptNet), English.</li>
+<li>Words: <code>data/wordlist_en_x5.tsv</code>, 3000 frequent words (1000 nouns, 1000 verbs, 600 adjectives, 400 adverbs). After excluding pole words, about 2700.</li>
+<li>Axis poles: <code>roots.yaml</code>, the <code>semaxis</code> field (5–9 words per pole); roots without an axis have short lists in <code>lib_code.NOAXIS</code>.</li>
+</ul>
+<p>What else would fit (not used): fastText with language alignment (Russian-English lacunae), LMMS / SensEmbed sense vectors (polysemy), human ratings on scales: Glasgow Norms (size, valence, concreteness…), Warriner VAD, Brysbaert concreteness, Lancaster sensorimotor, for external validation of the axes.</p>
+<h2 id="3-metrics-and-why-four">3. Metrics, and why four</h2>
+<p>Recognition: the rank of the real word among all dictionary words by cos(y, word). Always together:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">metric</th>
+<th style="text-align: left;">what it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">top1 / top10 / top50</td>
+<td style="text-align: left;">exact recognition in a closed dictionary</td>
+</tr>
+<tr>
+<td style="text-align: left;">cos(x, y)</td>
+<td style="text-align: left;">how similar the decoded vector is to the word's meaning</td>
+</tr>
+<tr>
+<td style="text-align: left;">“miss similarity”</td>
+<td style="text-align: left;">the average closeness of a wrong guess to the real word: a near miss is better than a far one</td>
+</tr>
+</tbody>
+</table>
+<p>top1 alone is not enough: <strong>a random matrix of the same shape gives top1 63% at cos(x, y) 0.22</strong>, while the roots give 21% at 0.43. A random code works like a hash: the decoded point goes off into an empty place in the space, where the nearest word happens to be the right one, and the code carries no meaning. A rise in top1 with a fall in cos is hashing, not progress.</p>
+<p>The final check is not math but a <strong>blind round-trip test</strong> with a language model (the coder sees the specification, the decoder only the tables and reading rules), as in all <code>data/translation_test/roundtrip_*.md</code>.</p>
+<h2 id="4-traps-found">4. Traps found</h2>
+<ol>
+<li><strong>Pole leakage.</strong> Pole words must be left neither in the test nor among the candidates: a code that lands in the middle of a pole “recognizes” the pole word itself (<em>river</em> decoded to <em>milk</em> because <em>milk</em> was in the liquid pole). With the exclusion, top1 grew from 3% to 21% with the same roots.</li>
+<li><strong>The hash effect</strong> (above): cos(x, y) is needed next to top1.</li>
+<li><strong>An axis with a middle and two poles.</strong> For axes of the form −5 … 0 … +5, SemAxis takes only the extreme poles; if words of the middle are written into the −5 pole, the axis shifts. This was the case with GRAIN (the −5 pole was “sand, flour”, which is 0) and PART (+5 was “whole”, which is +2). Fixed; the check is the nearest words to each pole.</li>
+<li><strong>Topical poles.</strong> A pole drags a topic along with it if its words come from one area: a liquid pole of drinks pulled toward <em>liquor, bottle</em>, soft toward <em>sweet, lovely</em>, cheap toward <em>stupid</em>. Poles should be chosen from words that share only the property of the axis.</li>
+</ol>
+<h2 id="5-results-held-out-words-m--3">5. Results (held-out words, m = 3)</h2>
+<p>A dictionary of 44 roots (<code>TEXT</code>, axes on <code>FIGHT</code> and <code>DO</code>, <code>MATTER</code> merged into <code>GRAIN</code>, <code>PARTICULAR</code> into <code>SAME</code>, the poles of <code>RULE</code> are law and authority instead of agencies, see section 6). Before the change of the <code>RULE</code> poles, the top1 of the three rows was 20.8 / 22.8 / 28.5%. For comparison, the top1 of the three rows and cos: 45 roots 19.0 / 21.7 / 26.0% and 0.425 / 0.432 / 0.487; 46 roots 21.8 / 24.0 / 28.7% and 0.432 / 0.440 / 0.495. Minus two roots costs about a percent; the set of words is slightly different each time (poles are excluded), so the comparison is approximate.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">dictionary</th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">top50</th>
+<th style="text-align: right;">cos(x,y)</th>
+<th style="text-align: right;">miss similarity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">roots from poles, order does not matter</td>
+<td style="text-align: right;">21.3%</td>
+<td style="text-align: right;">73.5%</td>
+<td style="text-align: right;">97.0%</td>
+<td style="text-align: right;">0.431</td>
+<td style="text-align: right;">0.290</td>
+</tr>
+<tr>
+<td style="text-align: left;">the same, head root first (weight of the others 0.6)</td>
+<td style="text-align: right;">23.8%</td>
+<td style="text-align: right;">74.5%</td>
+<td style="text-align: right;">96.9%</td>
+<td style="text-align: right;">0.439</td>
+<td style="text-align: right;">0.291</td>
+</tr>
+<tr>
+<td style="text-align: left;">learned roots (λ = 30, cos with the original ≥ 0.85)</td>
+<td style="text-align: right;">25.6%</td>
+<td style="text-align: right;">80.6%</td>
+<td style="text-align: right;">98.8%</td>
+<td style="text-align: right;">0.494</td>
+<td style="text-align: right;">0.367</td>
+</tr>
+<tr>
+<td style="text-align: left;">for comparison: a random matrix</td>
+<td style="text-align: right;">63%</td>
+<td style="text-align: right;">96%</td>
+<td style="text-align: right;">99.9%</td>
+<td style="text-align: right;">0.22</td>
+<td style="text-align: right;">0.22</td>
+</tr>
+</tbody>
+</table>
+<p>The closeness of a word to its real nearest neighbor is 0.62 on average, to a random word 0.03.</p>
+<p>Conclusions:</p>
+<ul>
+<li><strong>Discreteness is almost free</strong>: 11 and 5 levels give the same result, 3 levels lose about a percent. The main limit is the number of roots m: m = 1 → 2 → 3 → 5 gives top50 64 → 87 → 96 → 99.8%.</li>
+<li><strong>A sum of roots gives a region of meaning, not a word</strong>: 95–98% of words are in the top50, but discrimination within a region is weak.</li>
+<li><strong>Dictionary learning helps</strong> (top1 +2…7 in different runs, top10 +6, cos +0.06, misses noticeably closer), and the roots stay recognizable by their nearest words (<code>data/sparse_learn.md</code>, the “before / after” table). Without the constraint cos ≥ 0.85 the roots drift and begin to serve as “slots” for frequent groups of words: MANY → <em>generally, really</em>, SOMEONE → <em>anyway, maybe</em>, BEGIN+ → the ordinals <em>fourth, ninth</em>, SIDE+ → cardinal directions, SEX+ → professions. This is both harm and a hint at what is missing.</li>
+<li>Centering the space (subtracting the mean vector) gives top50 98% against 95%, but lower cos; it was not taken into the main scheme.</li>
+</ul>
+<h2 id="6-lacunae">6. Lacunae</h2>
+<p>The calculation is on the 45-root dictionary (before the candidates). Words with the worst reconstruction (the bottom 35% by cos), with the residuals x − proj(x onto y) clustered (k-means, 25 clusters). The clusters are topical areas: texts and publications, politics, courts, sport, finance, plots and film, business, school, army, weapons, medicine, religion, transport, work. Most of them are institutions and terms that by the rules of the language go in quotes. Candidates understandable to a human (the rule: first an axis on a root without an axis):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">candidate</th>
+<th style="text-align: left;">cluster</th>
+<th style="text-align: left;">cluster's top10 without → with</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">an axis on BODY: −5 illness … +5 health</td>
+<td style="text-align: left;">medicine (disease, patient, hospital, doctor…)</td>
+<td style="text-align: left;">7% → 43%</td>
+</tr>
+<tr>
+<td style="text-align: left;">an axis on FIGHT: −5 game, sport … +5 war</td>
+<td style="text-align: left;">sport; army and weapons</td>
+<td style="text-align: left;">18% → 64%; 55% → 73%</td>
+</tr>
+<tr>
+<td style="text-align: left;">a new root TEXT (written language)</td>
+<td style="text-align: left;">texts (article, newspaper, page, book…)</td>
+<td style="text-align: left;">21% → 71%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Without a limit on the number of roots</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/lacunae.md">lacunae.md</a>, <code>scripts/20_lacunae.py</code>). The encoder greedily adds roots (median 8). A hit counts if among the 10 nearest of the 10,000 frequent words there is a word with the same stem. The result: 87% of ordinary words from the list of 3000 frequent words and 63% of all words. The second pass takes ordinary words more broadly: all common nouns of the 10,000, with proper names filtered out by the Brown corpus tagging. That is 7128 words, of which 77.5% are in the top10, 1605 misses in 40 clusters (<a href="https://github.com/komapc/contlang/blob/main/data/lacunae.md">lacunae.md</a>).</p>
+<p>The first finding is the poles of <code>RULE</code>. The earlier poles were words for agencies (<em>authority, committee, agency, commission, government</em>), and any code with <code>RULE</code> unfolded into <em>commissions, agencies</em>. Because of this, state, court, bank, school and elections merged: these institutions reached the top10 in 6% of cases. The new poles are law and authority (<em>law, official, authority, formal, legal, govern, rule</em> against <em>personal, private, informal, individual, unofficial</em>): now 32%, with the overall result unchanged. The meaning of the axis is the same; only the words for SemAxis changed.</p>
+<p>The second finding is units of time and parts of the day. Recipes appeared for them, checked by a blind test (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_time.md">roundtrip_time</a>): 24 of 24 with recipes against 13 and 12 of 24 without them. The recipes are in <a href="/docs/en/encoding/">encoding.md</a>, section “Time”. The misses among all words are mostly names, countries and titles, which go in quotes. Among ordinary words there are 270 misses, which gather into areas:</p>
+<ul>
+<li>morality and society;</li>
+<li>illness and medicine;</li>
+<li>religion;</li>
+<li>elections and politics;</li>
+<li>trade;</li>
+<li>school;</li>
+<li>security;</li>
+<li>courts;</li>
+<li>cardinal directions;</li>
+<li>flight;</li>
+<li>time of day and calendar;</li>
+<li>celestial bodies;</li>
+<li>the press;</li>
+<li>credit;</li>
+<li>police;</li>
+<li>connectors (<em>moreover</em>);</li>
+<li>the city;</li>
+<li>ordinal numbers;</li>
+<li>weapons.</li>
+</ul>
+<p>On all test words the gain is small (top10 72.5% → 74.8%): the candidates cover their areas and do not interfere with the rest. The same roots arose by themselves in early automatic runs (DISEASE, WRITER, AUTHOR, COMPETE in <a href="/docs/en/lexicon/">lexicon.md</a>). The blind test is in section 7.</p>
+<h2 id="7-blind-tests">7. Blind tests</h2>
+<p>Math only proposes; the blind round-trip test decides (the coder and decoder are models, and the decoder does not see the originals).</p>
+<p><strong>Candidates</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_candidates.md">roundtrip_candidates.md</a>, 36 words, 12 from each candidate's area; exact / among three):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">area</th>
+<th style="text-align: left;">without candidates</th>
+<th style="text-align: left;">with candidates</th>
+<th style="text-align: left;">decision</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">BODY, health axis</td>
+<td style="text-align: left;">15 / 20 of 24</td>
+<td style="text-align: left;">19 / 22 of 24</td>
+<td style="text-align: left;">not added: health is already expressed through <code>LIVE</code>, <code>GOOD</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT, axis game … war</td>
+<td style="text-align: left;">11 / 15 of 24</td>
+<td style="text-align: left;">17 / 21 of 24</td>
+<td style="text-align: left;"><strong>added</strong></td>
+</tr>
+<tr>
+<td style="text-align: left;">TEXT, new root</td>
+<td style="text-align: left;">3 / 5 of 24</td>
+<td style="text-align: left;">15 / 17 of 23</td>
+<td style="text-align: left;"><strong>added</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Then the surplus was removed (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge.md</a>, the similarity of axes and centers is a hint from the math): <code>MATTER</code> merged into <code>GRAIN</code> (11 → 17 of 24), <code>PARTICULAR</code> into <code>SAME</code> (13 → 12), tools as an axis on <code>DO</code> (17 of 24 against 13 with the label <code>U</code>). The total is 44 roots.</p>
+<p><strong>Codes of the math encoder</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_math.md">roundtrip_math.md</a>, 24 words): roots from poles 1 of 24 exactly, learned dictionary 3 of 24 (4 among three). For comparison, the model coder on the same tools: 1 of 24 without the label <code>U</code> and 13 of 24 with it. A math code lands in the region of meaning but takes roots a human would not use to describe the word (<em>saw</em> → <code>SEE TIME(=-4)</code>: the vector is mixed with the past tense of <em>see</em>; <code>ABSTRACT</code>, <code>PARTICULAR</code> as filler).</p>
+<p>The conclusion: math is a <strong>tool for analyzing the language</strong> (finding lacunae, checking poles, comparing axis variants in seconds, without a model), not a translator. A high top50 in the space does not mean readability by a human.</p>
+<h2 id="8-the-blend-decoder">8. The “blend” decoder</h2>
+<p>The “nearest words to the sum of roots” decoder hardly ever returns the word: the winners are hub words close to any code (<em>things, someone, matters</em>). The “blend” decoder scores each word as follows:</p>
+<pre><code>mix = ½ · z(2·cos(word, y) − hub(word)) + ½ · Conj,   Conj = −log Σⱼ exp(−2·zⱼ) / 2
+</code></pre>
+<ul>
+<li>the first term is CSLS: the word's hubness is subtracted from its closeness to the code (the mean cos with the 10 nearest of 3000 random codes);</li>
+<li>Conj is a soft minimum of the z-scores of the word's closeness to each root separately: the word must fit all the roots, not their sum;</li>
+<li>z is normalization over the whole dictionary.</li>
+</ul>
+<p>On the math's own codes (2000 random words of the site dictionary, without poles and proper names, <code>scripts/experiments/decoder/site_eval.py</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">dictionary</th>
+<th style="text-align: left;">decoder</th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top3</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">cos of the first guess with the word (median)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">from poles</td>
+<td style="text-align: left;">sum</td>
+<td style="text-align: right;">1.4%</td>
+<td style="text-align: right;">5.2%</td>
+<td style="text-align: right;">24.3%</td>
+<td style="text-align: right;">0.26</td>
+</tr>
+<tr>
+<td style="text-align: left;">from poles</td>
+<td style="text-align: left;">blend</td>
+<td style="text-align: right;">45.5%</td>
+<td style="text-align: right;">70.0%</td>
+<td style="text-align: right;">90.8%</td>
+<td style="text-align: right;">0.83</td>
+</tr>
+<tr>
+<td style="text-align: left;">learned</td>
+<td style="text-align: left;">sum</td>
+<td style="text-align: right;">6.8%</td>
+<td style="text-align: right;">19.1%</td>
+<td style="text-align: right;">44.3%</td>
+<td style="text-align: right;">0.30</td>
+</tr>
+<tr>
+<td style="text-align: left;">learned</td>
+<td style="text-align: left;">blend</td>
+<td style="text-align: right;"><strong>50.7%</strong></td>
+<td style="text-align: right;">75.1%</td>
+<td style="text-align: right;">93.0%</td>
+<td style="text-align: right;">1.00</td>
+</tr>
+</tbody>
+</table>
+<p>This is not the hash effect from section 3: with hashing top1 grows while the misses are far. Here the first guess is close to the word (median cos 0.83–1.00 against 0.26–0.30 for the sum), and guesses with cos &lt; 0.3 are three times fewer. The other experiments (4 roots, an encoder checked by the decoder, a word pair, root order, the root SPIRIT) are in <a href="https://github.com/komapc/contlang/blob/main/data/decoder_experiments.md">decoder_experiments.md</a>.</p>
+<h2 id="9-on-the-site">9. On the site</h2>
+<p>On the “Try it” page (<a href="https://minco.lipu.dev/">minco.lipu.dev</a>), next to the language model, the same encoder runs, ported to JavaScript (<code>site/math.js</code>, the codes and word ranks match Python on the check words), with the learned dictionary: the word's code, the words the “blend” decoder puts first, the rank of the source word among 10,721 words (the 10,000 frequent ones and the whole list of 3000) and the 10 roots that best describe the word individually. It also reads a code produced by the model. The data is <code>scripts/site/build_math.py</code>.</p>
+<p><strong>New roots are trained further, old atoms are frozen</strong> (since 2026-10, LAND). <code>scripts/18_sparse_learn.py</code> by default takes atoms from <code>data/sparse_dict_learned.npz</code> as they are and trains only the roots of roots.yaml that are not there (the same setup, but only their rows are solved), so the codes of words without new roots do not change. Full retraining is <code>--full</code>: on 47 roots it shifted the old atoms and spoiled codes without new roots (−8% “close”, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt2/README.md">adopt2</a>). If a root's center is not the middle of the poles, the center's words are written in roots.yaml in the field <code>center</code> (for LAND: <em>land, country, region, territory, landscape, shore</em>). The further training reproduces the verified LAND atom (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt3/README.md">adopt3</a>) to an accuracy of 0.001.</p>
+<p><strong>Decoder corrections on the site</strong> (only in <code>site/math.js</code>, not in Python, so word ranks no longer match Python). The data is <code>site/data/words.json</code> (<code>scripts/site/build_words.py</code>, WordNet).</p>
+<ol>
+<li><strong>Function words</strong> (pronouns, prepositions, conjunctions, modals and everything not in WordNet, including proper names) are not offered.</li>
+<li><strong>Word forms of one lemma</strong> (tool / tools, house / housed) count as one word: the lemma is shown, and the rank is computed over lemmas.</li>
+<li><strong>The code's part of speech</strong> (<code>o/i/a/e</code>): a word loses 1.5·(1 − the share of its senses of this part of speech by WordNet counts). The coefficient was chosen on recipes from a grid 0…5.</li>
+<li><strong>A pair through PI</strong>: z(the score of the merged roots of both words) + 0.5·z(link), where the link is the highest cos of the word with one of the 10 first readings of the refining word (or with a word in quotes). So “furniture · house” looks for words similar to “non-living things” and related to apartment, home, residence. Numberbatch carries ConceptNet relations, so cos here is both “where it is located” and “what it is for”.</li>
+</ol>
+<p>On 214 single-word recipes:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">top1</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">top50</th>
+<th style="text-align: right;">median rank</th>
+<th style="text-align: right;">rank &gt; 1000</th>
+<th style="text-align: right;">cos of the first reading with the word (median)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>before</td>
+<td style="text-align: right;">6%</td>
+<td style="text-align: right;">27%</td>
+<td style="text-align: right;">49%</td>
+<td style="text-align: right;">54</td>
+<td style="text-align: right;">30</td>
+<td style="text-align: right;">0.20</td>
+</tr>
+<tr>
+<td>items 1–3</td>
+<td style="text-align: right;">12%</td>
+<td style="text-align: right;">41%</td>
+<td style="text-align: right;">63%</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">0.26</td>
+</tr>
+</tbody>
+</table>
+<p>On 27 pairs from the blind tests key and furniture (geometric mean of rank): before 367 (key 206, furniture 1912), now 143 (key 147, furniture 132). There are few pairs, and λ and K were chosen on them, so this is an estimate, not a check.</p>
+<p>The bottleneck of pairs is the refining word itself: “door” <code>PART(=-2) PLACE SIDE(=+5)</code> is read by the vectors as edges, aspect, frontier. So the math does not find key through the door that Haiku reads.</p>
+<p>The reading code is gathered into the class <code>Reader</code> (<code>site/math.js</code>): the site and the check <code>scripts/site/eval_math.js</code> call the same thing. The link words of the refining word are <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>, <code>PI</code>.</p>
+<p><strong>The ConceptNet graph for pairs</strong> (<code>scripts/site/build_graph.py</code>, the edges UsedFor, AtLocation, PartOf, HasA, MadeOf, CapableOf, IsA, ReceivesAction, RelatedTo between dictionary words; 7.6 MB). The pair's score gets graphW·(the weight of the edge from the word to the readings of the refining word), and each link word has its own relation weights (PI: part, place, material; FOR: purpose). On 51 pairs (the 27 earlier ones and 24 from the PI/FOR test) the mean rank falls from 197 to 161 at graphW = 4, for pairs with PI from 186 to 145, and for pairs with FOR it hardly changes (235 → 225). If the same codes are read through someone else's link word, the ranks are almost the same. So relation types give the math little: the bottleneck remains the reading of the refining word itself. The graph does not go on the site, graphW = 0.</p>
+<p><strong>The roots of the refining word are not merged with the head.</strong> Earlier the roots of both words were added into one vector. On 107 pairs from the blind tests (all <code>pairs.json</code>, key, furniture) this is worse than not reading the second word at all:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">roots of the second word in the common vector (modW)</th>
+<th style="text-align: right;">link weight λ</th>
+<th style="text-align: right;">mean rank</th>
+<th style="text-align: right;">top10</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1 (before)</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">203</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">0.5</td>
+<td style="text-align: right;">182</td>
+<td style="text-align: right;">3</td>
+</tr>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0 (the second word is not read)</td>
+<td style="text-align: right;">120</td>
+<td style="text-align: right;">6</td>
+</tr>
+<tr>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.25 (site)</td>
+<td style="text-align: right;">112</td>
+<td style="text-align: right;">7</td>
+</tr>
+</tbody>
+</table>
+<p>Now the second word only nudges toward words related to its readings. For the vectors it gives little (120 → 112); the benefit of pairs is first of all for the LLM decoder (the blind test of link words, <code>data/eval/runs/links</code>).</p>
+<p><strong>An encoder with a pair</strong> (<code>Reader.encode</code>, until 2026-10-14): if the vectors did not put the word first, the encoder tried the word's 40 nearest neighbors, encoded each with at most two roots without the head's roots, and took the pair “code PI neighbor” with the best rank. The blind test <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/pi/README.md">pi</a> found no benefit, and the pair was removed: the encoder writes only the head word. Reading hand-typed pairs stayed.</p>
+<p>The math's loop (word → code → reading) on 400 random dictionary words:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">neighbors</th>
+<th style="text-align: right;">first</th>
+<th style="text-align: right;">top10</th>
+<th style="text-align: right;">time per word (maximum)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">no pair</td>
+<td style="text-align: right;">155</td>
+<td style="text-align: right;">318</td>
+<td style="text-align: right;">—</td>
+</tr>
+<tr>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">352</td>
+<td style="text-align: right;">0.4 s (2.8 s)</td>
+</tr>
+<tr>
+<td style="text-align: right;">40 (site)</td>
+<td style="text-align: right;">248</td>
+<td style="text-align: right;">367</td>
+<td style="text-align: right;">1.0 s (5.5 s)</td>
+</tr>
+</tbody>
+</table>
+<p>Examples: ship + sailors, star + galaxy, vegetable + garden, harvest + corn (111 → 12).</p>
+<p><strong>Encoder self-check and a penalty for an unmentioned root</strong> (<code>READ.selfCheck</code>, <code>absLam 0,5</code>; data/eval/runs/selfcheck, data/eval/runs/absence). The encoder tries the best codes of 1, 2 and 3 roots and their neighbors (value ±1, minus one root), reads each with its own reading and takes the one where the word ranks higher; on a tie, the shorter. The code's head root does not change. The reading takes 0.5·max(0, z − 1) away from a word, where z is the word's highest affinity (a z-score of cos) with a root that is not in the code: if the word were strongly similar to this root, the encoder would have named it.</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align: right;">dev (100)</th>
+<th style="text-align: right;">1000</th>
+<th style="text-align: right;">another 1000</th>
+<th style="text-align: right;">roots in the code</th>
+<th style="text-align: right;">model codes, cos of the first reading</th>
+<th style="text-align: right;">pairs, mean rank</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>before</td>
+<td style="text-align: right;">69</td>
+<td style="text-align: right;">406</td>
+<td style="text-align: right;">382</td>
+<td style="text-align: right;">2.91</td>
+<td style="text-align: right;">0.172</td>
+<td style="text-align: right;">183</td>
+</tr>
+<tr>
+<td>penalty only (site)</td>
+<td style="text-align: right;">71</td>
+<td style="text-align: right;">466</td>
+<td style="text-align: right;">449</td>
+<td style="text-align: right;">2.91</td>
+<td style="text-align: right;">0.227</td>
+<td style="text-align: right;">142</td>
+</tr>
+<tr>
+<td>self-check + penalty</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">558</td>
+<td style="text-align: right;">555</td>
+<td style="text-align: right;">2.53</td>
+<td style="text-align: right;">0.227</td>
+<td style="text-align: right;">142</td>
+</tr>
+</tbody>
+</table>
+<p>The gain in firsts on 2000 words is +325 (95% +288…+363), of which the penalty is +127. The self-check is off on the site: it throws out meaningful roots for the sake of the vectors: teacher <code>ART(=+1) SEX(=-3) KNOW(=+3)</code> → <code>ART(=+1) SEX(=-3)</code>, that is, it subtracts corpus bias, not meaning. A check of readability by people or an LLM is needed. Weights of 0.6 for non-head roots are optimal: 1 and 0.8 are worse, 0.4 is almost the same, and a dictionary retrained at 0.4 is no better (data/eval/runs/weights, data/eval/runs/relearn).</p>
+<p><strong>Names, number, part of speech, sex</strong> (data/eval/runs/forms, data/eval/runs/sex). A proper name (all senses in WordNet capitalized) the encoder writes in quotes, a plural form as the lemma's code with <code>N+3</code>, and it takes the part of speech from WordNet (earlier <code>| o</code> for any word). SEX is given only to words for which sex is part of the meaning (81 words: mother, king, actress…; not teacher, president). The part of speech gives on the math's loop +158 firsts on 854 random words without names (399 → 557).</p>
+<p><strong>The role for people</strong> (data/eval/runs/fix1). If the first sense of a noun in WordNet is a person (noun.person, 952 words), the encoder uses the role <code>| o agent</code>: “the one who does it, or a person of this field” (Esperanto <em>-ist-</em>), lawyer <code>RULE(=+3) KNOW(=+2) SIDE(=+2) | o agent</code>. Blind readers: +19% “close” on 88 such words [+10 … +30]. The roles <code>tool</code> and <code>quality</code> by WordNet gave no benefit.</p>
+<p><strong>What was tried for reading pairs and did not get in.</strong> The link with the second word can be computed not as the highest cos with one of 10 readings but as the cos with the center of 20 readings. Besides, PRF can be added: shifting the scores toward the center of the 20 best readings of the code itself (<code>Vocab.toward</code>, <code>Reader.prf</code>, on the site prfMu = 0). On pairs from the blind tests written by models this is better: mean rank 112 → 86, with PRF 72; on recipes with PRF top10 41% → 44%. But on the math's loop it is worse. With a center of readings out of 150 non-first words, 23 become first against 32 with max. PRF on 1000 words with one code gives 336 firsts instead of 381. Combinations of max and center are worse than either separately. The main measure is the math's loop, so the site uses max and no PRF.</p>
+<h2 id="10-blind-check-of-the-sites-codes">10. Blind check of the site's codes</h2>
+<p>The main measure now is the share of a blind reader's first answers that a blind judge considers “close” (2 close, 1 near, 0 miss): the semantic field matters, not the exact word.</p>
+<ul>
+<li><strong>1000 words</strong> (<a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/big1000">big1000</a>): the site encoder 24% “close”, Haiku with ENC_SPEC 52%. By part of speech for the site encoder: nouns 21%, verbs 25%, adjectives 28%, adverbs 32%. Worst are people (15% against 62% for the model; this is before the role agent), things and places. The 40 worst words are in <code>worst.md</code>.</li>
+<li><strong>The axes of 8 roots from atoms and the role agent for people</strong> (<a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/fix1">fix1</a>) were accepted (§ 9, “The role for people”).</li>
+<li><strong>Separate codes for the senses</strong> of polysemous words (a sense vector by WordNet, <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/senses">senses</a>): −2% [−10 … +5], not accepted.</li>
+<li><strong>The root KIND</strong> (“kind, variety”, <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/kind">kind</a>): +5.6% [−1 … +12], the threshold was not passed, not accepted. As the head of a code KIND helped (+15%), in the middle of a code it read as “evidence”.</li>
+<li><strong>A pair through PI for the site encoder</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/pi/README.md">pi</a>, 137 pair codes): without the second word it is no worse (+3.6% [−3.6 … +11.7]); a second word that is the nearest anchor word from a recipe (+5% over the current pair) or a link word by ConceptNet edge type (worse) did not pass the thresholds. The broad definition of PI (“a part, place or variety of Y”) is also within noise. The bottleneck is the code of the head word; PI stays in the language. The pair was removed from the site encoder (2026-10-14).</li>
+<li><strong>KIND as a head only, and SIDE</strong> (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>): KIND as head +6.7% [−2.7 … +16] on 75 words; the earlier +15% did not repeat; KIND not accepted (user's decision, 2026-10-14). Without SIDE −2.1% [−8.5 … +3.5] on 141 words (it may be removed by the adopt rule); SIDE with a definition from the atom (“backward, to return … forward, upcoming”) +4.3% [−0.7 … +9.2], the threshold was not passed; the user chose to redefine it (2026-10-14), roots.yaml.</li>
+<li><strong>Moving model codes into the dictionary</strong> (distillation, <a href="https://github.com/komapc/contlang/tree/main/data/eval/runs/distill">distill</a>): the codes look more meaningful but read almost like the earlier ones; the site dictionary did not change.</li>
+</ul>
+<h2 id="11-whats-next">11. What's next</h2>
+<ul>
+<li>A word pair “head + refinement” for words the code does not put first (the head being a hypernym from WordNet).</li>
+<li>External validation of the axes by human scales (Glasgow, Warriner, Brysbaert).</li>
+<li>Russian and aligning the spaces: lacunae between languages (codes near which there is a Russian word but no English one).</li>
+<li>A penalty for the encoder for choosing a root by a side sense of the vector: a step toward readable codes.</li>
+</ul>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/math.md">docs/en/math.md</a> on GitHub, translated from the <a href="/docs/math/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

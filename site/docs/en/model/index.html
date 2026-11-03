@@ -1,0 +1,129 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The model: root and structure — min-co</title>
+<meta name="description" content="Everything in the language comes down to two things: the root and the structure. An axis is not a separate entity but a root in a modifier position with a…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/model/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/model/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/model/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/model/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/model/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="The model: root and structure — min-co">
+<meta property="og:description" content="Everything in the language comes down to two things: the root and the structure. An axis is not a separate entity but a root in a modifier position with a…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"The model: root and structure — min-co","description":"Everything in the language comes down to two things: the root and the structure. An axis is not a separate entity but a root in a modifier position with a…","url":"https://minco.lipu.dev/docs/en/model/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/model/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="the-model-root-and-structure">The model: root and structure</h1>
+<p>Everything in the language comes down to two things: the root and the structure. An axis is not a separate entity but a root in a modifier position with a value (just as in Esperanto a root and a suffix are roughly the same thing). This was decided in discussion; the earlier “root, axis, structure” model has been replaced.</p>
+<h2 id="1-the-root">1. The root</h2>
+<p>A discrete anchor: what kind of object, action or concept this is. About 45, mostly NSM primitives (<em>someone, thing, move, think, want, see, place, …</em>); the current list is in the <a href="/docs/en/lexicon/">lexicon</a>. A root does not know its part of speech.</p>
+<p><strong>Every root has its own axis or none.</strong> An axis is a continuous scale from −5 to +5, defined by poles in the spirit of NSM: for GOOD “bad … good”, for INSIDE “outside … inside”, for LIVE “dead … alive”. The value is relative to the root (a <em>big mouse</em> is smaller than a <em>small elephant</em>). All axes are two-sided: −5 is the opposite pole, 0 the middle, +5 the full pole (for MANY: −5 none … 0 some amount … +5 all).</p>
+<p><strong>The zero rule.</strong> An axis that is not written has an unspecified value, which costs nothing in bits. <code>(=0)</code> is an explicit value: the middle of the axis. Exact quantities (<code>1</code>, <code>17</code>) are numbers from the exemptions.</p>
+<p>There are no shared “universal axes” (M1–M9): if a fine shade is needed, one more root is used.</p>
+<h2 id="2-compound-words">2. Compound words</h2>
+<p>A word is one, two or three roots, as in Esperanto. The head comes first; each following root refines everything before it, without brackets (left to right); more than three roots are not allowed. The second root works sometimes as a root and sometimes as a suffix. A root in a modifier position with an axis value is the “axis” of the earlier model:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">word</th>
+<th style="text-align: left;">notation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">house</td>
+<td style="text-align: left;"><code>PLACE LIVE | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">bedroom</td>
+<td style="text-align: left;"><code>PLACE LIVE(=-2) | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">morgue</td>
+<td style="text-align: left;"><code>PLACE LIVE(=-5) | o</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">a good thing</td>
+<td style="text-align: left;"><code>THING GOOD(=+3) | o</code></td>
+</tr>
+</tbody>
+</table>
+<p>An axis without a thing (<em>good</em>) is a root in the head position: <code>GOOD(=+5)</code>. Ambiguous grouping is written with brackets <code>[ … ]</code>. Two words (<code>X | o LINK Y | o</code>) are built by the same logic: the first is the genus, the second narrows it (<a href="/docs/en/syntax/">syntax</a>).</p>
+<p>The cost in bits: dense (9 shared axes) ≈ 31 bits for the values; sparse (axes in roots) ≈ 8.4 bits for each axis needed (root number + value). The sparse way is cheaper as long as a word needs no more than three or four axes. This has not yet been checked on data.</p>
+<h2 id="3-structure">3. Structure</h2>
+<ul>
+<li><strong>Two layers in a word, separated by <code>|</code>.</strong> On the left is the meaning: roots (head first, up to three) with axis values. On the right is the form: the part of speech (<code>o</code> noun, <code>i</code> verb, <code>a</code> attribute, <code>e</code> adverbial; 2 bits, as with the Esperanto suffixes earlier), for a noun a role (<code>agent</code>, <code>tool</code>, <code>result</code>, <code>quality</code>, like Esperanto's <em>-ist, -il, -aĵ, -ec</em>), and grammatical labels. Labels are a closed set, are not roots and do not count toward the limit of three: <code>T</code> time (the reference moment relative to “now”), <code>R</code> the time of the event relative to that reference (Reichenbach's S, R, E), <code>N</code> number, <code>M</code> negation and probability, <code>A</code> aspect, <code>C</code> comparison, <code>I</code> intensity, <code>D</code> definiteness, <code>V</code> voice, <code>K</code> causation, <code>!</code> command, <code>?</code> question; values are on the −5…+5 scale under the zero rule. Example: <code>FEEL(=+4) GOOD(=-4) TIME(=+3) | i T+2 N+4</code> is “they will be frightened” (fear: a feeling, bad, in the future; form: verb, future, many). The semantic <code>TIME(=+3)</code> on the left and the grammatical <code>T+2</code> on the right do not mix. Grammatical labels are placed once, on the head word of the group.</li>
+<li><strong>Order:</strong> the head first, modifiers after.</li>
+<li><strong>Particles:</strong> <code>E</code> object, <code>PI</code> a noun as modifier, <code>LA</code> condition, brackets <code>[ … ]</code> for a clause, <code>?</code> for a requested value. The predicate is the word with <code>| i</code>; <code>LI</code> was removed (2026-10-14, <a href="/docs/en/syntax/">syntax</a>).</li>
+<li><strong>Time and negation</strong> are the labels <code>T</code> and <code>M</code> after the <code>|</code>; the semantic <code>TIME</code> stays a root on the left; there is no root <code>MAYBE</code>, probability is the label <code>M</code>.</li>
+</ul>
+<h2 id="what-to-take-from-other-languages-accepted-for-further-work">What to take from other languages (accepted for further work)</h2>
+<ul>
+<li>Esperanto's table of correlatives: questions, demonstratives, “all / nobody” are assembled from the roots SOMEONE, THING, PLACE, TIME, NEAR, MANY and the particle <code>?</code> (see the lexicon).</li>
+<li>Evidentiality (“saw”, “heard”): the roots SEE, THINK, KNOW (HEAR was removed) as a particle modifying the sentence.</li>
+<li>Number: the root MANY (<code>THING MANY(=+3)</code> is “several”); the axis is two-sided (−5 none … 0 some amount … +5 all); without a value, the number is not specified.</li>
+<li>Argument places on a root (Lojban) instead of cases.</li>
+<li>Form length by frequency (Huffman coding).</li>
+<li>A marker for names and loanwords (Lojban, <em>cmevla</em>) for the exemptions.</li>
+<li>A formal grammar checked by a parser.</li>
+</ul>
+<h2 id="what-remains-open">What remains open</h2>
+<ul>
+<li>Abstractions (<em>responsibility, category, probability, career…</em>) have no roots so far; roots are added as failures come up. The root KIND (“kind, variety”) was tested and not accepted, including as a head only (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/kind/README.md">kind</a>, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>; decision of 2026-10-14).</li>
+<li>To check on data: sparse encoding (a root + up to 3 modifier roots) against 9 shared axes at the same number of bits.</li>
+<li>Verbs of change of state via a head root with a value (<em>grow</em> = <code>BIG(=+3) | i</code> instead of <code>CHANGE BIG(=+3) | i</code>) were tested and not accepted: there is no difference (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/verbs/README.md">verbs</a>).</li>
+</ul>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/model.md">docs/en/model.md</a> on GitHub, translated from the <a href="/docs/model/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

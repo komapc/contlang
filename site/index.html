@@ -288,7 +288,7 @@ footer.projects a{color:var(--acc)}
   <p class="mut" id="dictCount"></p>
   <input type="search" id="dq" placeholder="search by word or root (money, LIVE, PLACE…)">
   <div class="card" style="overflow-x:auto"><table><thead><tr><th><span data-l="en">word</span></th><th><span data-l="en">code</span></th></tr></thead><tbody id="dictRows"></tbody></table></div>
-  <p class="mut" data-l="en">The recipes are collected from <a href="/docs/encoding/">the encoding recipes</a> (in Russian) and from the hints the model gets on the site; each was checked by a blind test (reports in <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Click a row — the code opens in “Try it”: the model decodes it blind and the math reads it.</p>
+  <p class="mut" data-l="en">The recipes are collected from <a href="/docs/en/encoding/">the encoding recipes</a> and from the hints the model gets on the site; each was checked by a blind test (reports in <a href="https://github.com/komapc/contlang/tree/main/data/translation_test">data/translation_test</a>). Click a row — the code opens in “Try it”: the model decodes it blind and the math reads it.</p>
 </section>
 
 <section id="method">
@@ -311,7 +311,7 @@ footer.projects a{color:var(--acc)}
   </tbody></table>
   <h3>Math without a model</h3>
   <p>The right column in “Try it” encodes a word without a language model: the word vector (ConceptNet Numberbatch) is approximated by a sum of at most three roots with integer axis values, by trying all variants. A root is a “center” (what the axis is about) plus an axis direction, built from pole words in <a href="https://github.com/komapc/contlang/blob/main/roots.yaml">roots.yaml</a>. The root directions are then fitted on 70% of frequent words, with the condition that each stays close to the original (cos ≥ 0.85). Decoding: a word must be close to each root of the code separately, and hub words that are close to any code are penalized.</p>
-  <p>What it gives: on the math's own codes (2000 words of the site dictionary) the word is restored first in 46–51% of cases and in the top ten in 91–93%. But people and models hardly read the math's codes (1–3 of 24 in an earlier blind test). So it serves as an analysis tool — finding missing roots, checking axis poles, finding duplicate roots (this is how MATTER and GRAIN were merged) — not as a translator. Details: <a href="/docs/math/">mathematical encoding</a> (in Russian).</p>
+  <p>What it gives: on the math's own codes (2000 words of the site dictionary) the word is restored first in 46–51% of cases and in the top ten in 91–93%. But people and models hardly read the math's codes (1–3 of 24 in an earlier blind test). So it serves as an analysis tool — finding missing roots, checking axis poles, finding duplicate roots (this is how MATTER and GRAIN were merged) — not as a translator. Details: <a href="/docs/en/math/">mathematical encoding</a>.</p>
   <h3>Honest caveats</h3>
   <ul>
     <li>Absolute accuracy is modest: on encyclopedic sentences the average score is about 1.2–1.4 of 3. The language carries the topic and the main relations, not the details.</li>
@@ -325,21 +325,21 @@ footer.projects a{color:var(--acc)}
 
 <section id="docs">
   <h2><span data-l="en">Documentation</span></h2>
-  <p class="note" data-l="en">The documents are in Russian and still describe the previous notation (with <code>|</code> and suffixes). The Toki Pona-style notation is accepted for testing and has not been moved into them yet.</p>
+  <p class="note" data-l="en">The documents (translated from Russian) still describe the previous notation (with <code>|</code> and suffixes). The Toki Pona-style notation is accepted for testing and has not been moved into them yet.</p>
   <ul>
-    <li data-l="en"><a href="/docs/reading/">How to read min-co</a> — a short guide for those who know Toki Pona and Esperanto</li>
-    <li data-l="en"><a href="/docs/model/">The model: root and structure</a> — how a word is built</li>
-    <li data-l="en"><a href="/docs/philosophy/">Philosophy and principles</a> — why the language is built this way</li>
-    <li data-l="en"><a href="/docs/syntax/">Syntax</a> — particles, labels, sentences</li>
-    <li data-l="en"><a href="/docs/tables/">Summary tables</a> — roots, axes and labels (generated from roots.yaml)</li>
-    <li data-l="en"><a href="/docs/encoding/">Encoding recipes</a> — techniques and verified recipes for hard words</li>
-    <li data-l="en"><a href="/docs/lexicon/">Lexicon</a> — roots, suffixes, features</li>
-    <li data-l="en"><a href="/docs/phonology/">Phonology</a> — sounds and word structure</li>
-    <li data-l="en"><a href="/docs/math/">Mathematical encoding</a> — encoding by vector math: setup, metrics, results</li>
-    <li data-l="en"><a href="/docs/rethink/">Rethinking the language</a> — the Toki Pona benchmark, proposals, open questions</li>
+    <li data-l="en"><a href="/docs/en/reading/">How to read min-co</a> — a short guide for those who know Toki Pona and Esperanto</li>
+    <li data-l="en"><a href="/docs/en/model/">The model: root and structure</a> — how a word is built</li>
+    <li data-l="en"><a href="/docs/en/philosophy/">Philosophy and principles</a> — why the language is built this way</li>
+    <li data-l="en"><a href="/docs/en/syntax/">Syntax</a> — particles, labels, sentences</li>
+    <li data-l="en"><a href="/docs/en/tables/">Summary tables</a> — roots, axes and labels (generated from roots.yaml)</li>
+    <li data-l="en"><a href="/docs/en/encoding/">Encoding recipes</a> — techniques and verified recipes for hard words</li>
+    <li data-l="en"><a href="/docs/en/lexicon/">Lexicon</a> — roots, suffixes, features</li>
+    <li data-l="en"><a href="/docs/en/phonology/">Phonology</a> — sounds and word structure</li>
+    <li data-l="en"><a href="/docs/en/math/">Mathematical encoding</a> — encoding by vector math: setup, metrics, results</li>
+    <li data-l="en"><a href="/docs/en/rethink/">Rethinking the language</a> — the Toki Pona benchmark, proposals, open questions</li>
     <li data-l="en"><a href="https://github.com/komapc/contlang/blob/main/README.md">README</a> — project overview and tools (GitHub)</li>
   </ul>
-  <p class="mut"><a href="/docs/" data-l="en">All documents (in Russian)</a></p>
+  <p class="mut"><a href="/docs/en/" data-l="en">All documents</a></p>
 </section>
 <footer class="projects">
   <a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a>

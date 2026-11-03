@@ -1,0 +1,516 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Summary tables: roots, axes, labels — min-co</title>
+<meta name="description" content="A brief overview of the current state. Sources of truth: roots.yaml (roots and axes), syntax.md (labels and particles), model.md (the model). This is only a…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/tables/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/tables/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/tables/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/tables/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/tables/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Summary tables: roots, axes, labels — min-co">
+<meta property="og:description" content="A brief overview of the current state. Sources of truth: roots.yaml (roots and axes), syntax.md (labels and particles), model.md (the model). This is only a…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Summary tables: roots, axes, labels — min-co","description":"A brief overview of the current state. Sources of truth: roots.yaml (roots and axes), syntax.md (labels and particles), model.md (the model). This is only a…","url":"https://minco.lipu.dev/docs/en/tables/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/tables/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="summary-tables-roots-axes-labels">Summary tables: roots, axes, labels</h1>
+<blockquote>
+<p>English translation of <a href="/docs/tables/">docs/tables.md</a>, which is generated from <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a> (<code>python3 scripts/mincode/gen.py</code>).</p>
+</blockquote>
+<p>A brief overview of the current state. Sources of truth: <code>roots.yaml</code> (roots and axes), <a href="/docs/en/syntax/">syntax.md</a> (labels and particles), <a href="/docs/en/model/">model.md</a> (the model). This is only a summary; in case of disagreement they are right.</p>
+<h2 id="roots-with-an-axis-39">Roots with an axis (39)</h2>
+<p>An axis is a −5 … +5 scale; an axis that is not written has an unspecified value, <code>(=0)</code> is the explicit middle.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">root</th>
+<th style="text-align: left;">−5</th>
+<th style="text-align: left;">0</th>
+<th style="text-align: left;">+5</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GOOD</td>
+<td style="text-align: left;">bad</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">good</td>
+</tr>
+<tr>
+<td style="text-align: left;">BIG</td>
+<td style="text-align: left;">little</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">much</td>
+</tr>
+<tr>
+<td style="text-align: left;">NEAR</td>
+<td style="text-align: left;">far, abroad, on the way</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">close, nearby, in the center (this / that)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ABOVE</td>
+<td style="text-align: left;">lower</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">higher</td>
+</tr>
+<tr>
+<td style="text-align: left;">LIVE</td>
+<td style="text-align: left;">dead</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">alive</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAME</td>
+<td style="text-align: left;">different, special</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">the same, common</td>
+</tr>
+<tr>
+<td style="text-align: left;">TIME</td>
+<td style="text-align: left;">long ago</td>
+<td style="text-align: left;">now</td>
+<td style="text-align: left;">someday</td>
+</tr>
+<tr>
+<td style="text-align: left;">INSIDE</td>
+<td style="text-align: left;">outside</td>
+<td style="text-align: left;">on the boundary</td>
+<td style="text-align: left;">inside</td>
+</tr>
+<tr>
+<td style="text-align: left;">PART</td>
+<td style="text-align: left;">crumb (−2 part, member)</td>
+<td style="text-align: left;">+2 whole, “completely”</td>
+<td style="text-align: left;">+5 group, set (after a word: a collection of such things, <em>-aro</em>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SIDE</td>
+<td style="text-align: left;">back, backward; to return</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">front, forward; upcoming</td>
+</tr>
+<tr>
+<td style="text-align: left;">KNOW</td>
+<td style="text-align: left;">foolish, absurd, I don't know</td>
+<td style="text-align: left;">informed</td>
+<td style="text-align: left;">I know, to inform, to teach</td>
+</tr>
+<tr>
+<td style="text-align: left;">WANT</td>
+<td style="text-align: left;">hatred</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">love</td>
+</tr>
+<tr>
+<td style="text-align: left;">HEAT</td>
+<td style="text-align: left;">ice</td>
+<td style="text-align: left;">warmth</td>
+<td style="text-align: left;">fire</td>
+</tr>
+<tr>
+<td style="text-align: left;">BEGIN</td>
+<td style="text-align: left;">to begin</td>
+<td style="text-align: left;">in progress</td>
+<td style="text-align: left;">to finish</td>
+</tr>
+<tr>
+<td style="text-align: left;">GIVE</td>
+<td style="text-align: left;">to seize, to take away</td>
+<td style="text-align: left;">exchange, to receive</td>
+<td style="text-align: left;">to give away, to present, to donate</td>
+</tr>
+<tr>
+<td style="text-align: left;">TOUCH</td>
+<td style="text-align: left;">soft, smooth, tender</td>
+<td style="text-align: left;">ordinary</td>
+<td style="text-align: left;">hard, stiff, harsh</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEX</td>
+<td style="text-align: left;">female</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">male</td>
+</tr>
+<tr>
+<td style="text-align: left;">THINK</td>
+<td style="text-align: left;">to doubt</td>
+<td style="text-align: left;">to think</td>
+<td style="text-align: left;">to decide</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN</td>
+<td style="text-align: left;">impossible (−3 difficult)</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">easy</td>
+</tr>
+<tr>
+<td style="text-align: left;">MANY</td>
+<td style="text-align: left;">−5 none, not at all (−3 almost none, shortage)</td>
+<td style="text-align: left;">0 some amount</td>
+<td style="text-align: left;">+5 all (+3 many)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SOMEONE</td>
+<td style="text-align: left;">they / another</td>
+<td style="text-align: left;">someone</td>
+<td style="text-align: left;">I (+3 you)</td>
+</tr>
+<tr>
+<td style="text-align: left;">THING</td>
+<td style="text-align: left;">stone</td>
+<td style="text-align: left;">plant</td>
+<td style="text-align: left;">animal (+4)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOVE</td>
+<td style="text-align: left;">to stand</td>
+<td style="text-align: left;">to walk</td>
+<td style="text-align: left;">to rush</td>
+</tr>
+<tr>
+<td style="text-align: left;">FEEL</td>
+<td style="text-align: left;">lethargy</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">strong feeling</td>
+</tr>
+<tr>
+<td style="text-align: left;">RULE</td>
+<td style="text-align: left;">personal, informal</td>
+<td style="text-align: left;">ordinary</td>
+<td style="text-align: left;">official, institution, law</td>
+</tr>
+<tr>
+<td style="text-align: left;">CHANGE</td>
+<td style="text-align: left;">to stay</td>
+<td style="text-align: left;">to change</td>
+<td style="text-align: left;">to transform, to change completely</td>
+</tr>
+<tr>
+<td style="text-align: left;">ART</td>
+<td style="text-align: left;">calculation, technology, exact sciences</td>
+<td style="text-align: left;">mixed</td>
+<td style="text-align: left;">creativity, culture, humanities</td>
+</tr>
+<tr>
+<td style="text-align: left;">JOIN</td>
+<td style="text-align: left;">to separate, to remove</td>
+<td style="text-align: left;">composition unchanged</td>
+<td style="text-align: left;">to attach, to add, to unite</td>
+</tr>
+<tr>
+<td style="text-align: left;">VALUE</td>
+<td style="text-align: left;">cheap, sale, buying and selling</td>
+<td style="text-align: left;">ordinary price</td>
+<td style="text-align: left;">expensive, valuable, important</td>
+</tr>
+<tr>
+<td style="text-align: left;">CARE</td>
+<td style="text-align: left;">careless, mistake, fault</td>
+<td style="text-align: left;">ordinary</td>
+<td style="text-align: left;">diligent, thorough</td>
+</tr>
+<tr>
+<td style="text-align: left;">FRIEND</td>
+<td style="text-align: left;">enemy, hostile</td>
+<td style="text-align: left;">neutral</td>
+<td style="text-align: left;">friend, friendly, kind</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOOD</td>
+<td style="text-align: left;">grief, despair, tragic (−3 sadness)</td>
+<td style="text-align: left;">serious, calm</td>
+<td style="text-align: left;">funny, laughter (+3 merry, joyful)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CONSUME</td>
+<td style="text-align: left;">to emit (write, speak, excrete)</td>
+<td style="text-align: left;">exchange</td>
+<td style="text-align: left;">to absorb (eat, read, listen)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MEASURE</td>
+<td style="text-align: left;">a quantity in itself (size, amount)</td>
+<td style="text-align: left;">level, degree</td>
+<td style="text-align: left;">a quantity relative to another (ratio, share, percent, statistics)</td>
+</tr>
+<tr>
+<td style="text-align: left;">LONG</td>
+<td style="text-align: left;">thread, cloth, rope (thin, flexible)</td>
+<td style="text-align: left;">wire, rod, fastener</td>
+<td style="text-align: left;">beam, board, log, wooden furniture</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAY</td>
+<td style="text-align: left;">whisper, mumbling</td>
+<td style="text-align: left;">ordinary speech</td>
+<td style="text-align: left;">shout, roar</td>
+</tr>
+<tr>
+<td style="text-align: left;">GRAIN</td>
+<td style="text-align: left;">gas, steam (−3 liquid, water)</td>
+<td style="text-align: left;">granular, loose</td>
+<td style="text-align: left;">solid, in one piece</td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT</td>
+<td style="text-align: left;">game, sport, competition</td>
+<td style="text-align: left;">brawl, dispute</td>
+<td style="text-align: left;">war to the death</td>
+</tr>
+<tr>
+<td style="text-align: left;">LAND</td>
+<td style="text-align: left;">sea, water</td>
+<td style="text-align: left;">shore</td>
+<td style="text-align: left;">land, solid ground</td>
+</tr>
+</tbody>
+</table>
+<h2 id="roots-without-an-axis-6">Roots without an axis (6)</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">root</th>
+<th style="text-align: left;">meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">HAPPEN</td>
+<td style="text-align: left;">event, to happen</td>
+</tr>
+<tr>
+<td style="text-align: left;">BODY</td>
+<td style="text-align: left;">body</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEE</td>
+<td style="text-align: left;">to see</td>
+</tr>
+<tr>
+<td style="text-align: left;">DO</td>
+<td style="text-align: left;">to do</td>
+</tr>
+<tr>
+<td style="text-align: left;">PLACE</td>
+<td style="text-align: left;">place</td>
+</tr>
+<tr>
+<td style="text-align: left;">TEXT</td>
+<td style="text-align: left;">written language, text, record</td>
+</tr>
+</tbody>
+</table>
+<h2 id="the-words-form-after-the-">The word's form: after the <code>|</code></h2>
+<p>Part of speech (2 bits): <code>o</code> noun, <code>i</code> verb, <code>a</code> attribute, <code>e</code> adverbial.</p>
+<p>Labels (not roots, they do not count toward the limit of three roots; labels are placed once, on the head word of the group):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">label</th>
+<th style="text-align: left;">what</th>
+<th style="text-align: left;">scale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>T</code></td>
+<td style="text-align: left;">time: the reference point relative to “now”</td>
+<td style="text-align: left;">−5 long ago … 0 now … +5 someday (<code>T-2</code> past, <code>T+2</code> future)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>R</code></td>
+<td style="text-align: left;">the time of the event relative to the reference point</td>
+<td style="text-align: left;">−3 earlier … 0 simultaneously … +3 later</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>N</code></td>
+<td style="text-align: left;">number</td>
+<td style="text-align: left;">0 none … +5 all (<code>N+3</code> several)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>M</code></td>
+<td style="text-align: left;">negation, probability</td>
+<td style="text-align: left;">−5 not … −3 maybe … +4 certainly</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>A</code></td>
+<td style="text-align: left;">aspect</td>
+<td style="text-align: left;">−5 about to begin … 0 in progress … +5 finished</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>C</code></td>
+<td style="text-align: left;">comparison</td>
+<td style="text-align: left;">−3 less, +3 more, +5 most</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>I</code></td>
+<td style="text-align: left;">intensity</td>
+<td style="text-align: left;">−5 barely … −2 slightly … +2 rather … +5 extremely (<code>I+4</code> very; do not write <code>I0</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>D</code></td>
+<td style="text-align: left;">definiteness</td>
+<td style="text-align: left;">−3 <em>a</em>, +3 <em>the</em></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>V</code></td>
+<td style="text-align: left;">voice</td>
+<td style="text-align: left;">−4 undergoes, 0 by itself, +4 on purpose</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>K</code></td>
+<td style="text-align: left;">causation (causative)</td>
+<td style="text-align: left;">−5 to prevent, to dissuade … 0 to allow … +5 to force, to cause</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>!</code></td>
+<td style="text-align: left;">command</td>
+<td style="text-align: left;">no value</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>?</code></td>
+<td style="text-align: left;">question</td>
+<td style="text-align: left;">no value</td>
+</tr>
+</tbody>
+</table>
+<h2 id="noun-roles">Noun roles</h2>
+<p>After <code>| o</code>, at most one, no value; they do not count toward the root limit.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">role</th>
+<th style="text-align: left;">what it means</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>agent</code></td>
+<td style="text-align: left;">the one who does this, or a person of this field (a person or a thing): <code>TEXT | o agent</code> writer, <code>HAPPEN | o agent</code> cause, <code>ART(=+5) | o agent</code> artist</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>tool</code></td>
+<td style="text-align: left;">tool, means: <code>TEXT | o tool</code> pen, <code>JOIN(=-4) TOUCH(=+4) | o tool</code> knife</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>result</code></td>
+<td style="text-align: left;">what comes out: <code>HAPPEN | o result</code> consequence</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>quality</code></td>
+<td style="text-align: left;">the quality or state itself: <code>GOOD | o quality</code> goodness, <code>CAN | o quality</code> ability</td>
+</tr>
+</tbody>
+</table>
+<h2 id="phrase-particles">Phrase particles</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">particle</th>
+<th style="text-align: left;">role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>E</code></td>
+<td style="text-align: left;">object</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FROM</code></td>
+<td style="text-align: left;">noun link word: X FROM Y means X is made of Y (material, source); checked first</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>FOR</code></td>
+<td style="text-align: left;">link word: X FOR Y means X is made for Y (used with Y, on Y or as Y); second</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LIKE</code></td>
+<td style="text-align: left;">link word: X LIKE Y means X resembles Y but is not Y; third</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PI</code></td>
+<td style="text-align: left;">link word: X PI Y is everything else: X is a part of Y or is located or lives in Y; last</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>LA</code></td>
+<td style="text-align: left;">condition, context, reference point for <code>R</code></td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>PE</code></td>
+<td style="text-align: left;">the agent with <code>V-4</code> (“by whom”)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>AND</code></td>
+<td style="text-align: left;">coordination: and, also</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>[ ]</code></td>
+<td style="text-align: left;">clause</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>;</code></td>
+<td style="text-align: left;">boundary between independent clauses of a long sentence (each word has its own form <code>| …</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>"…"</code></td>
+<td style="text-align: left;">names, numbers, dates, Latin</td>
+</tr>
+</tbody>
+</table>
+<h2 id="counts">Counts</h2>
+<p>45 roots (39 with an axis, 6 without); 12 form labels; 4 noun roles; 11 particles and signs (+ quotes); 4 parts of speech. Limit: up to 3 roots in a word, without exceptions.</p>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/tables.md">docs/en/tables.md</a> on GitHub, translated from the <a href="/docs/tables/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

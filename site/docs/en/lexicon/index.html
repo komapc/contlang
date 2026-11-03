@@ -1,0 +1,362 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lexicon — min-co</title>
+<meta name="description" content="Roots, axes, labels and particles are in roots.yaml; the blocks between the generated markers of the Russian lexicon and tables.md are generated from it; here…">
+<link rel="canonical" href="https://minco.lipu.dev/docs/en/lexicon/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/lexicon/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/lexicon/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/lexicon/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/docs/en/lexicon/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Lexicon — min-co">
+<meta property="og:description" content="Roots, axes, labels and particles are in roots.yaml; the blocks between the generated markers of the Russian lexicon and tables.md are generated from it; here…">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"Lexicon — min-co","description":"Roots, axes, labels and particles are in roots.yaml; the blocks between the generated markers of the Russian lexicon and tables.md are generated from it; here…","url":"https://minco.lipu.dev/docs/en/lexicon/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/docs/lexicon/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="lexicon">Lexicon</h1>
+<p>Roots, axes, labels and particles are in <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a>; the blocks between the <code>generated</code> markers of the Russian lexicon and <a href="/docs/en/tables/">tables.md</a> are generated from it; here they are translated by hand. Encoding techniques are in <a href="/docs/en/encoding/">encoding.md</a>. Earlier schemes (automatic root selection, universal axes, the suffixes <code>-o/-i</code>) are in <a href="https://github.com/komapc/contlang/blob/main/docs/history/lexicon_archive.md">history/lexicon_archive.md</a> (in Russian).</p>
+<p>There is no fixed vocabulary: a word is up to three roots, head first, each root with its own −5…+5 axis or none (<a href="/docs/en/model/">model</a>). There are no shared axes: a shade is given by one more root.</p>
+<h2 id="roots-the-current-list-draft">Roots: the current list (draft)</h2>
+<p>The rule: each root has <strong>its own</strong> axis (one) or none; compound words of two or three roots, as in Esperanto (the head first, the others refine it; see <a href="/docs/en/model/">model</a>). Roots are taken from NSM; automatically selected words are not taken as roots (checked: the gain in wup is ≤ 0.01, the roots are unreadable, the set is unstable, see <code>data/roots_optimization.md</code>).</p>
+<p><strong>45 roots in all: 39 with an axis, 6 without.</strong> The Russian version of this block is generated from <a href="https://github.com/komapc/contlang/blob/main/roots.yaml"><code>roots.yaml</code></a>.</p>
+<p><strong>With an axis (39):</strong></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">root</th>
+<th style="text-align: left;">axis (−5 … +5)</th>
+<th style="text-align: left;">status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">GOOD</td>
+<td style="text-align: left;">bad … good</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">BIG</td>
+<td style="text-align: left;">little … much</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">NEAR</td>
+<td style="text-align: left;">far … close (−5 far, abroad, a journey, +5 here, nearby, in the center; including “this / that”)</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">ABOVE</td>
+<td style="text-align: left;">lower … higher</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">LIVE</td>
+<td style="text-align: left;">dead … alive</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">SAME</td>
+<td style="text-align: left;">different … the same (−5 different, opposite, −4 special, unlike others, +3 ordinary, +5 the same, identical): <code>SAME(=-4) | a</code> special, unique, <code>SAME(=-4) | e</code> especially, <code>SAME(=+3) | a</code> ordinary, <code>SAME(=+4) MANY(=+5) | a</code> common, universal, <code>SAME(=-4) JOIN(=-5) RULE | o</code> exception</td>
+<td style="text-align: left;">accepted; <strong>since 2026-10 it absorbs the root PARTICULAR</strong> (general … special): blind test 12 words × 2 coders: with PARTICULAR 13 exact of 24, through SAME 12 of 24 — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">TIME</td>
+<td style="text-align: left;">earlier … later</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">INSIDE</td>
+<td style="text-align: left;">outside … on the boundary, on the edge, surface … inside</td>
+<td style="text-align: left;">accepted (data: the poles are in one family); the middle <code>INSIDE(=0)</code> is boundary, edge, surface (blind test of 22 codes: 32 → 53% “close”, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/inside0/README.md">inside0</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">PART</td>
+<td style="text-align: left;">a ladder: particle … part … whole … group (−5 crumb, −2 part / member, +2 whole / “completely”, +5 group, set, union); after the head word <code>PART(=+5)</code> is a collection of such things, like <em>-aro</em> in Esperanto: <code>SOMEONE PART(=+5) | o</code> society, <code>THING(=0) PART(=+5) | o</code> herd / grove; <code>SOMEONE PART(=-2) | o</code> member</td>
+<td style="text-align: left;">accepted, blind test 10 of 10 (<code>data/translation_test/roundtrip_part_ladder.md</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SIDE</td>
+<td style="text-align: left;">rear, backward, to return … front, forward, upcoming</td>
+<td style="text-align: left;">accepted; definition from the atom (2026-10-14): “backward, to return … forward, upcoming, ready”: +4.3% [−0.7 … +9.2] against “rear … front”, +6.4% against removal (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/side_kind/README.md">side_kind</a>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">KNOW</td>
+<td style="text-align: left;">foolish, I don't know … I know (−5 foolish, absurd, 0 informed, +5 to know, to inform, to teach)</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">WANT</td>
+<td style="text-align: left;">I don't want … I want (hatred … love)</td>
+<td style="text-align: left;">accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">HEAT</td>
+<td style="text-align: left;">cold … hot (−5 ice, 0 warm/room temperature, +5 fire)</td>
+<td style="text-align: left;"><strong>new</strong>, accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">BEGIN</td>
+<td style="text-align: left;">beginning … end (−5 to begin, 0 in progress / middle, +5 to finish): <code>BEGIN(=-5) | i</code> to begin, <code>BEGIN(=+5) | i</code> to finish, <code>BEGIN(=-4) | a</code> first, <code>BEGIN(=+4) | a</code> last</td>
+<td style="text-align: left;"><strong>new</strong>, accepted</td>
+</tr>
+<tr>
+<td style="text-align: left;">GIVE</td>
+<td style="text-align: left;">to take … to give away (−5 to seize / take away / steal, 0 exchange / to receive, +5 to give away / present / donate): <code>GIVE(=-5) | i</code> to take, <code>GIVE(=+5) | i</code> to give, <code>GIVE(=-5) GOOD(=-4) | i</code> to steal, <code>GIVE(=-3) TIME(=+3) | i</code> to borrow</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (MOVE + INSIDE does not work, <code>data/translation_test/roundtrip_200.md</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">TOUCH</td>
+<td style="text-align: left;">soft … hard (−5 soft / tender / smooth, 0 ordinary, +5 hard / stiff / harsh): <code>TOUCH(=-4) | a</code> soft, <code>TOUCH(=+5) | a</code> hard</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (test: sharp, concrete, board are confused without the axis)</td>
+</tr>
+<tr>
+<td style="text-align: left;">SEX</td>
+<td style="text-align: left;">female … male (only for words with explicit sex: −5 woman, +5 man; the weak ±1, ±2 are not used)</td>
+<td style="text-align: left;"><strong>new</strong>, proposed</td>
+</tr>
+<tr>
+<td style="text-align: left;">THINK</td>
+<td style="text-align: left;">idea, thing</td>
+<td style="text-align: left;">think, suppose</td>
+</tr>
+<tr>
+<td style="text-align: left;">CAN</td>
+<td style="text-align: left;">I can't … I can (−5 impossible, −3 difficult, +4 easy); from NSM, needed for “difficult / possible”</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (BECAUSE rejected)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MANY</td>
+<td style="text-align: left;">how many (−5 none, not at all, −4 none of what is needed: shortage, absence, −3 almost none, barely, −1 few, not many, 0 some amount, +3 many, +4 most, +5 all, always): <code>THING MANY(=-5) | o</code> nothing, <code>MANY(=-4) | o</code> shortage, absence, <code>MANY(=-3) | e</code> barely, hardly, <code>SOMEONE MANY(=+5) | o</code> everyone</td>
+<td style="text-align: left;">accepted; <strong>two-sided since 2026-10</strong> (before 2026-10 the scale was 0 … +5, “none” was 0): for the math the pole none / zero / absence is at −5, and 0 reads as <em>certainly, absolutely</em>; the encoder used negative levels in 46% of the codes with MANY (<em>lack, absence, insufficient, hardly, barely</em>) — <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/many/README.md">data/eval/runs/many</a>; “one” and exact numbers are numbers from the exemptions</td>
+</tr>
+<tr>
+<td style="text-align: left;">SOMEONE</td>
+<td style="text-align: left;">person (−5 they / another, 0 someone, +3 you, +5 I): <code>SOMEONE(=+5) | o</code> I, <code>SOMEONE(=+3) | o</code> you, <code>SOMEONE(=-3) | o</code> he; plural with <code>MANY</code> as the second root: <code>SOMEONE(=+5) MANY(=+3) | o</code> we</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (blind test: 8 of 8 pronouns)</td>
+</tr>
+<tr>
+<td style="text-align: left;">THING</td>
+<td style="text-align: left;">animacy (−5 stone … 0 plant … +4 animal; a human is SOMEONE): <code>THING(=-5) | o</code> stone, <code>THING(=+4) BIG(=+5) | o</code> elephant</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (test: stone, insect, animal, elephant correct; plants weak)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOVE</td>
+<td style="text-align: left;">movement, motion</td>
+<td style="text-align: left;">move, shift</td>
+</tr>
+<tr>
+<td style="text-align: left;">FEEL</td>
+<td style="text-align: left;">calm … excited (−5 lethargy, +5 strong feeling; whether pleasant or not is GOOD): <code>FEEL(=+4) GOOD(=-4) | a</code> angry</td>
+<td style="text-align: left;"><strong>new</strong>, accepted (test: 6 of 8; “angry” and “frightened” are confused)</td>
+</tr>
+<tr>
+<td style="text-align: left;">RULE</td>
+<td style="text-align: left;">personal … official (−5 personal, informal, private; 0 ordinary; +5 official, institution, law): <code>RULE(=+4) | o</code> authority, institution, <code>SOMEONE PART(=+5) RULE(=+4) | o</code> committee, agency</td>
+<td style="text-align: left;"><strong>new</strong>, accepted; the SemAxis poles were changed from agencies (authority committee agency commission government) to law and authority: the old ones pulled any code with RULE toward <em>commissions, agencies</em>, institutions (court, bank, school, elections…) reached the top10 in 6% of cases, now in 32% (data/lacunae.md)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CHANGE</td>
+<td style="text-align: left;">to stay … to change (−5 to stay, not to change, 0 to change, +5 to transform, to change completely): <code>CHANGE | i</code> to change, <code>CHANGE(=-4) | i</code> to remain, <code>CHANGE BIG(=+3) | i</code> to grow, <code>CHANGE GOOD(=+3) | i</code> to improve</td>
+<td style="text-align: left;"><strong>new</strong>, proposed (SemAxis: alter, transform, modify, shift; the direction increase/decrease is given by the axes <code>BIG</code> and <code>GOOD</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">ART</td>
+<td style="text-align: left;">technology … creativity (−5 calculation, technology, devices, exact sciences, 0 mixed, +5 creativity, culture, humanities): <code>ART(=-4) KNOW | o</code> physics, <code>ART(=+5) SAY | o</code> poetry, <code>ART(=-5) SOMEONE | o</code> engineer; the root without a value is skill, craft, discipline</td>
+<td style="text-align: left;"><strong>new</strong>, proposed (SemAxis: poles “humanities + art” against “exact sciences + technology”, LOO 1.00, the axes cover 10%); accepted (blind test: 29 of 32, only <em>architecture</em> missed)</td>
+</tr>
+<tr>
+<td style="text-align: left;">JOIN</td>
+<td style="text-align: left;">to separate … to attach (−5 to separate, remove, leave, subtract, 0 composition unchanged, +5 to attach, add, bring in, unite): <code>JOIN(=+4) | i</code> to attach, <code>JOIN(=-4) | i</code> to remove</td>
+<td style="text-align: left;"><strong>new</strong>, proposed (SemAxis: poles join/add/attach against separate/remove/detach, LOO 1.00; nearest axes GIVE +0.3, NEAR +0.2); accepted with a reservation (blind test: ~8 of 10; <em>add</em> is not read, words inside the cluster merge)</td>
+</tr>
+<tr>
+<td style="text-align: left;">VALUE</td>
+<td style="text-align: left;">cheap … expensive (−5 cheap, discount, buying and selling, 0 ordinary price, +5 expensive, valuable, important, vitally needed): <code>VALUE(=+4) | a</code> expensive, valuable, <code>VALUE(=-4) | a</code> cheap; buying and selling go together with <code>GIVE</code></td>
+<td style="text-align: left;"><strong>new</strong>, proposed (SemAxis: poles cheap/worthless/useless against expensive/valuable/precious, LOO 0.91); accepted (blind test: 10 of 10 on adjectives; <em>buy/sell</em> are confused by the sign of <code>GIVE</code>)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CARE</td>
+<td style="text-align: left;">attitude to work: careless … diligent (−5 careless, hasty, mistake, fault, 0 ordinary, +5 diligent, thorough, attentive): <code>CARE(=+4) | e</code> thoroughly, <code>CARE(=-4) | a</code> careless, lazy</td>
+<td style="text-align: left;">accepted; in 2026-10 the poles became adjectives about work (careful, diligent … careless, lazy) instead of adverbs of manner: the center was close to TONE (cos 0.65), with FRIEND it is 0.12</td>
+</tr>
+<tr>
+<td style="text-align: left;">FRIEND</td>
+<td style="text-align: left;">attitude to people: enemy … friend (−5 enemy, hostile, cruel, 0 neutral, +5 friend, friendly, kind): <code>FRIEND | o</code> friend, <code>FRIEND(=-5) | o</code> enemy, <code>FRIEND(=+4) | a</code> kind, friendly, <code>FRIEND(=-3) | a</code> rude</td>
+<td style="text-align: left;">accepted in 2026-10 instead of TONE (rude … polite): the poles of TONE and CARE were adverbs of manner, their centers close (cos 0.65); FRIEND is the attitude to people, CARE to work</td>
+</tr>
+<tr>
+<td style="text-align: left;">MOOD</td>
+<td style="text-align: left;">grief … funny (−5 grief, despair, tragic, −3 sadness, 0 serious, calm, no joking, +3 merry, joyful, +5 funny, laughter, comic): <code>MOOD(=+5) | a</code> funny, <code>MOOD(=-3) | a</code> sad, <code>MOOD(=0) | a</code> serious, <code>ART MOOD(=+5) | o</code> comedy</td>
+<td style="text-align: left;"><strong>new</strong> (the author's proposal: the axis “comedy … tragedy”; SemAxis: nearest axes LIVE +0.40, GOOD +0.31); accepted (blind test without recipes for the test words: 24 of 32 against 11 without the root; <em>happy / cheerful</em> merge)</td>
+</tr>
+<tr>
+<td style="text-align: left;">CONSUME</td>
+<td style="text-align: left;">to emit … to absorb (−5 to emit, throw out, pour out, 0 exchange, +5 to absorb, take in: eat, drink, read, listen; −5 to emit: excrete, write, speak, radiate): <code>CONSUME(=+4) | i</code> to absorb, eat, <code>CONSUME(=-4) | i</code> to emit; the channel is set by the second root: <code>CONSUME(=+4) SEE | i</code> to read, <code>CONSUME(=-4) SAY | i</code> to speak</td>
+<td style="text-align: left;"><strong>new</strong>, proposed by the user (intake ↔ output: eat / excrete, read / write, listen / speak); accepted (blind test: 26 of 32; food, breathing, speech are read, <em>read / write</em> are not)</td>
+</tr>
+<tr>
+<td style="text-align: left;">MEASURE</td>
+<td style="text-align: left;">a quantity in itself … relative to another (−5 a quantity as such: size, amount, length, number, 0 level, degree, +5 a quantity relative to another: ratio, share, proportion, percent, statistics, speed as a ratio, average): <code>MEASURE(=-5) | o</code> amount, size, <code>MEASURE(=+5) | o</code> ratio, <code>MEASURE | i</code> to measure, a unit is <code>MEASURE SAME | o</code></td>
+<td style="text-align: left;"><strong>new</strong>, introduced by the rule (<em>ratio / proportion / measurement</em> failed to read twice through <code>PART</code>, <code>BIG</code>, <code>SAME</code>, <code>SEE</code>); the first version of the axis (unit … amount … ratio) was a mixture of three concepts and was rewritten; the axis is independent (SemAxis, maximum cosine with BIG −0.18); blind test v2 26 of 32, see <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_measure.md">roundtrip_measure</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LONG</td>
+<td style="text-align: left;">thin flexible … thick stiff long (−5 thread, cloth, rope, hair, 0 wire, rod, fastener, +5 beam, board, log, wooden furniture; long objects and what is made of them): <code>LONG(=-5) | o</code> thread, <code>LONG(=+4) | o</code> pole, <code>LONG | a</code> long, tall, <code>LONG(=+3) PLACE | o</code> tower</td>
+<td style="text-align: left;"><strong>new</strong>, at the author's request (analogous to <em>palisa</em> / <em>linja</em> in Toki Pona: a long object); the axis is independent (SemAxis, cosine with ABSTRACT −0.17, TOUCH 0.13, BIG ≈ 0); blind test: <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_long.md">roundtrip_long</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">SAY</td>
+<td style="text-align: left;">quiet … loud (−5 whisper, mumbling, 0 ordinary speech, +5 shout, roar, screech): <code>SAY(=-4) | i</code> to whisper, <code>SAY(=+5) | i</code> to shout, <code>SAY(=+4) | o</code> a shout, <code>SAY(=-3) | o</code> a whisper, noise is <code>SAY(=+3) THING | o</code></td>
+<td style="text-align: left;"><strong>a new axis on an existing root</strong> (accepted by the author; residual PCA of weak words: <em>whistle, groan, wail, roar, murmur, buzz</em>; SemAxis cosine with FEEL 0.41, MOVE 0.26, the rest ≤ 0.15); blind test: <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_say.md">roundtrip_say</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">GRAIN</td>
+<td style="text-align: left;">how a substance holds together (−5 gas, steam, smoke, −3 liquid, flows: water, honey, 0 granular: sand, flour, groats, +5 solid, whole: stone, ingot, monolith): <code>GRAIN(=-5) | o</code> gas, <code>GRAIN(=-3) | o</code> liquid, <code>GRAIN(=0) THING(=-5) | o</code> sand, <code>GRAIN(=+5) | a</code> whole, continuous, solid; to eat <code>CONSUME(=+5) GRAIN(=+3) | i</code>, to drink <code>CONSUME(=+5) GRAIN(=-3) | i</code>, to inhale <code>CONSUME(=+5) GRAIN(=-5) | i</code>. Analogous to <em>ko</em> in Toki Pona (formless substance), but broader; the step between values in numbers: reals are fluid (−3), integers about −1</td>
+<td style="text-align: left;"><strong>a new root, proposed by the author</strong>; the condition of the rule was met: on existing roots a blind test of 12 words × 2 coders gave 3 exact of 24 (sand, dust, granular, seamless, continuous, ingot do not assemble); blind test with the root: 7 exact of 24 and 14 of 24 among three answers against 3 and 4 without the root — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_grain.md">roundtrip_grain</a>. <strong>Since 2026-10 it absorbs the root MATTER</strong> (solid … liquid … gas): one scale instead of two opposing ones, blind test of 12 words: 11 → 17 exact of 24 — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_merge.md">roundtrip_merge</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">FIGHT</td>
+<td style="text-align: left;">how serious the struggle is (−5 game, sport, competition by the rules … 0 brawl, dispute … +5 war to the death); without a value, battle, quarrel: <code>FIGHT(=-5) | o</code> game, sport, <code>SOMEONE FIGHT(=-5) | o</code> player, <code>FIGHT(=-5) PART(=+5) | o</code> tournament, <code>FIGHT(=+5) | o</code> war, <code>SOMEONE FIGHT(=+5) | o</code> soldier</td>
+<td style="text-align: left;"><strong>axis added</strong> (a lacuna from mathematical encoding, <a href="/docs/en/math/">math.md</a>): blind test 12 words × 2 coders: without the axis 11 exact of 24 (game and sport read as <em>duel, boxing</em>), with the axis 17 of 24 and 21 of 24 among three answers — <a href="https://github.com/komapc/contlang/blob/main/data/translation_test/roundtrip_candidates.md">roundtrip_candidates</a></td>
+</tr>
+<tr>
+<td style="text-align: left;">LAND</td>
+<td style="text-align: left;">water … land (−5 sea, lake, water as a place, 0 shore, coast, +5 land, soil, solid ground); without a value, land, country, region: <code>LAND | o</code> country, region, <code>LAND RULE | o</code> state, province, <code>LAND(=+5) ABOVE(=+5) | o</code> mountain, <code>LAND(=-5) BIG(=+5) | o</code> ocean, <code>LAND(=0) GRAIN(=0) | o</code> beach, <code>LAND RULE LONG(=-5) | o</code> state border. Analogous to <em>ma</em> in Toki Pona</td>
+<td style="text-align: left;"><strong>a new root</strong> (Toki Pona <em>ma</em>); blind tests on fresh words: encoder SZ +20% and +12% “close”, model codes +19%, site encoder +2% (does no harm) — <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt3/README.md">adopt3</a>, <a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/adopt4/README.md">adopt4</a>; the border <code>LAND RULE LONG(=-5)</code>: 4 of 4 “border” (<a href="https://github.com/komapc/contlang/blob/main/data/eval/runs/border/README.md">border</a>)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>The zero rule.</strong> An axis that is not written has an unspecified value. <code>(=0)</code> is an explicit value: on two-sided axes the middle (<code>TIME(=0)</code> is “now”); there are no one-sided axes: <code>MANY</code> has been two-sided since 2026-10, “none” is <code>MANY(=-5)</code>, 0 is “some amount”.</p>
+<p><strong>New axes and roots</strong> (blind test on 46 words, <code>data/translation_test/roundtrip_axes_rules.md</code>: the word or a synonym 31 of 46, 67%; the words were chosen to suit the axes, so the estimate is inflated compared with the random 26–34%). SOMEONE got the axis “person”, THING animacy, MOVE speed, FEEL excitement. <strong>RULE</strong> (law, rule, to govern) and <strong>FIGHT</strong> (battle, war, quarrel) were added without axes; <em>peace</em> = <code>FIGHT MANY(=-5) | o</code>. Weak spots: <em>tax, duty, defend, politics</em>; <em>though, instead, nevertheless</em> deliberately get no roots.</p>
+<p><strong>Emotions</strong> (blind test on 40 words, <code>data/translation_test/roundtrip_emotions.md</code>): <code>FEEL</code> (excitement) + <code>GOOD</code> (pleasantness) + a third root by meaning, not a “direction” axis (<code>NEAR</code>/<code>WANT</code> gave 24–25 of 40 against 21; by meaning 28). Fear <code>FEEL(=+4) GOOD(=-4) TIME(=+3) | a</code> (something bad ahead), anger and hatred <code>… FIGHT</code>, social emotions <code>… SOMEONE</code> (+ <code>SEE | i</code>). Weak: <em>shy, contempt, pity, jealous, amused</em>.</p>
+<p><strong>Without an axis (6):</strong> HAPPEN, BODY, SEE, DO, PLACE, TEXT.</p>
+<p>CONTAINER and MAYBE were removed (blind test on 224 items without them: within noise, <code>data/translation_test/roundtrip_ablation3.md</code>; a container is <code>THING INSIDE</code>, probability is the label <code>M</code>).</p>
+<p><strong>Edits from the 200-word test</strong> (<code>data/translation_test/roundtrip_200.md</code>): HEAR, KIND, WORD were removed (0 successes of 7 in the test; sound reads through <code>SAY</code>, <code>FEEL</code>, type through <code>THING</code>, a word is <code>SAY | o</code>). Added: <strong>CONSUME</strong> (to eat, drink, absorb; <em>eat</em> = <code>CONSUME | i</code>, <em>food</em> = <code>THING CONSUME | o</code>, instead of three roots eat/food/drink) and <strong>CONTAINER</strong> (a vessel, like <em>poki</em> in Toki Pona: <em>bag, pitcher, bottle, box</em>; <code>CONTAINER | o</code>). Both without an axis, not yet checked. A rule of use: <code>ABOVE</code>, <code>INSIDE</code>, <code>BIG</code> only for real “top / inside / size”, not as a metaphor or an intensifier.</p>
+<p><strong>PEOPLE was removed:</strong> <code>SOMEONE MANY(=+4) | o</code> (“many someones”) replaces it without loss (blind test on 12 words with PEOPLE: the word or a synonym 2 of 12 as before the replacement, “miss” 3 instead of 5). HEAT, BEGIN, GIVE were also added (see the table).</p>
+<p>Examples of compound words: house = <code>PLACE LIVE | o</code>; bedroom = <code>PLACE LIVE(=-2) | o</code>; morgue = <code>PLACE LIVE(=-5) | o</code>; man = <code>SOMEONE SEX(=+5) | o</code>. Gaps (anatomy, kinship) go to the exemptions.</p>
+<p><strong>Correlatives (Esperanto's idea) without a word list</strong> (the table has only roots; a word also has a form, for example <code>SOMEONE NEAR(=+3) | o</code>):</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;">who</th>
+<th style="text-align: left;">what</th>
+<th style="text-align: left;">where</th>
+<th style="text-align: left;">when</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">question</td>
+<td style="text-align: left;"><code>SOMEONE | o ?</code></td>
+<td style="text-align: left;"><code>THING | o ?</code></td>
+<td style="text-align: left;"><code>PLACE | o ?</code></td>
+<td style="text-align: left;"><code>TIME | o ?</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">indefinite</td>
+<td style="text-align: left;"><code>SOMEONE</code></td>
+<td style="text-align: left;"><code>THING</code></td>
+<td style="text-align: left;"><code>PLACE</code></td>
+<td style="text-align: left;"><code>TIME</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">this / here / now</td>
+<td style="text-align: left;"><code>SOMEONE NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>THING NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>PLACE NEAR(=+3)</code></td>
+<td style="text-align: left;"><code>TIME(=0)</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">that / there / then</td>
+<td style="text-align: left;"><code>SOMEONE NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>THING NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>PLACE NEAR(=-3)</code></td>
+<td style="text-align: left;"><code>TIME(=-3)</code> or <code>+3</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">all / everywhere / always</td>
+<td style="text-align: left;"><code>SOMEONE MANY(=+5)</code></td>
+<td style="text-align: left;"><code>THING MANY(=+5)</code></td>
+<td style="text-align: left;"><code>PLACE MANY(=+5)</code></td>
+<td style="text-align: left;"><code>TIME MANY(=+5)</code></td>
+</tr>
+<tr>
+<td style="text-align: left;">nothing / nowhere / never</td>
+<td style="text-align: left;"><code>SOMEONE MANY(=-5)</code></td>
+<td style="text-align: left;"><code>THING MANY(=-5)</code></td>
+<td style="text-align: left;"><code>PLACE MANY(=-5)</code></td>
+<td style="text-align: left;"><code>TIME MANY(=-5)</code></td>
+</tr>
+</tbody>
+</table>
+<p>Open: for “when” the NEAR axis does not fit (it has its own axis TIME); “now / then” are written through TIME for now.</p>
+<h2 id="exemptions-words-outside-the-roots">Exemptions (words outside the roots)</h2>
+<p>Part of the vocabulary makes no sense to encode through general roots and axes. It is taken outside the roots and does not use up axes:</p>
+<ul>
+<li><strong>Country names</strong> (and proper-name toponyms in general) are borrowed as they are, without a root or features.</li>
+<li><strong>Numbers</strong> are a separate counting system, not roots.</li>
+<li><strong>Months and days of the week</strong> go by number: month 3, weekday 2 (not the words <em>March</em>, <em>Tuesday</em>).</li>
+<li><strong>Colors</strong> are continuous coordinates (RGB or HSL), not words and not a root COLOR (removed from the list of roots).</li>
+<li><strong>Proper names</strong> (people, places, organizations, brands) are borrowed as they are, like country names.</li>
+<li><strong>Nationalities and religions</strong> (<em>american</em>, <em>mexican</em>, <em>christian</em>, <em>catholic</em>) are derived from proper names and are borrowed along with them. In the experiment they assembled themselves into the roots AMERICAN and CHRISTIAN.</li>
+<li><strong>Biological taxa</strong> use Latin nomenclature as it is (<em>Canis lupus familiaris</em>, <em>Opuntia indica</em>); for ordinary speech the name of the genus or species is enough (<em>Canis</em>, <em>Felis</em>, <em>Quercus</em>). So the roots ANIMAL and PLANT are not needed. Anatomy and medicine (Latin terms, diseases) are not yet decided, see <a href="/docs/en/rethink/">open questions</a>.</li>
+<li><strong>Chemistry</strong> uses IUPAC/Latin names of elements and compounds (<em>H2O</em>, <em>natrii chloridum</em>), formulas as they are.</li>
+<li><strong>Minerals and rocks</strong> use scientific names as they are (<em>quartz</em>, <em>granite</em> in the Latin/mineralogical form).</li>
+<li><strong>Astronomy</strong> uses the names of stars, constellations, planets and other celestial bodies as they are (<em>Sol</em>, <em>Ursa Major</em>).</li>
+</ul>
+<p>A consequence: the root MONTH is no longer needed, and with it goes the error with the homonyms <em>march</em> (to walk) and <em>rent</em> (lease): they were assigned to MONTH because of a “monthly” context. It remains open how to write the numbers themselves, how to tell a borrowed name from a word of the language (a label or a phonological feature) and how to inflect or attach suffixes to them (<a href="/docs/en/phonology/">phonology</a>).</p>
+<p class="mut">Source: <a href="https://github.com/komapc/contlang/blob/main/docs/en/lexicon.md">docs/en/lexicon.md</a> on GitHub, translated from the <a href="/docs/lexicon/" hreflang="ru" lang="ru">Russian original</a>. This document describes the previous notation (with <code>|</code> and suffixes); the notation in the style of Toki Pona has not been moved over yet.</p>
+</main>
+<nav class="docs" aria-label="Documents"><b>Documents</b>
+<ul>
+<li><a href="/docs/en/reading/">How to read min-co</a></li>
+<li><a href="/docs/en/model/">The model: root and structure</a></li>
+<li><a href="/docs/en/philosophy/">The philosophy of min-co</a></li>
+<li><a href="/docs/en/syntax/">Syntax</a></li>
+<li><a href="/docs/en/tables/">Summary tables: roots, axes, labels</a></li>
+<li><a href="/docs/en/encoding/">How to encode: techniques</a></li>
+<li><a href="/docs/en/lexicon/">Lexicon</a></li>
+<li><a href="/docs/en/phonology/">Phonology and word structure</a></li>
+<li><a href="/docs/en/math/">Mathematical encoding: setup, metrics, results</a></li>
+<li><a href="/docs/en/rethink/">Rethinking the language: where we are and what to change (2026-10)</a></li>
+</ul>
+</nav>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>
