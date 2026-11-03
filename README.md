@@ -18,6 +18,7 @@
 - [Фонология и структура слова](docs/phonology.md)
 - [Пересмотр языка: эталон Токипоны, предложения, открытые вопросы](docs/rethink.md)
 - [Математическое кодирование](docs/math.md)
+- English translation of these documents: [docs/en/](docs/en/) (проверка согласованности — `tests/test_docs_en.py`)
 - Прежние планы — [docs/history/](docs/history/)
 
 ## Инструменты
