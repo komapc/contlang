@@ -32,6 +32,12 @@ def counts(doc=None):
     return a + n, a, n
 
 
+def levels(doc=None):
+    """Допустимые значения оси у отдельных корней {корень: [значения]}; у остальных корней с осью −5 … +5."""
+    doc = doc or load()
+    return {k: list(v) for k, v in (doc["limits"].get("levels") or {}).items()}
+
+
 def poles_hash(doc=None):
     """Хеш имён корней и полюсов SemAxis: по нему build.py --check видит, что site/data/math.json устарел."""
     import hashlib

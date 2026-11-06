@@ -6,7 +6,7 @@
 
 ## Документация
 
-**Источник правды о языке — [`roots.yaml`](roots.yaml)** (корни, оси, метки, частицы); из него генерируются [таблицы](docs/tables.md) и блоки в словаре (`python3 scripts/mincode/gen.py`).
+**Источник правды о языке — [`roots.yaml`](roots.yaml)** (корни, оси, допустимые значения осей, метки, частицы); из него генерируются [таблицы](docs/tables.md) и блоки в словаре (`.venv/bin/python scripts/mincode/gen.py`).
 
 - [Как читать min-co](docs/reading.md) — короткая памятка для знающих Toki Pona и эсперанто
 - [Модель: корень и структура](docs/model.md)
@@ -23,8 +23,9 @@
 ## Инструменты
 
 - Скилл `mincode` (`.claude/skills/mincode/SKILL.md`): закодировать слово или раскодировать код.
-- `scripts/mincode/`: `gen.py` (генерация документов из `roots.yaml`, `--check`), `validator.py` (проверка кодов: корни, оси, метки, лимит корней).
+- `scripts/mincode/`: `gen.py` (генерация документов из `roots.yaml`, `--check`), `validator.py` (проверка кодов: корни, оси и их допустимые значения, метки, лимит корней; те же правила у воркера — `worker/check.js`, согласие проверяет `tests/test_check_parity.py`).
 - `scripts/eval/`: слепой тест кодирования (спецификации, лист судьи, подсчёт с интервалом; нынешняя мера — доля ответов «близко» по слепому судье), протокол — [scripts/eval/README.md](scripts/eval/README.md); данные и прогоны — `data/eval/`.
-- Проверка: `.venv/bin/python -m pytest tests` (зависимости — `requirements.txt`) (согласованность файлов, валидатор, сборка спецификаций).
-- Сайт: статические страницы `site/` (GitHub Pages, обновляются сами при push): английская `/` и русская `/ru/` собираются из одного источника `data/site/index.html`, документы `docs/*.md` публикуются как `/docs/<имя>/`, вместе с `sitemap.xml` (`python3 scripts/site/build.py`, внутри — `scripts/site/pages.py`) и прокси-воркер `worker/` для модели (выкладывается вручную); что генерируется и порядок обновления — [worker/README.md](worker/README.md). На GitHub при каждом push проверяется, что сгенерированные файлы не устарели и тесты проходят (`.github/workflows/check.yml`).
+- Окружение: `python3 -m venv .venv && .venv/bin/pip install -r requirements.txt`; все команды ниже — через `.venv/bin/python` (системному `python3` обычно не хватает `pyyaml` и `markdown`). Для теста воркера нужен `node`.
+- Проверка: `.venv/bin/python -m pytest tests` (согласованность файлов, валидатор и воркер, сборка спецификаций).
+- Сайт: статические страницы `site/` (GitHub Pages, обновляются сами при push): английская `/` и русская `/ru/` собираются из одного источника `data/site/index.html`, документы `docs/*.md` публикуются как `/docs/<имя>/`, вместе с `sitemap.xml` (`.venv/bin/python scripts/site/build.py`, внутри — `scripts/site/pages.py`) и прокси-воркер `worker/` для модели (выкладывается вручную); что генерируется и порядок обновления — [worker/README.md](worker/README.md). На GitHub при каждом push проверяется, что сгенерированные файлы не устарели и тесты проходят (`.github/workflows/check.yml`).
 

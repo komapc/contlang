@@ -3,8 +3,8 @@
     python3 scripts/mincode/validator.py FILE...   # строки вида "12. КОД" или просто код
 
 Уровни: error (неправильный код), warning (старая запись или спорное место).
-лимита (3, без исключений); у имени `o` может быть одна роль (agent, tool, result, quality); значение оси только у корней с осью, в −5…+5
-лимита (ABSTRACT сверх лимита; стороны света — четыре корня `PLACE BIG ABOVE SIDE`); значение оси только у корней с осью, в −5…+5
+Проверяется: корни из roots.yaml, не больше лимита (3, без исключений); у имени `o` может быть одна роль (agent, tool, result, quality);
+значение оси только у корней с осью, в −5…+5, со знаком (`(=+3)`, `(=0)`), у корней из limits.levels — только допустимые значения;
 метки из списка, каждая не более одного раза, в своём диапазоне,
 `I0` запрещён; `!` и `?` без значения; скобки сбалансированы.
 Запись предложения с границами слов `{ ROOTS | FORM }` (check_braced): вне `{ }` только частицы, `[ ]`, `;` и имена в кавычках.
@@ -49,6 +49,7 @@ class Validator:
         self.particles = {p["name"] for p in doc["particles"] if p["name"].isalpha()}
         self.labels = {m["name"]: m for m in doc["labels"]}
         self.max_roots = doc["limits"]["max_roots"]
+        self.levels = spec.levels(doc)
         self.roles = {r["name"] for r in doc.get("roles", [])}
         self.pos = {p["name"] for p in doc["pos"]}
 
@@ -133,6 +134,10 @@ class Validator:
                     v = int(mv.group(1))
                     if not -5 <= v <= 5:
                         add("error", "axis_range", f"{name}{arg} (допустимо −5…5)")
+                    elif name in self.levels and v not in self.levels[name]:
+                        add("error", "axis_level", f"{name}{arg} (у {name} только {' '.join(f'{x:+d}' if x else '0' for x in self.levels[name])})")
+                    if v != 0 and mv.group(1)[0] not in "+-":
+                        add("error", "axis_sign", f"{name}{arg}: значение со знаком, (={v:+d})")
                     if re.search(r"\+0\b|-0\b", mv.group(1)):
                         add("warning", "old_notation", f"{name}{arg}: пиши (=0)")
             elif k == "lab":
