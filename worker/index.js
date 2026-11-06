@@ -1,6 +1,7 @@
 // Прокси для демо min-co: держит ключ OpenRouter, вызывает дешёвую модель, ограничивает ввод.
 // Развёртывание: см. worker/README.md
-import { ENC_SPEC, DEC_SPEC, CHECK } from "./prompts.js";
+import { ENC_SPEC, DEC_SPEC } from "./prompts.js";
+import { codeProblems } from "./check.js";
 
 const DEFAULT_MODEL = "openai/gpt-5-mini"; // можно сменить переменной MODEL в wrangler.toml
 const MAX_INPUT = 300;
@@ -52,33 +53,6 @@ const MSG = {
   en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
   ru: { busy: "слишком много запросов, подождите минуту", need: "mode и text обязательны", long: (n) => `не длиннее ${n} символов`, down: "модель недоступна", notJson: "модель вернула не JSON" },
 };
-
-// Проверка кода по правилам языка (как scripts/mincode/validator.py, только главное): корни, лимит, знак значения.
-// В паре через связку (FROM, FOR, LIKE, PI) каждое слово проверяется отдельно.
-const LINKS = /\b(?:FROM|FOR|LIKE|PI)\b/;
-function codeProblems(code) {
-  return String(code || "").split(LINKS).flatMap(wordProblems);
-}
-function wordProblems(word) {
-  const body = word.split("|")[0].replace(/"[^"]*"/g, " ").trim();
-  if (!body) return [];
-  const roots = [], bad = [];
-  for (const t of body.split(/\s+/)) {
-    const m = t.match(/^([A-Z]+)(?:\(=([+-]?)(\d+)\))?$/);
-    if (!m) { bad.push(`malformed token ${t}`); continue; }
-    if (["PI", "FROM", "FOR", "LIKE", "E", "AND", "LA", "PE"].includes(m[1])) continue;
-    if (!CHECK.roots.includes(m[1])) bad.push(`unknown root ${m[1]}`);
-    else roots.push(m[1]);
-    if (!m[3]) continue;
-    const v = Number((m[2] || "+") + m[3]), lv = CHECK.levels[m[1]];
-    if (m[3] !== "0" && !m[2]) bad.push(`value without sign in ${t} (write (=+${m[3]}))`);
-    if (CHECK.noaxis.includes(m[1])) bad.push(`${m[1]} has no axis, write it without a value`);
-    else if (v < -5 || v > 5) bad.push(`value out of range in ${t} (-5…+5)`);
-    else if (lv && !lv.includes(v)) bad.push(`${m[1]} takes only ${lv.map((x) => (x > 0 ? "+" : "") + x).join(" ")}`);
-  }
-  if (roots.length > CHECK.max_roots) bad.push(`${roots.length} roots, the limit is ${CHECK.max_roots}`);
-  return bad;
-}
 
 async function ask(env, messages) {
   const r = await fetch("https://openrouter.ai/api/v1/chat/completions", {

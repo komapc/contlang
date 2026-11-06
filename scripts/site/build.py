@@ -92,9 +92,12 @@ def prompts_js():
     # декодер знает словарь так же, как кодировщик: без рецептов gpt-4o-mini читает их буквально (1 из 20 на сайте)
     dec = build_spec("dec", "words") + "\n\n# Known recipes (codes verified by blind tests; read them as these words)\n\n" + tips()
     lim = spec.load()["limits"]
-    levels = json.loads((REPO / "site" / "data" / "math.json").read_text(encoding="utf8")).get("levels", {})
+    doc = spec.load()
+    labels = {m["name"]: m["range"] for m in doc["labels"] if not m.get("bare")}
     check = {"roots": [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()], "noaxis": [r["name"] for r in spec.noaxis_roots()],
-             "levels": levels, "max_roots": lim["max_roots"]}
+             "levels": spec.levels(), "max_roots": lim["max_roots"], "labels": labels,
+             "bare": [m["name"] for m in doc["labels"] if m.get("bare")], "pos": [p["name"] for p in doc["pos"]],
+             "roles": [r["name"] for r in doc.get("roles", [])], "particles": [p["name"] for p in doc["particles"] if p["name"].isalpha()]}
     return ("// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False)
             + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
 
@@ -133,7 +136,7 @@ def math_stale():
         return [str(p)]
     m = json.loads(p.read_text(encoding="utf8"))
     order = [r["name"] for r in spec.axis_roots() + spec.noaxis_roots()]
-    ok = m["names"] == order and m["poles_hash"] == spec.poles_hash()
+    ok = m["names"] == order and m["poles_hash"] == spec.poles_hash() and m.get("levels", {}) == spec.levels()
     if not ok:
         return [str(p) + " (запустите .venv/bin/python scripts/site/build_math.py, затем build_words.py)"]
     w = REPO / "site" / "data" / "words.json"  # части речи и леммы по порядку слов math.json

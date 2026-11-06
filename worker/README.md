@@ -10,7 +10,7 @@
 4. `wrangler deploy` — выведет адрес вида `https://minco-demo.<аккаунт>.workers.dev`
 5. вставьте этот адрес в `site/config.js` (`MINCO_API`)
 
-`prompts.js` генерируется: `python3 scripts/site/build.py` (из `roots.yaml` и шаблонов спецификаций). Задайте на ключе OpenRouter лимит расхода (https://openrouter.ai/settings/keys) — это последняя защита от злоупотреблений.
+`prompts.js` генерируется: `.venv/bin/python scripts/site/build.py` (из `roots.yaml` и шаблонов спецификаций). Задайте на ключе OpenRouter лимит расхода (https://openrouter.ai/settings/keys) — это последняя защита от злоупотреблений. Проверка кода модели — `worker/check.js` (пишется руками, правила берёт из `CHECK` в `prompts.js`); она должна совпадать с `scripts/mincode/validator.py`, это проверяет `tests/test_check_parity.py`. Если меняются допустимые значения осей (`limits.levels` в `roots.yaml`), пересоберите и `site/data/math.json` (`build.py --check` напомнит).
 
 ## Обновление после правок языка
 
@@ -18,16 +18,16 @@
 
 | файл | откуда | как попадает на сайт |
 | :-- | :-- | :-- |
-| `docs/tables.md`, блоки `docs/lexicon.md` | `roots.yaml` → `python3 scripts/mincode/gen.py` | только документация |
-| `site/data/roots.json`, `site/data/examples.json`, `site/data/recipes.json` | `roots.yaml`, отчёты слепых тестов → `python3 scripts/site/build.py` | **сами** после push в `main` (GitHub Pages, `.github/workflows/pages.yml`) |
+| `docs/tables.md`, блоки `docs/lexicon.md` | `roots.yaml` → `.venv/bin/python scripts/mincode/gen.py` | только документация |
+| `site/data/roots.json`, `site/data/examples.json`, `site/data/recipes.json` | `roots.yaml`, отчёты слепых тестов → `.venv/bin/python scripts/site/build.py` | **сами** после push в `main` (GitHub Pages, `.github/workflows/pages.yml`) |
 | `site/data/math.json`, `site/data/vocab.bin` (математика на странице: словари корней, 10 000 частых слов и весь список 3000) | `roots.yaml`, `data/sparse_dict_learned.npz`, векторы Numberbatch → `.venv/bin/python scripts/site/build_math.py` (локально: нужны numpy и `data/raw`) | сами после push; `build.py --check` и проверка на GitHub сообщат, если корни или полюса изменились, а файл не пересобран |
 | `site/data/words.json` (для кодера и декодера сайта: части речи, леммы, служебные слова, имена собственные, слова с полом, множественные, люди — им ставится роль `agent`) | WordNet (nltk) по порядку слов `math.json` → `.venv/bin/python scripts/site/build_words.py`; пересобрать после `build_math.py` | сами после push; `build.py --check` сообщит, если число слов разошлось с `math.json` |
-| `site/index.html` (английская), `site/ru/index.html` (русская), `site/docs/*/index.html`, `site/sitemap.xml` | `data/site/index.html` (общий источник: элементы с `data-l="en"`/`data-l="ru"` идут каждый на свою страницу), `docs/*.md` → `python3 scripts/site/build.py` (нужен пакет `markdown`) | сами после push; страницы в `site/` руками не править |
-| `worker/prompts.js` (подсказки модели) | `roots.yaml`, шаблоны спецификаций, `data/site/tips_short.md` → `python3 scripts/site/build.py` | **вручную**: `cd worker && npx wrangler deploy` |
+| `site/index.html` (английская), `site/ru/index.html` (русская), `site/docs/*/index.html`, `site/sitemap.xml` | `data/site/index.html` (общий источник: элементы с `data-l="en"`/`data-l="ru"` идут каждый на свою страницу), `docs/*.md` → `.venv/bin/python scripts/site/build.py` (нужен пакет `markdown`) | сами после push; страницы в `site/` руками не править |
+| `worker/prompts.js` (подсказки модели) | `roots.yaml`, шаблоны спецификаций, `data/site/tips_short.md` → `.venv/bin/python scripts/site/build.py` | **вручную**: `cd worker && npx wrangler deploy` |
 
 Порядок после изменения `roots.yaml` или рецептов:
 
-1. `python3 scripts/mincode/gen.py && python3 scripts/site/build.py`; если менялись корни или полюса — ещё `.venv/bin/python scripts/18_sparse_learn.py` (обученный словарь) и `.venv/bin/python scripts/site/build_math.py` и `scripts/site/build_words.py`
+1. `.venv/bin/python scripts/mincode/gen.py && python3 scripts/site/build.py`; если менялись корни или полюса — ещё `.venv/bin/python scripts/18_sparse_learn.py` (обученный словарь) и `.venv/bin/python scripts/site/build_math.py` и `scripts/site/build_words.py`
 2. `.venv/bin/python -m pytest -q tests`
 3. коммит и `git push` — сайт обновится сам, а на GitHub при каждом push запускается проверка (`.github/workflows/check.yml`: `gen.py --check`, `build.py --check`, тесты); красная проверка значит, что сгенерированные файлы устарели или в документации есть неверный код
 4. если менялся `worker/prompts.js` (почти всегда при правке корней или `tips_short.md`): `cd worker && npx wrangler deploy`
