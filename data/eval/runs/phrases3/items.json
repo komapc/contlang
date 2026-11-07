@@ -1,0 +1,842 @@
+[
+{
+"phrase": "task force",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "a temporary military unit formed to accomplish a particular objective"
+},
+{
+"phrase": "second half",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the second of two halves of play"
+},
+{
+"phrase": "junior high",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "a secondary school usually including 7th and 8th grades"
+},
+{
+"phrase": "dollar volume",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the volume measured in dollars"
+},
+{
+"phrase": "training program",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "a program designed for training in specific skills"
+},
+{
+"phrase": "cold frame",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "protective covering consisting of a wooden frame with a glass top in which small plants are protected from the cold"
+},
+{
+"phrase": "fresh fish",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "soldiers who are regarded as expendable in the face of artillery fire"
+},
+{
+"phrase": "low temperature",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the absence of heat"
+},
+{
+"phrase": "air force",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the airborne branch of a country's armed forces"
+},
+{
+"phrase": "first step",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the first of a series of actions"
+},
+{
+"phrase": "new deal",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "the economic policy of F. D. Roosevelt"
+},
+{
+"phrase": "family planning",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "limiting the number of children born"
+},
+{
+"phrase": "chamber music",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "serious music performed by a small group of musicians"
+},
+{
+"phrase": "common man",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "a person who holds no title"
+},
+{
+"phrase": "natural resources",
+"src": "phrases",
+"grp": "fixed_n",
+"form": "o",
+"gloss": "resources (actual and potential) supplied by nature"
+},
+{
+"phrase": "supreme court",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "the highest federal court in the United States; has final appellate jurisdiction and has jurisdiction over all other courts in the nation"
+},
+{
+"phrase": "secondary school",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a school for students intermediate between elementary school and college; usually grades 9 to 12"
+},
+{
+"phrase": "old woman",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a woman who is old"
+},
+{
+"phrase": "television set",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "an electronic device that receives television signals and displays them on a screen"
+},
+{
+"phrase": "coffee shop",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a small restaurant where drinks and snacks are sold"
+},
+{
+"phrase": "high school",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a public secondary school usually including grades 9 through 12"
+},
+{
+"phrase": "art school",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a school specializing in art"
+},
+{
+"phrase": "price competition",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "intense competition in which competitors cut retail prices to gain business"
+},
+{
+"phrase": "fishing boat",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a vessel for fishing; often has a well to keep the catch alive"
+},
+{
+"phrase": "written language",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "communication by means of written symbols (either printed or handwritten)"
+},
+{
+"phrase": "market price",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "the price at which buyers and sellers trade the item in an open marketplace"
+},
+{
+"phrase": "half mile",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a unit of length equal to half of 1 mile"
+},
+{
+"phrase": "direct loan",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "a loan by a lender to a customer without the use of a third party; direct lending gives the lender greater discretion in making loans"
+},
+{
+"phrase": "flow rate",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "the amount of fluid that flows in a given time"
+},
+{
+"phrase": "left hand",
+"src": "phrases",
+"grp": "free_n",
+"form": "o",
+"gloss": "the hand that is on the left side of the body"
+},
+{
+"phrase": "go for",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "be pertinent or relevant or applicable"
+},
+{
+"phrase": "take place",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "come to pass"
+},
+{
+"phrase": "talk into",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "persuade somebody to do something"
+},
+{
+"phrase": "make fun",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "subject to laughter or ridicule"
+},
+{
+"phrase": "set up",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "set up or found"
+},
+{
+"phrase": "figure out",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "find the solution to (a problem or question) or understand the meaning of"
+},
+{
+"phrase": "well up",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "come up (as of feelings and thoughts, or other ephemeral things)"
+},
+{
+"phrase": "wind up",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "finally be or do something"
+},
+{
+"phrase": "work out",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "come up with"
+},
+{
+"phrase": "rest on",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "rest on for support"
+},
+{
+"phrase": "turn down",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "refuse to accept"
+},
+{
+"phrase": "back down",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "move backwards from a certain position"
+},
+{
+"phrase": "hand out",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "give to several people"
+},
+{
+"phrase": "rush out",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "jump out from a hiding place and surprise (someone)"
+},
+{
+"phrase": "cast aside",
+"src": "phrases",
+"grp": "fixed_v",
+"form": "i",
+"gloss": "throw or cast away"
+},
+{
+"phrase": "head up",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "be the first or leading member of (a group) and excel"
+},
+{
+"phrase": "stay put",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "stay put (in a certain place)"
+},
+{
+"phrase": "fall behind",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "retreat"
+},
+{
+"phrase": "wake up",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "cause to become awake or conscious"
+},
+{
+"phrase": "take leave",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "go away or leave"
+},
+{
+"phrase": "break with",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "end a relationship"
+},
+{
+"phrase": "come off",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "come to be detached"
+},
+{
+"phrase": "care for",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "have a liking, fondness, or taste (for)"
+},
+{
+"phrase": "work at",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "to exert effort in order to do, make, or perform something"
+},
+{
+"phrase": "go wrong",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "be unsuccessful"
+},
+{
+"phrase": "focus on",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "center upon"
+},
+{
+"phrase": "border on",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "come near or verge on, resemble, come nearer in quality, or character"
+},
+{
+"phrase": "write on",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "write about a particular topic"
+},
+{
+"phrase": "square up",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "make square"
+},
+{
+"phrase": "pass by",
+"src": "phrases",
+"grp": "free_v",
+"form": "i",
+"gloss": "move past"
+},
+{
+"phrase": "very bright",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "totally different",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very quiet",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very rare",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very competitive",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very thin",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very dangerous",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very useful",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very common",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very serious",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "seriously hurt",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very healthy",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very important",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "somewhat short",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "very wealthy",
+"src": "phrases2",
+"grp": "deg",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "pay bill",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "make time",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "pay respect",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "take course",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "do job",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "have television",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "get action",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "have idea",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "make contribution",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "make contact",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "take time",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "take action",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "make war",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "take liberty",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "take medicine",
+"src": "phrases2",
+"grp": "light",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "private club",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "run fast",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "elderly woman",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "high peak",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "fast movement",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "appear suddenly",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "modern music",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "moral order",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "rock solid",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "black chamber",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "good reputation",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "negative reaction",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "first year",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "public business",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "career fair",
+"src": "phrases2",
+"grp": "axis",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "poor quality",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "dark side",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "little women",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "western movie",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "anti aircraft",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "silent key",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "original text",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "temporary shelter",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "smart tv",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "black country",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "smart person",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "high value",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "white air",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "high position",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+},
+{
+"phrase": "progressive metal",
+"src": "phrases2",
+"grp": "indep",
+"form": null,
+"gloss": null
+}
+]
