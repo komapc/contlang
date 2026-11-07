@@ -26,7 +26,7 @@ if cmd == "collect":
         for k, ws in enumerate(halves(100 + vi)):
             a = {int(m[1]): m[2].strip().strip("`").strip() for x in open(f"{S}/w{v}{k + 1}/answers.md") if (m := re.match(r"\s*(\d+)\.\s*(.+)", x))}
             miss = [i + 1 for i in range(len(ws)) if i + 1 not in a]; assert not miss, (v, k, miss)
-            for i, w in enumerate(ws): C[v][w] = a[i + 1].strip("`").strip()
+            for i, w in enumerate(ws): C[v][w] = re.sub(r"\s*;\s*", " ", a[i + 1].strip("`").strip())  # «;» между словами (M2) — только разделитель, как пробел у A и MC
     json.dump(C, open(f"{D}/codes.json", "w"), indent=0, ensure_ascii=False)
     tmp = f"{S}/chk.json"; json.dump({f"{v}\t{w}": C[v][w] for v in VW for w in W}, open(tmp, "w"))
     chk = json.loads(subprocess.run(["node", f"{D}/check.mjs", tmp], capture_output=True, text=True).stdout); json.dump(chk, open(f"{S}/chk_out.json", "w"))
