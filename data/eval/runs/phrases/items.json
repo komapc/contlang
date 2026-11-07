@@ -1,0 +1,362 @@
+[
+{
+"phrase": "task force",
+"pos": "n",
+"group": "fixed",
+"comp": 0.468
+},
+{
+"phrase": "second half",
+"pos": "n",
+"group": "fixed",
+"comp": 0.498
+},
+{
+"phrase": "junior high",
+"pos": "n",
+"group": "fixed",
+"comp": 0.42
+},
+{
+"phrase": "dollar volume",
+"pos": "n",
+"group": "fixed",
+"comp": 0.432
+},
+{
+"phrase": "training program",
+"pos": "n",
+"group": "fixed",
+"comp": 0.526
+},
+{
+"phrase": "cold frame",
+"pos": "n",
+"group": "fixed",
+"comp": 0.238
+},
+{
+"phrase": "fresh fish",
+"pos": "n",
+"group": "fixed",
+"comp": 0.323
+},
+{
+"phrase": "low temperature",
+"pos": "n",
+"group": "fixed",
+"comp": 0.51
+},
+{
+"phrase": "air force",
+"pos": "n",
+"group": "fixed",
+"comp": 0.479
+},
+{
+"phrase": "first step",
+"pos": "n",
+"group": "fixed",
+"comp": 0.402
+},
+{
+"phrase": "new deal",
+"pos": "n",
+"group": "fixed",
+"comp": 0.367
+},
+{
+"phrase": "family planning",
+"pos": "n",
+"group": "fixed",
+"comp": 0.348
+},
+{
+"phrase": "chamber music",
+"pos": "n",
+"group": "fixed",
+"comp": 0.501
+},
+{
+"phrase": "common man",
+"pos": "n",
+"group": "fixed",
+"comp": 0.286
+},
+{
+"phrase": "natural resources",
+"pos": "n",
+"group": "fixed",
+"comp": 0.464
+},
+{
+"phrase": "supreme court",
+"pos": "n",
+"group": "free",
+"comp": 0.729
+},
+{
+"phrase": "secondary school",
+"pos": "n",
+"group": "free",
+"comp": 0.69
+},
+{
+"phrase": "old woman",
+"pos": "n",
+"group": "free",
+"comp": 0.706
+},
+{
+"phrase": "television set",
+"pos": "n",
+"group": "free",
+"comp": 0.715
+},
+{
+"phrase": "coffee shop",
+"pos": "n",
+"group": "free",
+"comp": 0.742
+},
+{
+"phrase": "high school",
+"pos": "n",
+"group": "free",
+"comp": 0.691
+},
+{
+"phrase": "art school",
+"pos": "n",
+"group": "free",
+"comp": 0.722
+},
+{
+"phrase": "price competition",
+"pos": "n",
+"group": "free",
+"comp": 0.844
+},
+{
+"phrase": "fishing boat",
+"pos": "n",
+"group": "free",
+"comp": 0.71
+},
+{
+"phrase": "written language",
+"pos": "n",
+"group": "free",
+"comp": 0.733
+},
+{
+"phrase": "market price",
+"pos": "n",
+"group": "free",
+"comp": 0.708
+},
+{
+"phrase": "half mile",
+"pos": "n",
+"group": "free",
+"comp": 0.783
+},
+{
+"phrase": "direct loan",
+"pos": "n",
+"group": "free",
+"comp": 0.721
+},
+{
+"phrase": "flow rate",
+"pos": "n",
+"group": "free",
+"comp": 0.814
+},
+{
+"phrase": "left hand",
+"pos": "n",
+"group": "free",
+"comp": 0.709
+},
+{
+"phrase": "go for",
+"pos": "v",
+"group": "fixed",
+"comp": 0.291
+},
+{
+"phrase": "take place",
+"pos": "v",
+"group": "fixed",
+"comp": 0.138
+},
+{
+"phrase": "talk into",
+"pos": "v",
+"group": "fixed",
+"comp": 0.189
+},
+{
+"phrase": "make fun",
+"pos": "v",
+"group": "fixed",
+"comp": 0.312
+},
+{
+"phrase": "set up",
+"pos": "v",
+"group": "fixed",
+"comp": 0.312
+},
+{
+"phrase": "figure out",
+"pos": "v",
+"group": "fixed",
+"comp": 0.234
+},
+{
+"phrase": "well up",
+"pos": "v",
+"group": "fixed",
+"comp": 0.234
+},
+{
+"phrase": "wind up",
+"pos": "v",
+"group": "fixed",
+"comp": 0.181
+},
+{
+"phrase": "work out",
+"pos": "v",
+"group": "fixed",
+"comp": 0.17
+},
+{
+"phrase": "rest on",
+"pos": "v",
+"group": "fixed",
+"comp": 0.296
+},
+{
+"phrase": "turn down",
+"pos": "v",
+"group": "fixed",
+"comp": 0.213
+},
+{
+"phrase": "back down",
+"pos": "v",
+"group": "fixed",
+"comp": 0.208
+},
+{
+"phrase": "hand out",
+"pos": "v",
+"group": "fixed",
+"comp": 0.207
+},
+{
+"phrase": "rush out",
+"pos": "v",
+"group": "fixed",
+"comp": 0.187
+},
+{
+"phrase": "cast aside",
+"pos": "v",
+"group": "fixed",
+"comp": 0.297
+},
+{
+"phrase": "head up",
+"pos": "v",
+"group": "free",
+"comp": 0.569
+},
+{
+"phrase": "stay put",
+"pos": "v",
+"group": "free",
+"comp": 0.646
+},
+{
+"phrase": "fall behind",
+"pos": "v",
+"group": "free",
+"comp": 0.483
+},
+{
+"phrase": "wake up",
+"pos": "v",
+"group": "free",
+"comp": 0.59
+},
+{
+"phrase": "take leave",
+"pos": "v",
+"group": "free",
+"comp": 0.579
+},
+{
+"phrase": "break with",
+"pos": "v",
+"group": "free",
+"comp": 0.504
+},
+{
+"phrase": "come off",
+"pos": "v",
+"group": "free",
+"comp": 0.491
+},
+{
+"phrase": "care for",
+"pos": "v",
+"group": "free",
+"comp": 0.475
+},
+{
+"phrase": "work at",
+"pos": "v",
+"group": "free",
+"comp": 0.605
+},
+{
+"phrase": "go wrong",
+"pos": "v",
+"group": "free",
+"comp": 0.509
+},
+{
+"phrase": "focus on",
+"pos": "v",
+"group": "free",
+"comp": 0.485
+},
+{
+"phrase": "border on",
+"pos": "v",
+"group": "free",
+"comp": 0.46
+},
+{
+"phrase": "write on",
+"pos": "v",
+"group": "free",
+"comp": 0.521
+},
+{
+"phrase": "square up",
+"pos": "v",
+"group": "free",
+"comp": 0.553
+},
+{
+"phrase": "pass by",
+"pos": "v",
+"group": "free",
+"comp": 0.54
+}
+]
