@@ -53,7 +53,7 @@ def test_python_validator_cases():
 
 def test_levels_come_from_roots_yaml():
     prompts = (REPO / "worker" / "prompts.js").read_text(encoding="utf8")
-    check = json.loads(prompts.split("export const CHECK = ", 1)[1].rstrip().rstrip(";"))
+    check = json.loads(prompts.split("export const CHECK = ", 1)[1].split("\n", 1)[0].rstrip().rstrip(";"))
     assert check["levels"] == spec.levels()
     assert json.loads((REPO / "site" / "data" / "math.json").read_text(encoding="utf8"))["levels"] == spec.levels()
 
@@ -65,4 +65,25 @@ def test_worker_agrees_with_validator():
     out = subprocess.run(["node", "--input-type=module", "-e", script, json.dumps([c for c, _ in CASES])],
                          cwd=REPO, capture_output=True, text=True, check=True).stdout
     for (code, bad), probs in zip(CASES, json.loads(out)):
+        assert bool(probs) == bad, (code, probs)
+
+
+# предложения (режим sentence воркера): каждое слово в { }, снаружи только частицы и имена в кавычках
+SENT_CASES = [
+    ('"Martin" { SAY | i T-2 } E [ { SOMEONE | o N+3 } { MOVE(=-5) | i ! } AND { CARE(=+5) | i } ]', False),
+    ("{ THING(=+4) BIG(=+5) | o N+3 } ; { MOVE | i T-2 }", False),
+    ("{ THING | o } of { MOVE | i }", True),      # английское слово вне скобок
+    ("{ THING(=3) | o }", True),                  # ошибка внутри слова
+    ("{ THING | o", True),                        # скобка не закрыта
+    ("MOVE | i", True),                           # нет слов в скобках
+]
+
+
+@pytest.mark.skipif(not shutil.which("node"), reason="нужен node")
+def test_sentence_problems():
+    script = ("import { sentenceProblems } from './worker/check.js';"
+              "const cs = JSON.parse(process.argv[1]); console.log(JSON.stringify(cs.map(sentenceProblems)));")
+    out = subprocess.run(["node", "--input-type=module", "-e", script, json.dumps([c for c, _ in SENT_CASES])],
+                         cwd=REPO, capture_output=True, text=True, check=True).stdout
+    for (code, bad), probs in zip(SENT_CASES, json.loads(out)):
         assert bool(probs) == bad, (code, probs)

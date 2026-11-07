@@ -1,10 +1,26 @@
 // Прокси для демо min-co: держит ключ OpenRouter, вызывает дешёвую модель, ограничивает ввод.
 // Развёртывание: см. worker/README.md
-import { ENC_SPEC, DEC_SPEC } from "./prompts.js";
-import { codeProblems } from "./check.js";
+import { ENC_SPEC, DEC_SPEC, ENC_SENTS, DEC_SENTS } from "./prompts.js";
+import { codeProblems, sentenceProblems } from "./check.js";
 
 const DEFAULT_MODEL = "openai/gpt-5-mini"; // можно сменить переменной MODEL в wrangler.toml
 const MAX_INPUT = 300;
+const MAX_CODE = 1500;  // код предложения длиннее самого предложения
+
+// Режим sentence — кодировщик предложений по data/eval/runs/pipe (слепой тест, holdout +0,44 из 3 к одному проходу):
+// [упростить] → закодировать → прочитать вслепую (без исходного предложения) → исправить то, что прочитано не так.
+const SENT_SIMPLIFY = `
+TASK (pass 1: simplify): the user message is ONE English sentence. It will be translated into min-co (spec above, for reference only — do NOT write min-co now). Rewrite it in plain, simple English that keeps its full meaning: keep who does what to whom, negation, tense, quantity, degree and names; replace idioms and metaphors by their literal meaning; prefer common basic words; split a long sentence into short clauses; make subjects and objects explicit; drop words that add nothing.
+Reply with ONLY a JSON object: {"simple": "<the simplified sentence>"}`;
+const SENT_ENCODE = `
+TASK: the user message is ONE English sentence. Translate it into min-co as one line, following the Sentences section: every word inside its own braces \`{ ROOTS | FORM marks }\`, particles (E, AND, LA, [ ], ;) between words, proper names in quotes. A different person will decode it WITHOUT seeing the English: choose roots, roles and marks so that each word reads back as meant. Small grammar words become marks (not → M-5, very → I+4, more → C+3, past → T-2, will → T+2, plural → N+3, the → D+3, passive → V-4). Every axis value has a sign.
+Reply with ONLY a JSON object: {"code": "<the code>"}`;
+const SENT_READ = `
+TASK: the user message is one English sentence written in min-co. You have NOT seen the original. First give the meaning of every braced word on its own, in order (a word or two each), then ONE fluent English sentence that combines them.
+Reply with ONLY a JSON object: {"words": ["<meaning of word 1>", "..."], "sentence": "<the sentence>"}`;
+const SENT_REVISE = `
+TASK (revision): the user message has the INTENDED English sentence, the min-co CODE written for it, and how a reader who saw only the CODE and the spec read it (each word, then the whole sentence). Revise the code so that it would be read as intended: keep every word that was read right; change the roots, values or marks of a misread word, or split it into two words, or merge two words; fix the particles if the roles were misread.
+Reply with ONLY a JSON object: {"code": "<the revised code>"}`;
 
 const ENCODE_TASK_RU = `
 TASK: the user message is ONE English word (possibly with a sense hint in brackets) or a short phrase.
@@ -46,7 +62,7 @@ function limitKey(ip) {
 }
 
 // Поля ответа, которые читает страница: остальное не отдаём, чтобы это не был открытый доступ к модели.
-const REPLY_FIELDS = ["idea", "code", "tokens", "confidence", "confusable", "warnings", "best", "alternatives", "why"];
+const REPLY_FIELDS = ["idea", "code", "tokens", "confidence", "confusable", "warnings", "best", "alternatives", "why", "simple", "first", "readback"];
 const replyOf = (obj) => Object.fromEntries(REPLY_FIELDS.filter((key) => key in obj).map((key) => [key, obj[key]]));
 
 const MSG = {
@@ -65,6 +81,45 @@ async function ask(env, messages) {
   const raw = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || "";
   const m = raw.match(/\{[\s\S]*\}/);
   try { return { raw, obj: JSON.parse(m[0]) }; } catch { return { raw }; }
+}
+
+// Код предложения с одной попыткой исправить нарушения правил; null — модель не ответила JSON с кодом.
+async function sentenceCode(tryAsk, messages) {
+  let a = await tryAsk(messages);
+  if (a.error) return { error: a.error };
+  if (!a.obj || typeof a.obj.code !== "string") return { error: "json" };
+  const bad = sentenceProblems(a.obj.code);
+  if (bad.length) {
+    messages.push({ role: "assistant", content: a.raw }, { role: "user", content: `Your code breaks the rules: ${bad.slice(0, 8).join("; ")}. Fix it and reply with the JSON object only.` });
+    const b = await tryAsk(messages);
+    if (b.obj && typeof b.obj.code === "string") a = b;
+  }
+  return { code: a.obj.code, problems: sentenceProblems(a.obj.code) };
+}
+
+async function encodeSentence(tryAsk, text, simplify) {
+  let intended = text, simple;
+  if (simplify) {
+    const s = await tryAsk([{ role: "system", content: ENC_SENTS + SENT_SIMPLIFY }, { role: "user", content: text }]);
+    if (s.obj && typeof s.obj.simple === "string" && s.obj.simple.trim()) intended = simple = s.obj.simple.trim().slice(0, 600);
+  }
+  const first = await sentenceCode(tryAsk, [{ role: "system", content: ENC_SENTS + SENT_ENCODE }, { role: "user", content: intended }]);
+  if (first.error) return first;
+  // слепое чтение: читатель видит только спецификацию и код
+  const rd = await tryAsk([{ role: "system", content: DEC_SENTS + SENT_READ }, { role: "user", content: first.code }]);
+  const ok = rd.obj && typeof rd.obj.sentence === "string";
+  const readback = ok ? { words: (Array.isArray(rd.obj.words) ? rd.obj.words : []).map(String).slice(0, 40), sentence: rd.obj.sentence } : null;
+  let code = first.code, problems = first.problems;
+  if (readback) {
+    const msg = `INTENDED: ${intended}\nCODE: ${first.code}\nREAD AS: ${readback.words.join(" / ")} => ${readback.sentence}`;
+    const rev = await sentenceCode(tryAsk, [{ role: "system", content: ENC_SENTS + SENT_REVISE }, { role: "user", content: msg }]);
+    // правка не хуже по правилам — берём её; иначе остаётся первый код
+    if (!rev.error && rev.problems.length <= first.problems.length) ({ code, problems } = rev);
+  }
+  const out = { code, first: first.code, readback };
+  if (simple) out.simple = simple;
+  if (problems.length) out.warnings = problems;
+  return out;
 }
 
 function cors(origin, env) {
@@ -104,8 +159,22 @@ export default {
     const lang = body.lang === "ru" ? "ru" : "en", t = MSG[lang];
     const mode = body.mode;
     const text = String(body.text || "").trim();
-    if (!["encode", "decode"].includes(mode) || !text) return json({ error: t.need }, 400, h);
-    if (text.length > MAX_INPUT) return json({ error: t.long(MAX_INPUT) }, 400, h);
+    if (!["encode", "decode", "sentence"].includes(mode) || !text) return json({ error: t.need }, 400, h);
+    const max = mode === "decode" && text.includes("{") ? MAX_CODE : MAX_INPUT;
+    if (text.length > max) return json({ error: t.long(max) }, 400, h);
+    const tryAsk = (ms) => ask(env, ms).catch(() => ({ error: "network" }));
+
+    if (mode === "sentence") {
+      const r = await encodeSentence(tryAsk, text, body.simplify === true);
+      if (r.error) return json({ error: r.error === "json" ? t.notJson : t.down, status: r.error }, 502, h);
+      return json(replyOf(r), 200, h);
+    }
+    if (mode === "decode" && text.includes("{")) {  // код предложения: слова в { }
+      const a = await tryAsk([{ role: "system", content: DEC_SENTS + (lang === "ru" ? DECODE_TASK_RU : DECODE_TASK_EN) }, { role: "user", content: text }]);
+      if (a.error) return json({ error: t.down, status: a.error }, 502, h);
+      if (!a.obj) return json({ error: t.notJson }, 502, h);
+      return json(replyOf(a.obj), 200, h);
+    }
 
     // encode с prev и confused — повторное кодирование со вторым словом
     // prev и confused идут в системный промпт: только код по правилам и английские слова
@@ -116,7 +185,6 @@ export default {
       : DEC_SPEC + (lang === "ru" ? DECODE_TASK_RU : DECODE_TASK_EN));
     const messages = [{ role: "system", content: system }, { role: "user", content: text }];
     // сбой сети или ответ не JSON — 502 с заголовками CORS, а не 500 без них
-    const tryAsk = (ms) => ask(env, ms).catch(() => ({ error: "network" }));
     let a = await tryAsk(messages);
     if (a.error) return json({ error: t.down, status: a.error }, 502, h);
     if (mode === "encode" && a.obj) {

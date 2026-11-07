@@ -98,8 +98,14 @@ def prompts_js():
              "levels": spec.levels(), "max_roots": lim["max_roots"], "labels": labels,
              "bare": [m["name"] for m in doc["labels"] if m.get("bare")], "pos": [p["name"] for p in doc["pos"]],
              "roles": [r["name"] for r in doc.get("roles", [])], "particles": [p["name"] for p in doc["particles"] if p["name"].isalpha()]}
+    # предложения (режим sentence; data/eval/runs/pipe): спецификация со словами в { }, без заданий на нумерованные списки
+    es = build_spec("enc", "sents", braces=True)
+    enc_s = es[es.index("# min-co: how a word is written"):]
+    ds = build_spec("dec", "sents", braces=True)
+    dec_s = ds[:ds.index("## Task")] + ds[ds.index("WORD BOUNDARIES"):]
     return ("// сгенерировано scripts/site/build.py, руками не править\nexport const ENC_SPEC = " + json.dumps(enc, ensure_ascii=False)
-            + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check) + ";\n")
+            + ";\nexport const DEC_SPEC = " + json.dumps(dec, ensure_ascii=False) + ";\nexport const CHECK = " + json.dumps(check)
+            + ";\nexport const ENC_SENTS = " + json.dumps(enc_s, ensure_ascii=False) + ";\nexport const DEC_SENTS = " + json.dumps(dec_s, ensure_ascii=False) + ";\n")
 
 
 def phonetics_json():

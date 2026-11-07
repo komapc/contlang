@@ -64,3 +64,17 @@ function formProblems(form) {
   }
   return bad;
 }
+
+// Предложение: каждое слово в своих { }, снаружи — только частицы, `[ ]`, `;` и имена в кавычках (как data/eval/runs/pipe/check_sent.mjs).
+const OUTSIDE = new Set(["E", "PI", "FROM", "FOR", "LIKE", "LA", "PE", "AND", "[", "]", ";"]);
+export function sentenceProblems(code) {
+  const c = String(code || ""), bad = [];
+  const words = [...c.matchAll(/\{([^{}]*)\}/g)].map((m) => m[1].trim());
+  if (!words.length) return ["no words: write every word inside its own braces { ROOTS | FORM }"];
+  for (const w of words) if (w.includes("|")) bad.push(...codeProblems(w).map((p) => `{${w}}: ${p}`));
+  const rest = c.replace(/\{[^{}]*\}/g, " ");
+  if (/[{}]/.test(rest)) bad.push("unbalanced braces");
+  for (const t of rest.replace(/"[^"]*"/g, " ").replace(/([[\];])/g, " $1 ").split(/\s+/).filter(Boolean))
+    if (!OUTSIDE.has(t)) bad.push(`outside braces: ${t}`);
+  return bad;
+}
