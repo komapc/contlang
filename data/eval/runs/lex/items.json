@@ -1,0 +1,602 @@
+[
+{
+"w": "new",
+"pos": "adjective",
+"gloss": "not of long duration; having just (or relatively recently) come into being or been made or acquired or discovered"
+},
+{
+"w": "two",
+"pos": "adjective",
+"gloss": "being one more than one"
+},
+{
+"w": "world",
+"pos": "noun",
+"gloss": "everything that exists anywhere"
+},
+{
+"w": "second",
+"pos": "adjective",
+"gloss": "coming next after the first in position in space or time or degree or magnitude"
+},
+{
+"w": "including",
+"pos": "verb",
+"gloss": "have as a part, be made up out of"
+},
+{
+"w": "international",
+"pos": "adjective",
+"gloss": "concerning or belonging to all or at least two or more nations"
+},
+{
+"w": "news",
+"pos": "noun",
+"gloss": "information about recent and important events"
+},
+{
+"w": "season",
+"pos": "noun",
+"gloss": "a period of the year marked by special events or activities in some field"
+},
+{
+"w": "left",
+"pos": "verb",
+"gloss": "go away from a place"
+},
+{
+"w": "university",
+"pos": "noun",
+"gloss": "the body of faculty and students at a university"
+},
+{
+"w": "number",
+"pos": "noun",
+"gloss": "the property possessed by a sum or total or indefinite quantity of units or individuals"
+},
+{
+"w": "area",
+"pos": "noun",
+"gloss": "a particular geographical region of indefinite boundary (usually serving some special purpose or distinguished by its people or culture or geography)"
+},
+{
+"w": "based",
+"pos": "verb",
+"gloss": "use as a basis for; found on"
+},
+{
+"w": "women",
+"pos": "noun",
+"gloss": "an adult female person (as opposed to a man)"
+},
+{
+"w": "chief",
+"pos": "adjective",
+"gloss": "most important element"
+},
+{
+"w": "games",
+"pos": "noun",
+"gloss": "a contest with rules to determine a winner"
+},
+{
+"w": "added",
+"pos": "verb",
+"gloss": "make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of"
+},
+{
+"w": "march",
+"pos": "verb",
+"gloss": "march in a procession"
+},
+{
+"w": "film",
+"pos": "noun",
+"gloss": "a form of entertainment that enacts a story by sound and a sequence of images giving the illusion of continuous movement"
+},
+{
+"w": "death",
+"pos": "noun",
+"gloss": "the event of dying or departure from life"
+},
+{
+"w": "half",
+"pos": "noun",
+"gloss": "one of two equal parts of a divisible whole"
+},
+{
+"w": "small",
+"pos": "adjective",
+"gloss": "limited or below average in number or quantity or magnitude or extent"
+},
+{
+"w": "department",
+"pos": "noun",
+"gloss": "a specialized division of a large organization"
+},
+{
+"w": "head",
+"pos": "noun",
+"gloss": "the upper part of the human body or the front part of the body in animals; contains the face and brains"
+},
+{
+"w": "today",
+"pos": "noun",
+"gloss": "the present time or age"
+},
+{
+"w": "got",
+"pos": "verb",
+"gloss": "come into the possession of something concrete or abstract"
+},
+{
+"w": "information",
+"pos": "noun",
+"gloss": "a message received and understood"
+},
+{
+"w": "career",
+"pos": "noun",
+"gloss": "the particular occupation for which you are trained"
+},
+{
+"w": "asked",
+"pos": "verb",
+"gloss": "inquire about"
+},
+{
+"w": "move",
+"pos": "verb",
+"gloss": "change location; move, travel, or proceed, also metaphorically"
+},
+{
+"w": "issue",
+"pos": "verb",
+"gloss": "prepare and issue for public distribution or sale"
+},
+{
+"w": "return",
+"pos": "verb",
+"gloss": "go or come back to place, condition, or activity where one has been before"
+},
+{
+"w": "college",
+"pos": "noun",
+"gloss": "the body of faculty and students of a college"
+},
+{
+"w": "book",
+"pos": "noun",
+"gloss": "a written work or composition that has been published (printed on pages bound together)"
+},
+{
+"w": "shares",
+"pos": "verb",
+"gloss": "have in common"
+},
+{
+"w": "process",
+"pos": "noun",
+"gloss": "a particular course of action intended to achieve a result"
+},
+{
+"w": "growth",
+"pos": "noun",
+"gloss": "(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level"
+},
+{
+"w": "possible",
+"pos": "adjective",
+"gloss": "capable of happening or existing"
+},
+{
+"w": "island",
+"pos": "noun",
+"gloss": "a land mass (smaller than a continent) that is surrounded by water"
+},
+{
+"w": "democratic",
+"pos": "adjective",
+"gloss": "characterized by or advocating or based upon the principles of democracy or social equality; ; ; - George du Maurier"
+},
+{
+"w": "find",
+"pos": "verb",
+"gloss": "come upon, as if by accident; meet with"
+},
+{
+"w": "higher",
+"pos": "adjective",
+"gloss": "advanced in complexity or elaboration"
+},
+{
+"w": "education",
+"pos": "noun",
+"gloss": "the activities of educating or instructing; activities that impart knowledge or skill"
+},
+{
+"w": "victory",
+"pos": "noun",
+"gloss": "a successful ending of a struggle or contest"
+},
+{
+"w": "low",
+"pos": "adjective",
+"gloss": "less than normal in degree or intensity or amount"
+},
+{
+"w": "continue",
+"pos": "verb",
+"gloss": "continue a certain state, condition, or activity"
+},
+{
+"w": "chairman",
+"pos": "noun",
+"gloss": "the officer who presides at the meetings of an organization"
+},
+{
+"w": "dollar",
+"pos": "noun",
+"gloss": "the basic monetary unit in many countries; equal to 100 cents"
+},
+{
+"w": "fourth",
+"pos": "adjective",
+"gloss": "coming next after the third and just before the fifth in position or time or degree or magnitude"
+},
+{
+"w": "tax",
+"pos": "noun",
+"gloss": "charge against a citizen's person or property or activity for the support of government"
+},
+{
+"w": "meet",
+"pos": "verb",
+"gloss": "come together"
+},
+{
+"w": "served",
+"pos": "verb",
+"gloss": "serve a purpose, role, or function"
+},
+{
+"w": "hospital",
+"pos": "noun",
+"gloss": "a health facility where patients receive treatment"
+},
+{
+"w": "test",
+"pos": "verb",
+"gloss": "put to the test, as for its quality, or give experimental use to"
+},
+{
+"w": "believe",
+"pos": "verb",
+"gloss": "accept as true; take to be true"
+},
+{
+"w": "organization",
+"pos": "noun",
+"gloss": "a group of people who work together"
+},
+{
+"w": "act",
+"pos": "noun",
+"gloss": "a legal document codifying the result of deliberations of a committee or society or legislative body"
+},
+{
+"w": "living",
+"pos": "verb",
+"gloss": "inhabit or live in; be an inhabitant of"
+},
+{
+"w": "presidential",
+"pos": "adjective",
+"gloss": "relating to a president or presidency"
+},
+{
+"w": "morning",
+"pos": "noun",
+"gloss": "the time period between dawn and noon"
+},
+{
+"w": "cost",
+"pos": "noun",
+"gloss": "the total spent for goods or services including money and time and labor"
+},
+{
+"w": "instead",
+"pos": "adverb",
+"gloss": "in place of, or as an alternative to"
+},
+{
+"w": "woman",
+"pos": "noun",
+"gloss": "an adult female person (as opposed to a man)"
+},
+{
+"w": "mark",
+"pos": "verb",
+"gloss": "attach a tag or label to"
+},
+{
+"w": "markets",
+"pos": "noun",
+"gloss": "the world of commercial activity where goods and services are bought and sold"
+},
+{
+"w": "legal",
+"pos": "adjective",
+"gloss": "established by or founded upon law or official or accepted rules"
+},
+{
+"w": "budget",
+"pos": "noun",
+"gloss": "a sum of money allocated for a particular purpose"
+},
+{
+"w": "love",
+"pos": "verb",
+"gloss": "have a great affection or liking for"
+},
+{
+"w": "winning",
+"pos": "verb",
+"gloss": "be the winner in a contest or competition; be victorious"
+},
+{
+"w": "scored",
+"pos": "verb",
+"gloss": "gain points in a game"
+},
+{
+"w": "example",
+"pos": "noun",
+"gloss": "an item of information that is typical of a class or group"
+},
+{
+"w": "judge",
+"pos": "verb",
+"gloss": "determine the result of (a competition)"
+},
+{
+"w": "remains",
+"pos": "verb",
+"gloss": "stay the same; remain in a certain state"
+},
+{
+"w": "computer",
+"pos": "noun",
+"gloss": "a machine for performing calculations automatically"
+},
+{
+"w": "shows",
+"pos": "verb",
+"gloss": "give an exhibition of to an interested audience"
+},
+{
+"w": "investigation",
+"pos": "noun",
+"gloss": "an inquiry into unfamiliar or questionable activities"
+},
+{
+"w": "yen",
+"pos": "noun",
+"gloss": "a yearning for something or to do something"
+},
+{
+"w": "mission",
+"pos": "noun",
+"gloss": "an organization of missionaries in a foreign land sent to carry on religious work"
+},
+{
+"w": "buy",
+"pos": "verb",
+"gloss": "obtain by purchase; acquire by means of a financial transaction"
+},
+{
+"w": "competition",
+"pos": "noun",
+"gloss": "a business relation in which two parties compete to gain customers"
+},
+{
+"w": "question",
+"pos": "noun",
+"gloss": "an instance of questioning"
+},
+{
+"w": "prison",
+"pos": "noun",
+"gloss": "a correctional institution where persons are confined while on trial or for punishment"
+},
+{
+"w": "adding",
+"pos": "verb",
+"gloss": "make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of"
+},
+{
+"w": "tournament",
+"pos": "noun",
+"gloss": "a sporting competition in which contestants play a series of games to decide the winner"
+},
+{
+"w": "officers",
+"pos": "noun",
+"gloss": "any person in the armed services who holds a position of authority or command"
+},
+{
+"w": "success",
+"pos": "noun",
+"gloss": "an event that accomplishes its intended purpose"
+},
+{
+"w": "deputy",
+"pos": "noun",
+"gloss": "someone authorized to exercise the powers of sheriff in emergencies"
+},
+{
+"w": "step",
+"pos": "noun",
+"gloss": "any maneuver made as part of progress toward a goal"
+},
+{
+"w": "addition",
+"pos": "noun",
+"gloss": "a component that is added to something to improve it"
+},
+{
+"w": "joint",
+"pos": "noun",
+"gloss": "(anatomy) the point of connection between two bones or elements of a skeleton (especially if it allows motion)"
+},
+{
+"w": "friends",
+"pos": "noun",
+"gloss": "a person you know well and regard with affection and trust"
+},
+{
+"w": "noted",
+"pos": "verb",
+"gloss": "make mention of"
+},
+{
+"w": "related",
+"pos": "verb",
+"gloss": "make a logical or causal connection"
+},
+{
+"w": "science",
+"pos": "noun",
+"gloss": "a particular branch of scientific knowledge"
+},
+{
+"w": "costs",
+"pos": "verb",
+"gloss": "be priced at"
+},
+{
+"w": "usually",
+"pos": "adverb",
+"gloss": "under normal conditions"
+},
+{
+"w": "royal",
+"pos": "adjective",
+"gloss": "of or relating to or indicative of or issued or performed by a king or queen or other monarch"
+},
+{
+"w": "credit",
+"pos": "noun",
+"gloss": "approval"
+},
+{
+"w": "source",
+"pos": "noun",
+"gloss": "the place where something begins, where it springs into being"
+},
+{
+"w": "designed",
+"pos": "verb",
+"gloss": "make or work out a plan for; devise"
+},
+{
+"w": "certain",
+"pos": "adjective",
+"gloss": "definite but not specified or identified"
+},
+{
+"w": "dropped",
+"pos": "verb",
+"gloss": "let fall to the ground"
+},
+{
+"w": "drive",
+"pos": "verb",
+"gloss": "operate or control a vehicle"
+},
+{
+"w": "activities",
+"pos": "noun",
+"gloss": "any specific behavior"
+},
+{
+"w": "giving",
+"pos": "verb",
+"gloss": "cause to have, in the abstract sense or physical sense"
+},
+{
+"w": "highest",
+"pos": "adjective",
+"gloss": "greater than normal in degree or intensity or amount"
+},
+{
+"w": "figure",
+"pos": "noun",
+"gloss": "a diagram or picture illustrating textual material"
+},
+{
+"w": "professor",
+"pos": "noun",
+"gloss": "someone who is a member of the faculty at a college or university"
+},
+{
+"w": "concerns",
+"pos": "verb",
+"gloss": "be relevant to"
+},
+{
+"w": "sector",
+"pos": "noun",
+"gloss": "a plane figure bounded by two radii and the included arc of a circle"
+},
+{
+"w": "conflict",
+"pos": "noun",
+"gloss": "an open clash between two opposing groups (or individuals); --Thomas Paine"
+},
+{
+"w": "property",
+"pos": "noun",
+"gloss": "something owned; any tangible or intangible possession that is owned by someone"
+},
+{
+"w": "separate",
+"pos": "verb",
+"gloss": "act as a barrier between; stand between"
+},
+{
+"w": "declined",
+"pos": "verb",
+"gloss": "grow worse"
+},
+{
+"w": "session",
+"pos": "noun",
+"gloss": "a meeting for execution of a group's functions"
+},
+{
+"w": "projects",
+"pos": "verb",
+"gloss": "communicate vividly"
+},
+{
+"w": "lawyer",
+"pos": "noun",
+"gloss": "a professional person authorized to practice law; conducts lawsuits or gives legal advice"
+},
+{
+"w": "character",
+"pos": "noun",
+"gloss": "an imaginary person represented in a work of fiction (play or film or story)"
+},
+{
+"w": "fuel",
+"pos": "noun",
+"gloss": "a substance that can be consumed to produce energy"
+},
+{
+"w": "status",
+"pos": "noun",
+"gloss": "the relative position or standing of things or especially persons in a society"
+}
+]
