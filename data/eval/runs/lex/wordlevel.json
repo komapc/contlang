@@ -1,0 +1,1646 @@
+[
+{
+"chunk": "This time",
+"code": "TIME SAME | o D+3",
+"read": "the same time",
+"score": 2
+},
+{
+"chunk": "the idea",
+"code": "THINK | o result D+3",
+"read": "the idea",
+"score": 2
+},
+{
+"chunk": "do it",
+"code": "DO | i",
+"read": "act",
+"score": 2
+},
+{
+"chunk": "came",
+"code": "HAPPEN | i T-2",
+"read": "happened",
+"score": 0
+},
+{
+"chunk": "at least partly",
+"code": "PART(=-2) | e",
+"read": "partly",
+"score": 2
+},
+{
+"chunk": "people",
+"code": "SOMEONE | o N+3",
+"read": "people",
+"score": 2
+},
+{
+"chunk": "Washington",
+"code": "LAND PLACE | o PI \"Washington\"",
+"read": "a region of Washington",
+"score": 1
+},
+{
+"chunk": "Maybe",
+"code": "THINK | e M-3",
+"read": "perhaps (thinking)",
+"score": 2
+},
+{
+"chunk": "some people",
+"code": "MANY(=0) SOMEONE | o",
+"read": "some people",
+"score": 2
+},
+{
+"chunk": "think",
+"code": "THINK | i",
+"read": "think",
+"score": 2
+},
+{
+"chunk": "their work",
+"code": "DO | o result",
+"read": "the result",
+"score": 1
+},
+{
+"chunk": "is not very important",
+"code": "VALUE | i M-5 I+4",
+"read": "does not value highly",
+"score": 2
+},
+{
+"chunk": "It does not matter",
+"code": "THING | o M-5",
+"read": "nothing",
+"score": 1
+},
+{
+"chunk": "which place",
+"code": "PLACE | o",
+"read": "a place",
+"score": 2
+},
+{
+"chunk": "the world",
+"code": "LAND | o",
+"read": "land",
+"score": 1
+},
+{
+"chunk": "it is",
+"code": "SAME(=-5) | i M-5",
+"read": "is not different",
+"score": 0
+},
+{
+"chunk": "what kind of rule",
+"code": "RULE | o",
+"read": "a rule",
+"score": 2
+},
+{
+"chunk": "the people have",
+"code": "SOMEONE | o N+3",
+"read": "people",
+"score": 2
+},
+{
+"chunk": "what the problem is",
+"code": "HAPPEN KNOW(=-5) | o",
+"read": "an absurd event",
+"score": 0
+},
+{
+"chunk": "this time",
+"code": "TIME SAME | o D+3",
+"read": "the same time",
+"score": 2
+},
+{
+"chunk": "the things",
+"code": "THING | o N+3",
+"read": "things",
+"score": 2
+},
+{
+"chunk": "around them",
+"code": "NEAR | o",
+"read": "the vicinity",
+"score": 2
+},
+{
+"chunk": "are different",
+"code": "SAME(=-5) | i",
+"read": "differ",
+"score": 2
+},
+{
+"chunk": "choosing",
+"code": "THINK(=+5) | o",
+"read": "a decision",
+"score": 1
+},
+{
+"chunk": "is much harder",
+"code": "CAN(=-3) | i I+4 C+3",
+"read": "much harder",
+"score": 2
+},
+{
+"chunk": "people",
+"code": "SOMEONE | o N+3",
+"read": "people",
+"score": 2
+},
+{
+"chunk": "outside",
+"code": "INSIDE(=-5) | a",
+"read": "outside",
+"score": 2
+},
+{
+"chunk": "did not watch",
+"code": "SEE | i T-2 M-5",
+"read": "did not see",
+"score": 2
+},
+{
+"chunk": "the groups",
+"code": "PART(=+5) | o N+3",
+"read": "groups",
+"score": 2
+},
+{
+"chunk": "rule",
+"code": "RULE | i",
+"read": "rule",
+"score": 2
+},
+{
+"chunk": "the people",
+"code": "SOMEONE | o N+3",
+"read": "people",
+"score": 2
+},
+{
+"chunk": "those groups",
+"code": "PART(=+5) | o N+3 D+3",
+"read": "the groups",
+"score": 2
+},
+{
+"chunk": "would surely decide",
+"code": "THINK(=+5) | i T+2 M+4",
+"read": "will certainly decide",
+"score": 2
+},
+{
+"chunk": "things",
+"code": "THING | o N+3",
+"read": "things",
+"score": 2
+},
+{
+"chunk": "faster",
+"code": "TIME(=+1) | e C+3",
+"read": "sooner",
+"score": 1
+},
+{
+"chunk": "He",
+"code": "SOMEONE | o",
+"read": "a person",
+"score": 1
+},
+{
+"chunk": "shut",
+"code": "JOIN(=-5) | i T-2",
+"read": "removed",
+"score": 0
+},
+{
+"chunk": "his eyes",
+"code": "SEE BODY | o N+3",
+"read": "eyes",
+"score": 2
+},
+{
+"chunk": "let",
+"code": "GIVE(=0) | i T-2 K0",
+"read": "was allowed to exchange",
+"score": 1
+},
+{
+"chunk": "the many voices",
+"code": "SAY MANY | o N+3",
+"read": "many words",
+"score": 1
+},
+{
+"chunk": "he could not understand",
+"code": "KNOW(=-5) | i M-5 T-2",
+"read": "was not foolish",
+"score": 0
+},
+{
+"chunk": "pass over",
+"code": "MOVE | i",
+"read": "moved",
+"score": 1
+},
+{
+"chunk": "him",
+"code": "SOMEONE | o",
+"read": "a person",
+"score": 1
+},
+{
+"chunk": "it felt good",
+"code": "FEEL GOOD | i T-2",
+"read": "felt good",
+"score": 2
+},
+{
+"chunk": "the people",
+"code": "TEXT | o agent N+3",
+"read": "writers",
+"score": 1
+},
+{
+"chunk": "wrote",
+"code": "TEXT | i T-2",
+"read": "wrote",
+"score": 2
+},
+{
+"chunk": "words",
+"code": "SAY | o N+3",
+"read": "words",
+"score": 2
+},
+{
+"chunk": "his music",
+"code": "ART | o",
+"read": "art",
+"score": 1
+},
+{
+"chunk": "laugh",
+"code": "MOOD(=+5) | i",
+"read": "is funny",
+"score": 1
+},
+{
+"chunk": "say",
+"code": "SAY | i",
+"read": "say",
+"score": 2
+},
+{
+"chunk": "this way of living",
+"code": "LIVE SAME | o D+3",
+"read": "the same life",
+"score": 1
+},
+{
+"chunk": "is very foolish",
+"code": "KNOW(=-5) | i I+4",
+"read": "is very absurd",
+"score": 2
+},
+{
+"chunk": "not real",
+"code": "SAME | a M-5",
+"read": "not the same",
+"score": 1
+},
+{
+"chunk": "Both ways",
+"code": "SAME MANY(=+5) | o N+3",
+"read": "all alike",
+"score": 1
+},
+{
+"chunk": "make",
+"code": "DO | i",
+"read": "practice",
+"score": 0
+},
+{
+"chunk": "the music",
+"code": "ART | o D+3",
+"read": "the art",
+"score": 1
+},
+{
+"chunk": "clean",
+"code": "TOUCH(=-5) | a",
+"read": "soft",
+"score": 0
+},
+{
+"chunk": "clear",
+"code": "SEE CAN | a",
+"read": "visible",
+"score": 2
+},
+{
+"chunk": "Too many",
+"code": "MANY(=+3) | a I+4",
+"read": "very many",
+"score": 2
+},
+{
+"chunk": "books",
+"code": "TEXT | o N+3",
+"read": "texts",
+"score": 2
+},
+{
+"chunk": "articles",
+"code": "TEXT | o N+3",
+"read": "texts",
+"score": 1
+},
+{
+"chunk": "are made",
+"code": "DO | i V-4",
+"read": "is done",
+"score": 2
+},
+{
+"chunk": "putting",
+"code": "JOIN | i V+4",
+"read": "deliberately joined",
+"score": 1
+},
+{
+"chunk": "one word",
+"code": "SAY TEXT | o D-3",
+"read": "a transcript",
+"score": 0
+},
+{
+"chunk": "after",
+"code": "SIDE(=-5) | e",
+"read": "backward",
+"score": 0
+},
+{
+"chunk": "another word",
+"code": "SAME(=-5) SAY TEXT | o",
+"read": "a counter-text",
+"score": 0
+},
+{
+"chunk": "nothing more",
+"code": "MANY(=-5) | o C+3",
+"read": "fewer",
+"score": 1
+},
+{
+"chunk": "Maybe",
+"code": "THINK(=-3) | e",
+"read": "doubtfully",
+"score": 1
+},
+{
+"chunk": "he wants",
+"code": "WANT | i",
+"read": "want",
+"score": 2
+},
+{
+"chunk": "another woman",
+"code": "SOMEONE SEX(=-5) | o D-3",
+"read": "a woman",
+"score": 1
+},
+{
+"chunk": "maybe",
+"code": "THINK(=-3) | e",
+"read": "doubtfully",
+"score": 1
+},
+{
+"chunk": "he only likes",
+"code": "WANT | i M+0",
+"read": "want",
+"score": 1
+},
+{
+"chunk": "be with",
+"code": "JOIN | o",
+"read": "a union",
+"score": 1
+},
+{
+"chunk": "other men",
+"code": "SEX(=+5) SOMEONE(=-5) | o N+3",
+"read": "other men",
+"score": 2
+},
+{
+"chunk": "the book",
+"code": "TEXT | o D+3",
+"read": "the text",
+"score": 2
+},
+{
+"chunk": "is about",
+"code": "SAME | i",
+"read": "is alike",
+"score": 0
+},
+{
+"chunk": "a foolish man",
+"code": "KNOW(=-5) SEX(=+5) | o D-3",
+"read": "a foolish man",
+"score": 2
+},
+{
+"chunk": "draws",
+"code": "ART | i",
+"read": "make art",
+"score": 1
+},
+{
+"chunk": "funny pictures",
+"code": "SEE MOOD(=+5) | o N+3",
+"read": "funny sights",
+"score": 2
+},
+{
+"chunk": "it must be",
+"code": "SAME | i",
+"read": "is alike",
+"score": 0
+},
+{
+"chunk": "this way",
+"code": "CAN(=-5) | e M-5",
+"read": "possibly",
+"score": 0
+},
+{
+"chunk": "the early work",
+"code": "TIME(=-5) DO | o D+3",
+"read": "the old deed",
+"score": 1
+},
+{
+"chunk": "the artist",
+"code": "ART(=+5) | o agent D+3",
+"read": "the artist",
+"score": 2
+},
+{
+"chunk": "used",
+"code": "CONSUME | i T-2",
+"read": "took in",
+"score": 0
+},
+{
+"chunk": "dark colors",
+"code": "SEE HEAT(=-5) | o N+3",
+"read": "ice-cold sights",
+"score": 0
+},
+{
+"chunk": "later",
+"code": "TIME(=+3) | e",
+"read": "later",
+"score": 2
+},
+{
+"chunk": "he used",
+"code": "CONSUME | i T-2",
+"read": "took in",
+"score": 0
+},
+{
+"chunk": "brighter colors",
+"code": "SEE GOOD | o N+3 C+3",
+"read": "better sights",
+"score": 1
+},
+{
+"chunk": "their place",
+"code": "PLACE SAME | e",
+"read": "in the same place",
+"score": 2
+},
+{
+"chunk": "Do",
+"code": "DO | i !",
+"read": "do!",
+"score": 2
+},
+{
+"chunk": "the same",
+"code": "SAME | o D+3",
+"read": "the same",
+"score": 2
+},
+{
+"chunk": "drilling",
+"code": "DO TOUCH | o",
+"read": "touch",
+"score": 0
+},
+{
+"chunk": "cutting",
+"code": "JOIN(=-5) | o",
+"read": "separation",
+"score": 1
+},
+{
+"chunk": "the thread",
+"code": "LONG(=-5) | o D+3",
+"read": "the thread",
+"score": 2
+},
+{
+"chunk": "again",
+"code": "SAME(=+5) | e",
+"read": "exactly",
+"score": 0
+},
+{
+"chunk": "each",
+"code": "MANY(=+5) | o",
+"read": "all",
+"score": 1
+},
+{
+"chunk": "the metal bars",
+"code": "LONG TOUCH | o N+3",
+"read": "hard rods",
+"score": 2
+},
+{
+"chunk": "Many cells",
+"code": "MANY(=+3) BODY | o N+3",
+"read": "many bodies",
+"score": 1
+},
+{
+"chunk": "bacteria",
+"code": "THING | o",
+"read": "a thing",
+"score": 1
+},
+{
+"chunk": "other",
+"code": "SAME(=-5) | a",
+"read": "different",
+"score": 2
+},
+{
+"chunk": "very small living things",
+"code": "BIG(=-5) LIVE | o N+3 I+4",
+"read": "very tiny living beings",
+"score": 2
+},
+{
+"chunk": "let light pass through",
+"code": "DO | i",
+"read": "watch",
+"score": 0
+},
+{
+"chunk": "you cannot see them well",
+"code": "SEE | o",
+"read": "a sight",
+"score": 1
+},
+{
+"chunk": "you must give",
+"code": "MOVE | e",
+"read": "moving",
+"score": 0
+},
+{
+"chunk": "them",
+"code": "SEE CAN | i M-5 I+4",
+"read": "cannot see well",
+"score": 0
+},
+{
+"chunk": "a color",
+"code": "GIVE | i V+4",
+"read": "deliberately give",
+"score": 0
+},
+{
+"chunk": "look at them",
+"code": "SEE | o D-3",
+"read": "a view",
+"score": 1
+},
+{
+"chunk": "a small-seeing tool",
+"code": "SEE BIG(=-5) | o tool D-3",
+"read": "a microscope",
+"score": 2
+},
+{
+"chunk": "most cases",
+"code": "MANY(=+3) | o",
+"read": "many",
+"score": 2
+},
+{
+"chunk": "we know",
+"code": "KNOW | i",
+"read": "know",
+"score": 2
+},
+{
+"chunk": "some words",
+"code": "SAY TEXT | o N+1",
+"read": "a few transcripts",
+"score": 1
+},
+{
+"chunk": "people",
+"code": "SOMEONE | o N+1",
+"read": "a few people",
+"score": 1
+},
+{
+"chunk": "animals",
+"code": "THING | o N+1",
+"read": "a few things",
+"score": 1
+},
+{
+"chunk": "things",
+"code": "THING | o N+1",
+"read": "a few things",
+"score": 1
+},
+{
+"chunk": "Dry grass",
+"code": "THING LAND | o",
+"read": "a land thing",
+"score": 1
+},
+{
+"chunk": "grass",
+"code": "THING",
+"read": "a thing of the land",
+"score": 1
+},
+{
+"chunk": "the field",
+"code": "SAME | i",
+"read": "remain",
+"score": 0
+},
+{
+"chunk": "are",
+"code": "SAME(=+3) | o D+3",
+"read": "the ordinary one",
+"score": 0
+},
+{
+"chunk": "the other main things",
+"code": "CONSUME THING | o N+3",
+"read": "food",
+"score": 1
+},
+{
+"chunk": "farm animals",
+"code": "THING(=+4) | o N+3",
+"read": "animals",
+"score": 1
+},
+{
+"chunk": "eat",
+"code": "CONSUME(=+5) | i",
+"read": "devour",
+"score": 2
+},
+{
+"chunk": "At first",
+"code": "BEGIN(=-5) | e",
+"read": "at first",
+"score": 2
+},
+{
+"chunk": "the people",
+"code": "SOMEONE | o N+3 D+3",
+"read": "the people",
+"score": 2
+},
+{
+"chunk": "helped",
+"code": "JOIN | i T-2",
+"read": "join",
+"score": 0
+},
+{
+"chunk": "the kitchen",
+"code": "PLACE CONSUME | o D+3",
+"read": "the dining place",
+"score": 1
+},
+{
+"chunk": "accepted it",
+"code": "GIVE | i T-2",
+"read": "give",
+"score": 0
+},
+{
+"chunk": "they asked for",
+"code": "WANT | i T-2",
+"read": "want",
+"score": 2
+},
+{
+"chunk": "their own",
+"code": "SAME | o D+3",
+"read": "the same one",
+"score": 0
+},
+{
+"chunk": "white bread",
+"code": "GRAIN(=+5) | o",
+"read": "a solid piece",
+"score": 0
+},
+{
+"chunk": "themselves",
+"code": "SAME(=+5) SOMEONE(=+5) | o N+3",
+"read": "we",
+"score": 0
+},
+{
+"chunk": "The man who makes statues",
+"code": "ART DO | o agent D+3",
+"read": "the artist",
+"score": 2
+},
+{
+"chunk": "looked at",
+"code": "SEE | i T-2",
+"read": "saw",
+"score": 2
+},
+{
+"chunk": "him",
+"code": "SOMEONE | o",
+"read": "a person",
+"score": 1
+},
+{
+"chunk": "big eyes",
+"code": "SEE BODY BIG | o N+3",
+"read": "small eyes",
+"score": 0
+},
+{
+"chunk": "he was surprised",
+"code": "FEEL | i T-2",
+"read": "felt",
+"score": 1
+},
+{
+"chunk": "angry",
+"code": "FRIEND(=-5) FEEL | i T-2",
+"read": "felt hostile",
+"score": 2
+},
+{
+"chunk": "them",
+"code": "SOMEONE(=-5) | o N+3",
+"read": "others",
+"score": 2
+},
+{
+"chunk": "a box",
+"code": "PLACE | o D-3",
+"read": "a place",
+"score": 0
+},
+{
+"chunk": "is enough",
+"code": "CAN | i M+4",
+"read": "can certainly",
+"score": 0
+},
+{
+"chunk": "place to live in",
+"code": "PLACE LIVE | o",
+"read": "a house",
+"score": 2
+},
+{
+"chunk": "not",
+"code": "M-5",
+"read": "not",
+"score": 2
+},
+{
+"chunk": "people",
+"code": "SOMEONE | o N+3",
+"read": "people",
+"score": 2
+},
+{
+"chunk": "may have already given",
+"code": "GIVE | i T-2 M-3 A+5",
+"read": "had perhaps fully given",
+"score": 2
+},
+{
+"chunk": "names",
+"code": "SAY TEXT | o N+3",
+"read": "transcripts",
+"score": 0
+},
+{
+"chunk": "these same words",
+"code": "SAME | a N+3",
+"read": "the same",
+"score": 1
+},
+{
+"chunk": "before",
+"code": "TIME(=-2) | e",
+"read": "before",
+"score": 2
+},
+{
+"chunk": "Radiation",
+"code": "HEAT(=+5) | o",
+"read": "fire",
+"score": 0
+},
+{
+"chunk": "does not stop",
+"code": "BEGIN(=+5) | i M-5 K-5",
+"read": "is prevented from ending",
+"score": 2
+},
+{
+"chunk": "food",
+"code": "THING CONSUME | o",
+"read": "food",
+"score": 2
+},
+{
+"chunk": "going bad",
+"code": "LIVE(=-5) | i",
+"read": "die",
+"score": 0
+},
+{
+"chunk": "chemicals",
+"code": "FIGHT DO | o N+3",
+"read": "fighters",
+"score": 0
+},
+{
+"chunk": "speaks so well",
+"code": "SAY GOOD | i I+4",
+"read": "speaks very well",
+"score": 2
+},
+{
+"chunk": "almost believes",
+"code": "THINK(=+4) | e M-3",
+"read": "perhaps decidedly",
+"score": 0
+},
+{
+"chunk": "he should burn",
+"code": "HEAT(=+5) | i",
+"read": "is fiery",
+"score": 0
+},
+{
+"chunk": "his books",
+"code": "TEXT | o N+3",
+"read": "texts",
+"score": 1
+},
+{
+"chunk": "too",
+"code": "SAME | e",
+"read": "in the same way",
+"score": 0
+},
+{
+"chunk": "ran",
+"code": "MOVE(=+5) | i T-2",
+"read": "rushed",
+"score": 2
+},
+{
+"chunk": "fast",
+"code": "MOVE(=+5) | e",
+"read": "quickly",
+"score": 2
+},
+{
+"chunk": "the back",
+"code": "SIDE(=-5) | o D+3",
+"read": "the back",
+"score": 2
+},
+{
+"chunk": "the wooden buildings",
+"code": "PLACE LIVE LONG | o N+3 D+3",
+"read": "the houses",
+"score": 1
+},
+{
+"chunk": "It was best",
+"code": "GOOD(=+5) | i C+5 T-2",
+"read": "was best",
+"score": 2
+},
+{
+"chunk": "die",
+"code": "LIVE(=-5) | i",
+"read": "be dead",
+"score": 2
+},
+{
+"chunk": "fighting",
+"code": "FIGHT | i",
+"read": "fight",
+"score": 2
+},
+{
+"chunk": "the soldiers",
+"code": "FIGHT SOMEONE | o N+3",
+"read": "battles between people",
+"score": 1
+},
+{
+"chunk": "looked at",
+"code": "SEE | i T-2",
+"read": "saw",
+"score": 2
+},
+{
+"chunk": "the two people",
+"code": "SAME(=0) SOMEONE | o N+1",
+"read": "a few people",
+"score": 1
+},
+{
+"chunk": "a time",
+"code": "TIME | e",
+"read": "at times",
+"score": 2
+},
+{
+"chunk": "he did not understand",
+"code": "KNOW | i T-2 M-5",
+"read": "did not know",
+"score": 2
+},
+{
+"chunk": "It was a good place",
+"code": "GOOD PLACE | i T-2",
+"read": "was a good place",
+"score": 2
+},
+{
+"chunk": "there was no smoke",
+"code": "GRAIN(=-5) | o M-5",
+"read": "no gas",
+"score": 1
+},
+{
+"chunk": "it",
+"code": "INSIDE(=+5) | i T-2",
+"read": "was inside",
+"score": 0
+},
+{
+"chunk": "The idea",
+"code": "THINK | o result D+3",
+"read": "the idea",
+"score": 2
+},
+{
+"chunk": "is",
+"code": "SAME | i",
+"read": "be the same",
+"score": 0
+},
+{
+"chunk": "let",
+"code": "DO | i K0",
+"read": "let do",
+"score": 2
+},
+{
+"chunk": "these countries",
+"code": "PLACE | o N+3 D+3",
+"read": "the places",
+"score": 1
+},
+{
+"chunk": "get",
+"code": "GIVE(=0) | i",
+"read": "exchange",
+"score": 0
+},
+{
+"chunk": "as much money as they can",
+"code": "VALUE | o C+5",
+"read": "the most valuable things",
+"score": 1
+},
+{
+"chunk": "by",
+"code": "DO | e",
+"read": "actively",
+"score": 0
+},
+{
+"chunk": "their own work",
+"code": "DO SOMEONE(=-5) | o",
+"read": "others' deeds",
+"score": 1
+},
+{
+"chunk": "We",
+"code": "SOMEONE(=+5) | o N+3",
+"read": "we",
+"score": 2
+},
+{
+"chunk": "know",
+"code": "KNOW(=+5) | i",
+"read": "inform",
+"score": 1
+},
+{
+"chunk": "someone",
+"code": "SOMEONE | o",
+"read": "someone",
+"score": 2
+},
+{
+"chunk": "gave",
+"code": "GIVE(=+5) | i T-2",
+"read": "gave",
+"score": 2
+},
+{
+"chunk": "this order",
+"code": "RULE(=+5) | o result D+3",
+"read": "official outcome",
+"score": 0
+},
+{
+"chunk": "to",
+"code": "INSIDE(=-5) | e",
+"read": "outside",
+"score": 0
+},
+{
+"chunk": "all the people",
+"code": "MANY(=+5) SOMEONE | o D+3",
+"read": "everyone",
+"score": 2
+},
+{
+"chunk": "who work",
+"code": "DO | i",
+"read": "act",
+"score": 1
+},
+{
+"chunk": "for",
+"code": "DO | e",
+"read": "actively",
+"score": 0
+},
+{
+"chunk": "the city",
+"code": "RULE(=+4) PLACE | o D+3",
+"read": "authority places",
+"score": 1
+},
+{
+"chunk": "the county",
+"code": "RULE(=+4) LAND | o D+3",
+"read": "authority lands",
+"score": 1
+},
+{
+"chunk": "the Jerebohms",
+"code": "SOMEONE(=-5) | o N+3 D+3",
+"read": "the others",
+"score": 0
+},
+{
+"chunk": "want very much",
+"code": "WANT(=+5) | i I+4",
+"read": "greatly want",
+"score": 2
+},
+{
+"chunk": "buy",
+"code": "GIVE(=0) VALUE(=-5) | i",
+"read": "trade cheaply",
+"score": 1
+},
+{
+"chunk": "it",
+"code": "SOMEONE(=-5) THING | o",
+"read": "others' things",
+"score": 1
+},
+{
+"chunk": "Here",
+"code": "NEAR(=+5) | e",
+"read": "here",
+"score": 2
+},
+{
+"chunk": "they are",
+"code": "SOMEONE(=-5) | i",
+"read": "be others",
+"score": 1
+},
+{
+"chunk": "here",
+"code": "NEAR(=+5) | e",
+"read": "nearby",
+"score": 2
+},
+{
+"chunk": "is",
+"code": "HAPPEN | i",
+"read": "happen",
+"score": 0
+},
+{
+"chunk": "what I think",
+"code": "THINK | o result",
+"read": "idea",
+"score": 1
+},
+{
+"chunk": "about",
+"code": "SOMEONE(=+5) | o",
+"read": "me",
+"score": 0
+},
+{
+"chunk": "them",
+"code": "SOMEONE(=-5) | o",
+"read": "others",
+"score": 2
+},
+{
+"chunk": "what I decide",
+"code": "THINK(=+5) | o result",
+"read": "decision",
+"score": 1
+},
+{
+"chunk": "about",
+"code": "SOMEONE(=+5) | o",
+"read": "me",
+"score": 0
+},
+{
+"chunk": "them",
+"code": "SOMEONE(=-5) | o",
+"read": "others",
+"score": 2
+},
+{
+"chunk": "People",
+"code": "SOMEONE(=-5) | o N+3",
+"read": "others",
+"score": 1
+},
+{
+"chunk": "all over the world",
+"code": "MANY(=+5) LAND | e",
+"read": "everywhere",
+"score": 2
+},
+{
+"chunk": "make",
+"code": "DO | i",
+"read": "do",
+"score": 2
+},
+{
+"chunk": "drinks",
+"code": "CONSUME(=+5) GRAIN(=-3) | o N+3",
+"read": "drinks",
+"score": 2
+},
+{
+"chunk": "from",
+"code": "DO | e",
+"read": "actively",
+"score": 0
+},
+{
+"chunk": "seeds",
+"code": "THING PART | o N+3",
+"read": "parts of things",
+"score": 1
+},
+{
+"chunk": "It is easier",
+"code": "CAN(=+5) | i C+3",
+"read": "can more easily",
+"score": 2
+},
+{
+"chunk": "work",
+"code": "DO | i",
+"read": "do",
+"score": 2
+},
+{
+"chunk": "with",
+"code": "JOIN(=+5) | e",
+"read": "joining",
+"score": 1
+},
+{
+"chunk": "plastics",
+"code": "THING(=-5) | o N+3",
+"read": "inanimate things",
+"score": 1
+},
+{
+"chunk": "than",
+"code": "SAME | e C+3",
+"read": "more identically",
+"score": 0
+},
+{
+"chunk": "with",
+"code": "JOIN(=+5) | e",
+"read": "joined",
+"score": 1
+},
+{
+"chunk": "the rubber",
+"code": "THING(=0) GRAIN(=-3) | o D+3",
+"read": "the liquid plant",
+"score": 1
+},
+{
+"chunk": "people",
+"code": "SOMEONE(=-5) | o N+3",
+"read": "others",
+"score": 1
+},
+{
+"chunk": "used",
+"code": "DO | i T-2",
+"read": "acted",
+"score": 0
+},
+{
+"chunk": "before",
+"code": "TIME(=-2) | e",
+"read": "earlier",
+"score": 2
+},
+{
+"chunk": "plastics",
+"code": "THING(=-5) | o N+3",
+"read": "inanimate things",
+"score": 1
+},
+{
+"chunk": "save",
+"code": "GIVE(=0) | i",
+"read": "exchange",
+"score": 0
+},
+{
+"chunk": "time",
+"code": "TIME | o",
+"read": "time",
+"score": 2
+},
+{
+"chunk": "money",
+"code": "VALUE | o",
+"read": "value",
+"score": 1
+},
+{
+"chunk": "Because",
+"code": "HAPPEN | e",
+"read": "eventually",
+"score": 0
+},
+{
+"chunk": "they",
+"code": "SOMEONE(=-5) | o",
+"read": "others",
+"score": 1
+},
+{
+"chunk": "believe",
+"code": "THINK(=+5) | i",
+"read": "decide",
+"score": 0
+},
+{
+"chunk": "this",
+"code": "SAME | o",
+"read": "the same thing",
+"score": 1
+},
+{
+"chunk": "they",
+"code": "SOMEONE(=-5) | o",
+"read": "others",
+"score": 1
+},
+{
+"chunk": "no longer see",
+"code": "SEE | i M-5 T-2",
+"read": "did not see",
+"score": 2
+},
+{
+"chunk": "a difference",
+"code": "SAME(=-5) | o",
+"read": "the different thing",
+"score": 2
+},
+{
+"chunk": "between",
+"code": "PART(=-2) | e",
+"read": "in part",
+"score": 0
+},
+{
+"chunk": "holy things",
+"code": "VALUE(=+5) THING | o N+3",
+"read": "precious things",
+"score": 1
+},
+{
+"chunk": "ordinary things",
+"code": "SAME(=+3) THING | o N+3",
+"read": "ordinary things",
+"score": 2
+},
+{
+"chunk": "People",
+"code": "SOMEONE(=-5) | o N+3",
+"read": "others",
+"score": 1
+},
+{
+"chunk": "used",
+"code": "DO | i T-2",
+"read": "did",
+"score": 1
+},
+{
+"chunk": "a machine",
+"code": "DO | o tool",
+"read": "a means of doing",
+"score": 2
+},
+{
+"chunk": "start",
+"code": "BEGIN(=-5) | i",
+"read": "start",
+"score": 2
+},
+{
+"chunk": "the electric light",
+"code": "HEAT SEE | o D+3",
+"read": "the glow",
+"score": 2
+},
+{
+"chunk": "the machine",
+"code": "DO | o tool D+3",
+"read": "the means",
+"score": 2
+},
+{
+"chunk": "made",
+"code": "DO | i T-2",
+"read": "did",
+"score": 1
+},
+{
+"chunk": "quick",
+"code": "MOVE(=+5) | a",
+"read": "swift",
+"score": 2
+},
+{
+"chunk": "fast",
+"code": "MOVE(=+5) | a",
+"read": "swift",
+"score": 2
+},
+{
+"chunk": "waves",
+"code": "SAY | o N+3",
+"read": "speeches",
+"score": 0
+},
+{
+"chunk": "She",
+"code": "SOMEONE | o",
+"read": "someone",
+"score": 1
+},
+{
+"chunk": "went up",
+"code": "ABOVE MOVE | i T-2",
+"read": "rose",
+"score": 2
+},
+{
+"chunk": "look for",
+"code": "SEE | i",
+"read": "see",
+"score": 0
+},
+{
+"chunk": "Kate",
+"code": "SOMEONE | o",
+"read": "someone",
+"score": 1
+},
+{
+"chunk": "her lips",
+"code": "BODY SAY(=-5) | o N+3",
+"read": "whispering bodies",
+"score": 0
+},
+{
+"chunk": "were shaking",
+"code": "MOVE FEEL | i T-2",
+"read": "were stirred",
+"score": 1
+},
+{
+"chunk": "One kick",
+"code": "MOVE | o result",
+"read": "result of motion",
+"score": 1
+},
+{
+"chunk": "made",
+"code": "DO | i T-2",
+"read": "did",
+"score": 1
+},
+{
+"chunk": "it",
+"code": "THING | o",
+"read": "a thing",
+"score": 2
+},
+{
+"chunk": "open",
+"code": "INSIDE(=+5) JOIN(=-5) | a",
+"read": "internally separated",
+"score": 0
+},
+{
+"chunk": "fast",
+"code": "MOVE(=+5) | e",
+"read": "rapidly",
+"score": 2
+},
+{
+"chunk": "it",
+"code": "THING | o",
+"read": "a thing",
+"score": 2
+},
+{
+"chunk": "shook",
+"code": "MOVE FEEL | i T-2",
+"read": "was emotionally moved",
+"score": 1
+},
+{
+"chunk": "The boy",
+"code": "SOMEONE SEX(=+5) | o D+3",
+"read": "the man",
+"score": 1
+},
+{
+"chunk": "was seen",
+"code": "SEE | i V-4 T-2",
+"read": "was seen",
+"score": 2
+},
+{
+"chunk": "for a short time",
+"code": "TIME(=-1) | e",
+"read": "just now",
+"score": 1
+},
+{
+"chunk": "he",
+"code": "SOMEONE | o",
+"read": "someone",
+"score": 1
+},
+{
+"chunk": "held",
+"code": "JOIN(=+5) | i T-2",
+"read": "attached",
+"score": 1
+},
+{
+"chunk": "his arm",
+"code": "BODY | o",
+"read": "a body",
+"score": 1
+},
+{
+"chunk": "back",
+"code": "SIDE(=-5) | e",
+"read": "backwards",
+"score": 2
+},
+{
+"chunk": "throw",
+"code": "GIVE(=-5) MOVE(=+5) | i",
+"read": "snatch and rush",
+"score": 0
+},
+{
+"chunk": "A short look",
+"code": "TIME(=-1) SEE | o D-3",
+"read": "a recent sight",
+"score": 1
+},
+{
+"chunk": "showed",
+"code": "SEE | i T-2",
+"read": "saw",
+"score": 1
+},
+{
+"chunk": "the main",
+"code": "BIG(=+5) SAME(=-4) | a",
+"read": "exceptionally huge",
+"score": 0
+},
+{
+"chunk": "high",
+"code": "ABOVE(=+5) LONG(=+5) | a",
+"read": "tall wooden",
+"score": 1
+},
+{
+"chunk": "mast",
+"code": "LONG(=+5) | o D+3",
+"read": "the wooden beam",
+"score": 1
+},
+{
+"chunk": "on",
+"code": "INSIDE(=0) | e",
+"read": "on the surface",
+"score": 1
+},
+{
+"chunk": "the ship",
+"code": "PLACE MOVE LAND(=-5) | o D+3",
+"read": "the harbour",
+"score": 1
+},
+{
+"chunk": "had broken",
+"code": "JOIN(=-5) | i R-3",
+"read": "were separated earlier",
+"score": 1
+},
+{
+"chunk": "fallen",
+"code": "ABOVE(=-5) MOVE | i R-3",
+"read": "had gone down earlier",
+"score": 2
+}
+]
