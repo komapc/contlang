@@ -1,0 +1,5044 @@
+[
+{
+"lemma": "bank",
+"pos": "noun",
+"gloss": "financial institution holding money",
+"sents": [
+0,
+91
+]
+},
+{
+"lemma": "install",
+"pos": "verb",
+"gloss": "put in place for use",
+"sents": [
+0,
+46
+]
+},
+{
+"lemma": "magnetic tape",
+"pos": "noun",
+"gloss": "recording strip coated with magnetic material",
+"sents": [
+0
+]
+},
+{
+"lemma": "electronic data processing",
+"pos": "noun",
+"gloss": "computer handling of information",
+"sents": [
+0
+]
+},
+{
+"lemma": "system",
+"pos": "noun",
+"gloss": "organized set of equipment",
+"sents": [
+0,
+72
+]
+},
+{
+"lemma": "handle",
+"pos": "verb",
+"gloss": "deal with or manage",
+"sents": [
+0
+]
+},
+{
+"lemma": "thing",
+"pos": "noun",
+"gloss": "task or matter to deal with",
+"sents": [
+0,
+86,
+88
+]
+},
+{
+"lemma": "answer",
+"pos": "noun",
+"gloss": "explanation given to a question",
+"sents": [
+1
+]
+},
+{
+"lemma": "combination",
+"pos": "noun",
+"gloss": "mixture of several elements",
+"sents": [
+1
+]
+},
+{
+"lemma": "circumstance",
+"pos": "noun",
+"gloss": "condition or fact affecting events",
+"sents": [
+1
+]
+},
+{
+"lemma": "juror",
+"pos": "noun",
+"gloss": "member of a trial jury",
+"sents": [
+2
+]
+},
+{
+"lemma": "say",
+"pos": "verb",
+"gloss": "state in speech",
+"sents": [
+2,
+58,
+88,
+113
+]
+},
+{
+"lemma": "masked",
+"pos": "adjective",
+"gloss": "with face covered",
+"sents": [
+2
+]
+},
+{
+"lemma": "man",
+"pos": "noun",
+"gloss": "adult male person",
+"sents": [
+2,
+10,
+16,
+107
+]
+},
+{
+"lemma": "advise",
+"pos": "verb",
+"gloss": "recommend a course of action",
+"sents": [
+2,
+57
+]
+},
+{
+"lemma": "lenient",
+"pos": "adjective",
+"gloss": "mild, not harsh in judging",
+"sents": [
+2
+]
+},
+{
+"lemma": "then",
+"pos": "adverb",
+"gloss": "after that, next",
+"sents": [
+3,
+44,
+60
+]
+},
+{
+"lemma": "attack",
+"pos": "verb",
+"gloss": "assault physically",
+"sents": [
+3
+]
+},
+{
+"lemma": "officer",
+"pos": "noun",
+"gloss": "police or military official",
+"sents": [
+3
+]
+},
+{
+"lemma": "again",
+"pos": "adverb",
+"gloss": "once more",
+"sents": [
+3,
+114
+]
+},
+{
+"lemma": "restrain",
+"pos": "verb",
+"gloss": "hold back by force",
+"sents": [
+3
+]
+},
+{
+"lemma": "relate",
+"pos": "verb",
+"gloss": "tell a story or account",
+"sents": [
+3
+]
+},
+{
+"lemma": "reputedly",
+"pos": "adverb",
+"gloss": "according to common report",
+"sents": [
+4
+]
+},
+{
+"lemma": "outrun",
+"pos": "verb",
+"gloss": "travel faster than",
+"sents": [
+4
+]
+},
+{
+"lemma": "underwater",
+"pos": "adverb",
+"gloss": "beneath the surface of the sea",
+"sents": [
+4
+]
+},
+{
+"lemma": "fast",
+"pos": "adjective",
+"gloss": "moving at high speed",
+"sents": [
+4
+]
+},
+{
+"lemma": "destroyer",
+"pos": "noun",
+"gloss": "fast armed warship",
+"sents": [
+4
+]
+},
+{
+"lemma": "effort",
+"pos": "noun",
+"gloss": "attempt requiring work",
+"sents": [
+5
+]
+},
+{
+"lemma": "since",
+"pos": "adverb",
+"gloss": "from that time onward",
+"sents": [
+5
+]
+},
+{
+"lemma": "election",
+"pos": "noun",
+"gloss": "public vote choosing leaders",
+"sents": [
+5
+]
+},
+{
+"lemma": "pull back together",
+"pos": "verb",
+"gloss": "reunite something that fell apart",
+"sents": [
+5
+]
+},
+{
+"lemma": "single",
+"pos": "verb",
+"gloss": "hit a one-base hit",
+"sents": [
+6
+]
+},
+{
+"lemma": "deep",
+"pos": "adverb",
+"gloss": "far into the field",
+"sents": [
+6
+]
+},
+{
+"lemma": "hole",
+"pos": "noun",
+"gloss": "gap between infielders",
+"sents": [
+6
+]
+},
+{
+"lemma": "short",
+"pos": "noun",
+"gloss": "shortstop fielding position",
+"sents": [
+6
+]
+},
+{
+"lemma": "start",
+"pos": "verb",
+"gloss": "begin",
+"sents": [
+6,
+34,
+114
+]
+},
+{
+"lemma": "rally",
+"pos": "noun",
+"gloss": "burst of scoring in a game",
+"sents": [
+6
+]
+},
+{
+"lemma": "substantial",
+"pos": "adjective",
+"gloss": "large in amount",
+"sents": [
+7
+]
+},
+{
+"lemma": "rise",
+"pos": "noun",
+"gloss": "increase in amount",
+"sents": [
+7
+]
+},
+{
+"lemma": "new",
+"pos": "adjective",
+"gloss": "recently placed",
+"sents": [
+7
+]
+},
+{
+"lemma": "order",
+"pos": "noun",
+"gloss": "request to buy goods",
+"sents": [
+7
+]
+},
+{
+"lemma": "sale",
+"pos": "noun",
+"gloss": "exchange of goods for money",
+"sents": [
+7
+]
+},
+{
+"lemma": "durable goods",
+"pos": "noun",
+"gloss": "long-lasting manufactured products",
+"sents": [
+7
+]
+},
+{
+"lemma": "report",
+"pos": "verb",
+"gloss": "announce officially",
+"sents": [
+7
+]
+},
+{
+"lemma": "last",
+"pos": "adjective",
+"gloss": "most recently past",
+"sents": [
+7,
+63
+]
+},
+{
+"lemma": "month",
+"pos": "noun",
+"gloss": "period of about thirty days",
+"sents": [
+7
+]
+},
+{
+"lemma": "esplanade",
+"pos": "noun",
+"gloss": "open public walkway",
+"sents": [
+8
+]
+},
+{
+"lemma": "feature",
+"pos": "verb",
+"gloss": "include as a notable part",
+"sents": [
+8
+]
+},
+{
+"lemma": "pedestrian",
+"pos": "adjective",
+"gloss": "meant for people on foot",
+"sents": [
+8
+]
+},
+{
+"lemma": "bridge",
+"pos": "noun",
+"gloss": "structure crossing over something",
+"sents": [
+8
+]
+},
+{
+"lemma": "road",
+"pos": "noun",
+"gloss": "paved route for vehicles",
+"sents": [
+8
+]
+},
+{
+"lemma": "project",
+"pos": "noun",
+"gloss": "planned construction scheme",
+"sents": [
+8
+]
+},
+{
+"lemma": "there",
+"pos": "adverb",
+"gloss": "in that place",
+"sents": [
+9
+]
+},
+{
+"lemma": "accused",
+"pos": "adjective",
+"gloss": "charged with wrongdoing",
+"sents": [
+9
+]
+},
+{
+"lemma": "civil servant",
+"pos": "noun",
+"gloss": "government employee",
+"sents": [
+9
+]
+},
+{
+"lemma": "work",
+"pos": "noun",
+"gloss": "place of employment",
+"sents": [
+9,
+64
+]
+},
+{
+"lemma": "own",
+"pos": "adjective",
+"gloss": "belonging to himself",
+"sents": [
+10,
+34,
+37
+]
+},
+{
+"lemma": "confession",
+"pos": "noun",
+"gloss": "admission of wrongdoing or feeling",
+"sents": [
+10
+]
+},
+{
+"lemma": "angry",
+"pos": "adjective",
+"gloss": "feeling strong displeasure",
+"sents": [
+10
+]
+},
+{
+"lemma": "young",
+"pos": "adjective",
+"gloss": "not old",
+"sents": [
+10,
+108
+]
+},
+{
+"lemma": "year",
+"pos": "noun",
+"gloss": "twelve-month season",
+"sents": [
+11,
+29
+]
+},
+{
+"lemma": "home run",
+"pos": "noun",
+"gloss": "baseball hit scoring the batter",
+"sents": [
+11
+]
+},
+{
+"lemma": "range",
+"pos": "verb",
+"gloss": "vary between extremes",
+"sents": [
+11
+]
+},
+{
+"lemma": "sublime",
+"pos": "adjective",
+"gloss": "of lofty excellence",
+"sents": [
+11
+]
+},
+{
+"lemma": "ridiculous",
+"pos": "adjective",
+"gloss": "absurdly silly",
+"sents": [
+11
+]
+},
+{
+"lemma": "orange",
+"pos": "noun",
+"gloss": "reddish-yellow color",
+"sents": [
+12
+]
+},
+{
+"lemma": "lemon",
+"pos": "noun",
+"gloss": "pale yellow color",
+"sents": [
+12
+]
+},
+{
+"lemma": "consider",
+"pos": "verb",
+"gloss": "regard as being",
+"sents": [
+12
+]
+},
+{
+"lemma": "important",
+"pos": "adjective",
+"gloss": "of great significance",
+"sents": [
+12
+]
+},
+{
+"lemma": "pastel",
+"pos": "noun",
+"gloss": "soft pale color",
+"sents": [
+12
+]
+},
+{
+"lemma": "blue",
+"pos": "noun",
+"gloss": "color of the sky",
+"sents": [
+12
+]
+},
+{
+"lemma": "lilac",
+"pos": "noun",
+"gloss": "pale purple color",
+"sents": [
+12
+]
+},
+{
+"lemma": "soon",
+"pos": "adverb",
+"gloss": "in a short time",
+"sents": [
+13
+]
+},
+{
+"lemma": "begin",
+"pos": "verb",
+"gloss": "start doing",
+"sents": [
+13,
+57,
+68,
+91
+]
+},
+{
+"lemma": "hunt down",
+"pos": "verb",
+"gloss": "pursue and find",
+"sents": [
+13
+]
+},
+{
+"lemma": "traitor",
+"pos": "noun",
+"gloss": "person betraying their country",
+"sents": [
+13
+]
+},
+{
+"lemma": "assure",
+"pos": "verb",
+"gloss": "tell confidently",
+"sents": [
+13
+]
+},
+{
+"lemma": "midst",
+"pos": "noun",
+"gloss": "middle of a group",
+"sents": [
+13
+]
+},
+{
+"lemma": "outlook",
+"pos": "noun",
+"gloss": "general attitude or view",
+"sents": [
+14
+]
+},
+{
+"lemma": "continue",
+"pos": "verb",
+"gloss": "keep on being",
+"sents": [
+14
+]
+},
+{
+"lemma": "defensive",
+"pos": "adjective",
+"gloss": "aimed at protecting, not attacking",
+"sents": [
+14
+]
+},
+{
+"lemma": "obsess",
+"pos": "verb",
+"gloss": "fill the mind constantly",
+"sents": [
+15
+]
+},
+{
+"lemma": "disease",
+"pos": "noun",
+"gloss": "illness",
+"sents": [
+15
+]
+},
+{
+"lemma": "poverty",
+"pos": "noun",
+"gloss": "state of being very poor",
+"sents": [
+15
+]
+},
+{
+"lemma": "melancholy",
+"pos": "noun",
+"gloss": "deep sadness",
+"sents": [
+15
+]
+},
+{
+"lemma": "old age",
+"pos": "noun",
+"gloss": "late stage of life",
+"sents": [
+15
+]
+},
+{
+"lemma": "tyranny",
+"pos": "noun",
+"gloss": "cruel, absolute control",
+"sents": [
+15
+]
+},
+{
+"lemma": "lust",
+"pos": "noun",
+"gloss": "strong sexual desire",
+"sents": [
+15
+]
+},
+{
+"lemma": "planner",
+"pos": "noun",
+"gloss": "person who designs economic schemes",
+"sents": [
+16
+]
+},
+{
+"lemma": "strike",
+"pos": "verb",
+"gloss": "give an impression to",
+"sents": [
+16
+]
+},
+{
+"lemma": "realistic",
+"pos": "adjective",
+"gloss": "practical and facing facts",
+"sents": [
+16
+]
+},
+{
+"lemma": "odd",
+"pos": "adjective",
+"gloss": "unusual or peculiar",
+"sents": [
+17
+]
+},
+{
+"lemma": "uptown",
+"pos": "adjective",
+"gloss": "from the upper city district",
+"sents": [
+17
+]
+},
+{
+"lemma": "sex maniac",
+"pos": "noun",
+"gloss": "person obsessed with sex",
+"sents": [
+17
+]
+},
+{
+"lemma": "overeager",
+"pos": "adjective",
+"gloss": "too enthusiastic",
+"sents": [
+17
+]
+},
+{
+"lemma": "greek",
+"pos": "adjective",
+"gloss": "from Greece",
+"sents": [
+17
+]
+},
+{
+"lemma": "sailor",
+"pos": "noun",
+"gloss": "seaman on a ship",
+"sents": [
+17
+]
+},
+{
+"lemma": "people",
+"pos": "noun",
+"gloss": "ordinary persons",
+"sents": [
+17,
+21,
+52,
+71
+]
+},
+{
+"lemma": "watch",
+"pos": "verb",
+"gloss": "look at attentively",
+"sents": [
+17,
+93,
+105
+]
+},
+{
+"lemma": "calm",
+"pos": "adjective",
+"gloss": "peaceful and quiet",
+"sents": [
+17
+]
+},
+{
+"lemma": "absorption",
+"pos": "noun",
+"gloss": "deep mental engrossment",
+"sents": [
+17
+]
+},
+{
+"lemma": "left",
+"pos": "noun",
+"gloss": "side opposite the right",
+"sents": [
+18
+]
+},
+{
+"lemma": "pair",
+"pos": "noun",
+"gloss": "two matching items",
+"sents": [
+18
+]
+},
+{
+"lemma": "dressy",
+"pos": "adjective",
+"gloss": "elegant, suited to formal wear",
+"sents": [
+18
+]
+},
+{
+"lemma": "straw",
+"pos": "noun",
+"gloss": "dried plant stalks material",
+"sents": [
+18
+]
+},
+{
+"lemma": "pump",
+"pos": "noun",
+"gloss": "low-cut dress shoe",
+"sents": [
+18
+]
+},
+{
+"lemma": "light",
+"pos": "adjective",
+"gloss": "pale in color",
+"sents": [
+18
+]
+},
+{
+"lemma": "crisp",
+"pos": "adjective",
+"gloss": "fresh, firm and neat",
+"sents": [
+18
+]
+},
+{
+"lemma": "texture",
+"pos": "noun",
+"gloss": "feel of a surface",
+"sents": [
+18
+]
+},
+{
+"lemma": "hard",
+"pos": "adjective",
+"gloss": "difficult",
+"sents": [
+19
+]
+},
+{
+"lemma": "choice",
+"pos": "noun",
+"gloss": "decision between options",
+"sents": [
+19,
+110
+]
+},
+{
+"lemma": "willing",
+"pos": "adjective",
+"gloss": "ready and inclined",
+"sents": [
+19
+]
+},
+{
+"lemma": "league",
+"pos": "noun",
+"gloss": "association of sports teams",
+"sents": [
+19
+]
+},
+{
+"lemma": "wade in",
+"pos": "verb",
+"gloss": "get involved vigorously",
+"sents": [
+19
+]
+},
+{
+"lemma": "teach",
+"pos": "verb",
+"gloss": "instruct in a belief",
+"sents": [
+20
+]
+},
+{
+"lemma": "forgiveness",
+"pos": "noun",
+"gloss": "pardoning of wrongs",
+"sents": [
+20
+]
+},
+{
+"lemma": "give",
+"pos": "verb",
+"gloss": "provide",
+"sents": [
+20,
+24,
+102
+]
+},
+{
+"lemma": "example",
+"pos": "noun",
+"gloss": "model of behavior",
+"sents": [
+20
+]
+},
+{
+"lemma": "cross",
+"pos": "noun",
+"gloss": "execution structure of Christianity",
+"sents": [
+20
+]
+},
+{
+"lemma": "little",
+"pos": "adjective",
+"gloss": "small",
+"sents": [
+21
+]
+},
+{
+"lemma": "cottage",
+"pos": "noun",
+"gloss": "small simple house",
+"sents": [
+21
+]
+},
+{
+"lemma": "burst",
+"pos": "verb",
+"gloss": "be overfull",
+"sents": [
+21
+]
+},
+{
+"lemma": "age",
+"pos": "noun",
+"gloss": "stage of life",
+"sents": [
+21
+]
+},
+{
+"lemma": "american",
+"pos": "adjective",
+"gloss": "of the United States",
+"sents": [
+22
+]
+},
+{
+"lemma": "taxpayer",
+"pos": "noun",
+"gloss": "person who pays taxes",
+"sents": [
+22
+]
+},
+{
+"lemma": "impress",
+"pos": "verb",
+"gloss": "make feel admiration",
+"sents": [
+22
+]
+},
+{
+"lemma": "surplus",
+"pos": "noun",
+"gloss": "excess of income over spending",
+"sents": [
+22
+]
+},
+{
+"lemma": "long",
+"pos": "adjective",
+"gloss": "lasting a great time",
+"sents": [
+22,
+96
+]
+},
+{
+"lemma": "time",
+"pos": "noun",
+"gloss": "period of duration",
+"sents": [
+22,
+28,
+42,
+56,
+62,
+80
+]
+},
+{
+"lemma": "usually",
+"pos": "adverb",
+"gloss": "in most cases",
+"sents": [
+23
+]
+},
+{
+"lemma": "veteran",
+"pos": "noun",
+"gloss": "former soldier",
+"sents": [
+23
+]
+},
+{
+"lemma": "hang",
+"pos": "verb",
+"gloss": "kill by suspension",
+"sents": [
+23
+]
+},
+{
+"lemma": "get",
+"pos": "verb",
+"gloss": "obtain",
+"sents": [
+23
+]
+},
+{
+"lemma": "space",
+"pos": "noun",
+"gloss": "room in a publication",
+"sents": [
+23
+]
+},
+{
+"lemma": "front",
+"pos": "adjective",
+"gloss": "first",
+"sents": [
+23
+]
+},
+{
+"lemma": "page",
+"pos": "noun",
+"gloss": "sheet of a newspaper",
+"sents": [
+23
+]
+},
+{
+"lemma": "may",
+"pos": "verb",
+"gloss": "possibly",
+"sents": [
+24
+]
+},
+{
+"lemma": "point",
+"pos": "noun",
+"gloss": "valid argument",
+"sents": [
+24,
+29,
+61
+]
+},
+{
+"lemma": "urge",
+"pos": "verb",
+"gloss": "strongly recommend",
+"sents": [
+24,
+26
+]
+},
+{
+"lemma": "decadent",
+"pos": "adjective",
+"gloss": "morally declining",
+"sents": [
+24
+]
+},
+{
+"lemma": "theme",
+"pos": "noun",
+"gloss": "subject of artistic work",
+"sents": [
+24
+]
+},
+{
+"lemma": "few",
+"pos": "adjective",
+"gloss": "not many",
+"sents": [
+24,
+82,
+89
+]
+},
+{
+"lemma": "prize",
+"pos": "noun",
+"gloss": "award for achievement",
+"sents": [
+24
+]
+},
+{
+"lemma": "whatever",
+"pos": "adjective",
+"gloss": "no matter what",
+"sents": [
+25
+]
+},
+{
+"lemma": "cause",
+"pos": "noun",
+"gloss": "reason for something",
+"sents": [
+25
+]
+},
+{
+"lemma": "mood",
+"pos": "noun",
+"gloss": "state of feeling",
+"sents": [
+25
+]
+},
+{
+"lemma": "fifties",
+"pos": "noun",
+"gloss": "decade of ages fifty to fifty-nine",
+"sents": [
+25
+]
+},
+{
+"lemma": "rarely",
+"pos": "adverb",
+"gloss": "seldom",
+"sents": [
+25
+]
+},
+{
+"lemma": "rise",
+"pos": "verb",
+"gloss": "go up",
+"sents": [
+25
+]
+},
+{
+"lemma": "level",
+"pos": "noun",
+"gloss": "standard or height",
+"sents": [
+25
+]
+},
+{
+"lemma": "capably",
+"pos": "adverb",
+"gloss": "skillfully",
+"sents": [
+25
+]
+},
+{
+"lemma": "sardonic",
+"pos": "adjective",
+"gloss": "bitterly mocking",
+"sents": [
+25
+]
+},
+{
+"lemma": "industry",
+"pos": "noun",
+"gloss": "business sector",
+"sents": [
+26,
+37
+]
+},
+{
+"lemma": "pride",
+"pos": "verb",
+"gloss": "take satisfaction in",
+"sents": [
+26
+]
+},
+{
+"lemma": "authenticity",
+"pos": "noun",
+"gloss": "quality of being genuine",
+"sents": [
+26
+]
+},
+{
+"lemma": "great",
+"pos": "adjective",
+"gloss": "more",
+"sents": [
+26,
+50,
+72,
+82
+]
+},
+{
+"lemma": "realism",
+"pos": "noun",
+"gloss": "faithful depiction of reality",
+"sents": [
+26
+]
+},
+{
+"lemma": "corner",
+"pos": "noun",
+"gloss": "edge where sides meet",
+"sents": [
+27,
+93
+]
+},
+{
+"lemma": "visibly",
+"pos": "adverb",
+"gloss": "in a way that can be seen",
+"sents": [
+27
+]
+},
+{
+"lemma": "cut",
+"pos": "verb",
+"gloss": "reduce quality to save cost",
+"sents": [
+27
+]
+},
+{
+"lemma": "one",
+"pos": "noun",
+"gloss": "this particular item",
+"sents": [
+27
+]
+},
+{
+"lemma": "know",
+"pos": "verb",
+"gloss": "be acquainted with",
+"sents": [
+28,
+104
+]
+},
+{
+"lemma": "national",
+"pos": "adjective",
+"gloss": "of the whole country",
+"sents": [
+28
+]
+},
+{
+"lemma": "leader",
+"pos": "noun",
+"gloss": "person in charge of a country",
+"sents": [
+28
+]
+},
+{
+"lemma": "suddenly",
+"pos": "adverb",
+"gloss": "all at once",
+"sents": [
+29,
+109
+]
+},
+{
+"lemma": "fall away",
+"pos": "verb",
+"gloss": "disappear gradually",
+"sents": [
+29
+]
+},
+{
+"lemma": "record",
+"pos": "noun",
+"gloss": "recorded music album",
+"sents": [
+30
+]
+},
+{
+"lemma": "close",
+"pos": "adjective",
+"gloss": "intimate and near",
+"sents": [
+30,
+97
+]
+},
+{
+"lemma": "attractive",
+"pos": "adjective",
+"gloss": "pleasing",
+"sents": [
+30
+]
+},
+{
+"lemma": "sound",
+"pos": "noun",
+"gloss": "audio quality",
+"sents": [
+30,
+48
+]
+},
+{
+"lemma": "performance",
+"pos": "noun",
+"gloss": "musical rendition",
+"sents": [
+30
+]
+},
+{
+"lemma": "variety",
+"pos": "noun",
+"gloss": "range of different kinds",
+"sents": [
+30
+]
+},
+{
+"lemma": "instrumentalist",
+"pos": "noun",
+"gloss": "musician playing an instrument",
+"sents": [
+30
+]
+},
+{
+"lemma": "characteristic",
+"pos": "adjective",
+"gloss": "typical",
+"sents": [
+30
+]
+},
+{
+"lemma": "function",
+"pos": "noun",
+"gloss": "role or capacity",
+"sents": [
+31
+]
+},
+{
+"lemma": "help",
+"pos": "verb",
+"gloss": "assist",
+"sents": [
+31,
+113
+]
+},
+{
+"lemma": "rebut",
+"pos": "verb",
+"gloss": "disprove with evidence",
+"sents": [
+31
+]
+},
+{
+"lemma": "another",
+"pos": "adjective",
+"gloss": "a different one",
+"sents": [
+31
+]
+},
+{
+"lemma": "legend",
+"pos": "noun",
+"gloss": "popular myth",
+"sents": [
+31
+]
+},
+{
+"lemma": "wear",
+"pos": "verb",
+"gloss": "have on the body",
+"sents": [
+32
+]
+},
+{
+"lemma": "clothes",
+"pos": "noun",
+"gloss": "garments",
+"sents": [
+32,
+114
+]
+},
+{
+"lemma": "laborer",
+"pos": "noun",
+"gloss": "manual worker",
+"sents": [
+32
+]
+},
+{
+"lemma": "wondrously",
+"pos": "adverb",
+"gloss": "amazingly",
+"sents": [
+32
+]
+},
+{
+"lemma": "seductive",
+"pos": "adjective",
+"gloss": "sexually alluring",
+"sents": [
+32
+]
+},
+{
+"lemma": "yellow",
+"pos": "adjective",
+"gloss": "color of lemons",
+"sents": [
+32
+]
+},
+{
+"lemma": "orange",
+"pos": "adjective",
+"gloss": "reddish-yellow color",
+"sents": [
+32
+]
+},
+{
+"lemma": "dress",
+"pos": "noun",
+"gloss": "woman's one-piece garment",
+"sents": [
+32,
+108
+]
+},
+{
+"lemma": "occasionally",
+"pos": "adverb",
+"gloss": "from time to time",
+"sents": [
+33,
+96
+]
+},
+{
+"lemma": "draw",
+"pos": "verb",
+"gloss": "elicit",
+"sents": [
+33,
+95
+]
+},
+{
+"lemma": "justly",
+"pos": "adverb",
+"gloss": "fairly",
+"sents": [
+33
+]
+},
+{
+"lemma": "deserved",
+"pos": "adjective",
+"gloss": "earned as appropriate",
+"sents": [
+33
+]
+},
+{
+"lemma": "laugh",
+"pos": "noun",
+"gloss": "amused sound",
+"sents": [
+33
+]
+},
+{
+"lemma": "quick",
+"pos": "adjective",
+"gloss": "fast",
+"sents": [
+33
+]
+},
+{
+"lemma": "shift",
+"pos": "noun",
+"gloss": "sudden change",
+"sents": [
+33
+]
+},
+{
+"lemma": "personality",
+"pos": "noun",
+"gloss": "character",
+"sents": [
+33
+]
+},
+{
+"lemma": "make",
+"pos": "verb",
+"gloss": "place a phone call",
+"sents": [
+34,
+60,
+80,
+86,
+116
+]
+},
+{
+"lemma": "call",
+"pos": "noun",
+"gloss": "telephone contact",
+"sents": [
+34
+]
+},
+{
+"lemma": "part",
+"pos": "noun",
+"gloss": "role in a play",
+"sents": [
+35
+]
+},
+{
+"lemma": "evil",
+"pos": "adjective",
+"gloss": "morally wicked",
+"sents": [
+35
+]
+},
+{
+"lemma": "spy",
+"pos": "noun",
+"gloss": "secret agent",
+"sents": [
+35
+]
+},
+{
+"lemma": "multiple",
+"pos": "adjective",
+"gloss": "many",
+"sents": [
+36
+]
+},
+{
+"lemma": "implication",
+"pos": "noun",
+"gloss": "possible consequence",
+"sents": [
+36
+]
+},
+{
+"lemma": "possible",
+"pos": "adjective",
+"gloss": "potential",
+"sents": [
+36
+]
+},
+{
+"lemma": "headache",
+"pos": "noun",
+"gloss": "source of trouble",
+"sents": [
+36
+]
+},
+{
+"lemma": "marketing",
+"pos": "noun",
+"gloss": "promotion and selling of products",
+"sents": [
+36
+]
+},
+{
+"lemma": "program",
+"pos": "noun",
+"gloss": "planned series of activities",
+"sents": [
+36
+]
+},
+{
+"lemma": "watch dog",
+"pos": "noun",
+"gloss": "self-appointed monitor",
+"sents": [
+37
+]
+},
+{
+"lemma": "sure",
+"pos": "adjective",
+"gloss": "certain",
+"sents": [
+38
+]
+},
+{
+"lemma": "plenty",
+"pos": "noun",
+"gloss": "large supply",
+"sents": [
+38
+]
+},
+{
+"lemma": "frankfurter",
+"pos": "noun",
+"gloss": "sausage in a bun",
+"sents": [
+38
+]
+},
+{
+"lemma": "bun",
+"pos": "noun",
+"gloss": "soft bread roll",
+"sents": [
+38
+]
+},
+{
+"lemma": "on hand",
+"pos": "adjective",
+"gloss": "available nearby",
+"sents": [
+38
+]
+},
+{
+"lemma": "customer",
+"pos": "noun",
+"gloss": "person buying goods",
+"sents": [
+39
+]
+},
+{
+"lemma": "soil",
+"pos": "verb",
+"gloss": "make dirty",
+"sents": [
+39
+]
+},
+{
+"lemma": "hand",
+"pos": "noun",
+"gloss": "body part at end of arm",
+"sents": [
+39
+]
+},
+{
+"lemma": "issue",
+"pos": "verb",
+"gloss": "hand out",
+"sents": [
+39
+]
+},
+{
+"lemma": "white",
+"pos": "adjective",
+"gloss": "color of snow",
+"sents": [
+39,
+108
+]
+},
+{
+"lemma": "glove",
+"pos": "noun",
+"gloss": "hand covering",
+"sents": [
+39
+]
+},
+{
+"lemma": "bed",
+"pos": "noun",
+"gloss": "furniture for sleeping",
+"sents": [
+40
+]
+},
+{
+"lemma": "air mattress",
+"pos": "noun",
+"gloss": "inflatable sleeping pad",
+"sents": [
+40
+]
+},
+{
+"lemma": "sleeping bag",
+"pos": "noun",
+"gloss": "padded bag for sleeping outdoors",
+"sents": [
+40
+]
+},
+{
+"lemma": "outboard motor",
+"pos": "noun",
+"gloss": "engine attached to boat's stern",
+"sents": [
+41
+]
+},
+{
+"lemma": "insurance",
+"pos": "noun",
+"gloss": "protection against loss",
+"sents": [
+41
+]
+},
+{
+"lemma": "boat",
+"pos": "noun",
+"gloss": "small watercraft",
+"sents": [
+41
+]
+},
+{
+"lemma": "repair",
+"pos": "noun",
+"gloss": "fixing of damage",
+"sents": [
+41
+]
+},
+{
+"lemma": "finance",
+"pos": "verb",
+"gloss": "pay for by borrowing",
+"sents": [
+41
+]
+},
+{
+"lemma": "same",
+"pos": "adjective",
+"gloss": "identical",
+"sents": [
+41,
+71
+]
+},
+{
+"lemma": "way",
+"pos": "noun",
+"gloss": "method",
+"sents": [
+41,
+60,
+71
+]
+},
+{
+"lemma": "promotion",
+"pos": "noun",
+"gloss": "advancement to higher job rank",
+"sents": [
+42
+]
+},
+{
+"lemma": "often",
+"pos": "adverb",
+"gloss": "frequently",
+"sents": [
+42
+]
+},
+{
+"lemma": "base",
+"pos": "verb",
+"gloss": "rest decision on",
+"sents": [
+42,
+69
+]
+},
+{
+"lemma": "longevity",
+"pos": "noun",
+"gloss": "length of service",
+"sents": [
+42
+]
+},
+{
+"lemma": "salary grade",
+"pos": "noun",
+"gloss": "pay level",
+"sents": [
+42
+]
+},
+{
+"lemma": "merit",
+"pos": "noun",
+"gloss": "deserving quality",
+"sents": [
+42
+]
+},
+{
+"lemma": "straight",
+"pos": "adjective",
+"gloss": "not curved",
+"sents": [
+43
+]
+},
+{
+"lemma": "vertical",
+"pos": "adjective",
+"gloss": "upright",
+"sents": [
+43
+]
+},
+{
+"lemma": "edge",
+"pos": "noun",
+"gloss": "border of fabric",
+"sents": [
+43
+]
+},
+{
+"lemma": "back",
+"pos": "adjective",
+"gloss": "rear",
+"sents": [
+43
+]
+},
+{
+"lemma": "seam",
+"pos": "noun",
+"gloss": "line where fabric is joined",
+"sents": [
+43
+]
+},
+{
+"lemma": "sock",
+"pos": "noun",
+"gloss": "foot covering",
+"sents": [
+43
+]
+},
+{
+"lemma": "weave",
+"pos": "verb",
+"gloss": "join by interlacing threads",
+"sents": [
+43
+]
+},
+{
+"lemma": "together",
+"pos": "adverb",
+"gloss": "joined as one",
+"sents": [
+43
+]
+},
+{
+"lemma": "invisibly",
+"pos": "adverb",
+"gloss": "so as not to be seen",
+"sents": [
+43
+]
+},
+{
+"lemma": "emasculation",
+"pos": "noun",
+"gloss": "castration of male animal",
+"sents": [
+44
+]
+},
+{
+"lemma": "ease up",
+"pos": "verb",
+"gloss": "be given less work",
+"sents": [
+44
+]
+},
+{
+"lemma": "couple",
+"pos": "noun",
+"gloss": "about two",
+"sents": [
+44
+]
+},
+{
+"lemma": "week",
+"pos": "noun",
+"gloss": "seven-day period",
+"sents": [
+44
+]
+},
+{
+"lemma": "improve",
+"pos": "verb",
+"gloss": "make better",
+"sents": [
+45
+]
+},
+{
+"lemma": "growth",
+"pos": "noun",
+"gloss": "increase in size",
+"sents": [
+45
+]
+},
+{
+"lemma": "rate",
+"pos": "noun",
+"gloss": "speed",
+"sents": [
+45
+]
+},
+{
+"lemma": "feed",
+"pos": "noun",
+"gloss": "animal food",
+"sents": [
+45
+]
+},
+{
+"lemma": "efficiency",
+"pos": "noun",
+"gloss": "output relative to input",
+"sents": [
+45
+]
+},
+{
+"lemma": "fatten",
+"pos": "verb",
+"gloss": "make heavier for slaughter",
+"sents": [
+45
+]
+},
+{
+"lemma": "beef",
+"pos": "noun",
+"gloss": "meat-producing cattle",
+"sents": [
+45
+]
+},
+{
+"lemma": "animal",
+"pos": "noun",
+"gloss": "living creature",
+"sents": [
+45
+]
+},
+{
+"lemma": "finish",
+"pos": "verb",
+"gloss": "complete",
+"sents": [
+46
+]
+},
+{
+"lemma": "connect up",
+"pos": "verb",
+"gloss": "attach to supplies",
+"sents": [
+46
+]
+},
+{
+"lemma": "furnace",
+"pos": "noun",
+"gloss": "heating unit",
+"sents": [
+46
+]
+},
+{
+"lemma": "water heater",
+"pos": "noun",
+"gloss": "appliance warming water",
+"sents": [
+46
+]
+},
+{
+"lemma": "wall in",
+"pos": "verb",
+"gloss": "enclose with walls",
+"sents": [
+46
+]
+},
+{
+"lemma": "many",
+"pos": "adjective",
+"gloss": "large number of",
+"sents": [
+47
+]
+},
+{
+"lemma": "food",
+"pos": "noun",
+"gloss": "things eaten",
+"sents": [
+47
+]
+},
+{
+"lemma": "beverage",
+"pos": "noun",
+"gloss": "drink",
+"sents": [
+47
+]
+},
+{
+"lemma": "company",
+"pos": "noun",
+"gloss": "business firm",
+"sents": [
+47
+]
+},
+{
+"lemma": "already",
+"pos": "adverb",
+"gloss": "by now",
+"sents": [
+47
+]
+},
+{
+"lemma": "highly",
+"pos": "adverb",
+"gloss": "to a great degree",
+"sents": [
+47
+]
+},
+{
+"lemma": "plan",
+"pos": "verb",
+"gloss": "arrange in advance",
+"sents": [
+47
+]
+},
+{
+"lemma": "basis",
+"pos": "noun",
+"gloss": "foundation of operation",
+"sents": [
+47
+]
+},
+{
+"lemma": "fire",
+"pos": "verb",
+"gloss": "shoot a weapon",
+"sents": [
+48
+]
+},
+{
+"lemma": "wildly",
+"pos": "adverb",
+"gloss": "without control or aim",
+"sents": [
+48
+]
+},
+{
+"lemma": "motor",
+"pos": "noun",
+"gloss": "engine",
+"sents": [
+48
+]
+},
+{
+"lemma": "next",
+"pos": "adjective",
+"gloss": "following",
+"sents": [
+49
+]
+},
+{
+"lemma": "decade",
+"pos": "noun",
+"gloss": "ten-year period",
+"sents": [
+49
+]
+},
+{
+"lemma": "nation",
+"pos": "noun",
+"gloss": "country",
+"sents": [
+49,
+69
+]
+},
+{
+"lemma": "need",
+"pos": "verb",
+"gloss": "require",
+"sents": [
+49,
+58
+]
+},
+{
+"lemma": "educate",
+"pos": "verb",
+"gloss": "train through teaching",
+"sents": [
+49
+]
+},
+{
+"lemma": "profession",
+"pos": "noun",
+"gloss": "skilled occupation",
+"sents": [
+49
+]
+},
+{
+"lemma": "potential",
+"pos": "adjective",
+"gloss": "possible, latent",
+"sents": [
+49
+]
+},
+{
+"lemma": "professional",
+"pos": "adjective",
+"gloss": "skilled occupational",
+"sents": [
+49
+]
+},
+{
+"lemma": "talent",
+"pos": "noun",
+"gloss": "natural ability",
+"sents": [
+49
+]
+},
+{
+"lemma": "science",
+"pos": "noun",
+"gloss": "study of nature",
+"sents": [
+50
+]
+},
+{
+"lemma": "teacher",
+"pos": "noun",
+"gloss": "school instructor",
+"sents": [
+50
+]
+},
+{
+"lemma": "present",
+"pos": "adjective",
+"gloss": "in attendance",
+"sents": [
+50
+]
+},
+{
+"lemma": "have",
+"pos": "verb",
+"gloss": "experience",
+"sents": [
+50,
+51,
+53
+]
+},
+{
+"lemma": "fun",
+"pos": "noun",
+"gloss": "enjoyment",
+"sents": [
+50
+]
+},
+{
+"lemma": "historian",
+"pos": "noun",
+"gloss": "scholar of the past",
+"sents": [
+51
+]
+},
+{
+"lemma": "reason",
+"pos": "noun",
+"gloss": "motive",
+"sents": [
+51
+]
+},
+{
+"lemma": "persist",
+"pos": "verb",
+"gloss": "continue despite difficulty",
+"sents": [
+51
+]
+},
+{
+"lemma": "long",
+"pos": "adverb",
+"gloss": "for a great time",
+"sents": [
+51
+]
+},
+{
+"lemma": "investigation",
+"pos": "noun",
+"gloss": "careful study",
+"sents": [
+51
+]
+},
+{
+"lemma": "viewpoint",
+"pos": "noun",
+"gloss": "way of looking at things",
+"sents": [
+52
+]
+},
+{
+"lemma": "now",
+"pos": "adverb",
+"gloss": "at present",
+"sents": [
+52,
+71,
+104,
+112
+]
+},
+{
+"lemma": "translate",
+"pos": "verb",
+"gloss": "turn into",
+"sents": [
+52
+]
+},
+{
+"lemma": "action",
+"pos": "noun",
+"gloss": "practical doing",
+"sents": [
+52
+]
+},
+{
+"lemma": "majority",
+"pos": "noun",
+"gloss": "greater part",
+"sents": [
+52
+]
+},
+{
+"lemma": "country",
+"pos": "noun",
+"gloss": "nation",
+"sents": [
+52
+]
+},
+{
+"lemma": "businessman",
+"pos": "noun",
+"gloss": "commercial executive",
+"sents": [
+53
+]
+},
+{
+"lemma": "racketeer",
+"pos": "noun",
+"gloss": "criminal extorter",
+"sents": [
+53
+]
+},
+{
+"lemma": "also",
+"pos": "adverb",
+"gloss": "too",
+"sents": [
+53,
+78,
+99
+]
+},
+{
+"lemma": "story",
+"pos": "noun",
+"gloss": "account of events",
+"sents": [
+53
+]
+},
+{
+"lemma": "farm",
+"pos": "noun",
+"gloss": "agricultural land",
+"sents": [
+54
+]
+},
+{
+"lemma": "provide",
+"pos": "verb",
+"gloss": "supply",
+"sents": [
+54
+]
+},
+{
+"lemma": "wholesome",
+"pos": "adjective",
+"gloss": "promoting good moral health",
+"sents": [
+54
+]
+},
+{
+"lemma": "healthful",
+"pos": "adjective",
+"gloss": "good for health",
+"sents": [
+54
+]
+},
+{
+"lemma": "environment",
+"pos": "noun",
+"gloss": "surroundings",
+"sents": [
+54
+]
+},
+{
+"lemma": "child",
+"pos": "noun",
+"gloss": "young person",
+"sents": [
+54
+]
+},
+{
+"lemma": "head",
+"pos": "noun",
+"gloss": "mind",
+"sents": [
+55
+]
+},
+{
+"lemma": "contain",
+"pos": "verb",
+"gloss": "hold within",
+"sents": [
+55
+]
+},
+{
+"lemma": "enough",
+"pos": "adjective",
+"gloss": "sufficient",
+"sents": [
+55
+]
+},
+{
+"lemma": "sense",
+"pos": "noun",
+"gloss": "good judgment",
+"sents": [
+55
+]
+},
+{
+"lemma": "command",
+"pos": "verb",
+"gloss": "lead officially",
+"sents": [
+55
+]
+},
+{
+"lemma": "regiment",
+"pos": "noun",
+"gloss": "army unit",
+"sents": [
+55
+]
+},
+{
+"lemma": "corps",
+"pos": "noun",
+"gloss": "large army unit",
+"sents": [
+55
+]
+},
+{
+"lemma": "ruthlessness",
+"pos": "noun",
+"gloss": "lack of pity",
+"sents": [
+56
+]
+},
+{
+"lemma": "very",
+"pos": "adverb",
+"gloss": "extremely",
+"sents": [
+56,
+66
+]
+},
+{
+"lemma": "severe",
+"pos": "adjective",
+"gloss": "harsh",
+"sents": [
+56
+]
+},
+{
+"lemma": "shock",
+"pos": "noun",
+"gloss": "sudden upset",
+"sents": [
+56
+]
+},
+{
+"lemma": "bride",
+"pos": "noun",
+"gloss": "woman about to marry",
+"sents": [
+56,
+57
+]
+},
+{
+"lemma": "physically",
+"pos": "adverb",
+"gloss": "in bodily terms",
+"sents": [
+56
+]
+},
+{
+"lemma": "psychologically",
+"pos": "adverb",
+"gloss": "in mental terms",
+"sents": [
+56
+]
+},
+{
+"lemma": "gynecologist",
+"pos": "noun",
+"gloss": "doctor for women's health",
+"sents": [
+57
+]
+},
+{
+"lemma": "marriage",
+"pos": "noun",
+"gloss": "wedded union",
+"sents": [
+57,
+116
+]
+},
+{
+"lemma": "manual",
+"pos": "noun",
+"gloss": "instruction book",
+"sents": [
+57
+]
+},
+{
+"lemma": "consult",
+"pos": "verb",
+"gloss": "seek advice from",
+"sents": [
+57,
+95
+]
+},
+{
+"lemma": "physician",
+"pos": "noun",
+"gloss": "medical doctor",
+"sents": [
+57
+]
+},
+{
+"lemma": "feel",
+"pos": "verb",
+"gloss": "believe",
+"sents": [
+58,
+115
+]
+},
+{
+"lemma": "nothing",
+"pos": "noun",
+"gloss": "not anything",
+"sents": [
+58
+]
+},
+{
+"lemma": "further",
+"pos": "adverb",
+"gloss": "additionally",
+"sents": [
+58
+]
+},
+{
+"lemma": "servant",
+"pos": "noun",
+"gloss": "household domestic worker",
+"sents": [
+58
+]
+},
+{
+"lemma": "girl",
+"pos": "noun",
+"gloss": "young female",
+"sents": [
+58
+]
+},
+{
+"lemma": "londoner",
+"pos": "noun",
+"gloss": "person from London",
+"sents": [
+59
+]
+},
+{
+"lemma": "married",
+"pos": "adjective",
+"gloss": "having a spouse",
+"sents": [
+59
+]
+},
+{
+"lemma": "son",
+"pos": "noun",
+"gloss": "male child",
+"sents": [
+59
+]
+},
+{
+"lemma": "colonel",
+"pos": "noun",
+"gloss": "senior army officer",
+"sents": [
+60
+]
+},
+{
+"lemma": "grunt",
+"pos": "verb",
+"gloss": "make a low sound",
+"sents": [
+60
+]
+},
+{
+"lemma": "remark",
+"pos": "noun",
+"gloss": "casual comment",
+"sents": [
+60
+]
+},
+{
+"lemma": "construe",
+"pos": "verb",
+"gloss": "interpret",
+"sents": [
+60
+]
+},
+{
+"lemma": "drafter",
+"pos": "noun",
+"gloss": "writer of a document",
+"sents": [
+61
+]
+},
+{
+"lemma": "discuss",
+"pos": "verb",
+"gloss": "talk about",
+"sents": [
+61
+]
+},
+{
+"lemma": "vital",
+"pos": "adjective",
+"gloss": "essential",
+"sents": [
+61
+]
+},
+{
+"lemma": "leave out",
+"pos": "verb",
+"gloss": "omit",
+"sents": [
+61
+]
+},
+{
+"lemma": "constitution",
+"pos": "noun",
+"gloss": "national founding document",
+"sents": [
+61
+]
+},
+{
+"lemma": "work",
+"pos": "verb",
+"gloss": "collaborate",
+"sents": [
+62
+]
+},
+{
+"lemma": "both",
+"pos": "adjective",
+"gloss": "the two",
+"sents": [
+62
+]
+},
+{
+"lemma": "lyricist",
+"pos": "noun",
+"gloss": "writer of song words",
+"sents": [
+62
+]
+},
+{
+"lemma": "simultaneously",
+"pos": "adverb",
+"gloss": "at the same time",
+"sents": [
+62
+]
+},
+{
+"lemma": "make it",
+"pos": "verb",
+"gloss": "succeed in reaching",
+"sents": [
+63
+]
+},
+{
+"lemma": "kill",
+"pos": "verb",
+"gloss": "cause to die",
+"sents": [
+63
+]
+},
+{
+"lemma": "kraut",
+"pos": "noun",
+"gloss": "German soldier",
+"sents": [
+63
+]
+},
+{
+"lemma": "take",
+"pos": "verb",
+"gloss": "capture",
+"sents": [
+63
+]
+},
+{
+"lemma": "village",
+"pos": "noun",
+"gloss": "small rural settlement",
+"sents": [
+63
+]
+},
+{
+"lemma": "schedule",
+"pos": "noun",
+"gloss": "planned timetable",
+"sents": [
+63
+]
+},
+{
+"lemma": "early",
+"pos": "adjective",
+"gloss": "first in time",
+"sents": [
+64
+]
+},
+{
+"lemma": "reflect",
+"pos": "verb",
+"gloss": "show traces of",
+"sents": [
+64
+]
+},
+{
+"lemma": "heavy",
+"pos": "adjective",
+"gloss": "strong",
+"sents": [
+64
+]
+},
+{
+"lemma": "influence",
+"pos": "noun",
+"gloss": "effect from others",
+"sents": [
+64
+]
+},
+{
+"lemma": "english",
+"pos": "adjective",
+"gloss": "from England",
+"sents": [
+64
+]
+},
+{
+"lemma": "continental",
+"pos": "adjective",
+"gloss": "from mainland Europe",
+"sents": [
+64
+]
+},
+{
+"lemma": "writer",
+"pos": "noun",
+"gloss": "author",
+"sents": [
+64
+]
+},
+{
+"lemma": "look",
+"pos": "verb",
+"gloss": "direct eyes",
+"sents": [
+65,
+66,
+107,
+115
+]
+},
+{
+"lemma": "diagram",
+"pos": "noun",
+"gloss": "explanatory drawing",
+"sents": [
+65
+]
+},
+{
+"lemma": "see",
+"pos": "verb",
+"gloss": "notice",
+"sents": [
+65,
+116
+]
+},
+{
+"lemma": "connection",
+"pos": "noun",
+"gloss": "link",
+"sents": [
+65
+]
+},
+{
+"lemma": "line",
+"pos": "noun",
+"gloss": "drawn stroke",
+"sents": [
+65
+]
+},
+{
+"lemma": "come in",
+"pos": "verb",
+"gloss": "arrive",
+"sents": [
+65,
+84
+]
+},
+{
+"lemma": "member",
+"pos": "noun",
+"gloss": "element of a structure",
+"sents": [
+65
+]
+},
+{
+"lemma": "want",
+"pos": "verb",
+"gloss": "desire",
+"sents": [
+66
+]
+},
+{
+"lemma": "stand",
+"pos": "verb",
+"gloss": "be upright",
+"sents": [
+66,
+93
+]
+},
+{
+"lemma": "quietly",
+"pos": "adverb",
+"gloss": "without noise",
+"sents": [
+66,
+89
+]
+},
+{
+"lemma": "appeal",
+"pos": "verb",
+"gloss": "attract",
+"sents": [
+67
+]
+},
+{
+"lemma": "frustrate",
+"pos": "verb",
+"gloss": "thwart",
+"sents": [
+67
+]
+},
+{
+"lemma": "outcome",
+"pos": "noun",
+"gloss": "result",
+"sents": [
+67
+]
+},
+{
+"lemma": "hungarian",
+"pos": "adjective",
+"gloss": "of Hungary",
+"sents": [
+67
+]
+},
+{
+"lemma": "situation",
+"pos": "noun",
+"gloss": "state of affairs",
+"sents": [
+67,
+76,
+90
+]
+},
+{
+"lemma": "eccentricity",
+"pos": "noun",
+"gloss": "oddness of behavior",
+"sents": [
+68
+]
+},
+{
+"lemma": "defense",
+"pos": "noun",
+"gloss": "protection",
+"sents": [
+68
+]
+},
+{
+"lemma": "boredom",
+"pos": "noun",
+"gloss": "lack of interest",
+"sents": [
+68
+]
+},
+{
+"lemma": "successfully",
+"pos": "adverb",
+"gloss": "with good result",
+"sents": [
+69
+]
+},
+{
+"lemma": "pursue",
+"pos": "verb",
+"gloss": "seek to achieve",
+"sents": [
+69
+]
+},
+{
+"lemma": "objective",
+"pos": "noun",
+"gloss": "goal",
+"sents": [
+69
+]
+},
+{
+"lemma": "position",
+"pos": "noun",
+"gloss": "standing",
+"sents": [
+69
+]
+},
+{
+"lemma": "broadly",
+"pos": "adverb",
+"gloss": "widely",
+"sents": [
+69
+]
+},
+{
+"lemma": "strength",
+"pos": "noun",
+"gloss": "power",
+"sents": [
+69
+]
+},
+{
+"lemma": "chance",
+"pos": "noun",
+"gloss": "opportunity",
+"sents": [
+70
+]
+},
+{
+"lemma": "fulfill",
+"pos": "verb",
+"gloss": "carry out",
+"sents": [
+70
+]
+},
+{
+"lemma": "destiny",
+"pos": "noun",
+"gloss": "predetermined future",
+"sents": [
+70
+]
+},
+{
+"lemma": "over",
+"pos": "adjective",
+"gloss": "finished",
+"sents": [
+70
+]
+},
+{
+"lemma": "afraid",
+"pos": "adjective",
+"gloss": "frightened",
+"sents": [
+71
+]
+},
+{
+"lemma": "atomic",
+"pos": "adjective",
+"gloss": "nuclear",
+"sents": [
+71
+]
+},
+{
+"lemma": "bomb",
+"pos": "noun",
+"gloss": "explosive weapon",
+"sents": [
+71
+]
+},
+{
+"lemma": "once",
+"pos": "adverb",
+"gloss": "formerly",
+"sents": [
+71
+]
+},
+{
+"lemma": "fear",
+"pos": "verb",
+"gloss": "be frightened of",
+"sents": [
+71
+]
+},
+{
+"lemma": "comet",
+"pos": "noun",
+"gloss": "tailed celestial body",
+"sents": [
+71
+]
+},
+{
+"lemma": "insuperable",
+"pos": "adjective",
+"gloss": "impossible to overcome",
+"sents": [
+72
+]
+},
+{
+"lemma": "reward",
+"pos": "noun",
+"gloss": "prize for behavior",
+"sents": [
+72
+]
+},
+{
+"lemma": "most",
+"pos": "adjective",
+"gloss": "the majority of",
+"sents": [
+72
+]
+},
+{
+"lemma": "religion",
+"pos": "noun",
+"gloss": "faith system",
+"sents": [
+72
+]
+},
+{
+"lemma": "embody",
+"pos": "verb",
+"gloss": "contain as a feature",
+"sents": [
+72
+]
+},
+{
+"lemma": "motivate",
+"pos": "verb",
+"gloss": "spur to action",
+"sents": [
+72
+]
+},
+{
+"lemma": "effect",
+"pos": "noun",
+"gloss": "result",
+"sents": [
+72
+]
+},
+{
+"lemma": "reduction",
+"pos": "noun",
+"gloss": "simplification",
+"sents": [
+73
+]
+},
+{
+"lemma": "accomplish",
+"pos": "verb",
+"gloss": "achieve",
+"sents": [
+73
+]
+},
+{
+"lemma": "general",
+"pos": "adjective",
+"gloss": "broadly applicable",
+"sents": [
+73,
+74
+]
+},
+{
+"lemma": "method",
+"pos": "noun",
+"gloss": "technique",
+"sents": [
+73
+]
+},
+{
+"lemma": "linear algebra",
+"pos": "noun",
+"gloss": "branch of mathematics",
+"sents": [
+73
+]
+},
+{
+"lemma": "primary",
+"pos": "adjective",
+"gloss": "basic",
+"sents": [
+73
+]
+},
+{
+"lemma": "decomposition",
+"pos": "noun",
+"gloss": "breaking into parts",
+"sents": [
+73
+]
+},
+{
+"lemma": "theorem",
+"pos": "noun",
+"gloss": "proven mathematical statement",
+"sents": [
+73
+]
+},
+{
+"lemma": "tendency",
+"pos": "noun",
+"gloss": "inclination",
+"sents": [
+74
+]
+},
+{
+"lemma": "business",
+"pos": "noun",
+"gloss": "commerce",
+"sents": [
+74
+]
+},
+{
+"lemma": "activity",
+"pos": "noun",
+"gloss": "level of action",
+"sents": [
+74
+]
+},
+{
+"lemma": "soften",
+"pos": "verb",
+"gloss": "become weaker",
+"sents": [
+74
+]
+},
+{
+"lemma": "somewhat",
+"pos": "adverb",
+"gloss": "to some degree",
+"sents": [
+74
+]
+},
+{
+"lemma": "become",
+"pos": "verb",
+"gloss": "grow to be",
+"sents": [
+74
+]
+},
+{
+"lemma": "evident",
+"pos": "adjective",
+"gloss": "clear",
+"sents": [
+74
+]
+},
+{
+"lemma": "explicit",
+"pos": "adjective",
+"gloss": "clearly detailed",
+"sents": [
+75
+]
+},
+{
+"lemma": "exposition",
+"pos": "noun",
+"gloss": "detailed explanation",
+"sents": [
+75
+]
+},
+{
+"lemma": "distinguish",
+"pos": "verb",
+"gloss": "tell apart",
+"sents": [
+75
+]
+},
+{
+"lemma": "different",
+"pos": "adjective",
+"gloss": "not alike",
+"sents": [
+75
+]
+},
+{
+"lemma": "type",
+"pos": "noun",
+"gloss": "kind",
+"sents": [
+75
+]
+},
+{
+"lemma": "analysis",
+"pos": "noun",
+"gloss": "detailed examination",
+"sents": [
+75
+]
+},
+{
+"lemma": "play",
+"pos": "verb",
+"gloss": "act out",
+"sents": [
+76
+]
+},
+{
+"lemma": "typical",
+"pos": "adjective",
+"gloss": "representative",
+"sents": [
+76
+]
+},
+{
+"lemma": "jury",
+"pos": "noun",
+"gloss": "panel of judges",
+"sents": [
+76
+]
+},
+{
+"lemma": "peer",
+"pos": "noun",
+"gloss": "equal in standing",
+"sents": [
+76
+]
+},
+{
+"lemma": "show",
+"pos": "verb",
+"gloss": "display",
+"sents": [
+76
+]
+},
+{
+"lemma": "characteristic",
+"pos": "noun",
+"gloss": "distinguishing trait",
+"sents": [
+76
+]
+},
+{
+"lemma": "rate",
+"pos": "verb",
+"gloss": "evaluate",
+"sents": [
+76
+]
+},
+{
+"lemma": "unsatisfactory",
+"pos": "adjective",
+"gloss": "not good enough",
+"sents": [
+76
+]
+},
+{
+"lemma": "economy",
+"pos": "noun",
+"gloss": "efficient arrangement",
+"sents": [
+77
+]
+},
+{
+"lemma": "book",
+"pos": "noun",
+"gloss": "written work",
+"sents": [
+77
+]
+},
+{
+"lemma": "peripheral",
+"pos": "adjective",
+"gloss": "marginal",
+"sents": [
+77
+]
+},
+{
+"lemma": "central",
+"pos": "adjective",
+"gloss": "at the core",
+"sents": [
+77
+]
+},
+{
+"lemma": "reasoning",
+"pos": "noun",
+"gloss": "logical thinking",
+"sents": [
+78
+]
+},
+{
+"lemma": "inevitable",
+"pos": "adjective",
+"gloss": "unavoidable",
+"sents": [
+78
+]
+},
+{
+"lemma": "add",
+"pos": "verb",
+"gloss": "contribute",
+"sents": [
+79
+]
+},
+{
+"lemma": "personal",
+"pos": "adjective",
+"gloss": "individual",
+"sents": [
+79
+]
+},
+{
+"lemma": "zest",
+"pos": "noun",
+"gloss": "lively enjoyment",
+"sents": [
+79
+]
+},
+{
+"lemma": "class",
+"pos": "noun",
+"gloss": "school lesson group",
+"sents": [
+79
+]
+},
+{
+"lemma": "discussion",
+"pos": "noun",
+"gloss": "talking over a topic",
+"sents": [
+79
+]
+},
+{
+"lemma": "participation",
+"pos": "noun",
+"gloss": "taking part",
+"sents": [
+79
+]
+},
+{
+"lemma": "additional",
+"pos": "adjective",
+"gloss": "extra",
+"sents": [
+80
+]
+},
+{
+"lemma": "entry",
+"pos": "noun",
+"gloss": "recorded item",
+"sents": [
+80
+]
+},
+{
+"lemma": "factor",
+"pos": "noun",
+"gloss": "contributing element",
+"sents": [
+81
+]
+},
+{
+"lemma": "include",
+"pos": "verb",
+"gloss": "take into account",
+"sents": [
+81
+]
+},
+{
+"lemma": "upper",
+"pos": "adjective",
+"gloss": "highest",
+"sents": [
+81
+]
+},
+{
+"lemma": "limit",
+"pos": "noun",
+"gloss": "maximum boundary",
+"sents": [
+81
+]
+},
+{
+"lemma": "place",
+"pos": "verb",
+"gloss": "impose",
+"sents": [
+81
+]
+},
+{
+"lemma": "allowable",
+"pos": "adjective",
+"gloss": "permitted",
+"sents": [
+81
+]
+},
+{
+"lemma": "loop gain",
+"pos": "noun",
+"gloss": "amplification in feedback circuit",
+"sents": [
+81
+]
+},
+{
+"lemma": "stability",
+"pos": "noun",
+"gloss": "steadiness",
+"sents": [
+81
+]
+},
+{
+"lemma": "consideration",
+"pos": "noun",
+"gloss": "factor taken into account",
+"sents": [
+81
+]
+},
+{
+"lemma": "possibility",
+"pos": "noun",
+"gloss": "potential option",
+"sents": [
+82
+]
+},
+{
+"lemma": "total",
+"pos": "adjective",
+"gloss": "overall",
+"sents": [
+82
+]
+},
+{
+"lemma": "number",
+"pos": "noun",
+"gloss": "quantity",
+"sents": [
+82
+]
+},
+{
+"lemma": "rule",
+"pos": "noun",
+"gloss": "regulation",
+"sents": [
+82
+]
+},
+{
+"lemma": "considerably",
+"pos": "adverb",
+"gloss": "by a large amount",
+"sents": [
+82
+]
+},
+{
+"lemma": "value",
+"pos": "noun",
+"gloss": "numerical quantity",
+"sents": [
+83
+]
+},
+{
+"lemma": "above",
+"pos": "adjective",
+"gloss": "previously mentioned",
+"sents": [
+83
+]
+},
+{
+"lemma": "data",
+"pos": "noun",
+"gloss": "collected figures",
+"sents": [
+83
+]
+},
+{
+"lemma": "hate",
+"pos": "verb",
+"gloss": "feel strong dislike for",
+"sents": [
+84
+]
+},
+{
+"lemma": "first",
+"pos": "adverb",
+"gloss": "at the beginning",
+"sents": [
+84
+]
+},
+{
+"lemma": "clatter",
+"pos": "verb",
+"gloss": "move noisily",
+"sents": [
+85
+]
+},
+{
+"lemma": "down",
+"pos": "adverb",
+"gloss": "toward lower level",
+"sents": [
+85
+]
+},
+{
+"lemma": "stairs",
+"pos": "noun",
+"gloss": "steps between floors",
+"sents": [
+85
+]
+},
+{
+"lemma": "out",
+"pos": "adverb",
+"gloss": "to the outside",
+"sents": [
+85
+]
+},
+{
+"lemma": "door",
+"pos": "noun",
+"gloss": "entrance",
+"sents": [
+85
+]
+},
+{
+"lemma": "much",
+"pos": "adverb",
+"gloss": "by a lot",
+"sents": [
+86
+]
+},
+{
+"lemma": "easy",
+"pos": "adjective",
+"gloss": "not difficult",
+"sents": [
+86
+]
+},
+{
+"lemma": "mother",
+"pos": "noun",
+"gloss": "female parent",
+"sents": [
+87
+]
+},
+{
+"lemma": "nudge",
+"pos": "verb",
+"gloss": "push gently",
+"sents": [
+87
+]
+},
+{
+"lemma": "still",
+"pos": "adverb",
+"gloss": "yet",
+"sents": [
+87
+]
+},
+{
+"lemma": "fall",
+"pos": "verb",
+"gloss": "drop downward",
+"sents": [
+87
+]
+},
+{
+"lemma": "nod",
+"pos": "verb",
+"gloss": "move head in agreement",
+"sents": [
+88
+]
+},
+{
+"lemma": "listen",
+"pos": "verb",
+"gloss": "pay attention to sound",
+"sents": [
+88,
+106
+]
+},
+{
+"lemma": "instruction",
+"pos": "noun",
+"gloss": "direction given",
+"sents": [
+88
+]
+},
+{
+"lemma": "arrange",
+"pos": "verb",
+"gloss": "organize",
+"sents": [
+88
+]
+},
+{
+"lemma": "request",
+"pos": "verb",
+"gloss": "ask for",
+"sents": [
+88
+]
+},
+{
+"lemma": "parent",
+"pos": "noun",
+"gloss": "mother or father",
+"sents": [
+89
+]
+},
+{
+"lemma": "emerge",
+"pos": "verb",
+"gloss": "come out",
+"sents": [
+89
+]
+},
+{
+"lemma": "bedroom",
+"pos": "noun",
+"gloss": "room for sleeping",
+"sents": [
+89
+]
+},
+{
+"lemma": "minute",
+"pos": "noun",
+"gloss": "sixty seconds",
+"sents": [
+89
+]
+},
+{
+"lemma": "later",
+"pos": "adverb",
+"gloss": "afterward",
+"sents": [
+89,
+100,
+116
+]
+},
+{
+"lemma": "maid",
+"pos": "noun",
+"gloss": "female household servant",
+"sents": [
+89
+]
+},
+{
+"lemma": "greet",
+"pos": "verb",
+"gloss": "welcome with words",
+"sents": [
+89
+]
+},
+{
+"lemma": "trust",
+"pos": "verb",
+"gloss": "rely on",
+"sents": [
+90
+]
+},
+{
+"lemma": "squeeze",
+"pos": "verb",
+"gloss": "extract by pressing",
+"sents": [
+90
+]
+},
+{
+"lemma": "drama",
+"pos": "noun",
+"gloss": "emotional excitement",
+"sents": [
+90
+]
+},
+{
+"lemma": "turn",
+"pos": "verb",
+"gloss": "rotate body",
+"sents": [
+91
+]
+},
+{
+"lemma": "slowly",
+"pos": "adverb",
+"gloss": "at low speed",
+"sents": [
+91
+]
+},
+{
+"lemma": "crawl",
+"pos": "verb",
+"gloss": "move on hands and knees",
+"sents": [
+91
+]
+},
+{
+"lemma": "back",
+"pos": "adverb",
+"gloss": "in return direction",
+"sents": [
+91,
+101
+]
+},
+{
+"lemma": "up",
+"pos": "adverb",
+"gloss": "toward higher place",
+"sents": [
+91,
+107
+]
+},
+{
+"lemma": "rampart",
+"pos": "noun",
+"gloss": "defensive earth wall",
+"sents": [
+91
+]
+},
+{
+"lemma": "strange",
+"pos": "adjective",
+"gloss": "unfamiliar",
+"sents": [
+92
+]
+},
+{
+"lemma": "wood",
+"pos": "adjective",
+"gloss": "of the forest",
+"sents": [
+92
+]
+},
+{
+"lemma": "creature",
+"pos": "noun",
+"gloss": "living being",
+"sents": [
+92
+]
+},
+{
+"lemma": "come",
+"pos": "verb",
+"gloss": "arrive",
+"sents": [
+92
+]
+},
+{
+"lemma": "float",
+"pos": "verb",
+"gloss": "drift in air",
+"sents": [
+92
+]
+},
+{
+"lemma": "patch",
+"pos": "noun",
+"gloss": "small area",
+"sents": [
+92
+]
+},
+{
+"lemma": "berry",
+"pos": "noun",
+"gloss": "small edible fruit",
+"sents": [
+92
+]
+},
+{
+"lemma": "bush",
+"pos": "noun",
+"gloss": "low woody plant",
+"sents": [
+92
+]
+},
+{
+"lemma": "remember",
+"pos": "verb",
+"gloss": "recall from memory",
+"sents": [
+93
+]
+},
+{
+"lemma": "act",
+"pos": "verb",
+"gloss": "play the role of",
+"sents": [
+93
+]
+},
+{
+"lemma": "hostess",
+"pos": "noun",
+"gloss": "woman entertaining guests",
+"sents": [
+93
+]
+},
+{
+"lemma": "serve",
+"pos": "verb",
+"gloss": "give food to",
+"sents": [
+93
+]
+},
+{
+"lemma": "soft drink",
+"pos": "noun",
+"gloss": "non-alcoholic beverage",
+"sents": [
+93
+]
+},
+{
+"lemma": "guest",
+"pos": "noun",
+"gloss": "invited visitor",
+"sents": [
+93
+]
+},
+{
+"lemma": "emptiness",
+"pos": "noun",
+"gloss": "lack of anything inside",
+"sents": [
+94
+]
+},
+{
+"lemma": "street",
+"pos": "noun",
+"gloss": "town road",
+"sents": [
+94,
+99
+]
+},
+{
+"lemma": "spirit",
+"pos": "noun",
+"gloss": "inner soul",
+"sents": [
+94
+]
+},
+{
+"lemma": "move",
+"pos": "verb",
+"gloss": "travel",
+"sents": [
+94
+]
+},
+{
+"lemma": "form",
+"pos": "noun",
+"gloss": "shape of a figure",
+"sents": [
+94
+]
+},
+{
+"lemma": "composite",
+"pos": "adjective",
+"gloss": "made of combined parts",
+"sents": [
+95
+]
+},
+{
+"lemma": "design",
+"pos": "noun",
+"gloss": "planned pattern",
+"sents": [
+95
+]
+},
+{
+"lemma": "meticulously",
+"pos": "adverb",
+"gloss": "with careful attention to detail",
+"sents": [
+95
+]
+},
+{
+"lemma": "accurate",
+"pos": "adjective",
+"gloss": "exactly correct",
+"sents": [
+95
+]
+},
+{
+"lemma": "memory",
+"pos": "noun",
+"gloss": "ability to recall",
+"sents": [
+95
+]
+},
+{
+"lemma": "need",
+"pos": "noun",
+"gloss": "necessity",
+"sents": [
+95
+]
+},
+{
+"lemma": "sketch",
+"pos": "noun",
+"gloss": "rough drawing",
+"sents": [
+95
+]
+},
+{
+"lemma": "atmosphere",
+"pos": "noun",
+"gloss": "prevailing mood",
+"sents": [
+96
+]
+},
+{
+"lemma": "revert",
+"pos": "verb",
+"gloss": "return to a former state",
+"sents": [
+96
+]
+},
+{
+"lemma": "old",
+"pos": "adjective",
+"gloss": "former",
+"sents": [
+96
+]
+},
+{
+"lemma": "normalcy",
+"pos": "noun",
+"gloss": "ordinary state",
+"sents": [
+96
+]
+},
+{
+"lemma": "insect",
+"pos": "noun",
+"gloss": "small six-legged creature",
+"sents": [
+96
+]
+},
+{
+"lemma": "hum",
+"pos": "verb",
+"gloss": "make steady buzzing sound",
+"sents": [
+96
+]
+},
+{
+"lemma": "bird",
+"pos": "noun",
+"gloss": "feathered flying animal",
+"sents": [
+96
+]
+},
+{
+"lemma": "call",
+"pos": "verb",
+"gloss": "make a bird cry",
+"sents": [
+96
+]
+},
+{
+"lemma": "probably",
+"pos": "adverb",
+"gloss": "most likely",
+"sents": [
+97
+]
+},
+{
+"lemma": "horse",
+"pos": "noun",
+"gloss": "riding animal",
+"sents": [
+97
+]
+},
+{
+"lemma": "hide",
+"pos": "verb",
+"gloss": "stay out of sight",
+"sents": [
+97
+]
+},
+{
+"lemma": "mistake",
+"pos": "noun",
+"gloss": "error",
+"sents": [
+98
+]
+},
+{
+"lemma": "anything",
+"pos": "noun",
+"gloss": "whatever thing",
+"sents": [
+98
+]
+},
+{
+"lemma": "turn out",
+"pos": "verb",
+"gloss": "end up",
+"sents": [
+98
+]
+},
+{
+"lemma": "storm",
+"pos": "noun",
+"gloss": "violent weather",
+"sents": [
+99
+]
+},
+{
+"lemma": "desert",
+"pos": "verb",
+"gloss": "leave empty of people",
+"sents": [
+99
+]
+},
+{
+"lemma": "hour",
+"pos": "noun",
+"gloss": "sixty minutes",
+"sents": [
+100
+]
+},
+{
+"lemma": "bail",
+"pos": "verb",
+"gloss": "scoop water out of a boat",
+"sents": [
+100
+]
+},
+{
+"lemma": "desperately",
+"pos": "adverb",
+"gloss": "in a frantic manner",
+"sents": [
+100
+]
+},
+{
+"lemma": "dot",
+"pos": "noun",
+"gloss": "tiny spot",
+"sents": [
+100
+]
+},
+{
+"lemma": "land",
+"pos": "noun",
+"gloss": "solid ground",
+"sents": [
+100
+]
+},
+{
+"lemma": "come into view",
+"pos": "verb",
+"gloss": "become visible",
+"sents": [
+100
+]
+},
+{
+"lemma": "go up",
+"pos": "verb",
+"gloss": "rise",
+"sents": [
+101
+]
+},
+{
+"lemma": "tight",
+"pos": "adverb",
+"gloss": "close and firm",
+"sents": [
+101
+]
+},
+{
+"lemma": "ceiling",
+"pos": "noun",
+"gloss": "upper surface of a room",
+"sents": [
+101
+]
+},
+{
+"lemma": "lead",
+"pos": "verb",
+"gloss": "guide",
+"sents": [
+101
+]
+},
+{
+"lemma": "pass",
+"pos": "noun",
+"gloss": "transfer of the ball",
+"sents": [
+101
+]
+},
+{
+"lemma": "home",
+"pos": "noun",
+"gloss": "home plate or goal",
+"sents": [
+101
+]
+},
+{
+"lemma": "brutal",
+"pos": "adjective",
+"gloss": "savagely rough",
+"sents": [
+102
+]
+},
+{
+"lemma": "thrust",
+"pos": "noun",
+"gloss": "forceful push",
+"sents": [
+102
+]
+},
+{
+"lemma": "tumble",
+"pos": "verb",
+"gloss": "make fall roughly",
+"sents": [
+102
+]
+},
+{
+"lemma": "flat",
+"pos": "adverb",
+"gloss": "lying level",
+"sents": [
+102
+]
+},
+{
+"lemma": "stomach",
+"pos": "noun",
+"gloss": "belly",
+"sents": [
+102
+]
+},
+{
+"lemma": "track",
+"pos": "verb",
+"gloss": "leave footprints of",
+"sents": [
+103
+]
+},
+{
+"lemma": "mud",
+"pos": "noun",
+"gloss": "wet soft earth",
+"sents": [
+103
+]
+},
+{
+"lemma": "oaken",
+"pos": "adjective",
+"gloss": "made of oak",
+"sents": [
+103
+]
+},
+{
+"lemma": "floor",
+"pos": "noun",
+"gloss": "surface of a room",
+"sents": [
+103
+]
+},
+{
+"lemma": "carpet",
+"pos": "noun",
+"gloss": "fabric floor covering",
+"sents": [
+103
+]
+},
+{
+"lemma": "up against",
+"pos": "verb",
+"gloss": "facing",
+"sents": [
+104
+]
+},
+{
+"lemma": "sight",
+"pos": "noun",
+"gloss": "aiming device of a gun",
+"sents": [
+105
+]
+},
+{
+"lemma": "loom",
+"pos": "verb",
+"gloss": "appear large and threatening",
+"sents": [
+105
+]
+},
+{
+"lemma": "big",
+"pos": "adjective",
+"gloss": "large",
+"sents": [
+105
+]
+},
+{
+"lemma": "cringe",
+"pos": "verb",
+"gloss": "shrink in fear",
+"sents": [
+106
+]
+},
+{
+"lemma": "sodden",
+"pos": "adjective",
+"gloss": "soaked through",
+"sents": [
+106
+]
+},
+{
+"lemma": "cover",
+"pos": "noun",
+"gloss": "blanket",
+"sents": [
+106
+]
+},
+{
+"lemma": "wave",
+"pos": "noun",
+"gloss": "moving water ridge",
+"sents": [
+106
+]
+},
+{
+"lemma": "slop",
+"pos": "verb",
+"gloss": "splash noisily",
+"sents": [
+106
+]
+},
+{
+"lemma": "bottom",
+"pos": "noun",
+"gloss": "lowest part of a boat",
+"sents": [
+106
+]
+},
+{
+"lemma": "walk",
+"pos": "verb",
+"gloss": "travel on foot",
+"sents": [
+107
+]
+},
+{
+"lemma": "straight",
+"pos": "adverb",
+"gloss": "directly",
+"sents": [
+107
+]
+},
+{
+"lemma": "sit",
+"pos": "verb",
+"gloss": "be seated",
+"sents": [
+107
+]
+},
+{
+"lemma": "ground",
+"pos": "noun",
+"gloss": "earth surface",
+"sents": [
+107
+]
+},
+{
+"lemma": "bend over",
+"pos": "verb",
+"gloss": "lean forward",
+"sents": [
+107
+]
+},
+{
+"lemma": "blonde",
+"pos": "adjective",
+"gloss": "having light hair",
+"sents": [
+108
+]
+},
+{
+"lemma": "nice",
+"pos": "adjective",
+"gloss": "pleasing",
+"sents": [
+108
+]
+},
+{
+"lemma": "round",
+"pos": "adjective",
+"gloss": "curvaceous",
+"sents": [
+108
+]
+},
+{
+"lemma": "tight",
+"pos": "adjective",
+"gloss": "closely fitting",
+"sents": [
+108
+]
+},
+{
+"lemma": "understand",
+"pos": "verb",
+"gloss": "grasp the reason",
+"sents": [
+109
+]
+},
+{
+"lemma": "why",
+"pos": "adverb",
+"gloss": "for what reason",
+"sents": [
+109
+]
+},
+{
+"lemma": "umbrella",
+"pos": "noun",
+"gloss": "rain shelter",
+"sents": [
+109
+]
+},
+{
+"lemma": "finally",
+"pos": "adverb",
+"gloss": "at last",
+"sents": [
+110
+]
+},
+{
+"lemma": "rest",
+"pos": "noun",
+"gloss": "peace after struggle",
+"sents": [
+110
+]
+},
+{
+"lemma": "truth",
+"pos": "noun",
+"gloss": "what is real",
+"sents": [
+110
+]
+},
+{
+"lemma": "proud",
+"pos": "adjective",
+"gloss": "self-respecting",
+"sents": [
+110
+]
+},
+{
+"lemma": "free",
+"pos": "adjective",
+"gloss": "unforced",
+"sents": [
+110
+]
+},
+{
+"lemma": "catch",
+"pos": "verb",
+"gloss": "grab in the hand",
+"sents": [
+111
+]
+},
+{
+"lemma": "ball",
+"pos": "noun",
+"gloss": "round sports object",
+"sents": [
+111
+]
+},
+{
+"lemma": "just",
+"pos": "adverb",
+"gloss": "at that moment",
+"sents": [
+111
+]
+},
+{
+"lemma": "catcher",
+"pos": "noun",
+"gloss": "baseball player behind plate",
+"sents": [
+111
+]
+},
+{
+"lemma": "slide",
+"pos": "verb",
+"gloss": "glide to a base",
+"sents": [
+111
+]
+},
+{
+"lemma": "bag",
+"pos": "noun",
+"gloss": "base in baseball",
+"sents": [
+111
+]
+},
+{
+"lemma": "happy",
+"pos": "adjective",
+"gloss": "glad",
+"sents": [
+112
+]
+},
+{
+"lemma": "let",
+"pos": "verb",
+"gloss": "allow",
+"sents": [
+112
+]
+},
+{
+"lemma": "straighten out",
+"pos": "verb",
+"gloss": "put in order",
+"sents": [
+112
+]
+},
+{
+"lemma": "life",
+"pos": "noun",
+"gloss": "course of existence",
+"sents": [
+112
+]
+},
+{
+"lemma": "take care of",
+"pos": "verb",
+"gloss": "look after",
+"sents": [
+112
+]
+},
+{
+"lemma": "swim",
+"pos": "verb",
+"gloss": "move through water",
+"sents": [
+113
+]
+},
+{
+"lemma": "leg",
+"pos": "noun",
+"gloss": "limb for walking",
+"sents": [
+113
+]
+},
+{
+"lemma": "take off",
+"pos": "verb",
+"gloss": "remove",
+"sents": [
+114
+]
+},
+{
+"lemma": "sit down",
+"pos": "verb",
+"gloss": "take a seated position",
+"sents": [
+114
+]
+},
+{
+"lemma": "bench",
+"pos": "noun",
+"gloss": "long seat",
+"sents": [
+114
+]
+},
+{
+"lemma": "good",
+"pos": "adjective",
+"gloss": "well",
+"sents": [
+115
+]
+},
+{
+"lemma": "satisfied",
+"pos": "adjective",
+"gloss": "content",
+"sents": [
+115
+]
+},
+{
+"lemma": "snake",
+"pos": "noun",
+"gloss": "legless reptile",
+"sents": [
+115
+]
+},
+{
+"lemma": "quickly",
+"pos": "adverb",
+"gloss": "at high speed",
+"sents": [
+116
+]
+},
+{
+"lemma": "too",
+"pos": "adverb",
+"gloss": "excessively",
+"sents": [
+116
+]
+},
+{
+"lemma": "chuckle",
+"pos": "verb",
+"gloss": "laugh softly",
+"sents": [
+117
+]
+},
+{
+"lemma": "aloud",
+"pos": "adverb",
+"gloss": "audibly",
+"sents": [
+117
+]
+},
+{
+"lemma": "fall out",
+"pos": "verb",
+"gloss": "drop from place",
+"sents": [
+117
+]
+},
+{
+"lemma": "mouthpiece",
+"pos": "noun",
+"gloss": "part held in mouth",
+"sents": [
+117
+]
+},
+{
+"lemma": "step",
+"pos": "verb",
+"gloss": "move one foot",
+"sents": [
+118
+]
+},
+{
+"lemma": "dugout",
+"pos": "noun",
+"gloss": "baseball team shelter",
+"sents": [
+118
+]
+},
+{
+"lemma": "wonder",
+"pos": "verb",
+"gloss": "ask oneself",
+"sents": [
+118
+]
+},
+{
+"lemma": "always",
+"pos": "adverb",
+"gloss": "at all times",
+"sents": [
+118
+]
+},
+{
+"lemma": "look for",
+"pos": "verb",
+"gloss": "seek out",
+"sents": [
+118
+]
+},
+{
+"lemma": "trouble",
+"pos": "noun",
+"gloss": "difficulty",
+"sents": [
+118
+]
+},
+{
+"lemma": "think",
+"pos": "verb",
+"gloss": "believe",
+"sents": [
+119
+]
+},
+{
+"lemma": "tourist",
+"pos": "noun",
+"gloss": "sightseeing visitor",
+"sents": [
+119
+]
+}
+]
