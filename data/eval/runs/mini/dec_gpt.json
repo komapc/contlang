@@ -1,0 +1,602 @@
+[
+ {
+  "i": 0,
+  "v": "M0",
+  "best": "The friends lived in the house when forced to do the easy thing."
+ },
+ {
+  "i": 0,
+  "v": "MV",
+  "best": "The friendliness lived on the roof when someone had given it a try."
+ },
+ {
+  "i": 1,
+  "v": "M0",
+  "best": "Maris will be given the big gift."
+ },
+ {
+  "i": 1,
+  "v": "MV",
+  "best": "Maris may be given the big increase in value soon."
+ },
+ {
+  "i": 2,
+  "v": "M0",
+  "best": "The time the person moved away from Washington."
+ },
+ {
+  "i": 2,
+  "v": "MV",
+  "best": "The time the beginning partly moved from Washington"
+ },
+ {
+  "i": 3,
+  "v": "M0",
+  "best": "The Peace Corps donors were certainly given a valuable gift by law."
+ },
+ {
+  "i": 3,
+  "v": "MV",
+  "best": "Peace Corps volunteers were given the valuable gift by the officials who had enacted the rule."
+ },
+ {
+  "i": 4,
+  "v": "M0",
+  "best": "There was more movement in the place, a bit; Moritz said."
+ },
+ {
+  "i": 4,
+  "v": "MV",
+  "best": "There was more movement in the place; Moritz said."
+ },
+ {
+  "i": 5,
+  "v": "M0",
+  "best": "Sadly, when people do things, they don't think it's very important."
+ },
+ {
+  "i": 5,
+  "v": "MV",
+  "best": "Sadly, people's work is often not valued."
+ },
+ {
+  "i": 6,
+  "v": "M0",
+  "best": "confiscate private property"
+ },
+ {
+  "i": 6,
+  "v": "MV",
+  "best": "neglect local government affairs"
+ },
+ {
+  "i": 7,
+  "v": "M0",
+  "best": "When it's not the right time, things are different and the decision is much harder."
+ },
+ {
+  "i": 7,
+  "v": "MV",
+  "best": "In the future, things will be different and the opinion/judgment will be much harsher."
+ },
+ {
+  "i": 8,
+  "v": "M0",
+  "best": "Although the person wanted to feel terrible, the person acted and nothing worse happened."
+ },
+ {
+  "i": 8,
+  "v": "MV",
+  "best": "When the person wanted it, it made them feel terrible; they made it much worse."
+ },
+ {
+  "i": 9,
+  "v": "M0",
+  "best": "If something is legally hidden, the intentions in the law are increasingly left implicit."
+ },
+ {
+  "i": 9,
+  "v": "MV",
+  "best": "Although others don't see it, the rulers' thoughts certainly move faster."
+ },
+ {
+  "i": 10,
+  "v": "M0",
+  "best": "The thing might give the meeting place to the others across the land."
+ },
+ {
+  "i": 10,
+  "v": "MV",
+  "best": "The thing might give them a place further inland."
+ },
+ {
+  "i": 11,
+  "v": "M0",
+  "best": "He changed the body part and allowed the movement from the words to lift him very high."
+ },
+ {
+  "i": 11,
+  "v": "MV",
+  "best": "The person stood still with the body part and let the movement from the many whispers move the person up very well."
+ },
+ {
+  "i": 12,
+  "v": "M0",
+  "best": "Chabrier and the writers for Chabrier joked, “an utterly ridiculous thing.”"
+ },
+ {
+  "i": 12,
+  "v": "MV",
+  "best": "An utterly stupid AI named \"Chabrier\" and the writers for Chabrier say happily."
+ },
+ {
+  "i": 13,
+  "v": "M0",
+  "best": "The instruments give the art its qualities and its good parts."
+ },
+ {
+  "i": 13,
+  "v": "MV",
+  "best": "The few instruments produce artistic excellence and artistic quality."
+ },
+ {
+  "i": 14,
+  "v": "M0",
+  "best": "More and more texts are being joined: join a text to a text."
+ },
+ {
+  "i": 14,
+  "v": "MV",
+  "best": "Documents are certainly linked when you link one document to another."
+ },
+ {
+  "i": 15,
+  "v": "M0",
+  "best": "The man may have feelings for a woman; the man really wants to join the men."
+ },
+ {
+  "i": 15,
+  "v": "MV",
+  "best": "The man might have feelings for a woman; the man wants to join the men."
+ },
+ {
+  "i": 16,
+  "v": "M0",
+  "best": "(no input)"
+ },
+ {
+  "i": 16,
+  "v": "MV",
+  "best": ""
+ },
+ {
+  "i": 17,
+  "v": "M0",
+  "best": "An art museum restored the ruined ancient statue."
+ },
+ {
+  "i": 17,
+  "v": "MV",
+  "best": "A bad liquid was transformed into the many great artworks from ancient times."
+ },
+ {
+  "i": 18,
+  "v": "M0",
+  "best": "Do the results and the results when the beams."
+ },
+ {
+  "i": 18,
+  "v": "MV",
+  "best": "Do the works and works for the furniture."
+ },
+ {
+  "i": 19,
+  "v": "M0",
+  "best": "If you take it apart: Improve it! Make the sides smooth and uniform — (use) a soft brush and a wooden/sanding block."
+ },
+ {
+  "i": 19,
+  "v": "MV",
+  "best": "If it comes apart, make the sides smooth and uniform; use a soft brush and powdered pigment."
+ },
+ {
+  "i": 20,
+  "v": "M0",
+  "best": "Organs, bodies, and other bodies; to see (them) one goes inside and forces them to give up parts for tiny/close viewing."
+ },
+ {
+  "i": 20,
+  "v": "MV",
+  "best": "Tiny parts, animals, and other animals are unseen and are forcibly attached for a microscope (i.e., mounted on a slide)."
+ },
+ {
+  "i": 21,
+  "v": "M0",
+  "best": "Later, assemble everything, and attach a stabilizer to the object."
+ },
+ {
+  "i": 21,
+  "v": "MV",
+  "best": "Later, attach the place and attach a fastener for \"iron\"."
+ },
+ {
+  "i": 22,
+  "v": "M0",
+  "best": "We made it known that the thing was done when we had given everything for it."
+ },
+ {
+  "i": 22,
+  "v": "MV",
+  "best": "We told you that the attackers had acted when we had given everything to the war."
+ },
+ {
+  "i": 23,
+  "v": "M0",
+  "best": "Longing for the sea is like the best part of a holiday."
+ },
+ {
+  "i": 23,
+  "v": "MV",
+  "best": "A love of the sea is the same as the most valuable parts of a happy place."
+ },
+ {
+  "i": 24,
+  "v": "M0",
+  "best": "When many events occur, people know specific documents, specific people, specific animals, and specific objects."
+ },
+ {
+  "i": 24,
+  "v": "MV",
+  "best": "When many events happen, people know notable texts, notable people, notable animals, and notable objects."
+ },
+ {
+  "i": 25,
+  "v": "M0",
+  "best": "Vesole left the scene when someone wanted to involve the authorities."
+ },
+ {
+  "i": 25,
+  "v": "MV",
+  "best": "Vesole left the events when authorities wanted to take official action."
+ },
+ {
+  "i": 26,
+  "v": "M0",
+  "best": "The great ancient transformation produced the solid pieces rather than the powders."
+ },
+ {
+  "i": 26,
+  "v": "MV",
+  "best": "The initial change produced the solid parts when it did not produce the grains."
+ },
+ {
+  "i": 27,
+  "v": "M0",
+  "best": "Hay and pasture are not the main providers of food for animals."
+ },
+ {
+  "i": 27,
+  "v": "MV",
+  "best": "Hay and pasture, though very different in scale, provide food for animals."
+ },
+ {
+  "i": 28,
+  "v": "M0",
+  "best": "The shelters welcomed them; the shelters gave them whole loaves of bread."
+ },
+ {
+  "i": 28,
+  "v": "MV",
+  "best": "The shops were friendly; they gave the people bread."
+ },
+ {
+  "i": 29,
+  "v": "M0",
+  "best": "You couldn't give the animals a small country."
+ },
+ {
+  "i": 29,
+  "v": "MV",
+  "best": "You couldn't give the animals even a little food."
+ },
+ {
+  "i": 30,
+  "v": "M0",
+  "best": "Suvorov gave the special, precious prize to the (definite) men from the shirts, the wooden limbs, and the forward planks."
+ },
+ {
+  "i": 30,
+  "v": "MV",
+  "best": "Suvorov gave the special/precious prize to the little boys' cloth, soft, and wooden toys."
+ },
+ {
+  "i": 31,
+  "v": "M0",
+  "best": "The artist, very conspicuous, excited, and hostile, saw the person."
+ },
+ {
+  "i": 31,
+  "v": "MV",
+  "best": "The artist saw the person who was conspicuous, intensely emotional, and hostile."
+ },
+ {
+  "i": 32,
+  "v": "M0",
+  "best": "They (other people) gave a document about the current fight when an action taken from the text was forced to be carefully examined."
+ },
+ {
+  "i": 32,
+  "v": "MV",
+  "best": "They give the document during the current quarrel when the gift is forced to be inspected."
+ },
+ {
+  "i": 33,
+  "v": "M0",
+  "best": "Gross had kindly eaten Marshall; people said it."
+ },
+ {
+  "i": 33,
+  "v": "MV",
+  "best": "They gave \"Gross\" to Marshall; people said it."
+ },
+ {
+  "i": 34,
+  "v": "M0",
+  "best": "The outdoor shelter for them will be able to be a home."
+ },
+ {
+  "i": 34,
+  "v": "MV",
+  "best": "There will be room for them inside."
+ },
+ {
+  "i": 35,
+  "v": "M0",
+  "best": "The people saw the paper from experiments on plant-eating and male sexual desire about the very different living things."
+ },
+ {
+  "i": 35,
+  "v": "MV",
+  "best": "The people saw the documents from the experiments on plant consumption and sexual desire about the very different living beings."
+ },
+ {
+  "i": 36,
+  "v": "M0",
+  "best": "Most parts that were opposite were known to be inside the place."
+ },
+ {
+  "i": 36,
+  "v": "MV",
+  "best": "Opposition factions were known inside."
+ },
+ {
+  "i": 37,
+  "v": "M0",
+  "best": "A happening can give me changes and very different, excellent measurements."
+ },
+ {
+  "i": 37,
+  "v": "MV",
+  "best": "A cause can produce changes and different measurements of the good event."
+ },
+ {
+  "i": 38,
+  "v": "M0",
+  "best": "In contrast, the literary works may have been given the same passages."
+ },
+ {
+  "i": 38,
+  "v": "MV",
+  "best": "Conversely, the writings may have been given the same texts."
+ },
+ {
+  "i": 39,
+  "v": "M0",
+  "best": ""
+ },
+ {
+  "i": 39,
+  "v": "MV",
+  "best": ""
+ },
+ {
+  "i": 40,
+  "v": "M0",
+  "best": "Heat lets food go bad."
+ },
+ {
+  "i": 40,
+  "v": "MV",
+  "best": "Don't heat spoiled food."
+ },
+ {
+  "i": 41,
+  "v": "M0",
+  "best": "The same is perhaps true of the artwork when others move into the future."
+ },
+ {
+  "i": 41,
+  "v": "MV",
+  "best": "The same is said of the art text when they gather at the destination."
+ },
+ {
+  "i": 42,
+  "v": "M0",
+  "best": "The decision was reversed; that particular decision had happened to them the last four times."
+ },
+ {
+  "i": 42,
+  "v": "MV",
+  "best": "The thought returned; the same thought had happened to the person a few times before 4."
+ },
+ {
+  "i": 43,
+  "v": "M0",
+  "best": "It felt special when everyone here joined in for my people after I had gone away long ago."
+ },
+ {
+  "i": 43,
+  "v": "MV",
+  "best": "It's not the same when everyone here attended the funeral of someone who had left long ago."
+ },
+ {
+  "i": 44,
+  "v": "M0",
+  "best": "Later, Angelina went and gracefully entered the restaurant."
+ },
+ {
+  "i": 44,
+  "v": "MV",
+  "best": "Later, Angelina left and skillfully approached the restaurant."
+ },
+ {
+  "i": 45,
+  "v": "M0",
+  "best": "Rousseau was certain that Voltaire may have caused many texts to be burned."
+ },
+ {
+  "i": 45,
+  "v": "MV",
+  "best": "Rousseau shouted that Voltaire might know that Voltaire changed many texts in the same way."
+ },
+ {
+  "i": 46,
+  "v": "M0",
+  "best": "The woman was very good when the body was healthy and the mood was glad; she forced (it)."
+ },
+ {
+  "i": 46,
+  "v": "MV",
+  "best": "The woman was very good when her body felt good and her mood matched; otherwise she forced it horribly."
+ },
+ {
+  "i": 47,
+  "v": "M0",
+  "best": "A man lived through a huge, brutal war."
+ },
+ {
+  "i": 47,
+  "v": "MV",
+  "best": "Someone lived as a big, tough fighter."
+ },
+ {
+  "i": 48,
+  "v": "M0",
+  "best": "The strange event came from above when the roof released the many grains."
+ },
+ {
+  "i": 48,
+  "v": "MV",
+  "best": "The person moved off the roof when the roof began to give off a lot of smoke."
+ },
+ {
+  "i": 49,
+  "v": "M0",
+  "best": "Mike rushed to the back of the boards."
+ },
+ {
+  "i": 49,
+  "v": "MV",
+  "best": "Mike rushed to the back of the houses."
+ },
+ {
+  "i": 50,
+  "v": "M0",
+  "best": "Dead enemies were the best."
+ },
+ {
+  "i": 50,
+  "v": "MV",
+  "best": "The slain enemy was good."
+ },
+ {
+  "i": 51,
+  "v": "M0",
+  "best": "Morgan saw the body a few times; Morgan doubted."
+ },
+ {
+  "i": 51,
+  "v": "MV",
+  "best": "Morgan saw the few people a little while ago; doubtful."
+ },
+ {
+  "i": 52,
+  "v": "M0",
+  "best": "When I killed their pet, the person came back and stood over me."
+ },
+ {
+  "i": 52,
+  "v": "MV",
+  "best": "When I killed one of them, they went back to their leader."
+ },
+ {
+  "i": 53,
+  "v": "M0",
+  "best": ""
+ },
+ {
+  "i": 53,
+  "v": "MV",
+  "best": ""
+ },
+ {
+  "i": 54,
+  "v": "M0",
+  "best": "That thing made me laugh; I was forced to look at the woman."
+ },
+ {
+  "i": 54,
+  "v": "MV",
+  "best": "The thing made me very happy; I showed the woman."
+ },
+ {
+  "i": 55,
+  "v": "M0",
+  "best": "When I recently moved into the care home, the feeling returned."
+ },
+ {
+  "i": 55,
+  "v": "MV",
+  "best": "When I left the hospital a little while ago, the excitement returned."
+ },
+ {
+  "i": 56,
+  "v": "M0",
+  "best": "They said bad things about me earlier; I made them say it."
+ },
+ {
+  "i": 56,
+  "v": "MV",
+  "best": "That person said bad things about me earlier that I forced them to say."
+ },
+ {
+  "i": 57,
+  "v": "M0",
+  "best": "The place was good; the place was not filled with gas."
+ },
+ {
+  "i": 57,
+  "v": "MV",
+  "best": "The place was good; the place wasn't solidly built."
+ },
+ {
+  "i": 58,
+  "v": "M0",
+  "best": "When the woman didn't care, she said the thing."
+ },
+ {
+  "i": 58,
+  "v": "MV",
+  "best": "When the woman utterly messed up, she said it."
+ },
+ {
+  "i": 59,
+  "v": "M0",
+  "best": "The woman moved and began to walk toward the house."
+ },
+ {
+  "i": 59,
+  "v": "MV",
+  "best": "The woman turned and began to move into the house."
+ }
+]

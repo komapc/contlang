@@ -1,0 +1,121 @@
+1. { THINK | o result D+3 } { SIDE(=-5) | i T-2 } ; { THINK | o result D+3 } { FEEL(=+3) MANY(=+5) | i T-2 } { TIME(=-1) | e } "4" { HEAT(=+5) SEE TIME | o }
+2. "Morgan" { SEE | i T-2 } E "2" { BODY SEE | o N+3 } { BIG TIME | e } ; "Morgan" { THINK(=-5) | i T-2 }
+3. { SOMEONE SEX(=+5) | o } { MOVE(=-5) ABOVE(=-3) | i T-2 } { NEAR | e } { BODY ABOVE | o D+3 } ; { TOUCH(=-5) | e } { DO PLACE | i T-2 } E { FIGHT LONG | o tool D+3 } { INSIDE(=0) | e } { LAND(=+5) | o D+3 }
+4. { SOMEONE(=+5) | o N+3 } { THINK | i T-2 R-3 } E { BIG(=+5) | a } { THINK | o result N+3 } [ { FIGHT GOOD(=+5) | o quality } { HAPPEN | e } { BEGIN(=-5) DO | i T+2 } E { PART(=+2) | o D+3 } { INSIDE | e } { PART(=+2) LAND(=+5) | o D+3 } ]
+5. "Maris" { SIDE(=+5) TIME(=+1) | i } E { CHANGE VALUE BIG | o D-3 }
+6. { SEE | o result } FOR { LIVE SOMEONE | o quality } ; { LONG ABOVE HEAT | o D+3 } { CONSUME(=-5) | i T-2 } E { BIG GRAIN(=-5) HEAT(=+5) | o }
+7. { MANY(=0) SOMEONE | o N+3 } { THINK | i M-3 } [ { SOMEONE(=-5) | o N+3 } { DO | o result D+3 } { VALUE(=+5) | i M-5 I+3 } ]
+8. LA [ { JOIN(=-5) | i } E { PART(=-2) | o N+3 } ] ; { DO TOUCH(=-5) | i ! } E { INSIDE(=0) | o N+3 D+3 } { TOUCH(=-5) | a } { JOIN(=-5) TOUCH(=+5) | o tool } AND { JOIN(=-5) TOUCH(=-5) GRAIN | o tool }
+9. { SOMEONE SEX(=+5) | o } { SAY MOOD(=-3) | i T-2 } { SOMEONE(=+5) | o } [ { SOMEONE(=+5) | o } { SAY | i T+2 M+4 } E { SOMEONE SEX(=-5) | o } ]
+10. { LAND(=-5) WANT | o D+3 } { VALUE(=+5) | a C+5 } { PART(=-2) | i D-3 } ; { PLACE | o } FOR { FIGHT(=-5) | o quality }
+11. "Gross" { GIVE(=0) | i T-2 R-3 } E "Marshall" { FRIEND(=+5) | e } ; { SOMEONE(=-5) | o N+3 } { SAY | i T-2 } E { HAPPEN | o D+3 }
+12. { DO SAME | i ! } E { JOIN(=-5) TOUCH(=+5) | o N+3 } AND { JOIN(=-5) LONG(=-5) | o N+3 } FOR { MANY(=+5) LONG | o N+3 }
+13. { BEGIN(=-5) | a D+3 } { BIG CHANGE | o D+3 } { GIVE(=+5) | i T-2 } E { PART(=+2) GRAIN CONSUME | o } { SAME(=-5) | e } { SEE HEAT(=+5) | a } { GRAIN CONSUME | o }
+14. { LIVE PART(=-2) | o N+3 I+3 } AND { LIVE BIG(=-5) | o N+3 } { SEE CAN(=+5) | i } ; { JOIN(=+5) SEE GRAIN | i V-4 K+5 } { SEE CARE BIG(=-5) | e }
+15. LA [ { SOMEONE(=+5) | o } { SOMEONE(=-5) MANY(=-5) | i T-2 } ] ; { SOMEONE(=+5) | o } { MOVE | i } E { PLACE CARE LIVE | o D+3 } ; { MOOD(=-3) | o quality D+3 } { SIDE(=-5) | i T-2 }
+16. { TEXT | o N+3 I+5 } { JOIN(=+5) | i V-4 } { PART(=-2) TEXT | o N+3 } { SIDE(=-5) | e }
+17. { SOMEONE(=+5) | o } { MOOD(=+5) FEEL | i T-2 I+4 } ; { SOMEONE(=+5) | o } { SEE | i T-2 K+5 } E { SOMEONE SEX(=-5) | o }
+18. { WANT DO SOMEONE | o agent N+3 D+3 } { GIVE(=+5) | i V-4 M+4 } E { GOOD RULE(=+4) GIVE(=-5) | o } [ { RULE(=+5) | o D+3 } { BEGIN(=-5) DO | i } E { RULE(=+4) | o D+3 } ]
+19. { MANY(=+3) | e } { SOMEONE(=+5) | o N+3 } { SEE KNOW | i } E { SAME(=-4) | a } { PART(=-2) TEXT | o N+3 } AND { SOMEONE | o N+3 } AND { THING(=+4) | o N+3 } AND { THING(=-5) | o N+3 }
+20. { SOMEONE(=-5) | o N+3 } { GIVE(=+5) | i } E { KNOW | o result } [ LA [ { TIME(=0) FIGHT(=+5) | i } ] { GIVE TEXT | o } { SEE CARE | i V-4 K+5 } ]
+21. { TEXT | o D+3 } FROM { SEE DO ART(=-5) | o N+3 } FOR { CONSUME THING(=0) FEEL | o } AND { SEX | o quality } ; { TEXT | o D+3 } { GIVE SEE | i } E { BIG NEAR(=-5) SOMEONE | o quality }
+22. LA [ { SOMEONE | o D+3 } { THINK WANT | o D+3 } { FEEL(=+5) GOOD(=-5) | o quality } { DO | i K+3 } ] ; { DO | o result D+3 } { DO CAN(=-5) | i T-2 I+4 } { SEE CAN | e I+4 }
+23. { SOMEONE SEX(=+5) | o } { JOIN(=+5) | i T-2 } E { SEE BODY | o tool N+3 D+3 } ; { SAY | o N+3 D+3 } { KNOW CAN(=-5) | a } { MOVE | i T-2 K0 } { GOOD FEEL | e } E { SOMEONE SEX(=+5) | o }
+24. { SEE HEAT(=+5) | a M-5 } { SEE GRAIN | o N+3 } PI { TIME(=-3) | a } { ART DO | o result D+3 } { GIVE(=0) | i V-4 T-2 } { SEE HEAT(=+5) | a C+3 } { SEE GRAIN | o N+3 D-3 }
+25. { ART(=+5) | a } { KNOW TEXT | o N+3 } { GIVE(=+5) | i V-4 T-2 M-3 } { SAME(=+5) | a D+3 } { SEE TEXT | a } { PART(=-2) TEXT | o N+3 D+3 }
+26. LA [ { FIGHT MOVE | o result D+3 } { DO LIVE(=-5) | i T-2 } E { THING(=+4) MOVE(=+5) | o D+3 } ] ; { SOMEONE SEX(=+5) | o } { CHANGE MOVE | i T-2 } { INSIDE(=-5) | e } { PART(=+5) THING(=0) | o D+3 } { ABOVE | e } { SOMEONE(=+5) | o }
+27. { PLACE INSIDE THING(=-5) | o D-3 } FOR { SOMEONE(=-5) | o N+3 } { PLACE LIVE | i T+2 } { GOOD | e }
+28. { SAME(=-4) | a } LA [ { NEAR(=-5) | i T-2 R-3 } { BIG MEASURE(=-5) TIME | e } ] ; { MANY(=+5) | o } { NEAR(=+5) | e } { JOIN SIDE(=-5) | i T-2 } { INSIDE(=+5) | e } { LIVE | o D+3 }
+29. LA [ { PART(=+5) SOMEONE | o D+3 } { SEE CARE | i M-5 } ] ; { THINK | o D+3 } PI { RULE(=+4) | o N+3 } { DO | i V-4 T+2 M+3 } { MOVE(=+5) | e C+3 }
+30. { SOMEONE(=+5) | o N+3 } { CARE(=+5) DO | i K+5 } [ { ABOVE MOVE | o tool D+3 } { BEGIN(=+5) | i A+5 } ] ; { SOMEONE(=+5) | o N+3 } { GIVE(=+5) | i T+2 R+3 } E { MANY(=+5) DO | o D+3 } { FIGHT MOVE(=+5) | o tool D+3 }
+31. "Chabrier" AND { TEXT ART(=+5) | o agent N+3 } { MOOD(=+5) SAY | i } [ { MOOD(=+5) KNOW(=-5) | a } AND { DO | a } { LIVE | o } ]
+32. { TIME(=-1) | e } "Angelina" { CHANGE SIDE | i T-2 } ; "Angelina" { MOVE | i T-2 } { CAN(=+5) GOOD | e } { NEAR(=+3) | e } { PLACE HEAT CONSUME | o D+3 }
+33. { SEE DO ART(=-5) | o D-3 } { DO CAN | i } E { MEASURE CHANGE HAPPEN | o N+3 } { SAME(=-5) | a } { MEASURE(=-5) GOOD HAPPEN | o D+3 }
+34. "Mike" { MOVE(=+5) | i T-2 } E { SIDE(=-5) | o } PI { PLACE LIVE | o N+3 } FROM { LONG(=+5) | o }
+35. { HEAT MOVE | o } { MOVE(=-3) | i M-5 } E { CHANGE GOOD(=-5) ART(=-5) | o } PI { CONSUME | o result }
+36. "Suvorov" { GIVE(=+5) | i T-2 } E { SAME(=-4) | a } { WANT VALUE(=+5) | o } FOR { SOMEONE SEX(=+5) BIG(=-3) | o N+3 } [ { BODY LONG(=-5) | o N+3 } { BIG(=-3) | i } ]
+37. { GOOD | a } { PLACE | i T-2 } ; { INSIDE(=+5) | e } { MANY(=-5) | a } { GRAIN(=-5) HEAT(=+5) | o }
+38. { SAME(=-4) TIME(=0) | e D+3 } { BEGIN(=-5) DO | o D+3 } { HAPPEN | i T-2 } { PART(=-2) | e } { RULE(=+4) | o } PI "Washington"
+39. { GOOD | i C+5 T-2 } [ { LIVE(=-5) | i } ; { FIGHT | i } E { FIGHT(=+5) SOMEONE LAND(=-5) | o N+3 } ]
+40. { SOMEONE SEX(=+5) | o D-3 } { BIG | a } { BIG BODY | a } { FRIEND(=-5) FIGHT(=+3) | a }
+41. { GIVE(=+5) | i T+2 M-3 } E { PLACE SAY | o D-3 } FOR { SOMEONE(=-5) | o N+3 } ; { INSIDE(=+5) | e } { MANY(=+4) | a } { PART(=+5) SOMEONE | o N+3 }
+42. "Rousseau" { THINK(=+5) | i K+4 I+4 } E "Voltaire" ; "Voltaire" { THINK(=+5) | i M-3 } [ { HEAT(=+5) CHANGE | i K+3 } E { TEXT | o N+3 } ]
+43. { SAME(=-5) | a } { PART(=-2) PART(=+5) | o N+3 } { SEE | i V-4 A+5 } { INSIDE(=+5) | e } { PART(=+2) | o D+3 }
+44. { SOMEONE SEX(=-5) | o } { CARE(=-5) | i } [ { SOMEONE SEX(=-5) | o } { SAY | o result D+3 } ]
+45. { SOMEONE SEX(=-5) | o } { GOOD SEE | i I+4 } ; { SOMEONE SEX(=-5) | o } { GOOD(=-5) | i M+4 }
+46. { TEXT | o D+3 } { DO TEXT | i V-4 } { MOOD(=+5) FEEL | a } { ART SEE DO | o agent D-3 } ; { SAME | i M+4 K+5 }
+47. { SAME(=-4) TIME(=0) | e D+3 } { SAME HAPPEN | o N+3 } { SAME(=-5) | i } ; { THINK(=+5) | o result D+3 } { CAN(=-3) | i C+3 I+4 }
+48. "Vesole" { MOVE(=+5) | i T-2 } { FIGHT | o tool N+3 } ; { WANT DO | i T-2 } [ { SIDE(=+5) DO | i } E { FIGHT HEAT(=+5) | o } ]
+49. { TIME(=+1) | e } { JOIN MANY(=+5) | i ! } E { PART(=+2) | o D+3 } ; { JOIN(=+5) | i ! } E { CHANGE(=-5) | o tool } FOR { CHANGE GOOD(=-5) THING(=-5) | o }
+50. { SOMEONE SEX(=-5) | o } { CHANGE SIDE | i T-2 } ; { SOMEONE SEX(=-5) | o } { MOVE | i T-2 A-5 } { NEAR(=+3) | e } { PLACE LIVE | o D+3 }
+51. { SOMEONE SEX(=+5) | o } { WANT | i M-3 } E { SAME(=-5) | a } { SOMEONE SEX(=-5) | o } ; { WANT NEAR(=+5) | i M-3 } E { SOMEONE SEX(=+5) BIG(=-3) | o N+3 }
+52. { PART(=-2) | o N+3 } PI { PART(=+2) LAND | o D+3 } AND { RULE(=+4) | o N+3 } AND { HAPPEN SAME(=-4) | o N+3 } { SAME(=+5) | i N+5 M+4 }
+53. { THING(=0) CONSUME | o } AND { PLACE THING(=0) | o } { SAME(=-4) | a } { VALUE(=+5) BEGIN(=-5) | i N+3 } E { CONSUME | o } FOR { THING(=+4) | o N+3 }
+54. { SAME | e } { SAY CAN | i V-4 } FOR { ART(=+5) SAY | o D+3 } [ { SOMEONE(=-5) | o N+3 } { INSIDE(=+5) MOVE | i } { BEGIN(=+5) | a } { PLACE | o D+3 } ]
+55. { SOMEONE(=+3) | o } { DO CAN(=-5) | i } E { THING(=0) CONSUME | o } FOR { THING(=+4) | o N+3 } ; { BIG(=-3) | a } { PART(=-2) LAND(=+5) | o D-3 }
+56. { ART | o tool N+3 D+3 } { GIVE(=+5) | i } E { SAME(=+5) GOOD | o quality } AND { SEE CAN | o quality } FOR { ART(=+5) SAY | o D+3 }
+57. { ART THING(=-5) DO | o agent } { SEE | i T-2 } E { SOMEONE SEX(=+5) | o } { SEE BODY BIG | e } AND { FEEL(=+5) | e } AND { FRIEND(=-5) FEEL(=+5) | e }
+58. "Moritz" { SAY | i T-2 } [ { FIGHT(=-5) BODY TOUCH | o } { TIME CARE | i I+3 } ]
+59. { PART(=+5) FRIEND(=+5) | o quality D+3 } { CARE(=+5) INSIDE(=0) | i T-2 } [ { DO | i T-2 K+3 } E { DO CAN | o result D+3 } ]
+60. { BEGIN(=-5) | e } { DO | o agent N+3 D+3 } PI { PLACE HEAT CONSUME | o D+3 } { FRIEND(=+2) | i T-2 } ; { DO | o agent N+3 D+3 } { SAY GIVE | i T-2 } E { SEE HEAT(=+5) | a } { GRAIN CONSUME | o D-3 }
+---
+1. The thought: he went back; the thought: they were always thrilled, just now at 4 o'clock.
+2. Morgan looked at two eyes for a long time; Morgan was a fool.
+3. A man lay down nearby with his head up; gently he set the spear on the ground.
+4. We had thought great thoughts; with heroic deeds happening, we will begin to act within the whole country.
+5. Maris is about to face a big change in value.
+6. A sight meant for human life; the chimney gave off a huge amount of smoke.
+7. Some people might think that their actions are not very important.
+8. If you separate the parts, smooth the edges with a knife and a sanding tool.
+9. A man sadly told me that I would certainly speak to a woman.
+10. The love of the sea is a most precious part; a place for sport.
+11. Gross had dealt with Marshall in a friendly way; they spoke of what happened.
+12. Do the same: use cutters and shears for all the planks.
+13. The first big change gave us the whole grain meal; the bright food was quite different.
+14. Very many living parts and tiny organisms can be seen; they are forced to be magnified and examined closely.
+15. When I was alone, I went to the hospital; the sadness returned.
+16. Very many texts are joined, with their sections going backward.
+17. I was very elated; I made a woman see.
+18. Volunteers are certainly given public assistance; the law begins to act on the authorities.
+19. We often recognize special passages, people, animals, and stones.
+20. They provide knowledge; when there is war, documents are issued and checked.
+21. The book, drawn from scientific observations intended for the senses, shows the great scale of foreign peoples.
+22. When someone's desire, with terrible agitation, drives them to act, the deed was very hard to carry out, and clearly so.
+23. A man put on the glasses; the words were hard to understand, and he let a man move pleasantly.
+24. Invisible particles were found in earlier times; a technical invention was obtained and made some particles brighter.
+25. Humanistic texts may have been given the same readable passages.
+26. When the battle killed the animal, a man moved outside the forest, above me.
+27. A stone building is for them; they will live well there.
+28. It was special when someone had gone far away for a long time; everyone nearby came back inside to life.
+29. If the crowd does not look carefully, the institutions' idea will likely be carried out more quickly.
+30. We force them to be careful; the aircraft is completed, and we will later hand everything over to the missile.
+31. Chabrier and the writers joke about a ridiculous and active life.
+32. Just now Angelina turned around; Angelina moved comfortably close to the restaurant.
+33. An experiment can be done that produces different measured changes and a quantity of good results.
+34. Mike rushed to the back of the wooden houses.
+35. The fire stands still; a harmful technological change is found in consumer products.
+36. Suvorov gave a special, valued gift to boys whose veins are small.
+37. The place was good; inside was empty of steam.
+38. At that time, the start partly happened in the Washington government.
+39. It was best; they died and fought the naval forces.
+40. A big man with a big body, hostile and combative.
+41. Someone may give a stage to them; inside are many crowds.
+42. Rousseau strongly made Voltaire decide; Voltaire may decide to inspire writings.
+43. Different subgroups have been fully seen inside the whole.
+44. A woman is careless about another woman's words.
+45. One woman sees very clearly; another woman is certainly terrible.
+46. The text is written amusingly by a designer; it must certainly be the same.
+47. At that time, the events were different; the decision was much harder.
+48. Vesole rushed with weapons; he wanted to advance and open fire.
+49. Soon, unite everyone as a whole! Join them with a preservative against stone erosion.
+50. A woman turned back; a woman had just begun to move close to the house.
+51. A man may want a different woman; he may want to be close to young men.
+52. All parts of the whole country, institutions, and special events are certainly the same.
+53. Food and farms are special; they are precious sources of animal feed.
+54. Similarly, this can be said of the words of the arts: they go inside to the final place.
+55. You cannot provide food for animals; there is a small piece of land.
+56. The tools of art give perfect quality and clarity to the arts' words.
+57. An engineer watched a man closely, intensely, and furiously.
+58. Moritz said that wrestling requires very careful timing.
+59. Solidarity was carefully guarded at the border; they made the feasible act happen.
+60. At first the workers at the restaurant were friendly; then they clearly announced a meal.
