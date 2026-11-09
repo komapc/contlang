@@ -18,7 +18,7 @@ def put(d, files):
     for k, v in files.items(): open(f"{d}/{k}", "w").write(v)
 if cmd == "readers":
     E = sorted(json.load(open(f"{D}/enc.json")), key=lambda e: e["i"]); assert [e["i"] for e in E] == list(range(N))
-    C = {"M0": [e.get("first") or "" for e in E], "MV": [e.get("code") or "" for e in E], "S": json.load(open(f"{D}/s_codes.json"))}
+    C = {"M0": [e.get("first") or "(no code)" for e in E], "MV": [e.get("code") or "(no code)" for e in E], "S": json.load(open(f"{D}/s_codes.json"))}
     json.dump(C, open(f"{D}/codes.json", "w"), indent=1); db = dec_body() + "\n\n" + open(f"{P}/tasks/D0_read.md").read(); L = []
     for v in V:
         for rep in range(2): o = list(range(N)); random.Random(2000 + len(L)).shuffle(o); L.append({"enc": v, "order": o})

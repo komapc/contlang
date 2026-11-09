@@ -1,0 +1,1030 @@
+[
+ {
+  "i": 0,
+  "code": "{ FRIEND(=+5) JOIN(=+5) | o quality D+3 } { LIVE | i A+5 } { ABOVE(=+5) TOUCH(=+5) | o D+3 } LA [ { GIVE | i T-2 A+5 } E { DO | o result CAN+5 } ]",
+  "first": "{ FRIEND(=+5) JOIN(=+5) | o D+3 } { LIVE | i T-2 A+5 } { TOUCH(=+5) INSIDE(=+5) | o D+3 } LA [ { DO | i T-2 K+5 } E { DO | o result CAN+5 } ]",
+  "readback": {
+   "words": [
+    "the ally",
+    "lived",
+    "the hard interior",
+    "was forced to do",
+    "an easy thing to do"
+   ],
+   "sentence": "The ally lived in the hard interior when they were forced to do an easy thing to do."
+  }
+ },
+ {
+  "i": 1,
+  "code": "\"Maris\" { GIVE | i V-4 T+1 M-3 } E { CHANGE VALUE | o result BIG | a D+3 }",
+  "first": "\"Maris\" { GIVE | i V-4 T+2 } E { VALUE GIVE | o result BIG | a D+3 }",
+  "readback": {
+   "words": [
+    "\"Maris\"",
+    "be given (future, passive)",
+    "the big gift"
+   ],
+   "sentence": "Maris will be given the big gift."
+  }
+ },
+ {
+  "i": 2,
+  "code": "{ TIME | o D+3 } { BEGIN | o result D+3 } { PART(=-2) | e } { MOVE | i T-2 } FROM \"Washington\"",
+  "first": "{ TIME | o D+3 } { DO | o agent D+3 } { MOVE | i T-2 } { MANY(=0) | e } FROM \"Washington\"",
+  "readback": {
+   "words": [
+    "the time",
+    "the person (doer)",
+    "moved (past)",
+    "some / some time"
+   ],
+   "sentence": "The person moved from Washington some time ago."
+  }
+ },
+ {
+  "i": 3,
+  "code": "{ JOIN | o agent N+3 PI \"Peace Corps\" } { GIVE | i M+4 V-4 } E { VALUE(=+5) GIVE | o result D+3 } FROM { RULE | o [ DO | i A+5 PI { RULE | o } ] }",
+  "first": "{ GIVE | o agent N+3 D+3 } PI \"Peace Corps\" { GIVE M+4 V-4 | i } E { VALUE(=+5) GIVE | o result D-3 } FROM { RULE | o [ DO | i A+5 PI { RULE | o } ] }",
+  "readback": {
+   "words": [
+    "the Peace Corps donors (the givers)",
+    "were certainly given (passive)",
+    "a precious/valuable gift",
+    "an implemented rule (a rule that has been carried out)"
+   ],
+   "sentence": "The Peace Corps donors were certainly given a valuable gift under an implemented rule."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: RULE",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: DO",
+   "outside braces: |",
+   "outside braces: i",
+   "outside braces: A+5",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 4,
+  "code": "{ MOVE | o } PI { PLACE | o } { MANY | e C+3 } { PART | i D-3 } ; \"Moritz\" { SAY | i T-2 }",
+  "first": "{ MOVE | o } PI { PLACE | o } { MANY | e C+3 } { PART | i D-3 } ; \"Moritz\" { SAY | i T-2 }",
+  "readback": {
+   "words": [
+    "movement in a place (traffic)",
+    "more often",
+    "breaks up / separates",
+    "Moritz",
+    "said (past)"
+   ],
+   "sentence": "Traffic in the area breaks up more often, Moritz said."
+  }
+ },
+ {
+  "i": 5,
+  "code": "{ MOOD | e M-3 } LA [ { SOMEONE | o N+3 } ] { DO | o result } FROM { SOMEONE | o N+3 } E { THINK | i M-5 } { VALUE(=+5) | a I+4 }",
+  "first": "{ MOOD | e M-3 } LA [ { SOMEONE | o N+3 } ] { DO | o result } FROM { SOMEONE | o N+3 } { THINK | i M-5 } E { VALUE(=+5) | a I+4 }",
+  "readback": {
+   "words": [
+    "possibly sadly",
+    "people (plural)",
+    "result / outcome",
+    "people (plural)",
+    "do not think",
+    "very important"
+   ],
+   "sentence": "Perhaps sadly, when people act, the results produced by people are not thought very important."
+  }
+ },
+ {
+  "i": 6,
+  "code": "{ CARE(=-5) | i } LA [ { PART | o } PI { LAND | o } AND { RULE | o } AND { THING | o } ]",
+  "first": "{ VALUE | i M-5 } LA [ { PART | o } PI { LAND | o } AND { PART | o } PI { RULE | o } AND { SAME(=-4) THING | o } ]",
+  "readback": {
+   "words": [
+    "devalue / not value",
+    "part",
+    "land / region",
+    "part",
+    "rule / law (provision)",
+    "special thing / exception"
+   ],
+   "sentence": "Do not value a part of the land, a part of a rule, or a special thing."
+  }
+ },
+ {
+  "i": 7,
+  "code": "LA [ { TIME | o D+3 C+5 } ] { THING | o N+3 D+3 } { SAME(=-5) | i } AND { THINK | o result D+3 } { TOUCH(=+5) | i C+3 I+4 }",
+  "first": "LA [ { TIME | o D+3 M-5 } ] { THING | o N+3 D+3 } { SAME(=-5) | i } AND { THINK | o result D+3 } { TOUCH(=+5) | i C+3 I+4 }",
+  "readback": {
+   "words": [
+    "not the time",
+    "the things",
+    "to be different",
+    "the thought",
+    "felt much harder"
+   ],
+   "sentence": "When it wasn't the time, the things were different and the thought felt much harder."
+  }
+ },
+ {
+  "i": 8,
+  "code": "LA [ { SOMEONE | o D+3 } { WANT(=+5) | o } { HAPPEN FEEL GOOD(=-5) | i T-2 } ] ; { SOMEONE | o D+3 } { DO | o agent D+3 } { HAPPEN CHANGE GOOD(=-5) | i T-2 A+5 C+5 I+4 }",
+  "first": "LA [ { SOMEONE | o D+3 } { WANT(=+5) | o } { FEEL GOOD(=-5) | i T-2 } ] ; { SOMEONE | o D+3 } { DO | o agent D+3 } { HAPPEN GOOD(=-5) | i T-2 M-5 C+3 I+4 }",
+  "readback": {
+   "words": [
+    "the person",
+    "strong desire",
+    "felt terrible (past)",
+    "the person",
+    "the doer",
+    "didn't make it much worse (past)"
+   ],
+   "sentence": "When the person's strong desire felt terrible, the person who acted did not make the terrible event much worse."
+  }
+ },
+ {
+  "i": 9,
+  "code": "LA [ {SOMEONE(=-5) SEE | o M-5} ] {THINK | o result D+3 N+3} PI {RULE(=+5) | o agent N+3 D+3} {DO | i V-4 M+4} {MOVE | e C+3 I+4}",
+  "first": "LA [ {RULE(=+5) SEE | o M-5} ] {THINK | o N+3 D+3} PI {RULE(=+5) DO | o N+3} {DO | i V-4 M+4} {MOVE | e C+3 I+4}",
+  "readback": {
+   "words": [
+    "not seen by the authorities",
+    "the thoughts/the thinking (the, plural)",
+    "official acts (plural)",
+    "are done (passive, certainly)",
+    "much more / even more"
+   ],
+   "sentence": "If not seen by the authorities, the official acts are certainly carried out even more."
+  }
+ },
+ {
+  "i": 10,
+  "code": "{ THING | o D+3 } { GIVE | i M-3 } E { PLACE JOIN | o FOR } { SOMEONE(=-5) | o N+3 } { INSIDE(=+5) LAND | e N+3 C+3 }",
+  "first": "{ THING | o D+3 } { GIVE(=+5) | i T+2 M-3 } E { PLACE JOIN | o FOR } { SOMEONE(=-5) | o N+3 D+3 } { INSIDE(=+5) MANY(=+5) LAND | e C-3 N+3 }",
+  "readback": {
+   "words": [
+    "the thing (definite)",
+    "may give (future, maybe)",
+    "direct object marker",
+    "a place for joining / meeting place",
+    "the others (plural, definite)",
+    "in many coastal lands"
+   ],
+   "sentence": "The thing may give a meeting place to the others in many coastal lands."
+  }
+ },
+ {
+  "i": 11,
+  "code": "{ SOMEONE | o D+3 } { MOVE(=-5) | i T-2 A+5 } E { BODY | o PI PART | o D+3 } AND { DO | i K0 } E [ { MOVE | o D+3 } FROM { SAY(=-5) | o N+3 D+3 } { MOVE(=+2) | i } E { GOOD(=+3) | e I+3 } { ABOVE(=+5) | e } E { SOMEONE | o D+3 } ]",
+  "first": "{ SOMEONE | o D+3 } { CHANGE(=+5) | i T-2 A+5 } E { BODY | o } PI { PART | o D+3 } AND { DO | i K0 } E [ { MOVE | o D+3 } FROM { SAY | o N+3 D+3 } { MOVE | i } E { GOOD(=+3) | e I+4 } { ABOVE(=+5) | e } E { SOMEONE | o D+3 } ]",
+  "readback": {
+   "words": [
+    "the person",
+    "completely changed (past, finished)",
+    "the body",
+    "the part (of the body)",
+    "let/allowed",
+    "the movement",
+    "the statements",
+    "move (verb)",
+    "very well",
+    "up/upward",
+    "the person"
+   ],
+   "sentence": "The person completely changed the part of their body and allowed the movement from the statements to move them very well upward."
+  }
+ },
+ {
+  "i": 12,
+  "code": "{ KNOW(=-5) ART(=-5) LIVE | o D-3 I+5 } { \"Chabrier\" } AND { TEXT | o agent FOR { \"Chabrier\" | o } N+3 D+3 } { MOOD(=+3) SAY | i }",
+  "first": "{ \"Chabrier\" } AND { TEXT | o agent FOR { \"Chabrier\" | o } N+3 D+3 } { MOOD(=+5) SAY | i } E { KNOW(=-5) ART(=-5) DO LIVE | o D-3 I+5 }",
+  "readback": {
+   "words": [
+    "Chabrier",
+    "the writers for Chabrier (the group)",
+    "joked/shouted (very funny)",
+    "an utterly stupid technological living thing"
+   ],
+   "sentence": "Chabrier and the writers for Chabrier jokingly shouted about an utterly stupid technological living thing."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: TEXT",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: agent",
+   "outside braces: N+3",
+   "outside braces: D+3",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 13,
+  "code": "{ ART | o tool N+1 D+3 } { GIVE | i } E { GOOD(=+5) | o quality PI { ART(=+5) | o D+3 } } AND { GOOD(=+3) | o quality PI { ART(=+5) | o D+3 } }",
+  "first": "{ ART | o tool N+3 D+3 } { GIVE | i } E { GOOD | o quality PI { ART(=+5) | o D+3 } } AND { GOOD(=+3) | o quality PI { ART(=+5) | o D+3 } }",
+  "readback": {
+   "words": [
+    "the tools of art (the art tools)",
+    "give",
+    "the art's excellence",
+    "the art's good quality"
+   ],
+   "sentence": "The art tools give the art its excellence and good quality."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: GOOD(=+5)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: quality",
+   "outside braces: }",
+   "outside braces: {",
+   "outside braces: GOOD(=+3)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: quality",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 14,
+  "code": "{ TEXT | o N+3 I+5 } AND { TEXT | o N+3 I+5 } { JOIN | i V-4 M+4 } LA [ { JOIN | i } E { TEXT | o N+1 } E { TEXT | o N+1 } ]",
+  "first": "{ TEXT | o N+3 C+3 } AND { TEXT | o N+3 C+3 } { JOIN | i V-4 } E { JOIN | i } E { TEXT | o N+1 } E { TEXT | o N+1 }",
+  "readback": {
+   "words": [
+    "more texts",
+    "more texts",
+    "are joined (passive)",
+    "join",
+    "a few texts",
+    "a few texts"
+   ],
+   "sentence": "More texts and more texts are joined to join a few texts to a few texts."
+  }
+ },
+ {
+  "i": 15,
+  "code": "{ SOMEONE SEX(=+5) | o D+3 } { FEEL | i M-3 } E { SOMEONE SEX(=-5) SAME(=-4) | o D-3 } ; { SOMEONE SEX(=+5) | o D+3 } { WANT | i I+1 } E [ { JOIN | i } E { SOMEONE SEX(=+5) | o N+3 D+3 } ]",
+  "first": "{ SOMEONE SEX(=+5) | o D+3 } { FEEL | i M-3 } E { SOMEONE SEX(=-5) | o D-3 } ; { SOMEONE SEX(=+5) | o D+3 } { WANT | i I+4 } E [ { JOIN | i } E { SOMEONE SEX(=+5) | o N+3 D+3 } ]",
+  "readback": {
+   "words": [
+    "the man",
+    "may feel",
+    "a woman",
+    "the man",
+    "really wants",
+    "join",
+    "the men"
+   ],
+   "sentence": "The man may feel a woman; he really wants to join the men."
+  }
+ },
+ {
+  "i": 16,
+  "error": "json"
+ },
+ {
+  "i": 17,
+  "code": "{ GRAIN ART GOOD(=-3) | o D-3 } { CHANGE | i T-2 A+5 V-4 } E { ART GOOD(=+3) MANY(=+3) | o D+3 } FROM { ART TIME(=-3) | o }",
+  "first": "{ PART(=+5) ART GOOD(=+3) | o D-3 } { CHANGE | i T-2 A+5 } E { GRAIN(=+5) GOOD(=-3) | o D+3 } FROM { ART TIME(=-3) | o }",
+  "readback": {
+   "words": [
+    "a group of artists (an art collective)",
+    "changed (past, completed)",
+    "the poor-quality solid object",
+    "ancient art"
+   ],
+   "sentence": "A group of artists transformed the poor-quality solid object from ancient art."
+  }
+ },
+ {
+  "i": 18,
+  "code": "{ DO | i ! } E { DO | o N+3 } AND { DO | o N+3 } FOR { LONG(=+5) | o N+3 }",
+  "first": "{ DO | i ! } E { HAPPEN | o result D+3 N+3 } AND { HAPPEN | o result } LA { LONG(=+5) | o N+3 D+3 }",
+  "readback": {
+   "words": [
+    "Do! (imperative)",
+    "the consequences (result, definite plural)",
+    "a consequence / result",
+    "when the beams (definite plural)"
+   ],
+   "sentence": "When the beams are in place, do the consequences and the result."
+  }
+ },
+ {
+  "i": 19,
+  "code": "LA [ { JOIN(=-5) PART | i } ] { CHANGE GOOD(=+5) | i ! } E { SIDE | o N+3 D+3 } { TOUCH(=-5) | a } AND { SAME(=+5) | i ! } E { SIDE | o N+3 D+3 } { TOUCH(=-5) | a } { ART(=+5) TOUCH(=-5) | o tool } AND { ART(=+5) GRAIN(=0) | o tool }",
+  "first": "LA [ { JOIN(=-5) PART | i } ] { CHANGE GOOD(=+5) | i ! } E { SIDE | o N+3 D+3 } { TOUCH(=-5) | a } AND { SAME(=+3) | i ! } E { SIDE | o N+3 D+3 } { ART(=+5) TOUCH(=-5) | o tool } AND { ART(=+5) GRAIN(=+5) | o tool }",
+  "readback": {
+   "words": [
+    "when parts separate",
+    "improve! (make better)",
+    "the sides (the)",
+    "soft",
+    "make the same! (match)",
+    "the sides (the)",
+    "art tool (soft) — brush",
+    "art tool (solid) — crayon"
+   ],
+   "sentence": "When it comes apart, improve the sides: make the sides soft and make them match, using a soft brush and a solid art stick (crayon)."
+  }
+ },
+ {
+  "i": 20,
+  "code": "{PART(=-2) | o N+3} AND {THING(=+4) | o N+3} AND {SAME(=-5) THING | o N+3} ; {SEE | a M-5} AND {JOIN(=+5) | i V-4 K+5 M+4} FOR {BIG(=-5) SEE | o}",
+  "first": "{PART(=-2) | o N+3} AND {BODY | o N+3} AND {SAME(=-5) BODY | o N+3} ; {SEE | o} E {MOVE | i INSIDE+5} AND {JOIN GIVE | i V-4 K+5 M+4} E {PART(=-2) | o} FOR {BIG(=-5) SEE | i",
+  "readback": {
+   "words": [
+    "parts (plural)",
+    "bodies (plural)",
+    "different bodies (plural)",
+    "sight",
+    "enter (move inside)",
+    "be forcibly attached/given (passive, forced, certain)",
+    "a part",
+    "look tiny"
+   ],
+   "sentence": "Many parts, bodies, and different bodies; the sight sees something enter and be forcibly attached and given a part so it looks tiny."
+  }
+ },
+ {
+  "i": 21,
+  "code": "{ TIME | e R+3 } { JOIN(=+5) | i ! A+5 } E { PLACE | o D+3 } AND { JOIN(=+5) | i ! A+5 } E { CHANGE(=-5) | o agent D-3 } FOR \"iron\"",
+  "first": "{ TIME | e R+3 } { JOIN | i ! A+5 } E { PART(=+5) | o D+3 } AND { JOIN | i ! A+5 } E { CHANGE(=-5) | o agent D-3 } FOR { THING(=-5) | o }",
+  "readback": {
+   "words": [
+    "later",
+    "Attach! (complete)",
+    "the whole",
+    "Attach! (complete)",
+    "a preserver/maintainer",
+    "stone"
+   ],
+   "sentence": "Later, attach the whole, and attach a preserver for a stone."
+  }
+ },
+ {
+  "i": 22,
+  "code": "{ SOMEONE(=+5) | o N+3 D+3 } { KNOW(=+5) | i K+5 } E [ { THING MOVE(=+5) | o D+3 } { DO | i A+5 } ] LA [ { SOMEONE(=+5) | o N+3 D+3 } { GIVE | i R-3 } E { PART(=+5) | o N+5 D+3 } FOR { THING FIGHT(=+5) | o D+3 } ]",
+  "first": "{ SOMEONE(=+5) | o N+3 } { KNOW(=+5) | i K+5 M+4 } E [ { THING | o D+3 } { DO | i A+5 } ] LA [ { SOMEONE(=+5) | o N+3 } { GIVE | i } E { PART(=+5) | o N+3 D+3 } FOR { THING | o D+3 } ]",
+  "readback": {
+   "words": [
+    "we",
+    "force/ensure (someone) knows (certainly)",
+    "the thing (the)",
+    "did/has been done (completed)",
+    "we",
+    "give",
+    "the whole/all parts (the)",
+    "the thing (the)"
+   ],
+   "sentence": "We will certainly make it known that the thing has been done if we give all the parts for it."
+  }
+ },
+ {
+  "i": 23,
+  "code": "{ WANT FOR { LAND(=-5) | o } | o quality } { SAME | i } { VALUE | a C+5 } { PART | o N+1 D+3 FOR { PLACE FOR MOOD(=+3) | o } }",
+  "first": "{ WANT FOR { LAND(=-5) | o } | o quality } { SAME | i } { VALUE | a C+5 } { PART | o N+1 D+3 FOR { PLACE FOR MOOD(=+3) | o } }",
+  "readback": {
+   "words": [
+    "longing for the sea",
+    "be the same",
+    "most valuable",
+    "the small part of the happy place"
+   ],
+   "sentence": "Longing for the sea is the same as the most valuable small part of the happy place."
+  },
+  "warnings": [
+   "{PLACE FOR MOOD(=+3) | o}: no `| form` after the roots (write `| o`, `| i`, `| a` or `| e`)",
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: WANT",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: quality",
+   "outside braces: }",
+   "outside braces: {",
+   "outside braces: PART",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: N+1",
+   "outside braces: D+3",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 24,
+  "code": "LA [ { MANY(=+3) HAPPEN | o } ] { SOMEONE | o N+3 } { KNOW | i } E { SAME(=-4) TEXT | o N+3 } AND { SAME(=-4) SOMEONE | o N+3 } AND { SAME(=-4) THING(=+4) | o N+3 } AND { SAME(=-4) THING(=-5) | o N+3 }",
+  "first": "LA [ { HAPPEN | o N+3 C+3 } ] { SOMEONE | o N+3 } { KNOW | i } E { SAME(=-4) TEXT | o N+3 } AND { SAME(=-4) SOMEONE | o N+3 } AND { SAME(=-4) THING(=+4) | o N+3 } AND { SAME(=-4) THING(=-5) | o N+3 }",
+  "readback": {
+   "words": [
+    "more events",
+    "people",
+    "know",
+    "special texts",
+    "special people",
+    "special animals",
+    "special objects"
+   ],
+   "sentence": "When more events happen, people know special texts, special people, special animals, and special objects."
+  }
+ },
+ {
+  "i": 25,
+  "code": "{ \"Vesole\" } { MOVE | i T-2 A+5 } FROM { HAPPEN | o N+3 D+3 } LA [ { WANT | i A-3 } { RULE(=+5) HAPPEN | o tool } ]",
+  "first": "{ \"Vesole\" } { MOVE | i T-2 A+5 } FROM { HAPPEN | o N+3 D+3 } LA [ { WANT | i A-3 } { RULE(=+5) HAPPEN | o tool } ]",
+  "readback": {
+   "words": [
+    "Vesole",
+    "moved (past, completed)",
+    "the events (definite, plural)",
+    "began to want",
+    "the law as a tool"
+   ],
+   "sentence": "Vesole moved away from the events when they began to want to use the law as a tool."
+  }
+ },
+ {
+  "i": 26,
+  "code": "{CHANGE(=+5) BEGIN(=-5) | o D+3} {GIVE(=+5) | i T-2 A+5} E {GRAIN(=+5) PART(=+5) | o D+3} LA [ {GIVE(=+5) | i M-5} E {GRAIN(=0) PART(=+5) | o D+3} ]",
+  "first": "{CHANGE(=+5) BIG(=+4) TIME(=-5) | o D+3} {DO | i T-2} E {GIVE(=+5) | i A+5} E {GRAIN(=+5) PART(=+5) | o D+3 N+3} LA [ {GIVE | i M-5} E {GRAIN(=0) PART(=+5) | o D+3} ]",
+  "readback": {
+   "words": [
+    "the great change long ago (the)",
+    "did (past)",
+    "give (completed)",
+    "the whole pieces (the, plural)",
+    "when/while [did not give the grains (the)]"
+   ],
+   "sentence": "The great change long ago gave the whole pieces, while it did not give the grains."
+  }
+ },
+ {
+  "i": 27,
+  "code": "{ HAY | o } AND { PASTURE | o } { SAME(=-5) BIG(=+5) } { GIVE | o agent D+3 i } E { CONSUME | o result FOR { THING(=+4) | o } }",
+  "first": "{ HAY | o } AND { PASTURE | o } { SAME(=-5) BIG(=+5) } { GIVE | o agent D+3 i } E { CONSUME | o result FOR { THING(=+4) | o } }",
+  "readback": {
+   "words": [
+    "hay",
+    "pasture",
+    "huge and different",
+    "the giver / gives (definite)",
+    "food/feed for animals"
+   ],
+   "sentence": "The hay and the pasture are very different in size, and the giver provides them as feed for the animals."
+  },
+  "warnings": [
+   "{HAY | o}: unknown root HAY",
+   "{PASTURE | o}: unknown root PASTURE",
+   "{GIVE | o agent D+3 i}: unknown label i",
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: CONSUME",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: result",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 28,
+  "code": "{ DO | o FOR PLACE | o N+3 D+3 } { FRIEND(=+3) | i T-2 A-5 } ; { DO | o FOR PLACE | o N+3 D+3 } { GIVE | i T-2 } E { PART(=+5) | o FOR SOMEONE | o N+3 D+3 } FROM { GRAIN(=+5) | o }",
+  "first": "{ DO | o FOR PLACE | o N+3 D+3 } { FRIEND(=+3) | i T-2 A-5 } ; { DO | o FOR PLACE | o N+3 D+3 } { GIVE | i T-2 } E { PART(=+5) | o FOR SOMEONE | o N+3 D+3 } FROM { GRAIN(=+5) | o }",
+  "readback": {
+   "words": [
+    "things made for the place (the facilities)",
+    "befriended (past, completed)",
+    "things made for the place (the facilities)",
+    "gave (past)",
+    "the supplies for them (the provisions)",
+    "solid material"
+   ],
+   "sentence": "The facilities were friendly; the facilities gave the provisions for them from solid material."
+  }
+ },
+ {
+  "i": 29,
+  "code": "{ SOMEONE(=+3) | o } { CAN | i T-2 M-5 I+4 } E { GRAIN CONSUME(=+5) | o } FOR { THING(=+4) | o N+3 D+3 } { PART(=-2) BIG(=-4) | o D-3 }",
+  "first": "{ SOMEONE(=+3) | o } { CAN | i M-5 T-2 M+4 } E { GRAIN | o } FOR { THING(=+4) | o N+3 D+3 } { BIG(=-4) LAND | o D-3 }",
+  "readback": {
+   "words": [
+    "you",
+    "could certainly not (past)",
+    "grain (bulk/powder)",
+    "for the animals (the animals, plural)",
+    "a tiny country / a small piece of land"
+   ],
+   "sentence": "You certainly couldn't get grain for the animals in a small country."
+  }
+ },
+ {
+  "i": 30,
+  "code": "{ \"Suvorov\" } { GIVE | i T-2 V+4 } E { SAME(=-4) VALUE(=+5) | o quality D-3 } FOR [ { SOMEONE SEX(=+5) BIG(=-5) | o N+3 D+3 } PI { LONG(=-5) BODY | o N+3 D+3 } AND { TOUCH(=-5) BODY | o N+3 D+3 } AND { SIDE(=+5) LONG(=+5) BODY | o N+3 D+3 } ]",
+  "first": "{ \"Suvorov\" } { GIVE | i T-2 V+4 } E { SAME(=-4) VALUE(=+5) | o result D-3 } LA [ { SOMEONE SEX(=+5) BIG(=-3) | o N+3 D+3 } { FROM } { LONG(=-5) BODY PART | o N+3 D+3 } AND { LONG(+5) BODY PART | o N+3 D+3 } AND { SIDE(+5) LONG(+5) BODY PART | o N+3 D+3 } ]",
+  "readback": {
+   "words": [
+    "\"Suvorov\"",
+    "gave (deliberately, past)",
+    "the special, very valuable result (the item)",
+    "when",
+    "the small men (definite, plural)",
+    "from",
+    "their hair (textile-like body parts, definite, plural)",
+    "and",
+    "their long limbs (definite, plural)",
+    "and",
+    "their front long limbs (definite, plural)"
+   ],
+   "sentence": "Suvorov deliberately gave the special, very valuable item when the small men from their hair, their long limbs, and their front long limbs were there."
+  }
+ },
+ {
+  "i": 31,
+  "code": "{ ART(=+5) | o agent D+3 } { SEE | i T-2 } E { SOMEONE | o D+3 } [ { BIG(=+5) SEE | a } AND { FEEL(=+5) | a } AND { FRIEND(=-5) | a } ]",
+  "first": "{ ART(=+5) | o agent D+3 } { BIG(=+5) SEE | a } AND { FEEL(=+5) | a } AND { FRIEND(=-5) | a } { SEE | i T-2 } E { SOMEONE | o D+3 }",
+  "readback": {
+   "words": [
+    "the artist",
+    "very conspicuous",
+    "very excited",
+    "hostile",
+    "saw",
+    "the person"
+   ],
+   "sentence": "The very conspicuous, very excited, and hostile artist saw the person."
+  }
+ },
+ {
+  "i": 32,
+  "code": "{ SOMEONE(=-5) | o N+3 } { GIVE | i } E { TEXT | o result } E [ { TIME(=0) FIGHT | o } LA [ { GIVE | o result } { SEE CARE | i V-4 K+5 } ] ]",
+  "first": "{ SOMEONE(=-5) | o N+3 } { GIVE | i } E { TEXT | o result } [ { TIME(=0) FIGHT | o } LA [ { DO | o result } FROM { TEXT | o } { SEE CARE | i V-4 K+5 } ] ]",
+  "readback": {
+   "words": [
+    "others (plural)",
+    "give",
+    "a document",
+    "this fight (now)",
+    "an action/result",
+    "from the text",
+    "is forced to be examined"
+   ],
+   "sentence": "Others give the document when this current fight forces an action based on the text to be examined."
+  }
+ },
+ {
+  "i": 33,
+  "code": "\"Gross\" { GIVE | i T-2 A+5 V-4 } { FRIEND(=+5) | e } E \"Marshall\" ; { SOMEONE(=-5) | o N+3 } { SAY | i T-2 A0 } E { THING | o D+3 }",
+  "first": "\"Gross\" { CONSUME | i T-2 A+5 R-3 } { FRIEND(=+5) | e } E \"Marshall\" ; { SOMEONE(=-5) | o N+3 } { SAY | i T-2 A0 } E { THING | o D+3 }",
+  "readback": {
+   "words": [
+    "had consumed (past, completed, before)",
+    "friendly",
+    "they/other people (plural)",
+    "said (past)",
+    "the thing (definite)"
+   ],
+   "sentence": "Gross had consumed Marshall in a friendly way; the others said the thing."
+  }
+ },
+ {
+  "i": 34,
+  "code": "{ PLACE INSIDE(=+5) PART(=+2) | o FOR { SOMEONE(=-5) | o N+3 } } { CAN(=+3) | i T+2 E { PLACE LIVE | o result } }",
+  "first": "{ PLACE INSIDE PART(=-5) | o FOR { SOMEONE(=-5) | o N+3 } } { CAN(=+3) | i T+2 E { PLACE LIVE | o D-3 } }",
+  "readback": {
+   "words": [
+    "small indoor place for other people",
+    "will be possible/available soon for a house (will soon be in a house)"
+   ],
+   "sentence": "A small indoor place for other people will soon be in a house."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: PLACE",
+   "outside braces: INSIDE(=+5)",
+   "outside braces: PART(=+2)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: }",
+   "outside braces: {",
+   "outside braces: CAN(=+3)",
+   "outside braces: |",
+   "outside braces: i",
+   "outside braces: T+2",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 35,
+  "code": "{ SOMEONE | o N+3 D+3 } { TEXT | o D+3 } FROM { EXPERIMENT | o N+3 FOR { PLANT CONSUME | o } AND { SEX WANT(=+5) | o } } { SEE | i V+4 } E { SAME(=-5) LIVE | o quality I+4 D+3 N+3 }",
+  "first": "{ SOMEONE | o N+3 D+3 } { TEXT | o D+3 } FROM { EXPERIMENT | o N+3 FOR { PLANT CONSUME | o } AND { SEX WANT(=+5) | o } } { SEE | i V+4 } E { SAME(=-5) LIVE | o quality I+4 D+3 N+3 }",
+  "readback": {
+   "words": [
+    "the people (definite, plural)",
+    "the document (definite)",
+    "experiments (plural) for the following",
+    "plant consumption",
+    "sexual desire",
+    "see (deliberately)",
+    "the very different lives (definite, plural, very)"
+   ],
+   "sentence": "The people saw the document, made from experiments about plant consumption and sexual desire, that showed the very different lives."
+  },
+  "warnings": [
+   "{PLANT CONSUME | o}: unknown root PLANT",
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: EXPERIMENT",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: N+3",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 36,
+  "code": "{ PART(=+5) | o N+3 } PI LIKE { SAME(=-5) | o N+3 } { KNOW | i T-2 A+5 V-4 } { PLACE INSIDE(=+5) | o D+3 }",
+  "first": "{ PART(=+5) | o N+3 } PI LIKE { SAME(=-5) | o N+3 } { KNOW | i T-2 A+5 V-4 } { PLACE INSIDE(=+5) | o D+3 }",
+  "readback": {
+   "words": [
+    "many parts (plural)",
+    "different things (plural)",
+    "were completely known (past, completed, passive)",
+    "the interior (the inside place)"
+   ],
+   "sentence": "Many parts of different things were completely known in the interior."
+  }
+ },
+ {
+  "i": 37,
+  "code": "{ HAPPEN | o agent D-3 } { CAN | i } { GIVE | i } E { MEASURE CHANGE | o N+3 } AND { SAME(=-5) } { MEASURE | o FROM HAPPEN GOOD(=+5) | o D+3 }",
+  "first": "{ HAPPEN | o D-3 } { CAN | i } { GIVE | i } E { MEASURE CHANGE | o N+3 } AND { SAME(=-5) } { MEASURE(=-5) GOOD(=+5) | o D+3 }",
+  "readback": {
+   "words": [
+    "an event",
+    "can / be able",
+    "give",
+    "measurement changes (plural)",
+    "different",
+    "the optimal quantity"
+   ],
+   "sentence": "An event can give measurement changes and a different optimal quantity."
+  }
+ },
+ {
+  "i": 38,
+  "code": "{ SAME(=-5) | e } { TEXT ART | o N+3 } { GIVE | i V-4 M-3 T-2 R-3 A+5 } E { NEAR(=+5) SAME(=+5) TEXT | o N+3 D+3 }",
+  "first": "{ SAME(=-5) | e } { TEXT ART | o N+3 } { GIVE(=+5) | i V-4 M-3 T-2 R-3 } E { TEXT PART SAME(=+5) | o N+3 D+3 }",
+  "readback": {
+   "words": [
+    "differently",
+    "literary works (plural)",
+    "may have been given earlier (passive, uncertain)",
+    "the same parts (plural, definite)"
+   ],
+   "sentence": "The literary works may have been given the same parts earlier in a different way."
+  }
+ },
+ {
+  "i": 39,
+  "error": "json"
+ },
+ {
+  "i": 40,
+  "code": "{ HEAT | o } { DO | i K-5 M-5 } E { CHANGE(=-3) GOOD(=-5) | o result FOR { CONSUME | o } }",
+  "first": "{ HEAT | o } { DO | i K-5 M-5 } E { CHANGE(=-3) GOOD(=-5) | o result FOR { CONSUME | o } }",
+  "readback": {
+   "words": [
+    "heat",
+    "allow/let",
+    "spoilage (bad change) of things for consumption — spoilage of food"
+   ],
+   "sentence": "Heat allows food to spoil."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: CHANGE(=-3)",
+   "outside braces: GOOD(=-5)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: result",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 41,
+  "code": "{ SAME | o D+3 } { SAY | i V-4 M-3 } FOR { ART(=+5) TEXT | o D+3 } LA [ { SOMEONE(=-5) | o N+3 } { MOVE JOIN(=+5) | i } E { PLACE BEGIN(=+5) | o D+3 } ]",
+  "first": "{ SAME | o D+3 } { SAY | i M-3 V-4 } FOR { ART(=+5) TEXT | o D+3 } LA [ { SOMEONE(=-5) | o N+3 } { MOVE | i } E { PLACE TIME(=+5) | o D+3 } ]",
+  "readback": {
+   "words": [
+    "the same (the identical one, definite)",
+    "may be said (passive, uncertain)",
+    "the artistic text (the art-related writing, definite)",
+    "other people / they (plural, others)",
+    "move / go",
+    "the place in the far future (definite)"
+   ],
+   "sentence": "The same may be said of the artistic text when other people move to the place in the far future."
+  }
+ },
+ {
+  "i": 42,
+  "code": "{ THINK | o result D+3 } { SIDE(=-5) MOVE | i T-2 A+5 } ; { SAME(=-4) THINK | o D+3 } LA [ { HAPPEN | i A+0 } E { SOMEONE(=0) | o D+3 } ] { TIME | o T-2 R-3 N+1 D+3 } \"4\"",
+  "first": "{ THINK | o result D+3 } { SIDE(=-5) MOVE | i T-2 A+5 } ; { SAME(=-4) THINK | o D+3 } LA [ { HAPPEN | i A+0 } E { SOMEONE(=-5) | o D+3 } ] { TIME | o T-2 N+3 D+3 } \"4\"",
+  "readback": {
+   "words": [
+    "the thought (definite)",
+    "returned (past, completed)",
+    "that particular idea (definite)",
+    "when something happens",
+    "to them (the others, definite)",
+    "the past times (definite, plural, past)"
+   ],
+   "sentence": "The thought returned; that particular idea, when something happened to them, occurred in the past four times."
+  }
+ },
+ {
+  "i": 43,
+  "code": "{SAME(=-5) | a} LA [ {MANY(=+5) NEAR(=+5) | o} {JOIN INSIDE | i T-2} E {LIVE FOR SOMEONE(=-5) | o} LA [ {SOMEONE(=-5) NEAR(=-5) | i T-2 R-3} {TIME(=-5) | e I+4} ] ]",
+  "first": "{SAME(=-4) | a} LA [ {MANY(=+5) NEAR(=+5) | o} {JOIN INSIDE(=+5) | i T-2} E {LIVE FOR SOMEONE(=+5) | o} LA [ {SOMEONE(=+5) NEAR(=-5) | i T-2 R-3} {TIME(=-5) | e I+4} ] ]",
+  "readback": {
+   "words": [
+    "special",
+    "everyone nearby",
+    "joined in (past)",
+    "the person I live for / my beloved",
+    "I went far away (past, earlier)",
+    "long ago (very)"
+   ],
+   "sentence": "It was special when everyone nearby joined in for the person I live for, before I had gone far away long ago."
+  },
+  "warnings": [
+   "{LIVE FOR SOMEONE(=-5) | o}: no `| form` after the roots (write `| o`, `| i`, `| a` or `| e`)"
+  ]
+ },
+ {
+  "i": 44,
+  "code": "{ TIME | e R+3 } \"Angelina\" { CHANGE(=+5) MOVE | i T-2 A+5 } AND { ART(=+5) CAN(=+5) | e } { MOVE SIDE(=+5) | i T-2 A+5 } E { PLACE INSIDE(=+5) CONSUME(=+5) | o D+3 }",
+  "first": "{ TIME | e R+3 } \"Angelina\" { MOVE | i T-2 A+5 } AND { ART(=+5) CAN(=+5) | e D-3 } { MOVE SIDE(=+5) | i T-2 A+5 } E { PLACE INSIDE(=+5) CONSUME | o D+3 }",
+  "readback": {
+   "words": [
+    "later",
+    "Angelina",
+    "went (moved)",
+    "skillfully/easily",
+    "stepped forward",
+    "the indoor place for eating (the dining area)"
+   ],
+   "sentence": "Later, Angelina went and skillfully stepped forward into the indoor dining area."
+  }
+ },
+ {
+  "i": 45,
+  "code": "{ \"Rousseau\" } { SAY | a I+4 } LA [ { \"Voltaire\" } { KNOW | i M-3 } [ { \"Voltaire\" } { CHANGE(=+5) HEAT(=+5) | i } E { TEXT | o N+3 } { SAME(=+3) | e } ] ]",
+  "first": "{ \"Rousseau\" } { KNOW(=+5) | a I+4 } LA [ { \"Voltaire\" } { KNOW(=+5) | i M-3 } [ { \"Voltaire\" } { CHANGE(=+5) HEAT(=+5) | i K+3 } E { TEXT | o N+3 } { JOIN(=+5) | e } ] ]",
+  "readback": {
+   "words": [
+    "Rousseau",
+    "very knowledgeable/certain",
+    "Voltaire",
+    "might know",
+    "Voltaire",
+    "forced to inflame/heat up",
+    "texts (plural)",
+    "together"
+   ],
+   "sentence": "Rousseau is very certain that Voltaire might know that Voltaire forced the texts together to inflame them."
+  }
+ },
+ {
+  "i": 46,
+  "code": "{ SOMEONE SEX(=-5) | o D+3 } { GOOD | i T-2 I+4 } LA [ { BODY PART | o D+3 } { GOOD(=+3) | a } AND { MOOD | o D+3 } { SAME(=+4) | a } ] ; { GOOD(=-5) | i K+5 }",
+  "first": "{ SOMEONE SEX(=-5) | o D+3 } { GOOD | i T-2 I+4 } LA [ { BODY PART GOOD(=+3) | o D+3 } AND { MOOD(=+3) | o D+3 } ] ; { GOOD(=-5) | i K+5 }",
+  "readback": {
+   "words": [
+    "the woman (definite)",
+    "was very good (past, very)",
+    "the healthy body part (definite)",
+    "the happy mood (definite)",
+    "forced her to be terrible"
+   ],
+   "sentence": "The woman was very good when her body part was healthy and she was in a happy mood; someone forced her to be terrible."
+  }
+ },
+ {
+  "i": 47,
+  "code": "{ SOMEONE | o } { LIVE | i T-2 } { BIG(=+4) TOUCH(=+5) BODY | a } { FIGHT(=+5) | a } { SOMEONE SEX(=+5) | o D-3 }",
+  "first": "{ SOMEONE | o } { LIVE | i T-2 } { BIG(=+5) TOUCH(=+5) FIGHT(=+5) | a } { SOMEONE SEX(=+5) | o D-3 }",
+  "readback": {
+   "words": [
+    "someone",
+    "lived (past)",
+    "huge, brutal/violent",
+    "a man"
+   ],
+   "sentence": "Someone lived as a huge, brutal man."
+  }
+ },
+ {
+  "i": 48,
+  "code": "{ SAME(=-4) HAPPEN | o result D+3 } PI { LIVE(=+5) | o agent } { MOVE | i T-2 } FROM { PLACE LONG(=+5) ABOVE(=+5) | o D+3 } LA [ { PLACE LONG(=+5) ABOVE(=+5) | o D+3 } { CONSUME(=-5) | i T-2 A-2 } E { THING GRAIN(=-5) MANY(=+3) | o D+3 I+4 } ]",
+  "first": "{ SAME(=-4) HAPPEN | o result D+3 } { MOVE | i T-2 } FROM { PLACE ABOVE(=+5) | o D+3 } LA [ { PLACE ABOVE(=+5) | o D+3 } { CONSUME(=-5) | i T-2 } E { THING GRAIN(=0) MANY(=+3) | o D+3 } ]",
+  "readback": {
+   "words": [
+    "the unusual outcome",
+    "came",
+    "the upstairs",
+    "the upstairs",
+    "gave out",
+    "the grains"
+   ],
+   "sentence": "The unusual outcome came from upstairs when the upstairs gave out the grains."
+  }
+ },
+ {
+  "i": 49,
+  "code": "\"Mike\" { MOVE(=+5) | i T-2 A+5 } E { SIDE(=-5) PLACE | o D+3 } PI { LONG(=+5) JOIN(=+5) PLACE | o N+3 D+3 }",
+  "first": "\"Mike\" { MOVE(=+5) | i T-2 A+5 } E { SIDE(=-5) PLACE | o D+3 } PI { LONG(=+5) PLACE | o N+3 D+3 }",
+  "readback": {
+   "words": [
+    "Mike",
+    "rushed (past, completed)",
+    "the back (the rear, definite)",
+    "the beams/long wooden pieces (the, plural)"
+   ],
+   "sentence": "Mike rushed to the back of the beams."
+  }
+ },
+ {
+  "i": 50,
+  "code": "{ LIVE(=-5) FIGHT(=+5) FRIEND(=-5) | o } { GOOD(=+5) | i T-2 }",
+  "first": "{ LIVE(=-5) FIGHT(=+5) FRIEND(=-5) | o N+3 } { GOOD(=+5) | i C+5 T-2 }",
+  "readback": {
+   "words": [
+    "enemies killed in war (plural)",
+    "were the best; excelled most (past)"
+   ],
+   "sentence": "The enemies killed in the war were the best."
+  }
+ },
+ {
+  "i": 51,
+  "code": "\"Morgan\" { SEE | i T-2 } E { SOMEONE | o N+1 D+3 } { TIME | e N+1 } ; { THINK(=-5) | a }",
+  "first": "\"Morgan\" { SEE | i T-2 } E { BODY | o N+1 D+3 } { TIME | e N+1 } ; \"Morgan\" { THINK(=-5) | i T-2 }",
+  "readback": {
+   "words": [
+    "Morgan",
+    "saw",
+    "the few bodies",
+    "briefly",
+    "Morgan",
+    "thought it absurd"
+   ],
+   "sentence": "Morgan saw the few bodies briefly; Morgan thought it absurd."
+  }
+ },
+ {
+  "i": 52,
+  "code": "LA [ { SOMEONE(=+5) DO | o agent D+3 } { LIVE(=-5) HAPPEN | i T-2 } E { THING(=+4) | o PI { SOMEONE(=-5) | o } D+3 } ] { SOMEONE(=-5) | o D+3 } { MOVE SIDE(=-5) | i T-2 } E { PART(=+2) | o PI { ABOVE(=+5) SOMEONE(=+5) | o } D+3 }",
+  "first": "LA [ { SOMEONE(=+5) DO | o agent D+3 } { LIVE(=-5) HAPPEN | i T-2 } E { THING(=+4) | o PI { SOMEONE(=0) | o } D+3 } ] { SOMEONE(=0) | o D+3 } { MOVE SIDE(=-5) | i T-2 } E { PART(=+2) | o PI { ABOVE(=+5) SOMEONE(=+5) | o } D+3 }",
+  "readback": {
+   "words": [
+    "me (the doer, definite)",
+    "died/killed (past)",
+    "the person's animal (the pet, definite)",
+    "the person (definite)",
+    "moved back (past)",
+    "the whole/entire thing that was above me (definite)"
+   ],
+   "sentence": "When I killed someone's pet, the person pulled the entire thing that was above me back."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: THING(=+4)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: D+3",
+   "outside braces: }",
+   "outside braces: {",
+   "outside braces: PART(=+2)",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: D+3",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 53,
+  "error": "json"
+ },
+ {
+  "i": 54,
+  "code": "{ THING | o D+3 } { GIVE MOOD(=+5) FEEL | i I+4 } E { SOMEONE(=+5) | o } ; { SOMEONE(=+5) | o } { SEE | i T-2 K+3 } E { SOMEONE SEX(=-5) | o D+3 }",
+  "first": "{ THING | o D+3 } { MOOD(=+5) FEEL | i I+4 K+5 } E { SOMEONE(=+5) | o } ; { SOMEONE(=+5) | o } { SEE | i T-2 K+5 } E { SOMEONE SEX(=-5) | o D+3 }",
+  "readback": {
+   "words": [
+    "the thing",
+    "made me feel very funny",
+    "me",
+    "I",
+    "was forced to see (past)",
+    "the woman"
+   ],
+   "sentence": "The thing made me feel very funny; I was forced to see the woman."
+  }
+ },
+ {
+  "i": 55,
+  "code": "LA [ { TIME(=-2) | e } { SOMEONE(=+5) | o } { JOIN(=-5) | a } { MOVE | i T-2 } E { PLACE | o FOR { CARE(=+5) | o } } ] ; { FEEL(=+5) | o result D+3 } { SIDE(=-5) | i T-2 }",
+  "first": "LA [ { TIME(=-2) | e } { SOMEONE(=+5) | o D+3 } { JOIN(=-5) | i T-2 } { MOVE | i } E { PLACE | o FOR { CARE(=+5) | o } } ] ; { FEEL(=+5) | o result D+3 } { SIDE(=-5) | i T-2 }",
+  "readback": {
+   "words": [
+    "recently",
+    "I (the speaker)",
+    "left",
+    "moved",
+    "care facility",
+    "care",
+    "the intense feeling",
+    "returned"
+   ],
+   "sentence": "When I recently left and moved to a care facility, the intense feeling returned."
+  },
+  "warnings": [
+   "unbalanced braces",
+   "outside braces: {",
+   "outside braces: PLACE",
+   "outside braces: |",
+   "outside braces: o",
+   "outside braces: }"
+  ]
+ },
+ {
+  "i": 56,
+  "code": "{ SOMEONE(=0) | o D+3 } { SAY GOOD(=-3) | i T-2 } E { SOMEONE(=+5) | o D+3 } { TIME | e R-3 } [ { SOMEONE(=+5) | o D+3 } { SAY | i K+4 } E { SOMEONE(=0) | o D+3 } ]",
+  "first": "{ SOMEONE(=0) | o D+3 } { SAY GOOD(=-3) | i T-2 } E { SOMEONE(=+5) | o D+3 } { TIME | e R-3 } [ { SOMEONE(=+5) | o D+3 } { SAY | i K+4 } E { SOMEONE(=0) | o D+3 } ]",
+  "readback": {
+   "words": [
+    "the person",
+    "said something bad (past)",
+    "me",
+    "earlier",
+    "I",
+    "forced (made) to say",
+    "the person"
+   ],
+   "sentence": "The person said something bad to me earlier because I forced that person to say it."
+  }
+ },
+ {
+  "i": 57,
+  "code": "{ PLACE | o D+3 } { GOOD(=+3) | i T-2 } ; { PLACE | o D+3 } { JOIN(=+5) INSIDE(=+5) GRAIN | i M-5 T-2 }",
+  "first": "{ PLACE | o D+3 } { GOOD(=+3) | a T-2 } ; { PLACE | o D+3 } { JOIN(=+5) INSIDE(=+5) GRAIN(=-5) | a M-5 T-2 }",
+  "readback": {
+   "words": [
+    "the place (definite)",
+    "was fairly good (past)",
+    "the place (definite)",
+    "was not filled with gas (past)"
+   ],
+   "sentence": "The place was fairly good; it was not filled with gas."
+  }
+ },
+ {
+  "i": 58,
+  "code": "LA [ { SOMEONE SEX(=-5) | o D+3 } { CARE(=-5) | i T-2 I+5 } ] { SOMEONE SEX(=-5) | o D+3 } { SAY | i T-2 } E { THING | o D+3 }",
+  "first": "LA [ { SOMEONE SEX(=-5) | o D+3 } { CARE | i T-2 M-5 } ] { SOMEONE SEX(=-5) | o D+3 } { SAY | i T-2 } E { THING | o D+3 }",
+  "readback": {
+   "words": [
+    "the woman",
+    "was not careful",
+    "the woman",
+    "said",
+    "the thing"
+   ],
+   "sentence": "When the woman was not careful, she said the thing."
+  }
+ },
+ {
+  "i": 59,
+  "code": "{ SOMEONE | o D+3 SEX-5 } { CHANGE SIDE | i T-2 A+5 } AND { BEGIN | i T-2 A+5 } [ { MOVE | i T-2 A-5 SIDE+5 } { PLACE LIVE | o D+3 } ]",
+  "first": "{ SOMEONE | o D+3 SEX-5 } { MOVE | i T-2 A+5 } AND { BEGIN | i T-2 A+5 } [ { MOVE | i T-2 SIDE+5 } E { PLACE LIVE | o D+3 } ]",
+  "readback": {
+   "words": [
+    "the woman (definite, female)",
+    "moved (past, completed)",
+    "began (past, completed)",
+    "moved forward (past)",
+    "the house/home (definite)"
+   ],
+   "sentence": "The woman moved and began moving the house forward."
+  }
+ }
+]

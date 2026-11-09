@@ -7,7 +7,9 @@ import { encodeSentence, ask, DECODE_TASK_EN } from "./w/index.js";
 import { DEC_SENTS } from "./w/prompts.js";
 
 const D = new URL(".", import.meta.url).pathname;
-const env = { OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY, MODEL: "openai/gpt-5-mini" };
+// ключ: переменная OPENROUTER_API_KEY или файл вне репозитория из OPENROUTER_KEY_FILE
+const keyFile = process.env.OPENROUTER_KEY_FILE;
+const env = { OPENROUTER_API_KEY: process.env.OPENROUTER_API_KEY || (keyFile ? fs.readFileSync(keyFile, "utf8").trim() : ""), MODEL: "openai/gpt-5-mini" };
 if (!env.OPENROUTER_API_KEY) { console.error("нужен OPENROUTER_API_KEY"); process.exit(1); }
 const SN = JSON.parse(fs.readFileSync(`${D}/../pipe/sents.json`)).holdout.map((x) => x.s);
 const tryAsk = (ms) => ask(env, ms).catch(() => ({ error: "network" }));
@@ -21,6 +23,8 @@ async function retry(fn, bad) {  // до 3 попыток на сбой сети
   let r; for (let t = 0; t < 3; t++) { r = await fn(); if (!bad(r)) return r; } return r;
 }
 
+const probe = await tryAsk([{ role: "user", content: "Reply with {\"ok\": 1}" }]);
+if (probe.error) { console.error("OpenRouter отвечает ошибкой", probe.error, probe.error === 401 ? "— неверный ключ" : ""); process.exit(1); }
 const cmd = process.argv[2];
 if (cmd === "encode") {
   const out = await pool(SN, 4, async (s, i) => {
