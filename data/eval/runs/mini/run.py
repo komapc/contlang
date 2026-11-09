@@ -38,7 +38,7 @@ if cmd == "judges":
         PR += [{"j": j + 1, "t": t + 1, "r": r, "i": i} for t, (r, i) in enumerate(ch)]
     json.dump(PR, open(f"{S}/pairs.json", "w")); print(len(keys), "пар,", j + 1, "судей"); sys.exit()
 # score
-PR = json.load(open(f"{S}/pairs.json")); sc = {}
+PR = json.load(open(f"{D}/pairs.json")); sc = {}
 for j in {p["j"] for p in PR}: sc[j] = {int(m[1]): int(m[2]) for x in open(f"{S}/u{j}/scores.md") if (m := re.match(r"\s*(\d+)\.\s*([0-3])", x))}
 G = {(p["r"], p["i"]): sc[p["j"]][p["t"]] for p in PR}; assert len(G) == len(RD)
 for sub in ("answers", "judge"): os.makedirs(f"{D}/{sub}", exist_ok=True)
@@ -49,9 +49,14 @@ def cell(v, reader):  # средняя оценка по предложения�
     return np.array([np.mean([G[(r, i)] for r in ks]) for i in range(N)])
 rng = np.random.default_rng(0); B = rng.integers(0, N, (5000, N)); out = []
 M = {(v, rd): cell(v, rd) for rd in ("haiku", "gpt") for v in V if rd == "haiku" or v != "S"}
+ok = np.array([e["i"] for e in json.load(open(f"{D}/enc.json")) if "code" in e])
 for (v, rd), x in M.items(): out.append(f"{v:3s} читатель {rd:5s}  среднее {x.mean():.2f}/3  ≥2: {np.mean(x >= 2) * 100:.0f} %")
 for a, b, rd in (("MV", "M0", "haiku"), ("MV", "S", "haiku"), ("M0", "S", "haiku"), ("MV", "M0", "gpt")):
     d = M[(a, rd)] - M[(b, rd)]; bs = d[B].mean(1); out.append(f"{a} − {b} ({rd}): {d.mean():+.2f} [{np.percentile(bs, 2.5):+.2f} … {np.percentile(bs, 97.5):+.2f}]")
 E = json.load(open(f"{D}/enc.json")); out.append(f"кодов с нарушениями правил после правки: {sum(1 for e in E if e.get('warnings'))}/{N}; сбоев: {sum(1 for e in E if e.get('error'))}")
 out.append("слов на предложение: " + "  ".join(f"{v} {np.mean([len(re.findall(r'{', c)) for c in json.load(open(f'{D}/codes.json'))[v]]):.1f}" for v in V))
 open(f"{D}/result.txt", "w").write("\n".join(out) + "\n"); print("\n".join(out))
+for a, b in (("MV", "S"), ("M0", "S")):  # без 3 сбоев (правило «нет кода = 0» добавлено после dec.md)
+    d = (M[(a, "haiku")] - M[(b, "haiku")])[ok]; bs = d[rng.integers(0, len(ok), (5000, len(ok)))].mean(1)
+    out.append(f"{a} − {b} (haiku, {len(ok)} без сбоев): {d.mean():+.2f} [{np.percentile(bs, 2.5):+.2f} … {np.percentile(bs, 97.5):+.2f}]")
+open(f"{D}/result.txt", "w").write("\n".join(out) + "\n"); print("\n".join(out[-2:]))
