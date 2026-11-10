@@ -24,7 +24,7 @@
 - `scripts/eval/prepare.py spec enc|dec words|sents OUT.md --lang <id>` — спецификация для слепого теста;
 - `spec.load(version=<id>)` в своих скриптах.
 
-Только v1 (пока версия не принята): `scripts/mincode/gen.py` (`docs/tables.md`, `docs/lexicon.md`), сборка сайта и воркера
+Только v1 (пока версия не принята): правила `CLAUSE_RULE` и `BRACE_RULE` в `scripts/eval/prepare.py` (перечисляют частицы v1 и попадают в спецификацию любой версии — перед прогоном на изменённой версии вынести в её `templates/`), `scripts/mincode/gen.py` (`docs/tables.md`, `docs/lexicon.md`), сборка сайта и воркера
 (`scripts/site/`), `worker/check.js`, ранние скрипты `scripts/01_…`–`23_…`. Если новая версия меняет синтаксис кода
 (не только корни), ей понадобится свой валидатор — заводится тогда же.
 
