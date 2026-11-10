@@ -5,7 +5,8 @@
 //   OPENROUTER_KEY_FILE=... node run.mjs sent     → sent_codes.json (M0, MG, ML: предложение одним проходом, без словаря / со словарём G1 / с выбранным)
 import fs from "node:fs";
 import { ask, ENCODE_TASK_EN } from "./w/index.js";
-import { ENC_SPEC, DEC_SPEC, ENC_SENTS } from "./w/prompts.js";
+import { ENC_SPEC, DEC_SPEC } from "./w/prompts.js";
+import { ENC_SENTS } from "./w/prompts_sent.js";  // спецификация предложений из PR #19
 
 const D = new URL(".", import.meta.url).pathname;
 const keyFile = process.env.OPENROUTER_KEY_FILE;
