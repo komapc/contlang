@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  <url><loc>https://minco.lipu.dev/</loc><lastmod>2026-11-03</lastmod>
+  <url><loc>https://minco.lipu.dev/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/"/>
   </url>
-  <url><loc>https://minco.lipu.dev/ru/</loc><lastmod>2026-10-29</lastmod>
+  <url><loc>https://minco.lipu.dev/ru/</loc><lastmod>2026-11-10</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/"/>
@@ -19,6 +19,16 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/docs/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/docs/en/"/>
+  </url>
+  <url><loc>https://minco.lipu.dev/vs-toki-pona/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/vs-toki-pona/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/vs-toki-pona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/vs-toki-pona/"/>
+  </url>
+  <url><loc>https://minco.lipu.dev/ru/vs-toki-pona/</loc><lastmod>2026-11-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/vs-toki-pona/"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/vs-toki-pona/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/vs-toki-pona/"/>
   </url>
   <url><loc>https://minco.lipu.dev/docs/reading/</loc><lastmod>2026-11-03</lastmod>
     <xhtml:link rel="alternate" hreflang="en" href="https://minco.lipu.dev/docs/en/reading/"/>

@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>min-co vs Toki Pona: two minimal conlangs compared</title>
+<meta name="description" content="Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
+<link rel="canonical" href="https://minco.lipu.dev/vs-toki-pona/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/vs-toki-pona/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/vs-toki-pona/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/vs-toki-pona/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/vs-toki-pona/">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="min-co vs Toki Pona: two minimal conlangs compared">
+<meta property="og:description" content="Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"min-co vs Toki Pona: two minimal conlangs compared","description":"Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.","url":"https://minco.lipu.dev/vs-toki-pona/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/">min-co</a><a href="/docs/en/">Documentation</a><a href="/ru/vs-toki-pona/" hreflang="ru" lang="ru">Русский</a></header>
+<main>
+<h1 id="min-co-vs-toki-pona-two-minimal-conlangs-compared">min-co vs Toki Pona: two minimal conlangs compared</h1>
+<p>Toki Pona and min-co are both minimal constructed languages: a small set of words, no inflection, and longer meanings built by putting words together, head first. min-co borrowed much of that from Toki Pona. They differ in what they are for. Toki Pona is a language people speak, built around simplicity, where context fills in the details. min-co is an experiment: can a few dozen roots, each with a numeric scale, pin a meaning down more precisely, and can a computer encode and decode it?</p>
+<h2 id="toki-pona-in-brief">Toki Pona in brief</h2>
+<p>Toki Pona was created by the linguist Sonja Lang and first published online in 2001. It has about 120–140 words, depending on how the rarer ones are counted, and 14 sounds. A word covers a broad area of meaning (<code>pona</code> is good, simple, to fix), and phrases are built head first: <code>jan pona</code> is “person + good”, a friend. A handful of particles (<code>li</code>, <code>e</code>, <code>la</code>, <code>pi</code>, <code>o</code>) mark the parts of the sentence. The vagueness is deliberate: the language invites you to say what matters and leave the rest to context. Toki Pona has an active community of speakers, books, music and its own writing systems, such as sitelen pona.</p>
+<h2 id="min-co-in-brief">min-co in brief</h2>
+<p>min-co (a working name, from <em>minimal + continuous</em>) has 45 meaning roots, mostly general concepts such as GOOD, BIG, PLACE, KNOW, SAY. 39 of them have a value axis from −5 to +5, so a number says where on the scale you mean: <code>SAY(=-4) | i</code> is to whisper, <code>SAY(=+5) | i</code> to scream. A word is up to three roots, the main one first: <code>PLACE LIVE | o</code> is a house. After the bar come the part of speech (<code>o i a e</code>, as in Esperanto's <em>-o -i -a -e</em>) and optional labels for tense, number or negation. See <a href="/docs/en/reading/">how to read min-co</a>.</p>
+<p>A min-co code can be written by a person or a language model, or computed: a word's meaning vector (ConceptNet Numberbatch) is approximated by a sum of at most three roots with integer axis values. Decoding works the same way in reverse, so codes can be tested blind: one reader gets only the code and names the word. The goal is the right semantic field (<em>house, dwelling, hut</em> all count), not the exact word. The details are in <a href="/docs/en/math/">the math</a>.</p>
+<h2 id="side-by-side">Side by side</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Toki Pona</th>
+<th>min-co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Status</td>
+<td>Published in 2001, with a community of speakers</td>
+<td>An experiment in progress, with no speakers</td>
+</tr>
+<tr>
+<td>Vocabulary</td>
+<td>About 120–140 words</td>
+<td>45 meaning roots, 39 with an axis from −5 to +5</td>
+</tr>
+<tr>
+<td>A word</td>
+<td>One word, or a head-first phrase: <code>jan pona</code></td>
+<td>Up to three roots, head first, and a form after the bar: <code>SOMEONE FRIEND(=+5) | o</code></td>
+</tr>
+<tr>
+<td>Shades of meaning</td>
+<td>Context and more words</td>
+<td>A number on the root's axis</td>
+</tr>
+<tr>
+<td>Parts of speech</td>
+<td>Set by position in the sentence</td>
+<td>Written after the bar: <code>o</code> noun, <code>i</code> verb, <code>a</code> attribute, <code>e</code> adverb</td>
+</tr>
+<tr>
+<td>Tense, number</td>
+<td>Usually left to context</td>
+<td>Optional labels: <code>T-2</code> past, <code>N+3</code> plural</td>
+</tr>
+<tr>
+<td>Particles</td>
+<td><code>li</code>, <code>e</code>, <code>la</code>, <code>pi</code>, <code>o</code></td>
+<td><code>E</code>, <code>PI</code>, <code>LA</code>, link words <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>; no <code>LI</code></td>
+</tr>
+<tr>
+<td>Sounds and writing</td>
+<td>14 sounds, Latin letters, sitelen pona</td>
+<td>Not settled; the draft uses Toki Pona words for roots</td>
+</tr>
+<tr>
+<td>Who encodes</td>
+<td>People</td>
+<td>People, language models, or vector math</td>
+</tr>
+</tbody>
+</table>
+<h2 id="different-goals">Different goals</h2>
+<p>Toki Pona simplifies on purpose. Its small vocabulary is meant to make you think about what you really want to say, and a listener is expected to fill in the rest from the situation. That is a strength in conversation, and it is why the language has a culture of its own.</p>
+<p>min-co asks a narrower, measurable question: how much meaning a very small vocabulary can carry when each root is a scale rather than a single point. It is tested the way a code is tested, with blind readers and numbers, and its notation is still changing with the results.</p>
+<h2 id="what-the-tests-showed">What the tests showed</h2>
+<p>min-co uses Toki Pona as its benchmark. In a blind test on 100 single words, with a language model writing the codes and two blind readers, also models, decoding them, min-co codes led readers closer to the target word than Toki Pona phrases, by a factor of about 2 to 2.4 depending on the version of the notation. In whole sentences the difference disappeared: context helps Toki Pona readers, and min-co is not ahead there. One caveat favours min-co: the models know Toki Pona from training and min-co only from a short specification. The data and method are in <a href="/docs/en/rethink/">rethinking the language</a>.</p>
+<h2 id="which-one-to-learn">Which one to learn</h2>
+<p>To speak a minimal language with other people, learn Toki Pona: it has the community, the courses and the literature. min-co is for those curious about how meaning can be encoded with a handful of scales, and how far a computer can follow. You can try encoding and decoding words on the <a href="/">min-co home page</a>.</p>
+</main>
+
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">code</a></footer>
+</div>
+</body>
+</html>

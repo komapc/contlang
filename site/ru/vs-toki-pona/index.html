@@ -1,0 +1,126 @@
+<!doctype html>
+<!-- сгенерировано scripts/site/pages.py, руками не править -->
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>min-co и Toki Pona: сравнение двух минималистичных искусственных языков</title>
+<meta name="description" content="В Toki Pona около 120–140 слов, в min-co — 45 смысловых корней с осями значений, которые кодирует и раскодирует векторная математика. Чем различаются два минималистичных искусственных языка.">
+<link rel="canonical" href="https://minco.lipu.dev/ru/vs-toki-pona/">
+<link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/vs-toki-pona/">
+<link rel="alternate" hreflang="en" href="https://minco.lipu.dev/vs-toki-pona/">
+<link rel="alternate" hreflang="x-default" href="https://minco.lipu.dev/vs-toki-pona/">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://minco.lipu.dev/ru/vs-toki-pona/">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:title" content="min-co и Toki Pona: сравнение двух минималистичных искусственных языков">
+<meta property="og:description" content="В Toki Pona около 120–140 слов, в min-co — 45 смысловых корней с осями значений, которые кодирует и раскодирует векторная математика. Чем различаются два минималистичных искусственных языка.">
+<meta property="og:image" content="https://minco.lipu.dev/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"min-co и Toki Pona: сравнение двух минималистичных искусственных языков","description":"В Toki Pona около 120–140 слов, в min-co — 45 смысловых корней с осями значений, которые кодирует и раскодирует векторная математика. Чем различаются два минималистичных искусственных языка.","url":"https://minco.lipu.dev/ru/vs-toki-pona/","inLanguage":"ru","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<style>
+:root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
+:root[data-theme=dark]{--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 16px 64px}
+header{padding:24px 0 8px;display:flex;gap:6px 16px;flex-wrap:wrap;align-items:baseline;border-bottom:1px solid var(--line)}
+header .home{font-size:22px;font-weight:700;color:var(--fg);text-decoration:none}
+header a{color:var(--acc)}
+h1{font-size:28px;line-height:1.25;margin:24px 0 10px;letter-spacing:-.01em}h2{font-size:21px;margin:30px 0 8px}h3{font-size:17px;margin:22px 0 6px}
+a{color:var(--acc)}
+code{font-family:var(--mono);font-size:14px;background:var(--acc2);border-radius:4px;padding:0 3px;overflow-wrap:anywhere}
+pre{background:var(--acc2);border-radius:8px;padding:10px 12px;overflow-x:auto}pre code{background:none;padding:0;overflow-wrap:normal}
+table{border-collapse:collapse;font-size:14px;display:block;overflow-x:auto;max-width:100%}
+th,td{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}th{color:var(--mut);font-weight:600}
+blockquote{margin:12px 0;padding:2px 14px;border-left:3px solid var(--line);color:var(--mut)}
+.mut{color:var(--mut);font-size:14px}
+nav.docs{margin:36px 0 0;padding-top:12px;border-top:1px solid var(--line)}nav.docs ul{padding-left:20px}
+footer{margin-top:28px;color:var(--mut);font-size:14px}
+</style>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "df534d82af8c40d9871e1fb408a5a378"}'></script>
+<script defer src="/consent.js" data-ga="G-X6LW4MV1F6"></script>
+</head>
+<body>
+<div class="wrap">
+<header><a class="home" href="/ru/">min-co</a><a href="/docs/">Документация</a><a href="/vs-toki-pona/" hreflang="en" lang="en">English</a></header>
+<main>
+<h1 id="min-co-и-toki-pona-сравнение-двух-минималистичных-искусственных-языков">min-co и Toki Pona: сравнение двух минималистичных искусственных языков</h1>
+<p>Toki Pona и min-co — минималистичные искусственные языки: мало слов, нет словоизменения, сложные значения складываются из нескольких слов, главное первым. Многое из этого min-co взял у Toki Pona. Различаются они целью. Toki Pona — язык, на котором говорят люди; он построен вокруг простоты, а подробности дополняет контекст. min-co — эксперимент: может ли несколько десятков корней, у каждого из которых есть числовая шкала, передать значение точнее и может ли компьютер такое слово закодировать и раскодировать.</p>
+<h2 id="коротко-о-toki-pona">Коротко о Toki Pona</h2>
+<p>Toki Pona создала лингвист Соня Ланг; впервые язык был опубликован в интернете в 2001 году. В нём около 120–140 слов (в зависимости от того, как считать редкие) и 14 звуков. Слово покрывает широкую область значений (<code>pona</code> — хороший, простой, чинить), а словосочетания строятся с главного слова: <code>jan pona</code> — «человек + хороший», друг. Части предложения отмечают несколько частиц (<code>li</code>, <code>e</code>, <code>la</code>, <code>pi</code>, <code>o</code>). Неточность здесь намеренная: язык предлагает сказать главное, а остальное оставить контексту. У Toki Pona есть живое сообщество, книги, музыка и собственные системы письма, например sitelen pona.</p>
+<h2 id="коротко-о-min-co">Коротко о min-co</h2>
+<p>В min-co (рабочее название, от <em>minimal + continuous</em>) 45 смысловых корней, в основном общие понятия: GOOD, BIG, PLACE, KNOW, SAY. У 39 из них есть ось значений от −5 до +5, и число показывает, какая точка шкалы имеется в виду: <code>SAY(=-4) | i</code> — шептать, <code>SAY(=+5) | i</code> — кричать. Слово — это до трёх корней, главный первым: <code>PLACE LIVE | o</code> — дом. После черты стоят часть речи (<code>o i a e</code>, как эсперантские <em>-o -i -a -e</em>) и необязательные метки времени, числа или отрицания. Подробнее — <a href="/docs/reading/">как читать min-co</a>.</p>
+<p>Код min-co может написать человек или языковая модель, а может вычислить математика: смысловой вектор слова (ConceptNet Numberbatch) приближается суммой не более чем трёх корней с целыми значениями осей. Раскодирование устроено так же в обратную сторону, поэтому коды можно проверять вслепую: читатель видит только код и называет слово. Цель — верное смысловое поле (<em>дом, жилище, хижина</em> — всё засчитывается), а не точное слово. Подробности — в разделе <a href="/docs/math/">о математике</a>.</p>
+<h2 id="рядом">Рядом</h2>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Toki Pona</th>
+<th>min-co</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Статус</td>
+<td>Опубликован в 2001 году, есть сообщество говорящих</td>
+<td>Идущий эксперимент, говорящих нет</td>
+</tr>
+<tr>
+<td>Словарь</td>
+<td>Около 120–140 слов</td>
+<td>45 смысловых корней, у 39 ось от −5 до +5</td>
+</tr>
+<tr>
+<td>Слово</td>
+<td>Одно слово или сочетание с главного: <code>jan pona</code></td>
+<td>До трёх корней, главный первым, и форма после черты: <code>SOMEONE FRIEND(=+5) | o</code></td>
+</tr>
+<tr>
+<td>Оттенки значения</td>
+<td>Контекст и дополнительные слова</td>
+<td>Число на оси корня</td>
+</tr>
+<tr>
+<td>Части речи</td>
+<td>Определяются местом в предложении</td>
+<td>Пишутся после черты: <code>o</code> имя, <code>i</code> глагол, <code>a</code> признак, <code>e</code> обстоятельство</td>
+</tr>
+<tr>
+<td>Время, число</td>
+<td>Обычно из контекста</td>
+<td>Необязательные метки: <code>T-2</code> прошедшее, <code>N+3</code> множественное</td>
+</tr>
+<tr>
+<td>Частицы</td>
+<td><code>li</code>, <code>e</code>, <code>la</code>, <code>pi</code>, <code>o</code></td>
+<td><code>E</code>, <code>PI</code>, <code>LA</code>, связки <code>FROM</code>, <code>FOR</code>, <code>LIKE</code>; без <code>LI</code></td>
+</tr>
+<tr>
+<td>Звуки и письмо</td>
+<td>14 звуков, латиница, sitelen pona</td>
+<td>Не решено; в черновике корни — слова Toki Pona</td>
+</tr>
+<tr>
+<td>Кто кодирует</td>
+<td>Люди</td>
+<td>Люди, языковые модели или векторная математика</td>
+</tr>
+</tbody>
+</table>
+<h2 id="разные-цели">Разные цели</h2>
+<p>Toki Pona упрощает намеренно. Маленький словарь заставляет подумать, что на самом деле хочешь сказать, а слушатель дополняет остальное по ситуации. В разговоре это сила, и поэтому у языка сложилась своя культура.</p>
+<p>min-co задаёт более узкий и измеримый вопрос: сколько смысла может нести совсем маленький словарь, если каждый корень — шкала, а не одна точка. Его проверяют так, как проверяют код: слепыми читателями и числами, и запись языка всё ещё меняется по результатам.</p>
+<h2 id="что-показали-тесты">Что показали тесты</h2>
+<p>Toki Pona служит для min-co эталоном. В слепом тесте на 100 отдельных словах, где коды писала языковая модель, а раскодировали два слепых читателя (тоже модели), коды min-co приводили читателей к загаданному слову в 2–2,4 раза ближе, чем сочетания Toki Pona (в зависимости от версии записи). В целых предложениях разница пропала: контекст помогает читателям Toki Pona, и min-co там не впереди. Одна оговорка в пользу min-co: модели знают Toki Pona по обучению, а min-co — только по короткой спецификации. Данные и метод — в документе <a href="/docs/rethink/">«Пересмотр языка»</a>.</p>
+<h2 id="что-выбрать">Что выбрать</h2>
+<p>Чтобы говорить на минималистичном языке с другими людьми, учите Toki Pona: у него есть сообщество, курсы и литература. min-co — для тех, кому интересно, как можно закодировать смысл несколькими шкалами и насколько за этим успевает компьютер. Закодировать и раскодировать слова можно на <a href="/ru/">главной странице min-co</a>.</p>
+</main>
+
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="https://github.com/komapc/contlang">код</a></footer>
+</div>
+</body>
+</html>
