@@ -1,0 +1,126 @@
+пар 639, без оценки 0
+
+согласие читателей (доля пар «близко»), среднее по корням:
+  степень    n 18  91%
+  смешанная  n  5  96%
+  лестница   n 15  84%
+степень − лестница: +7.0 п. п. [-0.5 … +14.5]
+критерий (≥ +15 п. п., нижняя граница > 0): не выполнен
+
+по значению (все корни):
+   -4  95%
+   -2  84%
+    0  82%
+   +2  86%
+   +4  99%
+
+опоры roots.yaml, угаданные по полюсам (доля «близко»): 52% из 69 прочтений
+  BEGIN(=0)      опора «ongoing» — begin, start: 1
+  BEGIN(=0)      опора «ongoing» — middle, continue: 2
+  BEGIN(=0)      опора «ongoing» — middle: 1
+  CHANGE(=0)     опора «change» — change, shift: 2
+  CHANGE(=0)     опора «change» — vary, differ: 2
+  CHANGE(=0)     опора «change» — alter: 2
+  FIGHT(=0)      опора «quarrel» — contest, struggle: 1
+  FIGHT(=0)      опора «quarrel» — contest, struggle: 1
+  FIGHT(=0)      опора «quarrel» — conflict: 2
+  GIVE(=0)       опора «exchange, get» — give, offer: 1
+  GIVE(=0)       опора «exchange, get» — offer, provide: 1
+  GIVE(=0)       опора «exchange, get» — share: 1
+  GRAIN(=0)      опора «powder, grain» — particle, grain: 2
+  GRAIN(=0)      опора «powder, grain» — powder, grains: 2
+  GRAIN(=0)      опора «powder, grain» — powder: 2
+  INSIDE(=0)     опора «on the border, at the edge, the surface» — inside, interior: 0
+  INSIDE(=0)     опора «on the border, at the edge, the surface» — between, inner: 1
+  INSIDE(=0)     опора «on the border, at the edge, the surface» — inside: 1
+  KNOW(=0)       опора «aware» — know, understand: 2
+  KNOW(=0)       опора «aware» — understand, aware: 2
+  KNOW(=0)       опора «aware» — understanding: 2
+  LAND(=0)       опора «shore, coast» — land, earth: 1
+  LAND(=0)       опора «shore, coast» — coast, shore: 2
+  LAND(=0)       опора «shore, coast» — coast: 2
+  LIVE(=-2)      опора «asleep» — dying, weak: 1
+  LIVE(=-2)      опора «asleep» — dying, fading: 1
+  LIVE(=-2)      опора «asleep» — deathly: 1
+  LONG(=0)       опора «wire, rod, fastening» — rod, pole: 2
+  LONG(=0)       опора «wire, rod, fastening» — stick, rod: 2
+  LONG(=0)       опора «wire, rod, fastening» — stick: 2
+  MANY(=0)       опора «some» — several, some: 2
+  MANY(=0)       опора «some» — several, some: 2
+  MANY(=0)       опора «some» — some: 2
+  MEASURE(=0)    опора «a level, degree» — measure, gauge: 2
+  MEASURE(=0)    опора «a level, degree» — measure, scale: 2
+  MEASURE(=0)    опора «a level, degree» — measure: 2
+  MOOD(=0)       опора «serious» — mood, atmosphere: 1
+  MOOD(=0)       опора «serious» — mood, atmosphere: 1
+  MOOD(=0)       опора «serious» — mood: 1
+  MOVE(=0)       опора «walk» — go, travel: 2
+  MOVE(=0)       опора «walk» — walk, travel: 2
+  MOVE(=0)       опора «walk» — walk: 2
+  PART(=+2)      опора «the whole» — many parts, group: 1
+  PART(=+2)      опора «the whole» — group, set: 1
+  PART(=+2)      опора «the whole» — group: 1
+  PART(=-2)      опора «a part, member» — small part, piece: 2
+  PART(=-2)      опора «a part, member» — piece, fragment: 2
+  PART(=-2)      опора «a part, member» — piece: 2
+  RULE(=+4)      опора «authority, institution» — law, rule: 1
+  RULE(=+4)      опора «authority, institution» — law, rule: 1
+  RULE(=+4)      опора «authority, institution» — law: 1
+  SAME(=-4)      опора «special» — opposite, reversed: 0
+  SAME(=-4)      опора «special» — opposite, contrary: 0
+  SAME(=-4)      опора «special» — opposite: 0
+  SAY(=0)        опора «speak» — say, speak: 2
+  SAY(=0)        опора «speak» — speak, say: 2
+  SAY(=0)        опора «speak» — speak: 2
+  SOMEONE(=0)    опора «someone» — someone, person: 2
+  SOMEONE(=0)    опора «someone» — someone, anyone: 2
+  SOMEONE(=0)    опора «someone» — we: 1
+  THING(=0)      опора «plant» — object, thing: 0
+  THING(=0)      опора «plant» — object, thing: 1
+  THING(=0)      опора «plant» — thing: 0
+  THINK(=0)      опора «think» — think, consider: 2
+  THINK(=0)      опора «think» — consider, judge: 2
+  THINK(=0)      опора «think» — consider: 2
+  TIME(=0)       опора «now» — time, period: 1
+  TIME(=0)       опора «now» — period, era: 1
+  TIME(=0)       опора «now» — time: 1
+
+корни по согласию (тип; прочтения −4 / −2 / 0 / +2 / +4 у читателя 1):
+  CHANGE    60%  степень    keep, preserve / slight change, vary / change, shift / alter, modify / transform, change completely
+  RULE      60%  лестница   private, personal / personal, informal / rule, regulation / official, formal / law, rule
+  SOMEONE   73%  лестница   they, them / they, them / someone, person / we, us / I, me
+  GRAIN     73%  лестница   vapor, gas / particles, loose grains / particle, grain / chunk, piece / solid, block
+  LONG      73%  лестница   cloth, fabric / fabric, cloth / rod, pole / wood, board / beam, plank
+  CONSUME   73%  лестница   give out, distribute / give, spend / use, consume / take in, absorb / absorb, consume
+  LAND      73%  лестница   sea, ocean / water, sea / land, earth / ground, field / ground, soil
+  ART       80%  лестница   technology, machine / technology, technical / arts and sciences, culture / culture, humanities / art, creative
+  HEAT      80%  степень    freeze, icy / cool, chilly / warmth, heat / warm, heated / burn, very hot
+  NEAR      87%  степень    far, distant / distant, away / near, nearby / nearby, close / here, nearby
+  VALUE     87%  смешанная  cheap, bargain / cheap, affordable / price, worth / important, valuable / precious, valuable
+  WANT      87%  степень    hate, detest / dislike, refuse / wish, desire / like, enjoy / love, adore
+  FRIEND    87%  степень    enemy, hostile / unfriendly, hostile / neutral, acquaintance / kind, friendly / friend, ally
+  MOVE      87%  степень    stop, freeze / pause, stop / go, travel / hurry, quickly move / rush, hurry
+  BEGIN     87%  лестница   start, begin / start, begin / begin, start / conclude, finish / finish, conclude
+  ABOVE     87%  степень    below, under / lower, under / over, above / upward, higher / above, overhead
+  KNOW      87%  лестница   foolish, absurd / ignorant, foolish / know, understand / know, learn / teach, inform
+  FEEL      87%  степень    calm, peaceful / calm, quiet / sense, feel / excite, stir / excited, intense
+  INSIDE    93%  степень    outside, outdoors / outside, external / inside, interior / inner, within / inside, within
+  GOOD      93%  степень    terrible, awful / poor, bad / fine, okay / good, pleasant / excellent, great
+  THINK     93%  лестница   doubt, suspect / doubt, question / think, consider / consider, judge / decide, resolve
+  LIVE      93%  смешанная  dead, lifeless / dying, weak / live, survive / live, living / alive, living
+  GIVE      93%  лестница   steal, seize / take, grab / give, offer / offer, provide / give, donate
+  MANY     100%  смешанная  never, none / few, rarely / several, some / most, many / every, all
+  MOOD     100%  степень    tragic, grim / sad, sorrowful / mood, atmosphere / playful, light / funny, humorous
+  THING    100%  лестница   stone, rock / object, item / object, thing / living thing, creature / animal, beast
+  TIME     100%  степень    past, long ago / earlier, previously / time, period / future, later / future, someday
+  SAY      100%  степень    whisper, murmur / murmur, mumble / say, speak / call, shout / shout, yell
+  CAN      100%  степень    impossible, unable / hard, difficult / can, able / possible, manageable / easy, simple
+  JOIN     100%  степень    separate, split / separate, divide / connect, link / attach, add / join, merge
+  SIDE     100%  смешанная  behind, back / back, rear / side, direction / forward, ahead / front, forward
+  SAME     100%  смешанная  opposite, reversed / different, unlike / similar, equal / similar, alike / identical, same
+  MEASURE  100%  лестница   amount, quantity / count, quantity / measure, gauge / rate, ratio / percentage, ratio
+  TOUCH    100%  степень    soft, smooth / gentle, smooth / touch, feel / firm, stiff / hard, stiff
+  FIGHT    100%  лестница   game, match / play, contest / contest, struggle / battle, conflict / war, battle
+  CARE     100%  степень    careless, mistake / careless, sloppy / care, attention / attentive, careful / careful, diligent
+  BIG      100%  степень    tiny, small / small, little / medium, average size / large, big / huge, enormous
+  PART     100%  лестница   crumb, particle / small part, piece / portion, section / many parts, group / group, many parts

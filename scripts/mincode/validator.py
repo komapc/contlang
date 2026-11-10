@@ -1,6 +1,7 @@
 """Проверка кода min-co по roots.yaml.
 
     python3 scripts/mincode/validator.py FILE...   # строки вида "12. КОД" или просто код
+    python3 scripts/mincode/validator.py --lang v2 FILE...   # по правилам другой версии языка (lang/README.md)
 
 Уровни: error (неправильный код), warning (старая запись или спорное место).
 Проверяется: корни из roots.yaml, не больше лимита (3, без исключений); у имени `o` может быть одна роль (agent, tool, result, quality);
@@ -308,9 +309,15 @@ def iter_codes(path):
 
 
 def main():
-    v = Validator()
-    braces = "--braces" in sys.argv  # принудительно; без флага `{` в коде включает режим сам
-    files = [a for a in sys.argv[1:] if a != "--braces"]
+    args = sys.argv[1:]
+    version = spec.DEFAULT
+    if "--lang" in args:
+        k = args.index("--lang")
+        version = args[k + 1]
+        del args[k:k + 2]
+    v = Validator(spec.load(version=version))
+    braces = "--braces" in args  # принудительно; без флага `{` в коде включает режим сам
+    files = [a for a in args if a != "--braces"]
     for f in files:
         n = bad = 0
         kinds = Counter()

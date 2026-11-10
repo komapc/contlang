@@ -1,0 +1,1332 @@
+[
+ {
+  "root": "ABOVE",
+  "v": -4,
+  "code": "ABOVE(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "ABOVE",
+  "v": -2,
+  "code": "ABOVE(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "ABOVE",
+  "v": 0,
+  "code": "ABOVE(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "ABOVE",
+  "v": 2,
+  "code": "ABOVE(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "ABOVE",
+  "v": 4,
+  "code": "ABOVE(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "ART",
+  "v": -4,
+  "code": "ART(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "ART",
+  "v": -2,
+  "code": "ART(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "ART",
+  "v": 0,
+  "code": "ART(=0)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "ART",
+  "v": 2,
+  "code": "ART(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "ART",
+  "v": 4,
+  "code": "ART(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "BEGIN",
+  "v": -4,
+  "code": "BEGIN(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "BEGIN",
+  "v": -2,
+  "code": "BEGIN(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "BEGIN",
+  "v": 0,
+  "code": "BEGIN(=0)",
+  "type": "лестница",
+  "anchor": "ongoing"
+ },
+ {
+  "root": "BEGIN",
+  "v": 2,
+  "code": "BEGIN(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "BEGIN",
+  "v": 4,
+  "code": "BEGIN(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "BIG",
+  "v": -4,
+  "code": "BIG(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "BIG",
+  "v": -2,
+  "code": "BIG(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "BIG",
+  "v": 0,
+  "code": "BIG(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "BIG",
+  "v": 2,
+  "code": "BIG(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "BIG",
+  "v": 4,
+  "code": "BIG(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CAN",
+  "v": -4,
+  "code": "CAN(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CAN",
+  "v": -2,
+  "code": "CAN(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CAN",
+  "v": 0,
+  "code": "CAN(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CAN",
+  "v": 2,
+  "code": "CAN(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CAN",
+  "v": 4,
+  "code": "CAN(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CARE",
+  "v": -4,
+  "code": "CARE(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CARE",
+  "v": -2,
+  "code": "CARE(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CARE",
+  "v": 0,
+  "code": "CARE(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CARE",
+  "v": 2,
+  "code": "CARE(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CARE",
+  "v": 4,
+  "code": "CARE(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CHANGE",
+  "v": -4,
+  "code": "CHANGE(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CHANGE",
+  "v": -2,
+  "code": "CHANGE(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CHANGE",
+  "v": 0,
+  "code": "CHANGE(=0)",
+  "type": "степень",
+  "anchor": "change"
+ },
+ {
+  "root": "CHANGE",
+  "v": 2,
+  "code": "CHANGE(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CHANGE",
+  "v": 4,
+  "code": "CHANGE(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "CONSUME",
+  "v": -4,
+  "code": "CONSUME(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "CONSUME",
+  "v": -2,
+  "code": "CONSUME(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "CONSUME",
+  "v": 0,
+  "code": "CONSUME(=0)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "CONSUME",
+  "v": 2,
+  "code": "CONSUME(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "CONSUME",
+  "v": 4,
+  "code": "CONSUME(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "FEEL",
+  "v": -4,
+  "code": "FEEL(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FEEL",
+  "v": -2,
+  "code": "FEEL(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FEEL",
+  "v": 0,
+  "code": "FEEL(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FEEL",
+  "v": 2,
+  "code": "FEEL(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FEEL",
+  "v": 4,
+  "code": "FEEL(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FIGHT",
+  "v": -4,
+  "code": "FIGHT(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "FIGHT",
+  "v": -2,
+  "code": "FIGHT(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "FIGHT",
+  "v": 0,
+  "code": "FIGHT(=0)",
+  "type": "лестница",
+  "anchor": "quarrel"
+ },
+ {
+  "root": "FIGHT",
+  "v": 2,
+  "code": "FIGHT(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "FIGHT",
+  "v": 4,
+  "code": "FIGHT(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "FRIEND",
+  "v": -4,
+  "code": "FRIEND(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FRIEND",
+  "v": -2,
+  "code": "FRIEND(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FRIEND",
+  "v": 0,
+  "code": "FRIEND(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FRIEND",
+  "v": 2,
+  "code": "FRIEND(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "FRIEND",
+  "v": 4,
+  "code": "FRIEND(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GIVE",
+  "v": -4,
+  "code": "GIVE(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GIVE",
+  "v": -2,
+  "code": "GIVE(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GIVE",
+  "v": 0,
+  "code": "GIVE(=0)",
+  "type": "лестница",
+  "anchor": "exchange, get"
+ },
+ {
+  "root": "GIVE",
+  "v": 2,
+  "code": "GIVE(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GIVE",
+  "v": 4,
+  "code": "GIVE(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GOOD",
+  "v": -4,
+  "code": "GOOD(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GOOD",
+  "v": -2,
+  "code": "GOOD(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GOOD",
+  "v": 0,
+  "code": "GOOD(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GOOD",
+  "v": 2,
+  "code": "GOOD(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GOOD",
+  "v": 4,
+  "code": "GOOD(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "GRAIN",
+  "v": -4,
+  "code": "GRAIN(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GRAIN",
+  "v": -2,
+  "code": "GRAIN(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GRAIN",
+  "v": 0,
+  "code": "GRAIN(=0)",
+  "type": "лестница",
+  "anchor": "powder, grain"
+ },
+ {
+  "root": "GRAIN",
+  "v": 2,
+  "code": "GRAIN(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "GRAIN",
+  "v": 4,
+  "code": "GRAIN(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "HEAT",
+  "v": -4,
+  "code": "HEAT(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "HEAT",
+  "v": -2,
+  "code": "HEAT(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "HEAT",
+  "v": 0,
+  "code": "HEAT(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "HEAT",
+  "v": 2,
+  "code": "HEAT(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "HEAT",
+  "v": 4,
+  "code": "HEAT(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "INSIDE",
+  "v": -4,
+  "code": "INSIDE(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "INSIDE",
+  "v": -2,
+  "code": "INSIDE(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "INSIDE",
+  "v": 0,
+  "code": "INSIDE(=0)",
+  "type": "степень",
+  "anchor": "on the border, at the edge, the surface"
+ },
+ {
+  "root": "INSIDE",
+  "v": 2,
+  "code": "INSIDE(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "INSIDE",
+  "v": 4,
+  "code": "INSIDE(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "JOIN",
+  "v": -4,
+  "code": "JOIN(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "JOIN",
+  "v": -2,
+  "code": "JOIN(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "JOIN",
+  "v": 0,
+  "code": "JOIN(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "JOIN",
+  "v": 2,
+  "code": "JOIN(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "JOIN",
+  "v": 4,
+  "code": "JOIN(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "KNOW",
+  "v": -4,
+  "code": "KNOW(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "KNOW",
+  "v": -2,
+  "code": "KNOW(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "KNOW",
+  "v": 0,
+  "code": "KNOW(=0)",
+  "type": "лестница",
+  "anchor": "aware"
+ },
+ {
+  "root": "KNOW",
+  "v": 2,
+  "code": "KNOW(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "KNOW",
+  "v": 4,
+  "code": "KNOW(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LAND",
+  "v": -4,
+  "code": "LAND(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LAND",
+  "v": -2,
+  "code": "LAND(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LAND",
+  "v": 0,
+  "code": "LAND(=0)",
+  "type": "лестница",
+  "anchor": "shore, coast"
+ },
+ {
+  "root": "LAND",
+  "v": 2,
+  "code": "LAND(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LAND",
+  "v": 4,
+  "code": "LAND(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LIVE",
+  "v": -4,
+  "code": "LIVE(=-4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "LIVE",
+  "v": -2,
+  "code": "LIVE(=-2)",
+  "type": "смешанная",
+  "anchor": "asleep"
+ },
+ {
+  "root": "LIVE",
+  "v": 0,
+  "code": "LIVE(=0)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "LIVE",
+  "v": 2,
+  "code": "LIVE(=+2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "LIVE",
+  "v": 4,
+  "code": "LIVE(=+4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "LONG",
+  "v": -4,
+  "code": "LONG(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LONG",
+  "v": -2,
+  "code": "LONG(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LONG",
+  "v": 0,
+  "code": "LONG(=0)",
+  "type": "лестница",
+  "anchor": "wire, rod, fastening"
+ },
+ {
+  "root": "LONG",
+  "v": 2,
+  "code": "LONG(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "LONG",
+  "v": 4,
+  "code": "LONG(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "MANY",
+  "v": -4,
+  "code": "MANY(=-4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "MANY",
+  "v": -2,
+  "code": "MANY(=-2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "MANY",
+  "v": 0,
+  "code": "MANY(=0)",
+  "type": "смешанная",
+  "anchor": "some"
+ },
+ {
+  "root": "MANY",
+  "v": 2,
+  "code": "MANY(=+2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "MANY",
+  "v": 4,
+  "code": "MANY(=+4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "MEASURE",
+  "v": -4,
+  "code": "MEASURE(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "MEASURE",
+  "v": -2,
+  "code": "MEASURE(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "MEASURE",
+  "v": 0,
+  "code": "MEASURE(=0)",
+  "type": "лестница",
+  "anchor": "a level, degree"
+ },
+ {
+  "root": "MEASURE",
+  "v": 2,
+  "code": "MEASURE(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "MEASURE",
+  "v": 4,
+  "code": "MEASURE(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "MOOD",
+  "v": -4,
+  "code": "MOOD(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOOD",
+  "v": -2,
+  "code": "MOOD(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOOD",
+  "v": 0,
+  "code": "MOOD(=0)",
+  "type": "степень",
+  "anchor": "serious"
+ },
+ {
+  "root": "MOOD",
+  "v": 2,
+  "code": "MOOD(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOOD",
+  "v": 4,
+  "code": "MOOD(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOVE",
+  "v": -4,
+  "code": "MOVE(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOVE",
+  "v": -2,
+  "code": "MOVE(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOVE",
+  "v": 0,
+  "code": "MOVE(=0)",
+  "type": "степень",
+  "anchor": "walk"
+ },
+ {
+  "root": "MOVE",
+  "v": 2,
+  "code": "MOVE(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "MOVE",
+  "v": 4,
+  "code": "MOVE(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "NEAR",
+  "v": -4,
+  "code": "NEAR(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "NEAR",
+  "v": -2,
+  "code": "NEAR(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "NEAR",
+  "v": 0,
+  "code": "NEAR(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "NEAR",
+  "v": 2,
+  "code": "NEAR(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "NEAR",
+  "v": 4,
+  "code": "NEAR(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "PART",
+  "v": -4,
+  "code": "PART(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "PART",
+  "v": -2,
+  "code": "PART(=-2)",
+  "type": "лестница",
+  "anchor": "a part, member"
+ },
+ {
+  "root": "PART",
+  "v": 0,
+  "code": "PART(=0)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "PART",
+  "v": 2,
+  "code": "PART(=+2)",
+  "type": "лестница",
+  "anchor": "the whole"
+ },
+ {
+  "root": "PART",
+  "v": 4,
+  "code": "PART(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "RULE",
+  "v": -4,
+  "code": "RULE(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "RULE",
+  "v": -2,
+  "code": "RULE(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "RULE",
+  "v": 0,
+  "code": "RULE(=0)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "RULE",
+  "v": 2,
+  "code": "RULE(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "RULE",
+  "v": 4,
+  "code": "RULE(=+4)",
+  "type": "лестница",
+  "anchor": "authority, institution"
+ },
+ {
+  "root": "SAME",
+  "v": -4,
+  "code": "SAME(=-4)",
+  "type": "смешанная",
+  "anchor": "special"
+ },
+ {
+  "root": "SAME",
+  "v": -2,
+  "code": "SAME(=-2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SAME",
+  "v": 0,
+  "code": "SAME(=0)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SAME",
+  "v": 2,
+  "code": "SAME(=+2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SAME",
+  "v": 4,
+  "code": "SAME(=+4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SAY",
+  "v": -4,
+  "code": "SAY(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "SAY",
+  "v": -2,
+  "code": "SAY(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "SAY",
+  "v": 0,
+  "code": "SAY(=0)",
+  "type": "степень",
+  "anchor": "speak"
+ },
+ {
+  "root": "SAY",
+  "v": 2,
+  "code": "SAY(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "SAY",
+  "v": 4,
+  "code": "SAY(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "SIDE",
+  "v": -4,
+  "code": "SIDE(=-4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SIDE",
+  "v": -2,
+  "code": "SIDE(=-2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SIDE",
+  "v": 0,
+  "code": "SIDE(=0)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SIDE",
+  "v": 2,
+  "code": "SIDE(=+2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SIDE",
+  "v": 4,
+  "code": "SIDE(=+4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "SOMEONE",
+  "v": -4,
+  "code": "SOMEONE(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "SOMEONE",
+  "v": -2,
+  "code": "SOMEONE(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "SOMEONE",
+  "v": 0,
+  "code": "SOMEONE(=0)",
+  "type": "лестница",
+  "anchor": "someone"
+ },
+ {
+  "root": "SOMEONE",
+  "v": 2,
+  "code": "SOMEONE(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "SOMEONE",
+  "v": 4,
+  "code": "SOMEONE(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THING",
+  "v": -4,
+  "code": "THING(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THING",
+  "v": -2,
+  "code": "THING(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THING",
+  "v": 0,
+  "code": "THING(=0)",
+  "type": "лестница",
+  "anchor": "plant"
+ },
+ {
+  "root": "THING",
+  "v": 2,
+  "code": "THING(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THING",
+  "v": 4,
+  "code": "THING(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THINK",
+  "v": -4,
+  "code": "THINK(=-4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THINK",
+  "v": -2,
+  "code": "THINK(=-2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THINK",
+  "v": 0,
+  "code": "THINK(=0)",
+  "type": "лестница",
+  "anchor": "think"
+ },
+ {
+  "root": "THINK",
+  "v": 2,
+  "code": "THINK(=+2)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "THINK",
+  "v": 4,
+  "code": "THINK(=+4)",
+  "type": "лестница",
+  "anchor": null
+ },
+ {
+  "root": "TIME",
+  "v": -4,
+  "code": "TIME(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TIME",
+  "v": -2,
+  "code": "TIME(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TIME",
+  "v": 0,
+  "code": "TIME(=0)",
+  "type": "степень",
+  "anchor": "now"
+ },
+ {
+  "root": "TIME",
+  "v": 2,
+  "code": "TIME(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TIME",
+  "v": 4,
+  "code": "TIME(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TOUCH",
+  "v": -4,
+  "code": "TOUCH(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TOUCH",
+  "v": -2,
+  "code": "TOUCH(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TOUCH",
+  "v": 0,
+  "code": "TOUCH(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TOUCH",
+  "v": 2,
+  "code": "TOUCH(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "TOUCH",
+  "v": 4,
+  "code": "TOUCH(=+4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "VALUE",
+  "v": -4,
+  "code": "VALUE(=-4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "VALUE",
+  "v": -2,
+  "code": "VALUE(=-2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "VALUE",
+  "v": 0,
+  "code": "VALUE(=0)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "VALUE",
+  "v": 2,
+  "code": "VALUE(=+2)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "VALUE",
+  "v": 4,
+  "code": "VALUE(=+4)",
+  "type": "смешанная",
+  "anchor": null
+ },
+ {
+  "root": "WANT",
+  "v": -4,
+  "code": "WANT(=-4)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "WANT",
+  "v": -2,
+  "code": "WANT(=-2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "WANT",
+  "v": 0,
+  "code": "WANT(=0)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "WANT",
+  "v": 2,
+  "code": "WANT(=+2)",
+  "type": "степень",
+  "anchor": null
+ },
+ {
+  "root": "WANT",
+  "v": 4,
+  "code": "WANT(=+4)",
+  "type": "степень",
+  "anchor": null
+ }
+]
