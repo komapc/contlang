@@ -1,0 +1,20 @@
+1. { PLACE | o D+3 } FOR { VALUE | o } { JOIN(=+5) | i T-2 } E { ART(=-5) DO | o tool D-3 } ; { ART(=-5) DO | o tool } { DO | i } E { KNOW | o result N+3 } ; { KNOW | o result } { LONG(=-5) TEXT | o } FROM { THING(=-5) | o } { TOUCH(=+3) | a } ; { ART(=-5) DO | o tool } { HEAT | a } FOR { THING | o N+3 } { DO | i } E { DO | o }
+2. { KNOW | o result D+3 } { SAY | i T-2 } ; { HAPPEN | o T-2 D+3 } { PART(=+5) | i } E { HAPPEN | o N+3 } { MANY(=+3) | a } { SAME(=-5) | a }
+3. { LAND PART(=-2) PLACE | o agent D+3 } FOR { RULE(=+5) | o } { SAY | i T-2 } E [ { SOMEONE(=-5) SEX(=+5) | o N+3 D+3 } { SEE(=-5) BODY | a } { KNOW(=+5) | i T-2 } E { SOMEONE | o D+3 } ; { SOMEONE | o D+3 } { TOUCH(=-3) | i } ]
+4. { TIME(=+0) SIDE(=-5) | e } { SOMEONE SEX(=+5) | o D+3 } { FIGHT | i T-2 } E { RULE(=+4) DO | o agent N+3 } { SAME(=+5) | e } ; { SIDE(=-5) | e } { SOMEONE SEX(=+5) | o D+3 } { JOIN(=+5) | i T-2 V-4 } ; { SOMEONE | o D+3 } "Slate" { SAY | i T-2 }
+5. { SAY | i } E [ { THING(=-5) | o D+3 } { MOVE(=+5) | i T+0 } { LAND(=-5) INSIDE | e } { MOVE(=+5) C+3 | e } { THING(=-5) | o N+3 } FOR { FIGHT(=+5) | o } ; { THING(=-5) | o N+3 } { MOVE(=+5) | i C+5 } ]
+6. { TIME(=-1) | e } { RULE(=+4) | o D+3 } { HAPPEN | i T-2 } ; { DO | o M-5 } ; { SOMEONE | o N+5 } { JOIN(=+5) | i M-5 } { SIDE(=-5) | e } E { SOMEONE | o N+3 D+3 } ; { TIME | e } { MANY(=-5) | a } { DO(=+0) | o } FOR { JOIN(=+5) | i }
+7. { SOMEONE | o N+3 D+3 } FOR { PLACE | o D+3 } { THING | i } { LAND | o } { KNOW(=+5) | i } ; { SOMEONE SEX(=+5) | o N+3 } { SEE | i T-2 } E { SOMEONE(=+5) | o } ; { SOMEONE SEX(=+5) | o } { SAME(=+5) | a } { HAPPEN | o } { SEE | i } { KNOW(=+0) | i }
+8. { CAN(=-3) | a C+3 } { THINK(=+5) | o D+3 } ; { WANT(=+5) | a C+3 } { PART(=+5) FRIEND | o D+3 } { MOVE | i } E { THING | o } { INSIDE(=+5) | e }
+9. { ABOVE(=+5) SIDE | o D+3 } { PART | o } { THING(=-5) | o N+3 } { THING(=-5) | o } { PLACE | o } ; { LONG(=-5) | o } FROM { THING(=0) | o } FOR { BODY MOVE | o } N+3 ; { TOUCH(=-5) | a } AND { TOUCH(=+3) | a } ; { HEAT(=-3) | a }
+10. { THING(=+4) SEX(=+5) "Jesus" | o } { KNOW(=+5) | i T-2 } E { GIVE(=+5) WANT | o } ; { SOMEONE SEX(=+5) | o } { GIVE(=+5) | i T-2 } E { SOMEONE(=+3) | o N+3 } { SAME(=+3) | o } FOR { THING | o } ; { LONG(=+5) | o } { THING(=-5) | o } ABOVE
+11. { SOMEONE | o N+3 D+3 } { SEE | i } { FEEL(=-5) | e } ; { SAME(=-4) | a } { SOMEONE | o N+3 } { SAME(=-4) | a } { SOMEONE SEX(=+5) | o } { WANT(=+5) FEEL(=+5) | a } ; { SOMEONE | o } { LAND SEX(=+5) | o } { FEEL(=+5) | a }
+12. { SOMEONE SEX(=+5) | o D+3 } { WANT(=+5) THINK(=+5) | i T-2 V-4 } E { LIVE(=+0) GOOD(=-5) | o } AND { VALUE(=-5) | o } ; { MOOD(=-3) | o } FOR { LIVE(=+5) TIME(=-5) | o } ; { RULE(=+4) TOUCH(=+5) | o } FOR { WANT(=+5) BODY | o }
+13. { SOMEONE | o N+3 } FOR { DO | o } { CARE(=+5) | e } { SAME(=+5) | a } { WANT | i } ; { SOMEONE SEX(=+5) | o D+3 } { KNOW(=+5) | i T-2 } E { SOMEONE | o N+3 } { SAME(=+5) | a } C+3 { SEE | i }
+14. { SOMEONE SEX(=+5) | o D+3 } { BODY | i T-2 } E { LONG(=-5) | o FOR BODY } FOR { DO ART | o agent } ; { SOMEONE SEX(=-5) | o D+3 } { WANT(=+5) | a I+4 } E { SOMEONE | o } { LONG(=-5) | o FOR BODY } { HEAT(=+3) | a } AND { HEAT(=+2) | a }
+15. { THING(=+5) | o } { DO | i } E { KNOW(=+5) | o result } { SAME(=-5) | a } E { PART(=+5) | a } { ART(=+5) PLACE | o D+3 }
+16. { MANY(=+5) | a } { SAY(=-5) | o result N+3 } { SEE(=+0) | a } AND { WANT | a } ; { SAY | o result } ; { SOMEONE | o N+3 } { DO ART | o agent N+3 } { MANY(=+3) | a } { DO | i } E { SAME(=+3) | a }
+17. { TIME(=-2) | e } { SOMEONE(=+5) | o } { BEGIN(=-5) | i T-2 } E { DO | i } ; { SOMEONE(=+5) | o } { DO | i } E { SAY(=+0) | o N+1 } { MANY(=+0) | a }
+18. { PART(=-2) | o D+3 } { PART | o N+3 } { SOMEONE(=+5) | o } { MOOD(=-3) | a } { FRIEND(=-5) | a I+4 } { SOMEONE SEX(=+5) | o } "Barnaba" ; { SOMEONE SEX(=+5) | o } { SEE | i } E { SOMEONE | o N+3 } { MANY(=-5) | a }
+19. { SOMEONE | o D+3 } { HAPPEN | o result } { MANY(=+3) | a } AND { CAN(=-3) | o } ; { MOOD(=-3) | a } FOR { SOMEONE(=+3) | o } { VALUE(=-5) | a } { DO | o }
+20. { CHANGE GOOD(=+3) | i } E { BIG(=+5) | o } AND { DO | o } { THING(=+4) | o N+3 } FOR { CONSUME(=+5) | i } { BIG | a }
