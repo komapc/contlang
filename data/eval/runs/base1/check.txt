@@ -1,0 +1,5 @@
+min-co: строк 96, с ошибками правил 44, пустых 0
+  в кавычках: Af, Fortman, Greg, Jessica, Mike, Piazza Navona, Rome, Taiwan
+Toki Pona: строк 96, слов 1596, не из словаря 1: kin; пустых 0
+  имена: Af, Barnaba, Beverly, Falanse, Fortman, Greg, Hilton, Hubert, Humphrey, Hungary, Jessica, Jesu, John, Linda, Mike, Navona, Norton, Piazza, Rochford, Roma, Slate, Tawan
+фактов: 46 на 10 абзацев
