@@ -1,0 +1,23 @@
+# words1 — где теряется смысл (разведка, dev) 
+прочтений: 600 (mc 240, tp 240, v2a 120)
+ ## 1. Мера «слово сохранено» против оценки судей (по прочтениям)
+  строгая (синонимы и производные): r = 0.20; доля сохранённых: mc 12%, v2a 17%, tp 18%
+  свободная (синонимы, производные, гиперонимы/гипонимы): r = 0.31; доля сохранённых: mc 21%, v2a 28%, tp 31%
+ ## 2. Код или читатель: разброс оценок по 4 прочтениям одного кода (mc, tp: base1 + retell1)
+  mc: доля разброса между кодами 61%, внутри кода (читатели и судьи) 39%; плохих кодов (среднее < 1,5) 45, из них все 4 прочтения в пределах 1 балла — 43 (96%)
+  tp: доля разброса между кодами 58%, внутри кода (читатели и судьи) 42%; плохих кодов (среднее < 1,5) 13, из них все 4 прочтения в пределах 1 балла — 13 (100%)
+ ## 3. Слова: сохранены ли (свободная мера), по всем прочтениям плеча
+  существительные (179): mc 17%, v2a 27%, tp 29%
+  глаголы (75): mc 37%, v2a 43%, tp 41%
+  прилагательные (54): mc 14%, v2a 17%, tp 25%
+  наречия (24): mc 9%, v2a 21%, tp 20%
+  слов всего 329; потеряны всеми прочтениями и mc, и v2a: 193 (59%); из них Toki Pona сохраняет (≥ половины прочтений): 38
+  потеряны в одном из двух кодирований min-co (выбор кодировщика): 74 (22%)
+  кандидаты в нехватку корней (потеряны в mc и v2a, сохранены в Toki Pona): bag, ball, bank, berry, bottom, close, cross, disease, distinguish, door, eccentricity, feed, hand, help, hungarian, instrumentalist, lead, line, marketing, mother, motor, mouthpiece, need, pair, people, planner, possible, realistic, sight, sound, strange, total, tourist, watch, white, yellow
+  потеряны везде (и в Toki Pona): absorption, add, additional, advise, age, aloud, analysis, appeal, atomic, attractive, base, beef, bent, bomb, book, boredom, bride, bush, businessmen, call, calm, carpet, catcher, ceiling, characteristic, chuckle, clatter, combination, comet, considerably, corner, crisp, customer, data, defense, destroyer, diagram, discuss, dressy, economy, efficiency, election, electronic, entry, explicit, exposition, far, farm, fear, finally, fire, first, forgiveness, frustrate, glove, great, growth, guest, headache, help, hostess, implication, industry, instead, invisibly, issue, juror, laborer, league, legend, lenient, light, lust, magnetic, majority, maniac, mask, mattress, merit, mud, multiple, nudge, oaken, obsess, old, orange, outrun, participation, pas, peripheral, personal, point, pride, processing, program, proud, psychologically, pull, pump, rate, realism, rebut, record, reputedly, rest, restrained, ruthlessness, salary, seductive, servant, shock, situation, sodden, soil, stair, story, straight, straw, strike, suddenly, swimming, tape, taught, texture, thanks, tight, together, truth, type, tyranny, umbrella, understand, underwater, uptown, urge, variety, vertical, viewpoint, vital, wade, way, wholesome, willing, wondrously, zest
+ ## 4. Покрытие словарём: есть ли понятие в глоссах спецификации читателя
+  mc: в глоссах 34% слов; сохранено: mc — в глоссах 37%, вне 12%; v2a — в глоссах 50%, вне 18%
+  tp: в глоссах 31% слов; сохранено: tp — в глоссах 55%, вне 20%
+ ## 5. Буквальное чтение имени корня (mc и v2a)
+  корень только с отрицательным значением (≤ −3): имя корня в прочтении 58/448 (13%); корень без значения или ≥ 0: 666/1740 (38%)
+  чаще всего читаются буквально при отрицательном значении: RULE 4/4; BEGIN 12/16; THING 13/22; TIME 6/14; FEEL 3/8; LONG 8/30; TOUCH 2/8; WANT 2/14; SAME 4/38; MOVE 2/20
