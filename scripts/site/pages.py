@@ -1,4 +1,5 @@
 """Страницы сайта: из одного двуязычного источника data/site/index.html — site/index.html (английский) и site/ru/index.html (русский),
+из data/site/vs-toki-pona.{en,ru}.md — сравнение с Toki Pona site/vs-toki-pona/ и site/ru/vs-toki-pona/,
 из docs/*.md — site/docs/<имя>/index.html и оглавление site/docs/index.html, из их переводов docs/en/*.md —
 site/docs/en/<имя>/index.html и оглавление site/docs/en/index.html, и site/sitemap.xml.
 
@@ -26,6 +27,15 @@ GH = "https://github.com/komapc/contlang"
 
 # публикуемые документы, в порядке оглавления (docs/history/ — архив, остаётся на GitHub)
 DOCS = ["reading", "model", "philosophy", "syntax", "tables", "encoding", "lexicon", "phonology", "math", "rethink"]
+
+# сравнение с Toki Pona: адрес на каждом языке (x-default — английский, как у главной)
+COMPARE = {"en": "/vs-toki-pona/", "ru": "/ru/vs-toki-pona/"}
+COMPARE_DESC = {
+    "en": "Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. "
+          "How the two minimal conlangs differ in goals and grammar.",
+    "ru": "В Toki Pona около 120–140 слов, в min-co — 45 смысловых корней с осями значений, которые кодирует и раскодирует "
+          "векторная математика. Чем различаются два минималистичных искусственных языка.",
+}
 
 VOID = {"meta", "link", "br", "img", "input", "hr", "source"}
 GENERATED = "<!-- сгенерировано scripts/site/pages.py из data/site/index.html, руками не править -->"
@@ -128,7 +138,7 @@ def fix_links(body, rel_dir):
     """Ссылки на опубликованные документы — на страницы сайта, остальные относительные — на GitHub."""
     def sub(m):
         href = html.unescape(m.group(1))
-        if re.match(r"^(https?:|mailto:|#)", href):
+        if re.match(r"^(https?:|mailto:|#|/)", href):
             return m.group(0)
         path, _, frag = href.partition("#")
         target = (REPO / rel_dir / path).resolve()
@@ -185,10 +195,12 @@ def docs_path(lang, n=None):
     return ("/docs/" if lang == "ru" else "/docs/en/") + (n + "/" if n else "")
 
 
-def page_html(title, desc, n, body, lang="ru"):
-    """Страница документа n (n=None — оглавление): у каждого языка свой canonical, перекрёстные hreflang, x-default — английский, как у главной."""
+def page_html(title, desc, n, body, lang="ru", paths=None, nav=True):
+    """Страница документа n (n=None — оглавление): у каждого языка свой canonical, перекрёстные hreflang, x-default — английский, как у главной.
+    paths — {"en": адрес, "ru": адрес} для страницы вне документов (тогда без оглавления документов, если nav=False)."""
     tx = TEXT[lang]
-    path, ru_path, en_path = docs_path(lang, n), docs_path("ru", n), docs_path("en", n)
+    paths = paths or {"en": docs_path("en", n), "ru": docs_path("ru", n)}
+    path, ru_path, en_path = paths[lang], paths["ru"], paths["en"]
     url = BASE + path
     t, d = html.escape(title, quote=True), html.escape(desc, quote=True)
     ld = ('{"@context":"https://schema.org","@type":"TechArticle","headline":%s,"description":%s,"url":"%s","inLanguage":"%s",'
@@ -228,7 +240,7 @@ def page_html(title, desc, n, body, lang="ru"):
 <main>
 {body}
 </main>
-{docs_nav(lang)}
+{docs_nav(lang) if nav else ""}
 <footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="{GH}">{tx['code']}</a></footer>
 </div>
 </body>
@@ -283,11 +295,19 @@ def docs_index(lang="ru"):
                      None, body, "en")
 
 
+# ---------- сравнение с Toki Pona
+
+def compare_page(lang):
+    md = (REPO / "data" / "site" / ("vs-toki-pona.%s.md" % lang)).read_text(encoding="utf8")
+    return page_html(doc_title(md), COMPARE_DESC[lang], None, md_html(md, "data/site"), lang, paths=COMPARE, nav=False)
+
+
 # ---------- сборка и карта сайта
 
 def page_outputs():
     out = {SITE / "index.html": main_page("en"), SITE / "ru" / "index.html": main_page("ru"), SITE / "docs" / "index.html": docs_index(),
-           SITE / "docs" / "en" / "index.html": docs_index("en")}
+           SITE / "docs" / "en" / "index.html": docs_index("en"),
+           SITE / "vs-toki-pona" / "index.html": compare_page("en"), SITE / "ru" / "vs-toki-pona" / "index.html": compare_page("ru")}
     for n, t, d, md in docs_meta():
         out[SITE / "docs" / n / "index.html"] = doc_page(n, t, d, md)
     for n, t, d, md in docs_meta("en"):
@@ -311,7 +331,7 @@ def sitemap(pages):
     def alt(en, ru):
         return ('\n    <xhtml:link rel="alternate" hreflang="en" href="%s"/>\n    <xhtml:link rel="alternate" hreflang="ru" href="%s"/>'
                 '\n    <xhtml:link rel="alternate" hreflang="x-default" href="%s"/>\n  ' % (en, ru, en))
-    pairs = [(BASE + "/", BASE + "/ru/")] + [(BASE + docs_path("en", n), BASE + docs_path("ru", n)) for n in [None] + DOCS]
+    pairs = [(BASE + "/", BASE + "/ru/"), (BASE + COMPARE["en"], BASE + COMPARE["ru"])] + [(BASE + docs_path("en", n), BASE + docs_path("ru", n)) for n in [None] + DOCS]
     alts = {u: alt(en, ru) for en, ru in pairs for u in (en, ru)}
     rows = []
     for p, text in pages.items():
