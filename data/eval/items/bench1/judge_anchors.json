@@ -1,0 +1,12 @@
+[
+ {"o": "Martin called for patience on the part of Americans.", "r": "Martin asked Americans to be patient.", "want": 3},
+ {"o": "It is both great writing and profound religion.", "r": "It is excellent writing and also deep religion.", "want": 3},
+ {"o": "And the Jerebohms are more than willing to buy it.", "r": "The family really wants to buy it.", "want": 2},
+ {"o": "Grocery stores sell dozens of foods that boast of having almost no food value at all.", "r": "Shops sell many foods that have little nutrition.", "want": 2},
+ {"o": "Idea is to let these countries earn their way as much as possible.", "r": "The plan is for these nations to pay for themselves.", "want": 2},
+ {"o": "Sizzling temperatures and hot summer pavements are anything but kind to the feet.", "r": "In summer the hot weather is pleasant.", "want": 1},
+ {"o": "As we understand, this directive was given to all city and county employes.", "r": "We know something about the city.", "want": 1},
+ {"o": "Hengesbach has been living under a cloud ever since.", "r": "A man has lived somewhere for a long time.", "want": 1},
+ {"o": "Martin called for patience on the part of Americans.", "r": "The dog ran quickly across the field.", "want": 0},
+ {"o": "It is both great writing and profound religion.", "r": "Prices of food went up this year.", "want": 0}
+]

@@ -1,0 +1,98 @@
+[
+ {
+  "id": "p1h",
+  "cat": "news",
+  "sents": [
+   "He asked members of the panel to tell him if anyone outside the court had spoken to them about the case.",
+   "Two members of the panel later told in court about receiving telephone calls at their homes from anonymous persons expressing interest in the trial.",
+   "Neither was seated on the jury."
+  ]
+ },
+ {
+  "id": "p2h",
+  "cat": "editorial",
+  "sents": [
+   "The unit consists of a small motor that goes on as soon as it is plugged in.",
+   "The speed is controlled by pressing on the two brake buttons located where the index finger and thumb are placed when holding the motor.",
+   "The brushes can be cleaned and sterilized by boiling and are detachable so that every member of the family can have his own."
+  ]
+ },
+ {
+  "id": "p3h",
+  "cat": "reviews",
+  "sents": [
+   "But there is a difference between the present volume and the early Low.",
+   "There is fear in the fifties as his title suggests and as his competent drawings show.",
+   "But there was terror in the thirties when the Nazis were on the loose and in those days Low struck like lightning."
+  ]
+ },
+ {
+  "id": "p4h",
+  "cat": "hobbies",
+  "sents": [
+   "For my seedbed I use good garden soil with a little sand added to encourage rooting.",
+   "I dig it, rake it smooth, sow the seeds and wet them down with a fog spray.",
+   "Then I cover the sowing with a board.",
+   "This keeps it cool and moist and protects it from birds.",
+   "Ants carry away the seeds so better be sure that there are no ant hills nearby."
+  ]
+ },
+ {
+  "id": "p5h",
+  "cat": "lore",
+  "sents": [
+   "To find estimated net farm income, subtract estimated annual farming expenditures from probable gross income from farming.",
+   "Include as expenditures an allowance for depreciation of farm buildings and equipment.",
+   "Also count as an expense a charge for the labor to be contributed by the family.",
+   "It may be hard to decide what this labor is worth, but charge something for it.",
+   "Otherwise, you may pay too much for the farm and get nothing for your labor."
+  ]
+ },
+ {
+  "id": "p6h",
+  "cat": "belles_lettres",
+  "sents": [
+   "Had he always wished to be a conductor??",
+   "No, originally he had hoped to become a concert pianist and had even performed as such.",
+   "However, when he assumed the duties of a conductor, he relinquished his career as a pianist."
+  ]
+ },
+ {
+  "id": "p7h",
+  "cat": "learned",
+  "sents": [
+   "An agent would likely be selected which would possess sufficient viability and virulence stability to meet realistic minimal logistic requirements.",
+   "It is, obviously, a proper goal of research to improve on this property.",
+   "In this connection it should be capable of being disseminated without excessive destruction.",
+   "Moreover, it should not be so fastidious in its growth requirements as to make production on a militarily significant scale improbable."
+  ]
+ },
+ {
+  "id": "p8h",
+  "cat": "fiction",
+  "sents": [
+   "The light supper over, Claire went to him and, slipping an arm about his shoulder, sat on his knee.",
+   "He drew her close and, hand on cheek, turned her face to his.",
+   "Her lips, moist and parted, spoke his name."
+  ]
+ },
+ {
+  "id": "p9h",
+  "cat": "adventure",
+  "sents": [
+   "Reaching the porch rail beyond view of the bar windows, he feverishly scanned the busy street below.",
+   "Stevens was nowhere in sight.",
+   "Muffling an exclamation, Russ sprang to the nearest steps and ran down.",
+   "As luck had it, he had not gone twenty feet in the street before Pat appeared."
+  ]
+ },
+ {
+  "id": "p10h",
+  "cat": "romance",
+  "sents": [
+   "He and Sarpsis planned a great parade with the young men.",
+   "They would give one final testimony of their challenge to let the people see their arrogance.",
+   "They would ride with streaming amulets, their colors ripening in the sun, shouting the last bellicosity of a nation in the throes of death."
+  ]
+ }
+]

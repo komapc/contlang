@@ -1,0 +1,302 @@
+[
+ {
+  "id": "s10",
+  "cat": "news",
+  "s": "It was there that the two accused civil servants were at work."
+ },
+ {
+  "id": "s12",
+  "cat": "news",
+  "s": "This is the year home runs ranged from the sublime to the ridiculous."
+ },
+ {
+  "id": "s7",
+  "cat": "news",
+  "s": "Jackie Brandt singled deep into the hole at short to start the rally."
+ },
+ {
+  "id": "s11",
+  "cat": "news",
+  "s": "By his own confession, Maris is an angry young man."
+ },
+ {
+  "id": "s8",
+  "cat": "news",
+  "s": "A substantial rise in new orders and sales of durable goods was reported for last month."
+ },
+ {
+  "id": "s9",
+  "cat": "news",
+  "s": "The esplanade would feature pedestrian bridges over roads in the project."
+ },
+ {
+  "id": "s13",
+  "cat": "editorial",
+  "s": "Orange and lemon are considered important as are such pastels as blue and lilac."
+ },
+ {
+  "id": "s24",
+  "cat": "editorial",
+  "s": "Usually a veteran has to hang himself to get space on the front page."
+ },
+ {
+  "id": "s15",
+  "cat": "editorial",
+  "s": "But our outlook has been, and continues to be, defensive."
+ },
+ {
+  "id": "s14",
+  "cat": "editorial",
+  "s": "Soon they will begin to hunt down the traitors they are assured are in our midst."
+ },
+ {
+  "id": "s22",
+  "cat": "editorial",
+  "s": "The little cottage was bursting with people of all ages."
+ },
+ {
+  "id": "s23",
+  "cat": "editorial",
+  "s": "American taxpayers have been impressed by the surpluses for a long, long time."
+ },
+ {
+  "id": "s25",
+  "cat": "reviews",
+  "s": "He may have a point in urging that decadent themes be given fewer prizes."
+ },
+ {
+  "id": "s28",
+  "cat": "reviews",
+  "s": "Not a corner has been visibly cut in this one."
+ },
+ {
+  "id": "s29",
+  "cat": "reviews",
+  "s": "Montgomery knew all the national leaders up to the time of Kennedy."
+ },
+ {
+  "id": "s34",
+  "cat": "reviews",
+  "s": "Occasionally, Seigner draws some justly deserved laughs by his quick shifts from one personality to another."
+ },
+ {
+  "id": "s26",
+  "cat": "reviews",
+  "s": "Whatever the cause, his mood in the fifties rarely rises above the level of the capably sardonic."
+ },
+ {
+  "id": "s30",
+  "cat": "reviews",
+  "s": "The years suddenly fell away at this point."
+ },
+ {
+  "id": "s39",
+  "cat": "hobbies",
+  "s": "Be sure to have plenty of frankfurters and buns on hand."
+ },
+ {
+  "id": "s45",
+  "cat": "hobbies",
+  "s": "Then, after emasculation, he was eased up for a couple of weeks."
+ },
+ {
+  "id": "s38",
+  "cat": "hobbies",
+  "s": "The industry has been its own watch dog."
+ },
+ {
+  "id": "s42",
+  "cat": "hobbies",
+  "s": "Outboard motors, insurance, and boat repairs may also be financed in the same way as boats."
+ },
+ {
+  "id": "s48",
+  "cat": "hobbies",
+  "s": "Many food and beverage companies are already on a highly planned basis."
+ },
+ {
+  "id": "s47",
+  "cat": "hobbies",
+  "s": "Finish installing and connecting up your furnace and your water heater before you wall them in."
+ },
+ {
+  "id": "s50",
+  "cat": "lore",
+  "s": "But in the next decades the nation needs to educate for the professions all the potential professional talent."
+ },
+ {
+  "id": "s58",
+  "cat": "lore",
+  "s": "Gynecologists and marriage manuals began to advise that the bride should consult a physician before marriage."
+ },
+ {
+  "id": "s52",
+  "cat": "lore",
+  "s": "Historians have had two reasons for persisting so long in their investigations."
+ },
+ {
+  "id": "s51",
+  "cat": "lore",
+  "s": "Six of the science teachers were present, and we had great fun."
+ },
+ {
+  "id": "s60",
+  "cat": "lore",
+  "s": "He was a Londoner, married, with three sons."
+ },
+ {
+  "id": "s56",
+  "cat": "lore",
+  "s": "His head cannot contain enough sense to command a regiment, much less a corps."
+ },
+ {
+  "id": "s70",
+  "cat": "belles_lettres",
+  "s": "As a nation we can successfully pursue these objectives only from a position of broadly based strength."
+ },
+ {
+  "id": "s63",
+  "cat": "belles_lettres",
+  "s": "There were times that he worked with both lyricists simultaneously."
+ },
+ {
+  "id": "s61",
+  "cat": "belles_lettres",
+  "s": "The colonel grunted, then made a remark which might be construed in either of two ways."
+ },
+ {
+  "id": "s65",
+  "cat": "belles_lettres",
+  "s": "His earliest work reflected heavy influences from English and continental writers."
+ },
+ {
+  "id": "s67",
+  "cat": "belles_lettres",
+  "s": "All we wanted to do was to stand very quietly and look and look and look."
+ },
+ {
+  "id": "s64",
+  "cat": "belles_lettres",
+  "s": "They made it, killed every last one of the Krauts, took the village on schedule."
+ },
+ {
+  "id": "s75",
+  "cat": "learned",
+  "s": "The tendency for general business activity to soften somewhat is becoming more evident."
+ },
+ {
+  "id": "s74",
+  "cat": "learned",
+  "s": "This reduction has been accomplished by the general methods of linear algebra, i.e., by the primary decomposition theorem."
+ },
+ {
+  "id": "s82",
+  "cat": "learned",
+  "s": "With these factors included, an upper limit is placed on the allowable loop gain by stability considerations."
+ },
+ {
+  "id": "s79",
+  "cat": "learned",
+  "s": "This reasoning was also as inevitable as anything could be."
+ },
+ {
+  "id": "s73",
+  "cat": "learned",
+  "s": "The insuperable reward systems that most religions embody have great motivating effects."
+ },
+ {
+  "id": "s77",
+  "cat": "learned",
+  "s": "On playing some typical situations before a jury of his peers he showed some characteristics rated as unsatisfactory."
+ },
+ {
+  "id": "s95",
+  "cat": "fiction",
+  "s": "Into the emptiness of the street, and his spirit, moved a form."
+ },
+ {
+  "id": "s89",
+  "cat": "fiction",
+  "s": "Fletcher nodded as he listened to the instructions and said he would arrange the things Rector requested."
+ },
+ {
+  "id": "s91",
+  "cat": "fiction",
+  "s": "Trust Eileen to squeeze all the drama out of a situation."
+ },
+ {
+  "id": "s96",
+  "cat": "fiction",
+  "s": "He drew toward the composite design from his meticulously accurate memory, without need to consult his sketches."
+ },
+ {
+  "id": "s90",
+  "cat": "fiction",
+  "s": "When the parents emerged from the bedroom a few minutes later, the maid greeted them quietly."
+ },
+ {
+  "id": "s92",
+  "cat": "fiction",
+  "s": "He turned slowly and began to crawl back up the bank toward the rampart."
+ },
+ {
+  "id": "s98",
+  "cat": "adventure",
+  "s": "Probably his horse would be close to where he was hiding."
+ },
+ {
+  "id": "s103",
+  "cat": "adventure",
+  "s": "Russ gave him a brutal thrust that tumbled him over flat on his stomach."
+ },
+ {
+  "id": "s99",
+  "cat": "adventure",
+  "s": "It had been a mistake, but anything would have been a mistake, as it turned out."
+ },
+ {
+  "id": "s100",
+  "cat": "adventure",
+  "s": "Also because of the storm, the streets of Rockfork were deserted."
+ },
+ {
+  "id": "s97",
+  "cat": "adventure",
+  "s": "Before long the atmosphere reverted to its old normalcy, and insects hummed and birds occasionally called."
+ },
+ {
+  "id": "s101",
+  "cat": "adventure",
+  "s": "Three hours later, while we were bailing desperately, a dot of land came into view."
+ },
+ {
+  "id": "s109",
+  "cat": "romance",
+  "s": "She was blonde, and young, and nice and round in a tight white dress."
+ },
+ {
+  "id": "s115",
+  "cat": "romance",
+  "s": "Phil started to take his clothes off and Frankie sat down on the bench again."
+ },
+ {
+  "id": "s116",
+  "cat": "romance",
+  "s": "I felt good and satisfied, looking at the snake."
+ },
+ {
+  "id": "s119",
+  "cat": "romance",
+  "s": "He stepped into the dugout, wondering why Deegan was always looking for trouble."
+ },
+ {
+  "id": "s113",
+  "cat": "romance",
+  "s": "But now he was happy she would let him straighten out her life and take care of her."
+ },
+ {
+  "id": "s117",
+  "cat": "romance",
+  "s": "He saw later that they had made their marriage too quickly."
+ }
+]

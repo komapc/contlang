@@ -1,0 +1,98 @@
+[
+ {
+  "id": "p1d",
+  "cat": "news",
+  "sents": [
+   "She dreamed up the cookie recipe, tried it, liked it and entered it in the contest.",
+   "The second baking was for photographing when told she was a finalist.",
+   "The third time was on the floor of the Beverly Hilton ballroom and for the critical eyes and tongues of judges."
+  ]
+ },
+ {
+  "id": "p2d",
+  "cat": "editorial",
+  "sents": [
+   "Sen. Hubert Humphrey is obviously a man with a soul and heart.",
+   "He, like most of us, wants to be able to sit, to contemplate and be moved by the great outdoors.",
+   "Let us have more benches and fewer forbidden areas around fountains and gardens.",
+   "Let us, like the French, have outdoor cafes where we may relax, converse at leisure and enjoy the passing crowd."
+  ]
+ },
+ {
+  "id": "p3d",
+  "cat": "reviews",
+  "sents": [
+   "This big, flexible voice with uncommon range has been superbly disciplined.",
+   "Nervousness at the start must have caused the blemishes of her first scene, or she may warm up slowly.",
+   "In the fullness of her vocal splendor, however, she could sing the famous scene magnificently."
+  ]
+ },
+ {
+  "id": "p4d",
+  "cat": "hobbies",
+  "sents": [
+   "Close behind the plane of the tappets are the locking bars.",
+   "These can also move a short distance but at right angles to the tappets.",
+   "The number of locking bars required depends on how many false moves must be prevented."
+  ]
+ },
+ {
+  "id": "p5d",
+  "cat": "lore",
+  "sents": [
+   "In the Piazza Navona there are many delightful cafes where you can sit, have a drink or lunch, and watch the fountains in the square.",
+   "The scene before you is indeed theatrical and often appears in movies about Rome.",
+   "Perhaps a street musician will pass to add that extra touch."
+  ]
+ },
+ {
+  "id": "p6d",
+  "cat": "belles_lettres",
+  "sents": [
+   "It is beyond the province of this epilogue to cover policy questions of such depth and range.",
+   "The discussion is therefore limited to a suggested procedure for realizing at least some of the potential importance of this volume for future policy.",
+   "As a groundwork for the proposal I give some attention to the first task enumerated above, the clarification of goal."
+  ]
+ },
+ {
+  "id": "p7d",
+  "cat": "learned",
+  "sents": [
+   "A precision transit is set up so that it is aligned with respect to true north.",
+   "This can be done to a high degree of accuracy by existing surveying techniques.",
+   "With the transit set up, a mirror on one of the accelerometers is sighted and the platform is turned until it is aligned."
+  ]
+ },
+ {
+  "id": "p8d",
+  "cat": "fiction",
+  "sents": [
+   "It was only hours since I had last seen them, but they had changed and I had changed.",
+   "In the very front rank, two men were wounded and staggered along, trailing blood behind them.",
+   "No drummers here, no pipers, and the red coats were covered with a fine film of dust.",
+   "They marched with bayonets fixed, and as fixed on their faces was anger, fear, and torment.",
+   "Rank after rank of them came down the road, and the faces were all the same, and they walked in a sea of dust."
+  ]
+ },
+ {
+  "id": "p9d",
+  "cat": "adventure",
+  "sents": [
+   "He dashed madly for the next elbow turn in the draw, and made it.",
+   "Recklessly hurling the bronc sidewise into an intersecting draw, he plunged forward with undiminished speed.",
+   "Gradually the wash climbed upward, forcing him toward open range.",
+   "Yet he must chance it.",
+   "He clambered out of the dwindling wash, the loose dirt flying behind him, and flashed a look about."
+  ]
+ },
+ {
+  "id": "p10d",
+  "cat": "romance",
+  "sents": [
+   "Linda would have to wait, she knew.",
+   "But what was a decent six months or so after the more than twenty years gone by??",
+   "Years of watching while Poor John struggled without the help and understanding of the kind of wife a man needed to get ahead.",
+   "Of course, he had done wonders."
+  ]
+ }
+]
