@@ -34,7 +34,7 @@ min-co asks a narrower, measurable question: how much meaning a very small vocab
 
 ## What the tests showed
 
-min-co uses Toki Pona as its benchmark. In a blind test on 100 single words, with a language model writing the codes and two blind readers, also models, decoding them, min-co codes led readers closer to the target word than Toki Pona phrases, by a factor of about 2.4. In whole sentences the difference disappeared: context helps Toki Pona readers, and min-co is not ahead there. One caveat favours min-co: the models know Toki Pona from training and min-co only from a short specification. The data and method are in [rethinking the language](../../docs/en/rethink.md).
+min-co uses Toki Pona as its benchmark. In a blind test on 100 single words, with a language model writing the codes and two blind readers, also models, decoding them, min-co codes led readers closer to the target word than Toki Pona phrases, by a factor of about 2 to 2.4 depending on the version of the notation. In whole sentences the difference disappeared: context helps Toki Pona readers, and min-co is not ahead there. One caveat favours min-co: the models know Toki Pona from training and min-co only from a short specification. The data and method are in [rethinking the language](../../docs/en/rethink.md).
 
 ## Which one to learn
 
