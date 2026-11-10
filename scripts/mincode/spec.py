@@ -1,13 +1,37 @@
-"""Загрузка roots.yaml: единый источник правды о корнях, осях, метках и частицах."""
+"""Загрузка roots.yaml: единый источник правды о корнях, осях, метках и частицах.
+
+Версии языка (lang/README.md): v1 — файлы на прежних местах (roots.yaml в корне, шаблоны в data/eval/templates/),
+остальные — lang/<id>/ с тем же набором файлов. Без аргумента везде v1.
+"""
 from pathlib import Path
 
 import yaml
 
 REPO = Path(__file__).resolve().parents[2]
 ROOTS_YAML = REPO / "roots.yaml"
+LANG = REPO / "lang"
+DEFAULT = "v1"
 
 
-def load(path=ROOTS_YAML):
+def paths(version=DEFAULT):
+    """Файлы версии: roots (roots.yaml), templates (шаблоны спецификаций), tips (приёмы для модели сайта), phonetics (может не быть)."""
+    if version == "v1":
+        return {"roots": ROOTS_YAML, "templates": REPO / "data" / "eval" / "templates",
+                "tips": REPO / "data" / "site" / "tips_short.md", "phonetics": REPO / "phonetics.yaml"}
+    base = LANG / version
+    if not (base / "roots.yaml").exists():
+        raise ValueError(f"нет версии языка {version!r}: нет {base / 'roots.yaml'} (есть: {', '.join(versions())})")
+    return {"roots": base / "roots.yaml", "templates": base / "templates", "tips": base / "tips_short.md", "phonetics": base / "phonetics.yaml"}
+
+
+def versions():
+    """Все версии: v1 и каждая папка lang/<id>/ с roots.yaml."""
+    return ["v1"] + sorted(p.name for p in LANG.glob("*") if (p / "roots.yaml").exists() and p.name != "v1")
+
+
+def load(path=ROOTS_YAML, version=None):
+    if version is not None:
+        path = paths(version)["roots"]
     return yaml.safe_load(open(path, encoding="utf8"))
 
 

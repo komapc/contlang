@@ -1,6 +1,6 @@
 """Какие значения осей кодировщики-модели реально пишут (min-co 1): доля каждого значения −5…+5 по корням.
 
-    .venv/bin/python v2/values.py
+    .venv/bin/python data/eval/runs/v2_axes/values.py
 
 Источники — коды моделей из прогонов (не математика сайта): big1000 (Haiku), lex (Sonnet), pipe и mini (предложения),
 lexs/cands.json (gpt-5-mini и Sonnet; файл лежит в ветке eval-lexs, берётся оттуда через git, если его нет в рабочем дереве).
@@ -13,7 +13,7 @@ from pathlib import Path
 
 import yaml
 
-R = Path(__file__).resolve().parent.parent
+R = Path(__file__).resolve().parents[4]
 roots = {r["name"] for r in yaml.safe_load(open(R / "roots.yaml"))["roots"]}
 runs = R / "data/eval/runs"
 files = [runs / "big1000/llm_codes.json", runs / "lex/codes.json"]

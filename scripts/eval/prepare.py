@@ -3,6 +3,7 @@
     # спецификация кодировщика или декодера из шаблона и roots.yaml
     python3 scripts/eval/prepare.py spec enc words OUT.md [--drop SIDE,HEAT] [--axis 'SEE=visibility: -5 hidden ... +5 bright']
     python3 scripts/eval/prepare.py spec dec sents OUT.md
+    python3 scripts/eval/prepare.py spec dec sents OUT.md --lang v2   # другая версия языка (lang/README.md)
 
     # пункты: файл со строками «слово — пояснение» (или JSON-список предложений) -> items_<имя><N>.txt и key.json
     python3 scripts/eval/prepare.py items LIST.txt OUTDIR --prefix w --chunk 46
@@ -21,7 +22,7 @@ REPO = HERE.parents[1]
 sys.path.insert(0, str(REPO / "scripts" / "mincode"))
 import spec  # noqa: E402
 
-TEMPLATES = REPO / "data" / "eval" / "templates"
+TEMPLATES = REPO / "data" / "eval" / "templates"  # шаблоны v1; у других версий — spec.paths(version)["templates"]
 
 
 CLAUSE_RULE = {
@@ -36,8 +37,9 @@ BRACE_RULE = {
 }
 
 
-def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False):
-    doc = spec.load()
+def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False, version=spec.DEFAULT):
+    doc = spec.load(version=version)
+    tpl = spec.paths(version)["templates"]
     roots = [r for r in doc["roots"] if r["name"] not in set(drop)]
     for name, text in (axes or {}).items():
         for r in roots:
@@ -45,7 +47,7 @@ def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False):
                 r["en_axis"] = text
                 r["axis"] = r.get("axis") or {"neg": "", "mid": "", "pos": ""}
     lines = [f"- {r['name']}: {r['en_axis']}" if r.get("axis") and r.get("en_axis") else f"- {r['name']}: {r.get('en_gloss', r['name'].lower())} (no axis)" for r in roots]
-    text = (TEMPLATES / f"{kind}_{task}.md").read_text(encoding="utf8").replace("{{CORE}}", (TEMPLATES / "core.md").read_text(encoding="utf8"))
+    text = (tpl / f"{kind}_{task}.md").read_text(encoding="utf8").replace("{{CORE}}", (tpl / "core.md").read_text(encoding="utf8"))
     text = text.replace("{{CLAUSE_RULE}}\n", CLAUSE_RULE[kind] + "\n" if clause_rule else "")
     if braces:
         text = text.replace("a word ends at its form", "a word is written inside its own braces { }")
@@ -56,11 +58,11 @@ def build_spec(kind, task, drop=(), axes=None, clause_rule=True, braces=False):
 def cmd_spec(a):
     axes = dict(x.split("=", 1) for x in a.axis)
     drop = [x for x in a.drop.split(",") if x]
-    unknown = set(drop) - set(spec.root_names())
+    unknown = set(drop) - set(spec.root_names(spec.load(version=a.lang)))
     if unknown:
         raise SystemExit(f"нет таких корней: {sorted(unknown)}")
-    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes, not a.no_clause_rule, a.braces), encoding="utf8")
-    print(f"записано {a.out}")
+    Path(a.out).write_text(build_spec(a.kind, a.task, drop, axes, not a.no_clause_rule, a.braces, a.lang), encoding="utf8")
+    print(f"записано {a.out} (язык {a.lang})")
 
 
 def cmd_items(a):
@@ -93,6 +95,7 @@ def main():
     s.add_argument("--no-clause-rule", action="store_true", help="спецификация предложений без правила про `;` и форму у каждого слова (для сравнения)")
     s.add_argument("--braces", action="store_true", help="явные границы слов `{ … }`")
     s.add_argument("--axis", action="append", default=[], help="ROOT=английское описание оси")
+    s.add_argument("--lang", default=spec.DEFAULT, choices=spec.versions(), help="версия языка (lang/README.md), по умолчанию v1")
     s.set_defaults(f=cmd_spec)
     i = sp.add_parser("items")
     i.add_argument("list")

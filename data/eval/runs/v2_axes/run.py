@@ -1,8 +1,8 @@
 """Пилот осей (dec.md): читаются ли промежуточные значения оси, если читатель знает только полюса.
 
-    .venv/bin/python v2/pilot_axes/run.py make     → codes.json, t1..t3/ (карточка, коды, задание читателя)
-    .venv/bin/python v2/pilot_axes/run.py judges   → pairs.json, u1..u2/ (пары для судей)
-    .venv/bin/python v2/pilot_axes/run.py score    → result.txt
+    .venv/bin/python data/eval/runs/v2_axes/run.py make     → codes.json, t1..t3/ (карточка, коды, задание читателя)
+    .venv/bin/python data/eval/runs/v2_axes/run.py judges   → pairs.json, u1..u2/ (пары для судей)
+    .venv/bin/python data/eval/runs/v2_axes/run.py score    → result.txt
 Папки t*/ и u*/ — рабочие (агенты пишут туда answers.md и scores.md); итоги копируются в answers/ и judge/.
 """
 import json
@@ -15,7 +15,7 @@ import numpy as np
 import yaml
 
 D = Path(__file__).resolve().parent
-R = D.parent.parent
+R = D.parents[3]
 VALUES = [-4, -2, 0, 2, 4]
 READERS, JUDGES = 3, 2
 TYPES = {
