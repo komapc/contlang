@@ -1,0 +1,1074 @@
+{
+ "SHAPE": [
+  {
+   "id": "shape1",
+   "s": "Eddie caught up with the ball near the fence and threw it to Phil.",
+   "cat": "romance",
+   "hit": [
+    "ball"
+   ]
+  },
+  {
+   "id": "shape2",
+   "s": "Two of the clamps are fixed to the edges of the board whereas two clamps travel on guide rails opposite the fixed clamps.",
+   "cat": "learned",
+   "hit": [
+    "board"
+   ]
+  },
+  {
+   "id": "shape3",
+   "s": "Without comment he opened the closet and from its shelves constructed a highboard around the egg case which he had placed on the floor inside.",
+   "cat": "fiction",
+   "hit": [
+    "floor"
+   ]
+  },
+  {
+   "id": "shape4",
+   "s": "In Chicago, the driver cut out would likely jam his gas pedal to the floor in an effort to force the other car back.",
+   "cat": "editorial",
+   "hit": [
+    "floor"
+   ]
+  },
+  {
+   "id": "shape5",
+   "s": "Save for brief periods in garrison or winter quarters, soldiers rarely enjoyed the luxury of a writing desk or table.",
+   "cat": "lore",
+   "hit": [
+    "table"
+   ]
+  },
+  {
+   "id": "shape6",
+   "s": "I made time and picked him up within ten blocks.",
+   "cat": "mystery",
+   "hit": [
+    "blocks"
+   ]
+  },
+  {
+   "id": "shape7",
+   "s": "J. A. W. Iglehart, chairman of the Oriole board of directors, and Public Relations Director Jack Dunn.",
+   "cat": "news",
+   "hit": [
+    "board"
+   ]
+  },
+  {
+   "id": "shape8",
+   "s": "Most floor battens are glued and screwed to the flooring.",
+   "cat": "hobbies",
+   "hit": [
+    "floor"
+   ]
+  },
+  {
+   "id": "shape9",
+   "s": "Place flat palms on either side of the head a few inches away from the ears, fingers pointing toward the shoulders.",
+   "cat": "hobbies",
+   "hit": [
+    "flat"
+   ]
+  },
+  {
+   "id": "shape10",
+   "s": "The ball broke up in confusion.",
+   "cat": "adventure",
+   "hit": [
+    "ball"
+   ]
+  },
+  {
+   "id": "shape11",
+   "s": "The sheets are extruded of Tenite butyrate by Jet Specialties Co., Los Angeles, Calif..",
+   "cat": "hobbies",
+   "hit": [
+    "sheets"
+   ]
+  },
+  {
+   "id": "shape12",
+   "s": "Most on the ball.",
+   "cat": "fiction",
+   "hit": [
+    "ball"
+   ]
+  },
+  {
+   "id": "shape13",
+   "s": "He knelt down at his bed as long as he could kneel.",
+   "cat": "belles_lettres",
+   "hit": [
+    "bed"
+   ]
+  },
+  {
+   "id": "shape14",
+   "s": "The exchange was almost invariable, and Scotty, in his bed, could hear every word of it.",
+   "cat": "fiction",
+   "hit": [
+    "bed"
+   ]
+  },
+  {
+   "id": "shape15",
+   "s": "Leave the clay on plaster board to dry slowly, covered lightly with a loose piece of plastic or cloth to prevent warping.",
+   "cat": "hobbies",
+   "hit": [
+    "board"
+   ]
+  },
+  {
+   "id": "shape16",
+   "s": "The last roof boards are covered with blocks from outside the shelter.",
+   "cat": "government",
+   "hit": [
+    "blocks",
+    "boards"
+   ]
+  },
+  {
+   "id": "shape17",
+   "s": "Alec locked the hall door and put the key with his watch on the bedside table.",
+   "cat": "mystery",
+   "hit": [
+    "table"
+   ]
+  },
+  {
+   "id": "shape18",
+   "s": "Two clotted balls the color of mucus rolled between fiery lids.",
+   "cat": "fiction",
+   "hit": [
+    "balls"
+   ]
+  },
+  {
+   "id": "shape19",
+   "s": "The doctors had suggested Scotty remain most of every afternoon in bed until he was stronger.",
+   "cat": "fiction",
+   "hit": [
+    "bed"
+   ]
+  },
+  {
+   "id": "shape20",
+   "s": "Generally, they go to school with a girl named Gloriana, who lives down the block, and has a car.",
+   "cat": "news",
+   "hit": [
+    "block"
+   ]
+  }
+ ],
+ "OPEN": [
+  {
+   "id": "open1",
+   "s": "She is a closed book, a picture I keep on my bureau, but never look at.",
+   "cat": "romance",
+   "hit": [
+    "closed"
+   ]
+  },
+  {
+   "id": "open2",
+   "s": "And that is just what happened on the last few holes.",
+   "cat": "news",
+   "hit": [
+    "holes"
+   ]
+  },
+  {
+   "id": "open3",
+   "s": "The room was dark but a neon sign flashed and faded beyond the window.",
+   "cat": "mystery",
+   "hit": [
+    "window"
+   ]
+  },
+  {
+   "id": "open4",
+   "s": "The depth gauge rod can now be set, and any number of holes bored to exact and identical depth.",
+   "cat": "hobbies",
+   "hit": [
+    "holes"
+   ]
+  },
+  {
+   "id": "open5",
+   "s": "He went straight to the Presidential box.",
+   "cat": "fiction",
+   "hit": [
+    "box"
+   ]
+  },
+  {
+   "id": "open6",
+   "s": "His worries harried him up out of bed, and he lighted a cigarette and went to the window.",
+   "cat": "fiction",
+   "hit": [
+    "window"
+   ]
+  },
+  {
+   "id": "open7",
+   "s": "Mickey felt his shoulders come up against the wall beside the heavy slab front door.",
+   "cat": "mystery",
+   "hit": [
+    "door"
+   ]
+  },
+  {
+   "id": "open8",
+   "s": "Systematically he would open and ransack drawers.",
+   "cat": "reviews",
+   "hit": [
+    "open"
+   ]
+  },
+  {
+   "id": "open9",
+   "s": "Deal furniture with a mahogany finish was neatly arranged as if it stood in the window of a department store.",
+   "cat": "mystery",
+   "hit": [
+    "window"
+   ]
+  },
+  {
+   "id": "open10",
+   "s": "Another source of intellectual stimulus was opened to her at that time by the founding of Johns Hopkins University within walking distance of home.",
+   "cat": "belles_lettres",
+   "hit": [
+    "opened"
+   ]
+  },
+  {
+   "id": "open11",
+   "s": "Mr. Shoettle has agreed to do a portrait of the family of the person who wins the door prize.",
+   "cat": "news",
+   "hit": [
+    "door"
+   ]
+  },
+  {
+   "id": "open12",
+   "s": "In a lacey open weave shoes have a luster finish, braided collar and bow highlight on the squared throat.",
+   "cat": "editorial",
+   "hit": [
+    "open"
+   ]
+  },
+  {
+   "id": "open13",
+   "s": "Make lid for sugar bowl the same as jar lids, omitting design disk.",
+   "cat": "hobbies",
+   "hit": [
+    "lid"
+   ]
+  },
+  {
+   "id": "open14",
+   "s": "There came a ghost of noise at the office door and Hague swung to see Kodyke in the entrance from the outer room.",
+   "cat": "adventure",
+   "hit": [
+    "door"
+   ]
+  },
+  {
+   "id": "open15",
+   "s": "Martha picked up the hem of her gown and with eyes closed she slowly began to dance a stately minuet around the ballroom.",
+   "cat": "fiction",
+   "hit": [
+    "closed"
+   ]
+  },
+  {
+   "id": "open16",
+   "s": "There was a tap at the door and Oliver entered with the word that Heiser wished to see the Captain.",
+   "cat": "romance",
+   "hit": [
+    "door"
+   ]
+  },
+  {
+   "id": "open17",
+   "s": "Pattern for inner lid piece E fits inside Aj.",
+   "cat": "hobbies",
+   "hit": [
+    "lid"
+   ]
+  },
+  {
+   "id": "open18",
+   "s": "Meltzer stayed with Alfred, and when the door opened they both came out.",
+   "cat": "belles_lettres",
+   "hit": [
+    "door",
+    "opened"
+   ]
+  },
+  {
+   "id": "open19",
+   "s": "Curt followed, reaching behind him to shut the door and hook it.",
+   "cat": "adventure",
+   "hit": [
+    "door"
+   ]
+  },
+  {
+   "id": "open20",
+   "s": "Ventilation is provided in a concrete block basement shelter by vents in the wall and by the open entrance.",
+   "cat": "government",
+   "hit": [
+    "open"
+   ]
+  }
+ ],
+ "STRONG": [
+  {
+   "id": "strong1",
+   "s": "The elements of elegance and color in Jannequin are strong French characteristics.",
+   "cat": "reviews",
+   "hit": [
+    "strong"
+   ]
+  },
+  {
+   "id": "strong2",
+   "s": "In addition to the rich soil they benefit by feedings of manure water every other week, diluted to the color of weak tea.",
+   "cat": "hobbies",
+   "hit": [
+    "weak"
+   ]
+  },
+  {
+   "id": "strong3",
+   "s": "The UN army is too weak, too demoralized for the task.",
+   "cat": "editorial",
+   "hit": [
+    "weak"
+   ]
+  },
+  {
+   "id": "strong4",
+   "s": "Again, a force too strong for unfrozen bodies to endure would be applied.",
+   "cat": "science_fiction",
+   "hit": [
+    "force",
+    "strong"
+   ]
+  },
+  {
+   "id": "strong5",
+   "s": "Forces and military personnel strength.",
+   "cat": "government",
+   "hit": [
+    "strength"
+   ]
+  },
+  {
+   "id": "strong6",
+   "s": "Basic reference tools are the backbone of the collection, but there is also specialization in science and technology, an indicated weakness in local libraries.",
+   "cat": "news",
+   "hit": [
+    "weakness"
+   ]
+  },
+  {
+   "id": "strong7",
+   "s": "In addition, their establishment made it unnecessary to begin publication of a contemplated Air Force medical bulletin.",
+   "cat": "government",
+   "hit": [
+    "force"
+   ]
+  },
+  {
+   "id": "strong8",
+   "s": "Look in this book for weak mortals and only on occasion for virtues and vices on the heroic scale.",
+   "cat": "reviews",
+   "hit": [
+    "weak"
+   ]
+  },
+  {
+   "id": "strong9",
+   "s": "He strong as a bull but gentle as a baby.",
+   "cat": "mystery",
+   "hit": [
+    "strong"
+   ]
+  },
+  {
+   "id": "strong10",
+   "s": "He becomes more callous, the population becomes more hostile, the situation grows more tense, and the police force is increased.",
+   "cat": "lore",
+   "hit": [
+    "force"
+   ]
+  },
+  {
+   "id": "strong11",
+   "s": "He speaks your language too, for he is the grandson of a chieftain on Taui who made much magic and was strong and cunning.",
+   "cat": "adventure",
+   "hit": [
+    "strong"
+   ]
+  },
+  {
+   "id": "strong12",
+   "s": "Since the removal force is a function of coating thickness, a differential transformer pickup has been incorporated into the instrument to accurately measure film thickness.",
+   "cat": "learned",
+   "hit": [
+    "force"
+   ]
+  },
+  {
+   "id": "strong13",
+   "s": "He paused on the landing to steady his breathing and then bent to examine the single door by the light of the weak bulb overhead.",
+   "cat": "mystery",
+   "hit": [
+    "weak"
+   ]
+  },
+  {
+   "id": "strong14",
+   "s": "The task force might make a start in Washington with Republican congressional leaders.",
+   "cat": "editorial",
+   "hit": [
+    "force"
+   ]
+  },
+  {
+   "id": "strong15",
+   "s": "An isotropic resonance shift of Af to lower applied fields indicates a weak isotropic hyperfine contact interaction.",
+   "cat": "learned",
+   "hit": [
+    "weak"
+   ]
+  },
+  {
+   "id": "strong16",
+   "s": "Presumably the interfacial bond strength and gross cohesive properties are identical in each case.",
+   "cat": "learned",
+   "hit": [
+    "strength"
+   ]
+  },
+  {
+   "id": "strong17",
+   "s": "But the time came when I was no longer innocent and therefore no longer helpless.",
+   "cat": "belles_lettres",
+   "hit": [
+    "helpless"
+   ]
+  },
+  {
+   "id": "strong18",
+   "s": "It leases the whole facility to a large oil company, at least large enough to have a strong credit position.",
+   "cat": "hobbies",
+   "hit": [
+    "strong"
+   ]
+  },
+  {
+   "id": "strong19",
+   "s": "The strains of neutralism are running strong, notably in England, and even in Germany.",
+   "cat": "lore",
+   "hit": [
+    "strong"
+   ]
+  },
+  {
+   "id": "strong20",
+   "s": "Horse smell was very strong, and he could hear the crunch of grain being ground between strong jaws.",
+   "cat": "adventure",
+   "hit": [
+    "strong"
+   ]
+  }
+ ],
+ "TRUE": [
+  {
+   "id": "true1",
+   "s": "Now under me I could see him for what he really was, a boy dressed up in streaks of paint.",
+   "cat": "adventure",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true2",
+   "s": "Heidenstam wrote four other works of fiction about earlier figures revered in Swedish memory.",
+   "cat": "belles_lettres",
+   "hit": [
+    "fiction"
+   ]
+  },
+  {
+   "id": "true3",
+   "s": "The application of these formulae could not please both sides, for they really attempted to marry the impossible to the inevitable.",
+   "cat": "learned",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true4",
+   "s": "Lie back and go to sleep.",
+   "cat": "romance",
+   "hit": [
+    "lie"
+   ]
+  },
+  {
+   "id": "true5",
+   "s": "He holds that goodness and badness lie in feelings of approval or disapproval.",
+   "cat": "learned",
+   "hit": [
+    "lie"
+   ]
+  },
+  {
+   "id": "true6",
+   "s": "Somehow the thought of a simple man bewildered by things no one had ever really helped him understand moved the driver.",
+   "cat": "adventure",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true7",
+   "s": "I asked him if it was true.",
+   "cat": "romance",
+   "hit": [
+    "true"
+   ]
+  },
+  {
+   "id": "true8",
+   "s": "What is the real cause of them??",
+   "cat": "religion",
+   "hit": [
+    "real"
+   ]
+  },
+  {
+   "id": "true9",
+   "s": "This is particularly true in large centers of Jewish population like New York, Chicago, and Philadelphia.",
+   "cat": "lore",
+   "hit": [
+    "true"
+   ]
+  },
+  {
+   "id": "true10",
+   "s": "Absolution for his lie??",
+   "cat": "romance",
+   "hit": [
+    "lie"
+   ]
+  },
+  {
+   "id": "true11",
+   "s": "Not really startled, but careful to appear so, Grosse sucked noisily on his pipe.",
+   "cat": "mystery",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true12",
+   "s": "This is true also of a painter like Jackson Pollock.",
+   "cat": "learned",
+   "hit": [
+    "true"
+   ]
+  },
+  {
+   "id": "true13",
+   "s": "That was really something, coming from Ching.",
+   "cat": "fiction",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true14",
+   "s": "Helion did not realize it at the time, but it was true.",
+   "cat": "belles_lettres",
+   "hit": [
+    "true"
+   ]
+  },
+  {
+   "id": "true15",
+   "s": "However, she really does not know how to match the quantity of dollars given away by a quality of leadership that is basically needed.",
+   "cat": "reviews",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true16",
+   "s": "The more Adoniram looked at the Greek word for baptism, the more unhappy he became over its true meaning.",
+   "cat": "belles_lettres",
+   "hit": [
+    "true"
+   ]
+  },
+  {
+   "id": "true17",
+   "s": "The maturity in this point of view lies in its recognition that no basic problem is ever solved without being clearly understood.",
+   "cat": "belles_lettres",
+   "hit": [
+    "lies"
+   ]
+  },
+  {
+   "id": "true18",
+   "s": "Find out what you like to do most and really give it a whirl.",
+   "cat": "lore",
+   "hit": [
+    "really"
+   ]
+  },
+  {
+   "id": "true19",
+   "s": "Should I tell him the truth about Alice??",
+   "cat": "romance",
+   "hit": [
+    "truth"
+   ]
+  },
+  {
+   "id": "true20",
+   "s": "Actually, Davis would have to toss in the towel soon anyway.",
+   "cat": "news",
+   "hit": [
+    "actually"
+   ]
+  }
+ ],
+ "LIGHT": [
+  {
+   "id": "light1",
+   "s": "The pair of white cotton shorts ruled his life.",
+   "cat": "romance",
+   "hit": [
+    "white"
+   ]
+  },
+  {
+   "id": "light2",
+   "s": "Then they picked up the smaller black specks on the plain in front of him.",
+   "cat": "lore",
+   "hit": [
+    "black"
+   ]
+  },
+  {
+   "id": "light3",
+   "s": "Linda looked remote yet lovely in black, and everyone held his or her breath.",
+   "cat": "romance",
+   "hit": [
+    "black"
+   ]
+  },
+  {
+   "id": "light4",
+   "s": "He knew all about the appeal of a black shirt and jackboots to a poor, southern, peasant boy.",
+   "cat": "belles_lettres",
+   "hit": [
+    "black"
+   ]
+  },
+  {
+   "id": "light5",
+   "s": "Of the two, The Life Of Bright is incomparably the better biography.",
+   "cat": "belles_lettres",
+   "hit": [
+    "bright"
+   ]
+  },
+  {
+   "id": "light6",
+   "s": "On the basis of pupil assignment criteria, Judge Albert Bryan has assigned Negro children to formerly white schools in Arlington and Alexandria, Virginia.",
+   "cat": "learned",
+   "hit": [
+    "white"
+   ]
+  },
+  {
+   "id": "light7",
+   "s": "He found the pilot light and turned on one of the burners for her.",
+   "cat": "fiction",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light8",
+   "s": "Many of the cells and microorganisms which are transparent to visible light, absorb or reflect the much shorter wavelengths of the ultraviolet spectrum.",
+   "cat": "hobbies",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light9",
+   "s": "Too light a feed, particularly with metal or other hard material, causes overheating of the tool and burning of the cutting edge.",
+   "cat": "hobbies",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light10",
+   "s": "The thin gray figures raised a hoarse, cawing cry like the call of a bird flock.",
+   "cat": "fiction",
+   "hit": [
+    "gray"
+   ]
+  },
+  {
+   "id": "light11",
+   "s": "Then pour water or light oil from a graduated beaker into the chamber to fill the chamber to its gasket surface.",
+   "cat": "hobbies",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light12",
+   "s": "He regulated the dualities of light and darkness, Yang and Yin, which are locked in eternal struggle.",
+   "cat": "religion",
+   "hit": [
+    "darkness",
+    "light"
+   ]
+  },
+  {
+   "id": "light13",
+   "s": "Just plain old black dirt was also used as a pack to relieve wasp or bee stings.",
+   "cat": "lore",
+   "hit": [
+    "black"
+   ]
+  },
+  {
+   "id": "light14",
+   "s": "It seemed to be only a riot of color, light and meaningless activity.",
+   "cat": "science_fiction",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light15",
+   "s": "Or the surging whirling sounds of bats at night, when their black bodies dived into the blackness above and below the amber street lights.",
+   "cat": "romance",
+   "hit": [
+    "black",
+    "lights"
+   ]
+  },
+  {
+   "id": "light16",
+   "s": "When Felix first opened the door on it, all these shades were tightly drawn and the whole studio was as dark as night.",
+   "cat": "mystery",
+   "hit": [
+    "dark"
+   ]
+  },
+  {
+   "id": "light17",
+   "s": "For example, bright sunlight is rapidly destructive for living microorganisms suspended in air.",
+   "cat": "learned",
+   "hit": [
+    "bright"
+   ]
+  },
+  {
+   "id": "light18",
+   "s": "They had for cover both darkness and a summer storm.",
+   "cat": "adventure",
+   "hit": [
+    "darkness"
+   ]
+  },
+  {
+   "id": "light19",
+   "s": "Relative incident light intensities were measured with a thermopile potentiometer system.",
+   "cat": "learned",
+   "hit": [
+    "light"
+   ]
+  },
+  {
+   "id": "light20",
+   "s": "In truth, we can say that this broke the power of Senator Joseph McCarthy, who was finally exposed in full light to the American people.",
+   "cat": "belles_lettres",
+   "hit": [
+    "light"
+   ]
+  }
+ ],
+ "COLOR": [
+  {
+   "id": "color1",
+   "s": "A shot of orange juice would make everything seem better.",
+   "cat": "romance",
+   "hit": [
+    "orange"
+   ]
+  },
+  {
+   "id": "color2",
+   "s": "She swung her eyes up to the blue of the window, her jaws gently mashing the bitter beans.",
+   "cat": "fiction",
+   "hit": [
+    "blue"
+   ]
+  },
+  {
+   "id": "color3",
+   "s": "A range of bluffs hugged the horizon, the color of decaying moss.",
+   "cat": "science_fiction",
+   "hit": [
+    "color"
+   ]
+  },
+  {
+   "id": "color4",
+   "s": "There was no sound and apparently no movement in the room except the noiseless pulsation of the red light on the wall.",
+   "cat": "mystery",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color5",
+   "s": "His light blue eyes, set deep within the face, are actively and continually looking.",
+   "cat": "belles_lettres",
+   "hit": [
+    "blue"
+   ]
+  },
+  {
+   "id": "color6",
+   "s": "And he dismissed the colored pastor.",
+   "cat": "fiction",
+   "hit": [
+    "colored"
+   ]
+  },
+  {
+   "id": "color7",
+   "s": "Their national leader, Robert Bolivar DePugh of Norborne, Mo., says the Minutemen believe that guerrilla tactics are best suited to defeat the Red onslaught.",
+   "cat": "editorial",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color8",
+   "s": "During the night, a phone company technician had deadened the bells and installed red blinkers on the phones.",
+   "cat": "fiction",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color9",
+   "s": "It can cut a red squirrel neatly in two or burst a crow into a flurry of feathers.",
+   "cat": "hobbies",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color10",
+   "s": "A sudden high rise in temperature will turn your pool poison green overnight.",
+   "cat": "hobbies",
+   "hit": [
+    "green"
+   ]
+  },
+  {
+   "id": "color11",
+   "s": "He wore tennis shorts and a white sweater with a red V at the neck, the sleeves pushed above the elbows.",
+   "cat": "adventure",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color12",
+   "s": "The streets in the colored section were dirty.",
+   "cat": "fiction",
+   "hit": [
+    "colored"
+   ]
+  },
+  {
+   "id": "color13",
+   "s": "Fantastic colors are to be seen in the fanciful formations of eroded rock which loom out of the semiarid country in both parks.",
+   "cat": "hobbies",
+   "hit": [
+    "colors"
+   ]
+  },
+  {
+   "id": "color14",
+   "s": "In other instances where there is no automatic block signaling, the distant has only green and yellow aspects.",
+   "cat": "hobbies",
+   "hit": [
+    "green",
+    "yellow"
+   ]
+  },
+  {
+   "id": "color15",
+   "s": "He threw green stuff on it, and a thin blue column of smoke rose.",
+   "cat": "lore",
+   "hit": [
+    "blue",
+    "green"
+   ]
+  },
+  {
+   "id": "color16",
+   "s": "As he had done on his first Imperial sortie a year and a half before, Lewis trekked southeast through Red Russia to Kamieniec.",
+   "cat": "belles_lettres",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color17",
+   "s": "Considerable specialization in teaching subjects such as architecture, furniture design, textiles and color is also desirable.",
+   "cat": "hobbies",
+   "hit": [
+    "color"
+   ]
+  },
+  {
+   "id": "color18",
+   "s": "Yellow Wolf was there, nephew of the young chief by an older brother long dead, in whom also the disordered chemistries of youth worked.",
+   "cat": "romance",
+   "hit": [
+    "yellow"
+   ]
+  },
+  {
+   "id": "color19",
+   "s": "I knew Red and Handley well.",
+   "cat": "mystery",
+   "hit": [
+    "red"
+   ]
+  },
+  {
+   "id": "color20",
+   "s": "Its ribs showed, it was a yellow nondescript color, it suffered from a variety of sores, hair had scabbed off its body in patches.",
+   "cat": "belles_lettres",
+   "hit": [
+    "color",
+    "yellow"
+   ]
+  }
+ ],
+ "CONTROL": [
+  {
+   "id": "c1",
+   "s": "When the Yalta Papers were finally published with great fanfare they had revealed no betrayal by anyone.",
+   "cat": "learned"
+  },
+  {
+   "id": "c2",
+   "s": "Suppose Af crosses C when Af.",
+   "cat": "learned"
+  },
+  {
+   "id": "c3",
+   "s": "The Rusk belief in balanced defense, replacing the Dulles theory of massive retaliation, removes a grave danger that has existed.",
+   "cat": "editorial"
+  },
+  {
+   "id": "c4",
+   "s": "The Kansas City and the Topeka KCs are arranging that Juniors who win at their shows will be qualified to win points for Westminster.",
+   "cat": "hobbies"
+  },
+  {
+   "id": "c5",
+   "s": "This is done by measuring the distance from the surface on which the tire is resting to the center of the rear axle shaft.",
+   "cat": "hobbies"
+  },
+  {
+   "id": "c6",
+   "s": "Clams, crabs, and other marine life may add interest at coastal areas.",
+   "cat": "hobbies"
+  },
+  {
+   "id": "c7",
+   "s": "It did not take me long to slip the bolt securely and return to the rear and its couch.",
+   "cat": "adventure"
+  },
+  {
+   "id": "c8",
+   "s": "Col. Clifton Lisle, of Chester Springs, who headed the Troop Committee for much of its second and third decades, is now an honorary member.",
+   "cat": "news"
+  },
+  {
+   "id": "c9",
+   "s": "His goal was to obtain a National League team for this city.",
+   "cat": "news"
+  },
+  {
+   "id": "c10",
+   "s": "The husband and wife should start with this anatomical information clearly in mind.",
+   "cat": "lore"
+  },
+  {
+   "id": "c11",
+   "s": "Lighting is an important consideration.",
+   "cat": "government"
+  },
+  {
+   "id": "c12",
+   "s": "At that point the Administration will have little reason to hang onto Gen. Swing.",
+   "cat": "editorial"
+  },
+  {
+   "id": "c13",
+   "s": "The public is now armed with sophistication and numerous competing media.",
+   "cat": "editorial"
+  },
+  {
+   "id": "c14",
+   "s": "The suit against the union was successful and many workers lost their homes to pay off the judgment.",
+   "cat": "news"
+  },
+  {
+   "id": "c15",
+   "s": "Nonetheless, they found common interests.",
+   "cat": "lore"
+  },
+  {
+   "id": "c16",
+   "s": "That evening turned out to be hell like all the others.",
+   "cat": "fiction"
+  },
+  {
+   "id": "c17",
+   "s": "In each city civic and education leaders have been working hard to get public opinion prepared to accept the inevitability of equal treatment.",
+   "cat": "editorial"
+  },
+  {
+   "id": "c18",
+   "s": "Yet an economy cannot get the most out of its resources if dishonesty, corruption, and favoritism are widespread.",
+   "cat": "government"
+  }
+ ]
+}
