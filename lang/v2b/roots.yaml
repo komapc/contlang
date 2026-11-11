@@ -629,13 +629,13 @@ roots:
   status: '**новый корень** (лакуна из математического кодирования, [docs/math.md](../docs/math.md)); условие правила выполнено: на существующих корнях слепой тест 12 слов × 2 кодировщика дал 3 точных из 24 (письменное собирают через `SAY` или `SEE` и читают как речь, песню, прибор); с корнем 15 из 23 и 17 из 23 среди трёх ответов — [roundtrip_candidates](../data/translation_test/roundtrip_candidates.md). `TEXT \| o` текст, `TEXT \| i` писать, `CONSUME(=+5) TEXT \| i` читать, `SOMEONE TEXT \| o` писатель, `PLACE TEXT PART(=+5) \| o` библиотека'
 - name: SHAPE
   axis:
-    neg: круглое, шар, круг
-    mid: брусок, куб
+    neg: вытянутое, палка, стержень, трубка
+    mid: компактное, шар, ком, куб, камень
     pos: плоское, лист, доска, стол, пол
-  ru_axis: 'форма (−5 круглое, шар, круг, кольцо … 0 брусок, куб, ком … +5 плоское: лист, доска, стол, пол, кровать; вытянутое — LONG)'
-  en_axis: '-5 round, ball, circle, ring … 0 block, cube, lump … +5 flat: sheet, board, table, floor, bed (long things are LONG)'
+  ru_axis: 'форма по пропорциям (−5 вытянутое: палка, стержень, трубка … 0 компактное: шар, ком, куб, камень … +5 плоское: лист, доска, стол, пол, тарелка, кровать; из чего сделано длинное — LONG)'
+  en_axis: '-5 elongated: stick, rod, tube … 0 compact: ball, lump, cube, stone … +5 flat: sheet, board, table, floor, plate, bed (proportions; what long things are made of is LONG)'
   en_gloss: shape
-  status: 'v2b (2026-11-11): *sike, supa, lipu* Toki Pona; [roots_proposal](../v2/roots_proposal.md)'
+  status: 'v2b (2026-11-11): *sike, supa, lipu* Toki Pona; [roots_proposal](../v2/roots_proposal.md). Ось изменена после v2b1 (было: −5 круглое … 0 куб … +5 плоское — куб не между кольцом и листом, замечание пользователя)'
 - name: OPEN
   axis:
     neg: закрытое вместилище, коробка, сумка, чашка
