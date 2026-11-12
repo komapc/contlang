@@ -49,5 +49,5 @@ and manipulation right, sentences wrong in direction for A (forecast +0.05, got 
 
 - One encoder per half of the items per arm: encoder differences are confounded with arm (encoder AR1 wrote its last 10
   sentences quickly — but not shorter than A1's).
-- Sentence scores are within this run only (B = 1.40 here; v2b2 had v2b at ~1.0 — judge drift between runs).
+- Sentence scores are within this run only (B = 1.40 here, while earlier runs scored min-co on the same sentences around 1.0–1.1 — judge drift between runs).
 - Words: one code per word, first answer only.
