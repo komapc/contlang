@@ -1,4 +1,4 @@
-"""size0: график → size.svg (чистый SVG, без зависимостей).  .venv/bin/python data/eval/runs/size0/plot.py"""
+"""size0: chart → size.svg (plain SVG, no dependencies).  .venv/bin/python data/eval/runs/size0/plot.py"""
 import json, math
 from pathlib import Path
 
@@ -21,8 +21,8 @@ def panel(x0, title, sub, ylab, ymin, ymax, yticks, yfmt):
         T(px - 8, ly(v) + 4, yfmt(v), a="end")
     for L in (100, 300, 1000, 3000, 10000):
         out.append(f'<line x1="{lx(L):.1f}" x2="{lx(L):.1f}" y1="{py}" y2="{py + ph}" stroke="{GRID}" stroke-width="0.7"/>')
-        T(lx(L), py + ph + 18, f"{L:,}".replace(",", " "), a="middle")
-    T(px + pw / 2, py + ph + 40, "заучиваемых единиц L (корни, метки… + статьи словаря), лог. шкала", a="middle")
+        T(lx(L), py + ph + 18, f"{L:,}", a="middle")
+    T(px + pw / 2, py + ph + 40, "units to learn L (roots, marks… + lexicon entries), log scale", a="middle")
     T(x0 + 10, 76, ylab)
     return lx, ly
 
@@ -33,9 +33,9 @@ def line(pts, color, dash=""):
 def dot(x, y, color, hollow=False):
     out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{"#fff" if hollow else color}" stroke="{color}" stroke-width="2"/>')
 
-# панель 1: слова (модель по big1000)
-lx, ly = panel(0, "Слова: понятая доля текста", "модель: big1000 + словарь из N частых слов (Brown)",
-               "понято «близко», % словоупотреблений", 20, 100, (20, 40, 60, 80, 100), lambda v: f"{v}%")
+# panel 1: words (model from big1000)
+lx, ly = panel(0, "Words: share of text understood", "model: big1000 + lexicon of the N most frequent words (Brown)",
+               "read as close, % of word tokens", 20, 100, (20, 40, 60, 80, 100), lambda v: f"{v}%")
 pts = [(lx(c["L"]), ly(100 * c["U09"])) for c in C if c["N"] <= 10000]
 line([(lx(c["L"]), ly(100 * c["U"])) for c in C if c["N"] <= 10000], BLUE_L, 'stroke-dasharray="5 4"')
 line(pts, BLUE)
@@ -43,22 +43,22 @@ for c in C:
     if c["N"] in (0, 300, 1000, 3000, 10000):
         dot(lx(c["L"]), ly(100 * c["U09"]), BLUE)
         T(lx(c["L"]) + 7, ly(100 * c["U09"]) + 17, f'{100 * c["U09"]:.0f}%', c=INK)
-T(lx(10076) - 4, ly(98) - 8, "потолок (статья всегда верна)", a="end")
-T(lx(1500), ly(62), "min-co + N статей", c=BLUE, fw="bold")
+T(lx(10076) - 4, ly(98) - 8, "ceiling (entry always read right)", a="end")
+T(lx(1500), ly(62), "min-co + N entries", c=BLUE, fw="bold")
 dot(lx(120), ly(34), ORANGE, hollow=True)
-T(lx(120) + 9, ly(34) + 4, "Toki Pona ≈ 34% (оценка, из cos)", c=INK)
+T(lx(120) + 9, ly(34) + 4, "Toki Pona ≈ 34% (estimate, from cos)", c=INK)
 
-# панель 2: предложения (замер lexn1, одни судьи)
-lx, ly = panel(510, "Предложения: замер lexn1", "60 предложений bench1 dev, одни и те же 4 судьи",
-               "смысл, 0–3", 0.8, 2.4, (1.0, 1.4, 1.8, 2.2), lambda v: f"{v:.1f}".replace(".", ","))
+# panel 2: sentences (lexn1 measurement, same judges)
+lx, ly = panel(510, "Sentences: lexn1 measurement", "60 bench1 dev sentences, the same 4 judges",
+               "meaning, 0–3", 0.8, 2.4, (1.0, 1.4, 1.8, 2.2), lambda v: f"{v:.1f}")
 S = [(76, 0.97, "mc"), (376, 1.14, "+300"), (1076, 1.50, "+1000"), (3076, 1.79, "+3000")]
 line([(lx(L), ly(v)) for L, v, _ in S], BLUE)
 for L, v, n in S:
-    dot(lx(L), ly(v), BLUE); T(lx(L) + 7, ly(v) + 17, f"{n}: {v:.2f}".replace(".", ","), c=INK)
+    dot(lx(L), ly(v), BLUE); T(lx(L) + 7, ly(v) + 17, f"{n}: {v:.2f}", c=INK)
 out.append(f'<line x1="{lx(76):.1f}" x2="{lx(20000):.1f}" y1="{ly(2.31):.1f}" y2="{ly(2.31):.1f}" stroke="{BLUE_L}" stroke-width="2" stroke-dasharray="5 4"/>')
-T(lx(20000) - 4, ly(2.31) - 8, "все слова известны: 2,31", a="end")
+T(lx(20000) - 4, ly(2.31) - 8, "all words known: 2.31", a="end")
 dot(lx(120), ly(1.10), ORANGE)
-T(lx(70), ly(1.32), "Toki Pona (шифр): 1,10", c=INK)
+T(lx(70), ly(1.32), "Toki Pona (cipher): 1.10", c=INK)
 out.append(f'<line x1="{lx(120):.1f}" y1="{ly(1.10)-6:.1f}" x2="{lx(110):.1f}" y2="{ly(1.30)+5:.1f}" stroke="{ORANGE}"/>')
 out.append("</svg>")
 (D / "size.svg").write_text("\n".join(out))

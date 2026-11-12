@@ -1,27 +1,28 @@
-# size0 — размер словаря ↔ точность (по уже собранным данным, без новых агентов)
+# size0 — lexicon size vs accuracy (from data already collected, no new agents)
 
-Скрипт [analyze.py](analyze.py), итоги [result.txt](result.txt), кривая [curve.json](curve.json), график [plot.py](plot.py).
+Script [analyze.py](analyze.py), results [result.txt](result.txt), curve [curve.json](curve.json), chart [plot.py](plot.py).
 
-![размер словаря и точность](size.svg)
+![lexicon size vs accuracy](size.svg)
 
-## Метрика
+## Metric
 
-**U(L) — понятая доля текста**: доля словоупотреблений знаменательных слов (Brown; служебные — список FUNC из lexn1 — не
-считаются), которые слепой читатель прочитает «близко» (судья: 2 из 0–2), при **L заучиваемых единицах** (правило retell1:
-корни, части речи, роли, метки, частицы; min-co v1 = 76, v2b = 82, Toki Pona = 120). Словарь из N статей = первые N лемм
-Brown: L = 76 + N. Слово из словаря читается с точностью a_lex (1,0 — потолок; 0,9 — с потерями на омонимах), остальные —
-сборкой, с точностью по полосе частоты из [big1000](../big1000/README.md) (1000 слов, кодер Haiku, судья Haiku).
+**U(L), the share of text understood**: the share of content-word tokens (Brown corpus; function words — the FUNC list
+from lexn1 — are not counted) that a blind reader reads as *close* (judge: 2 of 0–2), given **L units to learn** (the
+retell1 counting rule: roots, parts of speech, roles, marks, particles; min-co v1 = 76, v2b = 82, Toki Pona = 120).
+A lexicon of N entries = the N most frequent Brown lemmas: L = 76 + N. A lexicon word is read right with probability
+a_lex (1.0 = ceiling; 0.9 = losses on homonyms). Other words are composed from roots, with the accuracy of their frequency
+band taken from [big1000](../big1000/README.md) (1000 words, Haiku encoder, Haiku judge).
 
-## Сборка по частоте (big1000, «близко»)
+## Composition by frequency (big1000, close)
 
-| ранг леммы | 1–300 | 300–1000 | 1000–3000 | 3000–10 000 | > 10 000 |
+| lemma rank | 1–300 | 300–1000 | 1000–3000 | 3000–10 000 | > 10 000 |
 |---|---|---|---|---|---|
-| модель (Haiku) | 62 % | 58 % | 53 % | 43 % | 50 % |
-| математика сайта | 27 % | 27 % | 27 % | 20 % | 13 % |
+| model encoder (Haiku) | 62 % | 58 % | 53 % | 43 % | 50 % |
+| site math encoder | 27 % | 27 % | 27 % | 20 % | 13 % |
 
-## Кривая (a_lex 0,9; в скобках — потолок 1,0)
+## Curve (a_lex 0.9; ceiling 1.0 in brackets)
 
-| N статей | L | покрытие текста | U |
+| N entries | L | text coverage | U |
 |---|---|---|---|
 | 0 | 76 | 0 % | 55 % |
 | 100 | 176 | 19 % | 61 % (63) |
@@ -30,26 +31,26 @@ Brown: L = 76 + N. Слово из словаря читается с точно
 | 3000 | 3076 | 80 % | 81 % (89) |
 | 10 000 | 10 076 | 96 % | 88 % (98) |
 
-Toki Pona (L = 120): прямого замера той же мерой нет. Оценка по [toki](../toki/README.md) (те же 100 слов, cos ≥ 0,5):
-TP 39 % против min-co 63 % → около **34 %** на уровне слов. **Но на уровне предложений Toki Pona впереди** (tpx1: mc 1,04,
-tpx 1,54, tp 1,71): отдельные слова TP читаются хуже, а в предложении — лучше.
+Toki Pona (L = 120): no direct measurement with this metric. Estimate from [toki](../toki/README.md) (same 100 words,
+cos ≥ 0.5): TP 39 % vs min-co 63 % → about **34 %** at word level. **But at sentence level Toki Pona is ahead** (tpx1:
+mc 1.04, tpx 1.54, tp 1.71): single TP words read worse, TP sentences read better.
 
-Проверка на lexn1 (предложения, одни судьи): mc 0,97 (L 76) → g300 1,14 → g1000 1,50 → g3000 1,79; tpx 1,10 (L 120).
-Линейная модель 0,97 + 1,34 × покрытие даёт 1,29 / 1,57 / 1,80 — для 1000 и 3000 сходится, для 300 завышает.
+Check against lexn1 (sentences, same judges): mc 0.97 (L 76) → g300 1.14 → g1000 1.50 → g3000 1.79; tpx 1.10 (L 120).
+A linear model 0.97 + 1.34 × coverage predicts 1.29 / 1.57 / 1.80 — it fits for 1000 and 3000, overshoots for 300.
 
-## 1 к 1, 1 к 2, 1 к 3 (что уже есть)
+## 1 to 1, 1 to 2, 1 to 3 (what already exists)
 
-| прогон | 1 слово | 2 слова | 3 слова | заметка |
+| run | 1 word | 2 words | 3 words | note |
 |---|---|---|---|---|
-| twowords3 (место, меньше — лучше) | 60 | 52 | — | n.s. |
-| three (трудные слова, близко) | 9 % | 11 % | 14 % | W3 − A +4,8 [0 … +9,6] |
-| func1 (близко) | 36 % (1,05 слова) | — | 44 % (≤ 3, в среднем 1,95) | +7,5 [−4,6 … +20] |
-| phrases3 (понятия-фразы, близко) | 35 % | 52 % | — | пословно лучше |
+| twowords3 (rank, lower is better) | 60 | 52 | — | n.s. |
+| three (hard words, close) | 9 % | 11 % | 14 % | W3 − A +4.8 [0 … +9.6] |
+| func1 (close) | 36 % (1.05 words) | — | 44 % (≤ 3, mean 1.95) | +7.5 [−4.6 … +20] |
+| phrases3 (concepts that are phrases, close) | 35 % | 52 % | — | word by word is better |
 
-Каждое добавленное слово даёт +2…+8 п. п., и ни разу не значимо, кроме понятий, которые и в английском — фразы.
+Each extra word adds +2…+8 pp and is never significant, except for concepts that are phrases in English too.
 
-## Оговорки
+## Caveats
 
-- Кривая — **модель**, не замер: a_lex предположен; полосы частоты взяты из одного прогона с судьёй Haiku.
-- Toki Pona на кривой — пересчёт из другой меры (cos), только порядок величины.
-- Для Toki Pona разбивки по 1/2/3 слов и по частоте нет совсем.
+- The curve is a **model**, not a measurement: a_lex is assumed; frequency bands come from one run with a Haiku judge.
+- Toki Pona on the word chart is converted from another metric (cos) — order of magnitude only.
+- There is no 1/2/3-word or frequency breakdown for Toki Pona at all.
