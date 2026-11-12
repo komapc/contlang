@@ -58,3 +58,26 @@ for Toki Pona.
 - One Toki Pona reader (tp2a) deliberately gave different answers to identical phrases; this mostly affects k1, where
   many words share one Toki Pona word.
 - The curve is a model: a_lex = 0.9 assumed; ranks above 10 000 use the 3001–10000 band.
+
+## For comparison: a machine code with no human limit ([machine.py](machine.py), [machine.txt](machine.txt); grey lines)
+
+Not a language, a computed reference. 82 units = the 82 best axes of word vectors (PCA of ConceptNet Numberbatch over
+21,514 Brown lemmas). A word is written as its continuous values on those axes, keeping the 1, 2 or 3 largest ("sparse")
+or all 82 rounded to 11 levels like min-co's −5..+5 ("dense ±5"). Decoding = nearest word vector; close = same word or a
+WordNet synonym (stricter than the human judges' "close").
+
+| code | no lexicon | N = 1000 | N = 3000 |
+|---|---|---|---|
+| 1 number | 1 % | 58 % | 80 % |
+| 2 numbers | 7 % | 61 % | 81 % |
+| 3 numbers | 19 % | 67 % | 84 % |
+| 82 numbers (±5) | 98 % | 99 % | 99 % |
+| min-co, up to 3 words (people) | 47 % | ≈ 69 % | ≈ 78 % |
+
+- With 1–3 values per word the machine is **far worse** than min-co without a lexicon (1–19 % vs 42–47 %): best-variance
+  axes are not where words sit, while human roots are chosen so that one root + value lands near a word.
+- With all 82 values a word is recovered almost always — but that code is 82 numbers per word, and the decoder must know
+  the vector of every one of 21,514 words, i.e. it has memorised the whole lexicon. The human limit is exactly what rules
+  this out.
+- With a large lexicon (N ≥ 2000) the sparse machine lines pass min-co: the lexicon entries count as remembered 100 %
+  (people: 90 %).

@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" font-family="Helvetica, Arial, sans-serif" font-size="13">
-<rect width="760" height="520" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="560" viewBox="0 0 800 560" font-family="Helvetica, Arial, sans-serif" font-size="13">
+<rect width="800" height="560" fill="#ffffff"/>
 <text x="10.0" y="30.0" fill="#1f1f1e" text-anchor="start" font-size="16" font-weight="bold">Share of text understood vs units to learn, by phrase limit</text>
 <text x="10.0" y="50.0" fill="#6b6a64" text-anchor="start" font-size="13" font-weight="normal">size1: 120 words in 4 frequency bands, measured; curve = lexicon of the N most frequent words + composition</text>
 <text x="10.0" y="74.0" fill="#6b6a64" text-anchor="start" font-size="13" font-weight="normal">read as close, % of word tokens</text>
@@ -38,6 +38,10 @@
 <circle cx="86.0" cy="285.6" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="1.5"/>
 <polyline points="86.0,271.5 97.6,267.1 108.1,264.0 134.1,257.9 166.6,251.1 210.9,241.3 241.5,234.1 284.1,218.2 346.8,193.8 412.9,175.4 452.6,165.7 503.1,148.8 572.4,133.1" fill="none" stroke="#2a78d6" stroke-width="2" />
 <circle cx="86.0" cy="271.5" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="1.5"/>
+<polyline points="86.0,426.7 97.6,412.9 108.1,403.4 134.1,384.7 166.6,364.5 210.9,334.7 241.5,312.7 284.1,280.8 346.8,232.5 412.9,183.1 452.6,157.1 503.1,129.9 572.4,104.6" fill="none" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="2 4" opacity="0.85"/>
+<polyline points="86.0,407.1 97.6,393.4 108.1,384.9 134.1,366.8 166.6,348.8 210.9,320.4 241.5,298.8 284.1,268.3 346.8,223.0 412.9,177.4 452.6,153.0 503.1,127.6 572.4,103.8" fill="none" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="7 4" opacity="0.85"/>
+<polyline points="86.0,365.4 97.6,351.6 108.1,342.1 134.1,327.1 166.6,311.7 210.9,284.8 241.5,267.0 284.1,240.2 346.8,201.2 412.9,163.5 452.6,143.4 503.1,122.3 572.4,102.2" fill="none" stroke="#8a8984" stroke-width="1.6"  opacity="0.85"/>
+<polyline points="86.0,95.6 97.6,95.6 108.1,95.6 134.1,95.0 166.6,94.5 210.9,94.5 241.5,94.5 284.1,94.3 346.8,93.6 412.9,92.6 452.6,92.1 503.1,91.6 572.4,91.0" fill="none" stroke="#8a8984" stroke-width="3.5"  opacity="0.85"/>
 <text x="610.0" y="100.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="bold">min-co</text>
 <line x1="610" x2="640" y1="114" y2="114" stroke="#2a78d6" stroke-width="2" stroke-dasharray="2 4"/>
 <text x="646.0" y="118.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">1 word: 44%</text>
@@ -52,7 +56,18 @@
 <text x="646.0" y="231.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 2: 28%</text>
 <line x1="610" x2="640" y1="245" y2="245" stroke="#eb6834" stroke-width="2" />
 <text x="646.0" y="249.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 3: 33%</text>
-<text x="610.0" y="305.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">dots = no lexicon</text>
-<text x="610.0" y="322.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">lexicon entries read</text>
-<text x="610.0" y="337.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">right 90% of the time</text>
+<text x="610.0" y="290.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="bold">machine (no human limit)</text>
+<line x1="610" x2="640" y1="304" y2="304" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="2 4"/>
+<text x="646.0" y="308.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">1 number: 1%</text>
+<line x1="610" x2="640" y1="322" y2="322" stroke="#8a8984" stroke-width="1.6" stroke-dasharray="7 4"/>
+<text x="646.0" y="326.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">2 numbers: 7%</text>
+<line x1="610" x2="640" y1="340" y2="340" stroke="#8a8984" stroke-width="1.6" />
+<text x="646.0" y="344.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">3 numbers: 19%</text>
+<line x1="610" x2="640" y1="358" y2="358" stroke="#8a8984" stroke-width="3.5" />
+<text x="646.0" y="362.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">82 numbers: 98%</text>
+<text x="610.0" y="390.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">dots = no lexicon</text>
+<text x="610.0" y="405.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">lexicon entries read right</text>
+<text x="610.0" y="420.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">90% (human), 100% (machine)</text>
+<text x="10.0" y="530.0" fill="#6b6a64" text-anchor="start" font-size="10.5" font-weight="normal">Machine: 82 best axes of word vectors (PCA of Numberbatch), a value per axis; decoded by the nearest vector among 21,514 Brown</text>
+<text x="10.0" y="545.0" fill="#6b6a64" text-anchor="start" font-size="10.5" font-weight="normal">lemmas (the decoder knows every word's vector); close = same word or WordNet synonym. Computed, not read by people; see machine.txt.</text>
 </svg>
