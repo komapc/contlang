@@ -42,12 +42,12 @@ A linear model 0.97 + 1.34 × coverage predicts 1.29 / 1.57 / 1.80 — it fits f
 
 | run | 1 word | 2 words | 3 words | note |
 |---|---|---|---|---|
-| twowords3 (rank, lower is better) | 60 | 52 | — | n.s. |
-| three (hard words, close) | 9 % | 11 % | 14 % | W3 − A +4.8 [0 … +9.6] |
-| func1 (close) | 36 % (1.05 words) | — | 44 % (≤ 3, mean 1.95) | +7.5 [−4.6 … +20] |
-| phrases3 (concepts that are phrases, close) | 35 % | 52 % | — | word by word is better |
+| twowords3 (rank, lower is better) | 60 | 52 (exactly 2) | — | n.s. |
+| three (hard words, close) | 9 % | 11 % (exactly 2) | 14 % (exactly 3) | W3 − A +4.8 [0 … +9.6] |
+| func1 (close) | 36 % (≤ 2, mean 1.05) | — | 44 % (up to 3, mean 1.95) | +7.5 [−4.6 … +20] |
+| phrases3 (concepts that are phrases, close) | 35 % | 52 % (one per English word) | — | word by word is better |
 
-Each extra word adds +2…+8 pp and is never significant, except for concepts that are phrases in English too.
+Only func1 lets the encoder choose the length ("up to"); the other runs force a fixed number of words. Each extra word adds +2…+8 pp and is never significant, except for concepts that are phrases in English too.
 
 ## Caveats
 
