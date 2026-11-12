@@ -86,6 +86,10 @@ WordNet synonym (stricter than the human judges' "close").
 
 ![axes](axes.svg)
 
+The main chart (made by [roots2/plot.py](../roots2/plot.py)) shows the v2c curve from [roots2](../roots2/README.md) (1 … 300
+roots, one protocol), the computer with 3 numbers per word, and Toki Pona. All machine lines (1 / 2 / 3 / 6 / 9 / all values)
+and the roots1 points (v2b with 10 / 20 / 30 roots, 1 / 2 / 3 words) are in [axes_detail.svg](axes_detail.svg).
+
 Machine: X = top principal axes of Numberbatch word vectors; a word = its values (11 levels, like −5..+5) on its r strongest
 axes; reader = nearest word vector with a frequency prior. "Close" proxy: same word, WordNet synonym or cosine ≥ 0.44 —
 agrees with the human judges on 91 % of the 1440 judged size1 answers. Token-weighted, no lexicon.

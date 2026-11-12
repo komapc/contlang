@@ -1,4 +1,4 @@
-"""size1: "learn X axes → how surely is a word guessed" → axes.svg.  .venv/bin/python data/eval/runs/size1/plot_axes.py"""
+"""size1: "learn X axes → how surely is a word guessed" → axes_detail.svg (all machine lines, roots1 points).  .venv/bin/python data/eval/runs/size1/plot_axes.py"""
 import json, math
 from pathlib import Path
 
@@ -30,7 +30,7 @@ for X in (5, 10, 20, 51, 120, 300):
     T(lx(X), py + ph + 18, f"{X}", a="middle")
 T(px + pw / 2, py + ph + 40, "axes (roots) to learn X, log scale", a="middle")
 for r in (1, 2, 3, 6, 9, "all"):
-    pts = sorted((x["X"], 100 * x["U"]) for x in A["res"] if x["r"] == r)
+    pts = sorted((x["X"], 100 * x["U"]) for x in A["res"] if x["r"] == r and x["X"] >= 5)
     d = " ".join(f"{lx(X):.1f},{ly(u):.1f}" for X, u in pts)
     out.append(f'<polyline points="{d}" fill="none" stroke="{RAMP[r]}" stroke-width="2"/>')
     X, u = pts[-1]
@@ -64,5 +64,5 @@ T(10, H - 30, f"Machine reader: nearest word vector among 21,514 Brown lemmas wi
 T(10, H - 15, f"WordNet synonym or cosine ≥ {A['theta']:.2f} (agrees with human judges on 91%). People: measured (size1, roots1), "
               f"roots = the most used v2b roots.", fs=10.5)
 out.append("</svg>")
-(D / "axes.svg").write_text("\n".join(out))
-print("axes.svg")
+(D / "axes_detail.svg").write_text("\n".join(out))
+print("axes_detail.svg")
