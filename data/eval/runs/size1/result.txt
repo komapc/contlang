@@ -1,0 +1,173 @@
+# size1 — result
+
+## Close (judge 2 of 0–2), 120 words, first answer, 2 readers × 2 judges per cell
+
+| | 1 word | ≤ 2 words | ≤ 3 words |
+|---|---|---|---|
+| mc | 43% | 41% | 45% |
+| tp | 9% | 27% | 33% |
+
+## Paired differences, pp [95 % bootstrap over words]
+  mc k2 − k1: -1.7 [-7.7 … +4.6]
+  mc k3 − k1: +2.1 [-6.5 … +10.6]
+  mc k3 − k2: +3.8 [-4.6 … +12.1]
+  tp k2 − k1: +17.9 [+10.8 … +25.2]
+  tp k3 − k1: +23.8 [+14.6 … +32.7]
+  tp k3 − k2: +5.8 [-2.3 … +13.8]
+  tp − mc, k1: -33.3 [-42.3 … -24.4]
+  tp − mc, k2: -13.8 [-22.3 … -5.8]
+  tp − mc, k3: -11.7 [-21.5 … -1.7]
+
+## By frequency band (close)
+
+| | 1–300 | 301–1000 | 1001–3000 | 3001–10000 |
+|---|---|---|---|---|
+| mc k1 | 53% | 40% | 42% | 35% |
+| mc k2 | 52% | 38% | 42% | 32% |
+| mc k3 | 57% | 40% | 53% | 28% |
+| tp k1 | 22% | 2% | 7% | 7% |
+| tp k2 | 30% | 25% | 34% | 20% |
+| tp k3 | 32% | 32% | 37% | 32% |
+
+## Code length (words per code)
+  mc k1: mean 1.00, 1 words: 120
+  mc k2: mean 1.61, 1 words: 47, 2 words: 73
+  mc k3: mean 2.29, 1 words: 27, 2 words: 31, 3 words: 62
+  tp k1: mean 1.00, 1 words: 120
+  tp k2: mean 2.00, 2 words: 120
+  tp k3: mean 2.98, 2 words: 2, 3 words: 118
+
+Judges: exact agreement 91% on 1440 answers
+
+## Share of text understood U (a_lex 0.9; words beyond rank 10 000 use the 3001–10000 band)
+
+| N entries | mc k1 | mc k2 | mc k3 | tp k1 | tp k2 | tp k3 |
+|---|---|---|---|---|---|---|
+| 0 | 44% | 42% | 47% | 11% | 28% | 33% |
+| 50 | 49% | 47% | 51% | 19% | 35% | 40% |
+| 300 | 56% | 55% | 58% | 34% | 48% | 53% |
+| 1000 | 68% | 68% | 69% | 55% | 64% | 66% |
+| 3000 | 79% | 78% | 78% | 73% | 76% | 78% |
+| 10000 | 88% | 87% | 87% | 86% | 87% | 87% |
+
+## Per word (mc k1/k2/k3 | tp k1/k2/k3)
+- big (adjective, 149): mc 1.0/1.0/1.0 | tp 1.0/1.0/0.0 | mc3 `{ BIG(=+3) | a }` | tp3 `suli mute a`
+- bang (verb, 4168): mc 1.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ TOUCH(=+5) MOVE(=+5) | i } LIKE { SAY(=+5) | o }` | tp3 `utala kalama wawa`
+- driver (noun, 1289): mc 0.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ SOMEONE DO | o agent } FOR { THING(=-5) MOVE(=+4) | o }` | tp3 `jan lawa tawa`
+- hate (verb, 1243): mc 1.0/1.0/1.0 | tp 0.0/1.0/0.0 | mc3 `{ WANT(=-5) I+4 | i }` | tp3 `pilin ike mute`
+- ability (noun, 1098): mc 1.0/1.0/1.0 | tp 0.0/1.0/0.8 | mc3 `{ CAN | o quality }` | tp3 `ken pali sona`
+- doctor (noun, 679): mc 0.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ SOMEONE | o } FOR { BODY LIVE(=+3) | i } LIKE { KNOW | o agent }` | tp3 `jan pona sijelo`
+- receive (verb, 239): mc 0.0/1.0/0.5 | tp 0.0/0.0/0.5 | mc3 `{ GIVE(=0) | i T-2 }` | tp3 `kama jo pana`
+- better (adjective, 133): mc 1.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ GOOD | a C+3 }` | tp3 `pona tawa ante`
+- suffrage (noun, 7879): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ RULE(=+5) | o } FOR { THINK(=+5) SOMEONE | o } FOR { MANY(=+5) SOMEONE | o }` | tp3 `ken lawa kulupu`
+- pattern (noun, 515): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SHAPE SAME | o } FOR { SEE | o }` | tp3 `nasin sitelen sama`
+- show (verb, 41): mc 1.0/1.0/1.0 | tp 0.0/1.0/0.5 | mc3 `{ GIVE(=+5) | i } FOR { SEE | i } FOR { MANY(=+3) SOMEONE | o }` | tp3 `pana lukin musi`
+- history (noun, 229): mc 1.0/1.0/1.0 | tp 0.0/1.0/0.0 | mc3 `{ HAPPEN MANY(=+5) | o } PI { TIME(=-5) | o }` | tp3 `toki tenpo pini`
+- press (noun, 437): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ TEXT SAY | o } FOR { MANY(=+5) SOMEONE KNOW | o }` | tp3 `wile kute mute`
+- involvement (noun, 4592): mc 0.5/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ DO | o } PI { PART(=+5) | o }` | tp3 `kama lon kulupu`
+- face (noun, 75): mc 0.0/0.0/1.0 | tp 1.0/1.0/0.0 | mc3 `{ BODY SIDE(=+5) | o } PI { BODY ABOVE | o }` | tp3 `sinpin lawa jan`
+- questionnaire (noun, 2082): mc 0.0/0.0/0.5 | tp 0.0/0.0/0.0 | mc3 `{ TEXT | o } FOR { THINK(=-5) | o } FOR { MEASURE(=+5) | o }` | tp3 `lipu toki seme`
+- vindicate (verb, 8928): mc 0.8/0.5/0.2 | tp 0.0/0.2/0.8 | mc3 `{ TRUE(=+5) DO | i } FROM { KNOW | o } FOR { SOMEONE | o }` | tp3 `pana lon sona`
+- pepper (noun, 4313): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ THING | o } FOR { CONSUME HEAT(=+5) | o } LIKE { GRAIN(=0) | o }` | tp3 `kili pimeja seli`
+- delivery (noun, 3712): mc 1.0/1.0/0.0 | tp 0.0/0.0/0.5 | mc3 `{ GIVE MOVE | o } FOR { THING(=-5) | o }` | tp3 `pana tawa ijo`
+- considerable (adjective, 992): mc 1.0/0.8/0.8 | tp 0.8/0.5/0.0 | mc3 `{ BIG(=+2) MANY(=+3) | a }` | tp3 `suli mute a`
+- result (noun, 110): mc 1.0/1.0/1.0 | tp 0.0/0.0/1.0 | mc3 `{ HAPPEN | o result }` | tp3 `ijo kama tan`
+- instant (noun, 2277): mc 1.0/1.0/0.0 | tp 0.0/1.0/1.0 | mc3 `{ TIME BIG(=-5) | o } PI { SEE | o }` | tp3 `tenpo lili lili`
+- quartet (noun, 5854): mc 0.0/0.0/0.0 | tp 0.0/0.5/0.0 | mc3 `{ MEASURE(=-5) MANY(=0) | o }` | tp3 `nanpa tu tu`
+- frail (adjective, 6119): mc 1.0/1.0/1.0 | tp 0.0/1.0/1.0 | mc3 `{ STRONG(=-5) | a }` | tp3 `sijelo wawa ala`
+- company (noun, 154): mc 0.0/0.5/0.0 | tp 0.0/0.0/1.0 | mc3 `{ PART(=+5) | o } FOR { VALUE(=-5) DO | o }` | tp3 `kulupu pali esun`
+- divide (verb, 1151): mc 0.0/1.0/1.0 | tp 0.0/1.0/0.5 | mc3 `{ JOIN(=-5) | i }` | tp3 `pali tu ijo`
+- difficult (adjective, 531): mc 1.0/1.0/1.0 | tp 0.0/0.0/1.0 | mc3 `{ CAN(=-3) | a }` | tp3 `ike pali mute`
+- antithyroid (adjective, 7161): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ STRONG(=-5) | a } AGAINST { BODY | o } PI { BODY | o }` | tp3 `weka wawa sijelo`
+- tile (noun, 2999): mc 0.0/0.0/0.0 | tp 0.0/0.5/1.0 | mc3 `{ SHAPE(=+5) GRAIN(=+5) | o } FOR { LAND(=+5) | o }` | tp3 `kiwen supa lipu`
+- priest (noun, 2592): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.5 | mc3 `{ RULE(=+4) KNOW | o agent } FOR { THINK(=+5) | o }` | tp3 `jan toki sewi`
+- disprove (verb, 9694): mc 0.5/0.5/0.0 | tp 0.0/0.0/0.0 | mc3 `{ TRUE(=-5) | i V+4 }` | tp3 `sona lon ala`
+- block (noun, 792): mc 0.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ GRAIN(=+5) SHAPE(=0) | o }` | tp3 `kiwen sinpin mute`
+- tall (adjective, 1529): mc 1.0/1.0/1.0 | tp 0.0/1.0/0.0 | mc3 `{ BIG(=+3) ABOVE(=+4) | a }` | tp3 `suli lon sewi`
+- mental (adjective, 2039): mc 0.0/0.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ THINK BODY(=0) | a }` | tp3 `tan lawa sona`
+- splendor (noun, 6881): mc 0.8/1.0/0.8 | tp 0.0/0.0/0.2 | mc3 `{ GOOD(=+5) | a I+4 } LIKE { LIGHT(=+5) | o }` | tp3 `suno suli pona`
+- week (noun, 130): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.5 | mc3 `{ TIME | o } FROM { MANY SAME | o }` | tp3 `suno luka tu`
+- special (adjective, 304): mc 1.0/1.0/1.0 | tp 0.0/1.0/1.0 | mc3 `{ SAME(=-4) | a }` | tp3 `ante wan a`
+- juicy (adjective, 6878): mc 0.0/0.0/0.0 | tp 0.0/0.0/1.0 | mc3 `{ INSIDE GRAIN(=-3) | a }` | tp3 `kili telo mute`
+- group (noun, 79): mc 1.0/0.5/1.0 | tp 0.2/0.2/0.0 | mc3 `{ PART(=+5) | o }` | tp3 `kulupu mute wan`
+- accuse (verb, 1973): mc 0.0/0.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ SAY | i } AGAINST { SOMEONE TRUE(=-5) | o }` | tp3 `toki ike tawa`
+- drive (verb, 289): mc 0.0/1.0/0.0 | tp 0.0/0.0/1.0 | mc3 `{ DO | i V+4 } FOR { THING(=-5) MOVE(=+4) | o }` | tp3 `lawa tawa ilo`
+- doorway (noun, 3926): mc 1.0/0.5/1.0 | tp 1.0/1.0/1.0 | mc3 `{ OPEN(=+5) | o } PI { PLACE INSIDE | o }` | tp3 `lupa tomo tawa`
+- outline (noun, 2977): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SHAPE(=-5) | o } PI { SEE | o }` | tp3 `linja selo ijo`
+- dance (noun, 584): mc 1.0/1.0/1.0 | tp 0.0/0.5/0.5 | mc3 `{ MOVE ART(=+5) | o } FOR { FEEL | o }` | tp3 `musi tawa sijelo`
+- small (adjective, 67): mc 1.0/1.0/1.0 | tp 1.0/0.5/0.0 | mc3 `{ BIG(=-3) | a }` | tp3 `lili lili a`
+- place (noun, 33): mc 1.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ PLACE | o }` | tp3 `ma lon ni`
+- buck (noun, 4333): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ LONG(=+5) | o } FOR { ART(=+5) MOVE(=+5) | o }` | tp3 `soweli musi sijelo`
+- growth (noun, 563): mc 0.5/1.0/0.0 | tp 0.0/1.0/0.5 | mc3 `{ LIVE | o } LIKE { BIG CHANGE | o }` | tp3 `kama suli sijelo`
+- execute (verb, 3388): mc 1.0/1.0/1.0 | tp 0.0/0.5/0.0 | mc3 `{ RULE(=+5) | i } FOR { LIVE(=-5) | i } LIKE { FIGHT | i }` | tp3 `moli tan lawa`
+- status (noun, 946): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.8 | mc3 `{ VALUE | o } PI { ABOVE | o } PI { MANY(=+5) SOMEONE | o }` | tp3 `anpa sewi kulupu`
+- political (adjective, 293): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.5 | mc3 `{ SOMEONE | o } PI { RULE(=+4) | o }` | tp3 `nasin lawa kulupu`
+- erase (verb, 7855): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ KNOW(=-5) | i K+5 }` | tp3 `weka sona ale`
+- force (noun, 96): mc 1.0/1.0/1.0 | tp 0.0/0.2/0.0 | mc3 `{ STRONG(=+5) | o }` | tp3 `wawa tawa ijo`
+- key (noun, 907): mc 1.0/1.0/1.0 | tp 0.0/0.5/0.5 | mc3 `{ OPEN(=+5) | o tool } FROM { LONG(=0) | o } FOR { OPEN | o }` | tp3 `ilo kiwen lupa`
+- structure (noun, 670): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ DO | o result } FROM { PART(=+5) | o }` | tp3 `ijo pali mute`
+- state (noun, 8): mc 1.0/1.0/0.5 | tp 0.0/0.0/0.5 | mc3 `{ LAND | o } PI { LAND(=+5) | o } PI { RULE(=+4) | o }` | tp3 `ma lawa lili`
+- nucleus (noun, 3210): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ PART(=-2) | o } PI { THING LIVE | o }` | tp3 `insa lili sijelo`
+- centralize (verb, 5152): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ NEAR(=+5) | i K+5 }` | tp3 `tawa ale insa`
+- power (noun, 134): mc 0.5/0.0/0.5 | tp 0.0/0.0/0.0 | mc3 `{ STRONG | o } FOR { RULE(=+4) | o }` | tp3 `wawa lawa ale`
+- puzzle (verb, 2492): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ THINK(=-5) KNOW(=-3) | i }` | tp3 `pilin nasa sona`
+- statement (noun, 385): mc 1.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SAY TRUE | o result } FOR { KNOW(=+5) | i } LIKE { TEXT | o }` | tp3 `toki sona lipu`
+- crisis (noun, 924): mc 0.2/0.5/1.0 | tp 0.0/0.0/1.0 | mc3 `{ HAPPEN GOOD(=-5) | o } LIKE { FEEL(=+5) | o } FOR { CARE | i }` | tp3 `tenpo ike wawa`
+- found (verb, 60): mc 0.8/1.0/1.0 | tp 0.2/1.0/1.0 | mc3 `{ DO | i } FOR { BEGIN(=-5) | o } PI { PLACE | o }` | tp3 `open e kulupu`
+- mechanic (noun, 8022): mc 1.0/1.0/1.0 | tp 0.0/0.0/0.5 | mc3 `{ ART | o agent } FOR { DO | i } FROM { MOVE STRONG | o tool }` | tp3 `jan pali ilo`
+- steam (noun, 2831): mc 1.0/1.0/1.0 | tp 0.0/0.5/1.0 | mc3 `{ GRAIN(=-5) | o } FROM { HEAT(=+4) GRAIN(=-3) | o } PI { ABOVE | o }` | tp3 `kon seli telo`
+- issue (noun, 268): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ VALUE(=+5) THINK(=-5) | o } FOR { FIGHT | o } FOR { THINK(=+5) | i }` | tp3 `seme toki utala`
+- program (noun, 68): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ TEXT | o } FOR { DO | i } PI { TIME(=+3) | o }` | tp3 `nasin pali mute`
+- generalization (noun, 5297): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ THINK | o } FROM { PART(=-5) | o } FOR { PART(=+5) | o }` | tp3 `sona ijo ale`
+- beautiful (adjective, 726): mc 1.0/0.5/0.5 | tp 0.0/0.5/1.0 | mc3 `{ GOOD(=+5) | a } LIKE { SEE | i } FOR { FEEL(=+4) | o }` | tp3 `pona lukin mute`
+- heaven (noun, 2072): mc 1.0/0.5/0.5 | tp 0.0/0.5/1.0 | mc3 `{ PLACE ABOVE(=+5) | o } FOR { GOOD(=+5) FEEL(=-5) | o }` | tp3 `ma pona sewi`
+- indicate (verb, 318): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SEE | i tool } FOR { KNOW | i } LIKE { HAPPEN | o }` | tp3 `pana sona tawa`
+- yell (verb, 2385): mc 1.0/1.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SAY(=+5) | i } LIKE { FEEL(=+5) | o } FROM { MOVE(=+5) | o }` | tp3 `kalama wawa mute`
+- fiction (noun, 1954): mc 1.0/1.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ TEXT | o } FROM { THINK ART | o } LIKE { TRUE(=-5) | o }` | tp3 `lipu lon ala`
+- suspend (verb, 2523): mc 0.5/0.5/1.0 | tp 0.0/0.0/0.0 | mc3 `{ JOIN | i } FOR { ABOVE | a } FROM { MOVE(=-5) | o }` | tp3 `awen lon sewi`
+- pressure (noun, 355): mc 0.0/0.0/1.0 | tp 0.0/0.0/0.0 | mc3 `{ STRONG | o } FOR { MEASURE(=-5) | o } PI { SHAPE(=+5) | o }` | tp3 `wawa tawa selo`
+- aroma (noun, 8133): mc 0.0/0.0/1.0 | tp 0.0/1.0/1.0 | mc3 `{ FEEL | o } FOR { BODY | o } FROM { GRAIN(=-5) | o }` | tp3 `kon nena pona`
+- language (noun, 598): mc 0.5/0.0/0.5 | tp 0.0/0.5/0.0 | mc3 `{ SAY | o tool } FOR { KNOW(=+5) | i } PI { PART(=+5) | o }` | tp3 `toki nimi mute`
+- director (noun, 772): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ RULE(=+4) | o agent } FOR { VALUE | o } FOR { GIVE | i }` | tp3 `jan lawa mani`
+- muscle (noun, 1277): mc 0.5/0.0/1.0 | tp 0.0/0.5/1.0 | mc3 `{ BODY | o } FOR { MOVE STRONG | i } PI { BODY | o }` | tp3 `ijo wawa sijelo`
+- trade (noun, 447): mc 0.0/0.5/0.0 | tp 0.0/0.0/0.0 | mc3 `{ GIVE(=0) | o } FOR { VALUE(=-5) | o } FOR { THING | o }` | tp3 `esun ijo mani`
+- money (noun, 283): mc 0.0/0.0/0.0 | tp 1.0/0.0/0.0 | mc3 `{ VALUE(=-5) | o } FOR { GIVE(=0) | i } FOR { MEASURE | o }` | tp3 `ilo esun mani`
+- range (noun, 374): mc 1.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ PLACE | o } FOR { STRONG | o } FOR { MEASURE(=-5) | o }` | tp3 `ma wawa lawa`
+- fellowship (noun, 2223): mc 0.8/0.8/1.0 | tp 1.0/0.8/1.0 | mc3 `{ PART(=+5) | o } FOR { FRIEND(=+5) | o } FOR { SAME(=+3) | o }` | tp3 `kulupu jan pona`
+- stand (verb, 78): mc 0.5/0.0/1.0 | tp 0.0/1.0/1.0 | mc3 `{ MOVE(=-5) | i } LIKE { ABOVE(=+5) | a } LIKE { SHAPE(=-5) | o }` | tp3 `awen sewi noka`
+- help (verb, 119): mc 0.0/0.0/1.0 | tp 0.0/0.0/0.5 | mc3 `{ GIVE(=+5) | i } FOR { CAN | o } FOR { FRIEND(=+5) | o }` | tp3 `pali pona tawa`
+- phrase (noun, 1637): mc 0.5/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ TEXT | o } PI { TEXT | o } LIKE { PART(=-2) | o }` | tp3 `nimi mute lili`
+- felt (verb, 168): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ JOIN(=+5) | i } FROM { LONG(=-5) | o } LIKE { TOUCH(=-5) | o }` | tp3 `pali len telo`
+- wrestle (verb, 9563): mc 1.0/1.0/0.5 | tp 1.0/0.8/0.5 | mc3 `{ FIGHT(=-5) | i } FOR { BODY STRONG | o } LIKE { MOVE | i }` | tp3 `utala sijelo wawa`
+- obey (verb, 3778): mc 0.0/0.0/0.0 | tp 0.0/0.5/1.0 | mc3 `{ DO | i } FOR { RULE(=+4) | o } FOR { KNOW | i }` | tp3 `kute e lawa`
+- apt (adjective, 4312): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ CAN(=+3) | a } FOR { WANT | i } FOR { DO | i }` | tp3 `ken kama`
+- construe (verb, 6161): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ KNOW(=+5) | i } FOR { TEXT | o } FOR { SAY | o }` | tp3 `sona e nimi`
+- process (noun, 247): mc 1.0/0.0/0.5 | tp 0.0/0.0/0.0 | mc3 `{ DO | o } FOR { CHANGE | o } FOR { HAPPEN | o result }` | tp3 `nasin pali pini`
+- enrich (verb, 6252): mc 1.0/1.0/0.0 | tp 0.0/0.5/1.0 | mc3 `{ CHANGE GOOD(=+3) | i } FOR { VALUE | o }` | tp3 `pali pona mute`
+- industrial (adjective, 634): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ ART(=-5) | a } FOR { DO | i } FROM { MEASURE(=-5) | o }` | tp3 `pali ilo mute`
+- whisper (verb, 2078): mc 1.0/1.0/0.0 | tp 0.0/1.0/1.0 | mc3 `{ SAY(=-5) | i } LIKE { FEEL(=-5) | a } FOR { FRIEND | o }` | tp3 `toki lili kon`
+- remove (verb, 613): mc 1.0/0.0/0.0 | tp 0.0/0.0/1.0 | mc3 `{ JOIN(=-5) | i } FOR { MOVE | i } FROM { PLACE | o }` | tp3 `weka e ijo`
+- pastoral (adjective, 7570): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ THING | a } FOR { KNOW(=+5) | i } PI { RULE(=+4) | o }` | tp3 `pali jan sewi`
+- data (noun, 495): mc 0.8/1.0/0.5 | tp 0.0/1.0/0.0 | mc3 `{ TRUE | o N+3 } PI { TEXT | o } FOR { THINK | i }` | tp3 `lipu sona ijo`
+- fisherman (noun, 5071): mc 0.0/0.0/1.0 | tp 0.0/0.0/1.0 | mc3 `{ DO | o agent } FOR { THING(=+4) | o } PI { LAND(=-5) | o }` | tp3 `jan alasa kala`
+- spend (verb, 423): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.5 | mc3 `{ TIME | i } FOR { DO | i } LIKE { MOVE | i }` | tp3 `pana e tenpo`
+- sensitive (adjective, 1544): mc 0.0/0.0/1.0 | tp 0.0/0.0/1.0 | mc3 `{ FEEL | a } FOR { TOUCH | o } FOR { BODY | o }` | tp3 `pilin mute selo`
+- separate (verb, 687): mc 0.0/0.2/0.2 | tp 0.0/0.0/0.0 | mc3 `{ INSIDE(=0) | i } FOR { SIDE | o } PI { JOIN(=-5) | o }` | tp3 `selo lon insa`
+- girl (noun, 163): mc 0.5/0.0/1.0 | tp 1.0/1.0/1.0 | mc3 `{ SEX(=-5) | o agent } LIKE { TIME(=-3) | a } PI { BODY | o }` | tp3 `jan meli lili`
+- important (adjective, 158): mc 1.0/1.0/0.5 | tp 0.0/0.0/0.0 | mc3 `{ VALUE(=+5) | a I+4 }` | tp3 `suli mute pona`
+- sovereign (adjective, 2557): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ RULE(=+5) | a } AGAINST { RULE(=+4) | o } PI { PART(=+5) | o }` | tp3 `lawa ona taso`
+- add (verb, 240): mc 0.8/0.5/0.0 | tp 0.0/0.5/0.5 | mc3 `{ JOIN(=+5) | i } FOR { MANY(=+3) | o } FOR { BIG | o }` | tp3 `pana sin mute`
+- flame (noun, 2266): mc 0.5/0.5/1.0 | tp 1.0/0.5/0.0 | mc3 `{ HEAT(=+5) LIGHT(=+5) | o } PI { HEAT(=+5) | o }` | tp3 `seli suno kon`
+- body (noun, 184): mc 1.0/1.0/0.5 | tp 1.0/0.0/0.0 | mc3 `{ BODY LIVE | o }` | tp3 `sijelo ale jan`
+- candle (noun, 3288): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ LONG | o } FOR { LIGHT | o } FROM { GRAIN(=-3) | o }` | tp3 `palisa seli suno`
+- sextet (noun, 9228): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ ART(=+5) | o result } FOR { MANY(=+3) | o } FOR { SAY | o }` | tp3 `musi luka wan`
+- demonstrate (verb, 1288): mc 1.0/0.5/0.0 | tp 0.0/1.0/0.8 | mc3 `{ DO | i } FOR { SEE | i } FOR { KNOW | i }` | tp3 `pana lukin tawa`
+- serve (verb, 221): mc 0.0/0.0/0.2 | tp 0.0/0.5/0.0 | mc3 `{ DO | i } FOR { CAN | o } FOR { VALUE | o }` | tp3 `kepeken pona`
+- kill (verb, 552): mc 1.0/1.0/1.0 | tp 0.0/1.0/1.0 | mc3 `{ LIVE(=-5) | i K+5 } FOR { FIGHT | o }` | tp3 `pali e moli`
+- characterize (verb, 2598): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SAY | i } FOR { SAME(=-4) | o } FOR { KNOW | i }` | tp3 `toki sitelen sona`
+- equation (noun, 2066): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ SAME(=+5) | o } FOR { MEASURE | o } FOR { ART(=-5) | o }` | tp3 `nanpa tu sama`
+- reverse (verb, 2499): mc 0.0/0.0/1.0 | tp 0.0/0.0/0.5 | mc3 `{ CHANGE(=+5) | i } FOR { SIDE(=-5) | o }` | tp3 `ante tawa monsi`
+- amount (noun, 359): mc 0.0/0.0/0.0 | tp 0.0/0.5/1.0 | mc3 `{ MEASURE(=-5) | o } FOR { VALUE(=-5) | o } FOR { GIVE | o }` | tp3 `nanpa pi mani`
+- additional (adjective, 771): mc 0.0/0.0/0.0 | tp 0.0/0.5/0.0 | mc3 `{ MANY(=+3) | a } FOR { JOIN(=+5) | i }` | tp3 `sin lon poka`
+- independent (adjective, 1317): mc 0.0/0.0/0.0 | tp 0.0/0.0/0.0 | mc3 `{ RULE(=+4) | a M-5 }` | tp3 `weka tan lawa`
+- vote (verb, 617): mc 0.0/0.0/0.5 | tp 0.0/0.0/0.0 | mc3 `{ THINK(=+5) | i } FOR { RULE(=+4) | o } FOR { MANY(=+3) | o }` | tp3 `pana wile nanpa`

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="520" viewBox="0 0 760 520" font-family="Helvetica, Arial, sans-serif" font-size="13">
+<rect width="760" height="520" fill="#ffffff"/>
+<text x="10.0" y="30.0" fill="#1f1f1e" text-anchor="start" font-size="16" font-weight="bold">Share of text understood vs units to learn, by phrase limit</text>
+<text x="10.0" y="50.0" fill="#6b6a64" text-anchor="start" font-size="13" font-weight="normal">size1: 120 words in 4 frequency bands, measured; curve = lexicon of the N most frequent words + composition</text>
+<text x="10.0" y="74.0" fill="#6b6a64" text-anchor="start" font-size="13" font-weight="normal">read as close, % of word tokens</text>
+<line x1="70" x2="590" y1="430.0" y2="430.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="434.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">0%</text>
+<line x1="70" x2="590" y1="362.0" y2="362.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="366.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">20%</text>
+<line x1="70" x2="590" y1="294.0" y2="294.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="298.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">40%</text>
+<line x1="70" x2="590" y1="226.0" y2="226.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="230.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">60%</text>
+<line x1="70" x2="590" y1="158.0" y2="158.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="162.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">80%</text>
+<line x1="70" x2="590" y1="90.0" y2="90.0" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="62.0" y="94.0" fill="#6b6a64" text-anchor="end" font-size="13" font-weight="normal">100%</text>
+<line x1="106.1" x2="106.1" y1="90" y2="430" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="106.1" y="448.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">100</text>
+<line x1="217.1" x2="217.1" y1="90" y2="430" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="217.1" y="448.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">300</text>
+<line x1="338.8" x2="338.8" y1="90" y2="430" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="338.8" y="448.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">1,000</text>
+<line x1="449.9" x2="449.9" y1="90" y2="430" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="449.9" y="448.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">3,000</text>
+<line x1="571.6" x2="571.6" y1="90" y2="430" stroke="#e4e3de" stroke-width="0.7"/>
+<text x="571.6" y="448.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">10,000</text>
+<text x="330.0" y="470.0" fill="#6b6a64" text-anchor="middle" font-size="13" font-weight="normal">units to learn L = base (min-co 82, Toki Pona 120) + lexicon entries N, log scale</text>
+<polyline points="124.5,393.4 132.6,384.0 140.1,377.5 159.7,364.7 185.8,350.4 223.6,329.8 251.1,314.8 290.5,286.9 350.3,244.1 414.8,202.4 453.8,180.4 503.9,157.5 572.8,136.2" fill="none" stroke="#eb6834" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="124.5" cy="393.4" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<polyline points="124.5,335.6 132.6,327.4 140.1,321.6 159.7,310.4 185.8,297.8 223.6,279.7 251.1,266.5 290.5,245.8 350.3,214.1 414.8,186.1 453.8,171.4 503.9,152.2 572.8,134.3" fill="none" stroke="#eb6834" stroke-width="2" stroke-dasharray="7 4"/>
+<circle cx="124.5" cy="335.6" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<polyline points="124.5,317.8 132.6,309.8 140.1,304.3 159.7,293.4 185.8,281.1 223.6,263.5 251.1,250.7 290.5,232.4 350.3,204.3 414.8,177.6 453.8,163.5 503.9,147.5 572.8,132.6" fill="none" stroke="#eb6834" stroke-width="2" />
+<circle cx="124.5" cy="317.8" r="4.5" fill="#eb6834" stroke="#fff" stroke-width="1.5"/>
+<polyline points="86.0,280.1 97.6,275.1 108.1,271.6 134.1,264.7 166.6,257.0 210.9,246.0 241.5,237.9 284.1,222.0 346.8,197.6 412.9,173.8 452.6,161.2 503.1,146.1 572.4,132.1" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="2 4"/>
+<circle cx="86.0" cy="280.1" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="1.5"/>
+<polyline points="86.0,285.6 97.6,280.4 108.1,276.7 134.1,269.6 166.6,261.5 210.9,249.9 241.5,241.5 284.1,225.1 346.8,199.8 412.9,176.0 452.6,163.5 503.1,147.5 572.4,132.6" fill="none" stroke="#2a78d6" stroke-width="2" stroke-dasharray="7 4"/>
+<circle cx="86.0" cy="285.6" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="1.5"/>
+<polyline points="86.0,271.5 97.6,267.1 108.1,264.0 134.1,257.9 166.6,251.1 210.9,241.3 241.5,234.1 284.1,218.2 346.8,193.8 412.9,175.4 452.6,165.7 503.1,148.8 572.4,133.1" fill="none" stroke="#2a78d6" stroke-width="2" />
+<circle cx="86.0" cy="271.5" r="4.5" fill="#2a78d6" stroke="#fff" stroke-width="1.5"/>
+<text x="610.0" y="100.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="bold">min-co</text>
+<line x1="610" x2="640" y1="114" y2="114" stroke="#2a78d6" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="646.0" y="118.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">1 word: 44%</text>
+<line x1="610" x2="640" y1="132" y2="132" stroke="#2a78d6" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="646.0" y="136.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 2: 42%</text>
+<line x1="610" x2="640" y1="150" y2="150" stroke="#2a78d6" stroke-width="2" />
+<text x="646.0" y="154.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 3: 47%</text>
+<text x="610.0" y="195.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="bold">Toki Pona (cipher)</text>
+<line x1="610" x2="640" y1="209" y2="209" stroke="#eb6834" stroke-width="2" stroke-dasharray="2 4"/>
+<text x="646.0" y="213.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">1 word: 11%</text>
+<line x1="610" x2="640" y1="227" y2="227" stroke="#eb6834" stroke-width="2" stroke-dasharray="7 4"/>
+<text x="646.0" y="231.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 2: 28%</text>
+<line x1="610" x2="640" y1="245" y2="245" stroke="#eb6834" stroke-width="2" />
+<text x="646.0" y="249.0" fill="#1f1f1e" text-anchor="start" font-size="13" font-weight="normal">up to 3: 33%</text>
+<text x="610.0" y="305.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">dots = no lexicon</text>
+<text x="610.0" y="322.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">lexicon entries read</text>
+<text x="610.0" y="337.0" fill="#6b6a64" text-anchor="start" font-size="11" font-weight="normal">right 90% of the time</text>
+</svg>
