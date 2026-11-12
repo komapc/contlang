@@ -1,6 +1,8 @@
 # size0 — размер словаря ↔ точность (по уже собранным данным, без новых агентов)
 
-Скрипт [analyze.py](analyze.py), итоги [result.txt](result.txt), кривая [curve.json](curve.json).
+Скрипт [analyze.py](analyze.py), итоги [result.txt](result.txt), кривая [curve.json](curve.json), график [plot.py](plot.py).
+
+![размер словаря и точность](size.svg)
 
 ## Метрика
 
