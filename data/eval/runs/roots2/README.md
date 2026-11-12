@@ -31,7 +31,7 @@ Codes stay short at every X: 1.0–1.1 words and 1.5–2.1 roots per code.
    added between 100 and 200 are everyday concrete nouns (*city, war, country, hand, water, church, family, room, car*), and with them
    encoders build far clearer codes (*CAR CONTROL* → *drive*). This is the gap found in words1 ("everyday concrete roots").
 4. **200 → 300 adds little** for non-root targets (66 → 66 %); the extra 3 pp come from targets that became roots.
-5. Compared with the computer line (3 numbers per word on X automatic axes) min-co stays above at every X ≥ 3 (at 51: 54 vs 34 %).
+5. Compared with the PCA line (3 values per word on 3 of X automatic axes) min-co stays above at every X ≥ 3 (at 51: 54 vs 34 %).
 
 For the design: ~50 abstract roots + ~150 everyday concrete words is where most of the gain is; beyond that the curve
 is a lexicon (identity), not composition.

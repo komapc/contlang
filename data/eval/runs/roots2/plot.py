@@ -29,7 +29,7 @@ T(16, 30, "Learn X roots: how often is a word guessed?", c=INK, fs=17, fw="bold"
 T(16, 52, "A reader who knows only the X roots sees a min-co code for a word and names the word; share named right (judges),")
 T(16, 70, "weighted by how often words occur in English texts. Each word is one code of up to 3 min-co words.")
 # legend row
-lg = [(BLUE, "line", "min-co v2c (band = 95 % interval)"), (ORANGE, "line", "computer, 3 numbers per word"), (AQUA, "dot", "Toki Pona")]
+lg = [(BLUE, "line", "min-co v2c (band = 95 % interval)"), (ORANGE, "line", "PCA axes, 3 values per word"), (AQUA, "dot", "Toki Pona")]
 x = 16
 for c, kind, s in lg:
     if kind == "line":
@@ -61,12 +61,12 @@ for p in P:
     T(lx(p["X"]), ly(100 * p["U"]) - 10, f"{100 * p['U']:.0f}", c=INK, a="middle", fs=11)
 # direct labels at the right
 T(lx(X1) + 8, ly(100 * P[-1]["U"]) + 4, "min-co v2c", c=INK, fw="bold")
-T(lx(X1) + 8, ly(m[-1][1]) + 4, "computer,", c=INK)
-T(lx(X1) + 8, ly(m[-1][1]) + 19, "3 numbers", c=INK)
+T(lx(X1) + 8, ly(m[-1][1]) + 4, "PCA axes,", c=INK)
+T(lx(X1) + 8, ly(m[-1][1]) + 19, "3 values", c=INK)
 tp = 100 * C[("tp", 3)]
 out.append(f'<circle cx="{lx(120):.1f}" cy="{ly(tp):.1f}" r="6" fill="{AQUA}" stroke="{SURF}" stroke-width="2"/>')
 T(lx(120) + 10, ly(tp) + 18, f"Toki Pona: 120 words, {tp:.0f}", c=INK, fs=12)
-T(16, H - 44, "Computer line: a word is written as 3 numbers on X automatic meaning axes (PCA of word vectors); its reader knows the exact", fs=10.5)
+T(16, H - 44, "PCA line: a word is written as 3 values (-5..+5) on 3 of X automatic meaning axes (PCA of word vectors); its reader knows the exact", fs=10.5)
 T(16, H - 30, "position of all 21,514 words. Points: roots2 (v2c, 120 words, 2 readers × 2 judges); Toki Pona: size1. "
               "Above 51, up to 29 of the 120", fs=10.5)
 T(16, H - 16, "test words are themselves roots (see roots2/README).", fs=10.5)

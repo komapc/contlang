@@ -6,9 +6,9 @@
 <line x1="16" x2="38" y1="91" y2="91" stroke="#2a78d6" stroke-width="3"/>
 <text x="44.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">min-co v2c (band = 95 % interval)</text>
 <line x1="305.6" x2="327.6" y1="91" y2="91" stroke="#eb6834" stroke-width="3"/>
-<text x="333.6" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">computer, 3 numbers per word</text>
-<circle cx="570.2" cy="91" r="5" fill="#1baf7a"/>
-<text x="587.2" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">Toki Pona</text>
+<text x="333.6" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">PCA axes, 3 values per word</text>
+<circle cx="563.0" cy="91" r="5" fill="#1baf7a"/>
+<text x="580.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">Toki Pona</text>
 <rect x="456.0" y="110" width="174.0" height="340" fill="#f2f1ec"/>
 <text x="464.0" y="126.0" fill="#52514e" text-anchor="start" font-size="11.5" font-weight="normal">above 51: + the most frequent</text>
 <text x="464.0" y="141.0" fill="#52514e" text-anchor="start" font-size="11.5" font-weight="normal">English words as roots</text>
@@ -54,11 +54,11 @@
 <circle cx="630.0" cy="189.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
 <text x="630.0" y="179.0" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">77</text>
 <text x="638.0" y="193.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="bold">min-co v2c</text>
-<text x="638.0" y="253.3" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">computer,</text>
-<text x="638.0" y="268.3" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">3 numbers</text>
+<text x="638.0" y="253.3" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">PCA axes,</text>
+<text x="638.0" y="268.3" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">3 values</text>
 <circle cx="540.0" cy="337.8" r="6" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
 <text x="550.0" y="355.8" fill="#0b0b0b" text-anchor="start" font-size="12" font-weight="normal">Toki Pona: 120 words, 33</text>
-<text x="16.0" y="516.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">Computer line: a word is written as 3 numbers on X automatic meaning axes (PCA of word vectors); its reader knows the exact</text>
+<text x="16.0" y="516.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">PCA line: a word is written as 3 values (-5..+5) on 3 of X automatic meaning axes (PCA of word vectors); its reader knows the exact</text>
 <text x="16.0" y="530.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">position of all 21,514 words. Points: roots2 (v2c, 120 words, 2 readers × 2 judges); Toki Pona: size1. Above 51, up to 29 of the 120</text>
 <text x="16.0" y="544.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">test words are themselves roots (see roots2/README).</text>
 </svg>
