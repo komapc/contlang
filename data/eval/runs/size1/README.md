@@ -81,3 +81,20 @@ WordNet synonym (stricter than the human judges' "close").
   this out.
 - With a large lexicon (N ≥ 2000) the sparse machine lines pass min-co: the lexicon entries count as remembered 100 %
   (people: 90 %).
+
+## Learn X axes: how surely is a word guessed? ([axes.svg](axes.svg), [machine_axes.py](machine_axes.py), [axes.txt](axes.txt))
+
+![axes](axes.svg)
+
+Machine: X = top principal axes of Numberbatch word vectors; a word = its values (11 levels, like −5..+5) on its r strongest
+axes; reader = nearest word vector with a frequency prior. "Close" proxy: same word, WordNet synonym or cosine ≥ 0.44 —
+agrees with the human judges on 91 % of the 1440 judged size1 answers. Token-weighted, no lexicon.
+
+At X = 51 (min-co has 51 roots): machine 5 / 18 / 34 % with 1 / 2 / 3 values, 74 % with 6, 90 % with 9; min-co 44 / 42 / 47 %
+with 1.7 / 1.9 / 2.7 roots per code.
+
+- **Per value, min-co beats PCA axes**: 1.7 roots read 44 %, the machine needs ~4 values for that. A root is a meaningful
+  centre (GOOD, PLACE) that already lands near words; a PCA axis is a global direction shared by thousands of words.
+- **With 6+ values the machine wins by far** — because its reader knows the exact position of all 21,514 words (it has
+  memorised the lexicon) and values are exact. A human reader can't; a human encoder can't compute 6 projections.
+- More axes beyond ~120 add little: the bottleneck is the number of values per word, not the number of axes.
