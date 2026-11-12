@@ -1,0 +1,150 @@
+# axes1 — result
+
+## Words (120), first answer, 2 judges: share close
+  B: close 44%, close or related 76%
+  A: close 47%, close or related 78%
+  AR: close 46%, close or related 78%
+  A − B: +2.5 pp [-4.8 … +9.6]
+  AR − A: -1.2 pp [-8.1 … +5.8]
+  AR − B: +1.2 pp [-6.7 … +9.2]
+  noun (64): B 45%, A 47%, AR 51%
+  verb (35): B 39%, A 47%, AR 41%
+  adjective (21): B 52%, A 45%, AR 36%
+  judges agree exactly 96%
+
+## Sentences (60), meaning 0–3, 3 judges
+  B: 1.40
+  A: 1.31
+  AR: 1.16
+  A − B: -0.09 [-0.28 … +0.11]
+  AR − A: -0.15 [-0.29 … -0.01]
+  AR − B: -0.24 [-0.42 … -0.06]
+  overlap pairs 90: exact 62%, ±1 100%
+  anchors (want→judges): 3→3/3/3; 3→3/3/3; 2→3/3/2; 2→3/3/3; 2→3/3/3; 1→0/0/0; 1→1/1/1; 1→1/0/0; 0→0/0/0; 0→0/0/0
+
+## Manipulation check (codes)
+  B: roots/word 1.70; a 1.52, e 1.48, i 1.57, o 1.83; roots with value 53%; value entropy 2.51 bits; |v|≤3 21%; words per word-code 1.07
+  A: roots/word 1.51; a 1.32, e 1.11, i 1.47, o 1.62; roots with value 78%; value entropy 2.74 bits; |v|≤3 51%; words per word-code 1.05
+  AR: roots/word 1.11; a 1.00, e 1.03, i 1.38, o 1.00; roots with value 93%; value entropy 2.81 bits; |v|≤3 57%; words per word-code 1.39
+
+## Words (close B / A / AR)
+- special (adjective): 1.0 / 0.0 / 0.0 | B `{ SAME(=-4) | a }` → special/special | A `SAME(=-3) | a` → different/different | AR `{ SAME(=-3) | a }` → different/different
+- fellowship (noun): 1.0 / 0.0 / 0.0 | B `{ FRIEND PART(=+5) | o }` → community/community | A `{ FRIEND(=+3) PART(=+5) | o }` → circle/party | AR `{ PART(=+5) | o } FROM { FRIEND(=+2) | o }` → circle/circle
+- sovereign (adjective): 1.0 / 0.0 / 0.0 | B `{ RULE(=+4) JOIN(=-5) | a }` → autonomous/independent | A `{ RULE(=+5) STRONG | a }` → official/strict | AR `{ RULE(=+5) | a }` → legal/legal
+- add (verb): 1.0 / 0.0 / 0.0 | B `{ JOIN(=+4) | i }` → add/join | A `{ JOIN(=+3) | i }` → connect/connect | AR `{ JOIN(=+3) | i }` → connect/connect
+- driver (noun): 1.0 / 0.0 / 0.5 | B `{ DO MOVE(=+4) THING(=-5) | o agent }` → driver/driver | A `DO(=+3) MOVE(=+2) | o agent` → runner/courier | AR `{ SOMEONE | o } FOR { MOVE(=+2) DO(=+3) | i }` → runner/operator
+- hate (verb): 1.0 / 0.0 / 0.5 | B `{ WANT(=-5) | i }` → hate/hate | A `WANT(=-5) | i` → refuse/refuse | AR `{ WANT(=-5) | i }` → refuse/hate
+- doorway (noun): 1.0 / 0.5 / 0.0 | B `{ OPEN(=+5) INSIDE(=0) PLACE | o }` → entrance/entrance | A `OPEN(=+5) PLACE(=-3) | o` → hall/entrance | AR `{ OPEN(=+5) | o } PI { PLACE(=-3) | o }` → door/door
+- found (verb): 1.0 / 1.0 / 0.0 | B `{ DO BEGIN(=-5) | i }` → start/initiate | A `{ BEGIN(=-5) DO(=+3) | i }` → initiate/create | AR `{ BEGIN(=-5) DO(=+3) PLACE(=0) | i }` → build/build
+- beautiful (adjective): 1.0 / 1.0 / 0.0 | B `{ GOOD(=+4) SEE | a }` → beautiful/beautiful | A `{ GOOD(=+4) SEE(=+5) | a }` → beautiful/beautiful | AR `{ GOOD(=+4) | a }` → excellent/excellent
+- phrase (noun): 0.5 / 0.0 / 0.0 | B `{ SAY PART(=-2) | o }` → phrase/word | A `{ TEXT PART(=-2) | o }` → passage/syllable | AR `{ TEXT(=-2) | o } PI { TEXT(=0) | o }` → word/word
+- important (adjective): 1.0 / 0.5 / 0.5 | B `{ VALUE(=+5) | a }` → valuable/valuable | A `{ VALUE(=+5) | a }` → valuable/precious | AR `{ VALUE(=+5) | a }` → valuable/precious
+- vindicate (verb): 0.8 / 0.8 / 0.0 | B `{ SEE TRUE(=+5) | i K+4 }` → prove/demonstrate | A `DO(=+3) TRUE(=+5) SEE(=+5) | i` → demonstrate/prove | AR `{ SEE(=+5) TRUE(=+5) | i }` → verify/reveal
+- outline (noun): 0.5 / 0.0 / 0.2 | B `{ SHAPE(=-5) INSIDE(=0) SEE | o }` → stripe/outline | A `SHAPE(=-5) INSIDE | o` → tube/tube | AR `{ INSIDE(=0) | o } PI { SHAPE(=0) | o }` → surface/edge
+- doctor (noun): 1.0 / 0.5 / 1.0 | B `{ CHANGE LIVE(=+4) BODY | o agent }` → doctor/doctor | A `LIVE(=+3) ART(=-2) | o agent` → craftsman/doctor | AR `{ SOMEONE | o } AGAINST { LIVE(=-3) | a }` → doctor/doctor
+- show (verb): 1.0 / 0.5 / 1.0 | B `{ SEE | i K+3 }` → show/present | A `GIVE(=+2) SEE(=+5) | i` → display/reveal | AR `{ SEE(=+5) | i K+5 }` → show/show
+- splendor (noun): 1.0 / 0.5 / 1.0 | B `{ LIGHT(=+5) GOOD(=+5) | o quality }` → brilliance/brilliance | A `LIGHT(=+5) GOOD(=+5) | o` → brilliance/daylight | AR `{ LIGHT(=+5) | o quality }` → brightness/brightness
+- state (noun): 0.2 / 0.0 / 0.0 | B `{ LAND PART(=-2) RULE | o }` → district/province | A `PLACE(=+3) RULE(=+3) | o` → capital/capital | AR `{ PLACE(=+4) | o } PI { PLACE(=+5) | o }` → region/region
+- yell (verb): 1.0 / 1.0 / 0.5 | B `{ SAY(=+5) | i }` → yell/shout | A `{ SAY | i I+5 }` → shout/shout | AR `{ SAY(=0) | i I+5 }` → declare/shout
+- suspend (verb): 1.0 / 1.0 / 0.5 | B `{ JOIN ABOVE MOVE(=-5) | i }` → hang/hang | A `{ ABOVE(=+2) JOIN(=+3) | i }` → hang/hang | AR `{ MOVE(=-5) ABOVE(=+2) LONG(=-2) | i }` → climb/hang
+- trade (noun): 0.5 / 0.5 / 0.0 | B `{ VALUE(=-5) GIVE | o }` → trade/sale | A `{ VALUE GIVE | o }` → trade/payment | AR `{ VALUE(=0) | o }` → price/price
+- money (noun): 1.0 / 0.5 / 1.0 | B `{ VALUE GIVE | o tool }` → money/money | A `{ VALUE GIVE | o tool }` → money/card | AR `{ VALUE(=0) | o tool }` → money/money
+- wrestle (verb): 1.0 / 0.5 / 1.0 | B `{ FIGHT BODY | i }` → wrestle/wrestle | A `{ FIGHT(=+2) TOUCH STRONG | i }` → punch/wrestle | AR `{ FIGHT(=+2) BODY(=0) | i }` → wrestle/wrestle
+- remove (verb): 0.5 / 0.5 / 0.0 | B `{ JOIN(=-5) | i }` → separate/remove | A `{ JOIN(=-5) | i }` → separate/remove | AR `{ JOIN(=-5) | i }` → separate/separate
+- data (noun): 0.5 / 0.0 / 0.5 | B `{ KNOW TRUE MEASURE | o result }` → data/measurement | A `{ TRUE MEASURE(=-2) TEXT | o }` → record/record | AR `{ TRUE(=+5) | o N+3 }` → facts/truths
+- flame (noun): 1.0 / 1.0 / 0.5 | B `{ HEAT(=+5) LIGHT(=+5) GRAIN(=-5) | o }` → flame/flame | A `{ HEAT(=+5) LIGHT(=+5) GRAIN(=-5) | o }` → flame/flame | AR `{ LIGHT(=+5) | o } FROM { HEAT(=+5) | o }` → flame/glow
+- body (noun): 1.0 / 0.5 / 1.0 | B `{ BODY | o }` → body/body | A `{ BODY LIVE | o }` → animal/organism | AR `{ BODY | o }` → body/body
+- involvement (noun): 0.2 / 0.2 / 0.0 | B `{ JOIN(=+5) PART(=+5) DO | o }` → cooperation/organization | A `JOIN(=+3) PART(=+5) DO | o` → assembly/cooperation | AR `{ JOIN(=+3) | o quality } PI { PART(=+5) | o }` → membership/membership
+- big (adjective): 1.0 / 1.0 / 1.0 | B `{ BIG(=+3) | a }` → large/big | A `BIG(=+3) | a` → great/large | AR `{ BIG | a }` → big/big
+- ability (noun): 1.0 / 1.0 / 1.0 | B `{ CAN | o quality }` → ability/ability | A `CAN | o quality` → ability/ability | AR `{ CAN | o quality }` → ability/ability
+- receive (verb): 0.0 / 0.0 / 0.0 | B `{ GIVE(=-1) | i }` → borrow/lend | A `GIVE(=-2) | i` → take/take | AR `{ GIVE(=-2) | i }` → take/take
+- better (adjective): 1.0 / 1.0 / 1.0 | B `{ GOOD | a C+3 }` → better/better | A `GOOD | a C+3` → better/better | AR `{ GOOD | a C+3 }` → better/better
+- history (noun): 1.0 / 1.0 / 1.0 | B `{ HAPPEN PART(=+5) TIME(=-4) | o }` → history/history | A `HAPPEN TIME(=-5) | o` → history/history | AR `{ HAPPEN | o N+3 } PI { TIME(=-5) | o }` → history/history
+- press (noun): 0.0 / 0.0 / 0.0 | B `{ STRONG WANT(=+4) SEE | o quality }` → curiosity/curiosity | A `CARE(=+5) SAY(=+5) | o` → instruction/discipline | AR `{ CARE(=+3) | o quality } FROM { SAY(=+5) | i }` → discipline/discipline
+- pepper (noun): 0.0 / 0.0 / 0.0 | B `{ THING(=0) | o } FOR { CONSUME HEAT(=+3) | i }` → vegetable/fuel | A `THING COLOR(=-5) HEAT(=+5) | o` → ember/lava | AR `{ THING(=0) | o } FOR { CONSUME(=+5) HEAT(=+5) | i }` → food/fuel
+- considerable (adjective): 1.0 / 1.0 / 1.0 | B `{ BIG(=+2) | a }` → big/large | A `BIG(=+2) | a` → large/big | AR `{ BIG(=+2) | a }` → large/large
+- result (noun): 1.0 / 1.0 / 1.0 | B `{ HAPPEN | o result }` → consequence/consequence | A `HAPPEN | o result` → consequence/consequence | AR `{ HAPPEN | o result }` → consequence/consequence
+- instant (noun): 1.0 / 1.0 / 1.0 | B `{ TIME BIG(=-5) | o }` → moment/moment | A `TIME BIG(=-5) | o` → moment/moment | AR `{ TIME(=-1) | o } LIKE { BIG(=-5) | a }` → moment/moment
+- frail (adjective): 1.0 / 1.0 / 1.0 | B `{ STRONG(=-4) BODY | a }` → frail/frail | A `STRONG(=-5) | a` → weak/weak | AR `{ STRONG(=-4) | a }` → fragile/weak
+- company (noun): 0.0 / 0.0 / 0.0 | B `{ RULE(=+3) VALUE(=-5) | o }` → market/market | A `RULE(=+3) VALUE | o` → fee/tax | AR `{ RULE(=+3) | o } FOR { VALUE | i }` → tax/tax
+- divide (verb): 0.5 / 1.0 / 0.0 | B `{ JOIN(=-5) PART(=-2) | i }` → divide/detach | A `JOIN(=-5) PART(=-2) | i` → divide/divide | AR `{ JOIN(=-5) PART(=-2) | i }` → detach/detach
+- difficult (adjective): 1.0 / 1.0 / 1.0 | B `{ CAN(=-3) | a }` → difficult/difficult | A `CAN(=-3) | a` → difficult/difficult | AR `{ CAN(=-3) | a }` → difficult/difficult
+- antithyroid (adjective): 0.0 / 0.0 / 0.0 | B `{ STRONG(=-4) PART(=-2) BODY | a }` → disabled/lame | A `{ DO(=-5) | a } AGAINST { BODY(=-3) DO | o }` → blind/silent | AR `{ CHANGE(=-5) | a } AGAINST { LIVE(=+5) | a }` → static/inanimate
+- tile (noun): 0.0 / 0.0 / 0.0 | B `{ SHAPE(=+5) GRAIN(=+5) | o } FOR { OPEN(=0) | i }` → lid/lid | A `{ SHAPE(=+5) GRAIN(=+5) | o } FOR { OPEN | o }` → pane/door | AR `{ SHAPE(=+5) | o } FOR { OPEN(=0) | i }` → sheet/cover
+- priest (noun): 0.0 / 0.0 / 0.0 | B `{ ABOVE(=+5) TEXT KNOW(=+5) | o agent }` → editor/scholar | A `ABOVE(=+5) RULE(=+3) | o agent` → ruler/ruler | AR `{ SOMEONE | o } FOR { SAY(=+3) TEXT(=+5) | i }` → writer/author
+- tall (adjective): 1.0 / 1.0 / 1.0 | B `{ ABOVE(=+4) BIG(=+3) | a }` → tall/tall | A `ABOVE(=+2) | a` → high/high | AR `{ ABOVE(=+2) | a }` → high/high
+- mental (adjective): 0.0 / 0.0 / 0.0 | B `{ THINK KNOW | a }` → intelligent/intelligent | A `THINK | a` → thoughtful/thoughtful | AR `{ THINK | a }` → thoughtful/thoughtful
+- juicy (adjective): 0.0 / 0.0 / 0.0 | B `{ GRAIN(=-3) MANY(=+4) | a }` → liquid/wet | A `GRAIN(=-3) MANY(=+3) | a` → liquid/wet | AR `{ GRAIN(=-3) | a I+4 }` → liquid/liquid
+- group (noun): 1.0 / 1.0 / 1.0 | B `{ PART(=+5) | o }` → group/group | A `PART(=+5) | o` → group/group | AR `{ PART(=+5) | o }` → group/group
+- dance (noun): 1.0 / 1.0 / 1.0 | B `{ ART(=+5) MOVE | o }` → dance/dance | A `ART(=+5) MOVE | o` → dance/dance | AR `{ ART(=+5) | o } FROM { MOVE | i }` → dance/dance
+- small (adjective): 1.0 / 1.0 / 1.0 | B `{ BIG(=-3) | a }` → small/small | A `BIG(=-3) | a` → small/small | AR `{ BIG(=-2) | a }` → small/small
+- place (noun): 1.0 / 1.0 / 1.0 | B `{ PLACE | o }` → place/place | A `PLACE(=-5) | o` → spot/spot | AR `{ PLACE(=-5) | o }` → spot/spot
+- buck (noun): 0.0 / 0.0 / 0.0 | B `{ LONG(=+5) | o } LIKE { THING(=+4) | o } FOR { FIGHT(=-5) | i }` → bat/toy | A `THING(=+4) FIGHT(=-5) | o` → race/hunting | AR `{ LONG(=+5) | o } LIKE { THING(=+4) | o } FOR { FIGHT(=-5) | i }` → bat/bat
+- growth (noun): 1.0 / 1.0 / 1.0 | B `{ CHANGE BIG(=+3) LIVE | o }` → growth/growth | A `CHANGE(=+3) LIVE BIG | o` → growth/growth | AR `{ CHANGE(=+3) | o } PI { LIVE(=+3) | o }` → growth/growth
+- execute (verb): 1.0 / 1.0 / 1.0 | B `{ DO LIVE(=-5) RULE(=+5) | i }` → execute/execute | A `DO(=+3) RULE(=+5) LIVE(=-5) | i` → execute/execute | AR `{ LIVE(=-5) RULE(=+5) | i K+5 }` → execute/execute
+- political (adjective): 0.0 / 0.0 / 0.0 | B `{ RULE PART(=+5) | a }` → democratic/public | A `RULE(=+3) | a` → authoritative/official | AR `{ RULE(=+3) | a }` → official/authoritative
+- force (noun): 1.0 / 1.0 / 1.0 | B `{ STRONG(=+5) | o }` → force/power | A `STRONG(=+5) | o` → force/force | AR `{ STRONG(=+5) | o }` → power/force
+- structure (noun): 0.0 / 0.0 / 0.0 | B `{ DO PART(=+5) | o result }` → organization/gathering | A `PART(=+5) DO(=+3) | o result` → product/product | AR `{ DO(=+3) | o result }` → product/product
+- nucleus (noun): 0.0 / 0.0 / 0.0 | B `{ PART(=-2) INSIDE(=+5) LIVE | o }` → organ/organ | A `PART(=-2) INSIDE(=+5) LIVE | o` → organ/organ | AR `{ INSIDE(=+5) | o } PI { LIVE(=0) | o }` → heart/heart
+- power (noun): 0.5 / 0.0 / 1.0 | B `{ RULE STRONG(=+4) | o }` → government/authority | A `STRONG(=+3) RULE(=+3) | o` → government/government | AR `{ RULE(=+3) | o quality }` → authority/authority
+- puzzle (verb): 0.0 / 0.0 / 0.0 | B `{ TRUE(=0) THINK(=-3) | i K+3 }` → suppose/suggest | A `FEEL KNOW(=-5) | i` → doubt/doubt | AR `{ KNOW(=-5) | i K+5 }` → mislead/deceive
+- crisis (noun): 0.0 / 0.0 / 0.0 | B `{ HAPPEN FEEL(=+5) GOOD(=-4) | o }` → disaster/disaster | A `{ HAPPEN FEEL(=+5) GOOD(=-5) | o }` → disaster/disaster | AR `{ CAN(=-4) | o quality I+4 }` → inability/inability
+- mechanic (noun): 0.0 / 0.0 / 0.0 | B `{ DO ART(=-5) | o agent }` → engineer/engineer | A `{ ART(=-2) THING(=-5) | o agent }` → robot/machine | AR `{ ART(=-2) | o agent }` → engineer/engineer
+- steam (noun): 1.0 / 1.0 / 1.0 | B `{ GRAIN(=-5) HEAT(=+4) GRAIN(=-3) | o }` → steam/steam | A `{ GRAIN(=-5) HEAT(=+4) | o } FROM { LAND(=-2) | o }` → steam/steam | AR `{ GRAIN(=-5) | o } FROM { GRAIN(=-3) | o } FROM { HEAT(=+5) | o }` → steam/steam
+- issue (noun): 0.5 / 0.5 / 0.5 | B `{ THINK VALUE FIGHT | o }` → debate/debate | A `{ SAY(=-5) VALUE(=+5) FIGHT | o }` → debate/debate | AR `{ SAY(=-5) | o } PI { FIGHT(=0) | o }` → argument/dispute
+- program (noun): 1.0 / 1.0 / 1.0 | B `{ TEXT DO TIME(=+3) | o }` → plan/plan | A `{ THINK(=+3) TEXT(=+3) | o }` → plan/plan | AR `{ THINK(=+3) | o result }` → plan/plan
+- generalization (noun): 0.0 / 0.0 / 0.0 | B `{ THINK MANY(=+5) | o result }` → belief/belief | A `{ THINK SAME(=+3) MANY(=+5) | o result }` → belief/consensus | AR `{ THINK(=+2) | o result } FROM { PART(=-2) | o }` → idea/idea
+- heaven (noun): 1.0 / 1.0 / 1.0 | B `{ PLACE GOOD(=+5) ABOVE(=+5) | o }` → heaven/heaven | A `{ PLACE GOOD(=+5) ABOVE(=+5) | o }` → heaven/heaven | AR `{ PLACE | o } FOR { GOOD(=+5) | o quality }` → paradise/paradise
+- fiction (noun): 1.0 / 1.0 / 1.0 | B `{ TEXT TRUE(=-5) | o }` → fiction/fiction | A `{ TEXT(=+5) TRUE(=-5) | o }` → novel/fiction | AR `{ TEXT(=+5) | o } FROM { TRUE(=-5) | o }` → novel/novel
+- language (noun): 0.0 / 0.0 / 0.0 | B `{ SAY TEXT | o }` → word/script | A `{ SAY TEXT(=-2) PART(=+5) | o }` → vocabulary/vocabulary | AR `{ SAY(=0) | o } FROM { TEXT(=-5) | o }` → speech/reading
+- director (noun): 0.0 / 0.0 / 0.0 | B `{ RULE(=+3) VALUE | o agent }` → appraiser/treasurer | A `{ RULE(=+3) VALUE | o agent }` → treasurer/treasurer | AR `{ RULE(=+3) | o agent }` → ruler/ruler
+- range (noun): 0.0 / 0.0 / 0.0 | B `{ PLACE STRONG MEASURE | o }` → fortress/fortress | A `{ PLACE STRONG MEASURE(=-5) | o }` → fortress/fortress | AR `{ PLACE | o } FOR { STRONG(=+5) | o }` → fortress/fortress
+- felt (verb): 0.0 / 0.0 / 0.0 | B `{ JOIN LONG(=-5) | i }` → weave/sew | A `{ LONG(=-5) JOIN(=+5) | i }` → sew/sew | AR `{ JOIN(=+5) LONG(=-5) | i }` → weave/weave
+- obey (verb): 0.0 / 0.0 / 0.0 | B `{ DO RULE | i }` → govern/govern | A `{ DO RULE | i }` → legislate/govern | AR `{ DO(=+3) SAY(=+5) | i }` → command/order
+- apt (adjective): 0.0 / 0.0 / 0.0 | B `{ CAN WANT | a }` → willing/willing | A `{ WANT(=+2) CAN(=+3) | a }` → desirable/convenient | AR `{ CAN(=+3) | a }` → easy/easy
+- process (noun): 0.5 / 1.0 / 0.0 | B `{ DO BEGIN | o }` → process/beginning | A `{ DO(=+3) BEGIN | o }` → process/process | AR `{ DO(=+3) | o }` → work/work
+- enrich (verb): 1.0 / 1.0 / 1.0 | B `{ CHANGE GOOD(=+3) | i }` → improve/improve | A `{ CHANGE GOOD(=+3) | i }` → improve/improve | AR `{ CHANGE(=0) GOOD(=+3) | i }` → improve/improve
+- industrial (adjective): 0.0 / 0.0 / 0.0 | B `{ DO ART(=-5) | a }` → technical/technical | A `{ DO(=+3) ART(=-2) | a }` → technical/technical | AR `{ ART(=-2) | a }` → technical/technical
+- whisper (verb): 1.0 / 1.0 / 1.0 | B `{ SAY(=-5) | i }` → whisper/whisper | A `{ SAY | i I-4 }` → whisper/whisper | AR `{ SAY(=0) | i I-4 }` → murmur/whisper
+- pastoral (adjective): 0.0 / 0.0 / 0.0 | B `{ KNOW FRIEND TRUE | a }` → faithful/loyal | A `{ LAND(=+2) THING(=+4) | a }` → wild/wild | AR `{ LAND(=+2) | a }` → rural/rural
+- fisherman (noun): 1.0 / 1.0 / 1.0 | B `{ GIVE(=-5) | o agent } FOR { THING(=+4) LAND(=-5) | o }` → fisherman/fisherman | A `{ GIVE(=-5) THING(=+4) | o agent } FROM { LAND(=-2) | o }` → fisherman/fisherman | AR `{ GIVE(=-2) | o agent } FROM { LAND(=-2) | o } FOR { THING(=+4) | o }` → fisher/fisherman
+- separate (verb): 0.0 / 0.0 / 0.0 | B `{ SHAPE(=+5) INSIDE(=0) | i }` → flatten/spread | A `{ SIDE JOIN(=-5) | i }` → exclude/withdraw | AR `{ SIDE(=0) JOIN(=-5) | i }` → isolate/avoid
+- candle (noun): 0.0 / 0.0 / 0.0 | B `{ LONG LIGHT(=+5) HEAT | o }` → match/torch | A `{ LONG(=+2) | o } FOR { LIGHT(=+5) | i }` → torch/torch | AR `{ LONG(=+2) | o } FOR { LIGHT(=+5) | o }` → torch/torch
+- sextet (noun): 0.0 / 0.0 / 0.0 | B `{ ART(=+5) SAY PART(=+5) | o }` → choir/poetry | A `{ ART(=+5) CONSUME(=+3) | o } FOR { SOMEONE | o agent N+3 }` → entertainment/entertainment | AR `{ PART(=+5) | o } FOR { ART(=+5) | o }` → ensemble/ensemble
+- demonstrate (verb): 1.0 / 1.0 / 1.0 | B `{ DO SEE | i K+4 }` → demonstrate/show | A `{ SEE(=+3) GIVE(=+5) | i }` → show/present | AR `{ GIVE(=+5) SEE(=+3) | i }` → present/display
+- serve (verb): 0.0 / 0.0 / 0.0 | B `{ DO VALUE | i }` → value/evaluate | A `{ DO(=+3) THINK(=+3) | i }` → plan/plan | AR `{ DO(=+3) CAN(=0) | i }` → enable/enable
+- kill (verb): 1.0 / 1.0 / 1.0 | B `{ DO LIVE(=-5) | i }` → kill/kill | A `{ LIVE(=-5) | i K+4 }` → kill/kill | AR `{ DO(=+3) LIVE(=-5) | i }` → kill/kill
+- characterize (verb): 0.0 / 0.0 / 0.0 | B `{ SAY SAME(=-4) | i }` → name/name | A `{ SAY SAME(=-3) | i }` → contradict/contradict | AR `{ SAY(=0) SAME(=-3) | i }` → rephrase/disagree
+- additional (adjective): 0.0 / 0.0 / 0.0 | B `{ MANY JOIN(=+4) | a }` → combined/common | A `{ MANY(=+1) JOIN(=+3) | a }` → connected/connected | AR `{ JOIN(=+3) | a }` → connected/connected
+- vote (verb): 0.0 / 0.0 / 0.0 | B `{ THINK(=+5) RULE(=+4) | i }` → judge/rule | A `{ SAY WANT(=+2) RULE(=+3) | i }` → propose/approve | AR `{ SAY(=0) WANT(=+2) RULE(=+3) | i }` → propose/request
+- centralize (verb): 0.0 / 0.2 / 0.0 | B `{ CHANGE NEAR(=+5) | i }` → approach/arrive | A `CHANGE(=+3) NEAR(=+5) | i` → arrive/arrive | AR `{ CHANGE(=+3) NEAR(=+5) | i }` → arrive/approach
+- suffrage (noun): 0.0 / 0.5 / 0.0 | B `{ CAN RULE(=+5) | o quality } FOR { THINK(=+5) RULE(=+4) | i }` → jurisdiction/jurisdiction | A `RULE(=+5) THINK(=+5) CAN | o` → right/permission | AR `{ RULE(=+5) | o } FOR { THINK(=+5) SAY | i }` → verdict/ruling
+- pattern (noun): 0.0 / 0.5 / 0.0 | B `{ SEE SHAPE SAME(=+3) | o }` → picture/picture | A `SEE(=+5) SHAPE SAME(=+3) | o` → image/pattern | AR `{ SHAPE | o } FOR { SEE | i }` → image/image
+- delivery (noun): 0.5 / 0.5 / 1.0 | B `{ GIVE(=+5) MOVE | o }` → donation/delivery | A `GIVE(=+5) MOVE | o` → transfer/delivery | AR `{ MOVE | o } FOR { GIVE(=+5) | i }` → delivery/delivery
+- disprove (verb): 0.0 / 0.5 / 0.0 | B `{ SEE TRUE(=-5) | i K+4 }` → deceive/deceive | A `DO(=+3) TRUE(=-5) | i` → falsify/fake | AR `{ SEE(=+5) TRUE(=-5) | i }` → appear/pretend
+- status (noun): 0.0 / 0.0 / 0.5 | B `{ VALUE ABOVE SOMEONE | o }` → superior/superior | A `PLACE(=-5) VALUE(=+2) PART(=+5) | o` → market/shop | AR `{ ABOVE(=0) | o } PI { PART(=+5) | o }` → layer/rank
+- erase (verb): 0.0 / 0.0 / 0.5 | B `{ JOIN(=-5) TRUE(=+5) | i }` → reveal/reveal | A `JOIN(=-5) TRUE(=+5) | i` → vanish/separate | AR `{ JOIN(=-5) KNOW | i }` → distinguish/forget
+- indicate (verb): 0.0 / 0.5 / 0.0 | B `{ KNOW(=+5) SEE | i }` → explain/recognize | A `{ SEE(=+5) SAY | i }` → reveal/show | AR `{ SEE(=+5) TEXT(=-5) | i }` → print/read
+- pressure (noun): 0.0 / 0.5 / 0.0 | B `{ STRONG MEASURE | o }` → strength/strength | A `{ STRONG(=+5) MEASURE(=+5) | o }` → power/pressure | AR `{ STRONG | o } FROM { MEASURE(=0) | o }` → intensity/strength
+- spend (verb): 0.0 / 0.5 / 0.0 | B `{ TIME GIVE | i }` → wait/delay | A `{ DO TIME | i }` → pass/wait | AR `{ TIME(=0) DO(=0) | i }` → act/act
+- sensitive (adjective): 0.0 / 0.5 / 0.0 | B `{ FEEL TOUCH(=-5) | a }` → tender/soft | A `{ FEEL(=+3) TOUCH(=-5) | a }` → sensitive/tender | AR `{ FEEL(=+2) | a }` → emotional/emotional
+- equation (noun): 0.0 / 0.5 / 0.0 | B `{ MEASURE SAME(=+5) TEXT | o }` → quotation/copy | A `{ SAME(=+5) MEASURE(=-2) TEXT | o }` → copy/equation | AR `{ SAME(=+5) | o } PI { MEASURE(=-2) | o }` → unit/equality
+- amount (noun): 0.0 / 0.0 / 0.5 | B `{ MEASURE(=-5) VALUE | o }` → price/price | A `{ MEASURE(=-5) VALUE | o }` → cost/cost | AR `{ MEASURE(=-5) | o } PI { VALUE(=0) | o }` → quantity/cost
+- independent (adjective): 0.0 / 0.5 / 0.0 | B `{ JOIN(=-5) STRONG | a }` → separate/isolated | A `{ JOIN(=-5) RULE | a }` → independent/irregular | AR `{ JOIN(=-5) | a }` → separate/separate
+- face (noun): 0.5 / 1.0 / 1.0 | B `{ SIDE(=+5) ABOVE BODY | o }` → face/head | A `BODY(=-3) | o` → face/face | AR `{ BODY(=-3) | o }` → face/face
+- questionnaire (noun): 0.5 / 1.0 / 1.0 | B `{ TEXT | o } FOR { SAY THINK(=-3) | i }` → questionnaire/rumor | A `TEXT(=+3) SAY(=-5) MANY(=+3) | o` → questionnaire/questionnaire | AR `{ TEXT(=+3) | o } FOR { SAY(=-5) | i }` → survey/questionnaire
+- week (noun): 0.0 / 0.0 / 1.0 | B `{ PART(=+5) TIME MEASURE(=-5) | o }` → period/period | A `TIME PART(=+5) MEASURE(=-2) | o` → period/calendar | AR `{ TIME | o } FROM "7"` → week/week
+- accuse (verb): 0.0 / 0.5 / 0.5 | B `{ SAY CARE(=-5) | i }` → mumble/misspeak | A `SAY(=+3) CARE(=-5) | i` → accuse/lie | AR `{ SAY(=+3) CARE(=-5) | i }` → exaggerate/accuse
+- drive (verb): 0.0 / 0.0 / 1.0 | B `{ DO MOVE(=+4) THING(=-5) | i }` → throw/throw | A `DO(=+3) MOVE(=+2) | i` → run/run | AR `{ MOVE(=+2) DO(=+3) | i }` → operate/operate
+- statement (noun): 0.5 / 1.0 / 1.0 | B `{ SAY | o result }` → speech/statement | A `{ SAY TEXT | o result }` → statement/statement | AR `{ SAY(=0) | o result }` → statement/statement
+- muscle (noun): 0.5 / 1.0 / 1.0 | B `{ BODY STRONG(=+3) MOVE | o }` → exercise/muscle | A `{ STRONG BODY PART(=-2) | o }` → muscle/muscle | AR `{ STRONG | o } PI { BODY | o }` → muscle/muscle
+- stand (verb): 0.0 / 0.0 / 1.0 | B `{ MOVE(=-5) ABOVE | i }` → hover/hover | A `{ MOVE(=-5) ABOVE(=+2) | i }` → hover/hover | AR `{ MOVE(=-5) ABOVE(=+2) BODY(=+5) | i }` → stand/stand
+- help (verb): 0.0 / 1.0 / 0.0 | B `{ GIVE CAN(=+4) | i }` → allow/enable | A `{ GIVE DO(=+3) FRIEND(=+2) | i }` → help/help | AR `{ GIVE(=+2) DO(=+3) | i }` → provide/provide
+- construe (verb): 0.0 / 0.0 / 1.0 | B `{ KNOW TEXT | i }` → read/read | A `{ KNOW(=+3) TEXT | i }` → read/read | AR `{ KNOW(=+3) TEXT(=0) | i }` → interpret/understand
+- quartet (noun): 0.0 / 0.5 / 1.0 | B `{ MEASURE(=-5) JOIN(=+5) MANY(=-1) | o }` → sum/addition | A `MEASURE(=-2) PART(=+2) PART(=+2) | o` → handful/four | AR `{ PART(=+5) | o } FROM "4"` → quartet/quartet
+- key (noun): 0.0 / 0.5 / 1.0 | B `{ LONG(=0) TOUCH(=+5) | o } FOR { OPEN(=+5) | i }` → crowbar/crowbar | A `OPEN(=+5) LONG | o tool` → key/crowbar | AR `{ LONG(=0) | o } FOR { OPEN(=+5) | i }` → key/key
+- girl (noun): 0.0 / 1.0 / 0.5 | B `{ SOMEONE SEX(=-5) TIME(=-3) | o }` → grandmother/ancestor | A `{ SOMEONE SEX(=-5) BEGIN(=-2) | o }` → girl/girl | AR `{ SEX(=-5) | o } PI { BEGIN(=-2) | o }` → egg/girl
+- bang (verb): 0.0 / 1.0 / 1.0 | B `{ TOUCH STRONG(=+5) | i }` → harden/press | A `TOUCH STRONG(=+5) | i` → hit/strike | AR `{ TOUCH(=+5) MOVE(=+5) | i }` → hit/strike
+- block (noun): 0.0 / 1.0 / 1.0 | B `{ GRAIN(=+5) SHAPE(=0) | o }` → stone/stone | A `GRAIN(=+5) SHAPE | o` → block/block | AR `{ GRAIN(=+5) | o } LIKE { SHAPE(=0) | a }` → block/block
+- aroma (noun): 0.0 / 1.0 / 1.0 | B `{ GRAIN(=-5) CONSUME | o result }` → breath/breath | A `{ GRAIN(=-5) FEEL GOOD(=+3) | o }` → scent/scent | AR `{ FEEL | o result } FROM { GRAIN(=-5) | o }` → smell/smell
+- reverse (verb): 0.0 / 1.0 / 1.0 | B `{ CHANGE SAME(=-5) | i }` → alter/alter | A `{ CHANGE SAME(=-5) | i }` → reverse/reverse | AR `{ CHANGE(=+3) SAME(=-5) | i }` → reverse/reverse
