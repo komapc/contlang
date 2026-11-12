@@ -91,10 +91,13 @@ axes; reader = nearest word vector with a frequency prior. "Close" proxy: same w
 agrees with the human judges on 91 % of the 1440 judged size1 answers. Token-weighted, no lexicon.
 
 At X = 51 (min-co has 51 roots): machine 5 / 18 / 34 % with 1 / 2 / 3 values, 74 % with 6, 90 % with 9; min-co 44 / 42 / 47 %
-with 1.7 / 1.9 / 2.7 roots per code.
+with 1.7 / 1.9 / 2.7 roots per code (size1 judges; re-judged in roots1 with the other arms: 39 / 42 / 46 %, as on the chart).
 
 - **Per value, min-co beats PCA axes**: 1.7 roots read 44 %, the machine needs ~4 values for that. A root is a meaningful
   centre (GOOD, PLACE) that already lands near words; a PCA axis is a global direction shared by thousands of words.
 - **With 6+ values the machine wins by far** — because its reader knows the exact position of all 21,514 words (it has
   memorised the lexicon) and values are exact. A human reader can't; a human encoder can't compute 6 projections.
 - More axes beyond ~120 add little: the bottleneck is the number of values per word, not the number of axes.
+- **Min-co with fewer roots** ([roots1](../roots1/README.md), blue line; the 10 / 20 / 30 most used roots): ≤ 3 words
+  14 / 20 / 34 / 46 % at 10 / 20 / 30 / 51 roots — still above the machine's 3-value line at every X, but steep: no
+  plateau by 51. v2c roots (green) 51 % vs v2b 46 % (+8.8 pp, interval touches 0).

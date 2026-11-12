@@ -1,0 +1,2410 @@
+{
+ "R10": [
+  [
+   "{ PART(=+4) | a }",
+   "{ PART(=+4) | a }",
+   "{ PART(=+4) | a I+3 }"
+  ],
+  [
+   "{ DO MOVE(=+5) | i }",
+   "{ DO MOVE(=+5) | i } LIKE { SAY(=+5) | o }",
+   "{ DO MOVE(=+5) | i } LIKE { SAY(=+5) | o }"
+  ],
+  [
+   "{ DO MOVE | o agent }",
+   "{ DO | o agent } FOR { MOVE(=+4) | i }",
+   "{ DO | o agent } FOR { MOVE(=+4) | o tool }"
+  ],
+  [
+   "{ GOOD(=-5) THINK | i }",
+   "{ GOOD(=-5) THINK | i I+4 }",
+   "{ GOOD(=-5) THINK | i I+5 }"
+  ],
+  [
+   "{ DO GOOD | o quality }",
+   "{ DO GOOD | o quality }",
+   "{ DO | o quality } FOR { DO GOOD | i }"
+  ],
+  [
+   "{ DO GOOD KNOW | o agent }",
+   "{ DO GOOD | o agent } FOR { SOMEONE GOOD(=-3) | o }",
+   "{ DO GOOD(=+4) | o agent } FOR { SOMEONE GOOD(=-3) | o }"
+  ],
+  [
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=-1) | i }"
+  ],
+  [
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }"
+  ],
+  [
+   "{ RULE(=+5) THINK(=+5) | o quality }",
+   "{ RULE(=+5) | o quality } FOR { THINK(=+5) | i }",
+   "{ RULE(=+5) | o quality } FOR { THINK(=+5) | i } FOR { SOMEONE(=0) N+3 | o }"
+  ],
+  [
+   "{ PART(=+2) KNOW | o }",
+   "{ PART(=+2) | o } LIKE { KNOW | o }",
+   "{ PART(=+2) | o } FOR { KNOW | i }"
+  ],
+  [
+   "{ GIVE(=+5) KNOW | i }",
+   "{ GIVE(=+5) KNOW | i }",
+   "{ DO KNOW(=+5) | i } FOR { SOMEONE N+3 | o }"
+  ],
+  [
+   "{ KNOW PART(=+5) | o T-2 }",
+   "{ KNOW | o result T-2 }",
+   "{ KNOW | o result } PI { PART(=+5) | o T-2 }"
+  ],
+  [
+   "{ SAY(=+5) KNOW | o quality }",
+   "{ SAY(=+5) KNOW | o quality }",
+   "{ SAY(=+5) KNOW | o quality }"
+  ],
+  [
+   "{ PART(=-2) DO | o quality }",
+   "{ PART(=-2) DO | o quality }",
+   "{ DO | o } PI { PART(=+5) SOMEONE | o }"
+  ],
+  [
+   "{ PART(=-2) SOMEONE | o }",
+   "{ PART(=-2) | o } PI { SOMEONE | o }",
+   "{ PART(=-2) | o } PI { SOMEONE | o } PI { THINK | o }"
+  ],
+  [
+   "{ SAY KNOW | o result }",
+   "{ SAY | o result } FOR { KNOW | i ? }",
+   "{ SAY | o result } FOR { KNOW | i ? } FOR { SOMEONE N+3 | o }"
+  ],
+  [
+   "{ KNOW(=+5) GOOD | i }",
+   "{ KNOW(=+5) GOOD | i }",
+   "{ KNOW(=+5) | i } FOR { GOOD | a }"
+  ],
+  [
+   "{ GOOD(=+2) PART(=-5) | o }",
+   "{ PART(=-3) | o } FOR { DO GOOD | i }",
+   "{ PART(=-3) | o } FOR { DO GOOD | i } FROM { PART(=+2) | o }"
+  ],
+  [
+   "{ GIVE(=+5) MOVE | o }",
+   "{ GIVE(=+5) MOVE | o result }",
+   "{ GIVE(=+5) MOVE | o result }"
+  ],
+  [
+   "{ PART(=+3) | a }",
+   "{ PART(=+3) | a }",
+   "{ PART(=+3) | a I+2 }"
+  ],
+  [
+   "{ DO | o result }",
+   "{ DO | o result }",
+   "{ DO | o result }"
+  ],
+  [
+   "{ PART(=-5) MOVE | o }",
+   "{ PART(=-5) | o } PI { MOVE | o }",
+   "{ PART(=-5) | o } PI { MOVE | o }"
+  ],
+  [
+   "{ PART(=+1) | o N+1 }",
+   "{ PART(=+1) | o N+1 }",
+   "{ PART(=+1) | o N+1 }"
+  ],
+  [
+   "{ GOOD(=-3) MOVE | a }",
+   "{ GOOD(=-3) MOVE | a }",
+   "{ GOOD(=-3) MOVE | a }"
+  ],
+  [
+   "{ PART(=+5) DO | o }",
+   "{ RULE(=+4) | o } FOR { GIVE DO | o }",
+   "{ RULE(=+4) | o } FOR { GIVE DO | o }"
+  ],
+  [
+   "{ PART(=-3) DO | i }",
+   "{ PART(=-3) DO | i }",
+   "{ PART(=-3) DO | i }"
+  ],
+  [
+   "{ DO GOOD(=-3) | a }",
+   "{ DO GOOD(=-3) | a }",
+   "{ DO GOOD(=-3) | a }"
+  ],
+  [
+   "{ DO | a } AGAINST { PART(=-2) DO | o }",
+   "{ DO | a } AGAINST { PART(=-2) DO | o }",
+   "{ DO GOOD | a } AGAINST { PART(=-2) DO | o I+4 }"
+  ],
+  [
+   "{ PART(=-2) | o }",
+   "{ PART(=-2) | o } FOR { PART(=+2) | o }",
+   "{ PART(=-2) | o } FOR { PART(=+2) | o }"
+  ],
+  [
+   "{ SAY KNOW(=+5) GOOD | o agent }",
+   "{ SAY KNOW(=+5) | o agent } FOR { THINK | o }",
+   "{ RULE(=+4) | o agent } FOR { SAY KNOW(=+5) | o }"
+  ],
+  [
+   "{ KNOW(=+5) GOOD(=-5) | i }",
+   "{ KNOW(=+5) GOOD(=-5) | i }",
+   "{ KNOW(=+5) GOOD(=-5) | i }"
+  ],
+  [
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o }"
+  ],
+  [
+   "{ PART(=+4) | a }",
+   "{ PART(=+4) | a }",
+   "{ PART(=+4) | a }"
+  ],
+  [
+   "{ THINK | a }",
+   "{ THINK | a }",
+   "{ THINK | a }"
+  ],
+  [
+   "{ GOOD(=+5) | o quality I+5 }",
+   "{ GOOD(=+5) | o quality I+5 }",
+   "{ GOOD(=+5) | o quality I+5 }"
+  ],
+  [
+   "{ PART(=+3) MOVE | o }",
+   "{ PART(=+3) MOVE | o }",
+   "{ PART(=+3) MOVE | o }"
+  ],
+  [
+   "{ SOMEONE GOOD | a }",
+   "{ SOMEONE GOOD | a }",
+   "{ SOMEONE GOOD | a }"
+  ],
+  [
+   "{ PART(=+5) GIVE | a }",
+   "{ PART(=+5) GIVE | a }",
+   "{ PART(=+5) GIVE | a }"
+  ],
+  [
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }"
+  ],
+  [
+   "{ SAY GOOD(=-5) | i }",
+   "{ SAY RULE | i }",
+   "{ SAY GOOD(=-5) | i } FOR { RULE | o }"
+  ],
+  [
+   "{ DO MOVE | i }",
+   "{ DO MOVE | i }",
+   "{ DO MOVE | i }"
+  ],
+  [
+   "{ MOVE PART | o }",
+   "{ MOVE | o } PI { PART(=-2) | o }",
+   "{ MOVE | o } PI { PART(=-2) | o }"
+  ],
+  [
+   "{ PART(=-2) | o }",
+   "{ PART(=-2) | o }",
+   "{ PART(=-2) | o }"
+  ],
+  [
+   "{ MOVE GOOD | o }",
+   "{ MOVE GOOD | o }",
+   "{ MOVE GOOD | o }"
+  ],
+  [
+   "{ PART(=-4) | a }",
+   "{ PART(=-4) | a }",
+   "{ PART(=-4) | a }"
+  ],
+  [
+   "{ MOVE(=-5) | o }",
+   "{ MOVE(=-5) | o }",
+   "{ MOVE(=-5) | o }"
+  ],
+  [
+   "{ MOVE(=+5) | o }",
+   "{ MOVE(=+5) | o }",
+   "{ MOVE(=+5) | o }"
+  ],
+  [
+   "{ PART(=+3) MOVE | o }",
+   "{ PART(=+3) MOVE | o }",
+   "{ PART(=+3) MOVE | o }"
+  ],
+  [
+   "{ DO GOOD(=-5) | i }",
+   "{ DO GOOD(=-5) | i V+4 }",
+   "{ RULE(=+5) DO | i }"
+  ],
+  [
+   "{ RULE SOMEONE | o }",
+   "{ RULE SOMEONE | o }",
+   "{ RULE SOMEONE | o }"
+  ],
+  [
+   "{ RULE | a }",
+   "{ RULE | a }",
+   "{ RULE | a }"
+  ],
+  [
+   "{ DO KNOW(=-5) | i }",
+   "{ DO KNOW(=-5) | i }",
+   "{ DO KNOW(=-5) | i }"
+  ],
+  [
+   "{ MOVE(=+5) DO | o }",
+   "{ MOVE(=+5) DO | o }",
+   "{ MOVE(=+5) DO | o }"
+  ],
+  [
+   "{ MOVE | o tool }",
+   "{ MOVE | o tool } FOR { RULE(=-5) | o }",
+   "{ MOVE | o tool } FOR { RULE(=-5) | o }"
+  ],
+  [
+   "{ PART(=+5) DO | o result }",
+   "{ PART(=+5) DO | o result }",
+   "{ PART(=+5) DO | o result }"
+  ],
+  [
+   "{ RULE(=+4) PART | o }",
+   "{ RULE(=+4) PART | o }",
+   "{ RULE(=+4) PART | o }"
+  ],
+  [
+   "{ PART(=+2) | o }",
+   "{ PART(=-2) | o } PI { PART(=+2) | o }",
+   "{ PART(=-2) | o } PI { PART(=+2) | o }"
+  ],
+  [
+   "{ PART(=+2) DO | i }",
+   "{ RULE(=+4) DO | i }",
+   "{ RULE(=+4) DO | i }"
+  ],
+  [
+   "{ RULE(=+4) | o quality }",
+   "{ RULE(=+4) | o quality }",
+   "{ RULE(=+4) | o quality }"
+  ],
+  [
+   "{ KNOW(=-3) | i }",
+   "{ KNOW(=-3) | i }",
+   "{ KNOW(=-3) | i }"
+  ],
+  [
+   "{ SAY KNOW | o result }",
+   "{ SAY | o result } FOR { KNOW(=+5) | o }",
+   "{ SAY | o result } FOR { KNOW(=+5) | o } FROM { THINK(=+5) | o result }"
+  ],
+  [
+   "{ GOOD(=-5) | o quality I+4 }",
+   "{ GOOD(=-5) | o quality I+4 } LIKE { MOVE(=+5) | o }",
+   "{ GOOD(=-5) | o quality I+4 } LIKE { MOVE(=+5) | o } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ DO RULE | i A-5 }",
+   "{ DO | i A-5 } FOR { RULE(=+4) | o }",
+   "{ DO | i A-5 } FOR { PART(=+5) | o } FOR { RULE(=+4) | o }"
+  ],
+  [
+   "{ DO DO | o agent }",
+   "{ DO | o agent } FOR { DO | o tool }",
+   "{ DO | o agent } FOR { DO | o tool } FOR { MOVE | o }"
+  ],
+  [
+   "{ MOVE PART(=-5) | o }",
+   "{ PART(=-5) | o } FROM { DO MOVE(=+5) | i }",
+   "{ PART(=-5) | o } FROM { DO MOVE(=+5) | i } LIKE { SAY(=-5) | o }"
+  ],
+  [
+   "{ THINK KNOW | o result }",
+   "{ THINK(=-5) | o result } FOR { THINK(=+5) | i }",
+   "{ THINK(=-5) | o result } FOR { THINK(=+5) | i } FROM { PART(=+5) SOMEONE | o }"
+  ],
+  [
+   "{ DO PART | o result }",
+   "{ PART | o result } FOR { DO | i }",
+   "{ PART(=+5) | o result } FOR { DO | i } FOR { THINK(=+5) | o result }"
+  ],
+  [
+   "{ THINK PART(=+5) | o result }",
+   "{ THINK | o result } FROM { PART(=-5) KNOW | o }",
+   "{ THINK(=+5) | i } FROM { PART(=-5) KNOW | o } FOR { PART(=+5) KNOW | o }"
+  ],
+  [
+   "{ GOOD(=+4) | a }",
+   "{ GOOD(=+5) | a } FOR { KNOW | o agent }",
+   "{ GOOD(=+5) | a I+4 } FOR { KNOW | o agent } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ GOOD(=+5) | o quality }",
+   "{ PART | o } FROM { GOOD(=+5) | o quality }",
+   "{ PART | o } FROM { GOOD(=+5) | o quality } PI { KNOW(=+5) PART(=+5) | o }"
+  ],
+  [
+   "{ KNOW(=+5) DO | i }",
+   "{ DO | i } FOR { KNOW(=+5) | o }",
+   "{ DO | i } FOR { KNOW(=+5) | o } FROM { SAY | o result }"
+  ],
+  [
+   "{ SAY(=+5) | i }",
+   "{ SAY(=+5) | i A-5 }",
+   "{ SAY(=+5) | i A-5 } LIKE { SAY(=+3) | o }"
+  ],
+  [
+   "{ SAY THINK | o result }",
+   "{ SAY | o result } FROM { THINK | o }",
+   "{ SAY | o result } FROM { THINK | o } LIKE { KNOW(=-3) | o }"
+  ],
+  [
+   "{ MOVE(=-5) | i }",
+   "{ MOVE(=-5) | i } PI { MOVE(=-3) | a }",
+   "{ MOVE(=-5) | i V-4 } FROM { GOOD(=-3) | a } PI { PART | o }"
+  ],
+  [
+   "{ DO MOVE(=+3) | o }",
+   "{ MOVE | o } LIKE { DO(=+5) | o }",
+   "{ MOVE | o } LIKE { DO | i } FOR { MOVE(=-5) | i }"
+  ],
+  [
+   "{ SAY KNOW | o result }",
+   "{ KNOW | o } FOR { SOMEONE | o tool }",
+   "{ KNOW | o } FOR { SOMEONE | o tool } FROM { GOOD | a }"
+  ],
+  [
+   "{ SAY KNOW | o tool }",
+   "{ SAY | o tool } FOR { KNOW | o }",
+   "{ SAY | o tool } FOR { KNOW | o } FROM { RULE | o result }"
+  ],
+  [
+   "{ RULE GIVE | o agent }",
+   "{ RULE(=+4) | o agent } FOR { GIVE | o }",
+   "{ RULE(=+4) | o agent } FOR { GIVE | o } FOR { DO | o }"
+  ],
+  [
+   "{ MOVE PART(=-2) | o }",
+   "{ PART(=-2) | o } FOR { MOVE | i }",
+   "{ PART(=-2) | o } FOR { MOVE | i } PI { SOMEONE | o }"
+  ],
+  [
+   "{ GIVE(=0) | o }",
+   "{ GIVE | i N+3 }",
+   "{ GIVE | o } FOR { GIVE(=0) | i } FROM { DO | o result }"
+  ],
+  [
+   "{ GIVE(=0) | o tool }",
+   "{ GIVE | o tool } FOR { GIVE(=0) | i }",
+   "{ GIVE | o tool } FOR { GIVE(=0) | i } FROM { RULE(=+4) | o }"
+  ],
+  [
+   "{ RULE PART(=+2) | o }",
+   "{ PART(=+2) | o } FOR { RULE | i }",
+   "{ PART(=+2) | o } FOR { RULE | i } FOR { DO | i }"
+  ],
+  [
+   "{ SOMEONE PART(=+5) | o }",
+   "{ PART(=+5) | o } FROM { SOMEONE | o N+3 }",
+   "{ PART(=+5) | o } FROM { SOMEONE | o N+3 } FOR { THINK | o }"
+  ],
+  [
+   "{ MOVE(=-5) | i }",
+   "{ MOVE(=-5) | i A+5 }",
+   "{ MOVE(=-5) | i A+5 } LIKE { GOOD | a }"
+  ],
+  [
+   "{ GIVE DO | i }",
+   "{ DO | i } FOR { GOOD | o }",
+   "{ GIVE(=+5) | i } FOR { DO | i } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ SAY PART | o }",
+   "{ SAY | o result } PI { SAY | o result }",
+   "{ SAY | o result } PI { SAY | o result } FOR { KNOW | o }"
+  ],
+  [
+   "{ DO | i } FROM { PART(=-5) | o }",
+   "{ DO | i } FROM { PART(=-5) | o N+3 }",
+   "{ DO | i } FROM { PART(=-5) | o N+3 } LIKE { GOOD | a }"
+  ],
+  [
+   "{ MOVE DO | i }",
+   "{ DO | i } AGAINST { SOMEONE | o }",
+   "{ DO | i } AGAINST { SOMEONE | o } LIKE { MOVE(=+3) | i }"
+  ],
+  [
+   "{ DO RULE | i }",
+   "{ DO | i } FOR { RULE | o }",
+   "{ DO | i } FOR { RULE(=+4) | o } FOR { SAY | o result }"
+  ],
+  [
+   "{ THINK DO | a }",
+   "{ DO | a } FOR { DO | i }",
+   "{ THINK | a } FOR { DO | i } LIKE { GOOD | a }"
+  ],
+  [
+   "{ KNOW THINK | i }",
+   "{ KNOW | i } FOR { SAY | o result }",
+   "{ KNOW | i } FOR { SAY | o result } FROM { THINK | i }"
+  ],
+  [
+   "{ DO PART | o }",
+   "{ DO | o result } FOR { PART | o }",
+   "{ DO | o result } FOR { PART | o N+3 } FOR { THINK(=+5) | o }"
+  ],
+  [
+   "{ GOOD DO | i }",
+   "{ DO | i } FOR { GOOD(=+3) | a }",
+   "{ GOOD(=+3) | i } FOR { GIVE | i }"
+  ],
+  [
+   "{ DO | a } FOR { DO | o }",
+   "{ DO | a } FOR { DO | o } FROM { SOMEONE | o N+3 }",
+   "{ DO | a } FOR { DO | o } FROM { SOMEONE | o N+3 } FOR { GIVE | i }"
+  ],
+  [
+   "{ SAY(=-5) | i }",
+   "{ SAY(=-5) | i } LIKE { MOVE(=-3) | a }",
+   "{ SAY(=-5) | i } LIKE { MOVE(=-3) | a } PI { SAY | o }"
+  ],
+  [
+   "{ MOVE GIVE(=-5) | i }",
+   "{ GIVE(=-5) | i } LIKE { MOVE | i }",
+   "{ GIVE(=-5) | i } LIKE { MOVE | i } FROM { PART | o }"
+  ],
+  [
+   "{ RULE KNOW | a }",
+   "{ KNOW(=+5) | o agent } FOR { SOMEONE | o N+3 }",
+   "{ KNOW(=+5) | o agent } FOR { SOMEONE | o N+3 } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ KNOW PART(=+5) | o }",
+   "{ KNOW | o result } PI { PART(=+5) | o }",
+   "{ KNOW | o result } N+3 FOR { THINK | i } FROM { PART(=+5) | o }"
+  ],
+  [
+   "{ GIVE(=-5) DO | o agent }",
+   "{ GIVE(=-5) | o agent } FROM { MOVE | o }",
+   "{ GIVE(=-5) | o agent } FOR { DO | i } FROM { MOVE | o }"
+  ],
+  [
+   "{ MOVE DO | i }",
+   "{ DO | i } FOR { MOVE | o }",
+   "{ DO | i } FOR { MOVE | o } LIKE { GOOD | a }"
+  ],
+  [
+   "{ KNOW MOVE | a }",
+   "{ KNOW | a } FOR { DO | i }",
+   "{ KNOW | a I+4 } FOR { DO | i } FROM { MOVE | o }"
+  ],
+  [
+   "{ MOVE PART | i }",
+   "{ PART | i } FOR { MOVE(=-5) | i }",
+   "{ PART | i } FOR { MOVE(=-5) | i } AGAINST { SOMEONE | o }"
+  ],
+  [
+   "{ SOMEONE GOOD | o }",
+   "{ SOMEONE | o } LIKE { GOOD | a }",
+   "{ SOMEONE | o D+3 } LIKE { GOOD | a } PI { PART(=-2) | o }"
+  ],
+  [
+   "{ GOOD(=+5) KNOW | a }",
+   "{ GOOD(=+5) | a I+4 }",
+   "{ GOOD(=+5) | a I+4 } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ RULE(=+5) | a }",
+   "{ RULE(=+5) | a } AGAINST { RULE(=+4) | o }",
+   "{ RULE(=+5) | a } AGAINST { RULE(=+4) | o } LIKE { SOMEONE(=+5) | a }"
+  ],
+  [
+   "{ GIVE PART | i }",
+   "{ GIVE | i } FOR { PART | o }",
+   "{ GIVE(=+5) | i } FOR { PART | o } LIKE { GOOD | a }"
+  ],
+  [
+   "{ MOVE DO | o }",
+   "{ DO | o } LIKE { MOVE(=+3) | o }",
+   "{ DO | o } LIKE { MOVE(=+3) | o } PI { DO | i }"
+  ],
+  [
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o } PI { DO | o }",
+   "{ PART(=+2) | o } PI { DO | o } FOR { MOVE | i }"
+  ],
+  [
+   "{ DO | o tool }",
+   "{ DO | o tool } FOR { DO | i }",
+   "{ DO | o tool } FOR { DO | i } FROM { PART | o }"
+  ],
+  [
+   "{ DO SAY | o result N+1 }",
+   "{ SAY | o result } FOR { SOMEONE | o N+1 }",
+   "{ SAY | o result } FOR { SOMEONE | o N+1 } PI { DO | i }"
+  ],
+  [
+   "{ KNOW(=+5) DO | i }",
+   "{ DO | i } FOR { KNOW(=+5) | o }",
+   "{ DO | i } FOR { KNOW(=+5) | o } FOR { SOMEONE | o N+3 }"
+  ],
+  [
+   "{ DO GOOD | i }",
+   "{ DO | i } FOR { DO | o }",
+   "{ DO | i } FOR { DO | o } FOR { GOOD | a }"
+  ],
+  [
+   "{ DO | i } AGAINST { MOVE | o }",
+   "{ DO | i } AGAINST { MOVE | o }",
+   "{ DO | i K+5 } AGAINST { MOVE | o } LIKE { RULE(=-5) | a }"
+  ],
+  [
+   "{ SAY KNOW | i }",
+   "{ SAY | i } FOR { KNOW | o quality }",
+   "{ SAY | i } FOR { KNOW | o quality } PI { SOMEONE | o }"
+  ],
+  [
+   "{ THINK PART | o }",
+   "{ SAY | o result } FOR { PART | o }",
+   "{ SAY | o result } FOR { PART(=+2) | o } LIKE { THINK | o result }"
+  ],
+  [
+   "{ MOVE GIVE | i }",
+   "{ DO | i } AGAINST { DO | i }",
+   "{ DO | i } AGAINST { DO | i } LIKE { MOVE | i }"
+  ],
+  [
+   "{ GIVE PART | o }",
+   "{ PART | o } FOR { GIVE | o }",
+   "{ PART | o } FOR { GIVE | o } PI { GIVE | o }"
+  ],
+  [
+   "{ GIVE PART | a }",
+   "{ PART | a } LIKE { GIVE | i }",
+   "{ PART | a } LIKE { GIVE | i } FOR { DO | i }"
+  ],
+  [
+   "{ RULE(=-5) | a }",
+   "{ SOMEONE | a } AGAINST { RULE(=+4) | o }",
+   "{ SOMEONE | a } AGAINST { RULE(=+4) | o } LIKE { SOMEONE(=+5) | a }"
+  ],
+  [
+   "{ THINK RULE | i }",
+   "{ THINK(=+5) | i } FOR { RULE | o }",
+   "{ THINK(=+5) | i } FOR { RULE | o } FOR { SOMEONE | o N+3 }"
+  ]
+ ],
+ "R20": [
+  [
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }"
+  ],
+  [
+   "{ FIGHT(=+1) SAY(=+4) | i }",
+   "{ FIGHT(=+2) SAY(=+5) | i }",
+   "{ FIGHT(=+2) SAY(=+5) | i }"
+  ],
+  [
+   "{ DO | o agent }",
+   "{ DO | o agent } FOR { MOVE | o tool }",
+   "{ DO | o agent } FOR { MOVE | o tool }"
+  ],
+  [
+   "{ GOOD(=-5) THINK | i I+5 }",
+   "{ GOOD(=-5) THINK | i I+5 }",
+   "{ GOOD(=-5) THINK | i I+5 }"
+  ],
+  [
+   "{ DO GOOD | o quality }",
+   "{ DO | o quality }",
+   "{ DO GOOD | o quality }"
+  ],
+  [
+   "{ KNOW DO GOOD | o agent }",
+   "{ DO | o agent } AGAINST { GOOD(=-3) | o quality }",
+   "{ KNOW(=+5) | o agent } FOR { DO | i } AGAINST { GOOD(=-3) | o quality }"
+  ],
+  [
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=0) | i }"
+  ],
+  [
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }"
+  ],
+  [
+   "{ RULE(=+5) SAY THINK(=+5) | o }",
+   "{ SAY THINK(=+5) | o } PI { RULE(=+5) | o }",
+   "{ SAY THINK(=+5) | o } PI { RULE(=+5) | o } PI { PART(=+5) SOMEONE | o }"
+  ],
+  [
+   "{ SAME(=+3) PART | o }",
+   "{ SAME(=+3) PART | o }",
+   "{ SAME(=+3) PART | o }"
+  ],
+  [
+   "{ GIVE(=+5) KNOW | i }",
+   "{ GIVE(=+5) KNOW | i } FOR { PART(=+5) SOMEONE | o }",
+   "{ GIVE(=+5) KNOW | i } FOR { PART(=+5) SOMEONE | o }"
+  ],
+  [
+   "{ TIME(=-5) TEXT | o }",
+   "{ TIME(=-5) PART(=+2) | o }",
+   "{ TIME(=-5) PART(=+2) TEXT | o }"
+  ],
+  [
+   "{ VALUE(=+5) KNOW | o quality }",
+   "{ VALUE(=+5) KNOW | o quality }",
+   "{ VALUE(=+5) KNOW | o quality }"
+  ],
+  [
+   "{ JOIN INSIDE PART(=+5) | o }",
+   "{ JOIN INSIDE | o } PI { PART(=+5) | o }",
+   "{ JOIN INSIDE | o } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ PART(=-2) SOMEONE | o }",
+   "{ PART(=-2) SOMEONE | o }",
+   "{ PART(=-2) SOMEONE | o }"
+  ],
+  [
+   "{ TEXT SAY KNOW | o }",
+   "{ TEXT | o } FOR { SAY KNOW | o }",
+   "{ TEXT | o } FOR { SAY KNOW | o } FOR { PART(=+5) SOMEONE | o }"
+  ],
+  [
+   "{ THINK SAME(=+5) | i }",
+   "{ SAME(=+5) THINK | i }",
+   "{ SAME(=+5) THINK | i }"
+  ],
+  [
+   "{ PART(=-5) GOOD | o }",
+   "{ PART(=-5) | o } FOR { GOOD | a }",
+   "{ PART(=-5) | o } FOR { GOOD | a }"
+  ],
+  [
+   "{ GIVE(=+5) MOVE | o }",
+   "{ GIVE(=+5) MOVE | o }",
+   "{ GIVE(=+5) MOVE | o }"
+  ],
+  [
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }"
+  ],
+  [
+   "{ DO | o result }",
+   "{ DO | o result }",
+   "{ TIME(=+1) DO | o result }"
+  ],
+  [
+   "{ TIME(=0) BIG(=-5) | o }",
+   "{ TIME(=0) BIG(=-5) | o }",
+   "{ TIME(=0) BIG(=-5) | o }"
+  ],
+  [
+   "{ PART(=+5) | o N+1 }",
+   "{ SAME(=+3) PART | o N+1 }",
+   "{ PART(=+5) | o N+1 }"
+  ],
+  [
+   "{ FIGHT(=+3) | a M-5 }",
+   "{ FIGHT(=+3) | a M-5 }",
+   "{ FIGHT(=+3) | a M-5 }"
+  ],
+  [
+   "{ PART(=+5) VALUE(=-5) | o }",
+   "{ PART(=+5) | o } FOR { VALUE(=-5) | o }",
+   "{ PART(=+5) | o } FOR { VALUE(=-5) | o }"
+  ],
+  [
+   "{ JOIN(=-5) PART | i }",
+   "{ JOIN(=-5) PART | i }",
+   "{ JOIN(=-5) PART | i }"
+  ],
+  [
+   "{ DO FIGHT(=+1) | a }",
+   "{ DO | a M-5 }",
+   "{ DO FIGHT(=+1) | a }"
+  ],
+  [
+   "{ FIGHT INSIDE PART | a }",
+   "{ FIGHT | a } AGAINST { BIG INSIDE | o }",
+   "{ FIGHT | a } AGAINST { BIG INSIDE | o }"
+  ],
+  [
+   "{ PART JOIN | o }",
+   "{ PART | o } FOR { INSIDE(=0) JOIN | i }",
+   "{ PART | o } FOR { INSIDE(=0) JOIN | i }"
+  ],
+  [
+   "{ SAY ABOVE(=+5) | o agent }",
+   "{ SAY | o agent } PI { RULE(=+4) ABOVE(=+5) | o }",
+   "{ SAY | o agent } PI { RULE(=+4) ABOVE(=+5) | o }"
+  ],
+  [
+   "{ THINK SAME(=-5) | i }",
+   "{ THINK SAME(=-5) | i }",
+   "{ THINK SAME(=-5) | i }"
+  ],
+  [
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o }"
+  ],
+  [
+   "{ ABOVE BIG | a }",
+   "{ ABOVE BIG | a }",
+   "{ ABOVE BIG | a }"
+  ],
+  [
+   "{ THINK | a }",
+   "{ THINK | a }",
+   "{ THINK | a }"
+  ],
+  [
+   "{ GOOD(=+5) BIG | o quality }",
+   "{ GOOD(=+5) BIG | o quality }",
+   "{ GOOD(=+5) BIG | o quality }"
+  ],
+  [
+   "{ TIME PART | o }",
+   "{ TIME PART | o }",
+   "{ TIME PART | o }"
+  ],
+  [
+   "{ SAME(=-4) | a }",
+   "{ SAME(=-4) | a }",
+   "{ SAME(=-4) | a }"
+  ],
+  [
+   "{ INSIDE BIG | a }",
+   "{ INSIDE BIG | a }",
+   "{ INSIDE BIG | a }"
+  ],
+  [
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }"
+  ],
+  [
+   "{ SAY FIGHT GOOD(=-3) | i }",
+   "{ SAY FIGHT GOOD(=-3) | i }",
+   "{ SAY FIGHT GOOD(=-3) | i }"
+  ],
+  [
+   "{ MOVE DO | i V+4 }",
+   "{ MOVE DO | i V+4 }",
+   "{ MOVE DO | i V+4 }"
+  ],
+  [
+   "{ PLACE INSIDE(=0) | o }",
+   "{ PLACE INSIDE(=0) | o }",
+   "{ PLACE MOVE INSIDE | o }"
+  ],
+  [
+   "{ INSIDE(=0) PART | o }",
+   "{ INSIDE(=0) PART | o }",
+   "{ INSIDE(=0) PART | o }"
+  ],
+  [
+   "{ MOVE GOOD(=+3) | o }",
+   "{ MOVE GOOD(=+3) | o }",
+   "{ MOVE GOOD(=+3) | o }"
+  ],
+  [
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }"
+  ],
+  [
+   "{ PLACE | o }",
+   "{ PLACE | o }",
+   "{ PLACE | o }"
+  ],
+  [
+   "{ DO MOVE | o tool }",
+   "{ DO MOVE | o tool }",
+   "{ DO MOVE | o tool }"
+  ],
+  [
+   "{ BIG(=+2) DO | o }",
+   "{ BIG(=+2) DO | o }",
+   "{ BIG(=+2) DO | o }"
+  ],
+  [
+   "{ RULE(=+5) FIGHT(=+5) | i }",
+   "{ RULE(=+5) FIGHT(=+5) | i }",
+   "{ RULE(=+5) FIGHT(=+5) | i }"
+  ],
+  [
+   "{ ABOVE SOMEONE | o quality }",
+   "{ ABOVE SOMEONE | o quality }",
+   "{ ABOVE SOMEONE | o quality }"
+  ],
+  [
+   "{ RULE(=+4) | a }",
+   "{ RULE(=+4) | a }",
+   "{ RULE(=+4) | a }"
+  ],
+  [
+   "{ JOIN(=-5) TEXT | i }",
+   "{ JOIN(=-5) TEXT | i }",
+   "{ JOIN(=-5) TEXT | i }"
+  ],
+  [
+   "{ BIG DO | o }",
+   "{ BIG DO | o }",
+   "{ BIG DO | o }"
+  ],
+  [
+   "{ JOIN INSIDE | o tool }",
+   "{ JOIN INSIDE | o tool }",
+   "{ JOIN INSIDE | o tool }"
+  ],
+  [
+   "{ DO PART(=+5) | o result }",
+   "{ DO PART(=+5) | o result }",
+   "{ DO PART(=+5) | o result }"
+  ],
+  [
+   "{ PLACE RULE | o }",
+   "{ PLACE RULE | o } PI { PART(=+5) | o }",
+   "{ PLACE RULE | o } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ INSIDE(=+5) PART | o }",
+   "{ INSIDE(=+5) PART | o }",
+   "{ INSIDE(=+5) PART | o }"
+  ],
+  [
+   "{ INSIDE(=+5) | i K+5 }",
+   "{ INSIDE(=+5) | i K+5 }",
+   "{ INSIDE(=+5) | i K+5 }"
+  ],
+  [
+   "{ RULE BIG | o }",
+   "{ RULE BIG | o }",
+   "{ RULE BIG | o }"
+  ],
+  [
+   "{ THINK(=-3) KNOW(=-5) | i }",
+   "{ THINK(=-3) KNOW(=-5) | i }",
+   "{ THINK(=-3) KNOW(=-5) | i }"
+  ],
+  [
+   "{ SAY TEXT | o result }",
+   "{ SAY | o result } LIKE { KNOW(=+5) | o result D+3 }",
+   "{ SAY | o result } FOR { KNOW(=+5) } LIKE { SAME(=+5) | a }"
+  ],
+  [
+   "{ FIGHT(=+3) BIG | o }",
+   "{ FIGHT BIG(=+4) | o } FOR { GOOD(=-5) TIME | o }",
+   "{ FIGHT BIG(=+4) | o quality } FOR { GOOD(=-5) | o } LIKE { MOVE(=+5) | i }"
+  ],
+  [
+   "{ DO GIVE(=+5) | i }",
+   "{ DO PLACE | i } FOR { RULE | o }",
+   "{ DO | i A-5 } FOR { PLACE | o } FOR { RULE(=+4) | o }"
+  ],
+  [
+   "{ DO | o agent }",
+   "{ DO | o agent } FOR { DO | o tool }",
+   "{ DO | o agent } FOR { DO | o tool } FOR { MOVE | i }"
+  ],
+  [
+   "{ MOVE ABOVE(=+5) | o }",
+   "{ MOVE ABOVE(=+5) | o } FROM { FIGHT(=+3) | a }",
+   "{ MOVE ABOVE(=+5) | o } FROM { FIGHT(=+3) | a } FROM { DO | o }"
+  ],
+  [
+   "{ THINK(=-5) BIG | o }",
+   "{ THINK(=-5) VALUE(=+5) | o }",
+   "{ THINK(=-5) VALUE(=+5) | o } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ DO TEXT | o }",
+   "{ TEXT | o } FOR { DO | o N+3 }",
+   "{ TEXT | o result } FOR { DO | i } FOR { TIME(=+3) | o }"
+  ],
+  [
+   "{ THINK PART(=+2) | o }",
+   "{ THINK PART(=+2) | i } FROM { PART(=-2) | o N+3 }",
+   "{ THINK PART(=+5) | o result } FROM { PART(=-2) | o N+3 } FOR { KNOW(=+5) | o }"
+  ],
+  [
+   "{ GOOD(=+5) | a }",
+   "{ GOOD(=+5) KNOW | a }",
+   "{ GOOD(=+5) | a } FOR { KNOW | i } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ PLACE GOOD(=+5) ABOVE(=+5) | o }",
+   "{ PLACE GOOD(=+5) | o } PI { ABOVE(=+5) | o }",
+   "{ PLACE GOOD(=+5) | o } PI { ABOVE(=+5) | o } FOR { SOMEONE(=-5) | o N+5 }"
+  ],
+  [
+   "{ KNOW(=+5) SAY | i }",
+   "{ KNOW(=+5) | i } FROM { MOVE ABOVE | o }",
+   "{ KNOW(=+5) | i } FROM { MOVE ABOVE | o } FOR { SAY | o }"
+  ],
+  [
+   "{ SAY(=+5) | i }",
+   "{ SAY(=+5) | i } LIKE { FIGHT(=+3) | o }",
+   "{ SAY(=+5) | i A-5 } LIKE { FIGHT(=+3) | o } FOR { MOVE(=+5) | i }"
+  ],
+  [
+   "{ TEXT THINK | o }",
+   "{ TEXT | o } FROM { THINK | o }",
+   "{ TEXT | o } FROM { THINK | o } LIKE { SAME(=-5) | a } FOR { KNOW | i }"
+  ],
+  [
+   "{ ABOVE(=+5) JOIN(=-5) | i }",
+   "{ ABOVE(=+5) | i } LIKE { MOVE(=-5) | a }",
+   "{ ABOVE(=+5) | i } LIKE { MOVE(=-5) | a } FOR { JOIN(=+5) ABOVE | i }"
+  ],
+  [
+   "{ FIGHT(=+2) ABOVE(=-5) | o }",
+   "{ DO ABOVE(=-5) | o }",
+   "{ DO BIG | o } FOR { ABOVE(=-5) | i } FOR { INSIDE(=0) | o }"
+  ],
+  [
+   "{ SAY(=-5) INSIDE | o }",
+   "{ INSIDE(=0) | o } FOR { THINK(=+5) | i }",
+   "{ MOVE(=-5) | o } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ SAY TEXT | o }",
+   "{ SAY | o } FOR { KNOW(=+5) | o }",
+   "{ SAY | o } FOR { KNOW(=+5) | o } FOR { SOMEONE N+3 | o }"
+  ],
+  [
+   "{ RULE(=+4) VALUE | o agent }",
+   "{ RULE(=+4) | o agent } FOR { VALUE | o }",
+   "{ RULE(=+4) | o agent } FOR { VALUE | o } FOR { GIVE(=+5) | i }"
+  ],
+  [
+   "{ MOVE | o tool }",
+   "{ PART(=-2) | o } PI { MOVE | o }",
+   "{ PART(=-2) | o } PI { INSIDE(=+5) | o } FOR { MOVE BIG | i }"
+  ],
+  [
+   "{ VALUE(=-5) | o }",
+   "{ VALUE(=-5) GIVE(=0) | o }",
+   "{ VALUE(=-5) GIVE(=0) | o } FOR { DO | o N+3 }"
+  ],
+  [
+   "{ VALUE GIVE(=0) | o tool }",
+   "{ VALUE | o } FOR { GIVE(=0) | i }",
+   "{ VALUE | o } FOR { GIVE(=0) | i } FOR { RULE(=+5) | o }"
+  ],
+  [
+   "{ PLACE BIG | o }",
+   "{ PLACE | o } FOR { RULE(=+4) | o }",
+   "{ PLACE | o } FOR { DO | i } FOR { RULE(=+4) | o }"
+  ],
+  [
+   "{ SOMEONE PART(=+5) SAME | o }",
+   "{ PART(=+5) | o } FOR { SAME(=+5) | a }",
+   "{ PART(=+5) SOMEONE | o } FOR { SAME(=+5) THINK | o } FOR { JOIN(=+5) | i }"
+  ],
+  [
+   "{ MOVE(=-5) ABOVE(=+5) | i }",
+   "{ MOVE(=-5) | i } LIKE { ABOVE(=+5) | a }",
+   "{ MOVE(=-5) | i } LIKE { ABOVE(=+5) | a } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ GIVE(=+5) GOOD | i }",
+   "{ DO GOOD | i } FOR { SOMEONE | o }",
+   "{ DO GOOD | i } FOR { SOMEONE | o } FOR { GIVE(=+5) | i }"
+  ],
+  [
+   "{ SAY PART(=-2) | o }",
+   "{ SAY PART(=-2) | o } PI { TEXT | o }",
+   "{ SAY PART(=-2) | o } PI { TEXT | o } FOR { THINK | o }"
+  ],
+  [
+   "{ JOIN DO | i }",
+   "{ JOIN(=+5) | i } LIKE { TEXT | o }",
+   "{ JOIN(=+5) PART(=-5) | i } FOR { DO | i } LIKE { ABOVE(=-5) | o }"
+  ],
+  [
+   "{ FIGHT(=-5) | i }",
+   "{ FIGHT(=-5) JOIN | i }",
+   "{ FIGHT(=-5) JOIN | i } LIKE { FIGHT(=+3) | o } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ RULE(=+4) DO | i }",
+   "{ DO | i } FOR { RULE(=+5) | o }",
+   "{ DO | i } FOR { RULE(=+5) | o } FOR { SOMEONE(=+3) | o }"
+  ],
+  [
+   "{ DO THINK | a }",
+   "{ THINK | a } FOR { DO | i }",
+   "{ THINK | a } FOR { DO | i } FOR { SAME(=+3) | a }"
+  ],
+  [
+   "{ KNOW(=+5) THINK | i }",
+   "{ THINK | i } FOR { KNOW(=+5) | o }",
+   "{ THINK | i } FOR { KNOW(=+5) | o } FOR { TEXT | o }"
+  ],
+  [
+   "{ DO TIME | o }",
+   "{ DO | o } FOR { TIME | o }",
+   "{ DO | o } FOR { TIME | o } FOR { DO | o result }"
+  ],
+  [
+   "{ GOOD(=+3) DO | i }",
+   "{ DO GOOD | i } FOR { GIVE(=+5) | o }",
+   "{ DO GOOD | i } FOR { GIVE(=+5) | o } FOR { JOIN(=+5) | i }"
+  ],
+  [
+   "{ DO PLACE | a }",
+   "{ DO | a } FOR { PLACE | o }",
+   "{ DO | a } FOR { PLACE | o } FOR { DO BIG | o N+3 }"
+  ],
+  [
+   "{ SAY(=-5) | i }",
+   "{ SAY(=-5) | i } FOR { SOMEONE | o }",
+   "{ SAY(=-5) | i } LIKE { MOVE(=-5) | a } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ JOIN(=-5) | i }",
+   "{ JOIN(=-5) MOVE | i }",
+   "{ JOIN(=-5) | i } FOR { MOVE | i } FOR { PLACE | o }"
+  ],
+  [
+   "{ RULE(=-5) KNOW | a }",
+   "{ SOMEONE | o agent } FOR { KNOW(=+5) | i }",
+   "{ SOMEONE | o agent } FOR { KNOW(=+5) | i } FOR { GOOD | a }"
+  ],
+  [
+   "{ KNOW | o result N+3 }",
+   "{ KNOW(=+5) | o result N+3 } FROM { TEXT | o }",
+   "{ KNOW(=+5) | o result N+3 } FOR { THINK | i } FROM { TEXT | o }"
+  ],
+  [
+   "{ SOMEONE DO | o agent }",
+   "{ SOMEONE | o agent } FOR { GIVE(=-5) | i }",
+   "{ SOMEONE | o agent } FOR { GIVE(=-5) | i } FOR { PLACE | o }"
+  ],
+  [
+   "{ TIME DO | i }",
+   "{ DO | i } FOR { TIME | o }",
+   "{ DO | i } FOR { TIME | o } FOR { SAME | a }"
+  ],
+  [
+   "{ INSIDE(=0) KNOW | a }",
+   "{ KNOW(=0) | a } FOR { INSIDE(=0) | o }",
+   "{ KNOW(=0) | a } FOR { INSIDE(=0) | o } FOR { MOVE | i }"
+  ],
+  [
+   "{ JOIN(=-5) | i } LIKE { INSIDE(=0) | o }",
+   "{ JOIN(=-5) INSIDE(=0) | i }",
+   "{ JOIN(=-5) | i } LIKE { INSIDE(=0) | o } FOR { PLACE | o }"
+  ],
+  [
+   "{ SOMEONE | o } AGAINST { BIG(=+3) | a }",
+   "{ SOMEONE(=-5) BIG(=-3) | o }",
+   "{ SOMEONE | o } LIKE { BIG(=-3) | a } FOR { SOMEONE | o agent }"
+  ],
+  [
+   "{ VALUE(=+5) | a }",
+   "{ VALUE(=+5) BIG | a }",
+   "{ VALUE(=+5) | a } FOR { SOMEONE | o N+5 }"
+  ],
+  [
+   "{ RULE(=+4) INSIDE(=+5) | a }",
+   "{ RULE(=+4) | a } FROM { INSIDE(=+5) | o }",
+   "{ RULE(=+4) | a } AGAINST { SOMEONE(=-5) | o } FOR { RULE | i }"
+  ],
+  [
+   "{ JOIN(=+5) | i }",
+   "{ JOIN(=+5) PART | i }",
+   "{ JOIN(=+5) BIG | i }"
+  ],
+  [
+   "{ MOVE FIGHT | o }",
+   "{ ABOVE(=+5) | o } FROM { FIGHT(=+3) | a }",
+   "{ MOVE ABOVE(=+5) | o } FROM { FIGHT(=+3) | a } FOR { TIME(=0) | o }"
+  ],
+  [
+   "{ PART(=+2) | o }",
+   "{ PART(=+2) | o } PI { SOMEONE | o }",
+   "{ PART(=+2) | o } PI { SOMEONE | o } FROM { PART(=-2) | o N+3 }"
+  ],
+  [
+   "{ FIGHT(=+3) | o } FOR { ABOVE | o }",
+   "{ FIGHT(=+3) | o } FOR { DO ABOVE | o }",
+   "{ ABOVE | o } FOR { FIGHT(=+3) | o } FOR { SAY(=-5) | o }"
+  ],
+  [
+   "{ SAY | o } FOR { PART | o }",
+   "{ DO GOOD SAY | o result } FOR { PART(=+5) | o }",
+   "{ DO GOOD SAY | o result } FOR { SOMEONE | o N+3 } FOR { PART(=+5) | o }"
+  ],
+  [
+   "{ DO | i } FOR { SOMEONE | o }",
+   "{ DO | i } FOR { KNOW(=+5) | i }",
+   "{ DO | i } FOR { KNOW(=+5) | i } FOR { SOMEONE | o N+3 }"
+  ],
+  [
+   "{ DO | i } FOR { DO | i }",
+   "{ DO | i } FOR { GIVE(=+5) | i }",
+   "{ DO | i } FOR { PART(=-2) | o } FOR { DO | o }"
+  ],
+  [
+   "{ FIGHT(=+5) | i }",
+   "{ DO | i } FOR { SOMEONE | o M-5 }",
+   "{ FIGHT(=+5) | i } FOR { DO | i } FOR { SOMEONE | o M-5 }"
+  ],
+  [
+   "{ SAY SOMEONE | i }",
+   "{ SAY | i } FOR { KNOW(=+5) | i }",
+   "{ SAY | i } FOR { SOMEONE | o } FOR { GOOD | a }"
+  ],
+  [
+   "{ TEXT | o } FOR { SAME(=+5) | a }",
+   "{ SAME(=+5) | o } FROM { TEXT | o }",
+   "{ TEXT SAME(=+5) | o } FOR { THINK | i } FOR { PART | o N+3 }"
+  ],
+  [
+   "{ SAME(=-5) DO | i }",
+   "{ SAME(=-5) | i } FOR { MOVE | i }",
+   "{ SAME(=-5) | i } FOR { MOVE | i } FOR { TIME(=-5) | o }"
+  ],
+  [
+   "{ PART(=-2) VALUE | o }",
+   "{ VALUE | o } FOR { BIG | o }",
+   "{ VALUE | o } FOR { BIG | o } FOR { GIVE | i }"
+  ],
+  [
+   "{ JOIN(=+5) | a }",
+   "{ JOIN(=+5) PART | a }",
+   "{ JOIN(=+5) | a } FOR { PART(=-2) | o }"
+  ],
+  [
+   "{ RULE(=-5) | a }",
+   "{ RULE(=+4) | a M-5 }",
+   "{ RULE(=+4) M-5 | a } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ THINK(=+5) SOMEONE | i }",
+   "{ THINK(=+5) | i } FOR { RULE | o }",
+   "{ THINK(=+5) | i } FOR { RULE | o } FOR { SOMEONE | o N+3 }"
+  ]
+ ],
+ "R30": [
+  [
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }"
+  ],
+  [
+   "{ FIGHT MOVE(=+5) | i }",
+   "{ FIGHT | i } LIKE { SAY(=+5) | o }",
+   "{ FIGHT | i } LIKE { SAY(=+5) | o } LIKE { MOVE(=+5) | o }"
+  ],
+  [
+   "{ MOVE DO | o agent }",
+   "{ SOMEONE | o agent } FOR { THING(=-5) MOVE | o tool }",
+   "{ SOMEONE | o agent } FOR { DO | i V+4 } FOR { THING(=-5) MOVE | o tool }"
+  ],
+  [
+   "{ WANT(=-5) | i I+4 }",
+   "{ WANT(=-5) | i I+4 }",
+   "{ WANT(=-5) | i I+4 }"
+  ],
+  [
+   "{ DO | o quality }",
+   "{ DO GOOD | o quality }",
+   "{ DO | o quality } FOR { GOOD | o result }"
+  ],
+  [
+   "{ KNOW LIVE | o agent }",
+   "{ LIVE | o agent } FOR { CHANGE(=+3) LIVE(=+2) | i }",
+   "{ KNOW | o agent } FOR { CHANGE(=+3) LIVE(=+2) | i } FOR { LIVE | o }"
+  ],
+  [
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=0) | i }",
+   "{ GIVE(=0) | i }"
+  ],
+  [
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }"
+  ],
+  [
+   "{ RULE(=+5) SOMEONE | o }",
+   "{ RULE(=+5) | o quality } FOR { SOMEONE(=+3) THINK(=+5) | i }",
+   "{ RULE(=+5) | o quality } FOR { SOMEONE(=+3) MANY(=+5) | o } FOR { THINK(=+5) | i }"
+  ],
+  [
+   "{ SAME SEE | o result }",
+   "{ SAME(=+3) | o } PI { SEE | o result }",
+   "{ SAME(=+3) | o } LIKE { SEE | o result }"
+  ],
+  [
+   "{ SEE | i K+4 }",
+   "{ GIVE(=+5) SEE | i }",
+   "{ GIVE(=+5) | i } FOR { SOMEONE(=-5) MANY SEE | i }"
+  ],
+  [
+   "{ TIME(=-5) | o result }",
+   "{ TIME(=-5) | o } PI { TEXT | o result }",
+   "{ TEXT | o result } FOR { TIME(=-5) | o }"
+  ],
+  [
+   "{ TEXT SAY | o }",
+   "{ TEXT SAY MANY | o }",
+   "{ SOMEONE MANY | o N+5 } FOR { TEXT SAY | o }"
+  ],
+  [
+   "{ PART(=-2) | o quality }",
+   "{ INSIDE(=+5) PART(=+5) | o quality }",
+   "{ INSIDE(=+5) | i } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ INSIDE(=0) SOMEONE | o }",
+   "{ ABOVE SOMEONE | o } PI { SOMEONE | o }",
+   "{ SEE | o tool } PI { SOMEONE | o }"
+  ],
+  [
+   "{ TEXT KNOW | o result }",
+   "{ TEXT | o } FOR { KNOW(=0) | i ? }",
+   "{ TEXT | o } FOR { KNOW(=0) | i ? } FOR { MEASURE(=+5) | o }"
+  ],
+  [
+   "{ THINK(=+5) GOOD | i }",
+   "{ KNOW(=+5) GOOD | i }",
+   "{ SEE | i K+4 } FOR { THINK(=+5) GOOD | o }"
+  ],
+  [
+   "{ THING(=0) GRAIN(=0) | o }",
+   "{ THING(=0) | o } FOR { GRAIN(=0) | o }",
+   "{ GRAIN(=0) | o } FROM { THING(=0) | o } FOR { WANT(=+5) | i }"
+  ],
+  [
+   "{ GIVE(=+5) MOVE | i }",
+   "{ GIVE(=+5) | o result } FOR { MOVE | o }",
+   "{ GIVE(=+5) | i } FOR { MOVE | i } FOR { THING | o }"
+  ],
+  [
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }"
+  ],
+  [
+   "{ CHANGE | o result }",
+   "{ DO | o result }",
+   "{ DO | o result }"
+  ],
+  [
+   "{ TIME(=0) BIG(=-5) | o }",
+   "{ TIME(=0) BIG(=-5) | o }",
+   "{ TIME(=0) BIG(=-5) | o }"
+  ],
+  [
+   "{ MEASURE(=-5) | o }",
+   "{ MANY(=-1) MEASURE(=-5) | o }",
+   "{ MEASURE(=-5) | o } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ LIVE BIG(=-3) | a }",
+   "{ LIVE(=+1) BIG(=-3) | a }",
+   "{ LIVE(=+1) BIG(=-3) | a }"
+  ],
+  [
+   "{ PLACE VALUE DO | o }",
+   "{ RULE(=+4) | o } FOR { VALUE(=-5) | o }",
+   "{ PART(=+5) | o } FOR { VALUE(=-5) DO | i }"
+  ],
+  [
+   "{ JOIN(=-5) PART | i }",
+   "{ JOIN(=-5) PART | i }",
+   "{ JOIN(=-5) | i } FOR { PART(=-2) | o }"
+  ],
+  [
+   "{ DO GOOD(=-3) | a }",
+   "{ DO(=0) GOOD(=-3) | a }",
+   "{ DO GOOD(=-3) | a }"
+  ],
+  [
+   "{ DO GOOD(=-5) | a }",
+   "{ FIGHT | a } AGAINST { LIVE(=+5) MANY(=+5) | a }",
+   "{ CHANGE GOOD | a } AGAINST { MANY BIG | a } PI { LIVE | o }"
+  ],
+  [
+   "{ GRAIN(=+5) | o }",
+   "{ GRAIN(=+5) BIG(=-3) | o } FOR { PLACE | o }",
+   "{ GRAIN(=+5) | o } FOR { JOIN ABOVE(=-5) | i } FOR { PLACE | o }"
+  ],
+  [
+   "{ RULE(=+4) SAY | o agent }",
+   "{ KNOW | o agent } FOR { WANT(=+5) THINK | i }",
+   "{ SOMEONE | o agent } FOR { SAY | i } FOR { WANT KNOW(=+5) | i }"
+  ],
+  [
+   "{ THINK(=+5) GOOD(=-5) | i }",
+   "{ KNOW(=+5) GOOD(=-5) | i }",
+   "{ SEE | i K+4 } FOR { THINK(=+5) GOOD(=-5) | o }"
+  ],
+  [
+   "{ GRAIN(=+5) | o }",
+   "{ GRAIN(=+5) | o }",
+   "{ GRAIN(=+5) | o }"
+  ],
+  [
+   "{ BIG ABOVE(=+5) | a }",
+   "{ ABOVE(=+5) BIG | a }",
+   "{ ABOVE(=+5) BIG | a }"
+  ],
+  [
+   "{ THINK | a }",
+   "{ THINK KNOW | a }",
+   "{ THINK KNOW | a }"
+  ],
+  [
+   "{ GOOD(=+5) SEE | o quality }",
+   "{ GOOD(=+5) SEE | o quality }",
+   "{ GOOD(=+5) SEE | o quality }"
+  ],
+  [
+   "{ TIME MEASURE(=-5) | o }",
+   "{ TIME(=0) | o } FOR { MANY(=+3) | o } LIKE { MEASURE(=-5) | o }",
+   "{ TIME | o } FOR { MEASURE(=-5) | o }"
+  ],
+  [
+   "{ SAME(=-4) | a }",
+   "{ SAME(=-4) | a }",
+   "{ SAME(=-4) | a }"
+  ],
+  [
+   "{ GRAIN(=-3) MANY(=+3) | a }",
+   "{ GRAIN(=-3) | a } PI { THING(=0) | o }",
+   "{ GRAIN(=-3) | a } PI { THING(=0) | o }"
+  ],
+  [
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }"
+  ],
+  [
+   "{ SAY GOOD(=-5) | i }",
+   "{ SAY | i } AGAINST { GOOD(=-5) | o }",
+   "{ SAY | i } AGAINST { RULE(=+5) | i } FOR { GOOD(=-5) | o }"
+  ],
+  [
+   "{ MOVE DO | i }",
+   "{ MOVE | i K+4 }",
+   "{ DO | i V+4 } FOR { THING(=-5) MOVE | o tool }"
+  ],
+  [
+   "{ PLACE INSIDE(=0) | o }",
+   "{ PLACE INSIDE(=0) | o }",
+   "{ PLACE INSIDE(=0) | o } PI { PLACE | o }"
+  ],
+  [
+   "{ SEE INSIDE(=0) | o result }",
+   "{ SEE INSIDE(=0) | o result }",
+   "{ SEE INSIDE(=0) | o result }"
+  ],
+  [
+   "{ ART(=+5) MOVE | o }",
+   "{ ART(=+5) MOVE | o }",
+   "{ ART(=+5) MOVE | o }"
+  ],
+  [
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }"
+  ],
+  [
+   "{ PLACE | o }",
+   "{ PLACE | o }",
+   "{ PLACE | o }"
+  ],
+  [
+   "{ THING(=+4) MOVE | o tool }",
+   "{ THING(=+4) | o } FOR { FIGHT(=-5) | i }",
+   "{ FIGHT(=-5) | o tool } LIKE { THING(=+4) | o }"
+  ],
+  [
+   "{ LIVE BIG(=+3) CHANGE | o }",
+   "{ LIVE | o } PI { CHANGE BIG(=+3) | o }",
+   "{ LIVE | o } PI { CHANGE BIG(=+3) | o }"
+  ],
+  [
+   "{ LIVE(=-5) | i K+5 }",
+   "{ RULE(=+5) DO | i } FOR { LIVE(=-5) | i }",
+   "{ RULE(=+4) | o agent } FOR { LIVE(=-5) | i K+5 }"
+  ],
+  [
+   "{ VALUE SOMEONE | o }",
+   "{ VALUE | o quality } PI { SOMEONE | o }",
+   "{ VALUE ABOVE | o } PI { SOMEONE MANY | o }"
+  ],
+  [
+   "{ RULE(=+4) SOMEONE | a }",
+   "{ RULE(=+4) | a }",
+   "{ RULE(=+4) | a }"
+  ],
+  [
+   "{ KNOW(=-5) DO | i }",
+   "{ JOIN(=-5) KNOW | i }",
+   "{ JOIN(=-5) | i } FOR { KNOW | o }"
+  ],
+  [
+   "{ BIG DO | o }",
+   "{ BIG MOVE | o }",
+   "{ BIG DO | o }"
+  ],
+  [
+   "{ GRAIN(=+5) | o tool }",
+   "{ GRAIN(=+5) | o tool } FOR { INSIDE | i }",
+   "{ GRAIN(=+5) | o tool } FOR { JOIN | i } FOR { PLACE | o }"
+  ],
+  [
+   "{ DO | o result }",
+   "{ PART(=+5) | o result } FROM { DO | i }",
+   "{ DO | o result } FROM { PART(=-2) MANY | o }"
+  ],
+  [
+   "{ PLACE RULE(=+4) | o }",
+   "{ PLACE RULE(=+4) | o }",
+   "{ PLACE RULE(=+4) | o } PI { PLACE BIG | o }"
+  ],
+  [
+   "{ PART INSIDE(=+5) | o }",
+   "{ PART | o } PI { LIVE PART(=-2) | o }",
+   "{ PART INSIDE(=+5) | o } PI { LIVE PART(=-5) | o }"
+  ],
+  [
+   "{ PLACE INSIDE(=+5) | i }",
+   "{ MOVE INSIDE(=+5) | i }",
+   "{ MOVE INSIDE(=+5) | i }"
+  ],
+  [
+   "{ RULE DO | o quality }",
+   "{ RULE | o quality }",
+   "{ RULE DO | o quality }"
+  ],
+  [
+   "{ THINK(=-5) | i K+4 }",
+   "{ KNOW(=0) | i K+4 }",
+   "{ THINK(=-5) | i K+4 }"
+  ],
+  [
+   "{ SAY TEXT | o result }",
+   "{ SAY TEXT | o result }",
+   "{ SAY TEXT | o result } FROM { KNOW | o }"
+  ],
+  [
+   "{ GOOD(=-5) CHANGE(=4) | o quality }",
+   "{ GOOD(=-5) TIME | o } PI { CHANGE | o }",
+   "{ GOOD(=-5) TIME | o } FROM { FIGHT | o } LIKE { CHANGE | o }"
+  ],
+  [
+   "{ BEGIN(=-5) PLACE | i }",
+   "{ BEGIN(=-5) DO | i } FOR { RULE(=4) | o }",
+   "{ BEGIN(=-5) DO | i } FOR { RULE(=4) | o } FOR { MANY | o }"
+  ],
+  [
+   "{ ART(=-5) DO | o agent }",
+   "{ ART | o agent } FOR { ART(=-5) | o tool }",
+   "{ ART | o agent } FOR { ART(=-5) | o tool } FOR { MOVE | i }"
+  ],
+  [
+   "{ GRAIN(=-5) GRAIN(=-3) | o }",
+   "{ GRAIN(=-5) | o } FROM { GRAIN(=-3) | o }",
+   "{ GRAIN(=-5) | o } FROM { GRAIN(=-3) | o } FROM { LIVE(=5) | a }"
+  ],
+  [
+   "{ THINK VALUE(=4) | o }",
+   "{ THINK VALUE(=4) | o result } FROM { FIGHT SAY | o }",
+   "{ THINK VALUE(=4) | o result } FROM { FIGHT SAY | o } FOR { THINK(=5) | i }"
+  ],
+  [
+   "{ DO TEXT TIME | o result }",
+   "{ TEXT | o result } FOR { DO TIME | o }",
+   "{ TEXT | o result } FOR { DO | i } FOR { TIME | o }"
+  ],
+  [
+   "{ THINK PART(=5) | o result }",
+   "{ THINK PART(=5) | o result } FROM { KNOW PART(=-5) | o }",
+   "{ THINK PART(=5) | o result } FROM { KNOW PART(=-5) | o } FROM { SEE | o }"
+  ],
+  [
+   "{ GOOD SEE | a }",
+   "{ GOOD(=5) | a } FOR { SEE | i }",
+   "{ GOOD(=5) ART | a } FOR { SEE | i } FOR { WANT | i }"
+  ],
+  [
+   "{ GOOD(=5) PLACE ABOVE | o }",
+   "{ PLACE ABOVE(=5) | o } LIKE { GOOD(=5) | a }",
+   "{ PLACE ABOVE(=5) | o } LIKE { GOOD(=5) | a } FOR { LIVE | i }"
+  ],
+  [
+   "{ DO SEE | i K+3 }",
+   "{ DO SEE | i } FOR { KNOW | i }",
+   "{ DO SEE | i } FOR { KNOW | i } FROM { SAY | o }"
+  ],
+  [
+   "{ SAY(=5) | i }",
+   "{ SAY(=5) | i I+4 }",
+   "{ SAY(=5) | i } LIKE { SAY(=5) | o }"
+  ],
+  [
+   "{ TEXT ART(=5) | o }",
+   "{ TEXT ART(=5) | o } FROM { THINK | o }",
+   "{ TEXT ART(=5) | o } FROM { THINK | o } LIKE { SAME(=-5) | a }"
+  ],
+  [
+   "{ MOVE(=-5) ABOVE | i }",
+   "{ MOVE(=-5) | i } PI { ABOVE | o }",
+   "{ MOVE(=-5) | i } PI { ABOVE | o } FROM { JOIN | i }"
+  ],
+  [
+   "{ DO MEASURE(=5) | o }",
+   "{ DO MEASURE | o } PI { MEASURE(=-5) PLACE | o }",
+   "{ DO MEASURE | o } PI { MEASURE(=-5) PLACE | o } LIKE { GRAIN(=5) | o }"
+  ],
+  [
+   "{ GRAIN(=-5) KNOW | o result }",
+   "{ KNOW | o result } FROM { GRAIN(=-5) | o }",
+   "{ KNOW | o result } FROM { GRAIN(=-5) | o } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ SAY TEXT | o }",
+   "{ SAY TEXT RULE | o }",
+   "{ SAY TEXT RULE | o } FOR { KNOW | i }"
+  ],
+  [
+   "{ RULE VALUE | o agent }",
+   "{ RULE(=4) | o agent } FOR { VALUE | o }",
+   "{ RULE(=4) | o agent } FOR { VALUE | o } FOR { GIVE | i }"
+  ],
+  [
+   "{ PART(=-2) MOVE | o }",
+   "{ MOVE | o tool } PI { THING(=4) | o }",
+   "{ PART(=-2) | o } PI { THING(=4) | o } FOR { MOVE | i }"
+  ],
+  [
+   "{ GIVE VALUE(=-5) | o }",
+   "{ GIVE VALUE(=-5) | o } FOR { THING | o }",
+   "{ GIVE VALUE(=-5) | o } FOR { THING | o } PI { PLACE | o }"
+  ],
+  [
+   "{ VALUE GIVE | o tool }",
+   "{ VALUE | o } FOR { GIVE VALUE(=-5) | i }",
+   "{ VALUE | o } FOR { GIVE VALUE(=-5) | i } FROM { RULE(=5) | o }"
+  ],
+  [
+   "{ PLACE RULE | o }",
+   "{ PLACE | o } FOR { DO MEASURE | i }",
+   "{ PLACE | o } FOR { DO | i } FOR { RULE | o }"
+  ],
+  [
+   "{ PART(=5) WANT SAME | o }",
+   "{ PART(=5) SOMEONE | o } FOR { SAME THINK | o }",
+   "{ PART(=5) SOMEONE | o } FOR { SAME THINK | o } LIKE { JOIN | i }"
+  ],
+  [
+   "{ MOVE(=-5) ABOVE | i }",
+   "{ MOVE(=-5) | i } PI { ABOVE | a }",
+   "{ MOVE(=-5) | i } PI { ABOVE | a } LIKE { LIVE | a }"
+  ],
+  [
+   "{ GIVE DO | i }",
+   "{ DO GOOD | i } FOR { SOMEONE | o }",
+   "{ DO GOOD | i } FOR { SOMEONE | o } FOR { WANT | i }"
+  ],
+  [
+   "{ TEXT PART(=-2) | o }",
+   "{ TEXT | o } PI { TEXT | o }",
+   "{ TEXT PART(=-2) | o } PI { TEXT | o } PI { SAY | o }"
+  ],
+  [
+   "{ JOIN GRAIN(=0) | i }",
+   "{ JOIN | i } FROM { GRAIN(=0) | o }",
+   "{ JOIN | i } FROM { GRAIN(=0) | o } FROM { THING(=4) | o }"
+  ],
+  [
+   "{ FIGHT(=-3) | i }",
+   "{ FIGHT(=0) | i } LIKE { FIGHT(=-5) | o }",
+   "{ FIGHT(=0) | i } LIKE { FIGHT(=-5) | o } FOR { JOIN(=-5) | i }"
+  ],
+  [
+   "{ DO RULE | i }",
+   "{ DO | i } FOR { RULE(=4) | o }",
+   "{ DO | i } FOR { RULE(=4) | o } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ WANT DO | a }",
+   "{ WANT SAME DO | a }",
+   "{ WANT SAME DO | a } FOR { CHANGE | i }"
+  ],
+  [
+   "{ KNOW TEXT | i }",
+   "{ KNOW | i } FROM { TEXT | o }",
+   "{ KNOW | i } FROM { TEXT | o } FOR { SAY | i }"
+  ],
+  [
+   "{ DO TIME | o }",
+   "{ DO | o } FOR { DO | o result }",
+   "{ DO TIME | o } FOR { DO | o result } FOR { WANT | o }"
+  ],
+  [
+   "{ CHANGE GOOD(=3) | i }",
+   "{ CHANGE GOOD(=3) | i }",
+   "{ CHANGE GOOD(=3) | i } FROM { JOIN VALUE | i }"
+  ],
+  [
+   "{ DO ART(=-5) | a }",
+   "{ ART(=-5) DO MANY | a }",
+   "{ ART(=-5) DO MANY | a } FOR { MEASURE(=-5) | o }"
+  ],
+  [
+   "{ SAY(=-5) | i }",
+   "{ SAY(=-5) | i }",
+   "{ SAY(=-5) | i } LIKE { SAY(=-5) | o }"
+  ],
+  [
+   "{ JOIN(=-5) | i }",
+   "{ JOIN(=-5) MOVE | i }",
+   "{ JOIN(=-5) MOVE | i } FROM { PLACE | o }"
+  ],
+  [
+   "{ KNOW(=5) VALUE | a }",
+   "{ KNOW(=5) | a } FOR { VALUE(=5) THINK | o }",
+   "{ KNOW(=5) | a } FOR { VALUE(=5) THINK | o } FOR { SOMEONE | o }"
+  ],
+  [
+   "{ KNOW MEASURE | o result }",
+   "{ MEASURE | o result } FOR { KNOW | i }",
+   "{ MEASURE | o result } FOR { KNOW | i } FOR { THINK | i }"
+  ],
+  [
+   "{ GIVE(=-5) THING(=4) | o agent }",
+   "{ GIVE(=-5) | o agent } FOR { THING(=4) | o } PI { GRAIN(=-3) | o }",
+   "{ GIVE(=-5) | o agent } FOR { THING(=4) | o } PI { GRAIN(=-3) | o }"
+  ],
+  [
+   "{ DO TIME | i }",
+   "{ GIVE TIME | i }",
+   "{ GIVE TIME | i } FOR { DO | i }"
+  ],
+  [
+   "{ KNOW CHANGE | a }",
+   "{ KNOW | a } FOR { CHANGE | o }",
+   "{ KNOW | a } FOR { CHANGE | o } FOR { SEE | i }"
+  ],
+  [
+   "{ INSIDE(=0) JOIN(=-5) | i }",
+   "{ JOIN(=-5) | i } PI { INSIDE(=0) | o }",
+   "{ JOIN(=-5) | i } PI { INSIDE(=0) | o } LIKE { PLACE | o }"
+  ],
+  [
+   "{ SOMEONE BIG(=-3) | o }",
+   "{ SOMEONE BIG(=-3) | o } FOR { BEGIN LIVE | i }",
+   "{ SOMEONE BIG(=-3) | o } FOR { BEGIN LIVE | i } FROM { SOMEONE | o }"
+  ],
+  [
+   "{ VALUE(=5) | a }",
+   "{ VALUE(=5) | a }",
+   "{ VALUE(=5) | a } FOR { KNOW | i }"
+  ],
+  [
+   "{ RULE JOIN(=-5) | a }",
+   "{ RULE(=4) JOIN(=-5) | a }",
+   "{ RULE(=4) | a } FROM { RULE(=5) | o } LIKE { JOIN(=-5) | a }"
+  ],
+  [
+   "{ JOIN(=5) | i }",
+   "{ JOIN(=5) | i }",
+   "{ JOIN(=5) | i } FOR { MANY | o }"
+  ],
+  [
+   "{ GRAIN(=-5) CHANGE(=5) | o }",
+   "{ GRAIN(=-5) | o } FROM { CHANGE(=5) | o }",
+   "{ GRAIN(=-5) SEE | o } FROM { CHANGE(=5) | o } FROM { GRAIN(=0) | o }"
+  ],
+  [
+   "{ PART(=2) THING(=4) | o }",
+   "{ PART(=2) | o } PI { THING(=4) | o }",
+   "{ PART(=2) | o } PI { THING(=4) | o } PI { LIVE | a }"
+  ],
+  [
+   "{ GRAIN(=5) SEE | o tool }",
+   "{ SEE | o tool } FROM { GRAIN(=5) | o }",
+   "{ SEE | o tool } FROM { GRAIN(=5) | o } FOR { GRAIN(=-5) CHANGE(=5) | o }"
+  ],
+  [
+   "{ PART(=5) ART(=5) | o }",
+   "{ PART(=5) SOMEONE | o } FOR { ART(=5) SAY | o }",
+   "{ PART(=5) SOMEONE | o } FOR { ART(=5) SAY | o } LIKE { MEASURE(=-5) | o }"
+  ],
+  [
+   "{ DO SEE | i V+4 }",
+   "{ DO SEE | i } FOR { SOMEONE | o }",
+   "{ DO SEE | i } FOR { SOMEONE | o } FOR { KNOW | i }"
+  ],
+  [
+   "{ DO VALUE | i }",
+   "{ DO | i } FOR { VALUE | o }",
+   "{ DO | i } FOR { VALUE | o } FOR { SAME | o }"
+  ],
+  [
+   "{ DO LIVE(=-5) | i V+4 }",
+   "{ DO | i } FOR { LIVE(=-5) | a }",
+   "{ DO | i V+4 } FOR { LIVE(=-5) | a } FOR { THING | o }"
+  ],
+  [
+   "{ SAY SAME(=-4) | i }",
+   "{ SAY | i } FOR { SAME(=-4) | o }",
+   "{ SAY | i } FOR { SAME(=-4) | o } FOR { KNOW | i }"
+  ],
+  [
+   "{ MEASURE SAME(=5) TEXT | o }",
+   "{ TEXT | o } FOR { MEASURE SAME(=5) | o }",
+   "{ TEXT | o } FOR { MEASURE(=-5) SAME(=5) | o } FOR { ART(=-5) | o }"
+  ],
+  [
+   "{ CHANGE SAME(=-5) | i }",
+   "{ CHANGE | i } FOR { SAME(=-5) | a }",
+   "{ CHANGE | i } FOR { SAME(=-5) | a } FROM { MOVE | o }"
+  ],
+  [
+   "{ MEASURE(=-5) VALUE | o }",
+   "{ MEASURE(=-5) | o } FOR { VALUE | o }",
+   "{ MEASURE(=-5) | o } PI { VALUE | o } FOR { GIVE | i }"
+  ],
+  [
+   "{ JOIN(=5) | a result }",
+   "{ JOIN MANY | a }",
+   "{ JOIN MANY | a } FROM { JOIN(=5) | i }"
+  ],
+  [
+   "{ JOIN(=-5) RULE | a }",
+   "{ RULE(=-5) JOIN(=-5) | a }",
+   "{ RULE(=-5) | a } FROM { JOIN(=-5) | i } LIKE { LIVE | a }"
+  ],
+  [
+   "{ THINK RULE | i }",
+   "{ WANT SAY | i }",
+   "{ WANT SAY | i } FOR { RULE | o }"
+  ]
+ ],
+ "V2C": [
+  [
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }",
+   "{ BIG(=+3) | a }"
+  ],
+  [
+   "{ TOUCH(=+5) MOVE(=+5) | i }",
+   "{ TOUCH(=+5) MOVE(=+5) | i }",
+   "{ TOUCH(=+5) MOVE(=+5) | i }"
+  ],
+  [
+   "{ MOVE(=+2) DO | o agent }",
+   "{ SOMEONE | o agent } FOR { MOVE(=+2) | o tool }",
+   "{ SOMEONE | o agent } FOR { MOVE(=+2) | o tool } FOR { MOVE(=+2) | i }"
+  ],
+  [
+   "{ WANT(=-5) | i }",
+   "{ WANT(=-5) | i }",
+   "{ WANT(=-5) | i I+4 }"
+  ],
+  [
+   "{ CAN | o quality }",
+   "{ CAN | o quality }",
+   "{ CAN | o quality }"
+  ],
+  [
+   "{ LIVE(=+3) KNOW(=+5) | o agent }",
+   "{ LIVE(=+3) | o agent } FOR { LIVE(=-3) | a }",
+   "{ KNOW(=+5) | o agent } FOR { LIVE(=+3) | i } FOR { LIVE(=-3) | a }"
+  ],
+  [
+   "{ GIVE(=-2) | i }",
+   "{ GIVE(=-2) | i }",
+   "{ GIVE(=-2) | i }"
+  ],
+  [
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }",
+   "{ GOOD | a C+3 }"
+  ],
+  [
+   "{ RULE(=+5) SOMEONE(=+3) | o }",
+   "{ RULE(=+5) | o quality } FOR { SAY(=-5) TRUE | i }",
+   "{ RULE(=+5) | o quality } FOR { SOMEONE(=+3) MANY(=+5) | o } FOR { THINK(=+5) SAY(=-5) | i }"
+  ],
+  [
+   "{ SHAPE SAME | o }",
+   "{ SHAPE SAME | o }",
+   "{ SHAPE SAME | o }"
+  ],
+  [
+   "{ SEE(=+5) | i K+4 }",
+   "{ SEE(=+3) | i K+4 }",
+   "{ SEE(=+5) | i K+4 }"
+  ],
+  [
+   "{ TIME(=-5) HAPPEN | o }",
+   "{ HAPPEN | o result T-2 }",
+   "{ TEXT(=+5) | o } FOR { HAPPEN | o T-2 }"
+  ],
+  [
+   "{ SEE(=+5) CARE | o }",
+   "{ CARE | o } FOR { TEXT(=+3) | o }",
+   "{ TEXT(=+3) | o agent } FOR { CARE | o } FOR { SAY | i }"
+  ],
+  [
+   "{ JOIN(=+3) DO | o }",
+   "{ JOIN(=+3) DO | o }",
+   "{ JOIN(=+3) DO | o } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ BODY(=-3) | o }",
+   "{ BODY(=-3) | o }",
+   "{ BODY(=-3) | o }"
+  ],
+  [
+   "{ TEXT(=+3) SAY(=-5) | o }",
+   "{ TEXT(=+3) | o } FOR { SAY(=-5) | i }",
+   "{ TEXT(=+3) | o } FOR { SAY(=-5) | i } FOR { MEASURE(=+5) | o }"
+  ],
+  [
+   "{ TRUE(=+5) SEE(=+5) | i K+4 }",
+   "{ TRUE(=+5) | i K+4 }",
+   "{ TRUE(=+5) | i K+4 }"
+  ],
+  [
+   "{ THING GRAIN(=0) | o }",
+   "{ THING(=0) | o } FOR { CONSUME(=+5) HEAT(=+3) | i }",
+   "{ THING(=0) | o } FOR { CONSUME(=+5) HEAT(=+3) | i } FROM { COLOR(=-5) | o }"
+  ],
+  [
+   "{ GIVE(=+5) MOVE | i }",
+   "{ GIVE(=+5) MOVE | o result }",
+   "{ GIVE(=+5) MOVE | o result }"
+  ],
+  [
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }",
+   "{ BIG(=+2) | a }"
+  ],
+  [
+   "{ HAPPEN | o result }",
+   "{ HAPPEN | o result }",
+   "{ HAPPEN | o result }"
+  ],
+  [
+   "{ TIME(=-1) BIG(=-5) | o }",
+   "{ TIME(=-1) BIG(=-5) | o }",
+   "{ TIME(=-1) BIG(=-5) | o }"
+  ],
+  [
+   "{ MEASURE(=-2) PART(=+5) | o }",
+   "{ MEASURE(=-2) | o } PI { PART(=+5) | o }",
+   "{ MEASURE(=-2) | o } PI { PART(=+5) | o }"
+  ],
+  [
+   "{ STRONG(=-4) | a }",
+   "{ STRONG(=-4) | a }",
+   "{ STRONG(=-4) | a }"
+  ],
+  [
+   "{ RULE(=+3) VALUE | o }",
+   "{ PLACE | o } FOR { VALUE | i }",
+   "{ RULE(=+3) PART(=+5) | o } FOR { VALUE | i }"
+  ],
+  [
+   "{ PART(=-2) JOIN(=-5) | i }",
+   "{ PART(=-2) JOIN(=-5) | i }",
+   "{ PART(=-2) JOIN(=-5) | i }"
+  ],
+  [
+   "{ CAN(=-3) | a }",
+   "{ CAN(=-3) | a }",
+   "{ CAN(=-3) | a }"
+  ],
+  [
+   "{ STRONG(=-2) | a } AGAINST { BODY(=0) HEAT(=+4) | a }",
+   "{ HAPPEN | o } AGAINST { BODY(=-3) STRONG(=+5) | o }",
+   "{ BODY(=-3) | a } AGAINST { STRONG(=+4) | a } AGAINST { BODY(=0) HEAT(=+4) | o }"
+  ],
+  [
+   "{ SHAPE(=+5) | o }",
+   "{ SHAPE(=+5) | o } FOR { OPEN(=0) | i }",
+   "{ SHAPE(=+5) | o } FOR { OPEN(=0) | i } FROM { LAND(=+5) GRAIN(=+2) | o }"
+  ],
+  [
+   "{ SOMEONE RULE(=+3) KNOW | o agent }",
+   "{ SOMEONE | o agent } FOR { TRUE(=+2) SAY | i }",
+   "{ SOMEONE | o agent } FOR { RULE(=+3) TRUE(=+5) | o } FOR { SAY | i }"
+  ],
+  [
+   "{ TRUE(=-5) | i K+4 }",
+   "{ TRUE(=-5) | i K+4 }",
+   "{ TRUE(=-5) | i K+4 }"
+  ],
+  [
+   "{ GRAIN(=+5) | o }",
+   "{ GRAIN(=+5) SHAPE(=0) | o }",
+   "{ GRAIN(=+5) SHAPE(=0) | o }"
+  ],
+  [
+   "{ ABOVE(=+2) | a }",
+   "{ ABOVE(=+2) | a }",
+   "{ ABOVE(=+2) | a }"
+  ],
+  [
+   "{ THINK | a }",
+   "{ THINK | a }",
+   "{ THINK | a }"
+  ],
+  [
+   "{ LIGHT(=+5) GOOD(=+5) | o quality }",
+   "{ LIGHT(=+5) | o quality }",
+   "{ LIGHT(=+5) | o quality }"
+  ],
+  [
+   "{ TIME(=+5) | o } PI { TIME MEASURE(=-2) | o }",
+   "{ TIME PART(=+5) | o }",
+   "{ TIME PART(=+5) | o }"
+  ],
+  [
+   "{ SAME(=-3) | a }",
+   "{ SAME(=-3) | a }",
+   "{ SAME(=-3) | a }"
+  ],
+  [
+   "{ GRAIN(=-3) | a }",
+   "{ GRAIN(=-3) MANY(=+3) | a }",
+   "{ GRAIN(=-3) MANY(=+3) | a }"
+  ],
+  [
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }",
+   "{ PART(=+5) | o }"
+  ],
+  [
+   "{ SAY(=+3) FIGHT | i }",
+   "{ SAY(=+3) | i } AGAINST { SOMEONE | o }",
+   "{ SAY(=+3) TRUE(=-2) | i }"
+  ],
+  [
+   "{ MOVE(=+2) | i V+4 }",
+   "{ MOVE(=+2) | i V+4 }",
+   "{ MOVE(=+2) | i V+4 }"
+  ],
+  [
+   "{ OPEN(=+5) PLACE(=0) | o }",
+   "{ OPEN(=+5) | o } PI { PLACE(=-3) | o }",
+   "{ OPEN(=+5) | o } FOR { MOVE | i } PI { PLACE(=-3) | o }"
+  ],
+  [
+   "{ SHAPE(=0) INSIDE(=0) | o }",
+   "{ SHAPE INSIDE(=0) | o }",
+   "{ SHAPE INSIDE(=0) | o }"
+  ],
+  [
+   "{ ART(=+5) MOVE | o }",
+   "{ ART(=+5) MOVE | o }",
+   "{ ART(=+5) MOVE | o }"
+  ],
+  [
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }",
+   "{ BIG(=-3) | a }"
+  ],
+  [
+   "{ PLACE | o }",
+   "{ PLACE(=-5) | o }",
+   "{ PLACE(=-5) | o }"
+  ],
+  [
+   "{ LONG SHAPE(=0) | o }",
+   "{ SHAPE(=0) | o } FOR { FIGHT(=-5) MOVE(=+5) | i }",
+   "{ LONG(=+5) SHAPE(=0) | o } FOR { FIGHT(=-5) | o } FOR { MOVE(=+5) | i }"
+  ],
+  [
+   "{ CHANGE BIG(=+2) | o }",
+   "{ LIVE(=+3) BIG(=+2) | i }",
+   "{ LIVE(=+3) CHANGE BIG(=+2) | i }"
+  ],
+  [
+   "{ LIVE(=-5) RULE(=+5) | i }",
+   "{ LIVE(=-5) | i K+5 }",
+   "{ LIVE(=-5) | i K+5 } FOR { RULE(=+5) | o }"
+  ],
+  [
+   "{ RULE ABOVE | o }",
+   "{ RULE ABOVE | o }",
+   "{ RULE ABOVE | o } PI { SOMEONE(=+3) PART(=+5) | o }"
+  ],
+  [
+   "{ RULE(=+5) | a }",
+   "{ RULE(=+3) | a }",
+   "{ RULE(=+3) | a }"
+  ],
+  [
+   "{ KNOW(=-5) CHANGE | i K+4 }",
+   "{ KNOW(=-5) | i K+4 }",
+   "{ KNOW(=-5) | i K+4 }"
+  ],
+  [
+   "{ STRONG(=+5) | o }",
+   "{ STRONG(=+5) | o }",
+   "{ STRONG(=+5) | o }"
+  ],
+  [
+   "{ JOIN(=-5) OPEN(=+5) | o tool }",
+   "{ LONG(=0) | o tool } FOR { OPEN(=+5) | i }",
+   "{ LONG(=0) | o tool } FOR { OPEN(=+5) | i } FOR { PLACE(=0) | o }"
+  ],
+  [
+   "{ DO(=+3) PART(=+5) | o result }",
+   "{ DO(=+3) PART(=+5) | o result }",
+   "{ DO(=+3) PART(=+5) | o result }"
+  ],
+  [
+   "{ PLACE(=+5) RULE(=+3) | o }",
+   "{ PLACE(=+3) | o } PI { PLACE(=+5) RULE(=+3) | o }",
+   "{ PLACE(=+3) | o } PI { PLACE(=+5) RULE(=+3) | o }"
+  ],
+  [
+   "{ INSIDE(=+5) | o }",
+   "{ INSIDE(=+5) | o } PI { LIVE PART(=-2) | o }",
+   "{ INSIDE(=+5) | o } FOR { LIVE(=+5) BIG(=+2) | o } PI { LIVE PART(=-2) | o }"
+  ],
+  [
+   "{ INSIDE(=+5) | i }",
+   "{ INSIDE(=+5) CHANGE | i }",
+   "{ INSIDE(=+5) CHANGE(=+3) | i }"
+  ],
+  [
+   "{ STRONG RULE | o }",
+   "{ STRONG RULE(=+3) | o }",
+   "{ STRONG RULE(=+3) | o }"
+  ],
+  [
+   "{ KNOW(=-5) | i K+4 }",
+   "{ KNOW(=-5) | i K+4 }",
+   "{ KNOW(=-5) THINK(=-2) | i K+4 }"
+  ],
+  [
+   "{ TEXT(=0) SAY | o result }",
+   "{ TEXT(=0) | o } FROM { SAY(=+3) | i }",
+   "{ TEXT(=0) | o } FROM { SAY(=+3) | i } LIKE { TRUE(=+5) | a }"
+  ],
+  [
+   "{ HAPPEN STRONG(=+4) GOOD(=-4) | o }",
+   "{ HAPPEN GOOD(=-4) | o } LIKE { FEEL(=+5) | o }",
+   "{ HAPPEN GOOD(=-4) | o } LIKE { FEEL(=+5) | o } FOR { CARE(=+5) | o }"
+  ],
+  [
+   "{ BEGIN(=-5) DO(=+3) | i }",
+   "{ DO(=+3) | i } FROM { BEGIN(=-5) | o }",
+   "{ DO(=+3) | i } FROM { BEGIN(=-5) | o } FOR { PLACE | o }"
+  ],
+  [
+   "{ ART(=-2) DO(=+3) | o agent }",
+   "{ ART(=-2) | o agent } FOR { STRONG LONG(=0) | o tool }",
+   "{ ART(=-2) | o agent } FOR { DO(=+3) | i } LIKE { STRONG | o tool }"
+  ],
+  [
+   "{ HEAT(=+4) GRAIN(=-5) | o }",
+   "{ GRAIN(=-5) | o } FROM { GRAIN(=-3) HEAT(=+5) | o }",
+   "{ GRAIN(=-5) | o } FROM { GRAIN(=-3) HEAT(=+5) | o } PI { ABOVE | o }"
+  ],
+  [
+   "{ SAY(=-5) THINK(=-2) | o }",
+   "{ SAY(=-5) | o result } FOR { FIGHT(=0) | i }",
+   "{ SAY(=-5) VALUE(=+5) | o result } FOR { FIGHT(=0) | i }"
+  ],
+  [
+   "{ DO(=+3) THINK(=+3) | o result }",
+   "{ TEXT(=0) | o } FOR { DO(=+3) | i }",
+   "{ TEXT(=0) | o } FOR { DO(=+3) | i } FROM { THINK(=+3) | o }"
+  ],
+  [
+   "{ THINK(=+5) MANY(=+5) | i }",
+   "{ THINK(=+3) | i } FROM { PART(=-5) | o }",
+   "{ THINK(=+3) | o result } FROM { PART(=-5) | o } FOR { MANY(=+5) | a }"
+  ],
+  [
+   "{ GOOD(=+5) SEE(=+5) | a }",
+   "{ GOOD(=+5) | a } FOR { SEE(=+5) | i }",
+   "{ GOOD(=+5) SEE(=+5) | a } LIKE { WANT(=+5) | a }"
+  ],
+  [
+   "{ PLACE GOOD(=+5) | o }",
+   "{ PLACE(=+3) GOOD(=+5) | o } PI { ABOVE(=+5) | o }",
+   "{ PLACE GOOD(=+5) FEEL(=-5) | o } PI { ABOVE(=+5) | o }"
+  ],
+  [
+   "{ SEE(=+5) | i }",
+   "{ SEE(=+5) | i } FROM { HAPPEN | o }",
+   "{ SEE(=+5) | i } FOR { KNOW(=+3) | i }"
+  ],
+  [
+   "{ SAY I+5 | i }",
+   "{ SAY | i I+5 }",
+   "{ SAY | i I+5 T-1 }"
+  ],
+  [
+   "{ TEXT(=+5) TRUE(=-5) | o }",
+   "{ TEXT(=+5) | o } FROM { TRUE(=-5) | o }",
+   "{ TEXT(=+5) | o } FROM { THINK(=0) | o } LIKE { TRUE(=-5) | a }"
+  ],
+  [
+   "{ ABOVE(=+2) JOIN | i }",
+   "{ JOIN(=+3) | i } FOR { ABOVE | a }",
+   "{ JOIN(=+3) | i } FOR { ABOVE(=+3) | a } AGAINST { LONG(=0) | o }"
+  ],
+  [
+   "{ STRONG MEASURE | o }",
+   "{ STRONG(=+3) | o } FOR { MEASURE(=-5) | o }",
+   "{ STRONG(=+3) | o } FOR { MEASURE(=+2) | o } PI { SHAPE(=+5) | o }"
+  ],
+  [
+   "{ FEEL(=0) NEAR(=+3) | o }",
+   "{ FEEL(=0) | o } FROM { GRAIN(=-5) | o }",
+   "{ FEEL(=0) | o } FROM { GRAIN(=-5) | o } FOR { BODY(=-3) | o }"
+  ],
+  [
+   "{ TEXT(=-2) CONSUME(=-3) | o }",
+   "{ TEXT(=-2) | o } FOR { SAY | i }",
+   "{ TEXT(=-2) | o N+5 } FOR { SAY | i } FROM { RULE | o }"
+  ],
+  [
+   "{ RULE(=+3) VALUE(=0) | o agent }",
+   "{ SOMEONE | o } FOR { RULE(=+3) | i }",
+   "{ SOMEONE | o } FOR { RULE(=+3) | i } FROM { VALUE(=0) | o }"
+  ],
+  [
+   "{ BODY(=0) STRONG | o }",
+   "{ BODY(=+3) | o } PI { STRONG | o }",
+   "{ PART(=-2) | o } PI { BODY | o } FOR { STRONG | o }"
+  ],
+  [
+   "{ VALUE(=0) GIVE(=0) | o }",
+   "{ GIVE(=0) | i } FOR { VALUE(=0) | o }",
+   "{ GIVE(=0) | i } FOR { VALUE(=0) | o } FROM { MANY(=+3) | o }"
+  ],
+  [
+   "{ VALUE(=0) GIVE(=0) | o tool }",
+   "{ VALUE(=0) | o tool } FOR { GIVE(=0) | i }",
+   "{ VALUE(=0) | o } FOR { GIVE(=0) | i } FROM { RULE(=+5) | o }"
+  ],
+  [
+   "{ MEASURE(=-5) RULE(=+3) | o }",
+   "{ LAND(=+2) | o } FOR { STRONG | o }",
+   "{ PLACE | o } FROM { RULE(=+3) | o } FOR { DO | i }"
+  ],
+  [
+   "{ FRIEND(=+5) PART(=+5) | o }",
+   "{ PART(=+5) | o } FROM { FRIEND(=+5) | o }",
+   "{ PART(=+5) | o } FROM { FRIEND(=+5) | o } LIKE { THINK(=0) SAME(=+5) | o }"
+  ],
+  [
+   "{ MOVE(=-5) ABOVE(=+2) | i }",
+   "{ MOVE(=-5) | i } FOR { ABOVE(=+2) | a }",
+   "{ MOVE(=-5) | i } LIKE { LONG(=+2) | o }"
+  ],
+  [
+   "{ GIVE(=+5) CAN(=+3) | i }",
+   "{ GIVE(=+2) | i } FOR { CAN(=+3) | o }",
+   "{ GIVE(=+5) | i } FOR { CAN(=+3) | o } FROM { FRIEND(=+5) | o }"
+  ],
+  [
+   "{ TEXT(=-2) PART(=+5) | o }",
+   "{ TEXT(=0) | o } PI { TEXT(=-2) PART(=+5) | o }",
+   "{ TEXT(=-2) PART(=+5) | o } PI { TEXT(=0) | o }"
+  ],
+  [
+   "{ TEXT(=-5) JOIN(=+5) | i }",
+   "{ JOIN(=+5) | i } FROM { TEXT(=-5) | o }",
+   "{ JOIN(=+5) | i } FROM { TEXT(=-5) | o } FOR { HEAT(=+2) | o }"
+  ],
+  [
+   "{ FIGHT(=+2) BODY | i }",
+   "{ FIGHT(=+2) | i } LIKE { BODY(=0) JOIN | o }",
+   "{ FIGHT(=+2) | i } LIKE { BODY(=0) JOIN | o } FOR { FIGHT(=-5) | o }"
+  ],
+  [
+   "{ RULE(=0) DO(=0) | i }",
+   "{ DO | i } FOR { RULE | o }",
+   "{ DO | i } FOR { SAY(=+5) | o } FROM { RULE(=+3) | o }"
+  ],
+  [
+   "{ CAN(=+3) WANT | a }",
+   "{ CHANGE(=+3) | a } FOR { DO | i }",
+   "{ SAME(=+3) | a } FOR { DO | i } FROM { THING(=+4) | o }"
+  ],
+  [
+   "{ KNOW(=+3) TEXT(=-2) | i }",
+   "{ KNOW(=+3) | i } FROM { TEXT(=-2) | o }",
+   "{ KNOW(=+3) | i } FROM { TEXT(=0) | o } FOR { THINK(=0) | i }"
+  ],
+  [
+   "{ DO(=+3) BEGIN(=0) | o }",
+   "{ DO(=+3) | o } FOR { HAPPEN | o result }",
+   "{ DO(=+3) | o } FOR { BEGIN(=+5) | o } PI { HAPPEN | o }"
+  ],
+  [
+   "{ GOOD(=+3) CHANGE(=+3) | i }",
+   "{ CHANGE(=+3) | i } FROM { GOOD(=+3) | a }",
+   "{ GIVE(=+5) | i } FOR { GOOD(=+3) VALUE(=+2) | o }"
+  ],
+  [
+   "{ ART(=-2) DO(=+3) | a }",
+   "{ DO(=+3) | a } FROM { ART(=-2) | o }",
+   "{ DO(=+3) | a } FROM { ART(=-2) MANY | o } PI { PLACE | o }"
+  ],
+  [
+   "{ SAY(=0) FEEL(=-5) | i }",
+   "{ SAY(=0) | i I-4 }",
+   "{ SAY(=0) | i I-4 } FOR { MANY(=-5) | o }"
+  ],
+  [
+   "{ JOIN(=-5) | i }",
+   "{ JOIN(=-5) | i } FROM { NEAR(=+3) | o }",
+   "{ JOIN(=-5) | i V+4 }"
+  ],
+  [
+   "{ RULE(=0) PLACE(=0) | a }",
+   "{ SOMEONE | o agent } FOR { THING(=+4) | o }",
+   "{ SOMEONE | o agent } FOR { THING(=+4) | o } PI { LAND(=+2) | o }"
+  ],
+  [
+   "{ MANY(=0) TRUE | o }",
+   "{ PART(=+5) | o } FROM { TRUE(=+5) | o }",
+   "{ PART(=+5) | o } FROM { TRUE(=+5) | o } FOR { KNOW(=+3) | i }"
+  ],
+  [
+   "{ CONSUME(=+5) THING(=+4) LAND(=-2) | o agent }",
+   "{ SOMEONE | o } FOR { CONSUME(=+5) THING(=+4) | i }",
+   "{ SOMEONE | o } FOR { CONSUME(=+5) | i } FROM { THING(=+4) LAND(=-2) | o }"
+  ],
+  [
+   "{ TIME(=0) DO | i }",
+   "{ MOVE(=0) | i } FROM { TIME | o }",
+   "{ MOVE(=0) | i } FROM { TIME | o } FOR { DO(=0) | i }"
+  ],
+  [
+   "{ FEEL(=+2) TOUCH(=-5) | a }",
+   "{ FEEL(=+3) | a } FOR { TOUCH | o }",
+   "{ FEEL(=+3) | a } FOR { TOUCH(=0) | o } LIKE { BODY(=-3) | o }"
+  ],
+  [
+   "{ SIDE(=0) JOIN(=-5) | i }",
+   "{ JOIN(=-5) | i } FOR { SIDE(=0) | o }",
+   "{ JOIN(=-5) | i } FOR { SIDE(=0) | o } LIKE { SHAPE(=+5) | o }"
+  ],
+  [
+   "{ SOMEONE SEX(=-5) LIVE(=+5) | o }",
+   "{ SOMEONE SEX(=-5) | o } FROM { BEGIN(=-2) | o }",
+   "{ SOMEONE SEX(=-5) | o } PI { BEGIN(=-2) | o }"
+  ],
+  [
+   "{ VALUE(=+5) | a }",
+   "{ VALUE(=+5) | a } FOR { MANY | o }",
+   "{ VALUE(=+5) | a } FOR { MANY(=+3) | o } FROM { THINK | o }"
+  ],
+  [
+   "{ RULE(=+5) STRONG(=+5) | a }",
+   "{ RULE(=+3) | a } AGAINST { SIDE(=-5) | o }",
+   "{ RULE(=+5) | a } AGAINST { RULE(=+3) SAME(=-3) | o }"
+  ],
+  [
+   "{ JOIN(=+3) | i }",
+   "{ JOIN(=+3) | i } FOR { MEASURE(=-2) | o }",
+   "{ JOIN(=+3) | i } FOR { MEASURE(=-2) | o } FROM { MANY(=+3) | o }"
+  ],
+  [
+   "{ HEAT(=+5) LIGHT(=+5) | o }",
+   "{ HEAT(=+5) LIGHT(=+5) | o } FROM { HAPPEN | o }",
+   "{ HEAT(=+5) LIGHT(=+5) | o } FROM { GRAIN(=-5) | o } PI { MOVE(=+2) | o }"
+  ],
+  [
+   "{ BODY LIVE | o }",
+   "{ BODY(=0) | o } PI { LIVE | o }",
+   "{ BODY | o } PI { LIVE | o } FROM { THING | o }"
+  ],
+  [
+   "{ LONG(=+2) HEAT LIGHT | o }",
+   "{ LONG(=+2) | o } FOR { LIGHT(=+5) | o }",
+   "{ LONG(=+2) | o } FOR { LIGHT(=+5) | o } FROM { GRAIN(=+2) | o }"
+  ],
+  [
+   "{ ART(=+5) MEASURE(=-2) | o result }",
+   "{ ART(=+5) | o result } FOR { PART(=+2) | o }",
+   "{ ART(=+5) | o result } FOR { MEASURE(=-2) SOMEONE | o }"
+  ],
+  [
+   "{ SEE(=+3) | i V+4 }",
+   "{ DO | i } FOR { SEE(=+3) | i }",
+   "{ DO | i } FOR { SEE(=+3) | i } FROM { KNOW(=+3) | o }"
+  ],
+  [
+   "{ DO(=+3) | i }",
+   "{ DO(=+3) | i } FOR { CAN | o }",
+   "{ DO(=+3) | i } FOR { GIVE(=+5) | i } FROM { CAN | o }"
+  ],
+  [
+   "{ LIVE(=-5) CHANGE(=+3) | i }",
+   "{ LIVE(=-5) | i K+5 }",
+   "{ LIVE(=-5) | i K+5 V+4 }"
+  ],
+  [
+   "{ TEXT(=0) SAME(=-3) | i }",
+   "{ SAY(=0) | i } FOR { SAME(=-3) | o }",
+   "{ SAY(=0) | i } FOR { SAME(=-3) | o } LIKE { SEE | i }"
+  ],
+  [
+   "{ SAME(=+5) MEASURE(=-2) | o }",
+   "{ TEXT(=0) | o } FOR { SAME(=+5) | o }",
+   "{ TEXT(=0) | o } FOR { SAME(=+5) | o } FROM { MEASURE(=-2) | o }"
+  ],
+  [
+   "{ SAME(=-5) CHANGE | i }",
+   "{ CHANGE(=+3) | i } FOR { SIDE(=-5) | o }",
+   "{ CHANGE(=+3) SAME(=-5) | i } LIKE { SIDE(=-5) | o }"
+  ],
+  [
+   "{ MEASURE(=-5) VALUE | o }",
+   "{ MEASURE(=-5) | o } FOR { VALUE(=0) | o }",
+   "{ MEASURE(=-5) | o } FOR { VALUE(=0) | o } FROM { GIVE(=0) | i }"
+  ],
+  [
+   "{ JOIN(=+3) MANY | a }",
+   "{ MANY(=+3) | a } FOR { JOIN(=+3) | i }",
+   "{ SAME(=-3) | a } FOR { JOIN(=+3) | i }"
+  ],
+  [
+   "{ RULE(=-5) STRONG | a }",
+   "{ CAN | a } FOR { RULE(=+3) | o }",
+   "{ CAN | a } AGAINST { RULE(=+3) | o } FROM { SOMEONE(=+5) | o }"
+  ],
+  [
+   "{ SAY(=+3) WANT | i }",
+   "{ SAY(=+3) | i } FOR { RULE(=+3) | o }",
+   "{ SAY(=+3) WANT | i } FOR { RULE(=+3) | o } FROM { MANY(=+3) | o }"
+  ]
+ ]
+}
