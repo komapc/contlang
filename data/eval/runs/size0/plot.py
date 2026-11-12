@@ -40,9 +40,12 @@ pts = [(lx(c["L"]), ly(100 * c["U09"])) for c in C if c["N"] <= 10000]
 line([(lx(c["L"]), ly(100 * c["U"])) for c in C if c["N"] <= 10000], BLUE_L, 'stroke-dasharray="5 4"')
 line(pts, BLUE)
 for c in C:
+    if c["N"] <= 10000:
+        out.append(f'<circle cx="{lx(c["L"]):.1f}" cy="{ly(100 * c["U09"]):.1f}" r="3.5" fill="{BLUE}"/>')
     if c["N"] in (0, 300, 1000, 3000, 10000):
         dot(lx(c["L"]), ly(100 * c["U09"]), BLUE)
         T(lx(c["L"]) + 7, ly(100 * c["U09"]) + 17, f'{100 * c["U09"]:.0f}%', c=INK)
+T(lx(60), ly(66), "+10, +20, +50 entries ↓", fs=11)
 T(lx(10076) - 4, ly(98) - 8, "ceiling (entry always read right)", a="end")
 T(lx(1500), ly(62), "min-co + N entries", c=BLUE, fw="bold")
 dot(lx(120), ly(34), ORANGE, hollow=True)

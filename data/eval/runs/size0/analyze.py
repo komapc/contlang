@@ -60,7 +60,7 @@ def U(N, v="llm", a_lex=1.0):
 out += ["", "## Share of text understood U(N) (Brown content words; base min-co v1 = 76, used by big1000)", "",
         "| N entries | L = 76 + N | text coverage | U, a_lex 1.0 | U, a_lex 0.9 |", "|---|---|---|---|---|"]
 curve = []
-for N in (0, 100, 300, 1000, 2000, 3000, 5000, 10000, 20000):
+for N in (0, 10, 20, 50, 100, 200, 300, 500, 1000, 2000, 3000, 5000, 10000, 20000):
     cov = sum(c for w, c in cnt.items() if rank[w] <= N) / tot
     u1, u9 = U(N), U(N, a_lex=0.9)
     curve.append({"N": N, "L": 76 + N, "cov": cov, "U": u1, "U09": u9})

@@ -25,11 +25,21 @@ band taken from [big1000](../big1000/README.md) (1000 words, Haiku encoder, Haik
 | N entries | L | text coverage | U |
 |---|---|---|---|
 | 0 | 76 | 0 % | 55 % |
+| 10 | 86 | 4 % | 57 % (57) |
+| 20 | 96 | 7 % | 57 % (58) |
+| 50 | 126 | 12 % | 59 % (60) |
 | 100 | 176 | 19 % | 61 % (63) |
+| 200 | 276 | 27 % | 63 % (66) |
 | 300 | 376 | 34 % | 65 % (68) |
+| 500 | 576 | 43 % | 68 % (72) |
 | 1000 | 1076 | 58 % | 73 % (78) |
+| 2000 | 2076 | 72 % | 78 % (85) |
 | 3000 | 3076 | 80 % | 81 % (89) |
 | 10 000 | 10 076 | 96 % | 88 % (98) |
+
+Small lexicons barely move the needle: the most frequent words are already composed well (62 % close), so an entry for
+them gains less than an entry for a rarer word. Gain per 100 entries: about +2 pp up to 500 entries, +1 pp around 1000,
++0.4 pp around 3000.
 
 Toki Pona (L = 120): no direct measurement with this metric. Estimate from [toki](../toki/README.md) (same 100 words,
 cos ≥ 0.5): TP 39 % vs min-co 63 % → about **34 %** at word level. **But at sentence level Toki Pona is ahead** (tpx1:
