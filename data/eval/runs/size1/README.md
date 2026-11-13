@@ -95,6 +95,24 @@ Machine: X = top principal axes of Numberbatch word vectors; a word = its values
 axes; reader = nearest word vector with a frequency prior. "Close" proxy: same word, WordNet synonym or cosine ≥ 0.44 —
 agrees with the human judges on 91 % of the 1440 judged size1 answers. Token-weighted, no lexicon.
 
+### What the PCA axes look like
+
+The top 3 axes ([pca_axes.py](pca_axes.py)); 12 extreme words at each end, among words seen ≥ 20 times in Brown:
+
+| axis (share of variance) | − end | + end |
+|---|---|---|
+| 1 (1.8 %) | wildly, inevitably, invariably, equally, openly, ambiguous, clearly, undoubtedly, scarcely, manner, enthusiasm | cylinder, tube, powder, pipe, coating, white, spray, pad, barrel, tappet, black, leather |
+| 2 (1.5 %) | softly, gently, quietly, roar, lightly, grin, murmur, loud, wildly, delightful, happily, dull | principle, empirical, evaluation, fundamental, understanding, interpretation, integration, criterion, relation, assessment |
+| 3 (1.3 %) | appoint, behalf, advise, approve, delegate, counsel, attend, instruct, authorize, oblige, inform, request | texture, density, oxidation, diffusion, thickness, fluid, linear, substrate, decay, flux |
+
+Words on these axes (scaled to −5..+5): *dog* (+1.3, −1.1, −1.0), *house* (+1.9, −0.8, −2.0), *king* (+0.6, −0.1, −2.1),
+*water* (+2.4, −0.7, +1.3), *money* (+1.0, +1.0, −1.7), *happy* (−0.9, −1.7, −1.4).
+
+So an axis is not a concept a person could learn: axis 1 mixes "adverb vs noun" with "abstract vs physical stuff", axis 3
+"official procedures vs materials science"; each explains only 1–2 % of the variance, and *dog*, *house* and *king* sit
+almost on the same spot. The machine still decodes well with 4–5 values only because its reader knows the exact position
+of all 21,514 words — an idealised reader, not a learnable language.
+
 At X = 51 (min-co has 51 roots): machine 5 / 18 / 34 % with 1 / 2 / 3 values, 74 % with 6, 90 % with 9; min-co 44 / 42 / 47 %
 with 1.7 / 1.9 / 2.7 roots per code (size1 judges; re-judged in roots1 with the other arms: 39 / 42 / 46 %, as on the chart).
 
