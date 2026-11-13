@@ -22,7 +22,7 @@ sys.path.insert(0, str(D))
 from run import brown_counts, parse_numbered  # noqa: E402
 
 XS = (1, 2, 3, 5, 10, 20, 30, 51, 82, 120, 200, 300)
-RS = (1, 2, 3, 6, 9, "all")
+RS = (1, 2, 3, 4, 5, 6, 9, "all")
 
 
 def main():

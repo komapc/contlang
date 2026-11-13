@@ -87,7 +87,8 @@ WordNet synonym (stricter than the human judges' "close").
 ![axes](axes.svg)
 
 The main chart (made by [roots2/plot.py](../roots2/plot.py)) shows the v2c curve from [roots2](../roots2/README.md) (1 … 300
-roots, one protocol), PCA axes with 3 values per word, and Toki Pona. All machine lines (1 / 2 / 3 / 6 / 9 / all values)
+roots, one protocol) with the exactly-4 / 5-roots lines from [roots3](../roots3/README.md), PCA axes with 3 / 4 / 5 values
+per word, and Toki Pona. All machine lines (1 / 2 / 3 / 6 / 9 / all values; 4 and 5 are in axes.txt)
 and the roots1 points (v2b with 10 / 20 / 30 roots, 1 / 2 / 3 words) are in [axes_detail.svg](axes_detail.svg).
 
 Machine: X = top principal axes of Numberbatch word vectors; a word = its values (11 levels, like −5..+5) on its r strongest
