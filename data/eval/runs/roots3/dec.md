@@ -20,3 +20,9 @@ judges, every answer (2400 new + 1200 roots2) scored by 2. Agents: 20 + 20 + 10 
 **Claude's forecast:** at X ≤ 30 N4/N5 a little worse than N3 (−3 pp: forced roots add noise when few roots exist); at 51–300
 about equal or +3 pp. PCA: 4 values ≈ +10 pp over 3 at X = 51, 5 values ≈ +20 pp — the machine gains much more from extra
 values than min-co does from extra roots.
+
+## Amendment (2026-11-13, after the first result, before X = 200 codes)
+
+User asked for X = 200 too. Same protocol: arms X200N4, X200N5 (2 encoders, 2 readers each) + roots2's X200 readings as N3.
+They are judged in a separate small batch (2 Sonnet judges, each scores all 720 X = 200 answers), so every answer is still
+scored by 2. Forecast: N4 / N5 within ±5 pp of N3 (74 %), as at the other X.

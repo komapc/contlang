@@ -29,10 +29,11 @@ r2 = importlib.util.module_from_spec(spc)
 spc.loader.exec_module(r2)
 r1 = r2.r1
 ITEMS, NW, RANK = r2.ITEMS, r2.NW, r2.RANK
-XS = (10, 30, 51, 100, 300)
+XS = (10, 30, 51, 100, 200, 300)
+BATCHES = {"j": (10, 30, 51, 100, 300), "k": (200,)}  # judge batches: dir prefix → X
 NS = (4, 5)
 NEW = [f"X{x}N{n}" for x in XS for n in NS]
-JUDGES = 10
+JUDGES = {"j": 10, "k": 2}
 
 
 def task(n):
@@ -48,9 +49,9 @@ def nroots(c):
     return sum(len(re.findall(r"\b[A-Z]{2,}\b", w.split("|")[0])) for w in (re.findall(r"\{([^{}]*)\}", c) or [c]))
 
 
-def make(sc):
+def make(sc, xs=XS):
     (D / "specs").mkdir(exist_ok=True)
-    for x in XS:
+    for x in xs:
         for n in NS:
             (D / f"specs/X{x}N{n}_enc.md").write_text(enc_spec(x, n))
             for k in (1, 2):
@@ -101,27 +102,32 @@ def answers(sc):
     return out
 
 
-def judges(sc):
+def judges(sc, b="k"):
     ans = answers(sc)
-    keys = sorted(ans)
-    random.Random(71).shuffle(keys)
-    json.dump([list(k) for k in keys], open(D / "judge_keys.json", "w"))
-    parts = [keys[j::JUDGES] for j in range(JUDGES)]
-    for j in range(JUDGES):
-        ks = parts[j] + parts[(j + 1) % JUDGES]
-        random.Random(f"r3j{j}").shuffle(ks)
+    xs = BATCHES[b]
+    keys = sorted(k for k in ans if int(k[0][1:].split("N")[0]) in xs)
+    random.Random(71 if b == "j" else f"r3{b}").shuffle(keys)
+    json.dump([list(k) for k in keys], open(D / f"judge_keys{'' if b == 'j' else '_' + b}.json", "w"))
+    J = JUDGES[b]
+    parts = [keys[j::J] for j in range(J)]
+    for j in range(J):
+        ks = parts[j] + parts[(j + 1) % J] if J > 2 else list(keys)
+        random.Random(f"r3j{j}" if b == "j" else f"r3{b}{j}").shuffle(ks)
         lines = [f"{t}. {ITEMS[i]['w']} ({ITEMS[i]['pos']}: {ITEMS[i]['gloss']}) — {ans[(r, i)]}" for t, (r, i) in enumerate(ks, 1)]
-        r1.put(sc / f"j/j{j + 1}", {"task.md": (RUNS / "size1/tasks/judge.md").read_text(), "items.md": "\n".join(lines) + "\n",
+        r1.put(sc / f"j/{b}{j + 1}", {"task.md": (RUNS / "size1/tasks/judge.md").read_text(), "items.md": "\n".join(lines) + "\n",
                                     "keys.json": json.dumps([list(k) for k in ks])})
-    print("answers:", len(keys), "; per judge:", 2 * len(parts[0]))
+    print("answers:", len(keys), "; per judge:", len(ks))
+
+
+JDIRS = [f"{b}{j}" for b in BATCHES for j in range(1, JUDGES[b] + 1)]
 
 
 def score(sc):
     lists = json.load(open(D / "lists.json"))
     S = collections.defaultdict(list)
-    for j in range(1, JUDGES + 1):
-        ks = [tuple(k) for k in json.loads((sc / f"j/j{j}/keys.json").read_text())]
-        s = r1.parse_numbered(sc / f"j/j{j}/scores.md")
+    for jd in JDIRS:
+        ks = [tuple(k) for k in json.loads((sc / f"j/{jd}/keys.json").read_text())]
+        s = r1.parse_numbered(sc / f"j/{jd}/scores.md")
         for t, key in enumerate(ks, 1):
             if t in s and s[t][:1].isdigit():
                 S[key].append(int(s[t][0]))
@@ -165,13 +171,18 @@ def score(sc):
     for arm in NEW:
         for k in (1, 2):
             shutil.copy(sc / f"w/{arm}_{k}/answers.md", D / f"answers/write_{arm}_{k}.md")
-    for j in range(1, JUDGES + 1):
-        shutil.copy(sc / f"j/j{j}/scores.md", D / f"answers/judge_j{j}.md")
-        shutil.copy(sc / f"j/j{j}/keys.json", D / f"answers/judge_j{j}_keys.json")
+    for jd in JDIRS:
+        shutil.copy(sc / f"j/{jd}/scores.md", D / f"answers/judge_{jd}.md")
+        shutil.copy(sc / f"j/{jd}/keys.json", D / f"answers/judge_{jd}_keys.json")
     (D / "result.txt").write_text("\n".join(out) + "\n")
     print("\n".join(out))
 
 
 if __name__ == "__main__":
     cmd, sc = sys.argv[1], Path(sys.argv[2])
-    {"make": make, "readers": readers, "judges": judges, "score": score}[cmd](sc)
+    if cmd == "make":
+        make(sc, tuple(map(int, sys.argv[3:])) or XS)
+    elif cmd == "judges":
+        judges(sc, sys.argv[3] if len(sys.argv) > 3 else "k")
+    else:
+        {"readers": readers, "score": score}[cmd](sc)
