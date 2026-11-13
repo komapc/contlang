@@ -1,0 +1,33 @@
+# size0 — result
+
+## Composition accuracy by frequency (big1000, first answer, close)
+
+  llm  rank 1–300: n   99, close 62%
+  llm  rank 301–1000: n  179, close 58%
+  llm  rank 1001–3000: n  330, close 53%
+  llm  rank 3001–10000: n  294, close 43%
+  llm  rank 10001–…: n   98, close 50%
+  math rank 1–300: n   99, close 27%
+  math rank 301–1000: n  179, close 27%
+  math rank 1001–3000: n  330, close 27%
+  math rank 3001–10000: n  294, close 20%
+  math rank 10001–…: n   98, close 13%
+
+## Share of text understood U(N) (Brown content words; base min-co v1 = 76, used by big1000)
+
+| N entries | L = 76 + N | text coverage | U, a_lex 1.0 | U, a_lex 0.9 |
+|---|---|---|---|---|
+| 0 | 76 | 0% | 55% | 55% |
+| 10 | 86 | 4% | 57% | 57% |
+| 20 | 96 | 7% | 58% | 57% |
+| 50 | 126 | 12% | 60% | 59% |
+| 100 | 176 | 19% | 63% | 61% |
+| 200 | 276 | 27% | 66% | 63% |
+| 300 | 376 | 34% | 68% | 65% |
+| 500 | 576 | 43% | 72% | 68% |
+| 1000 | 1076 | 58% | 78% | 73% |
+| 2000 | 2076 | 72% | 85% | 78% |
+| 3000 | 3076 | 80% | 89% | 81% |
+| 5000 | 5076 | 88% | 94% | 85% |
+| 10000 | 10076 | 96% | 98% | 88% |
+| 20000 | 20076 | 99% | 100% | 90% |

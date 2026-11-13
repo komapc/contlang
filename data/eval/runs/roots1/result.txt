@@ -1,0 +1,43 @@
+# roots1 — result
+
+## Close (judge 2 of 0–2), 120 words, first answer; 3 readers × 2 judges per cell
+
+| arm (roots) | 1 word | ≤ 2 words | ≤ 3 words |
+|---|---|---|---|
+| R10 (10) | 10% | 10% | 13% |
+| R20 (20) | 23% | 22% | 19% |
+| R30 (30) | 27% | 32% | 34% |
+| V2C (51) | 41% | 44% | 52% |
+| V2B (51) | 38% | 40% | 43% |
+
+## Token-weighted (as size1's U at N = 0)
+
+  R10 k1: 11%
+  R10 k2: 11%
+  R10 k3: 14%
+  R20 k1: 25%
+  R20 k2: 24%
+  R20 k3: 20%
+  R30 k1: 29%
+  R30 k2: 33%
+  R30 k3: 34%
+  V2C k1: 43%
+  V2C k2: 44%
+  V2C k3: 51%
+  V2B k1: 39%
+  V2B k2: 42%
+  V2B k3: 46%
+
+## Paired differences vs V2B, ≤ 3 words, pp [95 % bootstrap over words]
+  R10 − V2B: -29.6 [-39.2 … -19.2]
+  R20 − V2B: -24.2 [-32.9 … -14.6]
+  R30 − V2B: -8.8 [-19.2 … +2.1]
+  V2C − V2B: +8.8 [+0.0 … +17.5]
+
+Judges: exact agreement 90% on 1800 answers
+
+## Roots per code
+  R10: 1.74 / 1.89 / 2.50
+  R20: 1.81 / 2.05 / 2.66
+  R30: 1.81 / 2.18 / 2.92
+  V2C: 1.77 / 1.88 / 2.52

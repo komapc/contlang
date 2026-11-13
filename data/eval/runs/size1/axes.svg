@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="582" viewBox="0 0 820 582" font-family="Helvetica, Arial, sans-serif" font-size="13">
+<rect width="820" height="582" fill="#fcfcfb"/>
+<text x="16.0" y="30.0" fill="#0b0b0b" text-anchor="start" font-size="17" font-weight="bold">Learn X roots: how often is a word guessed?</text>
+<text x="16.0" y="52.0" fill="#52514e" text-anchor="start" font-size="13" font-weight="normal">A reader who knows only the X roots sees a min-co code for a word and names the word; share named right (judges),</text>
+<text x="16.0" y="70.0" fill="#52514e" text-anchor="start" font-size="13" font-weight="normal">weighted by how often words occur in English texts. Each word is one code of up to 3 min-co words.</text>
+<line x1="16" x2="38" y1="91" y2="91" stroke="#2a78d6" stroke-width="3" stroke-dasharray=""/>
+<text x="44.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">min-co v2c, free number of roots (band = 95 %)</text>
+<line x1="378.8" x2="400.8" y1="91" y2="91" stroke="#1c5aa6" stroke-width="2" stroke-dasharray="6 3"/>
+<text x="406.8" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">v2c, exactly 4 roots</text>
+<line x1="564.8" x2="586.8" y1="91" y2="91" stroke="#123d73" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="592.8" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">exactly 5 roots</text>
+<line x1="16" x2="38" y1="111" y2="111" stroke="#eb6834" stroke-width="2" stroke-dasharray=""/>
+<text x="44.0" y="115.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">PCA axes, 3 values per word</text>
+<line x1="249.6" x2="271.6" y1="111" y2="111" stroke="#b8461a" stroke-width="2" stroke-dasharray=""/>
+<text x="277.6" y="115.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">4 values</text>
+<line x1="354.0" x2="376.0" y1="111" y2="111" stroke="#7d2e10" stroke-width="2" stroke-dasharray=""/>
+<text x="382.0" y="115.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">5 values</text>
+<circle cx="469.4" cy="111" r="5" fill="#1baf7a"/>
+<text x="486.4" y="115.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">Toki Pona</text>
+<rect x="456.0" y="132" width="174.0" height="340" fill="#f2f1ec"/>
+<text x="464.0" y="148.0" fill="#52514e" text-anchor="start" font-size="11.5" font-weight="normal">above 51: + the most frequent</text>
+<text x="464.0" y="163.0" fill="#52514e" text-anchor="start" font-size="11.5" font-weight="normal">English words as roots</text>
+<line x1="70" x2="630" y1="472.0" y2="472.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="476.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">0%</text>
+<line x1="70" x2="630" y1="404.0" y2="404.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="408.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">20%</text>
+<line x1="70" x2="630" y1="336.0" y2="336.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="340.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">40%</text>
+<line x1="70" x2="630" y1="268.0" y2="268.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="272.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">60%</text>
+<line x1="70" x2="630" y1="200.0" y2="200.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="204.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">80%</text>
+<line x1="70" x2="630" y1="132.0" y2="132.0" stroke="#e4e3de" stroke-width="0.8"/>
+<text x="62.0" y="136.0" fill="#52514e" text-anchor="end" font-size="13" font-weight="normal">100%</text>
+<text x="70.0" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">1</text>
+<text x="177.9" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">3</text>
+<text x="296.1" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">10</text>
+<text x="403.9" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">30</text>
+<text x="456.0" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">51</text>
+<text x="522.1" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">100</text>
+<text x="630.0" y="490.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">300</text>
+<text x="350.0" y="512.0" fill="#52514e" text-anchor="middle" font-size="13" font-weight="normal">roots to learn (X), log scale</text>
+<polygon points="70.0,472.0 177.9,446.0 296.1,396.0 364.1,348.8 403.9,308.5 456.0,262.2 522.1,254.2 590.2,201.5 630.0,191.1 630.0,232.5 590.2,244.8 522.1,306.0 456.0,313.3 403.9,361.0 364.1,400.2 296.1,435.2 177.9,467.2 70.0,472.0" fill="#d6e5f7" opacity="0.8"/>
+<polyline points="177.9,467.0 228.0,460.9 296.1,441.1 364.1,412.3 403.9,389.0 456.0,356.7 502.7,319.8 540.0,295.2 590.2,276.2 630.0,271.3" fill="none" stroke="#eb6834" stroke-width="2"/>
+<polyline points="228.0,460.4 296.1,431.5 364.1,391.7 403.9,354.6 456.0,295.8 502.7,253.1 540.0,222.9 590.2,202.7 630.0,199.0" fill="none" stroke="#b8461a" stroke-width="2"/>
+<polyline points="228.0,459.9 296.1,425.6 364.1,366.5 403.9,322.6 456.0,256.6 502.7,202.2 540.0,175.6 590.2,162.7 630.0,159.5" fill="none" stroke="#7d2e10" stroke-width="2"/>
+<polyline points="296.1,403.6 403.9,316.3 456.0,271.6 522.1,265.4 590.2,244.3 630.0,214.2" fill="none" stroke="#1c5aa6" stroke-width="2" stroke-dasharray="6 3"/>
+<polyline points="296.1,407.7 403.9,311.4 456.0,290.8 522.1,258.7 590.2,221.5 630.0,225.2" fill="none" stroke="#123d73" stroke-width="2" stroke-dasharray="2 3"/>
+<polyline points="70.0,472.0 177.9,457.8 296.1,416.8 364.1,375.6 403.9,334.7 456.0,288.3 522.1,279.3 590.2,221.6 630.0,211.0" fill="none" stroke="#2a78d6" stroke-width="3"/>
+<circle cx="70.0" cy="472.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="70.0" y="462.0" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">0</text>
+<circle cx="177.9" cy="457.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="177.9" y="447.8" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">4</text>
+<circle cx="296.1" cy="416.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="300.1" y="435.8" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">16</text>
+<circle cx="364.1" cy="375.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="368.1" y="394.6" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">28</text>
+<circle cx="403.9" cy="334.7" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="407.9" y="353.7" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">40</text>
+<circle cx="456.0" cy="288.3" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="460.0" y="307.3" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">54</text>
+<circle cx="522.1" cy="279.3" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="526.1" y="298.3" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">57</text>
+<circle cx="590.2" cy="221.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="590.2" y="211.6" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">74</text>
+<circle cx="630.0" cy="211.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+<text x="630.0" y="201.0" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">77</text>
+<text x="638.0" y="219.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="bold">min-co v2c</text>
+<text x="638.0" y="234.0" fill="#0b0b0b" text-anchor="start" font-size="11" font-weight="normal">(free / 4 / 5 roots)</text>
+<text x="638.0" y="275.3" fill="#0b0b0b" text-anchor="start" font-size="11.5" font-weight="normal">PCA, 3 values</text>
+<text x="638.0" y="197.0" fill="#0b0b0b" text-anchor="start" font-size="11.5" font-weight="normal">PCA, 4 values</text>
+<text x="638.0" y="163.5" fill="#0b0b0b" text-anchor="start" font-size="11.5" font-weight="normal">PCA, 5 values</text>
+<circle cx="540.0" cy="359.8" r="6" fill="#1baf7a" stroke="#fcfcfb" stroke-width="2"/>
+<text x="550.0" y="377.8" fill="#0b0b0b" text-anchor="start" font-size="12" font-weight="normal">Toki Pona: 120 words, 33</text>
+<text x="16.0" y="538.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">PCA lines: a word is written as r values (-5..+5) on r of X automatic meaning axes (PCA of word vectors); its reader knows the exact</text>
+<text x="16.0" y="552.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">position of all 21,514 words. min-co: roots2 (free number of roots) and roots3 (exactly 4 / 5), 120 words; Toki Pona: size1. Above 51,</text>
+<text x="16.0" y="566.0" fill="#52514e" text-anchor="start" font-size="10.5" font-weight="normal">up to 29 of the 120 test words are themselves roots (see roots2/README).</text>
+</svg>

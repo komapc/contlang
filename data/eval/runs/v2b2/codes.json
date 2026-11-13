@@ -1,0 +1,246 @@
+{
+ "mc": {
+  "sents": [
+   "{ PLACE VALUE | o D+3 } { JOIN | i T-2 } E { ART(=-5) TEXT PART(=+2) | o D-3 } FOR { DO | o N+3 }",
+   "{ SAY KNOW | o D+3 } { SAME(=+5) | i } E { JOIN HAPPEN | o result D-3 N+3 }",
+   "{ RULE(=+5) THINK | o agent D+3 } { SAY | i T-2 } [ { SEE CAN(=-5) | a } { SEX(=+5) BODY | o N+3 D+3 } { KNOW THINK | i T-2 R-3 } E { SOMEONE(=+5) | o } [ { TOUCH(=-5) | i } ] ]",
+   "{ TIME(=-1) | e } { SEX(=+5) SOMEONE | o } { FIGHT(=+2) | i T-2 } E \"2\" { RULE(=+4) DO | o agent N+3 D+3 } { SAME TIME | e } AND { MOVE(=-5) | i T-2 V-4 K+5 } { SAME TIME | e } ; { \"Slate\" | o } { SAY | i T-2 }",
+   "{ SAY KNOW | e } { CAN MOVE(=+5) | i C+3 } E { FIGHT LAND(=-5) THING(=-5) | o N+3 D+3 } AND { MOVE(=+5) | a C+5 } { INSIDE(=-5) LAND(=-5) | e }",
+   "LA [ { SIDE(=-5) TIME | e } { RULE(=+5) THINK | o result D+3 } ] { DO WANT | o M-5 D-3 } { HAPPEN | i T-2 R+3 } E [ { JOIN SIDE(=-5) | i } ]",
+   "{ SOMEONE(=+5) | o } { SEE | i T-2 } [ { THINK TIME(=+5) | o agent N+3 D+3 } PI \"Taiwan\" { KNOW SAME(=+5) | a } { SEX(=+5) BODY | o N+3 } ]",
+   "LA [ { THINK(=+5) | o D+3 } { CAN(=-3) | i C+3 } ] { PART(=+5) | o D+3 } { WANT | i C+3 } E [ { JOIN INSIDE(=+5) | i } ]",
+   "{ PLACE SIDE(=-1) | e } { PLACE | i } E { LONG(=-5) BODY | o N+3 } FROM { THING LONG | o } AND { GOOD ART | a } { TOUCH(=-5) | a } AND { TOUCH(=+2) | a }",
+   "{ SAME(=+5) KNOW | o agent } { KNOW(=+5) FRIEND | i T-2 } ; { SEX(=+5) SOMEONE | o } { GIVE(=+5) | i T-2 } E { SOMEONE(=+5) | o N+3 } E { LAW SAME | o D-3 } { LONG BEGIN | e }",
+   "LA [ { SAME(=-4) | a } { SEX WANT | o agent } AND { CARE(=-5) WANT | a } { LAND(=-5) MOVE | o agent } ] { SOMEONE(=+3) | o N+3 D+3 } { SEE | i } { FEEL(=-5) CONSUME | e }",
+   "{ SEX(=+5) SOMEONE | o } { FEEL(=+5) | i T-2 V-4 } E [ { LIVE BODY | o } AND { VALUE(=-5) | o } ] AND [ { MOOD(=-3) | o } PI { LIVE TIME(=+3) | o } AND { RULE FRIEND(=-5) | o } PI { SEX WANT | o } ]",
+   "{ VALUE KNOW | e } LA { PLACE DO | o } { SAME(=+5) VALUE | i } ; { SEX(=+5) SOMEONE | o } { WANT KNOW | i T-2 } E { SAME(=+5) TIME | o C+3 }",
+   "{ SEX(=+5) SOMEONE | o } { BODY LONG | i T-2 } E { LONG(=-5) | o N+3 } PI { DO PLACE | o agent } ; { SEX(=-5) SOMEONE | o } { WANT FEEL | a I+4 } AND { HEAT LONG(=-5) | o } { HEAT(=+3) LONG(=-5) | o }",
+   "{ PLACE DO | o D+3 } { SEX(=+5) SOMEONE | o } { GIVE JOIN | i } E [ { SAY(=-5) KNOW(=-5) | o D-3 } ] PI \"Comedie\"",
+   "{ PART(=+5) | a } { TEXT SAY | o N+3 } { NEAR GOOD | a } AND { WANT | a } ; { DO | o result N+3 } PI { PART(=+3) ART | o agent } { SAME | i }",
+   "{ SOMEONE(=+5) | o } { BEGIN(=-5) DO | i T-2 } E { SAY | o N+3 } PI { SOMEONE(=+5) SAME | o }",
+   "{ PART | o D+3 } PI { PART(=+3) ART | o N+3 } { SOMEONE(=+5) SOMEONE(=0) | i } ; { GOOD(=-5) | a I+4 } { SEX(=+5) SOMEONE | o } \"Barnaba\" { SEE SOMEONE | o agent }",
+   "{ SOMEONE(=0) | o } { PART(=+3) | a } { HAPPEN | o result N+3 } AND { CAN(=-3) | a } { THINK GOOD(=-5) | o N+3 } FOR { VALUE ART | o D+3 }",
+   "{ CHANGE GOOD(=+3) | i } E { LIVE BIG | o } AND { DO CAN(=+5) | o quality } FOR { CONSUME THING(=+4) | o N+3 } { BIG CONSUME | i }",
+   "{ PLACE LIVE(=-2) | o N+3 D+3 } { SAME | i M-5 } ; { GRAIN(=-5) LIVE(=-2) LONG(=-5) | o N+3 } AND { LIVE(=-2) LONG(=-5) PART | o N+3 } { GOOD | i }",
+   "{ CHANGE SIDE(=+5) VALUE | o D+3 } { MANY(=+3) | e I+4 } { DO | i } E { TIME(=-5) | o } AND { TIME VALUE(=-5) | o } { SAME(=-5) } { GOOD VALUE | o }",
+   "{ SIDE(=+5) LONG LONG | a N+3 } { INSIDE(=0) | o N+3 } { JOIN(=+5) LONG(=-5) | i V-4 M+4 } { SEE | e M-5 } { CAN(=+5) | i }",
+   "LA [ { SOMEONE(=-5) VALUE(=-5) | o N+3 } { TOUCH | i M-5 } E { PART BODY | o N+3 } ] ; { SOMEONE(=0) | o D+3 } { GIVE(=+5) | i T-2 } E { LONG(=-5) BODY SAME(=+5) | o N+3 }",
+   "{ SOMEONE | o N+3 } { FIGHT(=+3) | i T-2 } { CARE(=-5) | e } E { SAY(=+2) MOVE | o N+3 }",
+   "{ SAME(=+5) KNOW | o D+3 } { PART(=+5) SOMEONE | o N+3 } { DO | i T-2 R-3 A+5 V-4 } E { TIME(=0) HAPPEN | o }",
+   "{ VALUE(=-5) SOMEONE | o N+3 } AND { FIGHT SOMEONE | o N+3 } { SAME(=+5) } { TEXT SAY | o D-3 } { PART(=-2) | i }",
+   "{ LAND PLANT THING | o D-3 } { GIVE(=+5) | i } E { PLACE LIVE GOOD(=+4) | o } { WANT(=+5) SOMEONE BIG(=-4) | o N+3 }",
+   "{ SOMEONE(=-5) | o } { THINK | i T-2 } [ { MANY(=-5) | o } { SAY | i T+2 V-4 M-5 } E { PART SOMEONE(=-4) SEX(=-5) | o } ]",
+   "{ FIGHT(=+3) TOUCH(=+5) | o } { TIME(=0) | e } { CAN | i M+4 } { FEEL(=+5) GOOD(=-3) | o I+4 } { SEX(=-5) SOMEONE | o } AND { BODY | e } AND { THINK | e }",
+   "{ DO TEXT RULE(=+5) | o agent N+3 } { SAY | i T-2 } E { VALUE(=+5) PART | o } ; { SIDE(=-5) TEXT RULE(=+5) | i T-2 }",
+   "LA [ { SEE | i } E { TEXT ART(=-5) | o } ] ; { SOMEONE(=+5) | o N+3 } { SEE | i } E [ { JOIN LONG | o N+3 } { MOVE | i } { INSIDE(=+5) PART(=-2) | e } ]",
+   "{ SAME(=-4) | o quality } { BEGIN(=-5) | i } { FIGHT(=0) CARE | e } { FEEL(=-5) | o quality } { SAME(=-5) FEEL | o }",
+   "{ MANY(=+5) CAN | o } { DO | i } E { SOMEONE(=+5) TIME(=+3) | o } { BEGIN(=+5) | i A+5 }",
+   "{ SOMEONE(=+5) | o N+3 } { FEEL(=+5) WANT(=-5) | i M-5 } { TIME(=0) | e } E { HEAT(=+5) HAPPEN GRAIN(=+5) | o N+3 } ; { SOMEONE(=-5) | o N+3 } { FEEL(=+5) WANT(=-5) | i T-2 } E { ABOVE THING(=-5) | o N+3 }",
+   "{ WANT | i } E { SOMEONE | o N+3 D+3 } LA [ { CHANGE GOOD(=-3) | i T-2 } { INSIDE(=+5) | e } { HAPPEN | o result } { LAND | o PI } \"Hungary\" ]",
+   "{ JOIN(=+5) TEXT | o N+3 } { DO | i V-4 M+4 } { TIME MANY(=0) | e }",
+   "{ CAN | o N+3 } { MANY(=-1) | i } ; { PART(=+2) MEASURE(=-5) RULE | o D+3 } { MANY(=+5) | i T+1 M-3 C+3 }",
+   "LA [ { CAN(=-3) KNOW | a } { TEXT SAY | o N+3 } ] ; { SOMEONE | o } { SAME(=-5) SEE | i M+4 } E { SAME(=-5) ART(=-5) KNOW | o N+3 }",
+   "{ SOMEONE | o D-3 } { JOIN(=+5) | i T-2 } E { SAME(=-4) GOOD | o } { SAY KNOW | o } AND { SAY JOIN | o }",
+   "{ VALUE | o D+3 } { SAME(=+5) | i T-2 } \"Af\" { TEXT KNOW | o D+3 } { ABOVE(=+5) | a }",
+   "{ VALUE | o D+3 } { PART(=+2) TEXT | o D+3 } { SAME | i M-5 } { INSIDE(=-5) | a } AND { NEAR(=+5) | a }",
+   "{ KNOW | i T-2 } E [ { SOMEONE(=+5) | o } { MOVE(=-5) | i } { INSIDE(=0) PLACE | o } ; { SOMEONE(=+5) | o } { SEE | i } E { \"Jessica\" } { DO PLACE LIVE | i } E { GOOD GIVE(=+5) | o agent } ; { SOMEONE(=-5) | o } { GIVE(=+5) | i } E { GRAIN(=-3) TOUCH(=-4) CONSUME | o } ]",
+   "{ SOMEONE(=-5) THING(=-5) | o N+3 } { CAN(=+5) | i C+3 I+4 T-2 V+4 } { HAPPEN | i R-3 }",
+   "{ BODY SOMEONE(=-5) | o D+3 } { TOUCH(=-2) | i T-2 A-5 } E { SOMEONE(=-5) | o } ; { MOVE ABOVE(=-5) | i T-2 A0 }",
+   "{ SOMEONE(=-5) THING | o D-3 } { SAME(=-4) | a } { LONG(=+5) THING | a } { MOVE ABOVE(=+5) | i T-2 } { INSIDE(=-5) PLACE | e } { THING GRAIN(=0) CONSUME | o N+3 }",
+   "{ WANT(=-5) | i T-2 } E { SOMEONE(=+3) | o } { BEGIN(=-5) MOVE INSIDE | e T-2 }",
+   "{ MOVE(=+5) ABOVE(=-5) | i T-2 } E { LONG(=+5) | o N+3 } AND { MOVE INSIDE(=-5) | i T-2 } { PLACE | o }",
+   "{ SEE | i T-2 } E { SOMEONE(=-5) | o } { BIG(=+3) | e C+3 N+3 } { MOVE NEAR(=+5) | i }",
+   "{ MOVE | i T-2 } E { GRAIN(=-3) LAND | o } { INSIDE(=0) LONG(=+5) | o D+3 } AND { LONG(=-5) | o D+3 }",
+   "{ SOMEONE(=-5) | o } { MOVE(=-5) CARE(=-5) | i T-2 } { ABOVE(=-5) LONG(=-5) | e } { GRAIN(=-3) | a } ; { CONSUME | i } E [ { LAND(=-5) | o N+3 } { MOVE | i } { ABOVE(=-5) PLACE | e } ]",
+   "{ KNOW(=+5) | i T-2 } E [ { HAPPEN | o } { SOMEONE(=-5) | o } { FIGHT | i } ]",
+   "{ MOVE SIDE(=+5) | i T-2 } { SAME | e } E { SOMEONE | o D+3 } { MOVE(=-5) LAND(=+5) | a } ; { SEE | i T-2 } E { SOMEONE | o }",
+   "{ \"Greg\" } { MOVE ABOVE(=+5) | i T-2 } { TOUCH(=+5) NEAR | e } E { ABOVE(=+5) PLACE | o D+3 } ; { MOVE SIDE(=+5) | i T-2 } E { SOMEONE(=-5) | o } { SIDE(=-5) PLACE | e } { PLACE LIVE | o }",
+   "{ BEGIN(=0) KNOW(=+5) | i T-2 } E [ { HAPPEN | o } { SOMEONE(=-5) | o } { GIVE | i T-2 } E { ABOVE(=+5) LONG | o } ]",
+   "{ MOOD(=+3) | i T-2 } { SAY(=+3) | e } ; { SAY CONSUME(=+5) | o D+3 } { MOVE ABOVE(=-5) | i T-2 }",
+   "{ \"Mike\" } { JOIN(=+5) | i T-2 } E { GRAIN(=+5) | o D+3 } { SAME | e } [ { SOMEONE(=-5) | o } { MOVE(=+5) | i T-2 } E { PLACE | o D+3 } ]",
+   "{ SOMEONE(=-5) | o } { MOVE(=-5) LIVE(=-2) | i T-2 } { KNOW(=+5) | e } AND { WANT(=+5) THINK(=+5) | e } { RULE(=-5) | a } ; { GOOD | a }",
+   "{ KNOW(=+5) SOMEONE(=-5) | o agent } { SAY | i } E [ { LAND(=-5) MOVE | o } { CAN | i T+2 } E { BODY SOMEONE(=+3) | o } ]",
+   "{ THINK | i T-2 M+4 } E [ { SOMEONE(=+5) | o } { NEAR(=-5) MOVE | o agent } { SAME | i T-2 } ]"
+  ],
+  "paras": {
+   "p1d": [
+    "{ SOMEONE SEX(=-5) | o } { THINK DO | i T-2 } E { TEXT DO CONSUME | o D+3 } FOR { GRAIN CONSUME | o } ; { DO THINK | i T-2 } E { SAME | o D+3 } ; { WANT(=+3) | i T-2 } E { SAME | o D+3 } ; { JOIN INSIDE | i T-2 } E { SAME | o D+3 } { FIGHT(=-5) | o D+3 }",
+    "{ DO SEE | o D+3 N+1 } { BEGIN(=+2) DO GRAIN CONSUME | o } FOR { SEE DO ART | o V+4 } LA [ { SOMEONE | o } { KNOW(=+5) | i T-2 } E [ { SOMEONE SEX(=-5) | o } { SIDE(=+5) FIGHT(=-5) | i } ] ]",
+    "{ TIME(=-1) MANY(=+1) | o D+3 } { PLACE INSIDE(=+5) | i } { PLACE LIVE MANY | o } FOR { KNOW(=+5) SEE | o agent N+3 } AND { SAY SEE CONSUME | o agent }"
+   ],
+   "p2d": [
+    "{ SOMEONE SEX(=+5) RULE(=+4) | o } { SOMEONE SEX(=+5) | i M+4 } { SOMEONE SEX(=+5) | o D-3 } { LIVE INSIDE(=+5) BODY | o } AND { WANT FEEL | o }",
+    "{ SOMEONE SEX(=+5) | o } { SAME(=+3) SOMEONE(=+5) | e } { WANT(=+5) | i } E [ { CAN | i } { MOVE(=-5) | i } AND { THINK | i } AND { FEEL | i V-4 } E { LAND INSIDE(=-5) BIG | o } ]",
+    "{ SOMEONE(=+5) N+3 | o } { GIVE(=+5) | i ! } E { LONG(=+5) MANY | o N+3 C+3 } AND { PLACE RULE(=-5) MANY(=-1) | o N+3 } FOR { LAND PLACE | o } { LIVE GRAIN(=-3) | o } AND { LAND PLACE ART THING | o }",
+    "{ SOMEONE(=+5) N+3 | o } { GIVE(=+5) | i ! } E { PLACE CONSUME FRIEND | o N+3 } { LAND INSIDE(=-5) | o } { SOMEONE | o } LIKE { FRIEND SOMEONE | o } ; { SOMEONE(=+5) | o } { FEEL(=-5) | i } AND { SAY | i } AND { WANT(=+3) CONSUME SEE | i } E { MANY MOVE SOMEONE | o }"
+   ],
+   "p3d": [
+    "{ SAY | o } { BIG | a } AND { TOUCH(=-5) | a } AND { SAME(=-4) MEASURE | a } { CARE(=+5) | i T-2 I+4 }",
+    "{ FEEL(=+5) BEGIN(=-5) | o } { HAPPEN | i M+4 T-2 } E { CARE(=-5) SEE | o N+3 } { SOMEONE SEX(=-5) PART(=+2) HAPPEN | o } ; { SOMEONE SEX(=-5) HEAT | i M-3 } { MOVE(=-3) | e }",
+    "{ SAY GOOD(=+5) | o } { SOMEONE SEX(=-5) | o } { CAN | i M-3 } { SAY GOOD(=+5) | e } E { SAY PART KNOW | o D+3 }"
+   ],
+   "p4d": [
+    "{ NEAR(=+5) SIDE(=-5) | e } { PLACE | o } { LONG(=+5) MOVE | o } { LONG(=0) TOUCH(=+5) | o N+3 } { SAME | i }",
+    "{ LONG(=0) TOUCH(=+5) | o N+3 } { CAN | i } AND { MOVE | i } E { NEAR BIG(=-3) | o } ; { MOVE | e } { SAME(=-5) | a }",
+    "{ MEASURE(=-5) | o } { LONG(=0) TOUCH(=+5) | o N+3 } { WANT | i } { MEASURE(=-5) MOVE CARE(=-5) | o } { CAN(=-5) | i V-4 }"
+   ],
+   "p5d": [
+    "{ PLACE LIVE | o } \"Piazza Navona\" { PLACE | i } { MANY(=+3) | a } { PLACE GOOD CONSUME | o N+3 } { SOMEONE(=+3) | o } { CAN | i } { MOVE(=-5) | i } AND { CONSUME GRAIN(=-3) | i } AND { CONSUME | i } AND { SEE | i } E { GRAIN(=-3) MOVE ABOVE | o N+3 }",
+    "{ SEE | o } { ART | a } { HAPPEN | i M+4 } AND { MANY | e } { SEE ART | i } { SEE DO ART | o N+3 } FOR \"Rome\"",
+    "{ SOMEONE MOVE ART | o agent } { MOVE | i M-3 T+2 } { JOIN | e }"
+   ],
+   "p6d": [
+    "{ PLACE END | o } { SAME | i M-5 } { CAN | i M-5 } { JOIN(=+5) | i } E { RULE THINK | o N+3 } { VALUE(=+5) MEASURE | a } AND { BIG MEASURE | a }",
+    "{ SAY | o D+3 } { MEASURE(=-5) | i V-4 } { DO TEXT | i } E { THINK DO | o } FOR { TIME(=+5) RULE THINK | o }",
+    "{ BEGIN(=-5) PLACE | o } FOR { THINK | o } { SOMEONE(=+5) | o } { CARE | i } E { DO BEGIN(=-5) | o D+3 } { GIVE KNOW | i } ; { THINK KNOW | o } { WANT | o D+3 }"
+   ],
+   "p7d": [
+    "{ SEE MEASURE(=-5) | o } { DO | i V-4 } LA [ { SAME | i } E { LAND NEAR(=+5) ABOVE | o } ]",
+    "{ DO | i V-4 } { CAN | i } { CARE(=+5) | e } { MEASURE | o } { SAME(=-5) | e } { DO MEASURE | e }",
+    "LA [ { SEE MEASURE(=-5) | o } { DO | i V-4 } ] ; { SEE | o } { LONG GRAIN(=+5) | o } { MEASURE MOVE | o } { SEE | i V-4 } ; { PLACE | o } { MOVE | i V-4 } LA [ { SAME | i } ]"
+   ],
+   "p8d": [
+    "{ TIME(=-1) MEASURE(=-5) | o } { HAPPEN | i T-2 } LA [ { SOMEONE(=+5) | o } { SEE | i T-2 } E { SOMEONE(=-5) | o } ] ; { SOMEONE(=-5) | o } { CHANGE | i T-2 } AND { SOMEONE(=+5) | o } { CHANGE | i T-2 }",
+    "{ SIDE(=+5) PART | o } { SOMEONE MANY(=+1) | o } { LIVE(=-2) BODY | i T-2 } AND { MOVE | i T-2 } { LIVE | e } AND { GIVE(=-5) BODY LIQUID | i }",
+    "{ SOMEONE MANY(=-5) ART | o } { MANY(=-5) | i } ; { HEAT LONG | o N+3 } { GRAIN FIGHT | i V-4 T-2 } E { GRAIN(=0) BIG(=-5) | o }",
+    "{ SOMEONE | o N+3 } { MOVE | i T-2 } E { FIGHT ART | o } ; { FEEL | o } { FIGHT | o } AND { FEEL | o } { SAME | i T-2 }",
+    "{ PART | o } { SIDE | e } { LAND | o } { MOVE | i T-2 } ; { SOMEONE | o } { SAME(=+5) | i T-2 } AND { MOVE | i T-2 } { INSIDE GRAIN | o }"
+   ],
+   "p9d": [
+    "{ SOMEONE SEX(=+5) | o } { MOVE(=+5) FEEL(=+5) | i T-2 } { SIDE | e } { PLACE | o } ; { CAN | i T-2 }",
+    "{ CARE(=-5) | e } { MOVE | i T-2 } E { THING(=+4) | o } { SIDE | e } { PLACE | o } ; { MOVE(=+5) SIDE(=+5) | i T-2 }",
+    "{ MEASURE | e } { PLACE | o } { ABOVE | i T-2 } ; { DO | i T-2 } E { SOMEONE SEX(=+5) | o } { MOVE | e } { LAND INSIDE(=-5) | o }",
+    "{ SOMEONE SEX(=+5) | o } { CAN(=-3) | i M+4 }",
+    "{ SOMEONE SEX(=+5) | o } { MOVE | i T-2 } { INSIDE(=-5) | e } ; { LAND GRAIN(=0) | o } { MOVE SIDE(=-5) | i T-2 } ; { SEE | i T-2 }"
+   ],
+   "p10d": [
+    "{ SOMEONE SEX(=-5) | o } { TIME(=+3) | e } { WANT TIME | i T-2 } ; { SOMEONE SEX(=-5) | o } { KNOW | i T-2 }",
+    "{ TIME BIG | o } { GOOD | a } { TIME | o } { MEASURE(=-5) | o } { TIME(=-5) MANY(=+3) | o } { HAPPEN | i T-2 }",
+    "{ TIME MANY(=+3) | o } { SEE | i } { SOMEONE SEX(=+5) | o } { FIGHT(=-5) | i T-2 } LA [ { SOMEONE SEX(=-5) | o } { FRIEND | i M-5 } ]",
+    "{ M+4 | i } { SOMEONE SEX(=+5) | o } { DO GOOD(=+5) | i T-2 I+4 }"
+   ]
+  }
+ },
+ "v2b": {
+  "sents": [
+   "{ PLACE VALUE | o D+3 } { JOIN DO | i T-2 } E { KNOW DO ART(=-5) | o tool D-3 } FOR { DO | i }",
+   "{ TRUE | o D+3 } { SAME(=+5) | i } ; { HAPPEN PART(=+2) | o D-3 }",
+   "{ LAND RULE(=+4) SOMEONE | o agent D+3 } { SAY | i T-2 } [ { SOMEONE(=-5) | o N+3 D+3 } { LIGHT(=-5) SEE(=-5) | a } { KNOW(=+5) | i T-2 } E { SOMEONE(=0) } { FRIEND(=+3) THINK | i } ]",
+   "{ TIME(=-1) | e } { SOMEONE(=0) | o } { FIGHT | i T-2 } E { RULE(=+4) SOMEONE | o N+3 } { MANY(=+3) | e } ; { MOVE(=-5) | i V-4 T-2 } { MANY | e }",
+   "{ KNOW SAY | e } { MOVE(=+5) STRONG(=+3) | i T-2 } E { FIGHT MOVE STRONG(=+5) | o N+3 } { LAND(=-5) INSIDE(=+5) | e }",
+   "{ MANY(=-5) | a } { DO WANT | o } { TIME(=-1) | e } { RULE | o } { JOIN BEGIN | i M-5 } E { SAME PART(=+2) | o }",
+   "{ SOMEONE | o agent KNOW DO } { PLACE LAND | o } { THINK TRUE(=+5) | a }",
+   "{ CAN(=-3) THINK(=+5) | o C+3 } { WANT(=+5) PART(=+5) | o } { JOIN(=+5) INSIDE | i C+3 }",
+   "{ SIDE(=-5) | e } { PART(=-2) SAME | o } { LONG(=-5) LIGHT(=+3) TOUCH(=+3) | a } { SHAPE(=+5) LONG(=-5) | o } { GOOD ART | a }",
+   "{ PLACE SAME(=+5) KNOW(=+5) | o } { KNOW(=+5) GIVE(=+5) WANT(=-5) | i T-2 } ; { SAME | o } { GIVE(=+5) | i T-2 } E { SAME(=-4) | o }",
+   "{ MANY(=-5) SAME(=-4) | a } { SEX(=+5) FEEL(=+5) | o } AND { MOVE(=-5) FEEL(=+5) SEE | o } ; { SOMEONE | o N+3 } { SEE FEEL(=-5) | i }",
+   "{ FEEL(=+5) WANT(=-5) | i V-4 T-2 } E { SOMEONE | o } ; { LIVE(=-2) | o } AND { VALUE(=-5) | o } AND { MOOD(=-3) | o } AND { WANT FEEL | o }",
+   "{ SOMEONE | o } { KNOW(=+5) TRUE(=+5) | i T-2 } E { TRUE(=+5) | o C+3 }",
+   "{ SOMEONE | o } { BODY LONG(=-5) | o N+3 } { SOMEONE | o } { DO | i T-2 } ; { SOMEONE | o } { WANT(=+4) | i T-2 } { COLOR(=-1) AND COLOR(=-3) LONG(=-5) | o }",
+   "{ SAME | e } { HAPPEN | o } { SOMEONE | o } { JOIN(=-5) | i } E { TRUE(=-5) | o } { PLACE ART | o }",
+   "{ MANY(=+5) | a } { TEXT | o N+3 } { SAY | o N+3 } { GOOD | a } AND { WANT | a } ; { DO ART | o N+3 } { SAME(=-4) | a }",
+   "{ SOMEONE(=+5) | o } { BEGIN(=-5) | i T-2 } E { SAY KNOW | o N+3 } { SOMEONE(=+5) | o }",
+   "{ PART(=-2) | o } { SAME(=-4) | i } ; { FRIEND(=-5) | a I+4 } { SOMEONE | o } { SEE | o agent }",
+   "{ MANY | a } { HAPPEN | o result N+3 } AND { CAN | a } { FEEL(=-3) | o N+3 } FOR { VALUE(=-5) DO | o }",
+   "{ CHANGE GOOD(=+3) | i } E { THING(=+4) | o N+3 } { BIG(=+3) CONSUME | o } AND { CONSUME DO | o quality }",
+   "{ SHAPE(=+5) LIVE(=-2) | o N+3 } { TRUE | i M-5 } ; LA [ { GRAIN(=-5) OPEN(=-5) SHAPE(=+5) | o N+3 } AND { LIVE(=-2) OPEN(=-5) | o N+3 } ]",
+   "{ SIDE(=+5) VALUE | o D+3 } { DO | i V-4 I+3 } E { TIME(=+5) | o } AND { PLACE VALUE | o } { SAME(=-5) } { VALUE(=+5) CARE | o }",
+   "{ SHAPE(=-5) SIDE | o N+3 } { SIDE(=-5) JOIN | o PI } { LONG(=-5) BODY | o } { JOIN(=+5) | i V-4 CAN M+4 } { SEE M-5 | e }",
+   "LA [ { SOMEONE(=-5) VALUE | o N+3 } { TOUCH BODY | i M-5 } ] ; { SOMEONE | o } { GIVE(=+5) | i T-2 } E { LIGHT(=+5) BODY | o N+3 }",
+   "{ SOMEONE | o N+3 } { FIGHT TOUCH | i T-2 I+4 } { CARE(=-5) | e } { SAY | o PI } { MOVE | o tool N+3 }",
+   "{ THINK(=+5) SEE | o D+3 } { CHANGE DO | i T-2 A+5 V-4 } { MANY(=+3) SOMEONE | o PI } { LAND | o D+3 }",
+   "{ VALUE(=-5) SOMEONE | o N+3 } AND { FIGHT(=+5) SOMEONE | o N+3 } { SAY TEXT | o result } { HAPPEN | i }",
+   "{ LAND PI LIVE | o D-3 } { GIVE(=+5) | i } E { GOOD LIVE | o } AND { GOOD BODY | o } { PLACE LIVE | o FOR SOMEONE(=-2) LIVE | o N+3 }",
+   "{ SOMEONE(=+4) | o } { FEEL KNOW | i T-2 } E [ { MANY(=-5) | o } { SAY | i V-4 K+1 } { DO | o } ] { SOMEONE SEX(=-5) FRIEND(=-1) | o D+3 }",
+   "{ FIGHT(=+5) CARE(=-5) | o } { TIME | o PI } { FEEL(=+5) TOUCH(=+4) | i I+4 CAN } { SEX(=-5) JOIN | o } { BODY | e } AND { THINK | e }",
+   "{ RULE(=+5) TEXT | o agent N+3 } { SAY | i T-2 } E { VALUE(=+5) THINK | o } ; { GIVE(=-5) | i T-2 } E { SAME | o } { RULE(=+5) TEXT | o }",
+   "LA [ { SEE | i } E { SHAPE | o } ] ; { SOMEONE(=+5) | o N+3 } { SEE | i } E [ { JOIN SHAPE(=-5) | o N+3 } { MOVE(=+5) INSIDE(=+5) | i } { PART(=-2) | o D+3 } ]",
+   "{ SAME(=-4) KNOW(=-5) | o D+3 } { BEGIN(=-5) | i } { GOOD(=-5) | e } { FIGHT(=-2) | o } { KNOW(=-5) TIME | o }",
+   "{ MANY(=+5) HAPPEN CAN | o } { HAPPEN | o } { SOMEONE(=+5) | o } { BEGIN(=+5) | i }",
+   "{ SOMEONE(=+5) | o N+3 } { TIME | e } { FEEL(=+5) | i M-5 } { FEEL(=+5) GOOD(=-3) | i } E { HEAT(=+5) FIGHT LAND(=-5) | o N+3 } ; { SAME(=+5) | e } LA [ { MANY(=+3) SOMEONE | o } { TIME(=-5) | e } { FEEL(=+5) GOOD(=-3) | i T-2 } E { ABOVE LIGHT(=+5) | o N+3 } ]",
+   "{ WANT(=+3) | i } E { SOMEONE | o N+3 } [ { WANT(=-5) | i T-2 } E { HAPPEN | o result } { PLACE | o PI \"Hungary\" } ]",
+   "{ PART(=-2) JOIN | o N+3 } { DO | i V-4 M+4 } { TIME | e N+1 } { SAME(=-5) TIME | e }",
+   "{ CAN HAPPEN | o N+3 } { MANY(=-1) | i } ; { MEASURE(=-5) RULE | o D+3 } { BIG | i C+3 M-3 }",
+   "LA [ { SAY KNOW | a C+3 } { SAY TEXT | o N+3 } ] ; { SOMEONE(=+3) | o } { SAME(=-5) | i V+4 CAN } E { SAME(=-5) ART(=-5) KNOW | o N+3 }",
+   "{ SOMEONE | o } { JOIN(=+5) | i T-2 } E { WANT FEEL | o } { SOMEONE(=+5) | a } { SAY KNOW | o PI } AND { SOMEONE | o PI }",
+   "{ VALUE | o D+3 } { SAME(=+5) | i T-2 } \"Af\" { TEXT MEASURE | o D+3 } { TEXT ABOVE(=+5) TIME(=-1) | o D+3 }",
+   "{ JOIN | e } { VALUE | o D+3 } { TEXT | o D+3 } { PART(=+2) VALUE | o } { NEAR(=+5) INSIDE(=+5) | i M+4 } ; { NEAR(=-3) INSIDE(=0) | i M-5 }",
+   "{ SOMEONE(=+5) | o } { THING(=-5) THINK(=-1) | i T-2 } E [ { SOMEONE(=+5) | o } { MOVE(=-5) PLACE INSIDE(=0) | i } { SOMEONE(=+5) | o } { SEE | i } E { SOMEONE(=-5) | o } { DO SOMEONE | i } E { GIVE(=+5) CONSUME | o agent } { GIVE(=+5) | i } E { GRAIN(=-3) TOUCH(=-5) CONSUME | o N+3 } { SOMEONE(=-5) | o N+3 } ]",
+   "{ SOMEONE(=+5) | o } LA { HAPPEN | i T-2 } { CAN(=+5) | e I+4 } { HAPPEN | o N+3 D+3 }",
+   "{ SOMEONE(=+5) SEX(=-5) | o agent D+3 } { MOVE TOUCH(=-3) | i T-2 A-5 } E { SOMEONE(=-5) SEX(=+5) | o } ; { SOMEONE(=-5) SEX(=+5) | o } { ABOVE(=-5) MOVE | i T-2 A0 }",
+   "{ SAME(=-4) | a } { LONG(=+5) THING | o } { ABOVE MOVE(=-1) | i T-2 } { PLACE THING(=0) | o } { THING(=0) | o N+3 }",
+   "{ SOMEONE(=+5) | o } { WANT(=-5) | i T-2 } E { SOMEONE(=+3) | o } LA { SOMEONE(=+5) | o } { SIDE(=+5) INSIDE(=+5) MOVE | i T-2 } { BEGIN(=-5) | e }",
+   "{ SOMEONE(=-5) SEX(=+5) | o } { SAY(=+3) MOVE ABOVE(=-5) | i T-2 } { LONG SHAPE | o N+3 } AND { OPEN(=+5) INSIDE(=-5) MOVE | i T-2 } { OPEN(=+5) | o D+3 }",
+   "{ SOMEONE(=+5) SEE | o tool } { SOMEONE(=+5) | o } { SEE | i T-2 } E { SOMEONE(=-5) SEX(=+5) | o } { BIG(=+3) CHANGE | i I+4 }",
+   "{ SOMEONE(=-5) | o N+3 } { LAND(=+5) GRAIN(=-3) | o } { MOVE | i T-2 } { LONG SHAPE(=+5) THING(=0) LAND(=+5) | o } AND { LONG(=-5) SHAPE(=+5) | o }",
+   "{ SOMEONE(=-5) | o N+3 } { MOVE(=-5) SIDE(=-5) INSIDE(=+5) | i T-2 } { OPEN(=0) GRAIN(=-3) | o N+3 } { CONSUME | i T-2 } E { SAY LAND(=-5) | o N+3 } { GRAIN(=-3) SAY | i } { ABOVE(=-5) SHAPE(=+5) | o }",
+   "{ SOMEONE(=-5) SEX(=+5) | o } { KNOW(=+5) | i T-2 } E [ { FIGHT(=0) SIDE(=+5) | o D+3 } { SOMEONE(=-5) SEX(=+5) | o } { NEAR | i } ]",
+   "{ SOMEONE(=-5) SEX(=+5) | o } { MOVE SIDE(=+5) | i T-2 } { NEAR(=+5) SAME(=+5) | e } E { SOMEONE SEX(=+5) | o } [ { MOVE(=-5) LAND(=+5) | i } ] AND { ABOVE(=-5) | i T-2 } { SEE | i T-2 } E { SOMEONE(=-5) SEX(=+5) | o }",
+   "\"Greg\" { ABOVE(=+5) MOVE | i T-2 } { NEAR(=+5) TOUCH | e } { ABOVE(=+5) SHAPE(=+5) PLACE INSIDE | o D+3 } ; { SOMEONE(=-5) | o N+3 } { SIDE(=-5) MOVE | i K+5 T-2 } { GIVE SIDE(=+5) | o } { NEAR(=+5) PLACE LIVE | o }",
+   "{ TIME(=-1) | e } { SOMEONE(=+5) | o } { KNOW(=+5) | i T-2 } E [ { HAPPEN | o quality } { SOMEONE(=-5) SEX(=-5) | o } { OPEN(=-5) ABOVE LIGHT(=-2) | o tool } { NEAR | i T-2 } ]",
+   "{ SOMEONE(=+5) | o } { MOOD(=+4) SAY(=+1) | i T-2 } ; { CONSUME(=+5) SHAPE(=-5) OPEN | o tool D+3 } { ABOVE(=-5) MOVE INSIDE(=-5) | i T-2 }",
+   "\"Mike\" { GIVE(=-5) | i T-2 } E { SHAPE(=0) FIGHT(=-5) | o D+3 } { TIME(=-1) | e } LA { FIGHT(=-5) SIDE(=-5) | o agent D+3 } { MOVE | i T-2 } { OPEN(=-5) | o D+3 }",
+   "{ SOMEONE(=-5) SEX(=-5) | o } { BEGIN(=+5) MOVE(=-5) LIVE(=-2) | i T-2 } { TRUE | e } AND { WANT | e } ; { THINK(=+5) SOMEONE(=+3) | o quality } { STRONG VALUE | a }",
+   "\"Fortman\" { KNOW(=+5) ART(=+5) | o agent } { SAY | i } E [ { MOVE LAND(=-5) | o quality } { CHANGE GOOD(=+3) | i M-3 } E { BODY LONG | o D+3 } ]",
+   "{ SOMEONE(=-5) SEX(=+5) | o } { THINK | i T-2 M+4 } E [ { SOMEONE(=+5) | o } { NEAR(=-5) MOVE SEE | o agent } ]"
+  ],
+  "paras": {
+   "p1d": [
+    "{ SOMEONE(=-1) SEX(=-5) | o } { THINK DO | i T-2 } E { TEXT DO | o D+3 } FOR { CONSUME SHAPE(=+5) | o } ; { SOMEONE(=-1) SEX(=-5) | o } { SEE DO | i T-2 } E { SAME(=+5) | o D+3 } ; { WANT | i T-2 } E { SAME(=+5) | o D+3 } AND { JOIN INSIDE(=+5) | i T-2 } E { SAME(=+5) | o D+3 } { FIGHT(=-5) | o D+3 }",
+    "{ TIME(=+1) | e } { DO CONSUME SHAPE(=+5) | o D+3 } { TIME(=-1) | e } { DO | i T-2 } FOR { SEE DO | i } AND { KNOW(=+5) | i V-4 T-2 } { SOMEONE(=-1) SEX(=-5) | o } { VALUE(=+5) SIDE(=+5) | o }",
+    "{ TIME(=+3) | e } { HAPPEN | o D+3 } { LAND(=+5) SHAPE(=+5) | o } PI { PLACE BIG VALUE(=+5) | o } AND FOR { SEE CARE(=+5) | o N+3 } AND { CONSUME SAY | o N+3 } PI { KNOW THINK(=+5) | o agent N+3 }"
+   ],
+   "p2d": [
+    "{ SOMEONE | o agent RULE(=+4) } { SOMEONE SEX(=+5) | o } { TRUE(=+4) SEE | e } { SOMEONE SEX(=+5) | o } { BODY LIVE KNOW | o } AND { WANT FEEL | o } { SAME(=+5) | i }",
+    "{ SOMEONE SEX(=+5) | o } LA { SAME(=+3) PART(=+5) SOMEONE(=+5) | e } { WANT | i } E [ { CAN | i } { SHAPE(=+5) MOVE(=-5) | i } AND { THINK(=0) | i } AND { FEEL | i V-4 } LA { BIG LAND PLACE INSIDE(=-5) | o } ]",
+    "{ GIVE(=+5) | i ! } E { SHAPE(=+5) SIDE(=0) | o C+3 N+3 } AND { PLACE OPEN(=-5) CAN(=-3) | o C-3 N+3 } PI { LAND LIQUID | o } { GRAIN(=-3) MOVE | o N+3 } AND { LAND PLANT | o N+3 }",
+    "{ GIVE(=+5) | i ! } E { SOMEONE(=+5) | o N+3 } LA { SOMEONE(=+3) SAME FRIEND | o N+3 } { PLACE INSIDE(=-5) CONSUME | o N+3 } PI [ { SOMEONE(=+5) | o N+3 } { CAN | i } { FEEL(=-5) | i } AND { SAY | i } { TIME(=+4) | e } AND { WANT | i } E { PART(=+5) MOVE | o D+3 } ]"
+   ],
+   "p3d": [
+    "{ SAY CONSUME(=-5) | o } { BIG | i } AND { TOUCH(=-5) CAN | a } AND { MEASURE SAME(=-4) | a } { DO CARE | i V-4 T-2 R-3 } { GOOD(=+5) | e } AND { TOUCH CARE | e }",
+    "{ FEEL(=+3) BEGIN(=-5) | o } { CAN | i M+4 T-2 } { DO | i } E { HAPPEN GOOD(=-3) | o N+3 } PI { SOMEONE(=-1) SEX(=-5) | o } { TIME(=-5) PART SEE | o } ; { THINK(=-3) | e } { SOMEONE(=-1) SEX(=-5) | o } { CHANGE HEAT(=+3) | i M-3 } { TIME(=-5) SIDE(=-3) | e }",
+    "{ INSIDE(=+5) PART(=+2) | o } PI { SOMEONE(=-1) SEX(=-5) SAY | o } { GOOD(=+5) | o quality } { THINK(=-3) | e } { SOMEONE(=-1) SEX(=-5) | o } { CAN | i M-3 T-2 } { SAY CONSUME(=-5) ART(=+5) | i } E { VALUE(=+5) HAPPEN SEE | o } { GOOD(=+5) | e I+5 }"
+   ],
+   "p4d": [
+    "{ NEAR SIDE(=-5) | e } PI { SHAPE(=+5) | o D+3 } PI { LONG MOVE | o N+3 D+3 } { LONG SHAPE(=-5) JOIN | o N+3 } { LIVE(=+0) | i }",
+    "{ SAME | o N+3 } { SAME(=+5) CAN | i } { MOVE | i } { NEAR(=+3) BIG(=-3) | e } AND { SAME(=-5) SIDE | e } FOR { LONG MOVE | o N+3 D+3 }",
+    "{ MEASURE(=-5) MANY | o D+3 } PI { LONG SHAPE(=-5) JOIN | o N+3 } { WANT | a } { LIVE CARE | i } E [ { MANY(=+3) | a } { MOVE | o N+3 } { TRUE(=-5) | a } { WANT(=-5) HAPPEN | i V-4 } ]"
+   ],
+   "p5d": [
+    "INSIDE { PLACE LAND | o } \"Piazza Navona\" { MANY(=+3) | i } { PLACE GOOD(=+4) CONSUME | o N+3 } LA { SOMEONE(=+3) | o } { CAN | i } { SHAPE(=+5) MOVE(=-5) | i } AND { CONSUME | i } E { GRAIN(=-3) | o } AND { CONSUME | i } E { CONSUME GRAIN | o } AND { SEE | i } E { GRAIN(=-3) MOVE | o N+3 } INSIDE { PLACE LAND BIG | o }",
+    "{ SEE | o D+3 } { SIDE(=+5) SOMEONE(=+3) | e } { ART(=+5) | a } { TRUE(=+4) | e } AND { MANY(=+2) TIME | e } { SEE | i } INSIDE { ART(=+5) SEE | o N+3 } PI \"Rome\"",
+    "{ TRUE(=-3) | e } { SOMEONE | o agent ART(=+5) SAY | o } { MOVE | i T+2 } FOR { JOIN | i } E { PART(=-2) VALUE | o }"
+   ],
+   "p6d": [
+    "{ SAME(=-5) | i } { SIDE(=-5) | e } PI { RULE PLACE | o } PI { TEXT SIDE(=-5) | o } FOR { SEE | i } E { KNOW THINK(=-3) RULE | o N+3 } PI { SAME(=-4) BIG | a } AND { MEASURE | o }",
+    "{ SAY THINK | o D+3 } { THINK(=+5) | i V-4 } { SAME(=+5) | e } PI { THINK(=+5) | o result } FOR { DO | i } E { TRUE | a } E { MANY(=-1) VALUE(=+5) | o } PI { TEXT BIG | o D+3 } FOR { TIME(=+3) RULE | o }",
+    "{ DO THINK | i } FOR { THINK(=+5) | o D+3 } LA { SOMEONE(=+5) | o } { GIVE(=+5) | i } E { MANY(=-1) CARE | o } FOR { DO BEGIN | o D+3 } PI { DO BEGIN(=-5) | o } { TEXT | e } AND { THINK KNOW | o } PI { WANT THINK(=+5) | o }"
+   ],
+   "p7d": [
+    "{ SEE MEASURE(=-5) CARE(=+5) | o } { DO | i V-4 } { SAME(=+5) SIDE | e } FOR { SAME SIDE | i V-4 } LA { TRUE ABOVE LAND | o } { SIDE(=+5) | o }",
+    "{ SAME(=+5) | o } { CAN | i } { DO | i V-4 } { CARE(=+5) | e I+4 } LA { LAND MEASURE ART(=-5) | o N+3 } { DO CAN | o N+3 }",
+    "LA { SEE MEASURE(=-5) CARE(=+5) | o D+3 } { DO | i V-4 } { SEE LIGHT(=+5) SHAPE(=+5) | o } PI { SAME(=-4) MEASURE MOVE ART(=-5) | o } { SEE | i V-4 } AND { PLACE SHAPE(=+5) | o D+3 } { CHANGE SIDE | i V-4 } { BEGIN(=+5) | e } LA { SAME SIDE | i V-4 }"
+   ],
+   "p8d": [
+    "{ TIME(=-1) MEASURE(=-5) | e } { TIME BIG(=-5) | o N+3 } { SOMEONE(=+5) | o } { SEE | i T-2 R-3 } E { SOMEONE(=-5) | o N+3 } ; { SOMEONE(=-5) | o N+3 } AND { SOMEONE(=+5) | o } { CHANGE | i T-2 }",
+    "INSIDE { SIDE(=+5) PART SOMEONE | o D+3 } { BIG(=-3) SOMEONE SEX(=+5) | o N+3 } { BODY FIGHT(=+2) | a } AND { MOVE(=-3) STRONG(=-5) | i T-2 } { MOVE LIVE BODY | o } { SIDE(=-5) | e }",
+    "{ MANY(=-5) | a } { SAY CONSUME(=-5) ART(=+5) | o agent } AND { MANY(=-5) | a } { ART SAY | o agent } ; { COLOR(=-5) GRAIN(=-5) | o N+3 } { GRAIN(=0) LAND | a } { TOUCH(=-5) SHAPE(=+5) | o } { JOIN OPEN(=0) | i V-4 T-2 }",
+    "{ SOMEONE(=-5) | o } { MOVE | i T-2 } LA { LONG TOUCH(=+5) JOIN | o N+3 } { JOIN | i V-4 } ; { FEEL(=+5) GOOD(=-5) | o N+3 } { FIGHT WANT(=-5) | o } AND { FEEL(=+4) HAPPEN | o } AND { FEEL(=+5) GOOD(=-5) BODY | o } { JOIN | i V-4 } INSIDE { BODY SEE | o N+3 }",
+    "{ PART(=+5) SIDE(=-5) | o } { SOMEONE(=-5) | o } { MOVE NEAR | i T-2 } INSIDE { LAND MOVE PLACE | o } ; { BODY SEE | o N+3 } { SAME(=+5) MANY(=+5) | i T-2 } ; { SOMEONE(=-5) | o } { MOVE | i T-2 } INSIDE { LAND(=-5) GRAIN | o }"
+   ],
+   "p9d": [
+    "{ SOMEONE SEX(=+5) | o } { MOVE(=+5) FEEL(=+5) THINK(=-5) | i T-2 } FOR { SIDE LONG SHAPE(=-5) MOVE | o D+3 } PI { PLACE LAND MOVE | o } ; AND { DO CAN | i T-2 }",
+    "{ CARE(=-5) | e } { MOVE(=+3) STRONG | i T-2 } E { THING MOVE | o } { SIDE(=-5) | e } INSIDE { PLACE LAND MOVE | o } ; { SOMEONE SEX(=+5) | o } { MOVE(=+5) | i T-2 } { SIDE(=+5) | e } { MOVE MEASURE(=-5) MOVE | e } { CHANGE(=-5) | a }",
+    "{ TIME(=+1) CHANGE | e } { PLACE LAND MOVE | o D+3 } { MOVE ABOVE(=+5) | i T-2 } ; { DO | i V-4 K+5 } E { SOMEONE SEX(=+5) | o } { MOVE SIDE(=+5) | i } INSIDE { LAND OPEN(=+5) | o }",
+    "{ SAME(=-3) | e } { SOMEONE SEX(=+5) | o } { CAN | i M+4 } E { CAN(=-3) THINK | o }",
+    "{ SOMEONE SEX(=+5) | o } { MOVE ABOVE(=+5) LAND | i T-2 } LA { PLACE LAND MOVE BIG(=-5) | o D+3 } AND { GRAIN LAND GOOD(=-5) | o D+3 } { MOVE(=+5) | i T-2 } { SIDE(=-5) | e } AND { SEE MOVE(=+5) | i T-2 } E { NEAR | o }"
+   ],
+   "p10d": [
+    "{ SOMEONE | o } \"Linda\" { CAN TIME | i M+4 } { TIME | i } ; { KNOW | i T-2 }",
+    "{ GOOD(=+2) MEASURE(=-5) TIME | o } { HAPPEN | i T-2 } LA { TIME(=-5) MANY(=+3) TIME BIG(=+3) | o N+3 } { HAPPEN | i T-2 R-3 }",
+    "{ TIME BIG | o N+3 } FOR { SEE | i } LA { SOMEONE SEX(=+5) | o } { FRIEND(=-3) | o } { CAN(=-3) | i } LA { SOMEONE(=-1) SEX(=-5) | o } { CARE FRIEND(=+5) KNOW | o } { NEED WANT | o } ; { CAN(=-3) FRIEND(=+4) KNOW | i }",
+    "{ TRUE(=+4) | e } { SOMEONE(=-1) SEX(=+5) | o } { DO GOOD(=+5) BIG | i T-2 }"
+   ]
+  }
+ }
+}
