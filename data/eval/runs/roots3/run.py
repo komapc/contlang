@@ -157,6 +157,12 @@ def score(sc):
             bd = [np.nanmean(d[ix]) for ix in boot]
             row.append(f"| {100 * np.nanmean(d):+.1f} [{100 * np.percentile(bd, 2.5):+.1f} … {100 * np.percentile(bd, 97.5):+.1f}] ")
         out.append("".join(row) + "|")
+    row = ["| **pooled over X** | | | "]
+    for n in (4, 5):
+        d = np.mean([close[f"X{x}N{n}"] - close[f"X{x}N3"] for x in XS], axis=0)
+        bd = [np.nanmean(d[rng.integers(0, NW, NW)]) for _ in range(4000)]
+        row.append(f"| **{100 * np.nanmean(d):+.1f} [{100 * np.percentile(bd, 2.5):+.1f} … {100 * np.percentile(bd, 97.5):+.1f}]** ")
+    out.append("".join(row) + "|")
     out.append("\n(cells: token-weighted U [95 % bootstrap]; differences: unweighted close, paired over words)")
     both = [tuple(v) for v in S.values() if len(v) == 2]
     out.append(f"\nJudges: exact agreement {np.mean([a == b for a, b in both]):.0%} on {len(both)} answers")
