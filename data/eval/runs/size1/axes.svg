@@ -4,11 +4,11 @@
 <text x="16.0" y="52.0" fill="#52514e" text-anchor="start" font-size="13" font-weight="normal">A reader who knows only the X roots sees a min-co code for a word and names the word; share named right (judges),</text>
 <text x="16.0" y="70.0" fill="#52514e" text-anchor="start" font-size="13" font-weight="normal">weighted by how often words occur in English texts. Each word is one code of up to 3 min-co words.</text>
 <line x1="16" x2="38" y1="91" y2="91" stroke="#2a78d6" stroke-width="3" stroke-dasharray=""/>
-<text x="44.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">min-co, free (band = 95 % interval)</text>
-<line x1="304.0" x2="326.0" y1="91" y2="91" stroke="#1c5aa6" stroke-width="2" stroke-dasharray="6 3"/>
-<text x="332.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">min-co, exactly 4 roots</text>
-<line x1="510.4" x2="532.4" y1="91" y2="91" stroke="#123d73" stroke-width="2" stroke-dasharray="2 3"/>
-<text x="538.4" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">exactly 5 roots</text>
+<text x="44.0" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">min-co v2c, free number of roots (band = 95 %)</text>
+<line x1="378.8" x2="400.8" y1="91" y2="91" stroke="#1c5aa6" stroke-width="2" stroke-dasharray="6 3"/>
+<text x="406.8" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">v2c, exactly 4 roots</text>
+<line x1="564.8" x2="586.8" y1="91" y2="91" stroke="#123d73" stroke-width="2" stroke-dasharray="2 3"/>
+<text x="592.8" y="95.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">exactly 5 roots</text>
 <line x1="16" x2="38" y1="111" y2="111" stroke="#eb6834" stroke-width="2" stroke-dasharray=""/>
 <text x="44.0" y="115.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="normal">PCA axes, 3 values per word</text>
 <line x1="249.6" x2="271.6" y1="111" y2="111" stroke="#b8461a" stroke-width="2" stroke-dasharray=""/>
@@ -65,7 +65,7 @@
 <text x="590.2" y="211.6" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">74</text>
 <circle cx="630.0" cy="211.0" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
 <text x="630.0" y="201.0" fill="#0b0b0b" text-anchor="middle" font-size="11" font-weight="normal">77</text>
-<text x="638.0" y="219.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="bold">min-co</text>
+<text x="638.0" y="219.0" fill="#0b0b0b" text-anchor="start" font-size="13" font-weight="bold">min-co v2c</text>
 <text x="638.0" y="234.0" fill="#0b0b0b" text-anchor="start" font-size="11" font-weight="normal">(free / 4 / 5 roots)</text>
 <text x="638.0" y="275.3" fill="#0b0b0b" text-anchor="start" font-size="11.5" font-weight="normal">PCA, 3 values</text>
 <text x="638.0" y="197.0" fill="#0b0b0b" text-anchor="start" font-size="11.5" font-weight="normal">PCA, 4 values</text>

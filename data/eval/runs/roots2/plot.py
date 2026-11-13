@@ -32,7 +32,7 @@ T(16, 30, "Learn X roots: how often is a word guessed?", c=INK, fs=17, fw="bold"
 T(16, 52, "A reader who knows only the X roots sees a min-co code for a word and names the word; share named right (judges),")
 T(16, 70, "weighted by how often words occur in English texts. Each word is one code of up to 3 min-co words.")
 # legend: two rows
-lg = [[(BLUE, "", 3, "min-co, free (band = 95 % interval)"), (BLUE4, "6 3", 2, "min-co, exactly 4 roots"), (BLUE5, "2 3", 2, "exactly 5 roots")],
+lg = [[(BLUE, "", 3, "min-co v2c, free number of roots (band = 95 %)"), (BLUE4, "6 3", 2, "v2c, exactly 4 roots"), (BLUE5, "2 3", 2, "exactly 5 roots")],
       [(ORANGE, "", 2, "PCA axes, 3 values per word"), (ORANGE4, "", 2, "4 values"), (ORANGE5, "", 2, "5 values"), (AQUA, "dot", 0, "Toki Pona")]]
 for row, items in enumerate(lg):
     x, y = 16, 91 + 20 * row
@@ -72,7 +72,7 @@ for p in P:
     out.append(f'<circle cx="{lx(p["X"]):.1f}" cy="{ly(100 * p["U"]):.1f}" r="4.5" fill="{BLUE}" stroke="{SURF}" stroke-width="2"/>')
     T(lx(p["X"]) + (0 if p["X"] < 10 or p["X"] > 150 else 4), ly(100 * p["U"]) + (-10 if p["X"] < 10 or p["X"] > 150 else 19), f"{100 * p['U']:.0f}", c=INK, a="middle", fs=11)
 # direct labels at the right
-T(lx(X1) + 8, ly(100 * P[-1]["U"]) + 8, "min-co", c=INK, fw="bold")
+T(lx(X1) + 8, ly(100 * P[-1]["U"]) + 8, "min-co v2c", c=INK, fw="bold")
 T(lx(X1) + 8, ly(100 * P[-1]["U"]) + 23, "(free / 4 / 5 roots)", c=INK, fs=11)
 for r, dy in ((3, 4), (4, -2), (5, 4)):
     T(lx(X1) + 8, ly(mm[r][-1][1]) + dy, f"PCA, {r} values", c=INK, fs=11.5)
