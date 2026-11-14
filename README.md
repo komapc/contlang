@@ -35,3 +35,6 @@
 - Проверка: `.venv/bin/python -m pytest tests` (согласованность файлов, валидатор и воркер, сборка спецификаций).
 - Сайт: статические страницы `site/` (GitHub Pages, обновляются сами при push): английская `/` и русская `/ru/` собираются из одного источника `data/site/index.html`, сравнение с Toki Pona `/vs-toki-pona/` и `/ru/vs-toki-pona/` — из `data/site/vs-toki-pona.{en,ru}.md`, документы `docs/*.md` публикуются как `/docs/<имя>/`, вместе с `sitemap.xml` (`.venv/bin/python scripts/site/build.py`, внутри — `scripts/site/pages.py`) и прокси-воркер `worker/` для модели (выкладывается вручную); что генерируется и порядок обновления — [worker/README.md](worker/README.md). На GitHub при каждом push проверяется, что сгенерированные файлы не устарели и тесты проходят (`.github/workflows/check.yml`).
 
+## License
+
+Code and the Minco language materials: MIT ([`LICENSE`](LICENSE)). Third-party texts and word-vector data used in experiments under `data/` keep their own licences (e.g. Wikipedia text CC BY-SA 4.0, ConceptNet Numberbatch CC BY-SA 4.0).
