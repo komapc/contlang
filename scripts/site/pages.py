@@ -69,7 +69,7 @@ def only_lang(src, lang):
     return "".join(out)
 
 
-# Маяк Cloudflare Web Analytics и Google Analytics (грузится только после согласия, site/consent.js)
+# Маяк Cloudflare Web Analytics и Google Analytics (общий скрипт согласия https://geo.lipu.dev/consent.js, исходник в komapc/lipu-hub geo/client/)
 # берём из исходника главной, чтобы они были в одном месте.
 BEACON = "\n".join(l for l in SRC.read_text(encoding="utf8").splitlines() if "cf-beacon" in l or "/consent.js" in l)
 
@@ -185,8 +185,8 @@ footer{margin-top:28px;color:var(--mut);font-size:14px}"""
 
 # подписи страниц документов по языкам
 TEXT = {
-    "ru": {"locale": "ru_RU", "home": "/ru/", "docs": "Документация", "nav": "Документы", "code": "код"},
-    "en": {"locale": "en_US", "home": "/", "docs": "Documentation", "nav": "Documents", "code": "code"},
+    "ru": {"locale": "ru_RU", "home": "/ru/", "docs": "Документация", "nav": "Документы", "code": "код", "analytics": "Настройки аналитики"},
+    "en": {"locale": "en_US", "home": "/", "docs": "Documentation", "nav": "Documents", "code": "code", "analytics": "Analytics settings"},
 }
 
 
@@ -241,7 +241,7 @@ def page_html(title, desc, n, body, lang="ru", paths=None, nav=True):
 {body}
 </main>
 {docs_nav(lang) if nav else ""}
-<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="{GH}">{tx['code']}</a></footer>
+<footer><a href="https://lipu.dev/">lipu.dev</a> · <a href="{GH}">{tx['code']}</a> · <a href="#" data-lipu-consent-open>{tx['analytics']}</a></footer>
 </div>
 </body>
 </html>
