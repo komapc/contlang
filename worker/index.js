@@ -2,9 +2,38 @@
 // Развёртывание: см. worker/README.md
 import { ENC_SPEC, DEC_SPEC } from "./prompts.js";
 import { codeProblems } from "./check.js";
+import { DurableObject } from "cloudflare:workers";
 
 const DEFAULT_MODEL = "openai/gpt-5-mini"; // можно сменить переменной MODEL в wrangler.toml
 const MAX_INPUT = 300;
+const DEFAULT_DAILY_LIMIT = 1000; // вызовов OpenRouter в сутки (UTC) на всех; меняется переменной DAILY_LIMIT
+
+// Суточный потолок вызовов модели на весь мир. Привязки ratelimit считают в каждой точке
+// присутствия Cloudflare отдельно, поэтому «30 в минуту со всех» на деле умножается на число точек.
+// Durable Object один на весь мир и обрабатывает запросы по одному: чтение и запись счётчика атомарны.
+export class DailyCap extends DurableObject {
+  async take(limit) {
+    const day = new Date().toISOString().slice(0, 10);
+    const saved = await this.ctx.storage.get(["day", "count"]);
+    const count = saved.get("day") === day ? saved.get("count") || 0 : 0;
+    if (count >= limit) return { ok: false, count };
+    await this.ctx.storage.put({ day, count: count + 1 });
+    return { ok: true, count: count + 1 };
+  }
+}
+
+// true — вызов модели разрешён. Без привязки DAILY_CAP прежнее поведение (только ratelimit) и предупреждение в лог;
+// если привязка есть, но не отвечает, ошибка уходит наверх и запрос отклоняется (503).
+let warnedNoCap = false;
+async function takeCall(env) {
+  if (!env.DAILY_CAP) {
+    if (!warnedNoCap) { console.warn("DAILY_CAP binding is missing: no global daily cap on OpenRouter calls"); warnedNoCap = true; }
+    return true;
+  }
+  const limit = Number(env.DAILY_LIMIT) > 0 ? Number(env.DAILY_LIMIT) : DEFAULT_DAILY_LIMIT;
+  const { ok } = await env.DAILY_CAP.get(env.DAILY_CAP.idFromName("global")).take(limit);
+  return ok;
+}
 
 const ENCODE_TASK_RU = `
 TASK: the user message is ONE English word (possibly with a sense hint in brackets) or a short phrase.
@@ -50,8 +79,8 @@ const REPLY_FIELDS = ["idea", "code", "tokens", "confidence", "confusable", "war
 const replyOf = (obj) => Object.fromEntries(REPLY_FIELDS.filter((key) => key in obj).map((key) => [key, obj[key]]));
 
 const MSG = {
-  en: { busy: "too many requests, wait a minute", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
-  ru: { busy: "слишком много запросов, подождите минуту", need: "mode и text обязательны", long: (n) => `не длиннее ${n} символов`, down: "модель недоступна", notJson: "модель вернула не JSON" },
+  en: { busy: "too many requests, wait a minute", daily: "the demo has used up today's quota, try again tomorrow", capDown: "the usage counter is unavailable", need: "mode and text are required", long: (n) => `at most ${n} characters`, down: "the model is unavailable", notJson: "the model did not return JSON" },
+  ru: { busy: "слишком много запросов, подождите минуту", daily: "демо исчерпало суточный лимит, попробуйте завтра", capDown: "счётчик запросов недоступен", need: "mode и text обязательны", long: (n) => `не длиннее ${n} символов`, down: "модель недоступна", notJson: "модель вернула не JSON" },
 };
 
 async function ask(env, messages) {
@@ -117,13 +146,19 @@ export default {
     const messages = [{ role: "system", content: system }, { role: "user", content: text }];
     // сбой сети или ответ не JSON — 502 с заголовками CORS, а не 500 без них
     const tryAsk = (ms) => ask(env, ms).catch(() => ({ error: "network" }));
+    // каждый вызов модели (и повторный, с исправлением) засчитывается в суточный потолок
+    const allowed = () => takeCall(env).catch((e) => { console.error("DAILY_CAP failed", e); return null; });
+    const first = await allowed();
+    if (first === null) return json({ error: t.capDown }, 503, h);
+    if (!first) return json({ error: t.daily }, 429, h);
     let a = await tryAsk(messages);
     if (a.error) return json({ error: t.down, status: a.error }, 502, h);
     if (mode === "encode" && a.obj) {
       const bad = codeProblems(a.obj.code);
       if (bad.length) {  // одна попытка исправить
         messages.push({ role: "assistant", content: a.raw }, { role: "user", content: `Your code breaks the rules: ${bad.join("; ")}. Fix it and reply with the JSON object only.` });
-        const b = await tryAsk(messages);
+        // потолок исчерпан или счётчик недоступен — отдаём первый ответ с предупреждениями
+        const b = (await allowed()) ? await tryAsk(messages) : {};
         if (b.obj) a = b;
         const left = codeProblems(a.obj.code);
         if (left.length) a.obj.warnings = left;
