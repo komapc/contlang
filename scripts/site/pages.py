@@ -185,8 +185,8 @@ footer{margin-top:28px;color:var(--mut);font-size:14px}"""
 
 # подписи страниц документов по языкам
 TEXT = {
-    "ru": {"locale": "ru_RU", "home": "/ru/", "docs": "Документация", "nav": "Документы", "code": "код", "analytics": "Настройки аналитики"},
-    "en": {"locale": "en_US", "home": "/", "docs": "Documentation", "nav": "Documents", "code": "code", "analytics": "Analytics settings"},
+    "ru": {"locale": "ru_RU", "og_alt": "min-co. Минимальный непрерывный искусственный язык. 45 смысловых корней · minco.lipu.dev", "home": "/ru/", "docs": "Документация", "nav": "Документы", "code": "код", "analytics": "Настройки аналитики"},
+    "en": {"locale": "en_US", "og_alt": "min-co. A minimal continuous constructed language. 45 meaning roots · minco.lipu.dev", "home": "/", "docs": "Documentation", "nav": "Documents", "code": "code", "analytics": "Analytics settings"},
 }
 
 
@@ -221,11 +221,13 @@ def page_html(title, desc, n, body, lang="ru", paths=None, nav=True):
 <link rel="alternate" hreflang="en" href="{BASE}{en_path}">
 <link rel="alternate" hreflang="x-default" href="{BASE}{en_path}">
 <meta property="og:type" content="article">
+<meta property="og:site_name" content="min-co">
 <meta property="og:url" content="{url}">
 <meta property="og:locale" content="{tx['locale']}">
 <meta property="og:title" content="{t}">
 <meta property="og:description" content="{d}">
 <meta property="og:image" content="{BASE}/og.png">
+<meta property="og:image:alt" content="{html.escape(tx['og_alt'], quote=True)}">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <script type="application/ld+json">{ld}</script>
