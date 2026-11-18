@@ -1,0 +1,422 @@
+[
+ {
+  "id": "c13",
+  "kind": "control",
+  "root": null,
+  "s": "The public is now armed with sophistication and numerous competing media.",
+  "cat": "editorial"
+ },
+ {
+  "id": "c5",
+  "kind": "control",
+  "root": null,
+  "s": "This is done by measuring the distance from the surface on which the tire is resting to the center of the rear axle shaft.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "c3",
+  "kind": "control",
+  "root": null,
+  "s": "The Rusk belief in balanced defense, replacing the Dulles theory of massive retaliation, removes a grave danger that has existed.",
+  "cat": "editorial"
+ },
+ {
+  "id": "c11",
+  "kind": "control",
+  "root": null,
+  "s": "Lighting is an important consideration.",
+  "cat": "government"
+ },
+ {
+  "id": "light8",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "Many of the cells and microorganisms which are transparent to visible light, absorb or reflect the much shorter wavelengths of the ultraviolet spectrum.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "true10",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "Absolution for his lie??",
+  "cat": "romance"
+ },
+ {
+  "id": "open12",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "In a lacey open weave shoes have a luster finish, braided collar and bow highlight on the squared throat.",
+  "cat": "editorial"
+ },
+ {
+  "id": "strong13",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "He paused on the landing to steady his breathing and then bent to examine the single door by the light of the weak bulb overhead.",
+  "cat": "mystery"
+ },
+ {
+  "id": "true2",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "Heidenstam wrote four other works of fiction about earlier figures revered in Swedish memory.",
+  "cat": "belles_lettres"
+ },
+ {
+  "id": "c7",
+  "kind": "control",
+  "root": null,
+  "s": "It did not take me long to slip the bolt securely and return to the rear and its couch.",
+  "cat": "adventure"
+ },
+ {
+  "id": "color3",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "A range of bluffs hugged the horizon, the color of decaying moss.",
+  "cat": "science_fiction"
+ },
+ {
+  "id": "c2",
+  "kind": "control",
+  "root": null,
+  "s": "Suppose Af crosses C when Af.",
+  "cat": "learned"
+ },
+ {
+  "id": "strong3",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "The UN army is too weak, too demoralized for the task.",
+  "cat": "editorial"
+ },
+ {
+  "id": "color4",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "There was no sound and apparently no movement in the room except the noiseless pulsation of the red light on the wall.",
+  "cat": "mystery"
+ },
+ {
+  "id": "strong9",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "He strong as a bull but gentle as a baby.",
+  "cat": "mystery"
+ },
+ {
+  "id": "light3",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "Linda looked remote yet lovely in black, and everyone held his or her breath.",
+  "cat": "romance"
+ },
+ {
+  "id": "strong11",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "He speaks your language too, for he is the grandson of a chieftain on Taui who made much magic and was strong and cunning.",
+  "cat": "adventure"
+ },
+ {
+  "id": "c8",
+  "kind": "control",
+  "root": null,
+  "s": "Col. Clifton Lisle, of Chester Springs, who headed the Troop Committee for much of its second and third decades, is now an honorary member.",
+  "cat": "news"
+ },
+ {
+  "id": "light1",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "The pair of white cotton shorts ruled his life.",
+  "cat": "romance"
+ },
+ {
+  "id": "strong4",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "Again, a force too strong for unfrozen bodies to endure would be applied.",
+  "cat": "science_fiction"
+ },
+ {
+  "id": "c18",
+  "kind": "control",
+  "root": null,
+  "s": "Yet an economy cannot get the most out of its resources if dishonesty, corruption, and favoritism are widespread.",
+  "cat": "government"
+ },
+ {
+  "id": "shape3",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Without comment he opened the closet and from its shelves constructed a highboard around the egg case which he had placed on the floor inside.",
+  "cat": "fiction"
+ },
+ {
+  "id": "shape9",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Place flat palms on either side of the head a few inches away from the ears, fingers pointing toward the shoulders.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "c10",
+  "kind": "control",
+  "root": null,
+  "s": "The husband and wife should start with this anatomical information clearly in mind.",
+  "cat": "lore"
+ },
+ {
+  "id": "open6",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "His worries harried him up out of bed, and he lighted a cigarette and went to the window.",
+  "cat": "fiction"
+ },
+ {
+  "id": "c14",
+  "kind": "control",
+  "root": null,
+  "s": "The suit against the union was successful and many workers lost their homes to pay off the judgment.",
+  "cat": "news"
+ },
+ {
+  "id": "true1",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "Now under me I could see him for what he really was, a boy dressed up in streaks of paint.",
+  "cat": "adventure"
+ },
+ {
+  "id": "open7",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "Mickey felt his shoulders come up against the wall beside the heavy slab front door.",
+  "cat": "mystery"
+ },
+ {
+  "id": "open9",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "Deal furniture with a mahogany finish was neatly arranged as if it stood in the window of a department store.",
+  "cat": "mystery"
+ },
+ {
+  "id": "true8",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "What is the real cause of them??",
+  "cat": "religion"
+ },
+ {
+  "id": "light10",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "The thin gray figures raised a hoarse, cawing cry like the call of a bird flock.",
+  "cat": "fiction"
+ },
+ {
+  "id": "c1",
+  "kind": "control",
+  "root": null,
+  "s": "When the Yalta Papers were finally published with great fanfare they had revealed no betrayal by anyone.",
+  "cat": "learned"
+ },
+ {
+  "id": "c4",
+  "kind": "control",
+  "root": null,
+  "s": "The Kansas City and the Topeka KCs are arranging that Juniors who win at their shows will be qualified to win points for Westminster.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "strong8",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "Look in this book for weak mortals and only on occasion for virtues and vices on the heroic scale.",
+  "cat": "reviews"
+ },
+ {
+  "id": "true11",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "Not really startled, but careful to appear so, Grosse sucked noisily on his pipe.",
+  "cat": "mystery"
+ },
+ {
+  "id": "c9",
+  "kind": "control",
+  "root": null,
+  "s": "His goal was to obtain a National League team for this city.",
+  "cat": "news"
+ },
+ {
+  "id": "color8",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "During the night, a phone company technician had deadened the bells and installed red blinkers on the phones.",
+  "cat": "fiction"
+ },
+ {
+  "id": "c16",
+  "kind": "control",
+  "root": null,
+  "s": "That evening turned out to be hell like all the others.",
+  "cat": "fiction"
+ },
+ {
+  "id": "light4",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "He knew all about the appeal of a black shirt and jackboots to a poor, southern, peasant boy.",
+  "cat": "belles_lettres"
+ },
+ {
+  "id": "color10",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "A sudden high rise in temperature will turn your pool poison green overnight.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "c17",
+  "kind": "control",
+  "root": null,
+  "s": "In each city civic and education leaders have been working hard to get public opinion prepared to accept the inevitability of equal treatment.",
+  "cat": "editorial"
+ },
+ {
+  "id": "strong12",
+  "kind": "target",
+  "root": "STRONG",
+  "s": "Since the removal force is a function of coating thickness, a differential transformer pickup has been incorporated into the instrument to accurately measure film thickness.",
+  "cat": "learned"
+ },
+ {
+  "id": "color5",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "His light blue eyes, set deep within the face, are actively and continually looking.",
+  "cat": "belles_lettres"
+ },
+ {
+  "id": "open3",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "The room was dark but a neon sign flashed and faded beyond the window.",
+  "cat": "mystery"
+ },
+ {
+  "id": "color2",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "She swung her eyes up to the blue of the window, her jaws gently mashing the bitter beans.",
+  "cat": "fiction"
+ },
+ {
+  "id": "c6",
+  "kind": "control",
+  "root": null,
+  "s": "Clams, crabs, and other marine life may add interest at coastal areas.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "true9",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "This is particularly true in large centers of Jewish population like New York, Chicago, and Philadelphia.",
+  "cat": "lore"
+ },
+ {
+  "id": "shape5",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Save for brief periods in garrison or winter quarters, soldiers rarely enjoyed the luxury of a writing desk or table.",
+  "cat": "lore"
+ },
+ {
+  "id": "shape11",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "The sheets are extruded of Tenite butyrate by Jet Specialties Co., Los Angeles, Calif..",
+  "cat": "hobbies"
+ },
+ {
+  "id": "c15",
+  "kind": "control",
+  "root": null,
+  "s": "Nonetheless, they found common interests.",
+  "cat": "lore"
+ },
+ {
+  "id": "light7",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "He found the pilot light and turned on one of the burners for her.",
+  "cat": "fiction"
+ },
+ {
+  "id": "shape8",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Most floor battens are glued and screwed to the flooring.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "light2",
+  "kind": "target",
+  "root": "LIGHT",
+  "s": "Then they picked up the smaller black specks on the plain in front of him.",
+  "cat": "lore"
+ },
+ {
+  "id": "shape1",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Eddie caught up with the ball near the fence and threw it to Phil.",
+  "cat": "romance"
+ },
+ {
+  "id": "color9",
+  "kind": "target",
+  "root": "COLOR",
+  "s": "It can cut a red squirrel neatly in two or burst a crow into a flurry of feathers.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "true7",
+  "kind": "target",
+  "root": "TRUE",
+  "s": "I asked him if it was true.",
+  "cat": "romance"
+ },
+ {
+  "id": "open4",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "The depth gauge rod can now be set, and any number of holes bored to exact and identical depth.",
+  "cat": "hobbies"
+ },
+ {
+  "id": "c12",
+  "kind": "control",
+  "root": null,
+  "s": "At that point the Administration will have little reason to hang onto Gen. Swing.",
+  "cat": "editorial"
+ },
+ {
+  "id": "shape2",
+  "kind": "target",
+  "root": "SHAPE",
+  "s": "Two of the clamps are fixed to the edges of the board whereas two clamps travel on guide rails opposite the fixed clamps.",
+  "cat": "learned"
+ },
+ {
+  "id": "open8",
+  "kind": "target",
+  "root": "OPEN",
+  "s": "Systematically he would open and ransack drawers.",
+  "cat": "reviews"
+ }
+]

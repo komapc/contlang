@@ -1,0 +1,362 @@
+[
+{
+"w": "pond",
+"lex": "noun.object",
+"gloss": "a small lake",
+"rank": 2630
+},
+{
+"w": "missile",
+"lex": "noun.artifact",
+"gloss": "a rocket carrying a warhead of conventional or nuclear explosives; may be ballistic or directed by remote control",
+"rank": 1198
+},
+{
+"w": "museum",
+"lex": "noun.artifact",
+"gloss": "a depository for collecting and displaying objects having scientific or historical or artistic value",
+"rank": 2109
+},
+{
+"w": "computer",
+"lex": "noun.artifact",
+"gloss": "a machine for performing calculations automatically",
+"rank": 3856
+},
+{
+"w": "library",
+"lex": "noun.artifact",
+"gloss": "a room where books are kept",
+"rank": 1069
+},
+{
+"w": "vitamin",
+"lex": "noun.substance",
+"gloss": "any of a group of organic substances essential in small quantities to normal metabolism",
+"rank": 4391
+},
+{
+"w": "artery",
+"lex": "noun.body",
+"gloss": "a blood vessel that carries blood from the heart to the body",
+"rank": 1543
+},
+{
+"w": "eyebrow",
+"lex": "noun.body",
+"gloss": "the arch of hair above each eye",
+"rank": 4715
+},
+{
+"w": "hydrogen",
+"lex": "noun.substance",
+"gloss": "a nonmetallic univalent element that is normally a colorless and odorless highly flammable diatomic gas; the simplest and lightest and most abundant element in the universe",
+"rank": 2116
+},
+{
+"w": "restaurant",
+"lex": "noun.artifact",
+"gloss": "a building where people go to eat",
+"rank": 1742
+},
+{
+"w": "female",
+"lex": "noun.animal",
+"gloss": "an animal that produces gametes (ova) that can be fertilized by male gametes (spermatozoa)",
+"rank": 1410
+},
+{
+"w": "rug",
+"lex": "noun.artifact",
+"gloss": "floor covering consisting of a piece of thick heavy fabric (usually with nap or pile)",
+"rank": 4038
+},
+{
+"w": "ear",
+"lex": "noun.body",
+"gloss": "the sense organ for hearing and equilibrium",
+"rank": 1417
+},
+{
+"w": "skiff",
+"lex": "noun.artifact",
+"gloss": "any of various small boats propelled by oars or by sails or by a motor",
+"rank": 4901
+},
+{
+"w": "prison",
+"lex": "noun.artifact",
+"gloss": "a correctional institution where persons are confined while on trial or for punishment",
+"rank": 1971
+},
+{
+"w": "colt",
+"lex": "noun.animal",
+"gloss": "a young male horse under the age of four",
+"rank": 3486
+},
+{
+"w": "mountain",
+"lex": "noun.object",
+"gloss": "a land mass that projects well above its surroundings; higher than a hill",
+"rank": 1254
+},
+{
+"w": "fountain",
+"lex": "noun.artifact",
+"gloss": "a structure from which an artificially produced jet of water arises",
+"rank": 3422
+},
+{
+"w": "ion",
+"lex": "noun.object",
+"gloss": "a particle that is electrically charged (positive or negative); an atom or molecule or group that has lost or gained one or more electrons",
+"rank": 4635
+},
+{
+"w": "lip",
+"lex": "noun.body",
+"gloss": "either of two fleshy folds of tissue that surround the mouth and play a role in speaking",
+"rank": 1100
+},
+{
+"w": "doll",
+"lex": "noun.artifact",
+"gloss": "a small replica of a person; used as a toy",
+"rank": 3463
+},
+{
+"w": "phosphor",
+"lex": "noun.substance",
+"gloss": "a synthetic substance that is fluorescent or phosphorescent; used to coat the screens of cathode ray tubes",
+"rank": 4643
+},
+{
+"w": "wrist",
+"lex": "noun.body",
+"gloss": "a joint between the distal end of the radius and the proximal row of carpal bones",
+"rank": 4250
+},
+{
+"w": "pacific",
+"lex": "noun.object",
+"gloss": "the largest ocean in the world",
+"rank": 3207
+},
+{
+"w": "canyon",
+"lex": "noun.object",
+"gloss": "a ravine formed by a river in an area with little rainfall",
+"rank": 4538
+},
+{
+"w": "liver",
+"lex": "noun.body",
+"gloss": "large and complicated reddish-brown glandular organ located in the upper right portion of the abdominal cavity; secretes bile and functions in metabolism of protein and carbohydrate and fat; synthesizes substances involved in the clotting of the blood; synthesizes vitamin A; detoxifies poisonous substances and breaks down worn-out erythrocytes",
+"rank": 4065
+},
+{
+"w": "dairy",
+"lex": "noun.artifact",
+"gloss": "a farm where dairy products are produced",
+"rank": 3752
+},
+{
+"w": "radar",
+"lex": "noun.artifact",
+"gloss": "measuring instrument in which the echo of a pulse of microwave radiation is used to detect and locate distant objects",
+"rank": 3328
+},
+{
+"w": "temple",
+"lex": "noun.artifact",
+"gloss": "place of worship consisting of an edifice for the worship of a deity",
+"rank": 2138
+},
+{
+"w": "mixture",
+"lex": "noun.substance",
+"gloss": "(chemistry) a substance consisting of two or more substances mixed together (not in fixed proportions and not with chemical bonding)",
+"rank": 2511
+},
+{
+"w": "machinery",
+"lex": "noun.artifact",
+"gloss": "machines or machine systems collectively",
+"rank": 1579
+},
+{
+"w": "tetrachloride",
+"lex": "noun.substance",
+"gloss": "any compound that contains four chlorine atoms per molecule",
+"rank": 3815
+},
+{
+"w": "interstate",
+"lex": "noun.artifact",
+"gloss": "one of the system of highways linking major cities in the 48 contiguous states of the United States",
+"rank": 4487
+},
+{
+"w": "pea",
+"lex": "noun.food",
+"gloss": "seed of a pea plant used for food",
+"rank": 3243
+},
+{
+"w": "toilet",
+"lex": "noun.artifact",
+"gloss": "a room or building equipped with one or more toilets",
+"rank": 4076
+},
+{
+"w": "cereal",
+"lex": "noun.plant",
+"gloss": "grass whose starchy grains are used as food: wheat; rice; rye; oats; maize; buckwheat; millet",
+"rank": 3553
+},
+{
+"w": "pentagon",
+"lex": "noun.artifact",
+"gloss": "a government building with five sides that serves as the headquarters of the United States Department of Defense",
+"rank": 4764
+},
+{
+"w": "flat",
+"lex": "noun.object",
+"gloss": "a level tract of land",
+"rank": 1411
+},
+{
+"w": "juice",
+"lex": "noun.food",
+"gloss": "the liquid part that can be extracted from plant or animal tissue by squeezing or cooking",
+"rank": 4737
+},
+{
+"w": "clover",
+"lex": "noun.plant",
+"gloss": "a plant of the genus Trifolium",
+"rank": 4258
+},
+{
+"w": "walnut",
+"lex": "noun.food",
+"gloss": "nut of any of various walnut trees having a wrinkled two-lobed seed with a hard shell",
+"rank": 4141
+},
+{
+"w": "hut",
+"lex": "noun.artifact",
+"gloss": "temporary military shelter",
+"rank": 3810
+},
+{
+"w": "champagne",
+"lex": "noun.food",
+"gloss": "a white sparkling wine either produced in Champagne or resembling that produced there",
+"rank": 4869
+},
+{
+"w": "molecule",
+"lex": "noun.substance",
+"gloss": "(physics and chemistry) the simplest structural unit of an element or compound",
+"rank": 4395
+},
+{
+"w": "chicken",
+"lex": "noun.food",
+"gloss": "the flesh of a chicken used for food",
+"rank": 1820
+},
+{
+"w": "stern",
+"lex": "noun.artifact",
+"gloss": "the rear part of a ship",
+"rank": 3342
+},
+{
+"w": "sheep",
+"lex": "noun.animal",
+"gloss": "woolly usually horned ruminant mammal related to the goat",
+"rank": 3300
+},
+{
+"w": "platform",
+"lex": "noun.artifact",
+"gloss": "a raised horizontal surface",
+"rank": 1233
+},
+{
+"w": "kitchen",
+"lex": "noun.artifact",
+"gloss": "a room equipped for preparing meals",
+"rank": 1014
+},
+{
+"w": "classic",
+"lex": "noun.artifact",
+"gloss": "a creation of the highest excellence",
+"rank": 2375
+},
+{
+"w": "protein",
+"lex": "noun.substance",
+"gloss": "any of a large group of nitrogenous organic compounds that are essential constituents of living cells; consist of polymers of amino acids; essential in the diet of animals for growth and for repair of tissues; can be obtained from meat and eggs and milk and legumes",
+"rank": 2443
+},
+{
+"w": "palace",
+"lex": "noun.artifact",
+"gloss": "a large and stately mansion",
+"rank": 2064
+},
+{
+"w": "meat",
+"lex": "noun.food",
+"gloss": "the flesh of animals (including fishes and birds and snails) used as food",
+"rank": 1643
+},
+{
+"w": "helium",
+"lex": "noun.substance",
+"gloss": "a very light colorless element that is one of the six inert gasses; the most difficult gas to liquefy; occurs in economically extractable amounts in certain natural gases (as those found in Texas and Kansas)",
+"rank": 4423
+},
+{
+"w": "receiver",
+"lex": "noun.artifact",
+"gloss": "set that receives radio or tv signals",
+"rank": 3933
+},
+{
+"w": "supper",
+"lex": "noun.food",
+"gloss": "a light evening meal; served in early evening if dinner is at midday or served late in the evening at bedtime",
+"rank": 2270
+},
+{
+"w": "reactor",
+"lex": "noun.artifact",
+"gloss": "an electrical device used to introduce reactance into a circuit",
+"rank": 4714
+},
+{
+"w": "tappet",
+"lex": "noun.artifact",
+"gloss": "a lever that is moved in order to tap something else",
+"rank": 2899
+},
+{
+"w": "cafeteria",
+"lex": "noun.artifact",
+"gloss": "a restaurant where you serve yourself and pay a cashier",
+"rank": 3991
+},
+{
+"w": "explosive",
+"lex": "noun.artifact",
+"gloss": "a chemical substance that undergoes a rapid chemical change (with the production of gas) on being heated or struck",
+"rank": 3574
+}
+]

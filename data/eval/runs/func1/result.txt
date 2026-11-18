@@ -1,0 +1,70 @@
+# func1 — результат
+
+## Слова (60), первый ответ читателя, 2 судьи
+  close: A 36%, B 44%, B − A +7.5 п. п. [-4.6 … +20.0]
+  rel: A 78%, B 78%, B − A -0.8 п. п. [-10.8 … +10.0]
+  close, предметы (noun.artifact) (28): A 37%, B 51%, B − A +14.3 п. п.
+  close, остальные (32): A 36%, B 38%, B − A +1.6 п. п.
+  согласие судей: точно 94%
+
+## По словам (close A → B)
+- hydrogen: 1.00 → 0.00 | A `"hydrogen"` → hydrogen / hydrogen | B `{ GRAIN(=-5) HEAT(=+5) ART(=-5) | o }` → steam / burner
+- helium: 1.00 → 0.00 | A `"helium"` → helium / helium | B `{ GRAIN(=-5) ABOVE | o } AGAINST { MOVE(=-5) | i } "helium"` → balloon / balloon
+- tappet: 1.00 → 0.00 | A `{ LONG(=0) MOVE | o tool }` → lever / lever | B `{ LONG | o tool } FOR { TOUCH | i }` → pointer / pointer
+- pacific: 1.00 → 0.25 | A `"Pacific"` → Pacific Ocean / Pacific Ocean | B `{ LAND(=-5) BIG(=+5) | o }` → ocean / ocean
+- doll: 1.00 → 0.50 | A `{ THING(=-5) FIGHT(=-5) | o } LIKE { SOMEONE | o }` → doll / doll | B `{ THING(=-5) | o } LIKE { SOMEONE | o } FOR { FIGHT(=-5) | o }` → doll / pawn
+- machinery: 1.00 → 0.50 | A `{ ART(=-5) DO | o tool N+3 }` → machines / machines | B `{ DO ART(=-5) | o tool N+5 }` → tools / machinery
+- chicken: 0.50 → 0.00 | A `{ BODY CONSUME | o } FROM { THING(=4) ABOVE(=5) MOVE | o }` → poultry / poultry | B `{ BODY THING(=+4) | o } FOR { CONSUME | i }` → meat / meat
+- stern: 1.00 → 0.50 | A `{ PART(=-2) SIDE(=-5) | o } PI { MOVE LAND(=-5) | o tool }` → stern / stern | B `{ PART SIDE(=-5) | o } PI { PLACE MOVE LAND(=-5) | o }` → stern / dock
+- meat: 1.00 → 0.50 | A `{ BODY THING(=4) CONSUME | o }` → meat / meat | B `{ BODY THING(=+4) | o } FOR { CONSUME | i }` → meat / feed
+- computer: 0.50 → 0.25 | A `{ MEASURE THINK ART(=-5) | o tool }` → calculator / calculator | B `{ ART(=-5) THING(=-5) | o } FOR { MEASURE(=-5) DO | o }` → meter / calculator
+- skiff: 0.25 → 0.00 | A `{ MOVE LAND(=-5) BIG(=-3) | o tool }` → canoe / boat | B `{ MOVE LAND(=-5) BIG(=-3) | o tool }` → boat / boat
+- juice: 0.50 → 0.25 | A `{ GRAIN(=-3) THING(=0) CONSUME | o }` → juice / tea | B `{ GRAIN(=-3) | o } FROM { THING | o } FOR { CONSUME | i }` → drink / milk
+- pond: 0.50 → 0.50 | A `{ LAND(=-5) PLACE BIG(=-4) | o }` → pond / bay | B `{ LAND(=-5) BIG(=-3) | o }` → lake / pond
+- missile: 1.00 → 1.00 | A `{ FIGHT(=+5) ABOVE MOVE(=+5) | o tool }` → missile / missile | B `{ THING(=-5) MOVE(=+5) ABOVE | o } FOR { FIGHT(=+5) | o }` → missile / missile
+- library: 1.00 → 1.00 | A `{ PLACE TEXT PART(=+5) | o }` → library / library | B `{ PLACE | o } FOR { TEXT | o }` → library / library
+- artery: 0.00 → 0.00 | A `{ LONG LIVE(=+5) GRAIN(=-3) | o }` → vein / blood | B `{ LONG GRAIN(=-3) | o } FOR { GRAIN(=-3) LIVE | o } PI { BODY | o }` → vein / vein
+- female: 1.00 → 1.00 | A `{ SEX(=-5) THING(=+4) | o }` → female animal / female | B `{ THING(=+4) SEX(=-5) | o }` → female animal / female animal
+- rug: 0.50 → 0.50 | A `{ LONG(=-5) ABOVE(=-5) LAND(=+5) | o }` → root / carpet | B `{ LONG(=-5) | o } FOR { PLACE LAND(=+5) | o }` → carpet / tent
+- mountain: 1.00 → 1.00 | A `{ LAND(=+5) ABOVE(=+5) BIG(=+5) | o }` → mountain / mountain | B `{ LAND(=+5) ABOVE(=+5) BIG(=+5) | o }` → mountain / mountain
+- fountain: 0.00 → 0.00 | A `{ LAND(=-5) ABOVE(=+5) DO | o }` → ship / wave | B `{ THING(=-5) | o } FOR { LAND(=-5) ABOVE | o }` → roof / roof
+- ion: 0.00 → 0.00 | A `{ PART(=-5) FEEL(=+5) THING(=-5) | o }` → spark / spark | B `{ PART(=-5) FEEL(=+3) ART(=-5) | o }` → hormone / emoji
+- lip: 0.50 → 0.50 | A `{ BODY SAY INSIDE(=0) | o }` → lips / mouth | B `{ BODY TOUCH(=-5) | o } PI { BODY SAY CONSUME | o }` → tongue / lip
+- phosphor: 0.00 → 0.00 | A `{ GRAIN(=0) HEAT(=+3) SEE | o }` → ash / ember | B `{ GRAIN SEE ART(=-5) | o } FOR { SEE | o }` → microscope / screen
+- canyon: 0.00 → 0.00 | A `{ LAND(=+5) ABOVE(=-5) PLACE | o }` → basement / cave | B `{ PLACE ABOVE(=-5) BIG | o } FROM { LAND(=-5) MOVE | o }` → abyss / hold
+- liver: 0.00 → 0.00 | A `{ BODY INSIDE(=+5) LIVE | o }` → organ / organ | B `{ BODY | o } AGAINST { GRAIN(=-3) GOOD(=-5) | o } FOR { GRAIN(=-3) LIVE | o }` → antibody / antibody
+- radar: 0.00 → 0.00 | A `{ MEASURE(=-5) SEE NEAR(=-5) | o tool }` → telescope / telescope | B `{ THING(=-5) MEASURE(=-5) | o tool } FOR { SEE NEAR(=-5) | o }` → telescope / telescope
+- mixture: 1.00 → 1.00 | A `{ JOIN SAME(=-5) PART | o result }` → mixture / mixture | B `{ GRAIN JOIN SAME(=-5) | o result }` → mixture / mixture
+- tetrachloride: 0.50 → 0.50 | A `{ ART(=-5) GRAIN | o } FROM "4" "chlorine"` → tetrachloride / chloride | B `{ JOIN(=+5) ART(=-5) | o result } FROM { PART(=-5) | o } "chlorine" "4"` → tetrachlorine / tetrachloride
+- interstate: 0.50 → 0.50 | A `{ PLACE MOVE LAND(=5) | o } PI { LAND RULE(=5) | o N+3 }` → road / highway | B `{ PLACE MOVE(=+5) BIG | o } PI { LAND | o } "USA"` → airport / highway
+- pea: 0.00 → 0.00 | A `{ GRAIN(=5) THING(=0) CONSUME | o }` → fruit / fruit | B `{ THING | o result } FOR { CONSUME | i } PI { THING(=0) GRAIN(=0) | o }` → food / fruit
+- toilet: 1.00 → 1.00 | A `{ PLACE BODY CONSUME(=-5) | o }` → toilet / toilet | B `{ PLACE | o } FOR { CONSUME(=-5) BODY | i }` → toilet / toilet
+- cereal: 0.50 → 0.50 | A `{ THING(=0) GRAIN(=0) CONSUME | o N+3 }` → spices / grains | B `{ THING(=0) | o } FOR { CONSUME GRAIN(=0) | i }` → cereal / vegetable
+- flat: 0.00 → 0.00 | A `{ LAND(=5) SAME(=5) | o }` → earth / ground | B `{ LAND(=+5) | o } FOR { MOVE(=-5) | i }` → floor / ground
+- clover: 1.00 → 1.00 | A `"Trifolium"` → clover / clover | B `{ THING(=0) | o } "Trifolium"` → clover / clover
+- walnut: 0.00 → 0.00 | A `{ GRAIN(=5) CONSUME | o } FROM { THING(=0) BIG | o }` → coconut / nut | B `{ GRAIN(=+5) | o } FROM { THING(=0) BIG | o } PI { INSIDE TOUCH(=+5) | o }` → heartwood / heartwood
+- hut: 0.00 → 0.00 | A `{ PLACE LIVE FIGHT | o }` → arena / arena | B `{ PLACE FIGHT | o } FOR { TIME(=-1) | o }` → arena / arena
+- molecule: 0.00 → 0.00 | A `{ ART(=-5) PART(=-5) | o }` → atom / particle | B `{ PART(=-5) ART(=-5) | o }` → particle / chip
+- sheep: 0.00 → 0.00 | A `{ THING(=4) LONG(=-5) | o }` → wool / silk | B `{ THING(=+4) LONG(=-5) | o }` → snake / wool
+- classic: 1.00 → 1.00 | A `{ ART GOOD(=5) TIME(=-3) | o result }` → classic / classic | B `{ ART(=+5) GOOD(=+5) | o result }` → masterpiece / masterpiece
+- protein: 0.00 → 0.00 | A `{ ART(=-5) BODY CONSUME | o }` → medicine / medicine | B `{ GRAIN(=0) ART(=-5) | o } FOR { BODY LIVE(=+5) | o } FROM { THING | o }` → medicine / implant
+- receiver: 0.00 → 0.00 | A `{ ART(=-5) CONSUME | o tool } FOR { SAY(=-5) SEE | o }` → hearing aid / screen | B `{ THING(=-5) ART(=-5) | o tool } FOR { CONSUME SEE | i }` → television / glasses
+- supper: 0.00 → 0.00 | A `{ CONSUME(=5) TIME(=1) BIG(=-3) | o }` → snack / snack | B `{ CONSUME TIME(=+1) | o } FOR { TIME(=-1) | o }` → snack / snack
+- reactor: 0.00 → 0.00 | A `{ ART(=-5) CHANGE | o tool }` → transformer / converter | B `{ THING(=-5) ART(=-5) | o tool } FOR { CHANGE | i }` → machine / machine
+- cafeteria: 0.00 → 0.00 | A `{ PLACE CONSUME GIVE(=0) | o }` → shop / store | B `{ PLACE | o } FOR { CONSUME GIVE(=0) | i }` → shop / market
+- museum: 0.50 → 1.00 | A `{ PLACE SEE TIME(=-4) | o }` → museum / ruins | B `{ PLACE | o } FOR { SEE TIME(=-5) ART(=+5) | o }` → museum / museum
+- vitamin: 0.00 → 0.50 | A `{ LIVE CONSUME(=+5) PART(=-5) | o }` → microbe / microbe | B `{ GRAIN VALUE | o } FOR { BODY LIVE | o }` → vitamin / medicine
+- restaurant: 0.00 → 0.50 | A `{ PLACE CONSUME(=+5) VALUE(=-5) | o }` → market / bazaar | B `{ PLACE | o } FOR { CONSUME(=+5) | o }` → dining room / restaurant
+- ear: 0.50 → 1.00 | A `{ BODY CONSUME(=+5) SAY | o }` → mouth / ear | B `{ BODY | o } FOR { CONSUME(=+5) SAY | o }` → ear / ear
+- prison: 0.00 → 0.50 | A `{ PLACE RULE(=+4) MOVE(=-5) | o }` → office / checkpoint | B `{ PLACE | o } AGAINST { MOVE(=+5) | o } FOR { RULE(=+5) FRIEND(=-5) | o }` → fortress / jail
+- colt: 0.00 → 0.50 | A `{ THING(=+4) BIG(=-3) SEX(=+5) | o } LIKE { THING(=+4) MOVE(=+5) | o }` → jackrabbit / buck | B `{ THING(=+4) SEX(=+5) BIG(=-3) | o } LIKE { MOVE(=+5) THING(=+4) | o }` → colt / tomcat
+- platform: 0.00 → 0.50 | A `{ PLACE ABOVE(=3) SAME(=5) | o }` → ceiling / storey | B `{ PLACE ABOVE | o } FOR { MOVE(=-5) | i }` → bedroom / platform
+- kitchen: 0.00 → 0.50 | A `{ PLACE DO CONSUME | o }` → restaurant / restaurant | B `{ PLACE | o } FOR { DO CONSUME | i }` → restaurant / kitchen
+- explosive: 0.00 → 0.50 | A `{ ART(=-5) GRAIN HAPPEN | o tool }` → bomb / detonator | B `{ GRAIN ART(=-5) | o } FOR { HAPPEN HEAT(=+5) | i }` → explosive / fuel
+- eyebrow: 0.00 → 1.00 | A `{ LONG(=-5) ABOVE SEE | o }` → cable / curtain | B `{ BODY LONG(=-5) ABOVE | o } PI { SEE BODY | o }` → eyebrow / eyebrow
+- wrist: 0.00 → 1.00 | A `{ BODY JOIN PART(=-2) | o }` → limb / limb | B `{ BODY JOIN | o } PI { BODY GIVE | o }` → wrist / wrist
+- dairy: 0.00 → 1.00 | A `{ PLACE THING(=+4) GRAIN(=-3) | o }` → aquarium / aquarium | B `{ PLACE | o } FOR { GRAIN(=-3) THING(=+4) SEX(=-5) | o }` → dairy / dairy
+- temple: 0.00 → 1.00 | A `{ PLACE ABOVE(=+5) WANT(=+5) | o }` → heaven / heaven | B `{ PLACE | o } FOR { WANT(=+5) CARE(=+5) ABOVE(=+5) | o }` → church / sanctuary
+- pentagon: 0.00 → 1.00 | A `{ PLACE RULE(=4) FIGHT(=5) | o }` → military base / barracks | B `{ PLACE RULE(=+4) | o } "USA" { FIGHT(=+5) RULE(=+4) | o } AND { PART(=+5) | o }` → Pentagon / Pentagon
+- champagne: 0.00 → 1.00 | A `{ GRAIN(=-3) CONSUME MOOD(=4) | o } PI "Champagne"` → wine / wine | B `{ GRAIN(=-3) FEEL | o } FROM { THING(=0) | o } PI { LAND | o } "Champagne"` → champagne / champagne
+- palace: 0.00 → 1.00 | A `{ PLACE LIVE RULE(=4) | o }` → dormitory / dormitory | B `{ PLACE RULE(=+4) BIG | o } FOR { LIVE | i }` → palace / palace

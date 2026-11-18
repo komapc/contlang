@@ -1,0 +1,11 @@
+Targets that are themselves a root (fixed before codes):
+
+  X1: 0 of 120 — band 1: 0/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X3: 0 of 120 — band 1: 0/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X10: 0 of 120 — band 1: 0/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X20: 2 of 120 — band 1: 2/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X30: 2 of 120 — band 1: 2/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X51: 3 of 120 — band 1: 3/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X100: 8 of 120 — band 1: 8/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X200: 18 of 120 — band 1: 18/30, band 301: 0/30, band 1001: 0/30, band 3001: 0/30
+  X300: 29 of 120 — band 1: 27/30, band 301: 2/30, band 1001: 0/30, band 3001: 0/30

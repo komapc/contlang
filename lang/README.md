@@ -7,6 +7,7 @@
 |---|---|---|---|
 | **v1** | min-co 1.0, рабочая; тег `minco-1.0` | `roots.yaml`, `phonetics.yaml` в корне; шаблоны спецификаций `data/eval/templates/`; приёмы `data/site/tips_short.md`; документы `docs/` | сайт minco.lipu.dev, воркер, `docs/`, скилл `mincode` |
 | **v2** | min-co 2.0, в разработке (с 2026-11-10) | `lang/v2/`: `roots.yaml`, `templates/`, `tips_short.md`; хартия [`charter.md`](v2/charter.md), разбор корней [`roots_audit.md`](v2/roots_audit.md) | ничего |
+| **v2b** | вариант: v1 + шесть корней (`SHAPE`, `OPEN`, `STRONG`, `TRUE`, `LIGHT`, `COLOR`), 2026-11-11 | `lang/v2b/`: [`README.md`](v2b/README.md) | ничего |
 
 ## Состав версии
 

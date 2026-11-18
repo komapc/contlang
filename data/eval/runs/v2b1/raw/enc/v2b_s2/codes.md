@@ -1,0 +1,20 @@
+1. LA [ { TRUE(=-5) | o quality } AND { CARE(=-5) RULE(=+4) | o quality } AND { FRIEND SAME(=-4) | o quality } { MANY(=+3) | i } ] { VALUE GIVE RULE | o D+3 } { GIVE CAN | i M-5 C+5 } E { VALUE | o N+3 }
+2. { SOMEONE SEX(=+5) | o } { SAY | i T-2 M-5 } ; { SOMEONE SEX(=+5) | o } { OPEN | i T-2 } E { OPEN(=-5) PLACE | o D+3 } ; { SOMEONE SEX(=+5) | o } { DO | i T-2 } E { LONG(=+5) SHAPE(=+5) ABOVE(=+5) | o D-3 } { INSIDE(=+5) | e } PI { THING(=+4) GRAIN(=+5) OPEN(=-5) | o D+3 } ; { SOMEONE SEX(=+5) | o } { GIVE LAND(=+5) | i T-2 R-3 } E { THING(=+4) GRAIN(=+5) OPEN(=-5) | o }
+3. { DO | i ! } E { BODY SHAPE(=+5) | o N+3 } { SIDE | e } PI { BODY ABOVE(=+5) | o } ; { BODY | o N+3 } { NEAR(=-1) | a } { SEE SIDE(=+5) | i }
+4. { SOMEONE SEX(=+5) | o } AND { SOMEONE SEX(=-5) | o } { BEGIN(=-5) | i ! } E { KNOW BODY | o D+3 } { KNOW(=+5) CARE | e }
+5. { SOMEONE SEX(=+5) | o } { FEEL(=+4) KNOW | o N+3 } { MOVE(=+4) | i T-2 K+5 } E { SOMEONE SEX(=+5) | o } { ABOVE(=+5) SHAPE(=+5) | e } ; { SOMEONE SEX(=+5) | o } { HEAT(=+5) | i T-2 } E { CONSUME HEAT(=+5) LONG | o } ; { SOMEONE SEX(=+5) | o } { MOVE | i T-2 } E { OPEN(=+5) | o D+3 }
+6. { FIGHT RULE(=+5) | o D+3 } { FRIEND(=-5) | e } PI { JOIN(=+5) DO | o D+3 } { TRUE(=+5) GOOD | i T-2 } ; { DO | o agent N+3 MANY(=+3) } { GIVE(=-5) | i T-2 } E { PLACE INSIDE(=+5) LIVE | o N+3 } { GIVE VALUE RULE(=+5) | e }
+7. { TIME | e } { ABOVE(=-5) SOMEONE(=+5) | e } { SOMEONE(=+5) | o } { SEE | i T-2 } E [ { SOMEONE SEX(=+5) | o } { TRUE(=+5) | e } { THING(=+4) | i } ] ; { SOMEONE SEX(=+5) BIG(=-3) | o } { COLOR LIGHT(=-5) DO | i V-4 } { THING(=-5) | e }
+8. { SOMEONE | o D+3 } { FEEL | i T-2 } E [ { BODY ABOVE(=+5) | o N+3 } { MOVE ABOVE(=+5) | i } { NEAR(=+5) | e } { SHAPE(=+5) THING(=-5) | o D+3 } { TOUCH(=+5) | a } { OPEN(=+5) | o } ]
+9. { LONG(=+5) SHAPE(=+5) | o N+3 } { LONG(=+5) COLOR(=-4) | o } { CARE(=+5) | e } { DO | i V-4 T-2 } { SAME(=+3) | e } [ { LONG(=+5) SHAPE(=+5) | o N+3 } { MOVE(=-5) | i } { OPEN(=+5) | o } PI { PLACE VALUE(=-5) | o } ]
+10. { TRUE(=+5) | a } { HAPPEN | o agent } PI { SOMEONE(=-5) | o N+3 D+3 } { ? }
+11. { BODY | o N+3 } { LIGHT(=-2) | a } { BIG(=-3) | a } { SAY(=+4) | i T-2 } E { SAY(=+4) THING(=+4) | o result } LIKE { SAY(=+4) THING(=+4) PART(=+5) | o result }
+12. LA [ { TEXT RULE(=+5) | o N+3 D+3 } { SAY(=+5) | i V-4 T-2 } { BEGIN(=+5) | e } { MANY(=+5) | e } ] { TEXT | o N+3 } { SEE TRUE(=-5) | i T-2 M-5 } E { FRIEND(=-5) | o quality } ; { MANY(=-5) | o } { DO | i M-5 }
+13. { PLACE LAND | o PI } AND { PLACE LAND | o } { THING(=+4) FIGHT(=-5) PART(=+5) | o N+3 } { DO | i T+2 } E [ { SOMEONE BIG(=-4) | o N+3 } { FIGHT(=-5) | i T+2 } { GOOD | i T+2 } ] ; { THING(=+4) FIGHT(=-5) BIG(=-3) | o N+3 } { CAN | i T+2 } { GIVE(=0) VALUE | i } E { FIGHT(=-5) VALUE | o N+3 }
+14. { SEE | i ! } { TEXT | o D+3 } { INSIDE(=+5) | e } E { SOMEONE STRONG(=-5) | o N+3 } AND { MANY(=-1) | e } E { GOOD | o quality } AND { GOOD(=-5) | o quality } { BIG(=+4) | a }
+15. { FEEL(=-5) | a M-5 } AND { CARE(=+5) | a } { SEE TRUE(=0) | i } ; { SOMEONE SEX(=+5) | o } { CONSUME SAY HEAT | i T-2 } E { CONSUME HEAT LONG | o D+3 } { SAY(=+2) | e }
+16. { WANT(=+5) THING | o D+3 } { SOMEONE SEX(=+5) | o } { THING(=+4) FIGHT(=-5) PART(=+5) | o } { GIVE(=0) | i T-2 } E { PLACE LAND PART(=+2) | o D+3 }
+17. LA [ { TIME(=-1) | o D+3 } { LIGHT(=-5) | o } ] { SOMEONE ART(=-5) | o agent D-3 } { SAY THING(=-5) | o tool N+3 } { SAY(=-5) | i T-2 R-3 } E { SAY THING | o tool N+3 } ; { DO | i T-2 } E { COLOR(=-5) LIGHT(=+5) | o N+3 }
+18. { TIME LIGHT(=-5) | o D+3 } { HAPPEN | i T-2 } E { GOOD(=-5) PLACE | o } LIKE { MANY(=+5) SAME(=+3) | o N+3 }
+19. { SOMEONE SEX(=+5) | o } { KNOW(=+5) | i T-2 } E [ { WANT | o quality } { LIGHT(=-5) LONG(=-5) | o } AND { LAND(=+5) TOUCH(=+5) LONG | o } { GIVE(=0) | i } { SOMEONE VALUE(=-5) | o } { SOMEONE SEX(=+5) BIG(=-3) | o } ]
+20. { LIGHT(=+5) BIG(=+3) HEAT | o quality } { TIME(=-1) | e } { ABOVE(=+5) | i } { SOMEONE(=+3) | o } { GRAIN(=-3) PLACE | o D+3 } { CHANGE | i T+2 } E { COLOR(=+1) | o } { GOOD(=-5) | a } { TIME LIGHT(=-5) | e }

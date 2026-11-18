@@ -1,0 +1,12 @@
+vocabulary with vectors: 21514 of 22280 lemmas, 100% of tokens; K = 82 axes (explain 51% of variance)
+
+sparse 1: words decoded close 1% (type), 1% (token, among words with vectors)
+  U by N: 0: 1%, 10: 5%, 20: 8%, 50: 13%, 100: 19%, 200: 28%, 300: 35%, 500: 44%, 1000: 58%, 2000: 73%, 3000: 80%, 5000: 88%, 10000: 96%
+sparse 2: words decoded close 6% (type), 7% (token, among words with vectors)
+  U by N: 0: 7%, 10: 11%, 20: 13%, 50: 19%, 100: 24%, 200: 32%, 300: 39%, 500: 48%, 1000: 61%, 2000: 74%, 3000: 81%, 5000: 89%, 10000: 96%
+sparse 3: words decoded close 19% (type), 19% (token, among words with vectors)
+  U by N: 0: 19%, 10: 23%, 20: 26%, 50: 30%, 100: 35%, 200: 43%, 300: 48%, 500: 56%, 1000: 67%, 2000: 78%, 3000: 84%, 5000: 90%, 10000: 96%
+dense: words decoded close 98% (type), 99% (token, among words with vectors)
+  U by N: 0: 99%, 10: 99%, 20: 99%, 50: 99%, 100: 99%, 200: 99%, 300: 99%, 500: 99%, 1000: 99%, 2000: 99%, 3000: 99%, 5000: 100%, 10000: 100%
+dense ±5: words decoded close 98% (type), 99% (token, among words with vectors)
+  U by N: 0: 98%, 10: 98%, 20: 98%, 50: 99%, 100: 99%, 200: 99%, 300: 99%, 500: 99%, 1000: 99%, 2000: 99%, 3000: 99%, 5000: 100%, 10000: 100%

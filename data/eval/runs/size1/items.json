@@ -1,0 +1,842 @@
+[
+{
+"w": "big",
+"pos": "adjective",
+"gloss": "above average in size or number or quantity or magnitude or extent",
+"rank": 149,
+"band": 1
+},
+{
+"w": "bang",
+"pos": "verb",
+"gloss": "strike violently",
+"rank": 4168,
+"band": 3001
+},
+{
+"w": "driver",
+"pos": "noun",
+"gloss": "the operator of a motor vehicle",
+"rank": 1289,
+"band": 1001
+},
+{
+"w": "hate",
+"pos": "verb",
+"gloss": "dislike intensely; feel antipathy or aversion towards",
+"rank": 1243,
+"band": 1001
+},
+{
+"w": "ability",
+"pos": "noun",
+"gloss": "the quality of being able to perform; a quality that permits or facilitates achievement or accomplishment",
+"rank": 1098,
+"band": 1001
+},
+{
+"w": "doctor",
+"pos": "noun",
+"gloss": "a licensed medical practitioner",
+"rank": 679,
+"band": 301
+},
+{
+"w": "receive",
+"pos": "verb",
+"gloss": "get something; come into possession of",
+"rank": 239,
+"band": 1
+},
+{
+"w": "better",
+"pos": "adjective",
+"gloss": "(comparative of `good') superior to another (of the same class or set or kind) in excellence or quality or desirability or suitability; more highly skilled than another",
+"rank": 133,
+"band": 1
+},
+{
+"w": "suffrage",
+"pos": "noun",
+"gloss": "a legal right guaranteed by the 15th amendment to the US Constitution; guaranteed to women by the 19th amendment",
+"rank": 7879,
+"band": 3001
+},
+{
+"w": "pattern",
+"pos": "noun",
+"gloss": "a perceptual structure",
+"rank": 515,
+"band": 301
+},
+{
+"w": "show",
+"pos": "verb",
+"gloss": "give an exhibition of to an interested audience",
+"rank": 41,
+"band": 1
+},
+{
+"w": "history",
+"pos": "noun",
+"gloss": "the aggregate of past events",
+"rank": 229,
+"band": 1
+},
+{
+"w": "press",
+"pos": "noun",
+"gloss": "the state of demanding notice or attention",
+"rank": 437,
+"band": 301
+},
+{
+"w": "involvement",
+"pos": "noun",
+"gloss": "the act of sharing in the activities of a group",
+"rank": 4592,
+"band": 3001
+},
+{
+"w": "face",
+"pos": "noun",
+"gloss": "the front of the human head from the forehead to the chin and ear to ear",
+"rank": 75,
+"band": 1
+},
+{
+"w": "questionnaire",
+"pos": "noun",
+"gloss": "a form containing a set of questions; submitted to people to gain statistical information",
+"rank": 2082,
+"band": 1001
+},
+{
+"w": "vindicate",
+"pos": "verb",
+"gloss": "show to be right by providing justification or proof",
+"rank": 8928,
+"band": 3001
+},
+{
+"w": "pepper",
+"pos": "noun",
+"gloss": "climber having dark red berries (peppercorns) when fully ripe; southern India and Sri Lanka; naturalized in northern Burma and Assam",
+"rank": 4313,
+"band": 3001
+},
+{
+"w": "delivery",
+"pos": "noun",
+"gloss": "the act of delivering or distributing something (as goods or mail)",
+"rank": 3712,
+"band": 3001
+},
+{
+"w": "considerable",
+"pos": "adjective",
+"gloss": "large or relatively large in number or amount or extent or degree",
+"rank": 992,
+"band": 301
+},
+{
+"w": "result",
+"pos": "noun",
+"gloss": "a phenomenon that follows and is caused by some previous phenomenon",
+"rank": 110,
+"band": 1
+},
+{
+"w": "instant",
+"pos": "noun",
+"gloss": "a very short time (as the time it takes the eye to blink or the heart to beat)",
+"rank": 2277,
+"band": 1001
+},
+{
+"w": "quartet",
+"pos": "noun",
+"gloss": "the cardinal number that is the sum of three and one",
+"rank": 5854,
+"band": 3001
+},
+{
+"w": "frail",
+"pos": "adjective",
+"gloss": "physically weak",
+"rank": 6119,
+"band": 3001
+},
+{
+"w": "company",
+"pos": "noun",
+"gloss": "an institution created to conduct business",
+"rank": 154,
+"band": 1
+},
+{
+"w": "divide",
+"pos": "verb",
+"gloss": "separate into parts or portions",
+"rank": 1151,
+"band": 1001
+},
+{
+"w": "difficult",
+"pos": "adjective",
+"gloss": "not easy; requiring great physical or mental effort to accomplish or comprehend or endure",
+"rank": 531,
+"band": 301
+},
+{
+"w": "antithyroid",
+"pos": "adjective",
+"gloss": "having the effect of counteracting excessive thyroid activity",
+"rank": 7161,
+"band": 3001
+},
+{
+"w": "tile",
+"pos": "noun",
+"gloss": "a flat thin rectangular slab (as of fired clay or rubber or linoleum) used to cover surfaces",
+"rank": 2999,
+"band": 1001
+},
+{
+"w": "priest",
+"pos": "noun",
+"gloss": "a clergyman in Christian churches who has the authority to perform or administer various religious rites; one of the Holy Orders",
+"rank": 2592,
+"band": 1001
+},
+{
+"w": "disprove",
+"pos": "verb",
+"gloss": "prove to be false",
+"rank": 9694,
+"band": 3001
+},
+{
+"w": "block",
+"pos": "noun",
+"gloss": "a solid piece of something (usually having flat rectangular sides)",
+"rank": 792,
+"band": 301
+},
+{
+"w": "tall",
+"pos": "adjective",
+"gloss": "great in vertical dimension; high in stature",
+"rank": 1529,
+"band": 1001
+},
+{
+"w": "mental",
+"pos": "adjective",
+"gloss": "involving the mind or an intellectual process",
+"rank": 2039,
+"band": 1001
+},
+{
+"w": "splendor",
+"pos": "noun",
+"gloss": "a quality that outshines the usual",
+"rank": 6881,
+"band": 3001
+},
+{
+"w": "week",
+"pos": "noun",
+"gloss": "any period of seven consecutive days",
+"rank": 130,
+"band": 1
+},
+{
+"w": "special",
+"pos": "adjective",
+"gloss": "unique or specific to a person or thing or category",
+"rank": 304,
+"band": 301
+},
+{
+"w": "juicy",
+"pos": "adjective",
+"gloss": "full of juice",
+"rank": 6878,
+"band": 3001
+},
+{
+"w": "group",
+"pos": "noun",
+"gloss": "any number of entities (members) considered as a unit",
+"rank": 79,
+"band": 1
+},
+{
+"w": "accuse",
+"pos": "verb",
+"gloss": "bring an accusation against; level a charge against",
+"rank": 1973,
+"band": 1001
+},
+{
+"w": "drive",
+"pos": "verb",
+"gloss": "operate or control a vehicle",
+"rank": 289,
+"band": 1
+},
+{
+"w": "doorway",
+"pos": "noun",
+"gloss": "the entrance (the space in a wall) through which you enter or leave a room or building; the space that a door can close",
+"rank": 3926,
+"band": 3001
+},
+{
+"w": "outline",
+"pos": "noun",
+"gloss": "the line that appears to bound an object",
+"rank": 2977,
+"band": 1001
+},
+{
+"w": "dance",
+"pos": "noun",
+"gloss": "an artistic form of nonverbal communication",
+"rank": 584,
+"band": 301
+},
+{
+"w": "small",
+"pos": "adjective",
+"gloss": "limited or below average in number or quantity or magnitude or extent",
+"rank": 67,
+"band": 1
+},
+{
+"w": "place",
+"pos": "noun",
+"gloss": "a point located with respect to surface features of some region",
+"rank": 33,
+"band": 1
+},
+{
+"w": "buck",
+"pos": "noun",
+"gloss": "a gymnastic horse without pommels and with one end elongated; used lengthwise for vaulting",
+"rank": 4333,
+"band": 3001
+},
+{
+"w": "growth",
+"pos": "noun",
+"gloss": "(biology) the process of an individual organism growing organically; a purely biological unfolding of events involved in an organism changing gradually from a simple to a more complex level",
+"rank": 563,
+"band": 301
+},
+{
+"w": "execute",
+"pos": "verb",
+"gloss": "kill as a means of socially sanctioned punishment",
+"rank": 3388,
+"band": 3001
+},
+{
+"w": "status",
+"pos": "noun",
+"gloss": "the relative position or standing of things or especially persons in a society",
+"rank": 946,
+"band": 301
+},
+{
+"w": "political",
+"pos": "adjective",
+"gloss": "involving or characteristic of politics or parties or politicians; - Daniel Goleman",
+"rank": 293,
+"band": 1
+},
+{
+"w": "erase",
+"pos": "verb",
+"gloss": "remove from memory or existence",
+"rank": 7855,
+"band": 3001
+},
+{
+"w": "force",
+"pos": "noun",
+"gloss": "a powerful effect or influence",
+"rank": 96,
+"band": 1
+},
+{
+"w": "key",
+"pos": "noun",
+"gloss": "metal device shaped in such a way that when it is inserted into the appropriate lock the lock's mechanism can be rotated",
+"rank": 907,
+"band": 301
+},
+{
+"w": "structure",
+"pos": "noun",
+"gloss": "a thing constructed; a complex entity constructed of many parts",
+"rank": 670,
+"band": 301
+},
+{
+"w": "state",
+"pos": "noun",
+"gloss": "the territory occupied by one of the constituent administrative districts of a nation",
+"rank": 8,
+"band": 1
+},
+{
+"w": "nucleus",
+"pos": "noun",
+"gloss": "a part of the cell containing DNA and RNA and responsible for growth and reproduction",
+"rank": 3210,
+"band": 3001
+},
+{
+"w": "centralize",
+"pos": "verb",
+"gloss": "make central",
+"rank": 5152,
+"band": 3001
+},
+{
+"w": "power",
+"pos": "noun",
+"gloss": "possession of controlling influence",
+"rank": 134,
+"band": 1
+},
+{
+"w": "puzzle",
+"pos": "verb",
+"gloss": "be a mystery or bewildering to",
+"rank": 2492,
+"band": 1001
+},
+{
+"w": "statement",
+"pos": "noun",
+"gloss": "a message that is stated or declared; a communication (oral or written) setting forth particulars or facts etc",
+"rank": 385,
+"band": 301
+},
+{
+"w": "crisis",
+"pos": "noun",
+"gloss": "an unstable situation of extreme danger or difficulty",
+"rank": 924,
+"band": 301
+},
+{
+"w": "found",
+"pos": "verb",
+"gloss": "set up or found",
+"rank": 60,
+"band": 1
+},
+{
+"w": "mechanic",
+"pos": "noun",
+"gloss": "a craftsman skilled in operating machine tools",
+"rank": 8022,
+"band": 3001
+},
+{
+"w": "steam",
+"pos": "noun",
+"gloss": "water at boiling temperature diffused in the atmosphere",
+"rank": 2831,
+"band": 1001
+},
+{
+"w": "issue",
+"pos": "noun",
+"gloss": "an important question that is in dispute and must be settled",
+"rank": 268,
+"band": 1
+},
+{
+"w": "program",
+"pos": "noun",
+"gloss": "a series of steps to be carried out or goals to be accomplished",
+"rank": 68,
+"band": 1
+},
+{
+"w": "generalization",
+"pos": "noun",
+"gloss": "reasoning from detailed facts to general principles",
+"rank": 5297,
+"band": 3001
+},
+{
+"w": "beautiful",
+"pos": "adjective",
+"gloss": "delighting the senses or exciting intellectual or emotional admiration",
+"rank": 726,
+"band": 301
+},
+{
+"w": "heaven",
+"pos": "noun",
+"gloss": "any place of complete bliss and delight and peace",
+"rank": 2072,
+"band": 1001
+},
+{
+"w": "indicate",
+"pos": "verb",
+"gloss": "be a signal for or a symptom of",
+"rank": 318,
+"band": 301
+},
+{
+"w": "yell",
+"pos": "verb",
+"gloss": "utter a sudden loud cry",
+"rank": 2385,
+"band": 1001
+},
+{
+"w": "fiction",
+"pos": "noun",
+"gloss": "a literary work based on the imagination and not necessarily on fact",
+"rank": 1954,
+"band": 1001
+},
+{
+"w": "suspend",
+"pos": "verb",
+"gloss": "hang freely",
+"rank": 2523,
+"band": 1001
+},
+{
+"w": "pressure",
+"pos": "noun",
+"gloss": "the force applied to a unit area of surface; measured in pascals (SI unit) or in dynes (cgs unit)",
+"rank": 355,
+"band": 301
+},
+{
+"w": "aroma",
+"pos": "noun",
+"gloss": "any property detected by the olfactory system",
+"rank": 8133,
+"band": 3001
+},
+{
+"w": "language",
+"pos": "noun",
+"gloss": "a systematic means of communicating by the use of sounds or conventional symbols",
+"rank": 598,
+"band": 301
+},
+{
+"w": "director",
+"pos": "noun",
+"gloss": "someone who controls resources and expenditures",
+"rank": 772,
+"band": 301
+},
+{
+"w": "muscle",
+"pos": "noun",
+"gloss": "one of the contractile organs of the body",
+"rank": 1277,
+"band": 1001
+},
+{
+"w": "trade",
+"pos": "noun",
+"gloss": "the commercial exchange (buying and selling on domestic or international markets) of goods and services",
+"rank": 447,
+"band": 301
+},
+{
+"w": "money",
+"pos": "noun",
+"gloss": "the most common medium of exchange; functions as legal tender",
+"rank": 283,
+"band": 1
+},
+{
+"w": "range",
+"pos": "noun",
+"gloss": "an area in which something acts or operates or has power or control:",
+"rank": 374,
+"band": 301
+},
+{
+"w": "fellowship",
+"pos": "noun",
+"gloss": "an association of people who share common beliefs or activities",
+"rank": 2223,
+"band": 1001
+},
+{
+"w": "stand",
+"pos": "verb",
+"gloss": "be standing; be upright",
+"rank": 78,
+"band": 1
+},
+{
+"w": "help",
+"pos": "verb",
+"gloss": "give help or assistance; be of service",
+"rank": 119,
+"band": 1
+},
+{
+"w": "phrase",
+"pos": "noun",
+"gloss": "an expression consisting of one or more words forming a grammatical constituent of a sentence",
+"rank": 1637,
+"band": 1001
+},
+{
+"w": "felt",
+"pos": "verb",
+"gloss": "mat together and make felt-like",
+"rank": 168,
+"band": 1
+},
+{
+"w": "wrestle",
+"pos": "verb",
+"gloss": "combat to overcome an opposing tendency or force",
+"rank": 9563,
+"band": 3001
+},
+{
+"w": "obey",
+"pos": "verb",
+"gloss": "be obedient to",
+"rank": 3778,
+"band": 3001
+},
+{
+"w": "apt",
+"pos": "adjective",
+"gloss": "(usually followed by `to') naturally disposed toward",
+"rank": 4312,
+"band": 3001
+},
+{
+"w": "construe",
+"pos": "verb",
+"gloss": "make sense of; assign a meaning to",
+"rank": 6161,
+"band": 3001
+},
+{
+"w": "process",
+"pos": "noun",
+"gloss": "a particular course of action intended to achieve a result",
+"rank": 247,
+"band": 1
+},
+{
+"w": "enrich",
+"pos": "verb",
+"gloss": "make better or improve in quality",
+"rank": 6252,
+"band": 3001
+},
+{
+"w": "industrial",
+"pos": "adjective",
+"gloss": "of or relating to or resulting from industry",
+"rank": 634,
+"band": 301
+},
+{
+"w": "whisper",
+"pos": "verb",
+"gloss": "speak softly; in a low voice",
+"rank": 2078,
+"band": 1001
+},
+{
+"w": "remove",
+"pos": "verb",
+"gloss": "remove something concrete, as by lifting, pushing, or taking off, or remove something abstract",
+"rank": 613,
+"band": 301
+},
+{
+"w": "pastoral",
+"pos": "adjective",
+"gloss": "of or relating to a pastor",
+"rank": 7570,
+"band": 3001
+},
+{
+"w": "data",
+"pos": "noun",
+"gloss": "a collection of facts from which conclusions may be drawn",
+"rank": 495,
+"band": 301
+},
+{
+"w": "fisherman",
+"pos": "noun",
+"gloss": "someone whose occupation is catching fish",
+"rank": 5071,
+"band": 3001
+},
+{
+"w": "spend",
+"pos": "verb",
+"gloss": "pass time in a specific way",
+"rank": 423,
+"band": 301
+},
+{
+"w": "sensitive",
+"pos": "adjective",
+"gloss": "responsive to physical stimuli",
+"rank": 1544,
+"band": 1001
+},
+{
+"w": "separate",
+"pos": "verb",
+"gloss": "act as a barrier between; stand between",
+"rank": 687,
+"band": 301
+},
+{
+"w": "girl",
+"pos": "noun",
+"gloss": "a young woman",
+"rank": 163,
+"band": 1
+},
+{
+"w": "important",
+"pos": "adjective",
+"gloss": "of great significance or value",
+"rank": 158,
+"band": 1
+},
+{
+"w": "sovereign",
+"pos": "adjective",
+"gloss": "(of political bodies) not controlled by outside forces",
+"rank": 2557,
+"band": 1001
+},
+{
+"w": "add",
+"pos": "verb",
+"gloss": "make an addition (to); join or combine or unite with others; increase the quality, quantity, size or scope of",
+"rank": 240,
+"band": 1
+},
+{
+"w": "flame",
+"pos": "noun",
+"gloss": "the process of combustion of inflammable materials producing heat and light and (often) smoke",
+"rank": 2266,
+"band": 1001
+},
+{
+"w": "body",
+"pos": "noun",
+"gloss": "the entire structure of an organism (an animal, plant, or human being)",
+"rank": 184,
+"band": 1
+},
+{
+"w": "candle",
+"pos": "noun",
+"gloss": "stick of wax with a wick in the middle",
+"rank": 3288,
+"band": 3001
+},
+{
+"w": "sextet",
+"pos": "noun",
+"gloss": "a musical composition written for six performers",
+"rank": 9228,
+"band": 3001
+},
+{
+"w": "demonstrate",
+"pos": "verb",
+"gloss": "give an exhibition of to an interested audience",
+"rank": 1288,
+"band": 1001
+},
+{
+"w": "serve",
+"pos": "verb",
+"gloss": "serve a purpose, role, or function",
+"rank": 221,
+"band": 1
+},
+{
+"w": "kill",
+"pos": "verb",
+"gloss": "cause to die; put to death, usually intentionally or knowingly",
+"rank": 552,
+"band": 301
+},
+{
+"w": "characterize",
+"pos": "verb",
+"gloss": "describe or portray the character or the qualities or peculiarities of",
+"rank": 2598,
+"band": 1001
+},
+{
+"w": "equation",
+"pos": "noun",
+"gloss": "a mathematical statement that two expressions are equal",
+"rank": 2066,
+"band": 1001
+},
+{
+"w": "reverse",
+"pos": "verb",
+"gloss": "change to the contrary",
+"rank": 2499,
+"band": 1001
+},
+{
+"w": "amount",
+"pos": "noun",
+"gloss": "a quantity of money",
+"rank": 359,
+"band": 301
+},
+{
+"w": "additional",
+"pos": "adjective",
+"gloss": "further or added",
+"rank": 771,
+"band": 301
+},
+{
+"w": "independent",
+"pos": "adjective",
+"gloss": "free from external control and constraint",
+"rank": 1317,
+"band": 1001
+},
+{
+"w": "vote",
+"pos": "verb",
+"gloss": "express one's preference for a candidate or for a measure or resolution; cast a vote",
+"rank": 617,
+"band": 301
+}
+]

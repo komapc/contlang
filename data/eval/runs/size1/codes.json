@@ -1,0 +1,1810 @@
+{
+ "codes": {
+  "mc": [
+   [
+    "{ BIG(=+3) | a }",
+    "{ BIG(=+3) | a }",
+    "{ BIG(=+3) | a }"
+   ],
+   [
+    "{ TOUCH(=+5) MOVE(=+5) | i }",
+    "{ TOUCH(=+5) | i } LIKE { SAY(=+5) | o }",
+    "{ TOUCH(=+5) MOVE(=+5) | i } LIKE { SAY(=+5) | o }"
+   ],
+   [
+    "{ MOVE DO | o agent }",
+    "{ SOMEONE MOVE | o } FOR { THING(=-5) MOVE | o }",
+    "{ SOMEONE DO | o agent } FOR { THING(=-5) MOVE(=+4) | o }"
+   ],
+   [
+    "{ WANT(=-5) | i }",
+    "{ WANT(=-5) | i I+4 }",
+    "{ WANT(=-5) I+4 | i }"
+   ],
+   [
+    "{ CAN | o quality }",
+    "{ CAN | o quality }",
+    "{ CAN | o quality }"
+   ],
+   [
+    "{ BODY CARE | o agent }",
+    "{ KNOW BODY | o agent }",
+    "{ SOMEONE | o } FOR { BODY LIVE(=+3) | i } LIKE { KNOW | o agent }"
+   ],
+   [
+    "{ GIVE(=0) | i }",
+    "{ GIVE | i V-4 }",
+    "{ GIVE(=0) | i T-2 }"
+   ],
+   [
+    "{ GOOD | a C+3 }",
+    "{ GOOD | a C+3 }",
+    "{ GOOD | a C+3 }"
+   ],
+   [
+    "{ RULE(=+5) | o }",
+    "{ RULE(=+5) | o } FOR { SOMEONE THINK(=+5) | o }",
+    "{ RULE(=+5) | o } FOR { THINK(=+5) SOMEONE | o } FOR { MANY(=+5) SOMEONE | o }"
+   ],
+   [
+    "{ SHAPE SEE | o result }",
+    "{ SHAPE | o } FOR { SEE | o }",
+    "{ SHAPE SAME | o } FOR { SEE | o }"
+   ],
+   [
+    "{ SEE GIVE | i K+5 }",
+    "{ GIVE(=+5) | i } FOR { SEE | i }",
+    "{ GIVE(=+5) | i } FOR { SEE | i } FOR { MANY(=+3) SOMEONE | o }"
+   ],
+   [
+    "{ TIME(=-5) HAPPEN | o }",
+    "{ TIME(=-5) HAPPEN | o }",
+    "{ HAPPEN MANY(=+5) | o } PI { TIME(=-5) | o }"
+   ],
+   [
+    "{ TEXT SAY(=+5) | o }",
+    "{ TEXT | o agent } FOR { SAY | o }",
+    "{ TEXT SAY | o } FOR { MANY(=+5) SOMEONE KNOW | o }"
+   ],
+   [
+    "{ PART(=-2) | o quality }",
+    "{ JOIN INSIDE(=+5) | o }",
+    "{ DO | o } PI { PART(=+5) | o }"
+   ],
+   [
+    "{ BODY SEE | o }",
+    "{ BODY ABOVE | o }",
+    "{ BODY SIDE(=+5) | o } PI { BODY ABOVE | o }"
+   ],
+   [
+    "{ TEXT THINK(=-5) | o }",
+    "{ TEXT | o } FOR { THINK(=-5) | o }",
+    "{ TEXT | o } FOR { THINK(=-5) | o } FOR { MEASURE(=+5) | o }"
+   ],
+   [
+    "{ TRUE(=+5) | i K+4 }",
+    "{ TRUE(=+5) | i } FROM { THINK | o }",
+    "{ TRUE(=+5) DO | i } FROM { KNOW | o } FOR { SOMEONE | o }"
+   ],
+   [
+    "{ THING | o }",
+    "{ THING | o } LIKE { HEAT(=+5) | a }",
+    "{ THING | o } FOR { CONSUME HEAT(=+5) | o } LIKE { GRAIN(=0) | o }"
+   ],
+   [
+    "{ GIVE MOVE | o }",
+    "{ GIVE MOVE | o result }",
+    "{ GIVE MOVE | o } FOR { THING(=-5) | o }"
+   ],
+   [
+    "{ BIG MANY | a }",
+    "{ BIG(=+2) | a }",
+    "{ BIG(=+2) MANY(=+3) | a }"
+   ],
+   [
+    "{ HAPPEN | o result }",
+    "{ HAPPEN | o result }",
+    "{ HAPPEN | o result }"
+   ],
+   [
+    "{ TIME(=+1) BIG(=-5) | o }",
+    "{ TIME BIG(=-5) | o }",
+    "{ TIME BIG(=-5) | o } PI { SEE | o }"
+   ],
+   [
+    "{ MANY(=0) | o N+3 }",
+    "{ MEASURE(=-5) MANY | o }",
+    "{ MEASURE(=-5) MANY(=0) | o }"
+   ],
+   [
+    "{ STRONG(=-5) BODY | a }",
+    "{ STRONG(=-4) | a }",
+    "{ STRONG(=-5) | a }"
+   ],
+   [
+    "{ RULE VALUE | o }",
+    "{ PART(=+5) | o } FOR { VALUE(=-5) | o }",
+    "{ PART(=+5) | o } FOR { VALUE(=-5) DO | o }"
+   ],
+   [
+    "{ PART(=-2) | i K+4 }",
+    "{ JOIN(=-5) PART | i }",
+    "{ JOIN(=-5) | i }"
+   ],
+   [
+    "{ CAN(=-3) | a }",
+    "{ CAN(=-3) | a }",
+    "{ CAN(=-3) | a }"
+   ],
+   [
+    "{ HEAT STRONG(=-5) | a }",
+    "{ STRONG(=-5) | a } AGAINST { BODY HEAT(=+5) | o }",
+    "{ STRONG(=-5) | a } AGAINST { BODY | o } PI { BODY | o }"
+   ],
+   [
+    "{ SHAPE(=+5) LAND | o }",
+    "{ SHAPE(=+5) | o } FOR { LAND | o }",
+    "{ SHAPE(=+5) GRAIN(=+5) | o } FOR { LAND(=+5) | o }"
+   ],
+   [
+    "{ RULE(=+4) KNOW | o agent }",
+    "{ RULE KNOW | o agent }",
+    "{ RULE(=+4) KNOW | o agent } FOR { THINK(=+5) | o }"
+   ],
+   [
+    "{ TRUE(=-5) | i K+5 }",
+    "{ TRUE(=-5) | i V+4 }",
+    "{ TRUE(=-5) | i V+4 }"
+   ],
+   [
+    "{ GRAIN(=+5) SHAPE(=0) | o }",
+    "{ GRAIN(=+5) | o }",
+    "{ GRAIN(=+5) SHAPE(=0) | o }"
+   ],
+   [
+    "{ BIG ABOVE | a }",
+    "{ BIG(=+3) ABOVE(=+4) | a }",
+    "{ BIG(=+3) ABOVE(=+4) | a }"
+   ],
+   [
+    "{ THINK | a }",
+    "{ THINK | a }",
+    "{ THINK BODY(=0) | a }"
+   ],
+   [
+    "{ LIGHT(=+5) | o quality }",
+    "{ GOOD(=+5) LIGHT(=+5) | o quality }",
+    "{ GOOD(=+5) | a I+4 } LIKE { LIGHT(=+5) | o }"
+   ],
+   [
+    "{ TIME MANY | o }",
+    "{ TIME LIGHT | o }",
+    "{ TIME | o } FROM { MANY SAME | o }"
+   ],
+   [
+    "{ SAME(=-4) | a }",
+    "{ SAME(=-4) | a }",
+    "{ SAME(=-4) | a }"
+   ],
+   [
+    "{ GRAIN(=-3) MANY | a }",
+    "{ INSIDE GRAIN(=-3) | a }",
+    "{ INSIDE GRAIN(=-3) | a }"
+   ],
+   [
+    "{ PART(=+5) | o }",
+    "{ PART(=+5) | o }",
+    "{ PART(=+5) | o }"
+   ],
+   [
+    "{ SAY FIGHT | i }",
+    "{ SAY FIGHT(=0) TRUE(=-5) | i }",
+    "{ SAY | i } AGAINST { SOMEONE TRUE(=-5) | o }"
+   ],
+   [
+    "{ MOVE DO | i }",
+    "{ DO MOVE | i } FOR { THING(=-5) MOVE | o }",
+    "{ DO | i V+4 } FOR { THING(=-5) MOVE(=+4) | o }"
+   ],
+   [
+    "{ OPEN(=+5) | o }",
+    "{ PLACE OPEN(=+5) | o }",
+    "{ OPEN(=+5) | o } PI { PLACE INSIDE | o }"
+   ],
+   [
+    "{ SHAPE SEE | o }",
+    "{ LONG(=+5) SHAPE | o }",
+    "{ SHAPE(=-5) | o } PI { SEE | o }"
+   ],
+   [
+    "{ MOVE ART(=+5) | o }",
+    "{ MOVE ART(=+5) | i }",
+    "{ MOVE ART(=+5) | o } FOR { FEEL | o }"
+   ],
+   [
+    "{ BIG(=-3) | a }",
+    "{ BIG(=-3) | a }",
+    "{ BIG(=-3) | a }"
+   ],
+   [
+    "{ PLACE | o }",
+    "{ PLACE | o }",
+    "{ PLACE | o }"
+   ],
+   [
+    "{ THING MOVE | o }",
+    "{ LONG SHAPE(=+5) | o } FOR { ART(=+5) MOVE | o }",
+    "{ LONG(=+5) | o } FOR { ART(=+5) MOVE(=+5) | o }"
+   ],
+   [
+    "{ BIG CHANGE | o }",
+    "{ THING CHANGE BIG | o result }",
+    "{ LIVE | o } LIKE { BIG CHANGE | o }"
+   ],
+   [
+    "{ LIVE(=-5) | i K+5 }",
+    "{ RULE(=+5) | i } FOR { LIVE(=-5) | i }",
+    "{ RULE(=+5) | i } FOR { LIVE(=-5) | i } LIKE { FIGHT | i }"
+   ],
+   [
+    "{ RULE(=+4) | o }",
+    "{ VALUE | o } PI { RULE | o }",
+    "{ VALUE | o } PI { ABOVE | o } PI { MANY(=+5) SOMEONE | o }"
+   ],
+   [
+    "{ RULE(=+4) | a }",
+    "{ RULE(=+4) | a }",
+    "{ SOMEONE | o } PI { RULE(=+4) | o }"
+   ],
+   [
+    "{ LIVE(=-5) KNOW | i }",
+    "{ CHANGE(=+5) KNOW(=-5) | i }",
+    "{ KNOW(=-5) | i K+5 }"
+   ],
+   [
+    "{ STRONG(=+5) | o }",
+    "{ STRONG(=+5) | o }",
+    "{ STRONG(=+5) | o }"
+   ],
+   [
+    "{ OPEN | o tool }",
+    "{ OPEN | o tool } FROM { LONG(=0) | o }",
+    "{ OPEN(=+5) | o tool } FROM { LONG(=0) | o } FOR { OPEN | o }"
+   ],
+   [
+    "{ DO PART(=+5) | o result }",
+    "{ DO | o result } FROM { PART(=+3) | o }",
+    "{ DO | o result } FROM { PART(=+5) | o }"
+   ],
+   [
+    "{ LAND RULE | o }",
+    "{ LAND | o } PI { LAND RULE | o }",
+    "{ LAND | o } PI { LAND(=+5) | o } PI { RULE(=+4) | o }"
+   ],
+   [
+    "{ PART INSIDE(=+5) | o }",
+    "{ PART INSIDE(=+5) | o } PI { THING LIVE | o }",
+    "{ PART(=-2) | o } PI { THING LIVE | o }"
+   ],
+   [
+    "{ INSIDE(=+5) | i K+5 }",
+    "{ NEAR(=+5) | i K+5 }",
+    "{ NEAR(=+5) | i K+5 }"
+   ],
+   [
+    "{ STRONG RULE | o }",
+    "{ STRONG RULE(=+4) | o }",
+    "{ STRONG | o } FOR { RULE(=+4) | o }"
+   ],
+   [
+    "{ KNOW(=-3) | i }",
+    "{ THINK(=-5) | i }",
+    "{ THINK(=-5) KNOW(=-3) | i }"
+   ],
+   [
+    "{ SAY TRUE | o result }",
+    "{ SAY | o result } FOR { KNOW(=+5) | i }",
+    "{ SAY TRUE | o result } FOR { KNOW(=+5) | i } LIKE { TEXT | o }"
+   ],
+   [
+    "{ HAPPEN FEEL(=+5) GOOD(=-5) | o }",
+    "{ HAPPEN GOOD(=-5) | o } LIKE { FEEL(=+5) | o }",
+    "{ HAPPEN GOOD(=-5) | o } LIKE { FEEL(=+5) | o } FOR { CARE | i }"
+   ],
+   [
+    "{ BEGIN(=-5) DO | i }",
+    "{ DO | i } FOR { BEGIN(=-5) | o }",
+    "{ DO | i } FOR { BEGIN(=-5) | o } PI { PLACE | o }"
+   ],
+   [
+    "{ DO ART | o agent }",
+    "{ ART | o agent } FOR { DO | o tool }",
+    "{ ART | o agent } FOR { DO | i } FROM { MOVE STRONG | o tool }"
+   ],
+   [
+    "{ HEAT(=+4) GRAIN(=-5) | o }",
+    "{ GRAIN(=-5) | o } FROM { HEAT(=+4) GRAIN(=-3) | o }",
+    "{ GRAIN(=-5) | o } FROM { HEAT(=+4) GRAIN(=-3) | o } PI { ABOVE | o }"
+   ],
+   [
+    "{ THINK VALUE(=+5) | o }",
+    "{ VALUE(=+5) THINK(=-5) | o } FOR { THINK(=+5) | i }",
+    "{ VALUE(=+5) THINK(=-5) | o } FOR { FIGHT | o } FOR { THINK(=+5) | i }"
+   ],
+   [
+    "{ TEXT DO | o result }",
+    "{ TEXT | o } FOR { DO | i }",
+    "{ TEXT | o } FOR { DO | i } PI { TIME(=+3) | o }"
+   ],
+   [
+    "{ THINK SAME(=+3) | o }",
+    "{ THINK | o } FROM { PART(=-5) | o }",
+    "{ THINK | o } FROM { PART(=-5) | o } FOR { PART(=+5) | o }"
+   ],
+   [
+    "{ GOOD SEE | a }",
+    "{ GOOD(=+5) | a } LIKE { SEE | i }",
+    "{ GOOD(=+5) | a } LIKE { SEE | i } FOR { FEEL(=+4) | o }"
+   ],
+   [
+    "{ PLACE GOOD(=+5) | o }",
+    "{ PLACE | o } FOR { GOOD(=+5) FEEL(=-5) | o }",
+    "{ PLACE ABOVE(=+5) | o } FOR { GOOD(=+5) FEEL(=-5) | o }"
+   ],
+   [
+    "{ SEE | i agent }",
+    "{ SAY | o tool } FOR { KNOW | i }",
+    "{ SEE | i tool } FOR { KNOW | i } LIKE { HAPPEN | o }"
+   ],
+   [
+    "{ SAY(=+5) | i }",
+    "{ SAY(=+5) | i } LIKE { FEEL(=+5) | o }",
+    "{ SAY(=+5) | i } LIKE { FEEL(=+5) | o } FROM { MOVE(=+5) | o }"
+   ],
+   [
+    "{ TEXT TRUE(=-5) | o }",
+    "{ TEXT | o } FROM { THINK TRUE(=-5) | o }",
+    "{ TEXT | o } FROM { THINK ART | o } LIKE { TRUE(=-5) | o }"
+   ],
+   [
+    "{ ABOVE JOIN | i }",
+    "{ JOIN | i } FOR { ABOVE | a }",
+    "{ JOIN | i } FOR { ABOVE | a } FROM { MOVE(=-5) | o }"
+   ],
+   [
+    "{ STRONG MEASURE | o }",
+    "{ STRONG | o } FOR { MEASURE(=+5) | o }",
+    "{ STRONG | o } FOR { MEASURE(=-5) | o } PI { SHAPE(=+5) | o }"
+   ],
+   [
+    "{ FEEL BODY CONSUME(=+5) | o }",
+    "{ FEEL | o result } FOR { BODY | o }",
+    "{ FEEL | o } FOR { BODY | o } FROM { GRAIN(=-5) | o }"
+   ],
+   [
+    "{ SAY TEXT | o }",
+    "{ SAY | o tool } FOR { KNOW(=+5) | i }",
+    "{ SAY | o tool } FOR { KNOW(=+5) | i } PI { PART(=+5) | o }"
+   ],
+   [
+    "{ RULE(=+4) VALUE | o agent }",
+    "{ RULE(=+4) | o agent } FOR { VALUE | o }",
+    "{ RULE(=+4) | o agent } FOR { VALUE | o } FOR { GIVE | i }"
+   ],
+   [
+    "{ BODY MOVE STRONG | o }",
+    "{ BODY | o } FOR { MOVE | i }",
+    "{ BODY | o } FOR { MOVE STRONG | i } PI { BODY | o }"
+   ],
+   [
+    "{ VALUE(=-5) GIVE | o }",
+    "{ GIVE(=0) | i } FOR { VALUE(=-5) | o }",
+    "{ GIVE(=0) | o } FOR { VALUE(=-5) | o } FOR { THING | o }"
+   ],
+   [
+    "{ VALUE GIVE | o }",
+    "{ VALUE(=-5) | o } FOR { GIVE(=0) | i }",
+    "{ VALUE(=-5) | o } FOR { GIVE(=0) | i } FOR { MEASURE | o }"
+   ],
+   [
+    "{ LAND MEASURE | o }",
+    "{ PLACE | o } FOR { RULE | o }",
+    "{ PLACE | o } FOR { STRONG | o } FOR { MEASURE(=-5) | o }"
+   ],
+   [
+    "{ PART(=+5) FRIEND | o }",
+    "{ PART(=+5) | o } FOR { FRIEND(=+5) | o }",
+    "{ PART(=+5) | o } FOR { FRIEND(=+5) | o } FOR { SAME(=+3) | o }"
+   ],
+   [
+    "{ MOVE(=-5) ABOVE | i }",
+    "{ MOVE(=-5) | i } FOR { ABOVE | a }",
+    "{ MOVE(=-5) | i } LIKE { ABOVE(=+5) | a } LIKE { SHAPE(=-5) | o }"
+   ],
+   [
+    "{ GIVE(=+5) STRONG | i }",
+    "{ GIVE(=+5) | i } FOR { CAN | o }",
+    "{ GIVE(=+5) | i } FOR { CAN | o } FOR { FRIEND(=+5) | o }"
+   ],
+   [
+    "{ SAY TEXT PART(=-2) | o }",
+    "{ TEXT PART(=-2) | o }",
+    "{ TEXT | o } PI { TEXT | o } LIKE { PART(=-2) | o }"
+   ],
+   [
+    "{ TEXT LONG(=-5) | i }",
+    "{ JOIN(=+5) | i } FROM { LONG(=-5) | o }",
+    "{ JOIN(=+5) | i } FROM { LONG(=-5) | o } LIKE { TOUCH(=-5) | o }"
+   ],
+   [
+    "{ FIGHT BODY | i }",
+    "{ FIGHT(=0) | i } LIKE { BODY | o }",
+    "{ FIGHT(=-5) | i } FOR { BODY STRONG | o } LIKE { MOVE | i }"
+   ],
+   [
+    "{ RULE(=+4) DO | i }",
+    "{ DO | i } FOR { RULE(=+4) | o }",
+    "{ DO | i } FOR { RULE(=+4) | o } FOR { KNOW | i }"
+   ],
+   [
+    "{ WANT CAN | a }",
+    "{ CAN(=+3) | a } FOR { DO | i }",
+    "{ CAN(=+3) | a } FOR { WANT | i } FOR { DO | i }"
+   ],
+   [
+    "{ KNOW SAY | i }",
+    "{ KNOW(=+5) | i } FOR { TEXT | o }",
+    "{ KNOW(=+5) | i } FOR { TEXT | o } FOR { SAY | o }"
+   ],
+   [
+    "{ DO CHANGE | o }",
+    "{ DO | o } FOR { HAPPEN | o result }",
+    "{ DO | o } FOR { CHANGE | o } FOR { HAPPEN | o result }"
+   ],
+   [
+    "{ CHANGE GOOD(=+3) | i }",
+    "{ GOOD(=+3) | i } FOR { CHANGE | i }",
+    "{ CHANGE GOOD(=+3) | i } FOR { VALUE | o }"
+   ],
+   [
+    "{ DO ART(=-5) | a }",
+    "{ ART(=-5) | a } FOR { DO | i }",
+    "{ ART(=-5) | a } FOR { DO | i } FROM { MEASURE(=-5) | o }"
+   ],
+   [
+    "{ SAY(=-5) | i }",
+    "{ SAY(=-5) | i } LIKE { FEEL(=-5) | a }",
+    "{ SAY(=-5) | i } LIKE { FEEL(=-5) | a } FOR { FRIEND | o }"
+   ],
+   [
+    "{ JOIN(=-5) | i }",
+    "{ JOIN(=-5) | i } FOR { MOVE | i }",
+    "{ JOIN(=-5) | i } FOR { MOVE | i } FROM { PLACE | o }"
+   ],
+   [
+    "{ RULE KNOW FRIEND | a }",
+    "{ FRIEND | a } FOR { KNOW(=+5) | i }",
+    "{ THING | a } FOR { KNOW(=+5) | i } PI { RULE(=+4) | o }"
+   ],
+   [
+    "{ TEXT TRUE | o N+3 }",
+    "{ TRUE | o N+3 } PI { TEXT | o }",
+    "{ TRUE | o N+3 } PI { TEXT | o } FOR { THINK | i }"
+   ],
+   [
+    "{ THING(=+4) CONSUME | o agent }",
+    "{ DO | o agent } FOR { THING(=+4) | o }",
+    "{ DO | o agent } FOR { THING(=+4) | o } PI { LAND(=-5) | o }"
+   ],
+   [
+    "{ TIME DO | i }",
+    "{ TIME | i } FOR { DO | i }",
+    "{ TIME | i } FOR { DO | i } LIKE { MOVE | i }"
+   ],
+   [
+    "{ FEEL TOUCH(=-5) | a }",
+    "{ FEEL | a } FOR { TOUCH | o }",
+    "{ FEEL | a } FOR { TOUCH | o } FOR { BODY | o }"
+   ],
+   [
+    "{ SIDE(=0) | i }",
+    "{ JOIN(=-5) | i } FOR { SIDE | o }",
+    "{ INSIDE(=0) | i } FOR { SIDE | o } PI { JOIN(=-5) | o }"
+   ],
+   [
+    "{ SEX(=-5) SOMEONE TIME(=-2) | o }",
+    "{ SEX(=-5) | o agent } LIKE { TIME(=-3) | a }",
+    "{ SEX(=-5) | o agent } LIKE { TIME(=-3) | a } PI { BODY | o }"
+   ],
+   [
+    "{ VALUE(=+5) | a }",
+    "{ VALUE(=+5) | a }",
+    "{ VALUE(=+5) | a I+4 }"
+   ],
+   [
+    "{ RULE(=+4) STRONG | a }",
+    "{ RULE(=+5) | a } AGAINST { RULE(=+4) | o }",
+    "{ RULE(=+5) | a } AGAINST { RULE(=+4) | o } PI { PART(=+5) | o }"
+   ],
+   [
+    "{ JOIN(=+5) | i }",
+    "{ JOIN(=+5) | i } FOR { MANY(=+3) | o }",
+    "{ JOIN(=+5) | i } FOR { MANY(=+3) | o } FOR { BIG | o }"
+   ],
+   [
+    "{ HEAT LIGHT | o }",
+    "{ HEAT(=+5) LIGHT(=+5) | o }",
+    "{ HEAT(=+5) LIGHT(=+5) | o } PI { HEAT(=+5) | o }"
+   ],
+   [
+    "{ BODY PART(=+2) | o }",
+    "{ BODY | o }",
+    "{ BODY LIVE | o }"
+   ],
+   [
+    "{ LIGHT | o tool }",
+    "{ LONG(=0) | o } FOR { LIGHT | o }",
+    "{ LONG | o } FOR { LIGHT | o } FROM { GRAIN(=-3) | o }"
+   ],
+   [
+    "{ ART(=+5) | o result }",
+    "{ ART(=+5) | o result } FOR { SOMEONE(=+5) | o }",
+    "{ ART(=+5) | o result } FOR { MANY(=+3) | o } FOR { SAY | o }"
+   ],
+   [
+    "{ SEE | i K+5 }",
+    "{ DO | i } FOR { SEE | i }",
+    "{ DO | i } FOR { SEE | i } FOR { KNOW | i }"
+   ],
+   [
+    "{ DO CAN | i }",
+    "{ DO | i } FOR { CAN | o }",
+    "{ DO | i } FOR { CAN | o } FOR { VALUE | o }"
+   ],
+   [
+    "{ LIVE(=-5) DO | i }",
+    "{ LIVE(=-5) | i V+4 }",
+    "{ LIVE(=-5) | i K+5 } FOR { FIGHT | o }"
+   ],
+   [
+    "{ SAY SAME(=-4) | i }",
+    "{ SAY | i } FOR { SAME(=-4) | o }",
+    "{ SAY | i } FOR { SAME(=-4) | o } FOR { KNOW | i }"
+   ],
+   [
+    "{ SAME TEXT MEASURE | o }",
+    "{ SAME | o } FOR { MEASURE(=-5) | o }",
+    "{ SAME(=+5) | o } FOR { MEASURE | o } FOR { ART(=-5) | o }"
+   ],
+   [
+    "{ CHANGE SAME(=-5) | i }",
+    "{ CHANGE(=+5) | i } FOR { SAME(=-5) | o }",
+    "{ CHANGE(=+5) | i } FOR { SIDE(=-5) | o }"
+   ],
+   [
+    "{ MEASURE(=-5) VALUE | o }",
+    "{ MEASURE(=-5) | o } FOR { VALUE(=-5) | o }",
+    "{ MEASURE(=-5) | o } FOR { VALUE(=-5) | o } FOR { GIVE | o }"
+   ],
+   [
+    "{ JOIN(=+5) | a }",
+    "{ JOIN(=+5) | a result }",
+    "{ MANY(=+3) | a } FOR { JOIN(=+5) | i }"
+   ],
+   [
+    "{ RULE(=-5) | a }",
+    "{ RULE(=+5) | a M-5 }",
+    "{ RULE(=+4) | a M-5 }"
+   ],
+   [
+    "{ THINK(=+5) WANT | i }",
+    "{ WANT | i } FOR { RULE(=+4) | o }",
+    "{ THINK(=+5) | i } FOR { RULE(=+4) | o } FOR { MANY(=+3) | o }"
+   ]
+  ],
+  "tp": [
+   [
+    "miko",
+    "miko maso",
+    "miko maso jen"
+   ],
+   [
+    "totason",
+    "totason nasulu",
+    "totason nasulu suja"
+   ],
+   [
+    "nin",
+    "nin kene",
+    "nin topun kene"
+   ],
+   [
+    "maka",
+    "laka maka",
+    "tako maka maso"
+   ],
+   [
+    "ja",
+    "ja sono",
+    "ja kisa sono"
+   ],
+   [
+    "jakan",
+    "nin jakan",
+    "nin jakan lopomun"
+   ],
+   [
+    "jun",
+    "panu jun",
+    "panu jun lapan"
+   ],
+   [
+    "jakan",
+    "jakan maso",
+    "jakan kene unu"
+   ],
+   [
+    "ja",
+    "ja topun",
+    "ja topun tuteto"
+   ],
+   [
+    "kunalin",
+    "kunalin wekin",
+    "mose kunalin wekin"
+   ],
+   [
+    "pusu",
+    "lapan pusu",
+    "lapan pusu lepe"
+   ],
+   [
+    "wasun",
+    "meju wasun",
+    "lulo meju wasun"
+   ],
+   [
+    "tusa",
+    "tusa mikun",
+    "tusa mikun maso"
+   ],
+   [
+    "tuteto",
+    "panu tuteto",
+    "panu kan tuteto"
+   ],
+   [
+    "pepen",
+    "pepen nin",
+    "pepen topun nin"
+   ],
+   [
+    "maje",
+    "maje mano",
+    "maje lulo mano"
+   ],
+   [
+    "kan",
+    "lapan kan",
+    "lapan kan sono"
+   ],
+   [
+    "situ",
+    "munen tusan",
+    "munen pelosun tusan"
+   ],
+   [
+    "lapan",
+    "lapan kene",
+    "lapan kene ili"
+   ],
+   [
+    "maso",
+    "miko maso",
+    "miko maso jen"
+   ],
+   [
+    "panu",
+    "panu loto",
+    "ili panu loto"
+   ],
+   [
+    "meju",
+    "meju niwe",
+    "meju niwe niwe"
+   ],
+   [
+    "kuma",
+    "kuma kuma",
+    "miki kuma kuma"
+   ],
+   [
+    "niwe",
+    "suja epo",
+    "lopomun suja epo"
+   ],
+   [
+    "weso",
+    "tuteto weso",
+    "tuteto kisa weso"
+   ],
+   [
+    "kuma",
+    "kisa kuma",
+    "kisa kuma ili"
+   ],
+   [
+    "maka",
+    "maka kisa",
+    "maka kisa maso"
+   ],
+   [
+    "kupo",
+    "kupo suja",
+    "kupo suja lopomun"
+   ],
+   [
+    "josun",
+    "josun sasa",
+    "josun sasa maje"
+   ],
+   [
+    "kasu",
+    "nin kasu",
+    "nin lulo kasu"
+   ],
+   [
+    "epo",
+    "kan epo",
+    "sono kan epo"
+   ],
+   [
+    "josun",
+    "josun miko",
+    "josun pepen maso"
+   ],
+   [
+    "kasu",
+    "miko kasu",
+    "miko kan kasu"
+   ],
+   [
+    "topun",
+    "sono topun",
+    "loto topun sono"
+   ],
+   [
+    "numa",
+    "numa miko",
+    "numa miko jakan"
+   ],
+   [
+    "meju",
+    "meju numa",
+    "numa wanen kuma"
+   ],
+   [
+    "sopa",
+    "sopa unu",
+    "unu sopa jen"
+   ],
+   [
+    "mimen",
+    "mimen maso",
+    "munen mimen maso"
+   ],
+   [
+    "tuteto",
+    "tuteto maso",
+    "tuteto maso sopa"
+   ],
+   [
+    "lulo",
+    "lulo maka",
+    "lulo maka kene"
+   ],
+   [
+    "kene",
+    "topun kene",
+    "topun kene wipon"
+   ],
+   [
+    "mele",
+    "mele nanu",
+    "mele nanu kene"
+   ],
+   [
+    "kokon",
+    "kokon moju",
+    "moju kokon ili"
+   ],
+   [
+    "lepe",
+    "lepe lopomun",
+    "lepe kene lopomun"
+   ],
+   [
+    "niwe",
+    "niwe jen",
+    "niwe niwe jen"
+   ],
+   [
+    "jon",
+    "jon nowi",
+    "jon kan nowi"
+   ],
+   [
+    "tamose",
+    "tamose lepe",
+    "tamose lepe lopomun"
+   ],
+   [
+    "miko",
+    "panu miko",
+    "panu miko lopomun"
+   ],
+   [
+    "pasi",
+    "pasi topun",
+    "pasi loto topun"
+   ],
+   [
+    "miki",
+    "nejo kasu",
+    "nejo kasu tuteto"
+   ],
+   [
+    "topun",
+    "topun tuteto",
+    "mose topun tuteto"
+   ],
+   [
+    "kupo",
+    "kupo sono",
+    "kupo sono momi"
+   ],
+   [
+    "suja",
+    "suja kene",
+    "suja kene ili"
+   ],
+   [
+    "wipon",
+    "wipon mele",
+    "wipon josun mele"
+   ],
+   [
+    "kisa",
+    "ili kisa",
+    "ili kisa maso"
+   ],
+   [
+    "jon",
+    "jon topun",
+    "jon topun niwe"
+   ],
+   [
+    "ake",
+    "ake niwe",
+    "ake niwe lopomun"
+   ],
+   [
+    "ake",
+    "kisa ake",
+    "kene momi ake"
+   ],
+   [
+    "suja",
+    "suja topun",
+    "suja topun momi"
+   ],
+   [
+    "sepan",
+    "topun sepan",
+    "tako sepan sono"
+   ],
+   [
+    "lulo",
+    "lulo maje",
+    "lulo sono maje"
+   ],
+   [
+    "tokele",
+    "maka suja",
+    "meju maka suja"
+   ],
+   [
+    "uso",
+    "kisa uso",
+    "uso ju tuteto"
+   ],
+   [
+    "wipon",
+    "nin wipon",
+    "nin kisa wipon"
+   ],
+   [
+    "je",
+    "je tusan",
+    "je tusan mimen"
+   ],
+   [
+    "mano",
+    "mano totason",
+    "mano lulo totason"
+   ],
+   [
+    "mose",
+    "mose kisa",
+    "mose kisa maso"
+   ],
+   [
+    "sono",
+    "sono momi",
+    "sono ili momi"
+   ],
+   [
+    "jakan",
+    "jakan pusu",
+    "jakan pusu maso"
+   ],
+   [
+    "kasu",
+    "jon kasu",
+    "jon jakan kasu"
+   ],
+   [
+    "kunalin",
+    "lapan sono",
+    "lapan sono kene"
+   ],
+   [
+    "nasulu",
+    "nasulu suja",
+    "nasulu suja maso"
+   ],
+   [
+    "maje",
+    "maje lepe",
+    "maje kan epo"
+   ],
+   [
+    "jase",
+    "jase kasu",
+    "jase kan kasu"
+   ],
+   [
+    "suja",
+    "suja nejo",
+    "suja kene kokon"
+   ],
+   [
+    "je",
+    "je lopun",
+    "je lopun jakan"
+   ],
+   [
+    "lulo",
+    "neku lulo",
+    "lulo neku maso"
+   ],
+   [
+    "topun",
+    "nin topun",
+    "nin topun sala"
+   ],
+   [
+    "suja",
+    "lopomun suja",
+    "ili suja lopomun"
+   ],
+   [
+    "weso",
+    "weso ili",
+    "weso ili sala"
+   ],
+   [
+    "sala",
+    "ili sala",
+    "wipon weso sala"
+   ],
+   [
+    "jon",
+    "jon topun",
+    "jon suja topun"
+   ],
+   [
+    "tuteto",
+    "tuteto jakan",
+    "tuteto nin jakan"
+   ],
+   [
+    "jasan",
+    "jase jasan",
+    "jase kasu jasan"
+   ],
+   [
+    "jakan",
+    "kisa jakan",
+    "kisa jakan kene"
+   ],
+   [
+    "neku",
+    "neku maso",
+    "neku maso niwe"
+   ],
+   [
+    "kun",
+    "kisa kun",
+    "kisa kun mimen"
+   ],
+   [
+    "totason",
+    "totason lopomun",
+    "totason lopomun suja"
+   ],
+   [
+    "mikun",
+    "mikun topun",
+    "mikun ju topun"
+   ],
+   [
+    "ja",
+    "ja maso",
+    "ja panu"
+   ],
+   [
+    "sono",
+    "sono neku",
+    "sono ju neku"
+   ],
+   [
+    "mose",
+    "mose kene",
+    "mose kisa wasun"
+   ],
+   [
+    "jakan",
+    "panu jakan",
+    "kisa jakan maso"
+   ],
+   [
+    "kisa",
+    "kisa wipon",
+    "kisa wipon maso"
+   ],
+   [
+    "lulo",
+    "lulo niwe",
+    "lulo niwe je"
+   ],
+   [
+    "kupo",
+    "lapan kupo",
+    "kupo ju ili"
+   ],
+   [
+    "kasu",
+    "nin kasu",
+    "kisa nin kasu"
+   ],
+   [
+    "sono",
+    "sono ili",
+    "maje sono ili"
+   ],
+   [
+    "ajato",
+    "nin ajato",
+    "nin ajato lesu"
+   ],
+   [
+    "meju",
+    "lapan meju",
+    "lapan ju meju"
+   ],
+   [
+    "tako",
+    "tako maso",
+    "tako maso kokon"
+   ],
+   [
+    "kuma",
+    "kan ake",
+    "kokon kan ake"
+   ],
+   [
+    "jeme",
+    "jeme niwe",
+    "nin jeme niwe"
+   ],
+   [
+    "miko",
+    "miko maso",
+    "miko maso jakan"
+   ],
+   [
+    "topun",
+    "topun oma",
+    "topun oma somo"
+   ],
+   [
+    "mipi",
+    "lapan mipi",
+    "lapan mipi maso"
+   ],
+   [
+    "tusan",
+    "tusan numa",
+    "tusan numa je"
+   ],
+   [
+    "lopomun",
+    "lopomun momi",
+    "lopomun momi nin"
+   ],
+   [
+    "linili",
+    "linili tusan",
+    "linili tusan numa"
+   ],
+   [
+    "lepe",
+    "nasulu lepe",
+    "lepe wanen sopa"
+   ],
+   [
+    "pusu",
+    "lapan pusu",
+    "lapan pusu kene"
+   ],
+   [
+    "kisa",
+    "kisa kene",
+    "sotaku jakan"
+   ],
+   [
+    "pasi",
+    "kisa pasi",
+    "kisa ju pasi"
+   ],
+   [
+    "lulo",
+    "lulo kunalin",
+    "lulo kunalin sono"
+   ],
+   [
+    "wekin",
+    "miki wekin",
+    "miki kuma wekin"
+   ],
+   [
+    "unu",
+    "kene nani",
+    "unu kene nani"
+   ],
+   [
+    "miki",
+    "miki sala",
+    "miki nisa sala"
+   ],
+   [
+    "mipi",
+    "mipi maso",
+    "mipi kan ponu"
+   ],
+   [
+    "kupo",
+    "kupo topun",
+    "kupo loto topun"
+   ],
+   [
+    "miki",
+    "tusa miki",
+    "lapan tusa miki"
+   ]
+  ]
+ },
+ "tp_plain": [
+  [
+   "suli",
+   "suli mute",
+   "suli mute a"
+  ],
+  [
+   "utala",
+   "utala kalama",
+   "utala kalama wawa"
+  ],
+  [
+   "jan",
+   "jan tawa",
+   "jan lawa tawa"
+  ],
+  [
+   "ike",
+   "olin ike",
+   "pilin ike mute"
+  ],
+  [
+   "ken",
+   "ken sona",
+   "ken pali sona"
+  ],
+  [
+   "pona",
+   "jan pona",
+   "jan pona sijelo"
+  ],
+  [
+   "jo",
+   "kama jo",
+   "kama jo pana"
+  ],
+  [
+   "pona",
+   "pona mute",
+   "pona tawa ante"
+  ],
+  [
+   "ken",
+   "ken lawa",
+   "ken lawa kulupu"
+  ],
+  [
+   "sitelen",
+   "sitelen sama",
+   "nasin sitelen sama"
+  ],
+  [
+   "lukin",
+   "pana lukin",
+   "pana lukin musi"
+  ],
+  [
+   "pini",
+   "tenpo pini",
+   "toki tenpo pini"
+  ],
+  [
+   "wile",
+   "wile kute",
+   "wile kute mute"
+  ],
+  [
+   "kulupu",
+   "kama kulupu",
+   "kama lon kulupu"
+  ],
+  [
+   "sinpin",
+   "sinpin jan",
+   "sinpin lawa jan"
+  ],
+  [
+   "lipu",
+   "lipu seme",
+   "lipu toki seme"
+  ],
+  [
+   "lon",
+   "pana lon",
+   "pana lon sona"
+  ],
+  [
+   "kasi",
+   "kili seli",
+   "kili pimeja seli"
+  ],
+  [
+   "pana",
+   "pana tawa",
+   "pana tawa ijo"
+  ],
+  [
+   "mute",
+   "suli mute",
+   "suli mute a"
+  ],
+  [
+   "kama",
+   "kama tan",
+   "ijo kama tan"
+  ],
+  [
+   "tenpo",
+   "tenpo lili",
+   "tenpo lili lili"
+  ],
+  [
+   "tu",
+   "tu tu",
+   "nanpa tu tu"
+  ],
+  [
+   "lili",
+   "wawa ala",
+   "sijelo wawa ala"
+  ],
+  [
+   "esun",
+   "kulupu esun",
+   "kulupu pali esun"
+  ],
+  [
+   "tu",
+   "pali tu",
+   "pali tu ijo"
+  ],
+  [
+   "ike",
+   "ike pali",
+   "ike pali mute"
+  ],
+  [
+   "weka",
+   "weka wawa",
+   "weka wawa sijelo"
+  ],
+  [
+   "kiwen",
+   "kiwen supa",
+   "kiwen supa lipu"
+  ],
+  [
+   "sewi",
+   "jan sewi",
+   "jan toki sewi"
+  ],
+  [
+   "ala",
+   "lon ala",
+   "sona lon ala"
+  ],
+  [
+   "kiwen",
+   "kiwen suli",
+   "kiwen sinpin mute"
+  ],
+  [
+   "sewi",
+   "suli sewi",
+   "suli lon sewi"
+  ],
+  [
+   "lawa",
+   "sona lawa",
+   "tan lawa sona"
+  ],
+  [
+   "suno",
+   "suno suli",
+   "suno suli pona"
+  ],
+  [
+   "tenpo",
+   "tenpo suno",
+   "suno luka tu"
+  ],
+  [
+   "wan",
+   "wan ante",
+   "ante wan a"
+  ],
+  [
+   "telo",
+   "telo mute",
+   "kili telo mute"
+  ],
+  [
+   "kulupu",
+   "kulupu mute",
+   "kulupu mute wan"
+  ],
+  [
+   "toki",
+   "toki ike",
+   "toki ike tawa"
+  ],
+  [
+   "tawa",
+   "lawa tawa",
+   "lawa tawa ilo"
+  ],
+  [
+   "lupa",
+   "lupa tomo",
+   "lupa tomo tawa"
+  ],
+  [
+   "selo",
+   "selo linja",
+   "linja selo ijo"
+  ],
+  [
+   "musi",
+   "musi sijelo",
+   "musi tawa sijelo"
+  ],
+  [
+   "lili",
+   "lili a",
+   "lili lili a"
+  ],
+  [
+   "ma",
+   "ma ni",
+   "ma lon ni"
+  ],
+  [
+   "soweli",
+   "soweli musi",
+   "soweli musi sijelo"
+  ],
+  [
+   "suli",
+   "kama suli",
+   "kama suli sijelo"
+  ],
+  [
+   "moli",
+   "moli lawa",
+   "moli tan lawa"
+  ],
+  [
+   "nanpa",
+   "anpa sewi",
+   "anpa sewi kulupu"
+  ],
+  [
+   "lawa",
+   "lawa kulupu",
+   "nasin lawa kulupu"
+  ],
+  [
+   "weka",
+   "weka sona",
+   "weka sona ale"
+  ],
+  [
+   "wawa",
+   "wawa tawa",
+   "wawa tawa ijo"
+  ],
+  [
+   "ilo",
+   "ilo lupa",
+   "ilo kiwen lupa"
+  ],
+  [
+   "pali",
+   "ijo pali",
+   "ijo pali mute"
+  ],
+  [
+   "ma",
+   "ma lawa",
+   "ma lawa lili"
+  ],
+  [
+   "insa",
+   "insa lili",
+   "insa lili sijelo"
+  ],
+  [
+   "insa",
+   "pali insa",
+   "tawa ale insa"
+  ],
+  [
+   "wawa",
+   "wawa lawa",
+   "wawa lawa ale"
+  ],
+  [
+   "nasa",
+   "lawa nasa",
+   "pilin nasa sona"
+  ],
+  [
+   "toki",
+   "toki lipu",
+   "toki sona lipu"
+  ],
+  [
+   "pakala",
+   "ike wawa",
+   "tenpo ike wawa"
+  ],
+  [
+   "open",
+   "pali open",
+   "open e kulupu"
+  ],
+  [
+   "ilo",
+   "jan ilo",
+   "jan pali ilo"
+  ],
+  [
+   "kon",
+   "kon seli",
+   "kon seli telo"
+  ],
+  [
+   "seme",
+   "seme utala",
+   "seme toki utala"
+  ],
+  [
+   "nasin",
+   "nasin pali",
+   "nasin pali mute"
+  ],
+  [
+   "sona",
+   "sona ale",
+   "sona ijo ale"
+  ],
+  [
+   "pona",
+   "pona lukin",
+   "pona lukin mute"
+  ],
+  [
+   "sewi",
+   "ma sewi",
+   "ma pona sewi"
+  ],
+  [
+   "sitelen",
+   "pana sona",
+   "pana sona tawa"
+  ],
+  [
+   "kalama",
+   "kalama wawa",
+   "kalama wawa mute"
+  ],
+  [
+   "lipu",
+   "lipu musi",
+   "lipu lon ala"
+  ],
+  [
+   "awen",
+   "awen sewi",
+   "awen lon sewi"
+  ],
+  [
+   "wawa",
+   "wawa anpa",
+   "wawa tawa selo"
+  ],
+  [
+   "kon",
+   "kon nena",
+   "kon nena pona"
+  ],
+  [
+   "toki",
+   "nimi toki",
+   "toki nimi mute"
+  ],
+  [
+   "lawa",
+   "jan lawa",
+   "jan lawa mani"
+  ],
+  [
+   "wawa",
+   "sijelo wawa",
+   "ijo wawa sijelo"
+  ],
+  [
+   "esun",
+   "esun ijo",
+   "esun ijo mani"
+  ],
+  [
+   "mani",
+   "ijo mani",
+   "ilo esun mani"
+  ],
+  [
+   "ma",
+   "ma lawa",
+   "ma wawa lawa"
+  ],
+  [
+   "kulupu",
+   "kulupu pona",
+   "kulupu jan pona"
+  ],
+  [
+   "noka",
+   "awen noka",
+   "awen sewi noka"
+  ],
+  [
+   "pona",
+   "pali pona",
+   "pali pona tawa"
+  ],
+  [
+   "nimi",
+   "nimi mute",
+   "nimi mute lili"
+  ],
+  [
+   "len",
+   "pali len",
+   "pali len telo"
+  ],
+  [
+   "utala",
+   "utala sijelo",
+   "utala sijelo wawa"
+  ],
+  [
+   "kute",
+   "kute lawa",
+   "kute e lawa"
+  ],
+  [
+   "ken",
+   "ken mute",
+   "ken kama"
+  ],
+  [
+   "sona",
+   "sona nimi",
+   "sona e nimi"
+  ],
+  [
+   "nasin",
+   "nasin tawa",
+   "nasin pali pini"
+  ],
+  [
+   "pona",
+   "kama pona",
+   "pali pona mute"
+  ],
+  [
+   "pali",
+   "pali ilo",
+   "pali ilo mute"
+  ],
+  [
+   "toki",
+   "toki lili",
+   "toki lili kon"
+  ],
+  [
+   "weka",
+   "pana weka",
+   "weka e ijo"
+  ],
+  [
+   "sewi",
+   "jan sewi",
+   "pali jan sewi"
+  ],
+  [
+   "sona",
+   "sona ijo",
+   "lipu sona ijo"
+  ],
+  [
+   "alasa",
+   "jan alasa",
+   "jan alasa kala"
+  ],
+  [
+   "tenpo",
+   "pana tenpo",
+   "pana e tenpo"
+  ],
+  [
+   "pilin",
+   "pilin mute",
+   "pilin mute selo"
+  ],
+  [
+   "tu",
+   "lon insa",
+   "selo lon insa"
+  ],
+  [
+   "meli",
+   "meli lili",
+   "jan meli lili"
+  ],
+  [
+   "suli",
+   "suli mute",
+   "suli mute pona"
+  ],
+  [
+   "lawa",
+   "lawa ona",
+   "lawa ona taso"
+  ],
+  [
+   "sin",
+   "pana sin",
+   "pana sin mute"
+  ],
+  [
+   "seli",
+   "seli suno",
+   "seli suno kon"
+  ],
+  [
+   "sijelo",
+   "sijelo ale",
+   "sijelo ale jan"
+  ],
+  [
+   "palisa",
+   "palisa seli",
+   "palisa seli suno"
+  ],
+  [
+   "musi",
+   "kalama musi",
+   "musi luka wan"
+  ],
+  [
+   "lukin",
+   "pana lukin",
+   "pana lukin tawa"
+  ],
+  [
+   "pali",
+   "pali tawa",
+   "kepeken pona"
+  ],
+  [
+   "moli",
+   "pali moli",
+   "pali e moli"
+  ],
+  [
+   "toki",
+   "toki sitelen",
+   "toki sitelen sona"
+  ],
+  [
+   "sama",
+   "nanpa sama",
+   "nanpa tu sama"
+  ],
+  [
+   "ante",
+   "tawa monsi",
+   "ante tawa monsi"
+  ],
+  [
+   "nanpa",
+   "nanpa mani",
+   "nanpa pi mani"
+  ],
+  [
+   "sin",
+   "sin mute",
+   "sin lon poka"
+  ],
+  [
+   "weka",
+   "weka lawa",
+   "weka tan lawa"
+  ],
+  [
+   "nanpa",
+   "wile nanpa",
+   "pana wile nanpa"
+  ]
+ ]
+}
