@@ -31,9 +31,9 @@ DOCS = ["reading", "model", "philosophy", "syntax", "tables", "encoding", "lexic
 # сравнение с Toki Pona: адрес на каждом языке (x-default — английский, как у главной)
 COMPARE = {"en": "/vs-toki-pona/", "ru": "/ru/vs-toki-pona/"}
 COMPARE_DESC = {
-    "en": "Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. "
+    "en": "Toki Pona has about 120–140 words; min-co is oligosynthetic, with 45 meaning roots on value axes, encoded and decoded by vector math. "
           "How the two minimal conlangs differ in goals and grammar.",
-    "ru": "В Toki Pona около 120–140 слов, в min-co — 45 смысловых корней с осями значений, которые кодирует и раскодирует "
+    "ru": "В Toki Pona около 120–140 слов, min-co — олигосинтетический язык из 45 смысловых корней с осями значений, которые кодирует и раскодирует "
           "векторная математика. Чем различаются два минималистичных искусственных языка.",
 }
 

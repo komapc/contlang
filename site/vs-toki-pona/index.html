@@ -5,7 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>min-co vs Toki Pona: two minimal conlangs compared</title>
-<meta name="description" content="Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
+<meta name="description" content="Toki Pona has about 120–140 words; min-co is oligosynthetic, with 45 meaning roots on value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
 <link rel="canonical" href="https://minco.lipu.dev/vs-toki-pona/">
 <link rel="alternate" hreflang="ru" href="https://minco.lipu.dev/ru/vs-toki-pona/">
 <link rel="alternate" hreflang="en" href="https://minco.lipu.dev/vs-toki-pona/">
@@ -15,12 +15,12 @@
 <meta property="og:url" content="https://minco.lipu.dev/vs-toki-pona/">
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="min-co vs Toki Pona: two minimal conlangs compared">
-<meta property="og:description" content="Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
+<meta property="og:description" content="Toki Pona has about 120–140 words; min-co is oligosynthetic, with 45 meaning roots on value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.">
 <meta property="og:image" content="https://minco.lipu.dev/og.png">
 <meta property="og:image:alt" content="min-co. A minimal continuous constructed language. 45 meaning roots · minco.lipu.dev">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"min-co vs Toki Pona: two minimal conlangs compared","description":"Toki Pona has about 120–140 words; min-co has 45 meaning roots with value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.","url":"https://minco.lipu.dev/vs-toki-pona/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"TechArticle","headline":"min-co vs Toki Pona: two minimal conlangs compared","description":"Toki Pona has about 120–140 words; min-co is oligosynthetic, with 45 meaning roots on value axes, encoded and decoded by vector math. How the two minimal conlangs differ in goals and grammar.","url":"https://minco.lipu.dev/vs-toki-pona/","inLanguage":"en","isPartOf":{"@type":"WebSite","name":"min-co","url":"https://minco.lipu.dev/"},"author":{"@type":"Person","name":"komapc","url":"https://github.com/komapc"}}</script>
 <style>
 :root{--bg:#fbfaf7;--fg:#1d1d1b;--mut:#6b6a63;--line:#dcd9cf;--card:#fff;--acc:#2f5d50;--acc2:#e8f0ec;--mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace}
 @media (prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#161715;--fg:#ecebe4;--mut:#9b9a91;--line:#34342f;--card:#1f201d;--acc:#8fc4b0;--acc2:#23312c}}
@@ -54,7 +54,7 @@ footer{margin-top:28px;color:var(--mut);font-size:14px}
 <h2 id="toki-pona-in-brief">Toki Pona in brief</h2>
 <p>Toki Pona was created by the linguist Sonja Lang and first published online in 2001. It has about 120–140 words, depending on how the rarer ones are counted, and 14 sounds. A word covers a broad area of meaning (<code>pona</code> is good, simple, to fix), and phrases are built head first: <code>jan pona</code> is “person + good”, a friend. A handful of particles (<code>li</code>, <code>e</code>, <code>la</code>, <code>pi</code>, <code>o</code>) mark the parts of the sentence. The vagueness is deliberate: the language invites you to say what matters and leave the rest to context. Toki Pona has an active community of speakers, books, music and its own writing systems, such as sitelen pona.</p>
 <h2 id="min-co-in-brief">min-co in brief</h2>
-<p>min-co (a working name, from <em>minimal + continuous</em>) has 45 meaning roots, mostly general concepts such as GOOD, BIG, PLACE, KNOW, SAY. 39 of them have a value axis from −5 to +5, so a number says where on the scale you mean: <code>SAY(=-4) | i</code> is to whisper, <code>SAY(=+5) | i</code> to scream. A word is up to three roots, the main one first: <code>PLACE LIVE | o</code> is a house. After the bar come the part of speech (<code>o i a e</code>, as in Esperanto's <em>-o -i -a -e</em>) and optional labels for tense, number or negation. See <a href="/docs/en/reading/">how to read min-co</a>.</p>
+<p>min-co (a working name, from <em>minimal + continuous</em>) is an oligosynthetic language: every word is built from a small set of 45 meaning roots. Most of them are semantic primes of Anna Wierzbicka's Natural Semantic Metalanguage (NSM), general concepts such as GOOD, BIG, PLACE, KNOW, SAY. 39 of them have a value axis from −5 to +5, so a number says where on the scale you mean: <code>SAY(=-4) | i</code> is to whisper, <code>SAY(=+5) | i</code> to scream. A word is up to three roots, the main one first: <code>PLACE LIVE | o</code> is a house. After the bar come the part of speech (<code>o i a e</code>, as in Esperanto's <em>-o -i -a -e</em>) and optional labels for tense, number or negation. See <a href="/docs/en/reading/">how to read min-co</a>.</p>
 <p>A min-co code can be written by a person or a language model, or computed: a word's meaning vector (ConceptNet Numberbatch) is approximated by a sum of at most three roots with integer axis values. Decoding works the same way in reverse, so codes can be tested blind: one reader gets only the code and names the word. The goal is the right semantic field (<em>house, dwelling, hut</em> all count), not the exact word. The details are in <a href="/docs/en/math/">the math</a>.</p>
 <h2 id="side-by-side">Side by side</h2>
 <table>
