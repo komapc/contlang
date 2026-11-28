@@ -12,7 +12,11 @@ concurrency:
   group: pages
   cancel-in-progress: true
 jobs:
+  # Deploy only a site that passes check.yml (generated files up to date, tests green).
+  check:
+    uses: ./.github/workflows/check.yml
   deploy:
+    needs: check
     runs-on: ubuntu-latest
     environment:
       name: github-pages
